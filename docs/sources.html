@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nos sources et salles · Calendrier culturel montréalais</title>
+<meta name="description" content="Toutes les salles, musées, galeries et agendas que le Calendrier culturel montréalais consulte chaque jour.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.srcitem{background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.srcitem a{font-weight:800;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.srcitem a:hover{text-decoration:underline}
+.srcitem .meta{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.srcitem .n{font-family:var(--f-display);font-size:12px;font-weight:700;background:var(--hl);border-radius:6px;padding:0 6px;color:var(--ink)}
+.filtre{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 12px}
+.filtre input{font:inherit;font-size:15px;border:2px solid var(--ink);border-radius:10px;padding:8px 12px;min-width:0;flex:1 1 260px;max-width:420px;background:var(--surface);color:var(--ink)}
+.compte{font-size:13px;color:var(--muted)}
+.qhead{font-family:var(--f-display);font-weight:800;font-size:15px;margin:18px 0 8px;text-transform:lowercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero" style="grid-template-columns:minmax(0,1fr)">
+    <div class="hero-txt">
+      <p class="toplinks"><a href="index.html">← Retour au calendrier</a><a href="salles.html">Ajouter tes événements</a></p>
+      <p class="wordmark">calendrier culturel <b>mtl</b></p>
+      <h1>Nos <span class="hl">sources</span> et nos salles</h1>
+      <p class="sub">Tout ce que le calendrier consulte : les agendas et sites relus automatiquement, puis chaque salle, musée et galerie où il y a quelque chose à l'affiche. Ce ne sont pas des partenariats officiels : ces informations sont publiques, et chaque événement renvoie à sa source. Une salle manque ? <a href="salles.html">Ajoute-la</a>.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="label">Agendas et sites consultés</h2>
+    <p class="compte" id="srcCompte"></p>
+    <div class="srcgrid" id="srcListe"><p class="loading">Chargement…</p></div>
+  </section>
+
+  <section>
+    <h2 class="label">Salles, musées et galeries</h2>
+    <div class="filtre">
+      <label for="q" class="sr">Chercher une salle</label>
+      <input id="q" type="search" placeholder="Chercher une salle, un quartier, une station…">
+      <span class="compte" id="lieuCompte"></span>
+    </div>
+    <div id="lieux"></div>
+  </section>
+</div>
+<script>
+(function(){
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const plat=t=>(t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+const $=id=>document.getElementById(id);
+fetch("sources.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(L=>{
+  $("srcCompte").textContent=`${L.length} sources relues chaque jour ou chaque semaine.`;
+  $("srcListe").innerHTML=L.map(s=>{let host="";try{host=new URL(s.url).hostname.replace(/^www\./,"")}catch(e){}
+    return `<div class="srcitem"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.nom)}</a>
+      <div class="meta"><span>${esc(host)}</span><span>· ${esc(s.type)}</span>${s.evenements?`<span class="n">${s.evenements}</span>`:""}</div></div>`}).join("");
+}).catch(()=>{$("srcListe").innerHTML='<p class="empty">Liste indisponible.</p>'});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(D=>{
+  const n={};D.events.forEach(e=>n[e.lieu]=(n[e.lieu]||0)+1);D.expos.forEach(x=>n[x.lieu]=(n[x.lieu]||0)+1);
+  const lieux=Object.keys(n).filter(k=>k&&k!=="Lieu à confirmer").map(k=>({nom:k,n:n[k],q:(D.lieux[k]&&D.lieux[k].quartier)||"Quartier à préciser"}));
+  const dessiner=()=>{
+    const f=plat($("q").value.trim());
+    const vis=lieux.filter(l=>!f||plat(l.nom+" "+l.q).includes(f));
+    $("lieuCompte").textContent=`${vis.length} lieu${vis.length>1?"x":""} sur ${lieux.length}`;
+    const par={};vis.forEach(l=>(par[l.q]=par[l.q]||[]).push(l));
+    $("lieux").innerHTML=Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(q=>`<h3 class="qhead">${esc(q)}</h3><div class="srcgrid">${
+      par[q].sort((a,b)=>a.nom.localeCompare(b.nom,"fr")).map(l=>`<div class="srcitem"><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.nom+", Montréal")}" target="_blank" rel="noopener">${esc(l.nom)}</a><div class="meta"><span class="n">${l.n}</span><span>activité${l.n>1?"s":""} au calendrier</span></div></div>`).join("")}</div>`).join("")||'<p class="empty">Aucune salle ne correspond.</p>';
+  };
+  $("q").addEventListener("input",dessiner);dessiner();
+});
+})();
+</script>
+</body>
+</html>
