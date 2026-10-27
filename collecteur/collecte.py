@@ -35,6 +35,7 @@ RAPPORT = RACINE / "docs" / "rapport.json"
 LIEUX = Path(__file__).parent / "lieux.json"
 SOURCES = Path(__file__).parent / "sources.yaml"
 CACHE = Path(__file__).parent / "cache"
+MANUELS = Path(__file__).parent / "manuels.json"  # programmes saisis à la main
 MTL = ZoneInfo("America/Toronto")
 
 JEUNE = re.compile(r"\b\d+\s*(à|a|-)\s*\d+\s*ans\b|jeune public|famille|enfants|tout-petits|\(\d+\s*ans", re.I)
@@ -270,6 +271,13 @@ def main() -> int:
         if e["jeunePublic"] and e["discipline"] != "jeune":
             e["sous"], e["discipline"] = e["discipline"], "jeune"
 
+    # Programmes saisis à la main (collecteur/manuels.json) : ajoutés à chaque collecte, dates passées exclues.
+    manuels = json.loads(MANUELS.read_text(encoding="utf-8")) if MANUELS.exists() else {}
+    for e in manuels.get("events", []):
+        if aujourd.isoformat() <= e["date"] <= fin.isoformat():
+            events.append(dict(e))
+    print(f"Saisies à la main : {sum(1 for e in manuels.get('events', []) if aujourd.isoformat() <= e['date'] <= fin.isoformat())} événements.")
+
     events = dedoublonner(events)
 
     expos = []
@@ -298,6 +306,11 @@ def main() -> int:
             if aussi:
                 x["aussi"] = aussi
         expos.append(x)
+    for x in manuels.get("expos", []):
+        k = plat(x["titre"])[:40] + "|" + plat(x["lieu"])[:20]
+        if x["fin"] >= aujourd.isoformat() and x["debut"] <= fin.isoformat() and k not in vus:
+            vus.add(k)
+            expos.append(dict(x))
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
     fest.etiqueter(expos, festivals)

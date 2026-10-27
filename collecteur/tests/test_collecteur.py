@@ -254,7 +254,8 @@ sources:
             return {"lat": 45.52, "lon": -73.59, "quartier": "Mile End"}
 
         with mock.patch.multiple(collecte, SORTIE=tmp / "docs" / "data.json", RAPPORT=tmp / "docs" / "rapport.json",
-                                 LIEUX=lieux, SOURCES=sources, CACHE=tmp / "cache", datetime=Jour), \
+                                 LIEUX=lieux, SOURCES=sources, CACHE=tmp / "cache", MANUELS=tmp / "aucun.json",
+                                 datetime=Jour), \
                 mock.patch.object(connecteurs, "telecharger", side_effect=fake_dl), \
                 mock.patch.object(collecte.geo, "localiser", side_effect=fake_geo), \
                 mock.patch.dict("os.environ", {}, clear=False):
