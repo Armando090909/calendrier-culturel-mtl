@@ -40,6 +40,7 @@ Ce qui a été trouvé à la main (oct. 2026), pour ne pas refaire le travail. �
 - **AGAC** (`agac.ca/galeries/`) : 34 galeries membres, dont 22 à Montréal (+ Art Mûr déjà suivie). Les fiches AGAC donnent adresse et site, pas les expositions → chaque galerie est une source à part (`cle: galeries`, relue chaque lundi). Pages d'expositions confirmées : Bradley Ertaskiran `/en/exhibitions/`, Blouin Division `/en/exhibitions/`, Eli Kerr `/expositions-fr`, PFOAC `/en/exhibitions/forthcoming/`, Simon Blais `/fr/expos/`. Les autres : page d'accueil (à préciser si le rapport donne 0). Coordonnées des galeries : approximatives, d'après l'adresse.
 
 ## Sources à éviter ou limitées
+- **FestApp, lu depuis GitHub Actions** : heures décalées de l'écart avec UTC (19 h affiché 14 h en novembre), constaté le 27 oct. 2026 sur 212 séances. Corrigé automatiquement (`corriger_heure_festapp`, normalisation.py). Si FestApp corrige un jour son affichage, retirer cette correction.
 - **Songkick** : aucune heure de concert, même sur la page de l'événement. Gardé pour la couverture ; la version avec l'heure (site de la salle, ma.to) remplace la sienne au dédoublonnage.
 - **festivalarabe.com** : programme affiché en JavaScript, illisible sans navigateur → passer par la Place des Arts.
 - Sites inaccessibles depuis l'outil de recherche utilisé ici (à vérifier depuis GitHub Actions, qui n'a pas ces restrictions) : festivalcinemania.com, coupdecoeur.ca, ridm.ca, image-nation.org, mpourmontreal.com, elektramontreal.ca (partiel), barleritzpdb.com.

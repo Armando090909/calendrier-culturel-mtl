@@ -206,12 +206,29 @@ def meme_evenement(a: dict, b: dict) -> bool:
         return False
     if a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
         return False
+    # Même festival, même jour, même heure, même salle : le même spectacle sous deux titres
+    # (ex. « Concert d'ouverture… » et « Ouverture jubilatoire ! »).
+    if a.get("festival") and a.get("festival") == b.get("festival") and a.get("heure") and a.get("heure") == b.get("heure") \
+            and plat(a["lieu"]) != "lieu a confirmer":
+        return True
     ma, mb = _mots(a["titre"]), _mots(b["titre"])
     if not ma or not mb:
         return plat(a["titre"]) == plat(b["titre"])
     if ma[0] == mb[0] and ma[0] not in GENERIQUES:
         return True
     return " ".join(ma[:3]) == " ".join(mb[:3])
+
+
+def corriger_heure_festapp(jour: str, heure: str | None) -> str | None:
+    """FestApp, lu depuis GitHub Actions, affiche les heures décalées de l'écart avec UTC (19 h → 14 h en novembre) :
+    constaté le 27 oct. 2026 sur 212 séances de CINEMANIA et Coup de cœur comparées au site. On remet l'heure de Montréal."""
+    if not heure or not re.fullmatch(r"\d{2}:\d{2}", heure):
+        return heure
+    from datetime import datetime, timedelta
+    from zoneinfo import ZoneInfo
+    d = datetime.fromisoformat(f"{jour}T{heure}")
+    ecart = -ZoneInfo("America/Montreal").utcoffset(d)
+    return (d + ecart).strftime("%H:%M") if (d + ecart).date() == d.date() else heure
 
 
 def dedoublonner(events: list[dict]) -> list[dict]:
@@ -232,4 +249,18 @@ def dedoublonner(events: list[dict]) -> list[dict]:
         else:
             garde.append(e)
     tous = [e for g in seaux.values() for e in g]
+    # Un événement de festival sans salle connue, déjà présent avec sa salle (même jour, même heure) : on le retire.
+    connus = {(e["date"], e.get("heure"), e.get("festival")): e for e in tous
+              if e.get("festival") and e.get("heure") and plat(e["lieu"]) != "lieu a confirmer"}
+    garde = []
+    for e in tous:
+        if e.get("festival") and plat(e["lieu"]) == "lieu a confirmer":
+            autre = connus.get((e["date"], e.get("heure"), e.get("festival")))
+            if autre and meme_evenement(dict(e, lieu=autre["lieu"]), autre):
+                for k in ("prix", "billets", "resume", "image", "aussi"):
+                    if not autre.get(k) and e.get(k):
+                        autre[k] = e[k]
+                continue
+        garde.append(e)
+    tous = garde
     return sorted(tous, key=lambda e: (e["date"], e.get("heure") or "99", e["titre"]))
