@@ -384,3 +384,22 @@ class TestDecouverte(unittest.TestCase):
         self.assertIsNone(affiche_page('<meta property="og:image" content="https://x.ca/logo.png">', "https://x.ca"))
         self.assertFalse(page_officielle("https://www.songkick.com/concerts/1"))
 
+
+
+class TestFestappEtDoublons(unittest.TestCase):
+    def test_heure_festapp(self):
+        from normalisation import corriger_heure_festapp
+        self.assertEqual(corriger_heure_festapp("2026-11-02", "14:00"), "19:00")   # heure normale de l'Est (UTC-5)
+        self.assertEqual(corriger_heure_festapp("2026-07-10", "16:00"), "20:00")   # heure avancée (UTC-4)
+        self.assertEqual(corriger_heure_festapp("2026-11-02", "21:30"), "21:30")   # changerait de jour : on ne touche pas
+        self.assertIsNone(corriger_heure_festapp("2026-11-02", None))
+
+    def test_meme_festival_meme_creneau(self):
+        from normalisation import dedoublonner
+        a = {"date": "2026-11-20", "heure": "19:30", "lieu": "Maison symphonique", "titre": "Concert d'ouverture — Magnificat",
+             "festival": "bach", "source": "festival"}
+        b = dict(a, titre="Ouverture jubilatoire !", prix="45 $")
+        c = dict(a, lieu="Lieu à confirmer", titre="Concert d'ouverture")
+        r = dedoublonner([a, b, c])
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0]["prix"], "45 $")
