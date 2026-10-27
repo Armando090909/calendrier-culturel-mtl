@@ -53,8 +53,8 @@ Si une première exécution a échoué dans l'onglet **Actions** juste après l'
 
 ### 5. La clé IA (facultatif, recommandé)
 Sans clé, seules les sources « code » sont lues (Ville, Ask A Punk, calendriers iCal, formulaires). Avec la clé, les pages des théâtres, de Sors-tu? et de Songkick sont lues aussi.
-1. Créez un compte sur <https://console.anthropic.com>, ajoutez un moyen de paiement et **fixez une limite de dépense mensuelle** (ex. 10 $).
-2. Créez une clé API (**API Keys** → **Create Key**) et copiez-la.
+1. Créez un compte sur <https://platform.claude.com>, ajoutez un moyen de paiement et **fixez une limite de dépense mensuelle** (ex. 10 $).
+2. Créez une clé API (<https://platform.claude.com/settings/keys> → **Create key**). **Choisissez un espace de travail** (*workspace*, ex. « Default ») pour la clé, puis copiez-la (elle n'est affichée qu'une fois). Si la clé n'est liée à aucun espace de travail, ajoutez la variable `ANTHROPIC_WORKSPACE_ID` (identifiant `wrkspc_…`) comme à l'étape 4.
 3. Dans GitHub : **Settings** → **Secrets and variables** → **Actions** → onglet **Secrets** → **New repository secret**. Nom : `ANTHROPIC_API_KEY`, valeur : la clé.
 
 Coût estimé avec les sources fournies : **environ 2 à 5 $ par mois**. Le modèle utilisé est Claude Haiku 5.5, le moins cher ; le calcul est une estimation, pas un devis. Pour réduire le coût, utilisez `jours_semaine` dans `collecteur/sources.yaml` : la source n'est relue que ces jours-là.

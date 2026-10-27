@@ -51,11 +51,14 @@ def disponible() -> bool:
 
 
 def _appel(prompt: str, max_tokens: int = 16000) -> str:
-    r = requests.post(API, timeout=180, headers={
+    entetes = {
         "x-api-key": os.environ["ANTHROPIC_API_KEY"],
         "anthropic-version": "2023-06-01",
         "content-type": "application/json",
-    }, json={
+    }
+    if os.environ.get("ANTHROPIC_WORKSPACE_ID"):  # seulement pour une clé non liée à un espace de travail
+        entetes["anthropic-workspace-id"] = os.environ["ANTHROPIC_WORKSPACE_ID"]
+    r = requests.post(API, timeout=180, headers=entetes, json={
         "model": MODELE,
         "max_tokens": max_tokens,
         "output_config": {"effort": "low"},

@@ -46,6 +46,7 @@ jobs:
       - name: Collecter
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           PROPOSITIONS_CSV_URL: ${{ vars.PROPOSITIONS_CSV_URL }}
           CALENDRIERS_CSV_URL: ${{ vars.CALENDRIERS_CSV_URL }}
