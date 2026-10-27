@@ -7,6 +7,15 @@
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
  },
+ "Atrium des Grands Ballets (Édifice Wilder)": {
+  "alias": [
+   "Atrium des Grands Ballets",
+   "Édifice Wilder"
+  ],
+  "lat": 45.5086,
+  "lon": -73.5687,
+  "quartier": "Quartier des spectacles"
+ },
  "Ausgang Plaza": {
   "lat": 45.537,
   "lon": -73.607,
@@ -25,6 +34,11 @@
   "lat": 45.5329,
   "lon": -73.6187,
   "quartier": "Mile-Ex"
+ },
+ "Batiment 7": {
+  "lat": 45.48092,
+  "lon": -73.55223,
+  "quartier": "Le Sud-Ouest"
  },
  "Bibliothèque Benny": {
   "lat": 45.472,
@@ -91,10 +105,24 @@
   "lon": -73.677,
   "quartier": "Saint-Laurent"
  },
+ "Blouin Division": {
+  "adresse": "2020, rue William, Montréal",
+  "alias": [],
+  "lat": 45.4889,
+  "lon": -73.5658,
+  "quartier": "Griffintown"
+ },
  "Boisé Steinberg": {
   "lat": 45.58,
   "lon": -73.538,
   "quartier": "Mercier"
+ },
+ "Bradley Ertaskiran": {
+  "adresse": "3550, rue Saint-Antoine Ouest, Montréal",
+  "alias": [],
+  "lat": 45.4812,
+  "lon": -73.5823,
+  "quartier": "Saint-Henri"
  },
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
@@ -151,6 +179,11 @@
   "lon": -73.565,
   "quartier": "Anjou"
  },
+ "Centre culturel de Pierrefonds": {
+  "lat": 45.49661,
+  "lon": -73.84928,
+  "quartier": "Pierrefonds-Roxboro"
+ },
  "Centre culturel et communautaire Henri-Lemieux": {
   "lat": 45.437,
   "lon": -73.615,
@@ -161,12 +194,67 @@
   "lon": -73.713,
   "quartier": "Saint-Laurent"
  },
+ "Centre des femmes de Rivière-des-Prairies": {
+  "lat": 45.63911,
+  "lon": -73.58014,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
  "Centre des loisirs de Saint-Laurent": {
   "lat": 45.513,
   "lon": -73.68,
   "quartier": "Saint-Laurent"
  },
+ "Chapelle Notre-Dame-de-Bon-Secours": {
+  "lat": 45.5093,
+  "lon": -73.5507,
+  "quartier": "Vieux-Montréal"
+ },
  "Chez Bozo": null,
+ "Chiguer Art Contemporain": {
+  "adresse": "372, rue Sainte-Catherine Ouest, espace 416 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
+ "Cineplex Quartier Latin": {
+  "lat": 45.5146,
+  "lon": -73.5625,
+  "quartier": "Quartier latin"
+ },
+ "Cinquième Salle": {
+  "alias": [
+   "Cinquième Salle de la Place des Arts"
+  ],
+  "lat": 45.5083,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles"
+ },
+ "Cinéma Beaubien": {
+  "lat": 45.5408,
+  "lon": -73.6031,
+  "quartier": "Rosemont"
+ },
+ "Cinéma Moderne": {
+  "lat": 45.5228,
+  "lon": -73.5946,
+  "quartier": "Mile End"
+ },
+ "Cinéma du Musée": {
+  "lat": 45.4985,
+  "lon": -73.5795,
+  "quartier": "Centre-ville"
+ },
+ "Cinéma du Parc": {
+  "lat": 45.5104,
+  "lon": -73.5765,
+  "quartier": "Milton-Parc"
+ },
+ "Cinémathèque québécoise": {
+  "lat": 45.5154,
+  "lon": -73.5596,
+  "quartier": "Quartier latin"
+ },
  "Club Soda": {
   "lat": 45.51,
   "lon": -73.563,
@@ -177,15 +265,34 @@
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
+ "Duran Contemporain": {
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 527 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
  "Dépanneur Café": {
   "lat": 45.523,
   "lon": -73.604,
   "quartier": "Mile End"
  },
+ "ELLEPHANT": {
+  "adresse": "1201, rue Saint-Dominique, Montréal",
+  "alias": [],
+  "lat": 45.5097,
+  "lon": -73.5638,
+  "quartier": "Quartier des spectacles"
+ },
  "Eastern Bloc": {
   "lat": 45.533,
   "lon": -73.618,
   "quartier": "Mile-Ex"
+ },
+ "Eglise de la visitation": {
+  "lat": 45.57051,
+  "lon": -73.66147,
+  "quartier": "Ahuntsic-Cartierville"
  },
  "Espace GO": {
   "lat": 45.5215,
@@ -196,6 +303,11 @@
   "lat": 45.528,
   "lon": -73.556,
   "quartier": "Centre-Sud"
+ },
+ "Espace Off-Bach (3487, boul. Saint-Laurent)": {
+  "lat": 45.5129,
+  "lon": -73.5735,
+  "quartier": "Plateau"
  },
  "Espace Tapage": {
   "lat": 45.483,
@@ -219,15 +331,103 @@
   "lon": -73.563,
   "quartier": "Quartier latin"
  },
+ "Galerie C.O.A": {
+  "adresse": "6405, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "C.O.A"
+  ],
+  "lat": 45.5328,
+  "lon": -73.6083,
+  "quartier": "Petite-Italie"
+ },
+ "Galerie Eli Kerr": {
+  "adresse": "4647, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Eli Kerr"
+  ],
+  "lat": 45.5207,
+  "lon": -73.5875,
+  "quartier": "Plateau"
+ },
+ "Galerie Hugues Charbonneau": {
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 508 (édifice Belgo), Montréal",
+  "alias": [
+   "Hugues Charbonneau"
+  ],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
+ "Galerie Lacerte art contemporain": {
+  "adresse": "6355, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Lacerte art contemporain"
+  ],
+  "lat": 45.5322,
+  "lon": -73.6075,
+  "quartier": "Petite-Italie"
+ },
+ "Galerie Nicolas Robert": {
+  "adresse": "4653, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Nicolas Robert"
+  ],
+  "lat": 45.5208,
+  "lon": -73.5876,
+  "quartier": "Plateau"
+ },
+ "Galerie Patrick Mikhail": {
+  "adresse": "4815, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Patrick Mikhail"
+  ],
+  "lat": 45.5214,
+  "lon": -73.5892,
+  "quartier": "Plateau"
+ },
  "Galerie Port-Maurice": {
   "lat": 45.585,
   "lon": -73.59,
   "quartier": "Saint-Léonard"
  },
+ "Galerie Robert Poulin": {
+  "adresse": "6341, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Robert Poulin"
+  ],
+  "lat": 45.532,
+  "lon": -73.6073,
+  "quartier": "Petite-Italie"
+ },
+ "Galerie Robertson Arès": {
+  "adresse": "2454, rue Notre-Dame Ouest, Montréal",
+  "alias": [
+   "Robertson Arès"
+  ],
+  "lat": 45.4823,
+  "lon": -73.5778,
+  "quartier": "Petite-Bourgogne"
+ },
+ "Galerie Simon Blais": {
+  "adresse": "5420, boul. Saint-Laurent, suite 100, Montréal",
+  "alias": [
+   "Simon Blais"
+  ],
+  "lat": 45.5246,
+  "lon": -73.5946,
+  "quartier": "Mile End"
+ },
  "Galerie d'Outremont": {
   "lat": 45.516,
   "lon": -73.606,
   "quartier": "Outremont"
+ },
+ "Galeries Bellemare Lambert": {
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 502 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
  },
  "Gesù": {
   "lat": 45.505,
@@ -253,6 +453,11 @@
   "lat": 45.5238,
   "lon": -73.5822,
   "quartier": "Plateau"
+ },
+ "L'Illusion, Théâtre de marionnettes": {
+  "lat": 45.53372,
+  "lon": -73.60501,
+  "quartier": "Rosemont–La Petite-Patrie"
  },
  "L'Olympia": {
   "lat": 45.518,
@@ -285,6 +490,11 @@
   "quartier": "Mile End"
  },
  "La Toscadura": null,
+ "Le 9e": {
+  "lat": 45.5035,
+  "lon": -73.571,
+  "quartier": "Centre-ville"
+ },
  "Le Balcon": {
   "lat": 45.506,
   "lon": -73.569,
@@ -294,6 +504,11 @@
   "lat": 45.519,
   "lon": -73.588,
   "quartier": "Plateau"
+ },
+ "Le Cheval Blanc": {
+  "lat": 45.51821,
+  "lon": -73.56428,
+  "quartier": "Ville-Marie"
  },
  "Le Ministère": {
   "lat": 45.5195,
@@ -319,6 +534,16 @@
   "lat": 45.537,
   "lon": -73.573,
   "quartier": "Plateau"
+ },
+ "Lopez": {
+  "lat": 45.53799,
+  "lon": -73.60692,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "MEM - Centre des mémoires montréalaises": {
+  "lat": 45.50941,
+  "lon": -73.56317,
+  "quartier": "Ville-Marie"
  },
  "MTELUS": {
   "lat": 45.5107,
@@ -418,6 +643,18 @@
   "lon": -73.567,
   "quartier": "Quartier des spectacles"
  },
+ "Marché Bonsecours": {
+  "lat": 45.50958,
+  "lon": -73.55134,
+  "quartier": "Ville-Marie"
+ },
+ "McBride Contemporain": {
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 414 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
   "lon": -73.577,
@@ -435,10 +672,32 @@
   "lon": -73.583,
   "quartier": "Plateau"
  },
+ "Office national du film (ONF)": {
+  "lat": 45.5087,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
+ "Oratoire Saint-Joseph": {
+  "lat": 45.4925,
+  "lon": -73.6178,
+  "quartier": "Côte-des-Neiges"
+ },
  "P'tit Ours": {
   "lat": 45.5195,
   "lon": -73.5975,
   "quartier": "Mile End"
+ },
+ "Palais des congrès de Montréal": {
+  "lat": 45.504,
+  "lon": -73.561,
+  "quartier": "Centre-ville"
+ },
+ "Pangée": {
+  "adresse": "1305, avenue des Pins Ouest, Montréal",
+  "alias": [],
+  "lat": 45.4998,
+  "lon": -73.585,
+  "quartier": "Golden Square Mile"
  },
  "Parc Champdoré": {
   "lat": 45.569,
@@ -451,9 +710,23 @@
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
+ "Patel Brown": {
+  "adresse": "372, rue Sainte-Catherine Ouest, #412 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
  "Petit Campus": {
   "lat": 45.5146,
   "lon": -73.571,
+  "quartier": "Plateau"
+ },
+ "Pierre-François Ouellette art contemporain": {
+  "adresse": "963, rue Rachel Est, Montréal",
+  "alias": [],
+  "lat": 45.5254,
+  "lon": -73.5774,
   "quartier": "Plateau"
  },
  "Piranha Bar": {
@@ -461,6 +734,7 @@
   "lon": -73.571,
   "quartier": "Centre-ville"
  },
+ "Place Chaumont": null,
  "Place Gennevilliers-Laliberté": null,
  "Place Rodolphe-Rousseau": {
   "lat": 45.514,
@@ -513,6 +787,16 @@
   "quartier": "Quartier des spectacles"
  },
  "Sainte-Catherine Hall": null,
+ "Salle Bourgie": {
+  "lat": 45.4986,
+  "lon": -73.5797,
+  "quartier": "Centre-ville"
+ },
+ "Salle Jean-Eudes": {
+  "lat": 45.53858,
+  "lon": -73.59238,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Salle Paul-Desmarais": null,
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
@@ -533,6 +817,13 @@
   "lat": 45.517,
   "lon": -73.558,
   "quartier": "Village"
+ },
+ "TIAN Contemporain": {
+  "adresse": "819, avenue Atwater, Montréal",
+  "alias": [],
+  "lat": 45.4839,
+  "lon": -73.5781,
+  "quartier": "Saint-Henri"
  },
  "TOHU": {
   "alias": [
@@ -610,6 +901,11 @@
   "lon": -73.611,
   "quartier": "Outremont"
  },
+ "Théâtre Paradoxe": {
+  "lat": 45.4528,
+  "lon": -73.59,
+  "quartier": "Sud-Ouest"
+ },
  "Théâtre Prospero": {
   "lat": 45.522,
   "lon": -73.558,
@@ -664,6 +960,11 @@
   "lon": -73.565,
   "quartier": "Quartier latin"
  },
+ "Union des familles d'Ahuntsic": {
+  "lat": 45.54809,
+  "lon": -73.67267,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Ursa": {
   "lat": 45.523,
   "lon": -73.602,
@@ -674,283 +975,76 @@
   "lon": -73.556,
   "quartier": "Centre-Sud"
  },
+ "Wishbone Galerie d'art": {
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
+  "alias": [],
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
+ "Yves Laroche Galerie d'art": {
+  "adresse": "99, rue Chabanel Ouest, suite 224, Montréal",
+  "alias": [],
+  "lat": 45.5373,
+  "lon": -73.6475,
+  "quartier": "Chabanel"
+ },
+ "café de la ligne verte": null,
+ "carrefour angrignon": {
+  "lat": 45.44722,
+  "lon": -73.61848,
+  "quartier": "LaSalle"
+ },
+ "le dragon": {
+  "lat": 45.5078,
+  "lon": -73.56089,
+  "quartier": "Ville-Marie"
+ },
+ "nan": null,
+ "neverclub": null,
+ "École Saint-Simon-Apôtre": {
+  "lat": 45.53961,
+  "lon": -73.64716,
+  "quartier": "Ahuntsic-Cartierville"
+ },
+ "Église Notre-Dame-des-Sept-Douleurs": {
+  "lat": 45.46254,
+  "lon": -73.56755,
+  "quartier": "Verdun"
+ },
  "Église Saint-Enfant-Jésus-du-Mile-End": {
   "lat": 45.524,
   "lon": -73.596,
   "quartier": "Mile End"
  },
- "Cinquième Salle": {
-  "lat": 45.5083,
-  "lon": -73.5665,
-  "quartier": "Quartier des spectacles",
-  "alias": [
-   "Cinquième Salle de la Place des Arts"
-  ]
- },
- "Atrium des Grands Ballets (Édifice Wilder)": {
-  "lat": 45.5086,
-  "lon": -73.5687,
-  "quartier": "Quartier des spectacles",
-  "alias": [
-   "Atrium des Grands Ballets",
-   "Édifice Wilder"
-  ]
- },
- "Cinémathèque québécoise": {
-  "lat": 45.5154,
-  "lon": -73.5596,
-  "quartier": "Quartier latin"
- },
- "Cineplex Quartier Latin": {
-  "lat": 45.5146,
-  "lon": -73.5625,
-  "quartier": "Quartier latin"
- },
- "Cinéma du Musée": {
-  "lat": 45.4985,
-  "lon": -73.5795,
-  "quartier": "Centre-ville"
- },
- "Cinéma du Parc": {
-  "lat": 45.5104,
-  "lon": -73.5765,
-  "quartier": "Milton-Parc"
- },
- "Cinéma Beaubien": {
-  "lat": 45.5408,
-  "lon": -73.6031,
-  "quartier": "Rosemont"
- },
- "Cinéma Moderne": {
-  "lat": 45.5228,
-  "lon": -73.5946,
-  "quartier": "Mile End"
- },
- "Office national du film (ONF)": {
-  "lat": 45.5087,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles"
- },
- "Salle Bourgie": {
-  "lat": 45.4986,
-  "lon": -73.5797,
-  "quartier": "Centre-ville"
- },
- "Oratoire Saint-Joseph": {
-  "lat": 45.4925,
-  "lon": -73.6178,
-  "quartier": "Côte-des-Neiges"
- },
- "Chapelle Notre-Dame-de-Bon-Secours": {
-  "lat": 45.5093,
-  "lon": -73.5507,
-  "quartier": "Vieux-Montréal"
+ "Église Saint-Isaac-Jogues": {
+  "lat": 45.55973,
+  "lon": -73.64083,
+  "quartier": "Ahuntsic-Cartierville"
  },
  "Église Saint-Léon de Westmount": {
   "lat": 45.4855,
   "lon": -73.5925,
   "quartier": "Westmount"
  },
- "Église St. John the Evangelist": {
-  "lat": 45.5072,
-  "lon": -73.5683,
-  "quartier": "Centre-ville"
+ "Église Saint-Viateur": {
+  "lat": 45.51662,
+  "lon": -73.59843,
+  "quartier": "Outremont"
+ },
+ "Église Saint-Édouard": {
+  "lat": 45.53449,
+  "lon": -73.60502,
+  "quartier": "Rosemont–La Petite-Patrie"
  },
  "Église St. George": {
   "lat": 45.4985,
   "lon": -73.5714,
   "quartier": "Centre-ville"
  },
- "Le 9e": {
-  "lat": 45.5035,
-  "lon": -73.571,
+ "Église St. John the Evangelist": {
+  "lat": 45.5072,
+  "lon": -73.5683,
   "quartier": "Centre-ville"
- },
- "Théâtre Paradoxe": {
-  "lat": 45.4528,
-  "lon": -73.59,
-  "quartier": "Sud-Ouest"
- },
- "Espace Off-Bach (3487, boul. Saint-Laurent)": {
-  "lat": 45.5129,
-  "lon": -73.5735,
-  "quartier": "Plateau"
- },
- "Palais des congrès de Montréal": {
-  "lat": 45.504,
-  "lon": -73.561,
-  "quartier": "Centre-ville"
- },
- "Blouin Division": {
-  "lat": 45.4889,
-  "lon": -73.5658,
-  "quartier": "Griffintown",
-  "adresse": "2020, rue William, Montréal",
-  "alias": []
- },
- "Bradley Ertaskiran": {
-  "lat": 45.4812,
-  "lon": -73.5823,
-  "quartier": "Saint-Henri",
-  "adresse": "3550, rue Saint-Antoine Ouest, Montréal",
-  "alias": []
- },
- "Chiguer Art Contemporain": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, espace 416 (édifice Belgo), Montréal",
-  "alias": []
- },
- "Duran Contemporain": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, suite 527 (édifice Belgo), Montréal",
-  "alias": []
- },
- "Galerie Eli Kerr": {
-  "lat": 45.5207,
-  "lon": -73.5875,
-  "quartier": "Plateau",
-  "adresse": "4647, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "Eli Kerr"
-  ]
- },
- "ELLEPHANT": {
-  "lat": 45.5097,
-  "lon": -73.5638,
-  "quartier": "Quartier des spectacles",
-  "adresse": "1201, rue Saint-Dominique, Montréal",
-  "alias": []
- },
- "Galerie C.O.A": {
-  "lat": 45.5328,
-  "lon": -73.6083,
-  "quartier": "Petite-Italie",
-  "adresse": "6405, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "C.O.A"
-  ]
- },
- "Galerie Hugues Charbonneau": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, suite 508 (édifice Belgo), Montréal",
-  "alias": [
-   "Hugues Charbonneau"
-  ]
- },
- "Galerie Lacerte art contemporain": {
-  "lat": 45.5322,
-  "lon": -73.6075,
-  "quartier": "Petite-Italie",
-  "adresse": "6355, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "Lacerte art contemporain"
-  ]
- },
- "Galerie Nicolas Robert": {
-  "lat": 45.5208,
-  "lon": -73.5876,
-  "quartier": "Plateau",
-  "adresse": "4653, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "Nicolas Robert"
-  ]
- },
- "Galerie Robert Poulin": {
-  "lat": 45.532,
-  "lon": -73.6073,
-  "quartier": "Petite-Italie",
-  "adresse": "6341, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "Robert Poulin"
-  ]
- },
- "Galerie Robertson Arès": {
-  "lat": 45.4823,
-  "lon": -73.5778,
-  "quartier": "Petite-Bourgogne",
-  "adresse": "2454, rue Notre-Dame Ouest, Montréal",
-  "alias": [
-   "Robertson Arès"
-  ]
- },
- "Galerie Simon Blais": {
-  "lat": 45.5246,
-  "lon": -73.5946,
-  "quartier": "Mile End",
-  "adresse": "5420, boul. Saint-Laurent, suite 100, Montréal",
-  "alias": [
-   "Simon Blais"
-  ]
- },
- "Galeries Bellemare Lambert": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, suite 502 (édifice Belgo), Montréal",
-  "alias": []
- },
- "McBride Contemporain": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, suite 414 (édifice Belgo), Montréal",
-  "alias": []
- },
- "Pangée": {
-  "lat": 45.4998,
-  "lon": -73.585,
-  "quartier": "Golden Square Mile",
-  "adresse": "1305, avenue des Pins Ouest, Montréal",
-  "alias": []
- },
- "Patel Brown": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, #412 (édifice Belgo), Montréal",
-  "alias": []
- },
- "Galerie Patrick Mikhail": {
-  "lat": 45.5214,
-  "lon": -73.5892,
-  "quartier": "Plateau",
-  "adresse": "4815, boul. Saint-Laurent, Montréal",
-  "alias": [
-   "Patrick Mikhail"
-  ]
- },
- "Pierre-François Ouellette art contemporain": {
-  "lat": 45.5254,
-  "lon": -73.5774,
-  "quartier": "Plateau",
-  "adresse": "963, rue Rachel Est, Montréal",
-  "alias": []
- },
- "TIAN Contemporain": {
-  "lat": 45.4839,
-  "lon": -73.5781,
-  "quartier": "Saint-Henri",
-  "adresse": "819, avenue Atwater, Montréal",
-  "alias": []
- },
- "Wishbone Galerie d'art": {
-  "lat": 45.5068,
-  "lon": -73.5672,
-  "quartier": "Quartier des spectacles",
-  "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
-  "alias": []
- },
- "Yves Laroche Galerie d'art": {
-  "lat": 45.5373,
-  "lon": -73.6475,
-  "quartier": "Chabanel",
-  "adresse": "99, rue Chabanel Ouest, suite 224, Montréal",
-  "alias": []
  }
 }

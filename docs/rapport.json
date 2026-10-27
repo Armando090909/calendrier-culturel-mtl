@@ -1,1 +1,1202 @@
-{"statut":"données de départ (avant la première collecte)","sources":[]}
+{
+ "date": "2026-10-27",
+ "statut": "publié",
+ "evenements": 1410,
+ "expositions": 85,
+ "nouvelles_salles": [
+  "Batiment 7",
+  "Centre culturel de Pierrefonds",
+  "Centre des femmes de Rivière-des-Prairies",
+  "Eglise de la visitation",
+  "L'Illusion, Théâtre de marionnettes",
+  "Le Cheval Blanc",
+  "Lopez",
+  "MEM - Centre des mémoires montréalaises",
+  "Marché Bonsecours",
+  "Place Chaumont",
+  "Salle Jean-Eudes",
+  "Union des familles d'Ahuntsic",
+  "café de la ligne verte",
+  "carrefour angrignon",
+  "le dragon",
+  "nan",
+  "neverclub",
+  "École Saint-Simon-Apôtre",
+  "Église Notre-Dame-des-Sept-Douleurs",
+  "Église Saint-Isaac-Jogues",
+  "Église Saint-Viateur",
+  "Église Saint-Édouard"
+ ],
+ "sources": [
+  {
+   "source": "Ville de Montréal – événements publics",
+   "evenements": 2410,
+   "series": 87,
+   "erreur": null
+  },
+  {
+   "source": "Ask A Punk (DIY, punk, hardcore)",
+   "evenements": 28,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Sors-tu? (14 prochains jours)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Songkick (concerts, 2 mois)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Espace GO",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "TNM",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Duceppe",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre du Rideau Vert",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre de Quat'Sous",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Prospero",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Licorne",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre d'Aujourd'hui",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Denise-Pelletier",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Usine C",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Centaur",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Centre Segal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Espace Libre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "MAI",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Maison Théâtre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Outremont",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Gesù",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Espace St-Denis",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Sainte-Catherine",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "TOHU",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Place des Arts",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Danse Danse",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Agora de la danse",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Tangente",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Chapelle",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Usine C (saison)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "École nationale de cirque",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Fun Nation (humour)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Spectaculos (humour",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "evenko (humour)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Place des Arts (humour)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Sainte-Catherine (impro",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Mèche courte (festival jeune public)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Tourisme Montréal – sorties en famille",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Place des Arts junior",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Tourisme Montréal – expositions des musées",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Tourisme Montréal – expositions automne-hiver",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Réseau art actuel (centres d'artistes",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Art Mûr (expositions à venir)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "ma.to (musique live)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "evenko (concerts)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Fairmount",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Club Soda",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Bar Le Ritz PDB",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Foufounes Électriques",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Newspeak",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Piranha Bar",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Café Campus / Petit Campus",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre St-Denis",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Blouin Division",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Bradley Ertaskiran",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Chiguer Art Contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Duran Contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Eli Kerr",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "ELLEPHANT",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie C.O.A",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Hugues Charbonneau",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Lacerte art contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Nicolas Robert",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Robert Poulin",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Robertson Arès",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Simon Blais",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galeries Bellemare Lambert",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "McBride Contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Pangée",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Patel Brown",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Galerie Patrick Mikhail",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Pierre-François Ouellette art contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "TIAN Contemporain",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Wishbone Galerie d'art",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Yves Laroche Galerie d'art",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Upstairs Jazz Bar & Grill",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Dièse Onze",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Club Balattou (musiques du monde)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Cabaret Jazz L'Entracte",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Bistro à Jojo (blues)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Hurley's Irish Pub (trad, folk)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Balcon",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Turbo Haüs",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Quai des Brumes",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Ministère",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Belmont",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Ausgang Plaza",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Système MTL",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Rialto",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le National (La Tulipe)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Studio TD",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Casa del Popolo – La Toscadura",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Casa del Popolo – P'tit Ours",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Casa del Popolo – La Sotterenea",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Resident Advisor – Montréal (électro, raves)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Bar Datcha",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "SAT – Société des arts technologiques",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Laugh It Off MTL (humour, scènes ouvertes)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Cabaret Mado (drag)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Wiggle Room (burlesque, cabaret)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Caf' Conc' (cabaret)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Espace La Risée",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "InfiniTheatre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre MainLine",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Repercussion Theatre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre de l'Esquisse",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Comédie de Montréal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Circuit-Est centre chorégraphique",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Studio 303",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Serre – arts vivants",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "DARE-DARE (art public)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Monument-National",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Le Livart (centre d'art multidisciplinaire)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Librairie Drawn & Quarterly (lancements, lectures)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La poésie partout (calendrier)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Slamontréal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "GSIMtl (slam de poésie)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Livrerie",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Salle Pauline-Julien (ouest de l'île)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Pointe-Claire – Stewart Hall et activités",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Pierrefonds-Roxboro – spectacles",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "LaSalle – programmation culturelle",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "150 ans du parc du Mont-Royal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Casa del Popolo / Sala Rossa",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Ursa",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Lumière Collective",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Eastern Bloc",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · ELEKTRA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festithéâtrecréole",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Monde Arabe (1)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Monde Arabe (2)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · CINEMANIA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · La Mèche courte",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival Bach",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Coup de cœur",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Mundial",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · M pour Montréal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · RIDM",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · image+nation",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Salon du livre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Igloofest",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival Lumino",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Montréal en lumière",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Casteliers",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · FIFA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Vues d'Afrique",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival des clowns",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · RVQC",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Metropolis bleu",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Jamais Lu",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Petits bonheurs",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Accès Asie",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Film sud-asiatique",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Sommets de l'animation",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival BD",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Piknic Électronik",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival de la poésie",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · FTA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · OFFTA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · MURAL",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Musique de chambre",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Fringe",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Francos",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival de Jazz",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Complètement Cirque",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Nuits d'Afrique",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Juste pour rire",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Zoofest",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Fantasia",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Fierté Montréal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Osheaga",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Présence autochtone",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · ÎleSoniq",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · LASSO",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · MUTEK",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Festival TRAD",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Quartiers Danses",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · FIL",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · POP Montréal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Film Black",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Phénomena",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · FNC",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Akousma",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Comiccon",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Comiccon des Fêtes",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Under Pressure",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Suoni Per Il Popolo",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Escales Improbables",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Réappropriation urbaine",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Concerts Campbell",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Shows de ruelle",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · WI Blues",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · Cinéma sous les étoiles",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival · OM au Mont-Royal",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null
+  }
+ ]
+}
