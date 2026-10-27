@@ -1,4 +1,6 @@
 {
+ "Abbotsford Centre": null,
+ "Adélard": null,
  "Agora de la danse": {
   "alias": [
    "Agora de la danse – Édifice Wilder"
@@ -7,6 +9,20 @@
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
  },
+ "Ahkwayaonhkeh": null,
+ "Alūr Restaurant & Lounge": null,
+ "Amphithéâtre du Gesù": null,
+ "Arsenal art contemporain": {
+  "lat": 45.4918,
+  "lon": -73.5628,
+  "quartier": "Griffintown"
+ },
+ "Art Mûr": {
+  "lat": 45.534,
+  "lon": -73.6,
+  "quartier": "Petite-Patrie"
+ },
+ "Atelier de l'Île": null,
  "Atrium des Grands Ballets (Édifice Wilder)": {
   "alias": [
    "Atrium des Grands Ballets",
@@ -16,6 +32,7 @@
   "lon": -73.5687,
   "quartier": "Quartier des spectacles"
  },
+ "Auberge St Gabriel - Montreal": null,
  "Ausgang Plaza": {
   "lat": 45.537,
   "lon": -73.607,
@@ -35,6 +52,7 @@
   "lon": -73.6187,
   "quartier": "Mile-Ex"
  },
+ "Basilique Notre-Dame": null,
  "Batiment 7": {
   "lat": 45.48092,
   "lon": -73.55223,
@@ -45,6 +63,7 @@
   "lon": -73.628,
   "quartier": "NDG"
  },
+ "Bibliothèque Hélène-Pedneault": null,
  "Bibliothèque L'Octogone": {
   "lat": 45.431,
   "lon": -73.629,
@@ -95,6 +114,7 @@
   "lon": -73.655,
   "quartier": "Lachine"
  },
+ "Bibliothèque du Cégep de Granby": null,
  "Bibliothèque du Plateau-Mont-Royal": {
   "lat": 45.5235,
   "lon": -73.581,
@@ -105,6 +125,7 @@
   "lon": -73.677,
   "quartier": "Saint-Laurent"
  },
+ "Biosphère": null,
  "Blouin Division": {
   "adresse": "2020, rue William, Montréal",
   "alias": [],
@@ -124,11 +145,13 @@
   "lon": -73.5823,
   "quartier": "Saint-Henri"
  },
+ "Brasserie Beaubien": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
   "lon": -73.5545,
   "quartier": "Centre-Sud"
  },
+ "Cabaret Mado": null,
  "Cabaret du Casino de Montréal": {
   "alias": [
    "Cabaret du Casino de Montreal"
@@ -137,6 +160,7 @@
   "lon": -73.526,
   "quartier": "Parc Jean-Drapeau"
  },
+ "Cabaret-Théâtre du Vieux Saint-Jean": null,
  "Café Campus": {
   "lat": 45.5146,
   "lon": -73.571,
@@ -147,6 +171,7 @@
   "lon": -73.5605,
   "quartier": "Quartier chinois"
  },
+ "Caravansérail": null,
  "Casa del Popolo": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -160,6 +185,8 @@
   "lon": -73.5693,
   "quartier": "Centre-ville"
  },
+ "Centre Pierre-Peladeau": null,
+ "Centre SAGAMIE": null,
  "Centre Sanaaq": {
   "lat": 45.4925,
   "lon": -73.5795,
@@ -173,6 +200,11 @@
   "lat": 45.493,
   "lon": -73.633,
   "quartier": "Côte-des-Neiges"
+ },
+ "Centre canadien d'architecture": {
+  "lat": 45.4924,
+  "lon": -73.5799,
+  "quartier": "Shaughnessy"
  },
  "Centre communautaire d'Anjou": {
   "lat": 45.605,
@@ -194,6 +226,8 @@
   "lon": -73.713,
   "quartier": "Saint-Laurent"
  },
+ "Centre des arts actuels SKOL": null,
+ "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
   "lat": 45.63911,
   "lon": -73.58014,
@@ -216,6 +250,11 @@
   "lat": 45.5068,
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
+ },
+ "Château Ramezay": {
+  "lat": 45.5084,
+  "lon": -73.5521,
+  "quartier": "Vieux-Montréal"
  },
  "Cineplex Quartier Latin": {
   "lat": 45.5146,
@@ -255,11 +294,23 @@
   "lon": -73.5596,
   "quartier": "Quartier latin"
  },
+ "Clavier": null,
+ "Club Balattou": null,
  "Club Soda": {
   "lat": 45.51,
   "lon": -73.563,
   "quartier": "Quartier des spectacles"
  },
+ "Commodore Ballroom": null,
+ "Conservatoire de Musique De Montreal": null,
+ "DARE-DARE": null,
+ "DATCHA": null,
+ "Dazibao": {
+  "lat": 45.5257,
+  "lon": -73.5975,
+  "quartier": "Mile End"
+ },
+ "Deli Planet": null,
  "Duceppe": {
   "lat": 45.508,
   "lon": -73.5665,
@@ -277,6 +328,7 @@
   "lon": -73.604,
   "quartier": "Mile End"
  },
+ "ELEKTRA": null,
  "ELLEPHANT": {
   "adresse": "1201, rue Saint-Dominique, Montréal",
   "alias": [],
@@ -309,18 +361,27 @@
   "lon": -73.5735,
   "quartier": "Plateau"
  },
+ "Espace Panache": null,
+ "Espace Séquence": null,
  "Espace Tapage": {
   "lat": 45.483,
   "lon": -73.56,
   "quartier": "Pointe-Saint-Charles"
  },
  "Espace transmission": null,
+ "Esplanade Tranquille": null,
  "Exhibit A": {
   "lat": 45.472,
   "lon": -73.588,
   "quartier": "Saint-Henri"
  },
  "Fais-moi l'art": null,
+ "Fondation Grantham pour l'art et l'environnement": null,
+ "Fondation Guido Molinari": {
+  "lat": 45.5389,
+  "lon": -73.544,
+  "quartier": "Hochelaga"
+ },
  "Foufounes Électriques": {
   "alias": [
    "Les Foufounes Electriques",
@@ -358,6 +419,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Galerie L'Onyx": null,
  "Galerie Lacerte art contemporain": {
   "adresse": "6355, boul. Saint-Laurent, Montréal",
   "alias": [
@@ -366,6 +428,16 @@
   "lat": 45.5322,
   "lon": -73.6075,
   "quartier": "Petite-Italie"
+ },
+ "Galerie Leonard & Bina Ellen": {
+  "lat": 45.497,
+  "lon": -73.579,
+  "quartier": "Centre-ville"
+ },
+ "Galerie McClure – Centre des arts visuels": {
+  "lat": 45.4871,
+  "lon": -73.6013,
+  "quartier": "Westmount"
  },
  "Galerie Nicolas Robert": {
   "adresse": "4653, boul. Saint-Laurent, Montréal",
@@ -422,6 +494,13 @@
   "lon": -73.606,
   "quartier": "Outremont"
  },
+ "Galerie d'art Stewart Hall": null,
+ "Galerie de l'UQAM": {
+  "lat": 45.5146,
+  "lon": -73.5609,
+  "quartier": "Quartier latin"
+ },
+ "Galerie de l'Université de Montréal": null,
  "Galeries Bellemare Lambert": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 502 (édifice Belgo), Montréal",
   "alias": [],
@@ -434,11 +513,17 @@
   "lon": -73.568,
   "quartier": "Centre-ville"
  },
+ "Grand Chapiteau Vancouver": null,
+ "Grizzly Fuzz": null,
+ "Groupe Intervention Vidéo": null,
  "Hall Est du Stade olympique": {
   "lat": 45.558,
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
+ "History": null,
+ "Igloofest": null,
+ "Impérial Bell": null,
  "L'Entrepôt – maison de la culture de Lachine": {
   "lat": 45.433,
   "lon": -73.686,
@@ -464,21 +549,28 @@
   "lon": -73.556,
   "quartier": "Village"
  },
+ "La Boîte à Bleuets": null,
+ "La Cale - Pub Zéro Déchets": null,
  "La Chapelle Scènes contemporaines": {
   "lat": 45.515,
   "lon": -73.577,
   "quartier": "Plateau"
  },
+ "La Chapelle spectacles": null,
+ "La Librairie": null,
  "La Licorne": {
   "lat": 45.533,
   "lon": -73.577,
   "quartier": "Plateau"
  },
+ "La Livrerie": null,
  "La Lumière Collective": {
   "lat": 45.532,
   "lon": -73.6215,
   "quartier": "Mile-Ex"
  },
+ "La Petite Boîte Noire": null,
+ "La Pointe Sec": null,
  "La Sala Rossa": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -490,6 +582,7 @@
   "quartier": "Mile End"
  },
  "La Toscadura": null,
+ "La petite Place des Arts": null,
  "Le 9e": {
   "lat": 45.5035,
   "lon": -73.571,
@@ -505,6 +598,8 @@
   "lon": -73.588,
   "quartier": "Plateau"
  },
+ "Le Calypso": null,
+ "Le Carlton Signature": null,
  "Le Cheval Blanc": {
   "lat": 45.51821,
   "lon": -73.56428,
@@ -515,12 +610,14 @@
   "lon": -73.5885,
   "quartier": "Plateau"
  },
+ "Le Minotaure": null,
  "Le Monastère": null,
  "Le National": {
   "lat": 45.519,
   "lon": -73.554,
   "quartier": "Village"
  },
+ "Le Red Room": null,
  "Le Studio TD": {
   "alias": [
    "Studio TD"
@@ -530,9 +627,22 @@
   "quartier": "Quartier des spectacles"
  },
  "Le Studio-Cabaret": null,
+ "Le Terminal": {
+  "lat": 45.53379,
+  "lon": -73.57395,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Le Verre Bouteille": {
   "lat": 45.537,
   "lon": -73.573,
+  "quartier": "Plateau"
+ },
+ "Le Zaricot": null,
+ "Le Zénith Promutuel Assurances": null,
+ "Les Diffusions Pointe-Valaine": null,
+ "Livart": {
+  "lat": 45.521,
+  "lon": -73.5785,
   "quartier": "Plateau"
  },
  "Lopez": {
@@ -540,11 +650,21 @@
   "lon": -73.60692,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Ludger-Duvernay Theatre": null,
+ "L’esco": null,
+ "M For Montreal 2026": null,
+ "MAC Montréal": null,
  "MEM - Centre des mémoires montréalaises": {
   "lat": 45.50941,
   "lon": -73.56317,
   "quartier": "Ville-Marie"
  },
+ "MEM – Centre des mémoires montréalaises": {
+  "lat": 45.5098,
+  "lon": -73.5631,
+  "quartier": "Quartier des spectacles"
+ },
+ "MICA – Institut d'art contemporain": null,
  "MTELUS": {
   "lat": 45.5107,
   "lon": -73.5635,
@@ -648,6 +768,7 @@
   "lon": -73.55134,
   "quartier": "Ville-Marie"
  },
+ "Maurice O'Bready": null,
  "McBride Contemporain": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 414 (édifice Belgo), Montréal",
   "alias": [],
@@ -660,16 +781,42 @@
   "lon": -73.577,
   "quartier": "Plateau"
  },
+ "Monument-National": {
+  "lat": 45.5089,
+  "lon": -73.5626,
+  "quartier": "Quartier des spectacles"
+ },
  "Moonshine": null,
+ "Musée McCord Stewart": {
+  "lat": 45.5045,
+  "lon": -73.5737,
+  "quartier": "Centre-ville"
+ },
+ "Musée des beaux-arts de Montréal": {
+  "lat": 45.4985,
+  "lon": -73.5794,
+  "quartier": "Centre-ville"
+ },
  "New City Gas": {
   "lat": 45.492,
   "lon": -73.559,
   "quartier": "Griffintown"
  },
  "Newspeak": null,
+ "Non précisé": null,
  "O Patro Vys": {
   "lat": 45.5225,
   "lon": -73.583,
+  "quartier": "Plateau"
+ },
+ "OASIS Immersion": {
+  "lat": 45.5045,
+  "lon": -73.5617,
+  "quartier": "Centre-ville"
+ },
+ "OBORO": {
+  "lat": 45.5205,
+  "lon": -73.5745,
   "quartier": "Plateau"
  },
  "Office national du film (ONF)": {
@@ -686,6 +833,11 @@
   "lat": 45.5195,
   "lon": -73.5975,
   "quartier": "Mile End"
+ },
+ "PHI": {
+  "lat": 45.5016,
+  "lon": -73.559,
+  "quartier": "Vieux-Montréal"
  },
  "Palais des congrès de Montréal": {
   "lat": 45.504,
@@ -710,6 +862,7 @@
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
+ "Parc du Mont-Royal": null,
  "Patel Brown": {
   "adresse": "372, rue Sainte-Catherine Ouest, #412 (édifice Belgo), Montréal",
   "alias": [],
@@ -722,6 +875,7 @@
   "lon": -73.571,
   "quartier": "Plateau"
  },
+ "Pictura Triennale de peinture de Montréal": null,
  "Pierre-François Ouellette art contemporain": {
   "adresse": "963, rue Rachel Est, Montréal",
   "alias": [],
@@ -761,6 +915,14 @@
   "lon": -73.625,
   "quartier": "LaSalle"
  },
+ "Plusieurs salles": null,
+ "Pointe-Claire Public Library - Central": null,
+ "Pointe-à-Callière": {
+  "lat": 45.5025,
+  "lon": -73.5543,
+  "quartier": "Vieux-Montréal"
+ },
+ "Premier Acte": null,
  "Quai 5160 – Maison de la culture de Verdun": {
   "lat": 45.448,
   "lon": -73.577,
@@ -771,6 +933,7 @@
   "lon": -73.582,
   "quartier": "Plateau"
  },
+ "Rogers Arena": null,
  "Rue Ontario Est": {
   "lat": 45.525,
   "lon": -73.558,
@@ -786,18 +949,36 @@
   "lon": -73.563,
   "quartier": "Quartier des spectacles"
  },
+ "SKOL": {
+  "lat": 45.507,
+  "lon": -73.568,
+  "quartier": "Quartier des spectacles"
+ },
  "Sainte-Catherine Hall": null,
+ "Salle Albert-Rousseau": null,
+ "Salle André-Mathieu": null,
  "Salle Bourgie": {
   "lat": 45.4986,
   "lon": -73.5797,
   "quartier": "Centre-ville"
  },
+ "Salle Claude-Legault": null,
+ "Salle Claudia-Ebacher": null,
+ "Salle Desjardins-Telus": null,
+ "Salle Edwin-Bélanger": null,
+ "Salle Jean-Claude-Germain": null,
+ "Salle Jean-Cossette": null,
  "Salle Jean-Eudes": {
   "lat": 45.53858,
   "lon": -73.59238,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Salle Michelle-Rossignol": null,
+ "Salle Méchatigan": null,
+ "Salle Octave-Crémazie": null,
+ "Salle Odyssée": null,
  "Salle Paul-Desmarais": null,
+ "Salle Pauline-Julien": null,
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
   "lon": -73.559,
@@ -813,11 +994,22 @@
   "lon": -73.674,
   "quartier": "Saint-Laurent"
  },
+ "Salon urbain": null,
+ "Sample Listening Bar": null,
+ "Scotiabank Arena": null,
+ "Scotiabank Saddledome": null,
+ "Southern Alberta Jubilee Auditorium": null,
  "Stereo": {
   "lat": 45.517,
   "lon": -73.558,
   "quartier": "Village"
  },
+ "Studio St-Denis": {
+  "lat": 45.515,
+  "lon": -73.562,
+  "quartier": "Quartier latin"
+ },
+ "Studio-théâtre des Grands Ballets": null,
  "TIAN Contemporain": {
   "adresse": "819, avenue Atwater, Montréal",
   "alias": [],
@@ -834,6 +1026,7 @@
   "lon": -73.615,
   "quartier": "Saint-Michel"
  },
+ "TOPO": null,
  "Tangente": {
   "alias": [
    "Tangente Danse"
@@ -841,6 +1034,18 @@
   "lat": 45.5075,
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
+ },
+ "The Arena at Pickering Casino Resort": null,
+ "The Axis Club": null,
+ "The Church of St John the Evangelist": null,
+ "The Danforth Music Hall": null,
+ "The Great Hall": null,
+ "The Opera House": null,
+ "Théâtre Alphonse-Desjardins": null,
+ "Théâtre Aux Écuries": {
+  "lat": 45.549,
+  "lon": -73.603,
+  "quartier": "Villeray"
  },
  "Théâtre Beanfield": {
   "alias": [
@@ -850,6 +1055,7 @@
   "lon": -73.58,
   "quartier": "Petite-Bourgogne"
  },
+ "Théâtre Belcourt": null,
  "Théâtre Centaur": {
   "alias": [
    "Centaur Theatre",
@@ -878,11 +1084,14 @@
   "lon": -73.6,
   "quartier": "Mile End"
  },
+ "Théâtre Gilles-Vigneault": null,
+ "Théâtre Hector-Charland": null,
  "Théâtre La Comédie de Montréal": {
   "lat": 45.515,
   "lon": -73.56,
   "quartier": "Quartier latin"
  },
+ "Théâtre Lionel-Groulx": null,
  "Théâtre Maisonneuve": {
   "alias": [
    "Théâtre Maisonneuve, Place des Arts"
@@ -891,6 +1100,7 @@
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
+ "Théâtre Manuvie": null,
  "Théâtre Mirella et Lino Saputo": {
   "lat": 45.585,
   "lon": -73.59,
@@ -936,6 +1146,7 @@
   "lon": -73.577,
   "quartier": "Plateau"
  },
+ "Théâtre de Lac-Brome": null,
  "Théâtre de Quat'Sous": {
   "lat": 45.5145,
   "lon": -73.574,
@@ -951,6 +1162,7 @@
   "lon": -73.5835,
   "quartier": "Plateau"
  },
+ "Théâtre l'Aparté": null,
  "Turbo Haüs": {
   "alias": [
    "Turbo Haus",
@@ -965,6 +1177,7 @@
   "lon": -73.67267,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Upstairs Jazz Bar & Grill": null,
  "Ursa": {
   "lat": 45.523,
   "lon": -73.602,
@@ -975,6 +1188,13 @@
   "lon": -73.556,
   "quartier": "Centre-Sud"
  },
+ "VOART Centre d'exposition de Val-d'Or": null,
+ "VOX, centre de l'image contemporaine": {
+  "lat": 45.5103,
+  "lon": -73.5632,
+  "quartier": "Quartier des spectacles"
+ },
+ "Vogue Theatre": null,
  "Wishbone Galerie d'art": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
   "alias": [],
@@ -995,6 +1215,11 @@
   "lon": -73.61848,
   "quartier": "LaSalle"
  },
+ "daphne": {
+  "lat": 45.5257,
+  "lon": -73.5975,
+  "quartier": "Mile End"
+ },
  "le dragon": {
   "lat": 45.5078,
   "lon": -73.56089,
@@ -1012,6 +1237,7 @@
   "lon": -73.56755,
   "quartier": "Verdun"
  },
+ "Église Saint-Antoine de Lavaltrie": null,
  "Église Saint-Enfant-Jésus-du-Mile-End": {
   "lat": 45.524,
   "lon": -73.596,
@@ -1037,6 +1263,12 @@
   "lon": -73.60502,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Église St-Andrew et St-Paul": {
+  "lat": 45.4995,
+  "lon": -73.581,
+  "quartier": "Centre-ville"
+ },
+ "Église St. Andrew & St. Paul": null,
  "Église St. George": {
   "lat": 45.4985,
   "lon": -73.5714,
@@ -1047,127 +1279,5 @@
   "lon": -73.5683,
   "quartier": "Centre-ville"
  },
- "MICA – Institut d'art contemporain": null,
- "Studio St-Denis": {
-  "lat": 45.515,
-  "lon": -73.562,
-  "quartier": "Quartier latin"
- },
- "Monument-National": {
-  "lat": 45.5089,
-  "lon": -73.5626,
-  "quartier": "Quartier des spectacles"
- },
- "Théâtre Aux Écuries": {
-  "lat": 45.549,
-  "lon": -73.603,
-  "quartier": "Villeray"
- },
- "Arsenal art contemporain": {
-  "lat": 45.4918,
-  "lon": -73.5628,
-  "quartier": "Griffintown"
- },
- "Art Mûr": {
-  "lat": 45.534,
-  "lon": -73.6,
-  "quartier": "Petite-Patrie"
- },
- "Église St-Andrew et St-Paul": {
-  "lat": 45.4995,
-  "lon": -73.581,
-  "quartier": "Centre-ville"
- },
- "Musée des beaux-arts de Montréal": {
-  "lat": 45.4985,
-  "lon": -73.5794,
-  "quartier": "Centre-ville"
- },
- "MEM – Centre des mémoires montréalaises": {
-  "lat": 45.5098,
-  "lon": -73.5631,
-  "quartier": "Quartier des spectacles"
- },
- "Musée McCord Stewart": {
-  "lat": 45.5045,
-  "lon": -73.5737,
-  "quartier": "Centre-ville"
- },
- "Centre canadien d'architecture": {
-  "lat": 45.4924,
-  "lon": -73.5799,
-  "quartier": "Shaughnessy"
- },
- "VOX, centre de l'image contemporaine": {
-  "lat": 45.5103,
-  "lon": -73.5632,
-  "quartier": "Quartier des spectacles"
- },
- "Pointe-à-Callière": {
-  "lat": 45.5025,
-  "lon": -73.5543,
-  "quartier": "Vieux-Montréal"
- },
- "PHI": {
-  "lat": 45.5016,
-  "lon": -73.559,
-  "quartier": "Vieux-Montréal"
- },
- "Château Ramezay": {
-  "lat": 45.5084,
-  "lon": -73.5521,
-  "quartier": "Vieux-Montréal"
- },
- "Fondation Guido Molinari": {
-  "lat": 45.5389,
-  "lon": -73.544,
-  "quartier": "Hochelaga"
- },
- "OASIS Immersion": {
-  "lat": 45.5045,
-  "lon": -73.5617,
-  "quartier": "Centre-ville"
- },
- "Galerie McClure – Centre des arts visuels": {
-  "lat": 45.4871,
-  "lon": -73.6013,
-  "quartier": "Westmount"
- },
- "La petite Place des Arts": null,
- "Livart": {
-  "lat": 45.521,
-  "lon": -73.5785,
-  "quartier": "Plateau"
- },
- "daphne": {
-  "lat": 45.5257,
-  "lon": -73.5975,
-  "quartier": "Mile End"
- },
- "OBORO": {
-  "lat": 45.5205,
-  "lon": -73.5745,
-  "quartier": "Plateau"
- },
- "Dazibao": {
-  "lat": 45.5257,
-  "lon": -73.5975,
-  "quartier": "Mile End"
- },
- "SKOL": {
-  "lat": 45.507,
-  "lon": -73.568,
-  "quartier": "Quartier des spectacles"
- },
- "Galerie de l'UQAM": {
-  "lat": 45.5146,
-  "lon": -73.5609,
-  "quartier": "Quartier latin"
- },
- "Galerie Leonard & Bina Ellen": {
-  "lat": 45.497,
-  "lon": -73.579,
-  "quartier": "Centre-ville"
- },
- "Galerie de l'Université de Montréal": null
+ "Église de Saint-Jean l'Évangéliste": null
 }
