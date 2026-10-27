@@ -1,0 +1,345 @@
+"""Collecte quotidienne : lit toutes les sources, nettoie, et écrit docs/data.json.
+
+Lancement : python collecteur/collecte.py
+Variables d'environnement (facultatives) :
+  ANTHROPIC_API_KEY      clé pour lire les pages ordinaires avec l'IA (sinon ces sources sont sautées)
+  PROPOSITIONS_CSV_URL   feuille Google publiée en CSV : événements proposés par le public
+  CALENDRIERS_CSV_URL    feuille Google publiée en CSV : calendriers ajoutés par les salles
+  CONTACT                courriel du projet, envoyé à OpenStreetMap avec les recherches d'adresse
+"""
+from __future__ import annotations
+
+import json
+import time
+import os
+import re
+import sys
+import traceback
+from datetime import date, datetime, timedelta
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import yaml
+
+sys.path.insert(0, str(Path(__file__).parent))
+import decouverte  # noqa: E402
+import festivals as fest  # noqa: E402
+import geo  # noqa: E402
+import ia  # noqa: E402
+from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
+from normalisation import Lieux, classer, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat  # noqa: E402
+
+RACINE = Path(__file__).resolve().parent.parent
+SORTIE = RACINE / "docs" / "data.json"
+RAPPORT = RACINE / "docs" / "rapport.json"
+LIEUX = Path(__file__).parent / "lieux.json"
+SOURCES = Path(__file__).parent / "sources.yaml"
+CACHE = Path(__file__).parent / "cache"
+MTL = ZoneInfo("America/Toronto")
+
+JEUNE = re.compile(r"\b\d+\s*(à|a|-)\s*\d+\s*ans\b|jeune public|famille|enfants|tout-petits|\(\d+\s*ans", re.I)
+
+
+# Textes et images : on ne reprend que ce qu'on a le droit de reprendre.
+SOURCES_CONSENTANTES = {"formulaire", "calendrier", "ville"}  # salles qui envoient leurs données ; Ville = licence CC-BY
+
+
+def _propre(t: str, n: int) -> str:
+    t = re.sub(r"<[^>]+>", " ", t or "")
+    t = re.sub(r"\s+", " ", t).strip()
+    return t if len(t) <= n else t[:n].rsplit(" ", 1)[0] + "…"
+
+
+def details(b: dict) -> dict:
+    """Résumé, prix, billetterie et image, selon ce que la source permet."""
+    out = {}
+    src = b.get("source", "")
+    desc = b.get("resume") or b.get("description") or ""
+    if desc:
+        # Résumés écrits par l'IA : courts et originaux. Descriptions fournies par la salle ou la Ville : extrait court.
+        out["resume"] = _propre(desc, 260 if src in SOURCES_CONSENTANTES else 200)
+    if b.get("prix"):
+        out["prix"] = _propre(str(b["prix"]), 40)
+    if b.get("billets", "").startswith("http"):
+        out["billets"] = b["billets"]
+    if b.get("image", "").startswith("http") and src in {"formulaire", "calendrier"}:
+        out["image"] = b["image"]  # photos seulement quand la salle les fournit elle-même
+    return out
+
+
+TYPES_LISIBLES = {"ville_csv": "données ouvertes", "ics": "calendrier iCal", "jsonld": "données structurées",
+                  "gancio": "agenda Gancio", "page_ia": "page lue par l'IA", "auto": "calendrier soumis",
+                  "propositions": "formulaire"}
+
+
+def ecrire_liste_sources(conf: dict, rapport: list) -> None:
+    """docs/sources.json : la liste publique des sources consultées, pour la page « Nos sources »."""
+    par_nom = {r["source"]: r for r in rapport}
+    liste = []
+    for s in conf.get("sources", []):
+        if not s.get("actif", True):
+            continue
+        url = re.sub(r"\{[^}]+\}", "", s["url"]).replace("?page=", "").rstrip("/?&") or s["url"]
+        r = par_nom.get(s["nom"], {})
+        liste.append({"nom": s["nom"], "url": url, "type": TYPES_LISIBLES.get(s["type"], s["type"]),
+                      "evenements": r.get("evenements", 0) + r.get("series", 0), "erreur": bool(r.get("erreur"))})
+    (SORTIE.parent / "sources.json").write_text(json.dumps(liste, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def main() -> int:
+    conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
+    reglages = conf.get("reglages", {})
+    aujourd = datetime.now(MTL).date()
+    fin = aujourd + timedelta(days=int(reglages.get("horizon_jours", 60)))
+    ua = f'CalendrierCulturelMTL/1.0 ({os.environ.get("CONTACT") or "contact non configuré"})'
+    lieux = Lieux(json.loads(LIEUX.read_text(encoding="utf-8")) if LIEUX.exists() else {})
+    ancien = json.loads(SORTIE.read_text(encoding="utf-8")) if SORTIE.exists() else None
+
+    sources = [dict(s, cle_source=s.get("cle", "ia")) for s in conf.get("sources", []) if s.get("actif", True)]
+    if os.environ.get("PROPOSITIONS_CSV_URL"):
+        sources.append({"nom": "Formulaire : événements proposés", "type": "propositions",
+                        "url": os.environ["PROPOSITIONS_CSV_URL"], "cle_source": "formulaire"})
+    if os.environ.get("CALENDRIERS_CSV_URL"):
+        try:
+            sources += calendriers_soumis({"url": os.environ["CALENDRIERS_CSV_URL"]})
+        except Exception as exc:
+            print(f"Formulaire des calendriers illisible : {exc}")
+
+    # Festivals : leurs programmations sont lues autour de leurs dates
+    festivals = fest.charger(aujourd)
+    try:
+        n = fest.chercher_dates(festivals, aujourd, telecharger, texte_page)
+        if n:
+            print(f"Festivals : dates de {n} prochaine(s) édition(s) trouvées.")
+    except Exception as exc:
+        print(f"Recherche des dates de festivals en échec : {exc}")
+    sources += fest.sources(festivals, aujourd)
+
+    bruts, series, rapport = [], [], []
+    CACHE.mkdir(exist_ok=True)
+    force = os.environ.get("TOUT_RELIRE") == "1"
+    for s in sources:
+        print(f"→ {s['nom']} ({s['type']})")
+        fichier_cache = CACHE / (re.sub(r"[^a-z0-9]+", "-", plat(s["nom"]))[:60] + ".json")
+        jours = s.get("jours_semaine")  # ex. [0, 3] = lundi et jeudi seulement (économise l'IA)
+        if jours and aujourd.weekday() not in jours and not force and fichier_cache.exists():
+            c = json.loads(fichier_cache.read_text(encoding="utf-8"))
+            bruts += c["evenements"]
+            series += c["series"]
+            rapport.append({"source": s["nom"], "evenements": len(c["evenements"]), "series": len(c["series"]),
+                            "erreur": None, "note": f"repris du {c['date']}"})
+            print(f"  repris du cache ({c['date']})")
+            continue
+        try:
+            e, sr = CONNECTEURS[s["type"]](s, aujourd, fin)
+            if s.get("festival"):
+                for x in e + sr:
+                    x["festival"] = s["festival"]
+            bruts += e
+            series += sr
+            rapport.append({"source": s["nom"], "evenements": len(e), "series": len(sr), "erreur": None})
+            print(f"  {len(e)} événements, {len(sr)} séries")
+            if e or sr:
+                fichier_cache.write_text(json.dumps({"date": aujourd.isoformat(), "evenements": e, "series": sr},
+                                                    ensure_ascii=False), encoding="utf-8")
+        except Exception as exc:
+            traceback.print_exc(limit=1)
+            note = None
+            if fichier_cache.exists():  # source en panne : on garde sa dernière lecture réussie
+                c = json.loads(fichier_cache.read_text(encoding="utf-8"))
+                bruts += c["evenements"]
+                series += c["series"]
+                note = f"en panne, données du {c['date']} conservées"
+            rapport.append({"source": s["nom"], "evenements": 0, "series": 0, "erreur": str(exc)[:300], "note": note})
+
+    # ---- Nettoyage
+    nouveaux_lieux, geo_restants = [], int(reglages.get("max_geolocalisations", 40))
+
+    def lieu_canon(nom: str, adresse: str, ville: str) -> str | None:
+        """Nom canonique de la salle, ou None si elle est hors de l'île."""
+        nonlocal geo_restants
+        nom = (nom or "").strip() or (adresse or "").split(",")[0].strip()
+        if not nom:
+            return ""
+        if hors_ile(nom, adresse, ville):
+            return None
+        c = lieux.trouver(nom)
+        if c:
+            return c
+        info = None
+        if geo_restants > 0:
+            geo_restants -= 1
+            requete = f"{adresse}, Montréal" if adresse and re.search(r"\d", adresse) else f"{nom}, Montréal"
+            info = geo.localiser(requete, ua)
+            if info and info.get("hors_ile"):
+                return None
+            if info and not dans_ile(info.get("lat"), info.get("lon")):
+                return None
+        nom_propre = re.sub(r"\s*\(.*?\)\s*$", "", nom).strip() or nom
+        nouveaux_lieux.append(nom_propre)
+        return lieux.ajouter(nom_propre, info, alias=nom)
+
+    events = []
+    for b in bruts:
+        try:
+            d = date.fromisoformat(b["date"])
+        except ValueError:
+            continue
+        if b["annule"] or d < aujourd or d > fin or not b["titre"]:
+            continue
+        if est_non_culturel(b["titre"], b["categorie"]):
+            continue
+        lieu = lieu_canon(b["lieu"], b["adresse"], b["ville"])
+        if lieu is None:
+            continue
+        if b["discipline"] == "jeune":
+            b["jeune_public"], b["discipline"] = True, ""
+        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "expo"} \
+            else classer(b["titre"], b["categorie"], description=b.get("description", ""), defaut=b["discipline"])
+        heure = b["heure"] if b["heure"] and re.fullmatch(r"\d{2}:\d{2}", b["heure"]) else None
+        e = {"date": b["date"], "heure": heure, "discipline": disc, "titre": b["titre"],
+             "lieu": lieu or "Lieu à confirmer", "url": b["url"], "complet": bool(b["complet"]),
+             "jeunePublic": bool(b["jeune_public"] or JEUNE.search(b["titre"])), "source": b["source"]}
+        e.update(details(b))
+        if b.get("festival"):
+            e["festival"] = b["festival"]
+        events.append(e)
+
+    # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
+    # on reclasse avec sa description, puis l'IA tranche les cas qui restent, si elle est disponible.
+    autres = [e for e in events if e["discipline"] == "autre"][:int(reglages.get("max_pages_autre", 80))]
+    lus = 0
+    for e in autres:
+        if not e["url"].startswith("http"):
+            continue
+        try:
+            resume = resume_page(telecharger(e["url"], "text/html").text)
+            lus += 1
+        except Exception:
+            continue
+        e["_extrait"] = resume
+        d2 = classer(e["titre"], "", description=resume)
+        if d2 != "autre":
+            e["discipline"] = d2
+    restants = [e for e in autres if e["discipline"] == "autre"]
+    if restants and ia.disponible():
+        try:
+            lot = [{"titre": e["titre"], "lieu": e["lieu"], "extrait": e.get("_extrait", "")} for e in restants]
+            for i, disc in ia.classer_lot(lot).items():
+                if 0 <= i < len(restants):
+                    restants[i]["discipline"] = disc
+        except Exception as exc:
+            print(f"Classement IA en échec : {exc}")
+    for e in events:
+        e.pop("_extrait", None)
+    print(f"« Autre » : {len(autres)} à préciser, {lus} pages lues, {sum(e['discipline'] == 'autre' for e in events)} restent.")
+
+    # Heures manquantes : on lit la page de l'événement (gratuit, sans IA). Songkick n'affiche pas d'heure,
+    # mais le même concert trouvé sur le site de la salle (avec l'heure) remplace celui de Songkick au dédoublonnage.
+    f_heures = CACHE / "heures.json"
+    memo = json.loads(f_heures.read_text(encoding="utf-8")) if f_heures.exists() else {}
+    sans = [e for e in events if not e["heure"] and e["url"].startswith("http")
+            and not any(d in e["url"] for d in reglages.get("sites_sans_heure", ["songkick.com"]))]
+    lues = 0
+    for e in sans:
+        if e["url"] in memo:
+            e["heure"] = memo[e["url"]]
+            continue
+        if lues >= int(reglages.get("max_pages_heure", 120)):
+            continue
+        try:
+            memo[e["url"]] = heure_page(telecharger(e["url"], "text/html").text)
+            e["heure"] = memo[e["url"]]
+            lues += 1
+            time.sleep(0.5)
+        except Exception:
+            continue
+    f_heures.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+    print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues, {sum(1 for e in sans if e['heure'])} heures trouvées.")
+
+    # Plusieurs disciplines possibles (ex. une performance : théâtre ET danse)
+    for e in events:
+        if e["discipline"] in ("expo", "cinema", "lettres", "humour"):
+            continue
+        e["discipline"], aussi = disciplines_aussi(e["titre"], e.get("resume", ""), e["discipline"], e["lieu"])
+        if aussi:
+            e["aussi"] = aussi
+
+    # Jeune public : catégorie à part entière (la discipline d'origine est gardée dans « sous »)
+    for e in events:
+        if e["jeunePublic"] and e["discipline"] != "jeune":
+            e["sous"], e["discipline"] = e["discipline"], "jeune"
+
+    events = dedoublonner(events)
+
+    expos = []
+    vus = set()
+    for s in series:
+        try:
+            d1, d2 = date.fromisoformat(s["debut"]), date.fromisoformat(s["fin"])
+        except ValueError:
+            continue
+        if d2 < aujourd or d1 > fin or est_non_culturel(s["titre"]):
+            continue
+        lieu = lieu_canon(s["lieu"], s.get("adresse", ""), s.get("ville", ""))
+        if lieu is None:
+            continue
+        k = plat(s["titre"])[:40] + "|" + plat(lieu or "")[:20]
+        if k in vus:
+            continue
+        vus.add(k)
+        x = {"titre": s["titre"], "lieu": lieu or "Lieu à confirmer", "debut": s["debut"], "fin": s["fin"],
+             "discipline": s.get("discipline") or "expo", "url": s["url"]}
+        x.update(details(s))
+        if s.get("festival"):
+            x["festival"] = s["festival"]
+        if x["discipline"] not in ("expo", "jeune"):
+            x["discipline"], aussi = disciplines_aussi(x["titre"], x.get("resume", ""), x["discipline"], x["lieu"])
+            if aussi:
+                x["aussi"] = aussi
+        expos.append(x)
+    expos.sort(key=lambda x: x["fin"])
+    fest.etiqueter(events, festivals)
+    fest.etiqueter(expos, festivals)
+    fest.publier(festivals, SORTIE.parent / "festivals.json")
+    try:
+        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 250)))
+        print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
+    except Exception as exc:
+        print(f"Liens de découverte en échec : {exc}")
+    sauver_memoire(aujourd)
+
+    # ---- Garde-fou : une collecte anormalement maigre ne remplace pas la précédente
+    minimum = int(reglages.get("minimum_evenements", 30))
+    if ancien and len(events) < max(minimum, 0.4 * len([e for e in ancien.get("events", []) if e["date"] >= aujourd.isoformat()])):
+        print(f"ARRÊT : seulement {len(events)} événements; les données précédentes sont conservées.")
+        RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "conservé", "sources": rapport},
+                                      ensure_ascii=False, indent=1), encoding="utf-8")
+        return 1
+
+    utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
+    noms_sources = conf.get("noms_sources", {})
+    data = {
+        "version": 3,
+        "miseAJour": aujourd.isoformat(),
+        "debut": aujourd.isoformat(),
+        "fin": fin.isoformat(),
+        "completJusqua": (aujourd + timedelta(days=int(reglages.get("horizon_complet_jours", 14)) - 1)).isoformat(),
+        "sources": {k: v for k, v in noms_sources.items() if any(e["source"] == k for e in events)},
+        "events": events,
+        "expos": expos,
+        "lieux": {n: lieux.coord(n) for n in sorted(utilises)},
+    }
+    SORTIE.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    ecrire_liste_sources(conf, rapport)
+    LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
+                                   "expositions": len(expos), "nouvelles_salles": sorted(set(nouveaux_lieux)),
+                                   "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"OK : {len(events)} événements, {len(expos)} expositions/pièces à l'affiche, "
+          f"{len(set(nouveaux_lieux))} nouvelles salles.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

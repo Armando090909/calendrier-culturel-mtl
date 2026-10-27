@@ -1,0 +1,95 @@
+# Festivals de l'île de Montréal.
+#
+# debut / fin : dates de la dernière édition connue (AAAA-MM-JJ). Quand une édition est terminée, le collecteur
+#   cherche chaque mois les dates de la suivante sur le site du festival (avec l'IA, si la clé est configurée).
+#   Vous pouvez aussi les corriger ici à la main.
+# programmation : page(s) lue(s) pour ajouter les spectacles du festival au calendrier. Elles ne sont lues
+#   que de 75 jours avant le début jusqu'à la fin du festival (économise l'IA). Sans adresse, le site est lu.
+# disciplines : theatre, musique, danse, cirque, humour, cinema, lettres, jeune, expo, autre.
+# verifier : true = dates tirées d'une source secondaire, à confirmer sur le site officiel.
+
+festivals:
+  # ---------------- Automne 2026 ----------------
+  - {id: elektra, nom: "Biennale internationale d'art numérique ELEKTRA", court: ELEKTRA, disciplines: [expo, musique], debut: 2026-10-15, fin: 2026-11-15, site: "https://elektramontreal.ca"}
+  - {id: festitheatrecreole, nom: "Festithéâtrecréole / Festiteyatkreyòl", court: Festithéâtrecréole, disciplines: [theatre], debut: 2026-10-28, fin: 2026-11-08, site: "https://compagnietheatrecreole.ca/festitheatrecreole/"}
+  - {id: fma, nom: "Festival du Monde Arabe de Montréal", court: Monde Arabe, disciplines: [musique, danse, theatre], debut: 2026-10-30, fin: 2026-11-15, site: "https://festivalarabe.com", programmation: ["https://festivalarabe.com/programmation", "https://placedesarts.com/fr/theme/festival-monde-arabe-programmation"]}
+  - {id: cinemania, nom: "Festival de films CINEMANIA", court: CINEMANIA, disciplines: [cinema], debut: 2026-11-02, fin: 2026-11-15, site: "https://festivalcinemania.com", programmation: ["https://festapp.io/festivals/cinemania/2026"]}
+  - {id: lamechecourte, nom: "La Mèche courte — festival jeune public", court: La Mèche courte, disciplines: [jeune, theatre, danse], debut: 2026-11-04, fin: 2026-11-08, site: "https://www.lamechecourte.ca", programmation: ["https://www.lamechecourte.ca/programmation"]}
+  - {id: bach, nom: "Festival international Bach Montréal", court: Festival Bach, disciplines: [musique], debut: 2026-11-04, fin: 2026-12-09, site: "https://festivalbachmontreal.com", programmation: ["https://festivalbachmontreal.com/programmation/"]}
+  - {id: coupdecoeur, nom: "Coup de cœur francophone", court: Coup de cœur, disciplines: [musique], debut: 2026-11-05, fin: 2026-11-15, site: "https://coupdecoeur.ca", programmation: ["https://festapp.io/festivals/coup-de-coeur-francophone/2026"]}
+  - {id: cinemaisraelien, nom: "Festival du cinéma israélien de Montréal", court: Cinéma israélien, disciplines: [cinema], debut: 2026-11-15, fin: 2026-11-29, site: "https://www.mtl.org/fr/experience/quoi-faire-novembre", verifier: true}
+  - {id: mundial, nom: "Mundial Montréal", court: Mundial, disciplines: [musique], debut: 2026-11-17, fin: 2026-11-21, site: "https://mundialmontreal.com", verifier: true}
+  - {id: mpourmontreal, nom: "M pour Montréal", court: M pour Montréal, disciplines: [musique], debut: 2026-11-18, fin: 2026-11-21, site: "https://mpourmontreal.com", programmation: ["https://www.jambase.com/festival/m-pour-montreal-2026"]}
+  - {id: ridm, nom: "Rencontres internationales du documentaire de Montréal (RIDM)", court: RIDM, disciplines: [cinema], debut: 2026-11-19, fin: 2026-11-29, site: "https://ridm.ca"}
+  - {id: imagenation, nom: "image+nation — festival de films LGBT2SQueer", court: image+nation, disciplines: [cinema], debut: 2026-11-19, fin: 2026-11-29, site: "https://image-nation.org"}
+  - {id: salonlivre, nom: "Salon du livre de Montréal", court: Salon du livre, disciplines: [lettres], debut: 2026-11-25, fin: 2026-11-29, lieu: "Palais des congrès de Montréal", site: "https://salondulivredemontreal.com"}
+
+  # ---------------- Hiver 2027 ----------------
+  - {id: igloofest, nom: "Igloofest", disciplines: [musique], debut: 2027-01-14, fin: 2027-02-06, lieu: "Quai Jacques-Cartier", site: "https://igloofest.ca"}
+  - {id: lumino, nom: "Festival Lumino", disciplines: [expo], debut: 2027-01-21, fin: 2027-03-07, site: "https://luminomtl.com", verifier: true}
+  - {id: winterworks, nom: "WinterWorks Theatre Festival", court: WinterWorks, disciplines: [theatre], mois: 2, site: "https://www.mtl.org/en/experience/montreal-winter-festivals-shine-bright"}
+  - {id: mtlenlumiere, nom: "Montréal en lumière (et Nuit blanche)", court: Montréal en lumière, disciplines: [musique, expo, autre], debut: 2027-02-18, fin: 2027-02-28, site: "https://www.montrealenlumiere.com"}
+  - {id: casteliers, nom: "Festival de Casteliers (marionnettes)", court: Casteliers, disciplines: [theatre, jeune], debut: 2027-03-01, fin: 2027-03-07, site: "https://casteliers.ca"}
+
+  # ---------------- Printemps (dates de 2026 ; la prochaine édition est cherchée automatiquement) ----------------
+  - {id: fifa, nom: "Festival international du film sur l'art (FIFA)", court: FIFA, disciplines: [cinema, expo], mois: 3, site: "https://www.artfifa.com"}
+  - {id: vuesdafrique, nom: "Festival international de cinéma Vues d'Afrique", court: Vues d'Afrique, disciplines: [cinema], debut: 2026-04-02, fin: 2026-04-11, site: "https://vuesdafrique.org"}
+  - {id: clowns, nom: "Festival des clowns de Montréal", court: Festival des clowns, disciplines: [cirque, theatre], debut: 2026-04-10, fin: 2026-04-18, site: "https://festivaldesclowns.com", verifier: true}
+  - {id: rvqc, nom: "Rendez-vous Québec Cinéma", court: RVQC, disciplines: [cinema], debut: 2026-04-22, fin: 2026-04-30, site: "https://rvqc.ca"}
+  - {id: metropolisbleu, nom: "Festival littéraire international Metropolis bleu", court: Metropolis bleu, disciplines: [lettres], debut: 2026-04-23, fin: 2026-04-26, site: "https://metropolisbleu.org"}
+  - {id: jamaislu, nom: "Festival du Jamais Lu", court: Jamais Lu, disciplines: [theatre, lettres], debut: 2026-05-01, fin: 2026-05-09, site: "https://jamaislu.com"}
+  - {id: petitsbonheurs, nom: "Festival Petits bonheurs (tout-petits)", court: Petits bonheurs, disciplines: [jeune], debut: 2026-05-01, fin: 2026-05-10, site: "https://petitsbonheurs.ca"}
+  - {id: accesasie, nom: "Festival Accès Asie", court: Accès Asie, disciplines: [musique, danse, theatre, expo], debut: 2026-05-01, fin: 2026-05-31, site: "https://accesasie.com"}
+  - {id: sudasiatique, nom: "Festival du film sud-asiatique de Montréal", court: Film sud-asiatique, disciplines: [cinema], debut: 2026-05-01, fin: 2026-05-24, site: "https://saffm.ca", verifier: true}
+  - {id: sommets, nom: "Les Sommets du cinéma d'animation", court: Sommets de l'animation, disciplines: [cinema], debut: 2026-05-11, fin: 2026-05-16, site: "https://www.cinematheque.qc.ca"}
+  - {id: fbdm, nom: "Festival BD de Montréal", court: Festival BD, disciplines: [lettres, jeune], debut: 2026-05-15, fin: 2026-05-17, site: "https://fbdm-mcaf.ca"}
+  - {id: piknic, nom: "Piknic Électronik (les dimanches)", court: Piknic Électronik, disciplines: [musique], debut: 2026-05-17, fin: 2026-10-18, lieu: "Parc Jean-Drapeau", site: "https://piknicelectronik.com"}
+  - {id: poesie, nom: "Festival de la poésie de Montréal", court: Festival de la poésie, disciplines: [lettres], debut: 2026-05-21, fin: 2026-05-31, site: "https://festivalpoesiemontreal.com", verifier: true}
+  - {id: fta, nom: "Festival TransAmériques (FTA)", court: FTA, disciplines: [theatre, danse], debut: 2026-05-28, fin: 2026-06-10, site: "https://fta.ca"}
+  - {id: offta, nom: "OFFTA — festival d'arts vivants", court: OFFTA, disciplines: [theatre, danse], debut: 2026-05-29, fin: 2026-06-07, site: "https://offta.com"}
+
+  # ---------------- Été ----------------
+  - {id: mural, nom: "Festival MURAL", court: MURAL, disciplines: [expo, musique], debut: 2026-06-04, fin: 2026-06-14, lieu: "Boulevard Saint-Laurent", site: "https://muralfestival.com"}
+  - {id: chambre, nom: "Festival de musique de chambre de Montréal", court: Musique de chambre, disciplines: [musique], debut: 2026-06-09, fin: 2026-06-21, site: "https://festivalmontreal.org"}
+  - {id: fringe, nom: "St-Ambroise Montreal Fringe Festival", court: Fringe, disciplines: [theatre, humour, danse], debut: 2026-06-11, fin: 2026-06-21, site: "https://montrealfringe.ca"}
+  - {id: francos, nom: "Les Francos de Montréal", court: Francos, disciplines: [musique], debut: 2026-06-12, fin: 2026-06-20, lieu: "Quartier des spectacles", site: "https://francosmontreal.com"}
+  - {id: jazz, nom: "Festival International de Jazz de Montréal", court: Festival de Jazz, disciplines: [musique], debut: 2026-06-25, fin: 2026-07-04, lieu: "Quartier des spectacles", site: "https://www.montrealjazzfest.com"}
+  - {id: completementcirque, nom: "Montréal Complètement Cirque", court: Complètement Cirque, disciplines: [cirque], debut: 2026-07-02, fin: 2026-07-12, site: "https://montrealcompletementcirque.com"}
+  - {id: nuitsdafrique, nom: "Festival international Nuits d'Afrique", court: Nuits d'Afrique, disciplines: [musique], debut: 2026-07-07, fin: 2026-07-19, site: "https://festivalnuitsdafrique.com"}
+  - {id: jpr, nom: "Festival Juste pour rire", court: Juste pour rire, disciplines: [humour], debut: 2026-07-15, fin: 2026-07-26, site: "https://hahaha.com"}
+  - {id: zoofest, nom: "Zoofest", disciplines: [humour, theatre], mois: 7, site: "https://zoofest.com"}
+  - {id: fantasia, nom: "Festival international de films Fantasia", court: Fantasia, disciplines: [cinema], debut: 2026-07-16, fin: 2026-08-02, site: "https://fantasiafestival.com"}
+  - {id: fierte, nom: "Fierté Montréal", disciplines: [musique, autre], debut: 2026-07-31, fin: 2026-08-09, site: "https://fiertemontreal.com"}
+  - {id: osheaga, nom: "Osheaga", disciplines: [musique], debut: 2026-07-31, fin: 2026-08-02, lieu: "Parc Jean-Drapeau", site: "https://osheaga.com"}
+  - {id: presenceautochtone, nom: "Présence autochtone", disciplines: [cinema, musique, expo], debut: 2026-08-04, fin: 2026-08-14, site: "https://presenceautochtone.ca"}
+  - {id: ilesoniq, nom: "ÎleSoniq", disciplines: [musique], debut: 2026-08-08, fin: 2026-08-09, lieu: "Parc Jean-Drapeau", site: "https://ilesoniq.com"}
+  - {id: lasso, nom: "LASSO Montréal (country)", court: LASSO, disciplines: [musique], debut: 2026-08-15, fin: 2026-08-16, lieu: "Parc Jean-Drapeau", site: "https://lassomontreal.com"}
+  - {id: mutek, nom: "MUTEK Montréal", court: MUTEK, disciplines: [musique, expo], debut: 2026-08-25, fin: 2026-08-30, site: "https://montreal.mutek.org"}
+  - {id: artsruelles, nom: "Festival des arts de ruelles", court: Arts de ruelles, disciplines: [musique, theatre, autre], debut: 2026-08-29, fin: 2026-09-13, site: "https://www.mtl.org", verifier: true}
+
+  # ---------------- Rentrée ----------------
+  - {id: joat, nom: "JOAT — festival de danse de rue", court: JOAT, disciplines: [danse], debut: 2026-09-01, fin: 2026-09-07, lieu: "Quartier des spectacles", site: "https://www.mtl.org", verifier: true}
+  - {id: trad, nom: "Festival TRAD Montréal", court: Festival TRAD, disciplines: [musique], debut: 2026-09-04, fin: 2026-09-06, site: "https://festivaltradmontreal.ca"}
+  - {id: quartiersdanses, nom: "Festival Quartiers Danses", court: Quartiers Danses, disciplines: [danse], debut: 2026-09-10, fin: 2026-09-20, site: "https://quartiersdanses.com"}
+  - {id: fil, nom: "Festival international de la littérature (FIL)", court: FIL, disciplines: [lettres], debut: 2026-09-23, fin: 2026-10-03, site: "https://festival-fil.qc.ca"}
+  - {id: pop, nom: "POP Montréal", disciplines: [musique, expo, cinema], debut: 2026-09-23, fin: 2026-09-27, site: "https://popmontreal.com"}
+  - {id: filmblack, nom: "Festival international du film Black de Montréal", court: Film Black, disciplines: [cinema], debut: 2026-09-30, fin: 2026-10-04, site: "https://montrealblackfilm.com"}
+  - {id: phenomena, nom: "Festival Phénomena", court: Phénomena, disciplines: [theatre, cirque, danse], debut: 2026-10-03, fin: 2026-10-22, site: "https://festivalphenomena.com"}
+  - {id: fnc, nom: "Festival du nouveau cinéma (FNC)", court: FNC, disciplines: [cinema], debut: 2026-10-07, fin: 2026-10-18, site: "https://nouveaucinema.ca"}
+  - {id: akousma, nom: "Festival Akousma (musiques électroacoustiques)", court: Akousma, disciplines: [musique], debut: 2026-10-21, fin: 2026-10-23, site: "https://akousma.ca"}
+
+  # ---------------- Rue, ruelles, plein air, culture populaire (tour du 27 oct. 2026) ----------------
+  - {id: comiccon, nom: "Comiccon de Montréal", court: Comiccon, disciplines: [autre, cinema], debut: 2026-07-03, fin: 2026-07-05, lieu: "Palais des congrès de Montréal", site: "https://www.montrealcomiccon.com"}
+  - {id: comiccon-fetes, nom: "Comiccon de Montréal — édition des Fêtes", court: Comiccon des Fêtes, disciplines: [autre], debut: 2026-12-05, fin: 2026-12-06, lieu: "Palais des congrès de Montréal", site: "https://www.montrealcomiccon.com", verifier: true}
+  - {id: underpressure, nom: "Under Pressure — festival international de graffiti", court: Under Pressure, disciplines: [expo, musique], debut: 2026-08-08, fin: 2026-08-09, site: "https://underpressure.ca", verifier: true}
+  - {id: suoni, nom: "Suoni Per Il Popolo (musiques libres et expérimentales)", court: Suoni Per Il Popolo, disciplines: [musique], mois: 6, lieu: "Casa del Popolo et Sala Rossa", site: "https://suoniperilpopolo.org"}
+  - {id: escales, nom: "Les Escales Improbables de Montréal", court: Escales Improbables, disciplines: [theatre, danse, musique], mois: 9, site: "https://escalesimprobables.com"}
+  - {id: conte, nom: "Festival interculturel du conte de Montréal", court: Festival du conte, disciplines: [lettres, jeune], mois: 10, site: "https://www.mtl.org/fr/quoi-faire/festivals-et-evenements/festival-interculturel-du-conte-du-montreal"}
+  - {id: reappropriation, nom: "RU — Réappropriation urbaine (parc des Compagnons-de-Saint-Laurent)", court: Réappropriation urbaine, disciplines: [musique, danse, cirque, humour], mois: 7, site: "https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/"}
+  - {id: campbell, nom: "Concerts Campbell (gratuits, dans les parcs des 19 arrondissements)", court: Concerts Campbell, disciplines: [musique], debut: 2026-06-11, fin: 2026-08-27, site: "https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"}
+  - {id: showsruelle, nom: "Shows de ruelle (ruelle Gaboury, près du parc Morgan)", court: Shows de ruelle, disciplines: [musique], mois: 8, lieu: "Ruelle Gaboury", site: "https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/"}
+  - {id: tamtams, nom: "Tam-tams du Mont-Royal (chaque dimanche, du printemps à l'automne)", court: Tam-tams, disciplines: [musique, danse], mois: 5, lieu: "Monument à Sir George-Étienne-Cartier", site: "https://www.mtl.org/fr/quoi-faire/activites/parc-du-mont-royal"}
+  - {id: wiblues, nom: "West Island Blues Festival", court: WI Blues, disciplines: [musique], mois: 8, site: "https://westislandbluesfestival.com"}
+  - {id: cinemaetoiles, nom: "Cinéma sous les étoiles (documentaires gratuits en plein air, suivis d'une discussion)", court: Cinéma sous les étoiles, disciplines: [cinema], debut: 2026-06-25, fin: 2026-08-28, site: "https://cinemasouslesetoiles.org/", programmation: ["https://cinemasouslesetoiles.org/programmation/grille-horaire/"]}
+  - {id: omMontRoyal, nom: "L'OM au pied du Mont-Royal (concert gratuit)", court: OM au Mont-Royal, disciplines: [musique], debut: 2026-08-05, fin: 2026-08-05, site: "https://orchestremetropolitain.com/fr/lom-au-pied-du-mont-royal/"}
+

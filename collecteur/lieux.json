@@ -1,0 +1,956 @@
+{
+ "Agora de la danse": {
+  "alias": [
+   "Agora de la danse – Édifice Wilder"
+  ],
+  "lat": 45.5075,
+  "lon": -73.569,
+  "quartier": "Quartier des spectacles"
+ },
+ "Ausgang Plaza": {
+  "lat": 45.537,
+  "lon": -73.607,
+  "quartier": "Petite-Patrie"
+ },
+ "Bar L'Hémisphère gauche": {
+  "lat": 45.534,
+  "lon": -73.6,
+  "quartier": "Petite-Patrie"
+ },
+ "Bar Lanjeu": null,
+ "Bar Le Ritz PDB": {
+  "alias": [
+   "Bar Le Ritz P.D.B."
+  ],
+  "lat": 45.5329,
+  "lon": -73.6187,
+  "quartier": "Mile-Ex"
+ },
+ "Bibliothèque Benny": {
+  "lat": 45.472,
+  "lon": -73.628,
+  "quartier": "NDG"
+ },
+ "Bibliothèque L'Octogone": {
+  "lat": 45.431,
+  "lon": -73.629,
+  "quartier": "LaSalle"
+ },
+ "Bibliothèque Langelier": {
+  "lat": 45.5835,
+  "lon": -73.543,
+  "quartier": "Mercier"
+ },
+ "Bibliothèque Le Prévost": {
+  "lat": 45.545,
+  "lon": -73.617,
+  "quartier": "Villeray"
+ },
+ "Bibliothèque Maisonneuve": {
+  "lat": 45.547,
+  "lon": -73.544,
+  "quartier": "Hochelaga"
+ },
+ "Bibliothèque Marie-Uguay": {
+  "lat": 45.456,
+  "lon": -73.596,
+  "quartier": "Ville-Émard"
+ },
+ "Bibliothèque Robert-Bourassa": {
+  "lat": 45.516,
+  "lon": -73.606,
+  "quartier": "Outremont"
+ },
+ "Bibliothèque Saul-Bellow": {
+  "lat": 45.444,
+  "lon": -73.69,
+  "quartier": "Lachine"
+ },
+ "Bibliothèque de Côte-des-Neiges": {
+  "lat": 45.498,
+  "lon": -73.625,
+  "quartier": "Côte-des-Neiges"
+ },
+ "Bibliothèque de Rivière-des-Prairies": {
+  "lat": 45.64,
+  "lon": -73.585,
+  "quartier": "Rivière-des-Prairies"
+ },
+ "Bibliothèque de Saint-Pierre": {
+  "lat": 45.448,
+  "lon": -73.655,
+  "quartier": "Lachine"
+ },
+ "Bibliothèque du Plateau-Mont-Royal": {
+  "lat": 45.5235,
+  "lon": -73.581,
+  "quartier": "Plateau"
+ },
+ "Bibliothèque du Vieux-Saint-Laurent": {
+  "lat": 45.516,
+  "lon": -73.677,
+  "quartier": "Saint-Laurent"
+ },
+ "Boisé Steinberg": {
+  "lat": 45.58,
+  "lon": -73.538,
+  "quartier": "Mercier"
+ },
+ "Cabaret Lion d'Or": {
+  "lat": 45.5245,
+  "lon": -73.5545,
+  "quartier": "Centre-Sud"
+ },
+ "Cabaret du Casino de Montréal": {
+  "alias": [
+   "Cabaret du Casino de Montreal"
+  ],
+  "lat": 45.505,
+  "lon": -73.526,
+  "quartier": "Parc Jean-Drapeau"
+ },
+ "Café Campus": {
+  "lat": 45.5146,
+  "lon": -73.571,
+  "quartier": "Plateau"
+ },
+ "Café Civil": {
+  "lat": 45.5085,
+  "lon": -73.5605,
+  "quartier": "Quartier chinois"
+ },
+ "Casa del Popolo": {
+  "lat": 45.521,
+  "lon": -73.5935,
+  "quartier": "Mile End"
+ },
+ "Centre Bell": {
+  "alias": [
+   "Bell Centre"
+  ],
+  "lat": 45.4961,
+  "lon": -73.5693,
+  "quartier": "Centre-ville"
+ },
+ "Centre Sanaaq": {
+  "lat": 45.4925,
+  "lon": -73.5795,
+  "quartier": "Centre-ville ouest"
+ },
+ "Centre Segal": {
+  "alias": [
+   "Segal Centre for the Performing Arts",
+   "Segal Centre"
+  ],
+  "lat": 45.493,
+  "lon": -73.633,
+  "quartier": "Côte-des-Neiges"
+ },
+ "Centre communautaire d'Anjou": {
+  "lat": 45.605,
+  "lon": -73.565,
+  "quartier": "Anjou"
+ },
+ "Centre culturel et communautaire Henri-Lemieux": {
+  "lat": 45.437,
+  "lon": -73.615,
+  "quartier": "LaSalle"
+ },
+ "Centre d'exposition Lethbridge": {
+  "lat": 45.505,
+  "lon": -73.713,
+  "quartier": "Saint-Laurent"
+ },
+ "Centre des loisirs de Saint-Laurent": {
+  "lat": 45.513,
+  "lon": -73.68,
+  "quartier": "Saint-Laurent"
+ },
+ "Chez Bozo": null,
+ "Club Soda": {
+  "lat": 45.51,
+  "lon": -73.563,
+  "quartier": "Quartier des spectacles"
+ },
+ "Duceppe": {
+  "lat": 45.508,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles"
+ },
+ "Dépanneur Café": {
+  "lat": 45.523,
+  "lon": -73.604,
+  "quartier": "Mile End"
+ },
+ "Eastern Bloc": {
+  "lat": 45.533,
+  "lon": -73.618,
+  "quartier": "Mile-Ex"
+ },
+ "Espace GO": {
+  "lat": 45.5215,
+  "lon": -73.5915,
+  "quartier": "Mile End"
+ },
+ "Espace Libre": {
+  "lat": 45.528,
+  "lon": -73.556,
+  "quartier": "Centre-Sud"
+ },
+ "Espace Tapage": {
+  "lat": 45.483,
+  "lon": -73.56,
+  "quartier": "Pointe-Saint-Charles"
+ },
+ "Espace transmission": null,
+ "Exhibit A": {
+  "lat": 45.472,
+  "lon": -73.588,
+  "quartier": "Saint-Henri"
+ },
+ "Fais-moi l'art": null,
+ "Foufounes Électriques": {
+  "alias": [
+   "Les Foufounes Electriques",
+   "Cabaret Foufounes Electriques (Fouf)",
+   "Foufounes Electriques"
+  ],
+  "lat": 45.5106,
+  "lon": -73.563,
+  "quartier": "Quartier latin"
+ },
+ "Galerie Port-Maurice": {
+  "lat": 45.585,
+  "lon": -73.59,
+  "quartier": "Saint-Léonard"
+ },
+ "Galerie d'Outremont": {
+  "lat": 45.516,
+  "lon": -73.606,
+  "quartier": "Outremont"
+ },
+ "Gesù": {
+  "lat": 45.505,
+  "lon": -73.568,
+  "quartier": "Centre-ville"
+ },
+ "Hall Est du Stade olympique": {
+  "lat": 45.558,
+  "lon": -73.551,
+  "quartier": "Hochelaga"
+ },
+ "L'Entrepôt – maison de la culture de Lachine": {
+  "lat": 45.433,
+  "lon": -73.686,
+  "quartier": "Lachine"
+ },
+ "L'Escogriffe": {
+  "alias": [
+   "L'Esco",
+   "L'Escogriffe Bar Spectacle (L'Esco)",
+   "L'Escogriffe Bar"
+  ],
+  "lat": 45.5238,
+  "lon": -73.5822,
+  "quartier": "Plateau"
+ },
+ "L'Olympia": {
+  "lat": 45.518,
+  "lon": -73.556,
+  "quartier": "Village"
+ },
+ "La Chapelle Scènes contemporaines": {
+  "lat": 45.515,
+  "lon": -73.577,
+  "quartier": "Plateau"
+ },
+ "La Licorne": {
+  "lat": 45.533,
+  "lon": -73.577,
+  "quartier": "Plateau"
+ },
+ "La Lumière Collective": {
+  "lat": 45.532,
+  "lon": -73.6215,
+  "quartier": "Mile-Ex"
+ },
+ "La Sala Rossa": {
+  "lat": 45.521,
+  "lon": -73.5935,
+  "quartier": "Mile End"
+ },
+ "La Sotterenea": {
+  "lat": 45.521,
+  "lon": -73.5935,
+  "quartier": "Mile End"
+ },
+ "La Toscadura": null,
+ "Le Balcon": {
+  "lat": 45.506,
+  "lon": -73.569,
+  "quartier": "Centre-ville"
+ },
+ "Le Belmont": {
+  "lat": 45.519,
+  "lon": -73.588,
+  "quartier": "Plateau"
+ },
+ "Le Ministère": {
+  "lat": 45.5195,
+  "lon": -73.5885,
+  "quartier": "Plateau"
+ },
+ "Le Monastère": null,
+ "Le National": {
+  "lat": 45.519,
+  "lon": -73.554,
+  "quartier": "Village"
+ },
+ "Le Studio TD": {
+  "alias": [
+   "Studio TD"
+  ],
+  "lat": 45.5089,
+  "lon": -73.568,
+  "quartier": "Quartier des spectacles"
+ },
+ "Le Studio-Cabaret": null,
+ "Le Verre Bouteille": {
+  "lat": 45.537,
+  "lon": -73.573,
+  "quartier": "Plateau"
+ },
+ "MTELUS": {
+  "lat": 45.5107,
+  "lon": -73.5635,
+  "quartier": "Quartier des spectacles"
+ },
+ "Maison Antoine-Beaudry": {
+  "lat": 45.67,
+  "lon": -73.49,
+  "quartier": "Pointe-aux-Trembles"
+ },
+ "Maison Nivard-De Saint-Dizier": {
+  "lat": 45.444,
+  "lon": -73.58,
+  "quartier": "Verdun"
+ },
+ "Maison Théâtre": {
+  "lat": 45.5145,
+  "lon": -73.564,
+  "quartier": "Quartier latin"
+ },
+ "Maison culturelle et communautaire de Montréal-Nord": {
+  "lat": 45.605,
+  "lon": -73.62,
+  "quartier": "Montréal-Nord"
+ },
+ "Maison de la culture Ahuntsic": {
+  "lat": 45.551,
+  "lon": -73.66,
+  "quartier": "Ahuntsic"
+ },
+ "Maison de la culture Claude-Léveillée": {
+  "lat": 45.538,
+  "lon": -73.611,
+  "quartier": "Villeray"
+ },
+ "Maison de la culture Janine-Sutto": {
+  "lat": 45.531,
+  "lon": -73.552,
+  "quartier": "Centre-Sud"
+ },
+ "Maison de la culture Maisonneuve": {
+  "lat": 45.548,
+  "lon": -73.543,
+  "quartier": "Hochelaga"
+ },
+ "Maison de la culture Marie-Uguay": {
+  "lat": 45.456,
+  "lon": -73.596,
+  "quartier": "Ville-Émard"
+ },
+ "Maison de la culture Mercier": {
+  "lat": 45.57,
+  "lon": -73.533,
+  "quartier": "Mercier"
+ },
+ "Maison de la culture NDG – Botrel": {
+  "lat": 45.472,
+  "lon": -73.612,
+  "quartier": "NDG"
+ },
+ "Maison de la culture NDG – Monkland": {
+  "lat": 45.475,
+  "lon": -73.617,
+  "quartier": "NDG"
+ },
+ "Maison de la culture de Côte-des-Neiges": {
+  "lat": 45.498,
+  "lon": -73.625,
+  "quartier": "Côte-des-Neiges"
+ },
+ "Maison de la culture de Pointe-aux-Trembles": {
+  "lat": 45.665,
+  "lon": -73.495,
+  "quartier": "Pointe-aux-Trembles"
+ },
+ "Maison de la culture de Rosemont–La Petite-Patrie": {
+  "lat": 45.544,
+  "lon": -73.596,
+  "quartier": "Rosemont"
+ },
+ "Maison de la culture du Plateau-Mont-Royal": {
+  "lat": 45.5235,
+  "lon": -73.581,
+  "quartier": "Plateau"
+ },
+ "Maison du citoyen": {
+  "lat": 45.656,
+  "lon": -73.5,
+  "quartier": "Pointe-aux-Trembles"
+ },
+ "Maison symphonique": {
+  "alias": [
+   "Maison Symphonique de Montréal"
+  ],
+  "lat": 45.5085,
+  "lon": -73.567,
+  "quartier": "Quartier des spectacles"
+ },
+ "Montréal, arts interculturels (MAI)": {
+  "lat": 45.512,
+  "lon": -73.577,
+  "quartier": "Plateau"
+ },
+ "Moonshine": null,
+ "New City Gas": {
+  "lat": 45.492,
+  "lon": -73.559,
+  "quartier": "Griffintown"
+ },
+ "Newspeak": null,
+ "O Patro Vys": {
+  "lat": 45.5225,
+  "lon": -73.583,
+  "quartier": "Plateau"
+ },
+ "P'tit Ours": {
+  "lat": 45.5195,
+  "lon": -73.5975,
+  "quartier": "Mile End"
+ },
+ "Parc Champdoré": {
+  "lat": 45.569,
+  "lon": -73.62,
+  "quartier": "Saint-Michel"
+ },
+ "Parc Félix-Leclerc – LaSalle": {
+  "lat": 45.429,
+  "lon": -73.64,
+  "quartier": "LaSalle"
+ },
+ "Parc Louis-Querbes": null,
+ "Petit Campus": {
+  "lat": 45.5146,
+  "lon": -73.571,
+  "quartier": "Plateau"
+ },
+ "Piranha Bar": {
+  "lat": 45.5025,
+  "lon": -73.571,
+  "quartier": "Centre-ville"
+ },
+ "Place Gennevilliers-Laliberté": null,
+ "Place Rodolphe-Rousseau": {
+  "lat": 45.514,
+  "lon": -73.681,
+  "quartier": "Saint-Laurent"
+ },
+ "Place des Arts": {
+  "alias": [
+   "Cinquième Salle, Place des Arts",
+   "Cinquième Salle"
+  ],
+  "lat": 45.508,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles"
+ },
+ "Place des Tisserandes": {
+  "lat": 45.546,
+  "lon": -73.545,
+  "quartier": "Hochelaga"
+ },
+ "Place du Marché": null,
+ "Placette Newman": {
+  "lat": 45.438,
+  "lon": -73.625,
+  "quartier": "LaSalle"
+ },
+ "Quai 5160 – Maison de la culture de Verdun": {
+  "lat": 45.448,
+  "lon": -73.577,
+  "quartier": "Verdun"
+ },
+ "Quai des Brumes": {
+  "lat": 45.524,
+  "lon": -73.582,
+  "quartier": "Plateau"
+ },
+ "Rue Ontario Est": {
+  "lat": 45.525,
+  "lon": -73.558,
+  "quartier": "Centre-Sud"
+ },
+ "SAT": {
+  "alias": [
+   "Society for Arts & Technology",
+   "Société des arts technologiques",
+   "Society for Arts and Technology"
+  ],
+  "lat": 45.5105,
+  "lon": -73.563,
+  "quartier": "Quartier des spectacles"
+ },
+ "Sainte-Catherine Hall": null,
+ "Salle Paul-Desmarais": null,
+ "Salle Pierre-Mercure": {
+  "lat": 45.5145,
+  "lon": -73.559,
+  "quartier": "Quartier latin"
+ },
+ "Salle Wilfrid-Pelletier": {
+  "lat": 45.508,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles"
+ },
+ "Salle Émile-Legault": {
+  "lat": 45.511,
+  "lon": -73.674,
+  "quartier": "Saint-Laurent"
+ },
+ "Stereo": {
+  "lat": 45.517,
+  "lon": -73.558,
+  "quartier": "Village"
+ },
+ "TOHU": {
+  "alias": [
+   "La TOHU",
+   "TOHU, la Cité des arts du cirque"
+  ],
+  "lat": 45.56,
+  "lon": -73.615,
+  "quartier": "Saint-Michel"
+ },
+ "Tangente": {
+  "alias": [
+   "Tangente Danse"
+  ],
+  "lat": 45.5075,
+  "lon": -73.569,
+  "quartier": "Quartier des spectacles"
+ },
+ "Théâtre Beanfield": {
+  "alias": [
+   "Beanfield Theatre"
+  ],
+  "lat": 45.484,
+  "lon": -73.58,
+  "quartier": "Petite-Bourgogne"
+ },
+ "Théâtre Centaur": {
+  "alias": [
+   "Centaur Theatre",
+   "Centaur"
+  ],
+  "lat": 45.5025,
+  "lon": -73.556,
+  "quartier": "Vieux-Montréal"
+ },
+ "Théâtre Denise-Pelletier": {
+  "lat": 45.552,
+  "lon": -73.542,
+  "quartier": "Hochelaga"
+ },
+ "Théâtre Desjardins (LaSalle)": {
+  "lat": 45.432,
+  "lon": -73.626,
+  "quartier": "LaSalle"
+ },
+ "Théâtre Fairmount": {
+  "alias": [
+   "Théâtre Fairmount Theatre",
+   "Fairmount Theatre"
+  ],
+  "lat": 45.5215,
+  "lon": -73.6,
+  "quartier": "Mile End"
+ },
+ "Théâtre La Comédie de Montréal": {
+  "lat": 45.515,
+  "lon": -73.56,
+  "quartier": "Quartier latin"
+ },
+ "Théâtre Maisonneuve": {
+  "alias": [
+   "Théâtre Maisonneuve, Place des Arts"
+  ],
+  "lat": 45.508,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles"
+ },
+ "Théâtre Mirella et Lino Saputo": {
+  "lat": 45.585,
+  "lon": -73.59,
+  "quartier": "Saint-Léonard"
+ },
+ "Théâtre Outremont": {
+  "lat": 45.5225,
+  "lon": -73.611,
+  "quartier": "Outremont"
+ },
+ "Théâtre Prospero": {
+  "lat": 45.522,
+  "lon": -73.558,
+  "quartier": "Centre-Sud"
+ },
+ "Théâtre Rialto": {
+  "lat": 45.524,
+  "lon": -73.604,
+  "quartier": "Mile End"
+ },
+ "Théâtre Sainte-Catherine": {
+  "lat": 45.5125,
+  "lon": -73.5605,
+  "quartier": "Quartier latin"
+ },
+ "Théâtre St-Denis": {
+  "alias": [
+   "Theatre St. Denis",
+   "Espace St-Denis",
+   "Studio St-Denis"
+  ],
+  "lat": 45.515,
+  "lon": -73.562,
+  "quartier": "Quartier latin"
+ },
+ "Théâtre d'Aujourd'hui": {
+  "lat": 45.5195,
+  "lon": -73.577,
+  "quartier": "Plateau"
+ },
+ "Théâtre de Quat'Sous": {
+  "lat": 45.5145,
+  "lon": -73.574,
+  "quartier": "Plateau"
+ },
+ "Théâtre du Nouveau Monde": {
+  "lat": 45.5085,
+  "lon": -73.566,
+  "quartier": "Quartier des spectacles"
+ },
+ "Théâtre du Rideau Vert": {
+  "lat": 45.526,
+  "lon": -73.5835,
+  "quartier": "Plateau"
+ },
+ "Turbo Haüs": {
+  "alias": [
+   "Turbo Haus",
+   "Turbo Haüs III"
+  ],
+  "lat": 45.516,
+  "lon": -73.565,
+  "quartier": "Quartier latin"
+ },
+ "Ursa": {
+  "lat": 45.523,
+  "lon": -73.602,
+  "quartier": "Mile End"
+ },
+ "Usine C": {
+  "lat": 45.5205,
+  "lon": -73.556,
+  "quartier": "Centre-Sud"
+ },
+ "Église Saint-Enfant-Jésus-du-Mile-End": {
+  "lat": 45.524,
+  "lon": -73.596,
+  "quartier": "Mile End"
+ },
+ "Cinquième Salle": {
+  "lat": 45.5083,
+  "lon": -73.5665,
+  "quartier": "Quartier des spectacles",
+  "alias": [
+   "Cinquième Salle de la Place des Arts"
+  ]
+ },
+ "Atrium des Grands Ballets (Édifice Wilder)": {
+  "lat": 45.5086,
+  "lon": -73.5687,
+  "quartier": "Quartier des spectacles",
+  "alias": [
+   "Atrium des Grands Ballets",
+   "Édifice Wilder"
+  ]
+ },
+ "Cinémathèque québécoise": {
+  "lat": 45.5154,
+  "lon": -73.5596,
+  "quartier": "Quartier latin"
+ },
+ "Cineplex Quartier Latin": {
+  "lat": 45.5146,
+  "lon": -73.5625,
+  "quartier": "Quartier latin"
+ },
+ "Cinéma du Musée": {
+  "lat": 45.4985,
+  "lon": -73.5795,
+  "quartier": "Centre-ville"
+ },
+ "Cinéma du Parc": {
+  "lat": 45.5104,
+  "lon": -73.5765,
+  "quartier": "Milton-Parc"
+ },
+ "Cinéma Beaubien": {
+  "lat": 45.5408,
+  "lon": -73.6031,
+  "quartier": "Rosemont"
+ },
+ "Cinéma Moderne": {
+  "lat": 45.5228,
+  "lon": -73.5946,
+  "quartier": "Mile End"
+ },
+ "Office national du film (ONF)": {
+  "lat": 45.5087,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles"
+ },
+ "Salle Bourgie": {
+  "lat": 45.4986,
+  "lon": -73.5797,
+  "quartier": "Centre-ville"
+ },
+ "Oratoire Saint-Joseph": {
+  "lat": 45.4925,
+  "lon": -73.6178,
+  "quartier": "Côte-des-Neiges"
+ },
+ "Chapelle Notre-Dame-de-Bon-Secours": {
+  "lat": 45.5093,
+  "lon": -73.5507,
+  "quartier": "Vieux-Montréal"
+ },
+ "Église Saint-Léon de Westmount": {
+  "lat": 45.4855,
+  "lon": -73.5925,
+  "quartier": "Westmount"
+ },
+ "Église St. John the Evangelist": {
+  "lat": 45.5072,
+  "lon": -73.5683,
+  "quartier": "Centre-ville"
+ },
+ "Église St. George": {
+  "lat": 45.4985,
+  "lon": -73.5714,
+  "quartier": "Centre-ville"
+ },
+ "Le 9e": {
+  "lat": 45.5035,
+  "lon": -73.571,
+  "quartier": "Centre-ville"
+ },
+ "Théâtre Paradoxe": {
+  "lat": 45.4528,
+  "lon": -73.59,
+  "quartier": "Sud-Ouest"
+ },
+ "Espace Off-Bach (3487, boul. Saint-Laurent)": {
+  "lat": 45.5129,
+  "lon": -73.5735,
+  "quartier": "Plateau"
+ },
+ "Palais des congrès de Montréal": {
+  "lat": 45.504,
+  "lon": -73.561,
+  "quartier": "Centre-ville"
+ },
+ "Blouin Division": {
+  "lat": 45.4889,
+  "lon": -73.5658,
+  "quartier": "Griffintown",
+  "adresse": "2020, rue William, Montréal",
+  "alias": []
+ },
+ "Bradley Ertaskiran": {
+  "lat": 45.4812,
+  "lon": -73.5823,
+  "quartier": "Saint-Henri",
+  "adresse": "3550, rue Saint-Antoine Ouest, Montréal",
+  "alias": []
+ },
+ "Chiguer Art Contemporain": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, espace 416 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "Duran Contemporain": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 527 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "Galerie Eli Kerr": {
+  "lat": 45.5207,
+  "lon": -73.5875,
+  "quartier": "Plateau",
+  "adresse": "4647, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Eli Kerr"
+  ]
+ },
+ "ELLEPHANT": {
+  "lat": 45.5097,
+  "lon": -73.5638,
+  "quartier": "Quartier des spectacles",
+  "adresse": "1201, rue Saint-Dominique, Montréal",
+  "alias": []
+ },
+ "Galerie C.O.A": {
+  "lat": 45.5328,
+  "lon": -73.6083,
+  "quartier": "Petite-Italie",
+  "adresse": "6405, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "C.O.A"
+  ]
+ },
+ "Galerie Hugues Charbonneau": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 508 (édifice Belgo), Montréal",
+  "alias": [
+   "Hugues Charbonneau"
+  ]
+ },
+ "Galerie Lacerte art contemporain": {
+  "lat": 45.5322,
+  "lon": -73.6075,
+  "quartier": "Petite-Italie",
+  "adresse": "6355, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Lacerte art contemporain"
+  ]
+ },
+ "Galerie Nicolas Robert": {
+  "lat": 45.5208,
+  "lon": -73.5876,
+  "quartier": "Plateau",
+  "adresse": "4653, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Nicolas Robert"
+  ]
+ },
+ "Galerie Robert Poulin": {
+  "lat": 45.532,
+  "lon": -73.6073,
+  "quartier": "Petite-Italie",
+  "adresse": "6341, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Robert Poulin"
+  ]
+ },
+ "Galerie Robertson Arès": {
+  "lat": 45.4823,
+  "lon": -73.5778,
+  "quartier": "Petite-Bourgogne",
+  "adresse": "2454, rue Notre-Dame Ouest, Montréal",
+  "alias": [
+   "Robertson Arès"
+  ]
+ },
+ "Galerie Simon Blais": {
+  "lat": 45.5246,
+  "lon": -73.5946,
+  "quartier": "Mile End",
+  "adresse": "5420, boul. Saint-Laurent, suite 100, Montréal",
+  "alias": [
+   "Simon Blais"
+  ]
+ },
+ "Galeries Bellemare Lambert": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 502 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "McBride Contemporain": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 414 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "Pangée": {
+  "lat": 45.4998,
+  "lon": -73.585,
+  "quartier": "Golden Square Mile",
+  "adresse": "1305, avenue des Pins Ouest, Montréal",
+  "alias": []
+ },
+ "Patel Brown": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, #412 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "Galerie Patrick Mikhail": {
+  "lat": 45.5214,
+  "lon": -73.5892,
+  "quartier": "Plateau",
+  "adresse": "4815, boul. Saint-Laurent, Montréal",
+  "alias": [
+   "Patrick Mikhail"
+  ]
+ },
+ "Pierre-François Ouellette art contemporain": {
+  "lat": 45.5254,
+  "lon": -73.5774,
+  "quartier": "Plateau",
+  "adresse": "963, rue Rachel Est, Montréal",
+  "alias": []
+ },
+ "TIAN Contemporain": {
+  "lat": 45.4839,
+  "lon": -73.5781,
+  "quartier": "Saint-Henri",
+  "adresse": "819, avenue Atwater, Montréal",
+  "alias": []
+ },
+ "Wishbone Galerie d'art": {
+  "lat": 45.5068,
+  "lon": -73.5672,
+  "quartier": "Quartier des spectacles",
+  "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
+  "alias": []
+ },
+ "Yves Laroche Galerie d'art": {
+  "lat": 45.5373,
+  "lon": -73.6475,
+  "quartier": "Chabanel",
+  "adresse": "99, rue Chabanel Ouest, suite 224, Montréal",
+  "alias": []
+ }
+}
