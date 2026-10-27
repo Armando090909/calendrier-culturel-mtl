@@ -13,6 +13,7 @@ Ce qui a été trouvé à la main (oct. 2026), pour ne pas refaire le travail. �
 | `collecteur/cache/heures.json` | heures trouvées sur les pages d'événements | collecte |
 | `collecteur/cache/festivals_dates.json` | dates des prochaines éditions trouvées en ligne | collecte |
 | `docs/rapport.json` | nombre d'événements et erreurs par source, à chaque collecte | collecte |
+| `collecteur/manuels.json` | programmes saisis à la main avant la mise en ligne (festivals, salles, galeries) ; relus à chaque collecte | à la main |
 | `outils/ajout_festivals_2026.py` | programmes saisis à la main le 27 oct. 2026 (CINEMANIA, Bach, M pour Montréal…) | ponctuel |
 
 ## Rythme de la collecte automatique (GitHub Actions, chaque jour vers 5 h 30)
