@@ -1,31 +1,115 @@
 {
  "date": "2026-10-27",
  "statut": "publié",
- "evenements": 1410,
- "expositions": 85,
+ "evenements": 2984,
+ "expositions": 378,
  "nouvelles_salles": [
-  "Batiment 7",
-  "Centre culturel de Pierrefonds",
-  "Centre des femmes de Rivière-des-Prairies",
-  "Eglise de la visitation",
-  "L'Illusion, Théâtre de marionnettes",
-  "Le Cheval Blanc",
-  "Lopez",
-  "MEM - Centre des mémoires montréalaises",
-  "Marché Bonsecours",
-  "Place Chaumont",
-  "Salle Jean-Eudes",
-  "Union des familles d'Ahuntsic",
-  "café de la ligne verte",
-  "carrefour angrignon",
-  "le dragon",
-  "nan",
-  "neverclub",
-  "École Saint-Simon-Apôtre",
-  "Église Notre-Dame-des-Sept-Douleurs",
-  "Église Saint-Isaac-Jogues",
-  "Église Saint-Viateur",
-  "Église Saint-Édouard"
+  "Abbotsford Centre",
+  "Adélard",
+  "Ahkwayaonhkeh",
+  "Alūr Restaurant & Lounge",
+  "Amphithéâtre du Gesù",
+  "Atelier de l'Île",
+  "Auberge St Gabriel - Montreal",
+  "Basilique Notre-Dame",
+  "Bibliothèque Hélène-Pedneault",
+  "Bibliothèque du Cégep de Granby",
+  "Biosphère",
+  "Brasserie Beaubien",
+  "Cabaret Mado",
+  "Cabaret-Théâtre du Vieux Saint-Jean",
+  "Caravansérail",
+  "Centre Pierre-Peladeau",
+  "Centre SAGAMIE",
+  "Centre des arts actuels SKOL",
+  "Centre des arts visuels / Galerie McClure",
+  "Clavier",
+  "Club Balattou",
+  "Commodore Ballroom",
+  "Conservatoire de Musique De Montreal",
+  "DARE-DARE",
+  "DATCHA",
+  "Deli Planet",
+  "ELEKTRA",
+  "Espace Panache",
+  "Espace Séquence",
+  "Esplanade Tranquille",
+  "Fondation Grantham pour l'art et l'environnement",
+  "Galerie L'Onyx",
+  "Galerie d'art Stewart Hall",
+  "Grand Chapiteau Vancouver",
+  "Grizzly Fuzz",
+  "Groupe Intervention Vidéo",
+  "History",
+  "Igloofest",
+  "Impérial Bell",
+  "La Boîte à Bleuets",
+  "La Cale - Pub Zéro Déchets",
+  "La Chapelle spectacles",
+  "La Librairie",
+  "La Livrerie",
+  "La Petite Boîte Noire",
+  "La Pointe Sec",
+  "Le Calypso",
+  "Le Carlton Signature",
+  "Le Minotaure",
+  "Le Red Room",
+  "Le Terminal",
+  "Le Zaricot",
+  "Le Zénith Promutuel Assurances",
+  "Les Diffusions Pointe-Valaine",
+  "Ludger-Duvernay Theatre",
+  "L’esco",
+  "M For Montreal 2026",
+  "MAC Montréal",
+  "Maurice O'Bready",
+  "Non précisé",
+  "Parc du Mont-Royal",
+  "Pictura Triennale de peinture de Montréal",
+  "Plusieurs salles",
+  "Pointe-Claire Public Library - Central",
+  "Premier Acte",
+  "Rogers Arena",
+  "Salle Albert-Rousseau",
+  "Salle André-Mathieu",
+  "Salle Claude-Legault",
+  "Salle Claudia-Ebacher",
+  "Salle Desjardins-Telus",
+  "Salle Edwin-Bélanger",
+  "Salle Jean-Claude-Germain",
+  "Salle Jean-Cossette",
+  "Salle Michelle-Rossignol",
+  "Salle Méchatigan",
+  "Salle Octave-Crémazie",
+  "Salle Odyssée",
+  "Salle Pauline-Julien",
+  "Salon urbain",
+  "Sample Listening Bar",
+  "Scotiabank Arena",
+  "Scotiabank Saddledome",
+  "Southern Alberta Jubilee Auditorium",
+  "Studio-théâtre des Grands Ballets",
+  "TOPO",
+  "The Arena at Pickering Casino Resort",
+  "The Axis Club",
+  "The Church of St John the Evangelist",
+  "The Danforth Music Hall",
+  "The Great Hall",
+  "The Opera House",
+  "Théâtre Alphonse-Desjardins",
+  "Théâtre Belcourt",
+  "Théâtre Gilles-Vigneault",
+  "Théâtre Hector-Charland",
+  "Théâtre Lionel-Groulx",
+  "Théâtre Manuvie",
+  "Théâtre de Lac-Brome",
+  "Théâtre l'Aparté",
+  "Upstairs Jazz Bar & Grill",
+  "VOART Centre d'exposition de Val-d'Or",
+  "Vogue Theatre",
+  "Église Saint-Antoine de Lavaltrie",
+  "Église St. Andrew & St. Paul",
+  "Église de Saint-Jean l'Évangéliste"
  ],
  "sources": [
   {
@@ -42,50 +126,50 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 0,
+   "evenements": 247,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Songkick (concerts, 2 mois)",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 494,
+   "series": 5,
    "erreur": null
   },
   {
    "source": "Espace GO",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "TNM",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Duceppe",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 3,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "Théâtre du Rideau Vert",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 2,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Théâtre de Quat'Sous",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
    "source": "Théâtre Prospero",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
@@ -97,19 +181,19 @@
   {
    "source": "Théâtre d'Aujourd'hui",
    "evenements": 0,
-   "series": 0,
+   "series": 4,
    "erreur": null
   },
   {
    "source": "Théâtre Denise-Pelletier",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "Usine C",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
@@ -127,30 +211,30 @@
   {
    "source": "Espace Libre",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "MAI",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "Maison Théâtre",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
    "source": "Théâtre Outremont",
-   "evenements": 0,
+   "evenements": 39,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Le Gesù",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null
   },
@@ -162,20 +246,20 @@
   },
   {
    "source": "Théâtre Sainte-Catherine",
-   "evenements": 0,
+   "evenements": 3,
    "series": 0,
    "erreur": null
   },
   {
    "source": "TOHU",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "Place des Arts",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 30,
+   "series": 15,
    "erreur": null
   },
   {
@@ -186,61 +270,61 @@
   },
   {
    "source": "Agora de la danse",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 1,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Tangente",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
    "source": "La Chapelle",
    "evenements": 0,
-   "series": 0,
+   "series": 4,
    "erreur": null
   },
   {
    "source": "Usine C (saison)",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "École nationale de cirque",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Fun Nation (humour)",
-   "evenements": 0,
+   "evenements": 12,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Spectaculos (humour",
-   "evenements": 0,
+   "evenements": 27,
    "series": 0,
    "erreur": null
   },
   {
    "source": "evenko (humour)",
-   "evenements": 0,
+   "evenements": 20,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Place des Arts (humour)",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 2,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Théâtre Sainte-Catherine (impro",
-   "evenements": 0,
+   "evenements": 3,
    "series": 0,
    "erreur": null
   },
@@ -258,7 +342,7 @@
   },
   {
    "source": "Place des Arts junior",
-   "evenements": 0,
+   "evenements": 3,
    "series": 0,
    "erreur": null
   },
@@ -276,19 +360,19 @@
   },
   {
    "source": "Réseau art actuel (centres d'artistes",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 7,
+   "series": 48,
    "erreur": null
   },
   {
    "source": "Art Mûr (expositions à venir)",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 2,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "ma.to (musique live)",
-   "evenements": 0,
+   "evenements": 18,
    "series": 0,
    "erreur": null
   },
@@ -300,19 +384,19 @@
   },
   {
    "source": "Théâtre Fairmount",
-   "evenements": 0,
+   "evenements": 25,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Club Soda",
-   "evenements": 0,
+   "evenements": 8,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Bar Le Ritz PDB",
-   "evenements": 0,
+   "evenements": 28,
    "series": 0,
    "erreur": null
   },
@@ -324,7 +408,7 @@
   },
   {
    "source": "Newspeak",
-   "evenements": 0,
+   "evenements": 14,
    "series": 0,
    "erreur": null
   },
@@ -349,31 +433,31 @@
   {
    "source": "Blouin Division",
    "evenements": 0,
-   "series": 0,
+   "series": 4,
    "erreur": null
   },
   {
    "source": "Bradley Ertaskiran",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Chiguer Art Contemporain",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
    "source": "Duran Contemporain",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Galerie Eli Kerr",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
@@ -421,31 +505,31 @@
   {
    "source": "Galerie Simon Blais",
    "evenements": 0,
-   "series": 0,
+   "series": 4,
    "erreur": null
   },
   {
    "source": "Galeries Bellemare Lambert",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "McBride Contemporain",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Pangée",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
    "source": "Patel Brown",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
@@ -456,8 +540,8 @@
   },
   {
    "source": "Pierre-François Ouellette art contemporain",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 1,
+   "series": 1,
    "erreur": null
   },
   {
@@ -480,7 +564,7 @@
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null
   },
@@ -534,7 +618,7 @@
   },
   {
    "source": "Le Ministère",
-   "evenements": 0,
+   "evenements": 8,
    "series": 0,
    "erreur": null
   },
@@ -546,7 +630,7 @@
   },
   {
    "source": "Ausgang Plaza",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null
   },
@@ -570,25 +654,25 @@
   },
   {
    "source": "Le Studio TD",
-   "evenements": 0,
+   "evenements": 13,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Casa del Popolo – La Toscadura",
-   "evenements": 0,
+   "evenements": 18,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Casa del Popolo – P'tit Ours",
-   "evenements": 0,
+   "evenements": 30,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Casa del Popolo – La Sotterenea",
-   "evenements": 0,
+   "evenements": 27,
    "series": 0,
    "erreur": null
   },
@@ -600,7 +684,7 @@
   },
   {
    "source": "Bar Datcha",
-   "evenements": 0,
+   "evenements": 11,
    "series": 0,
    "erreur": null
   },
@@ -618,7 +702,7 @@
   },
   {
    "source": "Cabaret Mado (drag)",
-   "evenements": 0,
+   "evenements": 55,
    "series": 0,
    "erreur": null
   },
@@ -655,7 +739,7 @@
   {
    "source": "Repercussion Theatre",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null
   },
   {
@@ -666,7 +750,7 @@
   },
   {
    "source": "La Comédie de Montréal",
-   "evenements": 0,
+   "evenements": 15,
    "series": 0,
    "erreur": null
   },
@@ -691,7 +775,7 @@
   {
    "source": "DARE-DARE (art public)",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
@@ -702,8 +786,8 @@
   },
   {
    "source": "Le Livart (centre d'art multidisciplinaire)",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 1,
+   "series": 1,
    "erreur": null
   },
   {
@@ -715,7 +799,7 @@
   {
    "source": "La poésie partout (calendrier)",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null
   },
   {
@@ -732,25 +816,25 @@
   },
   {
    "source": "La Livrerie",
-   "evenements": 0,
+   "evenements": 17,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Salle Pauline-Julien (ouest de l'île)",
-   "evenements": 0,
+   "evenements": 27,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Pointe-Claire – Stewart Hall et activités",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
-   "evenements": 0,
+   "evenements": 30,
    "series": 0,
    "erreur": null
   },
@@ -769,7 +853,7 @@
   {
    "source": "150 ans du parc du Mont-Royal",
    "evenements": 0,
-   "series": 0,
+   "series": 3,
    "erreur": null
   },
   {
@@ -780,13 +864,13 @@
   },
   {
    "source": "Ursa",
-   "evenements": 0,
+   "evenements": 30,
    "series": 0,
    "erreur": null
   },
   {
    "source": "La Lumière Collective",
-   "evenements": 0,
+   "evenements": 5,
    "series": 0,
    "erreur": null
   },
@@ -816,14 +900,14 @@
   },
   {
    "source": "Festival · Monde Arabe (2)",
-   "evenements": 0,
+   "evenements": 4,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Festival · CINEMANIA",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 205,
+   "series": 47,
    "erreur": null
   },
   {
@@ -834,14 +918,14 @@
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 0,
+   "evenements": 56,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Festival · Coup de cœur",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 94,
+   "series": 16,
    "erreur": null
   },
   {
@@ -894,7 +978,7 @@
   },
   {
    "source": "Festival · Casteliers",
-   "evenements": 0,
+   "evenements": 2,
    "series": 0,
    "erreur": null
   },
@@ -1026,7 +1110,7 @@
   },
   {
    "source": "Festival · Nuits d'Afrique",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null
   },
@@ -1128,19 +1212,19 @@
   },
   {
    "source": "Festival · Akousma",
-   "evenements": 0,
+   "evenements": 2,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Festival · Comiccon",
-   "evenements": 0,
+   "evenements": 2,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Festival · Comiccon des Fêtes",
-   "evenements": 0,
+   "evenements": 2,
    "series": 0,
    "erreur": null
   },
