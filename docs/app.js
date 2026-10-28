@@ -387,9 +387,6 @@ function render(){
   save();
 }
 function renderFooter(){
-  $("foot").innerHTML=`<div>Sources : ${Object.values(D.sources).filter(x=>x.url).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.nom)}</a>`).join(", ")}, et sites de salles. Seule l'île de Montréal est gardée. Les activités non culturelles (cours, informatique, sport, séances du conseil) et les événements annulés ou reportés sont écartés.</div>
-  <div>Le classement par discipline se fait d'après les titres et les catégories des sources : certains sont des suppositions; un spectacle peut être dans deux disciplines. Les positions des salles sont approximatives. Les concerts sans heure connue s'ajoutent à votre agenda comme événements d'une journée.</div>
-  <div>Cartes : © les contributeurs d'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>. <a href="sources.html">Nos sources et salles</a> · <a href="salles.html">Pour les salles et organismes</a> · <a href="rapport.json">Rapport de la dernière collecte</a></div>`;
   $("majInfo").textContent=`Mis à jour le ${fmtLong(D.miseAJour).toLowerCase()} · événements du ${fmt(D.debut)} au ${fmt(D.fin)}.`;
 }
 
@@ -452,10 +449,12 @@ $("addr").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();
 
 fetch("config.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(c=>{
   CFG=c||{};if(c&&c.formulaireEvenement){const a=$("lienProposer");a.href=c.formulaireEvenement;a.hidden=false}
-  if(c&&c.don){$("donLien").href=c.don;if(c.donTexte)$("donLien").textContent=c.donTexte;$("donLien").hidden=false;$("don").hidden=false}
-  if(c&&c.donInterac){$("donCourriel").textContent=c.donInterac;$("donInterac").hidden=false;$("don").hidden=false;
-    $("donCopier").addEventListener("click",()=>{const ok=()=>{$("donCopier").textContent="Copié ✓"};
-      try{navigator.clipboard.writeText(c.donInterac).then(ok,()=>{})}catch(e){}})}
+  if(c&&(c.donInterac||c.don)){const bt=$("donBtn");if(c.donTexte)bt.textContent=c.donTexte;bt.hidden=false;
+    bt.addEventListener("click",()=>{if(!c.donInterac&&c.don){window.open(c.don,"_blank","noopener");return}
+      const p=$("donPop");p.hidden=!p.hidden;bt.setAttribute("aria-expanded",String(!p.hidden))});
+    if(c.donInterac){$("donCourriel").textContent=c.donInterac;
+      $("donCopier").addEventListener("click",()=>{const ok=()=>{$("donCopier").textContent="Copiée ✓"};
+        try{navigator.clipboard.writeText(c.donInterac).then(ok,()=>{})}catch(e){}})}}
   if(D)render();
 }).catch(()=>{});
 fetch("festivals.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(L=>{
