@@ -422,3 +422,21 @@ class TestDoublonsSites(unittest.TestCase):
         from normalisation import dedoublonner
         base = {"date": "2026-10-29", "lieu": "Upstairs Jazz Bar & Grill", "titre": "TAUREY BUTLER TRIO", "source": "salles", "url": "https://upstairsjazz.com/x"}
         self.assertEqual(len(dedoublonner([dict(base, heure="19:00"), dict(base, heure="21:30")])), 2)
+
+
+class TestBandcamp(unittest.TestCase):
+    PAGE = """<ul><li class="searchresult band"><div class="heading"><a href="https://anguilles.bandcamp.com?from=search">Anguilles</a></div>
+      <div class="subhead">Montréal, Québec</div><div class="itemurl"><a>https://anguilles.bandcamp.com</a></div></li>
+      <li class="searchresult band"><div class="heading"><a href="https://x.bandcamp.com">Anguilles</a></div>
+      <div class="subhead">Lyon, France</div><div class="itemurl"><a>https://x.bandcamp.com</a></div></li>
+      <li class="searchresult band"><div class="heading"><a href="https://y.bandcamp.com">Anguilles du Nord</a></div></li></ul>"""
+
+    def test_local_prefere(self):
+        from decouverte import bandcamp
+        r = bandcamp("Anguilles", lambda u: self.PAGE)
+        self.assertEqual(r[0]["url"], "https://anguilles.bandcamp.com")
+
+    def test_abstention(self):
+        from decouverte import bandcamp
+        page = self.PAGE.replace("Montréal, Québec", "Berlin")
+        self.assertEqual(bandcamp("Anguilles", lambda u: page), [])
