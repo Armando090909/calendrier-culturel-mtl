@@ -79,3 +79,9 @@ Objectif : petites salles, quartiers excentrés, lieux multidisciplinaires, art 
 
 ## Catégories (28 oct. 2026)
 Théâtre · Musique · Danse · Cirque · Humour et cabaret (drag, burlesque, Cabaret Mado) · Cinéma · Poésie, slam et lectures (`lettres`) · Conférences (`conference` : colloques, causeries, tables rondes) · Jeune public · Ateliers (`atelier`) · Fêtes et célébrations (`fete`) · Vernissages (`expo`) · Autre. Les expositions en cours sont dans l'onglet Expos (plus dans le calendrier).
+
+## Salles : 2e tour (28 oct. 2026)
+- Constat (collecte du 28 oct.) : ~25 sites de salles refusent le robot (403) ou sont en JavaScript (0 caractère lisible), dont Quai des Brumes, Café Campus, Rialto, Le National, Système, Balattou, Dièse Onze, L'Entracte, Bistro à Jojo, Le Balcon, Le Belmont, SAT, Eastern Bloc, RA, Monument-National.
+- Les 403 venaient peut-être de l'ancien User-Agent (changé le 28 oct.) : à vérifier dans le rapport suivant.
+- Pour les sites en JavaScript : **Le Point de vente** (`lepointdevente.com/lieux/<salle>`) publie la liste des spectacles de chaque salle en texte lisible, avec heures. Ajoutés : Quai des Brumes, Café Campus (+ page « shows »), Turbo Haüs, Rialto, Espace La Risée, L'Escogriffe, Club Soda, Ausgang, O Patro Vys, Centre Sanaaq, MCC Montréal-Nord. Limite : seuls les spectacles vendus sur cette billetterie y sont (les shows gratuits ou vendus ailleurs n'y sont pas).
+- Salles de musique : lues lundi, mercredi et vendredi (au lieu de lundi et jeudi) ; une page inchangée ne coûte rien.

@@ -134,14 +134,14 @@ sources:
   # Quand un concert est aussi sur Songkick, la version avec l'heure est gardée. Adresses à vérifier :
   # si le rapport montre 0 événement, remplacez par la page « calendrier / shows » de la salle.
   - {nom: ma.to (musique live), cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/live-music", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: evenko (concerts), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements/concerts", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Théâtre Fairmount, cle: salles, type: page_ia, url: "https://theatrefairmount.com/", lieu: Théâtre Fairmount, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Club Soda, cle: salles, type: page_ia, url: "https://clubsoda.ca/", lieu: Club Soda, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Bar Le Ritz PDB, cle: salles, type: page_ia, url: "http://www.barleritzpdb.com/", lieu: Bar Le Ritz PDB, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Foufounes Électriques, cle: salles, type: page_ia, url: "https://foufouneselectriques.com/", lieu: Foufounes Électriques, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Newspeak, cle: salles, type: page_ia, url: "https://newspeakmtl.com/", lieu: Newspeak, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Café Campus / Petit Campus, cle: salles, type: page_ia, url: "https://cafecampus.com/", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: evenko (concerts), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements/concerts", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Théâtre Fairmount, cle: salles, type: page_ia, url: "https://theatrefairmount.com/", lieu: Théâtre Fairmount, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Club Soda, cle: salles, type: page_ia, url: "https://clubsoda.ca/", lieu: Club Soda, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Bar Le Ritz PDB, cle: salles, type: page_ia, url: "http://www.barleritzpdb.com/", lieu: Bar Le Ritz PDB, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Foufounes Électriques, cle: salles, type: page_ia, url: "https://foufouneselectriques.com/", lieu: Foufounes Électriques, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Newspeak, cle: salles, type: page_ia, url: "https://newspeakmtl.com/", lieu: Newspeak, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Café Campus / Petit Campus, cle: salles, type: page_ia, url: "https://cafecampus.com/", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Théâtre St-Denis, cle: salles, type: page_ia, url: "https://theatrestdenis.com/", lieu: Théâtre St-Denis, jours_semaine: [0, 3]}
 
   # ---------- Galeries d'art contemporain (membres montréalais de l'AGAC, agac.ca/galeries) : expositions et vernissages ----------
@@ -170,28 +170,28 @@ sources:
 
   # =============== Tour des « bijoux » (27 oct. 2026) : voir collecteur/RECHERCHES.md ===============
   # ---------- Boîtes à musique, jazz, musiques du monde, bars de quartier ----------
-  - {nom: "Upstairs Jazz Bar & Grill", cle: salles, type: page_ia, url: "https://www.upstairsjazz.com/", lieu: "Upstairs Jazz Bar & Grill", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Bistro à Jojo (blues)", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Upstairs Jazz Bar & Grill", cle: salles, type: page_ia, url: "https://www.upstairsjazz.com/", lieu: "Upstairs Jazz Bar & Grill", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Bistro à Jojo (blues)", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
-  - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Quai des Brumes", cle: salles, type: page_ia, url: "https://quaidesbrumes.ca/", lieu: "Quai des Brumes", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Le Ministère", cle: salles, type: page_ia, url: "https://leministere.ca/", lieu: "Le Ministère", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Le Belmont", cle: salles, type: page_ia, url: "https://www.lebelmont.ca/", lieu: "Le Belmont", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Ausgang Plaza", cle: salles, type: page_ia, url: "https://www.ausgangplaza.com/evenements", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Quai des Brumes", cle: salles, type: page_ia, url: "https://quaidesbrumes.ca/", lieu: "Quai des Brumes", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Le Ministère", cle: salles, type: page_ia, url: "https://leministere.ca/", lieu: "Le Ministère", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Le Belmont", cle: salles, type: page_ia, url: "https://www.lebelmont.ca/", lieu: "Le Belmont", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Ausgang Plaza", cle: salles, type: page_ia, url: "https://www.ausgangplaza.com/evenements", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3]}
   - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3]}
   - {nom: "Le Studio TD", cle: salles, type: page_ia, url: "https://lestudiotd.com/fr", lieu: "Le Studio TD", jours_semaine: [0, 3]}
-  - {nom: "Casa del Popolo – La Toscadura", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-toscadura", lieu: "La Toscadura", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Casa del Popolo – P'tit Ours", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/ptit-ours", lieu: "P'tit Ours", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Casa del Popolo – La Sotterenea", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-sotterenea", lieu: "La Sotterenea", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Casa del Popolo – La Toscadura", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-toscadura", lieu: "La Toscadura", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Casa del Popolo – P'tit Ours", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/ptit-ours", lieu: "P'tit Ours", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Casa del Popolo – La Sotterenea", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-sotterenea", lieu: "La Sotterenea", discipline: musique, jours_semaine: [0, 2, 4]}
   # ---------- Électro, raves, nuits ----------
-  - {nom: "Resident Advisor – Montréal (électro, raves)", cle: salles, type: page_ia, url: "https://ra.co/events/ca/montreal", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Bar Datcha", cle: salles, type: page_ia, url: "https://bardatcha.ca/", lieu: "Bar Datcha", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Resident Advisor – Montréal (électro, raves)", cle: salles, type: page_ia, url: "https://ra.co/events/ca/montreal", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Bar Datcha", cle: salles, type: page_ia, url: "https://bardatcha.ca/", lieu: "Bar Datcha", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "SAT – Société des arts technologiques", cle: salles, type: page_ia, url: "https://sat.qc.ca/", lieu: "Société des arts technologiques (SAT)", jours_semaine: [0, 3]}
   # ---------- Humour amateur, cabaret, drag ----------
   - {nom: "Laugh It Off MTL (humour, scènes ouvertes)", cle: salles, type: page_ia, url: "https://www.laughitoffmtl.ca/fr", discipline: humour, jours_semaine: [0, 3]}
@@ -226,7 +226,22 @@ sources:
   - {nom: "150 ans du parc du Mont-Royal", cle: salles, type: page_ia, url: "https://150montroyal.ca/", jours_semaine: [0]}
 
   # ---------- Petites salles et lieux indépendants (adresses à vérifier ; ajoutez les vôtres) ----------
-  - {nom: Casa del Popolo / Sala Rossa, cle: salles, type: page_ia, url: "https://casadelpopolo.com/", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: Ursa, cle: salles, type: page_ia, url: "https://ursamtl.com/", lieu: Ursa, discipline: musique, jours_semaine: [0, 3]}
+  - {nom: Casa del Popolo / Sala Rossa, cle: salles, type: page_ia, url: "https://casadelpopolo.com/", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Ursa, cle: salles, type: page_ia, url: "https://ursamtl.com/", lieu: Ursa, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: La Lumière Collective, cle: salles, type: page_ia, url: "https://lalumierecollective.org/", lieu: La Lumière Collective, adresse: "7080 rue Alexandra, Montréal", jours_semaine: [0, 3]}
   - {nom: Eastern Bloc, cle: salles, type: page_ia, url: "https://easternbloc.ca/", lieu: Eastern Bloc, jours_semaine: [0, 3]}
+
+  # ---- Billetterie Le Point de vente (28 oct. 2026) : pages « lieu », lisibles sans navigateur.
+  # Pour les salles dont le site est en JavaScript ou refuse les robots (Quai des Brumes, Café Campus, Rialto…).
+  - {nom: "Quai des Brumes (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/lequaidesbrumes", lieu: "Quai des Brumes", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Café Campus (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/cafecampus", lieu: "Café Campus", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Café Campus et Petit Campus – shows (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/tickets/cafecampusshows", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Turbo Haüs (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/turbohaus-2", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Théâtre Rialto (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/theatre-rialto", lieu: "Théâtre Rialto", jours_semaine: [0, 2, 4]}
+  - {nom: "Espace La Risée (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/l-espace-la-risee", lieu: "Espace La Risée", discipline: theatre, jours_semaine: [0, 3]}
+  - {nom: "L'Escogriffe (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/bar-spectacle-l-escogriffe", lieu: "L'Escogriffe", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Club Soda (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/club-soda", lieu: "Club Soda", jours_semaine: [0, 3]}
+  - {nom: "Ausgang Plaza (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/ausgang-plaza", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "O Patro Vys (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/o-patro-vys", lieu: "O Patro Vys", jours_semaine: [0, 3]}
+  - {nom: "Centre Sanaaq (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/centresanaaqsalle1rdc", lieu: "Centre Sanaaq", jours_semaine: [0]}
+  - {nom: "Maison culturelle et communautaire de Montréal-Nord (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/maison-culturelle-et-communautaire-de-montreal-nord-mcc", lieu: "Maison culturelle et communautaire de Montréal-Nord", jours_semaine: [0]}
