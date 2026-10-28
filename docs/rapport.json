@@ -1,53 +1,15 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "statut": "publié",
- "evenements": 2301,
- "expositions": 303,
+ "evenements": 2168,
+ "expositions": 306,
  "nouvelles_salles": [
-  "Algonquin Commons Theatre",
-  "Ancien Théâtre Desjardins",
-  "Burton Cummings Theatre",
-  "Centre Caztel",
-  "Elgin and Winter Garden Theatre Centre",
-  "En ligne",
-  "En salle",
-  "FirstOntario Centre",
-  "FirstOntario Concert Hall",
-  "Foyer Yves-Gagnon",
-  "Jardin botanique",
-  "L'Espace Mandeville",
-  "Le Carré 150",
-  "Le Ritz",
-  "Le Vieux Clocher de Magog",
-  "Massey Hall",
-  "Meadowvale Theatre",
-  "Molson Canadian Centre at Casino New-Brunswick",
-  "Montreal",
-  "ONF - Montreal",
-  "Pavillon de l'île",
-  "Plusieurs lieux",
-  "Rio Theatre",
-  "Rum Runners",
-  "Salle Dussault",
-  "Salle Jean-Louis-Millette",
-  "Salle Louis-Fréchette",
-  "Salle Richard-Sauvageau",
-  "Salle d'exposition",
-  "The Avalon Theatre At Niagara Fallsview Casino Resort",
-  "The Fox Cabaret",
-  "Thunder Bay Community Auditorium",
-  "Théâtre C",
-  "Théâtre Capitole",
-  "Théâtre Desjardins",
-  "Théâtre Télébec",
-  "Théâtre du Marais",
-  "WinSport Event Centre",
-  "À l'extérieur"
+  "Bocadillo Bistro"
  ],
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 2411,
+   "evenements": 2372,
    "series": 87,
    "erreur": null,
    "diagnostic": [
@@ -56,13 +18,13 @@
   },
   {
    "source": "Ask A Punk (DIY, punk, hardcore)",
-   "evenements": 32,
+   "evenements": 33,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 325,
+   "evenements": 201,
    "series": 0,
    "erreur": null
   },
@@ -320,7 +282,8 @@
    "source": "Tourisme Montréal – sorties en famille",
    "evenements": 12,
    "series": 17,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Place des Arts junior",
@@ -331,12 +294,9 @@
   },
   {
    "source": "Tourisme Montréal – expositions des musées",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/exposit) : https://www.mtl.org/fr/experience/expositions-musees-montreal"
-   ]
+   "evenements": 2,
+   "series": 9,
+   "erreur": null
   },
   {
    "source": "Tourisme Montréal – expositions automne-hiver",
@@ -363,10 +323,9 @@
   },
   {
    "source": "ma.to (musique live)",
-   "evenements": 18,
+   "evenements": 17,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "evenko (concerts)",
@@ -1089,15 +1048,13 @@
    "source": "Festival · Monde Arabe (2)",
    "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · CINEMANIA",
    "evenements": 205,
    "series": 47,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · La Mèche courte",
@@ -1110,10 +1067,9 @@
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 56,
+   "evenements": 7,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · Coup de cœur",
@@ -1145,7 +1101,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1061 caractères de texte : https://ridm.ca"
+    "aucun événement trouvé dans 924 caractères de texte : https://ridm.ca"
    ]
   },
   {
@@ -1190,7 +1146,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1864 caractères de texte : https://www.montrealenlumiere.com"
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com"
    ]
   },
   {
@@ -1368,7 +1324,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (85 caractères ; site en JavaScript ?) : https://francosmontreal.com"
+    "aucun événement trouvé dans 1627 caractères de texte : https://francosmontreal.com"
    ]
   },
   {
@@ -1465,7 +1421,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (41 caractères ; site en JavaScript ?) : https://lassomontreal.com"
+    "aucun événement trouvé dans 2582 caractères de texte : https://lassomontreal.com"
    ]
   },
   {
@@ -1558,8 +1514,7 @@
    "source": "Festival · Comiccon des Fêtes",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · Under Pressure",
