@@ -162,10 +162,16 @@ class Lieux:
         k = self._cle(nom)
         if k in self._index:
             return self._index[k]
-        # nom contenu dans un alias connu (ex. « L'Escogriffe Bar Spectacle (L'Esco) »)
-        for cle, canon in self._index.items():
-            if len(cle) >= 5 and (cle in k or k in cle):
-                return canon
+        # Un nom connu contenu dans le nom lu (ex. « L'Escogriffe Bar Spectacle (L'Esco) ») : le plus précis gagne.
+        dedans = sorted(((len(cle), canon) for cle, canon in self._index.items()
+                         if len(cle) >= 5 and re.search(r"(^| )" + re.escape(cle) + r"( |$)", k)), reverse=True)
+        if dedans:
+            return dedans[0][1]
+        # Nom lu plus court qu'un nom connu (ex. « Chapelle ») : seulement s'il ne désigne qu'une seule salle.
+        if len(k) >= 5:
+            cands = {canon for cle, canon in self._index.items() if re.search(r"(^| )" + re.escape(k) + r"( |$)", cle)}
+            if len(cands) == 1:
+                return cands.pop()
         return None
 
     def ajouter(self, nom: str, info: dict | None, alias: str | None = None) -> str:

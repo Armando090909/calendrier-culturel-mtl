@@ -313,6 +313,20 @@ def main() -> int:
         if x["fin"] >= aujourd.isoformat() and x["debut"] <= fin.isoformat() and k not in vus:
             vus.add(k)
             expos.append(dict(x))
+    # Pièces, films, concerts « à l'affiche du … au … » : le site les montre chaque jour de la période.
+    # On les retire quand les dates précises sont déjà connues (même titre parmi les événements), quand la période
+    # est celle d'un festival (ex. un film de CINEMANIA « du 2 au 15 nov. »), ou quand la même page est déjà là.
+    titres = {plat(e["titre"])[:25] for e in events}
+    pages, gardees = set(), []
+    for x in expos:
+        if x["discipline"] != "expo":
+            if x.get("festival") or plat(x["titre"])[:25] in titres:
+                continue
+            if x.get("url") and x["url"] in pages:
+                continue
+            pages.add(x.get("url"))
+        gardees.append(x)
+    expos = gardees
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
     fest.etiqueter(expos, festivals)
