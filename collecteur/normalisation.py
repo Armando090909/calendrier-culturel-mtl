@@ -250,6 +250,11 @@ def meme_evenement(a: dict, b: dict) -> bool:
     if a.get("festival") and a.get("festival") == b.get("festival") and a.get("heure") and a.get("heure") == b.get("heure") \
             and plat(a["lieu"]) != "lieu a confirmer":
         return True
+    # Même heure, et un titre qui commence comme l'autre (« Les Suppliantes » / « Les Suppliantes (Eschyle…) »)
+    ta, tb = plat(re.sub(r"\(.*?\)", " ", a["titre"])).strip(), plat(re.sub(r"\(.*?\)", " ", b["titre"])).strip()
+    if a.get("heure") and a.get("heure") == b.get("heure") and min(len(ta), len(tb)) >= 5 \
+            and (ta.startswith(tb) or tb.startswith(ta)):
+        return True
     ma, mb = _mots(a["titre"]), _mots(b["titre"])
     if not ma or not mb:
         return plat(a["titre"]) == plat(b["titre"])

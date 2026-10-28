@@ -145,10 +145,8 @@ function detailHTML(e){
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
       ${lieuHTML(e,true)}
       ${e.resume?`<p class="resume">${esc(e.resume)}</p>`:""}
-      ${media?"":actions}
-      ${extra}
     </div>
-    ${media?`<div class="det-side">${media}${actions}</div>`:""}
+    <div class="det-side${media?"":" seul"}">${media}${actions}${extra}</div>
   </article>`;
 }
 function renderChips(){

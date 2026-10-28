@@ -450,3 +450,15 @@ code{font-size:13px;background:var(--chip-off);border-radius:4px;padding:1px 5px
 .det-info .ecoute{margin-top:auto}
 .det-info{display:flex;flex-direction:column;gap:8px}
 
+
+/* Fiche du jour : infos à gauche, actions à droite (aussi sans affiche) ; fiches plus serrées */
+.dayview{gap:8px}
+.dayview .ev.det{padding:12px 16px;gap:8px 20px}
+@media (min-width:761px){
+  .dayview .ev.det:has(.det-side.seul){grid-template-columns:minmax(0,1fr) 250px}
+  .det-side.seul{border-left:1px dashed var(--hair);padding-left:16px;justify-content:center}
+  .det-side .actions{flex-direction:column;align-items:stretch}
+  .det-side .actions .btn{text-align:center}
+  .det-side .actions .prix{text-align:center}
+}
+.dayview .det-side .cal{margin:0;border-top:0;padding-top:0;font-size:12px}
