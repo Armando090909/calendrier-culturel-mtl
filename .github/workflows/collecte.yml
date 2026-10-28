@@ -82,6 +82,12 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - uses: actions/configure-pages@v5
+      # Numéro de version sur app.js et style.css : les navigateurs prennent la nouvelle version tout de suite
+      - name: Version des fichiers
+        run: |
+          V=$(date +%Y%m%d%H%M)
+          sed -i -E "s#(href|src)=\"(app\.js|style\.css)(\?v=[0-9]+)?\"#\1=\"\2?v=$V\"#g" docs/*.html
+          grep -h -o -E '(app|style)[.](js|css)[?]v=[0-9]+' docs/*.html | sort -u || true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
