@@ -31,7 +31,7 @@ const fmtKm=k=>k<1?Math.round(k*10)*100+" m":(Math.round(k*10)/10).toString().re
 
 let D=null,byId=[],CFG={},FEST=[],FESTID={};
 const DEPART="theatre"; // catégorie affichée seule à la première visite (les autres se cochent dans « Disciplines »)
-let st={styles:{},on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
+let st={on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
 st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v2 sont ignorés
 try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
@@ -45,10 +45,10 @@ function inRadius(lieu){if(!st.rayon||!origin())return true;const k=dist(lieu);r
 // Un spectacle jeune public apparaît aussi dans sa discipline d'origine (« sous », ex. théâtre)
 const discs=e=>[...new Set([e.discipline].concat(e.aussi||[],e.sous&&DISC_LABEL[e.sous]?[e.sous]:[]))];
 // Styles de musique (larges). Aucun style choisi = toute la musique.
+// Mots qu'on peut taper dans la recherche pour trouver chaque style
+const STYLE_MOTS={rock:"rock indie alternatif garage",pop:"pop chanson francophone",hiphop:"hip-hop hiphop rap r&b rnb soul funk",electro:"électro electro électronique techno house dj rave",jazz:"jazz blues swing",classique:"classique opéra opera orchestre baroque chambre",monde:"monde world afro latin reggae",folk:"folk trad country bluegrass",metal:"métal metal punk hardcore",experimental:"expérimental experimental noise improvisation"};
 const STYLES={rock:"Rock et indie",pop:"Pop et chanson",hiphop:"Hip-hop et R&B",electro:"Électro",jazz:"Jazz et blues",classique:"Classique et opéra",monde:"Musiques du monde",folk:"Folk, trad et country",metal:"Métal et punk",experimental:"Expérimental"};
-const stylesChoisis=()=>Object.keys(st.styles||{}).filter(k=>st.styles[k]);
-const okDisc=e=>{const ch=stylesChoisis();return discs(e).some(k=>st.on[k]&&(k!=="musique"||!ch.length||ch.includes(e.style)))};
-const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:okDisc(e))&&inRadius(e.lieu));
+const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:discs(e).some(k=>st.on[k]))&&inRadius(e.lieu));
 const byTime=(a,b)=>(a.heure||"99").localeCompare(b.heure||"99");
 const byDist=(a,b)=>{const x=dist(a.lieu),y=dist(b.lieu);return (x===null?1e9:x)-(y===null?1e9:y)||byTime(a,b)};
 
@@ -149,16 +149,7 @@ function detailHTML(e){
     ${media?`<div class="det-side">${media}${actions}</div>`:""}
   </article>`;
 }
-function renderStyles(){
-  const el=$("styles");if(!st.on.musique||st.fest){el.hidden=true;return}
-  const n={};let sans=0;D.events.forEach(e=>{if(!discs(e).includes("musique"))return;if(e.style)n[e.style]=(n[e.style]||0)+1;else sans++});
-  const ch=stylesChoisis();el.hidden=false;
-  el.innerHTML=`<span class="st-l">Musique :</span>`+Object.entries(STYLES).filter(([k])=>n[k]).map(([k,l])=>
-    `<button type="button" class="stc" data-style="${k}" aria-pressed="${ch.includes(k)}">${l} <span class="n">${n[k]}</span></button>`).join("")+
-    (ch.length?`<button type="button" class="stc tous" data-style="">tous les styles</button>`:"")+
-    (sans?`<span class="st-n" title="Style pas encore connu : ces concerts restent visibles quand aucun style n'est choisi">${sans} sans style connu</span>`:"")}
 function renderChips(){
-  renderStyles();
   const counts={};D.events.forEach(e=>discs(e).forEach(k=>counts[k]=(counts[k]||0)+1));
   counts.expo=(counts.expo||0)+D.expos.filter(x=>!estMusee(x)).length;
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
@@ -273,7 +264,7 @@ function correspond(mots,...champs){const t=" "+plat(champs.join(" "))+" ";retur
 function renderRecherche(){
   const mots=plat(st.q).split(" ").filter(Boolean),el=$("view");
   const today=iso(new Date());
-  const champsE=e=>[e.titre,e.lieu,(D.lieux[e.lieu]||{}).quartier||"",e.resume||"",e.festival&&FESTID[e.festival]?FESTID[e.festival].nom+" "+FESTID[e.festival].court:"",discs(e).map(k=>DISC_LABEL[k]).join(" "),e.style&&STYLES[e.style]?STYLES[e.style]:""];
+  const champsE=e=>[e.titre,e.lieu,(D.lieux[e.lieu]||{}).quartier||"",e.resume||"",e.festival&&FESTID[e.festival]?FESTID[e.festival].nom+" "+FESTID[e.festival].court:"",discs(e).map(k=>DISC_LABEL[k]).join(" "),e.style&&STYLES[e.style]?STYLES[e.style]+" "+STYLE_MOTS[e.style]:""];
   const ev=D.events.filter(e=>e.date>=today&&correspond(mots,...champsE(e)));
   const ex=D.expos.filter(x=>x.fin>=today&&correspond(mots,x.titre,x.lieu,x.festival&&FESTID[x.festival]?FESTID[x.festival].nom:""));
   const fe=FEST.filter(f=>correspond(mots,f.nom,f.court,f.lieu||""));
@@ -403,8 +394,6 @@ function renderFooter(){
 
 $("pt").innerHTML=`<option value="">— n'importe où —</option>`+POINTS.map(p=>`<option value="${esc(p[0])}">Métro ${esc(p[0])}</option>`).join("")+`<option value="addr">Une adresse…</option>`;
 
-$("styles").addEventListener("click",e=>{const b=e.target.closest(".stc");if(!b)return;st.styles=st.styles||{};
-  if(!b.dataset.style)st.styles={};else st.styles[b.dataset.style]=!st.styles[b.dataset.style];render()});
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;st.on[b.dataset.k]=!st.on[b.dataset.k];render()});
 $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||b.disabled)return;
   if(st.view==="day"&&st.day===b.dataset.d){st.week=monday(st.day);st.view="week"}else{st.day=b.dataset.d;st.view="day"}render()});
@@ -437,7 +426,7 @@ $("prev").addEventListener("click",()=>step(-1));
 $("next").addEventListener("click",()=>step(1));
 $("s-time").addEventListener("click",()=>{st.sort="time";render()});
 $("s-dist").addEventListener("click",()=>{st.sort="dist";render()});
-$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.styles={};st.rayon=0;render()});
+$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.rayon=0;render()});
 $("pt").addEventListener("change",e=>{st.pt=e.target.value;st.sort=st.pt?"dist":"time";render();if(st.pt==="addr"&&!st.custom)$("addr").focus()});
 $("rayon").addEventListener("change",e=>{st.rayon=Number(e.target.value);render()});
 // Carte du métro : décorative (une évocation), sans filtre

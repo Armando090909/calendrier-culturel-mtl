@@ -47,8 +47,9 @@ def type_lien(url: str) -> str | None:
 def noms_artistes(titre: str) -> list[str]:
     """« Jonquille (lancement) + Chloé Jara-Buto » → ["Jonquille", "Chloé Jara-Buto"]."""
     t = re.sub(r"\(.*?\)", " ", titre)
-    t = re.split(r"\s[–—|:]\s|\s-\s", t)[0]
-    morceaux = re.split(r"\s\+\s|,|\savec\s|\swith\s|\sw/\s|\set\s(?=[A-ZÉ])|\s&\s|\sx\s", t)
+    t = re.split(r"\s[–—|:]\s|\s-\s|:\s|\s@\s", t)[0]
+    t = re.sub(r"\s+", " ", t)
+    morceaux = re.split(r"\s\+\s|\s/\s|,|\savec\s|\swith\s|\sw/\s|\set\s(?=[A-ZÉ])|\s&\s|\sx\s", t)
     out = []
     for m in morceaux:
         m = m.strip(" .·-")
@@ -126,11 +127,23 @@ def musicbrainz(nom: str, get_json) -> list[dict]:
         return []
     ca = [a for a in cands if a.get("country") == "CA" or "canada" in plat(json.dumps(a.get("area") or {}))
           or "montreal" in plat(json.dumps(a.get("begin-area") or {}))]
-    if len(cands) > 1 and len(ca) != 1:
-        return []  # homonymes : on ne devine pas
-    art = (ca or cands)[0]
-    time.sleep(1.1)  # règle de MusicBrainz : une requête par seconde
-    fiche = get_json(f"https://musicbrainz.org/ws/2/artist/{art['id']}?inc=url-rels&fmt=json") or {}
+    if len(ca) == 1 or len(cands) == 1:
+        art = (ca or cands)[0]
+        time.sleep(1.1)  # règle de MusicBrainz : une requête par seconde
+        fiche = get_json(f"https://musicbrainz.org/ws/2/artist/{art['id']}?inc=url-rels&fmt=json") or {}
+    else:
+        # Homonymes (ex. plusieurs « Sting ») : on garde celui qui est nettement le mieux documenté
+        # (au moins 3 liens d'écoute et deux fois plus que le suivant). Sinon on s'abstient.
+        fiches = []
+        for a in cands[:4]:
+            time.sleep(1.1)
+            f = get_json(f"https://musicbrainz.org/ws/2/artist/{a['id']}?inc=url-rels&fmt=json") or {}
+            n = sum(1 for r in f.get("relations", []) if type_lien((r.get("url") or {}).get("resource", "")))
+            fiches.append((n, a, f))
+        fiches.sort(key=lambda x: -x[0])
+        if fiches[0][0] < 3 or (len(fiches) > 1 and fiches[0][0] < 2 * fiches[1][0]):
+            return []
+        _, art, fiche = fiches[0]
     out = []
     for rel in fiche.get("relations", []):
         url = (rel.get("url") or {}).get("resource", "")
@@ -138,6 +151,26 @@ def musicbrainz(nom: str, get_json) -> list[dict]:
         if t:
             out.append({"type": t, "url": url, "source": "musicbrainz", "nom": art.get("name", nom)})
     return out[:4]
+
+
+def bandcamp(nom: str, get_html) -> list[dict]:
+    """Recherche d'artiste sur Bandcamp (sans clé). On garde un résultat au nom identique, situé à Montréal,
+    au Québec ou au Canada ; ou le seul résultat au nom identique s'il n'y en a qu'un."""
+    html = get_html(f"https://bandcamp.com/search?q={quote(nom)}&item_type=b")
+    soupe = BeautifulSoup(html, "html.parser")
+    exacts = []
+    for li in soupe.select("li.searchresult"):
+        a = li.select_one(".heading a")
+        if not a or plat(a.get_text(" ", strip=True)) != plat(nom):
+            continue
+        lieu = plat((li.select_one(".subhead") or li).get_text(" ", strip=True))
+        url = (li.select_one(".itemurl") or a).get_text(strip=True) if li.select_one(".itemurl") else a.get("href", "")
+        url = url.split("?")[0]
+        if url.startswith("http"):
+            exacts.append((any(m in lieu for m in ("montreal", "quebec", "canada", " qc")), url))
+    locaux = [u for loc, u in exacts if loc]
+    choix = locaux[0] if len(locaux) == 1 else (exacts[0][1] if len(exacts) == 1 else None)
+    return [{"type": "bandcamp", "url": choix, "source": "bandcamp", "nom": nom}] if choix else []
 
 
 def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
@@ -166,6 +199,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
     ua_json = lambda url: telecharger(url, "application/json").json()  # noqa: E731
     n, cherches = 0, 0
+    fin_budget = time.time() + 25 * 60  # au plus 25 minutes par collecte ; la suite reprend le lendemain
     vieux = (aujourd - timedelta(days=30)).isoformat()
     for e in events:
         url = e.get("url", "")
@@ -173,7 +207,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         # 1. Affiche : page officielle de l'événement (pas les agrégateurs)
         if page_officielle(url):
             pm = memo.get("page:" + url)
-            if (not pm or (not pm.get("affiche") and pm["le"] < vieux)) and cherches < max_recherches:
+            if (not pm or (not pm.get("affiche") and pm["le"] < vieux)) and cherches < max_recherches and time.time() < fin_budget:
                 cherches += 1
                 try:
                     html = telecharger(url, "text/html").text
@@ -191,11 +225,13 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         cle = ("film:" if film else "mus:") + "|".join(plat(x) for x in noms)
         m = memo.get(cle)
         frais = m and (m["liens"] or m["le"] >= vieux)
-        if not frais and cherches < max_recherches:
+        if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
             try:
-                if page_officielle(url):
+                # La page de l'événement, même sur un agenda (Sors-tu?, ma.to…) : seuls les liens qui portent
+                # le nom de l'artiste sont gardés.
+                if url.startswith("http") and "songkick.com" not in url:
                     html = html or telecharger(url, "text/html").text
                     liens += depuis_page(html, url, noms)
             except Exception:
@@ -209,6 +245,11 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         if not any(l.get("nom") == nom for l in liens):
                             liens += musicbrainz(nom, ua_json)
                             time.sleep(1.1)
+                        if not any(l.get("nom") == nom or l["source"] == "page" for l in liens):
+                            try:
+                                liens += bandcamp(nom, lambda u: telecharger(u, "text/html").text)
+                            except Exception:
+                                pass
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
             m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat()}
