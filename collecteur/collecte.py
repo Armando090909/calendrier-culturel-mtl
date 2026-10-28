@@ -221,17 +221,22 @@ def main() -> int:
     memo_v = json.loads(f_vp.read_text(encoding="utf-8")) if f_vp.exists() else {}
     a_lire = sorted((e for e in events if e["source"] == "ville" and e["url"].startswith("http")
                      and (e["lieu"] == "Lieu à confirmer" or not e["heure"])), key=lambda e: e["date"])
-    lues_v, fin_v = 0, time.time() + 10 * 60
+    lues_v, fin_v, erreurs_v = 0, time.time() + 10 * 60, []
     for e in a_lire:
         det = memo_v.get(e["url"])
+        if det and det.get("_err") and det.get("le") != aujourd.isoformat():
+            det = None  # échec un autre jour : on réessaie
         if det is None and lues_v < int(reglages.get("max_pages_ville", 500)) and time.time() < fin_v:
+            lues_v += 1
             try:
                 det = memo_v[e["url"]] = connecteurs.details_ville(telecharger(e["url"], "text/html").text, e["date"])
-                lues_v += 1
                 time.sleep(0.3)
-            except Exception:
-                det = None
-        if not det:
+            except Exception as exc:
+                det = memo_v[e["url"]] = {"_err": str(exc)[:120], "le": aujourd.isoformat()}
+                erreurs_v.append(str(exc)[:120])
+                if len(erreurs_v) >= 15 and not any("_err" not in v for v in memo_v.values()):
+                    break  # le site refuse tout : inutile d'insister aujourd'hui
+        if not det or det.get("_err"):
             continue
         if e["lieu"] == "Lieu à confirmer" and det.get("lieu"):
             e["lieu"] = lieu_canon(det["lieu"], det.get("adresse", ""), "Montréal") or "Lieu à confirmer"
@@ -240,7 +245,10 @@ def main() -> int:
         if not e.get("billets") and det.get("billets"):
             e["billets"] = det["billets"]
     f_vp.write_text(json.dumps(memo_v, ensure_ascii=False), encoding="utf-8")
-    print(f"Fiches de la Ville : {lues_v} lues, {sum(1 for e in a_lire if e['lieu'] != 'Lieu à confirmer')} salles retrouvées.")
+    notes = {"fiches_ville": {"lues": lues_v, "erreurs": len(erreurs_v), "exemples_erreurs": sorted(set(erreurs_v))[:3],
+                              "heures_trouvees": sum(1 for e in a_lire if e["heure"]),
+                              "salles_trouvees": sum(1 for e in a_lire if e["lieu"] != "Lieu à confirmer")}}
+    print(f"Fiches de la Ville : {notes['fiches_ville']}")
 
     # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
     # on reclasse avec sa description, puis l'IA tranche les cas qui restent, si elle est disponible.
@@ -282,7 +290,7 @@ def main() -> int:
         if e["url"] in memo:
             e["heure"] = memo[e["url"]]
             continue
-        if lues >= int(reglages.get("max_pages_heure", 120)):
+        if lues >= int(reglages.get("max_pages_heure", 300)):
             continue
         try:
             memo[e["url"]] = heure_page(telecharger(e["url"], "text/html").text)
@@ -429,7 +437,7 @@ def main() -> int:
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
                                    "expositions": len(expos), "nouvelles_salles": sorted(set(nouveaux_lieux)),
-                                   "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")
+                                   "notes": notes, "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"OK : {len(events)} événements, {len(expos)} expositions/pièces à l'affiche, "
           f"{len(set(nouveaux_lieux))} nouvelles salles.")
     return 0

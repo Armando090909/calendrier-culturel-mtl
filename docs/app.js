@@ -35,6 +35,7 @@ let st={on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day
 st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v2 sont ignorés
 try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
+st.day=null;st.week=null;st.month=null; // on ouvre toujours sur aujourd'hui (les catégories choisies sont gardées)
 if(st.view==="month")st.view="week"; // la vue Mois est retirée // l'outil « Près de » est retiré
 const save=()=>{try{localStorage.setItem("cal-mtl",JSON.stringify(st))}catch(e){}};
 
@@ -130,10 +131,9 @@ function detailHTML(e){
   // Affiche : image fournie par la salle (formulaire), sinon l'image de promotion de la page officielle,
   // affichée depuis son site d'origine avec le crédit et le lien. Si elle ne charge pas, le cadre disparaît.
   const aff=e.image?{url:e.image,credit:"fournie par l'organisateur"}:(CFG.affiches!==false&&e.affiche)||null;
-  const img=aff?`<figure class="det-aff"><a href="${esc(aff.lien||e.url)}" target="_blank" rel="noopener"><img src="${esc(aff.url)}" alt="Affiche : ${esc(e.titre)}" loading="lazy" referrerpolicy="no-referrer" onerror="const m=this.closest('.det-media');this.closest('figure').remove();if(m)m.classList.remove('deux')"></a><figcaption>Image : ${esc(aff.credit||"")}</figcaption></figure>`:"";
+  const img=aff?`<figure class="det-aff"><a href="${esc(aff.lien||e.url)}" target="_blank" rel="noopener"><img src="${esc(aff.url)}" alt="Affiche : ${esc(e.titre)}" loading="lazy" referrerpolicy="no-referrer"${aff.petit?` data-petit="${esc(aff.petit)}"`:""} onerror="if(this.dataset.petit&&this.src!==this.dataset.petit){this.src=this.dataset.petit;return}const v=this.closest('.det-vis');this.closest('figure').remove();if(v&&!v.children.length)v.remove()"></a><figcaption>Image : ${esc(aff.credit||"")}</figcaption></figure>`:"";
   // L'affiche et la carte à droite, avec prix, billets et itinéraire juste dessous ; écouter et agenda sous le résumé.
   const actions=`<div class="actions">
-        ${e.prix?`<span class="prix">${esc(e.prix)}</span>`:""}
         <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?"Acheter des billets":/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?"Voir l'événement":"Billets et infos"}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">Itinéraire</a>
       </div>`;
@@ -145,6 +145,7 @@ function detailHTML(e){
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
       ${lieuHTML(e,true)}
       ${e.resume?`<p class="resume">${esc(e.resume)}</p>`:""}
+      ${e.prix?`<span class="prix-main">${esc(e.prix.length>28?e.prix.slice(0,26)+"…":e.prix)}</span>`:""}
     </div>
     ${media?`<div class="det-vis">${media}</div>`:""}
     <div class="det-side seul">${actions}${extra}</div>

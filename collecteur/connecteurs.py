@@ -26,7 +26,8 @@ from ics import parse_ics
 from normalisation import plat
 
 MTL = ZoneInfo("America/Toronto")
-UA = "CalendrierCulturelMTL/1.0 (+https://github.com; projet bénévole sans but lucratif)"
+# Format habituel des robots (« Mozilla/5.0 (compatible; Nom/version; +site) ») : certains sites refusent les autres.
+UA = "Mozilla/5.0 (compatible; CalendrierCulturelMTL/1.0; +https://ccmtl.ca; projet bénévole sans but lucratif)"
 MOIS_FR = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre",
            "novembre", "decembre"]
 MOIS_EN = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
@@ -103,7 +104,11 @@ def ville_csv(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         d2 = _iso(_col(row, "date_fin", "fin", "date_de_fin", "end_date")) or d1
         if not titre or d1 is None:
             continue
-        lieu = _col(row, "titre_adresse", "emplacement", "lieu", "nom_lieu", "nom_emplacement", "lieu_nom", "titre_lieu",
+        # « emplacement » = En salle / À l'extérieur / En ligne (pas un nom de salle) ; le nom est dans « titre_adresse »
+        emplacement = plat(_col(row, "emplacement"))
+        if emplacement == "en ligne":
+            continue  # activité en ligne : pas une sortie
+        lieu = _col(row, "titre_adresse", "lieu", "nom_lieu", "nom_emplacement", "lieu_nom", "titre_lieu",
                     "nom_du_lieu", "installation", "nom_installation")
         lat, lon = _col(row, "lat", "latitude", "y"), _col(row, "long", "lon", "longitude", "x")
         if not lieu and re.fullmatch(r"-?\d+\.\d+", lat or "") and re.fullmatch(r"-?\d+\.\d+", lon or ""):

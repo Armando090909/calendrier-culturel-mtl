@@ -497,3 +497,10 @@ footer:empty{display:none}
 .note.mince .toplinks{margin:0;flex:0 0 auto;justify-content:flex-start;gap:8px}
 .note.mince .toplinks a{padding:4px 12px;font-size:13.5px}
 @media (max-width:600px){.note.mince .toplinks{flex:1 1 100%;flex-wrap:wrap;justify-content:flex-start}}
+
+/* Prix écrit à la main, en angle, dans l'espace libre de la fiche (comme « la ligne culture ») */
+.det-info{position:relative}
+.prix-main{font-family:var(--f-hand);color:var(--pop);font-size:24px;line-height:1;transform:rotate(-5deg);white-space:nowrap;pointer-events:none}
+@media (min-width:761px){.dayview .prix-main{position:absolute;right:6px;top:50%;margin-top:-12px}
+  .dayview .det-info:has(.prix-main) .resume{padding-right:150px}}
+@media (max-width:760px){.prix-main{align-self:flex-end;margin:2px 6px 0 0}}

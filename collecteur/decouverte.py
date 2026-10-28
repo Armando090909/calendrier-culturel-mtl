@@ -96,6 +96,18 @@ def page_officielle(url: str) -> bool:
     return url.startswith("http") and not any(a in h for a in AGREGATEURS)
 
 
+def agrandir(url: str) -> dict:
+    """Version grand format d'une image quand le site en publie une vignette (« _100x100 », « -300x200 »…).
+    Renvoie {"url": grande, "petit": vignette} ; le site revient à la vignette si la grande n'existe pas."""
+    grand = url
+    if "sorstu.ca/wp-content/uploads/artists/square/" in url:
+        grand = re.sub(r"/artists/square/(new/)?(.+?)_\d+x\d+\.(jpe?g|png|webp)$", r"/artists/\1\2_662x0.\3", url)
+    else:
+        grand = re.sub(r"-\d{2,4}x\d{2,4}(\.(?:jpe?g|png|webp))(\?.*)?$", r"\1", url)  # WordPress : -300x200.jpg
+        grand = re.sub(r"([?&](?:w|width|h|height|resize|fit)=)\d{2,3}\b", lambda m: m.group(1) + "1200", grand)
+    return {"url": grand, "petit": url} if grand != url else {"url": url}
+
+
 def affiche_page(html: str, page_url: str) -> dict | None:
     """Image de promotion choisie par l'organisateur pour sa page (balise og:image / twitter:image / schema.org).
     L'image n'est pas copiée : le site l'affiche depuis la page d'origine, avec le crédit et le lien."""
@@ -243,14 +255,21 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                 except Exception:
                     pm = memo["page:" + url] = {"affiche": None, "billets": None, "le": aujourd.isoformat()}
     fin_budget = time.time() + 20 * 60  # liens d'écoute : au plus 20 minutes
-    # Une même image sur 3 pages ou plus, c'est le logo ou l'image par défaut du site : on l'écarte.
-    freq = Counter((v.get("affiche") or {}).get("url") for k, v in memo.items() if k.startswith("page:") and v.get("affiche"))
+    # Une même image pour 3 spectacles différents ou plus, c'est un logo, une image par défaut ou la carte du festival :
+    # on l'écarte. (Compté par titre, pas par page : une page de programmation sert à des dizaines de spectacles.)
+    titres_par_image: dict[str, set] = {}
+    for e in events:
+        pm = memo.get("page:" + e.get("url", ""))
+        if pm and pm.get("affiche"):
+            titres_par_image.setdefault(pm["affiche"]["url"], set()).add(plat(e["titre"])[:30])
+    freq = Counter({u: len(t) for u, t in titres_par_image.items()})
     # Un même lien « billets » sur 25 pages ou plus : la page d'accueil de la billetterie, pas celle du spectacle.
     freq_b = Counter(v.get("billets") for k, v in memo.items() if k.startswith("page:") and v.get("billets"))
     for e in events:
         pm = memo.get("page:" + e.get("url", ""))
-        if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image"):
-            e["affiche"] = pm["affiche"]
+        if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image") \
+                and "og.festapp.io" not in pm["affiche"]["url"]:
+            e["affiche"] = dict(pm["affiche"], **agrandir(pm["affiche"]["url"]))
         if pm and pm.get("billets") and not e.get("billets") and freq_b[pm["billets"]] < 25:
             e["billets"] = pm["billets"]
     for e in events:
