@@ -18,6 +18,9 @@
   --jeune:#00a99d;     /* turquoise : jeune public */
   --autre:#7d8597;
   --expo:#e8a317;      /* or du pin */
+  --conference:#343a40; /* charbon : conférences */
+  --atelier:#8d6e63;   /* brun : ateliers */
+  --fete:#c2255c;      /* framboise : fêtes et célébrations */
   --hl:#ffe14d; --chip-off:#eef1f6; --badge:#121212; --badge-ink:#ffe14d;
   --f-display:"Unbounded", "Arial Black", system-ui, sans-serif;
   --f-body:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -504,3 +507,13 @@ footer:empty{display:none}
 @media (min-width:761px){.dayview .prix-main{position:absolute;right:6px;top:50%;margin-top:-12px}
   .dayview .det-info:has(.prix-main) .resume{padding-right:150px}}
 @media (max-width:760px){.prix-main{align-self:flex-end;margin:2px 6px 0 0}}
+
+/* Onglet Expos : filtres par type de lieu et par quartier */
+.xfiltres,.xquart{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 10px}
+.xf,.xq{font:inherit;font-weight:700;cursor:pointer;border:2px solid var(--ink);border-radius:999px;background:var(--surface);color:var(--ink)}
+.xf{font-size:14px;padding:6px 14px;box-shadow:2px 2px 0 var(--expo)}
+.xq{font-size:12.5px;padding:3px 10px;border-width:1.5px;border-style:dashed}
+.xf[aria-pressed="true"]{background:var(--expo);color:#121212}
+.xq[aria-pressed="true"]{background:var(--ink);color:#fff;border-style:solid}
+.xf .n,.xq .n{font-size:11px;opacity:.75}
+.xq-l{font-size:13px;font-weight:700;color:var(--muted);margin-right:2px}

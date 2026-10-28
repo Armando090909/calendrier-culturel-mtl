@@ -36,6 +36,8 @@ RAPPORT = RACINE / "docs" / "rapport.json"
 LIEUX = Path(__file__).parent / "lieux.json"
 SOURCES = Path(__file__).parent / "sources.yaml"
 CACHE = Path(__file__).parent / "cache"
+VOCATION_SALLES = {"cabaret mado": "humour", "wiggle room": "humour", "comedy nest": "humour", "bordel comedie": "humour",
+                   "le studio jazz": "musique", "upstairs": "musique", "diese onze": "musique", "balattou": "musique"}
 MANUELS = Path(__file__).parent / "manuels.json"  # programmes saisis à la main
 MTL = ZoneInfo("America/Toronto")
 
@@ -201,7 +203,7 @@ def main() -> int:
             continue
         if b["discipline"] == "jeune":
             b["jeune_public"], b["discipline"] = True, ""
-        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "expo"} \
+        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "expo"} \
             else classer(b["titre"], b["categorie"], description=b.get("description", ""), defaut=b["discipline"])
         heure = b["heure"] if b["heure"] and re.fullmatch(r"\d{2}:\d{2}", b["heure"]) else None
         if "festapp.io" in (b["url"] or ""):
@@ -249,6 +251,15 @@ def main() -> int:
                               "heures_trouvees": sum(1 for e in a_lire if e["heure"]),
                               "salles_trouvees": sum(1 for e in a_lire if e["lieu"] != "Lieu à confirmer")}}
     print(f"Fiches de la Ville : {notes['fiches_ville']}")
+
+    # Salles dont on connaît la vocation : un spectacle « autre » y prend la discipline de la salle
+    for e in events:
+        if e["discipline"] == "autre":
+            l = plat(e["lieu"])
+            for k, v in VOCATION_SALLES.items():
+                if k in l:
+                    e["discipline"] = v
+                    break
 
     # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
     # on reclasse avec sa description, puis l'IA tranche les cas qui restent, si elle est disponible.
@@ -304,7 +315,7 @@ def main() -> int:
 
     # Plusieurs disciplines possibles (ex. une performance : théâtre ET danse)
     for e in events:
-        if e["discipline"] in ("expo", "cinema", "lettres", "humour"):
+        if e["discipline"] in ("expo", "cinema", "lettres", "conference", "atelier", "fete", "humour"):
             continue
         e["discipline"], aussi = disciplines_aussi(e["titre"], e.get("resume", ""), e["discipline"], e["lieu"])
         if aussi:
@@ -369,6 +380,16 @@ def main() -> int:
             pages.add(x.get("url"))
         gardees.append(x)
     expos = gardees
+    # La même exposition annoncée deux fois (« Exposition : X » à « Lieu à confirmer » et « X » à la bibliothèque) :
+    # même titre (sans « Exposition : »), même date de fin -> on garde la version qui a une vraie salle.
+    def _cle_expo(x):
+        return plat(re.sub(r"(?i)^\s*exposition\s*[:\-–]\s*", "", x["titre"]))[:40] + "|" + x["fin"]
+    meilleures: dict[str, dict] = {}
+    for x in expos:
+        k = _cle_expo(x)
+        if k not in meilleures or (meilleures[k]["lieu"] == "Lieu à confirmer" and x["lieu"] != "Lieu à confirmer"):
+            meilleures[k] = x
+    expos = [x for x in expos if meilleures[_cle_expo(x)] is x]
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
 

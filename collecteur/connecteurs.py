@@ -405,7 +405,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             evs.append(brut(titre=e.get("titre"), date=str(e.get("date"))[:10], heure=e.get("heure") or None,
                             lieu=e.get("lieu") or cfg.get("lieu", ""), ville=e.get("ville") or "",
                             url=e.get("url") or url, categorie=e.get("categorie") or "",
-                            discipline=e.get("discipline") or cfg.get("discipline", ""),
+                            discipline=(e.get("discipline") if e.get("discipline") not in (None, "", "autre") else None)
+                            or cfg.get("discipline", "") or e.get("discipline") or "",
                             complet=bool(e.get("complet")), annule=bool(e.get("annule")),
                             jeune_public=bool(e.get("jeune_public")), description=e.get("resume") or "",
                             prix=e.get("prix") or "", billets=e.get("billets") or "", source=cfg["cle_source"]))
@@ -533,7 +534,7 @@ def _discipline_formulaire(choix: str) -> str:
     """Choix « Discipline » des formulaires → code de discipline (vide si on laisse le classement décider)."""
     t = plat(choix)
     for mot, code in (("theatre", "theatre"), ("musique", "musique"), ("danse", "danse"), ("cirque", "cirque"),
-                      ("humour", "humour"), ("cinema", "cinema"), ("litterature", "lettres"), ("conference", "lettres"),
+                      ("humour", "humour"), ("cinema", "cinema"), ("litterature", "lettres"), ("conference", "conference"),
                       ("exposition", "expo"), ("vernissage", "expo"), ("jeune", "jeune")):
         if mot in t:
             return code
