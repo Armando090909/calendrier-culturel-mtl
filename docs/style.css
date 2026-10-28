@@ -476,3 +476,11 @@ code{font-size:13px;background:var(--chip-off);border-radius:4px;padding:1px 5px
 @media (max-width:760px){
   .det-vis{max-width:220px}
 }
+
+/* Bouton de don (dans la rangée de liens) et sa petite bulle */
+.don-bt{font:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#fff;background:var(--pop);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;box-shadow:2px 2px 0 var(--shadow)}
+.don-bt:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--shadow)}
+.don-pop{margin-top:10px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:10px 12px}
+.don-pop[hidden]{display:none}
+.don-pop .merci{color:var(--muted);font-size:12.5px}
+footer:empty{display:none}

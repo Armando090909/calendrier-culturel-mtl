@@ -116,19 +116,9 @@
   <div class="refresh"><span id="majInfo"></span></div>
 
   <div class="note"><span class="stn-ico" aria-hidden="true"></span><div><p>Tu programmes une salle, un bar, un festival ou une galerie ? <a href="salles.html">Ajoute ton calendrier</a> : il sera relu tout seul, chaque jour.</p>
-    <p class="toplinks"><a id="lienProposer" class="go" href="#" hidden target="_blank" rel="noopener">+ Proposer un événement</a><a href="salles.html">Tu organises des shows ?</a><a href="sources.html">Nos sources et salles</a></p></div></div>
+    <p class="toplinks"><a id="lienProposer" class="go" href="#" hidden target="_blank" rel="noopener">+ Proposer un événement</a><a href="salles.html">Tu organises des shows ?</a><a href="sources.html">Nos sources et salles</a><button type="button" class="don-bt" id="donBtn" hidden aria-expanded="false" aria-controls="donPop">Faire un don 2 $ ♥</button></p>
+    <div class="don-pop" id="donPop" hidden>Virement Interac, sans frais, à <b id="donCourriel"></b> <button type="button" class="btn ghost petit" id="donCopier">Copier l'adresse</button><span class="merci">Gratuit et sans pub : merci !</span></div></div></div>
 
-  <div class="don" id="don" hidden>
-    <p><b>Gratuit, sans pub, sans but lucratif.</b> Le site coûte quelques dollars par mois (collecte automatique, nom de domaine). Si tu l'aimes, un petit don volontaire aide à le garder en vie.</p>
-    <div class="don-act">
-      <span class="interac" id="donInterac" hidden>Virement Interac, sans frais : <b id="donCourriel"></b> <button type="button" class="btn ghost petit" id="donCopier">Copier</button></span>
-      <a class="btn don-btn" id="donLien" href="#" target="_blank" rel="noopener" hidden>Donner 1 $ ♥</a>
-    </div>
-  </div>
-
-  <footer>
-    <div id="foot"></div>
-  </footer>
 </div>
 <script src="app.js"></script>
 </body>
