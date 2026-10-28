@@ -403,3 +403,22 @@ class TestFestappEtDoublons(unittest.TestCase):
         r = dedoublonner([a, b, c])
         self.assertEqual(len(r), 1)
         self.assertEqual(r[0]["prix"], "45 $")
+
+
+class TestDoublonsSites(unittest.TestCase):
+    def test_deux_sites_meme_concert(self):
+        from normalisation import dedoublonner
+        base = {"date": "2026-10-27", "lieu": "Théâtre Fairmount"}
+        r = dedoublonner([dict(base, heure="19:00", titre="Claudio Simonetti's Goblin : Tenebre", source="salles", url="https://ma.to/a"),
+                          dict(base, heure="20:00", titre="Goblin Tenebre", source="salles", url="https://theatrefairmount.com/b"),
+                          dict(base, heure="20:00", titre="Claudio Simonetti's Goblin", source="sorstu", url="https://sorstu.ca/c")])
+        self.assertEqual(len(r), 1)
+        p = dedoublonner([{"date": "2026-10-27", "lieu": "MTELUS", "heure": "18:30", "titre": "Periphery - A Pale White Dot Tour", "source": "sorstu", "url": "https://sorstu.ca/p"},
+                          {"date": "2026-10-27", "lieu": "MTELUS", "heure": "20:00", "titre": "Periphery", "source": "salles", "url": "https://ma.to/p"},
+                          {"date": "2026-10-27", "lieu": "Lieu à confirmer", "heure": "20:00", "titre": "Periphery Montréal", "source": "salles", "url": "https://ma.to/q"}])
+        self.assertEqual(len(p), 1)
+
+    def test_deux_representations_meme_site(self):
+        from normalisation import dedoublonner
+        base = {"date": "2026-10-29", "lieu": "Upstairs Jazz Bar & Grill", "titre": "TAUREY BUTLER TRIO", "source": "salles", "url": "https://upstairsjazz.com/x"}
+        self.assertEqual(len(dedoublonner([dict(base, heure="19:00"), dict(base, heure="21:30")])), 2)
