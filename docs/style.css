@@ -477,10 +477,15 @@ code{font-size:13px;background:var(--chip-off);border-radius:4px;padding:1px 5px
   .det-vis{max-width:220px}
 }
 
-/* Bouton de don (dans la rangée de liens) et sa petite bulle */
+/* Bas de page : sources et don, séparés du bandeau jaune */
+.pied{margin-top:18px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.pied-l{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.pied-bt{font-weight:700;font-size:14px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;background:var(--surface);box-shadow:2px 2px 0 var(--shadow)}
 .don-bt{font:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#fff;background:var(--pop);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;box-shadow:2px 2px 0 var(--shadow)}
-.don-bt:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--shadow)}
-.don-pop{margin-top:10px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:10px 12px}
+.pied-bt:hover,.don-bt:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--shadow)}
+.don-pop{max-width:560px;font-size:14px;background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:12px 14px}
 .don-pop[hidden]{display:none}
-.don-pop .merci{color:var(--muted);font-size:12.5px}
+.don-pop p{margin:0 0 8px;color:var(--muted)}
+.don-pop p b{color:var(--ink)}
+.don-pop .don-int{margin:0;color:var(--ink);display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
 footer:empty{display:none}
