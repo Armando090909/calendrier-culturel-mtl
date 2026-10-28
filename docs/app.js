@@ -1,6 +1,6 @@
 "use strict";
 (function(){
-const DISC=[["theatre","Théâtre"],["musique","Musique"],["danse","Danse"],["cirque","Cirque"],["humour","Humour"],["cinema","Cinéma"],["lettres","Littérature et conférences"],["jeune","Jeune public"],["expo","Expositions et vernissages"],["autre","Autre / à préciser"]];
+const DISC=[["theatre","Théâtre"],["musique","Musique"],["danse","Danse"],["cirque","Cirque"],["humour","Humour et cabaret"],["cinema","Cinéma"],["lettres","Poésie, slam et lectures"],["conference","Conférences"],["jeune","Jeune public"],["atelier","Ateliers"],["fete","Fêtes et célébrations"],["expo","Vernissages"],["autre","Autre / à préciser"]];
 const DISC_LABEL=Object.fromEntries(DISC);
 // Stations de métro (coordonnées approximatives) et lignes, dans l'ordre
 const STN={"Angrignon":[45.4462,-73.6036],"Monk":[45.4510,-73.5932],"Jolicoeur":[45.4570,-73.5818],"Verdun":[45.4594,-73.5718],"De l'Église":[45.4620,-73.5668],"LaSalle":[45.4708,-73.5662],"Charlevoix":[45.4782,-73.5695],"Lionel-Groulx":[45.4829,-73.5797],"Atwater":[45.4898,-73.5862],"Guy-Concordia":[45.4958,-73.5795],"Peel":[45.5010,-73.5750],"McGill":[45.5040,-73.5717],"Place-des-Arts":[45.5080,-73.5687],"Saint-Laurent":[45.5107,-73.5649],"Berri-UQAM":[45.5153,-73.5612],"Beaudry":[45.5190,-73.5560],"Papineau":[45.5236,-73.5522],"Frontenac":[45.5332,-73.5521],"Préfontaine":[45.5418,-73.5545],"Joliette":[45.5470,-73.5513],"Pie-IX":[45.5536,-73.5516],"Viau":[45.5610,-73.5476],"Assomption":[45.5694,-73.5469],"Cadillac":[45.5770,-73.5464],"Langelier":[45.5829,-73.5432],"Radisson":[45.5893,-73.5398],"Honoré-Beaugrand":[45.5965,-73.5352],
@@ -36,7 +36,7 @@ st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v
 try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
 st.day=null;st.week=null;st.month=null; // on ouvre toujours sur aujourd'hui (les catégories choisies sont gardées)
-if(st.view==="month")st.view="week"; // la vue Mois est retirée // l'outil « Près de » est retiré
+st.view="week"; // on ouvre toujours en mode Semaine, sur la semaine en cours // l'outil « Près de » est retiré
 const save=()=>{try{localStorage.setItem("cal-mtl",JSON.stringify(st))}catch(e){}};
 
 function origin(){if(st.pt==="addr")return st.custom;const p=POINTS.find(p=>p[0]===st.pt);return p?{lat:p[1],lon:p[2],libelle:p[0]}:null}
@@ -153,7 +153,6 @@ function detailHTML(e){
 }
 function renderChips(){
   const counts={};D.events.forEach(e=>discsFiltre(e).forEach(k=>counts[k]=(counts[k]||0)+1));
-  counts.expo=(counts.expo||0)+D.expos.filter(x=>!estMusee(x)).length;
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
     return `<button type="button" class="chip" style="--c:var(--${k})" data-k="${k}" data-d="${k}" aria-pressed="${n&&st.on[k]?"true":"false"}" ${n?"":"disabled"}><span class="dot"></span>${l} <span class="n">${n||"aucun"}</span></button>`}).join("");
 }
@@ -182,7 +181,7 @@ function renderNav(){
 // petites expos de galeries, expos courtes) reste au calendrier.
 const RE_MUSEE=/mus[ée]e|mbam|mccord|pointe-à-callière|centre canadien d'architecture|\bcca\b|\bphi\b|biosphère|biodôme|planétarium|insectarium|jardin botanique|château (ramezay|dufresne)|écomusée|\bmem\b|centre des mémoires|arsenal art contemporain|fonderie darling|galerie de l'uqam|oasis immersion|maison saint-gabriel|centre d'histoire/i;
 const estMusee=x=>RE_MUSEE.test(x.lieu||"");
-function exposDu(j){if(!inRange(j))return[];const ok=x=>st.fest?x.festival===st.fest:(st.on.expo&&!estMusee(x));
+function exposDu(j){if(!inRange(j)||!st.fest)return[];const ok=x=>x.festival===st.fest; // les expos en cours sont dans l'onglet Expos
   return D.expos.filter(x=>ok(x)&&x.debut<=j&&x.fin>=j&&inRadius(x.lieu))}
 function expoCarte(j){const n=exposDu(j).length;
   return n?`<button type="button" class="expocard" data-act="jour" data-d="${j}"><b>${n}</b> expo${n>1?"s":""} ouverte${n>1?"s":""}<span>voir la liste →</span></button>`:""}
@@ -292,19 +291,33 @@ function renderFestSemaine(){
     return `<button type="button" class="fchip${n?"":" vide"}" data-fest="${f.id}" style="--f:${f.coul};--ft:${f.coulTxt}" title="${esc(f.nom)} · ${fDates(f)}">${esc(f.court)}${n?` <b>${n}</b>`:""}</button>`}).join("")}`:"";
 }
 /* ---------- Musées ---------- */
+// Onglet Expos : toutes les expositions en cours (musées, galeries, centres d'artistes), hors du calendrier.
+const RE_GALERIE=/galerie|gallery|art contemporain|contemporain\b|\bart m[uû]r|blouin|bradley|pfoac|duran|chiguer|robertson|nicolas robert|hugues charbonneau|lacerte|poulin|mikhail|tian|wishbone|laroche|ellephant|c\.o\.a/i;
+const typeExpo=x=>estMusee(x)?"musee":(x.source==="galeries"||RE_GALERIE.test(x.lieu||""))?"galerie":"centre";
+const TYPES_EXPO=[["","Tout"],["musee","Musées"],["galerie","Galeries"],["centre","Centres d'artistes et autres lieux"]];
 function renderMusees(){
-  const today=iso(new Date()),bientot=addDays(today,21),recent=addDays(today,-14);
-  const L=D.expos.filter(x=>estMusee(x)&&x.fin>=today);
-  const carte=x=>`<article class="xd mus${x.fin<=bientot?" fin":""}"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titre)}</a>
-    <div class="end${x.fin<=bientot?" soon":""}">${x.debut>today?`Ouvre le ${fmt(x.debut)} · `:x.debut>=recent?"Vient d'ouvrir · ":""}${x.fin<=bientot?"Se termine le ":"Jusqu'au "}${fmt(x.fin)}${x.fin.slice(0,4)!==today.slice(0,4)?" "+x.fin.slice(0,4):""}</div>
+  const today=iso(new Date()),bientot=addDays(today,14),recent=addDays(today,-14);
+  const tous=D.expos.filter(x=>x.fin>=today&&(!x.discipline||x.discipline==="expo"));
+  const quart=x=>(D.lieux[x.lieu]||{}).quartier||"Autres secteurs";
+  const parType=tous.filter(x=>!st.xtype||typeExpo(x)===st.xtype);
+  const nq={};parType.forEach(x=>{const q=quart(x);nq[q]=(nq[q]||0)+1});
+  if(st.xq&&!nq[st.xq])st.xq="";
+  const L=parType.filter(x=>!st.xq||quart(x)===st.xq);
+  const carte=(x,avecLieu)=>`<article class="xd mus${x.fin<=bientot?" fin":""}">${avecLieu?`<span class="mlieu">${esc(x.lieu)}</span>`:""}<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titre)}</a>
+    <div class="end${x.fin<=bientot?" soon":""}">${x.debut>today?`Ouvre le ${fmt(x.debut)} · `:""}${x.fin<=bientot?"Se termine le ":"Jusqu'au "}${fmt(x.fin)}${x.fin.slice(0,4)!==today.slice(0,4)?" "+x.fin.slice(0,4):""}</div>
     ${x.festival&&FESTID[x.festival]?`<button type="button" class="fx" data-fest="${x.festival}" style="--f:${FESTID[x.festival].coul};--ft:${FESTID[x.festival].coulTxt}">${esc(FESTID[x.festival].court)}</button>`:""}</article>`;
-  const par={};L.forEach(x=>(par[x.lieu]=par[x.lieu]||[]).push(x));
   const fin=L.filter(x=>x.fin<=bientot).sort((a,b)=>a.fin.localeCompare(b.fin));
-  $("view").innerHTML=`<div class="festview">
-    <p class="festintro">Les expositions des musées et des grands lieux, qui durent souvent plusieurs mois. Les vernissages, finissages et petites expos de galeries, plus éphémères, restent dans le calendrier (Expositions et vernissages).</p>
-    ${fin.length?`<h2 class="label">Dernière chance · se termine dans moins de 3 semaines</h2><div class="xjour">${fin.map(x=>carte(x).replace('<a href','<span class="mlieu">'+esc(x.lieu)+'</span><a href')).join("")}</div>`:""}
-    <h2 class="label">Par lieu · ${Object.keys(par).length} musées et lieux · ${L.length} expositions</h2>
-    ${Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(l=>`<section class="musee"><h3 class="fmois">${esc(l)}</h3>${lieuHTML({lieu:l})}<div class="xjour">${par[l].sort((a,b)=>a.fin.localeCompare(b.fin)).map(carte).join("")}</div></section>`).join("")}
+  const neuf=L.filter(x=>x.debut>=recent&&x.fin>bientot).sort((a,b)=>b.debut.localeCompare(a.debut));
+  const par={};L.forEach(x=>(par[x.lieu]=par[x.lieu]||[]).push(x));
+  const nt={};tous.forEach(x=>{const t=typeExpo(x);nt[t]=(nt[t]||0)+1});
+  $("view").innerHTML=`<div class="festview expoview">
+    <p class="festintro">Les expositions en cours, des musées aux petites galeries. Les vernissages (des soirées, avec une heure) sont dans le calendrier.</p>
+    <div class="xfiltres" role="group" aria-label="Type de lieu">${TYPES_EXPO.map(([k,l])=>`<button type="button" class="xf" data-xtype="${k}" aria-pressed="${(st.xtype||"")===k}">${l} <span class="n">${k?nt[k]||0:tous.length}</span></button>`).join("")}</div>
+    <div class="xquart" role="group" aria-label="Quartier"><span class="xq-l">Quartier :</span><button type="button" class="xq" data-xq="" aria-pressed="${!st.xq}">tous</button>${Object.keys(nq).sort((a,b)=>nq[b]-nq[a]||a.localeCompare(b,"fr")).map(q=>`<button type="button" class="xq" data-xq="${esc(q)}" aria-pressed="${st.xq===q}">${esc(q)} <span class="n">${nq[q]}</span></button>`).join("")}</div>
+    ${fin.length?`<h2 class="label">Dernière chance · se termine dans moins de 2 semaines</h2><div class="xjour">${fin.map(x=>carte(x,true)).join("")}</div>`:""}
+    ${neuf.length?`<h2 class="label">Vient d'ouvrir</h2><div class="xjour">${neuf.map(x=>carte(x,true)).join("")}</div>`:""}
+    <h2 class="label">Par lieu · ${Object.keys(par).length} lieux · ${L.length} expositions</h2>
+    ${Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(l=>`<section class="musee"><h3 class="fmois">${esc(l)}</h3>${lieuHTML({lieu:l})}<div class="xjour">${par[l].sort((a,b)=>a.fin.localeCompare(b.fin)).map(x=>carte(x,false)).join("")}</div></section>`).join("")||'<div class="empty">Aucune exposition pour ce choix.</div>'}
   </div>`;
 }
 function renderView(){
@@ -400,6 +413,8 @@ $("view").addEventListener("click",e=>{
   const c=e.target.closest(".cell");if(c&&!c.disabled){st.day=c.dataset.d;st.week=monday(st.day);st.view="day";render();return}
   const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){sortirRecherche();st.day=ev.date;st.view="day";render();
     const a=$("ev-"+ev._i);if(a){a.classList.add("flash");a.scrollIntoView({block:"start",behavior:"smooth"})}}return}
+  const xt=e.target.closest("[data-xtype]");if(xt){st.xtype=xt.dataset.xtype;render();return}
+  const xq=e.target.closest("[data-xq]");if(xq){st.xq=xq.dataset.xq;render();return}
   const fb=e.target.closest("[data-fest]");if(fb){sortirRecherche();ouvrirFestival(fb.dataset.fest);return}
   const xj=e.target.closest('[data-act="jour"]');if(xj){st.day=xj.dataset.d;st.view="day";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}
   if(e.target.closest('[data-act="semaine"]')){st.week=monday(st.day);st.view="week";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}

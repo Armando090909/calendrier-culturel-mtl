@@ -8,7 +8,7 @@ from collections import Counter
 from urllib.parse import urlparse
 import unicodedata
 
-DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "jeune", "expo", "autre"]
+DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "jeune", "expo", "autre"]
 
 
 # Lettres que la décomposition Unicode ne ramène pas à l'ASCII (Eivør → eivor, Œuvre → oeuvre…)
@@ -46,27 +46,39 @@ NON_CULTUREL = [
 
 REGLES = [
     ("expo", ["vernissage", "finissage", "visite commentee", "visite guidee de l exposition"]),
+    ("atelier", ["atelier", "ateliers", "initiation", "fabrication", "creation textile", "tricot", "couture", "broderie",
+                 "perlage", "linogravure", "coloriage", "collage", "club d art", "club de laine", "machine a coudre",
+                 "art therapie", "bricolage", "bricolo", "medialab", "creer avec", "creation d", "fabrique"]),
+    ("conference", ["conference", "colloque", "causerie", "table ronde", "panel", "seminaire", "cafe philo",
+                    "philosophique", "talk", "entretien public", "mini conference", "midi conference", "debat"]),
     ("cirque", ["cirque", "acrobat", "trapeze", "jonglerie", "circassien"]),
     ("humour", ["humour", "humoriste", "stand up", "standup", "comedy", "comedie club", "impro", "improvisation"]),
+    ("humour", ["drag", "drag queen", "burlesque", "cabaret drag", "mado"]),
     ("danse", ["danse", "dance", "ballet", "choregraph", "flamenco", "tangente"]),
     ("theatre", ["theatre", "piece", "marionnette", "comedie musicale", "lecture publique", "mise en scene",
                  "conte pour", "spectacle jeunesse", "opera"]),
     ("cinema", ["cine", "cinema", "film", "projection", "documentaire", "bibliocinema", "court metrage"]),
-    ("lettres", ["conference", "lecture", "poesie", "poete", "slam", "auteur", "autrice", "litterature",
-                 "cafe philo", "philosophique", "rencontre d auteur", "lancement de livre", "causerie"]),
+    ("lettres", ["lecture", "poesie", "poete", "poetes", "slam", "auteur", "autrice", "litterature", "litteraire",
+                 "rencontre d auteur", "lancement de livre", "lancement du livre", "scene ouverte litteraire", "spoken word",
+                 "conte pour adultes", "soiree de contes", "club de lecture"]),
     ("musique", ["concert", "musique", "jazz", "orchestre", "quatuor", "chorale", "chanson", "rap", "hip hop",
                  "dj", "techno", "rave", "punk", "metal", "rock", "folk", "piano", "symphon", "recital", "album",
                  "spectacle musical", "show", "electro", "house", "r b", "art sonore", "sonore", "sound art", "performance sonore",
-                 "musique actuelle", "improvisation libre"]),
+                 "musique actuelle", "improvisation libre", "oratorio", "cantate", "messe", "choeur", "choral", "band",
+                 "cover", "trio", "quartet", "ensemble"]),
+    ("fete", ["halloween", "noel", "fete", "fetes", "festivites", "celebration", "marche de noel", "marche des fetes",
+              "carnaval", "parade", "defile", "commemorati", "jour du souvenir", "village d halloween", "maison hantee",
+              "party de quartier", "bal de", "reveillon", "saint jean", "fete nationale", "fete du canada"]),
 ]
 
 # Catégories données par les sources (Sors-tu?, la Ville, etc.)
 CATEGORIES = {
     "theatre": "theatre", "famille": "theatre", "comedie musicale": "theatre", "marionnettes": "theatre",
     "danse": "danse", "ballet": "danse", "humour": "humour", "cirque": "cirque", "cinema": "cinema",
-    "conference": "lettres", "litterature": "lettres", "entrevues": "lettres", "poesie": "lettres",
+    "conference": "conference", "litterature": "lettres", "entrevues": "conference", "poesie": "lettres",
     "exposition": "expo", "arts visuels": "expo",
-    "societe et histoire": "lettres", "art de la parole": "lettres",
+    "societe et histoire": "conference", "art de la parole": "lettres", "art et artisanat": "atelier",
+    "fete et marche": "fete", "club de lecture": "lettres",
 }
 
 
