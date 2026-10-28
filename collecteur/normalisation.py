@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import difflib
 import re
+from collections import Counter
 from urllib.parse import urlparse
 import unicodedata
 
@@ -347,7 +348,49 @@ def corriger_heure_festapp(jour: str, heure: str | None) -> str | None:
     return (d + ecart).strftime("%H:%M") if (d + ecart).date() == d.date() else heure
 
 
+def _titres_lies(a: str, b: str) -> bool:
+    """Deux titres qui parlent de la même chose : l'un contient l'autre, ils se ressemblent, ou ils partagent un mot rare."""
+    ta, tb = _titre_net(a), _titre_net(b)
+    if ta == tb or (min(len(ta), len(tb)) >= 5 and (ta in tb or tb in ta)):
+        return True
+    if difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.6:
+        return True
+    rares = lambda t: {w for w in _mots(t) if len(w) >= 5 and w not in GENERIQUES and w not in MOTS_COURANTS}  # noqa: E731
+    return bool(rares(a) & rares(b))
+
+
+def _fusion_meme_page(events: list[dict]) -> list[dict]:
+    """Deux fiches du même jour qui pointent vers la même page précise (pas une page de programmation commune) :
+    le même événement, décrit deux fois. On garde une fiche, complétée par l'autre."""
+    par_url = Counter(e.get("url") for e in events if e.get("url"))
+    groupes: dict[tuple, list[dict]] = {}
+    for e in events:
+        u = e.get("url") or ""
+        precise = u.startswith("http") and urlparse(u).path.strip("/") != "" and par_url[u] <= 12
+        groupes.setdefault((e["date"], u) if precise else (id(e),), []).append(e)
+    out = []
+    for g in groupes.values():
+        if len(g) == 1 or len(g) > 3:
+            out += g
+            continue
+        g.sort(key=lambda e: (plat(e["lieu"]) == "lieu a confirmer", not e.get("heure"), PRIORITE.get(e.get("source", ""), 9)))
+        gardes: list[dict] = []
+        for e in g:
+            # Deux heures différentes sur la même page : deux représentations (matinée et soirée) ; on garde les deux.
+            cible = next((x for x in gardes if (not x.get("heure") or not e.get("heure") or x["heure"] == e["heure"])
+                          and _titres_lies(x["titre"], e["titre"])), None)
+            if cible is None:
+                gardes.append(e)
+                continue
+            for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi"):
+                if not cible.get(k) and e.get(k):
+                    cible[k] = e[k]
+        out += gardes
+    return out
+
+
 def dedoublonner(events: list[dict]) -> list[dict]:
+    events = _fusion_meme_page(events)
     seaux: dict[tuple, list[dict]] = {}
     for e in events:
         garde = seaux.setdefault(e["date"], [])

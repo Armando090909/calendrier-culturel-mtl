@@ -569,3 +569,68 @@ def calendriers_soumis(cfg: dict) -> list[dict]:
 
 CONNECTEURS = {"ville_csv": ville_csv, "ics": ics, "jsonld": jsonld, "gancio": gancio, "page_ia": page_ia,
                "auto": auto, "propositions": propositions}
+
+
+# ---------------------------------------------------------------- Page d'un événement de la Ville (montreal.ca)
+_MOIS = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"]
+
+
+def details_ville(html: str, jour: str) -> dict:
+    """Salle, adresse, heure et billetterie lues sur la fiche montreal.ca d'un événement.
+    Le fichier de données ouvertes ne donne plus toujours la salle ni l'heure (oct. 2026) ; la fiche, elle, les a.
+    Données schema.org d'abord, puis le bloc « Renseignements » de la page."""
+    out = {}
+    for o in _objets_jsonld(html):
+        loc = o.get("location") or {}
+        if isinstance(loc, list):
+            loc = loc[0] if loc else {}
+        if isinstance(loc, dict) and loc.get("name"):
+            out["lieu"] = str(loc["name"]).strip()
+            adr = loc.get("address") or ""
+            out["adresse"] = adr.get("streetAddress", "") if isinstance(adr, dict) else str(adr)
+        sd = str(o.get("startDate") or "")
+        if sd[:10] == jour:
+            m = re.search(r"T(\d{2}):(\d{2})", sd)
+            if m and (m.group(1), m.group(2)) != ("00", "00"):
+                out["heure"] = f"{m.group(1)}:{m.group(2)}"
+        off = o.get("offers") or {}
+        if isinstance(off, list):
+            off = off[0] if off else {}
+        if isinstance(off, dict) and str(off.get("url", "")).startswith("http"):
+            out["billets"] = off["url"]
+    soupe = BeautifulSoup(html, "html.parser")
+    if "lieu" not in out:
+        titre = soupe.find(lambda t: t.name in ("h2", "h3", "h4", "p", "div", "span") and t.get_text(strip=True) == "Renseignements")
+        bloc = titre
+        for _ in range(4):  # on remonte jusqu'au conteneur qui a les liens
+            if bloc is None or bloc.find_next("a") is None:
+                break
+            if bloc.parent is not None and bloc.parent.find("a"):
+                bloc = bloc.parent
+                break
+            bloc = bloc.parent
+        if bloc is not None:
+            for a in bloc.find_all("a"):
+                t = a.get_text(" ", strip=True)
+                if t and not re.search(r"(?i)voir la carte|billetterie|courriel|t[ée]l[ée]phone|site web|^\+|@", t):
+                    out["lieu"] = t
+                    suite = a.find_next(string=re.compile(r"\d+.*(rue|av|boul|chemin|place|ch\.|bd|avenue|boulevard)", re.I))
+                    if suite:
+                        out["adresse"] = suite.strip()
+                    break
+    if "billets" not in out:
+        for a in soupe.find_all("a", href=True):
+            if re.search(r"(?i)^\s*(billetterie|r[ée]server|acheter des billets|billets)\s*$", a.get_text(" ", strip=True)) \
+                    and a["href"].startswith("http"):
+                out["billets"] = a["href"]
+                break
+    if "heure" not in out:
+        try:
+            a_, m_, j_ = jour.split("-")
+            texte = plat(soupe.get_text(" ", strip=True))
+            m = re.search(rf"\b{int(j_)} {_MOIS[int(m_) - 1]}(?: {a_})?\D{{0,40}}?\b(\d{{1,2}}) ?h ?(\d{{2}})?\b", texte)
+            if m and 8 <= int(m.group(1)) <= 23:
+                out["heure"] = f"{int(m.group(1)):02d}:{m.group(2) or '00'}"
+        except (ValueError, IndexError):
+            pass
+    return out
