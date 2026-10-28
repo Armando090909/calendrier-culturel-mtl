@@ -215,6 +215,33 @@ def main() -> int:
         e["_cat"] = b.get("categorie") or ""
         events.append(e)
 
+    # Ville de Montréal : la salle, l'heure et la billetterie manquent souvent dans le fichier ouvert ; on lit la fiche
+    # montreal.ca (une seule fois par page, mémoire cache/ville_pages.json), dates les plus proches d'abord.
+    f_vp = CACHE / "ville_pages.json"
+    memo_v = json.loads(f_vp.read_text(encoding="utf-8")) if f_vp.exists() else {}
+    a_lire = sorted((e for e in events if e["source"] == "ville" and e["url"].startswith("http")
+                     and (e["lieu"] == "Lieu à confirmer" or not e["heure"])), key=lambda e: e["date"])
+    lues_v, fin_v = 0, time.time() + 10 * 60
+    for e in a_lire:
+        det = memo_v.get(e["url"])
+        if det is None and lues_v < int(reglages.get("max_pages_ville", 500)) and time.time() < fin_v:
+            try:
+                det = memo_v[e["url"]] = connecteurs.details_ville(telecharger(e["url"], "text/html").text, e["date"])
+                lues_v += 1
+                time.sleep(0.3)
+            except Exception:
+                det = None
+        if not det:
+            continue
+        if e["lieu"] == "Lieu à confirmer" and det.get("lieu"):
+            e["lieu"] = lieu_canon(det["lieu"], det.get("adresse", ""), "Montréal") or "Lieu à confirmer"
+        if not e["heure"] and det.get("heure"):
+            e["heure"] = det["heure"]
+        if not e.get("billets") and det.get("billets"):
+            e["billets"] = det["billets"]
+    f_vp.write_text(json.dumps(memo_v, ensure_ascii=False), encoding="utf-8")
+    print(f"Fiches de la Ville : {lues_v} lues, {sum(1 for e in a_lire if e['lieu'] != 'Lieu à confirmer')} salles retrouvées.")
+
     # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
     # on reclasse avec sa description, puis l'IA tranche les cas qui restent, si elle est disponible.
     autres = [e for e in events if e["discipline"] == "autre"][:int(reglages.get("max_pages_autre", 80))]
