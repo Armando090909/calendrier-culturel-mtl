@@ -78,11 +78,14 @@ def _iso(s: str):
 
 
 # ---------------------------------------------------------------- Ville de Montréal (CSV ouvert)
+DIAG: list[str] = []  # remarques pour le rapport de collecte (raisons d'un résultat vide, colonnes lues…)
+
+
 def _col(row: dict, *noms: str) -> str:
     cles = {plat(k): k for k in row}
     for n in noms:
         k = cles.get(plat(n))
-        if k is not None and row[k]:
+        if k is not None and row[k] and str(row[k]).strip().lower() not in ("nan", "none", "null", "n/a", "-"):
             return str(row[k]).strip()
     return ""
 
@@ -92,6 +95,7 @@ def ville_csv(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     texte = r.content.decode("utf-8-sig", errors="replace")
     lecteur = csv.DictReader(io.StringIO(texte))
     print(f"  colonnes : {lecteur.fieldnames}")
+    DIAG.append(f"colonnes du fichier : {', '.join(lecteur.fieldnames or [])}"[:600])
     evs, series = [], []
     for row in lecteur:
         titre = _col(row, "titre", "title", "nom")
@@ -99,7 +103,11 @@ def ville_csv(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         d2 = _iso(_col(row, "date_fin", "fin", "date_de_fin", "end_date")) or d1
         if not titre or d1 is None:
             continue
-        lieu = _col(row, "titre_adresse", "emplacement", "lieu", "nom_lieu")
+        lieu = _col(row, "titre_adresse", "emplacement", "lieu", "nom_lieu", "nom_emplacement", "lieu_nom", "titre_lieu",
+                    "nom_du_lieu", "installation", "nom_installation")
+        lat, lon = _col(row, "lat", "latitude", "y"), _col(row, "long", "lon", "longitude", "x")
+        if not lieu and re.fullmatch(r"-?\d+\.\d+", lat or "") and re.fullmatch(r"-?\d+\.\d+", lon or ""):
+            lieu = f"@{lat},{lon}"  # pas de nom : la collecte cherche la salle connue la plus proche
         adresse = _col(row, "adresse_principale", "adresse", "address")
         typ = _col(row, "type_evenement", "type", "categorie")
         url = _col(row, "url_fiche", "url", "lien")
@@ -357,6 +365,7 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             html = telecharger(url, "text/html").text
         except Exception as exc:
             print(f"  page illisible {url} : {exc}")
+            DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
             continue
         # Données structurées présentes ? On les préfère (gratuites et exactes).
         e2, s2 = evenements_jsonld(html, url, dict(cfg, cle_source=cfg["cle_source"]), debut, fin)
@@ -364,11 +373,16 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             evs += e2
             series += s2
             continue
+        texte = texte_page(html, url)
         try:
-            data = extraire_avec_memoire(url, texte_page(html, url), debut, fin)
+            data = extraire_avec_memoire(url, texte, debut, fin)
         except Exception as exc:
             print(f"  IA en échec pour {url} : {exc}")
+            DIAG.append(f"IA en échec ({str(exc)[:80]}) : {url}")
             continue
+        if not data["evenements"] and not data["series"] and url not in suivis:
+            DIAG.append(f"page presque vide ({len(texte)} caractères ; site en JavaScript ?) : {url}" if len(texte) < 600
+                        else f"aucun événement trouvé dans {len(texte)} caractères de texte : {url}")
         # « details » : une page de programmation qui ne donne pas les heures → on lit la page de chaque spectacle
         if cfg.get("details") and url not in suivis:
             hote = urlparse(url).netloc

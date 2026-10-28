@@ -3,6 +3,7 @@ filtre « île de Montréal », noms de salles et doublons."""
 from __future__ import annotations
 
 import re
+from urllib.parse import urlparse
 import unicodedata
 
 DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "jeune", "expo", "autre"]
@@ -57,6 +58,7 @@ CATEGORIES = {
     "danse": "danse", "ballet": "danse", "humour": "humour", "cirque": "cirque", "cinema": "cinema",
     "conference": "lettres", "litterature": "lettres", "entrevues": "lettres", "poesie": "lettres",
     "exposition": "expo", "arts visuels": "expo",
+    "societe et histoire": "lettres", "art de la parole": "lettres",
 }
 
 
@@ -83,8 +85,14 @@ def disciplines_aussi(titre: str, description: str, disc: str, lieu: str = "") -
     return disc, aussi[:2]
 
 
+# Catégories de la Ville qui ne sont pas des sorties culturelles (services, ateliers pratiques, vie municipale)
+CATEGORIES_EXCLUES = ["sport", "loisir sportif", "vie democratique", "consultation", "soutien et echange", "bien etre",
+                      "jeux", "science et techno", "informatique", "cuisine", "rencontre avec personne elue",
+                      "conseil et comite", "langues", "jardinage", "assemblee publique"]
+
+
 def est_non_culturel(titre: str, categorie: str = "") -> bool:
-    return _has(titre, NON_CULTUREL) or _has(categorie, ["sport", "loisir sportif", "vie democratique", "consultation"])
+    return _has(titre, NON_CULTUREL) or _has(categorie, CATEGORIES_EXCLUES)
 
 
 def classer(titre: str, categorie: str = "", description: str = "", defaut: str = "") -> str:
@@ -186,6 +194,18 @@ class Lieux:
             self._indexer(alias, nom)
         return nom
 
+    def plus_proche(self, lat: float, lon: float, max_km: float) -> str | None:
+        import math
+        best, nom_best = max_km, None
+        for nom, info in self.data.items():
+            if isinstance(info, dict) and info.get("lat") is not None:
+                dx = (info["lon"] - lon) * 111.32 * math.cos(math.radians(lat))
+                dy = (info["lat"] - lat) * 110.57
+                dk = math.hypot(dx, dy)
+                if dk < best:
+                    best, nom_best = dk, nom
+        return nom_best
+
     def coord(self, nom: str) -> dict | None:
         info = self.data.get(nom)
         if isinstance(info, dict) and info.get("lat") is not None:
@@ -201,6 +221,11 @@ GENERIQUES = {"soiree", "concert", "spectacle", "show", "festival", "les", "the"
               "exposition", "projection", "party", "nuit", "grand", "grande", "special", "halloween", "fest", "jour"}
 
 
+MOTS_COURANTS = {"montreal", "lancement", "album", "spectacle", "concert", "soiree", "festival", "edition", "special",
+                 "speciale", "invites", "presente", "tournee", "world", "music", "musique", "hommage", "tribute", "night",
+                 "party", "anniversaire", "release", "show", "gratuit", "atelier", "theatre", "danse", "cinema", "conference"}
+
+
 def _mots(titre: str) -> list[str]:
     t = re.sub(r"\b(avec|with|and|et|presente|presents|feat|ft|w)\b", " ", plat(titre))
     return [m for m in t.split() if len(m) > 2]
@@ -210,8 +235,16 @@ def meme_evenement(a: dict, b: dict) -> bool:
     """Même date, même salle, et même premier mot distinctif (souvent le nom de l'artiste ou de la pièce)."""
     if a["date"] != b["date"] or plat(a["lieu"])[:18] != plat(b["lieu"])[:18]:
         return False
+    if plat(a["lieu"]) == "lieu a confirmer":  # salle inconnue : on ne fusionne que les titres identiques à la même heure
+        return plat(a["titre"]) == plat(b["titre"]) and a.get("heure") == b.get("heure")
+    domaine = lambda e: urlparse(e.get("url") or "").netloc.replace("www.", "")  # noqa: E731
+    autre_source = a.get("source") != b.get("source") or domaine(a) != domaine(b)
     if a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
-        return False
+        # Deux heures différentes : deux représentations, sauf si deux sites décrivent le même spectacle
+        # (l'un donne l'ouverture des portes, l'autre le début : 18 h 30 et 20 h). Écart de 2 h au plus.
+        ha, hb = (int(x[:2]) * 60 + int(x[3:]) for x in (a["heure"], b["heure"]))
+        if not autre_source or abs(ha - hb) > 120:
+            return False
     # Même festival, même jour, même heure, même salle : le même spectacle sous deux titres
     # (ex. « Concert d'ouverture… » et « Ouverture jubilatoire ! »).
     if a.get("festival") and a.get("festival") == b.get("festival") and a.get("heure") and a.get("heure") == b.get("heure") \
@@ -222,7 +255,28 @@ def meme_evenement(a: dict, b: dict) -> bool:
         return plat(a["titre"]) == plat(b["titre"])
     if ma[0] == mb[0] and ma[0] not in GENERIQUES:
         return True
-    return " ".join(ma[:3]) == " ".join(mb[:3])
+    if " ".join(ma[:3]) == " ".join(mb[:3]):
+        return True
+    # Deux sites, deux titres (« Claudio Simonetti's Goblin : Tenebre » / « Goblin Tenebre ») : un mot rare en commun suffit.
+    if autre_source:
+        rares = lambda m: {w for w in m if len(w) >= 5 and w not in GENERIQUES and w not in MOTS_COURANTS}  # noqa: E731
+        return bool(rares(ma) & rares(mb))
+    return False
+
+
+def _meme_titre_strict(a: dict, b: dict) -> bool:
+    """Pour rattacher un événement sans salle à un autre du même jour : même début de titre et heures compatibles."""
+    if a.get("heure") and b.get("heure"):
+        ha, hb = (int(x[:2]) * 60 + int(x[3:]) for x in (a["heure"], b["heure"]))
+        if abs(ha - hb) > 120:
+            return False
+    if a.get("festival") and a.get("festival") == b.get("festival") and a.get("heure") and a.get("heure") == b.get("heure"):
+        return True
+    ma, mb = _mots(a["titre"]), _mots(b["titre"])
+    if not ma or not mb:
+        return False
+    return (ma[0] == mb[0] and ma[0] not in GENERIQUES and ma[0] not in MOTS_COURANTS and len(ma[0]) >= 4) \
+        or " ".join(ma[:3]) == " ".join(mb[:3])
 
 
 def corriger_heure_festapp(jour: str, heure: str | None) -> str | None:
@@ -255,14 +309,16 @@ def dedoublonner(events: list[dict]) -> list[dict]:
         else:
             garde.append(e)
     tous = [e for g in seaux.values() for e in g]
-    # Un événement de festival sans salle connue, déjà présent avec sa salle (même jour, même heure) : on le retire.
-    connus = {(e["date"], e.get("heure"), e.get("festival")): e for e in tous
-              if e.get("festival") and e.get("heure") and plat(e["lieu"]) != "lieu a confirmer"}
+    # Un événement sans salle connue, déjà présent le même jour avec sa salle : on le retire.
+    par_jour: dict[str, list[dict]] = {}
+    for e in tous:
+        if plat(e["lieu"]) != "lieu a confirmer":
+            par_jour.setdefault(e["date"], []).append(e)
     garde = []
     for e in tous:
-        if e.get("festival") and plat(e["lieu"]) == "lieu a confirmer":
-            autre = connus.get((e["date"], e.get("heure"), e.get("festival")))
-            if autre and meme_evenement(dict(e, lieu=autre["lieu"]), autre):
+        if plat(e["lieu"]) == "lieu a confirmer" and e.get("source") != "ville":
+            autre = next((x for x in par_jour.get(e["date"], []) if _meme_titre_strict(e, x)), None)
+            if autre:
                 for k in ("prix", "billets", "resume", "image", "aussi"):
                     if not autre.get(k) and e.get(k):
                         autre[k] = e[k]
@@ -270,3 +326,55 @@ def dedoublonner(events: list[dict]) -> list[dict]:
         garde.append(e)
     tous = garde
     return sorted(tous, key=lambda e: (e["date"], e.get("heure") or "99", e["titre"]))
+
+
+# ---- Styles de musique (larges) -------------------------------------------------------------------------------
+STYLES = {
+    "rock": "Rock et indie", "pop": "Pop et chanson", "hiphop": "Hip-hop et R&B", "electro": "Électro",
+    "jazz": "Jazz et blues", "classique": "Classique et opéra", "monde": "Musiques du monde",
+    "folk": "Folk, trad et country", "metal": "Métal et punk", "experimental": "Expérimental",
+}
+# Mots (catégorie de la source, puis titre et résumé) → style. L'ordre compte : le plus précis d'abord.
+REGLES_STYLE = [
+    ("metal", ["metal", "metalcore", "deathcore", "black metal", "doom", "hardcore", "punk", "grindcore", "thrash", "screamo", "oi"]),
+    ("hiphop", ["hip hop", "hiphop", "rap", "r b", "rnb", "soul", "trap", "drill", "funk"]),
+    ("electro", ["electro", "electronique", "techno", "house", "dj", "dj set", "drum and bass", "dnb", "rave", "ambient", "edm", "dubstep", "trance", "disco"]),
+    ("classique", ["classique", "opera", "orchestre", "symphonique", "symphonie", "quatuor", "quintette", "baroque", "cantate",
+                   "concerto", "sonate", "recital", "choeur", "choral", "orgue", "musique de chambre", "philharmonique", "osm", "bach", "mozart", "beethoven"]),
+    ("jazz", ["jazz", "blues", "swing", "bebop", "big band", "trio jazz", "manouche", "bossa"]),
+    ("monde", ["musiques du monde", "musique du monde", "world", "afro", "afrobeat", "latin", "latino", "salsa", "cumbia", "flamenco", "reggae",
+               "klezmer", "arabe", "orientale", "balkan", "tango", "kompa", "zouk", "bollywood", "celtique", "fado", "maloya", "mandingue"]),
+    ("folk", ["folk", "trad", "traditionnel", "country", "bluegrass", "americana", "irlandais", "irish", "veillee", "violoneux", "western"]),
+    ("experimental", ["experimental", "experimentale", "noise", "improvisation", "improvisee", "musique actuelle", "electroacoustique", "acousmatique", "drone", "avant garde"]),
+    ("rock", ["rock", "indie", "alternatif", "alternative", "garage", "shoegaze", "grunge", "post rock", "psych", "psychedelique", "emo", "power pop", "lo fi"]),
+    ("pop", ["pop", "chanson", "chansonnier", "auteur compositeur", "variete", "francophone", "hommage", "tribute", "cabaret", "karaoke", "comedie musicale"]),
+]
+STYLE_LIEU = {  # salles dont la programmation est presque toute d'un même style
+    "upstairs": "jazz", "diese onze": "jazz", "entracte": "jazz", "bistro a jojo": "jazz", "maison du jazz": "jazz",
+    "balattou": "monde", "hurley": "folk", "maison symphonique": "classique", "salle bourgie": "classique",
+    "pollack": "classique", "salle claude champagne": "classique", "turbo haus": "metal", "foufounes": "metal",
+    "piranha": "metal", "datcha": "electro", "stereo": "electro", "new city gas": "electro", "sat": "electro",
+    "le belmont": "electro", "ausgang": "electro",
+}
+STYLE_FESTIVAL = {"bach": "classique", "coupdecoeur": "pop", "mpourmontreal": "rock", "akousma": "experimental",
+                  "nuitsdafrique": "monde", "jazz": "jazz", "suoni": "experimental", "mutek": "electro",
+                  "igloofest": "electro", "piknic": "electro", "francos": "pop", "wiblues": "jazz", "trad": "folk",
+                  "fma": "classique", "chambre": "classique", "elektra": "experimental"}
+
+
+def style_musique(titre: str, categorie: str = "", lieu: str = "", resume: str = "", festival: str | None = None) -> str | None:
+    """Style large d'un concert, d'après des indices sûrs. None si rien ne permet de trancher."""
+    for texte in (categorie, titre):
+        for style, mots in REGLES_STYLE:
+            if texte and _has(texte, mots):
+                return style
+    if festival and festival in STYLE_FESTIVAL:
+        return STYLE_FESTIVAL[festival]
+    l = plat(lieu)
+    for k, v in STYLE_LIEU.items():
+        if f" {k} " in f" {l} ":
+            return v
+    for style, mots in REGLES_STYLE:
+        if resume and _has(resume, mots):
+            return style
+    return None

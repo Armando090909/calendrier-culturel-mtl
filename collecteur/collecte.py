@@ -27,7 +27,8 @@ import festivals as fest  # noqa: E402
 import geo  # noqa: E402
 import ia  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
-from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat  # noqa: E402
+import connecteurs  # noqa: E402
+from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -132,13 +133,15 @@ def main() -> int:
             print(f"  repris du cache ({c['date']})")
             continue
         try:
+            connecteurs.DIAG.clear()
             e, sr = CONNECTEURS[s["type"]](s, aujourd, fin)
             if s.get("festival"):
                 for x in e + sr:
                     x["festival"] = s["festival"]
             bruts += e
             series += sr
-            rapport.append({"source": s["nom"], "evenements": len(e), "series": len(sr), "erreur": None})
+            rapport.append({"source": s["nom"], "evenements": len(e), "series": len(sr), "erreur": None,
+                            **({"diagnostic": connecteurs.DIAG[:3]} if connecteurs.DIAG else {})})
             print(f"  {len(e)} événements, {len(sr)} séries")
             if e or sr:
                 fichier_cache.write_text(json.dumps({"date": aujourd.isoformat(), "evenements": e, "series": sr},
@@ -162,6 +165,9 @@ def main() -> int:
         nom = (nom or "").strip() or (adresse or "").split(",")[0].strip()
         if not nom:
             return ""
+        m = re.fullmatch(r"@(-?[\d.]+),(-?[\d.]+)", nom)
+        if m:  # seulement des coordonnées : la salle connue la plus proche (moins de 150 m), sinon « à confirmer »
+            return lieux.plus_proche(float(m.group(1)), float(m.group(2)), 0.15) or ""
         if hors_ile(nom, adresse, ville):
             return None
         c = lieux.trouver(nom)
@@ -206,6 +212,7 @@ def main() -> int:
         e.update(details(b))
         if b.get("festival"):
             e["festival"] = b["festival"]
+        e["_cat"] = b.get("categorie") or ""
         events.append(e)
 
     # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
@@ -329,6 +336,37 @@ def main() -> int:
     expos = gardees
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
+
+    # Style de musique (large) : indices sûrs d'abord (catégorie, titre, festival, salle), puis l'IA pour le reste.
+    f_styles = CACHE / "styles.json"
+    memo_s = json.loads(f_styles.read_text(encoding="utf-8")) if f_styles.exists() else {}
+    a_demander = []
+    for e in events:
+        cat = e.pop("_cat", "")
+        if "musique" not in (e["discipline"], *(e.get("aussi") or []), e.get("sous")):
+            continue
+        st = style_musique(e["titre"], cat, e["lieu"], e.get("resume", ""), e.get("festival"))
+        cle = plat(e["titre"])[:40] + "|" + plat(e["lieu"])[:20]
+        if not st and cle in memo_s:
+            st = memo_s[cle] or None
+        if st:
+            e["style"] = st
+        elif cle not in memo_s:
+            a_demander.append((cle, e))
+    if a_demander and ia.disponible():
+        lot = a_demander[:int(reglages.get("max_styles_ia", 200))]
+        try:
+            for i in range(0, len(lot), 50):
+                part = lot[i:i + 50]
+                rep = ia.styles_lot([{"titre": e["titre"], "lieu": e["lieu"], "resume": e.get("resume", "")} for _, e in part])
+                for j, (cle, e) in enumerate(part):
+                    memo_s[cle] = rep.get(j, "")
+                    if rep.get(j):
+                        e["style"] = rep[j]
+        except Exception as exc:
+            print(f"Styles IA en échec : {exc}")
+    f_styles.write_text(json.dumps(memo_s, ensure_ascii=False), encoding="utf-8")
+    print(f"Styles : {sum(1 for e in events if e.get('style'))} concerts avec un style.")
     fest.etiqueter(expos, festivals)
     fest.publier(festivals, SORTIE.parent / "festivals.json")
     try:

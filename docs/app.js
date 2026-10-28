@@ -31,7 +31,7 @@ const fmtKm=k=>k<1?Math.round(k*10)*100+" m":(Math.round(k*10)/10).toString().re
 
 let D=null,byId=[],CFG={},FEST=[],FESTID={};
 const DEPART="theatre"; // catégorie affichée seule à la première visite (les autres se cochent dans « Disciplines »)
-let st={on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
+let st={styles:{},on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
 st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v2 sont ignorés
 try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
@@ -44,7 +44,11 @@ function inRadius(lieu){if(!st.rayon||!origin())return true;const k=dist(lieu);r
 // Un événement peut être dans plusieurs disciplines (champ « aussi », ex. théâtre + danse)
 // Un spectacle jeune public apparaît aussi dans sa discipline d'origine (« sous », ex. théâtre)
 const discs=e=>[...new Set([e.discipline].concat(e.aussi||[],e.sous&&DISC_LABEL[e.sous]?[e.sous]:[]))];
-const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:discs(e).some(k=>st.on[k]))&&inRadius(e.lieu));
+// Styles de musique (larges). Aucun style choisi = toute la musique.
+const STYLES={rock:"Rock et indie",pop:"Pop et chanson",hiphop:"Hip-hop et R&B",electro:"Électro",jazz:"Jazz et blues",classique:"Classique et opéra",monde:"Musiques du monde",folk:"Folk, trad et country",metal:"Métal et punk",experimental:"Expérimental"};
+const stylesChoisis=()=>Object.keys(st.styles||{}).filter(k=>st.styles[k]);
+const okDisc=e=>{const ch=stylesChoisis();return discs(e).some(k=>st.on[k]&&(k!=="musique"||!ch.length||ch.includes(e.style)))};
+const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:okDisc(e))&&inRadius(e.lieu));
 const byTime=(a,b)=>(a.heure||"99").localeCompare(b.heure||"99");
 const byDist=(a,b)=>{const x=dist(a.lieu),y=dist(b.lieu);return (x===null?1e9:x)-(y===null?1e9:y)||byTime(a,b)};
 
@@ -101,7 +105,7 @@ function evHTML(e){
 // Vue Semaine : ligne compacte (un survol) ; le détail est dans la vue Jour
 const MAX_SEM=Infinity; // tout afficher dans la semaine
 function rowHTML(e){const c=D.lieux[e.lieu];
-  return `<button type="button" class="row${e.aussi&&e.aussi.length?" multi":""}${e.festival&&FESTID[e.festival]?" enfest":""}" data-ev="${e._i}" style="--c:var(--${e.discipline})${e.aussi&&e.aussi.length?`;--c2:var(--${e.aussi[0]})`:""}${e.festival&&FESTID[e.festival]?`;--f:${FESTID[e.festival].coul}`:""}" title="${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}"><span class="rti">${esc(e.titre)}${e.complet?` <span class="cpl">complet</span>`:""}</span><span class="rl"><b class="${e.heure?"":"nh"}">${heureTxt(e)}</b> · <span class="v">${esc(e.lieu)}</span>${c&&c.metro?` · ${esc(c.metro.nom)}`:""}${e.festival&&!st.fest&&FESTID[e.festival]?` <span class="fx" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${esc(FESTID[e.festival].court)}</span>`:""}</span></button>`}
+  return `<button type="button" class="row${e.aussi&&e.aussi.length?" multi":""}${e.festival&&FESTID[e.festival]?" enfest":""}" data-ev="${e._i}" style="--c:var(--${e.discipline})${e.aussi&&e.aussi.length?`;--c2:var(--${e.aussi[0]})`:""}${e.festival&&FESTID[e.festival]?`;--f:${FESTID[e.festival].coul}`:""}" title="${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?" · "+esc(STYLES[e.style]):""}"><span class="rti">${esc(e.titre)}${e.complet?` <span class="cpl">complet</span>`:""}</span><span class="rl"><b class="${e.heure?"":"nh"}">${heureTxt(e)}</b> · <span class="v">${esc(e.lieu)}</span>${c&&c.metro?` · ${esc(c.metro.nom)}`:""}${e.festival&&!st.fest&&FESTID[e.festival]?` <span class="fx" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${esc(FESTID[e.festival].court)}</span>`:""}</span></button>`}
 // Écouter / bande-annonce : seulement des liens vérifiés (page de l'événement, MusicBrainz, TMDb).
 // Sinon, un simple lien de recherche, présenté honnêtement comme une recherche.
 const NOMS_LIEN={bandcamp:"Bandcamp",spotify:"Spotify",apple:"Apple Music",soundcloud:"SoundCloud",youtube:"YouTube",vimeo:"Vimeo",site:"Site officiel","bande-annonce":"▶ Bande-annonce"};
@@ -136,7 +140,7 @@ function detailHTML(e){
   return `<article class="ev det" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
-      <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
+      <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
       ${lieuHTML(e,true)}
       ${e.resume?`<p class="resume">${esc(e.resume)}</p>`:""}
       ${media?"":actions}
@@ -145,7 +149,16 @@ function detailHTML(e){
     ${media?`<div class="det-side">${media}${actions}</div>`:""}
   </article>`;
 }
+function renderStyles(){
+  const el=$("styles");if(!st.on.musique||st.fest){el.hidden=true;return}
+  const n={};let sans=0;D.events.forEach(e=>{if(!discs(e).includes("musique"))return;if(e.style)n[e.style]=(n[e.style]||0)+1;else sans++});
+  const ch=stylesChoisis();el.hidden=false;
+  el.innerHTML=`<span class="st-l">Musique :</span>`+Object.entries(STYLES).filter(([k])=>n[k]).map(([k,l])=>
+    `<button type="button" class="stc" data-style="${k}" aria-pressed="${ch.includes(k)}">${l} <span class="n">${n[k]}</span></button>`).join("")+
+    (ch.length?`<button type="button" class="stc tous" data-style="">tous les styles</button>`:"")+
+    (sans?`<span class="st-n" title="Style pas encore connu : ces concerts restent visibles quand aucun style n'est choisi">${sans} sans style connu</span>`:"")}
 function renderChips(){
+  renderStyles();
   const counts={};D.events.forEach(e=>discs(e).forEach(k=>counts[k]=(counts[k]||0)+1));
   counts.expo=(counts.expo||0)+D.expos.filter(x=>!estMusee(x)).length;
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
@@ -260,7 +273,7 @@ function correspond(mots,...champs){const t=" "+plat(champs.join(" "))+" ";retur
 function renderRecherche(){
   const mots=plat(st.q).split(" ").filter(Boolean),el=$("view");
   const today=iso(new Date());
-  const champsE=e=>[e.titre,e.lieu,(D.lieux[e.lieu]||{}).quartier||"",e.resume||"",e.festival&&FESTID[e.festival]?FESTID[e.festival].nom+" "+FESTID[e.festival].court:"",discs(e).map(k=>DISC_LABEL[k]).join(" ")];
+  const champsE=e=>[e.titre,e.lieu,(D.lieux[e.lieu]||{}).quartier||"",e.resume||"",e.festival&&FESTID[e.festival]?FESTID[e.festival].nom+" "+FESTID[e.festival].court:"",discs(e).map(k=>DISC_LABEL[k]).join(" "),e.style&&STYLES[e.style]?STYLES[e.style]:""];
   const ev=D.events.filter(e=>e.date>=today&&correspond(mots,...champsE(e)));
   const ex=D.expos.filter(x=>x.fin>=today&&correspond(mots,x.titre,x.lieu,x.festival&&FESTID[x.festival]?FESTID[x.festival].nom:""));
   const fe=FEST.filter(f=>correspond(mots,f.nom,f.court,f.lieu||""));
@@ -390,6 +403,8 @@ function renderFooter(){
 
 $("pt").innerHTML=`<option value="">— n'importe où —</option>`+POINTS.map(p=>`<option value="${esc(p[0])}">Métro ${esc(p[0])}</option>`).join("")+`<option value="addr">Une adresse…</option>`;
 
+$("styles").addEventListener("click",e=>{const b=e.target.closest(".stc");if(!b)return;st.styles=st.styles||{};
+  if(!b.dataset.style)st.styles={};else st.styles[b.dataset.style]=!st.styles[b.dataset.style];render()});
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;st.on[b.dataset.k]=!st.on[b.dataset.k];render()});
 $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||b.disabled)return;
   if(st.view==="day"&&st.day===b.dataset.d){st.week=monday(st.day);st.view="week"}else{st.day=b.dataset.d;st.view="day"}render()});
@@ -422,7 +437,7 @@ $("prev").addEventListener("click",()=>step(-1));
 $("next").addEventListener("click",()=>step(1));
 $("s-time").addEventListener("click",()=>{st.sort="time";render()});
 $("s-dist").addEventListener("click",()=>{st.sort="dist";render()});
-$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.rayon=0;render()});
+$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.styles={};st.rayon=0;render()});
 $("pt").addEventListener("change",e=>{st.pt=e.target.value;st.sort=st.pt?"dist":"time";render();if(st.pt==="addr"&&!st.custom)$("addr").focus()});
 $("rayon").addEventListener("change",e=>{st.rayon=Number(e.target.value);render()});
 // Carte du métro : décorative (une évocation), sans filtre
