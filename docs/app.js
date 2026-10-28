@@ -134,7 +134,7 @@ function detailHTML(e){
   // L'affiche et la carte à droite, avec prix, billets et itinéraire juste dessous ; écouter et agenda sous le résumé.
   const actions=`<div class="actions">
         ${e.prix?`<span class="prix">${esc(e.prix)}</span>`:""}
-        <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?"Acheter des billets":"Voir l'événement"}</a>
+        <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?"Acheter des billets":/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?"Voir l'événement":"Billets et infos"}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">Itinéraire</a>
       </div>`;
   const extra=`${ecoute}${calHTML(e)}`;
@@ -260,7 +260,7 @@ function renderFestivals(){
   </div>`;
 }
 /* ---------- Recherche ---------- */
-const plat=t=>(t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const plat=t=>(t||"").toLowerCase().replace(/ø/g,"o").replace(/æ/g,"ae").replace(/œ/g,"oe").replace(/ß/g,"ss").replace(/ł/g,"l").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g," ").trim();
 function correspond(mots,...champs){const t=" "+plat(champs.join(" "))+" ";return mots.every(m=>t.includes(" "+m)||t.includes(m))}
 function renderRecherche(){
   const mots=plat(st.q).split(" ").filter(Boolean),el=$("view");

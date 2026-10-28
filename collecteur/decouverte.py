@@ -120,6 +120,31 @@ def affiche_page(html: str, page_url: str) -> dict | None:
     return {"url": src, "credit": urlparse(page_url).netloc.replace("www.", ""), "lien": page_url}
 
 
+BILLETTERIES = ("lepointdevente.com", "ticketmaster.", "admission.com", "eventbrite.", "tuxedobillet", "tuxedo.ca",
+                "showpass.com", "dice.fm", "ra.co/events", "zeffy.com", "evenko.ca", "ovation", "ticketpro", "eventim",
+                "universe.com", "lavitrine.com", "billetterie", "billets", "tickets", "ticketweb", "seetickets",
+                "fever", "sortiesbillets", "ticketsource", "yapla", "goout", "eventzilla", "shotgun.live", "/tickets")
+_MOTS_BILLET = re.compile(r"\b(billets?|billetterie|tickets?|acheter|achat|r[ée]server|r[ée]servation|buy|book now|get tickets)\b", re.I)
+
+
+def billets_page(html: str, page_url: str) -> str | None:
+    """Lien d'achat de billets sur la page de l'événement : un lien vers une billetterie connue,
+    ou un bouton dont le texte parle de billets (« Billets », « Acheter », « Réserver », « Tickets »)."""
+    soupe = BeautifulSoup(html, "html.parser")
+    candidats = []
+    for a in soupe.find_all("a", href=True):
+        href = urljoin(page_url, a["href"]).split("#")[0]
+        if not href.startswith("http") or href.rstrip("/") == page_url.rstrip("/"):
+            continue
+        texte = a.get_text(" ", strip=True)[:60]
+        h = href.lower()
+        if any(b in h for b in BILLETTERIES) and not any(x in h for x in ("facebook.", "instagram.", "/help", "/aide", "faq")):
+            candidats.append((0, href))
+        elif _MOTS_BILLET.search(texte) and not re.search(r"(?i)politique|conditions|cadeau|gift|abonnement|newsletter|infolettre", texte):
+            candidats.append((1, href))
+    return sorted(candidats)[0][1] if candidats else None
+
+
 def musicbrainz(nom: str, get_json) -> list[dict]:
     """Liens officiels d'un artiste sur MusicBrainz (correspondance exacte du nom seulement)."""
     r = get_json(f"https://musicbrainz.org/ws/2/artist/?query=artist:%22{quote(nom)}%22&fmt=json&limit=5")
@@ -209,20 +234,25 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         # 1. Affiche : l'image de partage de la page de l'événement (site de la salle, du festival, ou agenda).
         if url.startswith("http") and "facebook.com" not in url:
             pm = memo.get("page:" + url)
-            if (not pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
+            if (not pm or "billets" not in pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
                 lues_affiche += 1
                 try:
                     html = telecharger(url, "text/html").text
-                    pm = memo["page:" + url] = {"affiche": affiche_page(html, url), "le": aujourd.isoformat()}
+                    pm = memo["page:" + url] = {"affiche": affiche_page(html, url), "billets": billets_page(html, url),
+                                                "le": aujourd.isoformat()}
                 except Exception:
-                    pm = memo["page:" + url] = {"affiche": None, "le": aujourd.isoformat()}
+                    pm = memo["page:" + url] = {"affiche": None, "billets": None, "le": aujourd.isoformat()}
     fin_budget = time.time() + 20 * 60  # liens d'écoute : au plus 20 minutes
     # Une même image sur 3 pages ou plus, c'est le logo ou l'image par défaut du site : on l'écarte.
     freq = Counter((v.get("affiche") or {}).get("url") for k, v in memo.items() if k.startswith("page:") and v.get("affiche"))
+    # Un même lien « billets » sur 25 pages ou plus : la page d'accueil de la billetterie, pas celle du spectacle.
+    freq_b = Counter(v.get("billets") for k, v in memo.items() if k.startswith("page:") and v.get("billets"))
     for e in events:
         pm = memo.get("page:" + e.get("url", ""))
         if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image"):
             e["affiche"] = pm["affiche"]
+        if pm and pm.get("billets") and not e.get("billets") and freq_b[pm["billets"]] < 25:
+            e["billets"] = pm["billets"]
     for e in events:
         url = e.get("url", "")
         html = None

@@ -2,6 +2,7 @@
 filtre « île de Montréal », noms de salles et doublons."""
 from __future__ import annotations
 
+import difflib
 import re
 from urllib.parse import urlparse
 import unicodedata
@@ -9,9 +10,15 @@ import unicodedata
 DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "jeune", "expo", "autre"]
 
 
+# Lettres que la décomposition Unicode ne ramène pas à l'ASCII (Eivør → eivor, Œuvre → oeuvre…)
+_TRANSLIT = str.maketrans({"ø": "o", "Ø": "O", "æ": "ae", "Æ": "AE", "œ": "oe", "Œ": "OE", "ß": "ss", "ł": "l", "Ł": "L",
+                           "đ": "d", "Đ": "D", "þ": "th", "ð": "d", "ı": "i", "’": "'", "‘": "'"})
+
+
 def plat(s: str) -> str:
     """Minuscules sans accents ni ponctuation, pour comparer des textes."""
-    s = unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode()
+    s = (s or "").translate(_TRANSLIT)
+    s = unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
@@ -231,39 +238,83 @@ def _mots(titre: str) -> list[str]:
     return [m for m in t.split() if len(m) > 2]
 
 
+# Salles d'un même complexe : « Cinquième Salle » et « Place des Arts » désignent le même endroit pour comparer.
+COMPLEXES = {
+    "place des arts": ["cinquieme salle", "wilfrid pelletier", "theatre maisonneuve", "maison symphonique",
+                       "claude leveillee", "studio theatre", "espace danse", "esplanade tranquille"],
+    "monument national": ["ludger duvernay", "studio hydro quebec"],
+    "gesu": ["amphitheatre du gesu"],
+    "usine c": [], "la chapelle": ["chapelle scenes contemporaines"],
+    "salle bourgie": ["musee des beaux arts", "bourgie"],
+    "sat": ["societe des arts technologiques", "society for arts technology", "society for arts and technology"],
+}
+_MOTS_LIEU = {"et", "and", "st", "ste", "saint", "sainte", "the", "le", "la", "les", "l", "de", "du", "des", "d", "salle",
+              "theatre", "eglise", "church", "montreal", "mtl", "bar", "club", "a", "au"}
+
+
+def lieu_racine(nom: str) -> str:
+    p = plat(nom)
+    for racine, membres in COMPLEXES.items():
+        if f" {racine} " in f" {p} " or any(m in p for m in membres):
+            return racine
+    return p
+
+
+def lieux_proches(a: str, b: str) -> bool:
+    """Même salle sous deux graphies (« Église St. Andrew & St. Paul » / « Église St-Andrew et St-Paul »)."""
+    ra, rb = lieu_racine(a), lieu_racine(b)
+    if ra == rb:
+        return True
+    ta, tb = set(ra.split()) - _MOTS_LIEU, set(rb.split()) - _MOTS_LIEU
+    return bool(ta and tb) and (ta <= tb or tb <= ta)
+
+
+def _titre_net(t: str) -> str:
+    return plat(re.sub(r"\(.*?\)", " ", t)).strip()
+
+
 def meme_evenement(a: dict, b: dict) -> bool:
-    """Même date, même salle, et même premier mot distinctif (souvent le nom de l'artiste ou de la pièce)."""
-    if a["date"] != b["date"] or plat(a["lieu"])[:18] != plat(b["lieu"])[:18]:
+    """Même date, même salle (ou salle inconnue d'un côté), et des titres qui désignent le même spectacle."""
+    if a["date"] != b["date"]:
         return False
-    if plat(a["lieu"]) == "lieu a confirmer":  # salle inconnue : on ne fusionne que les titres identiques à la même heure
-        return plat(a["titre"]) == plat(b["titre"]) and a.get("heure") == b.get("heure")
+    inconnu = "lieu a confirmer" in (plat(a["lieu"]), plat(b["lieu"]))
+    if not inconnu and not lieux_proches(a["lieu"], b["lieu"]):
+        return False
     domaine = lambda e: urlparse(e.get("url") or "").netloc.replace("www.", "")  # noqa: E731
     autre_source = a.get("source") != b.get("source") or domaine(a) != domaine(b)
-    if a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
-        # Deux heures différentes : deux représentations, sauf si deux sites décrivent le même spectacle
-        # (l'un donne l'ouverture des portes, l'autre le début : 18 h 30 et 20 h). Écart de 2 h au plus.
+    ta, tb = _titre_net(a["titre"]), _titre_net(b["titre"])
+    meme_fest = bool(a.get("festival")) and a.get("festival") == b.get("festival")
+    ha = hb = None
+    if a.get("heure") and b.get("heure"):
         ha, hb = (int(x[:2]) * 60 + int(x[3:]) for x in (a["heure"], b["heure"]))
-        if not autre_source or abs(ha - hb) > 120:
+        ecart = abs(ha - hb)
+        # Deux heures différentes : deux représentations, sauf si deux sites décrivent le même spectacle
+        # (ouverture des portes / début : 18 h 30 et 20 h), ou le même titre à moins de 75 min d'écart.
+        if ecart and not ((autre_source and ecart <= 120) or (ta == tb and ecart <= 75)):
             return False
-    # Même festival, même jour, même heure, même salle : le même spectacle sous deux titres
-    # (ex. « Concert d'ouverture… » et « Ouverture jubilatoire ! »).
-    if a.get("festival") and a.get("festival") == b.get("festival") and a.get("heure") and a.get("heure") == b.get("heure") \
-            and plat(a["lieu"]) != "lieu a confirmer":
+    meme_heure = a.get("heure") and a.get("heure") == b.get("heure")
+    une_sans_heure = bool(a.get("heure")) != bool(b.get("heure"))  # exactement une des deux sans heure
+    contient = min(len(ta), len(tb)) >= 5 and (ta in tb or tb in ta)
+    proche = difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.85
+    if inconnu:  # salle inconnue d'un côté : prudence (ex. deux ateliers de bibliothèques différentes)
+        if plat(a["lieu"]) == plat(b["lieu"]) and not autre_source:  # deux salles inconnues, même site : même page seulement
+            return ta == tb and a.get("heure") == b.get("heure") and bool(a.get("url")) and a.get("url") == b.get("url")
+        return (ta == tb and (meme_heure or une_sans_heure or not (a.get("heure") or b.get("heure")))) or (meme_fest and (contient or proche) and (meme_heure or une_sans_heure))
+    if ta == tb or contient or proche:
         return True
-    # Même heure, et un titre qui commence comme l'autre (« Les Suppliantes » / « Les Suppliantes (Eschyle…) »)
-    ta, tb = plat(re.sub(r"\(.*?\)", " ", a["titre"])).strip(), plat(re.sub(r"\(.*?\)", " ", b["titre"])).strip()
-    if a.get("heure") and a.get("heure") == b.get("heure") and min(len(ta), len(tb)) >= 5 \
-            and (ta.startswith(tb) or tb.startswith(ta)):
+    # Même festival, même jour, même heure, même salle : le même spectacle sous deux titres
+    if meme_fest and meme_heure:
         return True
     ma, mb = _mots(a["titre"]), _mots(b["titre"])
     if not ma or not mb:
-        return plat(a["titre"]) == plat(b["titre"])
-    if ma[0] == mb[0] and ma[0] not in GENERIQUES:
+        return False
+    if ma[0] == mb[0] and ma[0] not in GENERIQUES and ma[0] not in MOTS_COURANTS:
         return True
     if " ".join(ma[:3]) == " ".join(mb[:3]):
         return True
-    # Deux sites, deux titres (« Claudio Simonetti's Goblin : Tenebre » / « Goblin Tenebre ») : un mot rare en commun suffit.
-    if autre_source:
+    # Deux sites, deux titres (« Claudio Simonetti's Goblin : Tenebre » / « Goblin Tenebre »),
+    # ou le même festival dont une version n'a pas d'heure : un mot rare en commun suffit.
+    if autre_source or (meme_fest and une_sans_heure):
         rares = lambda m: {w for w in m if len(w) >= 5 and w not in GENERIQUES and w not in MOTS_COURANTS}  # noqa: E731
         return bool(rares(ma) & rares(mb))
     return False
@@ -299,7 +350,7 @@ def corriger_heure_festapp(jour: str, heure: str | None) -> str | None:
 def dedoublonner(events: list[dict]) -> list[dict]:
     seaux: dict[tuple, list[dict]] = {}
     for e in events:
-        garde = seaux.setdefault((e["date"], plat(e["lieu"])[:18]), [])
+        garde = seaux.setdefault(e["date"], [])
         for i, old in enumerate(garde):
             if meme_evenement(e, old):
                 mieux = (bool(e.get("heure")), -PRIORITE.get(e.get("source", ""), 9)) > \

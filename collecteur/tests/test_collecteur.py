@@ -440,3 +440,34 @@ class TestBandcamp(unittest.TestCase):
         from decouverte import bandcamp
         page = self.PAGE.replace("Montréal, Québec", "Berlin")
         self.assertEqual(bandcamp("Anguilles", lambda u: page), [])
+
+
+class TestDoublonsAudit(unittest.TestCase):
+    def test_lettres_et_salles(self):
+        from normalisation import dedoublonner
+        r = dedoublonner([{"date": "2026-10-31", "heure": "20:00", "titre": "Eivør", "lieu": "Le National", "source": "sorstu", "url": "https://sorstu.ca/e"},
+                          {"date": "2026-10-31", "heure": "20:00", "titre": "Eivor", "lieu": "Le National", "source": "salles", "url": "https://ma.to/e"}])
+        self.assertEqual(len(r), 1)
+        r = dedoublonner([{"date": "2026-11-04", "heure": None, "titre": "Ashwaaq | Taqasim", "lieu": "Cinquième Salle", "source": "festival", "url": "https://pda/a"},
+                          {"date": "2026-11-04", "heure": None, "titre": "Ashwaaq | Taqasim", "lieu": "Place des Arts", "source": "festival", "url": "https://pda/a"}])
+        self.assertEqual(len(r), 1)
+
+    def test_pas_de_fusion_abusive(self):
+        from normalisation import dedoublonner
+        f = {"date": "2026-11-06", "heure": "22:30", "lieu": "Lieu à confirmer", "source": "festival", "url": "https://festapp.io/x", "festival": "coupdecoeur"}
+        self.assertEqual(len(dedoublonner([dict(f, titre="bombe"), dict(f, titre="Soraï")])), 2)
+        v = {"date": "2026-10-30", "heure": None, "lieu": "Lieu à confirmer", "source": "ville", "titre": "Soirée d'Halloween"}
+        self.assertEqual(len(dedoublonner([dict(v, url="https://montreal.ca/a"), dict(v, url="https://montreal.ca/b")])), 2)
+
+
+class TestBillets(unittest.TestCase):
+    def test_billetterie_connue(self):
+        from decouverte import billets_page
+        html = '<a href="/a-propos">À propos</a><a href="https://lepointdevente.com/billets/xyz">Info</a><a href="/billets">Billets</a>'
+        self.assertEqual(billets_page(html, "https://salle.ca/show"), "https://lepointdevente.com/billets/xyz")
+
+    def test_bouton_texte(self):
+        from decouverte import billets_page
+        html = '<a href="/politique">Politique de billetterie</a><a href="https://salle.ca/achat/42">Acheter</a>'
+        self.assertEqual(billets_page(html, "https://salle.ca/show"), "https://salle.ca/achat/42")
+        self.assertIsNone(billets_page('<a href="/contact">Contact</a>', "https://salle.ca/show"))
