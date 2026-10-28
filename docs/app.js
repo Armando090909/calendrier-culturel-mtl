@@ -48,7 +48,9 @@ const discs=e=>[...new Set([e.discipline].concat(e.aussi||[],e.sous&&DISC_LABEL[
 // Mots qu'on peut taper dans la recherche pour trouver chaque style
 const STYLE_MOTS={rock:"rock indie alternatif garage",pop:"pop chanson francophone",hiphop:"hip-hop hiphop rap r&b rnb soul funk",electro:"électro electro électronique techno house dj rave",jazz:"jazz blues swing",classique:"classique opéra opera orchestre baroque chambre",monde:"monde world afro latin reggae",folk:"folk trad country bluegrass",metal:"métal metal punk hardcore",experimental:"expérimental experimental noise improvisation"};
 const STYLES={rock:"Rock et indie",pop:"Pop et chanson",hiphop:"Hip-hop et R&B",electro:"Électro",jazz:"Jazz et blues",classique:"Classique et opéra",monde:"Musiques du monde",folk:"Folk, trad et country",metal:"Métal et punk",experimental:"Expérimental"};
-const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:discs(e).some(k=>st.on[k]))&&inRadius(e.lieu));
+// Pour les filtres : un spectacle jeune public n'apparaît que si « Jeune public » est coché (pas sous Théâtre, Musique…)
+const discsFiltre=e=>e.discipline==="jeune"?["jeune"]:discs(e);
+const visible=()=>D.events.filter(e=>(st.fest?e.festival===st.fest:discsFiltre(e).some(k=>st.on[k]))&&inRadius(e.lieu));
 const byTime=(a,b)=>(a.heure||"99").localeCompare(b.heure||"99");
 const byDist=(a,b)=>{const x=dist(a.lieu),y=dist(b.lieu);return (x===null?1e9:x)-(y===null?1e9:y)||byTime(a,b)};
 
@@ -150,7 +152,7 @@ function detailHTML(e){
   </article>`;
 }
 function renderChips(){
-  const counts={};D.events.forEach(e=>discs(e).forEach(k=>counts[k]=(counts[k]||0)+1));
+  const counts={};D.events.forEach(e=>discsFiltre(e).forEach(k=>counts[k]=(counts[k]||0)+1));
   counts.expo=(counts.expo||0)+D.expos.filter(x=>!estMusee(x)).length;
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
     return `<button type="button" class="chip" style="--c:var(--${k})" data-k="${k}" data-d="${k}" aria-pressed="${n&&st.on[k]?"true":"false"}" ${n?"":"disabled"}><span class="dot"></span>${l} <span class="n">${n||"aucun"}</span></button>`}).join("");
