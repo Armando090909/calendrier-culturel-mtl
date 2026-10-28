@@ -17,6 +17,7 @@ import json
 import os
 import re
 import time
+from collections import Counter
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse
@@ -193,7 +194,7 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     return out
 
 
-def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 120) -> int:
+def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 120, max_affiches: int = 600) -> int:
     """Ajoute e["liens"] (écouter, bande-annonce) et e["affiche"] (image de la page officielle). Renvoie le nombre
     d'événements enrichis. Chaque page et chaque artiste ne sont lus qu'une fois (mémoire)."""
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
@@ -201,21 +202,30 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     n, cherches = 0, 0
     fin_budget = time.time() + 25 * 60  # au plus 25 minutes par collecte ; la suite reprend le lendemain
     vieux = (aujourd - timedelta(days=30)).isoformat()
+    lues_affiche, fin_affiches = 0, time.time() + 12 * 60  # affiches : au plus 12 minutes
     for e in events:
         url = e.get("url", "")
         html = None
-        # 1. Affiche : page officielle de l'événement (pas les agrégateurs)
-        if page_officielle(url):
+        # 1. Affiche : l'image de partage de la page de l'événement (site de la salle, du festival, ou agenda).
+        if url.startswith("http") and "facebook.com" not in url:
             pm = memo.get("page:" + url)
-            if (not pm or (not pm.get("affiche") and pm["le"] < vieux)) and cherches < max_recherches and time.time() < fin_budget:
-                cherches += 1
+            if (not pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
+                lues_affiche += 1
                 try:
                     html = telecharger(url, "text/html").text
                     pm = memo["page:" + url] = {"affiche": affiche_page(html, url), "le": aujourd.isoformat()}
                 except Exception:
                     pm = memo["page:" + url] = {"affiche": None, "le": aujourd.isoformat()}
-            if pm and pm.get("affiche") and not e.get("image"):
-                e["affiche"] = pm["affiche"]
+    fin_budget = time.time() + 20 * 60  # liens d'écoute : au plus 20 minutes
+    # Une même image sur 3 pages ou plus, c'est le logo ou l'image par défaut du site : on l'écarte.
+    freq = Counter((v.get("affiche") or {}).get("url") for k, v in memo.items() if k.startswith("page:") and v.get("affiche"))
+    for e in events:
+        pm = memo.get("page:" + e.get("url", ""))
+        if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image"):
+            e["affiche"] = pm["affiche"]
+    for e in events:
+        url = e.get("url", "")
+        html = None
         # 2. Écouter / bande-annonce
         discs = {e.get("discipline"), *(e.get("aussi") or []), e.get("sous")}
         film = "cinema" in discs

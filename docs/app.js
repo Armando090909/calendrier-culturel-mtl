@@ -146,7 +146,8 @@ function detailHTML(e){
       ${lieuHTML(e,true)}
       ${e.resume?`<p class="resume">${esc(e.resume)}</p>`:""}
     </div>
-    <div class="det-side${media?"":" seul"}">${media}${actions}${extra}</div>
+    ${media?`<div class="det-vis">${media}</div>`:""}
+    <div class="det-side seul">${actions}${extra}</div>
   </article>`;
 }
 function renderChips(){

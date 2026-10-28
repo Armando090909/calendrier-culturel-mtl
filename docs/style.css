@@ -462,3 +462,17 @@ code{font-size:13px;background:var(--chip-off);border-radius:4px;padding:1px 5px
   .det-side .actions .prix{text-align:center}
 }
 .dayview .det-side .cal{margin:0;border-top:0;padding-top:0;font-size:12px}
+
+/* Affiche en vignette (une évocation) entre les infos et les boutons ; fiche plus large */
+.dayview{max-width:1180px}
+.det-vis{min-width:0}
+.det-vis .det-aff img{aspect-ratio:4/3;max-height:none;height:auto;object-fit:cover;border-radius:10px}
+.det-vis .det-aff figcaption{font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (min-width:761px){
+  .dayview .ev.det,.dayview .ev.det:has(.det-side),.dayview .ev.det:has(.det-side.seul){grid-template-columns:minmax(0,1fr) 250px;align-items:center}
+  .dayview .ev.det:has(.det-vis):has(.det-side.seul){grid-template-columns:minmax(0,1fr) 190px 250px}
+  .dayview .det-info{align-self:start}
+}
+@media (max-width:760px){
+  .det-vis{max-width:220px}
+}
