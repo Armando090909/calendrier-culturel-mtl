@@ -10,8 +10,10 @@
   "quartier": "Quartier des spectacles"
  },
  "Ahkwayaonhkeh": null,
+ "Algonquin Commons Theatre": null,
  "Alūr Restaurant & Lounge": null,
  "Amphithéâtre du Gesù": null,
+ "Ancien Théâtre Desjardins": null,
  "Arsenal art contemporain": {
   "lat": 45.4918,
   "lon": -73.5628,
@@ -146,6 +148,7 @@
   "quartier": "Saint-Henri"
  },
  "Brasserie Beaubien": null,
+ "Burton Cummings Theatre": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
   "lon": -73.5545,
@@ -185,6 +188,7 @@
   "lon": -73.5693,
   "quartier": "Centre-ville"
  },
+ "Centre Caztel": null,
  "Centre Pierre-Peladeau": null,
  "Centre SAGAMIE": null,
  "Centre Sanaaq": {
@@ -346,6 +350,9 @@
   "lon": -73.66147,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Elgin and Winter Garden Theatre Centre": null,
+ "En ligne": null,
+ "En salle": null,
  "Espace GO": {
   "lat": 45.5215,
   "lon": -73.5915,
@@ -376,6 +383,8 @@
   "quartier": "Saint-Henri"
  },
  "Fais-moi l'art": null,
+ "FirstOntario Centre": null,
+ "FirstOntario Concert Hall": null,
  "Fondation Grantham pour l'art et l'environnement": null,
  "Fondation Guido Molinari": {
   "lat": 45.5389,
@@ -392,6 +401,7 @@
   "lon": -73.563,
   "quartier": "Quartier latin"
  },
+ "Foyer Yves-Gagnon": null,
  "Galerie C.O.A": {
   "adresse": "6405, boul. Saint-Laurent, Montréal",
   "alias": [
@@ -524,6 +534,11 @@
  "History": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "Jardin botanique": {
+  "lat": 45.55954,
+  "lon": -73.56124,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "L'Entrepôt – maison de la culture de Lachine": {
   "lat": 45.433,
   "lon": -73.686,
@@ -539,6 +554,7 @@
   "lon": -73.5822,
   "quartier": "Plateau"
  },
+ "L'Espace Mandeville": null,
  "L'Illusion, Théâtre de marionnettes": {
   "lat": 45.53372,
   "lon": -73.60501,
@@ -552,15 +568,15 @@
  "La Boîte à Bleuets": null,
  "La Cale - Pub Zéro Déchets": null,
  "La Chapelle Scènes contemporaines": {
-  "lat": 45.515,
-  "lon": -73.577,
-  "quartier": "Plateau",
   "alias": [
    "La Chapelle",
    "Théâtre La Chapelle",
    "La Chapelle spectacles",
    "La Chapelle Scènes Contemporaines"
-  ]
+  ],
+  "lat": 45.515,
+  "lon": -73.577,
+  "quartier": "Plateau"
  },
  "La Librairie": null,
  "La Licorne": {
@@ -605,6 +621,7 @@
  },
  "Le Calypso": null,
  "Le Carlton Signature": null,
+ "Le Carré 150": null,
  "Le Cheval Blanc": {
   "lat": 45.51821,
   "lon": -73.56428,
@@ -623,6 +640,7 @@
   "quartier": "Village"
  },
  "Le Red Room": null,
+ "Le Ritz": null,
  "Le Studio TD": {
   "alias": [
    "Studio TD"
@@ -642,6 +660,7 @@
   "lon": -73.573,
   "quartier": "Plateau"
  },
+ "Le Vieux Clocher de Magog": null,
  "Le Zaricot": null,
  "Le Zénith Promutuel Assurances": null,
  "Les Diffusions Pointe-Valaine": null,
@@ -773,6 +792,7 @@
   "lon": -73.55134,
   "quartier": "Ville-Marie"
  },
+ "Massey Hall": null,
  "Maurice O'Bready": null,
  "McBride Contemporain": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 414 (édifice Belgo), Montréal",
@@ -780,6 +800,13 @@
   "lat": 45.5068,
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
+ },
+ "Meadowvale Theatre": null,
+ "Molson Canadian Centre at Casino New-Brunswick": null,
+ "Montreal": {
+  "lat": 45.50318,
+  "lon": -73.56981,
+  "quartier": ""
  },
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
@@ -823,6 +850,11 @@
   "lat": 45.5205,
   "lon": -73.5745,
   "quartier": "Plateau"
+ },
+ "ONF - Montreal": {
+  "lat": 45.50706,
+  "lon": -73.56816,
+  "quartier": "Ville-Marie"
  },
  "Office national du film (ONF)": {
   "lat": 45.5087,
@@ -875,6 +907,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Pavillon de l'île": null,
  "Petit Campus": {
   "lat": 45.5146,
   "lon": -73.571,
@@ -920,6 +953,7 @@
   "lon": -73.625,
   "quartier": "LaSalle"
  },
+ "Plusieurs lieux": null,
  "Plusieurs salles": null,
  "Pointe-Claire Public Library - Central": null,
  "Pointe-à-Callière": {
@@ -938,12 +972,14 @@
   "lon": -73.582,
   "quartier": "Plateau"
  },
+ "Rio Theatre": null,
  "Rogers Arena": null,
  "Rue Ontario Est": {
   "lat": 45.525,
   "lon": -73.558,
   "quartier": "Centre-Sud"
  },
+ "Rum Runners": null,
  "SAT": {
   "alias": [
    "Society for Arts & Technology",
@@ -970,6 +1006,7 @@
  "Salle Claude-Legault": null,
  "Salle Claudia-Ebacher": null,
  "Salle Desjardins-Telus": null,
+ "Salle Dussault": null,
  "Salle Edwin-Bélanger": null,
  "Salle Jean-Claude-Germain": null,
  "Salle Jean-Cossette": null,
@@ -978,6 +1015,8 @@
   "lon": -73.59238,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Salle Jean-Louis-Millette": null,
+ "Salle Louis-Fréchette": null,
  "Salle Michelle-Rossignol": null,
  "Salle Méchatigan": null,
  "Salle Octave-Crémazie": null,
@@ -989,11 +1028,13 @@
   "lon": -73.559,
   "quartier": "Quartier latin"
  },
+ "Salle Richard-Sauvageau": null,
  "Salle Wilfrid-Pelletier": {
   "lat": 45.508,
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
+ "Salle d'exposition": null,
  "Salle Émile-Legault": {
   "lat": 45.511,
   "lon": -73.674,
@@ -1041,11 +1082,14 @@
   "quartier": "Quartier des spectacles"
  },
  "The Arena at Pickering Casino Resort": null,
+ "The Avalon Theatre At Niagara Fallsview Casino Resort": null,
  "The Axis Club": null,
  "The Church of St John the Evangelist": null,
  "The Danforth Music Hall": null,
+ "The Fox Cabaret": null,
  "The Great Hall": null,
  "The Opera House": null,
+ "Thunder Bay Community Auditorium": null,
  "Théâtre Alphonse-Desjardins": null,
  "Théâtre Aux Écuries": {
   "lat": 45.549,
@@ -1061,6 +1105,8 @@
   "quartier": "Petite-Bourgogne"
  },
  "Théâtre Belcourt": null,
+ "Théâtre C": null,
+ "Théâtre Capitole": null,
  "Théâtre Centaur": {
   "alias": [
    "Centaur Theatre",
@@ -1074,6 +1120,11 @@
   "lat": 45.552,
   "lon": -73.542,
   "quartier": "Hochelaga"
+ },
+ "Théâtre Desjardins": {
+  "lat": 45.43657,
+  "lon": -73.60583,
+  "quartier": "LaSalle"
  },
  "Théâtre Desjardins (LaSalle)": {
   "lat": 45.432,
@@ -1146,6 +1197,7 @@
   "lon": -73.562,
   "quartier": "Quartier latin"
  },
+ "Théâtre Télébec": null,
  "Théâtre d'Aujourd'hui": {
   "lat": 45.5195,
   "lon": -73.577,
@@ -1157,6 +1209,7 @@
   "lon": -73.574,
   "quartier": "Plateau"
  },
+ "Théâtre du Marais": null,
  "Théâtre du Nouveau Monde": {
   "lat": 45.5085,
   "lon": -73.566,
@@ -1200,6 +1253,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Vogue Theatre": null,
+ "WinSport Event Centre": null,
  "Wishbone Galerie d'art": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
   "alias": [],
@@ -1231,6 +1285,7 @@
   "quartier": "Ville-Marie"
  },
  "neverclub": null,
+ "À l'extérieur": null,
  "École Saint-Simon-Apôtre": {
   "lat": 45.53961,
   "lon": -73.64716,

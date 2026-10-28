@@ -1,132 +1,68 @@
 {
  "date": "2026-10-27",
  "statut": "publié",
- "evenements": 2984,
- "expositions": 378,
+ "evenements": 2301,
+ "expositions": 303,
  "nouvelles_salles": [
-  "Abbotsford Centre",
-  "Adélard",
-  "Ahkwayaonhkeh",
-  "Alūr Restaurant & Lounge",
-  "Amphithéâtre du Gesù",
-  "Atelier de l'Île",
-  "Auberge St Gabriel - Montreal",
-  "Basilique Notre-Dame",
-  "Bibliothèque Hélène-Pedneault",
-  "Bibliothèque du Cégep de Granby",
-  "Biosphère",
-  "Brasserie Beaubien",
-  "Cabaret Mado",
-  "Cabaret-Théâtre du Vieux Saint-Jean",
-  "Caravansérail",
-  "Centre Pierre-Peladeau",
-  "Centre SAGAMIE",
-  "Centre des arts actuels SKOL",
-  "Centre des arts visuels / Galerie McClure",
-  "Clavier",
-  "Club Balattou",
-  "Commodore Ballroom",
-  "Conservatoire de Musique De Montreal",
-  "DARE-DARE",
-  "DATCHA",
-  "Deli Planet",
-  "ELEKTRA",
-  "Espace Panache",
-  "Espace Séquence",
-  "Esplanade Tranquille",
-  "Fondation Grantham pour l'art et l'environnement",
-  "Galerie L'Onyx",
-  "Galerie d'art Stewart Hall",
-  "Grand Chapiteau Vancouver",
-  "Grizzly Fuzz",
-  "Groupe Intervention Vidéo",
-  "History",
-  "Igloofest",
-  "Impérial Bell",
-  "La Boîte à Bleuets",
-  "La Cale - Pub Zéro Déchets",
-  "La Chapelle spectacles",
-  "La Librairie",
-  "La Livrerie",
-  "La Petite Boîte Noire",
-  "La Pointe Sec",
-  "Le Calypso",
-  "Le Carlton Signature",
-  "Le Minotaure",
-  "Le Red Room",
-  "Le Terminal",
-  "Le Zaricot",
-  "Le Zénith Promutuel Assurances",
-  "Les Diffusions Pointe-Valaine",
-  "Ludger-Duvernay Theatre",
-  "L’esco",
-  "M For Montreal 2026",
-  "MAC Montréal",
-  "Maurice O'Bready",
-  "Non précisé",
-  "Parc du Mont-Royal",
-  "Pictura Triennale de peinture de Montréal",
-  "Plusieurs salles",
-  "Pointe-Claire Public Library - Central",
-  "Premier Acte",
-  "Rogers Arena",
-  "Salle Albert-Rousseau",
-  "Salle André-Mathieu",
-  "Salle Claude-Legault",
-  "Salle Claudia-Ebacher",
-  "Salle Desjardins-Telus",
-  "Salle Edwin-Bélanger",
-  "Salle Jean-Claude-Germain",
-  "Salle Jean-Cossette",
-  "Salle Michelle-Rossignol",
-  "Salle Méchatigan",
-  "Salle Octave-Crémazie",
-  "Salle Odyssée",
-  "Salle Pauline-Julien",
-  "Salon urbain",
-  "Sample Listening Bar",
-  "Scotiabank Arena",
-  "Scotiabank Saddledome",
-  "Southern Alberta Jubilee Auditorium",
-  "Studio-théâtre des Grands Ballets",
-  "TOPO",
-  "The Arena at Pickering Casino Resort",
-  "The Axis Club",
-  "The Church of St John the Evangelist",
-  "The Danforth Music Hall",
-  "The Great Hall",
-  "The Opera House",
-  "Théâtre Alphonse-Desjardins",
-  "Théâtre Belcourt",
-  "Théâtre Gilles-Vigneault",
-  "Théâtre Hector-Charland",
-  "Théâtre Lionel-Groulx",
-  "Théâtre Manuvie",
-  "Théâtre de Lac-Brome",
-  "Théâtre l'Aparté",
-  "Upstairs Jazz Bar & Grill",
-  "VOART Centre d'exposition de Val-d'Or",
-  "Vogue Theatre",
-  "Église Saint-Antoine de Lavaltrie",
-  "Église St. Andrew & St. Paul",
-  "Église de Saint-Jean l'Évangéliste"
+  "Algonquin Commons Theatre",
+  "Ancien Théâtre Desjardins",
+  "Burton Cummings Theatre",
+  "Centre Caztel",
+  "Elgin and Winter Garden Theatre Centre",
+  "En ligne",
+  "En salle",
+  "FirstOntario Centre",
+  "FirstOntario Concert Hall",
+  "Foyer Yves-Gagnon",
+  "Jardin botanique",
+  "L'Espace Mandeville",
+  "Le Carré 150",
+  "Le Ritz",
+  "Le Vieux Clocher de Magog",
+  "Massey Hall",
+  "Meadowvale Theatre",
+  "Molson Canadian Centre at Casino New-Brunswick",
+  "Montreal",
+  "ONF - Montreal",
+  "Pavillon de l'île",
+  "Plusieurs lieux",
+  "Rio Theatre",
+  "Rum Runners",
+  "Salle Dussault",
+  "Salle Jean-Louis-Millette",
+  "Salle Louis-Fréchette",
+  "Salle Richard-Sauvageau",
+  "Salle d'exposition",
+  "The Avalon Theatre At Niagara Fallsview Casino Resort",
+  "The Fox Cabaret",
+  "Thunder Bay Community Auditorium",
+  "Théâtre C",
+  "Théâtre Capitole",
+  "Théâtre Desjardins",
+  "Théâtre Télébec",
+  "Théâtre du Marais",
+  "WinSport Event Centre",
+  "À l'extérieur"
  ],
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 2410,
+   "evenements": 2411,
    "series": 87,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "colonnes du fichier : titre, url_fiche, description, date_debut, date_fin, type_evenement, public_cible, emplacement, inscription, cout, arrondissement, titre_adresse, adresse_principale, adresse_secondaire, code_postal, lat, long, X, Y"
+   ]
   },
   {
    "source": "Ask A Punk (DIY, punk, hardcore)",
-   "evenements": 28,
+   "evenements": 32,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 247,
+   "evenements": 325,
    "series": 0,
    "erreur": null
   },
@@ -134,748 +70,990 @@
    "source": "Songkick (concerts, 2 mois)",
    "evenements": 494,
    "series": 5,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Espace GO",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "TNM",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Duceppe",
    "evenements": 3,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre du Rideau Vert",
    "evenements": 2,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre de Quat'Sous",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre Prospero",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "La Licorne",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 5865 caractères de texte : https://theatrelalicorne.com/"
+   ]
   },
   {
    "source": "Théâtre d'Aujourd'hui",
    "evenements": 0,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre Denise-Pelletier",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Usine C",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Centaur",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1683 caractères de texte : https://centaurtheatre.com/fr/"
+   ]
   },
   {
    "source": "Centre Segal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (38 caractères ; site en JavaScript ?) : https://www.segalcentre.org/fr/home"
+   ]
   },
   {
    "source": "Espace Libre",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "MAI",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Maison Théâtre",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre Outremont",
    "evenements": 39,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Le Gesù",
    "evenements": 1,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Espace St-Denis",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://espacestdenis.com/) : https://espacestdenis.com/"
+   ]
   },
   {
    "source": "Théâtre Sainte-Catherine",
    "evenements": 3,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "TOHU",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Place des Arts",
    "evenements": 30,
    "series": 15,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Danse Danse",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6380 caractères de texte : https://www.dansedanse.ca/fr/spectacles"
+   ]
   },
   {
    "source": "Agora de la danse",
    "evenements": 1,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Tangente",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "La Chapelle",
    "evenements": 0,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Usine C (saison)",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "École nationale de cirque",
    "evenements": 1,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Fun Nation (humour)",
    "evenements": 12,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Spectaculos (humour",
    "evenements": 27,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "evenko (humour)",
    "evenements": 20,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Place des Arts (humour)",
    "evenements": 2,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre Sainte-Catherine (impro",
    "evenements": 3,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "La Mèche courte (festival jeune public)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1020 caractères de texte : https://www.lamechecourte.ca/programmation"
+   ]
   },
   {
    "source": "Tourisme Montréal – sorties en famille",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 12,
+   "series": 17,
    "erreur": null
   },
   {
    "source": "Place des Arts junior",
    "evenements": 3,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Tourisme Montréal – expositions des musées",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/exposit) : https://www.mtl.org/fr/experience/expositions-musees-montreal"
+   ]
   },
   {
    "source": "Tourisme Montréal – expositions automne-hiver",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/exposit) : https://www.mtl.org/fr/experience/expositions-automne-hiver-montreal"
+   ]
   },
   {
    "source": "Réseau art actuel (centres d'artistes",
    "evenements": 7,
    "series": 48,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Art Mûr (expositions à venir)",
    "evenements": 2,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "ma.to (musique live)",
    "evenements": 18,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "evenko (concerts)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (404 Client Error: Not Found for url: https://evenko.ca/fr/evenements/concerts) : https://evenko.ca/fr/evenements/concerts"
+   ]
   },
   {
    "source": "Théâtre Fairmount",
    "evenements": 25,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Club Soda",
    "evenements": 8,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Bar Le Ritz PDB",
    "evenements": 28,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Foufounes Électriques",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 686 caractères de texte : https://foufouneselectriques.com/"
+   ]
   },
   {
    "source": "Newspeak",
    "evenements": 14,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Piranha Bar",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (248 caractères ; site en JavaScript ?) : https://piranhabar.ca/"
+   ]
   },
   {
    "source": "Café Campus / Petit Campus",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/"
+   ]
   },
   {
    "source": "Théâtre St-Denis",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://espacestdenis.com/) : https://theatrestdenis.com/"
+   ]
   },
   {
    "source": "Blouin Division",
    "evenements": 0,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Bradley Ertaskiran",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Chiguer Art Contemporain",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Duran Contemporain",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Galerie Eli Kerr",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "ELLEPHANT",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://ellephant.org/) : https://ellephant.org"
+   ]
   },
   {
    "source": "Galerie C.O.A",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+   ]
   },
   {
    "source": "Galerie Hugues Charbonneau",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1080 caractères de texte : https://huguescharbonneau.com/"
+   ]
   },
   {
    "source": "Galerie Lacerte art contemporain",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2151 caractères de texte : https://www.galerielacerte.com"
+   ]
   },
   {
    "source": "Galerie Nicolas Robert",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1391 caractères de texte : https://www.galerienicolasrobert.com"
+   ]
   },
   {
    "source": "Galerie Robert Poulin",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6483 caractères de texte : https://galerierobertpoulin.com"
+   ]
   },
   {
    "source": "Galerie Robertson Arès",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://galerierobertsonares.com/) : https://galerierobertsonares.com"
+   ]
   },
   {
    "source": "Galerie Simon Blais",
    "evenements": 0,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Galeries Bellemare Lambert",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "McBride Contemporain",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Pangée",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Patel Brown",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Galerie Patrick Mikhail",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='www.patrickmikhail.com', port=443): Max retries exceed) : https://www.patrickmikhail.com/"
+   ]
   },
   {
    "source": "Pierre-François Ouellette art contemporain",
    "evenements": 1,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "TIAN Contemporain",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://fr.tiancontemporain.com/) : https://fr.tiancontemporain.com/"
+   ]
   },
   {
    "source": "Wishbone Galerie d'art",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://wishboneart.com/) : https://wishboneart.com"
+   ]
   },
   {
    "source": "Yves Laroche Galerie d'art",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2037 caractères de texte : https://www.yveslaroche.com"
+   ]
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
    "evenements": 7,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Dièse Onze",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='www.dieseonze.com', port=443): Max retries exceeded wi) : https://www.dieseonze.com/"
+   ]
   },
   {
    "source": "Club Balattou (musiques du monde)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.balattou.com/) : https://www.balattou.com/"
+   ]
   },
   {
    "source": "Cabaret Jazz L'Entracte",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.entractejazz.org/) : https://www.entractejazz.org/"
+   ]
   },
   {
    "source": "Bistro à Jojo (blues)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.bistroajojo.com/) : https://www.bistroajojo.com/"
+   ]
   },
   {
    "source": "Hurley's Irish Pub (trad, folk)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2721 caractères de texte : http://www.hurleysirishpub.com/"
+   ]
   },
   {
    "source": "Le Balcon",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.lebalcon.ca/) : https://www.lebalcon.ca/"
+   ]
   },
   {
    "source": "Turbo Haüs",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2664 caractères de texte : https://turbohaus.ca/"
+   ]
   },
   {
    "source": "Quai des Brumes",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quaidesbrumes.ca/"
+   ]
   },
   {
    "source": "Le Ministère",
    "evenements": 8,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Le Belmont",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.lebelmont.ca/) : https://www.lebelmont.ca/"
+   ]
   },
   {
    "source": "Ausgang Plaza",
    "evenements": 7,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Système MTL",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (135 caractères ; site en JavaScript ?) : https://www.systememtl.com/"
+   ]
   },
   {
    "source": "Théâtre Rialto",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (172 caractères ; site en JavaScript ?) : https://www.theatrerialto.ca/"
+   ]
   },
   {
    "source": "Le National (La Tulipe)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (32 caractères ; site en JavaScript ?) : http://latulipe.ca/"
+   ]
   },
   {
    "source": "Le Studio TD",
    "evenements": 13,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Casa del Popolo – La Toscadura",
    "evenements": 18,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Casa del Popolo – P'tit Ours",
    "evenements": 30,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Casa del Popolo – La Sotterenea",
    "evenements": 27,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Resident Advisor – Montréal (électro, raves)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+   ]
   },
   {
    "source": "Bar Datcha",
    "evenements": 11,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "SAT – Société des arts technologiques",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://sat.qc.ca/) : https://sat.qc.ca/"
+   ]
   },
   {
    "source": "Laugh It Off MTL (humour, scènes ouvertes)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1848 caractères de texte : https://www.laughitoffmtl.ca/fr"
+   ]
   },
   {
    "source": "Cabaret Mado (drag)",
    "evenements": 55,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Wiggle Room (burlesque, cabaret)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.wiggleroom.ca/fr/shows) : https://www.wiggleroom.ca/fr/shows"
+   ]
   },
   {
    "source": "Caf' Conc' (cabaret)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://cafeconcert.ca/"
+   ]
   },
   {
    "source": "Espace La Risée",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.espacelarisee.com/accueil-2/) : https://www.espacelarisee.com/accueil-2/"
+   ]
   },
   {
    "source": "InfiniTheatre",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (51 caractères ; site en JavaScript ?) : http://www.infinitheatre.com/"
+   ]
   },
   {
    "source": "Théâtre MainLine",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2429 caractères de texte : http://www.mainlinetheatre.ca/"
+   ]
   },
   {
    "source": "Repercussion Theatre",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Théâtre de l'Esquisse",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (585 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/"
+   ]
   },
   {
    "source": "La Comédie de Montréal",
    "evenements": 15,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Circuit-Est centre chorégraphique",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6992 caractères de texte : https://circuit-est.qc.ca/"
+   ]
   },
   {
    "source": "Studio 303",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 16454 caractères de texte : https://www.studio303.ca/en/montreal/"
+   ]
   },
   {
    "source": "La Serre – arts vivants",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/"
+   ]
   },
   {
    "source": "DARE-DARE (art public)",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Monument-National",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://ent-nts.ca/fr/spectacles-au-monumen) : https://monumentnational.com/fr"
+   ]
   },
   {
    "source": "Le Livart (centre d'art multidisciplinaire)",
    "evenements": 1,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Librairie Drawn & Quarterly (lancements, lectures)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (27 caractères ; site en JavaScript ?) : https://mtl.drawnandquarterly.com/events"
+   ]
   },
   {
    "source": "La poésie partout (calendrier)",
    "evenements": 0,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Slamontréal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.incendiesdeparoles.com/slamontr) : https://www.incendiesdeparoles.com/slamontreal"
+   ]
   },
   {
    "source": "GSIMtl (slam de poésie)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.gsimtl.com/spectaclesGSIMTl2026) : https://www.gsimtl.com/spectaclesGSIMTl2026"
+   ]
   },
   {
    "source": "La Livrerie",
    "evenements": 17,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Salle Pauline-Julien (ouest de l'île)",
    "evenements": 27,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Pointe-Claire – Stewart Hall et activités",
    "evenements": 1,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
    "evenements": 30,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Pierrefonds-Roxboro – spectacles",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://montreal.ca/articles/spectacles-pie) : https://montreal.ca/articles/spectacles-pierrefonds-roxboro-43673"
+   ]
   },
   {
    "source": "LaSalle – programmation culturelle",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://montreal.ca/articles/programmation-) : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214"
+   ]
   },
   {
    "source": "150 ans du parc du Mont-Royal",
    "evenements": 0,
    "series": 3,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Casa del Popolo / Sala Rossa",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "IA en échec (réponse sans JSON lisible) : https://casadelpopolo.com/"
+   ]
   },
   {
    "source": "Ursa",
    "evenements": 30,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "La Lumière Collective",
    "evenements": 5,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Eastern Bloc",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.easternbloc.ca/) : https://easternbloc.ca/"
+   ]
+  },
+  {
+   "source": "Formulaire : événements proposés",
    "evenements": 0,
    "series": 0,
    "erreur": null
@@ -884,43 +1062,58 @@
    "source": "Festival · ELEKTRA",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://elektramontreal.ca/) : https://elektramontreal.ca"
+   ]
   },
   {
    "source": "Festival · Festithéâtrecréole",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/"
+   ]
   },
   {
    "source": "Festival · Monde Arabe (1)",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (19 caractères ; site en JavaScript ?) : https://festivalarabe.com/programmation"
+   ]
   },
   {
    "source": "Festival · Monde Arabe (2)",
    "evenements": 4,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · CINEMANIA",
    "evenements": 205,
    "series": 47,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · La Mèche courte",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1020 caractères de texte : https://www.lamechecourte.ca/programmation"
+   ]
   },
   {
    "source": "Festival · Festival Bach",
    "evenements": 56,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · Coup de cœur",
@@ -932,355 +1125,522 @@
    "source": "Festival · Mundial",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 4717 caractères de texte : https://mundialmontreal.com"
+   ]
   },
   {
    "source": "Festival · M pour Montréal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/festival/m-pour-mon) : https://www.jambase.com/festival/m-pour-montreal-2026"
+   ]
   },
   {
    "source": "Festival · RIDM",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1061 caractères de texte : https://ridm.ca"
+   ]
   },
   {
    "source": "Festival · image+nation",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org"
+   ]
   },
   {
    "source": "Festival · Salon du livre",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://salondulivredemontreal.com/) : https://salondulivredemontreal.com"
+   ]
   },
   {
    "source": "Festival · Igloofest",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3519 caractères de texte : https://igloofest.ca"
+   ]
   },
   {
    "source": "Festival · Festival Lumino",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1820 caractères de texte : https://luminomtl.com"
+   ]
   },
   {
    "source": "Festival · Montréal en lumière",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1864 caractères de texte : https://www.montrealenlumiere.com"
+   ]
   },
   {
    "source": "Festival · Casteliers",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · FIFA",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://lefifa.com/) : https://www.artfifa.com"
+   ]
   },
   {
    "source": "Festival · Vues d'Afrique",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3057 caractères de texte : https://vuesdafrique.org"
+   ]
   },
   {
    "source": "Festival · Festival des clowns",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='festivaldesclowns.com', port=443): Max retries exceede) : https://festivaldesclowns.com"
+   ]
   },
   {
    "source": "Festival · RVQC",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='rvqc.ca', port=443): Max retries exceeded with url: / ) : https://rvqc.ca"
+   ]
   },
   {
    "source": "Festival · Metropolis bleu",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+   ]
   },
   {
    "source": "Festival · Jamais Lu",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6833 caractères de texte : https://jamaislu.com"
+   ]
   },
   {
    "source": "Festival · Petits bonheurs",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3092 caractères de texte : https://petitsbonheurs.ca"
+   ]
   },
   {
    "source": "Festival · Accès Asie",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3227 caractères de texte : https://accesasie.com"
+   ]
   },
   {
    "source": "Festival · Film sud-asiatique",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='saffm.ca', port=443): Max retries exceeded with url: /) : https://saffm.ca"
+   ]
   },
   {
    "source": "Festival · Sommets de l'animation",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/) : https://www.cinematheque.qc.ca"
+   ]
   },
   {
    "source": "Festival · Festival BD",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1225 caractères de texte : https://fbdm-mcaf.ca"
+   ]
   },
   {
    "source": "Festival · Piknic Électronik",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
+   ]
   },
   {
    "source": "Festival · Festival de la poésie",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='festivalpoesiemontreal.com', port=443): Max retries ex) : https://festivalpoesiemontreal.com"
+   ]
   },
   {
    "source": "Festival · FTA",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1296 caractères de texte : https://fta.ca"
+   ]
   },
   {
    "source": "Festival · OFFTA",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3993 caractères de texte : https://offta.com"
+   ]
   },
   {
    "source": "Festival · MURAL",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1495 caractères de texte : https://muralfestival.com"
+   ]
   },
   {
    "source": "Festival · Musique de chambre",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 7374 caractères de texte : https://festivalmontreal.org"
+   ]
   },
   {
    "source": "Festival · Fringe",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+   ]
   },
   {
    "source": "Festival · Francos",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (85 caractères ; site en JavaScript ?) : https://francosmontreal.com"
+   ]
   },
   {
    "source": "Festival · Festival de Jazz",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (80 caractères ; site en JavaScript ?) : https://www.montrealjazzfest.com"
+   ]
   },
   {
    "source": "Festival · Complètement Cirque",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1072 caractères de texte : https://montrealcompletementcirque.com"
+   ]
   },
   {
    "source": "Festival · Nuits d'Afrique",
    "evenements": 7,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · Juste pour rire",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 6020 caractères de texte : https://hahaha.com"
+   ]
   },
   {
    "source": "Festival · Zoofest",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1849 caractères de texte : https://zoofest.com"
+   ]
   },
   {
    "source": "Festival · Fantasia",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3785 caractères de texte : https://fantasiafestival.com"
+   ]
   },
   {
    "source": "Festival · Fierté Montréal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 9142 caractères de texte : https://fiertemontreal.com"
+   ]
   },
   {
    "source": "Festival · Osheaga",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com"
+   ]
   },
   {
    "source": "Festival · Présence autochtone",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3128 caractères de texte : https://presenceautochtone.ca"
+   ]
   },
   {
    "source": "Festival · ÎleSoniq",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (98 caractères ; site en JavaScript ?) : https://ilesoniq.com"
+   ]
   },
   {
    "source": "Festival · LASSO",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (41 caractères ; site en JavaScript ?) : https://lassomontreal.com"
+   ]
   },
   {
    "source": "Festival · MUTEK",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://montreal.mutek.org/) : https://montreal.mutek.org"
+   ]
   },
   {
    "source": "Festival · Festival TRAD",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 7515 caractères de texte : https://festivaltradmontreal.ca"
+   ]
   },
   {
    "source": "Festival · Quartiers Danses",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
+   ]
   },
   {
    "source": "Festival · FIL",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 4883 caractères de texte : https://festival-fil.qc.ca"
+   ]
   },
   {
    "source": "Festival · POP Montréal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1335 caractères de texte : https://popmontreal.com"
+   ]
   },
   {
    "source": "Festival · Film Black",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1975 caractères de texte : https://montrealblackfilm.com"
+   ]
   },
   {
    "source": "Festival · Phénomena",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1094 caractères de texte : https://festivalphenomena.com"
+   ]
   },
   {
    "source": "Festival · FNC",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://nouveaucinema.ca/) : https://nouveaucinema.ca"
+   ]
   },
   {
    "source": "Festival · Akousma",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · Comiccon",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · Comiccon des Fêtes",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-27"
   },
   {
    "source": "Festival · Under Pressure",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 13069 caractères de texte : https://underpressure.ca"
+   ]
   },
   {
    "source": "Festival · Suoni Per Il Popolo",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2386 caractères de texte : https://suoniperilpopolo.org"
+   ]
   },
   {
    "source": "Festival · Escales Improbables",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 26805 caractères de texte : https://escalesimprobables.com"
+   ]
   },
   {
    "source": "Festival · Réappropriation urbaine",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://sortirauquebec.com/en/listing/festi) : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/"
+   ]
   },
   {
    "source": "Festival · Concerts Campbell",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
+   ]
   },
   {
    "source": "Festival · Shows de ruelle",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://sortirauquebec.com/en/listing/conce) : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/"
+   ]
   },
   {
    "source": "Festival · WI Blues",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com"
+   ]
   },
   {
    "source": "Festival · Cinéma sous les étoiles",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 45055 caractères de texte : https://cinemasouslesetoiles.org/programmation/grille-horaire/"
+   ]
   },
   {
    "source": "Festival · OM au Mont-Royal",
    "evenements": 0,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 9492 caractères de texte : https://orchestremetropolitain.com/fr/lom-au-pied-du-mont-royal/"
+   ]
   }
  ]
 }
