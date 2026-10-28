@@ -15,7 +15,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["docs/**"]
+    paths: ["docs/**", ".github/workflows/**"]
 
 concurrency:
   group: collecte
