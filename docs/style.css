@@ -493,7 +493,7 @@ footer:empty{display:none}
 /* Bande jaune amincie : une seule ligne, boutons à droite */
 .note.mince{padding:8px 14px;gap:12px;flex-wrap:wrap;font-size:14.5px}
 .note.mince .stn-ico{width:22px;height:22px;border-width:4px;box-shadow:0 0 0 4px var(--cirque)}
-.note.mince>p:not(.toplinks){flex:1 1 240px}
-.note.mince .toplinks{margin:0;flex:0 0 auto;justify-content:flex-end;gap:8px}
+.note.mince>p:not(.toplinks){flex:0 1 auto}
+.note.mince .toplinks{margin:0;flex:0 0 auto;justify-content:flex-start;gap:8px}
 .note.mince .toplinks a{padding:4px 12px;font-size:13.5px}
 @media (max-width:600px){.note.mince .toplinks{flex:1 1 100%;flex-wrap:wrap;justify-content:flex-start}}
