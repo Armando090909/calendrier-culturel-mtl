@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2498,
+  "evenements": 2459,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 32,
+  "evenements": 33,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 325,
+  "evenements": 201,
   "erreur": false
  },
  {
@@ -276,7 +276,7 @@
   "nom": "Tourisme Montréal – expositions des musées",
   "url": "https://www.mtl.org/fr/experience/expositions-musees-montreal",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -304,7 +304,7 @@
   "nom": "ma.to (musique live)",
   "url": "https://ma.to/events/montreal/anytime/live-music",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 17,
   "erreur": false
  },
  {
