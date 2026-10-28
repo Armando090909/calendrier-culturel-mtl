@@ -30,8 +30,10 @@ function km(a,b){const R=6371,r=x=>x*Math.PI/180,dl=r(b.lat-a.lat),dn=r(b.lon-a.
 const fmtKm=k=>k<1?Math.round(k*10)*100+" m":(Math.round(k*10)/10).toString().replace(".",",")+" km";
 
 let D=null,byId=[],CFG={},FEST=[],FESTID={};
-let st={on:Object.fromEntries(DISC.map(x=>[x[0],true])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
-try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
+const DEPART="theatre"; // catégorie affichée seule à la première visite (les autres se cochent dans « Disciplines »)
+let st={on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day:null,week:null,month:null,kids:false,pt:"",rayon:0,sort:"time",custom:null};
+st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v2 sont ignorés
+try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
 if(st.view==="month")st.view="week"; // la vue Mois est retirée // l'outil « Près de » est retiré
 const save=()=>{try{localStorage.setItem("cal-mtl",JSON.stringify(st))}catch(e){}};
@@ -463,8 +465,13 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
   // Pièces, danse et cirque « à l'affiche du X au Y » : une entrée par jour, pour qu'elles suivent les filtres
   const mot=t=>(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").split(/[^a-z0-9]+/).find(w=>w.length>2)||"";
   const deja=new Set(D.events.map(e=>e.date+"|"+e.lieu+"|"+mot(e.titre)));
+  const cle=t=>(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim().slice(0,25);
+  const titres=new Set(D.events.map(e=>cle(e.titre))),pages=new Set();
   const series=[];D.expos=D.expos.filter(x=>{
     if(!x.discipline||x.discipline==="expo"||!DISC_LABEL[x.discipline])return true;
+    // Dates précises déjà connues, période d'un festival, ou même page déjà vue : pas de répétition quotidienne
+    if(x.festival||titres.has(cle(x.titre))||(x.url&&pages.has(x.url)))return false;
+    if(x.url)pages.add(x.url);
     for(let s=x.debut<D.debut?D.debut:x.debut;s<=x.fin&&s<=D.fin;s=addDays(s,1))
       if(!deja.has(s+"|"+x.lieu+"|"+mot(x.titre)))series.push({date:s,heure:null,discipline:x.discipline,titre:x.titre,lieu:x.lieu,url:x.url,complet:false,jeunePublic:x.discipline==="jeune",sous:x.sous,aussi:x.aussi,festival:x.festival,resume:x.resume,prix:x.prix,billets:x.billets,source:x.source||"salles",serie:{debut:x.debut,fin:x.fin}});
     return false});
