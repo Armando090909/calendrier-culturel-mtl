@@ -354,7 +354,7 @@ function renderView(){
       const xc=expoCarte(s);
       const plus=list.length-MAX_SEM;
       const auj=s===iso(new Date());
-      return `<section class="col${list.length||xc?"":" emptycol"}${auj?" today":""}"><button type="button" class="colhead" data-act="jour" data-d="${s}" ${inRange(s)?"":"disabled"}>${auj?`<i class="aujtag">aujourd'hui</i>`:""}${fmtLong(s)} <span>${list.length}</span></button>
+      return `<section class="col${list.length||xc?"":" emptycol"}${auj?" today":""}${s<iso(new Date())?" passe":""}${s===st.day&&!auj?" sel":""}" data-d="${s}"><button type="button" class="colhead" data-act="jour" data-d="${s}" ${inRange(s)?"":"disabled"}>${auj?`<i class="aujtag">aujourd'hui</i>`:""}${fmtLong(s)} <span>${list.length}</span></button>
         ${list.length?`<div class="rows">${list.slice(0,MAX_SEM).map(rowHTML).join("")}</div>`:""}${plus>0?`<button type="button" class="more" data-act="jour" data-d="${s}">+ ${plus} autre${plus>1?"s":""} · voir la journée →</button>`:""}${xc}${list.length||xc?"":`<div class="empty">${inRange(s)?"Rien pour ces critères.":"Hors de la période couverte."}</div>`}</section>`}).join("")}</div>`;
   }else{
     const list=v.filter(e=>e.date===st.day).sort(useDist?byDist:byTime);
@@ -422,6 +422,9 @@ $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b|
   if(b.dataset.page==="expos"){if(st.view==="musee")st.view="week";else{sortirRecherche();st.view="musee";st.fest=null}render();return}
   st.on[b.dataset.k]=!st.on[b.dataset.k];if(st.view==="musee")st.view="week";render()});
 $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||b.disabled)return;
+  // En mode Semaine, on reste en Semaine : la journée choisie est mise en évidence et on s'y rend
+  if(st.view==="week"){st.day=b.dataset.d;render();const c=document.querySelector(`.col[data-d="${st.day}"]`);
+    if(c)c.scrollIntoView({block:"start",behavior:"smooth"});return}
   if(st.view==="day"&&st.day===b.dataset.d){st.week=monday(st.day);st.view="week"}else{st.day=b.dataset.d;st.view="day"}render()});
 $("view").addEventListener("click",e=>{
   const c=e.target.closest(".cell");if(c&&!c.disabled){st.day=c.dataset.d;st.week=monday(st.day);st.view="day";render();return}

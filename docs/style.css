@@ -526,3 +526,8 @@ footer:empty{display:none}
 /* Calendrier filtré sur les vernissages */
 .bandseul{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 12px;padding:8px 12px;border:2px solid var(--ink);border-left:8px solid var(--expo);border-radius:12px;background:var(--surface)}
 .bandseul b{margin-right:auto}
+
+/* Semaine : journées passées discrètes (cachées sur téléphone), journée choisie dans la barre mise en évidence */
+.col.passe{opacity:.45}
+.col.sel{outline:3px solid var(--ink);outline-offset:3px;border-radius:12px}
+@media (max-width:900px){.board .col.passe:not(.sel){display:none}}
