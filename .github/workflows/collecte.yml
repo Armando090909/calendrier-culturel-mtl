@@ -73,6 +73,8 @@ jobs:
             echo "Rien de nouveau."
           else
             git commit -m "Collecte du $(TZ=America/Toronto date +%F)"
+            # Si le code a changé pendant la collecte, on se met à jour avant d'envoyer (les données de la collecte gagnent)
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort
             git push
           fi
 
