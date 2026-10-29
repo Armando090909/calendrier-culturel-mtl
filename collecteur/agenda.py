@@ -21,7 +21,7 @@ FUSEAU = [
 
 
 def _esc(t: str) -> str:
-    return str(t).replace("\\", "\\\\").replace(";", "\;").replace(",", "\\,").replace("\n", "\\n")
+    return str(t).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
 def _plier(ligne: str) -> str:
