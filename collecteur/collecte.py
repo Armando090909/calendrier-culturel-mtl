@@ -458,7 +458,7 @@ def main() -> int:
     minimum = int(reglages.get("minimum_evenements", 30))
     if ancien and len(events) < max(minimum, 0.4 * len([e for e in ancien.get("events", []) if e["date"] >= aujourd.isoformat()])):
         print(f"ARRÊT : seulement {len(events)} événements; les données précédentes sont conservées.")
-        RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "conservé", "sources": rapport},
+        RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "conservé", "alerte": ia.ALERTE, "sources": rapport},
                                       ensure_ascii=False, indent=1), encoding="utf-8")
         return 1
 
@@ -487,7 +487,7 @@ def main() -> int:
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
                                    "expositions": len(expos), "nouvelles_salles": sorted(set(nouveaux_lieux)),
-                                   "notes": notes, "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")
+                                   "notes": notes, "alerte": ia.ALERTE, "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"OK : {len(events)} événements, {len(expos)} expositions/pièces à l'affiche, "
           f"{len(set(nouveaux_lieux))} nouvelles salles.")
     return 0

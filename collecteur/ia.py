@@ -47,8 +47,12 @@ Texte de la page :
 >>>"""
 
 
+# « credits » (crédits épuisés) ou « cle » (clé refusée) : on n'appelle plus l'API et la collecte le signale
+ALERTE: str | None = None
+
+
 def disponible() -> bool:
-    return bool(os.environ.get("ANTHROPIC_API_KEY"))
+    return bool(os.environ.get("ANTHROPIC_API_KEY")) and ALERTE is None
 
 
 def _appel(prompt: str, max_tokens: int = 16000) -> str:
@@ -66,6 +70,11 @@ def _appel(prompt: str, max_tokens: int = 16000) -> str:
         "messages": [{"role": "user", "content": prompt}],
     })
     if r.status_code >= 400:
+        global ALERTE
+        if "credit balance" in r.text.lower() or r.status_code == 402:
+            ALERTE = "credits"
+        elif r.status_code in (401, 403):
+            ALERTE = "cle"
         raise RuntimeError(f"API {r.status_code} : {r.text[:300]}")
     blocs = r.json().get("content", [])
     return "".join(b.get("text", "") for b in blocs if b.get("type") == "text")

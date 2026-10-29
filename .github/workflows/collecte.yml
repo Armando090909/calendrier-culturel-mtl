@@ -99,6 +99,17 @@ jobs:
             git push
           fi
 
+      # Fait échouer la collecte (donc un courriel de GitHub) si l'API Claude a refusé : crédits épuisés ou clé refusée.
+      # Le site est quand même publié avec ce qui a été collecté.
+      - name: Alerte API Claude
+        if: always()
+        run: |
+          if grep -q '"alerte": "credits"' docs/rapport.json; then
+            echo "::error::Crédits de l'API Claude épuisés : rechargez sur https://platform.claude.com (Billing)."; exit 1
+          elif grep -q '"alerte": "cle"' docs/rapport.json; then
+            echo "::error::Clé de l'API Claude refusée : vérifiez le secret ANTHROPIC_API_KEY dans GitHub."; exit 1
+          fi
+
   publication:
     needs: collecte
     if: always() && needs.collecte.result != 'cancelled'
