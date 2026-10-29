@@ -141,6 +141,8 @@ class TestAutres(unittest.TestCase):
         with mock.patch.object(connecteurs, "telecharger", return_value=Rep(prop)):
             evs, _ = connecteurs.propositions({"url": "x"}, D1, D2)
         self.assertEqual(len(evs), 1)
+        self.assertEqual(connecteurs._disciplines_formulaire("Danse, Poésie, slam et rap battle, Jeune public"), ["danse", "poesie", "jeune"])
+        self.assertEqual(connecteurs._disciplines_formulaire("Humour et cabaret"), ["humour"])
         self.assertEqual((evs[0]["titre"], evs[0]["date"], evs[0]["heure"], evs[0]["lieu"]),
                          ("Vernissage Rouge", "2026-11-07", "18:00", "Galerie Rouge"))
         cal = ("Horodateur,Nom de l'organisme,Adresse web du calendrier,Nom de la salle,Adresse de la salle,Discipline principale,Courriel,Approuvé\n"
