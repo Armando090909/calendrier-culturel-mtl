@@ -93,6 +93,8 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - uses: actions/configure-pages@v5
+      - name: Polices hébergées sur le site
+        run: python3 outils/polices.py
       # Numéro de version sur app.js et style.css : les navigateurs prennent la nouvelle version tout de suite
       - name: Version des fichiers
         run: |
