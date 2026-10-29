@@ -8,7 +8,7 @@ from collections import Counter
 from urllib.parse import urlparse
 import unicodedata
 
-DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "jeune", "expo", "autre"]
+DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "quiz", "jeune", "expo", "autre"]
 
 
 # Lettres que la décomposition Unicode ne ramène pas à l'ASCII (Eivør → eivor, Œuvre → oeuvre…)
@@ -45,6 +45,7 @@ NON_CULTUREL = [
 ]
 
 REGLES = [
+    ("quiz", ["quiz", "trivia", "jeu questionnaire", "pub quiz", "soiree quiz", "quizz"]),
     ("expo", ["vernissage", "finissage", "visite commentee", "visite guidee de l exposition"]),
     ("atelier", ["atelier", "ateliers", "initiation", "fabrication", "creation textile", "tricot", "couture", "broderie",
                  "perlage", "linogravure", "coloriage", "collage", "club d art", "club de laine", "machine a coudre",
@@ -495,7 +496,7 @@ def style_musique(titre: str, categorie: str = "", lieu: str = "", resume: str =
 # ---- Dernier contrôle : pas de redite dans une même journée -------------------------------------------------
 # Les spectacles vivants (musique, théâtre, danse, humour…) ne se jouent pas deux fois le même jour dans deux salles.
 # Les films et les expositions, eux, peuvent légitimement apparaître plusieurs fois (plusieurs cinémas, plusieurs lieux).
-REPRODUCTIBLES = {"cinema", "expo"}
+REPRODUCTIBLES = {"cinema", "expo", "quiz"}  # un quiz « Soirée quiz » a lieu dans plusieurs bars le même soir
 
 
 # Instruments, rôles et mots de programme : ce ne sont pas des noms d'artistes (« Dane Ko, piano »).
