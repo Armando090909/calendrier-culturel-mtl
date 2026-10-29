@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Archives · Calendrier culturel montréalais</title>
+<meta name="description" content="Les spectacles, concerts et activités culturelles déjà présentés sur l'île de Montréal, mois par mois.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.amois{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}
+.amois button{font:inherit;font-weight:700;font-size:14px;cursor:pointer;border:2px solid var(--ink);border-radius:999px;padding:6px 14px;background:var(--surface);color:var(--ink);box-shadow:2px 2px 0 var(--shadow)}
+.amois button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.amois .n{font-size:11px;opacity:.7}
+.afiltre{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.afiltre input,.afiltre select{font:inherit;font-size:15px;border:2px solid var(--ink);border-radius:10px;padding:8px 12px;background:var(--surface);color:var(--ink)}
+.afiltre input{flex:1 1 240px;min-width:0;max-width:420px}
+.ajour{font-family:var(--f-display);font-weight:800;font-size:15px;margin:20px 0 6px;text-transform:lowercase}
+.aliste{display:flex;flex-direction:column;border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.aev{display:grid;grid-template-columns:62px minmax(0,1fr);gap:2px 12px;padding:9px 12px;border-left:6px solid var(--c);text-decoration:none;color:var(--ink)}
+.aev+.aev{border-top:1.5px solid var(--hair)}
+.aev:hover{background:var(--paper)}
+.aev .h{font-family:var(--f-display);font-weight:700;font-size:12px;padding-top:3px;font-variant-numeric:tabular-nums}
+.aev .h.nh{color:var(--muted);font-family:var(--f-body);font-style:italic;font-weight:600}
+.aev .t{font-weight:800;line-height:1.25}
+.aev .m{grid-column:2;font-size:12.5px;color:var(--muted)}
+.compte{font-size:13px;color:var(--muted)}
+@media (max-width:600px){.aev{grid-template-columns:minmax(0,1fr)}.aev .m{grid-column:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero" style="grid-template-columns:minmax(0,1fr)">
+    <div class="hero-txt">
+      <p class="toplinks"><a href="index.html">← Retour au calendrier</a></p>
+      <p class="wordmark">calendrier culturel <b>mtl</b></p>
+      <h1>Archives</h1>
+      <p class="lead">Ce qui s'est présenté sur l'île, mois par mois, depuis le lancement du calendrier (27 octobre 2026).</p>
+    </div>
+  </header>
+
+  <div class="amois" id="mois" role="group" aria-label="Mois"></div>
+  <div class="afiltre">
+    <input id="q" type="search" placeholder="Titre, artiste, salle…" autocomplete="off">
+    <select id="disc" aria-label="Discipline"><option value="">Toutes les disciplines</option></select>
+    <span class="compte" id="compte"></span>
+  </div>
+  <main id="liste"><div class="empty">Chargement…</div></main>
+</div>
+<script>
+const DISC={theatre:"Théâtre",musique:"Musique",danse:"Danse",cirque:"Cirque",humour:"Humour et cabaret",cinema:"Cinéma",
+  poesie:"Poésie, slam et rap battle",lettres:"Littérature",conference:"Conférences",jeune:"Jeune public",atelier:"Ateliers",
+  fete:"Fêtes et célébrations",quiz:"Quiz",expo:"Vernissages",autre:"Autre"};
+const $=id=>document.getElementById(id);
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const plat=t=>(t||"").toLowerCase().replace(/ø/g,"o").replace(/æ/g,"ae").replace(/œ/g,"oe").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const MOIS=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const nomMois=m=>{const[a,b]=m.split("-");return MOIS[+b-1]+" "+a};
+const jourLong=s=>{const d=new Date(s+"T12:00");return d.toLocaleDateString("fr-CA",{weekday:"long",day:"numeric",month:"long"})};
+let IDX=[],DATA=null,mois=null;
+$("disc").innerHTML+=Object.entries(DISC).map(([k,l])=>`<option value="${k}">${l}</option>`).join("");
+function afficher(){
+  if(!DATA){$("liste").innerHTML='<div class="empty">Chargement…</div>';return}
+  const q=plat($("q").value).split(" ").filter(Boolean),dsc=$("disc").value;
+  const L=DATA.events.filter(e=>(!dsc||e.discipline===dsc||(e.aussi||[]).includes(dsc)||e.sous===dsc)&&
+    q.every(m=>(" "+plat(e.titre+" "+e.lieu+" "+(e.resume||""))+" ").includes(m))).sort((a,b)=>b.date.localeCompare(a.date)||(a.heure||"99").localeCompare(b.heure||"99"));
+  $("compte").textContent=`${L.length} activité${L.length>1?"s":""}`;
+  const par={};L.forEach(e=>(par[e.date]=par[e.date]||[]).push(e));
+  $("liste").innerHTML=Object.keys(par).map(j=>`<h2 class="ajour">${jourLong(j)} · ${par[j].length}</h2><div class="aliste">${par[j].map(e=>
+    `<a class="aev" href="${esc(e.url||"#")}" target="_blank" rel="noopener" style="--c:var(--${e.discipline||"autre"})"><span class="h${e.heure?"":" nh"}">${e.heure?e.heure.replace(":"," h "):"—"}</span><span class="t">${esc(e.titre)}</span><span class="m">${esc(DISC[e.discipline]||"")} · ${esc(e.lieu)}${DATA.lieux&&DATA.lieux[e.lieu]&&DATA.lieux[e.lieu].quartier?" · "+esc(DATA.lieux[e.lieu].quartier):""}</span></a>`).join("")}</div>`).join("")||'<div class="empty">Aucune activité pour ce choix.</div>';
+}
+function choisir(m){mois=m;DATA=null;afficher();
+  $("mois").innerHTML=IDX.map(x=>`<button type="button" data-m="${x.mois}" aria-pressed="${x.mois===m}">${nomMois(x.mois)} <span class="n">${x.n}</span></button>`).join("");
+  fetch(`archives/${m}.json`,{cache:"no-cache"}).then(r=>r.json()).then(d=>{if(mois===m){DATA=d;afficher()}}).catch(()=>{$("liste").innerHTML='<div class="empty">Ce mois n\'a pas pu être chargé.</div>'})}
+$("mois").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(b)choisir(b.dataset.m)});
+$("q").addEventListener("input",afficher);$("disc").addEventListener("change",afficher);
+fetch("archives/index.json",{cache:"no-cache"}).then(r=>r.json()).then(i=>{IDX=i;if(IDX.length)choisir(IDX[0].mois);else $("liste").innerHTML='<div class="empty">Pas encore d\'archives.</div>'})
+  .catch(()=>{$("liste").innerHTML='<div class="empty">Pas encore d\'archives.</div>'});
+</script>
+</body>
+</html>
