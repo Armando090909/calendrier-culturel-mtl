@@ -355,8 +355,13 @@ def main() -> int:
         if k in vus:
             continue
         vus.add(k)
+        disc_s = s.get("discipline") or "expo"
+        if disc_s == "autre":  # période sans discipline : on la devine ; une longue période inconnue est une exposition
+            disc_s = classer(s["titre"], "", defaut="autre")  # titre seul : la description cite souvent le lieu (« Atelier de l'Île »)
+            if disc_s == "autre":
+                disc_s = "expo" if (d2 - d1).days >= 7 else classer(s["titre"], "", description=s.get("resume", ""), defaut="autre")
         x = {"titre": s["titre"], "lieu": lieu or "Lieu à confirmer", "debut": s["debut"], "fin": s["fin"],
-             "discipline": s.get("discipline") or "expo", "url": s["url"]}
+             "discipline": disc_s, "url": s["url"]}
         x.update(details(s))
         if s.get("festival"):
             x["festival"] = s["festival"]
@@ -396,6 +401,11 @@ def main() -> int:
     expos = [x for x in expos if meilleures[_cle_expo(x)] is x]
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
+    # Un événement « autre » d'un festival d'une seule discipline prend celle du festival (ex. Casteliers → théâtre)
+    disc_fest = {f["id"]: f["disciplines"][0] for f in festivals if len(f.get("disciplines", [])) == 1}
+    for e in events:
+        if e["discipline"] == "autre" and e.get("festival") in disc_fest:
+            e["discipline"] = disc_fest[e["festival"]]
 
     # Style de musique (large) : indices sûrs d'abord (catégorie, titre, festival, salle), puis l'IA pour le reste.
     f_styles = CACHE / "styles.json"
