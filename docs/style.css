@@ -175,7 +175,7 @@ details.expos summary span{font-family:var(--f-body);font-weight:600;color:var(-
 .x .end.soon{color:var(--pop);font-weight:800}
 
 /* ---------- Bas de page ---------- */
-.refresh{font-family:var(--f-hand);font-size:16px;color:var(--ink);text-align:center;transform:rotate(-1.5deg);margin:14px auto 4px;max-width:92%}
+.refresh{font-family:"Caveat",var(--f-hand);font-weight:600;font-size:21px;line-height:1.1;color:var(--ink);transform:rotate(-2deg);margin:0 0 0 6px;text-align:center}
 .note{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--hl);color:var(--ink);border:2px solid var(--ink);border-radius:var(--r);padding:14px 18px;font-size:15px;font-weight:600;box-shadow:4px 4px 0 var(--shadow)}
 .note a{color:var(--ink);font-weight:800}
 .stn-ico{width:34px;height:34px;flex:none;border-radius:50%;background:var(--surface);border:6px solid var(--ink);box-shadow:0 0 0 6px var(--cirque)}
@@ -484,7 +484,7 @@ code{font-size:13px;background:var(--chip-off);border-radius:4px;padding:1px 5px
 
 /* Bas de page : sources et don, séparés du bandeau jaune */
 .pied{margin-top:18px;display:flex;flex-direction:column;align-items:center;gap:10px}
-.pied-l{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.pied-l{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px}
 .pied-bt{font-weight:700;font-size:14px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;background:var(--surface);box-shadow:2px 2px 0 var(--shadow)}
 .don-bt{font:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#fff;background:var(--pop);border:2px solid var(--ink);border-radius:999px;padding:6px 14px;box-shadow:2px 2px 0 var(--shadow)}
 .pied-bt:hover,.don-bt:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--shadow)}
