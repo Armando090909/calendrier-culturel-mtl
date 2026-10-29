@@ -655,6 +655,8 @@ def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     rows = list(_lire_csv(cfg["url"]))
     # « oui » : publié ; « non » : refusé ; vide : tri automatique
     auto = _moderer([r for r in rows if not _approuve(r) and not _refuse(r) and _champ(r, "titre", "nom de l evenement")])
+    print(f"  formulaire : {len(rows)} ligne(s), {sum(map(_approuve, rows))} « oui », {sum(map(_refuse, rows))} « non », "
+          f"{sum(auto.values())} acceptée(s) par le tri automatique ; colonnes : {list(rows[0].keys()) if rows else []}")
     for row in rows:
         if not (_approuve(row) or auto.get(_cle_proposition(row))):
             continue
