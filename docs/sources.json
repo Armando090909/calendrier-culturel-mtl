@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2459,
-  "erreur": false
+  "evenements": 0,
+  "erreur": true
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 33,
+  "evenements": 35,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 201,
+  "evenements": 274,
   "erreur": false
  },
  {
@@ -101,7 +101,7 @@
   "nom": "Centaur",
   "url": "https://centaurtheatre.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -150,7 +150,7 @@
   "nom": "Espace St-Denis",
   "url": "https://espacestdenis.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -339,7 +339,7 @@
   "nom": "Foufounes Électriques",
   "url": "https://foufouneselectriques.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -367,7 +367,7 @@
   "nom": "Théâtre St-Denis",
   "url": "https://theatrestdenis.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -528,7 +528,7 @@
   "nom": "Upstairs Jazz Bar & Grill",
   "url": "https://www.upstairsjazz.com",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -584,7 +584,7 @@
   "nom": "Quai des Brumes",
   "url": "https://quaidesbrumes.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -605,7 +605,7 @@
   "nom": "Ausgang Plaza",
   "url": "https://www.ausgangplaza.com/evenements",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -647,14 +647,14 @@
   "nom": "Casa del Popolo – P'tit Ours",
   "url": "https://casadelpopolo.com/fr/events/ptit-ours",
   "type": "page lue par l'IA",
-  "evenements": 30,
+  "evenements": 29,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – La Sotterenea",
   "url": "https://casadelpopolo.com/fr/events/la-sotterenea",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 25,
   "erreur": false
  },
  {
@@ -703,7 +703,7 @@
   "nom": "Caf' Conc' (cabaret)",
   "url": "https://cafeconcert.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -794,7 +794,7 @@
   "nom": "Librairie Drawn & Quarterly (lancements, lectures)",
   "url": "https://mtl.drawnandquarterly.com/events",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -878,7 +878,7 @@
   "nom": "Ursa",
   "url": "https://ursamtl.com",
   "type": "page lue par l'IA",
-  "evenements": 30,
+  "evenements": 29,
   "erreur": false
  },
  {
@@ -893,6 +893,90 @@
   "url": "https://easternbloc.ca",
   "type": "page lue par l'IA",
   "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Quai des Brumes (billetterie)",
+  "url": "https://lepointdevente.com/lieux/lequaidesbrumes",
+  "type": "page lue par l'IA",
+  "evenements": 7,
+  "erreur": false
+ },
+ {
+  "nom": "Café Campus (billetterie)",
+  "url": "https://lepointdevente.com/lieux/cafecampus",
+  "type": "page lue par l'IA",
+  "evenements": 7,
+  "erreur": false
+ },
+ {
+  "nom": "Café Campus et Petit Campus – shows (billetterie)",
+  "url": "https://lepointdevente.com/tickets/cafecampusshows",
+  "type": "page lue par l'IA",
+  "evenements": 36,
+  "erreur": false
+ },
+ {
+  "nom": "Turbo Haüs (billetterie)",
+  "url": "https://lepointdevente.com/lieux/turbohaus-2",
+  "type": "page lue par l'IA",
+  "evenements": 10,
+  "erreur": false
+ },
+ {
+  "nom": "Théâtre Rialto (billetterie)",
+  "url": "https://lepointdevente.com/lieux/theatre-rialto",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Espace La Risée (billetterie)",
+  "url": "https://lepointdevente.com/lieux/l-espace-la-risee",
+  "type": "page lue par l'IA",
+  "evenements": 2,
+  "erreur": false
+ },
+ {
+  "nom": "L'Escogriffe (billetterie)",
+  "url": "https://lepointdevente.com/lieux/bar-spectacle-l-escogriffe",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "Club Soda (billetterie)",
+  "url": "https://lepointdevente.com/lieux/club-soda",
+  "type": "page lue par l'IA",
+  "evenements": 29,
+  "erreur": false
+ },
+ {
+  "nom": "Ausgang Plaza (billetterie)",
+  "url": "https://lepointdevente.com/lieux/ausgang-plaza",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "O Patro Vys (billetterie)",
+  "url": "https://lepointdevente.com/lieux/o-patro-vys",
+  "type": "page lue par l'IA",
+  "evenements": 12,
+  "erreur": false
+ },
+ {
+  "nom": "Centre Sanaaq (billetterie)",
+  "url": "https://lepointdevente.com/lieux/centresanaaqsalle1rdc",
+  "type": "page lue par l'IA",
+  "evenements": 6,
+  "erreur": false
+ },
+ {
+  "nom": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
+  "url": "https://lepointdevente.com/lieux/maison-culturelle-et-communautaire-de-montreal-nord-mcc",
+  "type": "page lue par l'IA",
+  "evenements": 4,
   "erreur": false
  }
 ]

@@ -150,6 +150,7 @@
  },
  "Brasserie Beaubien": null,
  "Burton Cummings Theatre": null,
+ "Cabaret Fouf": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
   "lon": -73.5545,
@@ -165,6 +166,7 @@
   "quartier": "Parc Jean-Drapeau"
  },
  "Cabaret-Théâtre du Vieux Saint-Jean": null,
+ "Caf'Conc'": null,
  "Café Campus": {
   "lat": 45.5146,
   "lon": -73.571,
@@ -176,6 +178,11 @@
   "quartier": "Quartier chinois"
  },
  "Caravansérail": null,
+ "Caribbean Food Factory": {
+  "lat": 45.55959,
+  "lon": -73.52474,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
+ },
  "Casa del Popolo": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -352,6 +359,8 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Elgin and Winter Garden Theatre Centre": null,
+ "En ligne": null,
+ "En salle": null,
  "Espace GO": {
   "lat": 45.5215,
   "lon": -73.5915,
@@ -523,6 +532,7 @@
   "quartier": "Centre-ville"
  },
  "Grand Chapiteau Vancouver": null,
+ "Grande Bibliothèque de BAnQ - Auditorium": null,
  "Grizzly Fuzz": null,
  "Groupe Intervention Vidéo": null,
  "Hall Est du Stade olympique": {
@@ -553,6 +563,7 @@
   "lon": -73.5822,
   "quartier": "Plateau"
  },
+ "L'Espace La Risée": null,
  "L'Espace Mandeville": null,
  "L'Illusion, Théâtre de marionnettes": {
   "lat": 45.53372,
@@ -1007,6 +1018,7 @@
  "Salle Desjardins-Telus": null,
  "Salle Dussault": null,
  "Salle Edwin-Bélanger": null,
+ "Salle Fernand-Seguin": null,
  "Salle Jean-Claude-Germain": null,
  "Salle Jean-Cossette": null,
  "Salle Jean-Eudes": {
@@ -1018,6 +1030,7 @@
  "Salle Louis-Fréchette": null,
  "Salle Michelle-Rossignol": null,
  "Salle Méchatigan": null,
+ "Salle Norman-McLaren": null,
  "Salle Octave-Crémazie": null,
  "Salle Odyssée": null,
  "Salle Paul-Desmarais": null,
@@ -1044,6 +1057,11 @@
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
  "Southern Alberta Jubilee Auditorium": null,
+ "Square Saint-Louis": {
+  "lat": 45.51712,
+  "lon": -73.56983,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Stereo": {
   "lat": 45.517,
   "lon": -73.558,
@@ -1234,6 +1252,7 @@
   "lon": -73.67267,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Université Concordia - Auditorium des diplômés de la SGWU": null,
  "Upstairs Jazz Bar & Grill": null,
  "Ursa": {
   "lat": 45.523,
@@ -1284,6 +1303,7 @@
   "quartier": "Ville-Marie"
  },
  "neverclub": null,
+ "À l'extérieur": null,
  "École Saint-Simon-Apôtre": {
   "lat": 45.53961,
   "lon": -73.64716,
