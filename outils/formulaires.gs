@@ -71,7 +71,9 @@ function formulaireEvenement_() {
   f.addTextItem().setTitle("Prix (ex. 15 $, Gratuit, Contribution volontaire)");
   f.addTextItem().setTitle("Lien pour acheter des billets (billetterie)");
   f.addTextItem().setTitle("Image : lien vers une photo du groupe ou du spectacle")
-    .setHelpText("Seulement une photo que vous avez le droit de partager (la vôtre ou fournie par l'artiste).");
+    .setHelpText("Facultatif. Un lien direct vers l'image (se termine souvent par .jpg ou .png), ou un fichier Google Drive / Dropbox " +
+      "partagé « tous les utilisateurs disposant du lien ». Les liens Facebook et Instagram ne fonctionnent pas. " +
+      "Laissez vide : nous prendrons l'image de la page de l'événement. Seulement une photo que vous avez le droit de partager.");
   f.addTextItem().setTitle("Courriel (pour vous joindre, non publié)").setRequired(true)
     .setValidation(FormApp.createTextValidation().requireTextIsEmail().build());
 

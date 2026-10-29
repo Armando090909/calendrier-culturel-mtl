@@ -579,6 +579,34 @@ MODERATION: list[dict] = []  # pour le rapport de collecte
 FORMULAIRE_RESUME: dict = {}
 
 
+def _image_formulaire(url: str) -> str:
+    """Lien « image » du formulaire → adresse d'une vraie image affichable, ou "" (on prendra alors l'image de la page
+    de l'événement). Facebook et Instagram ne sont pas lisibles par un robot, et leurs liens d'images expirent."""
+    url = (url or "").strip()
+    if not url.startswith("http"):
+        return ""
+    hote = urlparse(url).netloc.lower()
+    if any(h in hote for h in ("facebook.com", "fb.com", "fb.me", "fbcdn.net", "instagram.com", "cdninstagram.com")):
+        return ""
+    m = re.search(r"drive\.google\.com/(?:file/d/|open\?id=|uc\?(?:export=\w+&)?id=)([\w-]{20,})", url)
+    if m:  # Google Drive (fichier partagé « tous les utilisateurs disposant du lien »)
+        url = f"https://drive.google.com/thumbnail?id={m.group(1)}&sz=w1200"
+    if "dropbox.com" in hote:
+        url = re.sub(r"([?&])dl=0", r"\1raw=1", url) if "dl=0" in url else url + ("&" if "?" in url else "?") + "raw=1"
+    try:
+        r = telecharger(url, "image/*,text/html;q=0.8")
+        typ = r.headers.get("Content-Type", "").lower()
+        if typ.startswith("image/"):
+            return url
+        if "html" in typ:  # une page : on prend son image de partage
+            from decouverte import affiche_page
+            a = affiche_page(r.text, url)
+            return (a or {}).get("url", "")
+    except Exception:
+        pass
+    return ""
+
+
 def _cle_proposition(row: dict) -> str:
     t = "|".join(_champ(row, k) for k in ("horodateur", "titre", "date", "lieu"))
     return hashlib.sha1(t.encode("utf-8")).hexdigest()[:16]
@@ -676,7 +704,7 @@ def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                         discipline=(discs[0] if discs else ""), aussi=discs[1:3],
                         jeune_public=jeune or "oui" in plat(_champ(row, "jeune public", "enfants")),
                         description=_champ(row, "description"), prix=_champ(row, "prix", "tarif"),
-                        billets=_champ(row, "billetterie", "billets"), image=_champ(row, "image", "photo")))
+                        billets=_champ(row, "billetterie", "billets"), image=_image_formulaire(_champ(row, "image", "photo"))))
     return evs, []
 
 
