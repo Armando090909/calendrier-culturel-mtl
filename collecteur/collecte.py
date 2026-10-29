@@ -450,11 +450,33 @@ def main() -> int:
     print(f"Styles : {sum(1 for e in events if e.get('style'))} concerts avec un style.")
     fest.etiqueter(expos, festivals)
     fest.publier(festivals, SORTIE.parent / "festivals.json")
+    # Noms d'artistes extraits des titres par l'IA (« X présente : Kiwi Jr. » → Kiwi Jr.), gardés en mémoire
+    f_art = Path(__file__).parent / "cache" / "artistes.json"
+    memo_a = json.loads(f_art.read_text(encoding="utf-8")) if f_art.exists() else {}
+    concerts = [e for e in events if "musique" in (e["discipline"], *(e.get("aussi") or []), e.get("sous"))]
+    a_lire = list(dict.fromkeys(e["titre"] for e in concerts if plat(e["titre"]) not in memo_a))
+    if a_lire and ia.disponible():
+        try:
+            for i in range(0, min(len(a_lire), int(reglages.get("max_artistes_ia", 1200))), 80):
+                part = a_lire[i:i + 80]
+                rep = ia.artistes_lot(part)
+                for j, t in enumerate(part):
+                    if j in rep:
+                        memo_a[plat(t)] = rep[j]
+        except Exception as exc:
+            print(f"Artistes IA en échec : {exc}")
+        f_art.write_text(json.dumps(memo_a, ensure_ascii=False), encoding="utf-8")
+    for e in concerts:
+        if plat(e["titre"]) in memo_a:
+            e["_artistes"] = memo_a[plat(e["titre"])]
+    print(f"Artistes : {sum(1 for e in concerts if e.get('_artistes'))} concerts avec des noms d'artistes extraits.")
     try:
-        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 250)))
+        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)))
         print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
+    for e in events:
+        e.pop("_artistes", None)
     sauver_memoire(aujourd)
 
     # ---- Garde-fou : une collecte anormalement maigre ne remplace pas la précédente

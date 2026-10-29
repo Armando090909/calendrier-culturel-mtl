@@ -79,6 +79,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           PROPOSITIONS_CSV_URL: ${{ vars.PROPOSITIONS_CSV_URL }}
           CALENDRIERS_CSV_URL: ${{ vars.CALENDRIERS_CSV_URL }}
           CONTACT: ${{ vars.CONTACT }}
