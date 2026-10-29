@@ -569,6 +569,44 @@ def _approuve(row: dict) -> bool:
     return plat(_champ(row, "approuve", "approved", "valide")) in {"oui", "o", "yes", "y", "x", "1", "ok", "vrai", "true"}
 
 
+def _refuse(row: dict) -> bool:
+    return plat(_champ(row, "approuve", "approved", "valide")) in {"non", "n", "no", "0", "faux", "false"}
+
+
+# Tri automatique des propositions du public (colonne « Approuvé » vide) : décisions gardées d'une collecte à l'autre
+F_MODERATION = Path(__file__).parent / "cache" / "moderation.json"
+MODERATION: list[dict] = []  # pour le rapport de collecte
+
+
+def _cle_proposition(row: dict) -> str:
+    t = "|".join(_champ(row, k) for k in ("horodateur", "titre", "date", "lieu"))
+    return hashlib.sha1(t.encode("utf-8")).hexdigest()[:16]
+
+
+def _moderer(rows: list[dict]) -> dict[str, bool]:
+    """Décision automatique pour les lignes non tranchées par la personne responsable. Sans IA : rien n'est publié."""
+    memo = json.loads(F_MODERATION.read_text(encoding="utf-8")) if F_MODERATION.exists() else {}
+    a_juger = [r for r in rows if _cle_proposition(r) not in memo]
+    if a_juger and ia.disponible():
+        champs = ("titre", "date", "heure", "lieu", "adresse", "discipline", "lien", "description", "prix", "billetterie", "image")
+        try:
+            rep = ia.moderer_lot([{k: _champ(r, k)[:600] for k in champs} for r in a_juger])
+            for i, r in enumerate(a_juger):
+                if i in rep:
+                    memo[_cle_proposition(r)] = {"publier": rep[i][0], "raison": rep[i][1], "titre": _champ(r, "titre")[:120]}
+            F_MODERATION.parent.mkdir(exist_ok=True)
+            F_MODERATION.write_text(json.dumps(memo, ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception as exc:
+            print(f"  tri automatique en échec : {exc}")
+    out = {}
+    for r in rows:
+        d = memo.get(_cle_proposition(r))
+        out[_cle_proposition(r)] = bool(d and d["publier"])
+        MODERATION.append({"titre": _champ(r, "titre")[:120], "decision": ("publié" if d["publier"] else "mis de côté") if d else "en attente",
+                           "raison": d["raison"] if d else "pas encore jugé"})
+    return out
+
+
 def _date_formulaire(s: str) -> date | None:
     s = s.strip()
     for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%Y/%m/%d", "%d-%m-%Y"):
@@ -609,8 +647,11 @@ def _discipline_formulaire(choix: str) -> str:
 
 def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     evs = []
-    for row in _lire_csv(cfg["url"]):
-        if not _approuve(row):
+    rows = list(_lire_csv(cfg["url"]))
+    # « oui » : publié ; « non » : refusé ; vide : tri automatique
+    auto = _moderer([r for r in rows if not _approuve(r) and not _refuse(r) and _champ(r, "titre", "nom de l evenement")])
+    for row in rows:
+        if not (_approuve(row) or auto.get(_cle_proposition(row))):
             continue
         d = _date_formulaire(_champ(row, "date"))
         if not d or d < debut or d > fin:

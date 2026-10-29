@@ -255,6 +255,9 @@ def main() -> int:
                               "heures_trouvees": sum(1 for e in a_lire if e["heure"]),
                               "salles_trouvees": sum(1 for e in a_lire if e["lieu"] != "Lieu à confirmer")}}
     print(f"Fiches de la Ville : {notes['fiches_ville']}")
+    if connecteurs.MODERATION:
+        notes["formulaire_tri"] = connecteurs.MODERATION
+        print(f"Formulaire, tri automatique : {connecteurs.MODERATION}")
 
     # Salles dont on connaît la vocation : un spectacle « autre » y prend la discipline de la salle
     for e in events:
