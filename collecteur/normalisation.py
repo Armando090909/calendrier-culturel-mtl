@@ -61,7 +61,7 @@ REGLES = [
                  "conte pour", "spectacle jeunesse", "opera"]),
     ("cinema", ["cine", "cinema", "film", "projection", "documentaire", "bibliocinema", "court metrage"]),
     ("poesie", ["poesie", "poete", "poetes", "poetique", "slam", "slameur", "slameuse", "spoken word", "rap battle",
-                "battle de rap", "battle rap", "joute verbale", "scene ouverte poesie", "micro ouvert poesie"]),
+                "battle de rap", "battle rap", "joute verbale", "clash de rap", "rap contender", "ligue de rap", "scene ouverte poesie", "micro ouvert poesie"]),
     ("lettres", ["lecture", "auteur", "autrice", "litterature", "litteraire", "roman", "rencontre d auteur",
                  "lancement de livre", "lancement du livre", "lancement litteraire", "conte pour adultes",
                  "soiree de contes", "club de lecture", "salon du livre", "bd", "bande dessinee"]),
@@ -510,6 +510,10 @@ ROLES = {"piano", "pianiste", "violon", "violoncelle", "alto", "contrebasse", "o
          "gratuit", "complet", "off bach", "montreal", "invites", "invitees", "et invites", "and friends", "friends"}
 
 
+# Noms de festivals et de séries (« M pour Montréal : … ») : ce ne sont pas des artistes. Complété par la collecte.
+SERIES_CONNUES: set[str] = {"m pour montreal", "off bach", "coup de coeur francophone", "cinemania"}
+
+
 def _artistes(titre: str) -> set[str]:
     """Noms d'artistes ou de spectacles dans un titre (« Jonquille + Chloé Jara-Buto @ X » → {jonquille, chloe jara buto})."""
     t = re.sub(r"\(.*?\)", " ", titre)
@@ -517,7 +521,7 @@ def _artistes(titre: str) -> set[str]:
     noms = set()
     for m in re.split(r"\s\+\s|\s/\s|,|\savec\s|\swith\s|\sw/\s|\set\s(?=[A-ZÉ])|\s&\s|\sx\s", t):
         p = plat(m)
-        if len(p) >= 4 and p not in GENERIQUES and p not in MOTS_COURANTS and p not in ROLES \
+        if len(p) >= 4 and p not in GENERIQUES and p not in MOTS_COURANTS and p not in ROLES and p not in SERIES_CONNUES \
                 and not p.startswith(("invit", "guest")):
             noms.add(p)
     return noms
@@ -531,6 +535,11 @@ def meme_spectacle(a: dict, b: dict) -> bool:
     if ta == tb or (min(len(ta), len(tb)) >= 6 and (ta in tb or tb in ta)):
         return True
     if difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.88:
+        return True
+    # Mêmes mots dans un autre ordre (« HYMNES de Stephanie Comilang » / « Stephanie Comilang : HYMNES »)
+    mots = lambda t: {w for w in t.split() if len(w) >= 4 and w not in GENERIQUES and w not in MOTS_COURANTS and w not in ROLES}  # noqa: E731
+    wa, wb = mots(ta), mots(tb)
+    if len(wa) >= 2 and len(wb) >= 2 and (wa <= wb or wb <= wa) and max(len(wa), len(wb)) <= 2 * min(len(wa), len(wb)):
         return True
     return bool(_artistes(a["titre"]) & _artistes(b["titre"]))
 
@@ -567,3 +576,45 @@ def doublons_du_jour(events: list[dict]) -> tuple[list[dict], list[str]]:
                 if garde is b:
                     break
     return [e for e in events if id(e) not in retires], journal
+
+
+_TITRES_EXPO_VAGUES = {"exposition", "expo", "expositions", "exposition permanente", "collection permanente",
+                       "exposition temporaire", "vernissage", "oeuvres", "nouvelle exposition"}
+
+
+def doublons_expos(expos: list[dict]) -> list[dict]:
+    """Une même exposition annoncée sous plusieurs titres dans le même lieu (« HYMNES », « Stephanie Comilang : HYMNES »,
+    « HYMNES – Stephanie Comilang ») : on garde une seule fiche, la plus complète (titre le plus long), avec la date de
+    fin la plus souvent annoncée."""
+    gardees: list[list[dict]] = []
+    for x in expos:
+        tx = _titre_net(re.sub(r"(?i)^\s*exposition\s*[:\-–]\s*", "", x["titre"]))
+        groupe = None
+        if tx and tx not in _TITRES_EXPO_VAGUES:
+            for g in gardees:
+                y = g[0]
+                if (x.get("discipline") or "expo") == (y.get("discipline") or "expo") and lieux_proches(x["lieu"], y["lieu"]) \
+                        and meme_spectacle(dict(x, titre=re.sub(r"(?i)^\s*exposition\s*[:\-–]\s*", "", x["titre"])),
+                                           dict(y, titre=re.sub(r"(?i)^\s*exposition\s*[:\-–]\s*", "", y["titre"]))):
+                    groupe = g
+                    break
+        if groupe is None:
+            gardees.append([x])
+        else:
+            groupe.append(x)
+    out = []
+    for g in gardees:
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        fins = Counter(x["fin"] for x in g)
+        fin = sorted(fins.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
+        meilleure = dict(max(g, key=lambda x: len(x["titre"])))
+        meilleure["fin"] = fin
+        meilleure["debut"] = min(x["debut"] for x in g)
+        for x in g:
+            for k in ("festival", "resume", "url", "prix", "billets", "affiche"):
+                if not meilleure.get(k) and x.get(k):
+                    meilleure[k] = x[k]
+        out.append(meilleure)
+    return out

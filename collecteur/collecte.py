@@ -28,7 +28,7 @@ import geo  # noqa: E402
 import ia  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
-from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour  # noqa: E402
+from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -335,6 +335,9 @@ def main() -> int:
 
     events = dedoublonner(events)
     # Dernier contrôle : un même spectacle vivant (pas un film ni une expo) ne doit pas apparaître deux fois le même jour
+    import normalisation as _norm
+    for f in festivals:
+        _norm.SERIES_CONNUES.update({plat(f["nom"]), plat(f.get("court", ""))} - {""})
     events, redites = doublons_du_jour(events)
     notes["redites_retirees"] = redites[:200]
     print(f"Redites du même jour retirées : {len(redites)}")
@@ -399,6 +402,7 @@ def main() -> int:
         if k not in meilleures or (meilleures[k]["lieu"] == "Lieu à confirmer" and x["lieu"] != "Lieu à confirmer"):
             meilleures[k] = x
     expos = [x for x in expos if meilleures[_cle_expo(x)] is x]
+    expos = doublons_expos(expos)  # même exposition sous plusieurs titres dans le même lieu
     expos.sort(key=lambda x: x["fin"])
     fest.etiqueter(events, festivals)
     # Un événement « autre » d'un festival d'une seule discipline prend celle du festival (ex. Casteliers → théâtre)

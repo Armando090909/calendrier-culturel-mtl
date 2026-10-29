@@ -497,3 +497,14 @@ class TestRedites(unittest.TestCase):
         s = {"date": "2026-10-29", "discipline": "musique", "source": "salles", "lieu": "Upstairs", "titre": "Taurey Butler Trio", "url": "u"}
         r, _ = doublons_du_jour([dict(s, heure="19:00"), dict(s, heure="21:30")])
         self.assertEqual(len(r), 2)  # deux sets dans la même salle
+
+
+class TestDoublonsExpos(unittest.TestCase):
+    def test_meme_expo_plusieurs_titres(self):
+        from normalisation import doublons_expos
+        b = {"lieu": "PHI", "debut": "2026-10-28", "discipline": "expo", "url": "u"}
+        r = doublons_expos([dict(b, titre="HYMNES", fin="2027-03-14"), dict(b, titre="Stephanie Comilang : HYMNES", fin="2027-03-14"),
+                            dict(b, titre="HYMNES – Stephanie Comilang", fin="2027-09-14"), dict(b, titre="Foi ou feu", fin="2027-03-14")])
+        self.assertEqual(len(r), 2)
+        h = [x for x in r if "HYMNES" in x["titre"]][0]
+        self.assertEqual(h["fin"], "2027-03-14")  # la date la plus souvent annoncée
