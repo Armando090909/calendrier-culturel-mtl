@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a730440bbe99@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261204T170000
+DTEND;TZID=America/Toronto:20261204T190000
+SUMMARY:DE LA HOUSE & CKUT présentent : CONFÉRENCE DE DANSE - Constructio
+ n de la communauté de la house danse à Montréal
+LOCATION:Ausgang Plaza\, Montréal
+URL:https://www.ausgangplaza.com/evenements/de-la-house-ckut-prsentent-conf
+ rence-de-danse-construction-de-la-communaut-de-la-house-danse-montral
+DESCRIPTION:Table ronde sur l'histoire de la communauté house danse montr
+ éalaise\, avec des panélistes de la scène.\nDétails : https://dice.fm/
+ event/dkyr3g-de-la-house-ckut-prsentent-confrence-de-danse-construction-de
+ -la-communaut-de-la-house-danse-montral-4th-dec-ausgang-plaza-montreal-tic
+ kets\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

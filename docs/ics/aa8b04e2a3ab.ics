@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa8b04e2a3ab@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261031T230000
+DTEND;TZID=America/Toronto:20261101T010000
+SUMMARY:ACID DREAMS HALLOWEEN
+LOCATION:Bar Le Ritz PDB\, Montréal
+URL:http://www.barleritzpdb.com/vnements/acid-dreams-bar-le-ritz-pdb/202610
+ 31-25bhh-ngtlb-c2xwh-d25wj-l24zph-ap285
+DESCRIPTION:Soirée d'Halloween aux sonorités acid\, house\, électro et t
+ echno\, avec plusieurs DJ et un set live. 18 ans et plus.\nDétails : http
+ s://www.universe.com/events/acid-dreams-halloween-acid-house-electro-techn
+ o-tickets-W6Q7PC\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

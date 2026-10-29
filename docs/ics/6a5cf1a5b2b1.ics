@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a5cf1a5b2b1@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261121T144500
+DTEND;TZID=America/Toronto:20261121T164500
+SUMMARY:Once Upon a Time in Harlem
+LOCATION:Cinéma du Parc\, Montréal
+URL:https://ridm.ca/fr/films/once-upon-a-time-in-harlem
+DESCRIPTION:Documentaire de William Greaves et David Greaves sur une rencon
+ tre de figures de la Harlem Renaissance\, filmée en 1972 et achevée un d
+ emi-siècle plus tard.\nDétails : https://ridm.ca/fr/films/once-upon-a-ti
+ me-in-harlem\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

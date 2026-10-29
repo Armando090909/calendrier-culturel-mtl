@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:977d66518cc3@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Vernissage de l'exposition Revoir et relire avec Mimi et Jeanne d'
+ Ève K Tremblay
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/vernissage-de-lexposition-revoir-et-reli
+ re-avec-mimi-et-jeanne-deve-k-tremblay-119304
+DESCRIPTION:Heure à confirmer. Ne manquez pas le vernissage de l'expo Revo
+ ir et relire avec Mimi et Jeanne\, 19 novembre\, 17h30\, grand public\, 91
+ 1 rue Jean-Talon Est\, gratuit\, sur réservation\nPrix : Gratuit\nDétail
+ s : https://montreal.ca/evenements/vernissage-de-lexposition-revoir-et-rel
+ ire-avec-mimi-et-jeanne-deve-k-tremblay-119304\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

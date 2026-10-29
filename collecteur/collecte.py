@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent))
+import agenda  # noqa: E402
 import decouverte  # noqa: E402
 import festivals as fest  # noqa: E402
 import geo  # noqa: E402
@@ -471,6 +472,7 @@ def main() -> int:
         "expos": expos,
         "lieux": {n: lieux.coord(n) for n in sorted(utilises)},
     }
+    agenda.publier(events, SORTIE.parent / "ics")  # un fichier .ics par événement (ajout direct au calendrier)
     SORTIE.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     ecrire_liste_sources(conf, rapport)
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")

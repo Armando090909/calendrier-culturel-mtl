@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f39e06880c5@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261115T150000
+DTEND;TZID=America/Toronto:20261115T170000
+SUMMARY:Yesterday Once More @ Cabaret du Casino de Montreal
+LOCATION:Cabaret du Casino de Montréal\, Montréal
+URL:https://www.songkick.com/concerts/43301647-yesterday-once-more-at-cabar
+ et-du-casino-de-montreal?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Yesterday Once More at Cabaret du Casino de Montreal at 2026-11
+ -15T15:00:00-0500\nDétails : http://www.songkick.com/concerts/43301647-ye
+ sterday-once-more-at-cabaret-du-casino-de-montreal?utm_medium=organic&utm_
+ source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

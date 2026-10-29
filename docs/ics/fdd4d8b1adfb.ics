@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fdd4d8b1adfb@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261112T200000
+DTEND;TZID=America/Toronto:20261112T220000
+SUMMARY:Alexandra Stréliski @ Place des Arts
+LOCATION:Place des Arts\, Montréal
+URL:https://www.songkick.com/concerts/43284513-alexandra-streliski-at-place
+ -des-arts?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Alexandra Stréliski at Place des Arts at 2026-11-12T20:00:00-0
+ 500\nDétails : http://www.songkick.com/concerts/43284513-alexandra-streli
+ ski-at-place-des-arts?utm_medium=organic&utm_source=microformat\n(ccmtl.ca
+ )
+END:VEVENT
+END:VCALENDAR

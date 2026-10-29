@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1730e4de8088@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Sara Dufour @ Cabaret Lion d'Or
+LOCATION:Cabaret Lion d'Or\, Montréal
+URL:https://www.songkick.com/concerts/43448168-sara-dufour-at-cabaret-lion-
+ dor?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Heure à confirmer. Sara Dufour at Cabaret Lion d'Or at 2026-11
+ -05\nDétails : http://www.songkick.com/concerts/43448168-sara-dufour-at-c
+ abaret-lion-dor?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
