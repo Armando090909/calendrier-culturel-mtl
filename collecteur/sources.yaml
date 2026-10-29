@@ -245,6 +245,9 @@ sources:
   - {nom: "Ausgang Plaza (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/ausgang-plaza", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "O Patro Vys (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/o-patro-vys", lieu: "O Patro Vys", jours_semaine: [0, 3]}
   - {nom: "Centre Sanaaq (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/centresanaaqsalle1rdc", lieu: "Centre Sanaaq", jours_semaine: [0]}
+  - {nom: "Club Balattou (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/club-balattou", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Le Balattou (billetterie, 2e page)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/lebalattou", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Le Belmont (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/lebelmont", lieu: "Le Belmont", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Maison culturelle et communautaire de Montréal-Nord (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lieux/maison-culturelle-et-communautaire-de-montreal-nord-mcc", lieu: "Maison culturelle et communautaire de Montréal-Nord", jours_semaine: [0]}
 
   # ---- Soirées quiz (28 oct. 2026) : rendez-vous hebdomadaires vérifiés (collecteur/recurrents.yaml) + ma.to « community »
