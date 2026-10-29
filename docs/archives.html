@@ -10,23 +10,46 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&display=swap">
 <link rel="stylesheet" href="style.css">
 <style>
-.amois{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}
-.amois button{font:inherit;font-weight:700;font-size:14px;cursor:pointer;border:2px solid var(--ink);border-radius:999px;padding:6px 14px;background:var(--surface);color:var(--ink);box-shadow:2px 2px 0 var(--shadow)}
-.amois button[aria-pressed="true"]{background:var(--ink);color:#fff}
-.amois .n{font-size:11px;opacity:.7}
+.anav{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:6px 0 12px}
+.amode{display:inline-flex;border:2px solid var(--ink);border-radius:12px;overflow:hidden}
+.amode button{font:inherit;font-weight:700;font-size:14px;cursor:pointer;border:0;padding:7px 14px;background:var(--surface);color:var(--ink)}
+.amode button+button{border-left:2px solid var(--ink)}
+.amode button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.afleche{font:inherit;font-weight:800;font-size:18px;cursor:pointer;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:var(--surface)}
+.afleche:disabled{opacity:.3;cursor:default}
+.atitre{font-family:var(--f-display);font-weight:800;font-size:clamp(18px,2.4vw,24px);margin:0}
 .afiltre{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
 .afiltre input,.afiltre select{font:inherit;font-size:15px;border:2px solid var(--ink);border-radius:10px;padding:8px 12px;background:var(--surface);color:var(--ink)}
 .afiltre input{flex:1 1 240px;min-width:0;max-width:420px}
-.ajour{font-family:var(--f-display);font-weight:800;font-size:15px;margin:20px 0 6px;text-transform:lowercase}
+.compte{font-size:13px;color:var(--muted)}
+/* Mois : une grille pour choisir la journée */
+.agrille{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.agrille .jh{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--muted);text-align:center;padding:2px 0}
+.ajr{font:inherit;cursor:pointer;min-height:64px;border:2px solid var(--ink);border-radius:12px;background:var(--surface);color:var(--ink);text-align:left;padding:6px 8px;display:flex;flex-direction:column;gap:4px}
+.ajr b{font-family:var(--f-display);font-size:16px}
+.ajr .n{font-size:12px;color:var(--muted)}
+.ajr .pts{display:flex;flex-wrap:wrap;gap:3px}
+.ajr .pts i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.ajr:hover{background:#fff8e1}
+.ajr[disabled]{border-style:dashed;border-color:var(--hair);cursor:default;background:transparent;color:var(--hair)}
+.ajr.vide{visibility:hidden}
+/* Semaine et jour */
+.asem{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;align-items:start}
+.acol h3{font-size:13px;margin:0 0 6px}
+.acol h3 button{all:unset;cursor:pointer;font-weight:800}
+.acol h3 button:hover{text-decoration:underline}
 .aliste{display:flex;flex-direction:column;border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--surface)}
 .aev{display:grid;grid-template-columns:62px minmax(0,1fr);gap:2px 12px;padding:9px 12px;border-left:6px solid var(--c);text-decoration:none;color:var(--ink)}
+.asem .aev{grid-template-columns:minmax(0,1fr);gap:1px;padding:7px 9px;font-size:13.5px}
 .aev+.aev{border-top:1.5px solid var(--hair)}
 .aev:hover{background:var(--paper)}
 .aev .h{font-family:var(--f-display);font-weight:700;font-size:12px;padding-top:3px;font-variant-numeric:tabular-nums}
 .aev .h.nh{color:var(--muted);font-family:var(--f-body);font-style:italic;font-weight:600}
 .aev .t{font-weight:800;line-height:1.25}
 .aev .m{grid-column:2;font-size:12.5px;color:var(--muted)}
-.compte{font-size:13px;color:var(--muted)}
+.asem .aev .m{grid-column:1}
+.avide{color:var(--muted);font-size:13px;padding:6px 2px}
+@media (max-width:900px){.asem{grid-template-columns:minmax(0,1fr)}.ajr{min-height:52px;padding:4px 5px}.ajr b{font-size:14px}.ajr .pts{display:none}}
 @media (max-width:600px){.aev{grid-template-columns:minmax(0,1fr)}.aev .m{grid-column:1}}
 </style>
 </head>
@@ -37,11 +60,15 @@
       <p class="toplinks"><a href="index.html">← Retour au calendrier</a></p>
       <p class="wordmark">calendrier culturel <b>mtl</b></p>
       <h1>Archives</h1>
-      <p class="lead">Ce qui s'est présenté sur l'île, mois par mois, depuis le lancement du calendrier (27 octobre 2026).</p>
+      <p class="lead">Ce qui s'est présenté sur l'île depuis le lancement du calendrier, par jour, semaine ou mois. En mode Mois, clique une journée pour la voir.</p>
     </div>
   </header>
 
-  <div class="amois" id="mois" role="group" aria-label="Mois"></div>
+  <div class="anav">
+    <div class="amode" role="group" aria-label="Affichage"><button type="button" data-mode="jour">Jour</button><button type="button" data-mode="semaine">Semaine</button><button type="button" data-mode="mois">Mois</button></div>
+    <button type="button" class="afleche" id="prec" aria-label="Précédent">‹</button><button type="button" class="afleche" id="suiv" aria-label="Suivant">›</button>
+    <h2 class="atitre" id="titre"></h2>
+  </div>
   <div class="afiltre">
     <input id="q" type="search" placeholder="Titre, artiste, salle…" autocomplete="off">
     <select id="disc" aria-label="Discipline"><option value="">Toutes les disciplines</option></select>
@@ -55,28 +82,64 @@ const DISC={theatre:"Théâtre",musique:"Musique",danse:"Danse",cirque:"Cirque",
   fete:"Fêtes et célébrations",quiz:"Quiz",expo:"Vernissages",autre:"Autre"};
 const $=id=>document.getElementById(id);
 const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const plat=t=>(t||"").toLowerCase().replace(/ø/g,"o").replace(/æ/g,"ae").replace(/œ/g,"oe").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const plat=t=>(t||"").toLowerCase().replace(/ø/g,"o").replace(/æ/g,"ae").replace(/œ/g,"oe").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim();
 const MOIS=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
-const nomMois=m=>{const[a,b]=m.split("-");return MOIS[+b-1]+" "+a};
-const jourLong=s=>{const d=new Date(s+"T12:00");return d.toLocaleDateString("fr-CA",{weekday:"long",day:"numeric",month:"long"})};
-let IDX=[],DATA=null,mois=null;
+const pad=n=>String(n).padStart(2,"0");
+const dt=s=>new Date(s+"T12:00");
+const iso=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const plus=(s,n)=>{const d=dt(s);d.setDate(d.getDate()+n);return iso(d)};
+const lundi=s=>plus(s,-((dt(s).getDay()+6)%7));
+const long=s=>dt(s).toLocaleDateString("fr-CA",{weekday:"long",day:"numeric",month:"long"});
+const court=s=>dt(s).toLocaleDateString("fr-CA",{day:"numeric",month:"short"});
+// Les archives s'arrêtent hier ; le calendrier, lui, commence aujourd'hui
+const HIER=plus(iso(new Date()),-1);
+let IDX=[],CACHE={},st={mode:"mois",j:null};
 $("disc").innerHTML+=Object.entries(DISC).map(([k,l])=>`<option value="${k}">${l}</option>`).join("");
+const premier=()=>IDX.length?IDX[IDX.length-1].mois+"-01":HIER;
+function charger(mois){if(CACHE[mois]!==undefined||!IDX.some(x=>x.mois===mois))return Promise.resolve();
+  CACHE[mois]=null;return fetch(`archives/${mois}.json`,{cache:"no-cache"}).then(r=>r.json()).then(d=>{CACHE[mois]=d}).catch(()=>{CACHE[mois]={events:[],lieux:{}}})}
+function filtre(e){const q=plat($("q").value).split(" ").filter(Boolean),d=$("disc").value;
+  return (!d||e.discipline===d||(e.aussi||[]).includes(d)||e.sous===d)&&q.every(m=>(" "+plat(e.titre+" "+e.lieu+" "+(e.resume||""))+" ").includes(m))}
+function duJour(j){const m=CACHE[j.slice(0,7)];return m&&m.events?m.events.filter(e=>e.date===j&&filtre(e)).sort((a,b)=>(a.heure||"99").localeCompare(b.heure||"99")||a.titre.localeCompare(b.titre)):[]}
+function quart(e){for(const m of Object.values(CACHE))if(m&&m.lieux&&m.lieux[e.lieu]&&m.lieux[e.lieu].quartier)return m.lieux[e.lieu].quartier;return""}
+const ligne=e=>`<a class="aev" href="${esc(e.url||"#")}" target="_blank" rel="noopener" style="--c:var(--${DISC[e.discipline]?e.discipline:"autre"})"><span class="h${e.heure?"":" nh"}">${e.heure?e.heure.replace(":"," h "):"—"}</span><span class="t">${esc(e.titre)}</span><span class="m">${esc(DISC[e.discipline]||"")} · ${esc(e.lieu)}${quart(e)?" · "+esc(quart(e)):""}</span></a>`;
 function afficher(){
-  if(!DATA){$("liste").innerHTML='<div class="empty">Chargement…</div>';return}
-  const q=plat($("q").value).split(" ").filter(Boolean),dsc=$("disc").value;
-  const L=DATA.events.filter(e=>(!dsc||e.discipline===dsc||(e.aussi||[]).includes(dsc)||e.sous===dsc)&&
-    q.every(m=>(" "+plat(e.titre+" "+e.lieu+" "+(e.resume||""))+" ").includes(m))).sort((a,b)=>b.date.localeCompare(a.date)||(a.heure||"99").localeCompare(b.heure||"99"));
-  $("compte").textContent=`${L.length} activité${L.length>1?"s":""}`;
-  const par={};L.forEach(e=>(par[e.date]=par[e.date]||[]).push(e));
-  $("liste").innerHTML=Object.keys(par).map(j=>`<h2 class="ajour">${jourLong(j)} · ${par[j].length}</h2><div class="aliste">${par[j].map(e=>
-    `<a class="aev" href="${esc(e.url||"#")}" target="_blank" rel="noopener" style="--c:var(--${e.discipline||"autre"})"><span class="h${e.heure?"":" nh"}">${e.heure?e.heure.replace(":"," h "):"—"}</span><span class="t">${esc(e.titre)}</span><span class="m">${esc(DISC[e.discipline]||"")} · ${esc(e.lieu)}${DATA.lieux&&DATA.lieux[e.lieu]&&DATA.lieux[e.lieu].quartier?" · "+esc(DATA.lieux[e.lieu].quartier):""}</span></a>`).join("")}</div>`).join("")||'<div class="empty">Aucune activité pour ce choix.</div>';
+  const j=st.j,mode=st.mode;
+  document.querySelectorAll("[data-mode]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.mode===mode));
+  let debut,fin;
+  if(mode==="jour"){debut=fin=j}else if(mode==="semaine"){debut=lundi(j);fin=plus(debut,6)}else{debut=j.slice(0,7)+"-01";const d=dt(debut);d.setMonth(d.getMonth()+1);d.setDate(0);fin=iso(d)}
+  $("prec").disabled=debut<=premier();$("suiv").disabled=fin>=HIER;
+  const mois=[...new Set([debut.slice(0,7),fin.slice(0,7)])];
+  if(mois.some(m=>CACHE[m]===null||(CACHE[m]===undefined&&IDX.some(x=>x.mois===m)))){$("liste").innerHTML='<div class="empty">Chargement…</div>';Promise.all(mois.map(charger)).then(afficher);return}
+  if(mode==="jour"){
+    const L=duJour(j);$("titre").textContent=long(j);$("compte").textContent=`${L.length} activité${L.length>1?"s":""}`;
+    $("liste").innerHTML=L.length?`<div class="aliste">${L.map(ligne).join("")}</div>`:'<div class="empty">Rien d\'archivé pour ce jour.</div>';
+  }else if(mode==="semaine"){
+    const jours=[0,1,2,3,4,5,6].map(i=>plus(debut,i));let n=0;
+    $("titre").textContent=`${court(debut)} → ${court(fin)}`;
+    $("liste").innerHTML=`<div class="asem">${jours.map(x=>{const L=x>HIER?[]:duJour(x);n+=L.length;
+      return `<section class="acol"><h3><button type="button" data-j="${x}">${long(x)}</button> · ${L.length}</h3>${L.length?`<div class="aliste">${L.map(ligne).join("")}</div>`:'<div class="avide">—</div>'}</section>`}).join("")}</div>`;
+    $("compte").textContent=`${n} activité${n>1?"s":""}`;
+  }else{
+    const[a,m]=debut.split("-").map(Number);$("titre").textContent=MOIS[m-1]+" "+a;
+    const cases=[];for(let i=0;i<(dt(debut).getDay()+6)%7;i++)cases.push('<div class="ajr vide"></div>');
+    let n=0;
+    for(let x=debut;x<=fin;x=plus(x,1)){const L=x>HIER?[]:duJour(x);n+=L.length;
+      const pts=[...new Set(L.map(e=>e.discipline))].slice(0,8).map(k=>`<i style="--c:var(--${DISC[k]?k:"autre"})"></i>`).join("");
+      cases.push(`<button type="button" class="ajr" data-j="${x}" ${L.length?"":"disabled"}><b>${dt(x).getDate()}</b>${L.length?`<span class="n">${L.length} activité${L.length>1?"s":""}</span><span class="pts">${pts}</span>`:""}</button>`)}
+    $("liste").innerHTML=`<div class="agrille">${["lun.","mar.","mer.","jeu.","ven.","sam.","dim."].map(x=>`<div class="jh">${x}</div>`).join("")}${cases.join("")}</div>`;
+    $("compte").textContent=`${n} activité${n>1?"s":""} ce mois-ci · clique une journée`;
+  }
 }
-function choisir(m){mois=m;DATA=null;afficher();
-  $("mois").innerHTML=IDX.map(x=>`<button type="button" data-m="${x.mois}" aria-pressed="${x.mois===m}">${nomMois(x.mois)} <span class="n">${x.n}</span></button>`).join("");
-  fetch(`archives/${m}.json`,{cache:"no-cache"}).then(r=>r.json()).then(d=>{if(mois===m){DATA=d;afficher()}}).catch(()=>{$("liste").innerHTML='<div class="empty">Ce mois n\'a pas pu être chargé.</div>'})}
-$("mois").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(b)choisir(b.dataset.m)});
+function bouger(sens){const j=st.j;
+  if(st.mode==="jour")st.j=plus(j,sens);else if(st.mode==="semaine")st.j=plus(j,7*sens);
+  else{const d=dt(j.slice(0,7)+"-01");d.setMonth(d.getMonth()+sens);st.j=iso(d)}
+  if(st.j>HIER)st.j=HIER;if(st.j<premier())st.j=premier();afficher();window.scrollTo({top:0,behavior:"smooth"})}
+$("prec").addEventListener("click",()=>bouger(-1));$("suiv").addEventListener("click",()=>bouger(1));
+document.querySelector(".amode").addEventListener("click",e=>{const b=e.target.closest("[data-mode]");if(b){st.mode=b.dataset.mode;afficher()}});
+$("liste").addEventListener("click",e=>{const b=e.target.closest("[data-j]");if(b){st.j=b.dataset.j;st.mode="jour";afficher();window.scrollTo({top:0,behavior:"smooth"})}});
 $("q").addEventListener("input",afficher);$("disc").addEventListener("change",afficher);
-fetch("archives/index.json",{cache:"no-cache"}).then(r=>r.json()).then(i=>{IDX=i;if(IDX.length)choisir(IDX[0].mois);else $("liste").innerHTML='<div class="empty">Pas encore d\'archives.</div>'})
+fetch("archives/index.json",{cache:"no-cache"}).then(r=>r.json()).then(i=>{IDX=i;st.j=HIER;afficher()})
   .catch(()=>{$("liste").innerHTML='<div class="empty">Pas encore d\'archives.</div>'});
 </script>
 </body>

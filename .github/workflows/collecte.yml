@@ -1,12 +1,15 @@
 # Collecte automatique des événements, puis publication du site.
-# - Tous les jours vers 5 h 30 (heure de Montréal, l'été ; 4 h 30 l'hiver).
+# - Chaque nuit : essai vers 2 h (heure de Montréal ; 1 h l'hiver), puis 5 h et 8 h en renfort. GitHub retarde
+#   parfois de plusieurs heures les tâches programmées : un renfort ne fait rien si la collecte du jour est déjà faite.
 # - À la main : onglet « Actions » → « Collecte des événements » → « Run workflow ».
 # - Quand vous modifiez un fichier du site (dossier docs/), le site est republié sans collecte.
 name: Collecte des événements
 
 on:
   schedule:
-    - cron: "30 9 * * *"
+    - cron: "17 6 * * *"
+    - cron: "17 9 * * *"
+    - cron: "17 12 * * *"
   workflow_dispatch:
     inputs:
       tout_relire:
@@ -22,8 +25,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  verif:
+    runs-on: ubuntu-latest
+    outputs:
+      fait: ${{ steps.deja.outputs.fait }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: docs/rapport.json
+      - id: deja
+        name: Collecte du jour déjà faite ?
+        run: |
+          J=$(TZ=America/Toronto date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && grep -q "\"date\": \"$J\"" docs/rapport.json; then
+            echo "Collecte du $J déjà faite : rien à faire."; echo "fait=oui" >> "$GITHUB_OUTPUT"
+          else echo "fait=non" >> "$GITHUB_OUTPUT"; fi
+
   collecte:
-    if: github.event_name != 'push'
+    needs: verif
+    if: github.event_name != 'push' && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     permissions:
