@@ -359,6 +359,7 @@ def extraire_avec_memoire(url: str, texte: str, debut: date, fin: date) -> dict:
     return data
 
 
+NAV_AUTO = ("zeffy.com",)  # plateformes toujours en JavaScript : navigateur d'office, même pour les festivals
 _NAV = {}  # navigateur partagé par toutes les pages d'une collecte
 
 
@@ -417,7 +418,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         try:
             # « navigateur: true » : site en JavaScript ; un vrai navigateur (Chrome invisible) affiche la page d'abord.
             # Les liens suivis (« details ») restent lus normalement, sauf s'ils sont du même site en JavaScript.
-            html = page_rendue(url) if cfg.get("navigateur") else telecharger(url, "text/html").text
+            avec_nav = cfg.get("navigateur") or any(d in url for d in NAV_AUTO)
+            html = page_rendue(url) if avec_nav else telecharger(url, "text/html").text
         except Exception as exc:
             print(f"  page illisible {url} : {exc}")
             DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
