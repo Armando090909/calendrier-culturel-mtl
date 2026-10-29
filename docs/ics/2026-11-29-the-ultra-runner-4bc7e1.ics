@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-29-the-ultra-runner-4bc7e1@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261129T170000
+DTEND;TZID=America/Toronto:20261129T190000
+SUMMARY:The Ultra Runner
+LOCATION:Cinéma du Parc\, Montréal
+URL:https://ridm.ca/fr/films/the-ultra-runner
+DESCRIPTION:Documentaire suivant un ultramarathonien roumain\, entre sa cou
+ rse extrême en Arctique et les épreuves de son enfance\, avec des recons
+ titutions cinématographiques.\nDétails : https://ridm.ca/fr/films/the-ul
+ tra-runner\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

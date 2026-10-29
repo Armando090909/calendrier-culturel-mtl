@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-22-visite-guidee-de-l-exposition-archetypes-d-emile-b-b00c68@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Visite guidée de l'exposition Archétypes d'Émile Brunet x Pictur
+ a
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/visite-guidee-de-lexposition-archetypes-
+ demile-brunet-x-pictura-119301
+DESCRIPTION:Heure à confirmer. Ne manquez pas la visite de l'expo Archéty
+ pes d'Émile Brunet\, Peinture\, grand public\, 911 rue Jean-Talon Est\, d
+ imanche 22 novembre\, gratuit\, sur réservation\nPrix : Gratuit\nDétails
+  : https://montreal.ca/evenements/visite-guidee-de-lexposition-archetypes-
+ demile-brunet-x-pictura-119301\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

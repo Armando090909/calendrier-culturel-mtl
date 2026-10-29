@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-19-m-pour-montreal-presente-yoo-doo-right-population-603e02@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261119T190000
+DTEND;TZID=America/Toronto:20261119T210000
+SUMMARY:M POUR MONTRÉAL présente Yoo Doo Right + Population II
+LOCATION:Ausgang Plaza\, Montréal
+URL:https://www.ausgangplaza.com/evenements/m-pour-montral-prsente-yoo-doo-
+ right-population-ii
+DESCRIPTION:Lancement d'album de Yoo Doo Right\, précédé de Population I
+ I\, avec projections visuelles\; places limitées.\nDétails : https://lep
+ ointdevente.com/billets/xd0261119001\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-spectacle-de-lutte-promotion-de-la-lutte-professio-661e05@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Spectacle de lutte - Promotion de la lutte professionnelle (PLP)
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/spectacle-de-lutte-promotion-de-la-lutte
+ -professionnelle-plp-116283
+DESCRIPTION:Heure à confirmer. Avez-vous déjà assisté à un gala de lut
+ te? Depuis plus de 30 ans\, cette organisation offre des spectacles de lut
+ te professionnelle qui combinent ...\nPrix : Gratuit\nDétails : https://m
+ ontreal.ca/evenements/spectacle-de-lutte-promotion-de-la-lutte-professionn
+ elle-plp-116283\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

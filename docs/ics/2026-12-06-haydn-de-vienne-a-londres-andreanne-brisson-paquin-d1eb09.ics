@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-06-haydn-de-vienne-a-londres-andreanne-brisson-paquin-d1eb09@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Haydn : de Vienne à Londres - Andréanne Brisson-Paquin et Meagan 
+ Milatz
+LOCATION:Salle Paul-Desmarais\, Montréal
+URL:https://montreal.ca/evenements/haydn-de-vienne-londres-andreanne-brisso
+ n-paquin-et-meagan-milatz-116964
+DESCRIPTION:Heure à confirmer. Ne manquez ce concert réunissant Andréann
+ e Brisson-Paquin et Meagan Milatz présenté par la Chapelle musicale du B
+ on-Pasteur.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/hay
+ dn-de-vienne-londres-andreanne-brisson-paquin-et-meagan-milatz-116964\n(cc
+ mtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-09-visions-iva-radivojevic-b19485@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:VISIONS : IVA RADIVOJEVIC
+LOCATION:La Lumière Collective\, Montréal
+URL:https://lalumierecollective.org/2026/visions-iva-radivojevic/
+DESCRIPTION:Heure à confirmer. Projection de films expérimentaux de l'art
+ iste\, présentée en présence de celui-ci pour introduire son œuvre et 
+ échanger avec le public.\nDétails : https://lalumierecollective.org/2026
+ /visions-iva-radivojevic/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-29-battle-de-doublage-du-millenaire-au-club-soda-3a79ac@ccmtl.c
+ a
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261029T235900
+DTEND;TZID=America/Toronto:20261030T015900
+SUMMARY:Battle de Doublage du Millénaire au Club Soda
+LOCATION:Club Soda\, Montréal
+URL:https://spectaculos.ca/fr/spectacle/battle-de-doublage-du-millenaire-mo
+ ntreal
+DESCRIPTION:Soirée de projection vidéo où le public est invité à s'amu
+ ser avec le doublage humoristique de scènes existantes.\nDétails : https
+ ://spectaculos.ca/fr/spectacle/battle-de-doublage-du-millenaire-montreal\n
+ (ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
