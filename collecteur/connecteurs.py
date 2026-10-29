@@ -580,7 +580,7 @@ def _date_formulaire(s: str) -> date | None:
 
 
 def _heure_formulaire(s: str) -> str | None:
-    m = re.search(r"(\d{1,2})\s*[h:]\s*(\d{2})?", s or "")
+    m = re.search(r"(\d{1,2})\s*[h:]\s*(\d{2})?", s or "") or re.search(r"(\d{1,2})()\s*[ap]\.?\s*m", (s or "").lower())
     if not m:
         return None
     h, mi = int(m.group(1)), int(m.group(2) or 0)
