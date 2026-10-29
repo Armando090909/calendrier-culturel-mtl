@@ -85,7 +85,8 @@ def ecrire_liste_sources(conf: dict, rapport: list) -> None:
     for s in conf.get("sources", []):
         if not s.get("actif", True):
             continue
-        url = re.sub(r"\{[^}]+\}", "", s["url"]).replace("?page=", "").rstrip("/?&") or s["url"]
+        brute = s.get("url") or ""  # certaines sources n'ont pas d'adresse (ex. rendez-vous hebdomadaires vérifiés)
+        url = re.sub(r"\{[^}]+\}", "", brute).replace("?page=", "").rstrip("/?&") or brute
         r = par_nom.get(s["nom"], {})
         liste.append({"nom": s["nom"], "url": url, "type": TYPES_LISIBLES.get(s["type"], s["type"]),
                       "evenements": r.get("evenements", 0) + r.get("series", 0), "erreur": bool(r.get("erreur"))})
@@ -508,7 +509,10 @@ def main() -> int:
             print(f"Archives en échec : {exc}")
     agenda.publier(events, SORTIE.parent / "ics")  # un fichier .ics par événement (ajout direct au calendrier)
     SORTIE.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    ecrire_liste_sources(conf, rapport)
+    try:  # page « Nos sources » : une erreur ici ne doit pas empêcher le rapport et la mémoire des salles
+        ecrire_liste_sources(conf, rapport)
+    except Exception as exc:
+        print(f"Liste des sources en échec : {exc}")
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
                                    "expositions": len(expos), "nouvelles_salles": sorted(set(nouveaux_lieux)),
