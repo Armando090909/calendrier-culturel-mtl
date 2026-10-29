@@ -69,6 +69,9 @@ function descr(e){return (e.heure?"":"Heure à confirmer. ")+(e.resume?e.resume+
 function gcal(e){const s=span(e);
   return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(e.titre)+"&dates="+s.start+"/"+s.end+
     (s.allDay?"":"&ctz=America/Toronto")+"&location="+encodeURIComponent(e.lieu+", Montréal")+"&details="+encodeURIComponent(descr(e))}
+function outlook(e){const s=span(e),f=x=>x.length===8?x.slice(0,4)+"-"+x.slice(4,6)+"-"+x.slice(6):x.slice(0,4)+"-"+x.slice(4,6)+"-"+x.slice(6,8)+"T"+x.slice(9,11)+":"+x.slice(11,13)+":00";
+  return "https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject="+encodeURIComponent(e.titre)+
+    "&startdt="+f(s.start)+"&enddt="+f(s.end)+(s.allDay?"&allday=true":"")+"&location="+encodeURIComponent(e.lieu+", Montréal")+"&body="+encodeURIComponent(descr(e))}
 const icsEsc=t=>String(t).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
 function ics(e){const s=span(e),now=new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z";
   const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Calendrier culturel montrealais//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH",
@@ -98,7 +101,10 @@ function lieuHTML(e,grand){
 }
 function calHTML(e){
   const src=(D.sources[e.source]||{}).nom||e.source;
-  return `<div class="cal"><span class="calk">+ mon agenda :</span><a href="${esc(gcal(e))}" target="_blank" rel="noopener" title="Ajouter à Google Agenda">Google</a><button type="button" data-ics="${e._i}" title="Fichier .ics pour Apple Calendrier, Outlook, etc.">iCal</button><span class="src">source : ${esc(src)}</span></div>`;
+  // iCal : lien vers le fichier .ics publié avec le site → « Ajouter au calendrier » directement (iPhone, Mac, Android…)
+  const ical=e.ics?`<a href="ics/${e.ics}.ics" title="Ajouter à Apple Calendrier, ou à l'agenda de ton téléphone">iCal</a>`
+    :`<button type="button" data-ics="${e._i}" title="Fichier .ics pour Apple Calendrier, Outlook, etc.">iCal</button>`;
+  return `<div class="cal"><span class="calk">+ mon agenda :</span><a href="${esc(gcal(e))}" target="_blank" rel="noopener" title="Ajouter à Google Agenda">Google</a>${ical}<a href="${esc(outlook(e))}" target="_blank" rel="noopener" title="Ajouter à Outlook">Outlook</a><span class="src">source : ${esc(src)}</span></div>`;
 }
 const heureTxt=e=>e.heure?e.heure.replace(":"," h "):e.serie?"voir horaire":"heure à confirmer";
 const sousTag=e=>e.discipline==="jeune"&&e.sous&&DISC_LABEL[e.sous]?`<span class="sous">${esc(DISC_LABEL[e.sous])}</span>`:"";

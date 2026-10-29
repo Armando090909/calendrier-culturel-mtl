@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae11bfde4f00@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Cabaret : 25 ans de cirque psychomagique ! - Les Productions Carmag
+ nole célèbrent leurs 25 ans !
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/cabaret-25-ans-de-cirque-psychomagique-l
+ es-productions-carmagnole-celebrent-leurs-25-ans-116381
+DESCRIPTION:Heure à confirmer. Le 21 novembre à 19 h 30\, retrouvez les p
+ ersonnages emblématiques et les folies de Carmagnole dans un cabaret de c
+ irque psychomagique.\nPrix : Gratuit\nDétails : https://montreal.ca/evene
+ ments/cabaret-25-ans-de-cirque-psychomagique-les-productions-carmagnole-ce
+ lebrent-leurs-25-ans-116381\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

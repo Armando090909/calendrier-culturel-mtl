@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2d484594c7aa@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Dessine ton ornement des Fêtes en 3D
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/dessine-ton-ornement-des-fetes-en-3d-116
+ 059
+DESCRIPTION:Heure à confirmer. Un atelier créatif sur la thématique du t
+ emps des Fêtes à la bibliothèque Mercier.\nPrix : Gratuit\nDétails : h
+ ttps://montreal.ca/evenements/dessine-ton-ornement-des-fetes-en-3d-116059\
+ n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

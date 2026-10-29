@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e2c158445610@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261118T200000
+DTEND;TZID=America/Toronto:20261118T220000
+SUMMARY:Koriass @ Club Soda
+LOCATION:Club Soda\, Montréal
+URL:https://www.songkick.com/concerts/43427997-koriass-at-club-soda?utm_med
+ ium=organic&utm_source=microformat
+DESCRIPTION:Koriass\, Mara Tremblay\, Mononc' Serge\, and Stefie Shock at C
+ lub Soda at 2026-11-18T20:00:00-0500\nDétails : http://www.songkick.com/c
+ oncerts/43427997-koriass-at-club-soda?utm_medium=organic&utm_source=microf
+ ormat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

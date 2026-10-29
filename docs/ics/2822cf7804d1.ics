@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2822cf7804d1@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Les 5 à 7 de la maison : Borrkia i Matti e Julian Corradini
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/les-5-7-de-la-maison-borrkia-i-matti-e-j
+ ulian-corradini-116573
+DESCRIPTION:Heure à confirmer. Ne manquez pas le spectacle de Borrkia i Ma
+ tti e Julian Corradini\, le jeudi 12 novembre à 17h15\, Musique\, Grand p
+ ublic\, 911 rue Jean-Talon Est\, sur réservation\nPrix : Gratuit\nDétail
+ s : https://montreal.ca/evenements/les-5-7-de-la-maison-borrkia-i-matti-e-
+ julian-corradini-116573\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

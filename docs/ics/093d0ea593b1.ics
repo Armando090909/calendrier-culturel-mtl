@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:093d0ea593b1@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T200000
+DTEND;TZID=America/Toronto:20261114T220000
+SUMMARY:Parra for Cuva @ Théâtre Beanfield
+LOCATION:Théâtre Beanfield\, Montréal
+URL:https://www.songkick.com/concerts/43103553-parra-for-cuva-at-theatre-be
+ anfield?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Parra for Cuva at Théâtre Beanfield at 2026-11-14T20:00:00-05
+ 00\nDétails : http://www.songkick.com/concerts/43103553-parra-for-cuva-at
+ -theatre-beanfield?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

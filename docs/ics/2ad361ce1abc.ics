@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2ad361ce1abc@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Quatre bras et une tête d’éléphant (3-6 ans)
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/quatre-bras-et-une-tete-delephant-3-6-an
+ s-117398
+DESCRIPTION:Heure à confirmer. Partez à la découverte de l’Inde et de 
+ Ganesh\, le célèbre dieu à tête d’éléphant\, lors d’une activit
+ é remplie d’histoires\, de mouvements et de créativité!\nPrix : Gratu
+ it\nDétails : https://montreal.ca/evenements/quatre-bras-et-une-tete-dele
+ phant-3-6-ans-117398\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

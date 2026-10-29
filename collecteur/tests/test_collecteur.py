@@ -508,3 +508,16 @@ class TestDoublonsExpos(unittest.TestCase):
         self.assertEqual(len(r), 2)
         h = [x for x in r if "HYMNES" in x["titre"]][0]
         self.assertEqual(h["fin"], "2027-03-14")  # la date la plus souvent annoncée
+
+
+class TestAgenda(unittest.TestCase):
+    def test_fichier_ics(self):
+        import agenda
+        from datetime import datetime
+        e = {"date": "2026-11-05", "heure": "19:30", "titre": "Spectacle, avec virgule", "lieu": "Lion d'Or", "url": "https://x"}
+        t = agenda.contenu(e, datetime(2026, 1, 1))
+        self.assertIn("DTSTART;TZID=America/Toronto:20261105T193000", t)
+        self.assertIn("SUMMARY:Spectacle\\, avec virgule", t)
+        self.assertTrue(all(len(l.encode()) <= 75 for l in t.split("\r\n")))
+        sans = agenda.contenu(dict(e, heure=None), datetime(2026, 1, 1))
+        self.assertIn("DTSTART;VALUE=DATE:20261105", sans)
