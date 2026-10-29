@@ -40,6 +40,15 @@ jobs:
       - name: Installer
         run: pip install -r collecteur/requirements.txt
 
+      # Chrome sans fenêtre, pour les salles dont le site s'affiche en JavaScript (« navigateur: true »)
+      - name: Mémoire du navigateur
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - name: Installer le navigateur
+        run: python -m playwright install --with-deps chromium
+
       - name: Tests
         run: python -m unittest discover -s collecteur/tests
 
