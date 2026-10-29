@@ -576,6 +576,7 @@ def _refuse(row: dict) -> bool:
 # Tri automatique des propositions du public (colonne « Approuvé » vide) : décisions gardées d'une collecte à l'autre
 F_MODERATION = Path(__file__).parent / "cache" / "moderation.json"
 MODERATION: list[dict] = []  # pour le rapport de collecte
+FORMULAIRE_RESUME: dict = {}
 
 
 def _cle_proposition(row: dict) -> str:
@@ -655,8 +656,10 @@ def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     rows = list(_lire_csv(cfg["url"]))
     # « oui » : publié ; « non » : refusé ; vide : tri automatique
     auto = _moderer([r for r in rows if not _approuve(r) and not _refuse(r) and _champ(r, "titre", "nom de l evenement")])
-    print(f"  formulaire : {len(rows)} ligne(s), {sum(map(_approuve, rows))} « oui », {sum(map(_refuse, rows))} « non », "
-          f"{sum(auto.values())} acceptée(s) par le tri automatique ; colonnes : {list(rows[0].keys()) if rows else []}")
+    FORMULAIRE_RESUME.update(lignes=len(rows), oui=sum(map(_approuve, rows)), non=sum(map(_refuse, rows)),
+                             acceptees_auto=sum(auto.values()), ia=ia.disponible(),
+                             colonnes=[k for k in (rows[0].keys() if rows else []) if k and "courriel" not in plat(k)])
+    print(f"  formulaire : {FORMULAIRE_RESUME}")
     for row in rows:
         if not (_approuve(row) or auto.get(_cle_proposition(row))):
             continue
