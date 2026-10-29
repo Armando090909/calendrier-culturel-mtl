@@ -97,3 +97,29 @@ Théâtre · Musique · Danse · Cirque · Humour et cabaret (drag, burlesque, C
 - Billetterie Le Point de vente : 112 événements (Café Campus 41, Club Soda 29, O Patro Vys 12, Turbo Haüs 10, Quai des Brumes 7…). Rialto : page lue mais vide.
 - montreal.ca : refus (403) même avec le nouveau User-Agent, sur toutes les fiches → **écrire à la Ville** (voir « À faire »). Les salles sont quand même retrouvées par les coordonnées (1066 sur ~1100) ; les heures manquent toujours.
 - 25 sites refusent toujours (403) : Balattou, L'Entracte, Bistro à Jojo, Le Balcon, Le Belmont, SAT, Eastern Bloc, RA, Wiggle Room, Monument-National, slams, ELEKTRA, M pour Montréal, MUTEK, FNC, Piknic… Ne pas contourner ; chercher leurs billetteries.
+
+## Sites qui refusent le robot (403) : solutions sans contournement (28 oct. 2026)
+| Salle / festival | Solution |
+|---|---|
+| Club Balattou, Le Belmont | Le Point de vente (`/lieux/club-balattou`, `/lieux/lebalattou`, `/lieux/lebelmont`) |
+| Wiggle Room, Le Balcon | ma.to (`/venue/wiggleroommtl`, `/venue/lebalconcabaret`) |
+| SAT | Exclaim! (`exclaim.ca/venues/venue/societe-des-arts-technologiques-sat`) |
+| Cabaret Jazz L'Entracte | Zeffy (organisme sans but lucratif ; page lue avec le navigateur) |
+| ELEKTRA | Zeffy (`zeffy.com/fr-CA/organizations/elektra-montreal`) |
+| M pour Montréal | Songkick (page festival) en plus de Jambase |
+| Musique en général | PAN M 360 (`panm360.com/en/agenda-360/`) : agenda montréalais |
+| Espace La Risée | Le Point de vente (déjà ajouté) |
+| Slams | en partie par la Ville (Slam citoyen) et Le Point de vente (Grand Slam) |
+| Pierrefonds-Roxboro, LaSalle | montreal.ca : attendre la réponse de la Ville |
+| Sans solution trouvée | Bistro à Jojo, Eastern Bloc, Monument-National, Resident Advisor, galeries ELLEPHANT et TIAN → leur écrire (modèle ci-dessous) ou formulaire |
+| Festivals hors saison (Sommets, Piknic, MUTEK, FNC, RU, Shows de ruelle) | rien d'urgent ; dates par Tourisme Montréal |
+
+### Modèle de courriel pour une salle
+Objet : Votre programmation sur ccmtl.ca (calendrier culturel gratuit)
+
+Bonjour,
+Je m'occupe de ccmtl.ca, un calendrier culturel gratuit, sans publicité et sans but lucratif, qui rassemble les spectacles de l'île de Montréal. Nous aimerions y présenter votre programmation, avec un lien vers votre billetterie.
+Votre site refuse notre outil de lecture automatique (il s'identifie « CalendrierCulturelMTL » et lit une page quelques fois par semaine). Deux options simples :
+1. nous transmettre un lien de calendrier (Google Agenda public, iCal) ou l'ajouter sur ccmtl.ca (« Tu organises des shows ? ») ;
+2. ou autoriser notre outil sur votre page de programmation.
+Merci, et au plaisir de faire découvrir vos soirées !
