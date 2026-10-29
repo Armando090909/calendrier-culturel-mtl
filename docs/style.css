@@ -523,13 +523,6 @@ footer:empty{display:none}
 .bandexpos{display:block;width:100%;text-align:left;font:inherit;font-size:14px;cursor:pointer;margin:0 0 12px;padding:9px 14px;border:2px solid var(--ink);border-left:8px solid var(--expo);border-radius:12px;background:var(--surface);color:var(--ink)}
 .bandexpos:hover{background:#fff8e1}
 
-/* Vernissages : calendrier de la semaine dans la page Expositions */
-.xsem{display:flex;align-items:center;gap:10px;margin:6px 0 10px}
-.xsem .label{margin:0}
-.vernboard .dh{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--muted);padding:2px 4px}
-.vernboard .dh b{font-size:16px;color:var(--ink)}
-.vernboard .col.today .dh{color:var(--pop)}
-.vernboard .row.vern{text-decoration:none;color:inherit}
-.vernboard .vide{color:var(--hair);text-align:center;padding:8px 0}
-.xf[data-xtype="vern"]{margin-left:8px}
-@media (max-width:900px){.vernboard{grid-template-columns:minmax(0,1fr)}.vernboard .col:has(.vide){display:none}}
+/* Calendrier filtré sur les vernissages */
+.bandseul{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 12px;padding:8px 12px;border:2px solid var(--ink);border-left:8px solid var(--expo);border-radius:12px;background:var(--surface)}
+.bandseul b{margin-right:auto}
