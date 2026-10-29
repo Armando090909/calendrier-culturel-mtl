@@ -191,6 +191,69 @@ def musicbrainz(nom: str, get_json) -> list[dict]:
     return out[:4]
 
 
+def wikidata(nom: str, get_json) -> list[dict]:
+    """Liens d'écoute inscrits sur Wikidata (Spotify, Bandcamp, YouTube, SoundCloud) pour un nom identique.
+    Plusieurs fiches du même nom : on garde la seule qui est canadienne, sinon on s'abstient."""
+    lit = json.dumps(nom)
+    q = f"""SELECT ?item ?sp ?bc ?yt ?sc ?ca WHERE {{
+      VALUES ?lab {{ {lit}@en {lit}@fr {lit}@mul }}
+      ?item rdfs:label ?lab .
+      OPTIONAL {{ ?item wdt:P1902 ?sp }} OPTIONAL {{ ?item wdt:P3283 ?bc }}
+      OPTIONAL {{ ?item wdt:P2397 ?yt }} OPTIONAL {{ ?item wdt:P3040 ?sc }}
+      OPTIONAL {{ VALUES ?pays {{ wdt:P27 wdt:P495 wdt:P740 }} ?item ?pays ?ca . FILTER(?ca = wd:Q16 || ?ca = wd:Q340 || ?ca = wd:Q176) }}
+      FILTER(BOUND(?sp) || BOUND(?bc) || BOUND(?yt) || BOUND(?sc))
+    }} LIMIT 40"""
+    r = get_json("https://query.wikidata.org/sparql?format=json&query=" + quote(q)) or {}
+    fiches: dict[str, dict] = {}
+    for b in r.get("results", {}).get("bindings", []):
+        f = fiches.setdefault(b["item"]["value"], {"ca": False, "liens": {}})
+        f["ca"] = f["ca"] or "ca" in b
+        for k, gabarit, t in (("sp", "https://open.spotify.com/artist/{}", "spotify"), ("bc", "https://{}.bandcamp.com/", "bandcamp"),
+                              ("yt", "https://www.youtube.com/channel/{}", "youtube"), ("sc", "https://soundcloud.com/{}", "soundcloud")):
+            if k in b:
+                f["liens"].setdefault(t, gabarit.format(b[k]["value"]))
+    choix = list(fiches.values())
+    if len(choix) > 1:
+        choix = [f for f in choix if f["ca"]]
+    if len(choix) != 1:
+        return []
+    return [{"type": t, "url": u, "source": "wikidata", "nom": nom} for t, u in choix[0]["liens"].items()]
+
+
+_JETON_SPOTIFY: dict = {}
+
+
+def spotify(nom: str) -> list[dict]:
+    """Recherche d'artiste sur l'API Spotify (seulement si SPOTIFY_CLIENT_ID et SPOTIFY_CLIENT_SECRET sont fournis).
+    Nom identique exigé. Plusieurs homonymes : le plus suivi, seulement s'il l'est nettement plus (10 fois et 1 000 abonnés)."""
+    cid, secret = os.environ.get("SPOTIFY_CLIENT_ID"), os.environ.get("SPOTIFY_CLIENT_SECRET")
+    if not cid or not secret:
+        return []
+    import requests
+    if _JETON_SPOTIFY.get("fin", 0) < time.time():
+        r = requests.post("https://accounts.spotify.com/api/token", data={"grant_type": "client_credentials"},
+                          auth=(cid, secret), timeout=20)
+        r.raise_for_status()
+        j = r.json()
+        _JETON_SPOTIFY.update(jeton=j["access_token"], fin=time.time() + int(j.get("expires_in", 3600)) - 60)
+    r = requests.get("https://api.spotify.com/v1/search", params={"q": nom, "type": "artist", "limit": 10, "market": "CA"},
+                     headers={"Authorization": "Bearer " + _JETON_SPOTIFY["jeton"]}, timeout=20)
+    if r.status_code == 429:
+        time.sleep(min(int(r.headers.get("Retry-After", "5")), 30))
+        return []
+    r.raise_for_status()
+    cands = [a for a in r.json().get("artists", {}).get("items", []) if plat(a.get("name", "")) == plat(nom)]
+    cands.sort(key=lambda a: -((a.get("followers") or {}).get("total") or 0))
+    if not cands:
+        return []
+    if len(cands) > 1:
+        f0, f1 = ((cands[0].get("followers") or {}).get("total") or 0), ((cands[1].get("followers") or {}).get("total") or 0)
+        if f0 < 1000 or f0 < 10 * max(f1, 1):
+            return []
+    url = (cands[0].get("external_urls") or {}).get("spotify")
+    return [{"type": "spotify", "url": url, "source": "spotify", "nom": cands[0]["name"]}] if url else []
+
+
 def bandcamp(nom: str, get_html) -> list[dict]:
     """Recherche d'artiste sur Bandcamp (sans clé). On garde un résultat au nom identique, situé à Montréal,
     au Québec ou au Canada ; ou le seul résultat au nom identique s'il n'y en a qu'un."""
@@ -231,7 +294,7 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     return out
 
 
-def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 120, max_affiches: int = 600) -> int:
+def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 600) -> int:
     """Ajoute e["liens"] (écouter, bande-annonce) et e["affiche"] (image de la page officielle). Renvoie le nombre
     d'événements enrichis. Chaque page et chaque artiste ne sont lus qu'une fois (mémoire)."""
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
@@ -254,7 +317,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                                                 "le": aujourd.isoformat()}
                 except Exception:
                     pm = memo["page:" + url] = {"affiche": None, "billets": None, "le": aujourd.isoformat()}
-    fin_budget = time.time() + 20 * 60  # liens d'écoute : au plus 20 minutes
+    fin_budget = time.time() + 30 * 60  # liens d'écoute : au plus 30 minutes
     # Une même image pour 3 spectacles différents ou plus, c'est un logo, une image par défaut ou la carte du festival :
     # on l'écarte. (Compté par titre, pas par page : une page de programmation sert à des dizaines de spectacles.)
     titres_par_image: dict[str, set] = {}
@@ -280,7 +343,10 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         film = "cinema" in discs
         if not (film or "musique" in discs):
             continue
-        noms = [re.sub(r"\(.*?\)", "", e["titre"]).split(" — ")[0].strip()] if film else noms_artistes(e["titre"])
+        noms = [re.sub(r"\(.*?\)", "", e["titre"]).split(" — ")[0].strip()] if film \
+            else (e["_artistes"] if e.get("_artistes") is not None else noms_artistes(e["titre"]))
+        if not noms:
+            continue
         cle = ("film:" if film else "mus:") + "|".join(plat(x) for x in noms)
         m = memo.get(cle)
         frais = m and (m["liens"] or m["le"] >= vieux)
@@ -304,7 +370,17 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         if not any(l.get("nom") == nom for l in liens):
                             liens += musicbrainz(nom, ua_json)
                             time.sleep(1.1)
-                        if not any(l.get("nom") == nom or l["source"] == "page" for l in liens):
+                        if not any(plat(l.get("nom", "")) == plat(nom) or l["source"] == "page" for l in liens):
+                            try:
+                                liens += wikidata(nom, ua_json)
+                            except Exception:
+                                pass
+                        if not any(l["type"] == "spotify" for l in liens if plat(l.get("nom", "")) == plat(nom)):
+                            try:
+                                liens += spotify(nom)
+                            except Exception as exc:
+                                print(f"  Spotify « {nom[:30]} » : {exc}")
+                        if not any(plat(l.get("nom", "")) == plat(nom) or l["source"] == "page" for l in liens):
                             try:
                                 liens += bandcamp(nom, lambda u: telecharger(u, "text/html").text)
                             except Exception:
