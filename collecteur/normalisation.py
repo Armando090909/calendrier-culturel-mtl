@@ -149,6 +149,8 @@ HORS_ILE = [
     "laval", "longueuil", "brossard", "boucherville", "saint lambert", "repentigny", "terrebonne",
     "sainte therese", "saint eustache", "chambly", "valleyfield", "salaberry", "saint jerome", "blainville",
     "bois des filion", "mascouche", "chateauguay", "vaudreuil", "la prairie", "candiac", "quebec", "ottawa",
+    "niagara", "fallsview", "toronto", "gatineau", "sherbrooke", "trois rivieres", "kingston", "granby", "drummondville",
+    "saint hyacinthe", "joliette", "rimouski", "saguenay", "mont tremblant", "magog", "st sauveur", "saint sauveur",
     "gatineau", "sherbrooke", "trois rivieres", "dix30", "place bell", "studio azrieli",
 ]
 

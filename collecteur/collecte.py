@@ -23,6 +23,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).parent))
 import agenda  # noqa: E402
+import archives  # noqa: E402
 import decouverte  # noqa: E402
 import festivals as fest  # noqa: E402
 import geo  # noqa: E402
@@ -472,6 +473,12 @@ def main() -> int:
         "expos": expos,
         "lieux": {n: lieux.coord(n) for n in sorted(utilises)},
     }
+    if ancien:  # les événements passés de la publication précédente rejoignent les archives du mois
+        try:
+            n_arch = archives.ajouter(ancien.get("events", []), aujourd.isoformat(), SORTIE.parent / "archives", ancien.get("lieux"))
+            print(f"Archives : {n_arch} événements passés ajoutés.")
+        except Exception as exc:
+            print(f"Archives en échec : {exc}")
     agenda.publier(events, SORTIE.parent / "ics")  # un fichier .ics par événement (ajout direct au calendrier)
     SORTIE.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     ecrire_liste_sources(conf, rapport)
