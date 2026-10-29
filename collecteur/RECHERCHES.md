@@ -91,3 +91,9 @@ Théâtre · Musique · Danse · Cirque · Humour et cabaret (drag, burlesque, C
 - Assez d'offre pour une catégorie : une quinzaine de bars avec un quiz hebdomadaire sur l'île (Restomontreal, article mis à jour le 11 sept. 2026 ; ma.to ; Pages Jaunes). Colonel Moutarde : quiz confirmé par Restomontreal, mais sans jour ni heure → pas dans la liste tant que ce n'est pas vérifié.
 - Les quiz s'annoncent surtout sur Instagram. Deux sources : `collecteur/recurrents.yaml` (rendez-vous hebdomadaires vérifiés à la main, avec date de vérification ; à revoir tous les 2-3 mois) et la page « community » de ma.to (filtrée sur quiz/trivia).
 - Écartés : Jack Astor's (Laval, Boisbriand : hors île), Bar Star Bar (une semaine sur deux, phase inconnue), Café Eevee (fréquence inconnue), liste Pages Jaunes (non datée).
+
+## Bilan de la collecte du 28 oct. au soir (navigateur + billetterie)
+- Navigateur : fonctionne pour Quai des Brumes, Foufounes (5), Caf' Conc' (9), Drawn & Quarterly (5). Encore vides : Piranha, Café Campus, Système, Rialto, Le National, InfiniTheatre, Esquisse → leur calendrier est sans doute dans un cadre (iframe) ; le contenu des cadres est maintenant lu aussi.
+- Billetterie Le Point de vente : 112 événements (Café Campus 41, Club Soda 29, O Patro Vys 12, Turbo Haüs 10, Quai des Brumes 7…). Rialto : page lue mais vide.
+- montreal.ca : refus (403) même avec le nouveau User-Agent, sur toutes les fiches → **écrire à la Ville** (voir « À faire »). Les salles sont quand même retrouvées par les coordonnées (1066 sur ~1100) ; les heures manquent toujours.
+- 25 sites refusent toujours (403) : Balattou, L'Entracte, Bistro à Jojo, Le Balcon, Le Belmont, SAT, Eastern Bloc, RA, Wiggle Room, Monument-National, slams, ELEKTRA, M pour Montréal, MUTEK, FNC, Piknic… Ne pas contourner ; chercher leurs billetteries.
