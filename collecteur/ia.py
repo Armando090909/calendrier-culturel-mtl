@@ -150,3 +150,31 @@ def styles_lot(concerts: list[dict]) -> dict[int, str]:
     data = lire_json(_appel(prompt, max_tokens=6000))
     ok = {"rock", "pop", "hiphop", "electro", "jazz", "classique", "monde", "folk", "metal", "experimental"}
     return {int(k): v for k, v in data.items() if str(k).isdigit() and v in ok}
+
+
+MODERATION = """Tu modères les propositions d'événements envoyées par le public à un calendrier culturel gratuit
+de l'île de Montréal (spectacles, concerts, théâtre, danse, expositions, vernissages, cinéma, humour, poésie,
+conférences, ateliers culturels, quiz, fêtes). Pour chaque proposition, décide si on la publie.
+
+Publier si : c'est plausiblement un vrai événement culturel ouvert au public, sur l'île de Montréal, avec un titre,
+une date et un lieu cohérents. Une petite salle, un bar, un lancement d'album ou un événement amateur sont acceptés.
+Refuser si : pourriel ou publicité commerciale (vente de produits, services, cryptomonnaie…), texte incohérent ou test
+évident, propos haineux, sexuels, violents ou diffamatoires, événement manifestement hors de l'île de Montréal, activité
+non culturelle (sport, réunion d'affaires, promotion immobilière…), lien suspect.
+En cas de doute sérieux, refuser (une personne vérifiera).
+
+Réponds seulement en JSON : [{{"i": numéro, "publier": true/false, "raison": "quelques mots en français"}}]
+
+Propositions :
+{lot}"""
+
+
+def moderer_lot(propositions: list[dict]) -> dict[int, tuple[bool, str]]:
+    """{i: (publier, raison)} pour chaque proposition du formulaire public."""
+    lot = "\n".join(f"{i}. " + json.dumps(p, ensure_ascii=False) for i, p in enumerate(propositions))
+    rep = lire_json(_appel(MODERATION.format(lot=lot), max_tokens=4000))
+    out = {}
+    for r in rep if isinstance(rep, list) else []:
+        if isinstance(r, dict) and isinstance(r.get("i"), int):
+            out[r["i"]] = (r.get("publier") is True, str(r.get("raison", ""))[:200])
+    return out

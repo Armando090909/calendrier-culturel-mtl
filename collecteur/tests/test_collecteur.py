@@ -134,6 +134,25 @@ class TestAutres(unittest.TestCase):
         self.assertTrue(titres["Fille de laitier"]["annule"])
         self.assertEqual(series[0]["titre"], "Surcharge - Benz Debrosse")
 
+    def test_formulaire_tri_automatique(self):
+        prop = ("Horodateur,Titre de l'événement,Date de l'événement,Heure,Lieu (nom de la salle),Discipline,Courriel,Approuvé\n"
+                "x,Lancement vinyle,2026-11-03,19h,Casa del Popolo,Musique,a@b.c,\n"
+                "x,ACHETEZ CRYPTO,2026-11-04,20h,En ligne,Autre,a@b.c,\n"
+                "x,Show refusé à la main,2026-11-05,20h,Bar Y,Musique,a@b.c,non\n")
+        import tempfile, ia
+        connecteurs.MODERATION.clear()
+        with tempfile.TemporaryDirectory() as t, \
+                mock.patch.object(connecteurs, "F_MODERATION", Path(t) / "m.json"), \
+                mock.patch.object(connecteurs, "telecharger", return_value=Rep(prop)), \
+                mock.patch.object(ia, "disponible", return_value=True), \
+                mock.patch.object(ia, "moderer_lot", return_value={0: (True, "concert"), 1: (False, "pourriel")}) as m:
+            evs, _ = connecteurs.propositions({"url": "x"}, D1, D2)
+            self.assertEqual([e["titre"] for e in evs], ["Lancement vinyle"])
+            self.assertEqual(len(m.call_args[0][0]), 2)  # la ligne « non » n'est pas soumise
+            connecteurs.propositions({"url": "x"}, D1, D2)
+            self.assertEqual(m.call_count, 1)  # décisions gardées en mémoire
+        self.assertEqual(connecteurs.MODERATION[1]["decision"], "mis de côté")
+
     def test_formulaires(self):
         prop = ("Horodateur,Titre de l'événement,Date de l'événement,Heure,Lieu (nom de la salle),Adresse,Discipline,Lien,Courriel,Approuvé\n"
                 "2026-10-20 10:00,Vernissage Rouge,2026-11-07,18 h,Galerie Rouge,123 rue X,Exposition,https://g.org,a@b.c,oui\n"
