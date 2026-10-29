@@ -1,5 +1,6 @@
 {
  "Abbotsford Centre": null,
+ "AdMare": null,
  "Adélard": null,
  "Agora de la danse": {
   "alias": [
@@ -53,6 +54,16 @@
   "lat": 45.5329,
   "lon": -73.6187,
   "quartier": "Mile-Ex"
+ },
+ "Bar Nestor": {
+  "lat": 45.53533,
+  "lon": -73.60105,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "Bar de Courcelle": {
+  "lat": 45.4729,
+  "lon": -73.58881,
+  "quartier": "Le Sud-Ouest"
  },
  "Basilique Notre-Dame": null,
  "Batiment 7": {
@@ -126,7 +137,9 @@
   "lon": -73.677,
   "quartier": "Saint-Laurent"
  },
+ "Bibliothèques, cafés, musées et autres lieux du Grand Montréal": null,
  "Biosphère": null,
+ "Bistro de Beta Bloc": null,
  "Blouin Division": {
   "adresse": "2020, rue William, Montréal",
   "alias": [],
@@ -148,6 +161,16 @@
   "quartier": "Saint-Henri"
  },
  "Brasserie Beaubien": null,
+ "Brasserie des Patriotes": {
+  "lat": 45.59033,
+  "lon": -73.51676,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
+ },
+ "Burgundy Lion": {
+  "lat": 45.48277,
+  "lon": -73.5752,
+  "quartier": "Le Sud-Ouest"
+ },
  "Burton Cummings Theatre": null,
  "Cabaret Fouf": null,
  "Cabaret Lion d'Or": {
@@ -380,6 +403,11 @@
   "lon": -73.56,
   "quartier": "Pointe-Saint-Charles"
  },
+ "Espace des possibles": {
+  "lat": 45.54035,
+  "lon": -73.59924,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Espace transmission": null,
  "Esplanade Tranquille": null,
  "Exhibit A": {
@@ -532,12 +560,23 @@
  "Grande Bibliothèque de BAnQ - Auditorium": null,
  "Grizzly Fuzz": null,
  "Groupe Intervention Vidéo": null,
+ "Grumpy's Bar": {
+  "lat": 45.49613,
+  "lon": -73.57574,
+  "quartier": "Ville-Marie"
+ },
  "Hall Est du Stade olympique": {
   "lat": 45.558,
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
  "History": null,
+ "Hollywood Theatre": null,
+ "Hurley's Irish Pub": {
+  "lat": 45.49672,
+  "lon": -73.57465,
+  "quartier": "Ville-Marie"
+ },
  "Igloofest": null,
  "Impérial Bell": null,
  "Jardin botanique": {
@@ -545,6 +584,7 @@
   "lon": -73.56124,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "L'Adversaire – Pub et boutique ludiques": null,
  "L'Entrepôt – maison de la culture de Lachine": {
   "lat": 45.433,
   "lon": -73.686,
@@ -562,6 +602,7 @@
  },
  "L'Espace La Risée": null,
  "L'Espace Mandeville": null,
+ "L'Espace culturel du Quartier Saint-Nicolas": null,
  "L'Illusion, Théâtre de marionnettes": {
   "lat": 45.53372,
   "lon": -73.60501,
@@ -670,6 +711,11 @@
  "Le Zaricot": null,
  "Le Zénith Promutuel Assurances": null,
  "Les Diffusions Pointe-Valaine": null,
+ "Les Sœurs Grises Vieux-Rosemont": {
+  "lat": 45.55016,
+  "lon": -73.57346,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Livart": {
   "lat": 45.521,
   "lon": -73.5785,
@@ -700,6 +746,7 @@
   "lon": -73.5635,
   "quartier": "Quartier des spectacles"
  },
+ "Madame Smith": null,
  "Maison Antoine-Beaudry": {
   "lat": 45.67,
   "lon": -73.49,
@@ -808,6 +855,11 @@
   "quartier": "Quartier des spectacles"
  },
  "Meadowvale Theatre": null,
+ "Microbrasserie 4 Origines": {
+  "lat": 45.47803,
+  "lon": -73.78587,
+  "quartier": ""
+ },
  "Molson Canadian Centre at Casino New-Brunswick": null,
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
@@ -820,6 +872,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Moonshine": null,
+ "Multiple venues": null,
  "Musée McCord Stewart": {
   "lat": 45.5045,
   "lon": -73.5737,
@@ -866,6 +919,11 @@
   "lat": 45.4925,
   "lon": -73.6178,
   "quartier": "Côte-des-Neiges"
+ },
+ "Origine Brass": {
+  "lat": 45.47803,
+  "lon": -73.78587,
+  "quartier": ""
  },
  "P'tit Ours": {
   "lat": 45.5195,
@@ -962,6 +1020,11 @@
   "quartier": "Vieux-Montréal"
  },
  "Premier Acte": null,
+ "Pub Bishop & Bagg": {
+  "lat": 45.52161,
+  "lon": -73.58937,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Quai 5160 – Maison de la culture de Verdun": {
   "lat": 45.448,
   "lon": -73.577,
@@ -972,6 +1035,7 @@
   "lon": -73.582,
   "quartier": "Plateau"
  },
+ "Regart, centre d'artistes en art actuel": null,
  "Rio Theatre": null,
  "Rogers Arena": null,
  "Rue Ontario Est": {
@@ -1002,6 +1066,11 @@
   "lat": 45.4986,
   "lon": -73.5797,
   "quartier": "Centre-ville"
+ },
+ "Salle Claude-Champagne": {
+  "lat": 45.50909,
+  "lon": -73.60908,
+  "quartier": "Outremont"
  },
  "Salle Claude-Legault": null,
  "Salle Claudia-Ebacher": null,
@@ -1037,6 +1106,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Salle d'exposition": null,
+ "Salle principale": null,
  "Salle Émile-Legault": {
   "lat": 45.511,
   "lon": -73.674,
@@ -1178,6 +1248,7 @@
   "lon": -73.59,
   "quartier": "Sud-Ouest"
  },
+ "Théâtre Petit Champlain": null,
  "Théâtre Prospero": {
   "lat": 45.522,
   "lon": -73.558,
@@ -1236,6 +1307,11 @@
   "lon": -73.565,
   "quartier": "Quartier latin"
  },
+ "Typhoon Lounge": {
+  "lat": 45.47368,
+  "lon": -73.62427,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Union des familles d'Ahuntsic": {
   "lat": 45.54809,
   "lon": -73.67267,
@@ -1260,6 +1336,11 @@
   "quartier": "Quartier des spectacles"
  },
  "Vogue Theatre": null,
+ "Wiggle Room": {
+  "lat": 45.51608,
+  "lon": -73.57779,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "WinSport Event Centre": null,
  "Wishbone Galerie d'art": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
@@ -1328,6 +1409,7 @@
   "lon": -73.60502,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Église Sainte-Hilda": null,
  "Église St-Andrew et St-Paul": {
   "lat": 45.4995,
   "lon": -73.581,
