@@ -24,7 +24,7 @@ from bs4 import BeautifulSoup
 
 import ia
 from ics import parse_ics
-from normalisation import plat
+from normalisation import PAS_DES_SALLES, plat
 
 MTL = ZoneInfo("America/Toronto")
 # Format habituel des robots (« Mozilla/5.0 (compatible; Nom/version; +site) ») : certains sites refusent les autres.
@@ -111,6 +111,10 @@ def ville_csv(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             continue  # activité en ligne : pas une sortie
         lieu = _col(row, "titre_adresse", "lieu", "nom_lieu", "nom_emplacement", "lieu_nom", "titre_lieu",
                     "nom_du_lieu", "installation", "nom_installation")
+        if plat(lieu) == "en ligne":
+            continue
+        if plat(lieu) in PAS_DES_SALLES:  # « En salle », « À l'extérieur » : pas un nom de salle (vu le 28 oct. 2026)
+            lieu = ""
         lat, lon = _col(row, "lat", "latitude", "y"), _col(row, "long", "lon", "longitude", "x")
         if not lieu and re.fullmatch(r"-?\d+\.\d+", lat or "") and re.fullmatch(r"-?\d+\.\d+", lon or ""):
             lieu = f"@{lat},{lon}"  # pas de nom : la collecte cherche la salle connue la plus proche

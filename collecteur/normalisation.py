@@ -168,6 +168,11 @@ def dans_ile(lat: float | None, lon: float | None) -> bool:
 
 
 # ---------- Salles ----------
+# Valeurs qui ne sont pas des noms de salle (colonne « emplacement » de la Ville, cases vides…)
+PAS_DES_SALLES = {"en salle", "a l exterieur", "en ligne", "nan", "none", "plusieurs salles", "montreal", "divers lieux",
+                  "lieu a confirmer", "a confirmer", "virtuel", "online"}
+
+
 class Lieux:
     """Table des salles : nom canonique -> {lat, lon, quartier, alias[]}. Enregistrée dans lieux.json."""
 
@@ -207,6 +212,8 @@ class Lieux:
         return None
 
     def ajouter(self, nom: str, info: dict | None, alias: str | None = None) -> str:
+        if plat(nom) in PAS_DES_SALLES:
+            return "Lieu à confirmer"
         if nom not in self.data:
             self.data[nom] = info
             self._indexer(nom, nom)
@@ -222,6 +229,8 @@ class Lieux:
         import math
         best, nom_best = max_km, None
         for nom, info in self.data.items():
+            if plat(nom) in PAS_DES_SALLES:
+                continue
             if isinstance(info, dict) and info.get("lat") is not None:
                 dx = (info["lon"] - lon) * 111.32 * math.cos(math.radians(lat))
                 dy = (info["lat"] - lat) * 110.57

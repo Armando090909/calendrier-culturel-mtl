@@ -1,6 +1,6 @@
 "use strict";
 (function(){
-const DISC=[["theatre","Théâtre"],["musique","Musique"],["danse","Danse"],["cirque","Cirque"],["humour","Humour et cabaret"],["cinema","Cinéma"],["poesie","Poésie, slam et rap battle"],["lettres","Littérature"],["conference","Conférences"],["jeune","Jeune public"],["atelier","Ateliers"],["fete","Fêtes et célébrations"],["quiz","Quiz"],["expo","Vernissages"],["autre","Autre / à préciser"]];
+const DISC=[["theatre","Théâtre"],["musique","Musique"],["danse","Danse"],["cirque","Cirque"],["humour","Humour et cabaret"],["cinema","Cinéma"],["poesie","Poésie, slam et rap battle"],["lettres","Littérature"],["conference","Conférences"],["jeune","Jeune public"],["atelier","Ateliers"],["fete","Fêtes et célébrations"],["quiz","Quiz"],["expo","Expositions"],["autre","Autre / à préciser"]];
 const DISC_LABEL=Object.fromEntries(DISC);
 // Stations de métro (coordonnées approximatives) et lignes, dans l'ordre
 const STN={"Angrignon":[45.4462,-73.6036],"Monk":[45.4510,-73.5932],"Jolicoeur":[45.4570,-73.5818],"Verdun":[45.4594,-73.5718],"De l'Église":[45.4620,-73.5668],"LaSalle":[45.4708,-73.5662],"Charlevoix":[45.4782,-73.5695],"Lionel-Groulx":[45.4829,-73.5797],"Atwater":[45.4898,-73.5862],"Guy-Concordia":[45.4958,-73.5795],"Peel":[45.5010,-73.5750],"McGill":[45.5040,-73.5717],"Place-des-Arts":[45.5080,-73.5687],"Saint-Laurent":[45.5107,-73.5649],"Berri-UQAM":[45.5153,-73.5612],"Beaudry":[45.5190,-73.5560],"Papineau":[45.5236,-73.5522],"Frontenac":[45.5332,-73.5521],"Préfontaine":[45.5418,-73.5545],"Joliette":[45.5470,-73.5513],"Pie-IX":[45.5536,-73.5516],"Viau":[45.5610,-73.5476],"Assomption":[45.5694,-73.5469],"Cadillac":[45.5770,-73.5464],"Langelier":[45.5829,-73.5432],"Radisson":[45.5893,-73.5398],"Honoré-Beaugrand":[45.5965,-73.5352],
@@ -153,8 +153,9 @@ function detailHTML(e){
 }
 function renderChips(){
   const counts={};D.events.forEach(e=>discsFiltre(e).forEach(k=>counts[k]=(counts[k]||0)+1));
+  {const t=iso(new Date());counts.expo=(counts.expo||0)+D.expos.filter(x=>x.fin>=t&&(!x.discipline||x.discipline==="expo")).length}
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
-    return `<button type="button" class="chip" style="--c:var(--${k})" data-k="${k}" data-d="${k}" aria-pressed="${n&&st.on[k]?"true":"false"}" ${n?"":"disabled"}><span class="dot"></span>${l} <span class="n">${n||"aucun"}</span></button>`}).join("");
+    return `<button type="button" class="chip" style="--c:var(--${k})" data-k="${k}" data-d="${k}" aria-pressed="${n&&(k==="expo"?st.view==="musee"||st.on.expo:st.on[k])?"true":"false"}" ${n?"":"disabled"}><span class="dot"></span>${l} <span class="n">${n||"aucun"}</span></button>`}).join("");
 }
 const inRange=s=>s>=D.debut&&s<=D.fin;
 function weekDays(){return [0,1,2,3,4,5,6].map(i=>addDays(st.week,i))}
@@ -252,7 +253,6 @@ function renderFestivals(){
   const moisLbl=k=>k==="zz"?"Dates à venir":`${MOIS_N[Number(k.slice(5))-1]} ${k.slice(0,4)}`;
   const grille=xs=>`<div class="festgrid">${xs.map(x=>festCarte(x.f)).join("")}</div>`;
   el.innerHTML=`<div class="festview">
-    <p class="festintro">Les festivals de l'île, de l'édition en cours à celles de l'an prochain. Quand la programmation d'un festival est en ligne, ses spectacles s'ajoutent au calendrier : clique « Programmation au calendrier ». Les disciplines choisies plus haut filtrent cette liste.</p>
     <h2 class="label">En cours · ${cours.length}</h2>${cours.length?grille(cours):'<p class="empty">Aucun festival en cours pour ces disciplines.</p>'}
     <h2 class="label">Dans les 3 prochains mois · ${prochains.length}</h2>${prochains.length?grille(prochains):'<p class="empty">Rien d\'annoncé pour l\'instant.</p>'}
     <h2 class="label">Plus tard dans l'année</h2>
@@ -311,7 +311,6 @@ function renderMusees(){
   const par={};L.forEach(x=>(par[x.lieu]=par[x.lieu]||[]).push(x));
   const nt={};tous.forEach(x=>{const t=typeExpo(x);nt[t]=(nt[t]||0)+1});
   $("view").innerHTML=`<div class="festview expoview">
-    <p class="festintro">Les expositions en cours, des musées aux petites galeries. Les vernissages (des soirées, avec une heure) sont dans le calendrier.</p>
     <div class="xfiltres" role="group" aria-label="Type de lieu">${TYPES_EXPO.map(([k,l])=>`<button type="button" class="xf" data-xtype="${k}" aria-pressed="${(st.xtype||"")===k}">${l} <span class="n">${k?nt[k]||0:tous.length}</span></button>`).join("")}</div>
     <div class="xquart" role="group" aria-label="Quartier"><span class="xq-l">Quartier :</span><button type="button" class="xq" data-xq="" aria-pressed="${!st.xq}">tous</button>${Object.keys(nq).sort((a,b)=>nq[b]-nq[a]||a.localeCompare(b,"fr")).map(q=>`<button type="button" class="xq" data-xq="${esc(q)}" aria-pressed="${st.xq===q}">${esc(q)} <span class="n">${nq[q]}</span></button>`).join("")}</div>
     ${fin.length?`<h2 class="label">Dernière chance · se termine dans moins de 2 semaines</h2><div class="xjour">${fin.map(x=>carte(x,true)).join("")}</div>`:""}
@@ -320,6 +319,8 @@ function renderMusees(){
     ${Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(l=>`<section class="musee"><h3 class="fmois">${esc(l)}</h3>${lieuHTML({lieu:l})}<div class="xjour">${par[l].sort((a,b)=>a.fin.localeCompare(b.fin)).map(x=>carte(x,false)).join("")}</div></section>`).join("")||'<div class="empty">Aucune exposition pour ce choix.</div>'}
   </div>`;
 }
+function bandeauExpos(){const t=iso(new Date()),n=D.expos.filter(x=>x.fin>=t&&(!x.discipline||x.discipline==="expo")).length;
+  return n?`<button type="button" class="bandexpos" data-act="expos"><b>${n} expositions en cours</b> dans les musées et galeries · voir la liste →</button>`:""}
 function renderView(){
   const v=visible(),el=$("view"),useDist=origin()&&st.sort==="dist";
   $("sortSeg").hidden=!origin()||st.view==="month";
@@ -337,7 +338,7 @@ function renderView(){
       if(d(s).getMonth()!==m-1)break}
     el.innerHTML=`<div class="month">${["lun.","mar.","mer.","jeu.","ven.","sam.","dim."].map(x=>`<div class="mhead">${x}</div>`).join("")}${cells.join("")}</div>`;
   }else if(st.view==="week"){
-    el.innerHTML=`<div class="board">${weekDays().map(s=>{
+    el.innerHTML=`${st.on.expo&&!st.fest?bandeauExpos():""}<div class="board">${weekDays().map(s=>{
       const list=inRange(s)?v.filter(e=>e.date===s).sort(useDist?byDist:byTime):[];
       const xc=expoCarte(s);
       const plus=list.length-MAX_SEM;
@@ -346,7 +347,7 @@ function renderView(){
         ${list.length?`<div class="rows">${list.slice(0,MAX_SEM).map(rowHTML).join("")}</div>`:""}${plus>0?`<button type="button" class="more" data-act="jour" data-d="${s}">+ ${plus} autre${plus>1?"s":""} · voir la journée →</button>`:""}${xc}${list.length||xc?"":`<div class="empty">${inRange(s)?"Rien pour ces critères.":"Hors de la période couverte."}</div>`}</section>`}).join("")}</div>`;
   }else{
     const list=v.filter(e=>e.date===st.day).sort(useDist?byDist:byTime);
-    el.innerHTML=`${st.fest?"":festChips(st.day)}<div class="dayhead"><button type="button" class="btn ghost" data-act="semaine">← Toute la semaine</button><h2 class="label">${st.day===iso(new Date())?`<i class="aujtag">aujourd'hui</i> `:""}${fmtLong(st.day)} · ${list.length} activité${list.length>1?"s":""}</h2></div>
+    el.innerHTML=`${st.fest?"":festChips(st.day)}${st.on.expo&&!st.fest?bandeauExpos():""}<div class="dayhead"><button type="button" class="btn ghost" data-act="semaine">← Toute la semaine</button><h2 class="label">${st.day===iso(new Date())?`<i class="aujtag">aujourd'hui</i> `:""}${fmtLong(st.day)} · ${list.length} activité${list.length>1?"s":""}</h2></div>
       <div class="dayview">${list.map(detailHTML).join("")||(exposDu(st.day).length?'<div class="empty">Aucun spectacle daté pour ces critères ce jour-là.</div>':'<div class="empty">Rien pour ces critères ce jour-là.</div>')}</div>${exposJourHTML(st.day)}`;
   }
 }
@@ -406,7 +407,10 @@ function renderFooter(){
 
 $("pt").innerHTML=`<option value="">— n'importe où —</option>`+POINTS.map(p=>`<option value="${esc(p[0])}">Métro ${esc(p[0])}</option>`).join("")+`<option value="addr">Une adresse…</option>`;
 
-$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;st.on[b.dataset.k]=!st.on[b.dataset.k];render()});
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;
+  // « Expositions » : les vernissages s'ajoutent au calendrier, et la liste des expositions en cours s'ouvre
+  if(b.dataset.k==="expo"){if(st.view==="musee"){st.on.expo=false;st.view="week"}else{st.on.expo=true;sortirRecherche();st.view="musee";st.fest=null}render();return}
+  st.on[b.dataset.k]=!st.on[b.dataset.k];if(st.view==="musee")st.view="week";render()});
 $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||b.disabled)return;
   if(st.view==="day"&&st.day===b.dataset.d){st.week=monday(st.day);st.view="week"}else{st.day=b.dataset.d;st.view="day"}render()});
 $("view").addEventListener("click",e=>{
@@ -417,6 +421,7 @@ $("view").addEventListener("click",e=>{
   const xq=e.target.closest("[data-xq]");if(xq){st.xq=xq.dataset.xq;render();return}
   const fb=e.target.closest("[data-fest]");if(fb){sortirRecherche();ouvrirFestival(fb.dataset.fest);return}
   const xj=e.target.closest('[data-act="jour"]');if(xj){st.day=xj.dataset.d;st.view="day";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}
+  if(e.target.closest('[data-act="expos"]')){st.view="musee";render();window.scrollTo({top:$("view").getBoundingClientRect().top+window.scrollY-80});return}
   if(e.target.closest('[data-act="semaine"]')){st.week=monday(st.day);st.view="week";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}
   const b=e.target.closest("[data-ics]");if(b)saveIcs(Number(b.dataset.ics));
 });
