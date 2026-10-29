@@ -385,7 +385,15 @@ def page_rendue(url: str, attente_ms: int = 2500) -> str:
         page.mouse.wheel(0, 4000)
         page.wait_for_timeout(500)
     page.wait_for_timeout(attente_ms)
-    return page.content()
+    html = page.content()
+    # Beaucoup de sites (Wix, Squarespace, billetteries intégrées) affichent leur calendrier dans un cadre (iframe) :
+    # on ajoute le contenu de chaque cadre à la page.
+    for cadre in page.frames[1:]:
+        try:
+            html += "\n<section data-cadre>" + cadre.content() + "</section>"
+        except Exception:
+            pass
+    return html
 
 
 def fermer_navigateur() -> None:
