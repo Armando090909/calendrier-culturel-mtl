@@ -416,7 +416,7 @@ function renderFooter(){
   const auj=iso(new Date()),ecart=Math.round((new Date(auj+"T12:00")-new Date(D.miseAJour+"T12:00"))/864e5);
   const quand=ecart<=0?"ce matin":ecart===1?"hier":`${JOURS[new Date(D.miseAJour+"T12:00").getDay()].toLowerCase()} dernier`;
   const n=D.events.filter(e=>e.date>=auj).length;
-  $("majInfo").textContent=`Tournée des salles faite ${quand} ✓  ·  ${n.toLocaleString("fr-CA")} sorties au menu d'ici le ${fmtLong(D.fin).toLowerCase().replace(/^\S+ /,"")}`;
+  $("majInfo").textContent=`Mise à jour ${quand} ✓  ·  ${n.toLocaleString("fr-CA")} sorties au menu d'ici le ${fmtLong(D.fin).toLowerCase().replace(/^\S+ /,"")}`;
 }
 
 $("pt").innerHTML=`<option value="">— n'importe où —</option>`+POINTS.map(p=>`<option value="${esc(p[0])}">Métro ${esc(p[0])}</option>`).join("")+`<option value="addr">Une adresse…</option>`;
