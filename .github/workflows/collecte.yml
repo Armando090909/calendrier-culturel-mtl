@@ -49,6 +49,7 @@ jobs:
     timeout-minutes: 120
     permissions:
       contents: write
+      issues: write  # avis « proposition à juger »
     steps:
       - uses: actions/checkout@v4
 
@@ -98,6 +99,13 @@ jobs:
             git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort
             git push
           fi
+
+      # Un avis (issue GitHub, donc un courriel) par proposition du formulaire mise de côté par le tri automatique
+      - name: Avis propositions à juger
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python outils/avis_propositions.py || true
 
       # Fait échouer la collecte (donc un courriel de GitHub) si l'API Claude a refusé : crédits épuisés ou clé refusée.
       # Le site est quand même publié avec ce qui a été collecté.
