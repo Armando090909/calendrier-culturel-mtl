@@ -35,7 +35,7 @@ let st={on:Object.fromEntries(DISC.map(x=>[x[0],x[0]===DEPART])),view:"week",day
 st.v=2; // v2 : une seule catégorie au départ ; les choix enregistrés avant v2 sont ignorés
 try{const s=JSON.parse(localStorage.getItem("cal-mtl")||"null");if(s&&s.on&&s.v===2)Object.assign(st,s,{on:Object.assign(st.on,s.on)})}catch(e){}
 st.pt="";st.rayon=0;st.sort="time";st.custom=null;st.fest=null;st.q="";
-st.seul=null;
+st.seul=null;st.cible=null;
 st.day=null;st.week=null;st.month=null; // on ouvre toujours sur aujourd'hui (les catégories choisies sont gardées)
 st.view="week"; // on ouvre toujours en mode Semaine, sur la semaine en cours // l'outil « Près de » est retiré
 const save=()=>{try{localStorage.setItem("cal-mtl",JSON.stringify(st))}catch(e){}};
@@ -144,10 +144,11 @@ function detailHTML(e){
   const actions=`<div class="actions">
         <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?"Acheter des billets":/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?"Voir l'événement":"Billets et infos"}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">Itinéraire</a>
+        <button type="button" class="btn ghost" data-partage="${e._i}">Partager</button>
       </div>`;
   const extra=`${ecoute}${calHTML(e)}`;
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
-  return `<article class="ev det" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
+  return `<article class="ev det${st.cible===e._i?" flash":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
@@ -442,7 +443,15 @@ $("view").addEventListener("click",e=>{
   if(e.target.closest('[data-act="expos"]')){st.view="musee";st.seul=null;render();window.scrollTo({top:$("view").getBoundingClientRect().top+window.scrollY-80});return}
   if(e.target.closest('[data-act="semaine"]')){st.week=monday(st.day);st.view="week";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}
   const b=e.target.closest("[data-ics]");if(b)saveIcs(Number(b.dataset.ics));
+  const pb=e.target.closest("[data-partage]");if(pb)partager(byId[pb.dataset.partage],pb);
 });
+function partager(ev,bt){if(!ev)return;
+  const url=ev.ics?`https://ccmtl.ca/e/${ev.ics}.html`:`https://ccmtl.ca/?d=${ev.date}`;
+  const d={title:ev.titre,text:`${ev.titre} · ${fmtLong(ev.date)}${ev.heure?" · "+ev.heure.replace(":"," h "):""} · ${ev.lieu}`,url};
+  if(navigator.share){navigator.share(d).catch(()=>{});return}
+  const fini=()=>{bt.textContent="Lien copié ✓";setTimeout(()=>{bt.textContent="Partager"},2500)};
+  try{navigator.clipboard.writeText(url).then(fini,()=>prompt("Copie ce lien :",url))}catch(x){prompt("Copie ce lien :",url)}
+}
 let qT=null;
 $("q").addEventListener("input",e=>{clearTimeout(qT);qT=setTimeout(()=>{st.q=e.target.value;render()},180)});
 $("q").addEventListener("keydown",e=>{if(e.key==="Escape"){e.target.value="";st.q="";render()}});
@@ -525,6 +534,14 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
     if(best&&best.km<=1.3)c.metro=best}
   if(!D.debut&&D.semaine){D.debut=D.semaine[0];D.fin=D.semaine[D.semaine.length-1]}
   if(!D.completJusqua)D.completJusqua=D.fin;
-  renderFooter();render();
+  renderFooter();
+  const P=new URLSearchParams(location.search),pe=P.get("e"),pd=P.get("d");let cible=null;
+  if(pe)cible=D.events.find(x=>x.ics===pe)||null;
+  if(cible){st.day=cible.date;st.view="day";discsFiltre(cible).forEach(k=>st.on[k]=true)}
+  else if(pd&&/^\d{4}-\d{2}-\d{2}$/.test(pd)&&inRange(pd)){st.day=pd;st.view="day"}
+  render();
+  // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
+  if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700);
+    setTimeout(()=>{st.cible=null},5000)}
 }).catch(()=>{$("view").innerHTML='<div class="empty">Les événements n\'ont pas pu être chargés. Rechargez la page.</div>'});
 })();

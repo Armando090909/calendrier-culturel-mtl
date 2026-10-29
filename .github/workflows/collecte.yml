@@ -141,6 +141,9 @@ jobs:
           V=$(date +%Y%m%d%H%M)
           sed -i -E "s#(href|src)=\"(app\.js|style\.css)(\?v=[0-9]+)?\"#\1=\"\2?v=$V\"#g" docs/*.html
           grep -h -o -E '(app|style)[.](js|css)[?]v=[0-9]+' docs/*.html | sort -u || true
+      # Pages pour Google et les aperçus de partage : une par événement, une par jour, sitemap.xml
+      - name: Pages des événements et des jours
+        run: python3 outils/pages.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
