@@ -9,6 +9,7 @@ Format d'une série (exposition ou pièce « à l'affiche ») :
 from __future__ import annotations
 
 import hashlib
+import atexit
 import csv
 import io
 import json
@@ -358,6 +359,45 @@ def extraire_avec_memoire(url: str, texte: str, debut: date, fin: date) -> dict:
     return data
 
 
+_NAV = {}  # navigateur partagé par toutes les pages d'une collecte
+
+
+def page_rendue(url: str, attente_ms: int = 2500) -> str:
+    """HTML d'une page après exécution de son JavaScript, dans Chrome sans fenêtre (Playwright).
+    Le même nom de robot que pour les autres téléchargements. Les images, polices et vidéos ne sont pas chargées."""
+    if "page" not in _NAV:
+        from playwright.sync_api import sync_playwright  # importé seulement si une source en a besoin
+        _NAV["pw"] = sync_playwright().start()
+        _NAV["nav"] = _NAV["pw"].chromium.launch()
+        ctx = _NAV["nav"].new_context(user_agent=UA, locale="fr-CA", viewport={"width": 1280, "height": 2000})
+        ctx.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
+        _NAV["page"] = ctx.new_page()
+        atexit.register(fermer_navigateur)
+    page = _NAV["page"]
+    rep = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+    if rep is not None and rep.status >= 400:
+        raise RuntimeError(f"{rep.status} {rep.status_text} (navigateur)")
+    try:
+        page.wait_for_load_state("networkidle", timeout=15000)
+    except Exception:
+        pass  # certains sites ne se calment jamais (publicité, sondages) : on lit quand même
+    for _ in range(3):  # listes chargées au défilement
+        page.mouse.wheel(0, 4000)
+        page.wait_for_timeout(500)
+    page.wait_for_timeout(attente_ms)
+    return page.content()
+
+
+def fermer_navigateur() -> None:
+    try:
+        if "nav" in _NAV:
+            _NAV["nav"].close()
+            _NAV["pw"].stop()
+    except Exception:
+        pass
+    _NAV.clear()
+
+
 def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     if not ia.disponible():
         print("  (sautée : pas de clé ANTHROPIC_API_KEY)")
@@ -367,7 +407,9 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     vues, suivis = set(pages), set()
     for url in pages:
         try:
-            html = telecharger(url, "text/html").text
+            # « navigateur: true » : site en JavaScript ; un vrai navigateur (Chrome invisible) affiche la page d'abord.
+            # Les liens suivis (« details ») restent lus normalement, sauf s'ils sont du même site en JavaScript.
+            html = page_rendue(url) if cfg.get("navigateur") else telecharger(url, "text/html").text
         except Exception as exc:
             print(f"  page illisible {url} : {exc}")
             DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")

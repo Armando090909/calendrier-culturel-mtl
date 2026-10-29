@@ -90,8 +90,8 @@ sources:
   - {nom: Théâtre d'Aujourd'hui, cle: theatre, type: page_ia, url: "https://theatredaujourdhui.qc.ca/", lieu: "Théâtre d'Aujourd'hui", discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Théâtre Denise-Pelletier, cle: theatre, type: page_ia, url: "https://www.denise-pelletier.qc.ca/", lieu: Théâtre Denise-Pelletier, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Usine C, cle: theatre, type: page_ia, url: "https://usine-c.com/", lieu: Usine C, jours_semaine: [0, 3]}
-  - {nom: Centaur, cle: theatre, type: page_ia, url: "https://centaurtheatre.com/fr/", lieu: Théâtre Centaur, discipline: theatre, jours_semaine: [0, 3]}
-  - {nom: Centre Segal, cle: theatre, type: page_ia, url: "https://www.segalcentre.org/fr/home", lieu: Centre Segal, jours_semaine: [0, 3]}
+  - {nom: Centaur, cle: theatre, type: page_ia, url: "https://centaurtheatre.com/fr/", lieu: Théâtre Centaur, discipline: theatre, jours_semaine: [0, 3], navigateur: true}
+  - {nom: Centre Segal, cle: theatre, type: page_ia, url: "https://www.segalcentre.org/fr/home", lieu: Centre Segal, jours_semaine: [0, 3], navigateur: true}
   - {nom: Espace Libre, cle: theatre, type: page_ia, url: "http://espacelibre.qc.ca/", lieu: Espace Libre, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: MAI, cle: theatre, type: page_ia, url: "https://m-a-i.qc.ca/", lieu: "Montréal, arts interculturels (MAI)", jours_semaine: [0, 3]}
   - {nom: Maison Théâtre, cle: theatre, type: page_ia, url: "https://www.maisontheatre.com/", lieu: Maison Théâtre, discipline: theatre, jours_semaine: [0, 3]}
@@ -120,7 +120,7 @@ sources:
   - {nom: Théâtre Sainte-Catherine (impro, humour), cle: salles, type: page_ia, url: "http://theatresaintecatherine.com/", lieu: Théâtre Sainte-Catherine, jours_semaine: [0, 3]}
 
   # ---------- Jeune public ----------
-  - {nom: La Mèche courte (festival jeune public), cle: salles, type: page_ia, url: "https://www.lamechecourte.ca/programmation", jours_semaine: [0, 3]}
+  - {nom: La Mèche courte (festival jeune public), cle: salles, type: page_ia, url: "https://www.lamechecourte.ca/programmation", jours_semaine: [0, 3], navigateur: true}
   - {nom: Tourisme Montréal – sorties en famille, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/guide-culturel-enfants-ados", jours_semaine: [0]}
   - {nom: Place des Arts junior, cle: salles, type: page_ia, url: "https://www.placedesarts.com/discipline/jeunes-publics", jours_semaine: [0, 3]}
 
@@ -138,10 +138,10 @@ sources:
   - {nom: Théâtre Fairmount, cle: salles, type: page_ia, url: "https://theatrefairmount.com/", lieu: Théâtre Fairmount, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Club Soda, cle: salles, type: page_ia, url: "https://clubsoda.ca/", lieu: Club Soda, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Bar Le Ritz PDB, cle: salles, type: page_ia, url: "http://www.barleritzpdb.com/", lieu: Bar Le Ritz PDB, discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: Foufounes Électriques, cle: salles, type: page_ia, url: "https://foufouneselectriques.com/", lieu: Foufounes Électriques, discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Foufounes Électriques, cle: salles, type: page_ia, url: "https://foufouneselectriques.com/", lieu: Foufounes Électriques, discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
   - {nom: Newspeak, cle: salles, type: page_ia, url: "https://newspeakmtl.com/", lieu: Newspeak, discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: Café Campus / Petit Campus, cle: salles, type: page_ia, url: "https://cafecampus.com/", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
+  - {nom: Café Campus / Petit Campus, cle: salles, type: page_ia, url: "https://cafecampus.com/", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
   - {nom: Théâtre St-Denis, cle: salles, type: page_ia, url: "https://theatrestdenis.com/", lieu: Théâtre St-Denis, jours_semaine: [0, 3]}
 
   # ---------- Galeries d'art contemporain (membres montréalais de l'AGAC, agac.ca/galeries) : expositions et vernissages ----------
@@ -178,13 +178,13 @@ sources:
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
   - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Quai des Brumes", cle: salles, type: page_ia, url: "https://quaidesbrumes.ca/", lieu: "Quai des Brumes", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Quai des Brumes", cle: salles, type: page_ia, url: "https://quaidesbrumes.ca/", lieu: "Quai des Brumes", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
   - {nom: "Le Ministère", cle: salles, type: page_ia, url: "https://leministere.ca/", lieu: "Le Ministère", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Le Belmont", cle: salles, type: page_ia, url: "https://www.lebelmont.ca/", lieu: "Le Belmont", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Ausgang Plaza", cle: salles, type: page_ia, url: "https://www.ausgangplaza.com/evenements", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3]}
-  - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3]}
+  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
+  - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3], navigateur: true}
   - {nom: "Le Studio TD", cle: salles, type: page_ia, url: "https://lestudiotd.com/fr", lieu: "Le Studio TD", jours_semaine: [0, 3]}
   - {nom: "Casa del Popolo – La Toscadura", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-toscadura", lieu: "La Toscadura", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Casa del Popolo – P'tit Ours", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/ptit-ours", lieu: "P'tit Ours", discipline: musique, jours_semaine: [0, 2, 4]}
@@ -197,13 +197,13 @@ sources:
   - {nom: "Laugh It Off MTL (humour, scènes ouvertes)", cle: salles, type: page_ia, url: "https://www.laughitoffmtl.ca/fr", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "Cabaret Mado (drag)", cle: salles, type: page_ia, url: "http://www.mado.qc.ca/", lieu: "Cabaret Mado", discipline: humour, jours_semaine: [0]}
   - {nom: "Wiggle Room (burlesque, cabaret)", cle: salles, type: page_ia, url: "https://www.wiggleroom.ca/fr/shows", lieu: "Wiggle Room", jours_semaine: [0]}
-  - {nom: "Caf' Conc' (cabaret)", cle: salles, type: page_ia, url: "https://cafeconcert.ca/", lieu: "Caf' Conc'", jours_semaine: [0]}
+  - {nom: "Caf' Conc' (cabaret)", cle: salles, type: page_ia, url: "https://cafeconcert.ca/", lieu: "Caf' Conc'", jours_semaine: [0], navigateur: true}
   # ---------- Petits théâtres, création, danse, multidisciplinaire ----------
   - {nom: "Espace La Risée", cle: salles, type: page_ia, url: "https://www.espacelarisee.com/accueil-2/", lieu: "Espace La Risée", discipline: theatre, jours_semaine: [0]}
-  - {nom: "InfiniTheatre", cle: salles, type: page_ia, url: "http://www.infinitheatre.com/", discipline: theatre, jours_semaine: [0]}
+  - {nom: "InfiniTheatre", cle: salles, type: page_ia, url: "http://www.infinitheatre.com/", discipline: theatre, jours_semaine: [0], navigateur: true}
   - {nom: "Théâtre MainLine", cle: salles, type: page_ia, url: "http://www.mainlinetheatre.ca/", lieu: "Théâtre MainLine", jours_semaine: [0]}
   - {nom: "Repercussion Theatre", cle: salles, type: page_ia, url: "http://www.repercussiontheatre.com/", discipline: theatre, jours_semaine: [0]}
-  - {nom: "Théâtre de l'Esquisse", cle: salles, type: page_ia, url: "https://theatredelesquisse.qc.ca/", lieu: "Théâtre de l'Esquisse", discipline: theatre, jours_semaine: [0]}
+  - {nom: "Théâtre de l'Esquisse", cle: salles, type: page_ia, url: "https://theatredelesquisse.qc.ca/", lieu: "Théâtre de l'Esquisse", discipline: theatre, jours_semaine: [0], navigateur: true}
   - {nom: "La Comédie de Montréal", cle: salles, type: page_ia, url: "http://www.lacomedie.ca/", lieu: "Théâtre La Comédie de Montréal", jours_semaine: [0]}
   - {nom: "Circuit-Est centre chorégraphique", cle: salles, type: page_ia, url: "https://circuit-est.qc.ca/", discipline: danse, jours_semaine: [0]}
   - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/en/montreal/", lieu: "Studio 303", jours_semaine: [0]}
@@ -212,7 +212,7 @@ sources:
   - {nom: "Monument-National", cle: salles, type: page_ia, url: "https://monumentnational.com/fr", lieu: "Monument-National", jours_semaine: [0, 3]}
   - {nom: "Le Livart (centre d'art multidisciplinaire)", cle: salles, type: page_ia, url: "https://lelivart.com/", lieu: "Le Livart", jours_semaine: [0]}
   # ---------- Littérature, poésie, slam ----------
-  - {nom: "Librairie Drawn & Quarterly (lancements, lectures)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [0]}
+  - {nom: "Librairie Drawn & Quarterly (lancements, lectures)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [0], navigateur: true}
   - {nom: "La poésie partout (calendrier)", cle: salles, type: page_ia, url: "https://lapoesiepartout.com/calendrier/", discipline: lettres, jours_semaine: [0]}
   - {nom: "Slamontréal", cle: salles, type: page_ia, url: "https://www.incendiesdeparoles.com/slamontreal", discipline: lettres, jours_semaine: [0]}
   - {nom: "GSIMtl (slam de poésie)", cle: salles, type: page_ia, url: "https://www.gsimtl.com/spectaclesGSIMTl2026", discipline: lettres, jours_semaine: [0]}
