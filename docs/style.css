@@ -519,3 +519,6 @@ footer:empty{display:none}
 .xq[aria-pressed="true"]{background:var(--ink);color:#fff;border-style:solid}
 .xf .n,.xq .n{font-size:11px;opacity:.75}
 .xq-l{font-size:13px;font-weight:700;color:var(--muted);margin-right:2px}
+
+.bandexpos{display:block;width:100%;text-align:left;font:inherit;font-size:14px;cursor:pointer;margin:0 0 12px;padding:9px 14px;border:2px solid var(--ink);border-left:8px solid var(--expo);border-radius:12px;background:var(--surface);color:var(--ink)}
+.bandexpos:hover{background:#fff8e1}
