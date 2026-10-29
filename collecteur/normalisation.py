@@ -152,10 +152,29 @@ HORS_ILE = [
     "niagara", "fallsview", "toronto", "gatineau", "sherbrooke", "trois rivieres", "kingston", "granby", "drummondville",
     "saint hyacinthe", "joliette", "rimouski", "saguenay", "mont tremblant", "magog", "st sauveur", "saint sauveur",
     "gatineau", "sherbrooke", "trois rivieres", "dix30", "place bell", "studio azrieli",
+    "vancouver", "calgary", "edmonton", "winnipeg", "halifax", "pickering", "abbotsford", "mississauga", "saskatoon",
+    "saddledome",
 ]
+
+# Salles hors de l'île souvent listées sans ville par les agendas pancanadiens (Sors-tu?, Songkick) : nom exact
+LIEUX_HORS_ILE = {
+    # Toronto, Vancouver, Ottawa, Prairies
+    "history", "the opera house", "commodore ballroom", "the danforth music hall", "danforth music hall", "the axis club",
+    "algonquin commons theatre", "vogue theatre", "scotiabank arena", "rio theatre", "the fox cabaret", "fox cabaret",
+    "meadowvale theatre", "burton cummings theatre", "the great hall", "massey hall", "roy thomson hall", "rebel",
+    "phoenix concert theatre", "lee s palace", "horseshoe tavern", "el mocambo", "budweiser stage", "rogers centre",
+    "the rickshaw theatre", "rickshaw theatre", "orpheum theatre", "queen elizabeth theatre", "bronson centre", "td place",
+    # Région de Québec et ailleurs au Québec
+    "imperial bell", "salle louis frechette", "salle octave cremazie", "theatre capitole", "palais montcalm",
+    "le zenith promutuel assurances", "maurice o bready", "salle maurice o bready", "salle desjardins telus",
+    "theatre telebec", "la boite a bleuets", "salle jean cossette", "centre caztel", "theatre hector charland",
+    "theatre gilles vigneault", "salle andre mathieu", "theatre lionel groulx", "salle odyssee",
+}
 
 
 def hors_ile(*textes: str) -> bool:
+    if any(plat(x) in LIEUX_HORS_ILE for x in textes if x):
+        return True
     t = " ".join(plat(x) for x in textes if x)
     return any(f" {m} " in f" {t} " for m in HORS_ILE)
 

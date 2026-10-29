@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Pages générées à la publication (outils/pages.py)
+docs/e/
+docs/jour/
+docs/sitemap.xml
