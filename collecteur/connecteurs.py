@@ -587,6 +587,7 @@ def _moderer(rows: list[dict]) -> dict[str, bool]:
     """Décision automatique pour les lignes non tranchées par la personne responsable. Sans IA : rien n'est publié."""
     memo = json.loads(F_MODERATION.read_text(encoding="utf-8")) if F_MODERATION.exists() else {}
     a_juger = [r for r in rows if _cle_proposition(r) not in memo]
+    nouveaux: set[str] = set()
     if a_juger and ia.disponible():
         champs = ("titre", "date", "heure", "lieu", "adresse", "discipline", "lien", "description", "prix", "billetterie", "image")
         try:
@@ -594,6 +595,7 @@ def _moderer(rows: list[dict]) -> dict[str, bool]:
             for i, r in enumerate(a_juger):
                 if i in rep:
                     memo[_cle_proposition(r)] = {"publier": rep[i][0], "raison": rep[i][1], "titre": _champ(r, "titre")[:120]}
+                    nouveaux.add(_cle_proposition(r))
             F_MODERATION.parent.mkdir(exist_ok=True)
             F_MODERATION.write_text(json.dumps(memo, ensure_ascii=False, indent=1), encoding="utf-8")
         except Exception as exc:
@@ -603,7 +605,10 @@ def _moderer(rows: list[dict]) -> dict[str, bool]:
         d = memo.get(_cle_proposition(r))
         out[_cle_proposition(r)] = bool(d and d["publier"])
         MODERATION.append({"titre": _champ(r, "titre")[:120], "decision": ("publié" if d["publier"] else "mis de côté") if d else "en attente",
-                           "raison": d["raison"] if d else "pas encore jugé"})
+                           "raison": d["raison"] if d else "pas encore jugé",
+                           # jugé à cette collecte : sert à vous prévenir une seule fois (avis GitHub)
+                           "nouveau": _cle_proposition(r) in nouveaux,
+                           "date": _champ(r, "date")[:20], "lieu": _champ(r, "lieu", "salle")[:120]})
     return out
 
 
