@@ -459,6 +459,9 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                                    discipline=s.get("discipline") or "autre", url=s.get("url") or url,
                                    resume=s.get("resume") or "", prix=s.get("prix") or "", billets=s.get("billets") or "",
                                    source=cfg["cle_source"]))
+    if cfg.get("garder"):  # page générale : on ne garde que les titres qui correspondent (ex. « quiz|trivia »)
+        evs = [e for e in evs if re.search(cfg["garder"], e["titre"] + " " + e.get("description", ""), re.I)]
+        series = [x for x in series if re.search(cfg["garder"], x["titre"], re.I)]
     return evs, series
 
 
@@ -615,7 +618,26 @@ def calendriers_soumis(cfg: dict) -> list[dict]:
     return out
 
 
-CONNECTEURS = {"ville_csv": ville_csv, "ics": ics, "jsonld": jsonld, "gancio": gancio, "page_ia": page_ia,
+def recurrents(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
+    """Rendez-vous hebdomadaires vérifiés à la main (collecteur/recurrents.yaml) : une entrée par semaine."""
+    import yaml
+    from pathlib import Path
+    jours_fr = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+    liste = (yaml.safe_load((Path(__file__).parent / cfg.get("fichier", "recurrents.yaml")).read_text(encoding="utf-8"))
+             or {}).get(cfg.get("groupe", "quiz"), [])
+    evs = []
+    for r in liste:
+        j = debut + timedelta(days=(int(r["jour"]) - debut.weekday()) % 7)
+        while j <= fin:
+            evs.append(brut(titre=r["titre"], date=j.isoformat(), heure=r.get("heure"), lieu=r["lieu"],
+                            adresse=r.get("adresse", ""), ville="Montréal", url=r.get("source", ""),
+                            discipline=cfg.get("discipline", ""), source=cfg["cle_source"],
+                            description=f"Chaque {jours_fr[int(r['jour'])]}, à confirmer auprès du lieu (vérifié le {r.get('verifie')})."))
+            j += timedelta(days=7)
+    return evs, []
+
+
+CONNECTEURS = {"recurrents": recurrents, "ville_csv": ville_csv, "ics": ics, "jsonld": jsonld, "gancio": gancio, "page_ia": page_ia,
                "auto": auto, "propositions": propositions}
 
 

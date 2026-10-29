@@ -1,0 +1,18 @@
+# Rendez-vous qui reviennent chaque semaine, vérifiés à la main (jour, heure, lieu).
+# La collecte les place sur le calendrier pour les semaines à venir, avec la mention « chaque <jour> ».
+# À revérifier tous les 2-3 mois : un bar peut changer de soir ou arrêter. Retirer une ligne = retirer la série.
+#   jour : 0 = lundi … 6 = dimanche ; verifie : date de la dernière vérification ; source : où on l'a vu.
+# Quiz : liste tirée de Restomontreal (article mis à jour le 11 sept. 2026) et de ma.to (oct. 2026).
+quiz:
+  - {titre: "Soirée quiz (anglais)", lieu: "Grumpy's Bar", adresse: "1242 rue Bishop", jour: 6, heure: "20:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz", lieu: "Pub Bishop & Bagg", adresse: "4801 boulevard Saint-Laurent", jour: 6, heure: "19:30", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (anglais)", lieu: "Typhoon Lounge", adresse: "5752 avenue Monkland", jour: 6, heure: "19:30", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (bilingue)", lieu: "Microbrasserie 4 Origines", adresse: "", jour: 0, heure: "19:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (en français)", lieu: "Bar Nestor", adresse: "", jour: 0, heure: "19:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (bilingue)", lieu: "Burgundy Lion", adresse: "2496 rue Notre-Dame Ouest", jour: 0, heure: "19:30", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Trivia du lundi (bilingue)", lieu: "Bar de Courcelle", adresse: "", jour: 0, heure: "19:30", verifie: 2026-10-28, source: "https://ma.to/venue/bardecourcelle"}
+  - {titre: "Lundi quiz", lieu: "Les Sœurs Grises Vieux-Rosemont", adresse: "3188 rue Masson", jour: 0, heure: "19:30", verifie: 2026-10-28, source: "https://ma.to/event/lundi-quiz-sugar-10-aug-2026"}
+  - {titre: "Soirée quiz (bilingue)", lieu: "Origine Brass", adresse: "Dorval", jour: 1, heure: "19:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (réservation)", lieu: "L'Adversaire – Pub et boutique ludiques", adresse: "", jour: 2, heure: "19:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Trivia et humour (anglais)", lieu: "Hurley's Irish Pub", adresse: "1225 rue Crescent", jour: 2, heure: "20:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+  - {titre: "Soirée quiz (en français)", lieu: "Madame Smith", adresse: "", jour: 3, heure: "20:30", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
