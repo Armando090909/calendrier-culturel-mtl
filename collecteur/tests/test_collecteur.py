@@ -471,3 +471,29 @@ class TestBillets(unittest.TestCase):
         html = '<a href="/politique">Politique de billetterie</a><a href="https://salle.ca/achat/42">Acheter</a>'
         self.assertEqual(billets_page(html, "https://salle.ca/show"), "https://salle.ca/achat/42")
         self.assertIsNone(billets_page('<a href="/contact">Contact</a>', "https://salle.ca/show"))
+
+
+class TestRedites(unittest.TestCase):
+    def test_meme_artiste_deux_salles(self):
+        from normalisation import doublons_du_jour
+        ev = [{"date": "2026-11-10", "heure": "20:00", "titre": "Noé Lira + Lapelúda", "lieu": "La Sala Rossa", "discipline": "musique", "source": "salles", "url": "https://a/1"},
+              {"date": "2026-11-10", "heure": None, "titre": "Noé Lira", "lieu": "Lieu à confirmer", "discipline": "musique", "source": "festival", "url": "https://b/2"}]
+        r, j = doublons_du_jour(ev)
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0]["lieu"], "La Sala Rossa")
+
+    def test_ce_qui_reste(self):
+        from normalisation import doublons_du_jour
+        base = {"date": "2026-11-28", "discipline": "musique", "source": "festival", "lieu": "Espace Off-Bach"}
+        r, _ = doublons_du_jour([dict(base, titre="Dane Ko, piano · Off-Bach", url="https://f/a"),
+                                 dict(base, titre="Noémie Raymond, violoncelle, et Chloé Dumoulin, piano", url="https://f/b")])
+        self.assertEqual(len(r), 2)  # « piano » n'est pas un nom d'artiste
+        f = {"date": "2026-11-05", "discipline": "cinema", "titre": "Looking for Cézanne", "source": "festival"}
+        r, _ = doublons_du_jour([dict(f, lieu="Cinéma du Parc", url="1"), dict(f, lieu="Cinémathèque québécoise", url="2")])
+        self.assertEqual(len(r), 2)  # un film peut passer dans deux salles
+        v = {"date": "2026-11-01", "discipline": "atelier", "source": "ville", "lieu": "Lieu à confirmer"}
+        r, _ = doublons_du_jour([dict(v, titre="Rencontre avec Edgar", url="1"), dict(v, titre="Atelier avec Edgar", url="2")])
+        self.assertEqual(len(r), 2)  # deux fiches distinctes de la Ville
+        s = {"date": "2026-10-29", "discipline": "musique", "source": "salles", "lieu": "Upstairs", "titre": "Taurey Butler Trio", "url": "u"}
+        r, _ = doublons_du_jour([dict(s, heure="19:00"), dict(s, heure="21:30")])
+        self.assertEqual(len(r), 2)  # deux sets dans la même salle
