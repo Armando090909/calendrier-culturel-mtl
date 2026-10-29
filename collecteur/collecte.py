@@ -202,6 +202,10 @@ def main() -> int:
         if est_non_culturel(b["titre"], b["categorie"]):
             continue
         lieu = lieu_canon(b["lieu"], b["adresse"], b["ville"])
+        if lieu is None and b["source"] == "formulaire" and b["lieu"]:
+            # Proposition déjà jugée (vous ou le tri automatique) : une adresse imprécise ne la fait pas disparaître
+            print(f"  formulaire : lieu « {b['lieu']} » non confirmé sur l'île par la carte ; gardé quand même")
+            lieu = b["lieu"].strip()
         if lieu is None:
             continue
         if b["discipline"] == "jeune":
