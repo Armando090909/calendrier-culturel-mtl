@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-28-class-of-91-blurry-eyes-cleanse-testa-dura-86e792@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261128T200000
+DTEND;TZID=America/Toronto:20261128T220000
+SUMMARY:Class of 91 + Blurry Eyes + Cleanse + Testa Dura
+LOCATION:Turbo Haüs\, Montréal
+URL:https://montreal.askapunk.net/event/class-of-91-blurry-eyes-cleanse-tes
+ ta-dura
+DESCRIPTION:Class of 91 at Turbo Haüs III at 2026-11-28T20:00:00-0500\nDé
+ tails : http://www.songkick.com/concerts/43379612-class-of-91-at-turbo-hau
+ s-iii?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

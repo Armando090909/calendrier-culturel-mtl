@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-29-orkestar-kriminal-ce3e5e@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261029T010000
+DTEND;TZID=America/Toronto:20261029T030000
+SUMMARY:Orkestar Kriminal
+LOCATION:Quai des Brumes\, Montréal
+URL:https://events.com/r/en_US/tickets/orkestar-kriminal--quai-des-brumes-m
+ ontreal-october-1075598?fbclid=IwY2xjawUWp59wZG9mAWV4dG4DYWVtAjEwAHNydGMGY
+ XBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4k-CQz_NoX9Mf6L78h-ONDrAOW2sO_T0g4-jYZDLx
+ j-TyvH7hO93LCQxTejw_aem_9YhXQQjuifcR98oJlhm1aQ
+DESCRIPTION:ORKESTAR KRIMINAL Grands spécialistes de l’improvisation\, l
+ es 10 membres d’Orkestar Kriminal livrent des versions incarnées de ryt
+ hmes traditionnels issus des bas quartiers des quatre coins du monde…\nP
+ rix : 25\,00CAD $\nDétails : https://events.com/r/en_US/tickets/orkestar-
+ kriminal--quai-des-brumes-montreal-october-1075598?fbclid=IwY2xjawUWp59wZG
+ 9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4k-CQz_NoX9Mf6
+ L78h-ONDrAOW2sO_T0g4-jYZDLxj-TyvH7hO93LCQxTejw_aem_9YhXQQjuifcR98oJlhm1aQ\
+ n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

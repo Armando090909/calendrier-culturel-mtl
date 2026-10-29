@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-22-jesse-roper-l-escogriffe-bar-spectacle-l-esco-7c16b5@ccmtl.c
+ a
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261122T203000
+DTEND;TZID=America/Toronto:20261122T223000
+SUMMARY:Jesse Roper @ L'Escogriffe Bar Spectacle (L'Esco)
+LOCATION:L'Escogriffe\, Montréal
+URL:https://www.songkick.com/concerts/43270046-jesse-roper-at-lescogriffe-b
+ ar-spectacle?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Jesse Roper at L'Escogriffe Bar Spectacle (L'Esco) at 2026-11-2
+ 2T20:30:00-0500\nDétails : http://www.songkick.com/concerts/43270046-jess
+ e-roper-at-lescogriffe-bar-spectacle?utm_medium=organic&utm_source=microfo
+ rmat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

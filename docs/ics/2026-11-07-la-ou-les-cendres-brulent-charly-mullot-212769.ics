@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-07-la-ou-les-cendres-brulent-charly-mullot-212769@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Là où les cendres brûlent - Charly Mullot
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/la-ou-les-cendres-brulent-charly-mullot-
+ 119141
+DESCRIPTION:Heure à confirmer. Assistez à un conte de Charly Mullot où l
+ 'artiste raconte les figures queer que le temps\, les institutions et les 
+ normes ont tenté d’effacer.\nPrix : Gratuit\nDétails : https://montrea
+ l.ca/evenements/la-ou-les-cendres-brulent-charly-mullot-119141\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

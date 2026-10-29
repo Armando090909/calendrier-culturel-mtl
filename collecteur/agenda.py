@@ -41,7 +41,13 @@ def _plier(ligne: str) -> str:
 
 
 def identifiant(e: dict) -> str:
-    return hashlib.sha1(f"{e['date']}|{e.get('heure') or ''}|{e['titre']}|{e['lieu']}".encode()).hexdigest()[:12]
+    """Nom de fichier lisible : date et titre (« 2026-11-21-mesdames-et-messieurs-brian-mulroney-3f2a91 »)."""
+    import re
+    import unicodedata
+    t = unicodedata.normalize("NFD", e["titre"]).encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:50].strip("-") or "evenement"
+    h = hashlib.sha1(f"{e['date']}|{e.get('heure') or ''}|{e['titre']}|{e['lieu']}".encode()).hexdigest()[:6]
+    return f"{e['date']}-{t}-{h}"
 
 
 def contenu(e: dict, maintenant: datetime) -> str:

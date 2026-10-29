@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-21-reliure-simple-et-poesie-06a947@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Reliure simple et poésie
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/reliure-simple-et-poesie-117981
+DESCRIPTION:Heure à confirmer. Informez-vous sur cette activité offerte p
+ ar la bibliothèque L'Octogone!\nPrix : Gratuit\nDétails : https://montre
+ al.ca/evenements/reliure-simple-et-poesie-117981\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-28-mother-you-have-not-died-yet-but-you-will-and-when-4775c0@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261128T180000
+DTEND;TZID=America/Toronto:20261128T200000
+SUMMARY:mother\, you have not died yet. but you will. and when you do\, you
+  will finally be alive again.
+LOCATION:Cinémathèque québécoise\, Montréal
+URL:https://ridm.ca/fr/films/mother-you-have-not-died-yet-but-you-will-and-
+ when-you-do-you-will-finally-be-alive-again
+DESCRIPTION:Une femme de Durban accompagne sa mère mourante et puise dans 
+ l'art pour faire le deuil et relier intimité et histoire collective.\nDé
+ tails : https://ridm.ca/fr/films/mother-you-have-not-died-yet-but-you-will
+ -and-when-you-do-you-will-finally-be-alive-again\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-05-conference-musicale-de-lutte-en-turlutte-397393@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Conférence musicale : De lutte en turlutte
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/conference-musicale-de-lutte-en-turlutte
+ -116137
+DESCRIPTION:Heure à confirmer. Quoi faire à montréal? Une conférence mu
+ sicale sur l'histoire québécoise à la bibliothèque Mercier!\nPrix : Gr
+ atuit\nDétails : https://montreal.ca/evenements/conference-musicale-de-lu
+ tte-en-turlutte-116137\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

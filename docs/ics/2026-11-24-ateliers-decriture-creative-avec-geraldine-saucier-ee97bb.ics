@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-24-ateliers-decriture-creative-avec-geraldine-saucier-ee97bb@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Ateliers d’écriture créative avec Géraldine Saucier
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/ateliers-decriture-creative-avec-geraldi
+ ne-saucier-120221
+DESCRIPTION:Heure à confirmer. Participez à des jeux d’écriture amusan
+ ts en compagnie de Géraldine Saucier\, à Lachine\, à la bibliothèque S
+ aul-Bellow.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/ate
+ liers-decriture-creative-avec-geraldine-saucier-120221\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
