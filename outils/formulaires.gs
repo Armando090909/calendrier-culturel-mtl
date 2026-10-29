@@ -16,8 +16,9 @@
  *   - crée un onglet « publique » qui reprend les réponses SANS les courriels : c'est le seul onglet à publier.
  */
 
-const DISCIPLINES = ["Théâtre", "Musique", "Danse", "Cirque", "Humour", "Cinéma",
-  "Littérature et conférences", "Jeune public", "Exposition ou vernissage", "Autre"];
+const DISCIPLINES = ["Théâtre", "Musique", "Danse", "Cirque", "Humour et cabaret", "Cinéma",
+  "Poésie, slam et rap battle", "Littérature", "Conférence", "Atelier", "Fête ou célébration", "Quiz",
+  "Jeune public", "Exposition ou vernissage", "Autre"];
 
 const CONFIDENTIALITE = "Votre courriel sert seulement à vous joindre au sujet de cette proposition. " +
   "Il n'est jamais publié ni partagé. Les propositions sont vérifiées avant d'apparaître sur le calendrier.";
@@ -62,7 +63,8 @@ function formulaireEvenement_() {
   f.addTextItem().setTitle("Heure (ex. 20 h)").setRequired(true);
   f.addTextItem().setTitle("Lieu (nom de la salle)").setRequired(true);
   f.addTextItem().setTitle("Adresse").setHelpText("ex. 4873 boul. Saint-Laurent");
-  f.addMultipleChoiceItem().setTitle("Discipline").setChoiceValues(DISCIPLINES).setRequired(true);
+  f.addCheckboxItem().setTitle("Discipline").setHelpText("Cochez-en une ou plusieurs (ex. Théâtre et Danse).")
+    .setChoiceValues(DISCIPLINES).setRequired(true);
   f.addTextItem().setTitle("Lien de la page de l'événement").setHelpText("Site, page Facebook, Instagram…");
   f.addMultipleChoiceItem().setTitle("Jeune public ?").setChoiceValues(["Oui", "Non"]);
   f.addParagraphTextItem().setTitle("Description courte (2 ou 3 phrases)");

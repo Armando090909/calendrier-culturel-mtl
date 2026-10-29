@@ -46,7 +46,7 @@ def telecharger(url: str, accept: str = "*/*") -> requests.Response:
 def brut(**kw) -> dict:
     base = dict(titre="", date="", heure=None, lieu="", adresse="", ville="", url="", categorie="",
                 discipline="", complet=False, annule=False, jeune_public=False, source="",
-                description="", prix="", billets="", image="")
+                description="", prix="", billets="", image="", aussi=[])
     base.update({k: v for k, v in kw.items() if v is not None})
     base["titre"] = re.sub(r"\s+", " ", str(base["titre"])).strip()
     return base
@@ -589,15 +589,22 @@ def _heure_formulaire(s: str) -> str | None:
     return f"{h:02d}:{mi:02d}" if h < 24 else None
 
 
-def _discipline_formulaire(choix: str) -> str:
-    """Choix « Discipline » des formulaires → code de discipline (vide si on laisse le classement décider)."""
+MOTS_FORMULAIRE = (("theatre", "theatre"), ("musique", "musique"), ("danse", "danse"), ("cirque", "cirque"),
+                   ("humour", "humour"), ("cinema", "cinema"), ("poesie", "poesie"), ("slam", "poesie"),
+                   ("litterature", "lettres"), ("conference", "conference"), ("atelier", "atelier"), ("fete", "fete"),
+                   ("quiz", "quiz"), ("exposition", "expo"), ("vernissage", "expo"), ("jeune", "jeune"))
+
+
+def _disciplines_formulaire(choix: str) -> list[str]:
+    """Cases cochées « Discipline » (« Musique, Danse ») → codes, dans l'ordre où ils apparaissent."""
     t = plat(choix)
-    for mot, code in (("theatre", "theatre"), ("musique", "musique"), ("danse", "danse"), ("cirque", "cirque"),
-                      ("humour", "humour"), ("cinema", "cinema"), ("litterature", "lettres"), ("conference", "conference"),
-                      ("exposition", "expo"), ("vernissage", "expo"), ("jeune", "jeune")):
-        if mot in t:
-            return code
-    return ""
+    trouves = sorted((t.find(mot), code) for mot, code in MOTS_FORMULAIRE if mot in t)
+    return list(dict.fromkeys(code for _, code in trouves))
+
+
+def _discipline_formulaire(choix: str) -> str:
+    """Première discipline cochée (vide si on laisse le classement décider)."""
+    return next(iter(_disciplines_formulaire(choix)), "")
 
 
 def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
@@ -608,12 +615,15 @@ def propositions(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         d = _date_formulaire(_champ(row, "date"))
         if not d or d < debut or d > fin:
             continue
+        discs = _disciplines_formulaire(_champ(row, "discipline", "categorie"))
+        jeune = "jeune" in discs
+        discs = [d for d in discs if d != "jeune"]
         evs.append(brut(titre=_champ(row, "titre", "nom de l evenement"), date=d.isoformat(),
                         heure=_heure_formulaire(_champ(row, "heure")), lieu=_champ(row, "lieu", "salle"),
                         adresse=_champ(row, "adresse"), url=_champ(row, "lien", "url", "billet"),
                         categorie=_champ(row, "discipline", "categorie"), source="formulaire",
-                        discipline=_discipline_formulaire(_champ(row, "discipline", "categorie")),
-                        jeune_public="oui" in plat(_champ(row, "jeune public", "enfants")),
+                        discipline=(discs[0] if discs else ""), aussi=discs[1:3],
+                        jeune_public=jeune or "oui" in plat(_champ(row, "jeune public", "enfants")),
                         description=_champ(row, "description"), prix=_champ(row, "prix", "tarif"),
                         billets=_champ(row, "billetterie", "billets"), image=_champ(row, "image", "photo")))
     return evs, []

@@ -214,6 +214,8 @@ def main() -> int:
              "lieu": lieu or "Lieu à confirmer", "url": b["url"], "complet": bool(b["complet"]),
              "jeunePublic": bool(b["jeune_public"] or JEUNE.search(b["titre"])), "source": b["source"]}
         e.update(details(b))
+        if b.get("aussi"):  # disciplines cochées en plus dans le formulaire
+            e["aussi"] = [d for d in b["aussi"] if d != disc]
         if b.get("festival"):
             e["festival"] = b["festival"]
         e["_cat"] = b.get("categorie") or ""
@@ -317,7 +319,7 @@ def main() -> int:
 
     # Plusieurs disciplines possibles (ex. une performance : théâtre ET danse)
     for e in events:
-        if e["discipline"] in ("expo", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "humour"):
+        if e["discipline"] in ("expo", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "humour") or e.get("aussi"):
             continue
         e["discipline"], aussi = disciplines_aussi(e["titre"], e.get("resume", ""), e["discipline"], e["lieu"])
         if aussi:
