@@ -295,35 +295,44 @@ function renderFestSemaine(){
 // Onglet Expos : toutes les expositions en cours (musées, galeries, centres d'artistes), hors du calendrier.
 const RE_GALERIE=/galerie|gallery|art contemporain|contemporain\b|\bart m[uû]r|blouin|bradley|pfoac|duran|chiguer|robertson|nicolas robert|hugues charbonneau|lacerte|poulin|mikhail|tian|wishbone|laroche|ellephant|c\.o\.a/i;
 const typeExpo=x=>estMusee(x)?"musee":(x.source==="galeries"||RE_GALERIE.test(x.lieu||""))?"galerie":"centre";
-const TYPES_EXPO=[["","Tout"],["musee","Musées"],["galerie","Galeries"],["centre","Centres d'artistes et autres lieux"]];
+const TYPES_EXPO=[["","Tout"],["musee","Musées"],["galerie","Galeries"],["centre","Centres d'artistes et autres lieux"],["vern","Vernissages"]];
 function renderMusees(){
   const today=iso(new Date()),bientot=addDays(today,14),recent=addDays(today,-14);
   const tous=D.expos.filter(x=>x.fin>=today&&(!x.discipline||x.discipline==="expo"));
   const quart=x=>(D.lieux[x.lieu]||{}).quartier||"Autres secteurs";
-  const parType=tous.filter(x=>!st.xtype||typeExpo(x)===st.xtype);
-  const nq={};parType.forEach(x=>{const q=quart(x);nq[q]=(nq[q]||0)+1});
+  const vernTous=D.events.filter(e=>e.discipline==="expo"&&e.date>=today);
+  const parType=st.xtype==="vern"?[]:tous.filter(x=>!st.xtype||typeExpo(x)===st.xtype);
+  const nq={};(st.xtype==="vern"?vernTous:parType).forEach(x=>{const q=quart(x);nq[q]=(nq[q]||0)+1});
   if(st.xq&&!nq[st.xq])st.xq="";
   const L=parType.filter(x=>!st.xq||quart(x)===st.xq);
   const carte=(x,avecLieu)=>`<article class="xd mus${x.fin<=bientot?" fin":""}">${avecLieu?`<span class="mlieu">${esc(x.lieu)}</span>`:""}<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.titre)}</a>
     <div class="end${x.fin<=bientot?" soon":""}">${x.debut>today?`Ouvre le ${fmt(x.debut)} · `:""}${x.fin<=bientot?"Se termine le ":"Jusqu'au "}${fmt(x.fin)}${x.fin.slice(0,4)!==today.slice(0,4)?" "+x.fin.slice(0,4):""}</div>
     ${x.festival&&FESTID[x.festival]?`<button type="button" class="fx" data-fest="${x.festival}" style="--f:${FESTID[x.festival].coul};--ft:${FESTID[x.festival].coulTxt}">${esc(FESTID[x.festival].court)}</button>`:""}</article>`;
   const fin=L.filter(x=>x.fin<=bientot).sort((a,b)=>a.fin.localeCompare(b.fin));
-  const vern=D.events.filter(e=>e.discipline==="expo"&&e.date>=today&&(!st.xq||quart(e)===st.xq)).slice(0,24);
   const neuf=L.filter(x=>x.debut>=recent&&x.fin>bientot).sort((a,b)=>b.debut.localeCompare(a.debut));
   const par={};L.forEach(x=>(par[x.lieu]=par[x.lieu]||[]).push(x));
   const nt={};tous.forEach(x=>{const t=typeExpo(x);nt[t]=(nt[t]||0)+1});
   $("view").innerHTML=`<div class="festview expoview">
-    <div class="xfiltres" role="group" aria-label="Type de lieu">${TYPES_EXPO.map(([k,l])=>`<button type="button" class="xf" data-xtype="${k}" aria-pressed="${(st.xtype||"")===k}">${l} <span class="n">${k?nt[k]||0:tous.length}</span></button>`).join("")}</div>
+    <div class="xfiltres" role="group" aria-label="Type de lieu">${TYPES_EXPO.map(([k,l])=>`<button type="button" class="xf" data-xtype="${k}" aria-pressed="${(st.xtype||"")===k}">${l} <span class="n">${k==="vern"?vernTous.length:k?nt[k]||0:tous.length}</span></button>`).join("")}</div>
     <div class="xquart" role="group" aria-label="Quartier"><span class="xq-l">Quartier :</span><button type="button" class="xq" data-xq="" aria-pressed="${!st.xq}">tous</button>${Object.keys(nq).sort((a,b)=>nq[b]-nq[a]||a.localeCompare(b,"fr")).map(q=>`<button type="button" class="xq" data-xq="${esc(q)}" aria-pressed="${st.xq===q}">${esc(q)} <span class="n">${nq[q]}</span></button>`).join("")}</div>
-    ${vern.length?`<h2 class="label">Vernissages à venir</h2><div class="xjour">${vern.map(e=>`<article class="xd mus"><span class="mlieu">${esc(e.lieu)}</span><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a><div class="end">${fmt(e.date)}${e.heure?" · "+heureTxt(e):""}</div></article>`).join("")}</div>`:""}
+    ${st.xtype==="vern"?calendrierVernissages(vernTous.filter(e=>!st.xq||quart(e)===st.xq)):`
     ${fin.length?`<h2 class="label">Dernière chance · se termine dans moins de 2 semaines</h2><div class="xjour">${fin.map(x=>carte(x,true)).join("")}</div>`:""}
     ${neuf.length?`<h2 class="label">Vient d'ouvrir</h2><div class="xjour">${neuf.map(x=>carte(x,true)).join("")}</div>`:""}
     <h2 class="label">Par lieu · ${Object.keys(par).length} lieux · ${L.length} expositions</h2>
-    ${Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(l=>`<section class="musee"><h3 class="fmois">${esc(l)}</h3>${lieuHTML({lieu:l})}<div class="xjour">${par[l].sort((a,b)=>a.fin.localeCompare(b.fin)).map(x=>carte(x,false)).join("")}</div></section>`).join("")||'<div class="empty">Aucune exposition pour ce choix.</div>'}
+    ${Object.keys(par).sort((a,b)=>a.localeCompare(b,"fr")).map(l=>`<section class="musee"><h3 class="fmois">${esc(l)}</h3>${lieuHTML({lieu:l})}<div class="xjour">${par[l].sort((a,b)=>a.fin.localeCompare(b.fin)).map(x=>carte(x,false)).join("")}</div></section>`).join("")||'<div class="empty">Aucune exposition pour ce choix.</div>'}`}
   </div>`;
 }
-function bandeauExpos(){const t=iso(new Date()),n=D.expos.filter(x=>x.fin>=t&&(!x.discipline||x.discipline==="expo")).length;
-  return n?`<button type="button" class="bandexpos" data-act="expos"><b>${n} expositions en cours</b> dans les musées et galeries · voir la liste →</button>`:""}
+// Vernissages : un calendrier de la semaine (comme l'accueil), avec la semaine précédente et la suivante
+function calendrierVernissages(L){
+  const today=iso(new Date());st.xweek=st.xweek||monday(today);
+  const jours=[0,1,2,3,4,5,6].map(i=>addDays(st.xweek,i));
+  const prochain=L.find(e=>e.date>addDays(st.xweek,6));
+  return `<div class="xsem"><button type="button" class="btn ghost" data-xw="-7" ${st.xweek<=monday(today)?"disabled":""}>‹</button>
+      <h2 class="label">Vernissages · ${fmt(jours[0])} → ${fmt(jours[6])}</h2><button type="button" class="btn ghost" data-xw="7">›</button></div>
+    <div class="board vernboard">${jours.map(j=>{const l=L.filter(e=>e.date===j).sort(byTime);
+      return `<div class="col${j===today?" today":""}"><div class="dh">${["lun.","mar.","mer.","jeu.","ven.","sam.","dim."][(d(j).getDay()+6)%7]} <b>${d(j).getDate()}</b></div>${l.map(e=>`<a class="row vern" href="${esc(e.url)}" target="_blank" rel="noopener" style="--c:var(--expo)"><span class="rti">${esc(e.titre)}</span><span class="rl"><b class="${e.heure?"":"nh"}">${heureTxt(e)}</b> · <span class="v">${esc(e.lieu)}</span></span></a>`).join("")||'<div class="vide">—</div>'}</div>`}).join("")}</div>
+    ${L.length?"":'<div class="empty">Aucun vernissage annoncé pour l\'instant.</div>'}${prochain&&!L.some(e=>e.date>=st.xweek&&e.date<=addDays(st.xweek,6))?`<p class="xnote">Prochain vernissage : ${fmt(prochain.date)}.</p>`:""}`;
+}
 function renderView(){
   const v=visible(),el=$("view"),useDist=origin()&&st.sort==="dist";
   $("sortSeg").hidden=!origin()||st.view==="month";
@@ -421,6 +430,7 @@ $("view").addEventListener("click",e=>{
   const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){sortirRecherche();st.day=ev.date;st.view="day";render();
     const a=$("ev-"+ev._i);if(a){a.classList.add("flash");a.scrollIntoView({block:"start",behavior:"smooth"})}}return}
   const xt=e.target.closest("[data-xtype]");if(xt){st.xtype=xt.dataset.xtype;render();return}
+  const xw=e.target.closest("[data-xw]");if(xw){st.xweek=addDays(st.xweek,Number(xw.dataset.xw));render();return}
   const xq=e.target.closest("[data-xq]");if(xq){st.xq=xq.dataset.xq;render();return}
   const fb=e.target.closest("[data-fest]");if(fb){sortirRecherche();ouvrirFestival(fb.dataset.fest);return}
   const xj=e.target.closest('[data-act="jour"]');if(xj){st.day=xj.dataset.d;st.view="day";render();window.scrollTo({top:$("navLabel").getBoundingClientRect().top+window.scrollY-20});return}
