@@ -3,28 +3,28 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 0,
-  "erreur": true
+  "evenements": 2316,
+  "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 35,
+  "evenements": 37,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 274,
+  "evenements": 240,
   "erreur": false
  },
  {
   "nom": "Songkick (concerts, 2 mois)",
   "url": "https://www.songkick.com/metro-areas/27377-canada-montreal/-",
   "type": "page lue par l'IA",
-  "evenements": 499,
+  "evenements": 500,
   "erreur": false
  },
  {
@@ -45,7 +45,7 @@
   "nom": "Duceppe",
   "url": "https://duceppe.com",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -115,7 +115,7 @@
   "nom": "Espace Libre",
   "url": "http://espacelibre.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -136,7 +136,7 @@
   "nom": "Théâtre Outremont",
   "url": "http://www.theatreoutremont.ca/fr/accueil",
   "type": "page lue par l'IA",
-  "evenements": 39,
+  "evenements": 40,
   "erreur": false
  },
  {
@@ -171,7 +171,7 @@
   "nom": "Place des Arts",
   "url": "https://www.placedesarts.com/en/programming",
   "type": "page lue par l'IA",
-  "evenements": 45,
+  "evenements": 50,
   "erreur": false
  },
  {
@@ -185,14 +185,14 @@
   "nom": "Agora de la danse",
   "url": "https://agoradanse.com/programmation",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
   "nom": "Tangente",
   "url": "https://tangentedanse.ca/en/event",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -227,7 +227,7 @@
   "nom": "Spectaculos (humour",
   "url": "https://spectaculos.ca/fr/categorie/humour/montreal",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 23,
   "erreur": false
  },
  {
@@ -290,7 +290,7 @@
   "nom": "Réseau art actuel (centres d'artistes",
   "url": "https://reseauartactuel.org/evenements/page//?intervalle=semaine",
   "type": "page lue par l'IA",
-  "evenements": 55,
+  "evenements": 64,
   "erreur": false
  },
  {
@@ -423,7 +423,7 @@
   "nom": "Galerie Hugues Charbonneau",
   "url": "https://huguescharbonneau.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -633,7 +633,7 @@
   "nom": "Le Studio TD",
   "url": "https://lestudiotd.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 13,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -780,7 +780,7 @@
   "nom": "Monument-National",
   "url": "https://monumentnational.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -885,7 +885,7 @@
   "nom": "La Lumière Collective",
   "url": "https://lalumierecollective.org",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -948,7 +948,7 @@
   "nom": "Club Soda (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-soda",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 32,
   "erreur": false
  },
  {
@@ -973,10 +973,80 @@
   "erreur": false
  },
  {
+  "nom": "Club Balattou (billetterie)",
+  "url": "https://lepointdevente.com/lieux/club-balattou",
+  "type": "page lue par l'IA",
+  "evenements": 16,
+  "erreur": false
+ },
+ {
+  "nom": "Le Balattou (billetterie, 2e page)",
+  "url": "https://lepointdevente.com/lieux/lebalattou",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Le Belmont (billetterie)",
+  "url": "https://lepointdevente.com/lieux/lebelmont",
+  "type": "page lue par l'IA",
+  "evenements": 2,
+  "erreur": false
+ },
+ {
   "nom": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
   "url": "https://lepointdevente.com/lieux/maison-culturelle-et-communautaire-de-montreal-nord-mcc",
   "type": "page lue par l'IA",
   "evenements": 4,
+  "erreur": false
+ },
+ {
+  "nom": "Soirées quiz (hebdomadaires)",
+  "url": "",
+  "type": "recurrents",
+  "evenements": 105,
+  "erreur": false
+ },
+ {
+  "nom": "ma.to – communauté (quiz, trivia)",
+  "url": "https://ma.to/events/montreal/anytime/community",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "Wiggle Room (ma.to)",
+  "url": "https://ma.to/venue/wiggleroommtl",
+  "type": "page lue par l'IA",
+  "evenements": 5,
+  "erreur": false
+ },
+ {
+  "nom": "Le Balcon (ma.to)",
+  "url": "https://ma.to/venue/lebalconcabaret",
+  "type": "page lue par l'IA",
+  "evenements": 3,
+  "erreur": false
+ },
+ {
+  "nom": "SAT – Société des arts technologiques (Exclaim!)",
+  "url": "https://exclaim.ca/venues/venue/societe-des-arts-technologiques-sat",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
+  "url": "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "PAN M 360 – agenda musique",
+  "url": "https://panm360.com/en/agenda-360",
+  "type": "page lue par l'IA",
+  "evenements": 42,
   "erreur": false
  }
 ]
