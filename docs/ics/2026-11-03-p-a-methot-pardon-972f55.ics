@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-03-p-a-methot-pardon-972f55@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261103T200000
+DTEND;TZID=America/Toronto:20261103T220000
+SUMMARY:P-A Méthot - Pardon?!
+LOCATION:Théâtre St-Denis\, Montréal
+URL:https://funnation.ca/spectacle/p-a-methot-pardon-theatre-st-denis-montr
+ eal-3-nov-2026-2000/
+DESCRIPTION:P-A Méthot revient avec Pardon?!\, un spectacle d'humour déja
+ nté au Théâtre St-Denis.\nPrix : 101.06 $\nDétails : https://spectacul
+ os.ca/fr/spectacle/p-a-methot-montreal\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
