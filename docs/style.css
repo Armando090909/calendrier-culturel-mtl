@@ -175,7 +175,7 @@ details.expos summary span{font-family:var(--f-body);font-weight:600;color:var(-
 .x .end.soon{color:var(--pop);font-weight:800}
 
 /* ---------- Bas de page ---------- */
-.refresh{font-size:13px;color:var(--muted)}
+.refresh{font-family:var(--f-hand);font-size:16px;color:var(--ink);text-align:center;transform:rotate(-1.5deg);margin:14px auto 4px;max-width:92%}
 .note{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--hl);color:var(--ink);border:2px solid var(--ink);border-radius:var(--r);padding:14px 18px;font-size:15px;font-weight:600;box-shadow:4px 4px 0 var(--shadow)}
 .note a{color:var(--ink);font-weight:800}
 .stn-ico{width:34px;height:34px;flex:none;border-radius:50%;background:var(--surface);border:6px solid var(--ink);box-shadow:0 0 0 6px var(--cirque)}
