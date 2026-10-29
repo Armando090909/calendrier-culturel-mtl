@@ -214,9 +214,9 @@ sources:
   - {nom: "Le Livart (centre d'art multidisciplinaire)", cle: salles, type: page_ia, url: "https://lelivart.com/", lieu: "Le Livart", jours_semaine: [0]}
   # ---------- Littérature, poésie, slam ----------
   - {nom: "Librairie Drawn & Quarterly (lancements, lectures)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [0], navigateur: true}
-  - {nom: "La poésie partout (calendrier)", cle: salles, type: page_ia, url: "https://lapoesiepartout.com/calendrier/", discipline: lettres, jours_semaine: [0]}
-  - {nom: "Slamontréal", cle: salles, type: page_ia, url: "https://www.incendiesdeparoles.com/slamontreal", discipline: lettres, jours_semaine: [0]}
-  - {nom: "GSIMtl (slam de poésie)", cle: salles, type: page_ia, url: "https://www.gsimtl.com/spectaclesGSIMTl2026", discipline: lettres, jours_semaine: [0]}
+  - {nom: "La poésie partout (calendrier)", cle: salles, type: page_ia, url: "https://lapoesiepartout.com/calendrier/", discipline: poesie, jours_semaine: [0]}
+  - {nom: "Slamontréal", cle: salles, type: page_ia, url: "https://www.incendiesdeparoles.com/slamontreal", discipline: poesie, jours_semaine: [0]}
+  - {nom: "GSIMtl (slam de poésie)", cle: salles, type: page_ia, url: "https://www.gsimtl.com/spectaclesGSIMTl2026", discipline: poesie, jours_semaine: [0]}
   - {nom: "La Livrerie", cle: salles, type: page_ia, url: "https://www.lalivrerie.com/programmation", lieu: "La Livrerie", discipline: lettres, jours_semaine: [0]}
   # ---------- Extrémités de l'île (ouest, sud-ouest, villes liées) ----------
   - {nom: "Salle Pauline-Julien (ouest de l'île)", cle: salles, type: page_ia, url: "https://pauline-julien.com/programmation-spectacle/", lieu: "Salle Pauline-Julien", jours_semaine: [0]}

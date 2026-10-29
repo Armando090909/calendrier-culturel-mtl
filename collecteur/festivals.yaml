@@ -44,7 +44,7 @@ festivals:
   - {id: sommets, nom: "Les Sommets du cinéma d'animation", court: Sommets de l'animation, disciplines: [cinema], debut: 2026-05-11, fin: 2026-05-16, site: "https://www.cinematheque.qc.ca"}
   - {id: fbdm, nom: "Festival BD de Montréal", court: Festival BD, disciplines: [lettres, jeune], debut: 2026-05-15, fin: 2026-05-17, site: "https://fbdm-mcaf.ca"}
   - {id: piknic, nom: "Piknic Électronik (les dimanches)", court: Piknic Électronik, disciplines: [musique], debut: 2026-05-17, fin: 2026-10-18, lieu: "Parc Jean-Drapeau", site: "https://piknicelectronik.com"}
-  - {id: poesie, nom: "Festival de la poésie de Montréal", court: Festival de la poésie, disciplines: [lettres], debut: 2026-05-21, fin: 2026-05-31, site: "https://festivalpoesiemontreal.com", verifier: true}
+  - {id: poesie, nom: "Festival de la poésie de Montréal", court: Festival de la poésie, disciplines: [poesie], debut: 2026-05-21, fin: 2026-05-31, site: "https://festivalpoesiemontreal.com", verifier: true}
   - {id: fta, nom: "Festival TransAmériques (FTA)", court: FTA, disciplines: [theatre, danse], debut: 2026-05-28, fin: 2026-06-10, site: "https://fta.ca"}
   - {id: offta, nom: "OFFTA — festival d'arts vivants", court: OFFTA, disciplines: [theatre, danse], debut: 2026-05-29, fin: 2026-06-07, site: "https://offta.com"}
 
