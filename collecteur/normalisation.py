@@ -489,3 +489,77 @@ def style_musique(titre: str, categorie: str = "", lieu: str = "", resume: str =
         if resume and _has(resume, mots):
             return style
     return None
+
+
+# ---- Dernier contrôle : pas de redite dans une même journée -------------------------------------------------
+# Les spectacles vivants (musique, théâtre, danse, humour…) ne se jouent pas deux fois le même jour dans deux salles.
+# Les films et les expositions, eux, peuvent légitimement apparaître plusieurs fois (plusieurs cinémas, plusieurs lieux).
+REPRODUCTIBLES = {"cinema", "expo"}
+
+
+# Instruments, rôles et mots de programme : ce ne sont pas des noms d'artistes (« Dane Ko, piano »).
+ROLES = {"piano", "pianiste", "violon", "violoncelle", "alto", "contrebasse", "orgue", "organiste", "clavecin", "guitare",
+         "voix", "chant", "soprano", "mezzo", "tenor", "baryton", "basse", "batterie", "percussions", "flute", "hautbois",
+         "clarinette", "saxophone", "trompette", "harpe", "mandoline", "marimba", "accordeon", "trio", "quatuor", "quintette",
+         "ensemble", "orchestre", "choeur", "chorale", "direction", "dj set", "live", "band", "duo", "solo", "recital",
+         "conference", "mini conference", "lecture", "atelier", "spectacle", "concert", "lancement", "premiere",
+         "gratuit", "complet", "off bach", "montreal", "invites", "invitees", "et invites", "and friends", "friends"}
+
+
+def _artistes(titre: str) -> set[str]:
+    """Noms d'artistes ou de spectacles dans un titre (« Jonquille + Chloé Jara-Buto @ X » → {jonquille, chloe jara buto})."""
+    t = re.sub(r"\(.*?\)", " ", titre)
+    t = re.split(r"\s[–—|:@]\s|\s-\s|:\s|\s@\s|\s·\s", t)[0]
+    noms = set()
+    for m in re.split(r"\s\+\s|\s/\s|,|\savec\s|\swith\s|\sw/\s|\set\s(?=[A-ZÉ])|\s&\s|\sx\s", t):
+        p = plat(m)
+        if len(p) >= 4 and p not in GENERIQUES and p not in MOTS_COURANTS and p not in ROLES \
+                and not p.startswith(("invit", "guest")):
+            noms.add(p)
+    return noms
+
+
+def meme_spectacle(a: dict, b: dict) -> bool:
+    """Même titre, titre qui contient l'autre, titres très proches, ou un même artiste."""
+    ta, tb = _titre_net(a["titre"]), _titre_net(b["titre"])
+    if not ta or not tb:
+        return False
+    if ta == tb or (min(len(ta), len(tb)) >= 6 and (ta in tb or tb in ta)):
+        return True
+    if difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.88:
+        return True
+    return bool(_artistes(a["titre"]) & _artistes(b["titre"]))
+
+
+def doublons_du_jour(events: list[dict]) -> tuple[list[dict], list[str]]:
+    """Retire les redites d'une même journée que le dédoublonnage par salle n'a pas vues (salle différente d'une
+    source à l'autre, ou inconnue). Renvoie (événements gardés, description des retraits pour le rapport)."""
+    par_jour: dict[str, list[dict]] = {}
+    for e in events:
+        par_jour.setdefault(e["date"], []).append(e)
+    retires, journal = set(), []
+    inconnu = lambda e: plat(e["lieu"]) == "lieu a confirmer"  # noqa: E731
+    for jour, L in par_jour.items():
+        vivants = [e for e in L if e.get("discipline") not in REPRODUCTIBLES]
+        for i, a in enumerate(vivants):
+            if id(a) in retires:
+                continue
+            for b in vivants[i + 1:]:
+                if id(b) in retires or not meme_spectacle(a, b):
+                    continue
+                meme_salle = not inconnu(a) and not inconnu(b) and lieux_proches(a["lieu"], b["lieu"])
+                if meme_salle and a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
+                    continue  # matinée et soirée dans la même salle : deux représentations
+                if a.get("source") == "ville" and b.get("source") == "ville" and a.get("url") != b.get("url"):
+                    continue  # deux fiches distinctes de la Ville (ex. le même atelier dans deux bibliothèques)
+                # On garde la meilleure fiche : salle connue, heure connue, source la plus fiable
+                rang = lambda e: (inconnu(e), not e.get("heure"), PRIORITE.get(e.get("source", ""), 9))  # noqa: E731
+                garde, enleve = (a, b) if rang(a) <= rang(b) else (b, a)
+                for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi", "affiche", "liens"):
+                    if not garde.get(k) and enleve.get(k):
+                        garde[k] = enleve[k]
+                retires.add(id(enleve))
+                journal.append(f"{jour} : « {enleve['titre'][:50]} » ({enleve['lieu']}) = « {garde['titre'][:50]} » ({garde['lieu']})")
+                if garde is b:
+                    break
+    return [e for e in events if id(e) not in retires], journal

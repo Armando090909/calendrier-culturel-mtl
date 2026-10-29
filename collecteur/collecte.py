@@ -28,7 +28,7 @@ import geo  # noqa: E402
 import ia  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
-from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique  # noqa: E402
+from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -334,6 +334,10 @@ def main() -> int:
     print(f"Saisies à la main : {sum(1 for e in manuels.get('events', []) if aujourd.isoformat() <= e['date'] <= fin.isoformat())} événements.")
 
     events = dedoublonner(events)
+    # Dernier contrôle : un même spectacle vivant (pas un film ni une expo) ne doit pas apparaître deux fois le même jour
+    events, redites = doublons_du_jour(events)
+    notes["redites_retirees"] = redites[:200]
+    print(f"Redites du même jour retirées : {len(redites)}")
 
     expos = []
     vus = set()
