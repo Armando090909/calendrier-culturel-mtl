@@ -8,7 +8,7 @@ from collections import Counter
 from urllib.parse import urlparse
 import unicodedata
 
-DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "quiz", "jeune", "expo", "autre"]
+DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "jeune", "expo", "autre"]
 
 
 # Lettres que la décomposition Unicode ne ramène pas à l'ASCII (Eivør → eivor, Œuvre → oeuvre…)
@@ -60,9 +60,11 @@ REGLES = [
     ("theatre", ["theatre", "piece", "marionnette", "comedie musicale", "lecture publique", "mise en scene",
                  "conte pour", "spectacle jeunesse", "opera"]),
     ("cinema", ["cine", "cinema", "film", "projection", "documentaire", "bibliocinema", "court metrage"]),
-    ("lettres", ["lecture", "poesie", "poete", "poetes", "slam", "auteur", "autrice", "litterature", "litteraire",
-                 "rencontre d auteur", "lancement de livre", "lancement du livre", "scene ouverte litteraire", "spoken word",
-                 "conte pour adultes", "soiree de contes", "club de lecture"]),
+    ("poesie", ["poesie", "poete", "poetes", "poetique", "slam", "slameur", "slameuse", "spoken word", "rap battle",
+                "battle de rap", "battle rap", "joute verbale", "scene ouverte poesie", "micro ouvert poesie"]),
+    ("lettres", ["lecture", "auteur", "autrice", "litterature", "litteraire", "roman", "rencontre d auteur",
+                 "lancement de livre", "lancement du livre", "lancement litteraire", "conte pour adultes",
+                 "soiree de contes", "club de lecture", "salon du livre", "bd", "bande dessinee"]),
     ("musique", ["concert", "musique", "jazz", "orchestre", "quatuor", "chorale", "chanson", "rap", "hip hop",
                  "dj", "techno", "rave", "punk", "metal", "rock", "folk", "piano", "symphon", "recital", "album",
                  "spectacle musical", "show", "electro", "house", "r b", "art sonore", "sonore", "sound art", "performance sonore",
@@ -77,9 +79,9 @@ REGLES = [
 CATEGORIES = {
     "theatre": "theatre", "famille": "theatre", "comedie musicale": "theatre", "marionnettes": "theatre",
     "danse": "danse", "ballet": "danse", "humour": "humour", "cirque": "cirque", "cinema": "cinema",
-    "conference": "conference", "litterature": "lettres", "entrevues": "conference", "poesie": "lettres",
+    "conference": "conference", "litterature": "lettres", "entrevues": "conference", "poesie": "poesie", "slam": "poesie",
     "exposition": "expo", "arts visuels": "expo",
-    "societe et histoire": "conference", "art de la parole": "lettres", "art et artisanat": "atelier",
+    "societe et histoire": "conference", "art de la parole": "poesie", "art et artisanat": "atelier",
     "fete et marche": "fete", "club de lecture": "lettres",
 }
 

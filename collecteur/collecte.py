@@ -203,7 +203,7 @@ def main() -> int:
             continue
         if b["discipline"] == "jeune":
             b["jeune_public"], b["discipline"] = True, ""
-        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "conference", "atelier", "fete", "quiz", "expo"} \
+        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "expo"} \
             else classer(b["titre"], b["categorie"], description=b.get("description", ""), defaut=b["discipline"])
         heure = b["heure"] if b["heure"] and re.fullmatch(r"\d{2}:\d{2}", b["heure"]) else None
         if "festapp.io" in (b["url"] or ""):
@@ -315,7 +315,7 @@ def main() -> int:
 
     # Plusieurs disciplines possibles (ex. une performance : théâtre ET danse)
     for e in events:
-        if e["discipline"] in ("expo", "cinema", "lettres", "conference", "atelier", "fete", "quiz", "humour"):
+        if e["discipline"] in ("expo", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "humour"):
             continue
         e["discipline"], aussi = disciplines_aussi(e["titre"], e.get("resume", ""), e["discipline"], e["lieu"])
         if aussi:

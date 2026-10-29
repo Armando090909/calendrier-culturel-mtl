@@ -14,13 +14,14 @@
   --cirque:#f7c300;    /* jaune (ligne 4) */
   --humour:#f47b20;    /* orange (ligne 2) */
   --cinema:#00a651;    /* vert (ligne 1) */
-  --lettres:#8a4fbf;   /* violet du chardon */
+  --lettres:#8a4fbf;   /* violet du chardon : littérature */
+  --poesie:#d6336c;    /* rose fuchsia : poésie, slam, rap battle */
   --jeune:#00a99d;     /* turquoise : jeune public */
   --autre:#7d8597;
   --expo:#e8a317;      /* or du pin */
   --conference:#343a40; /* charbon : conférences */
   --atelier:#8d6e63;   /* brun : ateliers */
-  --fete:#c2255c;      /* framboise : fêtes et célébrations */
+  --fete:#a61e4d;      /* framboise : fêtes et célébrations */
   --quiz:#0b7285;      /* sarcelle foncé : soirées quiz */
   --hl:#ffe14d; --chip-off:#eef1f6; --badge:#121212; --badge-ink:#ffe14d;
   --f-display:"Unbounded", "Arial Black", system-ui, sans-serif;
