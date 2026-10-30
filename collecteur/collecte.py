@@ -78,7 +78,7 @@ TYPES_LISIBLES = {"ville_csv": "données ouvertes", "ics": "calendrier iCal", "j
                   "propositions": "formulaire"}
 
 
-RE_IMPRO = re.compile(r"(?i)\bimpro\b|improvisation(?! libre)|\bLIMM?\b|\bLNI\b|ligue d.impro|match d.impro")
+RE_IMPRO = re.compile(r"(?i)\bimpro\b|improvis(?:ation|ed|ée?s?)\b(?! libre)|\bLIMM?\b|\bLNI\b|ligue d.impro|match d.impro")
 
 
 def ecrire_liste_sources(conf: dict, rapport: list) -> None:
@@ -143,6 +143,14 @@ def main() -> int:
         try:
             connecteurs.DIAG.clear()
             e, sr = CONNECTEURS[s["type"]](s, aujourd, fin)
+            # Page momentanément illisible (ex. « 504 Gateway Time-out » de la billetterie) : on garde la dernière
+            # lecture réussie de moins de 7 jours plutôt que de faire disparaître tous ses spectacles
+            if not e and not sr and any("illisible" in d for d in connecteurs.DIAG) and fichier_cache.exists():
+                c = json.loads(fichier_cache.read_text(encoding="utf-8"))
+                if c.get("date", "") >= (aujourd - timedelta(days=7)).isoformat():
+                    e, sr = c["evenements"], c["series"]
+                    connecteurs.DIAG.append(f"page illisible : données du {c['date']} conservées")
+                    print(f"  page illisible : données du {c['date']} conservées")
             if s.get("festival"):
                 for x in e + sr:
                     x["festival"] = s["festival"]
