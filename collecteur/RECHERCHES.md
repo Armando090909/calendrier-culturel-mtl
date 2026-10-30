@@ -123,3 +123,12 @@ Votre site refuse notre outil de lecture automatique (il s'identifie « Calendri
 1. nous transmettre un lien de calendrier (Google Agenda public, iCal) ou l'ajouter sur ccmtl.ca (« Tu organises des shows ? ») ;
 2. ou autoriser notre outil sur votre page de programmation.
 Merci, et au plaisir de faire découvrir vos soirées !
+
+## Déclenchement quotidien (30 oct. 2026)
+- L'horaire de GitHub Actions s'est montré peu fiable (1 seule collecte programmée sur 3 jours). La collecte est lancée
+  chaque nuit à 1 h 30 (America/Toronto) par **cron-job.org** (tâche « Collecte ccmtl », POST sur l'API
+  `actions/workflows/collecte.yml/dispatches`, corps `{"ref":"main"}`), avec un jeton GitHub « fine-grained »
+  « cron-job ccmtl » limité à ce dépôt (Actions : lecture et écriture), sans expiration.
+- Les essais GitHub (2 h, 5 h, 8 h) restent en filet de sécurité ; ils ne font rien si la collecte du jour est faite.
+- **À faire avant mars 2028** : GitHub annonce la fin de la version d'API `2022-11-28` (en-tête Sunset : 10 mars 2028).
+  Mettre à jour l'en-tête `X-GitHub-Api-Version` dans cron-job.org.
