@@ -535,3 +535,4 @@ footer:empty{display:none}
 .col.passe{opacity:.45}
 .col.sel{outline:3px solid var(--ink);outline-offset:3px;border-radius:12px}
 @media (max-width:900px){.board .col.passe:not(.sel){display:none}}
+.ev.cible{outline:3px solid var(--hl);outline-offset:2px}
