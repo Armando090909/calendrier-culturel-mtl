@@ -78,6 +78,9 @@ TYPES_LISIBLES = {"ville_csv": "données ouvertes", "ics": "calendrier iCal", "j
                   "propositions": "formulaire"}
 
 
+RE_IMPRO = re.compile(r"(?i)\bimpro\b|improvisation(?! libre)|\bLIMM?\b|\bLNI\b|ligue d.impro|match d.impro")
+
+
 def ecrire_liste_sources(conf: dict, rapport: list) -> None:
     """docs/sources.json : la liste publique des sources consultées, pour la page « Nos sources »."""
     par_nom = {r["source"]: r for r in rapport}
@@ -334,6 +337,14 @@ def main() -> int:
         e["discipline"], aussi = disciplines_aussi(e["titre"], e.get("resume", ""), e["discipline"], e["lieu"])
         if aussi:
             e["aussi"] = aussi
+
+    # Improvisation (LNI, LIM, LIMM, ligues de bar) : Humour et cabaret, et aussi Théâtre ; la LIMM aussi Musique
+    for e in events:
+        if e["discipline"] in ("theatre", "humour", "autre") and RE_IMPRO.search(e["titre"]):
+            aussi = [d for d in (e.get("aussi") or []) if d not in ("humour", "theatre")]
+            if re.search(r"(?i)\bLIMM\b|impro\w* musical", e["titre"]):
+                aussi = ["musique"] + aussi
+            e["discipline"], e["aussi"] = "humour", (["theatre"] + aussi)[:2]
 
     # Jeune public : catégorie à part entière (la discipline d'origine est gardée dans « sous »)
     for e in events:

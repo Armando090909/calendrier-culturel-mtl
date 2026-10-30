@@ -53,7 +53,8 @@ const STYLES={rock:"Rock et indie",pop:"Pop et chanson",hiphop:"Hip-hop et R&B",
 // Pour les filtres : un spectacle jeune public n'apparaît que si « Jeune public » est coché (pas sous Théâtre, Musique…)
 const discsFiltre=e=>e.discipline==="jeune"?["jeune"]:e.discipline==="expo"?["expo"]:discs(e);
 // st.seul = "expo" : le calendrier d'accueil, mais avec les vernissages seulement (bouton Vernissages de la page Expositions)
-const visible=()=>D.events.filter(e=>(st.seul?e.discipline===st.seul:st.fest?e.festival===st.fest:discsFiltre(e).some(k=>st.on[k]))&&inRadius(e.lieu));
+// st.cible : l'événement ouvert depuis la recherche ou un lien partagé reste visible ce jour-là, même si sa catégorie n'est pas cochée
+const visible=()=>D.events.filter(e=>(st.cible===e._i&&e.date===st.day)||(st.seul?e.discipline===st.seul:st.fest?e.festival===st.fest:discsFiltre(e).some(k=>st.on[k]))&&inRadius(e.lieu));
 const byTime=(a,b)=>(a.heure||"99").localeCompare(b.heure||"99");
 const byDist=(a,b)=>{const x=dist(a.lieu),y=dist(b.lieu);return (x===null?1e9:x)-(y===null?1e9:y)||byTime(a,b)};
 
@@ -148,7 +149,7 @@ function detailHTML(e){
       </div>`;
   const extra=`${ecoute}${calHTML(e)}`;
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
-  return `<article class="ev det${st.cible===e._i?" flash":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
+  return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}</div>
@@ -432,7 +433,7 @@ $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||
   if(st.view==="day"&&st.day===b.dataset.d){st.week=monday(st.day);st.view="week"}else{st.day=b.dataset.d;st.view="day"}render()});
 $("view").addEventListener("click",e=>{
   const c=e.target.closest(".cell");if(c&&!c.disabled){st.day=c.dataset.d;st.week=monday(st.day);st.view="day";render();return}
-  const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){sortirRecherche();st.day=ev.date;st.view="day";render();
+  const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){sortirRecherche();st.day=ev.date;st.view="day";st.cible=ev._i;render();
     const a=$("ev-"+ev._i);if(a){a.classList.add("flash");a.scrollIntoView({block:"start",behavior:"smooth"})}}return}
   const xt=e.target.closest("[data-xtype]");if(xt){st.xtype=xt.dataset.xtype;render();return}
   const xw=e.target.closest("[data-xw]");if(xw){st.xweek=addDays(st.xweek,Number(xw.dataset.xw));render();return}
@@ -537,11 +538,10 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
   renderFooter();
   const P=new URLSearchParams(location.search),pe=P.get("e"),pd=P.get("d");let cible=null;
   if(pe)cible=D.events.find(x=>x.ics===pe)||null;
-  if(cible){st.day=cible.date;st.view="day";discsFiltre(cible).forEach(k=>st.on[k]=true)}
+  if(cible){st.day=cible.date;st.view="day"}
   else if(pd&&/^\d{4}-\d{2}-\d{2}$/.test(pd)&&inRange(pd)){st.day=pd;st.view="day"}
   render();
   // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
-  if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700);
-    setTimeout(()=>{st.cible=null},5000)}
+  if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700)}
 }).catch(()=>{$("view").innerHTML='<div class="empty">Les événements n\'ont pas pu être chargés. Rechargez la page.</div>'});
 })();
