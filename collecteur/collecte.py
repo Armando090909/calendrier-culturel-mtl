@@ -243,8 +243,25 @@ def main() -> int:
     memo_v = json.loads(f_vp.read_text(encoding="utf-8")) if f_vp.exists() else {}
     a_lire = sorted((e for e in events if e["source"] == "ville" and e["url"].startswith("http")
                      and (e["lieu"] == "Lieu à confirmer" or not e["heure"])), key=lambda e: e["date"])
-    lues_v, fin_v, erreurs_v = 0, time.time() + 10 * 60, []
+    # Fiches lues depuis un ordinateur à Montréal (docs/mac/ville_mac.py) : montreal.ca refuse les serveurs de GitHub
+    f_mac = CACHE / "ville_mac.json"
+    mac = json.loads(f_mac.read_text(encoding="utf-8")) if f_mac.exists() else {}
+    lues_v, fin_v, erreurs_v, par_mac = 0, time.time() + 10 * 60, [], 0
     for e in a_lire:
+        if e["url"] in mac:
+            m = mac[e["url"]]
+            faux = "".join(f'<script type="application/ld+json">{j}</script>' for j in m.get("jsonld", [])) \
+                + (f'<a href="{m["billets"]}">Billetterie</a>' if m.get("billets") else "")
+            det_mac = connecteurs.details_ville(faux, e["date"])
+            if det_mac:
+                par_mac += 1
+                if e["lieu"] == "Lieu à confirmer" and det_mac.get("lieu"):
+                    e["lieu"] = lieu_canon(det_mac["lieu"], det_mac.get("adresse", ""), "Montréal") or "Lieu à confirmer"
+                if not e["heure"] and det_mac.get("heure"):
+                    e["heure"] = det_mac["heure"]
+                if not e.get("billets") and det_mac.get("billets"):
+                    e["billets"] = det_mac["billets"]
+                continue
         det = memo_v.get(e["url"])
         if det and det.get("_err") and det.get("le") != aujourd.isoformat():
             det = None  # échec un autre jour : on réessaie
@@ -267,7 +284,12 @@ def main() -> int:
         if not e.get("billets") and det.get("billets"):
             e["billets"] = det["billets"]
     f_vp.write_text(json.dumps(memo_v, ensure_ascii=False), encoding="utf-8")
+    # Liste des fiches encore incomplètes, pour l'ordinateur à Montréal (dates les plus proches d'abord)
+    (SORTIE.parent / "ville_a_lire.json").write_text(json.dumps(list(dict.fromkeys(
+        e["url"] for e in a_lire if (e["lieu"] == "Lieu à confirmer" or not e["heure"])
+        and e["url"] not in mac and "montreal.ca/evenements/" in e["url"])), ensure_ascii=False), encoding="utf-8")
     notes = {"fiches_ville": {"lues": lues_v, "erreurs": len(erreurs_v), "exemples_erreurs": sorted(set(erreurs_v))[:3],
+                              "completees_par_mac": par_mac,
                               "heures_trouvees": sum(1 for e in a_lire if e["heure"]),
                               "salles_trouvees": sum(1 for e in a_lire if e["lieu"] != "Lieu à confirmer")}}
     print(f"Fiches de la Ville : {notes['fiches_ville']}")
