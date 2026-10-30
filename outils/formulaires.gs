@@ -126,9 +126,11 @@ function relier_(form, nomFeuille) {
   }
   const publique = ss.getSheetByName("publique") || ss.insertSheet("publique");
   publique.clear();
-  publique.getRange("A1").setFormula(
-    "=QUERY({'" + reponses.getName().replace(/'/g, "''") + "'!A:" + colonne_(colApprouve) + "}, \"select " +
-    lettres.join(", ") + "\", 1)");  // Apps Script écrit toujours les formules avec des virgules
+  // FILTER sur les colonnes : tout sauf le courriel (fonctionne quelle que soit la langue de la feuille ;
+  // l'ancienne formule QUERY donnait #ERROR dans une feuille en français)
+  const n = "'" + reponses.getName().replace(/'/g, "''") + "'";
+  publique.getRange("A1").setNumberFormat("General").setFormula(
+    "=FILTER(" + n + "!A:Z, NOT(REGEXMATCH(" + n + "!A1:Z1, \"(?i)courriel|e-?mail\")))");
   publique.getRange("A1").setNote("Onglet à publier en CSV (Fichier → Partager → Publier sur le Web). " +
     "Il ne contient pas les courriels. Ne modifiez rien ici : modérez dans l'onglet des réponses.");
   if (ss.getSheetByName("Sheet1") || ss.getSheetByName("Feuille 1")) {
