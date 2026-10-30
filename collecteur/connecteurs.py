@@ -732,6 +732,9 @@ def recurrents(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     for r in liste:
         j = debut + timedelta(days=(int(r["jour"]) - debut.weekday()) % 7)
         while j <= fin:
+            if r.get("mois") and j.month not in r["mois"]:  # saison (ex. septembre à mai)
+                j += timedelta(days=7)
+                continue
             evs.append(brut(titre=r["titre"], date=j.isoformat(), heure=r.get("heure"), lieu=r["lieu"],
                             adresse=r.get("adresse", ""), ville="Montréal", url=r.get("source", ""),
                             discipline=cfg.get("discipline", ""), source=cfg["cle_source"],

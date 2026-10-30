@@ -255,6 +255,7 @@ sources:
 
   # ---- Soirées quiz (28 oct. 2026) : rendez-vous hebdomadaires vérifiés (collecteur/recurrents.yaml) + ma.to « community »
   - {nom: "Soirées quiz (hebdomadaires)", cle: recurrents, type: recurrents, groupe: quiz, discipline: quiz}
+  - {nom: "Ligues d'improvisation (hebdomadaires)", cle: recurrents, type: recurrents, groupe: impro, discipline: humour}
   - {nom: "ma.to – communauté (quiz, trivia)", cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/community", garder: "quiz|trivia|jeu-questionnaire|questionnaire", discipline: quiz, jours_semaine: [0, 3]}
 
   # ---- Salles qui refusent le robot (403) : leurs pages sur des billetteries et agendas publics (28 oct. 2026)
