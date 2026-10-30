@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-23-retrospective-bani-khoshnoudi-programme-de-courts-1d8ffd@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261123T181500
+DTEND;TZID=America/Toronto:20261123T201500
+SUMMARY:Rétrospective Bani Khoshnoudi: programme de courts métrages
+LOCATION:Cinémathèque québécoise\, Montréal
+URL:https://ridm.ca/fr/grille-horaire?date=2026-11-23
+DESCRIPTION:Rétrospective de la cinéaste Bani Khoshnoudi\, avec des films
+  explorant mémoire\, migration\, répression et pouvoir des images.\nDét
+ ails : https://lepointdevente.com/billets/ridm2026-053?lang=fr\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -3,7 +3,7 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2316,
+  "evenements": 2287,
   "erreur": false
  },
  {
@@ -17,7 +17,7 @@
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 240,
+  "evenements": 214,
   "erreur": false
  },
  {
@@ -252,6 +252,20 @@
   "erreur": false
  },
  {
+  "nom": "Cabaret Lion d'Or (LIM",
+  "url": "https://cabaretliondor.com",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "LNI – Ligue nationale d'improvisation",
+  "url": "https://lni.ca",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
   "nom": "La Mèche courte (festival jeune public)",
   "url": "https://www.lamechecourte.ca/programmation",
   "type": "page lue par l'IA",
@@ -304,7 +318,7 @@
   "nom": "ma.to (musique live)",
   "url": "https://ma.to/events/montreal/anytime/live-music",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -318,7 +332,7 @@
   "nom": "Théâtre Fairmount",
   "url": "https://theatrefairmount.com",
   "type": "page lue par l'IA",
-  "evenements": 25,
+  "evenements": 22,
   "erreur": false
  },
  {
@@ -339,7 +353,7 @@
   "nom": "Foufounes Électriques",
   "url": "https://foufouneselectriques.com",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -528,7 +542,7 @@
   "nom": "Upstairs Jazz Bar & Grill",
   "url": "https://www.upstairsjazz.com",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -605,7 +619,7 @@
   "nom": "Ausgang Plaza",
   "url": "https://www.ausgangplaza.com/evenements",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 17,
   "erreur": false
  },
  {
@@ -647,14 +661,14 @@
   "nom": "Casa del Popolo – P'tit Ours",
   "url": "https://casadelpopolo.com/fr/events/ptit-ours",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 27,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – La Sotterenea",
   "url": "https://casadelpopolo.com/fr/events/la-sotterenea",
   "type": "page lue par l'IA",
-  "evenements": 25,
+  "evenements": 23,
   "erreur": false
  },
  {
@@ -668,7 +682,7 @@
   "nom": "Bar Datcha",
   "url": "https://bardatcha.ca",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -878,7 +892,7 @@
   "nom": "Ursa",
   "url": "https://ursamtl.com",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 27,
   "erreur": false
  },
  {
@@ -899,28 +913,28 @@
   "nom": "Quai des Brumes (billetterie)",
   "url": "https://lepointdevente.com/lieux/lequaidesbrumes",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Café Campus (billetterie)",
   "url": "https://lepointdevente.com/lieux/cafecampus",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 36,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Turbo Haüs (billetterie)",
   "url": "https://lepointdevente.com/lieux/turbohaus-2",
   "type": "page lue par l'IA",
-  "evenements": 10,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -941,7 +955,7 @@
   "nom": "L'Escogriffe (billetterie)",
   "url": "https://lepointdevente.com/lieux/bar-spectacle-l-escogriffe",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -955,7 +969,7 @@
   "nom": "Ausgang Plaza (billetterie)",
   "url": "https://lepointdevente.com/lieux/ausgang-plaza",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -976,7 +990,7 @@
   "nom": "Club Balattou (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-balattou",
   "type": "page lue par l'IA",
-  "evenements": 16,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -990,7 +1004,7 @@
   "nom": "Le Belmont (billetterie)",
   "url": "https://lepointdevente.com/lieux/lebelmont",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 0,
   "erreur": false
  },
  {
