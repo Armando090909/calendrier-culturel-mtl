@@ -16,3 +16,8 @@ quiz:
   - {titre: "Soirée quiz (réservation)", lieu: "L'Adversaire – Pub et boutique ludiques", adresse: "", jour: 2, heure: "19:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
   - {titre: "Trivia et humour (anglais)", lieu: "Hurley's Irish Pub", adresse: "1225 rue Crescent", jour: 2, heure: "20:00", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
   - {titre: "Soirée quiz (en français)", lieu: "Madame Smith", adresse: "", jour: 3, heure: "20:30", verifie: 2026-10-28, source: "https://www.restomontreal.ca/article/the-best-quiz-and-trivia-nights-in-montreal/2180/en"}
+
+# Improvisation : ligues hebdomadaires dont le site n'affiche pas les dates de façon lisible.
+# mois : la saison (la série n'apparaît que ces mois-là).
+impro:
+  - {titre: "La LIM – Ligue d'improvisation montréalaise", lieu: "Cabaret Lion d'Or", adresse: "1676 rue Ontario Est", jour: 6, mois: [9, 10, 11, 12, 1, 2, 3, 4, 5], verifie: 2026-10-30, source: "https://www.mtl.org/en/what-to-do/festivals-and-events/lim-improvisation-lion-d-or"}
