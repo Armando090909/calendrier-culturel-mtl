@@ -343,22 +343,37 @@ def main() -> int:
     memo = json.loads(f_heures.read_text(encoding="utf-8")) if f_heures.exists() else {}
     sans = [e for e in events if not e["heure"] and e["url"].startswith("http")
             and not any(d in e["url"] for d in reglages.get("sites_sans_heure", ["songkick.com"]))]
-    lues = 0
+    # Mémoire par page ET par date (une page peut lister plusieurs représentations). Une page sans heure trouvée est
+    # relue dans le navigateur (heure souvent affichée par JavaScript), puis réessayée après 7 jours.
+    lues, rendues, vieux_h = 0, 0, (aujourd - timedelta(days=7)).isoformat()
     for e in sans:
-        if e["url"] in memo:
-            e["heure"] = memo[e["url"]]
+        cle = e["url"] + "|" + e["date"]
+        v = memo.get(cle)
+        if isinstance(v, str):
+            e["heure"] = v
             continue
+        if isinstance(v, dict) and v.get("le", "") >= vieux_h:
+            continue  # cherchée récemment, sans succès
         if lues >= int(reglages.get("max_pages_heure", 300)):
             continue
         try:
-            memo[e["url"]] = heure_page(telecharger(e["url"], "text/html").text)
-            e["heure"] = memo[e["url"]]
+            h = heure_page(telecharger(e["url"], "text/html").text, e["date"])
             lues += 1
+            if not h and rendues < int(reglages.get("max_pages_heure_nav", 60)):
+                rendues += 1
+                h = heure_page(connecteurs.page_rendue(e["url"]), e["date"])
+            memo[cle] = h or {"le": aujourd.isoformat()}
+            if h:
+                e["heure"] = h
             time.sleep(0.5)
         except Exception:
+            memo[cle] = {"le": aujourd.isoformat()}
             continue
+    # anciennes entrées (clé = page seule) : retirées
+    memo = {k: v for k, v in memo.items() if "|" in k}
     f_heures.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
-    print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues, {sum(1 for e in sans if e['heure'])} heures trouvées.")
+    print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues ({rendues} dans le navigateur), "
+          f"{sum(1 for e in sans if e['heure'])} heures trouvées.")
 
     # Plusieurs disciplines possibles (ex. une performance : théâtre ET danse)
     for e in events:

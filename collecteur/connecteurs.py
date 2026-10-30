@@ -543,15 +543,57 @@ def _hhmm(m) -> str | None:
     return f"{h:02d}:{mi:02d}"
 
 
-def heure_page(html: str) -> str | None:
-    """Heure du spectacle lue sur la page d'un événement : données schema.org d'abord,
-    puis le texte (« spectacle à 20 h 30 », « show 8pm » ; à défaut, l'ouverture des portes)."""
+_MOIS_EN = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+            "november", "december"]
+
+
+def _heure_du_jour(texte: str, jour: str) -> str | None:
+    """Heure écrite juste après la date du spectacle : « mardi 3 novembre 2026 · 19 h 30 », « Nov 3, 2026 – 7:30 PM »,
+    « 2026-11-03 19:30 ». Utile sur les pages qui listent plusieurs représentations."""
+    a, m, j = (int(x) for x in jour.split("-"))
+    t = plat(texte)
+    motifs = [rf"\b{j}(?:er)? {_MOIS[m - 1]}(?: {a})?", rf"\b{_MOIS_EN[m - 1]} {j}(?:st|nd|rd|th)?(?: {a})?",
+              rf"\b{_MOIS_EN[m - 1][:3]} {j}\b(?: {a})?", rf"\b{j} {_MOIS_EN[m - 1][:3]}\w*(?: {a})?",
+              rf"\b{a} {m:02d} {j:02d}\b", rf"\b{j:02d} {m:02d} {a}\b"]
+    for motif in motifs:
+        for d in re.finditer(motif, t):
+            suite = t[d.end():d.end() + 70]
+            h = re.search(r"\b(\d{1,2}) ?h ?(\d{2})?\b|\b(\d{1,2}) (\d{2}) ?([ap]) ?m\b|\b(\d{1,2}) ?([ap]) ?m\b|\b(\d{1,2}) (\d{2})\b", suite)
+            if not h:
+                continue
+            g = h.groups()
+            if g[0]:
+                hh, mm = int(g[0]), int(g[1] or 0)
+            elif g[2]:
+                hh, mm = int(g[2]) % 12 + (12 if g[4] == "p" else 0), int(g[3])
+            elif g[5]:
+                hh, mm = int(g[5]) % 12 + (12 if g[6] == "p" else 0), 0
+            else:
+                hh, mm = int(g[7]), int(g[8])
+            if 9 <= hh <= 23 and mm < 60:
+                return f"{hh:02d}:{mm:02d}"
+    return None
+
+
+def heure_page(html: str, jour: str | None = None) -> str | None:
+    """Heure du spectacle lue sur la page d'un événement : données schema.org d'abord (la représentation du bon jour
+    s'il y en a plusieurs), puis l'heure écrite après la date, puis le texte (« spectacle à 20 h 30 », « show 8pm » ;
+    à défaut, l'ouverture des portes)."""
+    heures = []
     for o in _objets_jsonld(html):
         sd = str(o.get("startDate") or "")
         m = re.search(r"T(\d{2}):(\d{2})", sd)
         if m and (m.group(1), m.group(2)) != ("00", "00"):
-            return f"{m.group(1)}:{m.group(2)}"
+            heures.append((sd[:10], f"{m.group(1)}:{m.group(2)}"))
+    if jour and any(d == jour for d, _ in heures):
+        return next(h for d, h in heures if d == jour)
+    if heures and (not jour or len({d for d, _ in heures}) == 1):
+        return heures[0][1]
     texte = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    if jour:
+        h = _heure_du_jour(texte, jour)
+        if h:
+            return h
     for mots in (_MOTS_SHOW, _MOTS_PORTES):
         for m in re.finditer(mots + r"\W{0,4}(?:\w+\W+){0,3}?(?:" + _H + ")", texte, re.I):
             h = _hhmm(re.search(_H, m.group(0)[len(re.match(mots, m.group(0), re.I).group(0)):], re.I))
