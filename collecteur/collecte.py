@@ -351,7 +351,10 @@ def main() -> int:
     for a in (yaml.safe_load(f_aff.read_text(encoding="utf-8")) or []) if f_aff.exists() else []:
         for e in events:
             if e["date"] == str(a["date"]) and plat(a["titre_contient"]) in plat(e["titre"]):
-                e["image"] = "https://ccmtl.ca/" + a["image"]
+                if a.get("image"):
+                    e["image"] = "https://ccmtl.ca/" + a["image"]
+                if a.get("aussi"):
+                    e["aussi"] = list(dict.fromkeys([*(e.get("aussi") or []), *[d for d in a["aussi"] if d != e["discipline"]]]))[:2]
 
     # Improvisation (LNI, LIM, LIMM, ligues de bar) : Humour et cabaret, et aussi Théâtre ; la LIMM aussi Musique
     for e in events:
