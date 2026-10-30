@@ -116,6 +116,7 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
 <div class="pg-haut"><a class="pg-marque" href="/">calendrier culturel <b>mtl</b></a>
 <p class="toplinks"><a href="/">← Tout le calendrier</a></p></div>
 {corps}
+<p class="licence">Calendrier bénévole, gratuit et sans pub. Compilation sous licence <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC 4.0</a> : réutilisation non commerciale en citant ccmtl.ca. Affiches et descriptions : leurs auteurs.</p>
 </div>
 {PARTAGE_JS}
 </body>
@@ -241,7 +242,7 @@ def main() -> None:
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{maj}</lastmod><changefreq>{f}</changefreq></url>\n" for u, f in urls)
         + "</urlset>\n", encoding="utf-8")
-    (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /ics/\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+    # robots.txt : écrit à la main dans docs/ (robots d'entraînement d'IA refusés) ; on ne le remplace pas ici
     print(f"Pages : {len(evs)} événements, {len(jours)} jours, sitemap de {len(urls)} adresses.")
 
 

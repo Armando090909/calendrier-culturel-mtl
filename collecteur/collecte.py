@@ -534,6 +534,7 @@ def main() -> int:
     noms_sources = conf.get("noms_sources", {})
     data = {
         "version": 3,
+        "licence": "CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/) : réutilisation non commerciale en citant ccmtl.ca",
         "miseAJour": aujourd.isoformat(),
         "debut": aujourd.isoformat(),
         "fin": fin.isoformat(),

@@ -1,3 +1,20 @@
+# Calendrier culturel montréalais (ccmtl.ca) : projet bénévole, gratuit, pour la communauté.
+# Les moteurs de recherche sont les bienvenus. Les robots qui collectent pour entraîner des IA ne le sont pas.
+# Contenu sous licence CC BY-NC 4.0 (pas d'usage commercial sans permission : info@ccmtl.ca).
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: Omgilibot
+Disallow: /
+
 User-agent: *
 Allow: /
 Disallow: /ics/
