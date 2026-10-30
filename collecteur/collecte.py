@@ -364,6 +364,13 @@ def main() -> int:
                 aussi = ["musique"] + aussi
             e["discipline"], e["aussi"] = "humour", (["theatre"] + aussi)[:2]
 
+    # Ciné-concert, ciné-piano, projection avec musique en direct : Musique ET Cinéma
+    for e in events:
+        if re.search(r"(?i)ciné[- ]?(piano|concert|musique)|cine[- ]?concert|film[- ]concert", e["titre"]):
+            autre = "cinema" if e["discipline"] == "musique" else "musique" if e["discipline"] == "cinema" else None
+            if autre and autre not in (e.get("aussi") or []):
+                e["aussi"] = ([autre] + (e.get("aussi") or []))[:2]
+
     # Jeune public : catégorie à part entière (la discipline d'origine est gardée dans « sous »)
     for e in events:
         if e["jeunePublic"] and e["discipline"] != "jeune":
