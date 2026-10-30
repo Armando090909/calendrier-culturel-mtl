@@ -115,12 +115,12 @@ sources:
 
   # ---------- Humour ----------
   - {nom: Fun Nation (humour), cle: salles, type: page_ia, url: "https://funnation.ca/spectacles/spectacles-dhumour/", discipline: humour, jours_semaine: [0, 3]}
-  - {nom: Spectaculos (humour, 6 pages), cle: salles, type: page_ia, url: "https://spectaculos.ca/fr/categorie/humour/montreal?page={page}", repeter: mois, mois: 1, pages: 6, discipline: humour, jours_semaine: [0, 3]}
+  - {nom: "Spectaculos (humour, 6 pages)", cle: salles, type: page_ia, url: "https://spectaculos.ca/fr/categorie/humour/montreal?page={page}", repeter: mois, mois: 1, pages: 6, discipline: humour, jours_semaine: [0, 3]}
   - {nom: evenko (humour), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements/humour", discipline: humour, jours_semaine: [0, 3]}
   - {nom: Place des Arts (humour), cle: salles, type: page_ia, url: "https://www.placedesarts.com/discipline/humour", discipline: humour, jours_semaine: [0, 3]}
-  - {nom: Théâtre Sainte-Catherine (impro, humour), cle: salles, type: page_ia, url: "http://theatresaintecatherine.com/", lieu: Théâtre Sainte-Catherine, jours_semaine: [0, 3]}
+  - {nom: "Théâtre Sainte-Catherine (impro et humour)", cle: salles, type: page_ia, url: "http://theatresaintecatherine.com/", lieu: Théâtre Sainte-Catherine, jours_semaine: [0, 3]}
   # Improvisation : LIM (dimanches, Cabaret Lion d'Or), LNI (MTELUS et ailleurs). Pages lues par l'IA, avec le navigateur.
-  - {nom: Cabaret Lion d'Or (LIM, spectacles), cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Cabaret Lion d'Or (LIM et spectacles)", cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
   - {nom: LNI – Ligue nationale d'improvisation, cle: salles, type: page_ia, url: "https://lni.ca/", discipline: humour, jours_semaine: [0, 3], navigateur: true}
 
   # ---------- Jeune public ----------
@@ -131,7 +131,7 @@ sources:
   # ---------- Musées, galeries, vernissages ----------
   - {nom: Tourisme Montréal – expositions des musées, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/expositions-musees-montreal", jours_semaine: [0]}
   - {nom: Tourisme Montréal – expositions automne-hiver, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/expositions-automne-hiver-montreal", jours_semaine: [0]}
-  - {nom: Réseau art actuel (centres d'artistes, vernissages), cle: salles, type: page_ia, url: "https://reseauartactuel.org/evenements/page/{page}/?intervalle=semaine", repeter: mois, mois: 1, pages: 4, jours_semaine: [0, 3]}
+  - {nom: "Réseau art actuel (centres d'artistes, vernissages)", cle: salles, type: page_ia, url: "https://reseauartactuel.org/evenements/page/{page}/?intervalle=semaine", repeter: mois, mois: 1, pages: 4, jours_semaine: [0, 3]}
   - {nom: Art Mûr (expositions à venir), cle: salles, type: page_ia, url: "https://artmur.com/expositions-a-venir/", lieu: Art Mûr, jours_semaine: [0]}
 
   # ---------- Musique : salles qui affichent l'heure (Songkick ne la donne pas) ----------
