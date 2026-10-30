@@ -557,6 +557,8 @@ def main() -> int:
     except Exception as exc:
         print(f"Liste des sources en échec : {exc}")
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    if connecteurs.ROBOTS_REFUS:  # pages que leur site demande aux robots de ne pas lire (mode observer)
+        notes["robots_refus"] = dict(sorted(connecteurs.ROBOTS_REFUS.items(), key=lambda x: -x[1])[:60])
     RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
                                    "expositions": len(expos), "nouvelles_salles": sorted(set(nouveaux_lieux)),
                                    "notes": notes, "alerte": ia.ALERTE, "sources": rapport}, ensure_ascii=False, indent=1), encoding="utf-8")

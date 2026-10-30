@@ -35,7 +35,37 @@ MOIS_EN = ["january", "february", "march", "april", "may", "june", "july", "augu
            "november", "december"]
 
 
+# robots.txt de chaque site. Mode « observer » (par défaut) : on note les pages que le site demande aux robots de ne pas
+# lire (rapport : notes.robots_refus) ; mode « respecter » (ROBOTS_MODE=respecter) : on ne les lit pas.
+_ROBOTS: dict = {}
+ROBOTS_REFUS: dict[str, int] = {}
+
+
+def robots_permet(url: str) -> bool:
+    from urllib.robotparser import RobotFileParser
+    u = urlparse(url)
+    hote = f"{u.scheme}://{u.netloc}"
+    if hote not in _ROBOTS:
+        rp = None
+        try:
+            r = requests.get(hote + "/robots.txt", timeout=10, headers={"User-Agent": UA})
+            if r.status_code == 200 and "text" in r.headers.get("Content-Type", "text"):
+                rp = RobotFileParser()
+                rp.parse(r.text.splitlines())
+        except Exception:
+            rp = None
+        _ROBOTS[hote] = rp
+    rp = _ROBOTS[hote]
+    return rp is None or rp.can_fetch("CalendrierCulturelMTL", url)
+
+
 def telecharger(url: str, accept: str = "*/*") -> requests.Response:
+    import os
+    if not robots_permet(url):
+        cle = urlparse(url).netloc + urlparse(url).path[:40]
+        ROBOTS_REFUS[cle] = ROBOTS_REFUS.get(cle, 0) + 1
+        if os.environ.get("ROBOTS_MODE") == "respecter":
+            raise PermissionError(f"robots.txt du site : lecture non souhaitée ({url})")
     r = requests.get(url, timeout=40, headers={"User-Agent": UA, "Accept": accept, "Accept-Language": "fr-CA,fr;q=0.9,en;q=0.5"})
     r.raise_for_status()
     if not r.encoding or r.encoding.lower() == "iso-8859-1":
