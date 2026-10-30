@@ -346,6 +346,13 @@ def main() -> int:
         if aussi:
             e["aussi"] = aussi
 
+    # Affiches fournies à la main (collecteur/affiches.yaml → docs/affiches/)
+    f_aff = Path(__file__).parent / "affiches.yaml"
+    for a in (yaml.safe_load(f_aff.read_text(encoding="utf-8")) or []) if f_aff.exists() else []:
+        for e in events:
+            if e["date"] == str(a["date"]) and plat(a["titre_contient"]) in plat(e["titre"]):
+                e["image"] = "https://ccmtl.ca/" + a["image"]
+
     # Improvisation (LNI, LIM, LIMM, ligues de bar) : Humour et cabaret, et aussi Théâtre ; la LIMM aussi Musique
     for e in events:
         if e["discipline"] in ("theatre", "humour", "autre") and RE_IMPRO.search(e["titre"]):
