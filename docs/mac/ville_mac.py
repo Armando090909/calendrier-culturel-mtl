@@ -6,7 +6,7 @@ identifié depuis une connexion montréalaise. Ce programme tourne au plus une f
 allumé, et lit seulement les fiches dont le calendrier a besoin (heure, salle, billetterie manquantes).
 
 Règles : robot identifié (« CalendrierCulturelMTL »), robots.txt respecté, une page toutes les 2 secondes,
-au plus 400 pages par jour. Le résultat est envoyé au dépôt GitHub du calendrier (collecteur/cache/ville_mac.json).
+au plus 50 minutes par jour (la liste raccourcit une fois le retard rattrapé). Le résultat est envoyé au dépôt GitHub du calendrier (collecteur/cache/ville_mac.json).
 
 Fonctionne avec le Python 3.8 de macOS, sans module à installer (les téléchargements passent par « curl »).
 Essai sans rien envoyer :  python3 ville_mac.py --essai
@@ -26,7 +26,8 @@ LISTE = "https://ccmtl.ca/ville_a_lire.json"
 DEPOT = "Armando090909/calendrier-culturel-mtl"
 CHEMIN = "collecteur/cache/ville_mac.json"
 DOSSIER = os.path.expanduser("~/.ccmtl")
-MAX_PAGES, PAUSE = 400, 2.0
+MAX_PAGES, PAUSE = 1500, 2.0  # la liste ne contient que les fiches incomplètes : longue au début, courte ensuite
+DUREE_MAX = 50 * 60  # au plus 50 minutes de lecture par jour
 ESSAI = "--essai" in sys.argv
 
 
@@ -99,7 +100,11 @@ def main():
     rp.parse(robots.splitlines() if code == 200 else [])
 
     lues, refus, res = 0, 0, {}
+    debut_lecture = time.time()
     for url in urls:
+        if time.time() - debut_lecture > DUREE_MAX:
+            journal("Durée maximale atteinte : la suite demain.")
+            break
         if url.startswith("http") and not rp.can_fetch("CalendrierCulturelMTL", url):
             continue
         code, html = curl(url)
