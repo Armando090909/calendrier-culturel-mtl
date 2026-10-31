@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-06-ces-derniers-souffles-de-mathilde-forest-ad962b@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261106T170000
+DTEND;TZID=America/Toronto:20261106T190000
+SUMMARY:Ces derniers souffles de Mathilde Forest
+LOCATION:Vaste et Vague\, Montréal
+URL:https://reseauartactuel.org/evenement/ces-derniers-souffles-par-mathild
+ e-forest/
+DESCRIPTION:Vernissage de l'exposition de Mathilde Forest\, à découvrir s
+ ur place jusqu'en décembre.\nDétails : https://reseauartactuel.org/evene
+ ment/ces-derniers-souffles-par-mathilde-forest/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

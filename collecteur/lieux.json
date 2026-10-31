@@ -71,12 +71,41 @@
   "lon": -73.55223,
   "quartier": "Le Sud-Ouest"
  },
+ "Benny Fab": {
+  "lat": 45.46638,
+  "lon": -73.63096,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Bibliothèque Benny": {
   "lat": 45.472,
   "lon": -73.628,
   "quartier": "NDG"
  },
+ "Bibliothèque Frontenac": {
+  "lat": 45.53292,
+  "lon": -73.55171,
+  "quartier": "Ville-Marie"
+ },
+ "Bibliothèque Hochelaga": null,
+ "Bibliothèque Hélène-Charbonneau": {
+  "alias": [
+   "Bibliothèque Hélène-Charbonneau (bibliothèque d'Ahuntsic)"
+  ],
+  "lat": 45.55348,
+  "lon": -73.6626,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Bibliothèque Hélène-Pedneault": null,
+ "Bibliothèque Jean-Corbeil": {
+  "lat": 45.60302,
+  "lon": -73.55879,
+  "quartier": "Anjou"
+ },
+ "Bibliothèque Kim-Yaroshevskaya": {
+  "lat": 45.45728,
+  "lon": -73.54782,
+  "quartier": "Verdun"
+ },
  "Bibliothèque L'Octogone": {
   "lat": 45.431,
   "lon": -73.629,
@@ -97,35 +126,100 @@
   "lon": -73.544,
   "quartier": "Hochelaga"
  },
+ "Bibliothèque Marc-Favreau": {
+  "lat": 45.53184,
+  "lon": -73.59721,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Bibliothèque Marie-Uguay": {
   "lat": 45.456,
   "lon": -73.596,
   "quartier": "Ville-Émard"
+ },
+ "Bibliothèque Mercier": {
+  "lat": 45.59558,
+  "lon": -73.52382,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
+ },
+ "Bibliothèque Père-Ambroise": {
+  "lat": 45.52279,
+  "lon": -73.56268,
+  "quartier": "Ville-Marie"
  },
  "Bibliothèque Robert-Bourassa": {
   "lat": 45.516,
   "lon": -73.606,
   "quartier": "Outremont"
  },
+ "Bibliothèque Saint-Charles": null,
  "Bibliothèque Saul-Bellow": {
   "lat": 45.444,
   "lon": -73.69,
   "quartier": "Lachine"
  },
+ "Bibliothèque Serge-Bouchard": {
+  "lat": 45.66814,
+  "lon": -73.49486,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
+ "Bibliothèque William-G.-Boll": {
+  "lat": 45.50262,
+  "lon": -73.81455,
+  "quartier": "Pierrefonds-Roxboro"
+ },
+ "Bibliothèque Yves-Ryan": {
+  "lat": 45.59651,
+  "lon": -73.63154,
+  "quartier": "Montréal-Nord"
+ },
+ "Bibliothèque de Cartierville": null,
  "Bibliothèque de Côte-des-Neiges": {
   "lat": 45.498,
   "lon": -73.625,
   "quartier": "Côte-des-Neiges"
+ },
+ "Bibliothèque de L'Île-Bizard": null,
+ "Bibliothèque de La Petite-Patrie": null,
+ "Bibliothèque de Notre-Dame-de-Grâce": {
+  "lat": 45.47559,
+  "lon": -73.61507,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
+ "Bibliothèque de Parc-Extension": {
+  "lat": 45.53142,
+  "lon": -73.62898,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
+ "Bibliothèque de Pierrefonds": {
+  "lat": 45.49589,
+  "lon": -73.84757,
+  "quartier": "Pierrefonds-Roxboro"
  },
  "Bibliothèque de Rivière-des-Prairies": {
   "lat": 45.64,
   "lon": -73.585,
   "quartier": "Rivière-des-Prairies"
  },
+ "Bibliothèque de Rosemont": {
+  "lat": 45.55193,
+  "lon": -73.58224,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "Bibliothèque de Saint-Léonard": {
+  "lat": 45.58666,
+  "lon": -73.59773,
+  "quartier": "Saint-Léonard"
+ },
+ "Bibliothèque de Saint-Michel": null,
  "Bibliothèque de Saint-Pierre": {
   "lat": 45.448,
   "lon": -73.655,
   "quartier": "Lachine"
+ },
+ "Bibliothèque du Boisé": {
+  "lat": 45.50427,
+  "lon": -73.70502,
+  "quartier": "Saint-Laurent"
  },
  "Bibliothèque du Plateau-Mont-Royal": {
   "lat": 45.5235,
@@ -136,6 +230,16 @@
   "lat": 45.516,
   "lon": -73.677,
   "quartier": "Saint-Laurent"
+ },
+ "Bibliothèque interculturelle": {
+  "lat": 45.50337,
+  "lon": -73.6371,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
+ "Bibliothèque éphémère de l'Est de Rosemont": {
+  "lat": 45.57297,
+  "lon": -73.57102,
+  "quartier": "Rosemont–La Petite-Patrie"
  },
  "Bibliothèques, cafés, musées et autres lieux du Grand Montréal": null,
  "Biosphère": null,
@@ -172,6 +276,7 @@
   "quartier": "Le Sud-Ouest"
  },
  "Burton Cummings Theatre": null,
+ "CIRCA art actuel": null,
  "Cabaret Fouf": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
@@ -245,10 +350,25 @@
   "lon": -73.5799,
   "quartier": "Shaughnessy"
  },
+ "Centre communautaire Elgar": null,
+ "Centre communautaire Gerry-Robertson": null,
+ "Centre communautaire Painter": {
+  "lat": 45.52915,
+  "lon": -73.6761,
+  "quartier": "Saint-Laurent"
+ },
  "Centre communautaire d'Anjou": {
   "lat": 45.605,
   "lon": -73.565,
   "quartier": "Anjou"
+ },
+ "Centre communautaire intergénérationnel": {
+  "alias": [
+   "Centre communautaire intergénérationnel (CCI)"
+  ],
+  "lat": 45.52018,
+  "lon": -73.61978,
+  "quartier": "Outremont"
  },
  "Centre culturel de Pierrefonds": {
   "lat": 45.49661,
@@ -260,6 +380,7 @@
   "lon": -73.615,
   "quartier": "LaSalle"
  },
+ "Centre culturel et communautaire de Cartierville": null,
  "Centre d'exposition Lethbridge": {
   "lat": 45.505,
   "lon": -73.713,
@@ -419,6 +540,11 @@
   "lat": 45.472,
   "lon": -73.588,
   "quartier": "Saint-Henri"
+ },
+ "FabricARThèque du Vieux-Saint-Laurent": {
+  "lat": 45.51267,
+  "lon": -73.67639,
+  "quartier": "Saint-Laurent"
  },
  "Fais-moi l'art": null,
  "FirstOntario Centre": null,
@@ -595,6 +721,7 @@
   "quartier": "Rosemont–La Petite-Patrie"
  },
  "L'Adversaire – Pub et boutique ludiques": null,
+ "L'Artère fabricathèque": null,
  "L'Entrepôt – maison de la culture de Lachine": {
   "lat": 45.433,
   "lon": -73.686,
@@ -623,6 +750,7 @@
   "lon": -73.556,
   "quartier": "Village"
  },
+ "L'Écart": null,
  "La Boîte à Bleuets": null,
  "La Cale - Pub Zéro Déchets": null,
  "La Chapelle Scènes contemporaines": {
@@ -662,6 +790,7 @@
  },
  "La Toscadura": null,
  "La petite Place des Arts": null,
+ "Langage Plus": null,
  "Le 9e": {
   "lat": 45.5035,
   "lon": -73.571,
@@ -759,6 +888,11 @@
  },
  "Madame Smith": null,
  "Magpie Magique": null,
+ "Mairie d'arrondissement de Montréal-Nord": {
+  "lat": 45.60516,
+  "lon": -73.61512,
+  "quartier": "Montréal-Nord"
+ },
  "Maison Antoine-Beaudry": {
   "lat": 45.67,
   "lon": -73.49,
@@ -922,6 +1056,7 @@
   "lon": -73.56816,
   "quartier": "Ville-Marie"
  },
+ "Occurrence": null,
  "Office national du film (ONF)": {
   "lat": 45.5087,
   "lon": -73.5672,
@@ -959,14 +1094,25 @@
   "lon": -73.585,
   "quartier": "Golden Square Mile"
  },
+ "Parc Beaudet": null,
  "Parc Champdoré": {
   "lat": 45.569,
   "lon": -73.62,
   "quartier": "Saint-Michel"
  },
+ "Parc De Mésy": {
+  "lat": 45.52987,
+  "lon": -73.71725,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Parc Félix-Leclerc – LaSalle": {
   "lat": 45.429,
   "lon": -73.64,
+  "quartier": "LaSalle"
+ },
+ "Parc Leroux": {
+  "lat": 45.43435,
+  "lon": -73.59513,
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
@@ -979,6 +1125,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Pavillon de l'île": null,
+ "Peterborough Memorial Centre": null,
  "Petit Campus": {
   "lat": 45.5146,
   "lon": -73.571,
@@ -1088,6 +1235,7 @@
  "Salle Claudia-Ebacher": null,
  "Salle Desjardins-Telus": null,
  "Salle Dussault": null,
+ "Salle Désilets du Cégep Marie-Victorin": null,
  "Salle Edwin-Bélanger": null,
  "Salle Fernand-Seguin": null,
  "Salle Jean-Claude-Germain": null,
@@ -1099,6 +1247,7 @@
  },
  "Salle Jean-Louis-Millette": null,
  "Salle Louis-Fréchette": null,
+ "Salle Madeleine-Lahaye": null,
  "Salle Michelle-Rossignol": null,
  "Salle Méchatigan": null,
  "Salle Norman-McLaren": null,
@@ -1118,6 +1267,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Salle d'exposition": null,
+ "Salle de spectacle de l’église Jean XXIII": null,
  "Salle principale": null,
  "Salle Émile-Legault": {
   "lat": 45.511,
@@ -1235,6 +1385,7 @@
   "lon": -73.56,
   "quartier": "Quartier latin"
  },
+ "Théâtre Lio": null,
  "Théâtre Lionel-Groulx": null,
  "Théâtre Maisonneuve": {
   "alias": [
@@ -1298,17 +1449,20 @@
   "lon": -73.574,
   "quartier": "Plateau"
  },
+ "Théâtre des Eskers": null,
  "Théâtre du Marais": null,
  "Théâtre du Nouveau Monde": {
   "lat": 45.5085,
   "lon": -73.566,
   "quartier": "Quartier des spectacles"
  },
+ "Théâtre du Palais Municipal": null,
  "Théâtre du Rideau Vert": {
   "lat": 45.526,
   "lon": -73.5835,
   "quartier": "Plateau"
  },
+ "Théâtre du cuivre": null,
  "Théâtre l'Aparté": null,
  "Turbo Haüs": {
   "alias": [
@@ -1347,6 +1501,7 @@
   "lon": -73.5632,
   "quartier": "Quartier des spectacles"
  },
+ "Vaste et Vague": null,
  "Vogue Theatre": null,
  "Wiggle Room": {
   "lat": 45.51608,

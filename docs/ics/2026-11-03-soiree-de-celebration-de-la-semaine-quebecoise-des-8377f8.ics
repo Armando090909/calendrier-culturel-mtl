@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-03-soiree-de-celebration-de-la-semaine-quebecoise-des-8377f8@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261103T170000
+DTEND;TZID=America/Toronto:20261103T190000
+SUMMARY:Soirée de célébration de la semaine québécoise des rencontres 
+ interculturelles 2026
+LOCATION:Maison de la culture Marie-Uguay\, Montréal
+URL:https://montreal.ca/evenements/soiree-de-celebration-de-la-semaine-queb
+ ecoise-des-rencontres-interculturelles-2026-121029
+DESCRIPTION:Une soirée de rencontres\, de découvertes et de partage cultu
+ rel. Gratuit le 3 novembre à Marie-Uguay.\nPrix : Gratuit\nDétails : htt
+ ps://marieuguay.tuxedobillet.com/Marie-Uguay/soiree-de-celebration-du-csai
+ \n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

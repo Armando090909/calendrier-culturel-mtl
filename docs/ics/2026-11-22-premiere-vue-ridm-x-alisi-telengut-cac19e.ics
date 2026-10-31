@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-22-premiere-vue-ridm-x-alisi-telengut-cac19e@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261122T221100
+DTEND;TZID=America/Toronto:20261123T001100
+SUMMARY:Première vue | RIDM x Alisi Telengut
+LOCATION:La Lumière Collective\, Montréal
+URL:https://lalumierecollective.org/2026/premiere-vue-ridm-x-alisi-telengut
+ /
+DESCRIPTION:Présentation en première vue\, réalisée avec le festival RI
+ DM\, mettant en avant le travail de la cinéaste Alisi Telengut.\nDétails
+  : https://lepointdevente.com/billets/ridm2026-032?lang=fr\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

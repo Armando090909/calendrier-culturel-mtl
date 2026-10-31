@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-20-la-boom-piste-de-danse-pour-les-couche-tot-cafe-ca-97ae15@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261120T180000
+DTEND;TZID=America/Toronto:20261120T200000
+SUMMARY:LA BOOM: piste de danse pour les couche-tôt - Café Campus
+LOCATION:Café Campus\, Montréal
+URL:https://lepointdevente.com/billets/261120-cafe-campus-danse-club-vendre
+ di-20-novembre-2026-la-boom
+DESCRIPTION:Soirée dansante en début de soirée\, conçue pour les person
+ nes qui se couchent tôt.\nDétails : https://lepointdevente.com/billets/2
+ 61120-cafe-campus-danse-club-vendredi-20-novembre-2026-la-boom\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

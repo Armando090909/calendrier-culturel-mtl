@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-01-sunday-night-improv-d6c8a8@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261101T183000
+DTEND;TZID=America/Toronto:20261101T203000
+SUMMARY:Sunday Night Improv
+LOCATION:Théâtre Sainte-Catherine\, Montréal
+URL:https://theatresaintecatherine.com/event/sunday-night-improv/2026-11-01
+ /
+DESCRIPTION:&lt\;p&gt\;https://thepointofsale.com/tickets/sundaynightimprov
+ 2?lang=en Montreal’s longest running improv show features a rotating cas
+ t of Montreal’s best improvisers. They are often joined by…\nDétails 
+ : https://outlook.live.com/owa/?path=/calendar/action/compose&rrv=addevent
+ &startdt=2026-11-01T18%3A30%3A00-05%3A00&enddt=2026-11-01T21%3A00%3A00-05%
+ 3A00&location&subject=Sunday%20Night%20Improv&body=https%3A%2F%2Fthepointo
+ fsale.com%2Ftickets%2Fsundaynightimprov2%3Flang%3DenMontreal%E2%80%99s%20l
+ ongest%20running%20improv%20show%20features%20a%20rotating%20cast%20of%20M
+ ontreal%E2%80%99s%20best%20improvisers.%20They%20are%20often%20joined%20by
+ %20Montreal%27s%20finest%20sketch%2F%20stand%20up%20comedians%2C%20special
+ %20guests%20from%20all%20parts%20of%20the%20globe%2C%20and%20the%20best%20
+ up%20and%20coming%20improvisers%20from%20our%20free%20workshop%20series.%2
+ 0Always%20entertaining%2C%20Sunday%20Night%20Improv%20promises%20a%20good%
+ 20time%20for%20audiences%20who%20are%20welcome%20to%20contribute%20to%20th
+ e%20show%20through%20their%20suggestions%20and%20voting.Free%20Workshop%20
+ 4-6PM%2410%20Show%20at%207pm\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-11-le-prix-des-sentiments-conference-sur-le-couple-l-2e84f3@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261111T183000
+DTEND;TZID=America/Toronto:20261111T203000
+SUMMARY:Le prix des sentiments : Conférence sur le couple\, l'amour et l'a
+ rgent
+LOCATION:Bibliothèque de La Petite-Patrie\, Montréal
+URL:https://montreal.ca/evenements/le-prix-des-sentiments-conference-sur-le
+ -couple-lamour-et-largent-118420
+DESCRIPTION:Activité gratuite offerte par la bibliothèque de La Petite-Pa
+ trie dans l’arrondissement de Rosemont–La Petite-Patrie.\nPrix : Gratu
+ it\nDétails : https://forms.cloud.microsoft/r/Xhb02Fm1ef\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

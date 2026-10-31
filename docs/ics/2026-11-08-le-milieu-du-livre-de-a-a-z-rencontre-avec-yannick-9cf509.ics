@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-08-le-milieu-du-livre-de-a-a-z-rencontre-avec-yannick-9cf509@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261108T140000
+DTEND;TZID=America/Toronto:20261108T160000
+SUMMARY:Le milieu du livre de A à Z : Rencontre avec Yannick Marcoux - Aut
+ eur\, éditeur\, critique littéraire
+LOCATION:Théâtre Fairmount\, Montréal
+URL:https://montreal.ca/evenements/le-milieu-du-livre-de-z-rencontre-avec-y
+ annick-marcoux-auteur-editeur-critique-litteraire-114084
+DESCRIPTION:Conférence\, Rencontre d'auteur\nPrix : Gratuit\nDétails : ht
+ tps://forms.cloud.microsoft/r/KJ4rk09Wah\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
