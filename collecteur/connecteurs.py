@@ -476,6 +476,27 @@ def fermer_navigateur() -> None:
     _NAV.clear()
 
 
+_ESSAIS_NAV = [0]  # essais automatiques dans le navigateur, par collecte
+BLOQUEES: set[str] = set()  # pages refusées aux serveurs de GitHub (403) : publiées pour l'ordinateur à Montréal
+_PAGES_MAC: dict = {}
+
+
+def page_mac(url: str) -> str | None:
+    """HTML d'une page lue par l'ordinateur à Montréal (collecteur/cache/pages_mac.json), s'il a moins de 3 jours."""
+    import base64
+    import gzip
+    if not _PAGES_MAC:
+        f = Path(__file__).parent / "cache" / "pages_mac.json"
+        _PAGES_MAC.update(json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"_vide": {}})
+    v = _PAGES_MAC.get(url)
+    if not v or v.get("le", "") < (date.today() - timedelta(days=3)).isoformat():
+        return None
+    try:
+        return "<!-- pagemac -->" + gzip.decompress(base64.b64decode(v["html"])).decode("utf-8", "replace")
+    except Exception:
+        return None
+
+
 _MOTS_SALLE = re.compile(r"(?i)\||cin[ée]ma|cineplex|cin[ée]math[èe]que|salle|th[ée][âa]tre|mus[ée]e|centre|onf\b|auditorium|"
                          r"biblioth[èe]que|espace|studio|maison|place des arts|chapelle|église|eglise|cabaret|bar\b")
 
@@ -532,9 +553,15 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             avec_nav = cfg.get("navigateur") or any(d in url for d in NAV_AUTO)
             html = page_rendue(url) if avec_nav else telecharger(url, "text/html").text
         except Exception as exc:
-            print(f"  page illisible {url} : {exc}")
-            DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
-            continue
+            # Refus des serveurs de GitHub (403) : la page lue depuis l'ordinateur à Montréal, si elle est récente
+            html = page_mac(url) if "403" in str(exc) else None
+            if "403" in str(exc):
+                BLOQUEES.add(url)
+            if html is None:
+                print(f"  page illisible {url} : {exc}")
+                DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
+                continue
+            DIAG.append(f"page lue depuis Montréal (ordinateur) : {url}")
         # Données structurées présentes ? On les préfère (gratuites et exactes).
         e2, s2 = evenements_jsonld(html, url, dict(cfg, cle_source=cfg["cle_source"]), debut, fin)
         if e2 and "festapp.io" in url and sum(1 for e in e2 if not e["lieu"]) > len(e2) / 3:
@@ -548,12 +575,34 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             series += s2
             continue
         texte = texte_page(html, url)
+        if len(texte) < 600 and not avec_nav and "pagemac" not in html[:200]:
+            try:  # page presque vide : site en JavaScript ; on la relit automatiquement dans le navigateur
+                html = page_rendue(url)
+                texte = texte_page(html, url)
+                avec_nav = True
+                DIAG.append(f"lue dans le navigateur (automatique) : {url}")
+            except Exception:
+                pass
         try:
             data = extraire_avec_memoire(url, texte, debut, fin)
         except Exception as exc:
             print(f"  IA en échec pour {url} : {exc}")
             DIAG.append(f"IA en échec ({str(exc)[:80]}) : {url}")
             continue
+        if not data["evenements"] and not data["series"] and url not in suivis and not avec_nav \
+                and _ESSAIS_NAV[0] < 25 and "pagemac" not in html[:200]:
+            # rien trouvé : la programmation est peut-être chargée par JavaScript ; un essai dans le navigateur
+            _ESSAIS_NAV[0] += 1
+            try:
+                html2 = page_rendue(url)
+                texte2 = texte_page(html2, url)
+                if len(texte2) > len(texte) * 1.2:
+                    data2 = extraire_avec_memoire(url, texte2, debut, fin)
+                    if data2["evenements"] or data2["series"]:
+                        data, texte = data2, texte2
+                        DIAG.append(f"trouvé dans le navigateur (automatique) : {url}")
+            except Exception:
+                pass
         if not data["evenements"] and not data["series"] and url not in suivis:
             DIAG.append(f"page presque vide ({len(texte)} caractères ; site en JavaScript ?) : {url}" if len(texte) < 600
                         else f"aucun événement trouvé dans {len(texte)} caractères de texte : {url}")
@@ -929,6 +978,18 @@ def details_ville(html: str, jour: str) -> dict:
             off = off[0] if off else {}
         if isinstance(off, dict) and str(off.get("url", "")).startswith("http"):
             out["billets"] = off["url"]
+        if isinstance(off, dict) and off.get("price") not in (None, ""):
+            p = str(off["price"]).replace(",", ".")
+            try:
+                v = float(p)
+                out["prix"] = "Gratuit" if v == 0 else (f"{v:.0f}" if v.is_integer() else f"{v:.2f}").replace(".", ",") + " $"
+            except ValueError:
+                pass
+        img = o.get("image") or ""
+        img = img[0] if isinstance(img, list) and img else img
+        img = img.get("url", "") if isinstance(img, dict) else img
+        if isinstance(img, str) and img.startswith("http"):
+            out["image"] = img
     soupe = BeautifulSoup(html, "html.parser")
     if "lieu" not in out:
         titre = soupe.find(lambda t: t.name in ("h2", "h3", "h4", "p", "div", "span") and t.get_text(strip=True) == "Renseignements")

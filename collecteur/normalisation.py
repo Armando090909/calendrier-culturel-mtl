@@ -446,10 +446,17 @@ def dedoublonner(events: list[dict]) -> list[dict]:
                         (bool(old.get("heure")), -PRIORITE.get(old.get("source", ""), 9))
                 if mieux:
                     garde[i], e = e, old
-                # On garde ce que l'autre version savait de plus (festival, heure, prix, billets…)
-                for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi"):
+                # On garde ce que l'autre version savait de plus (festival, heure, salle, prix, billets…)
+                for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi", "style"):
                     if not garde[i].get(k) and e.get(k):
                         garde[i][k] = e[k]
+                if plat(garde[i].get("lieu", "")) == "lieu a confirmer" and plat(e.get("lieu", "")) != "lieu a confirmer":
+                    garde[i]["lieu"] = e["lieu"]
+                # Sa page aussi : l'affiche ou le prix peuvent n'être que sur l'une des deux (lue à la découverte)
+                if e.get("url") and e["url"] != garde[i].get("url"):
+                    garde[i].setdefault("_autres_urls", [])
+                    if e["url"] not in garde[i]["_autres_urls"]:
+                        garde[i]["_autres_urls"].append(e["url"])
                 break
         else:
             garde.append(e)
