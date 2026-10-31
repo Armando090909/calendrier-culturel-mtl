@@ -281,7 +281,17 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     titre = re.sub(r"\(.*?\)|^(gala[^:]*|projection)\s*:\s*", "", titre, flags=re.I).strip()
     r = get_json(f"https://api.themoviedb.org/3/search/movie?api_key={cle}&language=fr-CA&query={quote(titre)}") or {}
     films = [f for f in r.get("results", []) if plat(f.get("title", "")) == plat(titre) or plat(f.get("original_title", "")) == plat(titre)]
-    films = [f for f in films if not f.get("release_date") or abs(int(f["release_date"][:4]) - annee) <= 2]
+    if len(films) > 1:
+        # Plusieurs films du même nom : un film récent (festival, sortie) d'abord ; sinon un classique nettement plus connu
+        # (ciné-club, répertoire : « Thelma & Louise ») ; sinon on s'abstient.
+        recents = [f for f in films if f.get("release_date") and abs(int(f["release_date"][:4]) - annee) <= 2]
+        if len(recents) == 1:
+            films = recents
+        else:
+            films.sort(key=lambda f: -(f.get("vote_count") or 0))
+            if (films[0].get("vote_count") or 0) >= 10 * max(films[1].get("vote_count") or 0, 1) \
+                    and (films[0].get("vote_count") or 0) >= 100:
+                films = films[:1]
     if len(films) != 1:
         return []  # aucun ou plusieurs films du même nom : on s'abstient
     v = get_json(f"https://api.themoviedb.org/3/movie/{films[0]['id']}/videos?api_key={cle}&include_video_language=fr,en,null") or {}
