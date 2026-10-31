@@ -106,6 +106,8 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
 <meta property="og:url" content="{e_(url)}">
 <meta property="og:image" content="{e_(img)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="dcterms.rights" content="Calendrier culturel montréalais (ccmtl.ca), projet bénévole sans but lucratif. Compilation et textes sous licence CC BY-NC 4.0 : réutilisation non commerciale permise en citant ccmtl.ca ; usage commercial sur permission (info@ccmtl.ca). Les affiches et descriptions appartiennent à leurs auteurs.">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
 <meta name="color-scheme" content="light">
 {ENTETE}
 {CSS}
@@ -116,7 +118,7 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
 <div class="pg-haut"><a class="pg-marque" href="/">calendrier culturel <b>mtl</b></a>
 <p class="toplinks"><a href="/">← Tout le calendrier</a></p></div>
 {corps}
-<p class="licence">Calendrier bénévole, gratuit et sans pub. Compilation sous licence <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC 4.0</a> : réutilisation non commerciale en citant ccmtl.ca. Affiches et descriptions : leurs auteurs.</p>
+<p class="licence">© 2026 ccmtl.ca · <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC 4.0</a> · <a href="mailto:info@ccmtl.ca">info@ccmtl.ca</a></p>
 </div>
 {PARTAGE_JS}
 </body>
