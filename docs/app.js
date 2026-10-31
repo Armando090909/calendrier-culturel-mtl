@@ -525,8 +525,12 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
     // Dates précises déjà connues, période d'un festival, ou même page déjà vue : pas de répétition quotidienne
     if(x.festival||titres.has(cle(x.titre))||(x.url&&pages.has(x.url)))return false;
     if(x.url)pages.add(x.url);
+    // Horaire lu sur la page du spectacle (x.horaire) : bonne heure chaque jour, et pas d'entrée les jours de relâche
+    const H=x.horaire,hj=H&&H.jours||{},hd=H&&H.dates||{},avecJours=Object.keys(hj).length>0,avecDates=Object.keys(hd).length>0;
+    const heuresDu=s=>{if(!H)return[null];if(hd[s])return hd[s];if(avecDates&&!avecJours)return[];
+      const h=hj[String((new Date(s+"T12:00").getDay()+6)%7)];return h?[h]:(avecJours?[]:[null])};
     for(let s=x.debut<D.debut?D.debut:x.debut;s<=x.fin&&s<=D.fin;s=addDays(s,1))
-      if(!deja.has(s+"|"+x.lieu+"|"+mot(x.titre)))series.push({date:s,heure:null,discipline:x.discipline,titre:x.titre,lieu:x.lieu,url:x.url,complet:false,jeunePublic:x.discipline==="jeune",sous:x.sous,aussi:x.aussi,festival:x.festival,resume:x.resume,prix:x.prix,billets:x.billets,source:x.source||"salles",serie:{debut:x.debut,fin:x.fin}});
+      if(!deja.has(s+"|"+x.lieu+"|"+mot(x.titre)))for(const hh of heuresDu(s))series.push({date:s,heure:hh,discipline:x.discipline,titre:x.titre,lieu:x.lieu,url:x.url,complet:false,jeunePublic:x.discipline==="jeune",sous:x.sous,aussi:x.aussi,festival:x.festival,resume:x.resume,prix:x.prix,billets:x.billets,source:x.source||"salles",serie:{debut:x.debut,fin:x.fin}});
     return false});
   D.events=D.events.concat(series).sort((a,b)=>(a.date+(a.heure||"99")).localeCompare(b.date+(b.heure||"99")));
   D.events.forEach((e,i)=>{if(e.jeunePublic&&e.discipline!=="jeune"){e.sous=e.discipline;e.discipline="jeune"}e._i=i;byId[i]=e});
