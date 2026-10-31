@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-07-walaa-al-jundi-ae0c6e@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261107T200000
+DTEND;TZID=America/Toronto:20261107T220000
+SUMMARY:Walaa Al Jundi
+LOCATION:Place des Arts\, Montréal
+URL:https://festivalarabe.com/spectacle/walaa-al-jundi
+DESCRIPTION:Une chanteuse libanaise revisite les grands répertoires du cha
+ nt arabe classique avec une interprétation moderne et intimiste.\nPrix : 
+ 55\,64 $\nDétails : https://am.ticketmaster.com/pda/en/buy/virtual-venue/
+ UDZDMTEwNw==?_gl=1*1q70wky*_gcl_aw*R0NMLjE3ODk1Nzc3NTAuQ2p3S0NBandfS2pWQmh
+ BSEVpd0FuQzBOOU5Pd0t6TkNjd3BsczhzSkprM3VsTldtRDBTOVpvcEw0UFMxNG90MmVLN3RuV
+ mlxN1ZJZlZSb0M4TllRQXZEX0J3RQ..*_gcl_au*MjE3MTc0OTAuMTc4ODQwMzMwMg..*_ga*O
+ Dg2NDgxNjYwLjE3Nzc5MzE3MjA.*_ga_J8N9JDT8D3*czE3ODk1Nzc3NDkkbzkkZzEkdDE3ODk
+ 1NzgwNjkkajUyJGwwJGg4NTMzODg2MTU.\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

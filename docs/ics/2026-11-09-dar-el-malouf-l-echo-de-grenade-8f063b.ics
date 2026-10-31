@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-09-dar-el-malouf-l-echo-de-grenade-8f063b@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261109T200000
+DTEND;TZID=America/Toronto:20261109T220000
+SUMMARY:Dar El Malouf\, l'écho de Grenade
+LOCATION:Espace Culturel Kawalees\, Montréal
+URL:https://festivalarabe.com/spectacle/dar-el-malouf-lécho-de-grenade
+DESCRIPTION:Un concert qui fait revivre le malouf tunisien\, chant andalou 
+ né à Grenade\, mêlant poésie chantée et rythmes ancestraux.\nPrix : G
+ ratuit\nDétails : https://festivalarabe.com/spectacle/dar-el-malouf-léch
+ o-de-grenade\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

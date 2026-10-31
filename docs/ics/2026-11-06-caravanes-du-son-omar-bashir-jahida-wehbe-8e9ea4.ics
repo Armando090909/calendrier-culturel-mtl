@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-06-caravanes-du-son-omar-bashir-jahida-wehbe-8e9ea4@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261106T200000
+DTEND;TZID=America/Toronto:20261106T220000
+SUMMARY:Caravanes du son | Omar Bashir & Jahida Wehbé
+LOCATION:Place des Arts\, Montréal
+URL:https://festivalarabe.com/spectacle/caravanes-du-son
+DESCRIPTION:Duo réunissant Omar Bashir et Jahida Wehbé\, qui retrace les 
+ héritages musicaux de la Mésopotamie entre chant poétique arabe et inst
+ ruments anciens.\nPrix : 56\,79 $ à 74\,89 $\nDétails : https://www.plac
+ edesarts.com/evenement/caravanes-du-son\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-15-le-livre-des-reines-0cef14@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261115T200000
+DTEND;TZID=America/Toronto:20261115T220000
+SUMMARY:Le Livre des Reines
+LOCATION:Salle Pierre-Mercure\, Montréal
+URL:https://festivalarabe.com/spectacle/le-livre-des-reines
+DESCRIPTION:Création lyrique mêlant poétesses et compositrices de Perse 
+ et d'Europe\, avec Camille Bordet\, Habib Hosseini et un ensemble de music
+ iens. Soirée de clôture du festival.\nPrix : 55 à 75 $\nDétails : http
+ s://centrepierrepeladeau.tuxedobillet.com/main/le-livre-des-reines/2026111
+ 5200000?utm_id=97758_v0_s00_e0_tv4_a1demo0e4r1cdu\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

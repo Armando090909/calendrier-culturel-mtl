@@ -1,73 +1,30 @@
 {
  "date": "2026-10-31",
  "statut": "publié",
- "evenements": 2428,
+ "evenements": 2476,
  "expositions": 252,
  "nouvelles_salles": [
-  "Benny Fab",
-  "Bibliothèque Frontenac",
-  "Bibliothèque Hochelaga",
-  "Bibliothèque Hélène-Charbonneau",
-  "Bibliothèque Jean-Corbeil",
-  "Bibliothèque Kim-Yaroshevskaya",
-  "Bibliothèque Marc-Favreau",
-  "Bibliothèque Mercier",
-  "Bibliothèque Père-Ambroise",
-  "Bibliothèque Saint-Charles",
-  "Bibliothèque Serge-Bouchard",
-  "Bibliothèque William-G.-Boll",
-  "Bibliothèque Yves-Ryan",
-  "Bibliothèque de Cartierville",
-  "Bibliothèque de L'Île-Bizard",
-  "Bibliothèque de La Petite-Patrie",
-  "Bibliothèque de Notre-Dame-de-Grâce",
-  "Bibliothèque de Parc-Extension",
-  "Bibliothèque de Pierrefonds",
-  "Bibliothèque de Rosemont",
-  "Bibliothèque de Saint-Léonard",
-  "Bibliothèque de Saint-Michel",
-  "Bibliothèque du Boisé",
-  "Bibliothèque interculturelle",
-  "Bibliothèque éphémère de l'Est de Rosemont",
-  "CIRCA art actuel",
-  "Centre communautaire Elgar",
-  "Centre communautaire Gerry-Robertson",
-  "Centre communautaire Painter",
-  "Centre communautaire intergénérationnel",
-  "Centre culturel et communautaire de Cartierville",
-  "FabricARThèque du Vieux-Saint-Laurent",
-  "L'Artère fabricathèque",
-  "L'Écart",
-  "Langage Plus",
-  "Mairie d'arrondissement de Montréal-Nord",
+  "Espace Culturel Kawalees",
+  "Koujina Café",
   "Montreal",
-  "Occurrence",
-  "Parc Beaudet",
-  "Parc De Mésy",
-  "Parc Leroux",
-  "Peterborough Memorial Centre",
   "Plusieurs salles",
-  "Salle Désilets du Cégep Marie-Victorin",
-  "Salle Madeleine-Lahaye",
-  "Salle de spectacle de l’église Jean XXIII",
-  "Théâtre Lio",
-  "Théâtre des Eskers",
-  "Théâtre du Palais Municipal",
-  "Théâtre du cuivre",
-  "Vaste et Vague"
+  "Société d'art vocal",
+  "Théâtre MainLine",
+  "UQAM, Pavillon J-A DeSève, salle DM-R310",
+  "UQAM, pavillon J-A DeSève, salle DS-M440"
  ],
  "notes": {
   "fiches_ville": {
    "lues": 15,
    "erreurs": 15,
    "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atanukan-productions-menuentakuan-119106",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/ateliers-decriture-115880",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/broderie-le-point-droit-dans-tous-ses-etats-117663"
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-fabrication-creme-hydratante-120866",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/club-lecto-119187",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/confection-dun-livre-parfume-115581"
    ],
-   "completees_par_mac": 367,
-   "heures_trouvees": 367,
-   "salles_trouvees": 422
+   "completees_par_mac": 368,
+   "heures_trouvees": 368,
+   "salles_trouvees": 681
   },
   "formulaire": {
    "lignes": 1,
@@ -93,33 +50,32 @@
    ]
   },
   "redites_retirees": [
+   "2026-10-31 : « Richard O'Brien's The Rocky Horror Show » (Théâtre La Comédie de Montréal) = « Richard O'Brien's The Rocky Horror Show » (Théâtre MainLine)",
+   "2026-10-31 : « Richard O'Brien's The Rocky Horror Show » (Théâtre La Comédie de Montréal) = « Richard O'Brien's The Rocky Horror Show » (Théâtre MainLine)",
    "2026-11-01 : « L CON, teagan johnston » (L'Escogriffe) = « L CON @ L’esco » (L’esco)",
-   "2026-11-04 : « Ditz, avec Gloin » (L'Escogriffe) = « Ditz - Avec Gloin » (L’esco)",
+   "2026-11-04 : « Ditz, avec Gloin » (L'Escogriffe) = « Ditz - avec Gloin » (L’esco)",
    "2026-11-04 : « Guillaume Pineault - Rodage » (Le Terminal) = « Guillaume Pineault » (Cabaret Lion d'Or)",
-   "2026-11-05 : « OWEN RIEGLING » (Théâtre Fairmount) = « Owen Riegling – In The Feeling » (Théâtre Beanfield)",
-   "2026-11-06 : « Soraï » (Lieu à confirmer) = « Sloan Lucas (lancement) + Soraï » (L'Escogriffe)",
-   "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
-   "2026-11-07 : « MARIE NEIGES (lancement) + Leone Volta » (Lieu à confirmer) = « Leone Volta » (Lieu à confirmer)",
-   "2026-11-07 : « LeParc + Tempête Solaire » (Lieu à confirmer) = « LeParc » (Lieu à confirmer)",
+   "2026-11-05 : « MICO » (Théâtre Beanfield) = « MICO – Running From A Feeling » (MTELUS)",
+   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling – In The Feeling » (Théâtre Beanfield)",
+   "2026-11-05 : « Perma » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
+   "2026-11-05 : « Catherine Leduc » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
+   "2026-11-06 : « Jacker un pickup en poésie (Alphonse Bisaillon) » (Café Campus) = « Jacker un pickup en poésie » (Café Campus)",
+   "2026-11-06 : « Sloan Lucas (lancement) + Soraï » (L'Escogriffe) = « Sloan Lucas » (L’esco)",
+   "2026-11-07 : « Solarium » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
+   "2026-11-07 : « MARIE NEIGES (lancement) + Leone Volta » (L'Escogriffe) = « Leone Volta » (L’esco)",
+   "2026-11-07 : « LeParc + Tempête Solaire » (L'Escogriffe) = « LeParc » (L’esco)",
    "2026-11-08 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-08 : « Nina Kraviz @ Le Studio TD » (Le Studio TD) = « Nina Kraviz » (L'Olympia)",
    "2026-11-08 : « Bori 30 ans, ça suffit! (Edgar Bori) » (Théâtre Outremont) = « Bori 30 ans, ça suffit! » (Théâtre Outremont)",
    "2026-11-09 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
-   "2026-11-09 : « Sandra Contour + Quédam » (Lieu à confirmer) = « Sandra Contour » (Lieu à confirmer)",
-   "2026-11-10 : « Noé Lira » (Lieu à confirmer) = « Noé Lira + Lapelúda » (La Sala Rossa)",
    "2026-11-10 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
-   "2026-11-10 : « Mat Vezio » (Lieu à confirmer) = « Mat Vezio + Catherine Alone » (Le Verre Bouteille)",
+   "2026-11-11 : « Coline Rio + Andrea Cormier » (Cabaret Lion d'Or) = « Andrea Cormier » (Cabaret Lion d'Or)",
    "2026-11-11 : « Plus doux moins de sang (Mon Doux Saigneur) » (Gesù) = « Plus doux moins de sang » (Gesù)",
-   "2026-11-11 : « Kamilou + Raccoon (lancement) » (Lieu à confirmer) = « Raccoon » (L’esco)",
-   "2026-11-12 : « DONALDA » (Lieu à confirmer) = « Aujourd'hui + DONALDA » (L’esco)",
-   "2026-11-13 : « CHÉRI » (Lieu à confirmer) = « Adieu Narcisse (lancement) + CHÉRI (after) » (Le Ministère)",
-   "2026-11-13 : « Catherine Jeanne-D'Arc + La Monarque » (Lieu à confirmer) = « Catherine Jeanne-D'Arc » (Lieu à confirmer)",
-   "2026-11-13 : « Élégie + Louis-Charles » (Lieu à confirmer) = « Louis-Charles » (Lieu à confirmer)",
+   "2026-11-11 : « Kamilou + Raccoon (lancement) » (L'Escogriffe) = « Kamilou + Raccoon (lancement) » (L’esco)",
+   "2026-11-12 : « Aujourd'hui + DONALDA » (L'Escogriffe) = « Aujourd'hui » (L’esco)",
+   "2026-11-13 : « Élégie + Louis-Charles » (L'Escogriffe) = « Louis-Charles » (L’esco)",
    "2026-11-14 : « Boucar Diouf à la Maison Théâtre de Montréal » (Maison Théâtre) = « Boucar Diouf » (Théâtre Desjardins)",
-   "2026-11-14 : « Virginie Reid » (Lieu à confirmer) = « Forêt + invité·e·s + Virginie Reid » (Lieu à confirmer)",
-   "2026-11-14 : « Forêt » (Lieu à confirmer) = « Forêt + invité·e·s + Virginie Reid » (Lieu à confirmer)",
    "2026-11-14 : « Mary in the Junkyard » (Petit Campus) = « Mary In The Junkyard @ Café Campus » (Café Campus)",
-   "2026-11-14 : « Kat Pereira + Chénier » (Lieu à confirmer) = « Kat Pereira » (Lieu à confirmer)",
    "2026-11-18 : « M pour Montréal : Béton Armé, Faze, zouz, 2120, Kn » (Club Soda) = « Béton Armé + Faze + Zouz » (Foufounes Électriques)",
    "2026-11-22 : « Conte d’hiver - BOP » (Lieu à confirmer) = « Conte d'hiver » (Théâtre Outremont)",
    "2026-11-25 : « Merci d’être venus | Théâtre » (Lieu à confirmer) = « Merci d'être venus » (Salle Pauline-Julien)",
@@ -127,20 +83,7 @@
    "2026-12-06 : « Minime rencontre les grands compositeurs | Benoît  » (Lieu à confirmer) = « Minime rencontre les grands compositeurs » (Salle Pauline-Julien)",
    "2026-12-27 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
-  ],
-  "robots_refus": {
-   "musicbrainz.org/ws/2/artist/": 10,
-   "query.wikidata.org/sparql": 4,
-   "bandcamp.com/search": 4,
-   "musicbrainz.org/ws/2/artist/1eae2a76-f11f-46bb-aa2c-12a": 1,
-   "musicbrainz.org/ws/2/artist/4c568060-7af1-434e-85a2-75a": 1,
-   "musicbrainz.org/ws/2/artist/a1a115db-d15e-4b40-908e-c94": 1,
-   "musicbrainz.org/ws/2/artist/5640d54b-2456-4d80-a809-588": 1,
-   "musicbrainz.org/ws/2/artist/5c496196-47a3-47b3-bfaa-b55": 1,
-   "musicbrainz.org/ws/2/artist/bbb6da54-c151-4b96-9bbb-2c7": 1,
-   "musicbrainz.org/ws/2/artist/48be824f-d716-4f26-bfbf-9e2": 1,
-   "musicbrainz.org/ws/2/artist/5dbbcf96-3621-41c9-834e-19e": 1
-  }
+  ]
  },
  "alerte": null,
  "sources": [
@@ -161,7 +104,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 219,
+   "evenements": 212,
    "series": 0,
    "erreur": null
   },
@@ -379,10 +322,7 @@
    "evenements": 26,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 8102 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=4",
-    "aucun événement trouvé dans 7894 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=5"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "evenko (humour)",
@@ -402,7 +342,8 @@
    "source": "Théâtre Sainte-Catherine (impro et humour)",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Centre des musiciens du monde",
@@ -414,34 +355,18 @@
    ]
   },
   {
-   "source": "Café d'Art Vocal (Scena)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://myscena.org/locations/cafe-dart-voc) : https://myscena.org/locations/cafe-dart-vocal-3"
-   ]
-  },
-  {
    "source": "Terminal Comédie Club (ma.to)",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
    "evenements": 1,
    "series": 0,
-   "erreur": null
-  },
-  {
-   "source": "LNI – Ligue nationale d'improvisation",
-   "evenements": 0,
-   "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 3768 caractères de texte : https://lni.ca/"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "La Mèche courte (festival jeune public)",
@@ -487,9 +412,7 @@
    "evenements": 9,
    "series": 67,
    "erreur": null,
-   "diagnostic": [
-    "page presque vide (303 caractères ; site en JavaScript ?) : https://reseauartactuel.org/evenements/page/4/?intervalle=semaine"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Art Mûr (expositions à venir)",
@@ -507,12 +430,9 @@
   },
   {
    "source": "evenko (concerts)",
-   "evenements": 0,
+   "evenements": 15,
    "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (404 Client Error: Not Found for url: https://evenko.ca/fr/evenements/concerts) : https://evenko.ca/fr/evenements/concerts"
-   ]
+   "erreur": null
   },
   {
    "source": "Théâtre Fairmount",
@@ -980,11 +900,11 @@
   },
   {
    "source": "Théâtre MainLine",
-   "evenements": 0,
+   "evenements": 5,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2429 caractères de texte : http://www.mainlinetheatre.ca/"
+    "trouvé dans le navigateur (automatique) : http://www.mainlinetheatre.ca/"
    ]
   },
   {
@@ -1318,15 +1238,6 @@
    "note": "repris du 2026-10-29"
   },
   {
-   "source": "SAT – Société des arts technologiques (Exclaim!)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (404 Client Error: Not Found for url: https://exclaim.ca/venues/venue/societe-des) : https://exclaim.ca/venues/venue/societe-des-arts-technologiques-sat"
-   ]
-  },
-  {
    "source": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
    "evenements": 0,
    "series": 0,
@@ -1368,11 +1279,13 @@
   },
   {
    "source": "Festival · Monde Arabe (1)",
-   "evenements": 0,
+   "evenements": 38,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (19 caractères ; site en JavaScript ?) : https://festivalarabe.com/programmation"
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/programmation",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/ormuz-ou-le-naufrage-du-droit-international",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/narrators-of-peace"
    ]
   },
   {
@@ -1386,8 +1299,7 @@
    "source": "Festival · CINEMANIA",
    "evenements": 205,
    "series": 47,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · La Mèche courte",
@@ -1409,8 +1321,7 @@
    "source": "Festival · Coup de cœur",
    "evenements": 94,
    "series": 16,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · Mundial",
@@ -1520,7 +1431,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org"
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4128 caractères de texte : https://image-nation.org"
    ]
   },
   {
@@ -1554,7 +1466,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com"
+    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
+    "aucun événement trouvé dans 4283 caractères de texte : https://www.montrealenlumiere.com"
    ]
   },
   {
@@ -1604,7 +1517,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -1667,7 +1581,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
    ]
   },
   {
@@ -1721,16 +1635,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
     "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
    "source": "Festival · Francos",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (85 caractères ; site en JavaScript ?) : https://francosmontreal.com"
+    "lue dans le navigateur (automatique) : https://francosmontreal.com"
    ]
   },
   {
@@ -1800,7 +1715,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com"
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 4182 caractères de texte : https://osheaga.com"
    ]
   },
   {
@@ -1818,7 +1734,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (98 caractères ; site en JavaScript ?) : https://ilesoniq.com"
+    "lue dans le navigateur (automatique) : https://ilesoniq.com",
+    "aucun événement trouvé dans 3801 caractères de texte : https://ilesoniq.com"
    ]
   },
   {
@@ -1827,7 +1744,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (41 caractères ; site en JavaScript ?) : https://lassomontreal.com"
+    "aucun événement trouvé dans 1030 caractères de texte : https://lassomontreal.com"
    ]
   },
   {
@@ -1854,7 +1771,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
+    "page presque vide (80 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {
@@ -1961,11 +1879,11 @@
   },
   {
    "source": "Festival · Concerts Campbell",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
+    "lue dans le navigateur (automatique) : https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
    ]
   },
   {
