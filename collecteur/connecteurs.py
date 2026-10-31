@@ -41,8 +41,16 @@ _ROBOTS: dict = {}
 ROBOTS_REFUS: dict[str, int] = {}
 
 
+# Interfaces de programmation publiques, faites pour être appelées par des programmes, avec leurs propres règles
+# d'usage (identification, une requête par seconde) : le robots.txt, qui vise les robots d'indexation, ne s'y applique pas.
+API_PUBLIQUES = ("musicbrainz.org/ws/", "query.wikidata.org/sparql", "api.themoviedb.org", "api.github.com",
+                 "donnees.montreal.ca")
+
+
 def robots_permet(url: str) -> bool:
     from urllib.robotparser import RobotFileParser
+    if any(a in url for a in API_PUBLIQUES):
+        return True
     u = urlparse(url)
     hote = f"{u.scheme}://{u.netloc}"
     if hote not in _ROBOTS:

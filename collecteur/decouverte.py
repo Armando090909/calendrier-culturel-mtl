@@ -380,11 +380,8 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                                 liens += spotify(nom)
                             except Exception as exc:
                                 print(f"  Spotify « {nom[:30]} » : {exc}")
-                        if not any(plat(l.get("nom", "")) == plat(nom) or l["source"] == "page" for l in liens):
-                            try:
-                                liens += bandcamp(nom, lambda u: telecharger(u, "text/html").text)
-                            except Exception:
-                                pass
+                        # Recherche Bandcamp retirée (31 oct. 2026) : le robots.txt de Bandcamp demande de ne pas lire ses
+                        # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
             m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat()}

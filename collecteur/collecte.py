@@ -385,6 +385,8 @@ def main() -> int:
                 continue
             cle = e["url"] + "|" + e["date"]
             r = memo_ia.get(cle)
+            if r is not None and r.get("_err"):
+                r = None  # échec technique (réponse illisible, site en panne) : on réessaie
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
                 try:
