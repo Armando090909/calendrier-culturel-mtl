@@ -372,6 +372,36 @@ def main() -> int:
     # anciennes entrées (clé = page seule) : retirées
     memo = {k: v for k, v in memo.items() if "|" in k}
     f_heures.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+
+    # Dernier recours, automatique : Claude lit la page des fiches encore sans heure ou sans salle (au plus 80 par nuit,
+    # chaque page une seule fois par date ; Ville et Songkick exclues, leurs pages ne le disent pas ou sont bloquées)
+    f_ia = CACHE / "champs_ia.json"
+    memo_ia = json.loads(f_ia.read_text(encoding="utf-8")) if f_ia.exists() else {}
+    corriges_ia, lus_ia = 0, 0
+    if ia.disponible():
+        for e in events:
+            if (e["heure"] and e["lieu"] != "Lieu à confirmer") or not e["url"].startswith("http") \
+                    or any(d in e["url"] for d in ("montreal.ca", "songkick.com", "facebook.com", "instagram.com")):
+                continue
+            cle = e["url"] + "|" + e["date"]
+            r = memo_ia.get(cle)
+            if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
+                lus_ia += 1
+                try:
+                    html = telecharger(e["url"], "text/html").text
+                    r = memo_ia[cle] = ia.champs_page(e["titre"], e["date"], texte_page(html, e["url"])) or {}
+                except Exception as exc:
+                    r = memo_ia[cle] = {"_err": str(exc)[:80]}
+            if not r or r.get("_err"):
+                continue
+            if not e["heure"] and r.get("heure"):
+                e["heure"] = r["heure"]
+                corriges_ia += 1
+            if e["lieu"] == "Lieu à confirmer" and r.get("lieu"):
+                e["lieu"] = lieu_canon(r["lieu"], r.get("adresse", ""), "Montréal") or "Lieu à confirmer"
+                corriges_ia += 1
+        f_ia.write_text(json.dumps(memo_ia, ensure_ascii=False), encoding="utf-8")
+    print(f"Fiches complétées par l'IA : {corriges_ia} champs ({lus_ia} pages lues).")
     print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues ({rendues} dans le navigateur), "
           f"{sum(1 for e in sans if e['heure'])} heures trouvées.")
 

@@ -87,6 +87,13 @@ jobs:
           TOUT_RELIRE: ${{ inputs.tout_relire && '1' || '0' }}
         run: python collecteur/collecte.py
 
+      # Bilan de santé : un avis (issue GitHub, donc un courriel) seulement pour un problème qui dure
+      - name: Bilan de santé
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python outils/sante.py || true
+
       - name: Enregistrer
         if: always()
         run: |
