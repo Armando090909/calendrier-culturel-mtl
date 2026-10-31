@@ -16,6 +16,10 @@ on:
         description: "Relire toutes les sources, même celles prévues d'autres jours (coûte un peu plus en IA)"
         type: boolean
         default: false
+      decouverte:
+        description: "Chercher de nouvelles sources maintenant (sinon : chaque dimanche)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["docs/**", ".github/workflows/**"]
@@ -85,6 +89,7 @@ jobs:
           CALENDRIERS_CSV_URL: ${{ vars.CALENDRIERS_CSV_URL }}
           CONTACT: ${{ vars.CONTACT }}
           TOUT_RELIRE: ${{ inputs.tout_relire && '1' || '0' }}
+          DECOUVERTE: ${{ inputs.decouverte && '1' || '0' }}
         run: python collecteur/collecte.py
 
       # Bilan de santé : un avis (issue GitHub, donc un courriel) seulement pour un problème qui dure

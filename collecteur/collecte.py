@@ -24,6 +24,7 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).parent))
 import agenda  # noqa: E402
+import autoentretien  # noqa: E402
 import archives  # noqa: E402
 import decouverte  # noqa: E402
 import festivals as fest  # noqa: E402
@@ -125,6 +126,8 @@ def main() -> int:
     except Exception as exc:
         print(f"Recherche des dates de festivals en échec : {exc}")
     sources += fest.sources(festivals, aujourd)
+    # Adresses réparées et sources découvertes automatiquement (collecteur/autoentretien.py)
+    sources = autoentretien.appliquer(sources)
 
     bruts, series, rapport = [], [], []
     CACHE.mkdir(exist_ok=True)
@@ -172,6 +175,19 @@ def main() -> int:
                 series += c["series"]
                 note = f"en panne, données du {c['date']} conservées"
             rapport.append({"source": s["nom"], "evenements": 0, "series": 0, "erreur": str(exc)[:300], "note": note})
+
+    # ---- Réparation automatique des sources devenues muettes (nouvelle adresse cherchée sur leur propre site)
+    journal_rep = []
+    try:
+        etat_sante = json.loads((CACHE / "sante.json").read_text(encoding="utf-8")) if (CACHE / "sante.json").exists() else {}
+        e_rep, s_rep, journal_rep = autoentretien.reparer(sources, rapport, CONNECTEURS["page_ia"], connecteurs.page_rendue,
+                                                          telecharger, aujourd, fin, etat_sante.get("sources_ok", {}))
+        bruts += e_rep
+        series += s_rep
+        for ligne in journal_rep:
+            print(f"Réparation : {ligne}")
+    except Exception as exc:
+        print(f"Réparation automatique en échec : {exc}")
 
     # ---- Nettoyage
     nouveaux_lieux, geo_restants = [], int(reglages.get("max_geolocalisations", 40))
@@ -698,6 +714,17 @@ def main() -> int:
     except Exception as exc:
         print(f"Liste des sources en échec : {exc}")
     LIEUX.write_text(json.dumps(lieux.data, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    if journal_rep:
+        notes["reparations"] = journal_rep
+    # ---- Découverte de nouvelles sources : une fois par semaine (dimanche), ou sur demande (DECOUVERTE=1)
+    if aujourd.weekday() == 6 or os.environ.get("DECOUVERTE") == "1":
+        try:
+            notes["decouverte"] = autoentretien.decouvrir(events, sources, rapport, CONNECTEURS["page_ia"], telecharger,
+                                                          aujourd, fin)
+            for ligne in notes["decouverte"]:
+                print(f"Découverte : {ligne}")
+        except Exception as exc:
+            print(f"Découverte en échec : {exc}")
     if connecteurs.ROBOTS_REFUS:  # pages que leur site demande aux robots de ne pas lire (mode observer)
         notes["robots_refus"] = dict(sorted(connecteurs.ROBOTS_REFUS.items(), key=lambda x: -x[1])[:60])
     RAPPORT.write_text(json.dumps({"date": aujourd.isoformat(), "statut": "publié", "evenements": len(events),
