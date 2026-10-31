@@ -121,11 +121,9 @@ sources:
   - {nom: "Théâtre Sainte-Catherine (impro et humour)", cle: salles, type: page_ia, url: "http://theatresaintecatherine.com/", lieu: Théâtre Sainte-Catherine, jours_semaine: [0, 3]}
   # Salles repérées en oct. 2026 (comparaison avec d'autres calendriers) : sites des lieux eux-mêmes
   - {nom: "Centre des musiciens du monde", cle: salles, type: page_ia, url: "https://centredesmusiciensdumonde.com/", lieu: "Centre des musiciens du monde", discipline: musique, jours_semaine: [0, 3], navigateur: true}
-  - {nom: "Café d'Art Vocal (Scena)", cle: salles, type: page_ia, url: "https://myscena.org/locations/cafe-dart-vocal-3", lieu: "Café d'Art Vocal", discipline: musique, jours_semaine: [1, 4]}
   - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4]}
   # Improvisation : LIM (dimanches, Cabaret Lion d'Or), LNI (MTELUS et ailleurs). Pages lues par l'IA, avec le navigateur.
   - {nom: "Cabaret Lion d'Or (LIM et spectacles)", cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
-  - {nom: LNI – Ligue nationale d'improvisation, cle: salles, type: page_ia, url: "https://lni.ca/", discipline: humour, jours_semaine: [0, 3], navigateur: true}
 
   # ---------- Jeune public ----------
   - {nom: La Mèche courte (festival jeune public), cle: salles, type: page_ia, url: "https://www.lamechecourte.ca/programmation", jours_semaine: [0, 3], navigateur: true}
