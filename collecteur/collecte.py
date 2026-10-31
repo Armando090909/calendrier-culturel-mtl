@@ -347,6 +347,11 @@ def main() -> int:
                     restants[i]["discipline"] = disc
         except Exception as exc:
             print(f"Classement IA en échec : {exc}")
+    # Encore « autre » mais rattaché à un festival : la discipline principale du festival (Casteliers → théâtre)
+    disc_fest = {f["id"]: (f.get("disciplines") or [""])[0] for f in festivals}
+    for e in events:
+        if e["discipline"] == "autre" and disc_fest.get(e.get("festival") or ""):
+            e["discipline"] = disc_fest[e["festival"]]
     for e in events:
         e.pop("_extrait", None)
     print(f"« Autre » : {len(autres)} à préciser, {lus} pages lues, {sum(e['discipline'] == 'autre' for e in events)} restent.")
