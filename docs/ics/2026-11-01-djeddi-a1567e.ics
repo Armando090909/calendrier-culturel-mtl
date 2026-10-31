@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-01-djeddi-a1567e@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261101T120000
+DTEND;TZID=America/Toronto:20261101T140000
+SUMMARY:Djeddi
+LOCATION:Cinéma du Parc\, Montréal
+URL:https://festivalarabe.com/spectacle/djeddi
+DESCRIPTION:Documentaire sur Boukhani\, un centenaire touareg vivant au cœ
+ ur du Sahara algérien\, suivi d'une discussion avec les réalisateurs.\nP
+ rix : 16.75 $\nDétails : https://cinemacinema.ca/fr/films/djeddi-2263\n(c
+ cmtl.ca)
+END:VEVENT
+END:VCALENDAR

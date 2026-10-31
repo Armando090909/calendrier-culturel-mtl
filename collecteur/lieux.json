@@ -507,6 +507,7 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Elgin and Winter Garden Theatre Centre": null,
+ "Espace Culturel Kawalees": null,
  "Espace GO": {
   "lat": 45.5215,
   "lon": -73.5915,
@@ -720,6 +721,7 @@
   "lon": -73.56124,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Koujina Café": null,
  "L'Adversaire – Pub et boutique ludiques": null,
  "L'Artère fabricathèque": null,
  "L'Entrepôt – maison de la culture de Lachine": {
@@ -1278,6 +1280,7 @@
  "Sample Listening Bar": null,
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
+ "Société d'art vocal": null,
  "Southern Alberta Jubilee Auditorium": null,
  "Square Saint-Louis": {
   "lat": 45.51712,
@@ -1387,6 +1390,11 @@
  },
  "Théâtre Lio": null,
  "Théâtre Lionel-Groulx": null,
+ "Théâtre MainLine": {
+  "lat": 45.51684,
+  "lon": -73.57883,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Théâtre Maisonneuve": {
   "alias": [
    "Théâtre Maisonneuve, Place des Arts"
@@ -1478,6 +1486,8 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
+ "UQAM, pavillon J-A DeSève, salle DS-M440": null,
  "Union des familles d'Ahuntsic": {
   "lat": 45.54809,
   "lon": -73.67267,

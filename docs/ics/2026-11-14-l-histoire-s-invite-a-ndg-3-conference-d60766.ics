@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-14-l-histoire-s-invite-a-ndg-3-conference-d60766@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T140000
+DTEND;TZID=America/Toronto:20261114T160000
+SUMMARY:L'histoire s'invite à NDG #3 (conférence)
+LOCATION:Bibliothèque de Notre-Dame-de-Grâce\, Montréal
+URL:https://montreal.ca/evenements/lhistoire-sinvite-ndg-3-conference-11158
+ 4
+DESCRIPTION:Nancy Marrelli parlera du Festival des arts et des lettres\, un
+  événement annuel organisé par le Conseil communautaire de NDG des ann
+ ées 1940 aux années 1970.\nPrix : Gratuit\nDétails : https://cdn-ndg.tu
+ xedobillet.com/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
