@@ -219,6 +219,8 @@ def main() -> int:
             lieu = b["lieu"].strip()
         if lieu is None:
             continue
+        if not lieu and b["source"] == "sorstu":
+            continue  # Sors-tu? couvre tout le Québec et le Canada : sans salle, impossible de savoir si c'est à Montréal
         if b["discipline"] == "jeune":
             b["jeune_public"], b["discipline"] = True, ""
         disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "expo"} \
@@ -337,7 +339,9 @@ def main() -> int:
     restants = [e for e in autres if e["discipline"] == "autre"]
     if restants and ia.disponible():
         try:
-            lot = [{"titre": e["titre"], "lieu": e["lieu"], "extrait": e.get("_extrait", "")} for e in restants]
+            lot = [{"titre": e["titre"], "lieu": e["lieu"],
+                    "extrait": (f"(festival : {e['festival']}) " if e.get("festival") else "") + e.get("_extrait", "")}
+                   for e in restants]
             for i, disc in ia.classer_lot(lot).items():
                 if 0 <= i < len(restants):
                     restants[i]["discipline"] = disc

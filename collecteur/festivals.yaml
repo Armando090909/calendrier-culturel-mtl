@@ -72,7 +72,7 @@ festivals:
   - {id: trad, nom: "Festival TRAD Montréal", court: Festival TRAD, disciplines: [musique], debut: 2026-09-04, fin: 2026-09-06, site: "https://festivaltradmontreal.ca"}
   - {id: quartiersdanses, nom: "Festival Quartiers Danses", court: Quartiers Danses, disciplines: [danse], debut: 2026-09-10, fin: 2026-09-20, site: "https://quartiersdanses.com"}
   - {id: fil, nom: "Festival international de la littérature (FIL)", court: FIL, disciplines: [lettres], debut: 2026-09-23, fin: 2026-10-03, site: "https://festival-fil.qc.ca"}
-  - {id: pop, nom: "POP Montréal", disciplines: [musique, expo, cinema], debut: 2026-09-23, fin: 2026-09-27, site: "https://popmontreal.com"}
+  - {id: pop, nom: "POP Montréal", disciplines: [musique, expo, cinema], debut: 2026-09-23, fin: 2026-09-27, site: "https://popmontreal.com", programmation: ["https://festapp.io/fr/festivals/pop-montreal/2026"]}
   - {id: filmblack, nom: "Festival international du film Black de Montréal", court: Film Black, disciplines: [cinema], debut: 2026-09-30, fin: 2026-10-04, site: "https://montrealblackfilm.com"}
   - {id: phenomena, nom: "Festival Phénomena", court: Phénomena, disciplines: [theatre, cirque, danse], debut: 2026-10-03, fin: 2026-10-22, site: "https://festivalphenomena.com"}
   - {id: fnc, nom: "Festival du nouveau cinéma (FNC)", court: FNC, disciplines: [cinema], debut: 2026-10-07, fin: 2026-10-18, site: "https://nouveaucinema.ca"}

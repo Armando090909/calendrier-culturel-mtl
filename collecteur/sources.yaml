@@ -122,6 +122,17 @@ sources:
   # Salles repérées en oct. 2026 (comparaison avec d'autres calendriers) : sites des lieux eux-mêmes
   - {nom: "Centre des musiciens du monde", cle: salles, type: page_ia, url: "https://centredesmusiciensdumonde.com/", lieu: "Centre des musiciens du monde", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4]}
+  # ---------- Conférences, idées, savoirs (ouverts au public) ----------
+  # Pages de programmation lues par l'IA ; les activités internes (soutenances, réunions) sont écartées par la consigne.
+  - {nom: "UPop Montréal (université populaire)", cle: salles, type: page_ia, url: "https://upopmontreal.com/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Cœur des sciences UQAM (conférences grand public)", cle: salles, type: page_ia, url: "https://coeurdessciences.uqam.ca/", discipline: conference, jours_semaine: [1, 4]}
+  - {nom: "UQAM – événements", cle: salles, type: page_ia, url: "https://evenements.uqam.ca/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Université de Montréal – calendrier", cle: salles, type: page_ia, url: "https://calendrier.umontreal.ca/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "CÉRIUM (relations internationales, UdeM)", cle: salles, type: page_ia, url: "https://cerium.umontreal.ca/activites/", discipline: conference, jours_semaine: [1, 4]}
+  - {nom: "Concordia – événements", cle: salles, type: page_ia, url: "https://www.concordia.ca/events.html", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "McGill – événements", cle: salles, type: page_ia, url: "https://www.mcgill.ca/channels/events", discipline: conference, jours_semaine: [1, 4]}
+  - {nom: "BAnQ – activités", cle: salles, type: page_ia, url: "https://www.banq.qc.ca/activites/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Centre Canadien d'Architecture – événements", cle: salles, type: page_ia, url: "https://www.cca.qc.ca/fr/evenements", discipline: conference, jours_semaine: [1, 4]}
   # Improvisation : LIM (dimanches, Cabaret Lion d'Or), LNI (MTELUS et ailleurs). Pages lues par l'IA, avec le navigateur.
   - {nom: "Cabaret Lion d'Or (LIM et spectacles)", cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
 
