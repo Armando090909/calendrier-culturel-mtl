@@ -20,6 +20,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import yaml
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).parent))
 import agenda  # noqa: E402
@@ -629,14 +630,26 @@ def main() -> int:
                 or "montreal.ca" in x["url"] or x.get("fin", "") < aujourd.isoformat():
             continue
         cle = f'{x["url"]}|{x["debut"]}|{x["fin"]}'
-        if cle not in memo_h and ia.disponible() and lus_h < int(reglages.get("max_horaires_ia", 40)):
+        # 2e méthode (v2) pour les pages où l'horaire n'a pas été trouvé : la page affichée dans le navigateur (calendrier
+        # de représentations en JavaScript ou dans un cadre de billetterie), puis la page de la billetterie elle-même.
+        if memo_h.get(cle) == {} and not memo_h.get(cle + "|v2"):
+            del memo_h[cle]
+            memo_h[cle + "|v2"] = True
+            essai_v2 = True
+        else:
+            essai_v2 = bool(memo_h.get(cle + "|v2"))
+        if cle not in memo_h and ia.disponible() and lus_h < int(reglages.get("max_horaires_ia", 60)):
             lus_h += 1
             try:
                 html = telecharger(x["url"], "text/html").text
                 texte = texte_page(html, x["url"])
-                if len(texte) < 800:  # page affichée par JavaScript
+                if len(texte) < 800 or essai_v2:  # page affichée par JavaScript
                     texte = texte_page(connecteurs.page_rendue(x["url"]), x["url"])
-                memo_h[cle] = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
+                h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
+                if not h and essai_v2 and str(x.get("billets", "")).startswith("http") and x["billets"] != x["url"]:
+                    texte = texte_page(connecteurs.page_rendue(x["billets"]), x["billets"])
+                    h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
+                memo_h[cle] = h
             except Exception as exc:
                 print(f"  horaire « {x['titre'][:30]} » : {exc}")
         h = memo_h.get(cle)
@@ -648,6 +661,15 @@ def main() -> int:
             x["horaire"] = h
     f_hor.write_text(json.dumps(memo_h, ensure_ascii=False), encoding="utf-8")
     print(f"Horaires : {sum(1 for x in expos if x.get('horaire'))} spectacles à l'affiche avec leur horaire ({lus_h} pages lues).")
+
+    # Séries qui encombrent sans informer : une « saison » sans salle de plus d'une semaine (ex. page Facebook d'un
+    # festival), ou la page d'accueil d'un organisme dont les soirées sont déjà au calendrier avec leur date et leur heure.
+    hotes_dates = {urlparse(e["url"]).netloc for e in events if e.get("heure") and e["url"].startswith("http")}
+    avant_n = len(expos)
+    expos = [x for x in expos if x.get("discipline") in (None, "", "expo") or not (
+        (x["lieu"] in ("", "Lieu à confirmer") and x["debut"] < (date.fromisoformat(x["fin"]) - timedelta(days=7)).isoformat())
+        or (urlparse(x.get("url", "")).path in ("", "/") and urlparse(x.get("url", "")).netloc in hotes_dates))]
+    print(f"Séries retirées (sans salle, ou saison déjà détaillée) : {avant_n - len(expos)}")
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
     noms_sources = conf.get("noms_sources", {})
