@@ -52,7 +52,9 @@ REGLES = [
                  "art therapie", "bricolage", "bricolo", "medialab", "creer avec", "creation d", "creation de", "fabrique", "zine", "zines"]),
     ("conference", ["conference", "colloque", "causerie", "table ronde", "panel", "seminaire", "cafe philo",
                     "philosophique", "talk", "entretien public", "mini conference", "midi conference", "debat",
-                    "rencontre avec", "rencontre informelle", "recits", "temoignages", "discussion", "echange avec"]),
+                    "rencontre avec", "rencontre informelle", "recits", "temoignages", "discussion", "echange avec",
+                    "symposium", "forum", "lecon publique", "grande conference", "conference publique", "cours public",
+                    "universite populaire", "upop", "lecture publique d idees", "webinaire", "keynote", "lecture series"]),
     ("cirque", ["cirque", "acrobat", "trapeze", "jonglerie", "circassien", "magie", "magicien", "magicienne", "illusionniste"]),
     ("humour", ["humour", "humoriste", "stand up", "standup", "comedy", "comedie club", "impro", "improvisation"]),
     ("humour", ["drag", "drag queen", "burlesque", "cabaret drag", "mado", "cabaret", "variete"]),
@@ -153,7 +155,7 @@ HORS_ILE = [
     "saint hyacinthe", "joliette", "rimouski", "saguenay", "mont tremblant", "magog", "st sauveur", "saint sauveur",
     "gatineau", "sherbrooke", "trois rivieres", "dix30", "place bell", "studio azrieli",
     "vancouver", "calgary", "edmonton", "winnipeg", "halifax", "pickering", "abbotsford", "mississauga", "saskatoon",
-    "saddledome",
+    "saddledome", "peterborough", "sudbury", "oshawa", "barrie", "kitchener", "guelph", "belleville", "cornwall ontario",
 ]
 
 # Salles hors de l'île souvent listées sans ville par les agendas pancanadiens (Sors-tu?, Songkick) : nom exact
@@ -169,6 +171,7 @@ LIEUX_HORS_ILE = {
     "le zenith promutuel assurances", "maurice o bready", "salle maurice o bready", "salle desjardins telus",
     "theatre telebec", "la boite a bleuets", "salle jean cossette", "centre caztel", "theatre hector charland",
     "theatre gilles vigneault", "salle andre mathieu", "theatre lionel groulx", "salle odyssee",
+    "premier acte", "le cercle", "le grand theatre de quebec", "grand theatre de quebec", "theatre petit champlain",
 }
 
 

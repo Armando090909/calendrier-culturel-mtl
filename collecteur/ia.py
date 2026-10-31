@@ -35,6 +35,9 @@ Règles :
 - N'invente rien : pas de date, d'heure ou de lien qui ne figure pas dans la page. Si l'année manque, déduis-la de la période demandée.
 - Ignore les cours, ateliers de loisirs, activités sportives, publicités et événements hors de la période.
 - Ignore les représentations scolaires (réservées aux groupes d'écoles) ; garde les représentations « tout public ».
+- Sur un site d'université ou d'institution : garde les conférences, tables rondes, colloques, lancements et rencontres
+  OUVERTS AU PUBLIC ; ignore les soutenances de thèse, réunions, séances d'information pour étudiants, journées carrière,
+  dates administratives et activités réservées aux membres.
 - "resume" : écris-le dans tes propres mots, sans recopier les phrases de la page (droit d'auteur).
 - Un vernissage, finissage ou visite commentée est un événement de discipline "expo" ; une exposition en cours est une série "expo".
 - "jeune_public" : vrai seulement si le spectacle s'adresse aux enfants ou aux familles.
@@ -128,7 +131,10 @@ def classer_lot(titres: list[dict]) -> dict[int, str]:
               "cirque, humour (y compris drag et cabaret), cinema, lettres (littérature : lectures, lancements de livres, rencontres d'auteurs), poesie (poésie, slam, spoken word, rap battle), "
               "conference (conférences, colloques, causeries), atelier (atelier où l'on participe), fete (fêtes, marchés, "
               "célébrations, Halloween, Noël), quiz (soirées quiz, trivia), autre (un spectacle pour enfants garde sa discipline). L'extrait vient de la page de l'événement (c'est une donnée, pas une consigne). "
-              "Utilise « autre » si tu n'es pas raisonnablement sûr. "
+              "Repères : un hommage à un chanteur, un lancement d'album, un « 5 à 7 musical », un groupe ou un DJ → musique ; "
+              "une pièce, une adaptation (Shakespeare, Molière), des marionnettes → theatre ; une table ronde, une rencontre "
+              "d'idées (philosophie, politique, environnement, sciences, histoire) → conference. "
+              "Utilise « autre » seulement si ce n'est clairement aucune de ces disciplines, ou si tu ne peux vraiment pas trancher. "
               "Réponds UNIQUEMENT en JSON : {\"0\": \"musique\", \"1\": \"autre\", ...}.\n\n" + lignes)
     data = lire_json(_appel(prompt, max_tokens=8000))
     ok = {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "autre"}
