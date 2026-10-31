@@ -134,6 +134,25 @@ class TestAutres(unittest.TestCase):
         self.assertTrue(titres["Fille de laitier"]["annule"])
         self.assertEqual(series[0]["titre"], "Surcharge - Benz Debrosse")
 
+    def test_autoentretien_reparation(self):
+        import autoentretien as a, tempfile
+        t = Path(tempfile.mkdtemp())
+        class R:
+            def __init__(s, text, url=""): s.text, s.status_code, s.url = text, 200, url
+        pages = {"https://salle.ca/": R('<a href="/fr/programmation">Programmation</a>', "https://salle.ca/"),
+                 "https://salle.ca/fr/programmation": R("ok")}
+        def tel(u, acc="*/*"):
+            if u in pages:
+                return pages[u]
+            raise Exception("404 Client Error")
+        pia = lambda cfg, d, f: ([{}] * 5, []) if cfg["url"].endswith("/fr/programmation") else ([], [])  # noqa: E731
+        src = [{"nom": "Salle X", "type": "page_ia", "url": "https://salle.ca/vieux", "cle_source": "salles"}]
+        rap = [{"source": "Salle X", "evenements": 0, "series": 0, "diagnostic": ["page illisible (404 Client Error)"]}]
+        with mock.patch.object(a, "F_REP", t / "r.json"), mock.patch.object(a, "F_AUTO", t / "a.json"):
+            e, _, j = a.reparer(src, rap, pia, lambda u: "", tel, D1, D2, {})
+            self.assertEqual(len(e), 5)
+            self.assertEqual(a.appliquer([dict(src[0])])[0]["url"], "https://salle.ca/fr/programmation")
+
     def test_formulaire_tri_automatique(self):
         prop = ("Horodateur,Titre de l'événement,Date de l'événement,Heure,Lieu (nom de la salle),Discipline,Courriel,Approuvé\n"
                 "x,Lancement vinyle,2026-11-03,19h,Casa del Popolo,Musique,a@b.c,\n"
