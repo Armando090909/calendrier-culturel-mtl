@@ -140,7 +140,7 @@ sources:
   # Quand un concert est aussi sur Songkick, la version avec l'heure est gardée. Adresses à vérifier :
   # si le rapport montre 0 événement, remplacez par la page « calendrier / shows » de la salle.
   - {nom: ma.to (musique live), cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/live-music", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: evenko (concerts), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements/concerts", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: evenko (concerts), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Théâtre Fairmount, cle: salles, type: page_ia, url: "https://theatrefairmount.com/", lieu: Théâtre Fairmount, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Club Soda, cle: salles, type: page_ia, url: "https://clubsoda.ca/", lieu: Club Soda, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Bar Le Ritz PDB, cle: salles, type: page_ia, url: "http://www.barleritzpdb.com/", lieu: Bar Le Ritz PDB, discipline: musique, jours_semaine: [0, 2, 4]}
@@ -263,6 +263,5 @@ sources:
   # ---- Salles qui refusent le robot (403) : leurs pages sur des billetteries et agendas publics (28 oct. 2026)
   - {nom: "Wiggle Room (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/wiggleroommtl", lieu: "Wiggle Room", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "Le Balcon (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/lebalconcabaret", lieu: "Le Balcon", jours_semaine: [0, 3]}
-  - {nom: "SAT – Société des arts technologiques (Exclaim!)", cle: salles, type: page_ia, url: "https://exclaim.ca/venues/venue/societe-des-arts-technologiques-sat", lieu: "SAT – Société des arts technologiques", jours_semaine: [0, 3]}
   - {nom: "Cabaret Jazz L'Entracte (billetterie Zeffy)", cle: salles, type: page_ia, url: "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "PAN M 360 – agenda musique", cle: salles, type: page_ia, url: "https://panm360.com/en/agenda-360/", discipline: musique, jours_semaine: [0, 3]}

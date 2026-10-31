@@ -132,6 +132,38 @@ def affiche_page(html: str, page_url: str) -> dict | None:
     return {"url": src, "credit": urlparse(page_url).netloc.replace("www.", ""), "lien": page_url}
 
 
+_GRATUIT = re.compile(r"(?i)\b(gratuit|entr[ée]e libre|admission gratuite|free admission|free entry|entr[ée]e gratuite)\b")
+_CONTRIB = re.compile(r"(?i)\b(contribution volontaire|pwyc|pay what you can|prix libre)\b")
+_MONTANT = re.compile(r"(?<![\d.,])(\d{1,3}(?:[.,]\d{2})?)\s?\$|\$\s?(\d{1,3}(?:[.,]\d{2})?)(?![\d.,])")
+_MOTS_PRIX = re.compile(r"(?i)(prix|tarifs?|billets?|admission|entr[ée]e|tickets?|price|cost|cover|r[ée]gulier|[ée]tudiant|g[ée]n[ée]ral|pr[ée]vente|porte)")
+
+
+def prix_page(html: str) -> str | None:
+    """Prix lu sur la page d'un événement : données schema.org d'abord, puis le texte près des mots « prix », « billets »,
+    « admission »… (« 25 $ », « 20 à 35 $ », « Gratuit », « Contribution volontaire »). Rien si ce n'est pas clair."""
+    m = re.search(r'"price"\s*:\s*"?(\d+(?:[.,]\d+)?)', html)
+    if m:
+        v = float(m.group(1).replace(",", "."))
+        return "Gratuit" if v == 0 else (f"{v:.0f}" if v.is_integer() else f"{v:.2f}").replace(".", ",") + " $"
+    texte = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+    if _CONTRIB.search(texte):
+        return "Contribution volontaire"
+    montants = []
+    for mm in _MONTANT.finditer(texte):
+        avant = texte[max(0, mm.start() - 70):mm.start()]
+        if _MOTS_PRIX.search(avant) and not re.search(r"(?i)(rabais|off|économ|frais de service|service fee|bière|beer|drink)", avant[-30:]):
+            v = float((mm.group(1) or mm.group(2)).replace(",", "."))
+            if 3 <= v <= 400:
+                montants.append(v)
+    if montants:
+        a, b = min(montants), max(montants)
+        f = lambda x: (f"{x:.0f}" if x.is_integer() else f"{x:.2f}").replace(".", ",")  # noqa: E731
+        return f"{f(a)} $" if a == b else f"{f(a)} à {f(b)} $"
+    if _GRATUIT.search(texte[:6000]):
+        return "Gratuit"
+    return None
+
+
 BILLETTERIES = ("lepointdevente.com", "ticketmaster.", "admission.com", "eventbrite.", "tuxedobillet", "tuxedo.ca",
                 "showpass.com", "dice.fm", "ra.co/events", "zeffy.com", "evenko.ca", "ovation", "ticketpro", "eventim",
                 "universe.com", "lavitrine.com", "billetterie", "billets", "tickets", "ticketweb", "seetickets",
@@ -304,7 +336,7 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     return out
 
 
-def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 600) -> int:
+def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 1200) -> int:
     """Ajoute e["liens"] (écouter, bande-annonce) et e["affiche"] (image de la page officielle). Renvoie le nombre
     d'événements enrichis. Chaque page et chaque artiste ne sont lus qu'une fois (mémoire)."""
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
@@ -312,21 +344,22 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     n, cherches = 0, 0
     fin_budget = time.time() + 25 * 60  # au plus 25 minutes par collecte ; la suite reprend le lendemain
     vieux = (aujourd - timedelta(days=30)).isoformat()
-    lues_affiche, fin_affiches = 0, time.time() + 12 * 60  # affiches : au plus 12 minutes
+    lues_affiche, fin_affiches = 0, time.time() + 20 * 60  # affiches, billets et prix : au plus 20 minutes
     for e in events:
-        url = e.get("url", "")
+      # la page de l'événement, puis celles des doublons fusionnés (ex. Songkick + site de la salle)
+      for url in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
         html = None
         # 1. Affiche : l'image de partage de la page de l'événement (site de la salle, du festival, ou agenda).
         if url.startswith("http") and "facebook.com" not in url:
             pm = memo.get("page:" + url)
-            if (not pm or "billets" not in pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
+            if (not pm or "prix" not in pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
                 lues_affiche += 1
                 try:
                     html = telecharger(url, "text/html").text
                     pm = memo["page:" + url] = {"affiche": affiche_page(html, url), "billets": billets_page(html, url),
-                                                "le": aujourd.isoformat()}
+                                                "prix": prix_page(html), "le": aujourd.isoformat()}
                 except Exception:
-                    pm = memo["page:" + url] = {"affiche": None, "billets": None, "le": aujourd.isoformat()}
+                    pm = memo["page:" + url] = {"affiche": None, "billets": None, "prix": None, "le": aujourd.isoformat()}
     fin_budget = time.time() + 30 * 60  # liens d'écoute : au plus 30 minutes
     # Une même image pour 3 spectacles différents ou plus, c'est un logo, une image par défaut ou la carte du festival :
     # on l'écarte. (Compté par titre, pas par page : une page de programmation sert à des dizaines de spectacles.)
@@ -336,15 +369,22 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         if pm and pm.get("affiche"):
             titres_par_image.setdefault(pm["affiche"]["url"], set()).add(plat(e["titre"])[:30])
     freq = Counter({u: len(t) for u, t in titres_par_image.items()})
+    titres_par_page: dict[str, set] = {}
+    for e in events:
+        titres_par_page.setdefault(e.get("url", ""), set()).add(plat(e["titre"])[:30])
     # Un même lien « billets » sur 25 pages ou plus : la page d'accueil de la billetterie, pas celle du spectacle.
     freq_b = Counter(v.get("billets") for k, v in memo.items() if k.startswith("page:") and v.get("billets"))
     for e in events:
-        pm = memo.get("page:" + e.get("url", ""))
-        if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image") \
+      for u in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
+        pm = memo.get("page:" + u)
+        if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image") and not e.get("affiche") \
                 and "og.festapp.io" not in pm["affiche"]["url"]:
             e["affiche"] = dict(pm["affiche"], **agrandir(pm["affiche"]["url"]))
         if pm and pm.get("billets") and not e.get("billets") and freq_b[pm["billets"]] < 25:
             e["billets"] = pm["billets"]
+        # prix : seulement si la page est celle d'un seul spectacle (pas une page de programmation partagée)
+        if pm and pm.get("prix") and not e.get("prix") and len(titres_par_page.get(u, ())) < 3:
+            e["prix"] = pm["prix"]
     for e in events:
         url = e.get("url", "")
         html = None

@@ -261,6 +261,13 @@ def main() -> int:
                     e["heure"] = det_mac["heure"]
                 if not e.get("billets") and det_mac.get("billets"):
                     e["billets"] = det_mac["billets"]
+                if not e.get("prix") and det_mac.get("prix"):
+                    e["prix"] = det_mac["prix"]
+                if not e.get("affiche") and not e.get("image") and det_mac.get("image"):
+                    # image de la fiche de la Ville (format carré ou 16:9 de leur banque d'images), avec le crédit
+                    im = det_mac["image"]
+                    e["affiche"] = {"url": im.replace("w_1920,", "w_1000,"), "petit": im.replace("w_1920,", "w_240,"),
+                                    "credit": "Ville de Montréal", "lien": e["url"]}
                 continue
         det = memo_v.get(e["url"])
         if det and det.get("_err") and det.get("le") != aujourd.isoformat():
@@ -284,6 +291,9 @@ def main() -> int:
         if not e.get("billets") and det.get("billets"):
             e["billets"] = det["billets"]
     f_vp.write_text(json.dumps(memo_v, ensure_ascii=False), encoding="utf-8")
+    # Pages des sources refusées aux serveurs de GitHub (403), pour l'ordinateur à Montréal
+    (SORTIE.parent / "pages_a_lire.json").write_text(json.dumps(sorted(connecteurs.BLOQUEES), ensure_ascii=False),
+                                                     encoding="utf-8")
     # Liste des fiches encore incomplètes, pour l'ordinateur à Montréal (dates les plus proches d'abord)
     (SORTIE.parent / "ville_a_lire.json").write_text(json.dumps(list(dict.fromkeys(
         e["url"] for e in a_lire if (e["lieu"] == "Lieu à confirmer" or not e["heure"])
@@ -589,6 +599,7 @@ def main() -> int:
         print(f"Liens de découverte en échec : {exc}")
     for e in events:
         e.pop("_artistes", None)
+        e.pop("_autres_urls", None)
     sauver_memoire(aujourd)
 
     # ---- Garde-fou : une collecte anormalement maigre ne remplace pas la précédente

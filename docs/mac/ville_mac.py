@@ -59,8 +59,24 @@ def extraire(html):
     return {"jsonld": [j.strip()[:6000] for j in jsonld][:3], "billets": m or ""}
 
 
+def mise_a_jour():
+    """Le programme se met à jour tout seul depuis ccmtl.ca (la version publiée avec le site), puis redémarre."""
+    if ESSAI or os.environ.get("CCMTL_A_JOUR"):
+        return
+    code, nouveau = curl("https://ccmtl.ca/mac/ville_mac.py")
+    moi = os.path.abspath(__file__)
+    if code == 200 and nouveau.startswith("#!/usr/bin/env python3") and "def main" in nouveau \
+            and nouveau != open(moi, encoding="utf-8").read():
+        with open(moi, "w", encoding="utf-8") as f:
+            f.write(nouveau)
+        journal("Programme mis à jour.")
+        os.environ["CCMTL_A_JOUR"] = "1"
+        os.execv(sys.executable, [sys.executable, moi] + sys.argv[1:])
+
+
 def main():
     os.makedirs(DOSSIER, exist_ok=True)
+    mise_a_jour()
     fait = os.path.join(DOSSIER, "dernier_jour.txt")
     aujourd = date.today().isoformat()
     if not ESSAI and os.path.exists(fait) and open(fait).read().strip() == aujourd:
@@ -100,11 +116,15 @@ def main():
     if ESSAI:
         print(json.dumps(res, ensure_ascii=False, indent=1)[:3000])
         return
-    if not res:
-        return
+    ok = envoyer(jeton, CHEMIN, res, 30, f"Fiches de la Ville lues depuis Montréal ({lues})") if res else True
+    ok = pages_bloquees(jeton, aujourd) and ok
+    if ok:
+        open(fait, "w").write(aujourd)
 
-    # Envoi au dépôt : on complète le fichier existant (fiches de moins de 30 jours)
-    api = f"https://api.github.com/repos/{DEPOT}/contents/{CHEMIN}"
+
+def envoyer(jeton, chemin, res, jours_gardes, message):
+    """Complète le fichier « chemin » du dépôt avec « res » (entrées de moins de « jours_gardes » jours)."""
+    api = f"https://api.github.com/repos/{DEPOT}/contents/{chemin}"
     entetes = ["-H", f"Authorization: Bearer {jeton}", "-H", "Accept: application/vnd.github+json"]
     code, txt = curl(api, *entetes)
     ancien, sha = {}, None
@@ -112,23 +132,54 @@ def main():
         d = json.loads(txt)
         sha = d.get("sha")
         try:
-            ancien = json.loads(base64.b64decode(d.get("content", "")).decode("utf-8"))
+            if d.get("content"):
+                ancien = json.loads(base64.b64decode(d["content"]).decode("utf-8"))
+            elif d.get("download_url"):  # fichier de plus de 1 Mo : l'API ne donne pas le contenu
+                c2, brut = curl(d["download_url"])
+                ancien = json.loads(brut) if c2 == 200 else {}
         except ValueError:
             ancien = {}
-    limite = date.fromordinal(date.today().toordinal() - 30).isoformat()
-    tout = {u: v for u, v in ancien.items() if v.get("le", "") >= limite}
+    limite = date.fromordinal(date.today().toordinal() - jours_gardes).isoformat()
+    tout = {u: v for u, v in ancien.items() if isinstance(v, dict) and v.get("le", "") >= limite}
     tout.update(res)
-    corps = {"message": f"Fiches de la Ville lues depuis Montréal ({lues})",
+    corps = {"message": message,
              "content": base64.b64encode(json.dumps(tout, ensure_ascii=False).encode("utf-8")).decode("ascii")}
     if sha:
         corps["sha"] = sha
     code, txt = curl(api, "-X", "PUT", *entetes, "-H", "Content-Type: application/json", "--data-binary", "@-",
                      entree=json.dumps(corps))
     if code in (200, 201):
-        open(fait, "w").write(aujourd)
-        journal("Envoyé au calendrier.")
-    else:
-        journal(f"Envoi refusé par GitHub ({code}) : {txt[:200]}")
+        journal(f"Envoyé au calendrier : {chemin.split('/')[-1]} ({len(res)}).")
+        return True
+    journal(f"Envoi refusé par GitHub ({code}) : {txt[:200]}")
+    return False
+
+
+def pages_bloquees(jeton, aujourd):
+    """Pages de programmation de salles qui refusent les serveurs de GitHub : lues d'ici, allégées (sans scripts ni
+    styles), compressées et envoyées. Le robots.txt de chaque site est respecté."""
+    import gzip
+    code, txt = curl("https://ccmtl.ca/pages_a_lire.json")
+    if code != 200:
+        return True
+    robots, res = {}, {}
+    for url in json.loads(txt)[:60]:
+        hote = "/".join(url.split("/")[:3])
+        if hote not in robots:
+            rp = RobotFileParser()
+            c, t = curl(hote + "/robots.txt")
+            rp.parse(t.splitlines() if c == 200 and "<html" not in t[:500].lower() else [])
+            robots[hote] = rp
+        if not robots[hote].can_fetch("CalendrierCulturelMTL", url):
+            continue
+        c, html = curl(url)
+        if c == 200 and len(html) > 500:
+            html = re.sub(r"(?is)<(script|style|svg|noscript)\b.*?</\1>", "", html)
+            res[url] = {"le": aujourd, "html": base64.b64encode(gzip.compress(html.encode("utf-8"))).decode("ascii")}
+        time.sleep(PAUSE)
+    journal(f"Pages de salles lues : {len(res)}.")
+    return envoyer(jeton, "collecteur/cache/pages_mac.json", res, 3, f"Pages de salles lues depuis Montréal ({len(res)})") \
+        if res else True
 
 
 if __name__ == "__main__":
