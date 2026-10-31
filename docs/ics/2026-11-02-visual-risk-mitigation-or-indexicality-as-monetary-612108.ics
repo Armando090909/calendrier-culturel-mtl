@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-02-visual-risk-mitigation-or-indexicality-as-monetary-612108@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261102T170000
+DTEND;TZID=America/Toronto:20261102T190000
+SUMMARY:Visual Risk Mitigation\, or Indexicality as Monetary Pipeline
+LOCATION:FB 630.15\, Faubourg Building\, Montréal
+URL:https://www.concordia.ca/cuevents/finearts/2026/11/02/visual-risk-mitig
+ ation-or-indexicality-as-monetary-pipeline.html
+DESCRIPTION:Conférence de Mats Carlsson sur les normes d'authentification 
+ des images numériques et les enjeux de confiance à l'ère de l'IA.\nDét
+ ails : https://www.concordia.ca/cuevents/finearts/2026/11/02/visual-risk-m
+ itigation-or-indexicality-as-monetary-pipeline.html\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

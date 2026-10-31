@@ -1,30 +1,48 @@
 {
  "date": "2026-10-31",
  "statut": "publié",
- "evenements": 2476,
- "expositions": 252,
+ "evenements": 2561,
+ "expositions": 260,
  "nouvelles_salles": [
-  "Espace Culturel Kawalees",
-  "Koujina Café",
+  "Bar HAL",
+  "Bibliothèque Henri-Bourassa",
+  "Bibliothèque Julio-Jean-Pierre",
+  "Cabaret des Amants",
+  "Canadian Centre for Architecture",
+  "Carré Notre-Dame-des-Victoires",
+  "Chalet du parc Armand-Bombardier",
+  "EV 1-715, Engineering, Computer Science and Visual Arts Integrated Complex",
+  "En ligne",
+  "Espace SAT",
+  "FB 630.15, Faubourg Building",
+  "H-110, Henry F. Hall Building",
+  "J.W. McConnell Building, Leonard & Bina Ellen Art Gallery",
+  "Judith J-2805",
+  "LB-2, J.W. McConnell Building",
+  "La Cale - pub zéro déchet",
+  "Milieux Institute for Arts, Culture and Technology, Concordia University",
   "Montreal",
+  "Musée du Centre commémoratif de l'Holocauste à Montréal",
+  "Parc Saint-Joseph",
+  "Place des Commerçantes",
+  "Place des Montréalaises",
   "Plusieurs salles",
-  "Société d'art vocal",
-  "Théâtre MainLine",
-  "UQAM, Pavillon J-A DeSève, salle DM-R310",
-  "UQAM, pavillon J-A DeSève, salle DS-M440"
+  "Salle 1120, Henry F. Hall Building",
+  "Satosphère",
+  "Théâtre Saint-Denis",
+  "UQAM - Pavillon Judith-Jasmin",
+  "École Saint-Rémi annexe",
+  "Église Saint-Joseph",
+  "Église Saint-René-Goupil"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 15,
-   "erreurs": 15,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-fabrication-creme-hydratante-120866",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/club-lecto-119187",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/confection-dun-livre-parfume-115581"
-   ],
-   "completees_par_mac": 368,
-   "heures_trouvees": 368,
-   "salles_trouvees": 681
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
+   "completees_par_mac": 989,
+   "heures_trouvees": 989,
+   "salles_trouvees": 965
   },
   "formulaire": {
    "lignes": 1,
@@ -53,15 +71,15 @@
    "2026-10-31 : « Richard O'Brien's The Rocky Horror Show » (Théâtre La Comédie de Montréal) = « Richard O'Brien's The Rocky Horror Show » (Théâtre MainLine)",
    "2026-10-31 : « Richard O'Brien's The Rocky Horror Show » (Théâtre La Comédie de Montréal) = « Richard O'Brien's The Rocky Horror Show » (Théâtre MainLine)",
    "2026-11-01 : « L CON, teagan johnston » (L'Escogriffe) = « L CON @ L’esco » (L’esco)",
-   "2026-11-04 : « Ditz, avec Gloin » (L'Escogriffe) = « Ditz - avec Gloin » (L’esco)",
    "2026-11-04 : « Guillaume Pineault - Rodage » (Le Terminal) = « Guillaume Pineault » (Cabaret Lion d'Or)",
-   "2026-11-05 : « MICO » (Théâtre Beanfield) = « MICO – Running From A Feeling » (MTELUS)",
-   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling – In The Feeling » (Théâtre Beanfield)",
+   "2026-11-05 : « Laura Anglade et l'Orchestre de jazz des diplômé(e » (Lieu à confirmer) = « Faculté de Musique de l'UdeM : Laura Anglade et l' » (Salle Claude-Champagne)",
+   "2026-11-05 : « MICO » (Théâtre Beanfield) = « MICO » (MTELUS)",
+   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling @ Théâtre Beanfield » (Théâtre Beanfield)",
    "2026-11-05 : « Perma » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
    "2026-11-05 : « Catherine Leduc » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
    "2026-11-06 : « Jacker un pickup en poésie (Alphonse Bisaillon) » (Café Campus) = « Jacker un pickup en poésie » (Café Campus)",
    "2026-11-06 : « Sloan Lucas (lancement) + Soraï » (L'Escogriffe) = « Sloan Lucas » (L’esco)",
-   "2026-11-07 : « Solarium » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
+   "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-07 : « MARIE NEIGES (lancement) + Leone Volta » (L'Escogriffe) = « Leone Volta » (L’esco)",
    "2026-11-07 : « LeParc + Tempête Solaire » (L'Escogriffe) = « LeParc » (L’esco)",
    "2026-11-08 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
@@ -71,16 +89,15 @@
    "2026-11-10 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
    "2026-11-11 : « Coline Rio + Andrea Cormier » (Cabaret Lion d'Or) = « Andrea Cormier » (Cabaret Lion d'Or)",
    "2026-11-11 : « Plus doux moins de sang (Mon Doux Saigneur) » (Gesù) = « Plus doux moins de sang » (Gesù)",
+   "2026-11-11 : « Rachelle Elie - Lâchée Lousse » (Théâtre St-Denis) = « Rachelle Elie » (Le Studio-Cabaret)",
    "2026-11-11 : « Kamilou + Raccoon (lancement) » (L'Escogriffe) = « Kamilou + Raccoon (lancement) » (L’esco)",
+   "2026-11-12 : « Résistance aujourd'hui en Palestine, et solidarité » (La Librairie) = « Aujourd'hui » (L’esco)",
    "2026-11-12 : « Aujourd'hui + DONALDA » (L'Escogriffe) = « Aujourd'hui » (L’esco)",
    "2026-11-13 : « Élégie + Louis-Charles » (L'Escogriffe) = « Louis-Charles » (L’esco)",
    "2026-11-14 : « Boucar Diouf à la Maison Théâtre de Montréal » (Maison Théâtre) = « Boucar Diouf » (Théâtre Desjardins)",
    "2026-11-14 : « Mary in the Junkyard » (Petit Campus) = « Mary In The Junkyard @ Café Campus » (Café Campus)",
    "2026-11-18 : « M pour Montréal : Béton Armé, Faze, zouz, 2120, Kn » (Club Soda) = « Béton Armé + Faze + Zouz » (Foufounes Électriques)",
-   "2026-11-22 : « Conte d’hiver - BOP » (Lieu à confirmer) = « Conte d'hiver » (Théâtre Outremont)",
-   "2026-11-25 : « Merci d’être venus | Théâtre » (Lieu à confirmer) = « Merci d'être venus » (Salle Pauline-Julien)",
-   "2026-12-04 : « Noël autour du monde| Montréal Guitare Trio (MG3 » (Lieu à confirmer) = « Noël autour du monde » (Maison culturelle et communautaire de Montréal-Nord)",
-   "2026-12-06 : « Minime rencontre les grands compositeurs | Benoît  » (Lieu à confirmer) = « Minime rencontre les grands compositeurs » (Salle Pauline-Julien)",
+   "2026-11-21 : « Célébration! » (Wiggle Room) = « Celebration @ Le Balcon » (Le Balcon)",
    "2026-12-27 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ]
@@ -104,7 +121,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 212,
+   "evenements": 201,
    "series": 0,
    "erreur": null
   },
@@ -362,6 +379,75 @@
    "note": "repris du 2026-10-31"
   },
   {
+   "source": "UPop Montréal (université populaire)",
+   "evenements": 16,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Cœur des sciences UQAM (conférences grand public)",
+   "evenements": 4,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "UQAM – événements",
+   "evenements": 5,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Université de Montréal – calendrier",
+   "evenements": 8,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "CÉRIUM (relations internationales, UdeM)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (404 Client Error: Not Found for url: https://cerium.umontreal.ca/activites/) : https://cerium.umontreal.ca/activites/"
+   ]
+  },
+  {
+   "source": "Concordia – événements",
+   "evenements": 4,
+   "series": 4,
+   "erreur": null
+  },
+  {
+   "source": "McGill – événements",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.mcgill.ca/channels/category/aud) : https://www.mcgill.ca/channels/category/audience/external"
+   ]
+  },
+  {
+   "source": "BAnQ – activités",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "IA en échec (réponse sans JSON lisible) : https://www.banq.qc.ca/activites/"
+   ]
+  },
+  {
+   "source": "Centre Canadien d'Architecture – événements (Eventbrite)",
+   "evenements": 7,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Hexagram – conférences (recherche-création)",
+   "evenements": 0,
+   "series": 1,
+   "erreur": null
+  },
+  {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
    "evenements": 1,
    "series": 0,
@@ -432,7 +518,8 @@
    "source": "evenko (concerts)",
    "evenements": 15,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Théâtre Fairmount",
@@ -532,10 +619,10 @@
   {
    "source": "ELLEPHANT",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://ellephant.org/) : https://ellephant.org"
+    "page lue depuis Montréal (ordinateur) : https://ellephant.org"
    ]
   },
   {
@@ -544,7 +631,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Ip Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -587,7 +674,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Ip Forbidden for url: https://galerierobertsonares.com/) : https://galerierobertsonares.com"
+    "page lue depuis Montréal (ordinateur) : https://galerierobertsonares.com",
+    "aucun événement trouvé dans 1291 caractères de texte : https://galerierobertsonares.com"
    ]
   },
   {
@@ -644,10 +732,10 @@
   {
    "source": "TIAN Contemporain",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.tiancontemporain.com/) : https://fr.tiancontemporain.com/"
+    "page lue depuis Montréal (ordinateur) : https://fr.tiancontemporain.com/"
    ]
   },
   {
@@ -656,7 +744,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Ip Forbidden for url: https://wishboneart.com/) : https://wishboneart.com"
+    "page lue depuis Montréal (ordinateur) : https://wishboneart.com",
+    "aucun événement trouvé dans 979 caractères de texte : https://wishboneart.com"
    ]
   },
   {
@@ -686,11 +775,11 @@
   },
   {
    "source": "Club Balattou (musiques du monde)",
-   "evenements": 0,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.balattou.com/) : https://www.balattou.com/"
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/"
    ]
   },
   {
@@ -699,7 +788,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.entractejazz.org/) : https://www.entractejazz.org/"
+    "page lue depuis Montréal (ordinateur) : https://www.entractejazz.org/",
+    "page presque vide (459 caractères ; site en JavaScript ?) : https://www.entractejazz.org/"
    ]
   },
   {
@@ -708,7 +798,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.bistroajojo.com/) : https://www.bistroajojo.com/"
+    "page lue depuis Montréal (ordinateur) : https://www.bistroajojo.com/",
+    "page presque vide (360 caractères ; site en JavaScript ?) : https://www.bistroajojo.com/"
    ]
   },
   {
@@ -722,11 +813,11 @@
   },
   {
    "source": "Le Balcon",
-   "evenements": 0,
+   "evenements": 29,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.lebalcon.ca/) : https://www.lebalcon.ca/"
+    "page lue depuis Montréal (ordinateur) : https://www.lebalcon.ca/"
    ]
   },
   {
@@ -754,11 +845,11 @@
   },
   {
    "source": "Le Belmont",
-   "evenements": 0,
+   "evenements": 3,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.lebelmont.ca/) : https://www.lebelmont.ca/"
+    "page lue depuis Montréal (ordinateur) : https://www.lebelmont.ca/"
    ]
   },
   {
@@ -841,11 +932,11 @@
   },
   {
    "source": "SAT – Société des arts technologiques",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://sat.qc.ca/) : https://sat.qc.ca/"
+    "page lue depuis Montréal (ordinateur) : https://sat.qc.ca/"
    ]
   },
   {
@@ -866,11 +957,11 @@
   },
   {
    "source": "Wiggle Room (burlesque, cabaret)",
-   "evenements": 0,
+   "evenements": 19,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.wiggleroom.ca/fr/shows) : https://www.wiggleroom.ca/fr/shows"
+    "page lue depuis Montréal (ordinateur) : https://www.wiggleroom.ca/fr/shows"
    ]
   },
   {
@@ -903,9 +994,7 @@
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "trouvé dans le navigateur (automatique) : http://www.mainlinetheatre.ca/"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Repercussion Theatre",
@@ -998,16 +1087,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.incendiesdeparoles.com/slamontr) : https://www.incendiesdeparoles.com/slamontreal"
+    "page lue depuis Montréal (ordinateur) : https://www.incendiesdeparoles.com/slamontreal",
+    "aucun événement trouvé dans 6023 caractères de texte : https://www.incendiesdeparoles.com/slamontreal"
    ]
   },
   {
    "source": "GSIMtl (slam de poésie)",
-   "evenements": 0,
+   "evenements": 10,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.gsimtl.com/spectaclesGSIMTl2026) : https://www.gsimtl.com/spectaclesGSIMTl2026"
+    "page lue depuis Montréal (ordinateur) : https://www.gsimtl.com/spectaclesGSIMTl2026"
    ]
   },
   {
@@ -1040,11 +1130,11 @@
   },
   {
    "source": "Pierrefonds-Roxboro – spectacles",
-   "evenements": 0,
+   "evenements": 5,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://montreal.ca/articles/spectacles-pie) : https://montreal.ca/articles/spectacles-pierrefonds-roxboro-43673"
+    "page lue depuis Montréal (ordinateur) : https://montreal.ca/articles/spectacles-pierrefonds-roxboro-43673"
    ]
   },
   {
@@ -1053,7 +1143,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://montreal.ca/articles/programmation-) : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214"
+    "page lue depuis Montréal (ordinateur) : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214",
+    "aucun événement trouvé dans 3321 caractères de texte : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214"
    ]
   },
   {
@@ -1092,7 +1183,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.easternbloc.ca/) : https://easternbloc.ca/"
+    "page lue depuis Montréal (ordinateur) : https://easternbloc.ca/",
+    "aucun événement trouvé dans 1298 caractères de texte : https://easternbloc.ca/"
    ]
   },
   {
@@ -1282,11 +1374,7 @@
    "evenements": 38,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "lue dans le navigateur (automatique) : https://festivalarabe.com/programmation",
-    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/ormuz-ou-le-naufrage-du-droit-international",
-    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/narrators-of-peace"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Festival · Monde Arabe (2)",
@@ -1299,7 +1387,8 @@
    "source": "Festival · CINEMANIA",
    "evenements": 205,
    "series": 47,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Festival · La Mèche courte",
@@ -1321,7 +1410,8 @@
    "source": "Festival · Coup de cœur",
    "evenements": 94,
    "series": 16,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Festival · Mundial",
@@ -1518,7 +1608,7 @@
    "erreur": null,
    "diagnostic": [
     "lue dans le navigateur (automatique) : https://metropolisbleu.org",
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page presque vide (79 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -1581,7 +1671,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com"
    ]
   },
   {
@@ -1644,17 +1734,15 @@
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "lue dans le navigateur (automatique) : https://francosmontreal.com"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Festival · Festival de Jazz",
-   "evenements": 0,
+   "evenements": 5,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2089 caractères de texte : https://www.montrealjazzfest.com"
+    "lue dans le navigateur (automatique) : https://www.montrealjazzfest.com"
    ]
   },
   {
@@ -1740,11 +1828,11 @@
   },
   {
    "source": "Festival · LASSO",
-   "evenements": 0,
+   "evenements": 2,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1030 caractères de texte : https://lassomontreal.com"
+    "lue dans le navigateur (automatique) : https://lassomontreal.com"
    ]
   },
   {
@@ -1753,7 +1841,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://montreal.mutek.org/) : https://montreal.mutek.org"
+    "page lue depuis Montréal (ordinateur) : https://montreal.mutek.org",
+    "aucun événement trouvé dans 3499 caractères de texte : https://montreal.mutek.org"
    ]
   },
   {
@@ -1790,7 +1879,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1335 caractères de texte : https://popmontreal.com"
+    "aucun événement trouvé dans 34636 caractères de texte : https://festapp.io/fr/festivals/pop-montreal/2026"
    ]
   },
   {
@@ -1817,7 +1906,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://nouveaucinema.ca/) : https://nouveaucinema.ca"
+    "page lue depuis Montréal (ordinateur) : https://nouveaucinema.ca",
+    "page presque vide (26 caractères ; site en JavaScript ?) : https://nouveaucinema.ca"
    ]
   },
   {
@@ -1874,7 +1964,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://sortirauquebec.com/en/listing/festi) : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/"
+    "page lue depuis Montréal (ordinateur) : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/",
+    "aucun événement trouvé dans 8478 caractères de texte : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/"
    ]
   },
   {
@@ -1882,9 +1973,7 @@
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "lue dans le navigateur (automatique) : https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
-   ]
+   "note": "repris du 2026-10-31"
   },
   {
    "source": "Festival · Shows de ruelle",
@@ -1892,7 +1981,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://sortirauquebec.com/en/listing/conce) : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/"
+    "page lue depuis Montréal (ordinateur) : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
+    "aucun événement trouvé dans 10672 caractères de texte : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/"
    ]
   },
   {

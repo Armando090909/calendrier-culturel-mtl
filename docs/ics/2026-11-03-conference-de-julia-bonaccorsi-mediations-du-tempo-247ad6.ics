@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-03-conference-de-julia-bonaccorsi-mediations-du-tempo-247ad6@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261103T123000
+DTEND;TZID=America/Toronto:20261103T143000
+SUMMARY:Conférence de Julia Bonaccorsi : «Médiations du temporaire dans 
+ la ville : questions critiques»
+LOCATION:Théâtre Maisonneuve\, Montréal
+URL:https://evenements.uqam.ca/evenements/conference-de-julia-bonaccorsi-me
+ diations-du-temporaire-dans-la-ville-questions-critiques/34646
+DESCRIPTION:Une réflexion critique sur les projets temporaires et leur rô
+ le dans la transformation urbaine.\nPrix : Gratuit\nDétails : https://eve
+ nements.uqam.ca/evenements/conference-de-julia-bonaccorsi-mediations-du-te
+ mporaire-dans-la-ville-questions-critiques/34646\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

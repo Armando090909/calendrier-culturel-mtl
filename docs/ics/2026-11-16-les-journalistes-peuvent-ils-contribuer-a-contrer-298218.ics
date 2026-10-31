@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-16-les-journalistes-peuvent-ils-contribuer-a-contrer-298218@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261116T180000
+DTEND;TZID=America/Toronto:20261116T200000
+SUMMARY:Les journalistes peuvent-ils contribuer à contrer la montée de l'
+ extrême droite ?
+LOCATION:La Librairie\, Montréal
+URL:https://www.upopmontreal.com/automne-2026/montee-en-puissance-des-regim
+ es-autoritaires-et-role-des-medias/#20261116
+DESCRIPTION:Réflexion sur le rôle que peuvent jouer les journalistes face
+  à la progression de l'extrême droite.\nDétails : https://www.upopmontr
+ eal.com/automne-2026/montee-en-puissance-des-regimes-autoritaires-et-role-
+ des-medias/#20261116\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

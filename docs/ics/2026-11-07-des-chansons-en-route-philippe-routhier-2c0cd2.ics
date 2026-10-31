@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-07-des-chansons-en-route-philippe-routhier-2c0cd2@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261107T190000
+DTEND;TZID=America/Toronto:20261107T210000
+SUMMARY:Des chansons en route - Philippe Routhier
+LOCATION:Maison Théâtre\, Montréal
+URL:https://montreal.ca/evenements/des-chansons-en-route-philippe-routhier-
+ 115007
+DESCRIPTION:Découvrez l'auteur-compositeur-interprète folk\, pop Philippe
+  Routhier dans la salle intime de la Maison Brignon\, samedi 7 novembre\, 
+ 19h\, tout public.\nPrix : Gratuit\nDétails : https://lepointdevente.com/
+ billets/8zy261107001?lang=fr\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

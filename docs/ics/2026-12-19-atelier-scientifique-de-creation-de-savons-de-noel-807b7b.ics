@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-19-atelier-scientifique-de-creation-de-savons-de-noel-807b7b@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261219T103000
+DTEND;TZID=America/Toronto:20261219T123000
+SUMMARY:Atelier scientifique de création de savons de Noël (4-12 ans)
+LOCATION:Bibliothèque Robert-Bourassa\, Montréal
+URL:https://montreal.ca/evenements/atelier-scientifique-de-creation-de-savo
+ ns-de-noel-4-12-ans-117463
+DESCRIPTION:Atelier scientifique et créatif gratuit de créations de savon
+ s pour Noël le samedi 19 décembre 2026 à la bibliothèque Robert-Bouras
+ sa d'Outremont pour enfants\nPrix : Gratuit\nDétails : https://montreal.c
+ a/evenements/atelier-scientifique-de-creation-de-savons-de-noel-4-12-ans-1
+ 17463\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

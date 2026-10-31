@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-16-le-monde-des-infrastructures-la-voirie-et-son-entr-c4c19c@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261216T181500
+DTEND;TZID=America/Toronto:20261216T201500
+SUMMARY:Le monde des infrastructures : la voirie et son entretien
+LOCATION:Quai des Brumes\, Montréal
+URL:https://montreal.ca/evenements/le-monde-des-infrastructures-la-voirie-e
+ t-son-entretien-118989
+DESCRIPTION:Explorez l'historique de l'aménagement urbain.\nPrix : Gratuit
+ \nDétails : https://forms.cloud.microsoft/pages/responsepage.aspx?id=3NIV
+ n1OHg0-qwqWCiNOkvBcNVoNAbQhGuLUYVRnyd5dUNVFSUkJSTEZYU1pCNjI3TEM0UUlOWjVSSS
+ QlQCN0PWcu\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-15-ateliers-decriture-autobiographique-memoire-sensor-f8b60b@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261215T110000
+DTEND;TZID=America/Toronto:20261215T130000
+SUMMARY:Ateliers d’écriture autobiographique : Mémoire sensorielle
+LOCATION:Parc De Mésy\, Montréal
+URL:https://montreal.ca/evenements/ateliers-decriture-autobiographique-memo
+ ire-sensorielle-116672
+DESCRIPTION:Atelier d'écriture pour les adultes à la bibliothèque de Car
+ tierville.\nPrix : Gratuit\nDétails : https://forms.cloud.microsoft/r/Rru
+ kaUgdmk\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

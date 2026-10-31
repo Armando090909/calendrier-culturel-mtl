@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-bfdd22@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261127T140000
+DTEND;TZID=America/Toronto:20261127T160000
+SUMMARY:Prima di Scomparire - Les Soeurs Schmutt (Sortie de résidence)
+LOCATION:Quai des Brumes\, Montréal
+URL:https://montreal.ca/evenements/prima-di-scomparire-les-soeurs-schmutt-s
+ ortie-de-residence-119479
+DESCRIPTION:La Maison de la culture du Plateau-Mont-Royal présente gratuit
+ ement la sortie de résidence des Soeurs Schmutt\, le 27 novembre 2026 à 
+ 14h\nPrix : Gratuit\nDétails : https://lepointdevente.com/billets/prima-s
+ oeursschmutt?lang=fr\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
