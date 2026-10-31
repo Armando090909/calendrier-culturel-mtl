@@ -163,3 +163,17 @@ Un encadré de dons s'affiche au bas du calendrier dès qu'un des deux champs es
 - **Ko-fi** (`don`) : pour les dons par carte. Pas de commission Ko-fi, mais Stripe ou PayPal prennent environ 2,9 % + 0,30 $ par don (il reste environ 0,67 $ sur 1 $).
 - **Plus tard** : si le projet devient un OBNL enregistré, **Zeffy** permet de recevoir des dons par carte sans frais pour l'organisme.
 - Laissez les champs vides (`""`) pour cacher l'encadré. Sans organisme de bienfaisance enregistré, aucun reçu fiscal ne peut être remis.
+
+## Entretien et transmission
+
+Le guide complet (architecture, comptes, automatismes, courriels d'alerte, tâches périodiques, déménagement,
+passation) est tenu par le propriétaire du projet dans un document « ccmtl.ca · Guide d'entretien et de transmission ».
+En bref :
+- la collecte tourne chaque nuit (lancée par cron-job.org à 1 h 30) ; le bilan de santé ouvre un avis (onglet Issues)
+  seulement pour un problème qui dure ;
+- les sources muettes sont réparées automatiquement (`collecteur/autoentretien.py`, `cache/reparations.json`) et de
+  nouvelles salles sont découvertes chaque dimanche (`cache/sources_auto.json`) ;
+- un ordinateur à Montréal (`docs/mac/`) lit ce que GitHub ne peut pas lire (Ville de Montréal, salles qui bloquent) ;
+- secrets nécessaires : `ANTHROPIC_API_KEY`, `TMDB_API_KEY` ; variables : `PROPOSITIONS_CSV_URL`,
+  `CALENDRIERS_CSV_URL`, `CONTACT`.
+
