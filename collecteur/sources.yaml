@@ -128,7 +128,6 @@ sources:
   - {nom: "Cœur des sciences UQAM (conférences grand public)", cle: salles, type: page_ia, url: "https://coeurdessciences.uqam.ca/", discipline: conference, jours_semaine: [1, 4]}
   - {nom: "UQAM – événements", cle: salles, type: page_ia, url: "https://evenements.uqam.ca/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Université de Montréal – calendrier", cle: salles, type: page_ia, url: "https://calendrier.umontreal.ca/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "CÉRIUM (relations internationales, UdeM)", cle: salles, type: page_ia, url: "https://cerium.umontreal.ca/activites/", discipline: conference, jours_semaine: [1, 4]}
   - {nom: "Concordia – événements", cle: salles, type: page_ia, url: "https://www.concordia.ca/events.html", discipline: conference, jours_semaine: [1, 4], navigateur: true}
   - {nom: "McGill – événements", cle: salles, type: page_ia, url: "https://www.mcgill.ca/channels/category/audience/external", discipline: conference, jours_semaine: [1, 4]}
   - {nom: "BAnQ – activités", cle: salles, type: page_ia, url: "https://www.banq.qc.ca/activites/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
