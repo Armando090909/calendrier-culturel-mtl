@@ -526,7 +526,8 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
     if(x.festival||titres.has(cle(x.titre))||(x.url&&pages.has(x.url)))return false;
     if(x.url)pages.add(x.url);
     // Horaire lu sur la page du spectacle (x.horaire) : bonne heure chaque jour, et pas d'entrée les jours de relâche
-    const H=x.horaire,hj=H&&H.jours||{},hd=H&&H.dates||{},avecJours=Object.keys(hj).length>0,avecDates=Object.keys(hd).length>0;
+    let H=x.horaire;const hj=H&&H.jours||{},hd=H&&H.dates||{},avecJours=Object.keys(hj).length>0,avecDates=Object.keys(hd).length>0;
+    if(H&&!avecJours&&!Object.keys(hd).some(k=>k>=D.debut))H=null; // liste de dates périmée : on l'ignore
     const heuresDu=s=>{if(!H)return[null];if(hd[s])return hd[s];if(avecDates&&!avecJours)return[];
       const h=hj[String((new Date(s+"T12:00").getDay()+6)%7)];return h?[h]:(avecJours?[]:[null])};
     for(let s=x.debut<D.debut?D.debut:x.debut;s<=x.fin&&s<=D.fin;s=addDays(s,1))

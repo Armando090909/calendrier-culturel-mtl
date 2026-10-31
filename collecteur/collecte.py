@@ -630,8 +630,13 @@ def main() -> int:
                 memo_h[cle] = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
             except Exception as exc:
                 print(f"  horaire « {x['titre'][:30]} » : {exc}")
-        if memo_h.get(cle):
-            x["horaire"] = memo_h[cle]
+        h = memo_h.get(cle)
+        # Une liste de dates qui ne contient plus aucune représentation à venir (page qui ne montre que la première,
+        # par exemple) ne sert pas : on n'en tient pas compte plutôt que de faire disparaître le spectacle.
+        if h and not h.get("jours") and not any(d >= aujourd.isoformat() for d in h.get("dates", {})):
+            h = None
+        if h:
+            x["horaire"] = h
     f_hor.write_text(json.dumps(memo_h, ensure_ascii=False), encoding="utf-8")
     print(f"Horaires : {sum(1 for x in expos if x.get('horaire'))} spectacles à l'affiche avec leur horaire ({lus_h} pages lues).")
 
