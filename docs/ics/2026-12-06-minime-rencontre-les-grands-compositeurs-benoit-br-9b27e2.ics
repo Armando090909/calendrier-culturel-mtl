@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-06-minime-rencontre-les-grands-compositeurs-benoit-br-9b27e2@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261206T160000
+DTEND;TZID=America/Toronto:20261206T180000
+SUMMARY:Minime rencontre les grands compositeurs | Benoît Brière et l’E
+ nsemble Quatre Saisons
+LOCATION:Salle Pauline-Julien\, Montréal
+URL:https://montreal.ca/evenements/minime-rencontre-les-grands-compositeurs
+ -benoit-briere-et-lensemble-quatre-saisons-121110
+DESCRIPTION:Benoît Brière\, l’un des comédiens les plus connus au Qué
+ bec\, avec son ton envoûtant\, nous invite à suivre Minime dans ses pér
+ ipéties.\nPrix : Gratuit\nDétails : https://pauline-julien.tuxedobillet.
+ com/?axeptio_token=Yw0vcW12XmXHqCWV3Rpmpq-i1j&_gl=1*1mop8jg*_gcl_au*MTAxMD
+ g4NzYzOC4xNzkyNDMxMjc0*_ga*MTQ5OTM2OTg4MC4xNzkyNDMxMjc0*_ga_4GSMZYGNKK*czE
+ 3OTI1MjY3ODgkbzMkZzEkdDE3OTI1MjY4MTQkajM0JGwwJGgw\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

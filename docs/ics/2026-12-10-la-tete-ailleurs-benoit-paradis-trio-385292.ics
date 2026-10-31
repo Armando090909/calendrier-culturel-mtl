@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-10-la-tete-ailleurs-benoit-paradis-trio-385292@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261210T193000
+DTEND;TZID=America/Toronto:20261210T213000
+SUMMARY:La tête ailleurs - Benoit Paradis Trio
+LOCATION:Maison de la culture de Rosemont–La Petite-Patrie\, Montréal
+URL:https://montreal.ca/evenements/la-tete-ailleurs-benoit-paradis-trio-115
+ 429
+DESCRIPTION:Spectacle gratuit du Benoit Paradis Trio le 10 décembre 2026 
+ à 19h30.\nPrix : Gratuit\nDétails : https://lepointdevente.com/billets/l
+ t4261210001\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

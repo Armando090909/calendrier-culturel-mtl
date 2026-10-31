@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-19-architectures-de-la-joie-anais-barbeau-lavalette-e-e36bc8@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261119T193000
+DTEND;TZID=America/Toronto:20261119T213000
+SUMMARY:Architectures de la joie - Anaïs Barbeau-Lavalette et Steve Gagnon
+LOCATION:L'Entrepôt – maison de la culture de Lachine\, Montréal
+URL:https://montreal.ca/evenements/architectures-de-la-joie-anais-barbeau-l
+ avalette-et-steve-gagnon-108328
+DESCRIPTION:Construire la joie une lettre après l'autre\, c'est ce que nou
+ s découvrons dans cette pièce de\, et avec\, Anaïs Barbeau-Lavalette et
+  Steve Gagnon.\nPrix : Payant\nDétails : https://lachine.tuxedobillet.com
+ /Entrepot2022/architectures-de-la-joie\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

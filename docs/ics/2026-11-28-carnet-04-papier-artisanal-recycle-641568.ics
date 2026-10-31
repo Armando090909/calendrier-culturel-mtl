@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-28-carnet-04-papier-artisanal-recycle-641568@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261128T130000
+DTEND;TZID=America/Toronto:20261128T150000
+SUMMARY:Carnet 04 : Papier artisanal recyclé
+LOCATION:Maison de la culture Marie-Uguay\, Montréal
+URL:https://montreal.ca/evenements/carnet-04-papier-artisanal-recycle-12040
+ 6
+DESCRIPTION:Atelier de création de papier gratuit à Marie-Uguay le samedi
+  28 novembre à 13h.\nPrix : Gratuit\nDétails : https://teams.microsoft.c
+ om/l/message/19:1f2791a9-6baa-4923-8dcf-9e505416259d_9379b09b-bf35-4e60-87
+ 86-f101b273c25e@unq.gbl.spaces/1793297971660?context=%7B%22contextType%22%
+ 3A%22chat%22%7D\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

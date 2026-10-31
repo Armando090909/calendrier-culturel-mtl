@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-28-noel-au-village-b97e52@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261128T110000
+DTEND;TZID=America/Toronto:20261128T130000
+SUMMARY:Noël au Village
+LOCATION:Parc Saint-Joseph\, Montréal
+URL:https://montreal.ca/evenements/noel-au-village-121233
+DESCRIPTION:Noël au Village revient au parc Saint-Joseph de Rivière-des-P
+ rairies le 28 novembre. Une journée gratuite de spectacles et d'activité
+ s familiales.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/n
+ oel-au-village-121233\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

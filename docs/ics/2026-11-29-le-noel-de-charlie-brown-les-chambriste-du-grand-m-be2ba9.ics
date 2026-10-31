@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-29-le-noel-de-charlie-brown-les-chambriste-du-grand-m-be2ba9@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261129T160000
+DTEND;TZID=America/Toronto:20261129T180000
+SUMMARY:Le Noël de Charlie Brown - Les Chambriste du Grand Montréal et le
+  Rozan Trio
+LOCATION:Église Saint-René-Goupil\, Montréal
+URL:https://montreal.ca/evenements/le-noel-de-charlie-brown-les-chambriste-
+ du-grand-montreal-et-le-rozan-trio-117033
+DESCRIPTION:Venez fêter l'esprit de Noël avec Les Chambristes du Grand Mo
+ ntréal et le Rozan Trio et le concert Le Noël de Charlie Brown à l'égl
+ ise Saint-René-Goupil.\nPrix : Gratuit\nDétails : https://lepointdevente
+ .com/billets/le-noel-de-charlie-brown\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

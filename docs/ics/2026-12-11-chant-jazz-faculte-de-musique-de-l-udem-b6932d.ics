@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-11-chant-jazz-faculte-de-musique-de-l-udem-b6932d@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261211T193000
+DTEND;TZID=America/Toronto:20261211T213000
+SUMMARY:Chant Jazz - Faculté de musique de l'UDeM
+LOCATION:Maison de la culture de Côte-des-Neiges\, Montréal
+URL:https://montreal.ca/evenements/chant-jazz-faculte-de-musique-de-ludem-1
+ 20500
+DESCRIPTION:Des reprises de classiques et de nouvelles compositions de jazz
+  sont interprétées par ces nouveaux talents à découvrir.\nPrix : Gratu
+ it\nDétails : https://cdn-ndg.tuxedobillet.com/main/chant-jazz-decembre-2
+ 026\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

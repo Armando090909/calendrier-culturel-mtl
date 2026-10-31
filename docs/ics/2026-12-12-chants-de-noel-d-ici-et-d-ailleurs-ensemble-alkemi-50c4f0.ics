@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-12-chants-de-noel-d-ici-et-d-ailleurs-ensemble-alkemi-50c4f0@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261212T150000
+DTEND;TZID=America/Toronto:20261212T170000
+SUMMARY:Chants de Noël d'ici et d'ailleurs - Ensemble ALKEMIA
+LOCATION:Parc De Mésy\, Montréal
+URL:https://montreal.ca/evenements/chants-de-noel-dici-et-dailleurs-ensembl
+ e-alkemia-119945
+DESCRIPTION:L’Ensemble ALKEMIA vous offre un voyage musical à travers le
+ s Noëls d’ici et d’ailleurs\, du dernier millénaire à aujourd’hui
+ .\nPrix : Gratuit\nDétails : https://lepointdevente.com/billets/ensemblea
+ lkemia\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

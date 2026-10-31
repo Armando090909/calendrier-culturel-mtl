@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-09-a-travers-tes-yeux-brigitte-poupart-et-fabiola-pie-67b539@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261209T140000
+DTEND;TZID=America/Toronto:20261209T160000
+SUMMARY:À travers tes yeux - Brigitte Poupart et Fabiola Pierre Monty
+LOCATION:Bibliothèque Frontenac\, Montréal
+URL:https://montreal.ca/evenements/travers-tes-yeux-brigitte-poupart-et-fab
+ iola-pierre-monty-121083
+DESCRIPTION:Assistez au documentaire À travers tes yeux\, réalisé par Br
+ igitte Poupart et filmé par Fabiola Pierre Monty\, sa fille adoptive. Une
+  quête sur les routes d'Haïti\nPrix : Gratuit\nDétails : https://fronte
+ nac.tuxedobillet.com/Janine-Sutto/a-travers-tes-yeux-brigitte-poupart-et-f
+ abiola-pierre-monty\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

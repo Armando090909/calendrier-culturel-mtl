@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-19-contes-insolites-du-pere-noel-12c344@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261219T110000
+DTEND;TZID=America/Toronto:20261219T130000
+SUMMARY:Contes insolites du Père Noël
+LOCATION:Bibliothèque Saul-Bellow\, Montréal
+URL:https://montreal.ca/evenements/contes-insolites-du-pere-noel-121145
+DESCRIPTION:Découvre un court-métrage et deux histoires bien étranges su
+ r le thème du Père Noël\, à la bibliothèque Saul-Bellow de Lachine.\n
+ Prix : Gratuit\nDétails : https://lepointdevente.com/billets/ev3261219002
+ \n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

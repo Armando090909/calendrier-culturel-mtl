@@ -41,6 +41,7 @@
   "lon": -73.607,
   "quartier": "Petite-Patrie"
  },
+ "Bar HAL": null,
  "Bar L'Hémisphère gauche": {
   "lat": 45.534,
   "lon": -73.6,
@@ -86,6 +87,11 @@
   "lon": -73.55171,
   "quartier": "Ville-Marie"
  },
+ "Bibliothèque Henri-Bourassa": {
+  "lat": 45.60463,
+  "lon": -73.62502,
+  "quartier": "Montréal-Nord"
+ },
  "Bibliothèque Hochelaga": null,
  "Bibliothèque Hélène-Charbonneau": {
   "alias": [
@@ -100,6 +106,14 @@
   "lat": 45.60302,
   "lon": -73.55879,
   "quartier": "Anjou"
+ },
+ "Bibliothèque Julio-Jean-Pierre": {
+  "alias": [
+   "Bibliothèque Julio-Jean-Pierre (MCC)"
+  ],
+  "lat": 45.61609,
+  "lon": -73.62062,
+  "quartier": "Montréal-Nord"
  },
  "Bibliothèque Kim-Yaroshevskaya": {
   "lat": 45.45728,
@@ -284,6 +298,7 @@
   "quartier": "Centre-Sud"
  },
  "Cabaret Mado": null,
+ "Cabaret des Amants": null,
  "Cabaret du Casino de Montréal": {
   "alias": [
    "Cabaret du Casino de Montreal"
@@ -304,12 +319,18 @@
   "lon": -73.5605,
   "quartier": "Quartier chinois"
  },
+ "Canadian Centre for Architecture": {
+  "lat": 45.49097,
+  "lon": -73.579,
+  "quartier": "Ville-Marie"
+ },
  "Caravansérail": null,
  "Caribbean Food Factory": {
   "lat": 45.55959,
   "lon": -73.52474,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
+ "Carré Notre-Dame-des-Victoires": null,
  "Casa del Popolo": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -397,6 +418,11 @@
   "lat": 45.513,
   "lon": -73.68,
   "quartier": "Saint-Laurent"
+ },
+ "Chalet du parc Armand-Bombardier": {
+  "lat": 45.64012,
+  "lon": -73.59565,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
  },
  "Chapelle Notre-Dame-de-Bon-Secours": {
   "lat": 45.5093,
@@ -496,6 +522,7 @@
   "lon": -73.5638,
   "quartier": "Quartier des spectacles"
  },
+ "EV 1-715, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Eastern Bloc": {
   "lat": 45.533,
   "lon": -73.618,
@@ -524,6 +551,7 @@
   "quartier": "Plateau"
  },
  "Espace Panache": null,
+ "Espace SAT": null,
  "Espace Séquence": null,
  "Espace Tapage": {
   "lat": 45.483,
@@ -542,6 +570,7 @@
   "lon": -73.588,
   "quartier": "Saint-Henri"
  },
+ "FB 630.15, Faubourg Building": null,
  "FabricARThèque du Vieux-Saint-Laurent": {
   "lat": 45.51267,
   "lon": -73.67639,
@@ -700,6 +729,7 @@
   "lon": -73.57574,
   "quartier": "Ville-Marie"
  },
+ "H-110, Henry F. Hall Building": null,
  "Hall Est du Stade olympique": {
   "lat": 45.558,
   "lon": -73.551,
@@ -716,11 +746,13 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "J.W. McConnell Building, Leonard & Bina Ellen Art Gallery": null,
  "Jardin botanique": {
   "lat": 45.55954,
   "lon": -73.56124,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Judith J-2805": null,
  "Koujina Café": null,
  "L'Adversaire – Pub et boutique ludiques": null,
  "L'Artère fabricathèque": null,
@@ -753,8 +785,10 @@
   "quartier": "Village"
  },
  "L'Écart": null,
+ "LB-2, J.W. McConnell Building": null,
  "La Boîte à Bleuets": null,
  "La Cale - Pub Zéro Déchets": null,
+ "La Cale - pub zéro déchet": null,
  "La Chapelle Scènes contemporaines": {
   "alias": [
    "La Chapelle",
@@ -1008,6 +1042,7 @@
   "lon": -73.78587,
   "quartier": ""
  },
+ "Milieux Institute for Arts, Culture and Technology, Concordia University": null,
  "Molson Canadian Centre at Casino New-Brunswick": null,
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
@@ -1031,6 +1066,7 @@
   "lon": -73.5794,
   "quartier": "Centre-ville"
  },
+ "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
  "New City Gas": {
   "lat": 45.492,
   "lon": -73.559,
@@ -1118,6 +1154,11 @@
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
+ "Parc Saint-Joseph": {
+  "lat": 45.66133,
+  "lon": -73.56075,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
  "Parc du Mont-Royal": null,
  "Patel Brown": {
   "adresse": "372, rue Sainte-Catherine Ouest, #412 (édifice Belgo), Montréal",
@@ -1161,6 +1202,16 @@
   "lat": 45.508,
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
+ },
+ "Place des Commerçantes": {
+  "lat": 45.60129,
+  "lon": -73.51963,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
+ },
+ "Place des Montréalaises": {
+  "lat": 45.50963,
+  "lon": -73.55596,
+  "quartier": "Ville-Marie"
  },
  "Place des Tisserandes": {
   "lat": 45.546,
@@ -1221,6 +1272,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Sainte-Catherine Hall": null,
+ "Salle 1120, Henry F. Hall Building": null,
  "Salle Albert-Rousseau": null,
  "Salle André-Mathieu": null,
  "Salle Bourgie": {
@@ -1278,6 +1330,7 @@
  },
  "Salon urbain": null,
  "Sample Listening Bar": null,
+ "Satosphère": null,
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
  "Société d'art vocal": null,
@@ -1430,6 +1483,11 @@
   "lon": -73.604,
   "quartier": "Mile End"
  },
+ "Théâtre Saint-Denis": {
+  "lat": 45.5198,
+  "lon": -73.57418,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Théâtre Sainte-Catherine": {
   "lat": 45.5125,
   "lon": -73.5605,
@@ -1486,6 +1544,7 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UQAM - Pavillon Judith-Jasmin": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
  "Union des familles d'Ahuntsic": {
@@ -1550,6 +1609,11 @@
   "quartier": "Ville-Marie"
  },
  "neverclub": null,
+ "École Saint-Rémi annexe": {
+  "lat": 45.58986,
+  "lon": -73.63773,
+  "quartier": "Montréal-Nord"
+ },
  "École Saint-Simon-Apôtre": {
   "lat": 45.53961,
   "lon": -73.64716,
@@ -1571,10 +1635,20 @@
   "lon": -73.64083,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Église Saint-Joseph": {
+  "lat": 45.66295,
+  "lon": -73.56153,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
  "Église Saint-Léon de Westmount": {
   "lat": 45.4855,
   "lon": -73.5925,
   "quartier": "Westmount"
+ },
+ "Église Saint-René-Goupil": {
+  "lat": 45.5785,
+  "lon": -73.6115,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
  "Église Saint-Viateur": {
   "lat": 45.51662,

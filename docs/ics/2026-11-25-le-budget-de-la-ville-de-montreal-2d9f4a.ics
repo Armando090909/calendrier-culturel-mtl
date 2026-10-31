@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-25-le-budget-de-la-ville-de-montreal-2d9f4a@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261125T190000
+DTEND;TZID=America/Toronto:20261125T210000
+SUMMARY:Le budget de la ville de Montréal
+LOCATION:La Librairie\, Montréal
+URL:https://www.upopmontreal.com/automne-2026/la-fiscalite-des-villes-pourq
+ uoi-nos-municipalites-sont-elles-cassees/#20261125
+DESCRIPTION:Décryptage du budget de la Ville de Montréal et de ses princi
+ pales sources de financement.\nDétails : https://www.upopmontreal.com/aut
+ omne-2026/la-fiscalite-des-villes-pourquoi-nos-municipalites-sont-elles-ca
+ ssees/#20261125\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

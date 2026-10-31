@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-13-complement-conte-3-6-ans-3e0a64@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261213T103000
+DTEND;TZID=America/Toronto:20261213T123000
+SUMMARY:Complèment conte! (3-6 ans)
+LOCATION:Bibliothèque Hochelaga\, Montréal
+URL:https://montreal.ca/evenements/complement-conte-3-6-ans-117302
+DESCRIPTION:Participez à l’éveil de votre enfant à la bibliothèque Ho
+ chelaga et venez écouter des histoires drôles\, tendres et captivantes.\
+ nPrix : Gratuit\nDétails : https://montreal.ca/evenements/complement-cont
+ e-3-6-ans-117302\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
