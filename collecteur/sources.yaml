@@ -130,9 +130,10 @@ sources:
   - {nom: "Université de Montréal – calendrier", cle: salles, type: page_ia, url: "https://calendrier.umontreal.ca/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
   - {nom: "CÉRIUM (relations internationales, UdeM)", cle: salles, type: page_ia, url: "https://cerium.umontreal.ca/activites/", discipline: conference, jours_semaine: [1, 4]}
   - {nom: "Concordia – événements", cle: salles, type: page_ia, url: "https://www.concordia.ca/events.html", discipline: conference, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "McGill – événements", cle: salles, type: page_ia, url: "https://www.mcgill.ca/channels/events", discipline: conference, jours_semaine: [1, 4]}
+  - {nom: "McGill – événements", cle: salles, type: page_ia, url: "https://www.mcgill.ca/channels/category/audience/external", discipline: conference, jours_semaine: [1, 4]}
   - {nom: "BAnQ – activités", cle: salles, type: page_ia, url: "https://www.banq.qc.ca/activites/", discipline: conference, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Centre Canadien d'Architecture – événements", cle: salles, type: page_ia, url: "https://www.cca.qc.ca/fr/evenements", discipline: conference, jours_semaine: [1, 4]}
+  - {nom: "Centre Canadien d'Architecture – événements (Eventbrite)", cle: salles, type: page_ia, url: "https://www.eventbrite.ca/o/15745877961", lieu: "Centre Canadien d'Architecture", discipline: conference, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Hexagram – conférences (recherche-création)", cle: salles, type: page_ia, url: "https://hexagram.ca/en/category/activities/conferences-en/", discipline: conference, jours_semaine: [1, 4]}
   # Improvisation : LIM (dimanches, Cabaret Lion d'Or), LNI (MTELUS et ailleurs). Pages lues par l'IA, avec le navigateur.
   - {nom: "Cabaret Lion d'Or (LIM et spectacles)", cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
 
