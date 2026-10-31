@@ -3,7 +3,7 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2287,
+  "evenements": 2264,
   "erreur": false
  },
  {
@@ -17,7 +17,7 @@
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 214,
+  "evenements": 219,
   "erreur": false
  },
  {
@@ -224,10 +224,10 @@
   "erreur": false
  },
  {
-  "nom": "Spectaculos (humour",
+  "nom": "Spectaculos (humour, 6 pages)",
   "url": "https://spectaculos.ca/fr/categorie/humour/montreal",
   "type": "page lue par l'IA",
-  "evenements": 23,
+  "evenements": 26,
   "erreur": false
  },
  {
@@ -245,14 +245,35 @@
   "erreur": false
  },
  {
-  "nom": "Théâtre Sainte-Catherine (impro",
+  "nom": "Théâtre Sainte-Catherine (impro et humour)",
   "url": "http://theatresaintecatherine.com",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 2,
   "erreur": false
  },
  {
-  "nom": "Cabaret Lion d'Or (LIM",
+  "nom": "Centre des musiciens du monde",
+  "url": "https://centredesmusiciensdumonde.com",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Café d'Art Vocal (Scena)",
+  "url": "https://myscena.org/locations/cafe-dart-vocal-3",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Terminal Comédie Club (ma.to)",
+  "url": "https://ma.to/venue/terminalcomedieclub",
+  "type": "page lue par l'IA",
+  "evenements": 2,
+  "erreur": false
+ },
+ {
+  "nom": "Cabaret Lion d'Or (LIM et spectacles)",
   "url": "https://cabaretliondor.com",
   "type": "page lue par l'IA",
   "evenements": 1,
@@ -301,10 +322,10 @@
   "erreur": false
  },
  {
-  "nom": "Réseau art actuel (centres d'artistes",
+  "nom": "Réseau art actuel (centres d'artistes, vernissages)",
   "url": "https://reseauartactuel.org/evenements/page//?intervalle=semaine",
   "type": "page lue par l'IA",
-  "evenements": 64,
+  "evenements": 76,
   "erreur": false
  },
  {
@@ -913,28 +934,28 @@
   "nom": "Quai des Brumes (billetterie)",
   "url": "https://lepointdevente.com/lieux/lequaidesbrumes",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 7,
   "erreur": false
  },
  {
   "nom": "Café Campus (billetterie)",
   "url": "https://lepointdevente.com/lieux/cafecampus",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 7,
   "erreur": false
  },
  {
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 36,
   "erreur": false
  },
  {
   "nom": "Turbo Haüs (billetterie)",
   "url": "https://lepointdevente.com/lieux/turbohaus-2",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -955,7 +976,7 @@
   "nom": "L'Escogriffe (billetterie)",
   "url": "https://lepointdevente.com/lieux/bar-spectacle-l-escogriffe",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -969,7 +990,7 @@
   "nom": "Ausgang Plaza (billetterie)",
   "url": "https://lepointdevente.com/lieux/ausgang-plaza",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -990,7 +1011,7 @@
   "nom": "Club Balattou (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-balattou",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 16,
   "erreur": false
  },
  {
@@ -1004,7 +1025,7 @@
   "nom": "Le Belmont (billetterie)",
   "url": "https://lepointdevente.com/lieux/lebelmont",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -1018,7 +1039,14 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 105,
+  "evenements": 107,
+  "erreur": false
+ },
+ {
+  "nom": "Ligues d'improvisation (hebdomadaires)",
+  "url": "",
+  "type": "recurrents",
+  "evenements": 9,
   "erreur": false
  },
  {

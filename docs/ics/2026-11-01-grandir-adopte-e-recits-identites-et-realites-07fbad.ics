@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-01-grandir-adopte-e-recits-identites-et-realites-07fbad@ccmtl.c
+ a
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261101T130000
+DTEND;TZID=America/Toronto:20261101T150000
+SUMMARY:Grandir adopté(e) : récits\, identités et réalités
+LOCATION:Centre Sanaaq\, Montréal
+URL:https://montreal.ca/evenements/grandir-adoptee-recits-identites-et-real
+ ites-119028
+DESCRIPTION:Pour le Mois de sensibilisation à l’adoption\, Serge Marchet
+ ta et Danyelle Angers explorent l’enfance loin de ses origines\, entre s
+ ilences et quête de soi.\nPrix : Gratuit\nDétails : https://lepointdeven
+ te.com/billets/ut9261101001?lang=fr\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

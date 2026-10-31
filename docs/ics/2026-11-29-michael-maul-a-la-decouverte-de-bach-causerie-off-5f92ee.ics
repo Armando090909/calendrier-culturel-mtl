@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-29-michael-maul-a-la-decouverte-de-bach-causerie-off-5f92ee@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261129T110000
+DTEND;TZID=America/Toronto:20261129T130000
+SUMMARY:Michael Maul : à la découverte de Bach (causerie) · Off-Bach (gr
+ atuit)
+LOCATION:Espace Off-Bach (3487\, boul. Saint-Laurent)\, Montréal
+URL:https://festivalbachmontreal.com/concerts/off-talk-conference-cafe-croi
+ ssant-avec-michael-maul/
+DESCRIPTION:Le chercheur Michael Maul raconte la découverte d'une aria in
+ édite de Bach et les coulisses de la recherche bachienne.\nPrix : Gratuit
+ \nDétails : https://festivalbachmontreal.com/concerts/off-talk-conference
+ -cafe-croissant-avec-michael-maul/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

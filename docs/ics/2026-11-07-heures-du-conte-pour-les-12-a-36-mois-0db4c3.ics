@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-07-heures-du-conte-pour-les-12-a-36-mois-0db4c3@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261107T103000
+DTEND;TZID=America/Toronto:20261107T123000
+SUMMARY:Heures du conte pour les 12 à 36 mois
+LOCATION:Bibliothèque Marc-Favreau\, Montréal
+URL:https://montreal.ca/evenements/heures-du-conte-pour-les-12-36-mois-1206
+ 93
+DESCRIPTION:Participez à l’éveil de votre enfant en l’initiant à l
+ ’univers des livres.\nPrix : Gratuit\nDétails : https://montreal.ca/eve
+ nements/heures-du-conte-pour-les-12-36-mois-120693\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
