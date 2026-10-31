@@ -220,6 +220,24 @@ def _objets_jsonld(html: str):
             data = json.loads(s.string or s.get_text() or "")
         except (json.JSONDecodeError, TypeError):
             continue
+        # Index des objets nommés par « @id » : un lieu peut être décrit une fois et seulement référencé ailleurs
+        ids, pile = {}, [data]
+        while pile:
+            o = pile.pop()
+            if isinstance(o, list):
+                pile.extend(o)
+            elif isinstance(o, dict):
+                if o.get("@id") and len(o) > 1:
+                    ids.setdefault(o["@id"], o)
+                pile.extend(v for v in o.values() if isinstance(v, (dict, list)))
+
+        def resoudre(x):
+            if isinstance(x, dict) and set(x) <= {"@id", "@type"} and x.get("@id") in ids:
+                return ids[x["@id"]]
+            if isinstance(x, str) and x in ids:
+                return ids[x]
+            return x
+
         pile = [data]
         while pile:
             o = pile.pop()
@@ -229,10 +247,19 @@ def _objets_jsonld(html: str):
                 t = o.get("@type")
                 types = {plat(x).replace(" ", "") for x in (t if isinstance(t, list) else [t]) if x}
                 if types & TYPES_EVENT:
+                    if "location" in o:
+                        loc = o["location"]
+                        o["location"] = [resoudre(x) for x in loc] if isinstance(loc, list) else resoudre(loc)
                     yield o
                 for k in ("@graph", "itemListElement", "item", "subEvent", "event", "events"):
                     if k in o:
-                        pile.append(o[k])
+                        enfants = o[k]
+                        # séances d'un festival : elles héritent du lieu de l'événement parent s'il n'en ont pas
+                        if k in ("subEvent", "event", "events") and o.get("location"):
+                            for c in (enfants if isinstance(enfants, list) else [enfants]):
+                                if isinstance(c, dict) and not c.get("location"):
+                                    c["location"] = o["location"]
+                        pile.append(enfants)
 
 
 def evenements_jsonld(html: str, page_url: str, cfg: dict, debut: date, fin: date) -> tuple[list, list]:
