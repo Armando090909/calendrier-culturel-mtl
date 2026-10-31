@@ -599,6 +599,31 @@ def main() -> int:
                                       ensure_ascii=False, indent=1), encoding="utf-8")
         return 1
 
+    # Pièces, danse, cirque « à l'affiche du X au Y » : l'horaire de la semaine (relâches comprises), lu une fois par
+    # Claude sur la page du spectacle. Le site s'en sert pour placer chaque représentation à la bonne heure.
+    f_hor = CACHE / "horaires.json"
+    memo_h = json.loads(f_hor.read_text(encoding="utf-8")) if f_hor.exists() else {}
+    lus_h = 0
+    for x in expos:
+        if x.get("discipline") in (None, "", "expo") or not str(x.get("url", "")).startswith("http") \
+                or "montreal.ca" in x["url"] or x.get("fin", "") < aujourd.isoformat():
+            continue
+        cle = f'{x["url"]}|{x["debut"]}|{x["fin"]}'
+        if cle not in memo_h and ia.disponible() and lus_h < int(reglages.get("max_horaires_ia", 40)):
+            lus_h += 1
+            try:
+                html = telecharger(x["url"], "text/html").text
+                texte = texte_page(html, x["url"])
+                if len(texte) < 800:  # page affichée par JavaScript
+                    texte = texte_page(connecteurs.page_rendue(x["url"]), x["url"])
+                memo_h[cle] = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
+            except Exception as exc:
+                print(f"  horaire « {x['titre'][:30]} » : {exc}")
+        if memo_h.get(cle):
+            x["horaire"] = memo_h[cle]
+    f_hor.write_text(json.dumps(memo_h, ensure_ascii=False), encoding="utf-8")
+    print(f"Horaires : {sum(1 for x in expos if x.get('horaire'))} spectacles à l'affiche avec leur horaire ({lus_h} pages lues).")
+
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
     noms_sources = conf.get("noms_sources", {})
     data = {
