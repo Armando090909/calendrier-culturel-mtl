@@ -468,6 +468,48 @@ def fermer_navigateur() -> None:
     _NAV.clear()
 
 
+_MOTS_SALLE = re.compile(r"(?i)\||cin[ée]ma|cineplex|cin[ée]math[èe]que|salle|th[ée][âa]tre|mus[ée]e|centre|onf\b|auditorium|"
+                         r"biblioth[èe]que|espace|studio|maison|place des arts|chapelle|église|eglise|cabaret|bar\b")
+
+
+def lieux_par_texte(html: str, evs: list[dict]) -> int:
+    """Salle de chaque séance lue dans le texte affiché : « Titre / 14:00 – 16:05 / Cineplex Quartier Latin | Salle 10 ».
+    Les séances d'un même titre reçoivent leurs salles dans l'ordre de la page (seulement si le nombre concorde,
+    ou si toutes les séances de ce titre ont la même salle)."""
+    lignes = [l.strip() for l in BeautifulSoup(html, "html.parser").get_text("\n").splitlines() if l.strip()]
+    vues: dict[str, list] = {}
+    for i, l in enumerate(lignes):
+        cle = plat(l)
+        if len(cle) < 3:
+            continue
+        for j in range(i + 1, min(i + 8, len(lignes))):
+            if re.match(r"^\d{1,2}[:h]\d{2}", lignes[j]):
+                for k in range(j + 1, min(j + 4, len(lignes))):
+                    if _MOTS_SALLE.search(lignes[k]) and len(lignes[k]) < 90 and not re.match(r"^\d{1,2}[:h]\d{2}", lignes[k]):
+                        vues.setdefault(cle, []).append(re.sub(r"\s*-\s*Montr[ée]al$", "", lignes[k].split("|")[0]).strip())
+                        break
+                break
+    n = 0
+    par_titre: dict[str, list] = {}
+    for e in sorted(evs, key=lambda x: (x["date"], x["heure"] or "")):
+        par_titre.setdefault(plat(e["titre"]), []).append(e)
+    for t, groupe in par_titre.items():
+        salles = vues.get(t, [])
+        if not salles:
+            continue
+        if len(set(salles)) == 1:
+            choix = [salles[0]] * len(groupe)
+        elif len(salles) == len(groupe):
+            choix = salles
+        else:
+            continue
+        for e, salle in zip(groupe, choix):
+            if not e["lieu"]:
+                e["lieu"] = salle
+                n += 1
+    return n
+
+
 def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     if not ia.disponible():
         print("  (sautée : pas de clé ANTHROPIC_API_KEY)")
@@ -487,6 +529,12 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             continue
         # Données structurées présentes ? On les préfère (gratuites et exactes).
         e2, s2 = evenements_jsonld(html, url, dict(cfg, cle_source=cfg["cle_source"]), debut, fin)
+        if e2 and "festapp.io" in url and sum(1 for e in e2 if not e["lieu"]) > len(e2) / 3:
+            try:  # FestApp : la salle de chaque séance n'est affichée que dans la page rendue
+                n = lieux_par_texte(page_rendue(url) if not avec_nav else html, e2)
+                DIAG.append(f"FestApp : salle retrouvée pour {n} séances sur {len(e2)}")
+            except Exception as exc:
+                DIAG.append(f"FestApp : salles illisibles ({str(exc)[:60]})")
         if e2 and not cfg.get("toujours_ia"):
             evs += e2
             series += s2
