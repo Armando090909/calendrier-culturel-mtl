@@ -7,7 +7,7 @@ on:
     paths: ["outils/instagram.py"]
   workflow_dispatch:
 concurrency:
-  group: collecte
+  group: instagram
   cancel-in-progress: false
 jobs:
   visuels:

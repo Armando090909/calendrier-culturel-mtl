@@ -6,7 +6,7 @@ on:
     paths: ["outils/faits_saillants.py", "outils/reseaux/demande-apercu.txt"]
   workflow_dispatch:
 concurrency:
-  group: collecte
+  group: apercu-reseaux
   cancel-in-progress: false
 jobs:
   apercu:

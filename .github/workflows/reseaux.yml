@@ -22,7 +22,7 @@ on:
         type: boolean
         default: false
 concurrency:
-  group: collecte
+  group: reseaux
   cancel-in-progress: false
 jobs:
   publier:

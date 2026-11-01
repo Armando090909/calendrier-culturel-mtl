@@ -6,7 +6,7 @@ on:
     paths: ["outils/diag/urls.txt"]
   workflow_dispatch:
 concurrency:
-  group: collecte
+  group: diagnostic
   cancel-in-progress: false
 jobs:
   diag:
