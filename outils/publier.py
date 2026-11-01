@@ -36,6 +36,9 @@ ETAT = DOSSIER / "etat.json"
 DEPOT = os.environ.get("GITHUB_REPOSITORY", "Armando090909/calendrier-culturel-mtl")
 ESSAI = os.environ.get("PUBLIER") == "essai"
 FORCER = os.environ.get("FORCER") == "1"
+# Test ciblé : ne publier que certains formats (ex. « instagram_story,facebook_story »), sans les noter comme faits,
+# pour que la publication régulière du lundi les refasse avec sa propre sélection.
+SEULEMENT = [x.strip() for x in os.environ.get("SEULEMENT", "").split(",") if x.strip()]
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 NOMS = {"theatre": "théâtre", "musique": "musique", "danse": "danse", "cirque": "cirque", "humour": "humour",
         "cinema": "cinéma", "poesie": "poésie et slam", "lettres": "littérature", "conference": "conférences",
@@ -352,7 +355,9 @@ def main():
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
     reseaux = ("bluesky", "instagram", "threads", "facebook", "instagram_story", "facebook_story")
     langues = ("fr", "en")  # une publication en français, une en anglais (titres, salles et noms dans leur langue d'origine)
-    a_faire = [f"{n}-{l}" for l in langues for n in reseaux if FORCER or ESSAI or not faits.get(f"{n}-{l}")]
+    if SEULEMENT:
+        reseaux = tuple(n for n in reseaux if n in SEULEMENT)
+    a_faire = [f"{n}-{l}" for l in langues for n in reseaux if FORCER or ESSAI or SEULEMENT or not faits.get(f"{n}-{l}")]
     if not a_faire:
         print(f"Semaine du {semaine} : déjà publiée partout.")
         return
@@ -404,7 +409,7 @@ def main():
                     print(f"{cle} : pas de clé, sauté.")
                     continue
                 print(f"{cle} : {res}")
-                if not ESSAI:
+                if not ESSAI and not SEULEMENT:
                     faits[cle] = str(res)
             except Exception as exc:
                 detail = getattr(getattr(exc, "response", None), "text", "") or ""
@@ -412,7 +417,7 @@ def main():
                 print(f"{cle} : ÉCHEC {exc} {detail[:300]}")
             finally:
                 fs.LANGUE = "fr"
-    if not ESSAI and s["salle"] and any(faits.get(x) for x in a_faire):
+    if not ESSAI and not SEULEMENT and s["salle"] and any(faits.get(x) for x in a_faire):
         sv = etat.setdefault("salles_vedette", [])
         if s["salle"]["lieu"] not in sv[-1:]:
             sv.append(s["salle"]["lieu"])
