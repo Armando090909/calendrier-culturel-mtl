@@ -99,10 +99,8 @@ h1{font-family:var(--display);font-weight:800;font-size:78px;line-height:1.08;le
 </div><div class="url">ccmtl.ca</div>""", css)
 
 
-def semaine(data):
-    debut = date.today() + timedelta(days=1)
-    while debut.weekday() != 0:  # lundi suivant (ou demain si on est dimanche)
-        debut += timedelta(days=1)
+def compter(data, debut):
+    """Sorties de la semaine qui commence le lundi « debut » : (par discipline, expos en cours, total, fin)."""
     fin = debut + timedelta(days=6)
     evs = [e for e in data["events"] if debut.isoformat() <= e["date"] <= fin.isoformat()]
     c = Counter()
@@ -116,6 +114,18 @@ def semaine(data):
         c[x["discipline"]] += 1
     expos = sum(1 for x in data.get("expos", []) if x.get("discipline") in (None, "", "expo")
                 and x["debut"] <= fin.isoformat() and x["fin"] >= debut.isoformat())
+    return c, expos, len(evs) + len(series), fin
+
+
+def lundi_a_venir(jour=None):
+    """Le lundi de la semaine à annoncer : aujourd'hui si c'est lundi, sinon le lundi suivant."""
+    d = jour or date.today()
+    return d + timedelta(days=(7 - d.weekday()) % 7)
+
+
+def semaine(data, debut=None):
+    debut = debut or lundi_a_venir()
+    c, expos, total, fin = compter(data, debut)
     lignes = "".join(f'<div class="d"><span class="pt" style="background:{coul}"></span><span class="nm">{nom}</span>'
                      f'<span class="n">{c[k]}</span></div>' for k, nom, coul in DISC if c[k])
     if expos:
@@ -123,7 +133,7 @@ def semaine(data):
     # Le total ferme la grille : il occupe la case libre (ou toute la dernière rangée si le nombre de cases est pair)
     n_cases = lignes.count('class="d"')
     lignes += (f'<div class="d tot{" large" if n_cases % 2 == 0 else ""}"><span class="nm">au total</span>'
-               f'<span class="n">{len(evs) + len(series)}</span></div>')
+               f'<span class="n">{total}</span></div>')
     titre_dates = f"du {debut.day}{' ' + MOIS[debut.month - 1] if debut.month != fin.month else ''} au {fin.day} {MOIS[fin.month - 1]}"
     css = """body{padding:86px 92px}
 .marque{font-size:50px}
@@ -143,7 +153,7 @@ h1{font-family:var(--display);font-weight:800;font-size:70px;line-height:1.06;le
     return page(1080, 1350, f"""<div class="marque">calendrier culturel <b>mtl</b></div>
 <h1>Cette semaine<br>sur <span class="hl">l'île</span></h1><div class="dates">{titre_dates}</div>
 <div class="grille">{lignes}</div>
-<div class="bas"><span class="url">ccmtl.ca</span></div>""", css), len(evs) + len(series)
+<div class="bas"><span class="url">ccmtl.ca</span></div>""", css), total
 
 
 def programmateurs():

@@ -1,0 +1,60 @@
+# Publication hebdomadaire sur les réseaux (outils/publier.py) : le lundi matin, le visuel « Cette semaine sur l'île ».
+# Deux renforts plus tard le même jour (GitHub retarde parfois les tâches programmées) : une seule publication par
+# semaine et par réseau. À la main : Actions → « Réseaux sociaux » → Run workflow (cocher « essai » pour vérifier
+# les connexions sans rien publier).
+name: Réseaux sociaux
+on:
+  schedule:
+    - cron: "23 13 * * 1"
+    - cron: "23 15 * * 1"
+    - cron: "23 18 * * 1"
+  workflow_dispatch:
+    inputs:
+      essai:
+        description: "Essai : vérifier les connexions, sans rien publier"
+        type: boolean
+        default: true
+      forcer:
+        description: "Republier même si la semaine est déjà publiée"
+        type: boolean
+        default: false
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright==1.48.0 requests pillow
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - run: python -m playwright install --with-deps chromium
+      - name: Publier
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN_SECRETS: ${{ secrets.SECRETS_JETON }}
+          BLUESKY_IDENTIFIANT: ${{ secrets.BLUESKY_IDENTIFIANT }}
+          BLUESKY_MOT_DE_PASSE: ${{ secrets.BLUESKY_MOT_DE_PASSE }}
+          INSTAGRAM_JETON: ${{ secrets.INSTAGRAM_JETON }}
+          THREADS_JETON: ${{ secrets.THREADS_JETON }}
+          PUBLIER: ${{ (github.event_name == 'workflow_dispatch' && inputs.essai) && 'essai' || 'oui' }}
+          FORCER: ${{ inputs.forcer && '1' || '0' }}
+        run: |
+          git config user.name "collecte-automatique"
+          git config user.email "actions@users.noreply.github.com"
+          python outils/publier.py
+      - name: Enregistrer
+        if: always()
+        run: |
+          git add outils/reseaux/etat.json 2>/dev/null || true
+          git commit -m "Réseaux : état des publications" && { git pull --rebase -X theirs origin main; git push; } || true
