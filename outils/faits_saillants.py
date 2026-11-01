@@ -258,7 +258,7 @@ def slide_festivals(s):
     css = CSS_COMMUN + """
 h1{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;letter-spacing:-.03em;margin:0}
 .tete{margin-bottom:50px}
-.tete h1{white-space:nowrap;font-size:76px}
+.tete h1{white-space:nowrap;font-size:66px}
 .f{display:flex;align-items:center;gap:22px;border:4px solid var(--ink);border-radius:20px;padding:20px 26px;background:#fff;
   box-shadow:6px 6px 0 var(--ink);margin-bottom:20px}
 .f .pt{width:40px;height:40px;border-radius:50%;border:10px solid var(--c);background:#fff;flex:none;box-shadow:0 0 0 3px var(--ink)}
