@@ -167,7 +167,7 @@ h1{font-family:var(--display);font-weight:800;font-size:90px;line-height:1.06;le
     lignes = [f"{len(s['picks'])} coups de cœur"] + (["Les festivals"] if s["festivals"] else []) \
         + ([f"La salle de la semaine"] if s["salle"] else []) + [f"{s['total']} sorties en tout"]
     return v.page(1080, 1350, f"""<div class="marque">calendrier culturel <b>mtl</b></div>
-<h1>Qu'est-ce qu'on fait <span class="hl">cette semaine</span>&nbsp;?</h1><div class="dates">{_periode(s)}</div>
+<h1>Qu'est-ce<br>qu'on fait<br><span class="hl">cette semaine</span>&nbsp;?</h1><div class="dates">{_periode(s)}</div>
 <div class="menu">{''.join(f'<div><span class="stn"></span>{escape(l)}</div>' for l in lignes)}</div>
 <div class="pied"><span class="url">ccmtl.ca</span><span class="glisse">glisse →</span></div>""", css)
 
