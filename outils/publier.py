@@ -141,14 +141,14 @@ def instagram(texte, urls, alts):
     jeton = os.environ.get("INSTAGRAM_JETON")
     page = os.environ.get("FACEBOOK_PAGE_ID")
     if jeton:  # méthode « Instagram Login » (graph.instagram.com)
-        base = "https://graph.instagram.com/v21.0"
+        base = "https://graph.instagram.com/v26.0"
         moi = requests.get(f"{base}/me", params={"fields": "user_id,username", "access_token": jeton}, timeout=30)
         moi.raise_for_status()
         ig, nom = moi.json()["user_id"], moi.json().get("username", "?")
     elif os.environ.get("FACEBOOK_JETON") and page:
         # méthode « Facebook Login » : le jeton de la page Facebook (qui n'expire pas) publie aussi sur le compte
         # Instagram professionnel relié à la page
-        jeton, base = os.environ["FACEBOOK_JETON"], "https://graph.facebook.com/v21.0"
+        jeton, base = os.environ["FACEBOOK_JETON"], "https://graph.facebook.com/v26.0"
         r = requests.get(f"{base}/{page}", params={"fields": "instagram_business_account{id,username}", "access_token": jeton}, timeout=30)
         r.raise_for_status()
         compte = r.json().get("instagram_business_account") or {}
@@ -210,7 +210,7 @@ def facebook(texte, urls, alts):
     jeton, page = os.environ.get("FACEBOOK_JETON"), os.environ.get("FACEBOOK_PAGE_ID")
     if not jeton or not page:
         return None
-    base = "https://graph.facebook.com/v21.0"
+    base = "https://graph.facebook.com/v26.0"
     moi = requests.get(f"{base}/{page}", params={"fields": "name", "access_token": jeton}, timeout=30)
     moi.raise_for_status()
     if ESSAI:
