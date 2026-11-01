@@ -684,7 +684,7 @@ def _heure_du_jour(texte: str, jour: str) -> str | None:
     « 2026-11-03 19:30 ». Utile sur les pages qui listent plusieurs représentations."""
     a, m, j = (int(x) for x in jour.split("-"))
     t = plat(texte)
-    motifs = [rf"\b{j}(?:er)? {_MOIS[m - 1]}(?: {a})?", rf"\b{_MOIS_EN[m - 1]} {j}(?:st|nd|rd|th)?(?: {a})?",
+    motifs = [rf"\b0?{j}(?:er)? {_MOIS[m - 1]}(?: {a})?", rf"\b0?{j}(?:er)? {_MOIS[m - 1][:3]}\w*(?: {a})?", rf"\b{_MOIS_EN[m - 1]} {j}(?:st|nd|rd|th)?(?: {a})?",
               rf"\b{_MOIS_EN[m - 1][:3]} {j}\b(?: {a})?", rf"\b{j} {_MOIS_EN[m - 1][:3]}\w*(?: {a})?",
               rf"\b{a} {m:02d} {j:02d}\b", rf"\b{j:02d} {m:02d} {a}\b"]
     for motif in motifs:

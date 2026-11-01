@@ -528,7 +528,9 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status
     // Horaire lu sur la page du spectacle (x.horaire) : bonne heure chaque jour, et pas d'entrée les jours de relâche
     let H=x.horaire;const hj=H&&H.jours||{},hd=H&&H.dates||{},avecJours=Object.keys(hj).length>0,avecDates=Object.keys(hd).length>0;
     if(H&&!avecJours&&!Object.keys(hd).some(k=>k>=D.debut))H=null; // liste de dates périmée : on l'ignore
-    const heuresDu=s=>{if(!H)return[null];if(hd[s])return hd[s];if(avecDates&&!avecJours)return[];
+    // Après la dernière date listée (page qui ne montre que les premières représentations) : « voir horaire »
+    const derniere=Object.keys(hd).sort().pop()||"";
+    const heuresDu=s=>{if(!H)return[null];if(hd[s])return hd[s];if(avecDates&&!avecJours)return s>derniere?[null]:[];
       const h=hj[String((new Date(s+"T12:00").getDay()+6)%7)];return h?[h]:(avecJours?[]:[null])};
     for(let s=x.debut<D.debut?D.debut:x.debut;s<=x.fin&&s<=D.fin;s=addDays(s,1))
       if(!deja.has(s+"|"+x.lieu+"|"+mot(x.titre)))for(const hh of heuresDu(s))series.push({date:s,heure:hh,discipline:x.discipline,titre:x.titre,lieu:x.lieu,url:x.url,complet:false,jeunePublic:x.discipline==="jeune",sous:x.sous,aussi:x.aussi,festival:x.festival,resume:x.resume,prix:x.prix,billets:x.billets,source:x.source||"salles",serie:{debut:x.debut,fin:x.fin}});

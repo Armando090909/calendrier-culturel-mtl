@@ -375,39 +375,47 @@ def main() -> int:
 
     # Heures manquantes : on lit la page de l'événement (gratuit, sans IA). Songkick n'affiche pas d'heure,
     # mais le même concert trouvé sur le site de la salle (avec l'heure) remplace celui de Songkick au dédoublonnage.
-    f_heures = CACHE / "heures.json"
-    memo = json.loads(f_heures.read_text(encoding="utf-8")) if f_heures.exists() else {}
-    sans = [e for e in events if not e["heure"] and e["url"].startswith("http")
-            and not any(d in e["url"] for d in reglages.get("sites_sans_heure", ["songkick.com"]))]
-    # Mémoire par page ET par date (une page peut lister plusieurs représentations). Une page sans heure trouvée est
-    # relue dans le navigateur (heure souvent affichée par JavaScript), puis réessayée après 7 jours.
-    lues, rendues, vieux_h = 0, 0, (aujourd - timedelta(days=7)).isoformat()
-    for e in sans:
-        cle = e["url"] + "|" + e["date"]
-        v = memo.get(cle)
-        if isinstance(v, str):
-            e["heure"] = v
-            continue
-        if isinstance(v, dict) and v.get("le", "") >= vieux_h:
-            continue  # cherchée récemment, sans succès
-        if lues >= int(reglages.get("max_pages_heure", 300)):
-            continue
-        try:
-            h = heure_page(telecharger(e["url"], "text/html").text, e["date"])
-            lues += 1
-            if not h and rendues < int(reglages.get("max_pages_heure_nav", 60)):
-                rendues += 1
-                h = heure_page(connecteurs.page_rendue(e["url"]), e["date"])
-            memo[cle] = h or {"le": aujourd.isoformat()}
-            if h:
-                e["heure"] = h
-            time.sleep(0.5)
-        except Exception:
-            memo[cle] = {"le": aujourd.isoformat()}
-            continue
-    # anciennes entrées (clé = page seule) : retirées
-    memo = {k: v for k, v in memo.items() if "|" in k}
-    f_heures.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+    def completer_heures(events):
+        """Heures manquantes lues sur la page de chaque événement (sans IA). Renvoie (sans heure, pages lues, rendues)."""
+        f_heures = CACHE / "heures.json"
+        memo = json.loads(f_heures.read_text(encoding="utf-8")) if f_heures.exists() else {}
+        sans = [e for e in events if not e["heure"] and e["url"].startswith("http")
+                and not any(d in e["url"] for d in reglages.get("sites_sans_heure", ["songkick.com"]))]
+        # Mémoire par page ET par date (une page peut lister plusieurs représentations). Une page sans heure trouvée est
+        # relue dans le navigateur (heure souvent affichée par JavaScript), puis réessayée après 7 jours.
+        lues, rendues, vieux_h = 0, 0, (aujourd - timedelta(days=7)).isoformat()
+        for e in sans:
+            cle = e["url"] + "|" + e["date"]
+            v = memo.get(cle)
+            if isinstance(v, str):
+                e["heure"] = v
+                continue
+            if isinstance(v, dict) and v.get("le", "") >= vieux_h:
+                continue  # cherchée récemment, sans succès
+            if lues >= int(reglages.get("max_pages_heure", 300)):
+                continue
+            try:
+                try:
+                    h = heure_page(telecharger(e["url"], "text/html").text, e["date"])
+                except Exception:
+                    h = None  # page refusée (403) ou en panne : le navigateur peut quand même l'afficher
+                lues += 1
+                if not h and rendues < int(reglages.get("max_pages_heure_nav", 60)):
+                    rendues += 1
+                    h = heure_page(connecteurs.page_rendue(e["url"]), e["date"])
+                memo[cle] = h or {"le": aujourd.isoformat()}
+                if h:
+                    e["heure"] = h
+                time.sleep(0.5)
+            except Exception:
+                memo[cle] = {"le": aujourd.isoformat()}
+                continue
+        # anciennes entrées (clé = page seule) : retirées
+        memo = {k: v for k, v in memo.items() if "|" in k}
+        f_heures.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+        return sans, lues, rendues
+
+    sans, lues, rendues = completer_heures(events)
 
     # Dernier recours, automatique : Claude lit la page des fiches encore sans heure ou sans salle (au plus 80 par nuit,
     # chaque page une seule fois par date ; Ville et Songkick exclues, leurs pages ne le disent pas ou sont bloquées)
@@ -421,13 +429,18 @@ def main() -> int:
                 continue
             cle = e["url"] + "|" + e["date"]
             r = memo_ia.get(cle)
-            if r is not None and r.get("_err"):
-                r = None  # échec technique (réponse illisible, site en panne) : on réessaie
+            if r is not None and (r.get("_err") or (not r.get("heure") and not r.get("v"))):
+                r = None  # échec technique, ou lu avant la 2e version (navigateur, heures d'ouverture) : on réessaie
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
                 try:
-                    html = telecharger(e["url"], "text/html").text
-                    r = memo_ia[cle] = ia.champs_page(e["titre"], e["date"], texte_page(html, e["url"])) or {}
+                    try:
+                        texte = texte_page(telecharger(e["url"], "text/html").text, e["url"])
+                    except Exception:
+                        texte = ""
+                    if len(texte) < 400:  # page affichée par JavaScript, ou refusée au simple téléchargement
+                        texte = texte_page(connecteurs.page_rendue(e["url"]), e["url"])
+                    r = memo_ia[cle] = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=2)
                 except Exception as exc:
                     r = memo_ia[cle] = {"_err": str(exc)[:80]}
             if not r or r.get("_err"):
@@ -489,6 +502,12 @@ def main() -> int:
     print(f"Saisies à la main : {sum(1 for e in manuels.get('events', []) if aujourd.isoformat() <= e['date'] <= fin.isoformat())} événements.")
 
     events = dedoublonner(events)
+    # 2e passage des heures après le dédoublonnage (fiches arrivées ou changées d'adresse en cours de route)
+    try:
+        sans2, lues2, _ = completer_heures(events)
+        print(f"Heures, 2e passage : {len(sans2)} sans heure, {lues2} pages lues, {sum(1 for e in sans2 if e['heure'])} trouvées.")
+    except Exception as exc:
+        print(f"Heures, 2e passage en échec : {exc}")
     # Dernier contrôle : un même spectacle vivant (pas un film ni une expo) ne doit pas apparaître deux fois le même jour
     import normalisation as _norm
     for f in festivals:
@@ -652,6 +671,10 @@ def main() -> int:
             del memo_h[cle]
             memo_h[cle + "|v2"] = True
             essai_v2 = True
+        elif memo_h.get(cle) == {} and not memo_h.get(cle + "|v3"):  # 3e essai : dates hors période acceptées
+            del memo_h[cle]
+            memo_h[cle + "|v3"] = True
+            essai_v2 = True
         else:
             essai_v2 = bool(memo_h.get(cle + "|v2"))
         if cle not in memo_h and ia.disponible() and lus_h < int(reglages.get("max_horaires_ia", 60)):
@@ -671,6 +694,13 @@ def main() -> int:
         h = memo_h.get(cle)
         # Une liste de dates qui ne contient plus aucune représentation à venir (page qui ne montre que la première,
         # par exemple) ne sert pas : on n'en tient pas compte plutôt que de faire disparaître le spectacle.
+        # Dates de la page toutes hors de la période annoncée (ex. agenda de la salle erroné) : la page du spectacle
+        # fait foi, la période est corrigée.
+        dts = sorted((h or {}).get("dates", {}))
+        if h and not h.get("jours") and dts and (dts[-1] < x["debut"] or dts[0] > x["fin"]):
+            x["debut"], x["fin"] = dts[0], dts[-1]
+        elif h and dts:
+            h = dict(h, dates={k: v for k, v in h["dates"].items() if x["debut"] <= k <= x["fin"]})
         if h and not h.get("jours") and not any(d >= aujourd.isoformat() for d in h.get("dates", {})):
             h = None
         if h:
@@ -684,8 +714,10 @@ def main() -> int:
     avant_n = len(expos)
     expos = [x for x in expos if x.get("discipline") in (None, "", "expo") or not (
         (x["lieu"] in ("", "Lieu à confirmer") and x["debut"] < (date.fromisoformat(x["fin"]) - timedelta(days=7)).isoformat())
-        or (urlparse(x.get("url", "")).path in ("", "/") and urlparse(x.get("url", "")).netloc in hotes_dates))]
-    print(f"Séries retirées (sans salle, ou saison déjà détaillée) : {avant_n - len(expos)}")
+        or (urlparse(x.get("url", "")).path in ("", "/") and urlparse(x.get("url", "")).netloc in hotes_dates)
+        # annonce de saison ou communiqué (« Espace Libre dévoile la série Mythologie ») : chaque spectacle a sa fiche
+        or (re.search(r"(?i)d[ée]voil|communiqu|/actualit|/news/|/blogu?e?/|/presse/", x.get("url", "")) and not x.get("horaire")))]
+    print(f"Séries retirées (sans salle, saison déjà détaillée ou annonce de saison) : {avant_n - len(expos)}")
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
     noms_sources = conf.get("noms_sources", {})
