@@ -141,7 +141,7 @@ h1{font-family:var(--display);font-weight:800;font-size:70px;line-height:1.06;le
 .bas{position:absolute;left:92px;right:92px;bottom:72px;display:flex;justify-content:center}
 .url{font-size:44px;background:var(--hl);border:4px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:6px 6px 0 var(--ink)}"""
     return page(1080, 1350, f"""<div class="marque">calendrier culturel <b>mtl</b></div>
-<h1>Cette semaine sur <span class="hl">l'île</span></h1><div class="dates">{titre_dates}</div>
+<h1>Cette semaine<br>sur <span class="hl">l'île</span></h1><div class="dates">{titre_dates}</div>
 <div class="grille">{lignes}</div>
 <div class="bas"><span class="url">ccmtl.ca</span></div>""", css), len(evs) + len(series)
 
