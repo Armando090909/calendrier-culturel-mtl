@@ -42,11 +42,12 @@ def main() -> int:
     except Exception as exc:  # le site garde Google Fonts
         print(f"Polices non hébergées ({exc}) : le site garde le lien vers Google Fonts.")
         return 0
-    for page in DOCS.glob("*.html"):
+    for page in list(DOCS.glob("*.html")) + list((DOCS / "en").glob("*.html")):
+        prefixe = "../" if page.parent.name == "en" else ""
         h = page.read_text(encoding="utf-8")
         h = re.sub(r'\s*<link rel="preconnect" href="https://fonts\.(googleapis|gstatic)\.com"[^>]*>', "", h)
         h = re.sub(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com/css2\?[^"]+">',
-                   '<link rel="stylesheet" href="fonts/polices.css">', h)
+                   f'<link rel="stylesheet" href="{prefixe}fonts/polices.css">', h)
         page.write_text(h, encoding="utf-8")
     print(f"{n} fichiers de police hébergés sur le site.")
     return 0

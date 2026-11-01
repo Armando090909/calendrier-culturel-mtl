@@ -266,3 +266,27 @@ def horaire_serie(titre: str, debut: str, fin: str, texte: str) -> dict:
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(k)) and hs:  # hors de la période annoncée : vérifié par l'appelant
             dates[str(k)] = sorted(set(hs))
     return {"jours": jours, "dates": dates} if jours or dates else {}
+
+
+TRADUCTION = """Translate each numbered event summary below into natural Canadian English, for an English version of a
+Montréal cultural calendar.
+Rules:
+- Keep the names of shows, works, artists, bands, venues, festivals and organisations exactly as written (do not translate them).
+- If a summary is already in English, return it unchanged.
+- Same meaning, same length; add nothing, remove nothing.
+Answer with one line per summary, nothing else, in this exact format:
+number|translation
+
+{lot}"""
+
+
+def traduire_lot(textes: list[str]) -> dict[int, str]:
+    """Traduit en anglais une liste de résumés. Retourne {indice: traduction} pour les lignes lisibles."""
+    lot = "\n".join(f"{i}|{re.sub(r'\s+', ' ', t).strip()}" for i, t in enumerate(textes))
+    rep = _appel(TRADUCTION.format(lot=lot), max_tokens=12000)
+    out = {}
+    for ligne in rep.splitlines():
+        m = re.match(r"\s*(\d+)\s*\|\s*(.+)", ligne)
+        if m and int(m.group(1)) < len(textes):
+            out[int(m.group(1))] = m.group(2).strip()
+    return out

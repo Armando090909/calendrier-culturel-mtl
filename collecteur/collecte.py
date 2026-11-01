@@ -100,6 +100,43 @@ def ecrire_liste_sources(conf: dict, rapport: list) -> None:
     (SORTIE.parent / "sources.json").write_text(json.dumps(liste, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def traduire_resumes(elements: list[dict]) -> None:
+    """Version anglaise du site : chaque résumé reçoit sa traduction (resume_en), gardée en cache pour ne traduire
+    que les nouveaux. Sans IA disponible, le site anglais affiche le résumé original."""
+    f_tr = CACHE / "traductions_en.json"
+    memo = json.loads(f_tr.read_text(encoding="utf-8")) if f_tr.exists() else {}
+    a_faire = list(dict.fromkeys(e["resume"] for e in sorted(elements, key=lambda x: x.get("date") or x.get("debut") or "")
+                                 if e.get("resume") and e["resume"] not in memo))
+    faits = 0
+    if a_faire and ia.disponible():
+        from concurrent.futures import ThreadPoolExecutor
+        # les plus proches d'abord (ordre du calendrier) ; au plus 1500 par jour, le reste suit le lendemain
+        parts = [a_faire[i:i + 60] for i in range(0, min(len(a_faire), 1500), 60)]
+
+        def un(part):
+            try:
+                return part, ia.traduire_lot(part)
+            except Exception as exc:
+                print(f"Traduction en échec : {exc}")
+                return part, {}
+        with ThreadPoolExecutor(4) as pool:
+            for part, rep in pool.map(un, parts):
+                for k, t in rep.items():
+                    memo[part[k]] = t
+                    faits += 1
+    utiles = set()
+    for e in elements:
+        t = memo.get(e.get("resume") or "")
+        if t:
+            utiles.add(e["resume"])
+            if t != e["resume"]:
+                e["resume_en"] = t
+    # le cache ne garde que les résumés encore au calendrier (plus les traductions du jour)
+    f_tr.write_text(json.dumps({k: v for k, v in memo.items() if k in utiles}, ensure_ascii=False), encoding="utf-8")
+    print(f"Traductions : {faits} nouveaux résumés traduits, {len(a_faire) - faits} restants ; "
+          f"{sum(1 for e in elements if e.get('resume_en'))} éléments avec résumé anglais.")
+
+
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
@@ -724,6 +761,8 @@ def main() -> int:
         # annonce de saison ou communiqué (« Espace Libre dévoile la série Mythologie ») : chaque spectacle a sa fiche
         or (re.search(r"(?i)d[ée]voil|communiqu|/actualit|/news/|/blogu?e?/|/presse/", x.get("url", "")) and not x.get("horaire")))]
     print(f"Séries retirées (sans salle, saison déjà détaillée ou annonce de saison) : {avant_n - len(expos)}")
+
+    traduire_resumes(events + expos)
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
     noms_sources = conf.get("noms_sources", {})

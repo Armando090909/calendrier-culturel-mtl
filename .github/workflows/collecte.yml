@@ -147,14 +147,17 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - uses: actions/configure-pages@v5
+      # Version anglaise des pages fixes (docs/en/), refaite à partir des pages françaises
+      - name: Pages anglaises
+        run: python3 outils/traduire_pages.py
       - name: Polices hébergées sur le site
         run: python3 outils/polices.py
       # Numéro de version sur app.js et style.css : les navigateurs prennent la nouvelle version tout de suite
       - name: Version des fichiers
         run: |
           V=$(date +%Y%m%d%H%M)
-          sed -i -E "s#(href|src)=\"(app\.js|style\.css)(\?v=[0-9]+)?\"#\1=\"\2?v=$V\"#g" docs/*.html
-          grep -h -o -E '(app|style)[.](js|css)[?]v=[0-9]+' docs/*.html | sort -u || true
+          sed -i -E "s#(href|src)=\"((\.\./)?(app\.js|style\.css))(\?v=[0-9]+)?\"#\1=\"\2?v=$V\"#g" docs/*.html docs/en/*.html
+          grep -h -o -E '(app|style)[.](js|css)[?]v=[0-9]+' docs/*.html docs/en/*.html | sort -u || true
       # Pages pour Google et les aperçus de partage : une par événement, une par jour, sitemap.xml
       - name: Pages des événements et des jours
         run: python3 outils/pages.py

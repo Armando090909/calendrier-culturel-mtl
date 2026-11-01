@@ -3,6 +3,7 @@
 - docs/e/<id>.html     : une page par événement (texte, affiche, billets, données « Event » schema.org pour Google)
 - docs/jour/<date>.html : la liste du jour, en texte ; docs/jour/index.html : tous les jours
 - docs/sitemap.xml et docs/robots.txt
+- version anglaise : docs/en/e/<id>.html, docs/en/day/<date>.html, docs/en/day/index.html (liens hreflang entre les deux)
 
 Le calendrier interactif (index.html) reste la page principale : chaque page renvoie vers lui (?e=<id> ou ?d=<date>).
 Lancé par la publication après polices.py et le numéro de version : il reprend les liens de police et de style d'index.html.
@@ -26,16 +27,71 @@ DISC = {"theatre": "Théâtre", "musique": "Musique", "danse": "Danse", "cirque"
         "autre": "Autre"}
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+DISC_EN = {"theatre": "Theatre", "musique": "Music", "danse": "Dance", "cirque": "Circus", "humour": "Comedy & cabaret",
+           "cinema": "Film", "poesie": "Poetry, slam & rap battles", "lettres": "Literature", "conference": "Talks",
+           "jeune": "Kids & family", "atelier": "Workshops", "fete": "Parties & celebrations", "quiz": "Quiz nights",
+           "expo": "Openings", "autre": "Other"}
+JOURS_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+MOIS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+EN = False  # langue des pages en cours de génération
+
+
+def T(fr: str, en: str) -> str:
+    return en if EN else fr
+
+
+def P(chemin: str) -> str:
+    """Chemin de la page dans la langue en cours : /e/x.html → /en/e/x.html ; /jour/ → /en/day/."""
+    if not EN:
+        return chemin
+    return "/en" + chemin.replace("/jour/", "/day/")
+
+
+def autre_langue(chemin: str) -> tuple[str, str]:
+    """(chemin français, chemin anglais) d'une page, quelle que soit la langue de chemin."""
+    fr = chemin[3:].replace("/day/", "/jour/") if chemin.startswith("/en/") else chemin
+    return fr, "/en" + fr.replace("/jour/", "/day/")
+
+
+def disc_nom(k: str) -> str:
+    return (DISC_EN if EN else DISC).get(k, "")
+
+
+def prix_txt(p: str) -> str:
+    """Prix dans la langue de la page : « 25,50 $ » → « $25.50 », « Gratuit » → « Free »."""
+    if not EN or not p:
+        return p
+    p = {"gratuit": "Free", "payant": "Paid", "contribution volontaire": "Pay what you can", "entrée libre": "Free admission"}.get(p.lower(), p)
+    p = p.replace("taxes incluses", "taxes included").replace("à la porte", "at the door")
+    p = re.sub(r"(\d+)(?:[,.](\d{1,2}))? à (\d+)(?:[,.](\d{1,2}))? ?\$",
+               lambda m: f"${m[1]}{'.' + m[2].ljust(2, '0') if m[2] else ''} to ${m[3]}{'.' + m[4].ljust(2, '0') if m[4] else ''}", p)
+    p = re.sub(r"(\d+)(?:[,.](\d{1,2}))? ?\$", lambda m: f"${m[1]}{'.' + m[2].ljust(2, '0') if m[2] else ''}", p)
+    return p.replace(" à ", " to ")
+
+
+def lieu(e: dict) -> str:
+    return "Venue TBA" if EN and e["lieu"] == "Lieu à confirmer" else e["lieu"]
+
+
+def resume(e: dict) -> str:
+    return (e.get("resume_en") if EN else None) or e.get("resume") or ""
 e_ = lambda t: html.escape(str(t or ""), quote=True)
 
 
 def jour_long(s: str, annee: bool = False) -> str:
     d = date.fromisoformat(s)
+    if EN:
+        return f"{JOURS_EN[d.weekday()]}, {MOIS_EN[d.month - 1]} {d.day}" + (f", {d.year}" if annee else "")
     return f"{JOURS[d.weekday()]} {d.day}{'er' if d.day == 1 else ''} {MOIS[d.month - 1]}" + (f" {d.year}" if annee else "")
 
 
 def heure_txt(h: str | None) -> str:
-    return h.replace(":", " h ") if h else "heure à confirmer"
+    if not h:
+        return T("heure à confirmer", "time TBA")
+    if not EN:
+        return h.replace(":", " h ")
+    a, b = (int(x) for x in h.split(":"))
+    return f"{a % 12 or 12}{f':{b:02d}' if b else ''} {'p.m.' if a >= 12 else 'a.m.'}"
 
 
 def entete_commun() -> str:
@@ -76,31 +132,36 @@ h1.pg-t{font-family:var(--f-display);font-weight:800;font-size:clamp(22px,3.4vw,
   .liste a{grid-template-columns:minmax(0,1fr)}.liste .m{grid-column:1}}
 </style>"""
 
-PARTAGE_JS = """<script>
+PARTAGE_JS_FR = """<script>
 document.addEventListener("click",ev=>{const b=ev.target.closest("[data-partage]");if(!b)return;
   const d={title:b.dataset.titre,text:b.dataset.texte,url:b.dataset.partage};
   if(navigator.share){navigator.share(d).catch(()=>{});return}
   const fini=()=>{b.textContent="Lien copié ✓";setTimeout(()=>{b.textContent="Partager"},2500)};
   try{navigator.clipboard.writeText(d.url).then(fini,()=>prompt("Copie ce lien :",d.url))}catch(e){prompt("Copie ce lien :",d.url)}});
 </script>"""
+PARTAGE_JS_EN = (PARTAGE_JS_FR.replace("Lien copié ✓", "Link copied ✓").replace('"Partager"', '"Share"')
+                 .replace("Copie ce lien :", "Copy this link:"))
 
 
 def page(titre: str, description: str, chemin: str, corps: str, image: str = "", jsonld: dict | list | None = None,
          type_og: str = "website") -> str:
     url = SITE + chemin
     img = image or SITE + "/partage.png"
+    fr, en = autre_langue(chemin)
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else ""
     return f"""<!doctype html>
-<html lang="fr">
+<html lang="{T('fr', 'en')}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e_(titre)}</title>
 <meta name="description" content="{e_(description)}">
 <link rel="canonical" href="{e_(url)}">
+<link rel="alternate" hreflang="fr" href="{SITE}{fr}">
+<link rel="alternate" hreflang="en" href="{SITE}{en}">
 <meta property="og:type" content="{type_og}">
-<meta property="og:site_name" content="Calendrier culturel montréalais">
-<meta property="og:locale" content="fr_CA">
+<meta property="og:site_name" content="{T('Calendrier culturel montréalais', "Montreal's cultural calendar")}">
+<meta property="og:locale" content="{T('fr_CA', 'en_CA')}">
 <meta property="og:title" content="{e_(titre)}">
 <meta property="og:description" content="{e_(description)}">
 <meta property="og:url" content="{e_(url)}">
@@ -115,12 +176,12 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
 </head>
 <body>
 <div class="pg">
-<div class="pg-haut"><a class="pg-marque" href="/">calendrier culturel <b>mtl</b></a>
-<p class="toplinks"><a href="/">← Tout le calendrier</a></p></div>
+<div class="pg-haut"><a class="pg-marque" href="{T('/', '/en/')}">{T('calendrier culturel <b>mtl</b>', "montreal's cultural <b>calendar</b>")}</a>
+<p class="toplinks"><a href="{T('/', '/en/')}">{T('← Tout le calendrier', '← Full calendar')}</a> <a href="{T(en, fr)}" hreflang="{T('en', 'fr')}" lang="{T('en', 'fr')}">{T('English', 'Français')}</a></p></div>
 {corps}
-<p class="licence">© 2026 ccmtl.ca · <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC 4.0</a> · <a href="mailto:info@ccmtl.ca">info@ccmtl.ca</a></p>
+<p class="licence">© 2026 ccmtl.ca · <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.{T('fr', 'en')}" rel="license noopener" target="_blank">CC BY-NC 4.0</a> · <a href="mailto:info@ccmtl.ca">info@ccmtl.ca</a></p>
 </div>
-{PARTAGE_JS}
+{T(PARTAGE_JS_FR, PARTAGE_JS_EN)}
 </body>
 </html>
 """
@@ -149,8 +210,10 @@ def schema_event(e: dict, lieux: dict, url: str, image: str) -> dict:
     ev = {"@context": "https://schema.org", "@type": "Event", "name": e["titre"], "startDate": debut, "url": url,
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled", "location": lieu, "image": [image]}
-    if e.get("resume"):
-        ev["description"] = e["resume"]
+    if resume(e):
+        ev["description"] = resume(e)
+    if EN:
+        ev["inLanguage"] = "en"
     o = prix_offre(e.get("prix", ""))
     if o or e.get("billets"):
         ev["offers"] = {"@type": "Offer", "url": e.get("billets") or e.get("url"), **(o or {}),
@@ -159,54 +222,55 @@ def schema_event(e: dict, lieux: dict, url: str, image: str) -> dict:
 
 
 def page_evenement(e: dict, lieux: dict) -> str:
-    chemin = f"/e/{e['ics']}.html"
+    chemin = P(f"/e/{e['ics']}.html")
     url = SITE + chemin
     c = lieux.get(e["lieu"]) or {}
-    disc = DISC.get(e["discipline"], "")
+    disc = disc_nom(e["discipline"])
     aff = e.get("image") or (e.get("affiche") or {}).get("url") or ""
-    quand = f"{jour_long(e['date'], True).capitalize()} · {heure_txt(e.get('heure'))}"
-    description = f"{quand} · {e['lieu']}, Montréal. " + (e.get("resume") or disc)
+    quand = f"{(lambda t: t[:1].upper() + t[1:])(jour_long(e['date'], True))} · {heure_txt(e.get('heure'))}"
+    description = f"{quand} · {lieu(e)}, Montréal. " + (resume(e) or disc)
     billets = e.get("billets") or e.get("url")
     corps = f"""<article class="fiche" style="--c:var(--{e_(e['discipline'] if e['discipline'] in DISC else 'autre')})">
 <div>
 <h1>{e_(e['titre'])}</h1>
 <p class="quand">{e_(quand)}</p>
-<p class="ou">{e_(e['lieu'])}{f" <span>· {e_(c['quartier'])}</span>" if c.get('quartier') else ""}</p>
+<p class="ou">{e_(lieu(e))}{f" <span>· {e_(c['quartier'])}</span>" if c.get('quartier') else ""}</p>
 <span class="disc">{e_(disc)}</span>
-{f'<p class="resume">{e_(e["resume"])}</p>' if e.get("resume") else ""}
-{f'<span class="px">{e_(e["prix"])}</span>' if e.get("prix") else ""}
+{f'<p class="resume">{e_(resume(e))}</p>' if resume(e) else ""}
+{f'<span class="px">{e_(prix_txt(e["prix"]))}</span>' if e.get("prix") else ""}
 </div>
-{f'<img src="{e_(aff)}" alt="Affiche : {e_(e["titre"])}" referrerpolicy="no-referrer" onerror="this.remove()">' if aff else ""}
+{f'<img src="{e_(aff)}" alt="{T('Affiche', 'Poster')} : {e_(e["titre"])}" referrerpolicy="no-referrer" onerror="this.remove()">' if aff else ""}
 <div class="boutons">
-{f'<a class="btn" href="{e_(billets)}" target="_blank" rel="noopener">{"Acheter des billets" if e.get("billets") else "Page de l’événement"}</a>' if billets else ""}
-<a class="btn ghost" href="/ics/{e_(e['ics'])}.ics">+ mon agenda</a>
-<button type="button" class="btn ghost" data-partage="{e_(url)}" data-titre="{e_(e['titre'])}" data-texte="{e_(quand + ' · ' + e['lieu'])}">Partager</button>
-<a class="btn ghost" href="/?e={e_(e['ics'])}">Voir dans le calendrier</a>
+{f'<a class="btn" href="{e_(billets)}" target="_blank" rel="noopener">{T("Acheter des billets", "Buy tickets") if e.get("billets") else T("Page de l’événement", "Event page")}</a>' if billets else ""}
+<a class="btn ghost" href="/ics/{e_(e['ics'])}.ics">{T('+ mon agenda', '+ my calendar')}</a>
+<button type="button" class="btn ghost" data-partage="{e_(url)}" data-titre="{e_(e['titre'])}" data-texte="{e_(quand + ' · ' + lieu(e))}">{T('Partager', 'Share')}</button>
+<a class="btn ghost" href="{T('/', '/en/')}?e={e_(e['ics'])}">{T('Voir dans le calendrier', 'View in the calendar')}</a>
 </div>
 </article>
-<p class="nav-j"><a href="/jour/{e['date']}.html">Toutes les sorties du {e_(jour_long(e['date']))} →</a></p>"""
-    titre = f"{e['titre']} · {e['lieu']} · {jour_long(e['date'])}"
+<p class="nav-j"><a href="{P('/jour/' + e['date'] + '.html')}">{T('Toutes les sorties du ', 'Everything on ')}{e_(jour_long(e['date']))} →</a></p>"""
+    titre = f"{e['titre']} · {lieu(e)} · {jour_long(e['date'])}"
     return page(titre, description[:300], chemin, corps, aff, schema_event(e, lieux, url, aff or SITE + "/partage.png"))
 
 
 def page_jour(j: str, evs: list[dict], lieux: dict, prec: str | None, suiv: str | None) -> str:
     lignes = "\n".join(
-        f'<a href="/e/{e_(e["ics"])}.html" style="--c:var(--{e_(e["discipline"] if e["discipline"] in DISC else "autre")})">'
+        f'<a href="{P("/e/" + e_(e["ics"]) + ".html")}" style="--c:var(--{e_(e["discipline"] if e["discipline"] in DISC else "autre")})">'
         f'<span class="h">{e_(heure_txt(e.get("heure")) if e.get("heure") else "—")}</span><span class="t">{e_(e["titre"])}</span>'
-        f'<span class="m">{e_(DISC.get(e["discipline"], ""))} · {e_(e["lieu"])}'
+        f'<span class="m">{e_(disc_nom(e["discipline"]))} · {e_(lieu(e))}'
         f'{" · " + e_((lieux.get(e["lieu"]) or {}).get("quartier")) if (lieux.get(e["lieu"]) or {}).get("quartier") else ""}</span></a>'
         for e in evs)
-    a_prec = f'<a href="/jour/{prec}.html">← {e_(jour_long(prec))}</a>' if prec else ""
-    a_suiv = f'<a href="/jour/{suiv}.html">{e_(jour_long(suiv))} →</a>' if suiv else ""
-    nav = f'<p class="nav-j"><span>{a_prec}</span><a href="/jour/">Tous les jours</a><span>{a_suiv}</span></p>'
-    titre = f"Sorties culturelles à Montréal · {jour_long(j, True)}"
-    corps = f"""<h1 class="pg-t">Quoi faire à Montréal le {e_(jour_long(j, True))}</h1>
-<p>{len(evs)} spectacles, concerts, expositions et activités culturelles sur l'île. <a href="/?d={j}">Voir avec les filtres du calendrier</a></p>
+    a_prec = f'<a href="{P("/jour/" + prec + ".html")}">← {e_(jour_long(prec))}</a>' if prec else ""
+    a_suiv = f'<a href="{P("/jour/" + suiv + ".html")}">{e_(jour_long(suiv))} →</a>' if suiv else ""
+    nav = f'<p class="nav-j"><span>{a_prec}</span><a href="{P("/jour/")}">{T("Tous les jours", "All days")}</a><span>{a_suiv}</span></p>'
+    titre = T(f"Sorties culturelles à Montréal · {jour_long(j, True)}", f"Things to do in Montréal · {jour_long(j, True)}")
+    corps = f"""<h1 class="pg-t">{T("Quoi faire à Montréal le ", "What's on in Montréal, ")}{e_(jour_long(j, True))}</h1>
+<p>{len(evs)} {T("spectacles, concerts, expositions et activités culturelles sur l'île.", "shows, concerts, exhibitions and cultural activities on the island.")} <a href="{T('/', '/en/')}?d={j}">{T("Voir avec les filtres du calendrier", "View with the calendar filters")}</a></p>
 {nav}
 <div class="liste">{lignes}</div>
 {nav}"""
-    desc = f"{len(evs)} sorties culturelles à Montréal le {jour_long(j, True)} : " + ", ".join(e["titre"] for e in evs[:6])
-    return page(titre, desc[:300], f"/jour/{j}.html", corps)
+    desc = T(f"{len(evs)} sorties culturelles à Montréal le {jour_long(j, True)} : ",
+             f"{len(evs)} things to do in Montréal on {jour_long(j, True)}: ") + ", ".join(e["titre"] for e in evs[:6])
+    return page(titre, desc[:300], P(f"/jour/{j}.html"), corps)
 
 
 def main() -> None:
@@ -218,28 +282,35 @@ def main() -> None:
     for e in evs:
         if e.get("jeunePublic") and e["discipline"] != "jeune":
             e["discipline"] = "jeune"
-    for d in ("e", "jour"):
-        shutil.rmtree(DOCS / d, ignore_errors=True)
-        (DOCS / d).mkdir()
-    for e in evs:
-        (DOCS / "e" / f"{e['ics']}.html").write_text(page_evenement(e, lieux), encoding="utf-8")
+    global EN
     par_jour: dict[str, list] = {}
     for e in sorted(evs, key=lambda x: (x["date"], x.get("heure") or "99", x["titre"])):
         par_jour.setdefault(e["date"], []).append(e)
     jours = sorted(par_jour)
-    for i, j in enumerate(jours):
-        (DOCS / "jour" / f"{j}.html").write_text(
-            page_jour(j, par_jour[j], lieux, jours[i - 1] if i else None, jours[i + 1] if i + 1 < len(jours) else None),
-            encoding="utf-8")
-    idx = "\n".join(f'<a href="/jour/{j}.html" style="--c:var(--hl)"><span class="h">{len(par_jour[j])}</span>'
-                    f'<span class="t">{e_(jour_long(j, True).capitalize())}</span></a>' for j in jours)
-    (DOCS / "jour" / "index.html").write_text(page(
-        "Sorties culturelles à Montréal, jour par jour", "Tous les spectacles, concerts et expositions de l'île de Montréal, jour par jour.",
-        "/jour/", f'<h1 class="pg-t">Jour par jour</h1>\n<div class="liste">{idx}</div>'), encoding="utf-8")
+    for EN in (False, True):
+        dos_e, dos_j = (DOCS / "en" / "e", DOCS / "en" / "day") if EN else (DOCS / "e", DOCS / "jour")
+        for d in (dos_e, dos_j):
+            shutil.rmtree(d, ignore_errors=True)
+            d.mkdir(parents=True)
+        for e in evs:
+            (dos_e / f"{e['ics']}.html").write_text(page_evenement(e, lieux), encoding="utf-8")
+        for i, j in enumerate(jours):
+            (dos_j / f"{j}.html").write_text(
+                page_jour(j, par_jour[j], lieux, jours[i - 1] if i else None, jours[i + 1] if i + 1 < len(jours) else None),
+                encoding="utf-8")
+        idx = "\n".join(f'<a href="{P("/jour/" + j + ".html")}" style="--c:var(--hl)"><span class="h">{len(par_jour[j])}</span>'
+                        f'<span class="t">{e_(jour_long(j, True)[:1].upper() + jour_long(j, True)[1:])}</span></a>' for j in jours)
+        (dos_j / "index.html").write_text(page(
+            T("Sorties culturelles à Montréal, jour par jour", "Things to do in Montréal, day by day"),
+            T("Tous les spectacles, concerts et expositions de l'île de Montréal, jour par jour.",
+              "Every show, concert and exhibition on the island of Montréal, day by day."),
+            P("/jour/"), f'<h1 class="pg-t">{T("Jour par jour", "Day by day")}</h1>\n<div class="liste">{idx}</div>'), encoding="utf-8")
+    EN = False
 
     maj = data.get("miseAJour") or date.today().isoformat()
     urls = [("/", "daily"), ("/jour/", "daily"), ("/sources.html", "weekly"), ("/salles.html", "monthly"), ("/archives.html", "weekly")]
     urls += [(f"/jour/{j}.html", "daily") for j in jours] + [(f"/e/{e['ics']}.html", "weekly") for e in evs]
+    urls += [("/en" + u.replace("/jour/", "/day/"), f) for u, f in urls]
     (DOCS / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{maj}</lastmod><changefreq>{f}</changefreq></url>\n" for u, f in urls)

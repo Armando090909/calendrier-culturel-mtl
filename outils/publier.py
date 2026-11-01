@@ -89,7 +89,7 @@ def _bsky_post(h, did, texte, images, reponse=None):
     post = {"$type": "app.bsky.feed.post", "text": texte, "langs": [fs.LANGUE],
             "createdAt": datetime.utcnow().isoformat(timespec="milliseconds") + "Z",
             "facets": [{"index": {"byteStart": i, "byteEnd": i + 8},
-                        "features": [{"$type": "app.bsky.richtext.facet#link", "uri": "https://ccmtl.ca"}]}] if i >= 0 else [],
+                        "features": [{"$type": "app.bsky.richtext.facet#link", "uri": "https://ccmtl.ca/en/" if fs.LANGUE == "en" else "https://ccmtl.ca"}]}] if i >= 0 else [],
             "embed": {"$type": "app.bsky.embed.images", "images": [
                 {"image": blob, "alt": alt, "aspectRatio": {"width": 1080, "height": 1350}} for blob, alt in images]}}
     if reponse:
