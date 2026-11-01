@@ -437,6 +437,8 @@ h1{font-family:var(--display);font-weight:800;font-size:44px;line-height:1.05;le
 .pied.autres{justify-content:flex-end;gap:18px}
 .encore{font-family:var(--hand);font-size:38px;color:var(--ink);transform:rotate(-2deg);white-space:nowrap}
 .fl{font-family:var(--display);font-weight:800;font-size:48px}"""
+    if LANGUE == "en":  # « montreal's cultural calendar » est plus long que « calendrier culturel mtl »
+        css += "\nh1{font-size:38px}\n.tete .marque{font-size:22px}"
     noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
     lignes, vus = [], set()
     for p in s["picks"]:
