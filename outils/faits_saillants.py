@@ -347,7 +347,7 @@ h1{font-family:var(--display);font-weight:800;font-size:88px;line-height:1.04;le
 .qr{font-family:var(--hand);font-size:44px;color:var(--pop);transform:rotate(-1.5deg);margin-bottom:34px}
 .evs{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px}
 .ev{display:flex;gap:26px;align-items:baseline;border-bottom:3px dashed #dde1e8;padding:22px 0}
-.ev .w{font-family:var(--display);font-weight:800;font-size:32px;width:330px;flex:none}
+.ev .w{font-family:var(--display);font-weight:800;font-size:30px;width:380px;flex:none;white-space:nowrap}
 .ev .t{font-size:38px;font-weight:700;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"""
     evs = "".join(f'<div class="ev"><span class="w">{quand(e)}</span><span class="t">{escape(e["titre"])}</span></div>' for e in sa["events"])
     return v.page(1080, 1350, f"""<div class="tete"><div class="sur">{T("La salle de la semaine", "Venue of the week")}</div><div class="marque">calendrier culturel <b>mtl</b></div></div><h1><span class="hl">{escape(sa['lieu'])}</span></h1>
@@ -439,7 +439,7 @@ h2{font-family:var(--display);font-weight:800;font-size:48px;margin:0 0 18px;let
 .sa{margin-top:30px;border-top:4px solid var(--ink);padding-top:26px}
 .sa h3{font-family:var(--display);font-weight:800;font-size:56px;margin:4px 0 10px}
 .sa .ev{display:flex;gap:20px;font-size:28px;padding:8px 0;border-bottom:3px dashed #dde1e8}
-.sa .ev .w{font-family:var(--display);font-weight:800;font-size:24px;width:250px;flex:none}
+.sa .ev .w{font-family:var(--display);font-weight:800;font-size:23px;width:300px;flex:none;white-space:nowrap}
 .sa .ev .t{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}"""
     def dates(f):
         a, b = date.fromisoformat(f["debut"]), date.fromisoformat(f["fin"])
