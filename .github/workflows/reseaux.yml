@@ -47,6 +47,10 @@ jobs:
           BLUESKY_MOT_DE_PASSE: ${{ secrets.BLUESKY_MOT_DE_PASSE }}
           INSTAGRAM_JETON: ${{ secrets.INSTAGRAM_JETON }}
           THREADS_JETON: ${{ secrets.THREADS_JETON }}
+          FACEBOOK_JETON: ${{ secrets.FACEBOOK_JETON }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           PUBLIER: ${{ (github.event_name == 'workflow_dispatch' && inputs.essai) && 'essai' || 'oui' }}
           FORCER: ${{ inputs.forcer && '1' || '0' }}
         run: |
@@ -56,5 +60,5 @@ jobs:
       - name: Enregistrer
         if: always()
         run: |
-          git add outils/reseaux/etat.json 2>/dev/null || true
+          git add outils/reseaux 2>/dev/null || true
           git commit -m "Réseaux : état des publications" && { git pull --rebase -X theirs origin main; git push; } || true

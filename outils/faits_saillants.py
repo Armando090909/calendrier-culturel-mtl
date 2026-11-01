@@ -67,6 +67,8 @@ def _ia_choisir(cands_par_disc, modes):
               "à la fois rassembler et faire découvrir. Pour chaque discipline ci-dessous, classe les 4 meilleurs choix selon "
               "son mode, en privilégiant des jours différents de la semaine quand la qualité est comparable :\n- « connu » : artiste, compagnie ou spectacle reconnu et apprécié, qui donne envie à un large public "
               "(mais évite les vedettes établies depuis des décennies qui n'ont pas besoin de visibilité) ;\n"
+              "- « tête d'affiche » : le nom le plus connu et attendu de la semaine dans cette discipline (une vedette, même "
+              "établie depuis longtemps), pour attirer l'attention ;\n"
               "- « découverte » : artiste émergent, jeune compagnie, proposition singulière ou petite salle, crédible et "
               "attirante pour un public curieux (pas une activité quelconque ni un atelier de bibliothèque).\n"
               "Pour chacun, écris une accroche d'au plus 90 caractères, en français, au tutoiement, tirée UNIQUEMENT des "
@@ -116,6 +118,9 @@ def choisir(data, debut, etat):
     disciplines = PRINCIPALES + [TOURNANTES[semaine_no % len(TOURNANTES)], TOURNANTES[(semaine_no + 2) % len(TOURNANTES)]]
     # Équilibre connu / découverte : une discipline sur deux, et l'inverse la semaine suivante
     modes = {k: ("connu" if (i + semaine_no) % 2 == 0 else "découverte") for i, k in enumerate(disciplines)}
+    # Une « tête d'affiche » chaque semaine (un gros nom, pour l'attention) : musique une semaine sur deux, sinon une
+    # autre discipline principale à tour de rôle
+    modes["musique" if semaine_no % 2 == 0 else PRINCIPALES[1 + (semaine_no // 2) % 4]] = "tête d'affiche"
     sel = lambda e: int(hashlib.md5((e["titre"] + debut.isoformat()).encode()).hexdigest()[:6], 16)  # noqa: E731
     cands = {}
     for k in disciplines:
