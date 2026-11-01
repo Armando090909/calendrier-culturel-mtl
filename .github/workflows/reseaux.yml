@@ -8,6 +8,9 @@ on:
     - cron: "23 13 * * 1"
     - cron: "23 15 * * 1"
     - cron: "23 18 * * 1"
+  push:
+    branches: [main]
+    paths: ["outils/reseaux/demande-essai.txt"]  # essai de connexion (rien n'est publié)
   workflow_dispatch:
     inputs:
       essai:
@@ -51,7 +54,7 @@ jobs:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
-          PUBLIER: ${{ (github.event_name == 'workflow_dispatch' && inputs.essai) && 'essai' || 'oui' }}
+          PUBLIER: ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.essai)) && 'essai' || 'oui' }}
           FORCER: ${{ inputs.forcer && '1' || '0' }}
         run: |
           git config user.name "collecte-automatique"
