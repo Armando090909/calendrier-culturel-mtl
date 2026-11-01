@@ -120,6 +120,10 @@ def semaine(data):
                      f'<span class="n">{c[k]}</span></div>' for k, nom, coul in DISC if c[k])
     if expos:
         lignes += f'<div class="d"><span class="pt" style="background:#e8a317"></span><span class="nm">Expos en cours</span><span class="n">{expos}</span></div>'
+    # Le total ferme la grille : il occupe la case libre (ou toute la dernière rangée si le nombre de cases est pair)
+    n_cases = lignes.count('class="d"')
+    lignes += (f'<div class="d tot{" large" if n_cases % 2 == 0 else ""}"><span class="nm">au total</span>'
+               f'<span class="n">{len(evs) + len(series)}</span></div>')
     titre_dates = f"du {debut.day}{' ' + MOIS[debut.month - 1] if debut.month != fin.month else ''} au {fin.day} {MOIS[fin.month - 1]}"
     css = """body{padding:86px 92px}
 .marque{font-size:50px}
@@ -130,29 +134,34 @@ h1{font-family:var(--display);font-weight:800;font-size:70px;line-height:1.06;le
 .pt{width:30px;height:30px;border-radius:50%;flex:none;border:3px solid var(--ink)}
 .nm{font-weight:800;font-size:30px;flex:1;line-height:1.1}
 .n{font-family:var(--display);font-weight:800;font-size:30px}
-.bas{position:absolute;left:92px;right:92px;bottom:80px;display:flex;justify-content:space-between;align-items:center}
-.total{font-family:var(--display);font-weight:800;font-size:40px}
+.d.tot{background:var(--hl)}
+.d.tot .nm{font-family:var(--display);font-size:28px}
+.d.tot .n{font-size:36px}
+.d.large{grid-column:1 / -1}
+.bas{position:absolute;left:92px;right:92px;bottom:72px;display:flex;justify-content:center}
 .url{font-size:44px;background:var(--hl);border:4px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:6px 6px 0 var(--ink)}"""
     return page(1080, 1350, f"""<div class="marque">calendrier culturel <b>mtl</b></div>
 <h1>Cette semaine sur <span class="hl">l'île</span></h1><div class="dates">{titre_dates}</div>
 <div class="grille">{lignes}</div>
-<div class="bas"><span class="total">{len(evs) + len(series)} sorties</span><span class="url">ccmtl.ca</span></div>""", css), len(evs) + len(series)
+<div class="bas"><span class="url">ccmtl.ca</span></div>""", css), len(evs) + len(series)
 
 
 def programmateurs():
     css = """body{background:var(--hl);padding:96px 92px;display:flex;flex-direction:column}
 .marque{font-size:52px}
-.carte{margin-top:70px;padding:64px 60px}
+.milieu{flex:1;display:flex;flex-direction:column;justify-content:center;gap:56px;padding-bottom:40px}
+.carte{padding:64px 60px}
 .carte .stn{width:84px;height:84px;border-width:18px;box-shadow:0 0 0 14px var(--jaune)}
 h1{font-family:var(--display);font-weight:800;font-size:66px;line-height:1.1;letter-spacing:-.03em;margin:40px 0 30px}
 p{font-size:40px;line-height:1.32;font-weight:600;margin:0}
-.bts{display:flex;flex-direction:column;gap:26px;margin-top:auto}
-.bt{font-weight:800;font-size:44px;border:4px solid var(--ink);border-radius:999px;padding:22px 40px;background:#fff;box-shadow:8px 8px 0 var(--ink);align-self:flex-start}
+.bts{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.bt{font-weight:800;font-size:31px;text-align:center;white-space:nowrap;border:4px solid var(--ink);border-radius:999px;padding:22px 10px;
+  background:#fff;box-shadow:8px 8px 0 var(--ink)}
 .bt.go{background:var(--pop);border-color:var(--pop);color:#fff}"""
     return page(1080, 1350, """<div class="marque">calendrier culturel <b>mtl</b></div>
-<div class="carte"><span class="stn"></span><h1>Tu fais de la programmation d'événements&nbsp;?</h1>
+<div class="milieu"><div class="carte"><span class="stn"></span><h1>Tu fais de la programmation d'événements&nbsp;?</h1>
 <p>Salle, bar, festival, galerie, organisme : ajoute tes événements gratuitement, ou partage ton calendrier une fois pour toutes.</p></div>
-<div class="bts"><span class="bt go">+ Proposer un événement</span><span class="bt">Partager un calendrier</span></div>""", css)
+<div class="bts"><span class="bt go">+ Proposer un événement</span><span class="bt">Partager un calendrier</span></div></div>""", css)
 
 
 def main():
@@ -169,7 +178,7 @@ def main():
             pg.set_content(html, wait_until="networkidle", timeout=60000)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(800)
-            deborde = pg.evaluate("""() => [...document.querySelectorAll('h1,h2,p,.d,.url,.bt,.total,.carte,.nom')]
+            deborde = pg.evaluate("""() => [...document.querySelectorAll('h1,h2,p,.d,.url,.bt,.carte,.nom')]
                 .filter(e => {const r = e.getBoundingClientRect(); return r.right > innerWidth - 40 || r.bottom > innerHeight - 30
                   || e.scrollWidth > e.clientWidth + 2}).map(e => e.className || e.tagName)""")
             if deborde:
