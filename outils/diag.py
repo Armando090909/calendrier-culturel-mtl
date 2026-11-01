@@ -13,7 +13,16 @@ D = Path(__file__).resolve().parent / "diag"
 HEURE = re.compile(r"(?i)\b\d{1,2}\s?(?:h|:)\s?\d{0,2}\s?(?:am|pm)?\b|\b\d{1,2}\s?(?:am|pm)\b")
 out = {}
 import hashlib  # noqa: E402
-for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.strip().startswith(("http", "IMG "))]:
+for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.strip().startswith(("http", "IMG ", "JSON "))]:
+    if ligne.startswith("JSON "):  # réponse d'une API publique (extrait)
+        url = ligne[5:]
+        try:
+            rep = c.requests.get(url, timeout=30, headers={"User-Agent": c.UA})
+            out[url] = {"statut": rep.status_code, "extrait": rep.text[:2500]}
+        except Exception as exc:
+            out[url] = {"erreur": str(exc)[:200]}
+        print(url, str(out[url])[:200])
+        continue
     if ligne.startswith("IMG "):  # image : taille et empreinte (repérer les images par défaut identiques)
         url = ligne[4:]
         try:

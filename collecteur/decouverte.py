@@ -338,6 +338,44 @@ def spotify(nom: str) -> list[dict]:
     return [{"type": "spotify", "url": url, "source": "spotify", "nom": cands[0]["name"]}] if url else []
 
 
+def _nom_assez_distinctif(nom: str) -> bool:
+    """Un nom court ou d'un seul mot courant (« Kim », « Moon ») a trop d'homonymes : on ne cherche pas dans les catalogues."""
+    mots = plat(nom).split()
+    return bool(mots) and (len(mots) >= 2 and len("".join(mots)) >= 6 or (len(mots) == 1 and len(mots[0]) >= 6))
+
+
+def deezer(nom: str, get_json) -> list[dict]:
+    """Catalogue Deezer (recherche publique, sans compte ni clé). Règle stricte : nom identique, UN SEUL artiste de ce nom
+    dans le catalogue, avec au moins un album ; sinon on s'abstient."""
+    if not _nom_assez_distinctif(nom):
+        return []
+    r = get_json(f"https://api.deezer.com/search/artist?q={quote(nom)}&limit=25") or {}
+    cands = [a for a in r.get("data", []) if plat(a.get("name", "")) == plat(nom)]
+    if len(cands) != 1 or not cands[0].get("nb_album") or not str(cands[0].get("link", "")).startswith("https://"):
+        return []
+    return [{"type": "deezer", "url": cands[0]["link"], "source": "deezer", "nom": cands[0]["name"]}]
+
+
+_ITUNES_DERNIER = [0.0]
+
+
+def apple(nom: str, get_json) -> list[dict]:
+    """Catalogue Apple Music (iTunes Search API, publique, sans compte ni clé ; environ 20 recherches par minute).
+    Même règle : nom identique et un seul artiste de ce nom, sinon on s'abstient."""
+    if not _nom_assez_distinctif(nom):
+        return []
+    attente = 3.2 - (time.time() - _ITUNES_DERNIER[0])
+    if attente > 0:
+        time.sleep(attente)
+    _ITUNES_DERNIER[0] = time.time()
+    r = get_json(f"https://itunes.apple.com/search?term={quote(nom)}&entity=musicArtist&country=CA&limit=25") or {}
+    cands = [a for a in r.get("results", []) if plat(a.get("artistName", "")) == plat(nom)]
+    if len(cands) != 1 or not str(cands[0].get("artistLinkUrl", "")).startswith("https://"):
+        return []
+    url = cands[0]["artistLinkUrl"].split("?")[0].replace("itunes.apple.com", "music.apple.com")
+    return [{"type": "apple", "url": url, "source": "itunes", "nom": cands[0]["artistName"]}]
+
+
 def bandcamp(nom: str, get_html) -> list[dict]:
     """Recherche d'artiste sur Bandcamp (sans clé). On garde un résultat au nom identique, situé à Montréal,
     au Québec ou au Canada ; ou le seul résultat au nom identique s'il n'y en a qu'un."""
@@ -494,7 +532,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
             continue
         cle = ("film:" if film else "mus:") + "|".join(plat(x) for x in noms)
         m = memo.get(cle)
-        frais = m and (m["liens"] or (m["le"] >= vieux and m.get("v2")))  # v2 : billetterie, cinéaste retiré
+        frais = m and (m["liens"] or (m["le"] >= vieux and m.get("v3")))  # v3 : billetterie, cinéaste retiré, Deezer, Apple
         if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
@@ -535,11 +573,23 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                                 liens += spotify(nom)
                             except Exception as exc:
                                 print(f"  Spotify « {nom[:30]} » : {exc}")
+                        # Catalogues Deezer et Apple Music : seulement si rien de vérifié n'a été trouvé pour ce nom
+                        if not any(plat(l.get("nom", "")) == plat(nom) or l["source"] == "page" for l in liens):
+                            trouves = []
+                            for cherche in (deezer, apple):
+                                try:
+                                    trouves.append(cherche(nom, ua_json))
+                                except Exception as exc:
+                                    trouves.append([])
+                                    print(f"  {cherche.__name__} « {nom[:30]} » : {exc}")
+                            # Nom d'un seul mot (« headache ») : les deux catalogues doivent le trouver, sinon on s'abstient
+                            if len(plat(nom).split()) > 1 or all(trouves):
+                                liens += [l for t in trouves for l in t]
                         # Recherche Bandcamp retirée (31 oct. 2026) : le robots.txt de Bandcamp demande de ne pas lire ses
                         # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
-            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v2": 1}
+            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v3": 1}
         if m and m["liens"]:
             aff = [l for l in m["liens"] if l["type"] == "affiche"]
             if aff and not e.get("affiche") and not e.get("image"):
