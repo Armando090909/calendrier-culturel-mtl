@@ -51,7 +51,7 @@ def page(w, h, corps, css=""):
 def profil():
     css = """body{background:var(--hl);display:grid;place-items:center}
 .rond{width:880px;height:880px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
-.nom{font-family:var(--display);font-weight:800;font-size:236px;letter-spacing:-.04em;line-height:.9}
+.nom{font-family:var(--display);font-weight:800;font-size:205px;letter-spacing:-.04em;line-height:.9}
 .nom span{color:var(--pop)}
 .rail{display:flex;align-items:center;width:560px;position:relative}
 .rail .ligne{position:absolute;left:30px;right:30px;height:30px}
@@ -64,7 +64,7 @@ def profil():
 def bienvenue():
     css = """body{padding:96px 92px;display:flex;flex-direction:column}
 .marque{font-size:58px}
-h1{font-family:var(--display);font-weight:800;font-size:128px;line-height:1.02;letter-spacing:-.035em;margin:70px 0 0}
+h1{font-family:var(--display);font-weight:800;font-size:112px;line-height:1.04;letter-spacing:-.035em;margin:70px 0 0}
 p{font-size:46px;line-height:1.3;font-weight:600;margin:56px 0 0;max-width:880px}
 .bas{margin-top:auto}
 .rail{display:flex;justify-content:space-between;align-items:center;position:relative;margin-bottom:54px}
@@ -81,15 +81,15 @@ p{font-size:46px;line-height:1.3;font-weight:600;margin:56px 0 0;max-width:880px
 def comment():
     css = """body{padding:96px 92px}
 .marque{font-size:52px}
-h1{font-family:var(--display);font-weight:800;font-size:92px;line-height:1.05;letter-spacing:-.03em;margin:56px 0 70px}
-.etapes{position:relative;display:flex;flex-direction:column;gap:64px}
+h1{font-family:var(--display);font-weight:800;font-size:78px;line-height:1.08;letter-spacing:-.03em;margin:50px 0 60px}
+.etapes{position:relative;display:flex;flex-direction:column;gap:46px}
 .etapes::before{content:"";position:absolute;left:38px;top:40px;bottom:40px;width:22px;border-radius:12px;
   background:linear-gradient(180deg,var(--vert) 0 33%,var(--orange) 33% 66%,var(--bleu) 66%)}
 .e{position:relative;display:flex;gap:44px;align-items:flex-start}
 .e .stn{flex:none;width:98px;height:98px;border-width:20px;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:34px}
-.e h2{font-family:var(--display);font-weight:800;font-size:52px;margin:6px 0 10px;letter-spacing:-.02em}
-.e p{font-size:38px;line-height:1.3;margin:0;color:#2b2f36;font-weight:600}
-.url{position:absolute;left:92px;bottom:92px;font-size:52px}"""
+.e h2{font-family:var(--display);font-weight:800;font-size:46px;margin:6px 0 10px;letter-spacing:-.02em}
+.e p{font-size:35px;line-height:1.3;margin:0;color:#2b2f36;font-weight:600}
+.url{position:absolute;left:92px;bottom:80px;font-size:48px;background:var(--hl);border:4px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:6px 6px 0 var(--ink)}"""
     return page(1080, 1350, """<div class="marque">calendrier culturel <b>mtl</b></div>
 <h1>Trouver sa sortie en <span class="hl">3 stations</span></h1>
 <div class="etapes">
@@ -123,13 +123,13 @@ def semaine(data):
     titre_dates = f"du {debut.day}{' ' + MOIS[debut.month - 1] if debut.month != fin.month else ''} au {fin.day} {MOIS[fin.month - 1]}"
     css = """body{padding:86px 92px}
 .marque{font-size:50px}
-h1{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.03em;margin:44px 0 6px}
-.dates{font-family:var(--hand);font-size:56px;color:var(--pop);transform:rotate(-1.5deg);margin:0 0 42px}
-.grille{display:grid;grid-template-columns:1fr 1fr;gap:20px 26px}
-.d{display:flex;align-items:center;gap:18px;border:4px solid var(--ink);border-radius:20px;padding:16px 22px;background:#fff;box-shadow:6px 6px 0 var(--ink)}
+h1{font-family:var(--display);font-weight:800;font-size:70px;line-height:1.06;letter-spacing:-.03em;margin:40px 0 4px}
+.dates{font-family:var(--hand);font-size:46px;color:var(--pop);transform:rotate(-1.5deg);margin:6px 0 32px}
+.grille{display:grid;grid-template-columns:1fr 1fr;gap:16px 24px}
+.d{display:flex;align-items:center;gap:16px;border:4px solid var(--ink);border-radius:18px;padding:12px 20px;background:#fff;box-shadow:6px 6px 0 var(--ink)}
 .pt{width:30px;height:30px;border-radius:50%;flex:none;border:3px solid var(--ink)}
-.nm{font-weight:800;font-size:33px;flex:1;line-height:1.1}
-.n{font-family:var(--display);font-weight:800;font-size:34px}
+.nm{font-weight:800;font-size:30px;flex:1;line-height:1.1}
+.n{font-family:var(--display);font-weight:800;font-size:30px}
 .bas{position:absolute;left:92px;right:92px;bottom:80px;display:flex;justify-content:space-between;align-items:center}
 .total{font-family:var(--display);font-weight:800;font-size:40px}
 .url{font-size:44px;background:var(--hl);border:4px solid var(--ink);border-radius:16px;padding:8px 20px;box-shadow:6px 6px 0 var(--ink)}"""
@@ -144,7 +144,7 @@ def programmateurs():
 .marque{font-size:52px}
 .carte{margin-top:70px;padding:64px 60px}
 .carte .stn{width:84px;height:84px;border-width:18px;box-shadow:0 0 0 14px var(--jaune)}
-h1{font-family:var(--display);font-weight:800;font-size:82px;line-height:1.06;letter-spacing:-.03em;margin:44px 0 30px}
+h1{font-family:var(--display);font-weight:800;font-size:66px;line-height:1.1;letter-spacing:-.03em;margin:40px 0 30px}
 p{font-size:40px;line-height:1.32;font-weight:600;margin:0}
 .bts{display:flex;flex-direction:column;gap:26px;margin-top:auto}
 .bt{font-weight:800;font-size:44px;border:4px solid var(--ink);border-radius:999px;padding:22px 40px;background:#fff;box-shadow:8px 8px 0 var(--ink);align-self:flex-start}
@@ -169,6 +169,11 @@ def main():
             pg.set_content(html, wait_until="networkidle", timeout=60000)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(800)
+            deborde = pg.evaluate("""() => [...document.querySelectorAll('h1,h2,p,.d,.url,.bt,.total,.carte,.nom')]
+                .filter(e => {const r = e.getBoundingClientRect(); return r.right > innerWidth - 40 || r.bottom > innerHeight - 30
+                  || e.scrollWidth > e.clientWidth + 2}).map(e => e.className || e.tagName)""")
+            if deborde:
+                print(f"  attention, {nom} : déborde ({deborde})")
             pg.screenshot(path=str(SORTIE / f"{nom}.png"))
             print(f"{nom}.png")
         nav.close()
