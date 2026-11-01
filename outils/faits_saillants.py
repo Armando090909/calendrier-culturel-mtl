@@ -79,7 +79,7 @@ def _ia_choisir(cands_par_disc, modes):
     alias = {plat(k): k for k in cands_par_disc} | {plat(NOMS.get(k, k)): k for k in cands_par_disc}
     for essai in range(2):
         try:
-            rep = ia._appel(prompt, max_tokens=4000)
+            rep = ia._appel(prompt, max_tokens=16000)
         except Exception as exc:
             print(f"  choix par l'IA en échec : {exc}")
             return {}
