@@ -389,7 +389,7 @@ def _bande_jours(s, marques):
 
 
 CSS_LISTE = """
-.strip{position:relative;display:grid;grid-template-columns:repeat(7,1fr);margin:26px 0 30px}
+.strip{position:relative;display:grid;grid-template-columns:repeat(7,1fr);margin:22px 0 24px}
 .strip::before{content:"";position:absolute;left:7%;right:7%;top:34px;height:14px;border-radius:8px;
   background:linear-gradient(90deg,var(--vert) 0 25%,var(--orange) 25% 50%,var(--jaune) 50% 75%,var(--bleu) 75%)}
 .j{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px}
@@ -402,7 +402,7 @@ CSS_LISTE = """
 .r{display:flex;border-bottom:3px solid #e6e9ef}
 .r:last-child{border-bottom:0}
 .r .b{width:16px;flex:none;background:var(--c)}
-.r .tx{padding:16px 22px;min-width:0}
+.r .tx{padding:13px 22px;min-width:0}
 .r .t{font-family:var(--display);font-weight:800;font-size:31px;line-height:1.15;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .r .q{font-size:27px;margin-top:6px;color:#2b2f36;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .r .q b{font-weight:800}
@@ -414,7 +414,7 @@ def slide_condense_liste(s):
     jour et heure, salle."""
     css = CSS_COMMUN + CSS_LISTE + """
 body{padding:60px 64px}
-h1{font-family:var(--display);font-weight:800;font-size:58px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
+h1{font-family:var(--display);font-weight:800;font-size:50px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
 .sous{font-family:var(--hand);font-size:34px;color:var(--pop);margin-bottom:8px}"""
     lignes = "".join(
         f'<div class="r" style="--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
