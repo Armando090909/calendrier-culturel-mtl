@@ -1,0 +1,34 @@
+# Visuels Instagram (outils/instagram.py) : refaits quand le programme change, ou à la main (Run workflow).
+# Résultat : outils/instagram/sortie/*.png
+name: Visuels Instagram
+on:
+  push:
+    branches: [main]
+    paths: ["outils/instagram.py"]
+  workflow_dispatch:
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+jobs:
+  visuels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright==1.48.0
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - run: python -m playwright install --with-deps chromium
+      - run: python outils/instagram.py
+      - run: |
+          git config user.name "collecte-automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add outils/instagram/sortie
+          git commit -m "Visuels Instagram" && { git pull --rebase -X theirs origin main; git push; } || true
