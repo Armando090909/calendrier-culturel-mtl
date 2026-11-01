@@ -517,9 +517,7 @@ footer:empty{display:none}
 .note.mince>p:not(.toplinks){flex:0 1 auto}
 .note.mince .toplinks{margin:0;flex:0 0 auto;justify-content:flex-start;gap:8px}
 .note.mince .toplinks a{padding:4px 12px;font-size:13.5px}
-.note .court{display:none}
 @media (max-width:600px){
-  .note .long{display:none}.note .court{display:inline}
   /* Téléphone : la phrase sur une ligne (taille ajustée à l'écran), les deux boutons côte à côte, à parts égales */
   .note.mince{padding:9px 12px 10px;gap:8px 9px;box-shadow:3px 3px 0 var(--shadow)}
   .note.mince .stn-ico{width:16px;height:16px;border-width:3px;box-shadow:0 0 0 3px var(--cirque)}
