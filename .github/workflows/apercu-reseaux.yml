@@ -34,5 +34,9 @@ jobs:
       - run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
+          # l'aperçu remplace entièrement le précédent : on repart de la dernière version du dépôt (pas de conflit)
+          cp -r outils/reseaux/apercu /tmp/apercu
+          git fetch -q origin main && git reset -q --hard origin/main
+          rm -rf outils/reseaux/apercu && cp -r /tmp/apercu outils/reseaux/apercu
           git add -A outils/reseaux/apercu
-          git commit -m "Aperçu de la publication de la semaine" && { git pull --rebase -X theirs origin main; git push; } || true
+          git commit -m "Aperçu de la publication de la semaine" && git push || true
