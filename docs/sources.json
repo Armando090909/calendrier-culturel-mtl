@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2264,
+  "evenements": 2181,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 37,
+  "evenements": 33,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 201,
+  "evenements": 166,
   "erreur": false
  },
  {
@@ -255,7 +255,7 @@
   "nom": "Centre des musiciens du monde",
   "url": "https://centredesmusiciensdumonde.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -294,13 +294,6 @@
   "erreur": false
  },
  {
-  "nom": "CÉRIUM (relations internationales, UdeM)",
-  "url": "https://cerium.umontreal.ca/activites",
-  "type": "page lue par l'IA",
-  "evenements": 0,
-  "erreur": false
- },
- {
   "nom": "Concordia – événements",
   "url": "https://www.concordia.ca/events.html",
   "type": "page lue par l'IA",
@@ -333,6 +326,13 @@
   "url": "https://hexagram.ca/en/category/activities/conferences-en",
   "type": "page lue par l'IA",
   "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "Cabaret Lion d'Or (billetterie)",
+  "url": "https://lepointdevente.com/liondor",
+  "type": "page lue par l'IA",
+  "evenements": 21,
   "erreur": false
  },
  {
@@ -1095,7 +1095,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 107,
+  "evenements": 108,
   "erreur": false
  },
  {

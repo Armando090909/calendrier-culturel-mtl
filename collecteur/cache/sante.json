@@ -1,35 +1,15 @@
 {
  "ouverts": {
-  "champ:montreal.ca:heure": {
-   "depuis": "2026-10-31",
-   "jours": 1,
-   "issue": null
-  },
-  "champ:montreal.ca:salle": {
-   "depuis": "2026-10-31",
-   "jours": 1,
-   "issue": null
-  },
-  "champ:festapp.io:salle": {
-   "depuis": "2026-10-31",
-   "jours": 1,
-   "issue": null
-  },
   "champ:festivalbachmontreal.com:heure": {
    "depuis": "2026-10-31",
-   "jours": 1,
+   "jours": 2,
    "issue": null
-  },
-  "robots:bandcamp.com,musicbrainz.org,query.wikidata.org": {
-   "depuis": "2026-10-31",
-   "jours": 1,
-   "issue": 1
   }
  },
  "sources_ok": {
-  "Ville de Montréal – événements publics": 2264,
-  "Ask A Punk (DIY, punk, hardcore)": 37,
-  "Sors-tu? (14 prochains jours)": 219,
+  "Ville de Montréal – événements publics": 2181,
+  "Ask A Punk (DIY, punk, hardcore)": 33,
+  "Sors-tu? (14 prochains jours)": 166,
   "Songkick (concerts, 2 mois)": 500,
   "Espace GO": 1,
   "TNM": 1,
@@ -60,7 +40,16 @@
   "evenko (humour)": 20,
   "Place des Arts (humour)": 3,
   "Théâtre Sainte-Catherine (impro et humour)": 2,
+  "Centre des musiciens du monde": 5,
   "Terminal Comédie Club (ma.to)": 2,
+  "UPop Montréal (université populaire)": 16,
+  "Cœur des sciences UQAM (conférences grand public)": 4,
+  "UQAM – événements": 5,
+  "Université de Montréal – calendrier": 8,
+  "Concordia – événements": 8,
+  "Centre Canadien d'Architecture – événements (Eventbrite)": 7,
+  "Hexagram – conférences (recherche-création)": 1,
+  "Cabaret Lion d'Or (billetterie)": 21,
   "Cabaret Lion d'Or (LIM et spectacles)": 1,
   "Tourisme Montréal – sorties en famille": 29,
   "Place des Arts junior": 3,
@@ -68,6 +57,7 @@
   "Réseau art actuel (centres d'artistes, vernissages)": 76,
   "Art Mûr (expositions à venir)": 4,
   "ma.to (musique live)": 18,
+  "evenko (concerts)": 15,
   "Théâtre Fairmount": 22,
   "Club Soda": 8,
   "Bar Le Ritz PDB": 28,
@@ -79,6 +69,7 @@
   "Chiguer Art Contemporain": 2,
   "Duran Contemporain": 1,
   "Galerie Eli Kerr": 1,
+  "ELLEPHANT": 2,
   "Galerie Hugues Charbonneau": 1,
   "Galerie Simon Blais": 4,
   "Galeries Bellemare Lambert": 1,
@@ -86,17 +77,24 @@
   "Pangée": 1,
   "Patel Brown": 1,
   "Pierre-François Ouellette art contemporain": 2,
+  "TIAN Contemporain": 1,
   "Upstairs Jazz Bar & Grill": 4,
+  "Club Balattou (musiques du monde)": 4,
+  "Le Balcon": 29,
   "Quai des Brumes": 2,
   "Le Ministère": 8,
+  "Le Belmont": 3,
   "Ausgang Plaza": 17,
   "Le Studio TD": 4,
   "Casa del Popolo – La Toscadura": 18,
   "Casa del Popolo – P'tit Ours": 27,
   "Casa del Popolo – La Sotterenea": 23,
   "Bar Datcha": 10,
+  "SAT – Société des arts technologiques": 7,
   "Cabaret Mado (drag)": 55,
+  "Wiggle Room (burlesque, cabaret)": 19,
   "Caf' Conc' (cabaret)": 9,
+  "Théâtre MainLine": 5,
   "Repercussion Theatre": 1,
   "La Comédie de Montréal": 15,
   "DARE-DARE (art public)": 3,
@@ -104,10 +102,12 @@
   "Le Livart (centre d'art multidisciplinaire)": 2,
   "Librairie Drawn & Quarterly (lancements, lectures)": 5,
   "La poésie partout (calendrier)": 2,
+  "GSIMtl (slam de poésie)": 10,
   "La Livrerie": 17,
   "Salle Pauline-Julien (ouest de l'île)": 27,
   "Pointe-Claire – Stewart Hall et activités": 1,
   "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)": 30,
+  "Pierrefonds-Roxboro – spectacles": 5,
   "150 ans du parc du Mont-Royal": 3,
   "Ursa": 27,
   "La Lumière Collective": 7,
@@ -124,13 +124,14 @@
   "Club Balattou (billetterie)": 16,
   "Le Belmont (billetterie)": 2,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 4,
-  "Soirées quiz (hebdomadaires)": 107,
+  "Soirées quiz (hebdomadaires)": 108,
   "Ligues d'improvisation (hebdomadaires)": 9,
   "ma.to – communauté (quiz, trivia)": 1,
   "Wiggle Room (ma.to)": 5,
   "Le Balcon (ma.to)": 3,
   "PAN M 360 – agenda musique": 42,
   "Formulaire : événements proposés": 1,
+  "Festival · Monde Arabe (1)": 38,
   "Festival · Monde Arabe (2)": 4,
   "Festival · CINEMANIA": 252,
   "Festival · Festival Bach": 7,
@@ -150,13 +151,18 @@
   "Festival · Salon du livre": 3,
   "Festival · Casteliers": 2,
   "Festival · FIFA": 3,
+  "Festival · Francos": 1,
+  "Festival · Festival de Jazz": 5,
   "Festival · Nuits d'Afrique": 7,
+  "Festival · LASSO": 2,
   "Festival · Akousma": 2,
   "Festival · Comiccon": 2,
-  "Festival · Comiccon des Fêtes": 2
+  "Festival · Comiccon des Fêtes": 2,
+  "Festival · Concerts Campbell": 1
  },
  "totaux": {
-  "2026-10-31": 2428
+  "2026-10-31": 2428,
+  "2026-11-01": 2470
  },
- "dernier_jour": "2026-10-31"
+ "dernier_jour": "2026-11-01"
 }
