@@ -2,6 +2,7 @@
 
 Produit dans outils/instagram/sortie/ :
 - profil.png (1080 × 1080) : photo de profil (lisible en tout petit, dans un cercle) ;
+- facebook-couverture.png (1640 × 624) : couverture de la page Facebook (titre + ligne culture du site) ;
 - 1-bienvenue.png, 2-comment.png, 3-semaine.png, 4-programmateurs.png (1080 × 1350, format portrait d'Instagram).
 Le visuel « semaine » est calculé à partir de docs/data.json (les 7 prochains jours).
 
