@@ -414,25 +414,40 @@ CSS_LISTE = """
 
 
 def slide_condense_liste(s):
-    """Les 7 coups de cœur sur un seul carton, comme la liste « Aujourd'hui » du site : barre de couleur, titre,
-    jour et heure, salle."""
+    """La sélection de la semaine sur un seul carton : une ligne de métro verticale à gauche, une station par jour
+    (vis-à-vis de sa sortie), et la liste dans le style « Aujourd'hui » du site (barre de couleur, titre, heure, salle)."""
     css = CSS_COMMUN + CSS_LISTE + """
 body{padding:60px 64px}
 h1{font-family:var(--display);font-weight:800;font-size:50px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
-.sous{font-family:var(--hand);font-size:36px;color:var(--pop);margin-bottom:12px}
-.boite{margin-top:34px}
-.r .tx{padding:20px 24px}
-.r .t{font-size:32px}
-.r .q{font-size:27px;margin-top:8px}
+.sous{font-family:var(--hand);font-size:36px;color:var(--pop);margin:22px 0 18px 120px}
+.metro{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-evenly;margin-bottom:30px}
+.metro::before{content:"";position:absolute;left:44px;top:40px;bottom:40px;width:16px;border-radius:9px;
+  background:linear-gradient(180deg,var(--vert) 0 25%,var(--orange) 25% 50%,var(--jaune) 50% 75%,var(--bleu) 75%)}
+.lg{position:relative;display:flex;align-items:center;gap:22px}
+.st{width:104px;flex:none;display:flex;flex-direction:column;align-items:center;gap:2px}
+.st .dd{font-family:var(--display);font-weight:800;font-size:30px;width:76px;height:76px;border-radius:50%;display:grid;place-items:center;
+  background:#fff;border:7px solid var(--ink)}
+.st .dn{font-family:var(--display);font-weight:800;font-size:17px;color:var(--muted);letter-spacing:.06em;background:#fff;padding:0 4px;border-radius:4px}
+.st.vide .dd{visibility:hidden}.st.vide .dn{visibility:hidden}
+.r{flex:1;min-width:0;border:4px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff;box-shadow:5px 5px 0 var(--ink)}
+.r .tx{padding:18px 22px}
+.r .t{font-size:31px}
+.r .q{font-size:26px;margin-top:7px}
 .pied.autres{justify-content:flex-end;gap:18px}
 .encore{font-family:var(--hand);font-size:44px;color:var(--ink);transform:rotate(-2deg)}
 .fl{font-family:var(--display);font-weight:800;font-size:48px}"""
-    lignes = "".join(
-        f'<div class="r" style="--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
-        f'<div class="t">{escape(p["e"]["titre"])}</div><div class="q"><b>{quand(p["e"])}</b> · {escape(p["e"]["lieu"])}</div></div></div>'
-        for p in s["picks"])
+    noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
+    lignes, vus = [], set()
+    for p in s["picks"]:
+        e = p["e"]
+        d = date.fromisoformat(e["date"])
+        heure = quand(e).split(" · ", 1)[1] if " · " in quand(e) else ""
+        st = (f'<div class="st{" vide" if e["date"] in vus else ""}"><span class="dd">{d.day}</span><span class="dn">{noms[d.weekday()]}</span></div>')
+        vus.add(e["date"])
+        lignes.append(f'<div class="lg">{st}<div class="r" style="display:flex;--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
+                      f'<div class="t">{escape(e["titre"])}</div><div class="q">{f"<b>{heure}</b> · " if heure else ""}{escape(e["lieu"])}</div></div></div></div>')
     return v.page(1080, 1350, f"""<div class="tete"><h1>{T("À voir <span class='hl'>cette semaine</span>", "Worth seeing <span class='hl'>this week</span>")}</h1>{marque()}</div>
-<div class="boite"><div class="sous">{_periode(s)}</div><div class="liste">{lignes}</div></div>
+<div class="sous">{_periode(s)}</div><div class="metro">{''.join(lignes)}</div>
 <div class="pied autres"><span class="encore">{T(f"Ainsi que {s['total'] - len(s['picks'])} autres sorties", f"Plus {s['total'] - len(s['picks'])} more events")}</span><span class="fl">→</span><span class="url">ccmtl.ca</span></div>""", css)
 
 
