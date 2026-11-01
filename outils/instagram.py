@@ -174,13 +174,42 @@ p{font-size:40px;line-height:1.32;font-weight:600;margin:0}
 <div class="bts"><span class="bt go">+ Proposer un événement</span><span class="bt">Partager un calendrier</span></div></div>""", css)
 
 
+def couverture_facebook():
+    """Photo de couverture Facebook (1640 × 624). Le contenu tient dans la zone centrale de 1180 px, la seule visible sur
+    téléphone ; les lignes de métro débordent sur les côtés (visibles sur ordinateur)."""
+    import re as _re
+    index = (RACINE / "docs" / "index.html").read_text(encoding="utf-8")
+    svg = _re.search(r'(<svg class="lignemap".*?</svg>)', index, flags=_re.S).group(1)
+    css = """body{position:relative;display:flex;align-items:center;justify-content:center}
+:root{--humour:#f47b20;--musique:#1b73d9;--cinema:#00a651;--cirque:#f7c300;--surface:#fff;--pop:#e4002b}
+.bande{position:absolute;left:0;right:0;bottom:0;height:26px;
+  background:linear-gradient(90deg,var(--cinema) 0 25%,var(--humour) 25% 50%,var(--cirque) 50% 75%,var(--musique) 75%)}
+.zone{position:relative;width:1180px;height:624px;display:grid;grid-template-columns:600px 1fr;align-items:center;gap:20px;
+  padding:0 30px 26px}
+.marque{font-size:40px}
+h1{font-family:var(--display);font-weight:800;font-size:80px;line-height:1.04;letter-spacing:-.035em;margin:22px 0 22px}
+.url{font-family:var(--display);font-weight:800;font-size:40px;display:inline-block;background:var(--hl);border:4px solid var(--ink);
+  border-radius:14px;padding:6px 18px;box-shadow:6px 6px 0 var(--ink)}
+.lignemap{width:100%;height:auto;display:block;overflow:visible}
+.lignemap .ln{fill:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round}
+.lignemap .stn{fill:#fff;stroke:var(--ink);stroke-width:4.5}
+.lignemap .lb{font-family:var(--body);font-weight:800;font-size:17px;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
+.lignemap .tag{font-family:var(--hand);font-size:26px;fill:var(--pop)}
+.lignemap .cnt{display:none}"""
+    return page(1640, 624, f"""<div class="bande"></div>
+<div class="zone"><div><div class="marque">calendrier culturel <b>mtl</b></div>
+<h1>Qu'est-ce qu'on fait <span class="hl">ce soir</span>&nbsp;?</h1><span class="url">ccmtl.ca</span></div>
+<div>{svg}</div></div>""", css)
+
+
 def main():
     from playwright.sync_api import sync_playwright
     SORTIE.mkdir(parents=True, exist_ok=True)
     data = json.loads((RACINE / "docs" / "data.json").read_text(encoding="utf-8"))
     sem, n = semaine(data)
     pages = {"profil": (profil(), 1080, 1080), "1-bienvenue": (bienvenue(), 1080, 1350), "2-comment": (comment(), 1080, 1350),
-             "3-semaine": (sem, 1080, 1350), "4-programmateurs": (programmateurs(), 1080, 1350)}
+             "3-semaine": (sem, 1080, 1350), "4-programmateurs": (programmateurs(), 1080, 1350),
+             "facebook-couverture": (couverture_facebook(), 1640, 624)}
     with sync_playwright() as p:
         nav = p.chromium.launch()
         for nom, (html, w, h) in pages.items():
