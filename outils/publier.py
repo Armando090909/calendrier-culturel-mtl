@@ -238,6 +238,19 @@ def threads(texte, urls, alts):
 
 
 # ---------------------------------------------------------------- Page Facebook (graph.facebook.com) : publication multi-photos
+def _jeton_page(jeton, page):
+    """Les publications de la page doivent être faites « en tant que page » : si le jeton enregistré est celui de la
+    personne (administratrice), on demande à Facebook le jeton de la page. Si c'est déjà celui de la page, il sert tel quel."""
+    try:
+        r = requests.get(f"https://graph.facebook.com/v26.0/{page}", params={"fields": "access_token", "access_token": jeton}, timeout=30)
+        if r.ok and r.json().get("access_token"):
+            return r.json()["access_token"]
+    except requests.RequestException:
+        pass
+    return jeton
+
+
+
 def facebook(texte, urls, alts):
     jeton, page = os.environ.get("FACEBOOK_JETON"), os.environ.get("FACEBOOK_PAGE_ID")
     if not jeton or not page:
@@ -245,6 +258,7 @@ def facebook(texte, urls, alts):
     base = "https://graph.facebook.com/v26.0"
     moi = requests.get(f"{base}/{page}", params={"fields": "name", "access_token": jeton}, timeout=30)
     moi.raise_for_status()
+    jeton = _jeton_page(jeton, page)
     if ESSAI:
         return "essai : connexion Facebook réussie (" + moi.json().get("name", "?") + ")"
     photos = []
@@ -268,6 +282,7 @@ def facebook_story(urls):
     base = "https://graph.facebook.com/v26.0"
     if ESSAI:
         return "essai : story Facebook possible"
+    jeton = _jeton_page(jeton, page)
     ids = []
     for url in urls:
         r = requests.post(f"{base}/{page}/photos", timeout=60, data={"url": url, "published": "false", "access_token": jeton})
