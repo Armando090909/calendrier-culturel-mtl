@@ -418,7 +418,8 @@ def slide_condense_liste(s):
     (vis-à-vis de sa sortie), et la liste dans le style « Aujourd'hui » du site (barre de couleur, titre, heure, salle)."""
     css = CSS_COMMUN + CSS_LISTE + """
 body{padding:60px 64px}
-h1{font-family:var(--display);font-weight:800;font-size:50px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
+h1{font-family:var(--display);font-weight:800;font-size:44px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
+.tete .marque{font-size:26px}
 .sous{font-family:var(--hand);font-size:36px;color:var(--pop);margin:22px 0 18px 120px}
 .metro{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-evenly;margin-bottom:30px}
 .metro::before{content:"";position:absolute;left:44px;top:40px;bottom:40px;width:16px;border-radius:9px;
@@ -434,7 +435,7 @@ h1{font-family:var(--display);font-weight:800;font-size:50px;line-height:1.05;le
 .r .t{font-size:31px}
 .r .q{font-size:26px;margin-top:7px}
 .pied.autres{justify-content:flex-end;gap:18px}
-.encore{font-family:var(--hand);font-size:44px;color:var(--ink);transform:rotate(-2deg)}
+.encore{font-family:var(--hand);font-size:38px;color:var(--ink);transform:rotate(-2deg);white-space:nowrap}
 .fl{font-family:var(--display);font-weight:800;font-size:48px}"""
     noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
     lignes, vus = [], set()
