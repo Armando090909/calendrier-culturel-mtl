@@ -169,6 +169,9 @@ function renderChips(){
   const chipExpos=nExpos?`<button type="button" class="chip chip-page" style="--c:var(--expo)" data-page="expos" data-d="expo" aria-pressed="${st.view==="musee"}"><span class="dot"></span>Expositions <span class="n">${nExpos}</span></button>`:"";
   $("chips").innerHTML=DISC.map(([k,l])=>{const n=counts[k]||0;
     return `<button type="button" class="chip" style="--c:var(--${k})" data-k="${k}" data-d="${k}" aria-pressed="${n&&st.on[k]?"true":"false"}" ${n?"":"disabled"}><span class="dot"></span>${l} <span class="n">${n||"aucun"}</span></button>`+(k==="expo"?chipExpos:"")}).join("");
+  // Sélection rapide : « tout » / « aucun » (grisé quand c'est déjà le cas)
+  const actives=DISC.filter(([k])=>counts[k]);
+  $("discTout").disabled=actives.every(([k])=>st.on[k]);$("discRien").disabled=!actives.some(([k])=>st.on[k]);
 }
 const inRange=s=>s>=D.debut&&s<=D.fin;
 function weekDays(){return [0,1,2,3,4,5,6].map(i=>addDays(st.week,i))}
@@ -473,6 +476,8 @@ $("prev").addEventListener("click",()=>step(-1));
 $("next").addEventListener("click",()=>step(1));
 $("s-time").addEventListener("click",()=>{st.sort="time";render()});
 $("s-dist").addEventListener("click",()=>{st.sort="dist";render()});
+$("discTout").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.seul=null;if(st.view==="musee")st.view="week";render()});
+$("discRien").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=false);st.seul=null;if(st.view==="musee")st.view="week";render()});
 $("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.rayon=0;render()});
 $("pt").addEventListener("change",e=>{st.pt=e.target.value;st.sort=st.pt?"dist":"time";render();if(st.pt==="addr"&&!st.custom)$("addr").focus()});
 $("rayon").addEventListener("change",e=>{st.rayon=Number(e.target.value);render()});

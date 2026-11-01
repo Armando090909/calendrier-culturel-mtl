@@ -63,6 +63,14 @@ h1 .hl::after{content:"";position:absolute;left:-4%;right:-4%;bottom:.02em;heigh
 /* ---------- Disciplines ---------- */
 .label{font-family:var(--f-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink);margin:0 0 10px;display:flex;align-items:center;gap:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
+.tousrien{margin-left:auto;display:inline-flex;align-items:center;gap:2px;font-family:var(--f-body,inherit);text-transform:none;letter-spacing:0}
+.tr{font:inherit;font-size:12.5px;font-weight:500;color:var(--muted);background:none;border:0;padding:4px 8px;border-radius:999px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:color .15s,background .15s}
+.tr:hover:not(:disabled){color:var(--ink);background:var(--paper)}
+.tr:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.tr:disabled{opacity:.35;cursor:default}
+.tr-i{width:9px;height:9px;border-radius:50%;border:1.5px solid currentColor;display:inline-block}
+.tr-i.plein{background:currentColor}
 .chip{--c:var(--autre);font:inherit;font-size:14.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
   border:2px solid var(--ink);border-radius:999px;padding:7px 14px 7px 10px;background:var(--c);color:#fff;box-shadow:2px 2px 0 var(--shadow)}
 .chip[data-d="cirque"],.chip[data-d="expo"]{color:#121212}
