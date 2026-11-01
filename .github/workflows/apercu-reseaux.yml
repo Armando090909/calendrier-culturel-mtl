@@ -1,0 +1,38 @@
+# Aperçu de la publication de la semaine (outils/faits_saillants.py), sans rien publier : outils/reseaux/apercu/
+name: Aperçu réseaux
+on:
+  push:
+    branches: [main]
+    paths: ["outils/faits_saillants.py", "outils/reseaux/demande-apercu.txt"]
+  workflow_dispatch:
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+jobs:
+  apercu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright==1.48.0 requests
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - run: python -m playwright install --with-deps chromium
+      - name: Aperçu
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          SEMAINE: ${{ vars.SEMAINE_APERCU }}
+        run: python outils/faits_saillants.py
+      - run: |
+          git config user.name "collecte-automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A outils/reseaux/apercu
+          git commit -m "Aperçu de la publication de la semaine" && { git pull --rebase -X theirs origin main; git push; } || true
