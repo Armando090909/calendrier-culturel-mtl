@@ -51,13 +51,15 @@ def appliquer(sources: list[dict]) -> list[dict]:
     """Adresses réparées et sources découvertes, ajoutées à la liste de la collecte."""
     rep = _lire(F_REP)
     for s in sources:
-        r = rep.get(s["nom"])
+        r = rep.get(s["nom"]) if not s["nom"].startswith("_") else None
         if r and r.get("url") and "{" not in s.get("url", ""):
             s["url_origine"], s["url"] = s["url"], r["url"]
             if r.get("navigateur"):
                 s["navigateur"] = True
     noms = {s["nom"] for s in sources}
     for nom, cfg in _lire(F_AUTO).items():
+        if nom.startswith("_") or not isinstance(cfg, dict):
+            continue
         if nom not in noms and cfg.get("url"):
             sources.append(dict(cfg, nom=nom, cle_source=cfg.get("cle", "salles")))
     return sources
@@ -130,18 +132,24 @@ def reparer(sources: list[dict], rapport: list[dict], page_ia, page_rendue, tele
     par_nom = {r["source"]: r for r in rapport}
     evs, series, journal = [], [], []
     essais = 0
-    for s in sources:
+    for s in sorted(sources, key=lambda s: (rep.get(s["nom"]) or {}).get("essai", "")):  # les moins récemment essayées d'abord
         r = par_nom.get(s["nom"]) or {}
         diag = " ".join(r.get("diagnostic") or []) + " " + str(r.get("erreur") or "")
         n = (r.get("evenements") or 0) + (r.get("series") or 0)
         mort = re.search(r"\b(404|410)\b", diag)
+        vides = rep.setdefault("_vides", {})
+        if n:
+            vides.pop(s["nom"], None)
+        else:
+            vides.setdefault(s["nom"], aujourd.isoformat())
         if n or s["nom"].startswith("Festival ·") or s.get("type") not in ("page_ia", "auto") or "{" in s.get("url", "") \
                 or "403" in diag or "lue depuis Montréal" in diag or not s.get("url", "").startswith("http"):
             if n and s["nom"] in rep:
                 rep[s["nom"]]["dernier_ok"] = aujourd.isoformat()
             continue
-        if not (mort or sources_ok.get(s["nom"]) or s["nom"] in rep):
-            continue  # jamais rien donné et pas d'adresse morte : sans doute rien d'annoncé (ex. lieu saisonnier)
+        longtemps = vides.get(s["nom"], "9") <= (aujourd - timedelta(days=14)).isoformat()
+        if not (mort or sources_ok.get(s["nom"]) or s["nom"] in rep or longtemps):
+            continue  # vide depuis peu et adresse vivante : on attend (programmation pas encore annoncée ?)
         dernier = (rep.get(s["nom"]) or {}).get("essai", "")
         if dernier >= (aujourd - timedelta(days=7)).isoformat() or essais >= 4:
             continue
@@ -167,6 +175,29 @@ def _agregateur(url: str) -> bool:
     return not h or any(a in h for a in AGREGATEURS)
 
 
+EXCLUS = re.compile(r"(?i)cineplex|cinema banque scotia|cinemas? guzzo|centre bell|stade|parc jean.drapeau|universit")
+
+
+def _mots(t: str) -> set[str]:
+    vides = {"de", "du", "la", "le", "les", "des", "l", "d", "et", "the", "of", "montreal", "mtl", "salle", "centre", "center",
+             "centre", "theatre", "cafe", "bar", "club", "espace", "for", "a"}
+    trad = {"canadian": "canadien", "centre": "", "arts": "art"}
+    return {trad.get(m, m) for m in plat(t).split() if m not in vides and len(m) > 1} - {""}
+
+
+def _couverte(lieu: str, couvertes: list[set[str]], sigles: set[str]) -> bool:
+    m = _mots(lieu)
+    if not m:
+        return True
+    if plat(lieu).replace(" ", "") in sigles:
+        return True
+    if len(m) == 1:  # « L'esco » = « L'Escogriffe »
+        (x,) = m
+        if len(x) >= 4 and any(len(c) == 1 and next(iter(c)).startswith(x) for c in couvertes):
+            return True
+    return any(c and (m <= c or c <= m or len(m & c) / len(m | c) >= 0.5) for c in couvertes)
+
+
 def decouvrir(events: list[dict], sources: list[dict], rapport: list[dict], page_ia, telecharger, aujourd: date,
               fin: date) -> list[str]:
     """Nouvelles sources : salles fréquentes dans les agendas, sans source propre. Une fois par semaine."""
@@ -175,6 +206,8 @@ def decouvrir(events: list[dict], sources: list[dict], rapport: list[dict], page
     par_nom = {r["source"]: r for r in rapport}
     # 1. Ménage : une source découverte qui ne donne plus rien depuis 4 semaines est retirée
     for nom, cfg in list(auto.items()):
+        if nom.startswith("_"):
+            continue
         r = par_nom.get(nom) or {}
         if (r.get("evenements") or 0) + (r.get("series") or 0):
             cfg["dernier_ok"] = aujourd.isoformat()
@@ -182,18 +215,29 @@ def decouvrir(events: list[dict], sources: list[dict], rapport: list[dict], page
             del auto[nom]
             journal.append(f"retirée (muette 4 semaines) : {nom}")
     # 2. Salles couvertes : une source les nomme, ou leurs événements viennent déjà de leur propre site
-    couvertes = {plat(s.get("lieu", "")) for s in sources if s.get("lieu")}
-    couvertes |= {plat(e["lieu"]) for e in events if not _agregateur(e.get("url", ""))}
+    noms = [s.get("lieu", "") for s in sources] + [re.sub(r"\(.*?\)|[–-].*", "", s["nom"]) for s in sources]
+    noms += [e["lieu"] for e in events if not _agregateur(e.get("url", ""))] + [c.get("lieu", "") for c in auto.values()]
+    couvertes = [_mots(n) for n in set(noms) if n]
+    sigles = {m.lower() for n in noms for m in re.findall(r"\(([A-ZÉ]{2,6})\)", n or "")}  # « (SAT) », « (CCA) »
     compte: dict[str, list[dict]] = {}
     for e in events:
-        if e["lieu"] in ("", "Lieu à confirmer") or e.get("source") in ("ville", "recurrents", "formulaire"):
+        if e["lieu"] in ("", "Lieu à confirmer") or e.get("source") in ("ville", "recurrents", "formulaire") \
+                or EXCLUS.search(plat(e["lieu"])):
             continue
-        if plat(e["lieu"]) not in couvertes:
-            compte.setdefault(e["lieu"], []).append(e)
-    deja = {plat(c.get("lieu", "")) for c in auto.values()} | {plat(c.get("lieu", "")) for c in _lire(F_AUTO).values()}
-    candidats = sorted(((l, evs) for l, evs in compte.items() if len(evs) >= 3 and plat(l) not in deja),
-                       key=lambda x: -len(x[1]))[:8]
+        compte.setdefault(e["lieu"], []).append(e)
+    essayes = auto.setdefault("_essayes", {})  # lieu -> date du dernier essai (un nouvel essai au plus tous les 28 jours)
+    limite = (aujourd - timedelta(days=28)).isoformat()
+    candidats = sorted(((l, evs) for l, evs in compte.items() if len(evs) >= 3 and not _couverte(l, couvertes, sigles)
+                        and essayes.get(l, "") < limite), key=lambda x: -len(x[1]))[:8]
+    sites: dict[str, str] = {}
+    try:
+        import ia
+        if ia.disponible():
+            sites = ia.sites_officiels([l for l, _ in candidats])
+    except Exception as exc:
+        journal.append(f"recherche des sites officiels en échec : {exc}")
     for lieu, evs in candidats:
+        essayes[lieu] = aujourd.isoformat()
         pages: list[str] = []
         for e in evs[:3]:
             url = e.get("url", "")
@@ -206,6 +250,11 @@ def decouvrir(events: list[dict], sources: list[dict], rapport: list[dict], page
             for a in BeautifulSoup(html, "html.parser").find_all("a", href=True):  # lien vers le site de la salle
                 if plat(a.get_text(" ", strip=True)) == plat(lieu) and a["href"].startswith("http") and not _agregateur(a["href"]):
                     pages.append(a["href"])
+        if sites.get(lieu) and not _agregateur(sites[lieu]):
+            try:
+                pages += [sites[lieu]] + _candidats(sites[lieu], telecharger, lambda u: "")[:4]
+            except Exception:
+                pass
         pages = [p for p in dict.fromkeys(pages) if not re.search(r"/(billets|tickets|organisateurs|creer|login)\b", p)]
         if not pages:
             journal.append(f"sans piste : {lieu} ({len(evs)} événements dans les agendas)")
