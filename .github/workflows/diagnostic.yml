@@ -1,0 +1,37 @@
+# Diagnostic de pages (outils/diag/urls.txt) : lancé quand cette liste change, résultat dans outils/diag/resultat.json.
+name: Diagnostic de pages
+on:
+  push:
+    branches: [main]
+    paths: ["outils/diag/urls.txt"]
+  workflow_dispatch:
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: collecteur/requirements.txt
+      - run: pip install -r collecteur/requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - run: python -m playwright install --with-deps chromium
+      - run: python outils/diag.py
+        env:
+          CONTACT: ${{ vars.CONTACT }}
+      - run: |
+          git config user.name "collecte-automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add outils/diag/resultat.json
+          git commit -m "Diagnostic de pages" && { git pull --rebase -X theirs origin main; git push; } || true
