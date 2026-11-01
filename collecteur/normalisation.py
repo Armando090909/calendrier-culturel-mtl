@@ -155,6 +155,7 @@ HORS_ILE = [
     "saint hyacinthe", "joliette", "rimouski", "saguenay", "mont tremblant", "magog", "st sauveur", "saint sauveur",
     "gatineau", "sherbrooke", "trois rivieres", "dix30", "place bell", "studio azrieli",
     "vancouver", "calgary", "edmonton", "winnipeg", "halifax", "pickering", "abbotsford", "mississauga", "saskatoon",
+    "lavaltrie", "berthierville", "saint jean sur richelieu", "saint jean de matha", "rawdon", "sorel", "beloeil",
     "saddledome", "peterborough", "sudbury", "oshawa", "barrie", "kitchener", "guelph", "belleville", "cornwall ontario",
 ]
 
