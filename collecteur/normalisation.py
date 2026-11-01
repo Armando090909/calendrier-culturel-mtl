@@ -431,7 +431,7 @@ def _fusion_meme_page(events: list[dict]) -> list[dict]:
             if cible is None:
                 gardes.append(e)
                 continue
-            for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi"):
+            for k in ("festival", "heure", "prix", "billets", "resume", "image", "_image_src", "aussi"):
                 if not cible.get(k) and e.get(k):
                     cible[k] = e[k]
         out += gardes
@@ -450,7 +450,7 @@ def dedoublonner(events: list[dict]) -> list[dict]:
                 if mieux:
                     garde[i], e = e, old
                 # On garde ce que l'autre version savait de plus (festival, heure, salle, prix, billets…)
-                for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi", "style"):
+                for k in ("festival", "heure", "prix", "billets", "resume", "image", "_image_src", "aussi", "style"):
                     if not garde[i].get(k) and e.get(k):
                         garde[i][k] = e[k]
                 if plat(garde[i].get("lieu", "")) == "lieu a confirmer" and plat(e.get("lieu", "")) != "lieu a confirmer":
@@ -474,7 +474,7 @@ def dedoublonner(events: list[dict]) -> list[dict]:
         if plat(e["lieu"]) == "lieu a confirmer" and e.get("source") != "ville":
             autre = next((x for x in par_jour.get(e["date"], []) if _meme_titre_strict(e, x)), None)
             if autre:
-                for k in ("prix", "billets", "resume", "image", "aussi"):
+                for k in ("prix", "billets", "resume", "image", "_image_src", "aussi"):
                     if not autre.get(k) and e.get(k):
                         autre[k] = e[k]
                 continue
@@ -608,7 +608,7 @@ def doublons_du_jour(events: list[dict]) -> tuple[list[dict], list[str]]:
                 # On garde la meilleure fiche : salle connue, heure connue, source la plus fiable
                 rang = lambda e: (inconnu(e), not e.get("heure"), PRIORITE.get(e.get("source", ""), 9))  # noqa: E731
                 garde, enleve = (a, b) if rang(a) <= rang(b) else (b, a)
-                for k in ("festival", "heure", "prix", "billets", "resume", "image", "aussi", "affiche", "liens"):
+                for k in ("festival", "heure", "prix", "billets", "resume", "image", "_image_src", "aussi", "affiche", "liens"):
                     if not garde.get(k) and enleve.get(k):
                         garde[k] = enleve[k]
                 retires.add(id(enleve))

@@ -72,6 +72,8 @@ def details(b: dict) -> dict:
         out["billets"] = b["billets"]
     if b.get("image", "").startswith("http") and src in {"formulaire", "calendrier"}:
         out["image"] = b["image"]  # photos seulement quand la salle les fournit elle-même
+    elif b.get("image", "").startswith("https://"):
+        out["_image_src"] = b["image"]  # image des données structurées (ex. photo de l'artiste) : dernier recours, vérifiée
     return out
 
 
@@ -638,13 +640,15 @@ def main() -> int:
             e["_artistes"] = memo_a[plat(e["titre"])]
     print(f"Artistes : {sum(1 for e in concerts if e.get('_artistes'))} concerts avec des noms d'artistes extraits.")
     try:
-        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)))
+        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
+                                 page_rendue=connecteurs.page_rendue)
         print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
     for e in events:
         e.pop("_artistes", None)
         e.pop("_autres_urls", None)
+        e.pop("_image_src", None)
     sauver_memoire(aujourd)
 
     # ---- Garde-fou : une collecte anormalement maigre ne remplace pas la précédente

@@ -64,11 +64,12 @@ def _correspond(nom: str, texte: str) -> bool:
     return len(n) >= 4 and n in t
 
 
-def depuis_page(html: str, page_url: str, noms: list[str]) -> list[dict]:
-    """Lecteurs intégrés (iframes) et liens nommés vers les plateformes, sur la page de l'événement."""
+def depuis_page(html: str, page_url: str, noms: list[str], lecteurs: bool = True) -> list[dict]:
+    """Lecteurs intégrés (iframes) et liens nommés vers les plateformes, sur la page de l'événement.
+    lecteurs=False : page partagée par plusieurs spectacles, ses lecteurs intégrés ne sont pas forcément les bons."""
     soupe = BeautifulSoup(html, "html.parser")
     liens = []
-    for f in soupe.find_all("iframe", src=True):
+    for f in (soupe.find_all("iframe", src=True) if lecteurs else []):
         src = urljoin(page_url, f["src"])
         t = type_lien(src)
         if t:
@@ -130,6 +131,57 @@ def affiche_page(html: str, page_url: str) -> dict | None:
     if not src.startswith("https://") or re.search(r"(logo|favicon|placeholder|default[-_]?(share|og)|sprite)", src, re.I):
         return None
     return {"url": src, "credit": urlparse(page_url).netloc.replace("www.", ""), "lien": page_url}
+
+
+_PAS_AFFICHE = re.compile(r"(?i)(logo|favicon|icon|sprite|badge|pixel|placeholder|partenaire|partner|commanditaire|sponsor|"
+                         r"donateur|facebook\.com/tr|googletagmanager|google-analytics|maps\.google|doubleclick|\.svg|^data:|/w_\d{1,2},|[-_x]\d{2}x\d{2}\.|arrow|loader)")
+MOTS_VIDES_IMG = {"avec", "pour", "dans", "show", "soiree", "concert", "spectacle", "lancement", "montreal", "presente",
+                  "presents", "with", "from", "night", "edition", "tournee", "tour", "live", "hommage", "festival"}
+
+
+def images_page(html: str, page_url: str) -> list[tuple[str, str]]:
+    """Images de contenu de la page (adresse, texte alternatif), sans logos, icônes ni pixels de suivi."""
+    out = []
+    for i in BeautifulSoup(html, "html.parser").find_all("img"):
+        src = i.get("src") or i.get("data-src") or (i.get("srcset") or "").split(" ")[0]
+        if not src or _PAS_AFFICHE.search(src):
+            continue
+        src = urljoin(page_url, src.strip())
+        if src.startswith("http://"):
+            src = "https://" + src[7:]
+        if src.startswith("https://") and src not in [o[0] for o in out]:
+            out.append((src, (i.get("alt") or "").strip()))
+    return out
+
+
+def _nom_fichier(src: str) -> str:
+    """« …/1792351291TracyTrashShow-261101.jpg » → « tracy trash show 261101 jpg » (aussi pour les images /_next/image)."""
+    from urllib.parse import unquote
+    u = unquote(unquote(src))
+    m = re.search(r"[?&]url=([^&]+)", u)
+    chemin = urlparse(m.group(1) if m else u).path.rsplit("/", 1)[-1] or urlparse(u).path
+    chemin = re.sub(r"([a-zà-ÿ])([A-ZÀ-Ý])", r"\1 \2", chemin)  # TracyTrashShow → Tracy Trash Show
+    return plat(chemin)
+
+
+def image_du_titre(titre: str, noms: list[str], imgs: list[tuple[str, str]], seul: bool) -> str | None:
+    """L'image qui porte le titre du spectacle : texte alternatif = titre (FestApp, Le Point de vente…), ou nom de fichier
+    qui contient le titre ou l'artiste (« FullGisele », « LMC_OISEAU »). Sans correspondance, une page consacrée à un seul
+    spectacle qui n'a qu'une image de contenu : c'est la sienne. Sinon rien."""
+    t = plat(titre)
+    mots = [w for w in t.split() if len(w) >= 4 and w not in MOTS_VIDES_IMG]
+    for src, alt in imgs:
+        a, f = plat(alt), _nom_fichier(src)
+        if a and (a == t or (len(t) >= 6 and t in a) or (len(a) >= 8 and a in t and len(a) >= 0.6 * len(t))):
+            return src
+        fs = f.replace(" ", "")
+        if any(len(plat(n)) >= 5 and (plat(n) in a or plat(n).replace(" ", "") in fs) for n in noms):
+            return src
+        if (len(mots) >= 2 and all(w in fs for w in mots[:3])) or (len(mots) == 1 and len(mots[0]) >= 5 and mots[0] in f.split()):
+            return src
+    if seul and len(imgs) == 1:
+        return imgs[0][0]
+    return None
 
 
 _GRATUIT = re.compile(r"(?i)\b(gratuit|entr[ée]e libre|admission gratuite|free admission|free entry|entr[ée]e gratuite)\b")
@@ -310,7 +362,8 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     cle = os.environ.get("TMDB_API_KEY")
     if not cle:
         return []
-    titre = re.sub(r"\(.*?\)|^(gala[^:]*|projection)\s*:\s*", "", titre, flags=re.I).strip()
+    titre = re.sub(r"\(.*?\)|^(gala[^:]*|projection(?:[- ]discussion)?|cin[ée][- ]?(?:club|r[ée]pertoire|parc|famille)"
+                   r"|soir[ée]e[^:]*|avant[- ]premi[èe]re)\s*:\s*", "", titre, flags=re.I).strip()
     r = get_json(f"https://api.themoviedb.org/3/search/movie?api_key={cle}&language=fr-CA&query={quote(titre)}") or {}
     films = [f for f in r.get("results", []) if plat(f.get("title", "")) == plat(titre) or plat(f.get("original_title", "")) == plat(titre)]
     if len(films) > 1:
@@ -336,7 +389,8 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
     return out
 
 
-def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 1200) -> int:
+def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 1200,
+             page_rendue=None) -> int:
     """Ajoute e["liens"] (écouter, bande-annonce) et e["affiche"] (image de la page officielle). Renvoie le nombre
     d'événements enrichis. Chaque page et chaque artiste ne sont lus qu'une fois (mémoire)."""
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
@@ -345,6 +399,12 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     fin_budget = time.time() + 25 * 60  # au plus 25 minutes par collecte ; la suite reprend le lendemain
     vieux = (aujourd - timedelta(days=30)).isoformat()
     lues_affiche, fin_affiches = 0, time.time() + 20 * 60  # affiches, billets et prix : au plus 20 minutes
+    rendues = 0
+    # Titres servis par chaque page (une page de programmation sert à plusieurs spectacles)
+    titres_page: dict[str, dict] = {}
+    for e in events:
+        for u in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
+            titres_page.setdefault(u, {})[plat(e["titre"])[:40]] = (e["titre"], e.get("_artistes") or noms_artistes(e["titre"]))
     for e in events:
       # la page de l'événement, puis celles des doublons fusionnés (ex. Songkick + site de la salle)
       for url in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
@@ -352,14 +412,30 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         # 1. Affiche : l'image de partage de la page de l'événement (site de la salle, du festival, ou agenda).
         if url.startswith("http") and "facebook.com" not in url:
             pm = memo.get("page:" + url)
-            if (not pm or "prix" not in pm or (not pm.get("affiche") and pm["le"] < vieux)) and lues_affiche < max_affiches and time.time() < fin_affiches:
+            # (v2 : images portant le titre, lecture dans le navigateur ; une relecture des pages lues avant)
+            if (not pm or "prix" not in pm or (not pm.get("affiche") and (pm["le"] < vieux or not pm.get("v2")))) \
+                    and lues_affiche < max_affiches and time.time() < fin_affiches:
                 lues_affiche += 1
                 try:
-                    html = telecharger(url, "text/html").text
-                    pm = memo["page:" + url] = {"affiche": affiche_page(html, url), "billets": billets_page(html, url),
-                                                "prix": prix_page(html), "le": aujourd.isoformat()}
+                    try:
+                        html = telecharger(url, "text/html").text
+                    except Exception:
+                        html = ""  # refusée (403) : le navigateur peut l'afficher
+                    imgs = images_page(html, url)
+                    if page_rendue and rendues < 80 and not affiche_page(html, url) and not imgs \
+                            and urlparse(url).path not in ("", "/"):
+                        rendues += 1
+                        html = page_rendue(url)
+                        imgs = images_page(html, url)
+                    ts = titres_page.get(url, {})
+                    par_titre = {k: im for k, (t, noms) in ts.items()
+                                 if (im := image_du_titre(t, noms, imgs, len(ts) == 1 and urlparse(url).path not in ("", "/")))}
+                    pm = memo["page:" + url] = {"affiche": affiche_page(html, url) if html else None,
+                                                "billets": billets_page(html, url) if html else None,
+                                                "prix": prix_page(html) if html else None, "par_titre": par_titre,
+                                                "le": aujourd.isoformat(), "v2": 1}
                 except Exception:
-                    pm = memo["page:" + url] = {"affiche": None, "billets": None, "prix": None, "le": aujourd.isoformat()}
+                    pm = memo["page:" + url] = {"affiche": None, "billets": None, "prix": None, "le": aujourd.isoformat(), "v2": 1}
     fin_budget = time.time() + 30 * 60  # liens d'écoute : au plus 30 minutes
     # Une même image pour 3 spectacles différents ou plus, c'est un logo, une image par défaut ou la carte du festival :
     # on l'écarte. (Compté par titre, pas par page : une page de programmation sert à des dizaines de spectacles.)
@@ -380,11 +456,30 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image") and not e.get("affiche") \
                 and "og.festapp.io" not in pm["affiche"]["url"]:
             e["affiche"] = dict(pm["affiche"], **agrandir(pm["affiche"]["url"]))
+        # Image de la page qui porte le titre du spectacle (FestApp, billetteries, sites sans image de partage)
+        im = (pm or {}).get("par_titre", {}).get(plat(e["titre"])[:40])
+        if im and not e.get("image") and not e.get("affiche"):
+            e["affiche"] = {"credit": urlparse(u).netloc.replace("www.", ""), "lien": u, **agrandir(im)}
         if pm and pm.get("billets") and not e.get("billets") and freq_b[pm["billets"]] < 25:
             e["billets"] = pm["billets"]
         # prix : seulement si la page est celle d'un seul spectacle (pas une page de programmation partagée)
         if pm and pm.get("prix") and not e.get("prix") and len(titres_par_page.get(u, ())) < 3:
             e["prix"] = pm["prix"]
+    import requests
+    for e in events:
+        src = e.get("_image_src")
+        if not src or e.get("affiche") or e.get("image") or freq.get(src, 0) >= 3:
+            continue
+        cle = "img:" + src
+        if cle not in memo:
+            try:
+                r = requests.get(src, timeout=20, stream=True, headers={"User-Agent": "CalendrierCulturelMTL/1.0 (+https://ccmtl.ca)"})
+                taille = len(r.raw.read(4096, decode_content=True)) if r.ok else 0
+                memo[cle] = taille >= 4096  # image par défaut de Songkick : environ 130 octets
+            except Exception:
+                continue
+        if memo[cle]:
+            e["affiche"] = {"url": src, "credit": urlparse(e["url"]).netloc.replace("www.", ""), "lien": e["url"]}
     for e in events:
         url = e.get("url", "")
         html = None
@@ -399,22 +494,32 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
             continue
         cle = ("film:" if film else "mus:") + "|".join(plat(x) for x in noms)
         m = memo.get(cle)
-        frais = m and (m["liens"] or m["le"] >= vieux)
+        frais = m and (m["liens"] or (m["le"] >= vieux and m.get("v2")))  # v2 : billetterie, cinéaste retiré
         if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
             try:
                 # La page de l'événement, même sur un agenda (Sors-tu?, ma.to…) : seuls les liens qui portent
                 # le nom de l'artiste sont gardés.
-                if url.startswith("http") and "songkick.com" not in url:
-                    html = html or telecharger(url, "text/html").text
-                    liens += depuis_page(html, url, noms)
+                for u2 in [url] + (e.get("_autres_urls") or [])[:2] + ([e["billets"]] if str(e.get("billets", "")).startswith("http") else []):
+                    if u2.startswith("http") and "songkick.com" not in u2 and len(liens) < 4:
+                        try:
+                            seul = len(titres_page.get(u2, {})) <= 1 and urlparse(u2).path not in ("", "/")
+                            liens += depuis_page(telecharger(u2, "text/html").text, u2, noms, lecteurs=seul)
+                        except Exception:
+                            pass
             except Exception:
                 pass
             try:
                 if film:
                     if not any(l["type"] in ("youtube", "vimeo") for l in liens):
-                        liens += bande_annonce_tmdb(noms[0], aujourd.year, ua_json)
+                        trouves = bande_annonce_tmdb(noms[0], aujourd.year, ua_json)
+                        # « Soundtrack to a Coup d'État de Johan Grimonprez », « Mille secrets, mille dangers - Philippe
+                        # Falardeau » : sans résultat, on retire le nom du cinéaste (2 ou 3 mots à majuscule en fin de titre)
+                        court = re.sub(r"\s+(?:de|by|[-–—])\s+(?:[A-ZÉ][\w'’.-]+\s?){2,3}$", "", noms[0]).strip()
+                        if not trouves and court != noms[0] and len(court) >= 4:
+                            trouves = bande_annonce_tmdb(court, aujourd.year, ua_json)
+                        liens += trouves
                 else:
                     for nom in noms:
                         if not any(l.get("nom") == nom for l in liens):
@@ -434,7 +539,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
-            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat()}
+            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v2": 1}
         if m and m["liens"]:
             aff = [l for l in m["liens"] if l["type"] == "affiche"]
             if aff and not e.get("affiche") and not e.get("image"):
