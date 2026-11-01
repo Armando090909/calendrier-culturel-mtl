@@ -643,6 +643,8 @@ def main() -> int:
         n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
                                  page_rendue=connecteurs.page_rendue)
         print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
+        # Décisions Deezer / Apple Music (indices pour et contre) : dans le rapport, pour contrôle
+        notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
     for e in events:

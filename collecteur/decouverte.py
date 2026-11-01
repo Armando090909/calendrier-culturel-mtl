@@ -27,6 +27,7 @@ from bs4 import BeautifulSoup
 from normalisation import plat
 
 MEMOIRE = Path(__file__).parent / "cache" / "decouverte.json"
+JOURNAL_CATALOGUES: list = []  # décisions Deezer / Apple Music de la collecte (indices pour et contre), pour le rapport
 SITES = {"bandcamp.com": "bandcamp", "open.spotify.com": "spotify", "music.apple.com": "apple",
          "soundcloud.com": "soundcloud", "youtube.com": "youtube", "youtu.be": "youtube", "vimeo.com": "vimeo"}
 GENERIQUES = {"lancement", "double", "invites", "invitees", "invite", "guests", "dj", "set", "soiree", "concert", "show",
@@ -344,36 +345,142 @@ def _nom_assez_distinctif(nom: str) -> bool:
     return bool(mots) and (len(mots) >= 2 and len("".join(mots)) >= 6 or (len(mots) == 1 and len(mots[0]) >= 6))
 
 
-def deezer(nom: str, get_json) -> list[dict]:
-    """Catalogue Deezer (recherche publique, sans compte ni clé). Règle stricte : nom identique, UN SEUL artiste de ce nom
-    dans le catalogue, avec au moins un album ; sinon on s'abstient."""
-    if not _nom_assez_distinctif(nom):
-        return []
-    r = get_json(f"https://api.deezer.com/search/artist?q={quote(nom)}&limit=25") or {}
-    cands = [a for a in r.get("data", []) if plat(a.get("name", "")) == plat(nom)]
-    if len(cands) != 1 or not cands[0].get("nb_album") or not str(cands[0].get("link", "")).startswith("https://"):
-        return []
-    return [{"type": "deezer", "url": cands[0]["link"], "source": "deezer", "nom": cands[0]["name"]}]
+# ---- Catalogues Deezer et Apple Music : un nom identique ne suffit pas, il faut un indice qui confirme ----
+ETIQUETTES_QC_CA = ["bonsound", "audiogram", "simone records", "secret city", "constellation", "arbutus", "dare to care",
+                    "grosse boite", "spectra musique", "musicor", "analekta", "atma classique", "justin time", "effendi",
+                    "l abe", "coyote records", "indica", "lisbon lux", "mothland", "arts crafts", "art crafts", "royal mountain",
+                    "last gang", "dine alone", "bravo musique", "la tribu", "117 records", "ambiances magnetiques", "dame",
+                    "joy ride records", "7ieme ciel", "duprince", "grosse boîte", "productions j", "disques 7ieme ciel",
+                    "label cinq7", "cinq7", "outside music", "maple music", "paper bag records", "hidden pony", "six shooter",
+                    "next door records", "ste 4", "sainte 4", "disques victoire", "le pantheon", "ad litteram",
+                    "costume records", "montreal", "quebec", ]
+COMPATIBLES = {"rock": {"rock", "metal", "pop", "folk", "experimental"}, "pop": {"pop", "rock", "folk", "hiphop", "electro", "monde"},
+               "hiphop": {"hiphop", "pop", "electro"}, "electro": {"electro", "hiphop", "pop", "experimental"},
+               "jazz": {"jazz", "monde", "classique", "experimental", "folk"}, "classique": {"classique", "jazz", "experimental"},
+               "monde": {"monde", "jazz", "pop", "folk", "hiphop"}, "folk": {"folk", "pop", "rock", "monde"},
+               "metal": {"metal", "rock", "experimental"}, "experimental": {"experimental", "electro", "jazz", "classique", "rock", "metal"}}
+_TITRES_VIDES = {"live", "remixes", "remix", "demo", "demos", "intro", "outro", "untitled", "greatest hits", "best of", "single"}
+
+
+def _nom_assez_distinctif(nom: str) -> bool:
+    """Un nom court ou d'un seul mot courant (« Kim », « Moon ») a trop d'homonymes : on ne cherche pas dans les catalogues."""
+    mots = plat(nom).split()
+    return bool(mots) and (len(mots) >= 2 and len("".join(mots)) >= 6 or (len(mots) == 1 and len(mots[0]) >= 6))
+
+
+def _titre_oeuvre(t: str) -> str:
+    return plat(re.sub(r"\(.*?\)|\[.*?\]|\s-\s(ep|single|deluxe.*)$", "", t or "", flags=re.I))
 
 
 _ITUNES_DERNIER = [0.0]
 
 
-def apple(nom: str, get_json) -> list[dict]:
-    """Catalogue Apple Music (iTunes Search API, publique, sans compte ni clé ; environ 20 recherches par minute).
-    Même règle : nom identique et un seul artiste de ce nom, sinon on s'abstient."""
-    if not _nom_assez_distinctif(nom):
-        return []
-    attente = 3.2 - (time.time() - _ITUNES_DERNIER[0])
-    if attente > 0:
-        time.sleep(attente)
-    _ITUNES_DERNIER[0] = time.time()
-    r = get_json(f"https://itunes.apple.com/search?term={quote(nom)}&entity=musicArtist&country=CA&limit=25") or {}
+def _fiche_deezer(nom: str, get_json) -> dict | None:
+    r = get_json(f"https://api.deezer.com/search/artist?q={quote(nom)}&limit=25") or {}
+    cands = [a for a in r.get("data", []) if plat(a.get("name", "")) == plat(nom)]
+    if len(cands) != 1 or not cands[0].get("nb_album") or not str(cands[0].get("link", "")).startswith("https://"):
+        return None
+    a = cands[0]
+    albums = (get_json(f"https://api.deezer.com/artist/{a['id']}/albums?limit=50") or {}).get("data", [])
+    fiche = {"lien": {"type": "deezer", "url": a["link"], "source": "deezer", "nom": a["name"]},
+             "oeuvres": {_titre_oeuvre(x.get("title", "")) for x in albums}, "dates": [x.get("release_date", "") for x in albums],
+             "genres": [], "etiquettes": []}
+    for x in sorted(albums, key=lambda x: x.get("release_date", ""), reverse=True)[:3]:  # étiquette et genres des 3 derniers
+        al = get_json(f"https://api.deezer.com/album/{x['id']}") or {}
+        fiche["etiquettes"].append(al.get("label", ""))
+        fiche["genres"] += [g.get("name", "") for g in (al.get("genres") or {}).get("data", [])]
+    return fiche
+
+
+def _fiche_apple(nom: str, get_json) -> dict | None:
+    def appel(url):
+        attente = 3.2 - (time.time() - _ITUNES_DERNIER[0])  # Apple : environ 20 recherches par minute
+        if attente > 0:
+            time.sleep(attente)
+        _ITUNES_DERNIER[0] = time.time()
+        return get_json(url) or {}
+    r = appel(f"https://itunes.apple.com/search?term={quote(nom)}&entity=musicArtist&country=CA&limit=25")
     cands = [a for a in r.get("results", []) if plat(a.get("artistName", "")) == plat(nom)]
     if len(cands) != 1 or not str(cands[0].get("artistLinkUrl", "")).startswith("https://"):
+        return None
+    a = cands[0]
+    albums = [x for x in appel(f"https://itunes.apple.com/lookup?id={a['artistId']}&entity=album&limit=50&country=CA").get("results", [])
+              if x.get("wrapperType") == "collection"]
+    return {"lien": {"type": "apple", "url": a["artistLinkUrl"].split("?")[0], "source": "itunes", "nom": a["artistName"]},
+            "oeuvres": {_titre_oeuvre(x.get("collectionName", "")) for x in albums},
+            "dates": [x.get("releaseDate", "")[:10] for x in albums],
+            "genres": [a.get("primaryGenreName", "")] + [x.get("primaryGenreName", "") for x in albums[:5]],
+            "etiquettes": [x.get("copyright", "") for x in albums[:5]]}
+
+
+def _indices(fiche: dict, nom: str, ctx: dict) -> tuple[list[str], list[str]]:
+    """(indices qui confirment, indices qui contredisent) pour une fiche de catalogue et le contexte de la soirée."""
+    pour, contre = [], []
+    texte = " " + ctx.get("texte", "") + " "
+    oeuvres = {o for o in fiche["oeuvres"] if len(o) >= 5 and o != plat(nom) and o not in _TITRES_VIDES}
+    vues = [o for o in oeuvres if f" {o} " in texte]
+    if vues:
+        pour.append("album nommé sur la page : " + vues[0])
+    etiq = " ".join(plat(x) for x in fiche["etiquettes"])
+    qc = [l for l in ETIQUETTES_QC_CA if re.search(rf"\b{re.escape(plat(l))}\b", etiq)]
+    if qc:
+        pour.append("maison de disques : " + qc[0])
+    styles = {st for g in fiche["genres"] if g and (st := style_genre(g))}
+    if ctx.get("style") and styles:
+        if ctx["style"] in styles:
+            pour.append("genre concordant : " + ctx["style"])
+        elif not any(st in COMPATIBLES.get(ctx["style"], {ctx["style"]}) for st in styles):
+            contre.append(f"genre {'/'.join(sorted(styles))} ≠ {ctx['style']}")
+    if ctx.get("lancement") and ctx.get("date"):
+        d0 = date.fromisoformat(ctx["date"])
+        if any(d and abs((date.fromisoformat(d[:10]) - d0).days) <= 120 for d in fiche["dates"] if re.match(r"\d{4}-\d{2}-\d{2}", d or "")):
+            pour.append("album sorti autour du lancement")
+    return pour, contre
+
+
+GENRES_CATALOGUE = [("metal", r"metal|punk|hardcore|grind"), ("classique", r"classi|opera|baroque|orchestr|choral"),
+                    ("jazz", r"jazz|blues|swing"), ("hiphop", r"hip.?hop|rap|r ?b|soul|funk|trap"),
+                    ("electro", r"electr|dance|house|techno|dubstep|drum|trance|ambient|edm|disco"),
+                    ("monde", r"world|afri|latin|reggae|brazil|arab|cumbia|salsa|kompa|zouk|celtic|bollywood|tango|flamenco"),
+                    ("folk", r"folk|country|bluegrass|americana|singer|songwriter|auteur"),
+                    ("experimental", r"experiment|avant|noise|improv|electroacoust"),
+                    ("rock", r"rock|alternati|indie|grunge|garage|shoegaze|emo"), ("pop", r"pop|variet|chanson|francophon|easy")]
+
+
+def style_genre(genre: str) -> str | None:
+    """Genre d'un catalogue (« Alternative », « R&B/Soul », « Classique ») → style du calendrier, ou None (bande sonore…)."""
+    g = plat(genre)
+    for st, motif in GENRES_CATALOGUE:
+        if re.search(motif, g):
+            return st
+    return None
+
+
+def catalogues(nom: str, ctx: dict, get_json, journal: list | None = None) -> list[dict]:
+    """Liens Deezer et Apple Music d'un artiste, seulement si : nom distinctif et identique, un seul artiste de ce nom dans
+    le catalogue, aucun indice contraire (genre incompatible avec la soirée), et au moins un indice qui confirme
+    (album ou chanson nommé sur la page, maison de disques québécoise ou canadienne, genre concordant, album sorti autour
+    d'un lancement). Un catalogue confirmé confirme l'autre s'ils ont un album en commun (même artiste)."""
+    if not _nom_assez_distinctif(nom):
         return []
-    url = cands[0]["artistLinkUrl"].split("?")[0].replace("itunes.apple.com", "music.apple.com")
-    return [{"type": "apple", "url": url, "source": "itunes", "nom": cands[0]["artistName"]}]
+    fiches = {}
+    for cle, f in (("deezer", _fiche_deezer), ("apple", _fiche_apple)):
+        try:
+            fiches[cle] = f(nom, get_json)
+        except Exception as exc:
+            print(f"  {cle} « {nom[:30]} » : {exc}")
+    fiches = {k: v for k, v in fiches.items() if v}
+    ok = {}
+    for k, f in fiches.items():
+        pour, contre = _indices(f, nom, ctx)
+        ok[k] = (bool(pour) and not contre, pour, contre)
+    if len(fiches) == 2:  # même artiste dans les deux catalogues : la confirmation de l'un vaut pour l'autre
+        communs = {o for o in fiches["deezer"]["oeuvres"] & fiches["apple"]["oeuvres"] if len(o) >= 4}
+        if communs and not ok["deezer"][2] and not ok["apple"][2] and (ok["deezer"][0] or ok["apple"][0]):
+            ok = {k: (True, v[1] or ["même artiste que l'autre catalogue"], v[2]) for k, v in ok.items()}
+    if journal is not None:
+        journal.append({"nom": nom, **{k: {"ok": v[0], "pour": v[1], "contre": v[2]} for k, v in ok.items()}})
+    return [fiches[k]["lien"] for k, v in ok.items() if v[0]]
 
 
 def bandcamp(nom: str, get_html) -> list[dict]:
@@ -536,6 +643,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
+            contexte = plat(e["titre"] + " " + e.get("resume", ""))
             try:
                 # La page de l'événement, même sur un agenda (Sors-tu?, ma.to…) : seuls les liens qui portent
                 # le nom de l'artiste sont gardés.
@@ -543,7 +651,10 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                     if u2.startswith("http") and "songkick.com" not in u2 and len(liens) < 4:
                         try:
                             seul = len(titres_page.get(u2, {})) <= 1 and urlparse(u2).path not in ("", "/")
-                            liens += depuis_page(telecharger(u2, "text/html").text, u2, noms, lecteurs=seul)
+                            h2 = telecharger(u2, "text/html").text
+                            liens += depuis_page(h2, u2, noms, lecteurs=seul)
+                            if seul:  # texte d'une page consacrée au spectacle : sert à confirmer un artiste de catalogue
+                                contexte += " " + plat(BeautifulSoup(h2, "html.parser").get_text(" "))[:20000]
                         except Exception:
                             pass
             except Exception:
@@ -573,18 +684,13 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                                 liens += spotify(nom)
                             except Exception as exc:
                                 print(f"  Spotify « {nom[:30]} » : {exc}")
-                        # Catalogues Deezer et Apple Music : seulement si rien de vérifié n'a été trouvé pour ce nom
+                        # Catalogues Deezer et Apple Music : seulement si rien de vérifié n'a été trouvé pour ce nom,
+                        # et seulement avec un indice qui confirme (voir catalogues())
                         if not any(plat(l.get("nom", "")) == plat(nom) or l["source"] == "page" for l in liens):
-                            trouves = []
-                            for cherche in (deezer, apple):
-                                try:
-                                    trouves.append(cherche(nom, ua_json))
-                                except Exception as exc:
-                                    trouves.append([])
-                                    print(f"  {cherche.__name__} « {nom[:30]} » : {exc}")
-                            # Nom d'un seul mot (« headache ») : les deux catalogues doivent le trouver, sinon on s'abstient
-                            if len(plat(nom).split()) > 1 or all(trouves):
-                                liens += [l for t in trouves for l in t]
+                            liens += catalogues(nom, {"texte": contexte, "style": e.get("style"), "date": e.get("date"),
+                                                      "lancement": bool(re.search(r"(?i)lancement|album release|release show",
+                                                                                  e["titre"] + " " + e.get("resume", "")))},
+                                                ua_json, JOURNAL_CATALOGUES)
                         # Recherche Bandcamp retirée (31 oct. 2026) : le robots.txt de Bandcamp demande de ne pas lire ses
                         # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
