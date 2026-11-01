@@ -284,11 +284,11 @@ def _alts(s, jpgs):
             out.append(f"{fs.nom_disc(p['k'])} : {p['e']['titre']}, {fs.quand(p['e'])}, {p['e']['lieu']}. {acc}".strip())
             continue
         titres = " · ".join(f"{p['e']['titre']} ({fs.quand(p['e'])}, {p['e']['lieu']})" for p in s["picks"])
-        out.append({"couverture": fs.T(f"Qu'est-ce qu'on fait cette semaine ? Coups de cœur {fs._periode(s)}, ccmtl.ca",
-                                       f"What's on in Montréal this week? Picks for {fs._periode(s)}, ccmtl.ca"),
+        out.append({"couverture": fs.T(f"Qu'est-ce qu'on fait cette semaine ? La sélection {fs._periode(s)}, ccmtl.ca",
+                                       f"What's on in Montréal this week? This week's selection, {fs._periode(s)}, ccmtl.ca"),
                     "festivals": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"]),
                     "salle": fs.T("La salle de la semaine : ", "Venue of the week: ") + (s["salle"]["lieu"] if s["salle"] else ""),
-                    "coups-de-coeur": fs.T("Nos coups de cœur : ", "Our picks: ") + titres,
+                    "a-voir": fs.T("À voir cette semaine : ", "Worth seeing this week: ") + titres,
                     "festivals-salle": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"])
                     + (" · " + fs.T("La salle de la semaine : ", "Venue of the week: ") + s["salle"]["lieu"] if s["salle"] else ""),
                     "fin": f"{s['total']} · ccmtl.ca"}.get(nom, "ccmtl.ca")[:1000])

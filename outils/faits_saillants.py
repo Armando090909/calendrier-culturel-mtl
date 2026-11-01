@@ -1,7 +1,7 @@
-"""Faits saillants de la semaine pour les réseaux : un coup de cœur par discipline, les festivals en cours ou à venir,
+"""Faits saillants de la semaine pour les réseaux : une sortie à voir par discipline, les festivals en cours ou à venir,
 et une salle mise en vedette (différente chaque semaine). Produit un carrousel d'images (1080 × 1350) et les textes.
 
-Choix des coups de cœur : les fiches complètes (affiche, heure, salle, résumé) d'abord, en soirée ou en fin de
+Choix des sorties à voir : les fiches complètes (affiche, heure, salle, résumé) d'abord, en soirée ou en fin de
 semaine, jamais complètes, une salle différente pour chacune ; parmi les meilleures, Claude choisit celle qui intéresse
 le plus large public montréalais et écrit une phrase d'accroche tirée UNIQUEMENT du résumé de la fiche (rien d'inventé).
 Sans clé d'IA : le meilleur score l'emporte et l'accroche est le début du résumé.
@@ -43,6 +43,10 @@ LANGUE = "fr"  # « fr » ou « en » : langue des visuels et des textes (les ti
 
 def T(fr, en):
     return en if LANGUE == "en" else fr
+
+
+def marque():
+    return T('<div class="marque">calendrier culturel <b>mtl</b></div>', '<div class="marque">montreal\'s cultural <b>calendar</b></div>')
 
 
 def nom_disc(k):
@@ -273,11 +277,11 @@ h1{font-family:var(--display);font-weight:800;font-size:96px;line-height:1.06;le
 .menu div{display:flex;align-items:center;gap:22px;font-size:40px;font-weight:700}
 .menu .stn{width:46px;height:46px;border-width:11px;flex:none}
 .glisse{font-family:var(--display);font-weight:800;font-size:34px}"""
-    lignes = [T(f"{len(s['picks'])} coups de cœur", f"{len(s['picks'])} picks")] \
+    lignes = [T(f"{len(s['picks'])} sorties à voir", f"{len(s['picks'])} must-sees")] \
         + ([T("Les festivals", "Festivals")] if s["festivals"] else []) \
         + ([T("La salle de la semaine", "Venue of the week")] if s["salle"] else []) \
         + [T(f"{s['total']} sorties en tout", f"{s['total']} events in all")]
-    return v.page(1080, 1350, f"""<div class="tete"><div class="marque">calendrier culturel <b>mtl</b></div></div>
+    return v.page(1080, 1350, f"""<div class="tete">{marque()}</div>
 {T("<h1>Qu'est-ce<br>qu'on fait<br><span class='hl'>cette semaine</span>&nbsp;?</h1>", "<h1>What's on<br>in Montréal<br><span class='hl'>this week</span>?</h1>")}<div class="dates">{_periode(s)}</div>
 <div class="menu">{''.join(f'<div><span class="stn"></span>{escape(l)}</div>' for l in lignes)}</div>
 <div class="pied"><span class="url">ccmtl.ca</span><span class="glisse">{T("glisse →", "swipe →")}</span></div>""", css)
@@ -307,7 +311,7 @@ h2{{font-family:var(--display);font-weight:800;font-size:{56 if len(e['titre']) 
     vis = f'<img src="{escape(img)}" alt="">' if img else f'<span class="sans">{escape(nom_disc(k))}</span>'
     decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
     accroche = p.get("accroche_en", "") if LANGUE == "en" else p["accroche"]
-    return v.page(1080, 1350, f"""<div class="tete"><span class="tag">{escape(nom_disc(k))}</span><div class="marque">calendrier culturel <b>mtl</b></div></div>
+    return v.page(1080, 1350, f"""<div class="tete"><span class="tag">{escape(nom_disc(k))}</span>{marque()}</div>
 <div class="vis">{vis}{decouv}</div>{f'<div class="cr">{T("Image : ", "Image: ")}{escape(credit)}</div>' if img and credit else ''}
 <h2>{escape(e['titre'])}</h2><div class="q">{quand(e)}</div><div class="l">{lieu}</div>
 <div class="acc">{escape(accroche)}</div>
@@ -333,7 +337,7 @@ h1{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;le
         return (f"jusqu'au {b.day} {MOIS[b.month - 1]}" if f["en_cours"] else f"dès le {a.day} {MOIS[a.month - 1]}")
     items = "".join(f'<div class="f" style="--c:{f["coul"]}"><span class="pt{" plein" if f["en_cours"] else ""}"></span><span class="nm">{escape(f["nom"])}</span>'
                     f'<span class="d">{dates(f)}</span></div>' for f in s["festivals"])
-    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("Les <span class='hl'>festivals</span>", "<span class='hl'>Festivals</span>")}</h1><div class="marque">calendrier culturel <b>mtl</b></div></div>{items}
+    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("Les <span class='hl'>festivals</span>", "<span class='hl'>Festivals</span>")}</h1>{marque()}</div>{items}
 <div class="leg">{T("pastille pleine : en cours · cercle : à venir · couleur : discipline", "solid dot: on now · ring: coming up · colour: discipline")}</div>
 <div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
 
@@ -350,7 +354,7 @@ h1{font-family:var(--display);font-weight:800;font-size:88px;line-height:1.04;le
 .ev .w{font-family:var(--display);font-weight:800;font-size:30px;width:380px;flex:none;white-space:nowrap}
 .ev .t{font-size:38px;font-weight:700;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"""
     evs = "".join(f'<div class="ev"><span class="w">{quand(e)}</span><span class="t">{escape(e["titre"])}</span></div>' for e in sa["events"])
-    return v.page(1080, 1350, f"""<div class="tete"><div class="sur">{T("La salle de la semaine", "Venue of the week")}</div><div class="marque">calendrier culturel <b>mtl</b></div></div><h1><span class="hl">{escape(sa['lieu'])}</span></h1>
+    return v.page(1080, 1350, f"""<div class="tete"><div class="sur">{T("La salle de la semaine", "Venue of the week")}</div>{marque()}</div><h1><span class="hl">{escape(sa['lieu'])}</span></h1>
 <div class="qr">{escape(sa['quartier'] or '')}</div><div class="evs">{evs}</div>
 <div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
 
@@ -415,15 +419,21 @@ def slide_condense_liste(s):
     css = CSS_COMMUN + CSS_LISTE + """
 body{padding:60px 64px}
 h1{font-family:var(--display);font-weight:800;font-size:50px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
-.sous{font-family:var(--hand);font-size:34px;color:var(--pop);margin-bottom:8px}"""
+.sous{font-family:var(--hand);font-size:36px;color:var(--pop);margin-bottom:12px}
+.boite{margin-top:34px}
+.r .tx{padding:20px 24px}
+.r .t{font-size:32px}
+.r .q{font-size:27px;margin-top:8px}
+.pied.autres{justify-content:flex-end;gap:18px}
+.encore{font-family:var(--hand);font-size:44px;color:var(--ink);transform:rotate(-2deg)}
+.fl{font-family:var(--display);font-weight:800;font-size:48px}"""
     lignes = "".join(
         f'<div class="r" style="--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
         f'<div class="t">{escape(p["e"]["titre"])}</div><div class="q"><b>{quand(p["e"])}</b> · {escape(p["e"]["lieu"])}</div></div></div>'
         for p in s["picks"])
-    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("Nos <span class='hl'>coups de cœur</span>", "Our <span class='hl'>picks</span>")}</h1><div class="marque">calendrier culturel <b>mtl</b></div></div>
-{_bande_jours(s, {p["e"]["date"] for p in s["picks"]})}
+    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("À voir <span class='hl'>cette semaine</span>", "Worth seeing <span class='hl'>this week</span>")}</h1>{marque()}</div>
 <div class="boite"><div class="sous">{_periode(s)}</div><div class="liste">{lignes}</div></div>
-<div class="pied"><span class="url">ccmtl.ca</span><span class="p">{T(f"{s['total']} sorties en tout", f"{s['total']} events in all")}</span></div>""", css)
+<div class="pied autres"><span class="encore">{T(f"Ainsi que {s['total'] - len(s['picks'])} autres sorties", f"Plus {s['total'] - len(s['picks'])} more events")}</span><span class="fl">→</span><span class="url">ccmtl.ca</span></div>""", css)
 
 
 def slide_condense_infos(s):
@@ -453,12 +463,12 @@ h2{font-family:var(--display);font-weight:800;font-size:48px;margin:0 0 18px;let
              f'{T("La salle de la semaine", "Venue of the week")}</div><h3><span class="hl">{escape(sa["lieu"])}</span></h3>'
              + "".join(f'<div class="ev"><span class="w">{quand(e)}</span><span class="t">{escape(e["titre"])}</span></div>' for e in sa["events"][:5])
              + "</div>") if sa else ""
-    return v.page(1080, 1350, f"""<div class="tete"><h2>{T("Les festivals", "Festivals")}</h2><div class="marque">calendrier culturel <b>mtl</b></div></div>
+    return v.page(1080, 1350, f"""<div class="tete"><h2>{T("Les festivals", "Festivals")}</h2>{marque()}</div>
 {fests}{salle}<div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
 
 
 def condenses(s):
-    out = [("c1-coups-de-coeur", slide_condense_liste(s))]
+    out = [("c1-a-voir", slide_condense_liste(s))]
     if s["festivals"] or s["salle"]:
         out.append(("c2-festivals-salle", slide_condense_infos(s)))
     return out
@@ -472,24 +482,24 @@ def textes(s):
               for p in s["picks"]]
     fest = ", ".join(f["nom"] for f in s["festivals"] if f["en_cours"])
     if LANGUE == "en":
-        long = (f"What's on in Montréal this week? Our picks for {_periode(s)} 👇\n\n" + "\n".join(lignes)
+        long = (f"What's on in Montréal this week? This week's selection, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals on now: {fest}" if fest else "")
                 + (f"\n📍 Venue of the week: {s['salle']['lieu']}" if s["salle"] else "")
                 + f"\n\nAnd {s['total']} events in all on ccmtl.ca (link in bio).\n\n"
                 "#MTL #Montreal #MontrealEvents #MTLnightlife #MontrealArts")
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
-        court = ("What's on in Montréal this week? Our picks: " + " · ".join(n[:45] for n in noms)
+        court = ("What's on in Montréal this week? Worth seeing: " + " · ".join(n[:45] for n in noms)
                  + ("… Festivals: " + ", ".join([f["nom"] for f in s["festivals"] if f["en_cours"]][:3]) + "…" if fest else "…")
                  + f"\n{s['total']} events on ccmtl.ca")
         fin_court = f"…\n{s['total']} events on ccmtl.ca"
     else:
-        long = (f"Qu'est-ce qu'on fait cette semaine ? Nos coups de cœur {_periode(s)} 👇\n\n" + "\n".join(lignes)
+        long = (f"Qu'est-ce qu'on fait cette semaine ? La sélection de la semaine, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals en cours : {fest}" if fest else "")
                 + (f"\n📍 La salle de la semaine : {s['salle']['lieu']}" if s["salle"] else "")
                 + f"\n\nEt {s['total']} sorties en tout sur ccmtl.ca (lien dans la bio).\n\n"
                 "#MTL #Montréal #sortiesmtl #quoifaireamontreal #culturemtl")
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
-        court = ("Qu'est-ce qu'on fait cette semaine ? Nos coups de cœur : " + " · ".join(n[:45] for n in noms)
+        court = ("Qu'est-ce qu'on fait cette semaine ? À voir : " + " · ".join(n[:45] for n in noms)
                  + ("… Festivals : " + ", ".join([f["nom"] for f in s["festivals"] if f["en_cours"]][:3]) + "…" if fest else "…")
                  + f"\n{s['total']} sorties sur ccmtl.ca")
         fin_court = f"…\n{s['total']} sorties sur ccmtl.ca"
