@@ -4,20 +4,15 @@
  "evenements": 2470,
  "expositions": 244,
  "nouvelles_salles": [
-  "Centre des musiciens du monde",
   "En ligne",
   "Montreal",
   "Plusieurs salles"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 8,
-   "erreurs": 8,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/23-decembre-miryam-bouchard-116179",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-decriture-de-lettres-au-pere-noel-115820",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/cine-club-caserne-45-116275"
-   ],
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
    "completees_par_mac": 938,
    "heures_trouvees": 938,
    "salles_trouvees": 923
@@ -352,7 +347,8 @@
    "source": "Centre des musiciens du monde",
    "evenements": 5,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-01"
   },
   {
    "source": "Terminal Comédie Club (ma.to)",
@@ -432,7 +428,8 @@
    "source": "Cabaret Lion d'Or (billetterie)",
    "evenements": 21,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-01"
   },
   {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
@@ -1576,7 +1573,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -1769,7 +1767,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com"
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 4182 caractères de texte : https://osheaga.com"
    ]
   },
   {
@@ -1823,7 +1822,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {
