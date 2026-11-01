@@ -86,7 +86,7 @@ def url_publique(chemin_depot: str) -> str:
 def _bsky_post(h, did, texte, images, reponse=None):
     b = texte.encode("utf-8")
     i = b.rfind(b"ccmtl.ca")
-    post = {"$type": "app.bsky.feed.post", "text": texte, "langs": ["fr"],
+    post = {"$type": "app.bsky.feed.post", "text": texte, "langs": [fs.LANGUE],
             "createdAt": datetime.utcnow().isoformat(timespec="milliseconds") + "Z",
             "facets": [{"index": {"byteStart": i, "byteEnd": i + 8},
                         "features": [{"$type": "app.bsky.richtext.facet#link", "uri": "https://ccmtl.ca"}]}] if i >= 0 else [],
@@ -273,6 +273,28 @@ def jpeg(png_path, limite=950_000):
     return t.getvalue()
 
 
+def _alts(s, jpgs):
+    """Textes alternatifs (personnes non voyantes), dans la langue courante."""
+    out = []
+    for j in jpgs:
+        nom = j.stem.split("-", 1)[1]
+        p = next((p for p in s["picks"] if p["k"] == nom), None)
+        if p:
+            acc = p.get("accroche_en", "") if fs.LANGUE == "en" else p["accroche"]
+            out.append(f"{fs.nom_disc(p['k'])} : {p['e']['titre']}, {fs.quand(p['e'])}, {p['e']['lieu']}. {acc}".strip())
+            continue
+        titres = " · ".join(f"{p['e']['titre']} ({fs.quand(p['e'])}, {p['e']['lieu']})" for p in s["picks"])
+        out.append({"couverture": fs.T(f"Qu'est-ce qu'on fait cette semaine ? Coups de cœur {fs._periode(s)}, ccmtl.ca",
+                                       f"What's on in Montréal this week? Picks for {fs._periode(s)}, ccmtl.ca"),
+                    "festivals": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"]),
+                    "salle": fs.T("La salle de la semaine : ", "Venue of the week: ") + (s["salle"]["lieu"] if s["salle"] else ""),
+                    "coups-de-coeur": fs.T("Nos coups de cœur : ", "Our picks: ") + titres,
+                    "festivals-salle": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"])
+                    + (" · " + fs.T("La salle de la semaine : ", "Venue of the week: ") + s["salle"]["lieu"] if s["salle"] else ""),
+                    "fin": f"{s['total']} · ccmtl.ca"}.get(nom, "ccmtl.ca")[:1000])
+    return out
+
+
 def main():
     DOSSIER.mkdir(parents=True, exist_ok=True)
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
@@ -281,67 +303,65 @@ def main():
     semaine = debut.isoformat()
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
     reseaux = ("bluesky", "instagram", "threads", "facebook")
-    a_faire = [n for n in reseaux if FORCER or ESSAI or not faits.get(n)]
+    langues = ("fr", "en")  # une publication en français, une en anglais (titres, salles et noms dans leur langue d'origine)
+    a_faire = [f"{n}-{l}" for l in langues for n in reseaux if FORCER or ESSAI or not faits.get(f"{n}-{l}")]
     if not a_faire:
         print(f"Semaine du {semaine} : déjà publiée partout.")
         return
     s = fs.choisir(data, debut, etat)
-    dossier = DOSSIER / semaine
-    pngs = fs.rendre(fs.slides(s), dossier)
-    jpgs = []
-    for p in pngs:
-        j = p.with_suffix(".jpg")
-        j.write_bytes(jpeg(p))
-        p.unlink()
-        jpgs.append(j)
-    t = fs.textes(s)
-    (dossier / "textes.json").write_text(json.dumps(t, ensure_ascii=False, indent=1), encoding="utf-8")
-    # textes alternatifs (personnes non voyantes)
-    alts = []
-    for j in jpgs:
-        nom = j.stem.split("-", 1)[1]
-        p = next((p for p in s["picks"] if p["k"] == nom), None)
-        alts.append(f"{fs.NOMS.get(p['k'])} : {p['e']['titre']}, {fs.quand(p['e'])}, {p['e']['lieu']}. {p['accroche']}" if p else
-                    {"couverture": f"Qu'est-ce qu'on fait cette semaine ? Coups de cœur {fs._periode(s)}, ccmtl.ca",
-                     "festivals": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"]),
-                     "salle": f"La salle de la semaine : {s['salle']['lieu']}" if s["salle"] else "",
-                     "fin": f"{s['total']} sorties cette semaine sur ccmtl.ca"}.get(nom, "ccmtl.ca"))
-    chemins = [str(j.relative_to(RACINE)) for j in jpgs]
-    if not ESSAI and any(n in a_faire for n in ("instagram", "threads", "facebook")):
+    lots = {}
+    for langue in langues:
+        fs.LANGUE = langue
+        dossier = DOSSIER / semaine / langue
+        pngs = fs.rendre(fs.slides(s) + fs.condenses(s), dossier)
+        jpgs = []
+        for p in pngs:
+            j = p.with_suffix(".jpg")
+            j.write_bytes(jpeg(p))
+            p.unlink()
+            jpgs.append(j)
+        t = fs.textes(s)
+        (dossier / "textes.json").write_text(json.dumps(t, ensure_ascii=False, indent=1), encoding="utf-8")
+        lots[langue] = (jpgs, _alts(s, jpgs), t)
+    fs.LANGUE = "fr"
+    if not ESSAI and any(not x.startswith("bluesky") for x in a_faire):
         # Instagram, Threads et Facebook vont chercher les images à une adresse publique : on les envoie d'abord au dépôt
-        subprocess.run(["git", "add", str(dossier.relative_to(RACINE))], check=True)
+        subprocess.run(["git", "add", str((DOSSIER / semaine).relative_to(RACINE))], check=True)
         subprocess.run(["git", "commit", "-m", f"Publication de la semaine du {semaine}"], check=False)
         subprocess.run(["git", "pull", "--rebase", "-X", "theirs", "origin", "main"], check=False)
         subprocess.run(["git", "push"], check=True)
         time.sleep(20)
-    urls = [url_publique(c) for c in chemins]
-    # Bluesky : un fil (4 images par message) — couverture + 3 coups de cœur, puis les 4 suivants, puis festivals et salle
-    picks_j = [(j.read_bytes(), a) for j, a in zip(jpgs, alts) if j.stem.split("-", 1)[1] in {p["k"] for p in s["picks"]}]
-    autres_j = [(j.read_bytes(), a) for j, a in zip(jpgs, alts) if j.stem.split("-", 1)[1] in ("festivals", "salle")]
-    fil = [(t["bluesky"], [(jpgs[0].read_bytes(), alts[0])] + picks_j[:3])]
-    if picks_j[3:]:
-        fil.append(("La suite de nos coups de cœur 👇", picks_j[3:7]))
-    if autres_j:
-        fil.append((f"Les festivals{' et la salle de la semaine' if s['salle'] else ''}. Toutes les sorties : ccmtl.ca", autres_j))
-    print(f"Images : {len(jpgs)} ; textes : " + ", ".join(f"{k} {len(v)} car." for k, v in t.items()))
     erreurs = []
-    for nom, fn, args in (("bluesky", bluesky, (fil,)), ("instagram", instagram, (t["instagram"], urls, alts)),
-                          ("threads", threads, (t["threads"], urls, alts)), ("facebook", facebook, (t["instagram"].split("\n\n#")[0], urls, alts))):
-        if nom not in a_faire:
-            continue
-        try:
-            res = fn(*args)
-            if res is None:
-                print(f"{nom} : pas de clé, sauté.")
+    for langue in langues:
+        jpgs, alts, t = lots[langue]
+        urls = [url_publique(str(j.relative_to(RACINE))) for j in jpgs]
+        complet = [i for i, j in enumerate(jpgs) if not j.stem.startswith("c")]      # carrousel de 10 cartons
+        condense = [i for i, j in enumerate(jpgs) if j.stem.startswith("c")]         # 2 cartons condensés
+        print(f"[{langue}] images : {len(jpgs)} ; textes : " + ", ".join(f"{k} {len(x)} car." for k, x in t.items()))
+        travaux = (("bluesky", bluesky, ([(t["bluesky"], [(jpgs[i].read_bytes(), alts[i]) for i in condense])],)),
+                   ("instagram", instagram, (t["instagram"], [urls[i] for i in complet], [alts[i] for i in complet])),
+                   ("threads", threads, (t["threads"], [urls[i] for i in condense], [alts[i] for i in condense])),
+                   ("facebook", facebook, (t["instagram"].split("\n\n#")[0], [urls[i] for i in complet], [alts[i] for i in complet])))
+        for nom, fn, args in travaux:
+            cle = f"{nom}-{langue}"
+            if cle not in a_faire:
                 continue
-            print(f"{nom} : {res}")
-            if not ESSAI:
-                faits[nom] = str(res)
-        except Exception as exc:
-            detail = getattr(getattr(exc, "response", None), "text", "") or ""
-            erreurs.append(f"- **{nom}** : {str(exc)[:200]} {detail[:300]}")
-            print(f"{nom} : ÉCHEC {exc} {detail[:300]}")
-    if not ESSAI and s["salle"] and any(faits.get(n) for n in reseaux):
+            try:
+                fs.LANGUE = langue
+                res = fn(*args)
+                if res is None:
+                    print(f"{cle} : pas de clé, sauté.")
+                    continue
+                print(f"{cle} : {res}")
+                if not ESSAI:
+                    faits[cle] = str(res)
+            except Exception as exc:
+                detail = getattr(getattr(exc, "response", None), "text", "") or ""
+                erreurs.append(f"- **{cle}** : {str(exc)[:200]} {detail[:300]}")
+                print(f"{cle} : ÉCHEC {exc} {detail[:300]}")
+            finally:
+                fs.LANGUE = "fr"
+    if not ESSAI and s["salle"] and any(faits.get(x) for x in a_faire):
         sv = etat.setdefault("salles_vedette", [])
         if s["salle"]["lieu"] not in sv[-1:]:
             sv.append(s["salle"]["lieu"])
@@ -355,10 +375,9 @@ def main():
     if erreurs:
         avis(f"Publication de la semaine du {semaine} incomplète",
              "Certaines publications ont échoué :\n\n" + "\n".join(erreurs)
-             + "\n\nLes autres réseaux ont publié normalement. La publication sera retentée au prochain passage.")
+             + "\n\nLes autres ont été publiées normalement. Ce qui manque sera retenté au prochain passage.")
         if not ESSAI:
             sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
