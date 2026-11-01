@@ -413,7 +413,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         if url.startswith("http") and "facebook.com" not in url:
             pm = memo.get("page:" + url)
             # (v2 : images portant le titre, lecture dans le navigateur ; une relecture des pages lues avant)
-            if (not pm or "prix" not in pm or (not pm.get("affiche") and (pm["le"] < vieux or not pm.get("v2")))) \
+            if (not pm or "prix" not in pm or not pm.get("v2") or (not pm.get("affiche") and pm["le"] < vieux)) \
                     and lues_affiche < max_affiches and time.time() < fin_affiches:
                 lues_affiche += 1
                 try:
