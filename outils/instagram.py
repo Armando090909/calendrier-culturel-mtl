@@ -50,12 +50,12 @@ def page(w, h, corps, css=""):
 
 def profil():
     css = """body{background:var(--hl);display:grid;place-items:center}
-.rond{width:880px;height:880px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
-.nom{font-family:var(--display);font-weight:800;font-size:205px;letter-spacing:-.04em;line-height:.9}
+.rond{width:1080px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;padding-top:30px}
+.nom{font-family:var(--display);font-weight:800;font-size:244px;letter-spacing:.015em;line-height:.9}
 .nom span{color:var(--pop)}
-.rail{display:flex;align-items:center;width:560px;position:relative}
-.rail .ligne{position:absolute;left:30px;right:30px;height:30px}
-.rail .stn{position:relative;width:86px;height:86px;border-width:20px}
+.rail{display:flex;align-items:center;width:640px;position:relative}
+.rail .ligne{position:absolute;left:30px;right:30px;height:34px}
+.rail .stn{position:relative;width:96px;height:96px;border-width:22px}
 .rail .stn:last-child{margin-left:auto;background:var(--ink)}"""
     return page(1080, 1080, """<div class="rond"><div class="nom">cc<span>mtl</span></div>
 <div class="rail"><div class="ligne"></div><span class="stn"></span><span class="stn"></span></div></div>""", css)
@@ -181,6 +181,8 @@ def main():
             deborde = pg.evaluate("""() => [...document.querySelectorAll('h1,h2,p,.d,.url,.bt,.carte,.nom')]
                 .filter(e => {const r = e.getBoundingClientRect(); return r.right > innerWidth - 40 || r.bottom > innerHeight - 30
                   || e.scrollWidth > e.clientWidth + 2}).map(e => e.className || e.tagName)""")
+            if nom == "profil":  # le nom doit tenir dans le cercle (marge de 60 px de chaque côté à sa hauteur)
+                print("  profil, largeur du nom :", pg.evaluate("document.querySelector('.nom').getBoundingClientRect().width"))
             if deborde:
                 print(f"  attention, {nom} : déborde ({deborde})")
             pg.screenshot(path=str(SORTIE / f"{nom}.png"))
