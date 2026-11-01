@@ -137,7 +137,8 @@ def _attendre(get_statut, cle="status_code"):
         time.sleep(5)
 
 
-def instagram(texte, urls, alts):
+def _compte_ig():
+    """(base, jeton, id du compte, nom) du compte Instagram, ou None sans clé."""
     jeton = os.environ.get("INSTAGRAM_JETON")
     page = os.environ.get("FACEBOOK_PAGE_ID")
     if jeton:  # méthode « Instagram Login » (graph.instagram.com)
@@ -157,6 +158,14 @@ def instagram(texte, urls, alts):
         ig, nom = compte["id"], compte.get("username", "?")
     else:
         return None
+    return base, jeton, ig, nom
+
+
+def instagram(texte, urls, alts):
+    c = _compte_ig()
+    if not c:
+        return None
+    base, jeton, ig, nom = c
     if ESSAI:
         return "essai : connexion Instagram réussie (" + nom + ")"
     enfants = []
@@ -175,6 +184,26 @@ def instagram(texte, urls, alts):
     r = requests.post(f"{base}/{ig}/media_publish", data={"creation_id": pid, "access_token": jeton}, timeout=60)
     r.raise_for_status()
     return r.json().get("id")
+
+
+def instagram_story(urls):
+    """Story Instagram : une image verticale (1080 × 1920). Pas de lien cliquable possible par l'API."""
+    c = _compte_ig()
+    if not c or not urls:
+        return None
+    base, jeton, ig, nom = c
+    if ESSAI:
+        return "essai : story Instagram possible (" + nom + ")"
+    ids = []
+    for url in urls:
+        m = requests.post(f"{base}/{ig}/media", timeout=60, data={"image_url": url, "media_type": "STORIES", "access_token": jeton})
+        m.raise_for_status()
+        mid = m.json()["id"]
+        _attendre(lambda: requests.get(f"{base}/{mid}", params={"fields": "status_code", "access_token": jeton}, timeout=30).json())
+        r = requests.post(f"{base}/{ig}/media_publish", data={"creation_id": mid, "access_token": jeton}, timeout=60)
+        r.raise_for_status()
+        ids.append(r.json().get("id"))
+    return ",".join(i for i in ids if i)
 
 
 # ---------------------------------------------------------------- Threads (graph.threads.net) : carrousel
@@ -226,6 +255,24 @@ def facebook(texte, urls, alts):
     r = requests.post(f"{base}/{page}/feed", data=data, timeout=60)
     r.raise_for_status()
     return r.json().get("id")
+
+
+def facebook_story(urls):
+    """Story de la page Facebook : photo téléversée sans être publiée, puis publiée en story."""
+    jeton, page = os.environ.get("FACEBOOK_JETON"), os.environ.get("FACEBOOK_PAGE_ID")
+    if not jeton or not page or not urls:
+        return None
+    base = "https://graph.facebook.com/v26.0"
+    if ESSAI:
+        return "essai : story Facebook possible"
+    ids = []
+    for url in urls:
+        r = requests.post(f"{base}/{page}/photos", timeout=60, data={"url": url, "published": "false", "access_token": jeton})
+        r.raise_for_status()
+        s = requests.post(f"{base}/{page}/photo_stories", timeout=60, data={"photo_id": r.json()["id"], "access_token": jeton})
+        s.raise_for_status()
+        ids.append(str(s.json().get("post_id") or s.json().get("id") or "ok"))
+    return ",".join(ids)
 
 
 # ---------------------------------------------------------------- Jetons : prolongation automatique
@@ -284,7 +331,8 @@ def _alts(s, jpgs):
             out.append(f"{fs.nom_disc(p['k'])} : {p['e']['titre']}, {fs.quand(p['e'])}, {p['e']['lieu']}. {acc}".strip())
             continue
         titres = " · ".join(f"{p['e']['titre']} ({fs.quand(p['e'])}, {p['e']['lieu']})" for p in s["picks"])
-        out.append({"couverture": fs.T(f"Qu'est-ce qu'on fait cette semaine ? La sélection {fs._periode(s)}, ccmtl.ca",
+        out.append({"story": fs.T("À voir cette semaine : ", "Worth seeing this week: ") + titres,
+                    "couverture": fs.T(f"Qu'est-ce qu'on fait cette semaine ? La sélection {fs._periode(s)}, ccmtl.ca",
                                        f"What's on in Montréal this week? This week's selection, {fs._periode(s)}, ccmtl.ca"),
                     "festivals": "Festivals : " + ", ".join(f["nom"] for f in s["festivals"]),
                     "salle": fs.T("La salle de la semaine : ", "Venue of the week: ") + (s["salle"]["lieu"] if s["salle"] else ""),
@@ -302,7 +350,7 @@ def main():
     debut = visuels.lundi_a_venir()
     semaine = debut.isoformat()
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
-    reseaux = ("bluesky", "instagram", "threads", "facebook")
+    reseaux = ("bluesky", "instagram", "threads", "facebook", "instagram_story", "facebook_story")
     langues = ("fr", "en")  # une publication en français, une en anglais (titres, salles et noms dans leur langue d'origine)
     a_faire = [f"{n}-{l}" for l in langues for n in reseaux if FORCER or ESSAI or not faits.get(f"{n}-{l}")]
     if not a_faire:
@@ -313,7 +361,7 @@ def main():
     for langue in langues:
         fs.LANGUE = langue
         dossier = DOSSIER / semaine / langue
-        pngs = fs.rendre(fs.slides(s) + fs.condenses(s), dossier)
+        pngs = fs.rendre(fs.slides(s) + fs.condenses(s) + fs.stories(s), dossier)
         jpgs = []
         for p in pngs:
             j = p.with_suffix(".jpg")
@@ -335,13 +383,16 @@ def main():
     for langue in langues:
         jpgs, alts, t = lots[langue]
         urls = [url_publique(str(j.relative_to(RACINE))) for j in jpgs]
-        complet = [i for i, j in enumerate(jpgs) if not j.stem.startswith("c")]      # carrousel de 10 cartons
+        complet = [i for i, j in enumerate(jpgs) if j.stem[0].isdigit()]             # carrousel de 10 cartons
+        story = [i for i, j in enumerate(jpgs) if j.stem.startswith("s")]            # story verticale
         condense = [i for i, j in enumerate(jpgs) if j.stem.startswith("c")]         # 2 cartons condensés
         print(f"[{langue}] images : {len(jpgs)} ; textes : " + ", ".join(f"{k} {len(x)} car." for k, x in t.items()))
         travaux = (("bluesky", bluesky, ([(t["bluesky"], [(jpgs[i].read_bytes(), alts[i]) for i in condense])],)),
                    ("instagram", instagram, (t["instagram"], [urls[i] for i in complet], [alts[i] for i in complet])),
                    ("threads", threads, (t["threads"], [urls[i] for i in condense], [alts[i] for i in condense])),
-                   ("facebook", facebook, (t["instagram"].split("\n\n#")[0], [urls[i] for i in complet], [alts[i] for i in complet])))
+                   ("facebook", facebook, (t["instagram"].split("\n\n#")[0], [urls[i] for i in complet], [alts[i] for i in complet])),
+                   ("instagram_story", instagram_story, ([urls[i] for i in story],)),
+                   ("facebook_story", facebook_story, ([urls[i] for i in story],)))
         for nom, fn, args in travaux:
             cle = f"{nom}-{langue}"
             if cle not in a_faire:

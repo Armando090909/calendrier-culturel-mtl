@@ -413,7 +413,7 @@ CSS_LISTE = """
 """
 
 
-def slide_condense_liste(s):
+def slide_condense_liste(s, story=False):
     """La sélection de la semaine sur un seul carton : une ligne de métro verticale à gauche, une station par jour
     (vis-à-vis de sa sortie), et la liste dans le style « Aujourd'hui » du site (barre de couleur, titre, heure, salle)."""
     css = CSS_COMMUN + CSS_LISTE + """
@@ -439,6 +439,8 @@ h1{font-family:var(--display);font-weight:800;font-size:44px;line-height:1.05;le
 .fl{font-family:var(--display);font-weight:800;font-size:48px}"""
     if LANGUE == "en":  # « montreal's cultural calendar » est plus long que « calendrier culturel mtl »
         css += "\nh1{font-size:38px}\n.tete .marque{font-size:22px}"
+    if story:  # 1080 × 1920 : le haut (~250 px) et le bas (~280 px) sont couverts par l'interface d'Instagram
+        css += "\nbody{padding:250px 64px 290px}\n.metro{margin-bottom:40px}"
     noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
     lignes, vus = [], set()
     for p in s["picks"]:
@@ -449,7 +451,7 @@ h1{font-family:var(--display);font-weight:800;font-size:44px;line-height:1.05;le
         vus.add(e["date"])
         lignes.append(f'<div class="lg">{st}<div class="r" style="display:flex;--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
                       f'<div class="t">{escape(e["titre"])}</div><div class="q">{f"<b>{heure}</b> · " if heure else ""}{escape(e["lieu"])}</div></div></div></div>')
-    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("À voir <span class='hl'>cette semaine</span>", "Worth seeing <span class='hl'>this week</span>")}</h1>{marque()}</div>
+    return v.page(1080, 1920 if story else 1350, f"""<div class="tete"><h1>{T("À voir <span class='hl'>cette semaine</span>", "Worth seeing <span class='hl'>this week</span>")}</h1>{marque()}</div>
 <div class="sous">{_periode(s)}</div><div class="metro">{''.join(lignes)}</div>
 <div class="pied autres"><span class="encore">{T(f"Ainsi que {s['total'] - len(s['picks'])} autres sorties", f"Plus {s['total'] - len(s['picks'])} more events")}</span><span class="fl">→</span><span class="url">ccmtl.ca</span></div>""", css)
 
@@ -483,6 +485,11 @@ h2{font-family:var(--display);font-weight:800;font-size:48px;margin:0 0 18px;let
              + "</div>") if sa else ""
     return v.page(1080, 1350, f"""<div class="tete"><h2>{T("Les festivals", "Festivals")}</h2>{marque()}</div>
 {fests}{salle}<div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
+
+
+def stories(s):
+    """Story Instagram et Facebook (1080 × 1920) : la sélection de la semaine en un carton vertical."""
+    return [("s1-story", slide_condense_liste(s, story=True))]
 
 
 def condenses(s):
@@ -539,7 +546,7 @@ def rendre(liste, dossier):
     with sync_playwright() as p:
         nav = p.chromium.launch()
         for nom, html in liste:
-            pg = nav.new_page(viewport={"width": 1080, "height": 1350})
+            pg = nav.new_page(viewport={"width": 1080, "height": 1920 if nom.startswith("s") else 1350})
             pg.set_content(html, wait_until="networkidle", timeout=60000)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(1000)
@@ -563,7 +570,7 @@ def main():
     for langue in ("fr", "en"):
         LANGUE = langue
         dossier = RACINE / "outils" / "reseaux" / "apercu" / langue
-        rendre(slides(s) + condenses(s), dossier)
+        rendre(slides(s) + condenses(s) + stories(s), dossier)
         t = textes(s)
         (dossier / "textes.json").write_text(json.dumps(t, ensure_ascii=False, indent=1), encoding="utf-8")
         for r, x in t.items():
