@@ -139,14 +139,26 @@ def _attendre(get_statut, cle="status_code"):
 
 def instagram(texte, urls, alts):
     jeton = os.environ.get("INSTAGRAM_JETON")
-    if not jeton:
+    page = os.environ.get("FACEBOOK_PAGE_ID")
+    if jeton:  # méthode « Instagram Login » (graph.instagram.com)
+        base = "https://graph.instagram.com/v21.0"
+        moi = requests.get(f"{base}/me", params={"fields": "user_id,username", "access_token": jeton}, timeout=30)
+        moi.raise_for_status()
+        ig, nom = moi.json()["user_id"], moi.json().get("username", "?")
+    elif os.environ.get("FACEBOOK_JETON") and page:
+        # méthode « Facebook Login » : le jeton de la page Facebook (qui n'expire pas) publie aussi sur le compte
+        # Instagram professionnel relié à la page
+        jeton, base = os.environ["FACEBOOK_JETON"], "https://graph.facebook.com/v21.0"
+        r = requests.get(f"{base}/{page}", params={"fields": "instagram_business_account{id,username}", "access_token": jeton}, timeout=30)
+        r.raise_for_status()
+        compte = r.json().get("instagram_business_account") or {}
+        if not compte.get("id"):
+            raise RuntimeError("aucun compte Instagram professionnel relié à la page Facebook")
+        ig, nom = compte["id"], compte.get("username", "?")
+    else:
         return None
-    base = "https://graph.instagram.com/v21.0"
-    moi = requests.get(f"{base}/me", params={"fields": "user_id,username", "access_token": jeton}, timeout=30)
-    moi.raise_for_status()
-    ig = moi.json()["user_id"]
     if ESSAI:
-        return "essai : connexion Instagram réussie (" + moi.json().get("username", "?") + ")"
+        return "essai : connexion Instagram réussie (" + nom + ")"
     enfants = []
     for url, alt in zip(urls[:10], alts):
         c = requests.post(f"{base}/{ig}/media", timeout=60, data={"image_url": url, "is_carousel_item": "true",
