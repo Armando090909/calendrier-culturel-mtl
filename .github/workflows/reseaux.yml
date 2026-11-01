@@ -10,7 +10,9 @@ on:
     - cron: "23 18 * * 1"
   push:
     branches: [main]
-    paths: ["outils/reseaux/demande-essai.txt"]  # essai de connexion (rien n'est publié)
+    paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt"]
+    # demande-essai.txt : essai de connexion (rien n'est publié)
+    # demande-test.txt : publie pour vrai les seuls formats écrits dans le fichier (ex. instagram_story,facebook_story)
   workflow_dispatch:
     inputs:
       essai:
@@ -37,6 +39,8 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -64,6 +68,10 @@ jobs:
         run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
+          if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-test.txt"; then
+            export PUBLIER=oui SEULEMENT="$(head -1 outils/reseaux/demande-test.txt | tr -d ' \r')"
+            echo "Test ciblé : $SEULEMENT"
+          fi
           python outils/publier.py
       - name: Enregistrer
         if: always()
