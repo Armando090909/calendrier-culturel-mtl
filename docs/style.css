@@ -63,19 +63,18 @@ h1 .hl::after{content:"";position:absolute;left:-4%;right:-4%;bottom:.02em;heigh
 /* ---------- Disciplines ---------- */
 .label{font-family:var(--f-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink);margin:0 0 10px;display:flex;align-items:center;gap:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-/* « tout » / « aucun » : deux petites stations reliées par un bout de ligne de métro (vert, orange, jaune, bleu) */
-.tousrien{margin-left:auto;display:inline-flex;align-items:center;font-family:var(--f-body);text-transform:none;letter-spacing:0}
-.tr{font:inherit;font-size:12.5px;font-weight:600;color:var(--muted);background:none;border:0;padding:4px 2px;cursor:pointer;
-  display:inline-flex;align-items:center;gap:6px;transition:color .15s}
-.tr:hover:not(:disabled){color:var(--ink)}
-.tr:hover:not(:disabled) .stn-mini{transform:scale(1.2)}
-.tr:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:6px}
-.tr:disabled{cursor:default;opacity:.45}
-.stn-mini{position:relative;z-index:1;width:11px;height:11px;border-radius:50%;box-sizing:border-box;background:var(--surface);
-  border:2.5px solid var(--ink);display:inline-block;transition:transform .15s}
-.stn-mini.plein{background:var(--ink)}
-.ligne-mini{width:30px;height:4px;margin:0 -3px;border-radius:2px;display:inline-block;
-  background:linear-gradient(90deg,var(--cinema) 0 25%,var(--humour) 25% 50%,var(--cirque) 50% 75%,var(--musique) 75%)}
+/* « tout » / « aucun » : une petite pilule jaune à trous de poinçon, comme la bande « Tu programmes une salle… » */
+.tousrien{margin-left:auto;display:inline-flex;align-items:center;font-family:var(--f-body);text-transform:none;letter-spacing:0;
+  background:var(--hl);border:1.5px solid var(--ink);border-radius:999px;box-shadow:2px 2px 0 var(--shadow);padding:1px 4px}
+.tr{font:inherit;font-size:12px;font-weight:700;color:var(--ink);background:none;border:0;padding:3px 7px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:5px;border-radius:999px}
+.tr+.tr{border-left:1.5px dotted rgba(18,18,18,.35);border-radius:0 999px 999px 0}
+.poincon{width:9px;height:9px;flex:none;box-sizing:border-box;border-radius:50%;background:var(--surface);border:2.5px solid var(--ink);
+  display:inline-block;transition:background .15s}
+.tr:hover:not(:disabled) .poincon{background:var(--ink)}
+.tr:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.tr:disabled{cursor:default;color:rgba(18,18,18,.4)}
+.tr:disabled .poincon{border-color:rgba(18,18,18,.35)}
 .chip{--c:var(--autre);font:inherit;font-size:14.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
   border:2px solid var(--ink);border-radius:999px;padding:7px 14px 7px 10px;background:var(--c);color:#fff;box-shadow:2px 2px 0 var(--shadow)}
 .chip[data-d="cirque"],.chip[data-d="expo"]{color:#121212}
