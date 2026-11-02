@@ -3,7 +3,7 @@ name: Diagnostic de pages
 on:
   push:
     branches: [main]
-    paths: ["outils/diag/urls.txt", "outils/explorer_api.py"]
+    paths: ["outils/diag/urls.txt", "outils/explorer_api.py", "outils/captures.py"]
   workflow_dispatch:
 concurrency:
   group: diagnostic
@@ -30,6 +30,8 @@ jobs:
       - run: python outils/diag.py
         env:
           CONTACT: ${{ vars.CONTACT }}
+      - name: Captures d'écran du site
+        run: python outils/captures.py || true
       - name: Essai des API à clé
         run: python outils/explorer_api.py || true
         env:
@@ -40,5 +42,5 @@ jobs:
       - run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add outils/diag/resultat.json outils/diag/api.json
+          git add outils/diag/resultat.json outils/diag/api.json outils/diag/captures
           git commit -m "Diagnostic de pages" && { git pull --rebase -X theirs origin main; git push; } || true
