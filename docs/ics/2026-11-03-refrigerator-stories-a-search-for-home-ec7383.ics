@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-03-refrigerator-stories-a-search-for-home-ec7383@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261103T200000
+DTEND;TZID=America/Toronto:20261103T220000
+SUMMARY:Refrigerator Stories: A Search for Home
+LOCATION:Théâtre Sainte-Catherine\, Montréal
+URL:https://theatresaintecatherine.com/event/refrigerator-stories-a-search-
+ for-home/
+DESCRIPTION:&lt\;p&gt\;https://thepointofsale.com/tickets/tsc261103001?lang
+ =en Refrigerator Stories: A Search for Home ABOUT THE SHOW A new solo show
+  by Jos Dirkx\, directed by Reena Dutt\, with music direction by…\nDéta
+ ils : https://outlook.live.com/owa/?path=/calendar/action/compose&rrv=adde
+ vent&startdt=2026-11-03T20%3A00%3A00-05%3A00&enddt=2026-11-03T22%3A00%3A00
+ -05%3A00&location&subject=Refrigerator%20Stories%3A%20A%20Search%20for%20H
+ ome&body=https%3A%2F%2Fthepointofsale.com%2Ftickets%2Ftsc261103001%3Flang%
+ 3DenRefrigerator%20Stories%3A%20A%20Search%20for%20HomeABOUT%20THE%20SHOWA
+ %20new%20solo%20show%20by%20Jos%20Dirkx%2C%20directed%20by%20Reena%20Dutt%
+ 2C%20with%20music%20direction%20by%20Sacha%20Hoedemaker.%20Nine%20real-lif
+ e%20stories%2C%20six%20original%20songs%3A%20from%20a%20classroom%20in%20D
+ akar%20with%20eleven%20kids%20from%20eleven%20countries%20to%20a%20Dutch%2
+ 0kitchen%20table%20where%2C%20at%2039%2C%20Jos%20decides%20to%20step%20bac
+ k%20on%20stage%20after%20all.%20And%20what%27s%20a%20refrigerator%20story%
+ 3F%20You%27ll%20find%20out%20in%20the%20theatre.The%202026%20workshop%20pe
+ rformances%20lead%20to%20the%20premiere%20in%202027.CREATIVE%20TEAMCreated
+ %20byJos%20DirkxWriter%2C%20Producer%20%26amp%3B%20PerformerWriter%2C%20sp
+ eaker%2C%20and%20performer%2C%20raised%20in%20fifteen%20countries.%20Autho
+ r%20of%20four%20books%2C%20named%20one%20of%20the%20Most%20Inspirational%2
+ 0Women%20in%20Web3%20%26amp%3B%20AI%20and%20a%20speaker%20on%20global%20st
+ ages.Reena%20DuttDirectorReena%20Dutt%20%28SDC%29%20is%20a%20regional%20th
+ eatre%20director%20and%20Drama%20League%20alum%2C%20d%20%28Voir%20la%20des
+ cription%20compl%C3%A8te%20de%20%C3%89v%C3%A8nement%20ici%C2%A0%3A%20https
+ %3A%2F%2Ftheatresaintecatherine.com%2Fevent%2Frefrigerator-stories-a-searc
+ h-for-home%2F%29\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

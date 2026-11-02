@@ -1,21 +1,37 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "statut": "publié",
- "evenements": 2470,
- "expositions": 244,
+ "evenements": 2438,
+ "expositions": 213,
  "nouvelles_salles": [
+  "Au Vieux - Brasserie Festive",
+  "Auditorium Fernand-Bilodeau",
+  "Auditorium des Archives nationales — BAnQ",
+  "Cabaret Guy-Aubert",
+  "Cafe Gotsoul",
+  "El Lounge Resto-Bar",
   "En ligne",
+  "Error 403",
+  "Espace Félix-Leclerc",
   "Montreal",
-  "Plusieurs salles"
+  "NINI Salon à Cocktails",
+  "Panache art actuel",
+  "Plusieurs salles",
+  "Private Room",
+  "Salle Michel Côté",
+  "Salle Théatre La Scène",
+  "TBA",
+  "Turbohaus",
+  "non indiqué"
  ],
  "notes": {
   "fiches_ville": {
    "lues": 0,
    "erreurs": 0,
    "exemples_erreurs": [],
-   "completees_par_mac": 938,
-   "heures_trouvees": 938,
-   "salles_trouvees": 923
+   "completees_par_mac": 930,
+   "heures_trouvees": 930,
+   "salles_trouvees": 908
   },
   "formulaire": {
    "lignes": 1,
@@ -41,13 +57,14 @@
    ]
   },
   "redites_retirees": [
-   "2026-11-01 : « L CON, teagan johnston » (L'Escogriffe) = « L CON @ L’esco » (L’esco)",
+   "2026-11-04 : « Ditz, avec Gloin » (L'Escogriffe) = « Ditz - Avec Gloin » (L’esco)",
    "2026-11-04 : « Guillaume Pineault - Rodage » (Le Terminal) = « Guillaume Pineault » (Cabaret Lion d'Or)",
    "2026-11-05 : « Laura Anglade et l'Orchestre de jazz des diplômé(e » (Lieu à confirmer) = « Faculté de Musique de l'UdeM : Laura Anglade et l' » (Salle Claude-Champagne)",
-   "2026-11-05 : « MICO » (Théâtre Beanfield) = « MICO » (MTELUS)",
-   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling @ Théâtre Beanfield » (Théâtre Beanfield)",
+   "2026-11-05 : « MICO @ Théâtre Beanfield » (Théâtre Beanfield) = « MICO - Running From A Feeling » (MTELUS)",
+   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling - In The Feeling » (Théâtre Beanfield)",
    "2026-11-05 : « Perma » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
    "2026-11-05 : « Catherine Leduc » (L’esco) = « Catherine Leduc + Perma » (L'Escogriffe)",
+   "2026-11-06 : « Jacker un pick-up en poésie » (Petit Campus) = « Jacker un pickup en poésie » (Café Campus)",
    "2026-11-06 : « Jacker un pickup en poésie (Alphonse Bisaillon) » (Café Campus) = « Jacker un pickup en poésie » (Café Campus)",
    "2026-11-06 : « Sloan Lucas (lancement) + Soraï » (L'Escogriffe) = « Sloan Lucas » (L’esco)",
    "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
@@ -63,32 +80,991 @@
    "2026-11-12 : « Résistance aujourd'hui en Palestine, et solidarité » (La Librairie) = « Aujourd'hui » (L’esco)",
    "2026-11-12 : « Aujourd'hui + DONALDA » (L'Escogriffe) = « Aujourd'hui » (L’esco)",
    "2026-11-13 : « Élégie + Louis-Charles » (L'Escogriffe) = « Louis-Charles » (L’esco)",
-   "2026-11-14 : « La diva du désert - Fairouz Oudjida » (Bibliothèque Julio-Jean-Pierre) = « La diva du désert » (Maison culturelle et communautaire de Montréal-Nord)",
-   "2026-11-14 : « Boucar Diouf à la Maison Théâtre de Montréal » (Maison Théâtre) = « Boucar Diouf » (Théâtre Desjardins)",
    "2026-11-14 : « Mary In The Junkyard @ Café Campus » (Café Campus) = « Mary In The Junkyard » (Petit Campus)",
+   "2026-11-15 : « Ecce Shnak » (L'Escogriffe) = « Ecce Shnak » (L’esco)",
    "2026-11-18 : « M pour Montréal : Béton Armé, Faze, zouz, 2120, Kn » (Club Soda) = « Béton Armé + Faze + Zouz » (Foufounes Électriques)",
-   "2026-11-21 : « Célébration! » (Wiggle Room) = « Celebration @ Le Balcon » (Le Balcon)",
+   "2026-11-21 : « Célébration : le meilleur party dansant Motown, Po » (Le Balcon) = « Célébration! » (Wiggle Room)",
    "2026-12-04 : « Noël autour du monde » (Maison culturelle et communautaire de Montréal-Nord) = « Noël autour du monde| Montréal Guitare Trio (MG3 » (Bibliothèque Julio-Jean-Pierre)",
    "2026-12-27 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "decouverte": [
-   "sans piste : Cineplex Quartier Latin (81 événements dans les agendas)",
-   "sans piste : MTELUS (16 événements dans les agendas)",
-   "sans piste : L’esco (14 événements dans les agendas)",
-   "sans piste : Cinéma Moderne (10 événements dans les agendas)",
-   "sans piste : Cabaret du Casino de Montréal (8 événements dans les agendas)",
-   "sans piste : SAT (7 événements dans les agendas)",
-   "sans piste : Le Minotaure (6 événements dans les agendas)",
-   "sans piste : Canadian Centre for Architecture (5 événements dans les agendas)"
+  "catalogues": [
+   {
+    "nom": "Lewis Lines",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Emmanuelle Lizère"
+   },
+   {
+    "nom": "Le Bolduc Groove Quintet",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rémi Bolduc",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "LCL GRL",
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Les bougeottes"
+   },
+   {
+    "nom": "Serre L'ecoute"
+   },
+   {
+    "nom": "Trio LeBlanc"
+   },
+   {
+    "nom": "Ashwaaq"
+   },
+   {
+    "nom": "TheHonestGuy",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Sarah Segal-Lazar",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Narrators of Peace"
+   },
+   {
+    "nom": "Tear Dungeon",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Cumbia Control"
+   },
+   {
+    "nom": "Kelly Torrieli"
+   },
+   {
+    "nom": "Masmoudi Quartette",
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Bella Galasso",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : bury these questions",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : bury these questions",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "David Corriveau"
+   },
+   {
+    "nom": "Chanda & The Passengers",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : hiphop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : hiphop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Le Dépanneur Orchestra"
+   },
+   {
+    "nom": "Perfect Outfit",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Crachat",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Lerion"
+   },
+   {
+    "nom": "Flygerian"
+   },
+   {
+    "nom": "Maisha",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Chantal Lamarre"
+   },
+   {
+    "nom": "Komēdza",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "DTW & The Jamm"
+   },
+   {
+    "nom": "The Very Last Day"
+   },
+   {
+    "nom": "Walaa Al Jundi",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Cartier Préféré",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Wired Mother"
+   },
+   {
+    "nom": "Czech Hotell"
+   },
+   {
+    "nom": "General Fools",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Raoul Laflèche",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Leone Volta",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Marie Neiges",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Tempête Solaire",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Metal Crust Massacre"
+   },
+   {
+    "nom": "Robert Thomas",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "headache"
+   },
+   {
+    "nom": "ODDCHARM",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Tahmoures Pournazeri",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : amoo nowruz"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "LA PIOLA"
+   },
+   {
+    "nom": "Anaïs Constantin",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Sam Ripat",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "McMillan"
+   },
+   {
+    "nom": "Quédam",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "New Jazz Quartet"
+   },
+   {
+    "nom": "Rémi Bolduc",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : random masters",
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rabaska",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Lapelúda",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Catherine Alone"
+   },
+   {
+    "nom": "fireball kid",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "L'HOMME INVISIBLE"
+   },
+   {
+    "nom": "Voix de Ville",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Borrkia i Matti"
+   },
+   {
+    "nom": "Julian Corradini"
+   },
+   {
+    "nom": "Radio Patente",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Sunday Missile"
+   },
+   {
+    "nom": "Big Snit"
+   },
+   {
+    "nom": "Hallowell",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Vincent Khouni",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "maison de disques : simone records",
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "maison de disques : simone records",
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Cathar Perfect"
+   },
+   {
+    "nom": "Skin Tone"
+   },
+   {
+    "nom": "CANNELLE"
+   },
+   {
+    "nom": "Of Shapes",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Yordan Martinez",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Catherine Jeanne-D'Arc",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "La Monarque",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Guidestones",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Hearts of Palm"
+   },
+   {
+    "nom": "Marc McLaughlin",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Fireball Kid",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Bach Incognito"
+   },
+   {
+    "nom": "Quatuor Mémoire",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : classique"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Fairouz Oudjida",
+    "deezer": {
+     "ok": false,
+     "pour": [
+      "album nommé sur la page : la diva du desert"
+     ],
+     "contre": [
+      "genre classique ≠ monde"
+     ]
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : la diva du desert",
+      "genre concordant : monde"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Collapsed",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "High Anxiety",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "He Lies in Ruin",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Corduroy & Co."
+   },
+   {
+    "nom": "Ian Blurton's Future Now",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : imperial filth"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : imperial filth"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Joan Bluteau",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : avec le temps dalida",
+      "genre concordant : pop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Virginie Reid",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "DUB PERMANENCE"
+   },
+   {
+    "nom": "Video Vamp",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Martin Saint",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "The Mirrors"
+   },
+   {
+    "nom": "SEPTETO DE MONTREAL"
+   },
+   {
+    "nom": "Chenier"
+   },
+   {
+    "nom": "Unless We Fight",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Gabrielle Turgeon"
+   },
+   {
+    "nom": "Esther Gonthier",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "maison de disques : analekta",
+      "genre concordant : classique"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "maison de disques : analekta",
+      "genre concordant : classique"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "JoJoFlores",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Chromatones A Cappella",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Vincent Boucher",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "maison de disques : atma classique",
+      "genre concordant : classique"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "CHAKER BOU ABDALLA"
+   },
+   {
+    "nom": "STOFIL"
+   },
+   {
+    "nom": "Nadia Monczak"
+   },
+   {
+    "nom": "André Pappathomas"
+   },
+   {
+    "nom": "Rémi Bolduc",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Chances"
+   },
+   {
+    "nom": "Princess Vinia",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Carmen y María",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "même artiste que l'autre catalogue"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : hiphop"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Tara Moneka"
+   },
+   {
+    "nom": "Dee Hernandez",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre jazz ≠ hiphop"
+     ]
+    }
+   },
+   {
+    "nom": "Waleed Kush Afro Jazz"
+   },
+   {
+    "nom": "SUNNIVA",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "FROWNLINE"
+   }
+  ],
+  "reparations": [
+   "non réparée : Duran Contemporain (8 pages essayées)",
+   "non réparée : Théâtre MainLine (8 pages essayées)",
+   "non réparée : ma.to – communauté (quiz, trivia) (8 pages essayées)"
   ]
  },
  "alerte": null,
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 2100,
-   "series": 81,
+   "evenements": 2050,
+   "series": 70,
    "erreur": null,
    "diagnostic": [
     "colonnes du fichier : titre, url_fiche, description, date_debut, date_fin, type_evenement, public_cible, emplacement, inscription, cout, arrondissement, titre_adresse, adresse_principale, adresse_secondaire, code_postal, lat, long, X, Y"
@@ -96,64 +1072,61 @@
   },
   {
    "source": "Ask A Punk (DIY, punk, hardcore)",
-   "evenements": 33,
+   "evenements": 30,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 166,
+   "evenements": 239,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Songkick (concerts, 2 mois)",
-   "evenements": 495,
-   "series": 5,
+   "evenements": 364,
+   "series": 4,
    "erreur": null,
-   "note": "repris du 2026-10-29"
+   "diagnostic": [
+    "aucun événement trouvé dans 9587 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=4",
+    "aucun événement trouvé dans 9587 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=5"
+   ]
   },
   {
    "source": "Espace GO",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "TNM",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Duceppe",
-   "evenements": 3,
-   "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "evenements": 1,
+   "series": 2,
+   "erreur": null
   },
   {
    "source": "Théâtre du Rideau Vert",
-   "evenements": 2,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "evenements": 8,
+   "series": 0,
+   "erreur": null
   },
   {
    "source": "Théâtre de Quat'Sous",
    "evenements": 0,
    "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Théâtre Prospero",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "La Licorne",
@@ -167,30 +1140,26 @@
   {
    "source": "Théâtre d'Aujourd'hui",
    "evenements": 0,
-   "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "series": 3,
+   "erreur": null
   },
   {
    "source": "Théâtre Denise-Pelletier",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Usine C",
    "evenements": 0,
-   "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "series": 2,
+   "erreur": null
   },
   {
    "source": "Centaur",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Centre Segal",
@@ -205,64 +1174,55 @@
    "source": "Espace Libre",
    "evenements": 0,
    "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "MAI",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Maison Théâtre",
    "evenements": 0,
    "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Théâtre Outremont",
-   "evenements": 40,
+   "evenements": 35,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Le Gesù",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Espace St-Denis",
-   "evenements": 2,
+   "evenements": 1,
    "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Théâtre Sainte-Catherine",
-   "evenements": 3,
+   "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "TOHU",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Place des Arts",
-   "evenements": 35,
-   "series": 15,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "evenements": 34,
+   "series": 14,
+   "erreur": null
   },
   {
    "source": "Danse Danse",
@@ -277,78 +1237,76 @@
    "source": "Agora de la danse",
    "evenements": 1,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Tangente",
    "evenements": 0,
    "series": 5,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "La Chapelle",
    "evenements": 0,
    "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Usine C (saison)",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "École nationale de cirque",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Fun Nation (humour)",
    "evenements": 12,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Spectaculos (humour, 6 pages)",
-   "evenements": 26,
+   "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "aucun événement trouvé dans 8033 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=3",
+    "aucun événement trouvé dans 7944 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=4",
+    "aucun événement trouvé dans 8054 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=5"
+   ]
   },
   {
    "source": "evenko (humour)",
    "evenements": 20,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Place des Arts (humour)",
    "evenements": 2,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Théâtre Sainte-Catherine (impro et humour)",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-31"
+   "erreur": null
   },
   {
    "source": "Centre des musiciens du monde",
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-01"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://centredesmusiciensdumon) : https://centredesmusiciensdumonde.com/",
+    "page illisible : données du 2026-11-01 conservées"
+   ]
   },
   {
    "source": "Terminal Comédie Club (ma.to)",
@@ -361,8 +1319,7 @@
    "source": "UPop Montréal (université populaire)",
    "evenements": 16,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-31"
+   "erreur": null
   },
   {
    "source": "Cœur des sciences UQAM (conférences grand public)",
@@ -407,7 +1364,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "IA en échec (réponse sans JSON lisible) : https://www.banq.qc.ca/activites/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.banq.qc.ca/activite) : https://www.banq.qc.ca/activites/"
    ]
   },
   {
@@ -429,14 +1386,20 @@
    "evenements": 21,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-01"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://lepointdevente.com/lion) : https://lepointdevente.com/liondor",
+    "page illisible : données du 2026-11-01 conservées"
+   ]
   },
   {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://cabaretliondor.com/\", w) : https://cabaretliondor.com/",
+    "page illisible : données du 2026-10-31 conservées"
+   ]
   },
   {
    "source": "La Mèche courte (festival jeune public)",
@@ -444,7 +1407,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2024 caractères de texte : https://www.lamechecourte.ca/programmation"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.lamechecourte.ca/pr) : https://www.lamechecourte.ca/programmation"
    ]
   },
   {
@@ -452,21 +1415,26 @@
    "evenements": 12,
    "series": 17,
    "erreur": null,
-   "note": "repris du 2026-10-27"
+   "diagnostic": [
+    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/guide-c) : https://www.mtl.org/fr/experience/guide-culturel-enfants-ados",
+    "page illisible : données du 2026-10-27 conservées"
+   ]
   },
   {
    "source": "Place des Arts junior",
    "evenements": 3,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Tourisme Montréal – expositions des musées",
    "evenements": 2,
    "series": 9,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/exposit) : https://www.mtl.org/fr/experience/expositions-musees-montreal",
+    "page illisible : données du 2026-10-28 conservées"
+   ]
   },
   {
    "source": "Tourisme Montréal – expositions automne-hiver",
@@ -480,65 +1448,63 @@
   {
    "source": "Réseau art actuel (centres d'artistes, vernissages)",
    "evenements": 9,
-   "series": 67,
+   "series": 34,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (303 caractères ; site en JavaScript ?) : https://reseauartactuel.org/evenements/page/4/?intervalle=semaine"
+   ]
   },
   {
    "source": "Art Mûr (expositions à venir)",
    "evenements": 2,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "ma.to (musique live)",
    "evenements": 18,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "evenko (concerts)",
-   "evenements": 15,
+   "evenements": 13,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-31"
+   "erreur": null
   },
   {
    "source": "Théâtre Fairmount",
-   "evenements": 22,
+   "evenements": 21,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Club Soda",
    "evenements": 8,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Bar Le Ritz PDB",
-   "evenements": 28,
+   "evenements": 25,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Foufounes Électriques",
    "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://foufouneselectriques.co) : https://foufouneselectriques.com/",
+    "page illisible : données du 2026-10-30 conservées"
+   ]
   },
   {
    "source": "Newspeak",
    "evenements": 14,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Piranha Bar",
@@ -546,7 +1512,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (248 caractères ; site en JavaScript ?) : https://piranhabar.ca/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://piranhabar.ca/\", waitin) : https://piranhabar.ca/"
    ]
   },
   {
@@ -555,57 +1521,56 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://cafecampus.com/\", waiti) : https://cafecampus.com/"
    ]
   },
   {
    "source": "Théâtre St-Denis",
-   "evenements": 2,
+   "evenements": 1,
    "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Blouin Division",
    "evenements": 0,
-   "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "series": 2,
+   "erreur": null
   },
   {
    "source": "Bradley Ertaskiran",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Chiguer Art Contemporain",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Duran Contemporain",
    "evenements": 0,
-   "series": 1,
+   "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-27"
+   "diagnostic": [
+    "aucun événement trouvé dans 3208 caractères de texte : https://durancontemporain.com/"
+   ]
   },
   {
    "source": "Galerie Eli Kerr",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "ELLEPHANT",
    "evenements": 0,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://ellephant.org"
+   ]
   },
   {
    "source": "Galerie C.O.A",
@@ -620,8 +1585,7 @@
    "source": "Galerie Hugues Charbonneau",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Galerie Lacerte art contemporain",
@@ -664,36 +1628,31 @@
    "source": "Galerie Simon Blais",
    "evenements": 0,
    "series": 4,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Galeries Bellemare Lambert",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "McBride Contemporain",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Pangée",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Patel Brown",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Galerie Patrick Mikhail",
@@ -708,15 +1667,16 @@
    "source": "Pierre-François Ouellette art contemporain",
    "evenements": 1,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "TIAN Contemporain",
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://fr.tiancontemporain.com/"
+   ]
   },
   {
    "source": "Wishbone Galerie d'art",
@@ -739,10 +1699,9 @@
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
-   "evenements": 4,
+   "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Dièse Onze",
@@ -758,7 +1717,9 @@
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/"
+   ]
   },
   {
    "source": "Cabaret Jazz L'Entracte",
@@ -794,7 +1755,9 @@
    "evenements": 29,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebalcon.ca/"
+   ]
   },
   {
    "source": "Turbo Haüs",
@@ -810,28 +1773,31 @@
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://quaidesbrumes.ca/\", wai) : https://quaidesbrumes.ca/",
+    "page illisible : données du 2026-10-30 conservées"
+   ]
   },
   {
    "source": "Le Ministère",
    "evenements": 8,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Le Belmont",
    "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebelmont.ca/"
+   ]
   },
   {
    "source": "Ausgang Plaza",
-   "evenements": 17,
+   "evenements": 14,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Système MTL",
@@ -839,7 +1805,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://www.systememtl.com/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.systememtl.com/\", w) : https://www.systememtl.com/"
    ]
   },
   {
@@ -848,7 +1814,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (172 caractères ; site en JavaScript ?) : https://www.theatrerialto.ca/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.theatrerialto.ca/\",) : https://www.theatrerialto.ca/"
    ]
   },
   {
@@ -857,36 +1823,32 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (32 caractères ; site en JavaScript ?) : http://latulipe.ca/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"http://latulipe.ca/\", waiting u) : http://latulipe.ca/"
    ]
   },
   {
    "source": "Le Studio TD",
    "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo – La Toscadura",
-   "evenements": 18,
+   "evenements": 16,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo – P'tit Ours",
-   "evenements": 27,
+   "evenements": 28,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo – La Sotterenea",
-   "evenements": 23,
+   "evenements": 21,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Resident Advisor – Montréal (électro, raves)",
@@ -899,17 +1861,18 @@
   },
   {
    "source": "Bar Datcha",
-   "evenements": 10,
+   "evenements": 8,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "SAT – Société des arts technologiques",
    "evenements": 7,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://sat.qc.ca/"
+   ]
   },
   {
    "source": "Laugh It Off MTL (humour, scènes ouvertes)",
@@ -922,24 +1885,28 @@
   },
   {
    "source": "Cabaret Mado (drag)",
-   "evenements": 55,
+   "evenements": 52,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Wiggle Room (burlesque, cabaret)",
    "evenements": 19,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.wiggleroom.ca/fr/shows"
+   ]
   },
   {
    "source": "Caf' Conc' (cabaret)",
    "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://cafeconcert.ca/\", waiti) : https://cafeconcert.ca/",
+    "page illisible : données du 2026-10-28 conservées"
+   ]
   },
   {
    "source": "Espace La Risée",
@@ -956,22 +1923,23 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (200 caractères ; site en JavaScript ?) : http://www.infinitheatre.com/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"http://www.infinitheatre.com/\",) : http://www.infinitheatre.com/"
    ]
   },
   {
    "source": "Théâtre MainLine",
-   "evenements": 5,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "aucun événement trouvé dans 2429 caractères de texte : http://www.mainlinetheatre.ca/"
+   ]
   },
   {
    "source": "Repercussion Theatre",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Théâtre de l'Esquisse",
@@ -979,15 +1947,14 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (585 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://theatredelesquisse.qc.c) : https://theatredelesquisse.qc.ca/"
    ]
   },
   {
    "source": "La Comédie de Montréal",
-   "evenements": 15,
+   "evenements": 11,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Circuit-Est centre chorégraphique",
@@ -1020,36 +1987,35 @@
    "source": "DARE-DARE (art public)",
    "evenements": 0,
    "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Monument-National",
    "evenements": 6,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Le Livart (centre d'art multidisciplinaire)",
    "evenements": 1,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Librairie Drawn & Quarterly (lancements, lectures)",
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://mtl.drawnandquarterly.c) : https://mtl.drawnandquarterly.com/events",
+    "page illisible : données du 2026-10-28 conservées"
+   ]
   },
   {
    "source": "La poésie partout (calendrier)",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Slamontréal",
@@ -1066,42 +2032,42 @@
    "evenements": 10,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.gsimtl.com/spectaclesGSIMTl2026"
+   ]
   },
   {
    "source": "La Livrerie",
    "evenements": 17,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Salle Pauline-Julien (ouest de l'île)",
-   "evenements": 27,
+   "evenements": 21,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Pointe-Claire – Stewart Hall et activités",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
-   "evenements": 30,
+   "evenements": 28,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Pierrefonds-Roxboro – spectacles",
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://montreal.ca/articles/spectacles-pierrefonds-roxboro-43673"
+   ]
   },
   {
    "source": "LaSalle – programmation culturelle",
@@ -1117,8 +2083,7 @@
    "source": "150 ans du parc du Mont-Royal",
    "evenements": 0,
    "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo / Sala Rossa",
@@ -1131,17 +2096,15 @@
   },
   {
    "source": "Ursa",
-   "evenements": 27,
+   "evenements": 28,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "La Lumière Collective",
    "evenements": 7,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Eastern Bloc",
@@ -1155,31 +2118,27 @@
   },
   {
    "source": "Quai des Brumes (billetterie)",
-   "evenements": 7,
+   "evenements": 6,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Café Campus (billetterie)",
    "evenements": 5,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Café Campus et Petit Campus – shows (billetterie)",
    "evenements": 36,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Turbo Haüs (billetterie)",
-   "evenements": 10,
+   "evenements": 9,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Théâtre Rialto (billetterie)",
@@ -1194,50 +2153,43 @@
    "source": "Espace La Risée (billetterie)",
    "evenements": 1,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "L'Escogriffe (billetterie)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Club Soda (billetterie)",
-   "evenements": 32,
+   "evenements": 27,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Ausgang Plaza (billetterie)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "O Patro Vys (billetterie)",
    "evenements": 12,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Centre Sanaaq (billetterie)",
-   "evenements": 6,
+   "evenements": 5,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Club Balattou (billetterie)",
-   "evenements": 16,
+   "evenements": 15,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Le Balattou (billetterie, 2e page)",
@@ -1252,48 +2204,43 @@
    "source": "Le Belmont (billetterie)",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
-   "evenements": 4,
+   "evenements": 5,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Soirées quiz (hebdomadaires)",
-   "evenements": 108,
+   "evenements": 105,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Ligues d'improvisation (hebdomadaires)",
-   "evenements": 9,
+   "evenements": 8,
    "series": 0,
    "erreur": null
   },
   {
    "source": "ma.to – communauté (quiz, trivia)",
-   "evenements": 1,
+   "evenements": 0,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Wiggle Room (ma.to)",
-   "evenements": 5,
+   "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Le Balcon (ma.to)",
-   "evenements": 3,
+   "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
@@ -1301,15 +2248,14 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.zeffy.com/fr-CA/org) : https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl"
    ]
   },
   {
    "source": "PAN M 360 – agenda musique",
-   "evenements": 42,
+   "evenements": 39,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-29"
+   "erreur": null
   },
   {
    "source": "Formulaire : événements proposés",
@@ -1323,7 +2269,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.zeffy.com/fr-CA/org) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -1332,29 +2278,29 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (500 Server Error: Internal Server Error for url: https://compagnietheatrecreole.) : https://compagnietheatrecreole.ca/festitheatrecreole/"
+    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/"
    ]
   },
   {
    "source": "Festival · Monde Arabe (1)",
-   "evenements": 38,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (19 caractères ; site en JavaScript ?) : https://festivalarabe.com/programmation"
+   ]
   },
   {
    "source": "Festival · Monde Arabe (2)",
    "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · CINEMANIA",
    "evenements": 205,
    "series": 47,
-   "erreur": null,
-   "note": "repris du 2026-10-31"
+   "erreur": null
   },
   {
    "source": "Festival · La Mèche courte",
@@ -1362,22 +2308,23 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1020 caractères de texte : https://www.lamechecourte.ca/programmation"
+    "aucun événement trouvé dans 1728 caractères de texte : https://www.lamechecourte.ca/programmation"
    ]
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 7,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "aucun événement trouvé dans 10841 caractères de texte : https://festivalbachmontreal.com/programmation/"
+   ]
   },
   {
    "source": "Festival · Coup de cœur",
-   "evenements": 94,
+   "evenements": 93,
    "series": 16,
-   "erreur": null,
-   "note": "repris du 2026-10-31"
+   "erreur": null
   },
   {
    "source": "Festival · Mundial",
@@ -1399,87 +2346,84 @@
   },
   {
    "source": "Festival · M pour Montréal (2)",
-   "evenements": 0,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "evenements": 3,
+   "series": 2,
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (1)",
-   "evenements": 3,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "aucun événement trouvé dans 4584 caractères de texte : https://ridm.ca/fr/grille-horaire"
+   ]
   },
   {
    "source": "Festival · RIDM (2)",
-   "evenements": 28,
+   "evenements": 27,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (3)",
-   "evenements": 35,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "evenements": 3,
+   "series": 0,
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (4)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (5)",
-   "evenements": 21,
+   "evenements": 22,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (6)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (7)",
-   "evenements": 38,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "evenements": 3,
+   "series": 0,
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (8)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (9)",
-   "evenements": 25,
+   "evenements": 27,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (10)",
-   "evenements": 31,
-   "series": 1,
+   "evenements": 0,
+   "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "aucun événement trouvé dans 26557 caractères de texte : https://ridm.ca/fr/grille-horaire?date=2026-11-28"
+   ]
   },
   {
    "source": "Festival · RIDM (11)",
-   "evenements": 47,
-   "series": 1,
+   "evenements": 0,
+   "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "aucun événement trouvé dans 23735 caractères de texte : https://ridm.ca/fr/grille-horaire?date=2026-11-29"
+   ]
   },
   {
    "source": "Festival · image+nation",
@@ -1487,16 +2431,14 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4128 caractères de texte : https://image-nation.org"
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org"
    ]
   },
   {
    "source": "Festival · Salon du livre",
    "evenements": 0,
-   "series": 3,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "series": 2,
+   "erreur": null
   },
   {
    "source": "Festival · Igloofest",
@@ -1522,23 +2464,23 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 4283 caractères de texte : https://www.montrealenlumiere.com"
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com"
    ]
   },
   {
    "source": "Festival · Casteliers",
-   "evenements": 2,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-27"
+   "diagnostic": [
+    "aucun événement trouvé dans 4935 caractères de texte : https://casteliers.ca"
+   ]
   },
   {
    "source": "Festival · FIFA",
-   "evenements": 3,
+   "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Festival · Vues d'Afrique",
@@ -1573,7 +2515,6 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
     "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
@@ -1628,7 +2569,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1225 caractères de texte : https://fbdm-mcaf.ca"
+    "aucun événement trouvé dans 1123 caractères de texte : https://fbdm-mcaf.ca"
    ]
   },
   {
@@ -1691,23 +2632,26 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
     "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
    "source": "Festival · Francos",
-   "evenements": 1,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (85 caractères ; site en JavaScript ?) : https://francosmontreal.com"
+   ]
   },
   {
    "source": "Festival · Festival de Jazz",
-   "evenements": 5,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (80 caractères ; site en JavaScript ?) : https://www.montrealjazzfest.com"
+   ]
   },
   {
    "source": "Festival · Complètement Cirque",
@@ -1720,10 +2664,9 @@
   },
   {
    "source": "Festival · Nuits d'Afrique",
-   "evenements": 7,
+   "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · Juste pour rire",
@@ -1767,8 +2710,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4182 caractères de texte : https://osheaga.com"
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com"
    ]
   },
   {
@@ -1786,16 +2728,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://ilesoniq.com",
-    "aucun événement trouvé dans 3801 caractères de texte : https://ilesoniq.com"
+    "page presque vide (98 caractères ; site en JavaScript ?) : https://ilesoniq.com"
    ]
   },
   {
    "source": "Festival · LASSO",
-   "evenements": 2,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (41 caractères ; site en JavaScript ?) : https://lassomontreal.com"
+   ]
   },
   {
    "source": "Festival · MUTEK",
@@ -1822,7 +2765,6 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
     "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
@@ -1876,22 +2818,19 @@
    "source": "Festival · Akousma",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · Comiccon",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-27"
+   "erreur": null
   },
   {
    "source": "Festival · Comiccon des Fêtes",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-30"
+   "erreur": null
   },
   {
    "source": "Festival · Under Pressure",
@@ -1932,10 +2871,12 @@
   },
   {
    "source": "Festival · Concerts Campbell",
-   "evenements": 1,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
+   ]
   },
   {
    "source": "Festival · Shows de ruelle",

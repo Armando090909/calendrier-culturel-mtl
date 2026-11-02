@@ -35,7 +35,10 @@
   "lon": -73.5687,
   "quartier": "Quartier des spectacles"
  },
+ "Au Vieux - Brasserie Festive": null,
  "Auberge St Gabriel - Montreal": null,
+ "Auditorium Fernand-Bilodeau": null,
+ "Auditorium des Archives nationales — BAnQ": null,
  "Ausgang Plaza": {
   "lat": 45.537,
   "lon": -73.607,
@@ -292,6 +295,7 @@
  "Burton Cummings Theatre": null,
  "CIRCA art actuel": null,
  "Cabaret Fouf": null,
+ "Cabaret Guy-Aubert": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
   "lon": -73.5545,
@@ -309,6 +313,7 @@
  },
  "Cabaret-Théâtre du Vieux Saint-Jean": null,
  "Caf'Conc'": null,
+ "Cafe Gotsoul": null,
  "Café Campus": {
   "lat": 45.5146,
   "lon": -73.571,
@@ -538,8 +543,11 @@
   "lon": -73.66147,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "El Lounge Resto-Bar": null,
  "Elgin and Winter Garden Theatre Centre": null,
+ "Error 403": null,
  "Espace Culturel Kawalees": null,
+ "Espace Félix-Leclerc": null,
  "Espace GO": {
   "lat": 45.5215,
   "lon": -73.5915,
@@ -1072,6 +1080,7 @@
   "quartier": "Centre-ville"
  },
  "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
+ "NINI Salon à Cocktails": null,
  "New City Gas": {
   "lat": 45.492,
   "lon": -73.559,
@@ -1130,6 +1139,7 @@
   "lon": -73.561,
   "quartier": "Centre-ville"
  },
+ "Panache art actuel": null,
  "Pangée": {
   "adresse": "1305, avenue des Pins Ouest, Montréal",
   "alias": [],
@@ -1237,6 +1247,7 @@
   "quartier": "Vieux-Montréal"
  },
  "Premier Acte": null,
+ "Private Room": null,
  "Pub Bishop & Bagg": {
   "lat": 45.52161,
   "lon": -73.58937,
@@ -1307,6 +1318,7 @@
  "Salle Jean-Louis-Millette": null,
  "Salle Louis-Fréchette": null,
  "Salle Madeleine-Lahaye": null,
+ "Salle Michel Côté": null,
  "Salle Michelle-Rossignol": null,
  "Salle Méchatigan": null,
  "Salle Norman-McLaren": null,
@@ -1320,6 +1332,7 @@
   "quartier": "Quartier latin"
  },
  "Salle Richard-Sauvageau": null,
+ "Salle Théatre La Scène": null,
  "Salle Wilfrid-Pelletier": {
   "lat": 45.508,
   "lon": -73.5665,
@@ -1356,6 +1369,7 @@
   "quartier": "Quartier latin"
  },
  "Studio-théâtre des Grands Ballets": null,
+ "TBA": null,
  "TIAN Contemporain": {
   "adresse": "819, avenue Atwater, Montréal",
   "alias": [],
@@ -1544,6 +1558,7 @@
   "lon": -73.565,
   "quartier": "Quartier latin"
  },
+ "Turbohaus": null,
  "Typhoon Lounge": {
   "lat": 45.47368,
   "lon": -73.62427,
@@ -1614,6 +1629,7 @@
   "quartier": "Ville-Marie"
  },
  "neverclub": null,
+ "non indiqué": null,
  "École Saint-Rémi annexe": {
   "lat": 45.58986,
   "lon": -73.63773,

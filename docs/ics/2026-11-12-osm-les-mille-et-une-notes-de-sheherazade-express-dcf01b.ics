@@ -28,8 +28,10 @@ DTSTART;TZID=America/Toronto:20261112T193000
 DTEND;TZID=America/Toronto:20261112T213000
 SUMMARY:OSM : Les mille et une notes de Shéhérazade – Express
 LOCATION:Maison symphonique\, Montréal
-URL:https://panm360.com/en/agenda-360/
-DESCRIPTION:Version express du concert symphonique inspiré de Shéhérazad
- e.\nDétails : https://panm360.com/en/agenda-360/\n(ccmtl.ca)
+URL:https://panm360.com/en/agenda/osm-les-mille-et-une-notes-de-sheherazade
+ -express/
+DESCRIPTION:Version courte de Shéhérazade jouée par l'Orchestre symphoni
+ que de Montréal.\nDétails : https://panm360.com/en/agenda/osm-les-mille-
+ et-une-notes-de-sheherazade-express/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

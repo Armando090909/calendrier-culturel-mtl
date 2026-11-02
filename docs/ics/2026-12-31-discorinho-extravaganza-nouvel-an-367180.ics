@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-31-discorinho-extravaganza-nouvel-an-367180@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261231T220000
+DTEND;TZID=America/Toronto:20270101T000000
+SUMMARY:Discorinho Extravaganza (Nouvel An)
+LOCATION:Newspeak\, Montréal
+URL:https://newspeakmtl.com/evenements/2026-12-31-discorinho-extravaganza-n
+ ouvel-an
+DESCRIPTION:Fête du Nouvel An avec la soirée Discorinho Extravaganza\, à
+  Newspeak.\nDétails : https://www.universe.com/events/discorinho-extravag
+ anza-nouvel-an-tickets-WBVQJG\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

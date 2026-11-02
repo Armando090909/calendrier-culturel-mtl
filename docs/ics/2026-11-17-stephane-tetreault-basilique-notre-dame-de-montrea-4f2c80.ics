@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-17-stephane-tetreault-basilique-notre-dame-de-montrea-4f2c80@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261117T130000
+DTEND;TZID=America/Toronto:20261117T150000
+SUMMARY:Stéphane Tétreault @ Basilique Notre-Dame de Montréal
+LOCATION:Basilique Notre-Dame\, Montréal
+URL:https://www.songkick.com/concerts/43492143-stephane-tetreault-at-basili
+ que-notredame-de-montreal?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Stéphane Tétreault at Basilique Notre-Dame de Montréal at 20
+ 26-11-17T13:00:00-0500\nDétails : http://www.songkick.com/concerts/434921
+ 43-stephane-tetreault-at-basilique-notredame-de-montreal?utm_medium=organi
+ c&utm_source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

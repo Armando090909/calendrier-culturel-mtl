@@ -217,8 +217,11 @@
    "cinema",
    "expo"
   ],
+  "debut": "2027-03-11",
+  "fin": "2027-03-28",
   "mois": 3,
-  "site": "https://www.artfifa.com"
+  "site": "https://www.artfifa.com",
+  "verifier": true
  },
  {
   "id": "vuesdafrique",
@@ -334,9 +337,10 @@
    "lettres",
    "jeune"
   ],
-  "debut": "2026-05-15",
-  "fin": "2026-05-17",
-  "site": "https://fbdm-mcaf.ca"
+  "debut": "2027-05-14",
+  "fin": "2027-05-16",
+  "site": "https://fbdm-mcaf.ca",
+  "verifier": true
  },
  {
   "id": "piknic",
@@ -370,9 +374,10 @@
    "theatre",
    "danse"
   ],
-  "debut": "2026-05-28",
-  "fin": "2026-06-10",
-  "site": "https://fta.ca"
+  "debut": "2027-05-26",
+  "fin": "2027-06-10",
+  "site": "https://fta.ca",
+  "verifier": true
  },
  {
   "id": "offta",
@@ -430,10 +435,11 @@
   "disciplines": [
    "musique"
   ],
-  "debut": "2026-06-12",
-  "fin": "2026-06-20",
+  "debut": "2027-06-11",
+  "fin": "2027-06-19",
   "lieu": "Quartier des spectacles",
-  "site": "https://francosmontreal.com"
+  "site": "https://francosmontreal.com",
+  "verifier": true
  },
  {
   "id": "jazz",
@@ -442,10 +448,11 @@
   "disciplines": [
    "musique"
   ],
-  "debut": "2026-06-25",
-  "fin": "2026-07-04",
+  "debut": "2027-06-25",
+  "fin": "2027-07-04",
   "lieu": "Quartier des spectacles",
-  "site": "https://www.montrealjazzfest.com"
+  "site": "https://www.montrealjazzfest.com",
+  "verifier": true
  },
  {
   "id": "completementcirque",
@@ -609,9 +616,10 @@
   "disciplines": [
    "musique"
   ],
-  "debut": "2026-09-04",
-  "fin": "2026-09-06",
-  "site": "https://festivaltradmontreal.ca"
+  "debut": "2027-09-03",
+  "fin": "2027-09-05",
+  "site": "https://festivaltradmontreal.ca",
+  "verifier": true
  },
  {
   "id": "quartiersdanses",
