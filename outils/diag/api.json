@@ -1,0 +1,88 @@
+{
+ "tidal_jeton": {
+  "statut": 200,
+  "champs": [
+   "access_token",
+   "expires_in",
+   "scope",
+   "token_type"
+  ]
+ },
+ "tidal_recherche_Rabaska": {
+  "statut": 400,
+  "extrait": "\"{\\\"errors\\\":[{\\\"code\\\":\\\"INVALID_RESOURCE_ID\\\",\\\"detail\\\":\\\"Invalid resource ID\\\",\\\"source\\\":{\\\"pointer\\\":\\\"/data/id\\\"}}]}\""
+ },
+ "tidal_recherche_Les Louanges": {
+  "statut": 400,
+  "extrait": "\"{\\\"errors\\\":[{\\\"code\\\":\\\"INVALID_RESOURCE_ID\\\",\\\"detail\\\":\\\"Invalid resource ID\\\",\\\"source\\\":{\\\"pointer\\\":\\\"/data/id\\\"}}]}\""
+ },
+ "youtube_Mille secrets, mille dangers": [],
+ "youtube_Au nord des hommes": [],
+ "youtube_Paradis": [],
+ "youtube_brut": {
+  "statut": 200,
+  "titres": [
+   [
+    "Mille secrets, mille dangers (Lovely Day) Trailer - ALFF 2026",
+    "Yukon Film Society "
+   ],
+   [
+    "2026 SBIFF Trailer - LOVELY DAY (MILLE SECRETS MILLE DANGERS)",
+    "officialSBIFF"
+   ],
+   [
+    "KEN RUSSELL&#39;S THE DEVILS - Official Trailer - In Theaters October 16",
+    "Warner Bros. Clockwork"
+   ],
+   [
+    "LOVELY DAY Trailer | TIFF 2025",
+    "TIFF"
+   ],
+   [
+    "Réalisé sans trucage.",
+    "Netflix France"
+   ],
+   [
+    "FALL 2 Bande Annonce VF (2026)",
+    "FilmsActu"
+   ],
+   [
+    "EVIL DEAD BURN Bande Annonce VF (2026)",
+    "FilmsActu"
+   ],
+   [
+    "LA FEMME DE MÉNAGE Bande Annonce VF (2025) Sydney Sweeney, Amanda Seyfried",
+    "FilmsActu"
+   ],
+   [
+    "UNABOMBER | Official Trailer | Netflix",
+    "Netflix"
+   ],
+   [
+    "Verity | Bande-annonce officielle VF | Anne Hathaway, Dakota Johnson, Josh Hartnett",
+    "Amazon MGM Studios France"
+   ]
+  ]
+ },
+ "lastfm_Rabaska": {
+  "tags": [],
+  "bio": "read more on last fm",
+  "ici": false
+ },
+ "lastfm_Les Louanges": {
+  "tags": [
+   "canada",
+   "Canadian",
+   "funk",
+   "indie",
+   "rnb"
+  ],
+  "bio": "les louanges c est vincent roberge un multi instrumentiste avec un timbre de voix singulier et un style bien a lui les sonorites s apparentent a un chill wave teinte de r b et de hip hop comme en temoigne l album la nuit est une panthere read more on last fm user contributed text is available under the creative commons by sa license additional terms may apply",
+  "ici": true
+ },
+ "lastfm_Lewis Lines": {
+  "tags": [],
+  "bio": "read more on last fm",
+  "ici": false
+ }
+}
