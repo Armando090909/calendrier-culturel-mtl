@@ -5,9 +5,7 @@
 name: Réseaux sociaux
 on:
   schedule:
-    - cron: "23 13 * * 1"
-    - cron: "23 15 * * 1"
-    - cron: "23 18 * * 1"
+    - cron: "23 13-21 * * 1"   # chaque heure de 8 h 23 à 16 h 23 (Montréal, hiver) : la première qui démarre publie
   push:
     branches: [main]
     paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt"]
