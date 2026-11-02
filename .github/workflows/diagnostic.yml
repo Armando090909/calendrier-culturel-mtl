@@ -3,7 +3,7 @@ name: Diagnostic de pages
 on:
   push:
     branches: [main]
-    paths: ["outils/diag/urls.txt"]
+    paths: ["outils/diag/urls.txt", "outils/explorer_api.py"]
   workflow_dispatch:
 concurrency:
   group: diagnostic
@@ -30,8 +30,15 @@ jobs:
       - run: python outils/diag.py
         env:
           CONTACT: ${{ vars.CONTACT }}
+      - name: Essai des API à clé
+        run: python outils/explorer_api.py || true
+        env:
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
       - run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add outils/diag/resultat.json
+          git add outils/diag/resultat.json outils/diag/api.json
           git commit -m "Diagnostic de pages" && { git pull --rebase -X theirs origin main; git push; } || true
