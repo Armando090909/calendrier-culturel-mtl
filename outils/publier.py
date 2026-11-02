@@ -105,14 +105,28 @@ def _bsky_post(h, did, texte, images, reponse=None):
     return {"uri": r.json()["uri"], "cid": r.json()["cid"]}
 
 
+BLUESKY_DID = "did:plc:gu5qsdm7glxvc2cb7vdjtxaq"  # identifiant permanent du compte (ne change pas avec le nom @…)
+
+
+def _session_bluesky(ident, mdp):
+    """Connexion avec l'identifiant enregistré ; s'il ne marche plus (changement de nom @ccmtl.ca, par exemple),
+    avec l'identifiant permanent du compte."""
+    s = None
+    for i in dict.fromkeys([ident, BLUESKY_DID]):
+        s = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
+                          json={"identifier": i, "password": mdp}, timeout=30)
+        if s.ok:
+            break
+    s.raise_for_status()
+    return s
+
+
 def bluesky(messages):
     """messages : [(texte, [(jpeg, alt), …]), …] — le premier ouvre le fil, les suivants y répondent."""
     ident, mdp = os.environ.get("BLUESKY_IDENTIFIANT"), os.environ.get("BLUESKY_MOT_DE_PASSE")
     if not ident or not mdp:
         return None
-    s = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
-                      json={"identifier": ident, "password": mdp}, timeout=30)
-    s.raise_for_status()
+    s = _session_bluesky(ident, mdp)
     s = s.json()
     h = {"Authorization": "Bearer " + s["accessJwt"]}
     if ESSAI:
@@ -145,9 +159,7 @@ def profil_bluesky():
     ident, mdp = os.environ.get("BLUESKY_IDENTIFIANT"), os.environ.get("BLUESKY_MOT_DE_PASSE")
     if not ident or not mdp:
         return None
-    s = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
-                      json={"identifier": ident, "password": mdp}, timeout=30)
-    s.raise_for_status()
+    s = _session_bluesky(ident, mdp)
     s = s.json()
     h = {"Authorization": "Bearer " + s["accessJwt"]}
     r = requests.get("https://bsky.social/xrpc/com.atproto.repo.getRecord", headers=h, timeout=30,
@@ -639,6 +651,11 @@ def main():
         return apercu()
     if ETAPE == "consignes":
         return consignes()
+    if SEULEMENT == ["test_did_bluesky"]:  # la connexion de secours (identifiant permanent) fonctionne-t-elle ?
+        r = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
+                          json={"identifier": BLUESKY_DID, "password": os.environ.get("BLUESKY_MOT_DE_PASSE", "")}, timeout=30)
+        print("connexion par identifiant permanent :", r.status_code, r.json().get("handle", r.text[:120]))
+        return
     if SEULEMENT == ["profil_bluesky"]:
         print(profil_bluesky())
         return

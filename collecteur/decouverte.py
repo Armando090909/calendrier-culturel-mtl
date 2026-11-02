@@ -470,9 +470,24 @@ def catalogues(nom: str, ctx: dict, get_json, journal: list | None = None) -> li
         except Exception as exc:
             print(f"  {cle} « {nom[:30]} » : {exc}")
     fiches = {k: v for k, v in fiches.items() if v}
+    lfm = None
+    if fiches:
+        try:
+            lfm = fiche_lastfm(nom, get_json)
+        except Exception as exc:
+            print(f"  Last.fm « {nom[:30]} » : {exc}")
     ok = {}
     for k, f in fiches.items():
         pour, contre = _indices(f, nom, ctx)
+        if lfm:
+            # Last.fm cite un album du catalogue dans sa biographie, ou présente un artiste d'ici du même genre
+            cites = [o for o in f["oeuvres"] if len(o) >= 6 and o != plat(nom) and o not in _TITRES_VIDES and f" {o} " in f" {lfm['bio']} "]
+            styles_f = {st for g in f["genres"] if g and (st := style_genre(g))}
+            styles_l = {st for g in lfm["tags"] if g and (st := style_genre(g))}
+            if cites:
+                pour.append("Last.fm cite l'album : " + cites[0])
+            elif lfm["ici"] and styles_f & styles_l:
+                pour.append("Last.fm : artiste d'ici, même genre (" + "/".join(sorted(styles_f & styles_l)) + ")")
         ok[k] = (bool(pour) and not contre, pour, contre)
     if len(fiches) == 2:  # même artiste dans les deux catalogues : la confirmation de l'un vaut pour l'autre
         communs = {o for o in fiches["deezer"]["oeuvres"] & fiches["apple"]["oeuvres"] if len(o) >= 4}
@@ -532,6 +547,93 @@ def bande_annonce_tmdb(titre: str, annee: int, get_json) -> list[dict]:
         out.append({"type": "affiche", "url": "https://image.tmdb.org/t/p/w342" + films[0]["poster_path"], "source": "tmdb",
                     "lien": f"https://www.themoviedb.org/movie/{films[0]['id']}"})
     return out
+
+
+# ---------------------------------------------------------------- YouTube : bandes-annonces (API officielle, clé gratuite)
+# Quota gratuit : 10 000 unités par jour ; une recherche en coûte 100, la fiche des vidéos 1. On s'en tient à 80
+# recherches par jour (compteur dans la mémoire) ; les films restants passent les jours suivants.
+YT_PAR_JOUR = 80
+DISTRIBUTEURS = ("maison 4 3", "maison 4:3", "immina", "axia films", "tva films", "metropole films", "entract", "sphere films",
+                 "les films seville", "films seville", "h264", "mk2 mile end", "mk2", "funfilm", "fun film", "remstar",
+                 "onf", "nfb", "office national du film", "national film board", "telefilm", "a24", "neon", "mubi",
+                 "elevation pictures", "mongrel media", "vvs films", "pathe", "gaumont", "le pacte", "diaphana", "ad vitam",
+                 "haut et court", "memento", "wild bunch", "studiocanal", "warner", "universal", "paramount", "sony pictures",
+                 "focus features", "searchlight", "lionsgate", "magnolia", "ifc films", "kino lorber", "janus", "criterion",
+                 "cinemania", "ridm", "fnc", "festival du nouveau cinema", "rvqc", "cinematheque")
+_PAS_BA = re.compile(r"(?i)\b(review|critique|reaction|réaction|explained|expliqu|fan.?made|parod|analys|recap|résumé|"
+                     r"interview|entrevue|making.?of|behind|coulisses|scene|scène|clip|extrait|featurette|podcast|ending|fin expliqu)")
+_EST_BA = re.compile(r"(?i)bande[- ]?annonce|trailer|teaser|\bba\b")
+
+
+def _duree_s(iso: str) -> int:
+    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", iso or "")
+    return (int(m.group(1) or 0) * 3600 + int(m.group(2) or 0) * 60 + int(m.group(3) or 0)) if m else 0
+
+
+def bande_annonce_youtube(titre: str, annee: int, get_json, memo: dict, aujourd: date) -> list[dict]:
+    """Bande-annonce sur YouTube, seulement si tout concorde : le titre du film dans celui de la vidéo (mots entiers),
+    « bande-annonce / trailer / teaser », ni critique ni extrait, moins de 4 min 30, et une chaîne de distributeur ou
+    de festival (ou portant le titre du film) — ou une seule vidéo qui remplit tout le reste. Titre d'un seul mot
+    (« Paradis ») : chaîne de confiance et vidéo de moins de 3 ans exigées."""
+    cle = os.environ.get("YOUTUBE_API_KEY")
+    if not cle or len(plat(titre)) < 4:
+        return []
+    compteur = memo.setdefault("_youtube", {})
+    if compteur.get("jour") != aujourd.isoformat():
+        compteur.update(jour=aujourd.isoformat(), n=0)
+    if compteur["n"] >= YT_PAR_JOUR:
+        return []
+    compteur["n"] += 1
+    r = get_json("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&regionCode=CA"
+                 f"&q={quote(titre + ' bande-annonce trailer')}&key={cle}") or {}
+    t = plat(titre)
+    cands = []
+    for it in r.get("items", []):
+        sn = it.get("snippet") or {}
+        vt = sn.get("title", "")
+        if f" {t} " not in f" {plat(vt)} " or not _EST_BA.search(vt) or _PAS_BA.search(vt):
+            continue
+        cands.append({"id": (it.get("id") or {}).get("videoId"), "titre": vt, "chaine": sn.get("channelTitle", ""),
+                      "date": sn.get("publishedAt", "")[:10]})
+    cands = [c for c in cands if c["id"]]
+    if not cands:
+        return []
+    v = get_json("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id="
+                 + ",".join(c["id"] for c in cands) + f"&key={cle}") or {}
+    durees = {x["id"]: _duree_s((x.get("contentDetails") or {}).get("duration", "")) for x in v.get("items", [])}
+    cands = [c for c in cands if 20 <= durees.get(c["id"], 0) <= 270]
+    confiance = lambda c: any(d in plat(c["chaine"]) for d in DISTRIBUTEURS) or t in plat(c["chaine"])  # noqa: E731
+    recent = lambda c: c["date"] and int(c["date"][:4]) >= annee - 3  # noqa: E731
+    surs = [c for c in cands if confiance(c)]
+    if len(t.split()) == 1:
+        surs = [c for c in surs if recent(c)]
+        choix = surs[0] if surs else None
+    else:
+        choix = surs[0] if surs else (cands[0] if len(cands) == 1 else None)
+    if not choix:
+        return []
+    return [{"type": "bande-annonce", "url": f"https://www.youtube.com/watch?v={choix['id']}", "source": "youtube",
+             "chaine": choix["chaine"]}]
+
+
+# ---------------------------------------------------------------- Last.fm : un témoin de plus pour Deezer et Apple Music
+_ICI = re.compile(r"(?i)montr[ée]al|qu[ée]bec|canad")
+
+
+def fiche_lastfm(nom: str, get_json) -> dict | None:
+    """Étiquettes (genres) et biographie Last.fm d'un nom d'artiste (clé gratuite LASTFM_API_KEY). Last.fm regroupe
+    parfois des homonymes sous un même nom : cette fiche ne sert jamais seule, seulement à confirmer un catalogue."""
+    cle = os.environ.get("LASTFM_API_KEY")
+    if not cle:
+        return None
+    r = get_json(f"https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist={quote(nom)}&autocorrect=0"
+                 f"&api_key={cle}&format=json") or {}
+    a = r.get("artist")
+    if not a or plat(a.get("name", "")) != plat(nom):
+        return None
+    tags = [x.get("name", "") for x in ((a.get("tags") or {}).get("tag") or [])]
+    bio = re.sub(r"<[^>]+>", " ", (a.get("bio") or {}).get("content") or (a.get("bio") or {}).get("summary") or "")
+    return {"tags": tags, "bio": plat(bio), "ici": bool(_ICI.search(bio + " " + " ".join(tags)))}
 
 
 def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 1200,
@@ -639,7 +741,9 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
             continue
         cle = ("film:" if film else "mus:") + "|".join(plat(x) for x in noms)
         m = memo.get(cle)
-        frais = m and (m["liens"] or (m["le"] >= vieux and m.get("v3")))  # v3 : billetterie, cinéaste retiré, Deezer, Apple
+        # v3 : billetterie, cinéaste retiré, Deezer, Apple ; v4 : YouTube (films) et Last.fm (musique), retentés une fois
+        version = "v4" if (os.environ.get("YOUTUBE_API_KEY") if film else os.environ.get("LASTFM_API_KEY")) else "v3"
+        frais = m and (m["liens"] or (m["le"] >= vieux and m.get(version)))
         if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
@@ -668,6 +772,13 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         court = re.sub(r"\s+(?:de|by|[-–—])\s+(?:[A-ZÉ][\w'’.-]+\s?){2,3}$", "", noms[0]).strip()
                         if not trouves and court != noms[0] and len(court) >= 4:
                             trouves = bande_annonce_tmdb(court, aujourd.year, ua_json)
+                        if not trouves:
+                            for t in dict.fromkeys([noms[0], court]):
+                                if len(t) >= 4 and not trouves:
+                                    try:
+                                        trouves = bande_annonce_youtube(t, aujourd.year, ua_json, memo, aujourd)
+                                    except Exception as exc:
+                                        print(f"  YouTube « {t[:30]} » : {exc}")
                         liens += trouves
                 else:
                     for nom in noms:
@@ -695,7 +806,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
-            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v3": 1}
+            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v3": 1, version: 1}
         if m and m["liens"]:
             aff = [l for l in m["liens"] if l["type"] == "affiche"]
             if aff and not e.get("affiche") and not e.get("image"):
