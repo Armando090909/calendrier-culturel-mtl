@@ -1,8 +1,5 @@
-JSON https://api.deezer.com/search/artist?q=Emma%20Beko&limit=25
-JSON https://api.deezer.com/search/artist?q=Kryture&limit=25
-JSON https://api.deezer.com/search/artist?q=Lara%20Klaus&limit=25
-JSON https://api.deezer.com/search/artist?q=headache&limit=25
-JSON https://itunes.apple.com/search?term=Emma%20Beko&entity=musicArtist&country=CA&limit=25
-JSON https://itunes.apple.com/search?term=Kryture&entity=musicArtist&country=CA&limit=25
-JSON https://itunes.apple.com/search?term=Lara%20Klaus&entity=musicArtist&country=CA&limit=25
-JSON https://itunes.apple.com/search?term=headache&entity=musicArtist&country=CA&limit=25
+JSON https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=ccmontreal.bsky.social
+JSON https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=ccmtl&limit=10
+JSON https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=calendrier%20culturel&limit=10
+JSON https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=ccmtl.ca&limit=10
+JSON https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=ccmontreal&limit=10
