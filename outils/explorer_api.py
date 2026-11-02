@@ -17,8 +17,9 @@ def court(x, n=3000):
     return json.dumps(x, ensure_ascii=False)[:n]
 
 
-# Tidal
+# Tidal (déjà essayé)
 try:
+    raise RuntimeError("déjà essayé")
     cid, sec = os.environ.get("TIDAL_CLIENT_ID"), os.environ.get("TIDAL_CLIENT_SECRET")
     t = requests.post("https://auth.tidal.com/v1/oauth2/token", data={"grant_type": "client_credentials"}, auth=(cid, sec), timeout=30)
     out["tidal_jeton"] = {"statut": t.status_code, "champs": sorted(t.json().keys()) if t.ok else t.text[:300]}
@@ -49,16 +50,10 @@ except Exception as exc:
 
 # YouTube
 try:
-    raise RuntimeError("déjà essayé")
     import decouverte as d
     get_json = lambda u: requests.get(u, timeout=30).json()  # noqa: E731
-    for titre in ("Mille secrets, mille dangers", "Au nord des hommes", "Paradis"):
+    for titre in ("Mille secrets, mille dangers", "Au nord des hommes", "Soundtrack to a coup d'État", "Le roi du game"):
         out[f"youtube_{titre}"] = d.bande_annonce_youtube(titre, date.today().year, get_json, {}, date.today())
-    r = requests.get("https://www.googleapis.com/youtube/v3/search", timeout=30, params={
-        "part": "snippet", "type": "video", "maxResults": 10, "regionCode": "CA",
-        "q": "Mille secrets, mille dangers bande-annonce trailer", "key": os.environ.get("YOUTUBE_API_KEY", "")})
-    out["youtube_brut"] = {"statut": r.status_code, "titres": [(i["snippet"]["title"], i["snippet"]["channelTitle"])
-                                                              for i in r.json().get("items", [])] if r.ok else r.text[:300]}
 except Exception as exc:
     out["youtube_erreur"] = str(exc)[:300]
 
