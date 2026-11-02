@@ -135,7 +135,7 @@ function rowHTML(e){const c=D.lieux[e.lieu];
   return `<button type="button" class="row${e.aussi&&e.aussi.length?" multi":""}${e.festival&&FESTID[e.festival]?" enfest":""}" data-ev="${e._i}" style="--c:var(--${e.discipline})${e.aussi&&e.aussi.length?`;--c2:var(--${e.aussi[0]})`:""}${e.festival&&FESTID[e.festival]?`;--f:${FESTID[e.festival].coul}`:""}" title="${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?" · "+esc(STYLES[e.style]):""}"><span class="rti">${esc(e.titre)}${e.complet?` <span class="cpl">${L("complet","sold out")}</span>`:""}</span><span class="rl"><b class="${e.heure?"":"nh"}">${heureTxt(e)}</b> · <span class="v">${esc(e.lieu)}</span>${c&&c.metro?` · ${esc(c.metro.nom)}`:""}${e.festival&&!st.fest&&FESTID[e.festival]?` <span class="fx" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${esc(FESTID[e.festival].court)}</span>`:""}</span></button>`}
 // Écouter / bande-annonce : seulement des liens vérifiés (page de l'événement, MusicBrainz, TMDb).
 // Sinon, un simple lien de recherche, présenté honnêtement comme une recherche.
-const NOMS_LIEN={bandcamp:"Bandcamp",spotify:"Spotify",apple:"Apple Music",deezer:"Deezer",soundcloud:"SoundCloud",youtube:"YouTube",vimeo:"Vimeo",site:L("Site officiel","Official site"),"bande-annonce":L("▶ Bande-annonce","▶ Trailer")};
+const NOMS_LIEN={bandcamp:"Bandcamp",spotify:"Spotify",apple:"Apple Music",deezer:"Deezer",tidal:"Tidal",soundcloud:"SoundCloud",youtube:"YouTube",vimeo:"Vimeo",site:L("Site officiel","Official site"),"bande-annonce":L("▶ Bande-annonce","▶ Trailer")};
 function ecouteHTML(e){
   const d=discs(e),film=d.includes("cinema"),mus=d.includes("musique");
   if(!film&&!mus)return"";

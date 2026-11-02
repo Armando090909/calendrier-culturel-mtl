@@ -63,3 +63,34 @@ class LastFm(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Tidal(unittest.TestCase):
+    def test_fiche_et_confirmation_croisee(self):
+        os.environ["TIDAL_CLIENT_ID"], os.environ["TIDAL_CLIENT_SECRET"] = "a", "b"
+        import requests
+
+        class R:
+            def __init__(self, j, code=200):
+                self._j, self.status_code, self.ok = j, code, code < 400
+
+            def json(self):
+                return self._j
+
+            def raise_for_status(self):
+                pass
+        recherche = {"included": [{"id": "1", "type": "artists", "attributes": {"name": "Les Louanges", "externalLinks": [
+            {"href": "https://tidal.com/browse/artist/1"}]}}, {"id": "2", "type": "artists", "attributes": {"name": "Hubert Lenoir"}}]}
+        albums = {"included": [{"type": "albums", "attributes": {"title": "La nuit est une panthère", "releaseDate": "2018-09-14",
+                                                                 "copyright": {"text": "(P) 2018 Bonsound"}}}]}
+        vieux = requests.get, requests.post
+        requests.post = lambda *a, **k: R({"access_token": "t", "expires_in": 3600})
+        requests.get = lambda url, **k: R(recherche if "searchResults" in url else albums)
+        try:
+            f = d._fiche_tidal("Les Louanges")
+        finally:
+            requests.get, requests.post = vieux
+        self.assertEqual(f["lien"]["url"], "https://tidal.com/browse/artist/1")
+        self.assertIn("Bonsound", f["etiquettes"])
+        pour, contre = d._indices(f, "Les Louanges", {"texte": ""})
+        self.assertTrue(any("bonsound" in x for x in pour))

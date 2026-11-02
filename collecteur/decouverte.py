@@ -28,7 +28,7 @@ from normalisation import plat
 
 MEMOIRE = Path(__file__).parent / "cache" / "decouverte.json"
 JOURNAL_CATALOGUES: list = []  # décisions Deezer / Apple Music de la collecte (indices pour et contre), pour le rapport
-SITES = {"bandcamp.com": "bandcamp", "open.spotify.com": "spotify", "music.apple.com": "apple",
+SITES = {"bandcamp.com": "bandcamp", "open.spotify.com": "spotify", "music.apple.com": "apple", "tidal.com": "tidal",
          "soundcloud.com": "soundcloud", "youtube.com": "youtube", "youtu.be": "youtube", "vimeo.com": "vimeo"}
 GENERIQUES = {"lancement", "double", "invites", "invitees", "invite", "guests", "dj", "set", "soiree", "concert", "show",
               "festival", "presente", "presents", "and", "et", "the", "les", "le", "la"}
@@ -392,6 +392,46 @@ def _fiche_deezer(nom: str, get_json) -> dict | None:
     return fiche
 
 
+_JETON_TIDAL: dict = {}
+
+
+def _fiche_tidal(nom: str, get_json=None) -> dict | None:
+    """Fiche Tidal (API officielle, clé TIDAL_CLIENT_ID et TIDAL_CLIENT_SECRET) : un seul artiste au nom identique,
+    avec ses albums, leurs dates et leurs maisons de disques (Tidal ne donne pas de genres)."""
+    cid, sec = os.environ.get("TIDAL_CLIENT_ID"), os.environ.get("TIDAL_CLIENT_SECRET")
+    if not cid or not sec:
+        return None
+    import requests
+    if _JETON_TIDAL.get("fin", 0) < time.time():
+        t = requests.post("https://auth.tidal.com/v1/oauth2/token", data={"grant_type": "client_credentials"}, auth=(cid, sec), timeout=20)
+        t.raise_for_status()
+        _JETON_TIDAL.update(jeton=t.json()["access_token"], fin=time.time() + int(t.json().get("expires_in", 3600)) - 60)
+    h = {"Authorization": "Bearer " + _JETON_TIDAL["jeton"], "accept": "application/vnd.api+json"}
+    r = requests.get("https://openapi.tidal.com/v2/searchResults", headers=h, timeout=20,
+                     params={"filter[query]": nom, "countryCode": "CA", "include": "artists", "explicitFilter": "INCLUDE"})
+    if r.status_code == 429:
+        time.sleep(5)
+        return None
+    r.raise_for_status()
+    cands = [a for a in r.json().get("included", []) if a.get("type") == "artists"
+             and plat((a.get("attributes") or {}).get("name", "")) == plat(nom)]
+    if len(cands) != 1:
+        return None  # aucun ou plusieurs artistes de ce nom : on s'abstient
+    a = cands[0]
+    al = requests.get(f"https://openapi.tidal.com/v2/artists/{a['id']}/relationships/albums", headers=h, timeout=20,
+                      params={"countryCode": "CA", "include": "albums"})
+    al.raise_for_status()
+    albums = [x.get("attributes") or {} for x in al.json().get("included", []) if x.get("type") == "albums"]
+    if not albums:
+        return None
+    url = next((l["href"] for l in (a.get("attributes") or {}).get("externalLinks", []) if l.get("href", "").startswith("https://")),
+               f"https://tidal.com/browse/artist/{a['id']}")
+    return {"lien": {"type": "tidal", "url": url, "source": "tidal", "nom": a["attributes"]["name"]},
+            "oeuvres": {_titre_oeuvre(x.get("title", "")) for x in albums}, "dates": [x.get("releaseDate", "") for x in albums],
+            "genres": [], "etiquettes": [re.sub(r"^\W*(?:\(p\)|℗|©)?\s*\d{4}\s*", "", (x.get("copyright") or {}).get("text", ""), flags=re.I)
+                                         for x in albums]}
+
+
 def _fiche_apple(nom: str, get_json) -> dict | None:
     def appel(url):
         attente = 3.2 - (time.time() - _ITUNES_DERNIER[0])  # Apple : environ 20 recherches par minute
@@ -464,7 +504,7 @@ def catalogues(nom: str, ctx: dict, get_json, journal: list | None = None) -> li
     if not _nom_assez_distinctif(nom):
         return []
     fiches = {}
-    for cle, f in (("deezer", _fiche_deezer), ("apple", _fiche_apple)):
+    for cle, f in (("deezer", _fiche_deezer), ("apple", _fiche_apple), ("tidal", _fiche_tidal)):
         try:
             fiches[cle] = f(nom, get_json)
         except Exception as exc:
@@ -489,10 +529,15 @@ def catalogues(nom: str, ctx: dict, get_json, journal: list | None = None) -> li
             elif lfm["ici"] and styles_f & styles_l:
                 pour.append("Last.fm : artiste d'ici, même genre (" + "/".join(sorted(styles_f & styles_l)) + ")")
         ok[k] = (bool(pour) and not contre, pour, contre)
-    if len(fiches) == 2:  # même artiste dans les deux catalogues : la confirmation de l'un vaut pour l'autre
-        communs = {o for o in fiches["deezer"]["oeuvres"] & fiches["apple"]["oeuvres"] if len(o) >= 4}
-        if communs and not ok["deezer"][2] and not ok["apple"][2] and (ok["deezer"][0] or ok["apple"][0]):
-            ok = {k: (True, v[1] or ["même artiste que l'autre catalogue"], v[2]) for k, v in ok.items()}
+    # Même artiste dans deux catalogues (un album en commun) : la confirmation de l'un vaut pour l'autre
+    for _ in range(2):
+        for k1 in list(ok):
+            for k2 in list(ok):
+                if k1 == k2 or not ok[k1][0] or ok[k2][0] or ok[k2][2]:
+                    continue
+                communs = {o for o in fiches[k1]["oeuvres"] & fiches[k2]["oeuvres"] if len(o) >= 4 and o not in _TITRES_VIDES}
+                if communs:
+                    ok[k2] = (True, ok[k2][1] + [f"même artiste que sur {k1} (album {sorted(communs)[0]})"], ok[k2][2])
     if journal is not None:
         journal.append({"nom": nom, **{k: {"ok": v[0], "pour": v[1], "contre": v[2]} for k, v in ok.items()}})
     return [fiches[k]["lien"] for k, v in ok.items() if v[0]]
