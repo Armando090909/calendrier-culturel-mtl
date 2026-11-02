@@ -8,62 +8,27 @@
    "token_type"
   ]
  },
- "tidal_recherche_Rabaska": {
+ "tidal_variante_0": {
+  "chemin": "/v2/searchResults/Les%20Louanges/relationships/artists",
   "statut": 400,
   "extrait": "\"{\\\"errors\\\":[{\\\"code\\\":\\\"INVALID_RESOURCE_ID\\\",\\\"detail\\\":\\\"Invalid resource ID\\\",\\\"source\\\":{\\\"pointer\\\":\\\"/data/id\\\"}}]}\""
  },
- "tidal_recherche_Les Louanges": {
+ "tidal_variante_1": {
+  "chemin": "/v2/searchResults/Les%20Louanges",
   "statut": 400,
   "extrait": "\"{\\\"errors\\\":[{\\\"code\\\":\\\"INVALID_RESOURCE_ID\\\",\\\"detail\\\":\\\"Invalid resource ID\\\",\\\"source\\\":{\\\"pointer\\\":\\\"/data/id\\\"}}]}\""
  },
- "youtube_Mille secrets, mille dangers": [],
- "youtube_Au nord des hommes": [],
- "youtube_Paradis": [],
- "youtube_brut": {
-  "statut": 200,
-  "titres": [
-   [
-    "Mille secrets, mille dangers (Lovely Day) Trailer - ALFF 2026",
-    "Yukon Film Society "
-   ],
-   [
-    "2026 SBIFF Trailer - LOVELY DAY (MILLE SECRETS MILLE DANGERS)",
-    "officialSBIFF"
-   ],
-   [
-    "KEN RUSSELL&#39;S THE DEVILS - Official Trailer - In Theaters October 16",
-    "Warner Bros. Clockwork"
-   ],
-   [
-    "LOVELY DAY Trailer | TIFF 2025",
-    "TIFF"
-   ],
-   [
-    "Réalisé sans trucage.",
-    "Netflix France"
-   ],
-   [
-    "FALL 2 Bande Annonce VF (2026)",
-    "FilmsActu"
-   ],
-   [
-    "EVIL DEAD BURN Bande Annonce VF (2026)",
-    "FilmsActu"
-   ],
-   [
-    "LA FEMME DE MÉNAGE Bande Annonce VF (2025) Sydney Sweeney, Amanda Seyfried",
-    "FilmsActu"
-   ],
-   [
-    "UNABOMBER | Official Trailer | Netflix",
-    "Netflix"
-   ],
-   [
-    "Verity | Bande-annonce officielle VF | Anne Hathaway, Dakota Johnson, Josh Hartnett",
-    "Amazon MGM Studios France"
-   ]
-  ]
+ "tidal_variante_2": {
+  "chemin": "/v2/searchResults",
+  "statut": 400,
+  "extrait": "\"{\\\"errors\\\":[{\\\"code\\\":\\\"MISSING_REQUIRED_PARAMETER\\\",\\\"detail\\\":\\\"At least one filter is required\\\"}]}\""
  },
+ "tidal_variante_3": {
+  "chemin": "/v2/searchresults/Les%20Louanges/relationships/topHits",
+  "statut": 404,
+  "extrait": "\"\""
+ },
+ "youtube_erreur": "déjà essayé",
  "lastfm_Rabaska": {
   "tags": [],
   "bio": "read more on last fm",
