@@ -24,7 +24,15 @@ try:
     out["tidal_jeton"] = {"statut": t.status_code, "champs": sorted(t.json().keys()) if t.ok else t.text[:300]}
     if t.ok:
         h = {"Authorization": "Bearer " + t.json()["access_token"], "accept": "application/vnd.api+json"}
-        for nom in ("Rabaska", "Les Louanges"):
+        q = requests.utils.quote("Les Louanges", safe="")
+        for i, (chemin, params) in enumerate([
+                (f"/v2/searchResults/{q}/relationships/artists", {"countryCode": "CA", "include": "artists"}),
+                (f"/v2/searchResults/{q}", {"countryCode": "CA", "include": "artists", "explicitFilter": "include"}),
+                ("/v2/searchResults", {"query": "Les Louanges", "countryCode": "CA", "include": "artists"}),
+                (f"/v2/searchresults/{q}/relationships/topHits", {"countryCode": "CA", "include": "topHits"})]):
+            r = requests.get("https://openapi.tidal.com" + chemin, params=params, headers=h, timeout=30)
+            out[f"tidal_variante_{i}"] = {"chemin": chemin, "statut": r.status_code, "extrait": court(r.json() if r.ok else r.text, 2500)}
+        for nom in ():
             r = requests.get(f"https://openapi.tidal.com/v2/searchResults/{requests.utils.quote(nom)}",
                              params={"countryCode": "CA", "include": "artists"}, headers=h, timeout=30)
             out[f"tidal_recherche_{nom}"] = {"statut": r.status_code, "extrait": court(r.json() if r.ok else r.text)}
@@ -40,6 +48,7 @@ except Exception as exc:
 
 # YouTube
 try:
+    raise RuntimeError("déjà essayé")
     import decouverte as d
     get_json = lambda u: requests.get(u, timeout=30).json()  # noqa: E731
     for titre in ("Mille secrets, mille dangers", "Au nord des hommes", "Paradis"):

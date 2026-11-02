@@ -559,7 +559,8 @@ DISTRIBUTEURS = ("maison 4 3", "maison 4:3", "immina", "axia films", "tva films"
                  "elevation pictures", "mongrel media", "vvs films", "pathe", "gaumont", "le pacte", "diaphana", "ad vitam",
                  "haut et court", "memento", "wild bunch", "studiocanal", "warner", "universal", "paramount", "sony pictures",
                  "focus features", "searchlight", "lionsgate", "magnolia", "ifc films", "kino lorber", "janus", "criterion",
-                 "cinemania", "ridm", "fnc", "festival du nouveau cinema", "rvqc", "cinematheque")
+                 "cinemania", "ridm", "fnc", "festival du nouveau cinema", "rvqc", "cinematheque", "tiff", "sbiff",
+                 "festival", "film society", "berlinale", "cannes", "sundance", "trailers", "bandes annonces", "filmsactu")
 _PAS_BA = re.compile(r"(?i)\b(review|critique|reaction|réaction|explained|expliqu|fan.?made|parod|analys|recap|résumé|"
                      r"interview|entrevue|making.?of|behind|coulisses|scene|scène|clip|extrait|featurette|podcast|ending|fin expliqu)")
 _EST_BA = re.compile(r"(?i)bande[- ]?annonce|trailer|teaser|\bba\b")
@@ -605,11 +606,15 @@ def bande_annonce_youtube(titre: str, annee: int, get_json, memo: dict, aujourd:
     confiance = lambda c: any(d in plat(c["chaine"]) for d in DISTRIBUTEURS) or t in plat(c["chaine"])  # noqa: E731
     recent = lambda c: c["date"] and int(c["date"][:4]) >= annee - 3  # noqa: E731
     surs = [c for c in cands if confiance(c)]
-    if len(t.split()) == 1:
+    mots = len([w for w in t.split() if w not in {"le", "la", "les", "l", "un", "une", "des", "du", "de", "d", "au", "aux",
+                                                  "the", "a", "an", "of", "et", "and"}])  # mots qui distinguent
+    if mots == 1:  # « Paradis » : chaîne de confiance et vidéo récente
         surs = [c for c in surs if recent(c)]
         choix = surs[0] if surs else None
-    else:
+    elif mots == 2:  # « Les yeux verts » : chaîne de confiance, ou une seule vidéo possible
         choix = surs[0] if surs else (cands[0] if len(cands) == 1 else None)
+    else:  # titre de 3 mots ou plus (« Mille secrets, mille dangers ») : peu d'ambiguïté, la chaîne de confiance d'abord
+        choix = surs[0] if surs else (cands[0] if cands else None)
     if not choix:
         return []
     return [{"type": "bande-annonce", "url": f"https://www.youtube.com/watch?v={choix['id']}", "source": "youtube",
