@@ -24,14 +24,15 @@ try:
     out["tidal_jeton"] = {"statut": t.status_code, "champs": sorted(t.json().keys()) if t.ok else t.text[:300]}
     if t.ok:
         h = {"Authorization": "Bearer " + t.json()["access_token"], "accept": "application/vnd.api+json"}
-        q = requests.utils.quote("Les Louanges", safe="")
-        for i, (chemin, params) in enumerate([
-                (f"/v2/searchResults/{q}/relationships/artists", {"countryCode": "CA", "include": "artists"}),
-                (f"/v2/searchResults/{q}", {"countryCode": "CA", "include": "artists", "explicitFilter": "include"}),
-                ("/v2/searchResults", {"query": "Les Louanges", "countryCode": "CA", "include": "artists"}),
-                (f"/v2/searchresults/{q}/relationships/topHits", {"countryCode": "CA", "include": "topHits"})]):
-            r = requests.get("https://openapi.tidal.com" + chemin, params=params, headers=h, timeout=30)
-            out[f"tidal_variante_{i}"] = {"chemin": chemin, "statut": r.status_code, "extrait": court(r.json() if r.ok else r.text, 2500)}
+        for nom in ("Les Louanges", "Rabaska"):
+            r = requests.get("https://openapi.tidal.com/v2/searchResults", headers=h, timeout=30,
+                             params={"filter[query]": nom, "countryCode": "CA", "include": "artists", "explicitFilter": "INCLUDE"})
+            out[f"tidal_recherche_{nom}"] = {"statut": r.status_code, "extrait": court(r.json() if r.ok else r.text, 2500)}
+            arts = [x for x in (r.json().get("included", []) if r.ok else []) if x.get("type") == "artists"]
+            if arts:
+                a = requests.get(f"https://openapi.tidal.com/v2/artists/{arts[0]['id']}/relationships/albums", headers=h, timeout=30,
+                                 params={"countryCode": "CA", "include": "albums"})
+                out[f"tidal_albums_{nom}"] = {"statut": a.status_code, "extrait": court(a.json() if a.ok else a.text, 3500)}
         for nom in ():
             r = requests.get(f"https://openapi.tidal.com/v2/searchResults/{requests.utils.quote(nom)}",
                              params={"countryCode": "CA", "include": "artists"}, headers=h, timeout=30)
@@ -45,29 +46,6 @@ try:
                     out[f"tidal_artiste_{nom}"] = {"statut": a.status_code, "extrait": court(a.json() if a.ok else a.text, 5000)}
 except Exception as exc:
     out["tidal_erreur"] = str(exc)[:300]
-
-# Spécification officielle de l'API Tidal : chemins de recherche et d'albums
-try:
-    import yaml
-    for u in ("https://tidal-music.github.io/tidal-api-reference/tidal-api-oas.json",
-              "https://raw.githubusercontent.com/api-evangelist/tidal/main/openapi/tidal-search-api-openapi.yml",
-              "https://raw.githubusercontent.com/api-evangelist/tidal/main/openapi/tidal-catalog-api-openapi.yml"):
-        r = requests.get(u, timeout=30)
-        if not r.ok:
-            out["spec_" + u[-40:]] = r.status_code
-            continue
-        spec = r.json() if u.endswith(".json") else yaml.safe_load(r.text)
-        chemins = {k: v for k, v in (spec.get("paths") or {}).items()
-                   if "search" in k.lower() or k.endswith("/relationships/albums") or k in ("/albums/{id}", "/artists/{id}")}
-        out["spec_" + u[-40:]] = court({k: {m: {"params": [(p.get("name"), p.get("in"), p.get("required"), (p.get("schema") or {}).get("enum"))
-                                                           for p in (op.get("parameters") or []) if isinstance(p, dict)]}
-                                            for m, op in v.items() if isinstance(op, dict)} for k, v in chemins.items()}, 6000)
-        sch = (spec.get("components") or {}).get("schemas") or {}
-        for nom in ("Albums_Attributes", "Artists_Attributes", "AlbumsAttributes", "ArtistsAttributes"):
-            if nom in sch:
-                out["schema_" + nom] = court(list(((sch[nom].get("properties")) or {}).keys()), 1500)
-except Exception as exc:
-    out["spec_erreur"] = str(exc)[:300]
 
 # YouTube
 try:
