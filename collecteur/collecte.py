@@ -32,7 +32,7 @@ import geo  # noqa: E402
 import ia  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
-from normalisation import Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
+from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -235,7 +235,7 @@ def main() -> int:
         """Nom canonique de la salle, ou None si elle est hors de l'île."""
         nonlocal geo_restants
         nom = (nom or "").strip() or (adresse or "").split(",")[0].strip()
-        if not nom:
+        if not nom or plat(nom) in PAS_DES_SALLES:
             return ""
         m = re.fullmatch(r"@(-?[\d.]+),(-?[\d.]+)", nom)
         if m:  # seulement des coordonnées : la salle connue la plus proche (moins de 150 m), sinon « à confirmer »

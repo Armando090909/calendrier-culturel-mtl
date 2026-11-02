@@ -195,7 +195,10 @@ def dans_ile(lat: float | None, lon: float | None) -> bool:
 # ---------- Salles ----------
 # Valeurs qui ne sont pas des noms de salle (colonne « emplacement » de la Ville, cases vides…)
 PAS_DES_SALLES = {"en salle", "a l exterieur", "en ligne", "nan", "none", "plusieurs salles", "montreal", "divers lieux",
-                  "lieu a confirmer", "a confirmer", "virtuel", "online"}
+                  "lieu a confirmer", "a confirmer", "virtuel", "online",
+                  # titres de pages d'erreur pris pour des noms de salle (vu le 2 nov. 2026 : « Error 403 »)
+                  "error 403", "error 404", "erreur 403", "erreur 404", "403 forbidden", "404 not found", "forbidden",
+                  "access denied", "page not found", "page introuvable", "just a moment", "attention required"}
 
 
 class Lieux:
@@ -303,8 +306,30 @@ _MOTS_LIEU = {"et", "and", "st", "ste", "saint", "sainte", "the", "le", "la", "l
               "theatre", "eglise", "church", "montreal", "mtl", "bar", "club", "a", "au"}
 
 
+_ALIAS_LIEUX: dict[str, str] | None = None
+
+
+def _alias_lieux() -> dict[str, str]:
+    """Graphies connues d'une même salle (collecteur/lieux.json : « L'Esco » → « L'Escogriffe »)."""
+    global _ALIAS_LIEUX
+    if _ALIAS_LIEUX is None:
+        _ALIAS_LIEUX = {}
+        try:
+            import json as _json
+            from pathlib import Path as _Path
+            table = _json.loads((_Path(__file__).parent / "lieux.json").read_text(encoding="utf-8"))
+            for nom, info in table.items():
+                for a in ((info or {}).get("alias") or []) if isinstance(info, dict) else []:
+                    if plat(a) and plat(a) != plat(nom):
+                        _ALIAS_LIEUX[plat(a)] = plat(nom)
+        except Exception:
+            pass
+    return _ALIAS_LIEUX
+
+
 def lieu_racine(nom: str) -> str:
     p = plat(nom)
+    p = _alias_lieux().get(p, p)
     for racine, membres in COMPLEXES.items():
         if f" {racine} " in f" {p} " or any(m in p for m in membres):
             return racine
@@ -568,12 +593,20 @@ def _artistes(titre: str) -> set[str]:
     return noms
 
 
-def meme_spectacle(a: dict, b: dict) -> bool:
-    """Même titre, titre qui contient l'autre, titres très proches, ou un même artiste."""
+def meme_spectacle(a: dict, b: dict, strict: bool = False) -> bool:
+    """Même titre, titre qui contient l'autre, titres très proches, ou un même artiste.
+    strict (deux salles connues et différentes) : un titre court ne suffit plus (« Aujourd'hui » n'est pas
+    « Résistance aujourd'hui en Palestine » ; « Célébration! » n'est pas « Célébration : party Motown »)."""
     ta, tb = _titre_net(a["titre"]), _titre_net(b["titre"])
     if not ta or not tb:
         return False
-    if ta == tb or (min(len(ta), len(tb)) >= 6 and (ta in tb or tb in ta)):
+    if ta == tb:
+        return True
+    court, long_ = sorted((ta, tb), key=len)
+    if strict:
+        if len(court.split()) >= 2 and long_.startswith(court + " ") or (len(court) >= 14 and f" {court} " in f" {long_} "):
+            return True
+    elif min(len(ta), len(tb)) >= 6 and (ta in tb or tb in ta):
         return True
     if difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.88:
         return True
@@ -582,7 +615,10 @@ def meme_spectacle(a: dict, b: dict) -> bool:
     wa, wb = mots(ta), mots(tb)
     if len(wa) >= 2 and len(wb) >= 2 and (wa <= wb or wb <= wa) and max(len(wa), len(wb)) <= 2 * min(len(wa), len(wb)):
         return True
-    return bool(_artistes(a["titre"]) & _artistes(b["titre"]))
+    communs = _artistes(a["titre"]) & _artistes(b["titre"])
+    if strict:  # un nom d'artiste d'un seul mot court (« Célébration », « MICO ») ne suffit pas d'une salle à l'autre
+        communs = {n for n in communs if len(n.split()) >= 2 or len(n) >= 7}
+    return bool(communs)
 
 
 def doublons_du_jour(events: list[dict]) -> tuple[list[dict], list[str]]:
@@ -599,9 +635,16 @@ def doublons_du_jour(events: list[dict]) -> tuple[list[dict], list[str]]:
             if id(a) in retires:
                 continue
             for b in vivants[i + 1:]:
-                if id(b) in retires or not meme_spectacle(a, b):
+                if id(b) in retires:
                     continue
-                meme_salle = not inconnu(a) and not inconnu(b) and lieux_proches(a["lieu"], b["lieu"])
+                connues = not inconnu(a) and not inconnu(b)
+                meme_salle = connues and lieux_proches(a["lieu"], b["lieu"])
+                if not meme_spectacle(a, b, strict=connues and not meme_salle):
+                    continue
+                if connues and not meme_salle and a.get("heure") and b.get("heure"):
+                    ha, hb = (int(x[:2]) * 60 + int(x[3:5]) for x in (a["heure"], b["heure"]))
+                    if abs(ha - hb) > 90:
+                        continue  # deux salles, deux heures éloignées : deux spectacles (ex. un rodage puis un show)
                 if meme_salle and a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
                     continue  # matinée et soirée dans la même salle : deux représentations
                 if a.get("source") == "ville" and b.get("source") == "ville" and a.get("url") != b.get("url"):
