@@ -1,22 +1,639 @@
 {
- "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=ccmontreal.bsky.social": {
+ "https://mtelus.com/fr/evenements?vue=grille": {
   "statut": 200,
-  "extrait": "{\"did\":\"did:plc:gu5qsdm7glxvc2cb7vdjtxaq\",\"handle\":\"ccmontreal.bsky.social\",\"displayName\":\"\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:gu5qsdm7glxvc2cb7vdjtxaq/bafkreiezbsqgmlpgzedgrhu573kzeo5u62snpyilviek7gi6nod3wup6ui\",\"associated\":{\"lists\":0,\"feedgens\":0,\"starterPacks\":0,\"labeler\":false,\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2026-11-01T18:46:45.977Z\",\"indexedAt\":\"2026-11-01T18:48:55.579Z\",\"followersCount\":1,\"followsCount\":1,\"postsCount\":2}"
+  "simple_images": {
+   "og": null,
+   "img": [
+    "https://images.ctfassets.net/dv1qnlptav0x/2I3x0HCCM5WQU00LmmRe4U/987215993f369561e578fa178817e1c9/Line__1_.svg | ",
+    "https://images.ctfassets.net/k2tsvy3dt9oa/7ei7s18soLKop3JdgYXgqU/4c6265ae5e1f9fa66aa1121457b018c1/FAQ.svg?w=32&h=32 | FAQ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7s45QrOZVraBZhnYNwprbu/f24715093658948f9bb9a759d830695c/sullivan_king_2026__2_.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/6HnpFpemAHah5NAsPYKtl7/9ad2ea261f36671b43e904d349f05286/palace_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/2rJBKPsZyk99hmMxIgUYf7/d286323f5f16c5f67f2828b05f0c90bf/Wheeler-Walker-Jr..png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/3uZ3C0ucS0wBUPOfqYayn/5909a545b05f32254e52d574eba38948/gipsy_kings_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/4x5GTfaw30A1zGVYdHhnlH/5b71dadc32a8c2eca7d36e400531ccc2/slaughter_to_prevail_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/gogEczEXxxSHb4gMz2oLg/01b4e477e56570ee09a9bd95d180f530/orville_peck_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/5fCRdw2bNcy91TXKd1Q02V/0c57a6a25b2303bc6dd00f0623b32f94/perceval_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/24kjOoAtbuRsUzQ8fvEk8T/3f3090f539ad109241e66f629c4edbc2/whitechapel.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7bq4z4ViVLkLCLyb6s2kh5/08d3b98763833c147aed0df566907f84/Bonobo.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/68eWVTVIT87A9RNFxrHkjB/bd92efd1d6df5fd3a02a181cbeb74511/Underoath.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/335uGxq0AK6TbsjiJYYd7F/40b8cf5c98f5e57acf65cee3568b7687/dragonforce_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/5dVCngxFZGhcsw0VzSWDcS/eecd9715ae121c616a788a33173f0937/VSP-Student-Fight-Night.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/2AtmzaK2YrtibKeTr7EZ8G/3c455fb2719ee46c53c36c644916d36a/wolf_parade_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/3WZDdtT7ptNz59S42SoyoW/7ba4311d7515bb1af284101916100a02/kapo_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/eMJcUWmQWo5KVC4STrkKs/19b78a34ee26c8ba9c2c891b6e31f47e/talk_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/41srCAGI6bVn5Fl1dwAPpB/81b6c2aea26e0bf5a9d412c2fef22a2f/Imminence.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/YapcpXW5zU0gCqB04adpJ/847c0e0a0c8df69db9c30bd68181163f/lord_huron_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/YapcpXW5zU0gCqB04adpJ/847c0e0a0c8df69db9c30bd68181163f/lord_huron_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/DFO1Ttq53DMdHmWJmXGeG/2e57666083db6ac2147b5c3ce1a4d111/virtual_riot_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7jAM4wCt685JA0D1ALrsef/8d9a28428384337ed17be14c24134cf6/choir_choir_choir_2026.jpg?w=150&h=105 | "
+   ],
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-WD8T3PD\n            height="
+   ]
+  },
+  "simple": {
+   "taille": 4129,
+   "texte": "MTELUS\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nBilletterie <https://mtelus.com/fr/billetterie>\nSe rendre <https://mtelus.com/fr/se-rendre>\nLocation <https://mtelus.com/fr/location>\nFAQ <https://mtelus.com/fr/faq>\nContact <https://mtelus.com/fr/contact>\nRecherches récentes\nAccès rapide\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nFAQ <https://mtelus.com/fr/faq>\nLocation <https://mtelus.com/fr/location>\nFR\nCalendrier <https://mtelus.com/fr/evenements>\nAccueil <https://mtelus.com/fr>\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nÉVÉNEMENTS\n75 résultats\nDates\nBillets <https://evenko.ca/fr/evenements/mtelus/sullivan-king?code=e008893>\nSullivan King\nAvec Usaybflow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <https://evenko.ca/fr/evenements/mtelus/palace?code=e008151>\nPalace\nAvec Willie J Healey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/wheeler-walker-jr?code=e008610>\nWheeler Walker Jr.\nAvec Channing Wilson\nPullin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/gipsy-kings?code=e008890>\nGipsy Kings\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/slaughter-to-prevail?code=e008777>\nSlaughter To Prevail\nAvec REV3RENT\nExtensive Enterprise présente\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/orville-peck?code=e008818>\nOrville Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/perceval?code=e008720>\nPerceval\nPrésenté par les Francos de Montréal\nSamedi 21 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/whitechapel?code=e008599>\nWhitechapel\nAvec Chelsea Grin, The Acacia Strain, Carcosa\nPrésenté par Heavy MTL\n20th Anniversary Tour\nDimanche 22 novembre 2026\n19h00\n|\n18h00\nBillets <https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607>\nBonobo \nAvec Anish Kumar\nDistance in Static Live North American Tour\nVendredi 27 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/underoath?code=e008608>\nUnderoath\nAvec August Burns Red, Atreyu, Emery\nPrésenté par Heavy MTL\nDefine the Great Line 20th Anniversary Tour \nSamedi 28 novembre 2026\n18h30\n|\n17h30\nBillets <https://evenko.ca/fr/evenements/mtelus/dragonforce?code=e008482>\nDragonForce \nAvec ENSIFERUM, Rhapsody of Fire\nPrésenté par Heavy MTL\nInhuman Rampage 20th Anniversary\nMardi 1 décembre 2026\n19h30\n|\n18h00\nBillets <https://evenko.ca/fr/evenements/mtelus/vsp-student-fight-night?code=e009229>\nVSP Student Fight Night\nVendredi 4 décembre 2026\n18h00\n|\n16h30\nBillets <https://evenko.ca/fr/evenements/mtelus/wolf-parade?code=e008782>\nWolf Parade\nJeudi 10 décembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/kapo?code=e009189>\nKapo\nFuego Fuego présente\nVendredi 11 décembre 2026\n",
+   "jsonld": [],
+   "heures": [
+    "ec Usaybflow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <ht",
+    "flow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <https://eve",
+    "llie J Healey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "ealey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "ilson\nPullin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "llin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "psy Kings\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "s\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "présente\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "8>\nOrville Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "le Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "résenté par les Francos de Montréal\nSamedi 21 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "par les Francos de Montréal\nSamedi 21 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "r Heavy MTL\n20th Anniversary Tour\nDimanche 22 novembre 2026\n19h00\n|\n18h00\nBillets <ht"
+   ],
+   "liens": [
+    "https://evenko.ca/fr/evenements/mtelus/an-evening-with-lord-huron?code=e008855",
+    "https://evenko.ca/fr/evenements/mtelus/an-evening-with-lord-huron?code=e008856",
+    "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607",
+    "https://evenko.ca/fr/evenements/mtelus/choir-choir-choir?code=e008284",
+    "https://evenko.ca/fr/evenements/mtelus/dragonforce?code=e008482",
+    "https://evenko.ca/fr/evenements/mtelus/gipsy-kings?code=e008890",
+    "https://evenko.ca/fr/evenements/mtelus/imminence?code=e008648",
+    "https://evenko.ca/fr/evenements/mtelus/kapo?code=e009189",
+    "https://evenko.ca/fr/evenements/mtelus/orville-peck?code=e008818",
+    "https://evenko.ca/fr/evenements/mtelus/palace?code=e008151",
+    "https://evenko.ca/fr/evenements/mtelus/perceval?code=e008720",
+    "https://evenko.ca/fr/evenements/mtelus/slaughter-to-prevail?code=e008777",
+    "https://evenko.ca/fr/evenements/mtelus/sullivan-king?code=e008893",
+    "https://evenko.ca/fr/evenements/mtelus/talk?code=e009198",
+    "https://evenko.ca/fr/evenements/mtelus/underoath?code=e008608",
+    "https://evenko.ca/fr/evenements/mtelus/virtual-riot-blanke?code=e008671",
+    "https://evenko.ca/fr/evenements/mtelus/vsp-student-fight-night?code=e009229",
+    "https://evenko.ca/fr/evenements/mtelus/wheeler-walker-jr?code=e008610",
+    "https://evenko.ca/fr/evenements/mtelus/whitechapel?code=e008599",
+    "https://evenko.ca/fr/evenements/mtelus/wolf-parade?code=e008782",
+    "https://mtelus.com/en/events?display=grid",
+    "https://mtelus.com/fr/evenements"
+   ]
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "https://images.ctfassets.net/3yxl57nu0yl4/4xbygqHEM1IsNddxWEfMrA/403f8cb0482c847485f0801f3bfd5f43/mtelus-noir.png | MTELUS",
+    "https://images.ctfassets.net/dv1qnlptav0x/2I3x0HCCM5WQU00LmmRe4U/987215993f369561e578fa178817e1c9/Line__1_.svg | ",
+    "https://images.ctfassets.net/k2tsvy3dt9oa/7ei7s18soLKop3JdgYXgqU/4c6265ae5e1f9fa66aa1121457b018c1/FAQ.svg?w=32&h=32 | FAQ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7s45QrOZVraBZhnYNwprbu/f24715093658948f9bb9a759d830695c/sullivan_king_2026__2_.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/6HnpFpemAHah5NAsPYKtl7/9ad2ea261f36671b43e904d349f05286/palace_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/2rJBKPsZyk99hmMxIgUYf7/d286323f5f16c5f67f2828b05f0c90bf/Wheeler-Walker-Jr..png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/3uZ3C0ucS0wBUPOfqYayn/5909a545b05f32254e52d574eba38948/gipsy_kings_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/4x5GTfaw30A1zGVYdHhnlH/5b71dadc32a8c2eca7d36e400531ccc2/slaughter_to_prevail_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/gogEczEXxxSHb4gMz2oLg/01b4e477e56570ee09a9bd95d180f530/orville_peck_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/5fCRdw2bNcy91TXKd1Q02V/0c57a6a25b2303bc6dd00f0623b32f94/perceval_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/24kjOoAtbuRsUzQ8fvEk8T/3f3090f539ad109241e66f629c4edbc2/whitechapel.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7bq4z4ViVLkLCLyb6s2kh5/08d3b98763833c147aed0df566907f84/Bonobo.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/68eWVTVIT87A9RNFxrHkjB/bd92efd1d6df5fd3a02a181cbeb74511/Underoath.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/335uGxq0AK6TbsjiJYYd7F/40b8cf5c98f5e57acf65cee3568b7687/dragonforce_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/5dVCngxFZGhcsw0VzSWDcS/eecd9715ae121c616a788a33173f0937/VSP-Student-Fight-Night.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/2AtmzaK2YrtibKeTr7EZ8G/3c455fb2719ee46c53c36c644916d36a/wolf_parade_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/3WZDdtT7ptNz59S42SoyoW/7ba4311d7515bb1af284101916100a02/kapo_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/eMJcUWmQWo5KVC4STrkKs/19b78a34ee26c8ba9c2c891b6e31f47e/talk_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/41srCAGI6bVn5Fl1dwAPpB/81b6c2aea26e0bf5a9d412c2fef22a2f/Imminence.png?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/YapcpXW5zU0gCqB04adpJ/847c0e0a0c8df69db9c30bd68181163f/lord_huron_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/YapcpXW5zU0gCqB04adpJ/847c0e0a0c8df69db9c30bd68181163f/lord_huron_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/DFO1Ttq53DMdHmWJmXGeG/2e57666083db6ac2147b5c3ce1a4d111/virtual_riot_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/3yxl57nu0yl4/7jAM4wCt685JA0D1ALrsef/8d9a28428384337ed17be14c24134cf6/choir_choir_choir_2026.jpg?w=150&h=105 | ",
+    "https://images.ctfassets.net/dv1qnlptav0x/3l87HNLyxgg2ELmgZVyWki/3e2fe3fbe5313d5f1a57693d5d7058be/Line.svg | ",
+    "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gpt_m202610280101&jk=7207259528144525&rc= | "
+   ],
+   "iframes": [
+    "",
+    "https://www.googletagmanager.com/ns.html?id=GTM-WD8T3PD\n            height=",
+    "",
+    "https://www.google.com/recaptcha/api2/aframe"
+   ]
+  },
+  "navigateur": {
+   "taille": 5438,
+   "texte": "MTELUS\nAvec votre accord, nous et nos \n8 partenaires <javascript:Didomi.preferences.show('vendors')>\n utilisons des cookies ou technologies similaires pour stocker, consulter et traiter des données personnelles telles que votre visite sur ce site internet, les adresses IP et les identifiants de cookie. Nous vous invitons à consulter notre  \nPolitique en matière de témoins de connexion <https://assets.ctfassets.net/dv1qnlptav0x/3T2JiRVbDO1Hr0oDP6ssgM/84c4a6b3fc7d187e82dbecdb2aed5cb5/Politique_de_t%C3%A9moins_version_finale__avril_2025___1___1_.pdf >\n ainsi que notre \nPolitique de confidentialité <https://assets.ctfassets.net/dv1qnlptav0x/1zQQwUyiu7wEbyntc7TFbc/7f247dbcc36ae0db5f0f0ac1830f94cc/Politique_relative_au_respect_de_la_vie_priv%C3%A9e_-_version_finale__mars_2025_.pdf >\n pour en savoir plus sur nos pratiques, vos droits et les options qui s’offrent à vous. Vous pouvez accepter ou refuser les témoins en cliquant sur « En savoir plus » ci-dessous, ou ajuster vos préférences dans les paramètres dédiés. \nAvec nos partenaires, nous traitons les données suivantes : \nPublicités et contenu personnalisés, mesure de performance des publicités et du contenu, études d’audience et développement de services, Stocker et/ou accéder à des informations sur un appareil. \nEn savoir plus →\nAccepter & Fermer\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nBilletterie <https://mtelus.com/fr/billetterie>\nSe rendre <https://mtelus.com/fr/se-rendre>\nLocation <https://mtelus.com/fr/location>\nFAQ <https://mtelus.com/fr/faq>\nContact <https://mtelus.com/fr/contact>\nRecherches récentes\nAccès rapide\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nFAQ <https://mtelus.com/fr/faq>\nLocation <https://mtelus.com/fr/location>\nFR \nCalendrier <https://mtelus.com/fr/evenements>\nAccueil <https://mtelus.com/fr>\nÉvénements <https://mtelus.com/fr/evenements?vue=grille>\nÉVÉNEMENTS\n75 résultats\nDates\nBillets <https://evenko.ca/fr/evenements/mtelus/sullivan-king?code=e008893>\nSullivan King\nAvec Usaybflow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <https://evenko.ca/fr/evenements/mtelus/palace?code=e008151>\nPalace\nAvec Willie J Healey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/wheeler-walker-jr?code=e008610>\nWheeler Walker Jr.\nAvec Channing Wilson\nPullin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/gipsy-kings?code=e008890>\nGipsy Kings\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/slaughter-to-prevail?code=e008777>\nSlaughter To Prevail\nAvec REV3RENT\nExtensive Enterprise présente\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/orville-peck?code=e008818>\nOrville Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <https://evenko.ca/fr/evenements/mtelus/perceval?code=e008720",
+   "jsonld": [],
+   "heures": [
+    "ec Usaybflow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <ht",
+    "flow\nPrésenté par îLESONIQ\nVendredi 6 novembre 2026\n22h00\n|\n22h00\nBillets <https://eve",
+    "llie J Healey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "ealey\nUSA & Canada Tour 2026\nSamedi 7 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "ilson\nPullin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "llin' Out: The Farewell Tour\nJeudi 12 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "psy Kings\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "s\nAvec Nicolas Reyes, Mateo\nSamedi 14 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "présente\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "\nNorth America 2026 Leg 2\nDimanche 15 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "8>\nOrville Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "le Peck\nMan Turned Mule Tour\nJeudi 19 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "résenté par les Francos de Montréal\nSamedi 21 novembre 2026\n20h00\n|\n18h30\nBillets <ht",
+    "par les Francos de Montréal\nSamedi 21 novembre 2026\n20h00\n|\n18h30\nBillets <https://eve",
+    "r Heavy MTL\n20th Anniversary Tour\nDimanche 22 novembre 2026\n19h00\n|\n18h00\nBillets <ht"
+   ],
+   "liens": [
+    "https://evenko.ca/fr/evenements/mtelus/an-evening-with-lord-huron?code=e008855",
+    "https://evenko.ca/fr/evenements/mtelus/an-evening-with-lord-huron?code=e008856",
+    "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607",
+    "https://evenko.ca/fr/evenements/mtelus/choir-choir-choir?code=e008284",
+    "https://evenko.ca/fr/evenements/mtelus/dragonforce?code=e008482",
+    "https://evenko.ca/fr/evenements/mtelus/gipsy-kings?code=e008890",
+    "https://evenko.ca/fr/evenements/mtelus/imminence?code=e008648",
+    "https://evenko.ca/fr/evenements/mtelus/kapo?code=e009189",
+    "https://evenko.ca/fr/evenements/mtelus/orville-peck?code=e008818",
+    "https://evenko.ca/fr/evenements/mtelus/palace?code=e008151",
+    "https://evenko.ca/fr/evenements/mtelus/perceval?code=e008720",
+    "https://evenko.ca/fr/evenements/mtelus/slaughter-to-prevail?code=e008777",
+    "https://evenko.ca/fr/evenements/mtelus/sullivan-king?code=e008893",
+    "https://evenko.ca/fr/evenements/mtelus/talk?code=e009198",
+    "https://evenko.ca/fr/evenements/mtelus/underoath?code=e008608",
+    "https://evenko.ca/fr/evenements/mtelus/virtual-riot-blanke?code=e008671",
+    "https://evenko.ca/fr/evenements/mtelus/vsp-student-fight-night?code=e009229",
+    "https://evenko.ca/fr/evenements/mtelus/wheeler-walker-jr?code=e008610",
+    "https://evenko.ca/fr/evenements/mtelus/whitechapel?code=e008599",
+    "https://evenko.ca/fr/evenements/mtelus/wolf-parade?code=e008782",
+    "https://mtelus.com/en/events?display=grid",
+    "https://mtelus.com/fr/evenements"
+   ]
+  }
  },
- "https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=ccmtl&limit=10": {
+ "https://mtelus.com/robots.txt": {
   "statut": 200,
-  "extrait": "{\"actors\":[{\"did\":\"did:plc:6vukazozqz57zwunqcec6a5g\",\"handle\":\"ccmtl.bsky.social\",\"displayName\":\"Christa tl;dr\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:6vukazozqz57zwunqcec6a5g/bafkreibzk3jbg6ih4hbdsxqjb7f4mgbb4n5sun3oxi7p4wdynywoi424ui\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2024-11-08T16:31:57.178Z\",\"description\":\"she/her/elle\\naunt, sister, daughter, dog mom, ally\\noff on a tangent. always. \\ndemocrat abroad 🇺🇸👉🇨🇦\\n\\nVouloir c’est pouvoir.\",\"indexedAt\":\"2025-01-20T19:24:26.043Z\"}]}"
+  "simple_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "simple": {
+   "taille": 370,
+   "texte": "User-Agent: *\nAllow: /api/search*\nDisallow: /search\nDisallow: /recherche\nDisallow: /*?recherche=\nDisallow: /*?search=\nDisallow: /api/\nDisallow: /feeds/\nDisallow: /*?vue=*&*\nDisallow: /*?display=*&*\nDisallow: /*?genre=\nDisallow: /*?date=\nDisallow: /*?arrange=\nHost: https://mtelus.com/\nSitemap: https://mtelus.com/sitemap.xml\nSitemap: https://mtelus.com/sitemap/pages.xml",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "navigateur": {
+   "taille": 370,
+   "texte": "User-Agent: *\nAllow: /api/search*\nDisallow: /search\nDisallow: /recherche\nDisallow: /*?recherche=\nDisallow: /*?search=\nDisallow: /api/\nDisallow: /feeds/\nDisallow: /*?vue=*&*\nDisallow: /*?display=*&*\nDisallow: /*?genre=\nDisallow: /*?date=\nDisallow: /*?arrange=\nHost: https://mtelus.com/\nSitemap: https://mtelus.com/sitemap.xml\nSitemap: https://mtelus.com/sitemap/pages.xml",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  }
  },
- "https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=calendrier%20culturel&limit=10": {
+ "https://www.cinemamoderne.com/horaire/": {
   "statut": 200,
-  "extrait": "{\"actors\":[{\"did\":\"did:plc:7l73224u3r7slysx525p6tdn\",\"handle\":\"evechristian.bsky.social\",\"displayName\":\"Eve Christian\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:7l73224u3r7slysx525p6tdn/bafkreifkfnojcusoplyxfyqb5oniv22rctw2rodvtm5mgj3dwbl7xlshky\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2024-11-13T17:30:15.778Z\",\"description\":\"Météorologue et chroniqueuse science (Le1518 et Dessine-moi un matin à Radio-Canada); \\nResponsable du calendrier culturel;\\nAdore ma famille, le micro, les orages, le soleil, la danse, le ski, les chiens…\",\"indexedAt\":\"2024-11-24T23:52:58.045Z\"},{\"did\":\"did:plc:4q7vsk2gfmqz3ortyb2ogrgo\",\"handle\":\"i-laboetie.bsky.social\",\"displayName\":\"Institut La Boétie\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:4q7vsk2gfmqz3ortyb2ogrgo/bafkreiadexptkp5dyouvtxaf2amfdfpln3yzcjiyhra5tupg7op5t3epqe\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2024-11-14T14:42:02.923Z\",\"description\":\"Fondation insoumise. Lieu d’élaboration intellectuelle, d’éducation populaire, de dialogue entre mondes politique, intellectuel et culturel.\",\"indexedAt\":\"2025-11-07T11:25:28.648Z\"},{\"did\":\"did:plc:mz574rsfbbgicfvahpp4f5r2\",\"handle\":\"labnf.bsky.social\",\"displayName\":\"BnF - Bibliothèque nationale de France\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:mz574rsfbbgicfvahpp4f5r2/bafkreidr7ac5dceekgtn3holvquosw3uaeohmhvieyc4yddp7kdza7hjsu\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2023-10-26T09:05:48.317Z\",\"description\":\"L'actualité de la Bibliothèque nationale de France : salles de lecture, collections, agenda culturel, expos et musée sur le site Richelieu. \\nwww.bnf.fr\",\"indexedAt\":\"2026-08-06T14:06:09.860Z\"},{\"did\":\"did:plc:hvwyyh5a3yjcbt6ctcede2an\",\"handle\":\"cultureprime.bsky.social\",\"displayName\":\"Culture Prime\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:hvwyyh5a3yjcbt6ctcede2an/bafkreic66ozechagcodz4gvjnk3yc3haclxtuob7t66buwaly6uxqd5lmq\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2024-12-04T09:36:38.548Z\",\"description\":\"Culture Prime, c’est le média social culturel créé par les six entreprises de l’audiovisuel public.\",\"indexedAt\":\"2025-12-12T08:58:10.725Z\"},{\"did\":\"did:plc:zrkylaqtqof4fhhgxvus6ft2\",\"handle\":\"hislla.bsky.social\",\"displayName\":\"janonisme culturel\",\"avatar\":\"https://cdn.bsky.app/img/avatar"
+  "simple_images": {
+   "og": null,
+   "img": [
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3C%2Fsvg%3E | "
+   ],
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-5K4NM4F"
+   ]
+  },
+  "simple": {
+   "taille": 41963,
+   "texte": "Horaire - Cinéma Moderne\nfr\nen <https://www.cinemamoderne.com/en/schedule/>\n Horaire \noctobre 2026 <https://www.cinemamoderne.com/horaire/2026/10>\n lundi \n 26 octobre \n mardi \n 27 octobre \n mercredi \n 28 octobre \n jeudi \n 29 octobre \n vendredi \n 30 octobre \n samedi \n 31 octobre \n dimanche \n 01 novembre \n lundi \n 02 novembre \n mardi \n 03 novembre \n mercredi \n 04 novembre \n jeudi \n 05 novembre \n vendredi \n 06 novembre \n samedi \n 07 novembre \n dimanche \n 08 novembre \n lundi \n 09 novembre \n mardi \n 10 novembre \n mercredi \n 11 novembre \n jeudi \n 12 novembre \n vendredi \n 13 novembre \n samedi \n 14 novembre \n dimanche \n 15 novembre \n lundi \n 16 novembre \n mardi \n 17 novembre \n mercredi \n 18 novembre \n jeudi \n 19 novembre \n vendredi \n 20 novembre \n samedi \n 21 novembre \n dimanche \n 22 novembre \n lundi \n 23 novembre \n mardi \n 24 novembre \n mercredi \n 25 novembre \n jeudi \n 26 novembre \n vendredi \n 27 novembre \n samedi \n 28 novembre \n dimanche \n 29 novembre \n lundi \n 30 novembre \n mardi \n 01 décembre \n mercredi \n 02 décembre \n jeudi \n 03 décembre \n vendredi \n 04 décembre \n samedi \n 05 décembre \n dimanche \n 06 décembre \ndécembre 2026 <https://www.cinemamoderne.com/horaire/2026/12>\nnovembre 2026\nLundi\nMardi\nMercredi\nJeudi\nVendredi\nSamedi\nDimanche\n 26 \n15:45 Conte d'automne (VOSTA) <https://www.cinemamoderne.com/films/details/conte-dautomne-2/>\n15:45\nLundi 26 octobre, 15:45\nConte d’automne \n(VOSTA)\nÉric Rohmer\nFrance\n1998\n111 minutes\nFrançais\nAnglais\nDCP - Restauration 2K\nFiche du film <https://www.cinemamoderne.com/films/details/conte-dautomne-2/>\nBilletterie <https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21191>\n18:15 The Lost Boys x Drawn & Quarterly (VOA) <https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-quarterly/>\n18:15\nLundi 26 octobre, 18:15\nThe Lost Boys x Drawn & Quarterly \n(VOA)\nJoel Schumacher\nÉtats-Unis\n1987\n97 minutes\nAnglais\nDCP - Restauration 4K\nFiche du film <https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-quarterly/>\nBilletterie <https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21210>\n21:15 The Fly: 40e anniversaire (VOA) <https://www.cinemamoderne.com/films/details/the-fly-40e-anniversaire/>\n21:15\nLundi 26 octobre, 21:15\nThe Fly: 40e anniversaire \n(VOA)\nDavid Cronenberg\nÉtats-Unis, Canada\n1986\n96 minutes\nAnglais\nDCP\nFiche du film <https://www.cinemamoderne.com/films/details/the-fly-40e-anniversaire/>\nBilletterie <https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21206>\n 27 \n15:45 Chronovisor (VOA) <https://www.cinemamoderne.com/films/details/chronovisor/>\n15:45\nMardi 27 octobre, 15:45\nChronovisor \n(VOA)\nJack Auen, Kevin Walker\nÉtats-Unis\n2026\n100 minutes\nAnglais\nDCP\nFiche du film <https://www.cinemamoderne.com/films/details/chronovisor/>\nBilletterie <https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21193>\n18:00 Possible Love (VOSTA) <http",
+   "jsonld": [
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\",\"url\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\",\"name\":\"Horaire - Cinéma Moderne\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/#website\"},\"datePublished\":\"2018-04-05T15:23:51+00:00\",\"dateModified\":\"2021-05-11T14:29:10+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/www.cinemamoderne.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Horaire\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/#website\",\"url\":\"https:\\/\\/www.cinemamoderne.com\\/\",\"name\":\"Cinéma Moderne\",\"description\":\"Le Cinéma Moderne, salle de cinéma située dans le Mile End à Montréal qui a pour mission de promouvoir le cinéma indépendant d&#039;ici et d&#039;ailleurs.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.cinemamoderne.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
+   ],
+   "heures": [
+    "26\nLundi\nMardi\nMercredi\nJeudi\nVendredi\nSamedi\nDimanche\n 26 \n15:45 Conte d'automne (VOS",
+    "ps://www.cinemamoderne.com/films/details/conte-dautomne-2/>\n15:45\nLundi 26 octobre, 15",
+    "om/films/details/conte-dautomne-2/>\n15:45\nLundi 26 octobre, 15:45\nConte d’automne \n(VO",
+    "r/organisation/representations/index.cfm?EvenementID=21191>\n18:15 The Lost Boys x Draw",
+    "moderne.com/films/details/the-lost-boys-x-drawn-quarterly/>\n18:15\nLundi 26 octobre, 18",
+    "s/the-lost-boys-x-drawn-quarterly/>\n18:15\nLundi 26 octobre, 18:15\nThe Lost Boys x Draw",
+    "r/organisation/representations/index.cfm?EvenementID=21210>\n21:15 The Fly: 40e anniver",
+    ".cinemamoderne.com/films/details/the-fly-40e-anniversaire/>\n21:15\nLundi 26 octobre, 21",
+    "/details/the-fly-40e-anniversaire/>\n21:15\nLundi 26 octobre, 21:15\nThe Fly: 40e anniver",
+    "anisation/representations/index.cfm?EvenementID=21206>\n 27 \n15:45 Chronovisor (VOA) <h",
+    " <https://www.cinemamoderne.com/films/details/chronovisor/>\n15:45\nMardi 27 octobre, 15",
+    "rne.com/films/details/chronovisor/>\n15:45\nMardi 27 octobre, 15:45\nChronovisor \n(VOA)\nJ",
+    "r/organisation/representations/index.cfm?EvenementID=21193>\n18:00 Possible Love (VOSTA",
+    "https://www.cinemamoderne.com/films/details/possible-love/>\n18:00\nMardi 27 octobre, 18",
+    "e.com/films/details/possible-love/>\n18:00\nMardi 27 octobre, 18:00\nPossible Love \n(VOST"
+   ],
+   "liens": [
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21127",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21159",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21172",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21175",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21185",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21186",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21190",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21191",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21193",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21195",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21196",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21198",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21201",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21202",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21203",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21205",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21206",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21208",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21210",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21211",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21212",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21213",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21214",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21215",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21216",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21217",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21219",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21220",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21221",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21222"
+   ]
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%3E%3C%2Fsvg%3E | ",
+    "https://cdn-cookieyes.com/assets/images/revisit.svg | Revisit consent button",
+    "https://cdn-cookieyes.com/assets/images/close.svg | ",
+    "https://cdn-cookieyes.com/assets/images/poweredbtcky.svg | "
+   ],
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-5K4NM4F"
+   ]
+  },
+  "navigateur": {
+   "taille": 46553,
+   "texte": "Horaire - Cinéma Moderne\nNous respectons votre vie privée.\nNous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou des contenus personnalisés et analyser notre trafic. En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies.\nPersonnaliser\nTout rejeter\nAccepter tout\nPersonnaliser les préférences en matière de consentement\nNous utilisons des cookies pour vous aider à naviguer efficacement et à exécuter certaines fonctionnalités. Vous trouverez des informations détaillées sur tous les cookies sous chaque catégorie de consentement ci-dessous.\nLes cookies qui sont catégorisés comme « nécessaires » sont stockés sur votre navigateur car ils sont essentiels pour permettre les fonctionnalités de base du site. ... \nAfficher plus\nNécessaire\nToujours actif\nLes cookies nécessaires sont cruciaux pour les fonctions de base du site Web et celui-ci ne fonctionnera pas comme prévu sans eux.Ces cookies ne stockent aucune donnée personnellement identifiable.\nCookie\ncookieyes-consent\ndurée\n1 an\nla description\nCookieYes place ce témoin pour mémoriser les préférences des utilisateurs en matière de consentement afin que leurs préférences soient respectées lors des visites ultérieures de ce site. Il ne collecte ni ne stocke aucune information personnelle sur les visiteurs du site.\nFonctionnelle\nLes cookies fonctionnels permettent d'exécuter certaines fonctionnalités telles que le partage du contenu du site Web sur des plateformes de médias sociaux, la collecte de commentaires et d'autres fonctionnalités tierces.\nCookie\n__cf_bm\ndurée\n30 minute\nla description\nCloudflare a placé ce témoin pour prendre en charge la gestion des robots Cloudflare.\nAnalytique\nLes cookies analytiques sont utilisés pour comprendre comment les visiteurs interagissent avec le site Web. Ces cookies aident à fournir des informations sur le nombre de visiteurs, le taux de rebond, la source de trafic, etc.\nCookie\n_fbp\ndurée\n3 mois\nla description\nFacebook définit ce témoin pour afficher des publicités lorsque vous êtes sur Facebook ou sur une plateforme numérique alimentée par la publicité de Facebook après avoir visité le site Internet.\nCookie\n_ga\ndurée\n1 an 1 mois 4 jour\nla description\nGoogle Analytics utilise ce témoin pour calculer les données relatives aux visiteurs, aux sessions et aux campagnes et suivre l’utilisation du site pour le rapport d’analyse du site. Le témoin stocke les informations de manière anonyme et attribue un numéro généré de manière aléatoire pour reconnaître les visiteurs uniques.\nCookie\n_gid\ndurée\n1 jour\nla description\nGoogle Analytics utilise ce témoin pour stocker des informations sur la façon dont les visiteurs utilisent un site Internet tout en créant un rapport d’analyse des performances du site. Certaines des données collectées comprennent le nombre de visiteurs, leur source et les pages qu’ils visitent de manière anonyme.\nCookie\n_gat_UA-*\ndurée\n1 minute\nla description\nGoogle Analytics sets this cook",
+   "jsonld": [
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\",\"url\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\",\"name\":\"Horaire - Cinéma Moderne\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/#website\"},\"datePublished\":\"2018-04-05T15:23:51+00:00\",\"dateModified\":\"2021-05-11T14:29:10+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/horaire\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/www.cinemamoderne.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Horaire\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.cinemamoderne.com\\/#website\",\"url\":\"https:\\/\\/www.cinemamoderne.com\\/\",\"name\":\"Cinéma Moderne\",\"description\":\"Le Cinéma Moderne, salle de cinéma située dans le Mile End à Montréal qui a pour mission de promouvoir le cinéma indépendant d&#039;ici et d&#039;ailleurs.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.cinemamoderne.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
+   ],
+   "heures": [
+    "26\nLundi\nMardi\nMercredi\nJeudi\nVendredi\nSamedi\nDimanche\n 26 \n15:45 Conte d'automne (VOS",
+    "ps://www.cinemamoderne.com/films/details/conte-dautomne-2/>\n15:45\nLundi 26 octobre, 15",
+    "om/films/details/conte-dautomne-2/>\n15:45\nLundi 26 octobre, 15:45\nConte d’automne \n(VO",
+    "r/organisation/representations/index.cfm?EvenementID=21191>\n18:15 The Lost Boys x Draw",
+    "moderne.com/films/details/the-lost-boys-x-drawn-quarterly/>\n18:15\nLundi 26 octobre, 18",
+    "s/the-lost-boys-x-drawn-quarterly/>\n18:15\nLundi 26 octobre, 18:15\nThe Lost Boys x Draw",
+    "r/organisation/representations/index.cfm?EvenementID=21210>\n21:15 The Fly: 40e anniver",
+    ".cinemamoderne.com/films/details/the-fly-40e-anniversaire/>\n21:15\nLundi 26 octobre, 21",
+    "/details/the-fly-40e-anniversaire/>\n21:15\nLundi 26 octobre, 21:15\nThe Fly: 40e anniver",
+    "anisation/representations/index.cfm?EvenementID=21206>\n 27 \n15:45 Chronovisor (VOA) <h",
+    " <https://www.cinemamoderne.com/films/details/chronovisor/>\n15:45\nMardi 27 octobre, 15",
+    "rne.com/films/details/chronovisor/>\n15:45\nMardi 27 octobre, 15:45\nChronovisor \n(VOA)\nJ",
+    "r/organisation/representations/index.cfm?EvenementID=21193>\n18:00 Possible Love (VOSTA",
+    "https://www.cinemamoderne.com/films/details/possible-love/>\n18:00\nMardi 27 octobre, 18",
+    "e.com/films/details/possible-love/>\n18:00\nMardi 27 octobre, 18:00\nPossible Love \n(VOST"
+   ],
+   "liens": [
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21127",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21159",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21172",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21175",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21185",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21186",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21190",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21191",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21193",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21195",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21196",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21198",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21201",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21202",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21203",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21205",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21206",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21208",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21210",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21211",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21212",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21213",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21214",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21215",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21216",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21217",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21219",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21220",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21221",
+    "https://cinemamoderne.ticketacces.net/fr/organisation/representations/index.cfm?EvenementID=21222"
+   ]
+  }
  },
- "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=ccmtl.ca&limit=10": {
-  "statut": 403,
-  "extrait": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align: center; font-family: 'Rubik'; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjg4MHB4IiBoZWlnaHQ9IjE0MjRweCIgdmlld0JveD0iMCAwIDI4ODAgMTQyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICAgIDxyYWRpYWxHcmFkaWVudCBjeD0iNDguNDU0MDQyMiUiIGN5PSIyNy4wMTE5NjQ1JSIgZng9IjQ4LjQ1NDA0MjIlIiBmeT0iMjcuMDExOTY0NSUiIHI9IjcwLjg3MDg1MTQlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNDg0NTQwLDAuMjcwMTIwKSxzY2FsZSgwLjQ5NDQ0NCwxKSxyb3RhdGUoOTApLHRyYW5zbGF0ZSgtMC40ODQ1NDAsLTAuMjcwMTIwKSIgaWQ9InJhZGlhbEdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDAyNjQ5IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwNTFGMzciIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMiIgeD0iMCIgeT0iMCIgd2lkdGg9IjI4ODAiIGhlaWdodD0iMTQyNCI+PC9yZWN0PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkhvbWVwYWdlLUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIC01Mjk1KSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgNTI5NSkiPgogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTM0Ij4KICAgICAgICAgICAgICAgICAgICA8bWFzayBpZD0ibWFzay0zIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMiI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgICAgIDx1c2UgaWQ9Ik1hc2siIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQtMSkiIHhsaW5rOmhyZWY9IiNwYXRoLTIiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4='); background-repeat: no-repeat; background-position: bottom center; background-size: cover; color: white; height: 100%; background-color: #051f37; } h1 {margin-bottom: 0px;font-weight: bold;font-size: 140px;font-weight: 500;padding-top: 130px;margin-bottom: -35px;}h2 {font-size: 45px;color: white; font-weight: 200;}</style></head><body><div id='content'><h1 style='margin-bottom: -35px;'>403</h1><h2>Forbidden</h2></div></body></html>"
- },
- "https://public.api.bsky.app/xrpc/app.bsky.actor.searchActors?q=ccmontreal&limit=10": {
+ "https://www.cinemamoderne.com/robots.txt": {
   "statut": 200,
-  "extrait": "{\"actors\":[{\"did\":\"did:plc:gu5qsdm7glxvc2cb7vdjtxaq\",\"handle\":\"ccmontreal.bsky.social\",\"displayName\":\"\",\"avatar\":\"https://cdn.bsky.app/img/avatar/plain/did:plc:gu5qsdm7glxvc2cb7vdjtxaq/bafkreiezbsqgmlpgzedgrhu573kzeo5u62snpyilviek7gi6nod3wup6ui\",\"associated\":{\"activitySubscription\":{\"allowSubscriptions\":\"followers\"}},\"labels\":[],\"createdAt\":\"2026-11-01T18:46:45.977Z\",\"indexedAt\":\"2026-11-01T18:48:55.579Z\"}]}"
+  "simple_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "simple": {
+   "taille": 178,
+   "texte": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\nSitemap: https://www.cinemamoderne.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "navigateur": {
+   "taille": 178,
+   "texte": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\nSitemap: https://www.cinemamoderne.com/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  }
+ },
+ "https://minotaure.ca/": {
+  "statut": 200,
+  "simple_images": {
+   "og": null,
+   "img": [
+    "/static/core/img/Minotaure-logo.0bd051091355.svg | Le Minotaure",
+    "/static/core/img/arrow-map.7691b3aef453.svg | Carte",
+    "/static/core/img/Minotaure-logo-accueil.3e43afcfe9d0.svg | Logo Minotaure",
+    "/media/spectacles/lundi-jazz-ig-post_NV1tpBf.jpg | Lundi Jazz",
+    "/media/spectacles/JAubuchon_Rodage_Ete_1080x1080.png | Josiane Aubuchon",
+    "/media/spectacles/JUPF_Affiche_1x1.jpg | Lauriane Lalonde",
+    "/media/spectacles/excavation-ig-post.jpg | Excavation et Poésie",
+    "/media/spectacles/lundi-jazz-ig-post_1_DyOWIe5.jpg | Lundi Jazz",
+    "/media/spectacles/louanges-ig-post_pqbp99k.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post_plvaz19.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post_T0v7QpK.jpg | les louanges",
+    "/media/spectacles/Design_sans_titre_5.png | Comité F",
+    "/media/spectacles/Square_poster_Minotaure_Nov_20.png | Soirée Drag",
+    "/media/spectacles/calamine-ig-post_mvwYLl7.jpg | CALAMINE",
+    "/media/spectacles/gen-rb-ig-post.jpg | Geneviève RB",
+    "/media/spectacles/juste70-80-ig-post_7cnQc8u.jpg | JUSTE DE (PRESQUE) TOUTE",
+    "/media/spectacles/nic-ig-post.jpg | Nic LaFlamme (QRBP)",
+    "/media/spectacles/smelloship-ig-post.jpg | SMELLOSHIP",
+    "/media/spectacles/QQ_1110926_Carre.jpg | QUATA QUATA",
+    "/media/spectacles/juste70-80-ig-post_MjDuhve.jpg | JUSTE DU 70-80",
+    "/media/spectacles/juste-du-celine-ig-post.jpg | Juste du: Céline",
+    "/media/spectacles/lydia-ig-post.jpg | Lydia Képinski",
+    "/media/spectacles/The%C3%BCa%C3%A9tre_du_Petit_Champlain_-_Vignette_page_programmation_800_x_800_px.jpg | Evelyne Roy-Molgat",
+    "/media/spectacles/shirley-ig-post.jpg | Les Shirley"
+   ],
+   "iframes": [
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.11997149835!2d-75.71818612311323!3d45.42708287107344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13."
+   ]
+  },
+  "simple": {
+   "taille": 4217,
+   "texte": "Accueil\nAccueil <https://minotaure.ca/>\nMenu <https://minotaure.ca/#menu>\nÉvénements <https://minotaure.ca/>\nNos soirées thématiques <https://minotaure.ca/#soirees-t>\nNos prochains événements <https://minotaure.ca/#spectacles-h>\nContacts <https://minotaure.ca/#contact>\n3 rue Kent, Gatineau <https://maps.app.goo.gl/CKVqutkijwhz5rtP7>\nNOS SOIRÉES THÉMATIQUES\nLUNDI JAZZ\nSoirée établie depuis 15 ans, autrefois au Petit Chicago. C’est gratuit et ça débute vers 21h.\nMARDI QUIZ\nTous les mardis, venez seul.e ou en équipe répondre à des questions de culture générale. C’est le fun et gratuit, à partir de 20h.\nJEUDI KARAOKÉ\nLe nom dit tout. Tous les jeudis à partir de 21h avec DJ Matelot Max et DJ Robi.\nVENDREDI DJ\nSoirée dansante avec nos DJs en rotation. Dès 22h, venez oublier votre semaine et danser toute la nuit!\nSAMEDI APRÈS-SHOW\nÀ partir de 23h, juste après notre spectacle du samedi, venez danser jusqu’aux petites heures.\nNOS PROCHAINS SPECTACLES\nLundi Jazz\nLundi 2 novembre\nNick Adema Quartet | 21 h | Gratuit\nJosiane Aubuchon\nMercredi 4 novembre\nBillets <https://lpdv.co/7b2b7>\nLauriane Lalonde\nVendredi 6 novembre\nBillets <https://lpdv.co/81b5d>\nExcavation et Poésie\nSamedi 7 novembre\nBillets <https://lpdv.co/82d90>\nLundi Jazz\nLundi 9 novembre\nThe Andrew Ferderber Group | 21 h | Gratuit\nles louanges\nMercredi 11 novembre\nCOMPLET\nles louanges\nJeudi 12 novembre\nCOMPLET\nles louanges\nVendredi 13 novembre\nPREMIÈRE PARTIE: DONALDA\nCOMPLET\nles louanges\nSamedi 14 novembre\nPREMIÈRE PARTIE: DONALDA\nCOMPLET\nComité F\nMercredi 18 novembre\nBillets <https://lpdv.co/860a7>\nSoirée Drag\nVendredi 20 novembre\nBillets <https://www.eventbrite.ca/e/night-of-drag-at-minotaure-soiree-drag-au-minotaure-gatineau-tickets-2003434690089?aff=oddtdtcreator>\nCALAMINE\nSamedi 21 novembre\nPREMIÈRE PARTIE: CHANGELINE (FR)\nBillets <https://lpdv.co/7a98f>\nGeneviève RB\nDimanche 22 novembre\nPREMIÈRE PARTIE: LUXINE\nBillets <https://lpdv.co/8485d>\nJUSTE DE (PRESQUE) TOUTE\nVendredi 27 novembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <https://www.facebook.com/events/1526950268583680/1538708157407891/?event_time_id=1538708157407891>\nNic LaFlamme (QRBP)\nVendredi 4 décembre\nprésente Lazuli\nBillets <https://lpdv.co/84e2b>\nSMELLOSHIP\nSamedi 5 décembre\nBillets <https://lepointdevente.com/billets/mti261205001>\nQUATA QUATA\nVendredi 11 décembre\nGRATUIT | BAR DU HAUT | 22 H\nJUSTE DU 70-80\nVendredi 18 décembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <https://www.facebook.com/events/1090521130652918>\nJuste du: Céline\nSamedi 19 décembre\nGRATUIT | 20 H\nÉvènement Facebook <https://www.facebook.com/events/1266998204903652>\nLydia Képinski\nSamedi 23 janvier\nBillets <https://lpdv.co/80d96>\nEvelyne Roy-Molgat\nVendredi 5 février\nBillets <https://lpdv.co/81ec1>\nLes Shirley\nSamedi 6 février\nBillets <https://lepointdevente.com/billets/mti270206001>\nMuhoza\nMercredi 10 février\nPlateau double: Colin Léo\nBillets <https://lepointdevente.com/billets/mti270210001>\ncomment debord\nSamedi 20 février\nBillets <https:/",
+   "jsonld": [],
+   "heures": [
+    "autrefois au Petit Chicago. C’est gratuit et ça débute vers 21h.\nMARDI QUIZ\nTous le",
+    "s de culture générale. C’est le fun et gratuit, à partir de 20h.\nJEUDI KARAOKÉ\nLe n",
+    "\nJEUDI KARAOKÉ\nLe nom dit tout. Tous les jeudis à partir de 21h avec DJ Matelot Max ",
+    ".\nVENDREDI DJ\nSoirée dansante avec nos DJs en rotation. Dès 22h, venez oublier votr",
+    "aine et danser toute la nuit!\nSAMEDI APRÈS-SHOW\nÀ partir de 23h, juste après notre ",
+    "SPECTACLES\nLundi Jazz\nLundi 2 novembre\nNick Adema Quartet | 21 h | Gratuit\nJosiane A",
+    "0>\nLundi Jazz\nLundi 9 novembre\nThe Andrew Ferderber Group | 21 h | Gratuit\nles louan",
+    "PRESQUE) TOUTE\nVendredi 27 novembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <",
+    "1>\nQUATA QUATA\nVendredi 11 décembre\nGRATUIT | BAR DU HAUT | 22 H\nJUSTE DU 70-80\nVendr",
+    "JUSTE DU 70-80\nVendredi 18 décembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <",
+    "521130652918>\nJuste du: Céline\nSamedi 19 décembre\nGRATUIT | 20 H\nÉvènement Facebook <"
+   ],
+   "liens": [
+    "https://lepointdevente.com/billets/mti261205001",
+    "https://lepointdevente.com/billets/mti270206001",
+    "https://lepointdevente.com/billets/mti270210001",
+    "https://lepointdevente.com/tickets/d7p270221001?lang=fr",
+    "https://thepointofsale.com/tickets/mti270512001/?lang=fr",
+    "https://www.eventbrite.ca/e/night-of-drag-at-minotaure-soiree-drag-au-minotaure-gatineau-tickets-2003434690089?aff=oddtdtcreator",
+    "https://www.facebook.com/events/1090521130652918",
+    "https://www.facebook.com/events/1266998204903652",
+    "https://www.facebook.com/events/1526950268583680/1538708157407891/?event_time_id=1538708157407891",
+    "https://www.facebook.com/events/1533288518602265"
+   ]
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "/static/core/img/Minotaure-logo.0bd051091355.svg | Le Minotaure",
+    "/static/core/img/arrow-map.7691b3aef453.svg | Carte",
+    "/static/core/img/Minotaure-logo-accueil.3e43afcfe9d0.svg | Logo Minotaure",
+    "/media/spectacles/lundi-jazz-ig-post_NV1tpBf.jpg | Lundi Jazz",
+    "/media/spectacles/JAubuchon_Rodage_Ete_1080x1080.png | Josiane Aubuchon",
+    "/media/spectacles/JUPF_Affiche_1x1.jpg | Lauriane Lalonde",
+    "/media/spectacles/excavation-ig-post.jpg | Excavation et Poésie",
+    "/media/spectacles/lundi-jazz-ig-post_1_DyOWIe5.jpg | Lundi Jazz",
+    "/media/spectacles/louanges-ig-post_pqbp99k.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post_plvaz19.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post.jpg | les louanges",
+    "/media/spectacles/louanges-ig-post_T0v7QpK.jpg | les louanges",
+    "/media/spectacles/Design_sans_titre_5.png | Comité F",
+    "/media/spectacles/Square_poster_Minotaure_Nov_20.png | Soirée Drag",
+    "/media/spectacles/calamine-ig-post_mvwYLl7.jpg | CALAMINE",
+    "/media/spectacles/gen-rb-ig-post.jpg | Geneviève RB",
+    "/media/spectacles/juste70-80-ig-post_7cnQc8u.jpg | JUSTE DE (PRESQUE) TOUTE",
+    "/media/spectacles/nic-ig-post.jpg | Nic LaFlamme (QRBP)",
+    "/media/spectacles/smelloship-ig-post.jpg | SMELLOSHIP",
+    "/media/spectacles/QQ_1110926_Carre.jpg | QUATA QUATA",
+    "/media/spectacles/juste70-80-ig-post_MjDuhve.jpg | JUSTE DU 70-80",
+    "/media/spectacles/juste-du-celine-ig-post.jpg | Juste du: Céline",
+    "/media/spectacles/lydia-ig-post.jpg | Lydia Képinski",
+    "/media/spectacles/The%C3%BCa%C3%A9tre_du_Petit_Champlain_-_Vignette_page_programmation_800_x_800_px.jpg | Evelyne Roy-Molgat",
+    "/media/spectacles/shirley-ig-post.jpg | Les Shirley"
+   ],
+   "iframes": [
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.11997149835!2d-75.71818612311323!3d45.42708287107344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.",
+    "",
+    ""
+   ]
+  },
+  "navigateur": {
+   "taille": 5854,
+   "texte": "Accueil\nAccueil <https://minotaure.ca/>\nMenu <https://minotaure.ca/#menu>\nÉvénements <https://minotaure.ca/>\nNos soirées thématiques <https://minotaure.ca/#soirees-t>\nNos prochains événements <https://minotaure.ca/#spectacles-h>\nContacts <https://minotaure.ca/#contact>\n3 rue Kent, Gatineau <https://maps.app.goo.gl/CKVqutkijwhz5rtP7>\nNOS SOIRÉES THÉMATIQUES\nLUNDI JAZZ\nSoirée établie depuis 15 ans, autrefois au Petit Chicago. C’est gratuit et ça débute vers 21h.\nMARDI QUIZ\nTous les mardis, venez seul.e ou en équipe répondre à des questions de culture générale. C’est le fun et gratuit, à partir de 20h.\nJEUDI KARAOKÉ\nLe nom dit tout. Tous les jeudis à partir de 21h avec DJ Matelot Max et DJ Robi.\nVENDREDI DJ\nSoirée dansante avec nos DJs en rotation. Dès 22h, venez oublier votre semaine et danser toute la nuit!\nSAMEDI APRÈS-SHOW\nÀ partir de 23h, juste après notre spectacle du samedi, venez danser jusqu’aux petites heures.\nNOS PROCHAINS SPECTACLES\nLundi Jazz\nLundi 2 novembre\nNick Adema Quartet | 21 h | Gratuit\nJosiane Aubuchon\nMercredi 4 novembre\nBillets <https://lpdv.co/7b2b7>\nLauriane Lalonde\nVendredi 6 novembre\nBillets <https://lpdv.co/81b5d>\nExcavation et Poésie\nSamedi 7 novembre\nBillets <https://lpdv.co/82d90>\nLundi Jazz\nLundi 9 novembre\nThe Andrew Ferderber Group | 21 h | Gratuit\nles louanges\nMercredi 11 novembre\nCOMPLET\nles louanges\nJeudi 12 novembre\nCOMPLET\nles louanges\nVendredi 13 novembre\nPREMIÈRE PARTIE: DONALDA\nCOMPLET\nles louanges\nSamedi 14 novembre\nPREMIÈRE PARTIE: DONALDA\nCOMPLET\nComité F\nMercredi 18 novembre\nBillets <https://lpdv.co/860a7>\nSoirée Drag\nVendredi 20 novembre\nBillets <https://www.eventbrite.ca/e/night-of-drag-at-minotaure-soiree-drag-au-minotaure-gatineau-tickets-2003434690089?aff=oddtdtcreator>\nCALAMINE\nSamedi 21 novembre\nPREMIÈRE PARTIE: CHANGELINE (FR)\nBillets <https://lpdv.co/7a98f>\nGeneviève RB\nDimanche 22 novembre\nPREMIÈRE PARTIE: LUXINE\nBillets <https://lpdv.co/8485d>\nJUSTE DE (PRESQUE) TOUTE\nVendredi 27 novembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <https://www.facebook.com/events/1526950268583680/1538708157407891/?event_time_id=1538708157407891>\nNic LaFlamme (QRBP)\nVendredi 4 décembre\nprésente Lazuli\nBillets <https://lpdv.co/84e2b>\nSMELLOSHIP\nSamedi 5 décembre\nBillets <https://lepointdevente.com/billets/mti261205001>\nQUATA QUATA\nVendredi 11 décembre\nGRATUIT | BAR DU HAUT | 22 H\nJUSTE DU 70-80\nVendredi 18 décembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <https://www.facebook.com/events/1090521130652918>\nJuste du: Céline\nSamedi 19 décembre\nGRATUIT | 20 H\nÉvènement Facebook <https://www.facebook.com/events/1266998204903652>\nLydia Képinski\nSamedi 23 janvier\nBillets <https://lpdv.co/80d96>\nEvelyne Roy-Molgat\nVendredi 5 février\nBillets <https://lpdv.co/81ec1>\nLes Shirley\nSamedi 6 février\nBillets <https://lepointdevente.com/billets/mti270206001>\nMuhoza\nMercredi 10 février\nPlateau double: Colin Léo\nBillets <https://lepointdevente.com/billets/mti270210001>\ncomment debord\nSamedi 20 février\nBillets <https:/",
+   "jsonld": [],
+   "heures": [
+    "autrefois au Petit Chicago. C’est gratuit et ça débute vers 21h.\nMARDI QUIZ\nTous le",
+    "s de culture générale. C’est le fun et gratuit, à partir de 20h.\nJEUDI KARAOKÉ\nLe n",
+    "\nJEUDI KARAOKÉ\nLe nom dit tout. Tous les jeudis à partir de 21h avec DJ Matelot Max ",
+    ".\nVENDREDI DJ\nSoirée dansante avec nos DJs en rotation. Dès 22h, venez oublier votr",
+    "aine et danser toute la nuit!\nSAMEDI APRÈS-SHOW\nÀ partir de 23h, juste après notre ",
+    "SPECTACLES\nLundi Jazz\nLundi 2 novembre\nNick Adema Quartet | 21 h | Gratuit\nJosiane A",
+    "0>\nLundi Jazz\nLundi 9 novembre\nThe Andrew Ferderber Group | 21 h | Gratuit\nles louan",
+    "PRESQUE) TOUTE\nVendredi 27 novembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <",
+    "1>\nQUATA QUATA\nVendredi 11 décembre\nGRATUIT | BAR DU HAUT | 22 H\nJUSTE DU 70-80\nVendr",
+    "JUSTE DU 70-80\nVendredi 18 décembre\nGRATUIT | BAR DU HAUT | 21 H\nÉvènement Facebook <",
+    "521130652918>\nJuste du: Céline\nSamedi 19 décembre\nGRATUIT | 20 H\nÉvènement Facebook <"
+   ],
+   "liens": [
+    "https://lepointdevente.com/billets/mti261205001",
+    "https://lepointdevente.com/billets/mti270206001",
+    "https://lepointdevente.com/billets/mti270210001",
+    "https://lepointdevente.com/tickets/d7p270221001?lang=fr",
+    "https://thepointofsale.com/tickets/mti270512001/?lang=fr",
+    "https://www.eventbrite.ca/e/night-of-drag-at-minotaure-soiree-drag-au-minotaure-gatineau-tickets-2003434690089?aff=oddtdtcreator",
+    "https://www.facebook.com/events/1090521130652918",
+    "https://www.facebook.com/events/1266998204903652",
+    "https://www.facebook.com/events/1526950268583680/1538708157407891/?event_time_id=1538708157407891",
+    "https://www.facebook.com/events/1533288518602265"
+   ]
+  }
+ },
+ "https://minotaure.ca/robots.txt": {
+  "simple": {
+   "erreur": "404 Client Error: Not Found for url: https://minotaure.ca/robots.txt"
+  },
+  "navigateur": {
+   "erreur": "404  (navigateur)"
+  }
+ },
+ "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino": {
+  "statut": 200,
+  "simple_images": {
+   "og": "https://casinos.lotoquebec.com/.imaging/mte/casinos-theme/retinaLrg-1920w/website/casinos/montreal/bars-spectacles/cabaret-du-casino/image/2086_SCQ_Web_OpenGraph_ligne17_cabaret_1200x630px.jpg",
+   "img": [
+    "//portail.lotoquebec.com/dam/entete-commun/ui/logo_Loto-Quebec-small.svg | ",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/logo_Loto-Quebec-small-dark-theme.svg | ",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/bien-jouer-signature-noir-fr.svg | Bien jouer - Pour que le jeu reste un jeu",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/Aide-et-references_f.svg | Aide et référence - Téléphone 1 800 461 0140",
+    "/mel/dam/jcr:19ba6e8a-cfc6-4e4f-9302-9f0364dd9eb2/logo_649_sans-degrade.svg | Lotto 6/49",
+    "/mel/dam/jcr:5444c175-0aab-40fe-8128-7cf85734bf61/logo_lotto-max.svg | Lotto Max",
+    "/mel/dam/jcr:b7c4469e-dbae-4d22-9bf5-709126857e98/logo_grande-vie.svg | Grande vie",
+    "/mel/dam/jcr:23d18396-e417-46d9-a7be-4e581be45761/logo-GAV-ed%20(1).png | Gagnant à vie édition spéciale",
+    "/mel/dam/jcr:3e892ff3-ddde-4086-8235-ce22c0025524/logo_poule.png | La Poule aux oeufs d'or",
+    "/mel/dam/jcr:bace0dc4-b5b3-4c5d-87fc-910921acc319/logo_qc-49_new.png | Québec 49",
+    "/mel/dam/jcr:a40bb311-2f1a-4d39-93d5-9315168925ac/logo_quebec-max.svg | Québec Max",
+    "/mel/dam/jcr:0ac84a6f-7384-4be1-968f-2d4d13f65df8/logo_extra.png | Extra",
+    "/mel/dam/jcr:58b7f014-c7d0-4fa1-a67b-0bf203c4f404/logo_banco.svg | Banco",
+    "/mel/dam/jcr:c428bd92-f6f5-43a3-8d05-63d2007013aa/logo_quotidienne.svg | Quotidienne",
+    "/mel/dam/jcr:53284ac6-34ef-44de-a115-ba3dc3b66fcc/logo_tout-ou-rien.svg | Tout ou Rien",
+    "/mel/dam/jcr:e0b25e76-73cd-4847-a8d6-c7fc65609626/logo_astro.svg | Astro",
+    "/mel/dam/jcr:4b70a521-c316-4e26-b71c-27e686e32333/logo_triplex%20.svg | Triplex",
+    "/mel/dam/jcr:4ae4afec-8b15-425a-a7ef-f75ebfb3425d/logo_lotto-poker.png | Lotto Poker",
+    "/mel/dam/jcr:7debc58a-70a7-46c1-9fdd-b694a952314b/logo_sprinto.svg | Sprinto",
+    "/mel/dam/jcr:e85f5a3d-546b-4ad2-93ab-839546b2b386/logo_laMini.svg | La Mini",
+    "/mel/dam/jcr:d6d575a7-0479-4d6a-b9a4-d612a8c8e793/logo_lottoD.svg | Lotto :D",
+    "/mel/dam/jcr:d1adc8b1-c3cc-4e4a-a5d3-95ebb69d24e0/retour-vers-le-futur-logo.png | Retour vers le futur ",
+    "/mel/dam/jcr:a253aa2a-7f97-4444-9446-acd75e0ab0c0/2025-10-celebration-volet-01-logo-420x241.png | ",
+    "/.resources/scq-templating/images/logo-youtube-complet.png | Youtube",
+    "/dist/images/image.jpg | "
+   ],
+   "iframes": []
+  },
+  "simple": {
+   "taille": 19674,
+   "texte": "Programmation des spectacles | Casino de Montréal | Loto-Québec\nAller au contenu <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino#page-content>\nProgrammation des spectacles | Casino de Montréal\nL’affichage de cette vidéo a été bloqué\nYouTube utilise des témoins publicitaires dont vous avez refusé l’utilisation. Pour regarder ce type de vidéo, vous devez accepter tous les témoins publicitaires. Ces témoins servent à personnaliser les publicités que vous voyez sur nos sites et sur d’autres sites.\nAccepter\nCabaret du Casino\nAu cœur de l’action et du divertissement, notre salle de spectacle propose des concerts de calibre international et reçoit une programmation variée d’événements sportifs et corporatifs.\nEn vedette\nInfolettre Abonnez-vous à l’infolettre Pour toutes les nouvelles et promotions exclusives au Cabaret du Casino de Montréal. <https://e.gestev.com/mail/microsites/1607/1/oYKG8c>\n22 novembre 22 novembre OD Panamá COMPLET Viens vivre avec nous la grande finale en direct devant public et assiste au dévoilement du couple gagnant. <https://casinos.lotoquebec.com/fr/montreal/evenements/od-panama>\n15% de rabais Exclusivité Casino Privilèges À l’achat de billets de spectacle au Cabaret du Casino <https://casinos.lotoquebec.com/fr/montreal/sortir/spectacles#offres>\nDu 6 oct. au 10 nov. Du 6 oct. au 10 nov. Juste pour rire Les mardis, assistez aux soirées d’humour animées par Magali Saint-Vincent ou Pascale Marineau. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/spectacles-juste-pour-rire-en-tournee>\nÀ partir du 18 nov. À partir du 18 nov. Michael Jackson Legacy Plongez dans un univers hors du temps, une expérience immersive directement inspirée de « Smooth Criminal », l’un des clips les plus emblématiques de Michael Jackson. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/michael-jackson-legacy>\n3 au 12 décembre 3 au 12 décembre L’Empire Musical Découvrez un spectacle vibrant, moderne, conçu pour faire rayonner la force et la richesse des grandes chansons britanniques. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/l-empire-musical>\n31 octobre 31 octobre Ménopause La célèbre parodie musicale, présentée par Vitoli, pose un regard hilarant et sincère sur ce que les femmes vivent lorsqu’elles traversent la ménopause. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/menopause-la-parodie-musicale>\n6 novembre 6 novembre Dave Fenley Le chanteur folk-country à la voix impressionnante est de retour avec un nouveau spectacle « TRIO! ». <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/dave-fenley-trio>\n13 novembre 13 novembre Y’était temps! José Gaudet abordera sa vision des choses sur la vie et ses réflexions sur la société avec son humour authentique et son franc parlé que nous connaissons bien. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/jose-g",
+   "jsonld": [],
+   "heures": [
+    "partir du 16 avr. 2027 ELVIS RETURNS À partir de 72 $ TTC à 14 h À partir de 79 $ TTC",
+    " RETURNS À partir de 72 $ TTC à 14 h À partir de 79 $ TTC à 19 h 30 <https://casinos.lo",
+    "- Patrick Norman et Nathalie Lord À partir de 46,50 $ TTC à 14 h À partir de 51,00 $ ",
+    "rd À partir de 46,50 $ TTC à 14 h À partir de 51,00 $ TTC à 19 h 30 <https://casinos.lo",
+    "léphone\nContactez le centre d’appel du lundi au vendredi de 10 h à 15 h\n514 392-2700 ",
+    "\nContactez le centre d’appel du lundi au vendredi de 10 h à 15 h\n514 392-2700 <tel:+1",
+    "iveau Promenade du Pavillon du Québec.\nDu mardi au samedi : 13 h à 17 h, ou jusqu’à u",
+    "romenade du Pavillon du Québec.\nDu mardi au samedi : 13 h à 17 h, ou jusqu’à une dem",
+    "service + taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nLes vend",
+    "+ taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nLes vendredis et s",
+    "service + taxes + frais de billetterie). Se présenter entre 16 h 30 et 17 h.\nLe Montréal",
+    "axes + frais de billetterie). Se présenter entre 16 h 30 et 17 h.\nLe Montréal\n Dégus",
+    "service + taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nComment ",
+    "+ taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nComment puis-je pr"
+   ],
+   "liens": [
+    "https://casinos.lotoquebec.com/fr/montreal/evenements/halloween",
+    "https://casinos.lotoquebec.com/fr/montreal/sortir/spectacles#offres",
+    "https://www.ticketmaster.ca/cabaret-du-casino-de-montreal-tickets-montreal/venue/402204?brand=gestev&amp;lang=fr-ca"
+   ]
+  },
+  "navigateur_images": {
+   "og": "https://casinos.lotoquebec.com/.imaging/mte/casinos-theme/retinaLrg-1920w/website/casinos/montreal/bars-spectacles/cabaret-du-casino/image/2086_SCQ_Web_OpenGraph_ligne17_cabaret_1200x630px.jpg",
+   "img": [
+    "https://societe.lotoquebec.com/dam/jcr:501cce21-7278-42c9-9e0d-255ba51e01b7/logo_loto-quebec_bleu_horizontal_6cornes.jpg | Logo",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/logo_Loto-Quebec-small.svg | ",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/logo_Loto-Quebec-small-dark-theme.svg | ",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/bien-jouer-signature-noir-fr.svg | Bien jouer - Pour que le jeu reste un jeu",
+    "//portail.lotoquebec.com/dam/entete-commun/ui/Aide-et-references_f.svg | Aide et référence - Téléphone 1 800 461 0140",
+    "/mel/dam/jcr:19ba6e8a-cfc6-4e4f-9302-9f0364dd9eb2/logo_649_sans-degrade.svg | Lotto 6/49",
+    "/mel/dam/jcr:5444c175-0aab-40fe-8128-7cf85734bf61/logo_lotto-max.svg | Lotto Max",
+    "/mel/dam/jcr:b7c4469e-dbae-4d22-9bf5-709126857e98/logo_grande-vie.svg | Grande vie",
+    "/mel/dam/jcr:23d18396-e417-46d9-a7be-4e581be45761/logo-GAV-ed%20(1).png | Gagnant à vie édition spéciale",
+    "/mel/dam/jcr:3e892ff3-ddde-4086-8235-ce22c0025524/logo_poule.png | La Poule aux oeufs d'or",
+    "/mel/dam/jcr:bace0dc4-b5b3-4c5d-87fc-910921acc319/logo_qc-49_new.png | Québec 49",
+    "/mel/dam/jcr:a40bb311-2f1a-4d39-93d5-9315168925ac/logo_quebec-max.svg | Québec Max",
+    "/mel/dam/jcr:0ac84a6f-7384-4be1-968f-2d4d13f65df8/logo_extra.png | Extra",
+    "/mel/dam/jcr:58b7f014-c7d0-4fa1-a67b-0bf203c4f404/logo_banco.svg | Banco",
+    "/mel/dam/jcr:c428bd92-f6f5-43a3-8d05-63d2007013aa/logo_quotidienne.svg | Quotidienne",
+    "/mel/dam/jcr:53284ac6-34ef-44de-a115-ba3dc3b66fcc/logo_tout-ou-rien.svg | Tout ou Rien",
+    "/mel/dam/jcr:e0b25e76-73cd-4847-a8d6-c7fc65609626/logo_astro.svg | Astro",
+    "/mel/dam/jcr:4b70a521-c316-4e26-b71c-27e686e32333/logo_triplex%20.svg | Triplex",
+    "/mel/dam/jcr:4ae4afec-8b15-425a-a7ef-f75ebfb3425d/logo_lotto-poker.png | Lotto Poker",
+    "/mel/dam/jcr:7debc58a-70a7-46c1-9fdd-b694a952314b/logo_sprinto.svg | Sprinto",
+    "/mel/dam/jcr:e85f5a3d-546b-4ad2-93ab-839546b2b386/logo_laMini.svg | La Mini",
+    "/mel/dam/jcr:d6d575a7-0479-4d6a-b9a4-d612a8c8e793/logo_lottoD.svg | Lotto :D",
+    "/mel/dam/jcr:d1adc8b1-c3cc-4e4a-a5d3-95ebb69d24e0/retour-vers-le-futur-logo.png | Retour vers le futur ",
+    "/mel/dam/jcr:a253aa2a-7f97-4444-9446-acd75e0ab0c0/2025-10-celebration-volet-01-logo-420x241.png | ",
+    "/.resources/scq-templating/images/logo-youtube-complet.png | Youtube"
+   ],
+   "iframes": [
+    "",
+    "https://confidentialite.lotoquebec.com/global-cookies/3a11a3b3133d74d9ef40a6012d1dc8e1db1a1d16/global-cookies.3a11a3b3133d74d9ef40a6012d1dc8e1db1a1d16"
+   ]
+  },
+  "navigateur": {
+   "taille": 26615,
+   "texte": "Programmation des spectacles | Casino de Montréal | Loto-Québec\nOn ne laisse pas la protection de votre vie privée au hasard\nNous utilisons des témoins (\ncookies\n) pour améliorer votre expérience de navigation sur nos sites, diffuser des publicités ou des contenus personnalisés et analyser la fréquentation de nos sites. En cliquant sur Tout accepter, vous consentez à ce que nous utilisions tous les types de témoins.\nPour en savoir plus, consultez notre \nPolitique de confidentialité <https://societe.lotoquebec.com/fr/confidentialite-app>\n.\nVoir nos partenaires\nPersonnaliser mes choix\nTout accepter\nAller au contenu <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino#page-content>\nProgrammation des spectacles | Casino de Montréal\nL’affichage de cette vidéo a été bloqué\nYouTube utilise des témoins publicitaires dont vous avez refusé l’utilisation. Pour regarder ce type de vidéo, vous devez accepter tous les témoins publicitaires. Ces témoins servent à personnaliser les publicités que vous voyez sur nos sites et sur d’autres sites.\nAccepter\nCabaret du Casino\nAu cœur de l’action et du divertissement, notre salle de spectacle propose des concerts de calibre international et reçoit une programmation variée d’événements sportifs et corporatifs.\nEn vedette\n6 novembre 6 novembre Dave Fenley Le chanteur folk-country à la voix impressionnante est de retour avec un nouveau spectacle « TRIO! ». <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/dave-fenley-trio>\n13 novembre 13 novembre Y’était temps! José Gaudet abordera sa vision des choses sur la vie et ses réflexions sur la société avec son humour authentique et son franc parlé que nous connaissons bien. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/jose-gaudet-y-etait-temps>\n1 et 2 décembre 1 et 2 décembre Noël en chanson Célébrez la fête de Noël en famille et entre amis. Le spectacle mise sur la nostalgie, l’humour et les souvenirs du temps des fêtes de différentes générations. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/noel-une-tradition-en-chanson>\nInfolettre Abonnez-vous à l’infolettre Pour toutes les nouvelles et promotions exclusives au Cabaret du Casino de Montréal. <https://e.gestev.com/mail/microsites/1607/1/oYKG8c>\n22 novembre 22 novembre OD Panamá COMPLET Viens vivre avec nous la grande finale en direct devant public et assiste au dévoilement du couple gagnant. <https://casinos.lotoquebec.com/fr/montreal/evenements/od-panama>\n15% de rabais Exclusivité Casino Privilèges À l’achat de billets de spectacle au Cabaret du Casino <https://casinos.lotoquebec.com/fr/montreal/sortir/spectacles#offres>\nDu 6 oct. au 10 nov. Du 6 oct. au 10 nov. Juste pour rire Les mardis, assistez aux soirées d’humour animées par Magali Saint-Vincent ou Pascale Marineau. <https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/spectacles-juste-pour-rire-en-tournee>\nÀ partir du 18 nov. À",
+   "jsonld": [],
+   "heures": [
+    "partir du 16 avr. 2027 ELVIS RETURNS À partir de 72 $ TTC à 14 h À partir de 79 $ TTC",
+    " RETURNS À partir de 72 $ TTC à 14 h À partir de 79 $ TTC à 19 h 30 <https://casinos.lo",
+    "- Patrick Norman et Nathalie Lord À partir de 46,50 $ TTC à 14 h À partir de 51,00 $ ",
+    "rd À partir de 46,50 $ TTC à 14 h À partir de 51,00 $ TTC à 19 h 30 <https://casinos.lo",
+    "léphone\nContactez le centre d’appel du lundi au vendredi de 10 h à 15 h\n514 392-2700 ",
+    "\nContactez le centre d’appel du lundi au vendredi de 10 h à 15 h\n514 392-2700 <tel:+1",
+    "iveau Promenade du Pavillon du Québec.\nDu mardi au samedi : 13 h à 17 h, ou jusqu’à u",
+    "romenade du Pavillon du Québec.\nDu mardi au samedi : 13 h à 17 h, ou jusqu’à une dem",
+    "service + taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nLes vend",
+    "+ taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nLes vendredis et s",
+    "service + taxes + frais de billetterie). Se présenter entre 16 h 30 et 17 h.\nLe Montréal",
+    "axes + frais de billetterie). Se présenter entre 16 h 30 et 17 h.\nLe Montréal\n Dégus",
+    "service + taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nComment ",
+    "+ taxes + frais de billetterie). Se présenter entre 17 h et 17 h 30.\nComment puis-je pr"
+   ],
+   "liens": [
+    "https://casinos.lotoquebec.com/fr/montreal/evenements/halloween",
+    "https://casinos.lotoquebec.com/fr/montreal/sortir/spectacles#offres",
+    "https://www.ticketmaster.ca/cabaret-du-casino-de-montreal-tickets-montreal/venue/402204?brand=gestev&amp;lang=fr-ca"
+   ]
+  }
+ },
+ "https://casinos.lotoquebec.com/robots.txt": {
+  "statut": 200,
+  "simple_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "simple": {
+   "taille": 76,
+   "texte": "User-agent: *\r\nAllow: /\r\nSitemap: https://casinos.lotoquebec.com/sitemap.xml",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [],
+   "iframes": []
+  },
+  "navigateur": {
+   "taille": 74,
+   "texte": "User-agent: *\nAllow: /\nSitemap: https://casinos.lotoquebec.com/sitemap.xml",
+   "jsonld": [],
+   "heures": [],
+   "liens": []
+  }
  }
 }
