@@ -131,6 +131,38 @@ def bluesky(messages):
     return racine["uri"]
 
 
+PROFIL_BLUESKY = {
+    "displayName": "Calendrier culturel MTL · ccmtl.ca",
+    "description": ("Le calendrier culturel de l'île de Montréal : théâtre, musique, danse, humour, cinéma, expos… "
+                    "Chaque lundi, la sélection de la semaine. Gratuit, sans pub, bénévole.\n"
+                    "Montreal's cultural calendar, in French and English.\nccmtl.ca"),
+}
+
+
+def profil_bluesky():
+    """Nom affiché et description du compte Bluesky (la recherche de Bluesky ne trouve que ce qui y est écrit).
+    L'avatar et la bannière existants sont conservés."""
+    ident, mdp = os.environ.get("BLUESKY_IDENTIFIANT"), os.environ.get("BLUESKY_MOT_DE_PASSE")
+    if not ident or not mdp:
+        return None
+    s = requests.post("https://bsky.social/xrpc/com.atproto.server.createSession",
+                      json={"identifier": ident, "password": mdp}, timeout=30)
+    s.raise_for_status()
+    s = s.json()
+    h = {"Authorization": "Bearer " + s["accessJwt"]}
+    r = requests.get("https://bsky.social/xrpc/com.atproto.repo.getRecord", headers=h, timeout=30,
+                     params={"repo": s["did"], "collection": "app.bsky.actor.profile", "rkey": "self"})
+    rec = r.json().get("value", {}) if r.ok else {}
+    rec = dict(rec, **PROFIL_BLUESKY)
+    rec["$type"] = "app.bsky.actor.profile"
+    if ESSAI:
+        return "essai : profil Bluesky prêt (" + rec["displayName"] + ")"
+    r = requests.post("https://bsky.social/xrpc/com.atproto.repo.putRecord", headers=h, timeout=30,
+                      json={"repo": s["did"], "collection": "app.bsky.actor.profile", "rkey": "self", "record": rec})
+    r.raise_for_status()
+    return "profil Bluesky mis à jour : " + rec["displayName"]
+
+
 # ---------------------------------------------------------------- Instagram (Instagram Login, graph.instagram.com) : carrousel
 def _attendre(get_statut, cle="status_code"):
     for _ in range(30):
@@ -607,6 +639,9 @@ def main():
         return apercu()
     if ETAPE == "consignes":
         return consignes()
+    if SEULEMENT == ["profil_bluesky"]:
+        print(profil_bluesky())
+        return
     DOSSIER.mkdir(parents=True, exist_ok=True)
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
     data = json.loads((RACINE / "docs" / "data.json").read_text(encoding="utf-8"))
