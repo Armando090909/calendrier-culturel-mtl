@@ -12,7 +12,8 @@ on:
     branches: [main]
     paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt"]
     # demande-essai.txt : essai de connexion (rien n'est publié)
-    # demande-test.txt : publie pour vrai les seuls formats écrits dans le fichier (ex. instagram_story,facebook_story)
+    # demande-test.txt : publie pour vrai les seuls formats écrits dans le fichier (ex. instagram_story,facebook_story),
+    # ou « tout » pour la publication normale de la semaine
   workflow_dispatch:
     inputs:
       essai:
@@ -70,6 +71,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-test.txt"; then
             export PUBLIER=oui SEULEMENT="$(head -1 outils/reseaux/demande-test.txt | tr -d ' \r')"
+            # « tout » : la publication normale de la semaine (notée comme faite), lancée à la main
+            [ "$SEULEMENT" = tout ] && export SEULEMENT=""
             echo "Test ciblé : $SEULEMENT"
           fi
           python outils/publier.py
