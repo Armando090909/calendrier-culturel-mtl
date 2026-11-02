@@ -5,7 +5,10 @@
 name: Réseaux sociaux
 on:
   schedule:
-    - cron: "23 13-21 * * 1"   # chaque heure de 8 h 23 à 16 h 23 (Montréal, hiver) : la première qui démarre publie
+    - cron: "23 13-21 * * 1"   # lundi, chaque heure de 8 h 23 à 16 h 23 (Montréal, hiver) : la première qui démarre publie
+    - cron: "7 22-23 * * 0"    # dimanche 17 h 07 et 18 h 07 : aperçu envoyé pour approbation (renfort de cron-job.org)
+  issue_comment:
+    types: [created]           # réponse dans l'avis d'aperçu : consignes appliquées tout de suite
   push:
     branches: [main]
     paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt"]
@@ -22,6 +25,10 @@ on:
         description: "Republier même si la semaine est déjà publiée"
         type: boolean
         default: false
+      etape:
+        description: "publier (lundi) ou apercu (dimanche : sélection envoyée pour approbation)"
+        type: string
+        default: "publier"
       seulement:
         description: "Test : publier seulement ces formats (ex. instagram_story,facebook_story), sans les noter comme faits"
         type: string
@@ -31,6 +38,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publier:
+    # réponses dans un avis : seulement celles du propriétaire, dans un avis d'aperçu
+    if: github.event_name != 'issue_comment' || (contains(github.event.issue.labels.*.name, 'apercu-reseaux') && github.event.comment.user.login == github.repository_owner)
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -64,6 +73,9 @@ jobs:
           PUBLIER: ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.essai)) && 'essai' || 'oui' }}
           FORCER: ${{ inputs.forcer && '1' || '0' }}
           SEULEMENT: ${{ inputs.seulement }}
+          ETAPE: ${{ github.event_name == 'issue_comment' && 'consignes' || (github.event.schedule == '7 22-23 * * 0' || inputs.etape == 'apercu') && 'apercu' || '' }}
+          NUMERO_AVIS: ${{ github.event.issue.number }}
+          COMMENTAIRE: ${{ github.event.comment.body }}
         run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"

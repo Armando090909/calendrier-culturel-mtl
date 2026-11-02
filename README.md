@@ -169,6 +169,9 @@ Un encadré de dons s'affiche au bas du calendrier dès qu'un des deux champs es
 Le guide complet (architecture, comptes, automatismes, courriels d'alerte, tâches périodiques, déménagement,
 passation) est tenu par le propriétaire du projet dans un document « ccmtl.ca · Guide d'entretien et de transmission ».
 En bref :
+- réseaux sociaux : le dimanche vers 17 h, un avis « Aperçu de la publication » présente la sélection du lundi
+  (cron-job.org, renforts GitHub) ; sans réponse, elle part lundi vers 8 h 20. Répondre dans l'avis la modifie
+  (`cinéma : titre`, `retirer cirque`, `stop`, `ok`)
 - la collecte tourne chaque nuit (lancée par cron-job.org à 1 h 30) ; le bilan de santé ouvre un avis (onglet Issues)
   seulement pour un problème qui dure ;
 - les sources muettes sont réparées automatiquement (`collecteur/autoentretien.py`, `cache/reparations.json`) et de

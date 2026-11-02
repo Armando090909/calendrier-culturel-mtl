@@ -59,6 +59,8 @@ def _mois(m):
 
 COUL = {k: c for k, _, c in v.DISC}
 SALLES_BARS = {"musique", "humour", "fete", "quiz", "poesie"}
+# Jamais mis en vedette : films-conférences de voyage (ce sont des récits de voyage, pas du cinéma)
+PAS_VEDETTE = re.compile(r"(?i)grands explorateurs|aventuriers voyageurs|documentaires? de voyage|films? de voyage|ciné-voyage|récit de voyage")
 
 
 def quand(e):
@@ -101,6 +103,9 @@ def _ia_choisir(cands_par_disc, modes):
               "établie depuis longtemps), pour attirer l'attention ;\n"
               "- « découverte » : artiste émergent, jeune compagnie, proposition singulière ou petite salle, crédible et "
               "attirante pour un public curieux (pas une activité quelconque ni un atelier de bibliothèque).\n"
+              "À qualité comparable, privilégie les œuvres, artistes et compagnies d'ici (Québec). En cinéma : privilégie "
+              "les films (fiction ou documentaire d'auteur), les premières et les films québécois récents ; écarte les "
+              "films-conférences de voyage et les projections sans intérêt particulier.\n"
               "Pour chacun, écris une accroche d'au plus 90 caractères, en français, au tutoiement, PUIS sa version anglaise "
               "naturelle (même sens ; les titres, noms d'artistes et de salles restent dans leur langue d'origine), tirées UNIQUEMENT des "
               "informations fournies : n'invente aucun fait, aucun prix, aucune qualité qui n'y est pas. Ne répète ni la date, "
@@ -177,13 +182,14 @@ def choisir(data, debut, etat):
     sel = lambda e: int(hashlib.md5((e["titre"] + debut.isoformat()).encode()).hexdigest()[:6], 16)  # noqa: E731
     cands = {}
     for k in disciplines:
-        cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5]
+        cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5
+              and not PAS_VEDETTE.search(e["titre"] + " " + (e.get("resume") or ""))]
         cs.sort(key=lambda e: (-score(e), sel(e)))
-        # les 8 meilleures fiches, plus la meilleure de chaque jour (pour pouvoir couvrir toute la semaine)
-        garde = cs[:8] + [next(e for e in cs if e["date"] == j) for j in sorted({e["date"] for e in cs})]
+        # les 12 meilleures fiches, plus la meilleure de chaque jour (pour pouvoir couvrir toute la semaine)
+        garde = cs[:12] + [next(e for e in cs if e["date"] == j) for j in sorted({e["date"] for e in cs})]
         garde = list({id(e): e for e in garde}.values())
         if garde:
-            cands[k] = garde[:14]
+            cands[k] = garde[:20]
     classes = _ia_choisir(cands, modes) if cands else {}
     # Options par discipline : les 3 classées par l'IA (sinon les 3 meilleurs scores), avec leur rang
     options = {}
