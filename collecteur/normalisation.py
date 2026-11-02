@@ -161,6 +161,8 @@ HORS_ILE = [
 
 # Salles hors de l'île souvent listées sans ville par les agendas pancanadiens (Sors-tu?, Songkick) : nom exact
 LIEUX_HORS_ILE = {
+    # Gatineau (vu le 2 nov. 2026 : « Le Minotaure », 3 rue Kent, annoncé par Sors-tu?)
+    "le minotaure", "minotaure",
     # Toronto, Vancouver, Ottawa, Prairies
     "history", "the opera house", "commodore ballroom", "the danforth music hall", "danforth music hall", "the axis club",
     "algonquin commons theatre", "vogue theatre", "scotiabank arena", "rio theatre", "the fox cabaret", "fox cabaret",

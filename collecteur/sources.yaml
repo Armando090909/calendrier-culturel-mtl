@@ -204,6 +204,9 @@ sources:
   - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3], navigateur: true}
   - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3], navigateur: true}
   - {nom: "Le Studio TD", cle: salles, type: page_ia, url: "https://lestudiotd.com/fr", lieu: "Le Studio TD", jours_semaine: [0, 3]}
+  - {nom: "MTELUS", cle: salles, type: page_ia, url: "https://mtelus.com/fr/evenements?vue=grille", lieu: "MTELUS", jours_semaine: [0, 3]}
+  - {nom: "Cabaret du Casino de Montréal", cle: salles, type: page_ia, url: "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino", lieu: "Cabaret du Casino de Montréal", jours_semaine: [0, 3]}
+  - {nom: "Cinéma Moderne", cle: salles, type: page_ia, url: "https://www.cinemamoderne.com/horaire/", lieu: "Cinéma Moderne", discipline: cinema, jours_semaine: [0, 2, 4]}
   - {nom: "Casa del Popolo – La Toscadura", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-toscadura", lieu: "La Toscadura", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Casa del Popolo – P'tit Ours", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/ptit-ours", lieu: "P'tit Ours", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Casa del Popolo – La Sotterenea", cle: salles, type: page_ia, url: "https://casadelpopolo.com/fr/events/la-sotterenea", lieu: "La Sotterenea", discipline: musique, jours_semaine: [0, 2, 4]}
