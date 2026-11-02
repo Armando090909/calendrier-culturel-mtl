@@ -186,6 +186,11 @@ def _mots(t: str) -> set[str]:
 
 
 def _couverte(lieu: str, couvertes: list[set[str]], sigles: set[str]) -> bool:
+    # autre graphie connue de la salle (lieux.json : « L’esco » → « L'Escogriffe ») : on vérifie aussi celle-là
+    from normalisation import _alias_lieux
+    canon = _alias_lieux().get(plat(lieu))
+    if canon and canon != plat(lieu) and _couverte(canon, couvertes, sigles):
+        return True
     m = _mots(lieu)
     if not m:
         return True
