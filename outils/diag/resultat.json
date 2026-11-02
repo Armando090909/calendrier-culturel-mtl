@@ -1,6 +1,6 @@
 {
  "https://dns.google/resolve?name=_atproto.ccmtl.ca&type=TXT": {
   "statut": 200,
-  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16}],\"Answer\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"did=did:plc:gu5qsdm7glxvc2cb7vdjtxaq\"}],\"Comment\":\"Response from 156.154.133.200.\"}"
+  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16}],\"Answer\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"did=did:plc:gu5qsdm7glxvc2cb7vdjtxaq\"}],\"Comment\":\"Response from 156.154.132.200.\"}"
  }
 }
