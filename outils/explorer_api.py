@@ -46,6 +46,29 @@ try:
 except Exception as exc:
     out["tidal_erreur"] = str(exc)[:300]
 
+# Spécification officielle de l'API Tidal : chemins de recherche et d'albums
+try:
+    import yaml
+    for u in ("https://tidal-music.github.io/tidal-api-reference/tidal-api-oas.json",
+              "https://raw.githubusercontent.com/api-evangelist/tidal/main/openapi/tidal-search-api-openapi.yml",
+              "https://raw.githubusercontent.com/api-evangelist/tidal/main/openapi/tidal-catalog-api-openapi.yml"):
+        r = requests.get(u, timeout=30)
+        if not r.ok:
+            out["spec_" + u[-40:]] = r.status_code
+            continue
+        spec = r.json() if u.endswith(".json") else yaml.safe_load(r.text)
+        chemins = {k: v for k, v in (spec.get("paths") or {}).items()
+                   if "search" in k.lower() or k.endswith("/relationships/albums") or k in ("/albums/{id}", "/artists/{id}")}
+        out["spec_" + u[-40:]] = court({k: {m: {"params": [(p.get("name"), p.get("in"), p.get("required"), (p.get("schema") or {}).get("enum"))
+                                                           for p in (op.get("parameters") or []) if isinstance(p, dict)]}
+                                            for m, op in v.items() if isinstance(op, dict)} for k, v in chemins.items()}, 6000)
+        sch = (spec.get("components") or {}).get("schemas") or {}
+        for nom in ("Albums_Attributes", "Artists_Attributes", "AlbumsAttributes", "ArtistsAttributes"):
+            if nom in sch:
+                out["schema_" + nom] = court(list(((sch[nom].get("properties")) or {}).keys()), 1500)
+except Exception as exc:
+    out["spec_erreur"] = str(exc)[:300]
+
 # YouTube
 try:
     raise RuntimeError("déjà essayé")
