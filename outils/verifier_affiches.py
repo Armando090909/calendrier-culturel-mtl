@@ -12,14 +12,20 @@ for e in d["events"]:
     if u and u.startswith("http"):
         urls.setdefault(u, (a.get("petit"), e.get("discipline")))
 liste = list(urls)
-html = "<html><body>" + "".join(
-    f'<img data-i="{i}" referrerpolicy="no-referrer" src="{u.replace(chr(34), "%22")}">' for i, u in enumerate(liste)) + "</body></html>"
+ok = []
 with sync_playwright() as p:
     nav = p.chromium.launch()
     page = nav.new_page()
-    page.set_content(html, wait_until="load", timeout=600_000)
-    page.wait_for_timeout(5000)
-    ok = page.eval_on_selector_all("img", "els => els.map(e => e.complete && e.naturalWidth > 0)")
+    page.goto("https://ccmtl.ca/", wait_until="domcontentloaded")  # même origine que le vrai site
+    for i in range(0, len(liste), 80):
+        lot = liste[i:i + 80]
+        page.evaluate("""urls => { document.body.innerHTML = ''; for (const u of urls) { const im = new Image();
+            im.referrerPolicy = 'no-referrer'; im.src = u; document.body.appendChild(im); } }""", lot)
+        try:
+            page.wait_for_function("[...document.images].every(i => i.complete)", timeout=30_000)
+        except Exception:
+            pass
+        ok += page.eval_on_selector_all("img", "els => els.map(e => e.complete && e.naturalWidth > 0)")
     nav.close()
 par = collections.defaultdict(lambda: [0, 0])
 echecs = collections.defaultdict(list)
