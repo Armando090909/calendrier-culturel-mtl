@@ -686,6 +686,24 @@ def fiche_lastfm(nom: str, get_json) -> dict | None:
     return {"tags": tags, "bio": plat(bio), "ici": bool(_ICI.search(bio + " " + " ".join(tags)))}
 
 
+# Sites qui refusent que leurs images s'affichent ailleurs (vérifié dans un vrai navigateur, 3 nov. 2026 :
+# outils/verifier_affiches.py). On respecte ce refus : on ne copie pas leurs images, on cherche l'affiche ailleurs.
+HOTES_BLOQUES = {"sorstu.ca", "spectaculos.ca", "www.eventbrite.ca", "images.ra.co"}
+
+
+def bloquee(url: str) -> bool:
+    return (urlparse(url or "").hostname or "") in HOTES_BLOQUES
+
+
+def _pages(e: dict) -> list[str]:
+    """Pages où chercher l'affiche : l'événement, les doublons fusionnés, puis la billetterie (pour un spectacle
+    venant d'un agenda dont les images ne peuvent pas s'afficher ailleurs, comme Sors-tu?)."""
+    pages = [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]
+    if e.get("billets", "").startswith("http") and not e.get("affiche") and not e.get("image"):
+        pages.append(e["billets"])
+    return pages
+
+
 def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int = 500, max_affiches: int = 1200,
              page_rendue=None) -> int:
     """Ajoute e["liens"] (écouter, bande-annonce) et e["affiche"] (image de la page officielle). Renvoie le nombre
@@ -700,11 +718,11 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     # Titres servis par chaque page (une page de programmation sert à plusieurs spectacles)
     titres_page: dict[str, dict] = {}
     for e in events:
-        for u in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
+        for u in _pages(e):
             titres_page.setdefault(u, {})[plat(e["titre"])[:40]] = (e["titre"], e.get("_artistes") or noms_artistes(e["titre"]))
     for e in events:
       # la page de l'événement, puis celles des doublons fusionnés (ex. Songkick + site de la salle)
-      for url in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
+      for url in _pages(e):
         html = None
         # 1. Affiche : l'image de partage de la page de l'événement (site de la salle, du festival, ou agenda).
         if url.startswith("http") and "facebook.com" not in url:
@@ -748,14 +766,14 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
     # Un même lien « billets » sur 25 pages ou plus : la page d'accueil de la billetterie, pas celle du spectacle.
     freq_b = Counter(v.get("billets") for k, v in memo.items() if k.startswith("page:") and v.get("billets"))
     for e in events:
-      for u in [e.get("url", "")] + (e.get("_autres_urls") or [])[:2]:
+      for u in _pages(e):
         pm = memo.get("page:" + u)
         if pm and pm.get("affiche") and freq[pm["affiche"]["url"]] < 3 and not e.get("image") and not e.get("affiche") \
-                and "og.festapp.io" not in pm["affiche"]["url"]:
+                and "og.festapp.io" not in pm["affiche"]["url"] and not bloquee(pm["affiche"]["url"]):
             e["affiche"] = dict(pm["affiche"], **agrandir(pm["affiche"]["url"]))
         # Image de la page qui porte le titre du spectacle (FestApp, billetteries, sites sans image de partage)
         im = (pm or {}).get("par_titre", {}).get(plat(e["titre"])[:40])
-        if im and not e.get("image") and not e.get("affiche"):
+        if im and not e.get("image") and not e.get("affiche") and not bloquee(im):
             e["affiche"] = {"credit": urlparse(u).netloc.replace("www.", ""), "lien": u, **agrandir(im)}
         if pm and pm.get("billets") and not e.get("billets") and freq_b[pm["billets"]] < 25:
             e["billets"] = pm["billets"]

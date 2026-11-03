@@ -104,6 +104,35 @@ _MOTS_EN = re.compile(r"(?i)\b(the|and|with|of|for|show|by|from|this|will|featur
 _MOTS_FR = re.compile(r"(?i)\b(le|la|les|et|avec|des|du|une|un|pour|par|dans|est|sur|au|aux)\b")
 
 
+# Sites qui refusent que leurs images s'affichent ailleurs (vérifié dans un vrai navigateur, 3 nov. 2026 :
+# outils/verifier_affiches.py). On respecte ce refus : on ne copie pas leurs images, on cherche l'affiche ailleurs.
+HOTES_BLOQUES = decouverte.HOTES_BLOQUES
+
+
+def affiches_bloquees(elements: list[dict]) -> None:
+    """Une affiche hébergée sur un site qui bloque l'affichage est remplacée par celle du même spectacle venant
+    d'une autre source, ou retirée (pour ne pas montrer une case vide qui clignote)."""
+    from urllib.parse import urlparse
+    def hote(a):
+        return urlparse((a or {}).get("url", "")).hostname or ""
+    bonnes = {}
+    for e in elements:
+        a = e.get("affiche")
+        if a and a.get("url") and hote(a) not in HOTES_BLOQUES:
+            bonnes.setdefault(plat(e.get("titre", "")), a)
+    remplacees = retirees = 0
+    for e in elements:
+        if hote(e.get("affiche")) in HOTES_BLOQUES:
+            autre = bonnes.get(plat(e.get("titre", "")))
+            if autre:
+                e["affiche"] = autre
+                remplacees += 1
+            else:
+                e.pop("affiche")
+                retirees += 1
+    print(f"Affiches bloquées par leur site : {remplacees} remplacées par une autre source, {retirees} retirées.")
+
+
 def nettoyer_resumes(elements: list[dict]) -> None:
     """Résumés propres pour la section française : balises et entités HTML retirées, adresses web retirées,
     phrases automatiques de Songkick (« X at Y at 2026-… ») supprimées, résumés anglais traduits en français
@@ -722,6 +751,7 @@ def main() -> int:
         if plat(e["titre"]) in memo_a:
             e["_artistes"] = memo_a[plat(e["titre"])]
     print(f"Artistes : {sum(1 for e in concerts if e.get('_artistes'))} concerts avec des noms d'artistes extraits.")
+    affiches_bloquees(events)  # avant la découverte : elle cherchera l'affiche sur la billetterie
     try:
         n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
                                  page_rendue=connecteurs.page_rendue)
@@ -816,6 +846,7 @@ def main() -> int:
         or (re.search(r"(?i)d[ée]voil|communiqu|/actualit|/news/|/blogu?e?/|/presse/", x.get("url", "")) and not x.get("horaire")))]
     print(f"Séries retirées (sans salle, saison déjà détaillée ou annonce de saison) : {avant_n - len(expos)}")
 
+    affiches_bloquees(events + expos)
     nettoyer_resumes(events + expos)
     traduire_resumes(events + expos)
 
