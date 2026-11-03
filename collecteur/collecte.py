@@ -133,6 +133,54 @@ def affiches_bloquees(elements: list[dict]) -> None:
     print(f"Affiches bloquées par leur site : {remplacees} remplacées par une autre source, {retirees} retirées.")
 
 
+AGREGATEURS = ("sorstu.ca", "songkick.com", "facebook.com", "eventbrite", "lepointdevente", "thepointofsale", "ticketpro",
+               "ticketmaster", "evenko", "universe.com", "festapp", "montreal.ca", "spectaculos", "askapunk", "ra.co",
+               "bandsintown", "mtl.org", "caligram", "tourisme", "instagram.com", "linktr.ee", "google.", "billet", "ticket",
+               "mpourmontreal", "funnation", "admission", "dice.fm", "showpass", "zeffy", "lepointdevente", "uqam.ca",
+               "venuepilot", "tixr", "seetickets", "yapla", "eventzilla", "allevents", "meetup")
+
+
+def images_des_salles(events: list[dict], aujourd) -> None:
+    """Événement sans aucune affiche : l'image de partage du site de la salle (son logo ou sa photo), étiquetée
+    comme image de la salle. Le site de la salle est déduit des adresses de ses propres événements."""
+    from collections import Counter
+    from urllib.parse import urlparse
+    f = CACHE / "images_salles.json"
+    memo = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    hotes: dict[str, Counter] = {}
+    for e in events:
+        h = (urlparse(e.get("url", "")).hostname or "").replace("www.", "")
+        if h and not any(a in h for a in AGREGATEURS) and e.get("lieu") not in ("", "Lieu à confirmer"):
+            hotes.setdefault(e["lieu"], Counter())[h] += 1
+    site = {lieu: c.most_common(1)[0][0] for lieu, c in hotes.items()}
+    # un même site pour 4 salles ou plus : un diffuseur ou une ville, pas le site de la salle
+    par_site = Counter(site.values())
+    site = {l: h for l, h in site.items() if par_site[h] < 4}
+    besoin = {e["lieu"] for e in events if not e.get("affiche") and not e.get("image") and e.get("lieu") in site}
+    vieux = (aujourd - timedelta(days=30)).isoformat()
+    lus = 0
+    for lieu in sorted(besoin):
+        h = site[lieu]
+        m = memo.get(h)
+        if (not m or m["le"] < vieux) and lus < 60:
+            lus += 1
+            try:
+                accueil = f"https://{h}/"
+                a = decouverte.affiche_page(telecharger(accueil, "text/html").text, accueil)
+                memo[h] = {"image": a["url"] if a else None, "le": aujourd.isoformat()}
+            except Exception:
+                memo[h] = {"image": None, "le": aujourd.isoformat()}
+    n = 0
+    for e in events:
+        if not e.get("affiche") and not e.get("image") and e.get("lieu") in site:
+            im = (memo.get(site[e["lieu"]]) or {}).get("image")
+            if im and not decouverte.bloquee(im):
+                e["affiche"] = {"url": im, "credit": site[e["lieu"]], "lien": f"https://{site[e['lieu']]}/", "salle": True}
+                n += 1
+    f.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+    print(f"Images de salle : {n} événements sans affiche reçoivent l'image de leur salle ({lus} sites lus).")
+
+
 def nettoyer_resumes(elements: list[dict]) -> None:
     """Résumés propres pour la section française : balises et entités HTML retirées, adresses web retirées,
     phrases automatiques de Songkick (« X at Y at 2026-… ») supprimées, résumés anglais traduits en français
@@ -760,6 +808,10 @@ def main() -> int:
         notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
+    try:
+        images_des_salles(events, aujourd)
+    except Exception as exc:
+        print(f"Images de salle en échec : {exc}")
     # Liens ajoutés à la main (collecteur/liens_manuels.json) : passent avant les liens trouvés.
     fichier_liens = Path(__file__).parent / "liens_manuels.json"
     if fichier_liens.exists():

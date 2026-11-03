@@ -44,5 +44,5 @@ jobs:
       - run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add outils/diag/resultat.json outils/diag/api.json outils/diag/affiches.json outils/diag/captures
+          git add -A outils/diag
           git commit -m "Diagnostic de pages" && { git pull --rebase -X theirs origin main; git push; } || true
