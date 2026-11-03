@@ -568,3 +568,4 @@ footer:empty{display:none}
 .langue:hover,.langue:focus-visible{opacity:1;background:var(--hl)}
 /* En anglais, mois et jours prennent la majuscule (le minuscule stylistique reste en français) */
 html[lang="en"] .nav .navlabel,html[lang="en"] .colhead{text-transform:none}
+.resume,.det h3,.det-titre{overflow-wrap:anywhere}

@@ -100,13 +100,59 @@ def ecrire_liste_sources(conf: dict, rapport: list) -> None:
     (SORTIE.parent / "sources.json").write_text(json.dumps(liste, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+_MOTS_EN = re.compile(r"(?i)\b(the|and|with|of|for|show|by|from|this|will|featuring|tickets|join us|your)\b")
+_MOTS_FR = re.compile(r"(?i)\b(le|la|les|et|avec|des|du|une|un|pour|par|dans|est|sur|au|aux)\b")
+
+
+def nettoyer_resumes(elements: list[dict]) -> None:
+    """Résumés propres pour la section française : balises et entités HTML retirées, adresses web retirées,
+    phrases automatiques de Songkick (« X at Y at 2026-… ») supprimées, résumés anglais traduits en français
+    (l'original anglais devient resume_en)."""
+    import html as _html
+    for e in elements:
+        r = e.get("resume")
+        if not r:
+            continue
+        for _ in range(3):
+            r = _html.unescape(r)
+        r = re.sub(r"<[^>]*>", " ", r)
+        r = re.sub(r"https?://\S+|\S*[?&]lang=\w+\S*", " ", r)
+        r = re.sub(r"\s+", " ", r).strip(" -–|")
+        if re.match(r".+ at .+ at \d{4}-\d{2}-\d{2}", r) or len(r) < 8:
+            e.pop("resume", None)
+        else:
+            e["resume"] = r
+    f_fr = CACHE / "traductions_fr.json"
+    memo = json.loads(f_fr.read_text(encoding="utf-8")) if f_fr.exists() else {}
+    anglais = [e for e in elements if e.get("resume")
+               and len(_MOTS_EN.findall(e["resume"])) >= 3 > len(_MOTS_FR.findall(e["resume"]))]
+    a_faire = list(dict.fromkeys(e["resume"] for e in anglais if e["resume"] not in memo))[:600]
+    if a_faire and ia.disponible():
+        for i in range(0, len(a_faire), 60):
+            part = a_faire[i:i + 60]
+            try:
+                for k, t in ia.traduire_lot(part, vers="fr").items():
+                    memo[part[k]] = t
+            except Exception as exc:
+                print(f"Traduction vers le français en échec : {exc}")
+    n = 0
+    for e in anglais:
+        t = memo.get(e["resume"])
+        if t and t != e["resume"]:
+            e["resume_en"], e["resume"] = e["resume"], t
+            n += 1
+    f_fr.write_text(json.dumps({e["resume_en"]: e["resume"] for e in anglais if e.get("resume_en")} |
+                               {k: v for k, v in memo.items() if k in a_faire}, ensure_ascii=False), encoding="utf-8")
+    print(f"Résumés : {n} résumés anglais traduits en français ; {len(anglais) - n} encore en anglais.")
+
+
 def traduire_resumes(elements: list[dict]) -> None:
     """Version anglaise du site : chaque résumé reçoit sa traduction (resume_en), gardée en cache pour ne traduire
     que les nouveaux. Sans IA disponible, le site anglais affiche le résumé original."""
     f_tr = CACHE / "traductions_en.json"
     memo = json.loads(f_tr.read_text(encoding="utf-8")) if f_tr.exists() else {}
     a_faire = list(dict.fromkeys(e["resume"] for e in sorted(elements, key=lambda x: x.get("date") or x.get("debut") or "")
-                                 if e.get("resume") and e["resume"] not in memo))
+                                 if e.get("resume") and not e.get("resume_en") and e["resume"] not in memo))
     faits = 0
     if a_faire and ia.disponible():
         from concurrent.futures import ThreadPoolExecutor
@@ -126,7 +172,7 @@ def traduire_resumes(elements: list[dict]) -> None:
                     faits += 1
     utiles = set()
     for e in elements:
-        t = memo.get(e.get("resume") or "")
+        t = None if e.get("resume_en") else memo.get(e.get("resume") or "")
         if t:
             utiles.add(e["resume"])
             if t != e["resume"]:
@@ -684,6 +730,14 @@ def main() -> int:
         notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
+    # Liens ajoutés à la main (collecteur/liens_manuels.json) : passent avant les liens trouvés.
+    fichier_liens = Path(__file__).parent / "liens_manuels.json"
+    if fichier_liens.exists():
+        for regle in json.loads(fichier_liens.read_text(encoding="utf-8")).get("liens", []):
+            for e in events:
+                if plat(regle["titre"]) in plat(e["titre"]):
+                    ajout = [dict(l, source="manuel") for l in regle["liens"]]
+                    e["liens"] = (ajout + [l for l in e.get("liens", []) if l["url"] not in {a["url"] for a in ajout}])[:8]
     for e in events:
         e.pop("_artistes", None)
         e.pop("_autres_urls", None)
@@ -762,6 +816,7 @@ def main() -> int:
         or (re.search(r"(?i)d[ée]voil|communiqu|/actualit|/news/|/blogu?e?/|/presse/", x.get("url", "")) and not x.get("horaire")))]
     print(f"Séries retirées (sans salle, saison déjà détaillée ou annonce de saison) : {avant_n - len(expos)}")
 
+    nettoyer_resumes(events + expos)
     traduire_resumes(events + expos)
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}

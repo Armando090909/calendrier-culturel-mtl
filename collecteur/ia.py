@@ -280,10 +280,22 @@ number|translation
 {lot}"""
 
 
-def traduire_lot(textes: list[str]) -> dict[int, str]:
-    """Traduit en anglais une liste de résumés. Retourne {indice: traduction} pour les lignes lisibles."""
+TRADUCTION_FR = """Traduis chaque résumé d'événement numéroté ci-dessous en français québécois naturel, pour un calendrier
+culturel montréalais.
+Règles :
+- Garde tels quels les noms de spectacles, d'œuvres, d'artistes, de groupes, de salles, de festivals et d'organismes.
+- Même sens, même longueur ; n'ajoute rien, n'enlève rien.
+Réponds avec une ligne par résumé, rien d'autre, dans ce format exact :
+numéro|traduction
+
+{lot}"""
+
+
+def traduire_lot(textes: list[str], vers: str = "en") -> dict[int, str]:
+    """Traduit une liste de résumés (vers l'anglais par défaut, ou vers le français avec vers="fr").
+    Retourne {indice: traduction} pour les lignes lisibles."""
     lot = "\n".join(f"{i}|{re.sub(r'\s+', ' ', t).strip()}" for i, t in enumerate(textes))
-    rep = _appel(TRADUCTION.format(lot=lot), max_tokens=12000)
+    rep = _appel((TRADUCTION_FR if vers == "fr" else TRADUCTION).format(lot=lot), max_tokens=12000)
     out = {}
     for ligne in rep.splitlines():
         m = re.match(r"\s*(\d+)\s*\|\s*(.+)", ligne)
