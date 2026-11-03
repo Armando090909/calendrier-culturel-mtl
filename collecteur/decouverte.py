@@ -797,6 +797,7 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
         if not frais and cherches < max_recherches and time.time() < fin_budget:
             cherches += 1
             liens = []
+            echec = False
             contexte = plat(e["titre"] + " " + e.get("resume", ""))
             try:
                 # La page de l'événement, même sur un agenda (Sors-tu?, ma.to…) : seuls les liens qui portent
@@ -856,7 +857,12 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                         # pages de recherche. Les liens Bandcamp viennent encore des pages des salles, de MusicBrainz et Wikidata.
             except Exception as exc:
                 print(f"  découverte « {e['titre'][:40]} » : {exc}")
-            m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v3": 1, version: 1}
+                echec = True
+            if echec and not liens:
+                # Panne passagère (ex. MusicBrainz 503) : rien n'est mémorisé, la recherche sera refaite demain.
+                m = None
+            else:
+                m = memo[cle] = {"liens": liens[:7], "le": aujourd.isoformat(), "v3": 1, version: 1}
         if m and m["liens"]:
             aff = [l for l in m["liens"] if l["type"] == "affiche"]
             if aff and not e.get("affiche") and not e.get("image"):
