@@ -2,19 +2,13 @@
  "_vides": {
   "Festival · ELEKTRA": "2026-10-26",
   "Festival · Festithéâtrecréole": "2026-10-26",
-  "Festival · Monde Arabe (1)": "2026-10-26",
   "Festival · La Mèche courte": "2026-10-26",
-  "Festival · Festival Bach": "2026-10-26",
   "Festival · Mundial": "2026-10-26",
   "Festival · M pour Montréal (1)": "2026-10-26",
-  "Festival · RIDM (1)": "2026-10-26",
-  "Festival · RIDM (10)": "2026-10-26",
-  "Festival · RIDM (11)": "2026-10-26",
   "Festival · image+nation": "2026-10-26",
   "Festival · Igloofest": "2026-10-26",
   "Festival · Festival Lumino": "2026-10-26",
   "Festival · Montréal en lumière": "2026-10-26",
-  "Festival · Casteliers": "2026-10-26",
   "Festival · Vues d'Afrique": "2026-10-26",
   "Festival · Festival des clowns": "2026-10-26",
   "Festival · RVQC": "2026-10-26",
@@ -32,8 +26,6 @@
   "Festival · MURAL": "2026-10-26",
   "Festival · Musique de chambre": "2026-10-26",
   "Festival · Fringe": "2026-10-26",
-  "Festival · Francos": "2026-10-26",
-  "Festival · Festival de Jazz": "2026-10-26",
   "Festival · Complètement Cirque": "2026-10-26",
   "Festival · Juste pour rire": "2026-10-26",
   "Festival · Zoofest": "2026-10-26",
@@ -42,7 +34,6 @@
   "Festival · Osheaga": "2026-10-26",
   "Festival · Présence autochtone": "2026-10-26",
   "Festival · ÎleSoniq": "2026-10-26",
-  "Festival · LASSO": "2026-10-26",
   "Festival · MUTEK": "2026-10-26",
   "Festival · Festival TRAD": "2026-10-26",
   "Festival · Quartiers Danses": "2026-10-26",
@@ -55,7 +46,6 @@
   "Festival · Suoni Per Il Popolo": "2026-10-26",
   "Festival · Escales Improbables": "2026-10-26",
   "Festival · Réappropriation urbaine": "2026-10-26",
-  "Festival · Concerts Campbell": "2026-10-26",
   "Festival · Shows de ruelle": "2026-10-26",
   "Festival · WI Blues": "2026-10-26",
   "Festival · Cinéma sous les étoiles": "2026-10-26",
@@ -69,7 +59,6 @@
   "Tourisme Montréal – expositions automne-hiver": "2026-11-02",
   "Piranha Bar": "2026-11-02",
   "Café Campus / Petit Campus": "2026-11-02",
-  "Duran Contemporain": "2026-11-02",
   "Galerie C.O.A": "2026-11-02",
   "Galerie Lacerte art contemporain": "2026-11-02",
   "Galerie Nicolas Robert": "2026-11-02",
@@ -90,7 +79,6 @@
   "Laugh It Off MTL (humour, scènes ouvertes)": "2026-11-02",
   "Espace La Risée": "2026-11-02",
   "InfiniTheatre": "2026-11-02",
-  "Théâtre MainLine": "2026-11-02",
   "Théâtre de l'Esquisse": "2026-11-02",
   "Circuit-Est centre chorégraphique": "2026-11-02",
   "Studio 303": "2026-11-02",
@@ -101,19 +89,22 @@
   "Eastern Bloc": "2026-11-02",
   "Théâtre Rialto (billetterie)": "2026-11-02",
   "Le Balattou (billetterie, 2e page)": "2026-11-02",
-  "ma.to – communauté (quiz, trivia)": "2026-11-02",
-  "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02"
+  "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02",
+  "Cinéma Moderne": "2026-11-03"
  },
  "Duran Contemporain": {
   "essai": "2026-11-02",
-  "echecs": 1
+  "echecs": 1,
+  "dernier_ok": "2026-11-03"
  },
  "Théâtre MainLine": {
   "essai": "2026-11-02",
-  "echecs": 1
+  "echecs": 1,
+  "dernier_ok": "2026-11-03"
  },
  "ma.to – communauté (quiz, trivia)": {
   "essai": "2026-11-02",
-  "echecs": 1
+  "echecs": 1,
+  "dernier_ok": "2026-11-03"
  }
 }

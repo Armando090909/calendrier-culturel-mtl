@@ -412,6 +412,11 @@
   "lon": -73.713,
   "quartier": "Saint-Laurent"
  },
+ "Centre de design de l'UQAM": {
+  "lat": 45.51296,
+  "lon": -73.56207,
+  "quartier": "Ville-Marie"
+ },
  "Centre des arts actuels SKOL": null,
  "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
@@ -747,6 +752,7 @@
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
+ "Henry F. Hall Building (H-1120), Concordia": null,
  "History": null,
  "Hollywood Theatre": null,
  "Houston Avenue Bar & Grill": null,
@@ -758,6 +764,7 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "J.W. McConnell Building (LB), Concordia": null,
  "J.W. McConnell Building, Leonard & Bina Ellen Art Gallery": null,
  "Jardin botanique": {
   "lat": 45.55954,
@@ -797,6 +804,7 @@
   "quartier": "Village"
  },
  "L'Écart": null,
+ "LB-145 et en ligne via Zoom, Concordia": null,
  "LB-2, J.W. McConnell Building": null,
  "La Boîte à Bleuets": null,
  "La Cale - Pub Zéro Déchets": null,
@@ -1137,6 +1145,11 @@
   "lat": 45.504,
   "lon": -73.561,
   "quartier": "Centre-ville"
+ },
+ "Palm Isle Skateshop": {
+  "lat": 45.54268,
+  "lon": -73.55431,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
  "Panache art actuel": null,
  "Pangée": {
@@ -1563,6 +1576,7 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UQAM - Pavillon Hubert-Aquin": null,
  "UQAM - Pavillon Judith-Jasmin": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
@@ -1638,6 +1652,11 @@
   "lat": 45.53961,
   "lon": -73.64716,
   "quartier": "Ahuntsic-Cartierville"
+ },
+ "Écomusée du fier monde": {
+  "lat": 45.52033,
+  "lon": -73.56366,
+  "quartier": "Ville-Marie"
  },
  "Église Notre-Dame-des-Sept-Douleurs": {
   "lat": 45.46254,

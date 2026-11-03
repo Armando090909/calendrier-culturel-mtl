@@ -1,75 +1,9 @@
 {
- "ouverts": {
-  "source:Duran Contemporain": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Théâtre MainLine": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:ma.to – communauté (quiz, trivia)": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Monde Arabe (1)": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Festival Bach": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (1)": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (10)": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (11)": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Casteliers": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Francos": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Festival de Jazz": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · LASSO": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · Concerts Campbell": {
-   "depuis": "2026-11-02",
-   "jours": 1,
-   "issue": null
-  }
- },
+ "ouverts": {},
  "sources_ok": {
-  "Ville de Montréal – événements publics": 2120,
-  "Ask A Punk (DIY, punk, hardcore)": 30,
-  "Sors-tu? (14 prochains jours)": 239,
+  "Ville de Montréal – événements publics": 2068,
+  "Ask A Punk (DIY, punk, hardcore)": 33,
+  "Sors-tu? (14 prochains jours)": 155,
   "Songkick (concerts, 2 mois)": 368,
   "Espace GO": 1,
   "TNM": 1,
@@ -103,11 +37,11 @@
   "Centre des musiciens du monde": 5,
   "Terminal Comédie Club (ma.to)": 2,
   "UPop Montréal (université populaire)": 16,
-  "Cœur des sciences UQAM (conférences grand public)": 4,
-  "UQAM – événements": 5,
-  "Université de Montréal – calendrier": 8,
-  "Concordia – événements": 8,
-  "Centre Canadien d'Architecture – événements (Eventbrite)": 7,
+  "Cœur des sciences UQAM (conférences grand public)": 5,
+  "UQAM – événements": 10,
+  "Université de Montréal – calendrier": 5,
+  "Concordia – événements": 7,
+  "Centre Canadien d'Architecture – événements (Eventbrite)": 6,
   "Hexagram – conférences (recherche-création)": 1,
   "Cabaret Lion d'Or (billetterie)": 21,
   "Cabaret Lion d'Or (LIM et spectacles)": 1,
@@ -127,6 +61,7 @@
   "Blouin Division": 2,
   "Bradley Ertaskiran": 1,
   "Chiguer Art Contemporain": 2,
+  "Duran Contemporain": 1,
   "Galerie Eli Kerr": 1,
   "ELLEPHANT": 2,
   "Galerie Hugues Charbonneau": 1,
@@ -145,6 +80,8 @@
   "Le Belmont": 3,
   "Ausgang Plaza": 14,
   "Le Studio TD": 4,
+  "MTELUS": 19,
+  "Cabaret du Casino de Montréal": 11,
   "Casa del Popolo – La Toscadura": 16,
   "Casa del Popolo – P'tit Ours": 28,
   "Casa del Popolo – La Sotterenea": 21,
@@ -153,6 +90,7 @@
   "Cabaret Mado (drag)": 52,
   "Wiggle Room (burlesque, cabaret)": 19,
   "Caf' Conc' (cabaret)": 9,
+  "Théâtre MainLine": 5,
   "Repercussion Theatre": 1,
   "La Comédie de Montréal": 11,
   "DARE-DARE (art public)": 3,
@@ -182,16 +120,20 @@
   "Club Balattou (billetterie)": 15,
   "Le Belmont (billetterie)": 2,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 5,
-  "Soirées quiz (hebdomadaires)": 105,
+  "Soirées quiz (hebdomadaires)": 100,
   "Ligues d'improvisation (hebdomadaires)": 8,
+  "ma.to – communauté (quiz, trivia)": 1,
   "Wiggle Room (ma.to)": 1,
   "Le Balcon (ma.to)": 2,
   "PAN M 360 – agenda musique": 39,
   "Formulaire : événements proposés": 1,
+  "Festival · Monde Arabe (1)": 38,
   "Festival · Monde Arabe (2)": 4,
   "Festival · CINEMANIA": 252,
+  "Festival · Festival Bach": 7,
   "Festival · Coup de cœur": 109,
   "Festival · M pour Montréal (2)": 5,
+  "Festival · RIDM (1)": 3,
   "Festival · RIDM (2)": 29,
   "Festival · RIDM (3)": 3,
   "Festival · RIDM (4)": 1,
@@ -200,17 +142,25 @@
   "Festival · RIDM (7)": 3,
   "Festival · RIDM (8)": 1,
   "Festival · RIDM (9)": 28,
+  "Festival · RIDM (10)": 32,
+  "Festival · RIDM (11)": 48,
   "Festival · Salon du livre": 2,
+  "Festival · Casteliers": 2,
   "Festival · FIFA": 1,
+  "Festival · Francos": 1,
+  "Festival · Festival de Jazz": 5,
   "Festival · Nuits d'Afrique": 4,
+  "Festival · LASSO": 2,
   "Festival · Akousma": 2,
   "Festival · Comiccon": 2,
-  "Festival · Comiccon des Fêtes": 2
+  "Festival · Comiccon des Fêtes": 2,
+  "Festival · Concerts Campbell": 1
  },
  "totaux": {
   "2026-10-31": 2428,
   "2026-11-01": 2470,
-  "2026-11-02": 2438
+  "2026-11-02": 2438,
+  "2026-11-03": 2464
  },
- "dernier_jour": "2026-11-02"
+ "dernier_jour": "2026-11-03"
 }

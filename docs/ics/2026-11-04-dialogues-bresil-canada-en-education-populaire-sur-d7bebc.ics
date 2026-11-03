@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-04-dialogues-bresil-canada-en-education-populaire-sur-d7bebc@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261104T090000
+DTEND;TZID=America/Toronto:20261104T110000
+SUMMARY:Dialogues Brésil-Canada en éducation populaire sur la justice soc
+ iale et environnementale
+LOCATION:UQAM - Pavillon Judith-Jasmin\, Montréal
+URL:https://evenements.uqam.ca/evenements/dialogues-bresil-canada-en-educat
+ ion-populaire-sur-la-justice-sociale-et-environnementale/34608?date=2026-1
+ 1-04_09-00-00
+DESCRIPTION:Échanges entre le Brésil et le Canada sur l'éducation popula
+ ire\, la justice sociale et l'environnement.\nPrix : Gratuit\nDétails : h
+ ttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=Gk7LEtpCHEmQ4Xp6l1
+ NQb0-spT03gcBFlIbin9dNjSxUQloxMVJFNzFEQjlESEIwUEg5NjJWU0JMOS4u\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
