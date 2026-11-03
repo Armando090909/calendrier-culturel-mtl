@@ -1,6 +1,81 @@
 {
- "https://dns.google/resolve?name=_atproto.ccmtl.ca&type=TXT": {
-  "statut": 200,
-  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16}],\"Answer\":[{\"name\":\"_atproto.ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"did=did:plc:gu5qsdm7glxvc2cb7vdjtxaq\"}],\"Comment\":\"Response from 156.154.132.200.\"}"
+ "https://voir.ca/robots.txt": {
+  "statut": 403,
+  "extrait": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> voir.ca</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or mal"
+ },
+ "https://voir.ca/agenda/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://voir.ca/agenda/"
+  },
+  "navigateur": {
+   "erreur": "404  (navigateur)"
+  }
+ },
+ "https://voir.ca/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://voir.ca/"
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "/assets/voir-logo-DKaS24cr.svg | ",
+    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='108.76%20214.71%20591.79%20169.53'%20width='591.79'%20height='169.53'%3e%3cg | ",
+    "/images/hero/hero-1.jpg | ",
+    "/images/disciplines/musique-6.jpg | ",
+    "/images/disciplines/musique-1.jpg | ",
+    "/images/disciplines/cinema-5.jpg | ",
+    "/images/disciplines/danse-3.jpg | ",
+    "/images/disciplines/arts-visuels-5.jpg | ",
+    "/images/disciplines/arts-visuels-2.jpg | ",
+    "/images/disciplines/autre-2.jpg | ",
+    "/images/disciplines/ateliers-3.jpg | ",
+    "/images/disciplines/ateliers-2.jpg | ",
+    "/images/disciplines/theatre-3.jpg | ",
+    "/images/disciplines/arts-visuels-4.jpg | ",
+    "/images/disciplines/arts-visuels-5.jpg | ",
+    "/assets/voir-logo-DKaS24cr.svg | ",
+    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='108.76%20214.71%20591.79%20169.53'%20width='591.79'%20height='169.53'%3e%3cg | ",
+    "https://pixel.rubiconproject.com/token?pid=52948&gdpr=0&gdpr_consent=0&us_privacy=&rk=iad | ",
+    "https://ib.adnxs.com/getuid?https%3A%2F%2Fvid-io-iad.springserve.com%2Fusersync%3Faid%3D1000001%26gdpr%3D0%26gdpr_consent%3D0%26us_privacy%3D%26uuid%3 | ",
+    "https://sync.bfmio.com/syncb?pid=111&gdpr=0&gdpr_consent=0&us_privacy= | ",
+    "https://rtb.openx.net/sync/prebid?gdpr=0&gdpr_consent=0&us_privacy=&r=https%3A%2F%2Fvid-io-iad.springserve.com%2Fusersync%3Faid%3D1000008%26gdpr%3D0%2 | ",
+    "https://image8.pubmatic.com/AdServer/ImgSync?p=157310&gdpr=0&gdpr_consent=0&pu=https%3A%2F%2Fimage4.pubmatic.com%2FAdServer%2FSPug%3Fp%3D157310%26gdpr | ",
+    "https://bh.contextweb.com/rtset?gdpr=0&gdpr_consent=0&us_privacy=&pid=561910&ev=1&rurl=https%3A%2F%2Fvid-io-iad.springserve.com%2Fusersync%3Faid%3D100 | ",
+    "https://sync.1rx.io/usersync2/rmphb?gdpr=0&gdpr_consent=0&us_privacy=&redir=https%3A%2F%2Fvid-io-iad.springserve.com%2Fusersync%3Faid%3D1000012%26gdpr | ",
+    "https://sync.go.sonobi.com/us.gif?gdpr=0&gdpr_consent=0&us_privacy=&loc=https%3A%2F%2Fvid-io-iad.springserve.com%2Fusersync%3Faid%3D1000013%26gdpr%3D0 | "
+   ],
+   "iframes": [
+    "about:blank",
+    "",
+    "about:blank",
+    "about:blank",
+    "",
+    "https://www.google.com/recaptcha/api2/aframe",
+    "https://eus.rubiconproject.com/usync.html",
+    "https://ms-cookie-sync.presage.io/user-sync.html?gdpr_consent=&source=prebid&gpp=&gpp_sid=",
+    "https://apps.smartadserver.com/diff/templates/asset/csync.html?nwid=3353&gdpr=0&",
+    "https://image6.pubmatic.com/AdServer/UCookieSetPug?&rd=https%3A%2F%2Frtb-csync.smartadserver.com%2Fredir%2F%3Fissi%3D1%26partnerid%3D91%26partneruseri"
+   ]
+  },
+  "navigateur": {
+   "taille": 6300,
+   "texte": "VOIR — Quoi faire au Québec : spectacles, concerts et sorties\nAller au contenu <https://voir.ca/#contenu>\nVersion bêta\nVous découvrez la première version de VOIR : le calendrier s’enrichit chaque jour.\n · le calendrier s’enrichit chaque jour.\nProposer une source <https://voir.ca/proposer-une-source>\nQu’avez-vous envie de voir ?\nPartout\nLieu\nDate\nDiscipline\nMoment\nPrix\nPlus de filtres \nPhoto : Yvette de Wit / \nUnsplash <https://unsplash.com/photos/NYrVisodQ2M>\nQuoi voir cette semaine ?\nDécouvrez 1 961 événements. Villes couvertes : Montréal, Québec, Laval et 286 autres.\nExplorer <https://voir.ca/recherche?when=week&vue=carte>\nParcourir par discipline\nMusique <https://voir.ca/recherche?discipline=musique>\nThéâtre <https://voir.ca/recherche?discipline=theatre>\nDanse <https://voir.ca/recherche?discipline=danse>\nArts visuels <https://voir.ca/recherche?discipline=arts-visuels>\nCinéma <https://voir.ca/recherche?discipline=cinema>\nLittérature <https://voir.ca/recherche?discipline=litterature>\nHumour <https://voir.ca/recherche?discipline=humour>\nFamille <https://voir.ca/recherche?discipline=famille>\nFestivals <https://voir.ca/recherche?discipline=festivals>\nPlus\nLes choix de \nL’actualité\nCe qu’on irait voir cette semaine\nTout voir <https://voir.ca/choix-de-l-actualite>\nMusique\nRetour à Parc-Ex : La prophétie du piano - Théo Abellard <https://voir.ca/evenements/retour-a-parc-ex-la-prophetie-du-piano-theo-abellard-7e359b>\nsam. 7 nov. • 16 h\nMaison de la culture de Parc-Extension <https://voir.ca/lieux/maison-de-la-culture-de-parc-extension-montreal-985905>\n · Montréal\nGratuit\nMusique\nJulie Aubé <https://voir.ca/evenements/julie-aube-e943a1>\ndim. 8 nov. • 11 h\nFoyer de la salle Louis-Fréchette <https://voir.ca/lieux/foyer-de-la-salle-louis-frechette-quebec-c05191>\n · Québec\nGratuit\nCinéma\nCiné-Musée : Mains d’œuvre – Une vie en poésie <https://voir.ca/evenements/cine-musee-774134>\nsam. 21 nov. • 14 h\nMusée d'art de Joliette <https://voir.ca/lieux/musee-d-art-joliette-joliette-d58564>\n · Joliette\nGratuit\nDanse\nKOROS <https://voir.ca/evenements/koros-9cc726>\nAvec \nMargie Gillis <https://voir.ca/artistes/margie-gillis-3d10e0>\n, \nHélène Blackburn <https://voir.ca/artistes/helene-blackburn-12df6f>\n +4\nDu 18 nov. au 22 nov. +1 date\nQuai des arts <https://voir.ca/lieux/quai-des-arts-carleton-sur-mer-6813cb>\n · Carleton-sur-Mer\nGratuit\nArts visuels\nUne île n’est pas l’autre <https://voir.ca/evenements/exposition-une-ile-n-est-pas-l-autre-0950f9>\nAvec \nAndréanne Godin <https://voir.ca/artistes/andreanne-godin-9d42e1>\n, \nFatima-Zohra Ouardani <https://voir.ca/artistes/fatima-zohra-ouardani-988395>\n +1\nEn cours • jusqu’au 3 janv.\nEspace muséal Alfred-Pellan <https://voir.ca/lieux/espace-museal-alfred-pellan-laval-b98920>\n · Laval\nGratuit\nArts visuels\nChiharu Shiota : Les frémissements de l’âme <https://voir.ca/evenements/chiharu-shiota-les-fremissements-de-l-ame-df69dc>\nEn cours • jusqu’au 14 févr.\nMusée des Beaux Arts de Montréal <https://voir.ca/lieux/musee-des-beaux",
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"VOIR — L’actualité\",\"url\":\"https://voir.lactualite.com/\",\"logo\":\"https://voir.lactualite.com/favicon-192.png\",\"sameAs\":[\"https://lactualite.com\"]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"VOIR — L’actualité\",\"url\":\"https://voir.lactualite.com/\",\"inLanguage\":\"fr-CA\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://voir.lactualite.com/recherche?q={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}}"
+   ],
+   "heures": [
+    "x-la-prophetie-du-piano-theo-abellard-7e359b>\nsam. 7 nov. • 16 h\nMaison de la culture",
+    "https://voir.ca/evenements/julie-aube-e943a1>\ndim. 8 nov. • 11 h\nFoyer de la salle Lo",
+    "ttps://voir.ca/evenements/cine-musee-774134>\nsam. 21 nov. • 14 h\nMusée d'art de Jolie",
+    "ments/feerie-des-fetes-94a527>\nBoisbriand, QC\nmar. 3 nov. • 9 h\nAteliers et activité",
+    "ce-des-citoyens-piedmont-4934f5>\nPiedmont, QC\nmar. 3 nov. • 9 h\nAteliers et activité",
+    "montar-5109ee>\nSaint-Bruno-de-Montarville, QC\nmar. 3 nov. • 9 h 30\nAussi : mar. 10 nov.",
+    "ville-drummondville-17d5b2>\nDrummondville, QC\nmar. 3 nov. • 9 h 30\nArts visuels\nExhibit",
+    "nsfield-beaconsfield-3e189f>\nBeaconsfield, QC\nmar. 3 nov. • 10 h 19\nArts visuels\nExposit",
+    "nsfield-beaconsfield-387580>\nBeaconsfield, QC\nmar. 3 nov. • 10 h 19\nVoir tous les résult"
+   ],
+   "liens": []
+  }
  }
 }
