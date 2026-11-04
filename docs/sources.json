@@ -3,7 +3,7 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 2068,
+  "evenements": 1996,
   "erreur": false
  },
  {
@@ -17,7 +17,7 @@
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 155,
+  "evenements": 163,
   "erreur": false
  },
  {
@@ -395,14 +395,14 @@
   "nom": "ma.to (musique live)",
   "url": "https://ma.to/events/montreal/anytime/live-music",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "evenko (concerts)",
   "url": "https://evenko.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 13,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -423,14 +423,14 @@
   "nom": "Bar Le Ritz PDB",
   "url": "http://www.barleritzpdb.com",
   "type": "page lue par l'IA",
-  "evenements": 25,
+  "evenements": 23,
   "erreur": false
  },
  {
   "nom": "Foufounes Électriques",
   "url": "https://foufouneselectriques.com",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -619,7 +619,7 @@
   "nom": "Upstairs Jazz Bar & Grill",
   "url": "https://www.upstairsjazz.com",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -633,7 +633,7 @@
   "nom": "Club Balattou (musiques du monde)",
   "url": "https://www.balattou.com",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -759,14 +759,14 @@
   "nom": "Casa del Popolo – P'tit Ours",
   "url": "https://casadelpopolo.com/fr/events/ptit-ours",
   "type": "page lue par l'IA",
-  "evenements": 28,
+  "evenements": 29,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – La Sotterenea",
   "url": "https://casadelpopolo.com/fr/events/la-sotterenea",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -780,7 +780,7 @@
   "nom": "Bar Datcha",
   "url": "https://bardatcha.ca",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 12,
   "erreur": false
  },
  {
@@ -990,7 +990,7 @@
   "nom": "Ursa",
   "url": "https://ursamtl.com",
   "type": "page lue par l'IA",
-  "evenements": 28,
+  "evenements": 29,
   "erreur": false
  },
  {
@@ -1025,7 +1025,7 @@
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 36,
+  "evenements": 34,
   "erreur": false
  },
  {
@@ -1116,14 +1116,14 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 100,
+  "evenements": 102,
   "erreur": false
  },
  {
   "nom": "Ligues d'improvisation (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 8,
+  "evenements": 9,
   "erreur": false
  },
  {

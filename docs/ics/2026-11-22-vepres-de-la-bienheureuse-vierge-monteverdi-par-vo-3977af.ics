@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-22-vepres-de-la-bienheureuse-vierge-monteverdi-par-vo-3977af@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261122T190000
+DTEND;TZID=America/Toronto:20261122T210000
+SUMMARY:Vêpres de la Bienheureuse Vierge (Monteverdi) par Vox Luminis
+LOCATION:Église Saint-Léon de Westmount\, Montréal
+URL:https://festivalbachmontreal.com/concerts/vox-luminis/
+DESCRIPTION:L'ensemble Vox Luminis\, dirigé par Lionel Meunier\, interprè
+ te l'intégralité des Vêpres de Monteverdi\, une œuvre chorale majeure 
+ de 1610.\nPrix : 30 à 80 $\nDétails : http://festivalbach.tuxedobillet.c
+ om/main/vox-luminis\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

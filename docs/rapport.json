@@ -1,29 +1,21 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "statut": "publié",
- "evenements": 2464,
- "expositions": 208,
- "nouvelles_salles": [
-  "Centre de design de l'UQAM",
-  "Henry F. Hall Building (H-1120), Concordia",
-  "J.W. McConnell Building (LB), Concordia",
-  "LB-145 et en ligne via Zoom, Concordia",
-  "Palm Isle Skateshop",
-  "UQAM - Pavillon Hubert-Aquin",
-  "Écomusée du fier monde"
- ],
+ "evenements": 2375,
+ "expositions": 207,
+ "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
-   "lues": 3,
-   "erreurs": 3,
+   "lues": 7,
+   "erreurs": 7,
    "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-dessin-116370",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/bijoux-pour-les-fetes-avec-dominique-boucher-116350",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/carnet-v01-atelier-decriture-poetique-avec-lartiste-"
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/2026-centenaire-de-la-disparition-de-claude-monet-12",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/burn-baby-burn-cote-danse-121485",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/cercle-de-lecture-recits-de-voyage-117731"
    ],
-   "completees_par_mac": 910,
-   "heures_trouvees": 909,
-   "salles_trouvees": 891
+   "completees_par_mac": 885,
+   "heures_trouvees": 884,
+   "salles_trouvees": 867
   },
   "formulaire": {
    "lignes": 1,
@@ -53,7 +45,7 @@
    "2026-11-05 : « Laura Anglade et l'Orchestre de jazz des diplômé(e » (Lieu à confirmer) = « Faculté de Musique de l'UdeM : Laura Anglade et l' » (Salle Claude-Champagne)",
    "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling @ Théâtre Beanfield » (Théâtre Beanfield)",
    "2026-11-06 : « Jacker un pickup en poésie (Alphonse Bisaillon) » (Café Campus) = « Jacker un pickup en poésie » (Café Campus)",
-   "2026-11-07 : « Solarium » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
+   "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-08 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-08 : « Nina Kraviz @ Le Studio TD » (Le Studio TD) = « Nina Kraviz » (L'Olympia)",
    "2026-11-09 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
@@ -63,6 +55,11 @@
    "2026-11-14 : « Mary In The Junkyard @ Café Campus » (Café Campus) = « Mary In The Junkyard » (Petit Campus)",
    "2026-11-18 : « M pour Montréal : Béton Armé, Faze, zouz, 2120, Kn » (Club Soda) = « Béton Armé + Faze + Zouz » (Foufounes Électriques)",
    "2026-11-21 : « Célébration : le meilleur party dansant Motown, Po » (Le Balcon) = « Célébration! » (Wiggle Room)",
+   "2026-11-28 : « Off-Bach : Bach en quatre villes » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach en quatre villes » (Clavier)",
+   "2026-11-29 : « Les Variations Goldberg » (Clavier) = « Bach talk : Les Variations Goldberg » (Espace Off-Bach (3487, boul. Saint-Laurent))",
+   "2026-12-02 : « Off-Bach : Bach improvisateur » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach improvisateur » (Clavier)",
+   "2026-12-03 : « Conférence 5 : Bach, Européen avant l'heure » (Clavier) = « Bach talk : Bach, Européen avant l'heure - L'art d » (Non précisé)",
+   "2026-12-03 : « Off-Bach : Bach, Européen avant l'heure » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach talk : Bach, Européen avant l'heure - L'art d » (Non précisé)",
    "2026-12-04 : « Noël autour du monde » (Maison culturelle et communautaire de Montréal-Nord) = « Noël autour du monde| Montréal Guitare Trio (MG3 » (Bibliothèque Julio-Jean-Pierre)",
    "2026-12-12 : « Casse-Noisette, le conte - Théâtre Ciel Ouvert » (Maison culturelle et communautaire de Montréal-Nord) = « Casse-Noisette, le conte - Théâtre Ciel Ouvert » (Bibliothèque Julio-Jean-Pierre)",
    "2026-12-27 : « Nicolas Noël : Entre deux mondes (2-12 ans) » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
@@ -70,158 +67,25 @@
   ],
   "catalogues": [
    {
-    "nom": "Emmanuelle Lizère"
+    "nom": "Ali Blues Group"
    },
    {
-    "nom": "Le Bolduc Groove Quintet",
+    "nom": "Andrés Vial Trio"
+   },
+   {
+    "nom": "United Groove",
     "deezer": {
      "ok": false,
      "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Rémi Bolduc",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (jazz)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "LCL GRL",
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Les bougeottes"
-   },
-   {
-    "nom": "Serre L'ecoute"
-   },
-   {
-    "nom": "Ashwaaq"
-   },
-   {
-    "nom": "Drea Lake",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "TheHonestGuy",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : love songs for no one"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : love songs for no one"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Sarah Segal-Lazar",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Narrators of Peace"
-   },
-   {
-    "nom": "Tear Dungeon",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Cumbia Control"
-   },
-   {
-    "nom": "Kelly Torrieli"
-   },
-   {
-    "nom": "Jahida Wehbé",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Chorale Nagham",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
+     "contre": [
+      "genre jazz ≠ electro"
+     ]
     },
     "apple": {
      "ok": false,
      "pour": [],
      "contre": [
-      "genre monde ≠ classique"
+      "genre jazz ≠ electro"
      ]
     },
     "tidal": {
@@ -231,10 +95,23 @@
     }
    },
    {
-    "nom": "David Corriveau"
+    "nom": "BLVRED"
    },
    {
-    "nom": "Philippe Routhier",
+    "nom": "Hooper",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Lovelet",
     "deezer": {
      "ok": false,
      "pour": [],
@@ -252,66 +129,21 @@
     }
    },
    {
-    "nom": "Jonathan Bélanger",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    }
+    "nom": "Le Trio Java"
    },
    {
-    "nom": "Jérémie Groleau",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre folk ≠ classique"
-     ]
-    },
+    "nom": "Endless Floyd"
+   },
+   {
+    "nom": "Harmonie de Lachine"
+   },
+   {
+    "nom": "Jah Breadz",
     "apple": {
      "ok": false,
      "pour": [],
      "contre": [
-      "genre folk ≠ classique"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Chantal Lamarre"
-   },
-   {
-    "nom": "Komēdza",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "DTW & The Jamm"
-   },
-   {
-    "nom": "The Very Last Day"
-   },
-   {
-    "nom": "Walaa Al Jundi",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre pop ≠ classique"
+      "genre monde ≠ hiphop"
      ]
     },
     "tidal": {
@@ -321,7 +153,7 @@
     }
    },
    {
-    "nom": "Tempête Solaire",
+    "nom": "Michelle Sweeney",
     "deezer": {
      "ok": false,
      "pour": [],
@@ -339,1732 +171,38 @@
     }
    },
    {
-    "nom": "Metal Crust Massacre"
+    "nom": "The Gospel Tribe"
    },
    {
-    "nom": "headache"
-   },
-   {
-    "nom": "ODDCHARM",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
+    "nom": "Nicolas Noël",
     "apple": {
      "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Zeina Maan",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre monde ≠ classique"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "LA PIOLA"
-   },
-   {
-    "nom": "Sam Ripat",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "McMillan",
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Dar El Malouf"
-   },
-   {
-    "nom": "Ton-e Rêve",
-    "deezer": {
-     "ok": true,
      "pour": [
-      "genre concordant : jazz"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : jazz"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album toaster broken)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Elizabeth Anka Vajagic",
-    "deezer": {
-     "ok": false,
-     "pour": [
-      "maison de disques : constellation",
-      "Last.fm cite l'album : nostalgia pain"
+      "album nommé sur la page : nicolas noel entre deux mondes"
      ],
      "contre": [
-      "genre rock ≠ jazz"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [
-      "maison de disques : constellation",
-      "Last.fm cite l'album : stand with the stillness of this day"
-     ],
-     "contre": [
-      "genre rock ≠ jazz"
+      "genre jazz ≠ pop"
      ]
     },
     "tidal": {
      "ok": true,
      "pour": [
-      "maison de disques : constellation",
-      "Last.fm cite l'album : nostalgia pain"
+      "album nommé sur la page : nicolas noel entre deux mondes"
      ],
      "contre": []
     }
-   },
-   {
-    "nom": "Lapelúda",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Catherine Alone"
-   },
-   {
-    "nom": "L'HOMME INVISIBLE"
-   },
-   {
-    "nom": "LAFLAMME",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Convivencia"
-   },
-   {
-    "nom": "Borrkia i Matti"
-   },
-   {
-    "nom": "Julian Corradini"
-   },
-   {
-    "nom": "Diwane"
-   },
-   {
-    "nom": "Abdel Grooz"
-   },
-   {
-    "nom": "Radio Patente",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Sunday Missile"
-   },
-   {
-    "nom": "Big Snit"
-   },
-   {
-    "nom": "Hallowell",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Of Shapes",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Yordan Martinez",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Twin Brother",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album disappearing act)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Karneef",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm cite l'album : in error"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album cyber criminal)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Tommy Creighton Group"
-   },
-   {
-    "nom": "GINOLA LÉLÉ",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album diarabi)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album diarabi)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Mawara Band"
-   },
-   {
-    "nom": "Guidestones",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "The Lost Boys",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Yellow Magnolia",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Hearts of Palm"
-   },
-   {
-    "nom": "Marc McLaughlin",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Fireball Kid",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Bach Incognito"
-   },
-   {
-    "nom": "Corduroy & Co."
-   },
-   {
-    "nom": "Virginie Reid",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "DUB PERMANENCE"
-   },
-   {
-    "nom": "Video Vamp",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Martin Saint",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "The Mirrors"
-   },
-   {
-    "nom": "SEPTETO DE MONTREAL"
-   },
-   {
-    "nom": "Chenier",
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Mokatek"
-   },
-   {
-    "nom": "Elizabeth Dolin",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "maison de disques : analekta",
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "maison de disques : analekta",
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "maison de disques : analekta"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Duo Aster"
-   },
-   {
-    "nom": "CHAKER BOU ABDALLA"
-   },
-   {
-    "nom": "STOFIL"
-   },
-   {
-    "nom": "André Pappathomas"
-   },
-   {
-    "nom": "Chances"
-   },
-   {
-    "nom": "Tara Moneka"
-   },
-   {
-    "nom": "Zaynab Wilson",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : folk"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Ana & Eric",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : folk"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : folk"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album ana eric)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Dee Hernandez",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre jazz ≠ hiphop"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Waleed Kush Afro Jazz"
-   },
-   {
-    "nom": "Mario2",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album optical judas)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Cosmic Dog Fog",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Valya Levchenko",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre folk ≠ electro"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre folk/monde ≠ electro"
-     ]
-    }
-   },
-   {
-    "nom": "fyodor",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : montreal"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Consort laurentien"
-   },
-   {
-    "nom": "WALEED KUSH"
-   },
-   {
-    "nom": "The Divetones",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre hiphop/jazz ≠ metal"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre hiphop ≠ metal"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Bennett Sobel",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "DAY IN DAY OUT",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Wonder-Trois-Quatre"
-   },
-   {
-    "nom": "The Brokes",
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "SALAMATE GNAWA",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album sidi mimoun)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album sidi mimoun)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "T.I.T.S. Collective"
-   },
-   {
-    "nom": "L'Atelier vocal de Montréal"
-   },
-   {
-    "nom": "Velour"
-   },
-   {
-    "nom": "Rémi Bolduc",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : jazz",
-      "Last.fm : artiste d'ici, même genre (jazz)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "ULTRA FAR",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "GOOD FEELING",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "ANDY AND THE DANNYS"
-   },
-   {
-    "nom": "Sasha Baga"
-   },
-   {
-    "nom": "Patrick Kearney",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Syngja",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Danny Pretzel and the Salt of the Earth"
-   },
-   {
-    "nom": "EXTRAÑA HUMANA"
-   },
-   {
-    "nom": "Laetitia Zonzambe",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Mistaken For Wayne",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : this time of year"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : this time of year",
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : this time of year"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "SUMMERLED",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : cynthia"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : the contest"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : the contest"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Boucane Ménard",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : j ai un bateau"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : j ai un bateau"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : j ai un bateau"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Jen Cardini",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album august in paris)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Ensemble Mistral"
-   },
-   {
-    "nom": "Quatuor Quartom"
-   },
-   {
-    "nom": "STREGONERIA",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "WOODEN",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "The_Shannon.Index",
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Team Salsa"
-   },
-   {
-    "nom": "Baroque Baroque",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre electro/folk/rock ≠ classique"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre rock ≠ classique"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Stoylov",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre pop/rock ≠ classique"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre rock ≠ classique"
-     ]
-    }
-   },
-   {
-    "nom": "Dane Ko"
-   },
-   {
-    "nom": "Karl K-Otik",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album ignition)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Jazz Kartel",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre hiphop ≠ jazz"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre hiphop ≠ jazz"
-     ]
-    }
-   },
-   {
-    "nom": "Émilie Auclair"
-   },
-   {
-    "nom": "Julien Siino"
-   },
-   {
-    "nom": "Les Chambriste du Grand Montréal"
-   },
-   {
-    "nom": "Rozan Trio"
-   },
-   {
-    "nom": "ROOTY NAKY AND THE ROOTABLES"
-   },
-   {
-    "nom": "AKASHIK NOMAD"
-   },
-   {
-    "nom": "Loïc Lapatrie",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Tristan Best"
-   },
-   {
-    "nom": "Tehrani Drom",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album unveiled)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album unveiled)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Margaux Deveze",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : pop"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Tristan Longval-Gagné"
-   },
-   {
-    "nom": "Victor Fournelle-Blain",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album jaap nico hamburger piano quartet)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album jaap nico hamburger piano quartet)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Anna Burden"
-   },
-   {
-    "nom": "Mauve Fougère",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : coniferes melomanes"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : coniferes melomanes"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : coniferes melomanes"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Ensemble Murmurosi"
-   },
-   {
-    "nom": "Flavia Garcia",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : mujer",
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : mujer"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "José Maria Gianelli",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album candombe de montreal)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : mujer",
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : mujer"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Anthony Prégent",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Dogtown",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Doodad",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Krystina Marcoux",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre rock ≠ classique"
-     ]
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album amazones)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Julie Babaz"
-   },
-   {
-    "nom": "Marie Denise Pelletier",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : noel parle moi",
-      "maison de disques : disques victoire",
-      "genre concordant : pop",
-      "Last.fm cite l'album : plaisir d amour"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Maxime Gervais et Les Petits Trous de Balle"
-   },
-   {
-    "nom": "Monsieur Spirale & les Anges"
-   },
-   {
-    "nom": "ANTOINE GILBERT",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : dolla"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : dolla"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Taylor Mccluskey",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : climbing the hill"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : climbing the hill"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album 24 hrs)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Bodywash"
-   },
-   {
-    "nom": "Marcel"
-   },
-   {
-    "nom": "Nick Schofield",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (jazz)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album ambient architect)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Moon Mullins",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Nick Schofield",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (jazz)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album ambient architect)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Pascale Pascale"
-   },
-   {
-    "nom": "Hank's Dream",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Ahren Strange",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Nelson Lee",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre hiphop/monde ≠ classique"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Kyoko Hashimoto",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album notes from the shadows)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Patriote",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Axaven",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Dustbunny",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "PALOMINE",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : attention alpha"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : attention alpha"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "Last.fm cite l'album : attention alpha"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "The Last Waltzon"
-   },
-   {
-    "nom": "Ensemble ALKEMIA"
-   },
-   {
-    "nom": "Le Chœur Karen Young"
-   },
-   {
-    "nom": "9Mania"
-   },
-   {
-    "nom": "Suicide Nation",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album hall of violence)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Dounia Batma",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Reality Denied",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Skullgate"
-   },
-   {
-    "nom": "Criminal Mind",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Hammer Drop",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album disposable freedom)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album disposable freedom)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Gilbert Lachance",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Trio Malka"
-   },
-   {
-    "nom": "Les Chantres Musiciens",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique",
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique",
-      "genre concordant : classique"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "maison de disques : atma classique"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Himbo Boobini"
-   },
-   {
-    "nom": "Vraiment Désolé"
-   },
-   {
-    "nom": "Golems"
-   },
-   {
-    "nom": "Jordan Hart",
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "ZACH SCOTT",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "maison de disques : coyote records"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "SPURSs"
-   },
-   {
-    "nom": "Buzz Cuivres"
    }
+  ],
+  "reparations": [
+   "non réparée : ma.to (musique live) (8 pages essayées)"
   ]
  },
  "alerte": null,
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 2003,
-   "series": 65,
+   "evenements": 1929,
+   "series": 67,
    "erreur": null,
    "diagnostic": [
     "colonnes du fichier : titre, url_fiche, description, date_debut, date_fin, type_evenement, public_cible, emplacement, inscription, cout, arrondissement, titre_adresse, adresse_principale, adresse_secondaire, code_postal, lat, long, X, Y"
@@ -2078,7 +216,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 155,
+   "evenements": 163,
    "series": 0,
    "erreur": null
   },
@@ -2330,7 +468,8 @@
    "source": "Terminal Comédie Club (ma.to)",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "UPop Montréal (université populaire)",
@@ -2343,25 +482,29 @@
    "source": "Cœur des sciences UQAM (conférences grand public)",
    "evenements": 5,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "UQAM – événements",
    "evenements": 10,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Université de Montréal – calendrier",
    "evenements": 5,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Concordia – événements",
    "evenements": 3,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "McGill – événements",
@@ -2385,13 +528,15 @@
    "source": "Centre Canadien d'Architecture – événements (Eventbrite)",
    "evenements": 6,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Hexagram – conférences (recherche-création)",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Cabaret Lion d'Or (billetterie)",
@@ -2462,52 +607,51 @@
   },
   {
    "source": "ma.to (musique live)",
-   "evenements": 18,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "aucun événement trouvé dans 3290 caractères de texte : https://ma.to/events/montreal/anytime/live-music"
+   ]
   },
   {
    "source": "evenko (concerts)",
-   "evenements": 13,
+   "evenements": 15,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Théâtre Fairmount",
    "evenements": 21,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Club Soda",
    "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "lue dans le navigateur (automatique) : https://clubsoda.ca/"
+   ]
   },
   {
    "source": "Bar Le Ritz PDB",
-   "evenements": 25,
+   "evenements": 23,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Foufounes Électriques",
-   "evenements": 3,
+   "evenements": 5,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Newspeak",
    "evenements": 14,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Piranha Bar",
@@ -2708,10 +852,9 @@
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
-   "evenements": 2,
+   "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Dièse Onze",
@@ -2724,10 +867,12 @@
   },
   {
    "source": "Club Balattou (musiques du monde)",
-   "evenements": 4,
+   "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/"
+   ]
   },
   {
    "source": "Cabaret Jazz L'Entracte",
@@ -2763,7 +908,9 @@
    "evenements": 29,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebalcon.ca/"
+   ]
   },
   {
    "source": "Turbo Haüs",
@@ -2779,28 +926,34 @@
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "page illisible (Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quaidesbrumes.ca/\nCall log:\n) : https://quaidesbrumes.ca/",
+    "page illisible : données du 2026-11-02 conservées"
+   ]
   },
   {
    "source": "Le Ministère",
    "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "lue dans le navigateur (automatique) : https://leministere.ca/"
+   ]
   },
   {
    "source": "Le Belmont",
    "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-02"
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebelmont.ca/"
+   ]
   },
   {
    "source": "Ausgang Plaza",
    "evenements": 14,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Système MTL",
@@ -2840,13 +993,15 @@
    "source": "MTELUS",
    "evenements": 19,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Cabaret du Casino de Montréal",
    "evenements": 9,
    "series": 2,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Cinéma Moderne",
@@ -2861,22 +1016,19 @@
    "source": "Casa del Popolo – La Toscadura",
    "evenements": 16,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo – P'tit Ours",
-   "evenements": 28,
+   "evenements": 29,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Casa del Popolo – La Sotterenea",
-   "evenements": 21,
+   "evenements": 20,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Resident Advisor – Montréal (électro, raves)",
@@ -2889,10 +1041,9 @@
   },
   {
    "source": "Bar Datcha",
-   "evenements": 8,
+   "evenements": 12,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "SAT – Société des arts technologiques",
@@ -3121,10 +1272,9 @@
   },
   {
    "source": "Ursa",
-   "evenements": 28,
+   "evenements": 29,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "La Lumière Collective",
@@ -3147,29 +1297,25 @@
    "source": "Quai des Brumes (billetterie)",
    "evenements": 6,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Café Campus (billetterie)",
    "evenements": 5,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Café Campus et Petit Campus – shows (billetterie)",
-   "evenements": 36,
+   "evenements": 34,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Turbo Haüs (billetterie)",
    "evenements": 9,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Théâtre Rialto (billetterie)",
@@ -3191,8 +1337,7 @@
    "source": "L'Escogriffe (billetterie)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Club Soda (billetterie)",
@@ -3205,8 +1350,7 @@
    "source": "Ausgang Plaza (billetterie)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "O Patro Vys (billetterie)",
@@ -3226,8 +1370,7 @@
    "source": "Club Balattou (billetterie)",
    "evenements": 15,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Le Balattou (billetterie, 2e page)",
@@ -3242,8 +1385,7 @@
    "source": "Le Belmont (billetterie)",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
@@ -3254,13 +1396,13 @@
   },
   {
    "source": "Soirées quiz (hebdomadaires)",
-   "evenements": 100,
+   "evenements": 102,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Ligues d'improvisation (hebdomadaires)",
-   "evenements": 8,
+   "evenements": 9,
    "series": 0,
    "erreur": null
   },
@@ -3303,7 +1445,7 @@
   },
   {
    "source": "Formulaire : événements proposés",
-   "evenements": 1,
+   "evenements": 0,
    "series": 0,
    "erreur": null
   },
@@ -3327,24 +1469,26 @@
   },
   {
    "source": "Festival · Monde Arabe (1)",
-   "evenements": 38,
+   "evenements": 24,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-31"
+   "diagnostic": [
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/programmation",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/chorale-nagham-voix-féminines-en-harmonie",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/dar-el-malouf-lécho-de-grenade"
+   ]
   },
   {
    "source": "Festival · Monde Arabe (2)",
    "evenements": 4,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · CINEMANIA",
-   "evenements": 205,
+   "evenements": 204,
    "series": 47,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · La Mèche courte",
@@ -3357,26 +1501,21 @@
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 7,
+   "evenements": 63,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-10-28"
+   "erreur": null
   },
   {
    "source": "Festival · Coup de cœur",
    "evenements": 93,
-   "series": 16,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "series": 18,
+   "erreur": null
   },
   {
    "source": "Festival · Mundial",
    "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 4717 caractères de texte : https://mundialmontreal.com"
-   ]
+   "series": 1,
+   "erreur": null
   },
   {
    "source": "Festival · M pour Montréal (1)",
@@ -3391,85 +1530,82 @@
    "source": "Festival · M pour Montréal (2)",
    "evenements": 3,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (1)",
-   "evenements": 3,
+   "evenements": 0,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "diagnostic": [
+    "aucun événement trouvé dans 4584 caractères de texte : https://ridm.ca/fr/grille-horaire"
+   ]
   },
   {
    "source": "Festival · RIDM (2)",
-   "evenements": 27,
-   "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "evenements": 2,
+   "series": 0,
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (3)",
    "evenements": 3,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (4)",
-   "evenements": 1,
+   "evenements": 34,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (5)",
-   "evenements": 22,
+   "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (6)",
-   "evenements": 1,
+   "evenements": 28,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (7)",
    "evenements": 3,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (8)",
    "evenements": 1,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (9)",
-   "evenements": 27,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "evenements": 1,
+   "series": 0,
+   "erreur": null
   },
   {
    "source": "Festival · RIDM (10)",
-   "evenements": 31,
-   "series": 1,
+   "evenements": 0,
+   "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "aucun événement trouvé dans 26557 caractères de texte : https://ridm.ca/fr/grille-horaire?date=2026-11-28"
+   ]
   },
   {
    "source": "Festival · RIDM (11)",
-   "evenements": 47,
-   "series": 1,
+   "evenements": 0,
+   "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-30"
+   "diagnostic": [
+    "aucun événement trouvé dans 23735 caractères de texte : https://ridm.ca/fr/grille-horaire?date=2026-11-29"
+   ]
   },
   {
    "source": "Festival · image+nation",
@@ -3485,8 +1621,7 @@
    "source": "Festival · Salon du livre",
    "evenements": 0,
    "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · Igloofest",
@@ -3572,7 +1707,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6833 caractères de texte : https://jamaislu.com"
+    "aucun événement trouvé dans 6557 caractères de texte : https://jamaislu.com"
    ]
   },
   {
@@ -3626,7 +1761,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
    ]
   },
   {
@@ -3681,7 +1816,7 @@
    "erreur": null,
    "diagnostic": [
     "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (441 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -3720,7 +1855,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6144 caractères de texte : https://hahaha.com"
+    "aucun événement trouvé dans 6200 caractères de texte : https://hahaha.com"
    ]
   },
   {
@@ -3878,8 +2013,7 @@
    "source": "Festival · Comiccon des Fêtes",
    "evenements": 2,
    "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-02"
+   "erreur": null
   },
   {
    "source": "Festival · Under Pressure",
