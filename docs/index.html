@@ -21,8 +21,11 @@
 <meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&family=Caveat:wght@600&display=swap">
+<script>/* Aperçu du nouveau design : ?v2 l'active (gardé sur cet appareil), ?v1 revient à l'ancien */
+try{var q=location.search;if(/[?&]v2\b/.test(q))localStorage.setItem("ccmtl-v2","1");if(/[?&]v1\b/.test(q))localStorage.removeItem("ccmtl-v2");if(localStorage.getItem("ccmtl-v2"))document.documentElement.classList.add("v2")}catch(e){}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&family=Caveat:wght@600&family=Figtree:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="v2.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='6' width='26' height='23' rx='4' fill='%23121212'/%3E%3Crect x='3' y='6' width='26' height='7' rx='3' fill='%23e4002b'/%3E%3Ccircle cx='11' cy='20' r='3' fill='%23fff'/%3E%3C/svg%3E">
 <!-- Statistiques de visite sans témoins (GoatCounter) -->
 <script data-goatcounter="https://ccmtl.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -30,13 +33,16 @@
 <body>
 <noscript><p><a href="jour/">Tous les événements, jour par jour</a></p></noscript>
 <div class="wrap">
+  <div class="v2-tete v2o"><a class="v2-marque" href="./">Calendrier culturel<br><span>de Montréal</span></a></div>
   <a class="langue" id="langue" href="en/" hreflang="en" lang="en" title="English version">EN</a>
   <header class="hero">
     <div class="hero-txt">
       <p class="wordmark">calendrier culturel <b>mtl</b></p>
-      <h1>Qu'est-ce qu'on fait <span class="hl">ce soir</span>&nbsp;?</h1>
+      <h1 class="v1o">Qu'est-ce qu'on fait <span class="hl">ce soir</span>&nbsp;?</h1>
+      <p class="v2-titre v2o" role="presentation" aria-hidden="true"><span>Qu'est-ce</span><span>qu'on fait</span><span><i>ce soir</i>&nbsp;?</span></p>
       <p class="sub">Théâtre, shows, danse, expos, DJ sets et lectures de poésie, partout sur l'île. Filtre par discipline et par date, ou cherche un spectacle.</p>
     </div>
+    <div class="v2-ill v2o"><svg viewBox="0 0 480 480" width="100%" aria-hidden="true" focusable="false"><rect x="80" y="67" width="160" height="26" fill="#FBBA16"></rect><circle cx="80" cy="80" r="66" fill="#FBBA16"></circle><circle cx="240" cy="80" r="66" fill="#FBBA16"></circle><polygon points="80.0,32.0 86.2,56.8 104.0,38.4 97.0,63.0 121.6,56.0 103.2,73.8 128.0,80.0 103.2,86.2 121.6,104.0 97.0,97.0 104.0,121.6 86.2,103.2 80.0,128.0 73.8,103.2 56.0,121.6 63.0,97.0 38.4,104.0 56.8,86.2 32.0,80.0 56.8,73.8 38.4,56.0 63.0,63.0 56.0,38.4 73.8,56.8" fill="#E04E25"></polygon><polygon points="240.0,34.0 246.2,56.8 263.0,40.2 257.0,63.0 279.8,57.0 263.2,73.8 286.0,80.0 263.2,86.2 279.8,103.0 257.0,97.0 263.0,119.8 246.2,103.2 240.0,126.0 233.8,103.2 217.0,119.8 223.0,97.0 200.2,103.0 216.8,86.2 194.0,80.0 216.8,73.8 200.2,57.0 223.0,63.0 217.0,40.2 233.8,56.8" fill="#E04F9C"></polygon><circle cx="240" cy="80" r="16" fill="#000000"></circle><rect x="387" y="80" width="26" height="160" fill="#B9A3E3"></rect><circle cx="400" cy="80" r="66" fill="#B9A3E3"></circle><circle cx="400" cy="240" r="66" fill="#B9A3E3"></circle><path d="M 352 262 A 48 48 0 0 1 448 262 Z" fill="#F5EFE3"></path><path d="M 374 262 A 26 26 0 0 1 426 262 Z" fill="#000000"></path><rect x="67" y="240" width="26" height="160" fill="#000000"></rect><circle cx="80" cy="240" r="66" fill="#000000"></circle><circle cx="80" cy="400" r="66" fill="#000000"></circle><circle cx="80" cy="400" r="46" fill="#F5EFE3"></circle><circle cx="80" cy="400" r="36" fill="#E2B2B4"></circle><polygon points="80.0,372.0 84.0,387.6 96.5,377.3 90.5,392.4 106.6,391.3 93.0,400.0 106.6,408.7 90.5,407.6 96.5,422.7 84.0,412.4 80.0,428.0 76.0,412.4 63.5,422.7 69.5,407.6 53.4,408.7 67.0,400.0 53.4,391.3 69.5,392.4 63.5,377.3 76.0,387.6" fill="#E22028"></polygon><circle cx="240" cy="240" r="66" fill="#E04E25"></circle><rect x="196" y="226" width="88" height="30" rx="15" fill="#F5EFE3"></rect><path d="M 222 241 A 18 18 0 0 1 258 241 Z" fill="#000000"></path><rect x="240" y="387" width="160" height="26" fill="#3A75F0"></rect><circle cx="240" cy="400" r="66" fill="#3A75F0"></circle><circle cx="400" cy="400" r="66" fill="#3A75F0"></circle><ellipse cx="240" cy="408" rx="44" ry="20" fill="#F5EFE3"></ellipse><circle cx="246" cy="400" r="17" fill="#000000"></circle><ellipse cx="400" cy="408" rx="44" ry="20" fill="#F5EFE3"></ellipse><circle cx="406" cy="400" r="17" fill="#000000"></circle></svg></div>
     <div class="hero-map">
     <svg class="lignemap" id="carteMetro" viewBox="-10 -10 720 515" role="img" aria-label="La ligne culture : un métro imaginaire dont les stations sont des salles de Montréal">
       <path class="ln" stroke="var(--humour)" stroke-width="20" d="M145 22 L145 155 L300 315 L322 345 L322 477"/>

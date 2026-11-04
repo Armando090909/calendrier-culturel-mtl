@@ -1,0 +1,179 @@
+/* Nouveau design (aperçu) : actif seulement quand <html class="v2"> (ccmtl.ca/?v2 ; ?v1 pour revenir).
+   Fond crème, texte noir, Figtree ; chaque discipline a sa couleur, aucune couleur n'est réutilisée ;
+   le noir sert aux contours, au jour d'aujourd'hui et aux boutons principaux. */
+
+.v2o{display:none}
+html.v2 .v2o{display:revert}
+html.v2 .v1o{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+html.v2{
+  --bg:#F5EFE3; --paper:#F5EFE3; --surface:#FFFCF6; --ink:#000000; --muted:#4A4640; --hair:#D8CFBE;
+  --accent:#000000; --pop:#E22028; --shadow:transparent; --hl:#F5EFE3; --chip-off:#EAE2D2;
+  --theatre:#E22028; --musique:#3A75F0; --danse:#E2B2B4; --humour:#E04E25; --cinema:#B1D8B8; --jeune:#FBBA16;
+  --poesie:#B9A3E3; --lettres:#9BCCD0; --quiz:#1FA3A3; --fete:#E04F9C; --conference:#2DAA55; --atelier:#B8B23A;
+  --expo:#D9B98C; --cirque:#F2A65A; --autre:#CFC8BA;
+  --f-display:"Figtree", system-ui, sans-serif; --f-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-hand:"Figtree", system-ui, sans-serif;
+  --r:16px;
+}
+html.v2 body{background:var(--bg);font-size:16px}
+html.v2 a{color:var(--ink)}
+html.v2 a:hover{color:#00492C}
+html.v2 :focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+html.v2 .wrap{gap:22px;position:relative}
+
+/* En-tête : « Calendrier culturel / de Montréal » à gauche, EN à droite */
+html.v2 .v2-tete{display:flex;align-items:center;justify-content:space-between;padding-right:70px;min-height:56px}
+html.v2 .v2-marque{text-decoration:none;color:var(--ink);font-size:clamp(22px,2.6vw,32px);font-weight:900;letter-spacing:-.02em;line-height:1}
+html.v2 .v2-marque span{font-weight:500}
+html.v2 .langue{position:absolute;top:6px;right:0;margin:0;align-self:auto;font:700 16px/1 var(--f-body);letter-spacing:0;opacity:1;
+  border:2px solid var(--ink);border-radius:999px;padding:12px 16px;background:transparent;color:var(--ink)}
+html.v2 .langue:hover{background:var(--ink);color:var(--bg)}
+
+/* Héros : titre en trois lignes, « ce soir » dans un ovale, illustration à droite */
+html.v2 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:20px 32px;align-items:center;border:0;border-radius:0;
+  background:none;padding:6px 0 0;box-shadow:none;overflow:visible}
+html.v2 .hero-txt{gap:22px}
+html.v2 .wordmark,html.v2 .hero-map{display:none}
+html.v2 .v2-titre{margin:0;font-weight:900;font-size:clamp(56px,9.4vw,124px);line-height:.88;letter-spacing:-.055em;display:flex;flex-direction:column;align-items:flex-start}
+html.v2 .v2-titre i{font-style:normal;border:3px solid var(--ink);border-radius:999px;padding:0 .2em .08em;display:inline-block}
+html.v2 .v2-ill{width:100%;max-width:420px;justify-self:end}
+html.v2 .v2-ill svg{display:block;width:100%;height:auto}
+html.v2 .sub{color:var(--ink);font-size:20px;line-height:1.4;max-width:680px;border-top:2px solid var(--ink);padding-top:16px}
+html.v2 .stat{color:var(--ink)}
+html.v2 .stat b{font-family:var(--f-body);font-weight:900}
+
+/* Recherche */
+html.v2 .recherche input{font-size:18px;font-weight:500;background:var(--surface);border:2px solid var(--ink);border-radius:999px;padding:16px 56px 16px 26px;box-shadow:none}
+html.v2 .recherche input:focus{box-shadow:0 0 0 3px var(--ink)}
+html.v2 .qclear{background:var(--ink);color:var(--bg)}
+
+/* Catégories : capsules pleine couleur ; décochées = contour pointillé */
+html.v2 .label{font-family:var(--f-body);font-size:16px;font-weight:900;letter-spacing:.04em;margin:0 0 14px}
+html.v2 #lbl-disc::before{content:"_"}
+html.v2 .chips{gap:8px}
+html.v2 .chip{font-size:17px;font-weight:700;border:2px solid var(--c);border-radius:999px;padding:9px 16px;background:var(--c);color:#000;box-shadow:none}
+html.v2 .chip .dot{display:none}
+html.v2 .chip .n{font-size:inherit;font-weight:500;opacity:1}
+html.v2 .chip[aria-pressed="false"]{background:transparent;color:var(--ink);border:2px dashed var(--ink)}
+html.v2 .chip:not(:disabled):hover{transform:none;filter:brightness(.95)}
+html.v2 .tousrien{border:2px solid var(--ink);border-radius:999px;padding:3px;gap:4px;background:transparent}
+html.v2 .tr{font-family:var(--f-body);font-size:15px;font-weight:700;border:0!important;border-radius:999px!important;padding:8px 16px;min-height:40px;color:var(--ink);background:transparent}
+html.v2 .tr .poincon{display:none}
+html.v2 .tr:disabled{background:var(--ink);color:var(--bg)}
+html.v2 .tr:not(:disabled):hover{background:var(--chip-off)}
+
+/* Semaine / Jour / Festivals et navigation */
+html.v2 .seg{border:2px solid var(--ink);border-radius:999px;padding:3px;gap:4px;background:transparent}
+html.v2 .seg button{border:0!important;border-radius:999px;padding:9px 18px;font-size:16px}
+html.v2 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+html.v2 .linkbtn{color:var(--ink)}
+html.v2 .nav .navlabel{font-family:var(--f-body);font-weight:900;font-size:clamp(24px,3vw,36px);letter-spacing:-.02em;text-transform:none}
+html.v2 .nav button{border:2px solid var(--ink);background:transparent;box-shadow:none}
+html.v2 .nav button:hover:not(:disabled){background:var(--ink);color:var(--bg)}
+html.v2 .strip{display:none}
+html.v2 .partial{background:var(--surface);border-radius:999px}
+
+/* Grille de la semaine : tuiles de jour, cartes pleine couleur, aujourd'hui en rouge à 30 % */
+html.v2 .board{gap:8px}
+html.v2 .col{gap:6px}
+html.v2 .col.today{background:rgba(226,32,40,.3);border-radius:18px;padding:6px;margin:-6px;outline:0}
+html.v2 .colhead{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--f-body);text-transform:none;text-align:center;
+  background:var(--bg);color:var(--ink);border:2.5px solid var(--ink);border-radius:14px;padding:10px 8px 12px}
+html.v2 .colhead:hover:not(:disabled){color:var(--ink);background:var(--surface)}
+html.v2 .col.today .colhead{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+html.v2 .ch-j{font-size:16px;font-weight:900}
+html.v2 .ch-n{font-size:clamp(34px,3.8vw,52px);font-weight:900;line-height:1}
+html.v2 .ch-c{font-size:14px;font-weight:700;margin:0;color:inherit}
+html.v2 .colhead span{margin:0;color:inherit;font-family:inherit}
+html.v2 .rows{display:flex;flex-direction:column;gap:6px;border:0;border-radius:0;background:none;box-shadow:none;overflow:visible}
+html.v2 .row.v2row{display:flex;flex-direction:column;gap:3px;background:var(--c);color:#000;border:0;border-radius:12px;padding:10px 11px 12px}
+html.v2 .row.v2row+.row.v2row{border-top:0}
+html.v2 .row.v2row:hover,html.v2 .row.v2row:focus-visible{background:var(--c);filter:brightness(1.06);outline:2px solid var(--ink);outline-offset:-2px}
+html.v2 .row.v2row.enfest{box-shadow:inset 0 0 0 3px var(--f)}
+html.v2 .r2h{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+html.v2 .r2d{font-size:12px;font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.v2 .r2h b{font-size:17px;font-weight:900;line-height:1;white-space:nowrap;font-variant-numeric:tabular-nums}
+html.v2 .row.v2row .rti{font-size:15px;font-weight:900;line-height:1.15;color:#000;-webkit-line-clamp:3}
+html.v2 .row.v2row .rl{font-size:13px;font-weight:500;color:#000;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+html.v2 .row .cpl{font-size:11px;font-weight:900;background:#000;color:var(--bg);border-radius:999px;padding:1px 7px}
+html.v2 .empty{color:var(--muted)}
+
+/* Fiche d'un événement (vue Jour et fenêtre) : bloc pleine couleur, coins arrondis, affiche à droite */
+html.v2 .ev{background:var(--surface);border:2px solid var(--ink);border-radius:20px;box-shadow:none}
+html.v2 .ev.det{background:var(--c);color:#000;border:0;border-radius:28px;padding:24px}
+html.v2 .ev.det h3.t{font-family:var(--f-body);font-weight:900;font-size:clamp(26px,3.2vw,44px);line-height:.95;letter-spacing:-.04em}
+html.v2 .ev.det h3.t a{color:#000}
+html.v2 .det-top .disc{font-family:var(--f-body);font-size:14px;font-weight:900;letter-spacing:.04em;color:#000}
+html.v2 .det-top .disc::before{content:"_"}
+html.v2 .ev .tm,html.v2 .ev.det .tm{font-family:var(--f-body);font-size:17px;font-weight:900;color:#000;background:var(--bg);border:1.5px solid #000;border-radius:999px;padding:5px 14px}
+html.v2 .lieu .nom{font-weight:900}
+html.v2 .lieu .q,html.v2 .lieu .metro{color:#000}
+html.v2 .resume{color:#000;font-size:17px}
+html.v2 .prix-main{font-family:var(--f-body);font-style:italic;font-weight:900;color:#000;font-size:20px;transform:none}
+html.v2 .btn{background:#000;color:var(--bg);border:2px solid #000;border-radius:999px;padding:10px 18px;font-size:15px}
+html.v2 .btn.ghost{background:transparent;color:#000}
+html.v2 .btn.ghost:hover{background:#000;color:var(--bg)}
+html.v2 .ecoute span,html.v2 .ecoute em{color:#000}
+html.v2 .ecoute a{font-size:13px;font-weight:700;text-decoration:none;background:var(--bg);color:#000;border:1.5px solid #000;border-radius:999px;padding:5px 11px}
+html.v2 .ecoute.rech a{background:transparent}
+html.v2 .cal{border-top:1.5px dashed rgba(0,0,0,.35)}
+html.v2 .cal a,html.v2 .cal button{color:#000;text-decoration:underline;text-underline-offset:3px}
+html.v2 .cal .src{color:#000;opacity:.7}
+html.v2 .det-vis .det-aff img,html.v2 .det-img{border:0;border-radius:16px}
+html.v2 .det-aff figcaption{color:#000;opacity:.75}
+html.v2 .carte{border:0;border-radius:16px}
+html.v2 .fx{font-weight:900}
+html.v2 .badge{background:#000;color:var(--bg);border-radius:999px}
+
+/* Mois, festivals, expositions */
+html.v2 .cell{background:var(--surface);border:2px solid var(--ink);border-radius:14px}
+html.v2 .cell.today{background:rgba(226,32,40,.3);box-shadow:none;border-color:var(--ink)}
+html.v2 .cell .num{font-family:var(--f-body);font-weight:900}
+html.v2 .cell.today .num::after{font-family:var(--f-body);font-weight:700;color:var(--ink)}
+html.v2 .festbanner,html.v2 .near,html.v2 .expos{background:var(--surface);border:2px solid var(--ink);border-radius:20px;box-shadow:none}
+
+/* Bas de page : programmation d'événements, sources, archives, don */
+html.v2 .note{background:transparent;border:0;border-top:2px solid var(--ink);border-radius:0;box-shadow:none;padding:22px 0 0;font-size:20px;font-weight:900}
+html.v2 .note .stn-ico{display:none}
+html.v2 .toplinks a{background:transparent;border:2px solid var(--ink);box-shadow:none;font-size:15px;padding:10px 18px}
+html.v2 .toplinks a.go{background:#000;border-color:#000;color:var(--bg)}
+html.v2 .pied-bt{background:transparent;border:2px solid var(--ink);box-shadow:none;padding:9px 16px;font-size:15px}
+html.v2 .don-bt{background:var(--fete);color:#000;border:0;box-shadow:none;font-weight:900;padding:11px 18px;font-size:15px}
+html.v2 .pied-bt:hover,html.v2 .don-bt:hover{transform:none;box-shadow:none;filter:brightness(.95)}
+html.v2 .pied-g{display:none}
+html.v2 .don-pop{background:var(--surface);border:2px solid var(--ink);border-radius:20px;box-shadow:none}
+
+@media (max-width:900px){
+  html.v2 .hero{grid-template-columns:1fr}
+  html.v2 .v2-ill{max-width:240px;justify-self:start;order:-1}
+  html.v2 .v2-titre{font-size:clamp(52px,15vw,80px)}
+  html.v2 .sub{font-size:16px}
+  html.v2 .board{grid-template-columns:1fr;gap:16px}
+  html.v2 .col.today{margin:0;padding:8px}
+  html.v2 .colhead{flex-direction:row;align-items:baseline;gap:10px;padding:8px 12px;border-radius:12px;text-align:left}
+  html.v2 .ch-n{order:-1;font-size:30px}
+  html.v2 .ch-c{margin-left:auto}
+  html.v2 .row.v2row{border-radius:16px;padding:12px 14px}
+  html.v2 .r2h b{font-size:22px}
+  html.v2 .row.v2row .rti{font-size:17px}
+  html.v2 .ev.det{padding:20px;border-radius:26px}
+}
+@media (max-width:560px){
+  html.v2 .chip{font-size:15px;padding:9px 13px}
+  html.v2 .langue{padding:10px 13px;font-size:14px}
+}
+
+/* Fiche : détails sur fond de couleur */
+html.v2 .ev.det .btn.ghost{background:transparent;color:#000;border-color:#000}
+html.v2 .ev.det .btn.ghost:hover{background:#000;color:var(--bg)}
+html.v2 .det-side.seul{border-left-color:rgba(0,0,0,.35)}
+html.v2 .cal .calk{color:#000;opacity:.75}
+html.v2 .aujtag{font-family:var(--f-body);font-weight:900;color:var(--ink)}
+html.v2 .dayhead .label{font-family:var(--f-body);font-weight:900}
+html.v2 .lieu .pin{filter:grayscale(1) brightness(0)}
+html.v2 .r2h{width:100%;align-self:stretch}
+html.v2 .row.v2row .rti,html.v2 .row.v2row .rl{align-self:stretch;text-align:left}
+@media (max-width:900px){html.v2 .chips{display:flex;flex-wrap:wrap}html.v2 .chip{width:auto;justify-content:flex-start}}
+html.v2 .festsem,html.v2 .festsem *:not(.fx){color:var(--ink)}
+html.v2 .colhead .ch-c{margin-left:auto}
