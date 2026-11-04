@@ -734,8 +734,13 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                 try:
                     try:
                         html = telecharger(url, "text/html").text
-                    except Exception:
+                    except Exception as exc:
                         html = ""  # refusée (403) : le navigateur peut l'afficher
+                        if "403" in str(exc):
+                            # ou le Pi à Montréal : la page est mise sur sa liste (pages_a_lire.json) et reprise ici
+                            import connecteurs
+                            connecteurs.BLOQUEES.add(url)
+                            html = connecteurs.page_mac(url) or ""
                     imgs = images_page(html, url)
                     if page_rendue and rendues < 80 and not affiche_page(html, url) and not imgs \
                             and urlparse(url).path not in ("", "/"):

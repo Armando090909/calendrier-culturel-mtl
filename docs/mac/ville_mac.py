@@ -168,7 +168,7 @@ def pages_bloquees(jeton, aujourd):
     if code != 200:
         return True
     robots, res = {}, {}
-    for url in json.loads(txt)[:60]:
+    for url in json.loads(txt)[:150]:
         hote = "/".join(url.split("/")[:3])
         if hote not in robots:
             rp = RobotFileParser()

@@ -164,12 +164,19 @@ def images_des_salles(events: list[dict], aujourd) -> None:
         m = memo.get(h)
         if (not m or m["le"] < vieux) and lus < 60:
             lus += 1
+            accueil = f"https://{h}/"
             try:
-                accueil = f"https://{h}/"
-                a = decouverte.affiche_page(telecharger(accueil, "text/html").text, accueil)
-                memo[h] = {"image": a["url"] if a else None, "le": aujourd.isoformat()}
-            except Exception:
-                memo[h] = {"image": None, "le": aujourd.isoformat()}
+                html = telecharger(accueil, "text/html").text
+            except Exception as exc:
+                html = None
+                if "403" in str(exc):
+                    # refusée aux serveurs de GitHub : lue par le Pi à Montréal (pages_a_lire.json), reprise ici ensuite
+                    connecteurs.BLOQUEES.add(accueil)
+                    html = connecteurs.page_mac(accueil)
+                    if html is None:
+                        continue  # pas mémorisé : on réessaie demain, quand le Pi l'aura lue
+            a = decouverte.affiche_page(html, accueil) if html else None
+            memo[h] = {"image": a["url"] if a else None, "le": aujourd.isoformat()}
     n = 0
     for e in events:
         if not e.get("affiche") and not e.get("image") and e.get("lieu") in site:
@@ -178,6 +185,9 @@ def images_des_salles(events: list[dict], aujourd) -> None:
                 e["affiche"] = {"url": im, "credit": site[e["lieu"]], "lien": f"https://{site[e['lieu']]}/", "salle": True}
                 n += 1
     f.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+    # la liste des pages à lire depuis Montréal inclut maintenant les sites de salles refusés
+    (SORTIE.parent / "pages_a_lire.json").write_text(json.dumps(sorted(connecteurs.BLOQUEES), ensure_ascii=False),
+                                                     encoding="utf-8")
     print(f"Images de salle : {n} événements sans affiche reçoivent l'image de leur salle ({lus} sites lus).")
 
 
