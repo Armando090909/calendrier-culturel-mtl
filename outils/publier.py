@@ -466,6 +466,10 @@ def _rendre(s, semaine):
             j.write_bytes(jpeg(p))
             p.unlink()
             jpgs.append(j)
+        try:  # reel sans musique, à publier à la main avec la chanson de l'artiste (bibliothèque d'Instagram)
+            fs.reel(fs.images_du_reel(dossier), dossier / "reel.mp4")
+        except Exception as exc:
+            print(f"[{langue}] reel : échec ({exc})")
         t = fs.textes(s)
         (dossier / "textes.json").write_text(json.dumps(t, ensure_ascii=False, indent=1), encoding="utf-8")
         lots[langue] = (jpgs, _alts(s, jpgs), t)
@@ -502,7 +506,13 @@ def _resume_selection(s, sha, semaine):
             f"### Threads et Bluesky (FR et EN)\n<img src=\"{img('fr', 'c1-a-voir.jpg')}\" width=\"300\"> "
             f"<img src=\"{img('en', 'c1-a-voir.jpg')}\" width=\"300\">\n\n"
             f"### Story Instagram et Facebook\n<img src=\"{img('fr', 's1-story.jpg')}\" width=\"220\">\n\n"
-            f"### Carrousel Instagram et Facebook (FR)\n{carrousel}\n")
+            f"### Carrousel Instagram et Facebook (FR)\n{carrousel}\n\n"
+            f"### Reel (à publier à la main, lundi)\n"
+            f"Vidéo sans musique : [reel FR]({img('fr', 'reel.mp4')}) · [reel EN]({img('en', 'reel.mp4')}). "
+            f"Ouvre le lien sur ton téléphone, enregistre la vidéo, puis dans Instagram : **+ → Reel**, choisis la vidéo, "
+            f"**Audio** → cherche la chanson de l'artiste musical de la semaine"
+            + (f" (**{musique[0]['e']['titre']}**)" if (musique := [p for p in s["picks"] if p["k"] == "musique"]) else "")
+            + ". Coche « Partager aussi sur Facebook » si l'option est offerte.\n")
 
 
 def apercu():

@@ -647,6 +647,45 @@ def rendre_bannieres(dossier):
         nav.close()
 
 
+# ---------------------------------------------------------------- Reel (vidéo verticale, sans musique)
+def reel(images, sortie):
+    """Vidéo verticale 1080 × 1920 (30 i/s) faite des cartons du carrousel, avec un glissement entre chacun.
+    Sans musique : on la publie à la main depuis l'appli Instagram en ajoutant la chanson de l'artiste de la semaine
+    (bibliothèque musicale d'Instagram, sous licence). Le fond autour de chaque carton reprend sa couleur."""
+    import subprocess
+    from PIL import Image
+    images = [Path(i) for i in images]
+    if not images:
+        return None
+    durees = [2.8] + [2.3] * (len(images) - 2) + [3.0] if len(images) > 1 else [3.0]
+    fondu = 0.35
+    entrees, filtres = [], []
+    for i, (img, d) in enumerate(zip(images, durees)):
+        r, g, b = Image.open(img).convert("RGB").getpixel((4, 4))
+        entrees += ["-loop", "1", "-t", f"{d + fondu:.2f}", "-i", str(img)]
+        filtres.append(f"[{i}:v]scale=1080:1350,pad=1080:1920:0:285:color=0x{r:02X}{g:02X}{b:02X},setsar=1,fps=30,format=yuv420p[v{i}]")
+    dernier, decalage = "v0", 0.0
+    for i in range(1, len(images)):
+        decalage += durees[i - 1]
+        filtres.append(f"[{dernier}][v{i}]xfade=transition=slideleft:duration={fondu}:offset={decalage:.2f}[x{i}]")
+        dernier = f"x{i}"
+    total = sum(durees) + fondu
+    sortie = Path(sortie)
+    sortie.parent.mkdir(parents=True, exist_ok=True)
+    cmd = (["ffmpeg", "-y", "-loglevel", "error"] + entrees
+           + ["-f", "lavfi", "-t", f"{total:.2f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+              "-filter_complex", ";".join(filtres), "-map", f"[{dernier}]", "-map", f"{len(images)}:a",
+              "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
+              "-c:a", "aac", "-shortest", "-movflags", "+faststart", str(sortie)])
+    subprocess.run(cmd, check=True)
+    return sortie
+
+
+def images_du_reel(dossier):
+    """Les cartons du carrousel (01-…, 02-…), dans l'ordre ; pas les cartons condensés ni la story."""
+    return sorted(p for p in Path(dossier).iterdir() if p.suffix in (".png", ".jpg") and p.name[:2].isdigit())
+
+
 # ---------------------------------------------------------------- Textes
 def textes(s):
     """Textes d'accompagnement dans la langue courante (LANGUE) : instagram (long), threads (moyen), bluesky (court)."""
@@ -724,6 +763,10 @@ def main():
         LANGUE = langue
         dossier = RACINE / "outils" / "reseaux" / "apercu" / langue
         rendre(slides(s) + condenses(s) + stories(s), dossier)
+        try:
+            reel(images_du_reel(dossier), dossier / "reel.mp4")
+        except Exception as exc:
+            print(f"  reel : échec ({exc})")
         t = textes(s)
         (dossier / "textes.json").write_text(json.dumps(t, ensure_ascii=False, indent=1), encoding="utf-8")
         for r, x in t.items():

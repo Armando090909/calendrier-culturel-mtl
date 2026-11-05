@@ -58,6 +58,7 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-1.48
       - run: python -m playwright install --with-deps chromium
+      - run: command -v ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
       - name: Publier
         env:
           GH_TOKEN: ${{ github.token }}
