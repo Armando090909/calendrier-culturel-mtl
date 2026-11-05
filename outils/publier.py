@@ -652,6 +652,14 @@ def consignes():
     _gh("issue", "comment", num, "--repo", DEPOT, "--body-file", "-", entree=corps)
 
 
+def _lien(texte, langue):
+    """Facebook et Threads : l'adresse complète (cliquable) au lieu de « lien dans la bio » (qui ne vaut que pour Instagram)."""
+    url = "https://ccmtl.ca/en/" if langue == "en" else "https://ccmtl.ca"
+    texte = texte.replace(" (lien dans la bio)", "").replace(" (link in bio)", "")
+    i = texte.rfind("ccmtl.ca")
+    return texte[:i] + url + texte[i + 8:] if i >= 0 else texte + "\n" + url
+
+
 def main():
     if ETAPE == "apercu":
         return apercu()
@@ -704,8 +712,8 @@ def main():
         print(f"[{langue}] images : {len(jpgs)} ; textes : " + ", ".join(f"{k} {len(x)} car." for k, x in t.items()))
         travaux = (("bluesky", bluesky, ([(t["bluesky"], [(jpgs[i].read_bytes(), alts[i]) for i in condense])],)),
                    ("instagram", instagram, (t["instagram"], [urls[i] for i in complet], [alts[i] for i in complet])),
-                   ("threads", threads, (t["threads"], [urls[i] for i in condense], [alts[i] for i in condense])),
-                   ("facebook", facebook, (t["instagram"].split("\n\n#")[0], [urls[i] for i in complet], [alts[i] for i in complet])),
+                   ("threads", threads, (_lien(t["threads"], langue), [urls[i] for i in condense], [alts[i] for i in condense])),
+                   ("facebook", facebook, (_lien(t["instagram"].split("\n\n#")[0], langue), [urls[i] for i in complet], [alts[i] for i in complet])),
                    ("instagram_story", instagram_story, ([urls[i] for i in story],)),
                    ("facebook_story", facebook_story, ([urls[i] for i in story],)))
         for nom, fn, args in travaux:
