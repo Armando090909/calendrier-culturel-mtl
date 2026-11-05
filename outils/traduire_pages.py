@@ -21,6 +21,8 @@ COMMUNS = [
     ('<script src="app.js?', '<script src="../app.js?'),
     ('<img src="logo-ccmtl.webp" width="1040" height="704" alt="ccmtl : formes colorées, yeux et étoiles autour des lettres ccmtl">',
      '<img src="../logo-ccmtl.webp" width="1040" height="704" alt="ccmtl: colourful shapes, eyes and stars around the letters ccmtl">'),
+    ('<a class="v2-marque" href="index.html">Calendrier culturel<br><span>de Montréal</span></a>',
+     '<a class="v2-marque" href="index.html">Montréal\'s cultural<br><span>calendar</span></a>'),
     ('<a class="v2-marque" href="./">Calendrier culturel<br><span>de Montréal</span></a>',
      '<a class="v2-marque" href="./">Montréal\'s cultural<br><span>calendar</span></a>'),
     ('<meta property="og:site_name" content="Calendrier culturel montréalais">', '<meta property="og:site_name" content="Montreal\'s cultural calendar">'),

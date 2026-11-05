@@ -314,3 +314,20 @@ html.v2 .jtabs{display:none}
   html.v2 .board .col{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
   html.v2 .board .col.today{flex-basis:100%}
 }
+
+/* Pages secondaires (sources, salles, archives) au nouveau style */
+html.v2 .wrap>.hero .hero-txt{display:flex;flex-direction:column;gap:18px}
+html.v2 .hero-txt .v2-marque{order:-1}
+html.v2 h1{font-family:var(--f-body);font-weight:900;letter-spacing:-.05em;line-height:.95}
+html.v2 .hero-txt h1{font-size:clamp(44px,7.5vw,96px)}
+html.v2 h1 .hl{white-space:nowrap;border:.035em solid var(--ink);border-radius:999px;padding:0 .2em .06em;display:inline-block;line-height:.95}
+html.v2 h1 .hl::after{display:none}
+html.v2 .toplinks a{background:transparent;box-shadow:none;font-family:var(--f-body);font-weight:700}
+html.v2 .toplinks a:hover{transform:none;background:var(--ink);color:var(--bg)}
+html.v2 .toplinks a.go{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+html.v2 .label{font-family:var(--f-body);font-weight:900;font-size:14px;letter-spacing:.06em}
+html.v2 .sub,html.v2 .lead{font-family:var(--f-body)}
+html.v2 .srcitem{background:var(--surface);border-width:2px;border-radius:16px}
+html.v2 .srcitem .n{font-family:var(--f-body);background:var(--chip-off)}
+html.v2 .qhead{font-family:var(--f-body);font-weight:900;text-transform:none;font-size:18px}
+html.v2 .btn{font-family:var(--f-body)}

@@ -104,31 +104,32 @@ def entete_commun() -> str:
 
 
 CSS = """<style>
-.pg{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
-.pg-haut{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
-.pg-marque{font-family:var(--f-hand);color:var(--pop);font-size:20px;text-decoration:none}
-.pg-marque b{font-family:var(--f-body);background:var(--hl);color:var(--ink);padding:0 6px;border-radius:6px}
-.fiche{border:2px solid var(--ink);border-radius:var(--r);box-shadow:5px 5px 0 var(--shadow);background:var(--surface);
-  border-left:10px solid var(--c);padding:20px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px}
-.fiche h1{font-family:var(--f-display);font-weight:800;font-size:clamp(22px,3.4vw,32px);line-height:1.15;margin:0 0 8px}
-.fiche .quand{font-weight:800;font-size:17px;margin:0}
-.fiche .ou{margin:4px 0 0;color:var(--ink)}.fiche .ou span{color:var(--muted)}
-.fiche .disc{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--c)}
-.fiche .resume{margin:14px 0 0}
-.fiche .px{font-family:var(--f-hand);color:var(--pop);font-size:24px;display:inline-block;transform:rotate(-4deg);margin-top:12px}
-.fiche img{width:200px;max-height:280px;object-fit:cover;border-radius:10px;border:2px solid var(--ink)}
+.pg{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.pg-haut{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.fiche{background:var(--c);color:#000;border-radius:28px;padding:26px 28px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px}
+.fiche h1{font-weight:900;font-size:clamp(30px,5vw,54px);line-height:.95;letter-spacing:-.045em;margin:0 0 12px;overflow-wrap:normal}
+.fiche .quand{font-weight:900;font-size:19px;margin:0}
+.fiche .ou{margin:4px 0 0;font-weight:500}.fiche .ou span{opacity:.75}
+.fiche .disc{display:inline-block;margin-top:12px;font-size:13px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.fiche .resume{margin:14px 0 0;line-height:1.4}
+.fiche .px{display:inline-block;margin-top:12px;font-weight:900;font-size:17px;background:var(--bg);border:2px solid #000;border-radius:999px;padding:4px 14px}
+.fiche img{width:240px;max-height:340px;object-fit:cover;border-radius:18px}
 .boutons{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
-.boutons .btn{text-decoration:none;display:inline-flex;align-items:center}
-.liste{border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--surface)}
-.liste a{display:grid;grid-template-columns:70px minmax(0,1fr);gap:2px 12px;padding:10px 14px;border-left:6px solid var(--c);
-  text-decoration:none;color:var(--ink)}
-.liste a+a{border-top:1.5px solid var(--hair)}.liste a:hover{background:var(--paper)}
-.liste .h{font-family:var(--f-display);font-size:12px;font-weight:700;padding-top:3px}
-.liste .t{font-weight:800}.liste .m{grid-column:2;font-size:13px;color:var(--muted)}
+.boutons .btn{text-decoration:none;display:inline-flex;align-items:center;font-family:var(--f-body);font-weight:700;border:2px solid #000;
+  border-radius:999px;padding:9px 18px;box-shadow:none;background:#000;color:var(--bg)}
+.boutons .btn.ghost{background:transparent;color:#000}
+.boutons .btn.ghost:hover{background:#000;color:var(--bg)}
+.liste{display:flex;flex-direction:column;gap:8px}
+.liste a{display:grid;grid-template-columns:70px minmax(0,1fr);gap:2px 14px;padding:12px 16px;background:var(--c);border-radius:16px;
+  text-decoration:none;color:#000}
+.liste a:hover{outline:2px solid #000;outline-offset:-2px}
+.liste .h{font-size:18px;font-weight:900;font-variant-numeric:tabular-nums}
+.liste .t{font-weight:900;font-size:17px;line-height:1.15}.liste .m{grid-column:2;font-size:13px;font-weight:500}
 .nav-j{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .nav-j a{font-weight:700}
-h1.pg-t{font-family:var(--f-display);font-weight:800;font-size:clamp(22px,3.4vw,32px);margin:0}
-@media(max-width:640px){.fiche{grid-template-columns:minmax(0,1fr)}.fiche img{width:100%;max-height:none}
+h1.pg-t{font-weight:900;font-size:clamp(36px,6vw,64px);letter-spacing:-.05em;line-height:.95;margin:0}
+.licence{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.fiche{grid-template-columns:minmax(0,1fr);padding:22px}.fiche img{width:100%;max-height:none}
   .liste a{grid-template-columns:minmax(0,1fr)}.liste .m{grid-column:1}}
 </style>"""
 
@@ -150,7 +151,7 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
     fr, en = autre_langue(chemin)
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else ""
     return f"""<!doctype html>
-<html lang="{T('fr', 'en')}">
+<html lang="{T('fr', 'en')}" class="v2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -176,7 +177,7 @@ def page(titre: str, description: str, chemin: str, corps: str, image: str = "",
 </head>
 <body>
 <div class="pg">
-<div class="pg-haut"><a class="pg-marque" href="{T('/', '/en/')}">{T('calendrier culturel <b>mtl</b>', "montreal's cultural <b>calendar</b>")}</a>
+<div class="pg-haut"><a class="v2-marque" href="{T('/', '/en/')}">{T('Calendrier culturel<br><span>de Montréal</span>', "Montréal's cultural<br><span>calendar</span>")}</a>
 <p class="toplinks"><a href="{T('/', '/en/')}">{T('← Tout le calendrier', '← Full calendar')}</a> <a href="{T(en, fr)}" hreflang="{T('en', 'fr')}" lang="{T('en', 'fr')}">{T('English', 'Français')}</a></p></div>
 {corps}
 <p class="licence">© 2026 ccmtl.ca · <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.{T('fr', 'en')}" rel="license noopener" target="_blank">CC BY-NC 4.0</a> · <a href="mailto:info@ccmtl.ca">info@ccmtl.ca</a></p>
