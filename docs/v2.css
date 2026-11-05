@@ -177,3 +177,8 @@ html.v2 .row.v2row .rti,html.v2 .row.v2row .rl{align-self:stretch;text-align:lef
 @media (max-width:900px){html.v2 .chips{display:flex;flex-wrap:wrap}html.v2 .chip{width:auto;justify-content:flex-start}}
 html.v2 .festsem,html.v2 .festsem *:not(.fx){color:var(--ink)}
 html.v2 .colhead .ch-c{margin-left:auto}
+/* Logo illustré (nov. 2026), plus large que haut */
+@media (min-width:901px){html.v2 .hero{grid-template-columns:minmax(0,1fr) minmax(0,520px)}}
+html.v2 .v2-ill{max-width:520px}
+html.v2 .v2-ill img{display:block;width:100%;height:auto}
+@media (max-width:900px){html.v2 .v2-ill{max-width:340px}}
