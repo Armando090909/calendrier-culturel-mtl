@@ -170,7 +170,11 @@ function detailHTML(e){
   const carte=c&&CFG.cartes!==false?`<iframe class="carte" loading="lazy" title="${L("Carte : ","Map: ")}${esc(e.lieu)}" src="https://www.openstreetmap.org/export/embed.html?bbox=${(c.lon-.006).toFixed(4)}%2C${(c.lat-.0035).toFixed(4)}%2C${(c.lon+.006).toFixed(4)}%2C${(c.lat+.0035).toFixed(4)}&layer=mapnik&marker=${c.lat}%2C${c.lon}"></iframe>`:"";
   // Affiche : image fournie par la salle (formulaire), sinon l'image de promotion de la page officielle,
   // affichée depuis son site d'origine avec le crédit et le lien. Si elle ne charge pas, le cadre disparaît.
-  const aff=e.image?{url:e.image,credit:L("fournie par l'organisateur","provided by the organizer")}:(CFG.affiches!==false&&e.affiche)||null;
+  let aff=e.image?{url:e.image,credit:L("fournie par l'organisateur","provided by the organizer")}:(CFG.affiches!==false&&e.affiche)||null;
+  // Songkick : la vignette (« medium_avatar », environ 60 px) est remplacée par la grande version du même fichier ;
+  // si elle manque, la taille intermédiaire prend le relais (data-petit)
+  if(aff&&/images\.sk-static\.com\/.+\/(small|medium)_avatar$/.test(aff.url))
+    aff=Object.assign({},aff,{url:aff.url.replace(/(small|medium)_avatar$/,"huge_avatar"),petit:aff.url.replace(/(small|medium)_avatar$/,"large_avatar")});
   const img=aff?`<figure class="det-aff"><a href="${esc(aff.lien||e.url)}" target="_blank" rel="noopener"><img src="${esc(aff.url)}" alt="${L("Affiche : ","Poster: ")}${esc(e.titre)}" loading="lazy" referrerpolicy="no-referrer"${aff.petit?` data-petit="${esc(aff.petit)}"`:""} onerror="if(this.dataset.petit&&this.src!==this.dataset.petit){this.src=this.dataset.petit;return}const v=this.closest('.det-vis');this.closest('figure').remove();if(v&&!v.children.length)v.remove()"></a><figcaption>${aff.salle?L("Image de la salle : ","Venue image: "):L("Image : ","Image: ")}${esc(aff.credit||"")}</figcaption></figure>`:"";
   // L'affiche et la carte à droite, avec prix, billets et itinéraire juste dessous ; écouter et agenda sous le résumé.
   const actions=`<div class="actions">
