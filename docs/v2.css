@@ -297,3 +297,20 @@ html.v2 .ev.det:has(.tm.nh) h3.t{padding-right:0}
 @media (max-width:700px){html.v2 .vp-pill a{white-space:nowrap;font-size:13px;padding:11px 6px}}
 /* Titres : pas de coupure au milieu d'un mot (le site réduit plutôt la taille du titre) */
 html.v2 .ev.det h3.t{overflow-wrap:normal;word-break:normal;hyphens:manual}
+
+/* Téléphone : une journée à la fois, on glisse de gauche à droite ; onglets des jours au-dessus */
+html.v2 .jtabs{display:none}
+@media (max-width:700px){
+  html.v2 .jtabs{display:flex;gap:6px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;margin-bottom:6px;overflow-x:auto;scrollbar-width:none}
+  html.v2 .jtabs::-webkit-scrollbar{display:none}
+  html.v2 .jtab{flex:1 0 auto;min-width:44px;display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;font-family:var(--f-body);
+    background:transparent;color:var(--ink);border:2px solid var(--ink);border-radius:14px;padding:5px 6px;cursor:pointer}
+  html.v2 .jtab span{font-size:12px;font-weight:700}
+  html.v2 .jtab b{font-size:20px;font-weight:900;line-height:1.05}
+  html.v2 .jtab.on{background:var(--ink);color:var(--bg)}
+  html.v2 .board{display:flex;grid-template-columns:none;gap:14px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
+    align-items:flex-start;scrollbar-width:none;overscroll-behavior-x:contain;transition:height .2s}
+  html.v2 .board::-webkit-scrollbar{display:none}
+  html.v2 .board .col{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
+  html.v2 .board .col.today{flex-basis:100%}
+}
