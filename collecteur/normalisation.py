@@ -8,7 +8,7 @@ from collections import Counter
 from urllib.parse import urlparse
 import unicodedata
 
-DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "jeune", "expo", "autre"]
+DISCIPLINES = ["theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "social", "jeune", "expo", "autre"]
 
 
 # Lettres que la décomposition Unicode ne ramène pas à l'ASCII (Eivør → eivor, Œuvre → oeuvre…)
@@ -46,6 +46,9 @@ NON_CULTUREL = [
 
 REGLES = [
     ("quiz", ["quiz", "trivia", "jeu questionnaire", "pub quiz", "soiree quiz", "quizz"]),
+    ("social", ["speed friending", "speed dating", "soiree rencontre", "rencontres amicales", "se faire des amis",
+                "make new friends", "echange linguistique", "tandem linguistique", "language exchange", "social club",
+                "together club", "soiree celibataires", "singles night", "meetup social"]),
     ("expo", ["vernissage", "finissage", "visite commentee", "visite guidee de l exposition"]),
     ("atelier", ["atelier", "ateliers", "initiation", "fabrication", "creation textile", "tricot", "couture", "broderie",
                  "perlage", "linogravure", "coloriage", "collage", "club d art", "club de laine", "machine a coudre",

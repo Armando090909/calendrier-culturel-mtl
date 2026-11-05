@@ -44,7 +44,7 @@ SEULEMENT = [x.strip() for x in os.environ.get("SEULEMENT", "").split(",") if x.
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 NOMS = {"theatre": "théâtre", "musique": "musique", "danse": "danse", "cirque": "cirque", "humour": "humour",
         "cinema": "cinéma", "poesie": "poésie et slam", "lettres": "littérature", "conference": "conférences",
-        "jeune": "jeune public", "atelier": "ateliers", "fete": "fêtes", "quiz": "quiz", "expo": "vernissages"}
+        "jeune": "jeune public", "atelier": "ateliers", "fete": "fêtes", "quiz": "quiz", "social": "rencontres", "expo": "vernissages"}
 
 
 def textes(c, expos, total, debut, fin):

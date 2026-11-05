@@ -443,7 +443,7 @@ def main() -> int:
             continue  # Sors-tu? couvre tout le Québec et le Canada : sans salle, impossible de savoir si c'est à Montréal
         if b["discipline"] == "jeune":
             b["jeune_public"], b["discipline"] = True, ""
-        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "expo"} \
+        disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "social", "expo"} \
             else classer(b["titre"], b["categorie"], description=b.get("description", ""), defaut=b["discipline"])
         heure = b["heure"] if b["heure"] and re.fullmatch(r"\d{2}:\d{2}", b["heure"]) else None
         if "festapp.io" in (b["url"] or ""):

@@ -23,13 +23,13 @@ DOCS = Path(__file__).resolve().parent.parent / "docs"
 MTL = ZoneInfo("America/Toronto")
 DISC = {"theatre": "Théâtre", "musique": "Musique", "danse": "Danse", "cirque": "Cirque", "humour": "Humour et cabaret",
         "cinema": "Cinéma", "poesie": "Poésie, slam et rap battle", "lettres": "Littérature", "conference": "Conférences",
-        "jeune": "Jeune public", "atelier": "Ateliers", "fete": "Fêtes et célébrations", "quiz": "Quiz", "expo": "Vernissages",
+        "jeune": "Jeune public", "atelier": "Ateliers", "fete": "Fêtes et célébrations", "quiz": "Quiz", "social": "Rencontres sociales", "expo": "Vernissages",
         "autre": "Autre"}
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 DISC_EN = {"theatre": "Theatre", "musique": "Music", "danse": "Dance", "cirque": "Circus", "humour": "Comedy & cabaret",
            "cinema": "Film", "poesie": "Poetry, slam & rap battles", "lettres": "Literature", "conference": "Talks",
-           "jeune": "Kids & family", "atelier": "Workshops", "fete": "Parties & celebrations", "quiz": "Quiz nights",
+           "jeune": "Kids & family", "atelier": "Workshops", "fete": "Parties & celebrations", "quiz": "Quiz nights", "social": "Social & meetups",
            "expo": "Openings", "autre": "Other"}
 JOURS_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 MOIS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]

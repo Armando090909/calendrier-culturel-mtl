@@ -21,7 +21,7 @@ DISC = [("theatre", "Théâtre", "#e4002b"), ("musique", "Musique", "#1b73d9"), 
         ("cirque", "Cirque", "#f7c300"), ("humour", "Humour", "#f47b20"), ("cinema", "Cinéma", "#00a651"),
         ("poesie", "Poésie et slam", "#d6336c"), ("lettres", "Littérature", "#8a4fbf"), ("conference", "Conférences", "#343a40"),
         ("jeune", "Jeune public", "#00a99d"), ("atelier", "Ateliers", "#8d6e63"), ("fete", "Fêtes", "#a61e4d"),
-        ("quiz", "Quiz", "#0b7285"), ("expo", "Vernissages", "#e8a317")]
+        ("quiz", "Quiz", "#0b7285"), ("social", "Rencontres", "#9c6644"), ("expo", "Vernissages", "#e8a317")]
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juill.", "août", "sept.", "oct.", "nov.", "déc."]
 

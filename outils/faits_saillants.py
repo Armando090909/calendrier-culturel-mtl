@@ -30,12 +30,12 @@ PRINCIPALES = ["musique", "theatre", "humour", "danse", "cinema"]
 TOURNANTES = ["poesie", "lettres", "cirque", "conference", "jeune"]
 NOMS = {"theatre": "Théâtre", "musique": "Musique", "danse": "Danse", "cirque": "Cirque", "humour": "Humour",
         "cinema": "Cinéma", "poesie": "Poésie et slam", "lettres": "Littérature", "conference": "Conférence",
-        "jeune": "Jeune public", "atelier": "Atelier", "fete": "Fête", "quiz": "Quiz", "expo": "Vernissage"}
+        "jeune": "Jeune public", "atelier": "Atelier", "fete": "Fête", "quiz": "Quiz", "social": "Rencontre", "expo": "Vernissage"}
 EMOJI = {"theatre": "🎭", "musique": "🎶", "danse": "💃", "cirque": "🎪", "humour": "😂", "cinema": "🎬", "poesie": "✒️",
          "lettres": "📚", "conference": "🎙️", "jeune": "🧸"}
 NOMS_EN = {"theatre": "Theatre", "musique": "Music", "danse": "Dance", "cirque": "Circus", "humour": "Comedy",
            "cinema": "Film", "poesie": "Poetry & slam", "lettres": "Literature", "conference": "Talk",
-           "jeune": "Kids & family", "atelier": "Workshop", "fete": "Party", "quiz": "Quiz", "expo": "Opening"}
+           "jeune": "Kids & family", "atelier": "Workshop", "fete": "Party", "quiz": "Quiz", "social": "Social", "expo": "Opening"}
 JOURS_EN = ["Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."]
 MOIS_EN = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."]
 LANGUE = "fr"  # « fr » ou « en » : langue des visuels et des textes (les titres, salles et noms restent tels quels)
