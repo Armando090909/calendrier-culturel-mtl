@@ -432,38 +432,56 @@ NAV_AUTO = ("zeffy.com",)  # plateformes toujours en JavaScript : navigateur d'o
 _NAV = {}  # navigateur partagé par toutes les pages d'une collecte
 
 
-def page_rendue(url: str, attente_ms: int = 2500) -> str:
+def _demarrer_navigateur() -> None:
+    from playwright.sync_api import sync_playwright  # importé seulement si une source en a besoin
+    _NAV["pw"] = sync_playwright().start()
+    # --disable-dev-shm-usage : dans les conteneurs (GitHub Actions), la mémoire partagée est petite et Chrome
+    # « plante » au bout de quelques pages lourdes (5 nov. 2026 : 20 sources perdues d'un coup)
+    _NAV["nav"] = _NAV["pw"].chromium.launch(args=["--disable-dev-shm-usage", "--disable-gpu"])
+    ctx = _NAV["nav"].new_context(user_agent=UA, locale="fr-CA", viewport={"width": 1280, "height": 2000})
+    ctx.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
+    _NAV["ctx"] = ctx
+    atexit.register(fermer_navigateur)
+
+
+def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
     """HTML d'une page après exécution de son JavaScript, dans Chrome sans fenêtre (Playwright).
-    Le même nom de robot que pour les autres téléchargements. Les images, polices et vidéos ne sont pas chargées."""
-    if "page" not in _NAV:
-        from playwright.sync_api import sync_playwright  # importé seulement si une source en a besoin
-        _NAV["pw"] = sync_playwright().start()
-        _NAV["nav"] = _NAV["pw"].chromium.launch()
-        ctx = _NAV["nav"].new_context(user_agent=UA, locale="fr-CA", viewport={"width": 1280, "height": 2000})
-        ctx.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
-        _NAV["page"] = ctx.new_page()
-        atexit.register(fermer_navigateur)
-    page = _NAV["page"]
-    rep = page.goto(url, wait_until="domcontentloaded", timeout=45000)
-    if rep is not None and rep.status >= 400:
-        raise RuntimeError(f"{rep.status} {rep.status_text} (navigateur)")
+    Le même nom de robot que pour les autres téléchargements. Les images, polices et vidéos ne sont pas chargées.
+    Un onglet neuf par page ; si Chrome plante, il est relancé et la page réessayée une fois."""
+    if "ctx" not in _NAV:
+        _demarrer_navigateur()
+    page = _NAV["ctx"].new_page()
     try:
-        page.wait_for_load_state("networkidle", timeout=15000)
-    except Exception:
-        pass  # certains sites ne se calment jamais (publicité, sondages) : on lit quand même
-    for _ in range(3):  # listes chargées au défilement
-        page.mouse.wheel(0, 4000)
-        page.wait_for_timeout(500)
-    page.wait_for_timeout(attente_ms)
-    html = page.content()
-    # Beaucoup de sites (Wix, Squarespace, billetteries intégrées) affichent leur calendrier dans un cadre (iframe) :
-    # on ajoute le contenu de chaque cadre à la page.
-    for cadre in page.frames[1:]:
+        rep = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        if rep is not None and rep.status >= 400:
+            raise RuntimeError(f"{rep.status} {rep.status_text} (navigateur)")
         try:
-            html += "\n<section data-cadre>" + cadre.content() + "</section>"
+            page.wait_for_load_state("networkidle", timeout=15000)
+        except Exception:
+            pass  # certains sites ne se calment jamais (publicité, sondages) : on lit quand même
+        for _ in range(3):  # listes chargées au défilement
+            page.mouse.wheel(0, 4000)
+            page.wait_for_timeout(500)
+        page.wait_for_timeout(attente_ms)
+        html = page.content()
+        # Beaucoup de sites (Wix, Squarespace, billetteries intégrées) affichent leur calendrier dans un cadre (iframe) :
+        # on ajoute le contenu de chaque cadre à la page.
+        for cadre in page.frames[1:]:
+            try:
+                html += "\n<section data-cadre>" + cadre.content() + "</section>"
+            except Exception:
+                pass
+        return html
+    except Exception as exc:
+        if _essai == 0 and re.search(r"(?i)crash|closed|disconnected|Target", str(exc)):
+            fermer_navigateur()  # Chrome a planté : on le relance, et on réessaie cette page une fois
+            return page_rendue(url, attente_ms, _essai=1)
+        raise
+    finally:
+        try:
+            page.close()
         except Exception:
             pass
-    return html
 
 
 def fermer_navigateur() -> None:
