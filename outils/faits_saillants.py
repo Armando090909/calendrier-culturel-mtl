@@ -378,10 +378,34 @@ h1{margin:0;font-size:170px;line-height:.92;font-weight:900;letter-spacing:-.055
 {pied(T("glisse →", "swipe →"))}""", css)
 
 
-def slide_pick(p, n, tot):
-    e, k = p["e"], p["k"]
+HOTES_SANS_AFFICHE = ("sorstu.ca",)  # sites qui refusent qu'on reprenne leurs images
+
+
+def _og_image(page):
+    """Image de partage (og:image) d'une page officielle ; "" si introuvable."""
+    try:
+        import requests
+        r = requests.get(page, timeout=20, headers={"User-Agent": "CalendrierCulturelMTL (ccmtl.ca)"})
+        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', r.text) \
+            or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', r.text)
+        return m.group(1) if m else ""
+    except Exception:
+        return ""
+
+
+def _affiche(e):
     aff = e.get("affiche") or {}
     img, credit = aff.get("url") or "", aff.get("credit") or ""
+    if any(h in img for h in HOTES_SANS_AFFICHE):
+        img = credit = ""
+    if not img and aff.get("og"):
+        img, credit = _og_image(aff["og"]), aff.get("credit") or ""
+    return img, (credit if img else "")
+
+
+def slide_pick(p, n, tot):
+    e, k = p["e"], p["k"]
+    img, credit = _affiche(e)
     accroche = p.get("accroche_en", "") if LANGUE == "en" else p["accroche"]
     tt = _taille_titre(e["titre"])
     css = f"""
