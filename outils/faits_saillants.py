@@ -264,9 +264,9 @@ def choisir(data, debut, etat):
 # ---------------------------------------------------------------- Visuels (style v2 du site : crème, noir, Figtree, couleurs pastel)
 import base64 as _b64
 
-COUL2 = {"theatre": "#F2837B", "musique": "#3A75F0", "danse": "#8EC1F2", "humour": "#EE7F45", "cinema": "#B1D8B8",
-         "jeune": "#FBBA16", "poesie": "#B9A3E3", "lettres": "#9BCCD0", "quiz": "#1FA3A3", "social": "#C49A6C",
-         "fete": "#E04F9C", "conference": "#2DAA55", "atelier": "#B8B23A", "expo": "#F6E08A", "cirque": "#F2A65A"}
+COUL2 = {"theatre": "#E22028", "musique": "#3A75F0", "danse": "#9DCCD1", "humour": "#E04E25", "cinema": "#2DAA55",
+         "jeune": "#FBBA16", "poesie": "#B8A5E3", "lettres": "#E2B2B4", "quiz": "#8FA3B5", "social": "#C49A6C",
+         "fete": "#E04F9C", "conference": "#1FA3A3", "atelier": "#B8B23A", "expo": "#F6E08A", "cirque": "#F2A65A"}
 AUTRE = "#CFC8BA"
 _ANCIENNES = {c.lower(): COUL2.get(k, AUTRE) for k, _, c in v.DISC}  # sélections enregistrées avec l'ancienne palette
 
