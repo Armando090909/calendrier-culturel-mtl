@@ -44,3 +44,15 @@ class Salles(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestSallesHomonymes(unittest.TestCase):
+    """5 nov. 2026 : les spectacles du Théâtre Plaza étaient rangés à l'Ausgang Plaza (même mot « Plaza »)."""
+
+    def test_theatre_plaza_distinct_d_ausgang(self):
+        import json
+        from pathlib import Path
+        from normalisation import Lieux
+        lieux = Lieux(json.loads((Path(__file__).parent.parent / "lieux.json").read_text(encoding="utf-8")))
+        self.assertEqual(lieux.trouver("Théâtre Plaza"), "Théâtre Plaza")
+        self.assertEqual(lieux.trouver("Ausgang Plaza"), "Ausgang Plaza")
