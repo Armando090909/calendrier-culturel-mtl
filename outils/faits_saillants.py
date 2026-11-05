@@ -672,7 +672,12 @@ def reel(images, sortie):
     total = sum(durees) + fondu
     sortie = Path(sortie)
     sortie.parent.mkdir(parents=True, exist_ok=True)
-    cmd = (["ffmpeg", "-y", "-loglevel", "error"] + entrees
+    import shutil
+    exe = shutil.which("ffmpeg")
+    if not exe:  # sur GitHub : ffmpeg fourni par le paquet imageio-ffmpeg (pip), plus rapide qu'apt
+        import imageio_ffmpeg
+        exe = imageio_ffmpeg.get_ffmpeg_exe()
+    cmd = ([exe, "-y", "-loglevel", "error"] + entrees
            + ["-f", "lavfi", "-t", f"{total:.2f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
               "-filter_complex", ";".join(filtres), "-map", f"[{dernier}]", "-map", f"{len(images)}:a",
               "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
