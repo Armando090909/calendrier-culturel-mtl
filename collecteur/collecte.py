@@ -199,7 +199,8 @@ def liens_billets(html: str, page: str) -> list[str]:
     for a in BeautifulSoup(html or "", "html.parser").find_all("a", href=True):
         texte = a.get_text(" ", strip=True).lower()
         href = urljoin(page, a["href"])
-        if not href.startswith("http") or "facebook.com" in href or "mailto:" in href:
+        if not href.startswith("http") or "facebook.com" in href or "mailto:" in href \
+                or re.search(r"(?i)mon-compte|my-account|/compte|account|login|connexion|panier|cart|abonn|subscri|carte-cadeau|gift", href):
             continue
         if re.search(r"billet|ticket|r[ée]serv|achet|acheter|buy", texte + " " + href.lower()) and href not in out:
             out.append(href)
