@@ -554,8 +554,11 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             html = page_rendue(url) if avec_nav else telecharger(url, "text/html").text
         except Exception as exc:
             # Refus des serveurs de GitHub (403) : la page lue depuis l'ordinateur à Montréal, si elle est récente
-            html = page_mac(url) if "403" in str(exc) else None
-            if "403" in str(exc):
+            # Refus (403) ou connexion coupée depuis les serveurs de GitHub (certains sites filtrent les centres de
+            # données) : la page lue par le Pi à Montréal, s'il l'a déjà lue ; sinon elle est mise sur sa liste
+            refus = "403" in str(exc) or re.search(r"Connection(Error|Pool| aborted| reset)|timed out|Max retries", str(exc))
+            html = page_mac(url) if refus else None
+            if refus:
                 BLOQUEES.add(url)
             if html is None:
                 print(f"  page illisible {url} : {exc}")
