@@ -80,6 +80,11 @@
   "lon": -73.58881,
   "quartier": "Le Sud-Ouest"
  },
+ "Basement of St Denis Church": {
+  "lat": 45.54186,
+  "lon": -73.6242,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Basilique Notre-Dame": {
   "alias": [],
   "lat": 45.50444,
@@ -297,6 +302,7 @@
   "lon": -73.5823,
   "quartier": "Saint-Henri"
  },
+ "Brass Door": null,
  "Brasserie Beaubien": {
   "alias": [],
   "lat": 45.53121,
@@ -512,6 +518,7 @@
   "lon": -73.5946,
   "quartier": "Mile End"
  },
+ "Cinéma Public": null,
  "Cinéma du Musée": {
   "lat": 45.4985,
   "lon": -73.5795,
@@ -541,6 +548,7 @@
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Cénotaphe, près de l'hôtel de ville de Westmount": null,
  "DARE-DARE": null,
  "DATCHA": null,
  "Dazibao": {
@@ -627,8 +635,14 @@
   "lon": -73.59924,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Espace le vrai monde?": {
+  "lat": 45.55209,
+  "lon": -73.64398,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Espace transmission": null,
  "Esplanade Tranquille": null,
+ "Estrella": null,
  "Exhibit A": {
   "lat": 45.472,
   "lon": -73.588,
@@ -860,8 +874,18 @@
  "LB-145 et en ligne via Zoom, Concordia": null,
  "LB-2, J.W. McConnell Building": null,
  "La Boîte à Bleuets": null,
+ "La Brassée": {
+  "lat": 45.5492,
+  "lon": -73.59117,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "La Cale - Pub Zéro Déchets": null,
  "La Cale - pub zéro déchet": null,
+ "La Chapelle Saint-Louis": {
+  "lat": 45.52128,
+  "lon": -73.57992,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "La Chapelle Scènes contemporaines": {
   "alias": [
    "La Chapelle",
@@ -884,7 +908,12 @@
   "lon": -73.577,
   "quartier": "Plateau"
  },
- "La Livrerie": null,
+ "La Livrerie": {
+  "alias": [],
+  "lat": 45.52214,
+  "lon": -73.56192,
+  "quartier": "Ville-Marie"
+ },
  "La Lumière Collective": {
   "lat": 45.532,
   "lon": -73.6215,
@@ -951,13 +980,19 @@
   "quartier": "Village"
  },
  "Le Palace": null,
- "Le Red Room": null,
+ "Le Red Room": {
+  "alias": [],
+  "lat": 45.51632,
+  "lon": -73.56588,
+  "quartier": "Ville-Marie"
+ },
  "Le Ritz": {
   "alias": [],
   "lat": 45.53273,
   "lon": -73.62036,
   "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
+ "Le Saint-Jean Comédie Club": null,
  "Le Studio TD": {
   "alias": [
    "Studio TD"
@@ -984,6 +1019,16 @@
   "lat": 45.55016,
   "lon": -73.57346,
   "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "Librairie Drawn & Quarterly": {
+  "lat": 45.52506,
+  "lon": -73.60406,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Librairie Zone Libre": {
+  "lat": 45.51232,
+  "lon": -73.56149,
+  "quartier": "Ville-Marie"
  },
  "Livart": {
   "lat": 45.521,
@@ -1027,10 +1072,20 @@
   "lon": -73.49,
   "quartier": "Pointe-aux-Trembles"
  },
+ "Maison Brignon-Dit-Lapierre": {
+  "lat": 45.59957,
+  "lon": -73.64346,
+  "quartier": "Montréal-Nord"
+ },
  "Maison Nivard-De Saint-Dizier": {
   "lat": 45.444,
   "lon": -73.58,
   "quartier": "Verdun"
+ },
+ "Maison Robert-Bélanger": {
+  "lat": 45.50353,
+  "lon": -73.72939,
+  "quartier": "Saint-Laurent"
  },
  "Maison Théâtre": {
   "lat": 45.5145,
@@ -1041,6 +1096,11 @@
   "lat": 45.605,
   "lon": -73.62,
   "quartier": "Montréal-Nord"
+ },
+ "Maison d'Haïti": {
+  "lat": 45.57073,
+  "lon": -73.62373,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
  "Maison de la culture Ahuntsic": {
   "lat": 45.551,
@@ -1129,6 +1189,11 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "McKibbin's": {
+  "lat": 45.4676,
+  "lon": -73.82602,
+  "quartier": ""
+ },
  "Meadowvale Theatre": null,
  "Microbrasserie 4 Origines": {
   "lat": 45.47803,
@@ -1161,6 +1226,7 @@
   "quartier": "Centre-ville"
  },
  "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
+ "N'était-ce pas l'été": null,
  "NINI Salon à Cocktails": null,
  "New City Gas": {
   "lat": 45.492,
@@ -1201,6 +1267,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Office national du film - Salle Alanis-Obomsawin": null,
  "Oratoire Saint-Joseph": {
   "lat": 45.4925,
   "lon": -73.6178,
@@ -1261,6 +1328,11 @@
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
+ "Parc Outremont": {
+  "lat": 45.52059,
+  "lon": -73.60365,
+  "quartier": "Outremont"
+ },
  "Parc Saint-Joseph": {
   "lat": 45.66133,
   "lon": -73.56075,
@@ -1460,6 +1532,11 @@
   "lon": -73.558,
   "quartier": "Village"
  },
+ "Studio 303": {
+  "lat": 45.5058,
+  "lon": -73.56693,
+  "quartier": "Ville-Marie"
+ },
  "Studio St-Denis": {
   "lat": 45.515,
   "lon": -73.562,
@@ -1495,6 +1572,11 @@
  "The Arena at Pickering Casino Resort": null,
  "The Axis Club": null,
  "The Church of St John the Evangelist": null,
+ "The Comedy Nest": {
+  "lat": 45.49027,
+  "lon": -73.58511,
+  "quartier": "Ville-Marie"
+ },
  "The Danforth Music Hall": null,
  "The Fox Cabaret": null,
  "The Great Hall": null,
@@ -1699,6 +1781,11 @@
   "quartier": "Quartier des spectacles"
  },
  "Vaste et Vague": null,
+ "Victoria Hall": {
+  "lat": 45.48097,
+  "lon": -73.60019,
+  "quartier": ""
+ },
  "Vogue Theatre": null,
  "Wiggle Room": {
   "lat": 45.51608,

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-08-stand-up-comedy-at-brass-door-005e35@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261108T200000
+DTEND;TZID=America/Toronto:20261108T220000
+SUMMARY:Stand-Up Comedy at Brass Door
+LOCATION:Brass Door\, Montréal
+URL:https://mtlcomedyclub.com/
+DESCRIPTION:Soirée de stand-up en anglais avec des humoristes de Montréal
+ \, précédée d'un repas et de boissons.\nPrix : 12\,50 à 17\,50 $\nDét
+ ails : https://admitone.com/events/montreal/community/comedy/english-stand
+ -up-comedy-show-sunday-8pm-at-the-montreal-comedy-club/ZKZ5LJ\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

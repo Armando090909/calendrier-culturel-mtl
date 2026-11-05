@@ -1,30 +1,36 @@
 {
  "date": "2026-11-05",
  "statut": "publié",
- "evenements": 2431,
- "expositions": 220,
+ "evenements": 2479,
+ "expositions": 226,
  "nouvelles_salles": [
-  "Arprim",
-  "Atelier Circulaire",
-  "Centre Bang",
-  "Centre CLARK",
-  "Double's",
-  "Galerie B-312",
-  "Garage à Simon",
-  "Multiples salles",
-  "OPTICA, centre d'art contemporain",
-  "Théâtre Le Patriote",
-  "festival triste 2026"
+  "Basement of St Denis Church",
+  "Brass Door",
+  "Cinéma Public",
+  "Cénotaphe, près de l'hôtel de ville de Westmount",
+  "Espace le vrai monde?",
+  "Estrella",
+  "La Brassée",
+  "La Chapelle Saint-Louis",
+  "Le Saint-Jean Comédie Club",
+  "Librairie Drawn & Quarterly",
+  "Librairie Zone Libre",
+  "Maison Brignon-Dit-Lapierre",
+  "Maison Robert-Bélanger",
+  "Maison d'Haïti",
+  "McKibbin's",
+  "N'était-ce pas l'été",
+  "Office national du film - Salle Alanis-Obomsawin",
+  "Parc Outremont",
+  "Studio 303",
+  "The Comedy Nest",
+  "Victoria Hall"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 11,
-   "erreurs": 11,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/carnet-04-mon-empreinte-sur-le-recyclage-avec-domini",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/cine-club-caserne-45-116274",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/cineclub-passerelles-interculturelles-les-tortues-ne"
-   ],
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
    "completees_par_mac": 860,
    "heures_trouvees": 859,
    "salles_trouvees": 845
@@ -55,8 +61,11 @@
   "redites_retirees": [
    "2026-11-05 : « Laura Anglade et l'Orchestre de jazz des diplômé(e » (Lieu à confirmer) = « Faculté de Musique de l'UdeM : Laura Anglade et l' » (Salle Claude-Champagne)",
    "2026-11-05 : « Festival du monde Arabe : L'Écho des mondes » (Centre Pierre-Peladeau) = « L'Écho des mondes » (Salle Pierre-Mercure)",
-   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling – In The Feeling » (Théâtre Beanfield)",
+   "2026-11-05 : « MICO » (MTELUS) = « MICO » (Théâtre Beanfield)",
+   "2026-11-05 : « Owen Riegling » (Théâtre Fairmount) = « Owen Riegling » (Théâtre Beanfield)",
+   "2026-11-06 : « Jacker un pickup en poésie (Alphonse Bisaillon) » (Café Campus) = « Jacker un pickup en poésie » (Café Campus)",
    "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
+   "2026-11-07 : « Guy Nantel à la Salle Pierre-Mercure » (Centre Pierre-Peladeau) = « Guy Nantel » (Salle Pierre-Mercure)",
    "2026-11-07 : « Coup de cœur francophone : Tempête Solaire et LePa » (Quai des Brumes) = « Tempête Solaire » (L’esco)",
    "2026-11-08 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-08 : « Nina Kraviz @ Le Studio TD » (Le Studio TD) = « Nina Kraviz » (L'Olympia)",
@@ -64,9 +73,13 @@
    "2026-11-10 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
    "2026-11-11 : « Coline Rio + Andrea Cormier » (Cabaret Lion d'Or) = « Andrea Cormier » (Cabaret Lion d'Or)",
    "2026-11-11 : « Plus doux moins de sang (Mon Doux Saigneur) » (Gesù) = « Plus doux moins de sang » (Gesù)",
+   "2026-11-14 : « Boucar Diouf à la Maison Théâtre de Montréal » (Maison Théâtre) = « Boucar Diouf » (Théâtre Desjardins)",
    "2026-11-14 : « Mary In The Junkyard @ Café Campus » (Café Campus) = « Mary In The Junkyard » (Petit Campus)",
    "2026-11-18 : « Cosmic Dog Fog » (Club Soda) = « Mario2 & Cosmic Dog Fog WLS » (La Sotterenea)",
+   "2026-11-19 : « Les Shirley » (Club Soda) = « Lisa LeBlanc, Les Shirley & dead ex girlfriends » (Théâtre Plaza)",
+   "2026-11-19 : « dead ex girlfriends » (Club Soda) = « Lisa LeBlanc, Les Shirley & dead ex girlfriends » (Théâtre Plaza)",
    "2026-11-19 : « Mzrabelle » (Club Soda) = « Mzrabelle, XLOWW & Vago » (Le Belmont)",
+   "2026-11-20 : « Nuit de la poésie augmentée » (Satosphère) = « Nuit de la poésie augmentée » (non indiqué)",
    "2026-11-21 : « Célébration : le meilleur party dansant Motown, Po » (Le Balcon) = « Célébration! » (Wiggle Room)",
    "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval @ MTELUS » (MTELUS)",
    "2026-11-28 : « Off-Bach : Bach en quatre villes » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach en quatre villes » (Clavier)",
@@ -80,109 +93,61 @@
   ],
   "catalogues": [
    {
-    "nom": "Mario2",
+    "nom": "Geneviève Neuville",
     "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "George Serafini"
+   },
+   {
+    "nom": "Seins Sucrer",
+    "deezer": {
+     "ok": false,
+     "pour": [],
      "contre": []
     },
     "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
+     "ok": false,
+     "pour": [],
      "contre": []
+    }
+   },
+   {
+    "nom": "Jon Wait",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre rock ≠ electro"
+     ]
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre rock ≠ electro"
+     ]
     },
     "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album optical judas)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Born At Midnite",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "maison de disques : arbutus",
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (pop/rock)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "maison de disques : arbutus",
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "maison de disques : arbutus"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Museums",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm cite l'album : can we meet in the middle"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Shirehead",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Moses Belanger",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
      "ok": false,
      "pour": [],
      "contre": []
     }
    },
    {
-    "nom": "Arthur L'aventurier",
+    "nom": "Tea Party",
     "deezer": {
      "ok": false,
      "pour": [],
      "contre": []
-    },
+    }
+   },
+   {
+    "nom": "Zoltrak",
     "apple": {
      "ok": false,
      "pour": [],
@@ -195,16 +160,81 @@
     }
    },
    {
-    "nom": "Paradise",
+    "nom": "Atomic Mummus"
+   },
+   {
+    "nom": "Kerosene Dubz"
+   },
+   {
+    "nom": "Kymøraa"
+   },
+   {
+    "nom": "Technocid"
+   },
+   {
+    "nom": "N0vatek"
+   },
+   {
+    "nom": "Ponsif",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : electro"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : electro"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album acid aniline)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "IVAN DECKER",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
     "tidal": {
      "ok": false,
      "pour": [],
      "contre": []
     }
+   },
+   {
+    "nom": "MASOOD BOOMGAARD",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "LeCypherX"
+   },
+   {
+    "nom": "AVY DUBZ"
    }
-  ],
-  "reparations": [
-   "non réparée : Théâtre Prospero (8 pages essayées)"
   ]
  },
  "alerte": null,
@@ -226,7 +256,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 210,
+   "evenements": 189,
    "series": 0,
    "erreur": null
   },
@@ -236,8 +266,8 @@
    "series": 5,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 9611 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=4",
-    "aucun événement trouvé dans 9611 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=5"
+    "aucun événement trouvé dans 9597 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=4",
+    "aucun événement trouvé dans 9597 caractères de texte : https://www.songkick.com/metro-areas/27377-canada-montreal/december-2026?page=5"
    ]
   },
   {
@@ -371,8 +401,8 @@
   },
   {
    "source": "Place des Arts",
-   "evenements": 36,
-   "series": 14,
+   "evenements": 42,
+   "series": 15,
    "erreur": null
   },
   {
@@ -422,13 +452,13 @@
   },
   {
    "source": "Spectaculos (humour, 6 pages)",
-   "evenements": 23,
+   "evenements": 29,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 8014 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=3",
-    "aucun événement trouvé dans 8011 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=4",
-    "aucun événement trouvé dans 8078 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=5"
+    "aucun événement trouvé dans 8048 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=3",
+    "aucun événement trouvé dans 8010 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=4",
+    "aucun événement trouvé dans 8149 caractères de texte : https://spectaculos.ca/fr/categorie/humour/montreal?page=5"
    ]
   },
   {
@@ -456,7 +486,7 @@
    "erreur": null,
    "diagnostic": [
     "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://centredesmusiciensdumon) : https://centredesmusiciensdumonde.com/",
-    "page illisible : données du 2026-11-02 conservées"
+    "page illisible : données du 2026-11-05 conservées"
    ]
   },
   {
@@ -465,6 +495,375 @@
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-03"
+  },
+  {
+   "source": "Cinéma L'Amour (ma.to)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2027 caractères de texte : https://ma.to/venue/cinemalamour"
+   ]
+  },
+  {
+   "source": "Théâtre Plaza",
+   "evenements": 12,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "The Comedy Nest",
+   "evenements": 11,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Comedyville",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.comedyville.ca/\", w) : https://www.comedyville.ca/"
+   ]
+  },
+  {
+   "source": "Cinéma Public",
+   "evenements": 0,
+   "series": 1,
+   "erreur": null
+  },
+  {
+   "source": "L'Illusion, Théâtre de marionnettes",
+   "evenements": 0,
+   "series": 2,
+   "erreur": null
+  },
+  {
+   "source": "Studio 303",
+   "evenements": 3,
+   "series": 5,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre de la LNI",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3590 caractères de texte : https://www.lni.ca/"
+   ]
+  },
+  {
+   "source": "Bistro à Jojo",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.bistroajojo.com/\", ) : https://www.bistroajojo.com/"
+   ]
+  },
+  {
+   "source": "Tortue Berlue (théâtre jeune public)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3772 caractères de texte : https://www.tortueberlue.com/"
+   ]
+  },
+  {
+   "source": "Librairie L'Euguélionne",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.librairieleuguelion) : https://www.librairieleuguelionne.com/"
+   ]
+  },
+  {
+   "source": "Librairie Drawn & Quarterly (événements)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://mtl.drawnandquarterly.c) : https://mtl.drawnandquarterly.com/events"
+   ]
+  },
+  {
+   "source": "Le Bordel Comédie Club",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 5727 caractères de texte : https://www.lebordel.ca/"
+   ]
+  },
+  {
+   "source": "La Cabine Comédie Club",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 2948 caractères de texte : https://lacabinecomedie.ca/"
+   ]
+  },
+  {
+   "source": "Montreal Comedy Club",
+   "evenements": 14,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Cenne",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.lacenne.com/\", wait) : https://www.lacenne.com/"
+   ]
+  },
+  {
+   "source": "Diese Onze",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='www.dieseonze.com', port=443): Max retries exceeded wi) : https://www.dieseonze.com/"
+   ]
+  },
+  {
+   "source": "Modavie (musique live)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://modavie.com/en/live-music/"
+   ]
+  },
+  {
+   "source": "Le Système (RA)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://ra.co/clubs/201918\", wa) : https://ra.co/clubs/201918"
+   ]
+  },
+  {
+   "source": "Bain Mathieu",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1351 caractères de texte : https://www.bainmathieu.ca/"
+   ]
+  },
+  {
+   "source": "Le Château (Ciné-Théâtre)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1928 caractères de texte : https://lechateaumontreal.com/"
+   ]
+  },
+  {
+   "source": "Théâtre Bouches Décousues",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 1866 caractères de texte : https://www.theatrebouchesdecousues.com/"
+   ]
+  },
+  {
+   "source": "Espace Le Vrai Monde?",
+   "evenements": 3,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Théâtre Mirella et Lino Saputo (CLDV)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.cldv.ca/fr) : https://cldv.ca/fr/"
+   ]
+  },
+  {
+   "source": "Qu'en dit Raton?",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 5100 caractères de texte : https://www.quenditraton.com/"
+   ]
+  },
+  {
+   "source": "Studio PACA (Les Foutoukours)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 9360 caractères de texte : https://lesfoutoukours.com/fr/studios-paca/"
+   ]
+  },
+  {
+   "source": "La Rocambolesque",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 12272 caractères de texte : https://rocambolesque.ca/"
+   ]
+  },
+  {
+   "source": "Librairie Le Port de tête",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://www.leportdetete.com/) : https://www.leportdetete.com/"
+   ]
+  },
+  {
+   "source": "Cabaret Jazz L'Entracte (Zeffy)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.zeffy.com/fr-CA/org) : https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl"
+   ]
+  },
+  {
+   "source": "N'était-ce pas l'été (ma.to)",
+   "evenements": 2,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Festival / Maison de la poésie de Montréal",
+   "evenements": 1,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "La Brassée (café-concerts)",
+   "evenements": 6,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Cabaret de Curiosités",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://cabaretdecuriosites.com) : https://cabaretdecuriosites.com/"
+   ]
+  },
+  {
+   "source": "Victoria Hall (Westmount)",
+   "evenements": 2,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "MC Hall",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://mchall.ca/\", waiting un) : https://mchall.ca/"
+   ]
+  },
+  {
+   "source": "Le Red Room",
+   "evenements": 16,
+   "series": 0,
+   "erreur": null
+  },
+  {
+   "source": "Salle Marguerite-Bourgeoys",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (HTTPSConnectionPool(host='www.sallemb.com', port=443): Max retries exceeded with) : https://www.sallemb.com/"
+   ]
+  },
+  {
+   "source": "Montreal Improv",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3640 caractères de texte : https://www.montrealimprov.com/"
+   ]
+  },
+  {
+   "source": "Together Club (Luma)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://luma.com/togetherclub\",) : https://luma.com/togetherclub"
+   ]
+  },
+  {
+   "source": "Théâtre Paradoxe",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://theatreparadoxe.com/\", ) : https://theatreparadoxe.com/"
+   ]
+  },
+  {
+   "source": "Salle Joseph-Rouleau (Jeunesses Musicales)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://jmcanada.ca/\", waiting ) : https://jmcanada.ca/"
+   ]
+  },
+  {
+   "source": "Théâtre St-James",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://www.stjamestheatre.ca/\") : https://www.stjamestheatre.ca/"
+   ]
+  },
+  {
+   "source": "Théâtre Cartier",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://theatrecartier.ca/\", wa) : https://theatrecartier.ca/"
+   ]
+  },
+  {
+   "source": "Cat's Corner (danse swing)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page presque vide (487 caractères ; site en JavaScript ?) : https://www.catscorner.ca/"
+   ]
+  },
+  {
+   "source": "Planétarium (soirées spéciales)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://espacepourlavie.ca/plan) : https://espacepourlavie.ca/planetarium"
+   ]
   },
   {
    "source": "UPop Montréal (université populaire)",
@@ -539,7 +938,7 @@
    "erreur": null,
    "diagnostic": [
     "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://lepointdevente.com/lion) : https://lepointdevente.com/liondor",
-    "page illisible : données du 2026-11-02 conservées"
+    "page illisible : données du 2026-11-05 conservées"
    ]
   },
   {
@@ -549,7 +948,7 @@
    "erreur": null,
    "diagnostic": [
     "page illisible (Page.goto: Page crashed\nCall log:\nnavigating to \"https://cabaretliondor.com/\", w) : https://cabaretliondor.com/",
-    "page illisible : données du 2026-11-02 conservées"
+    "page illisible : données du 2026-11-05 conservées"
    ]
   },
   {
@@ -976,19 +1375,19 @@
   },
   {
    "source": "Le Studio TD",
-   "evenements": 2,
+   "evenements": 12,
    "series": 0,
    "erreur": null
   },
   {
    "source": "MTELUS",
-   "evenements": 20,
+   "evenements": 19,
    "series": 0,
    "erreur": null
   },
   {
    "source": "Cabaret du Casino de Montréal",
-   "evenements": 10,
+   "evenements": 9,
    "series": 2,
    "erreur": null
   },
@@ -1136,12 +1535,10 @@
   },
   {
    "source": "Studio 303",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 3,
+   "series": 5,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 16454 caractères de texte : https://www.studio303.ca/en/montreal/"
-   ]
+   "note": "repris du 2026-11-05"
   },
   {
    "source": "La Serre – arts vivants",
@@ -1339,7 +1736,7 @@
   },
   {
    "source": "Club Soda (billetterie)",
-   "evenements": 29,
+   "evenements": 30,
    "series": 0,
    "erreur": null
   },
@@ -1352,8 +1749,8 @@
   },
   {
    "source": "O Patro Vys (billetterie)",
-   "evenements": 12,
-   "series": 0,
+   "evenements": 5,
+   "series": 1,
    "erreur": null
   },
   {
@@ -1521,11 +1918,7 @@
    "evenements": 27,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://www.jambase.com/festival/m-pour-montreal-2026",
-    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/balaclava-2) : https://www.jambase.com/band/balaclava-2",
-    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/afrotronix) : https://www.jambase.com/band/afrotronix"
-   ]
+   "note": "repris du 2026-11-05"
   },
   {
    "source": "Festival · M pour Montréal (2)",
@@ -1651,7 +2044,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com"
+    "aucun événement trouvé dans 1721 caractères de texte : https://www.montrealenlumiere.com"
    ]
   },
   {
@@ -1701,7 +2094,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
    ]
   },
   {
@@ -1710,7 +2103,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6569 caractères de texte : https://jamaislu.com"
+    "aucun événement trouvé dans 6849 caractères de texte : https://jamaislu.com"
    ]
   },
   {
@@ -1747,8 +2140,7 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://www.cinematheque.qc.ca",
-    "page illisible (403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/fr/cinema/la) : https://www.cinematheque.qc.ca/fr/cinema/lamitie-a-mort/",
-    "page illisible (403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/fr/cycles/ma) : https://www.cinematheque.qc.ca/fr/cycles/martin-mcdonagh-nuances-de-noir/"
+    "aucun événement trouvé dans 19068 caractères de texte : https://www.cinematheque.qc.ca"
    ]
   },
   {
@@ -1859,7 +2251,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6200 caractères de texte : https://hahaha.com"
+    "aucun événement trouvé dans 6283 caractères de texte : https://hahaha.com"
    ]
   },
   {
@@ -1948,7 +2340,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
    ]
   },
   {

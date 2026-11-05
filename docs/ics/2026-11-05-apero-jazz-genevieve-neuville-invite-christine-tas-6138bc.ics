@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-05-apero-jazz-genevieve-neuville-invite-christine-tas-6138bc@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261105T183000
+DTEND;TZID=America/Toronto:20261105T203000
+SUMMARY:Apéro Jazz Geneviève Neuville invite Christine Tassan
+LOCATION:La Brassée\, Montréal
+URL:https://www.facebook.com/events/1112491431330914
+DESCRIPTION:Apéro jazz où Geneviève Neuville accueille Christine Tassan 
+ sur scène\, dans l'ambiance décontractée du café.\nDétails : https://
+ www.facebook.com/events/1112491431330914\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
