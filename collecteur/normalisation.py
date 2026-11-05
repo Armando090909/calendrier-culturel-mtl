@@ -203,6 +203,15 @@ PAS_DES_SALLES = {"en salle", "a l exterieur", "en ligne", "nan", "none", "plusi
                   "access denied", "page not found", "page introuvable", "just a moment", "attention required"}
 
 
+# Clés de salles trop générales ou qui sont aussi des noms de lieux (quartier, rue) : « La Librairie » ne doit pas
+# avaler « Librairie Zone Libre », ni « Théâtre Maisonneuve » le « Collège de Maisonneuve » (audit du 5 nov. 2026).
+# Pour elles, le nom complet de la salle (ou un alias) doit figurer dans le nom lu.
+CLES_AMBIGUES = {"librairie", "maison", "national", "scene", "maisonneuve", "st denis", "saint denis", "outremont",
+                 "chapelle", "d exposition", "exposition", "comedie", "galerie", "eglise", "centre", "espace", "studio",
+                 "cafe", "club", "cinema", "bibliotheque", "pavillon", "auditorium", "verdun", "lachine", "rosemont",
+                 "plaza", "quai", "esplanade", "agora", "cabaret", "musee"}
+
+
 class Lieux:
     """Table des salles : nom canonique -> {lat, lon, quartier, alias[]}. Enregistrée dans lieux.json."""
 
@@ -231,7 +240,8 @@ class Lieux:
             return self._index[k]
         # Un nom connu contenu dans le nom lu (ex. « L'Escogriffe Bar Spectacle (L'Esco) ») : le plus précis gagne.
         dedans = sorted(((len(cle), canon) for cle, canon in self._index.items()
-                         if len(cle) >= 5 and re.search(r"(^| )" + re.escape(cle) + r"( |$)", k)), reverse=True)
+                         if len(cle) >= 5 and re.search(r"(^| )" + re.escape(cle) + r"( |$)", k)
+                         and (cle not in CLES_AMBIGUES or self._nom_complet_dedans(canon, nom))), reverse=True)
         if dedans:
             return dedans[0][1]
         # Nom lu plus court qu'un nom connu (ex. « Chapelle ») : seulement s'il ne désigne qu'une seule salle.
@@ -240,6 +250,15 @@ class Lieux:
             if len(cands) == 1:
                 return cands.pop()
         return None
+
+    def _nom_complet_dedans(self, canon: str, nom: str) -> bool:
+        """Le nom complet de la salle connue (ou un de ses alias) figure tel quel dans le nom lu."""
+        p = " " + plat(nom) + " "
+        info = self.data.get(canon)
+        noms = [canon] + ((info or {}).get("alias", []) if isinstance(info, dict) else [])
+        def precis(n):  # au moins deux mots hors articles (« La Chapelle », « La Librairie » ne suffisent pas)
+            return len([w for w in plat(n).split() if w not in ("le", "la", "les", "l", "the", "de", "du", "des")]) >= 2
+        return any(" " + plat(n) + " " in p for n in noms if len(plat(n)) >= 8 and precis(n))
 
     def ajouter(self, nom: str, info: dict | None, alias: str | None = None) -> str:
         if plat(nom) in PAS_DES_SALLES:

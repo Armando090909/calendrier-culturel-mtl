@@ -56,3 +56,20 @@ class TestSallesHomonymes(unittest.TestCase):
         lieux = Lieux(json.loads((Path(__file__).parent.parent / "lieux.json").read_text(encoding="utf-8")))
         self.assertEqual(lieux.trouver("Théâtre Plaza"), "Théâtre Plaza")
         self.assertEqual(lieux.trouver("Ausgang Plaza"), "Ausgang Plaza")
+
+    def test_noms_generiques_n_avalent_pas_d_autres_salles(self):
+        """Audit du 5 nov. 2026 : « La Librairie », « Maison Théâtre », « Le National », « Théâtre Maisonneuve »,
+        « La Chapelle »… avalaient des salles différentes qui contenaient le même mot."""
+        import json
+        from pathlib import Path
+        from normalisation import Lieux
+        lieux = Lieux(json.loads((Path(__file__).parent.parent / "lieux.json").read_text(encoding="utf-8")))
+        for nom, faux in [("Librairie Zone Libre", "La Librairie"), ("Maison de la culture Francis-Brisson", "Maison Théâtre"),
+                          ("Office National du Film - Salle Alanis-Obomsawin", "Le National"),
+                          ("Collège de Maisonneuve", "Théâtre Maisonneuve"), ("La Chapelle Saint-Louis", "La Chapelle Scènes contemporaines"),
+                          ("Le Saint-Jean Comédie Club", "Théâtre La Comédie de Montréal"), ("Basement of St Denis Church", "Théâtre St-Denis")]:
+            self.assertNotEqual(lieux.trouver(nom), faux, nom)
+        # les vraies variantes restent reconnues
+        self.assertEqual(lieux.trouver("PDA - Théâtre Maisonneuve - Montreal"), "Théâtre Maisonneuve")
+        self.assertEqual(lieux.trouver("Cinémathèque québécoise - Salle Principale"), "Cinémathèque québécoise")
+        self.assertEqual(lieux.trouver("La Chapelle spectacles"), "La Chapelle Scènes contemporaines")
