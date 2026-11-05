@@ -227,6 +227,7 @@ def page_evenement(e: dict, lieux: dict) -> str:
     c = lieux.get(e["lieu"]) or {}
     disc = disc_nom(e["discipline"])
     aff = e.get("image") or (e.get("affiche") or {}).get("url") or ""
+    aff = re.sub(r"(images\.sk-static\.com/.+/)(?:small|medium)_avatar$", r"\1huge_avatar", aff)  # Songkick : grande version
     quand = f"{(lambda t: t[:1].upper() + t[1:])(jour_long(e['date'], True))} · {heure_txt(e.get('heure'))}"
     description = f"{quand} · {lieu(e)}, Montréal. " + (resume(e) or disc)
     billets = e.get("billets") or e.get("url")
