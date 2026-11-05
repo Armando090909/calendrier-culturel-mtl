@@ -9,9 +9,9 @@ html.v2 .v1o{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 
 html.v2{
   --bg:#F5EFE3; --paper:#F5EFE3; --surface:#FFFCF6; --ink:#000000; --muted:#4A4640; --hair:#D8CFBE;
   --accent:#000000; --pop:#E22028; --shadow:transparent; --hl:#F5EFE3; --chip-off:#EAE2D2;
-  --theatre:#E22028; --musique:#3A75F0; --danse:#E2B2B4; --humour:#E04E25; --cinema:#B1D8B8; --jeune:#FBBA16;
+  --theatre:#F2837B; --musique:#3A75F0; --danse:#8EC1F2; --humour:#EE7F45; --cinema:#B1D8B8; --jeune:#FBBA16;
   --poesie:#B9A3E3; --lettres:#9BCCD0; --quiz:#1FA3A3; --fete:#E04F9C; --conference:#2DAA55; --atelier:#B8B23A;
-  --expo:#D9B98C; --cirque:#F2A65A; --autre:#CFC8BA;
+  --expo:#F6E08A; --cirque:#F2A65A; --autre:#CFC8BA;
   --f-display:"Figtree", system-ui, sans-serif; --f-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-hand:"Figtree", system-ui, sans-serif;
   --r:16px;
