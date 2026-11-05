@@ -17,7 +17,9 @@ fi
 
 PY=$(command -v python3)
 # toutes les heures ; le programme ne travaille qu'une fois par jour
-( crontab -l 2>/dev/null | grep -v "ccmtl" ; echo "17 * * * * nice -n 10 $PY $D/ville_mac.py >> $D/sortie.txt 2>&1 # ccmtl" ) | crontab -
+# (« || true » : sans tâche existante, crontab -l et grep échouent, ce qui arrêtait le script avec set -e)
+{ crontab -l 2>/dev/null | grep -v "ccmtl" || true; echo "17 * * * * nice -n 10 $PY $D/ville_mac.py >> $D/sortie.txt 2>&1 # ccmtl"; } | crontab -
+crontab -l | grep -q ccmtl && echo "Tâche programmée : toutes les heures à la 17e minute." || echo "ATTENTION : la tâche programmée n'a pas pu être enregistrée."
 echo ""
 echo "Essai (5 fiches, rien n'est envoyé) :"
 "$PY" "$D/ville_mac.py" --essai || true
