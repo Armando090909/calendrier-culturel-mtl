@@ -214,20 +214,30 @@ html.v2 .prix-tel,html.v2 .btl-c{display:none}
 /* Écouter / voir : sous l'affiche */
 html.v2 .det-vis .ecoute{margin-top:10px}
 
-/* Bas de page (nouveau) : mise à jour sous la ligne ; programmation dans un ovale ; don au centre ; liens à droite */
+/* Fiche (ordinateur) : prix en haut de la colonne des boutons ; écouter/voir au bas, sous l'affiche */
+html.v2 .prix-side{display:block;position:static;transform:none;font-size:22px;margin:0 0 2px;text-align:center}
+html.v2 .det-vis{display:flex;flex-direction:column;align-self:stretch}
+html.v2 .det-vis .ecoute{margin-top:auto;padding-top:10px}
+html.v2 .det-info .ecoute{margin-top:auto}
+@media (max-width:900px){html.v2 .prix-side{display:none}}
+
+/* Bas de page (nouveau) : mise à jour au centre ; programmation à gauche dans un ovale ; don au centre ;
+   liens à droite, celui du milieu en noir */
 html.v2 .note,html.v2 .pied{display:none}
-html.v2 .v2-pied{display:flex;flex-direction:column;gap:34px;border-top:2px solid var(--ink);padding-top:14px;margin-top:24px}
-html.v2 .vp-maj .refresh{margin:0;font-size:14px;color:var(--ink);text-align:left}
-html.v2 .vp-prog{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
-html.v2 .vp-prog p{margin:0;font-size:clamp(20px,2.4vw,28px);font-weight:900;letter-spacing:-.02em}
-html.v2 .vp-pill{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:6px}
-html.v2 .vp-pill a{font-weight:700;font-size:16px;text-decoration:none;color:var(--ink);border-radius:999px;padding:11px 20px;border:0;background:transparent}
+html.v2 .v2-pied{display:flex;flex-direction:column;gap:30px;border-top:2px solid var(--ink);padding-top:14px;margin-top:24px}
+html.v2 .vp-maj .refresh{margin:0;font-family:var(--f-body);font-weight:500;transform:none;line-height:1.4;font-size:14px;color:var(--ink);text-align:center}
+html.v2 .vp-prog{align-self:flex-start;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;border:3px solid var(--ink);border-radius:999px;padding:8px 8px 8px 26px;max-width:100%}
+html.v2 .vp-prog p{margin:0;font-size:20px;font-weight:900;letter-spacing:-.01em;color:var(--ink)}
+html.v2 .vp-pill{display:flex;flex-wrap:wrap;gap:6px}
+html.v2 .vp-pill a{font-weight:700;font-size:15px;text-decoration:none;color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:10px 18px;background:transparent}
 html.v2 .vp-pill a.go{background:var(--ink);color:var(--bg)}
 html.v2 .vp-pill a:not(.go):hover{background:var(--chip-off)}
 html.v2 .vp-don{display:flex;flex-direction:column;align-items:center;gap:14px}
 html.v2 .vp-don .don-bt{font-size:20px;padding:16px 34px}
 html.v2 .vp-don .don-pop{max-width:560px;padding:16px 20px}
 html.v2 .vp-liens{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
-@media (max-width:560px){html.v2 .vp-liens{justify-content:center}html.v2 .vp-pill{border-radius:28px}}
-html.v2 .vp-maj .refresh{font-family:var(--f-body);font-weight:500;transform:none;line-height:1.4}
-html.v2 .vp-prog p{color:var(--ink)}
+html.v2 .vp-liens .pied-bt:nth-child(2){background:var(--ink);color:var(--bg)}
+@media (max-width:700px){
+  html.v2 .vp-prog{align-self:stretch;border-radius:28px;padding:16px;flex-direction:column;align-items:flex-start}
+  html.v2 .vp-liens{justify-content:center}
+}
