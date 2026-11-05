@@ -250,3 +250,16 @@ html.v2 .cal .src{display:none}
 html.v2 .cal{flex-wrap:wrap;gap:4px 14px}
 html.v2 .cal .calk{flex-basis:100%}
 html.v2 .licence{white-space:normal;line-height:1.6}
+
+/* Retouches du 4 nov. au soir */
+html.v2 .hero .sub{display:none}
+html.v2 .vp-prog{border:0;border-radius:0;padding:0;align-self:flex-start}
+html.v2 .vp-liens{margin-top:40px}
+html.v2 .ecoute > span:first-child{display:none}
+html.v2 .det-vis .ecoute{display:flex;flex-wrap:wrap;gap:6px}
+html.v2 .det-vis .ecoute a{font-size:12px;padding:4px 10px;white-space:nowrap}
+@media (min-width:901px){
+  html.v2 .dayview .ev.det:has(.det-vis):has(.det-side.seul){grid-template-columns:minmax(0,1fr) 300px 300px}
+}
+@media (max-width:700px){html.v2 .vp-prog{padding:0;border-radius:0}}
+html.v2 .hero{margin-bottom:14px}
