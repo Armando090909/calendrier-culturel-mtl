@@ -185,7 +185,7 @@ function detailHTML(e){
       ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
     </div>
     ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
-    <div class="det-side seul">${actions}${extra}</div>
+    <div class="det-side seul">${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
   </article>`;
 }
 function renderChips(){

@@ -263,3 +263,9 @@ html.v2 .det-vis .ecoute a{font-size:12px;padding:4px 10px;white-space:nowrap}
 }
 @media (max-width:700px){html.v2 .vp-prog{padding:0;border-radius:0}}
 html.v2 .hero{margin-bottom:14px}
+/* Mise à jour en manuscrit ; prix en haut à droite au-dessus du bouton (ordinateur) ; don plus loin de la programmation */
+html.v2 .vp-maj .refresh{font-family:"Caveat",cursive;font-weight:600;font-size:22px;transform:rotate(-2deg);line-height:1.1}
+html.v2 .prix-side{display:block;position:static;transform:none;font-size:22px;margin:0 0 4px;text-align:right}
+html.v2 .det-info > .prix-main{display:none}
+@media (max-width:900px){html.v2 .prix-side{display:none}}
+html.v2 .vp-don{margin-top:36px}
