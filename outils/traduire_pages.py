@@ -62,7 +62,7 @@ PAGES = {
         ('<label for="q" class="sr">Chercher un spectacle</label>', '<label for="q" class="sr">Search for a show</label>'),
         ('placeholder="Spectacle, artiste, salle, festival…"', 'placeholder="Show, artist, venue, festival…"'),
         ('aria-label="Effacer la recherche"', 'aria-label="Clear search"'),
-        ('<p class="label" id="lbl-disc">Ce qui te tente', '<p class="label" id="lbl-disc">What are you into'),
+        ('<p class="label" id="lbl-disc"><span class="v1i">Ce qui te tente</span><span class="v2o">Catégories</span>', '<p class="label" id="lbl-disc"><span class="v1i">What are you into</span><span class="v2o">Categories</span>'),
         ('aria-label="Sélection rapide"', 'aria-label="Quick select"'),
         ('title="Cocher toutes les catégories"><i class="poincon"></i>tout</button>', 'title="Select all categories"><i class="poincon"></i>all</button>'),
         ('title="Décocher toutes les catégories"><i class="poincon"></i>aucun</button>', 'title="Clear all categories"><i class="poincon"></i>none</button>'),

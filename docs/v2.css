@@ -275,3 +275,6 @@ html.v2 .det-vis .ecoute.v2e a{flex:0 1 auto;min-width:0;overflow:hidden;text-ov
 html.v2 .cal .calk{display:none}
 html.v2 .det-side .cal{margin-top:auto;border-top:0;padding-top:6px;justify-content:flex-end;flex-wrap:nowrap}
 html.v2 .det-side{align-self:stretch}
+html.v2 .v1i{display:none}
+/* Crédit de l'affiche : voile très pâle, juste assez pour rester lisible sur une image sombre */
+html.v2 .det-aff figcaption{background:rgba(255,255,255,.5);color:#000}
