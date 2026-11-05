@@ -182,13 +182,15 @@ html.v2 .colhead .ch-c{margin-left:auto}
 html.v2 .v2-ill{max-width:520px}
 html.v2 .v2-ill img{display:block;width:100%;height:auto}
 @media (max-width:900px){html.v2 .v2-ill{max-width:340px}}
-/* Titre et logo sur la même ligne (aussi sur téléphone), plus d'air sous l'en-tête */
+/* Ordinateur : le titre et le logo occupent exactement la même hauteur (haut et bas alignés) ;
+   la ligne noire et le texte descriptif plus bas, avec plus d'air. Téléphone : logo au-dessus du titre. */
 html.v2 .hero{margin-top:28px}
-@media (min-width:901px){html.v2 .hero{align-items:start}html.v2 .v2-ill{margin-top:8px}}
-@media (max-width:900px){
-  html.v2 .hero{grid-template-columns:minmax(0,1fr) minmax(0,42%);gap:16px 12px;align-items:start;margin-top:20px}
+@media (min-width:901px){
+  html.v2 .hero{grid-template-columns:minmax(0,1fr) minmax(0,46%);gap:0 32px;align-items:stretch}
   html.v2 .hero-txt{display:contents}
-  html.v2 .v2-titre{grid-column:1;grid-row:1;font-size:clamp(40px,11vw,80px);align-self:center}
-  html.v2 .v2-ill{grid-column:2;grid-row:1;order:0;max-width:none;justify-self:end;align-self:center}
+  html.v2 .v2-titre{grid-column:1;grid-row:1;align-self:start}
+  html.v2 .v2-ill{grid-column:2;grid-row:1;position:relative;max-width:none;margin:0;align-self:stretch}
+  html.v2 .v2-ill img{position:absolute;top:0;right:0;height:100%;width:auto;max-width:100%;object-fit:contain;object-position:right top}
   html.v2 .hero .sub,html.v2 .hero .stat{grid-column:1 / -1}
+  html.v2 .hero .sub{margin-top:40px;padding-top:24px}
 }
