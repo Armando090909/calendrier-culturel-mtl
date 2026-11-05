@@ -1,12 +1,107 @@
 {
- "https://www.donneesquebec.ca/recherche/dataset/vmtl-lieux-culturels/resource/974ca8d4-ed85-4c77-a79f-9f765e4c1b32/download/lieuxculturels.csv": {
+ "https://www.billets.ca/": {
   "statut": 200,
-  "octets": 77564,
-  "fichier": "lieuxculturels.csv"
- },
- "https://www.donneesquebec.ca/recherche/api/3/action/datastore_search?resource_id=f0bf3291-0a9e-4133-a0c5-01c148eab9d2&limit=5000&q=Montr%C3%A9al": {
-  "statut": 200,
-  "octets": 372205,
-  "fichier": "datastore_search"
+  "simple_images": {
+   "og": "https://static.billets.ca/next_ui/41699414225/opengraph-image-fr.png",
+   "img": [
+    "https://static.billets.ca/hero_slide/bd50a3d4-09f1-4b78-82b9-4e77e98b5a2a/mfr/image-1284x1680.avif | Canadiens de Montréal",
+    "https://static.billets.ca/hero_slide/401b173e-3db6-4789-a6e4-70252e06ddd0/mfr/image-1284x1680.avif | Rocket de Laval",
+    "https://static.billets.ca/hero_slide/cbf84759-667a-4b5e-9d25-4e7c62c14efb/mfr/image-1284x1680.avif | CF Montréal",
+    "https://static.billets.ca/hero_slide/1ac454ed-7281-4494-b751-54f073136841/mfr/image-1284x1680.avif | Alouettes de Montréal",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-calendar-background.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-calendar-foreground.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-background.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-foreground-left.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-foreground-right.avif | ",
+    "https://static.billets.ca/venue/ayass/s1/place-bell-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyxs/s1/centre-bell-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyxb/s1/stade-uniprix-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyex/s1/theatre-st-denis-1-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyxl/s1/circuit-gilles-villeneuve-82x82.avif | ",
+    "https://static.billets.ca/venue/ayasp/s1/centre-d-excellence-sports-rousseau-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyxi/s1/metropolis-82x82.avif | ",
+    "https://static.billets.ca/venue/ayyfq/s1/parc-jean-drapeau-82x82.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-marketplace-background.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-marketplace-foreground.avif | "
+   ],
+   "iframes": []
+  },
+  "simple": {
+   "taille": 3935,
+   "texte": "Billets.ca | Billets de Concert, Sport, Spectacle et Humour - Soyez Là | Billets.ca\nBillets.ca, Quand ça compte, soyez là.\nNotre plateforme est dédiée à la revente de billets de spectacle. Des billets peuvent être disponibles à un prix inférieur auprès du vendeur autorisé par le producteur du spectacle.\nAller au contenu principal <https://www.billets.ca/#main>\nBillets.ca | Billets de Concert, Sport, Spectacle et Humour - Soyez Là\nCanadiens de Montréal\nSaison 2026-2027\nLa saison est bientôt de retour. Ressens chaque mise en échec, chaque arrêt spectaculaire et chaque but qui fait vibrer le Centre Bell. Ne manque rien de l'action.\nAchetez vos billets! <https://www.billets.ca/canadiens-de-montreal-billets>\nRocket de Laval\nSaison 2026-2027\nL'avenir du hockey commence ici. Vivez l'intensité de chaque match, l'énergie de la foule et l'émotion de chaque but à la Place Bell.\nAchetez vos billets! <https://www.billets.ca/rocket-de-laval-billets>\nCF Montréal\nSaison 2026\nCF Montréal poursuit son parcours au sein de la Major League Soccer avec des ambitions renouvelées de briller sur la scène nord-américaine...\nAchetez vos billets ! <https://www.billets.ca/cf-montreal-billets>\nAlouettes de Montréal\nSaison 2026\nEncouragez votre équipe de football favorite au Stade Mémorial Percival-Molson!\nAchetez vos billets! <https://www.billets.ca/alouettes-de-montreal-billets>\nTop 10\nÀ venir\nRabais\nPréventes\nTop 10\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nCalendrier des événements\nLe seul calendrier culturel regroupant TOUS les événements du Québec en un seul endroit!\nConcerts, festivals, spectacles d’humour et événements sportifs; vous trouverez facilement quoi faire près de chez vous en un seul clic!\nConsulter le calendrier <https://www.billets.ca/calendrier>\nÉvénements près de Montreal\nChanger d’emplacement\nConcerts\nSports\nSpectacles\nHumour\nConcerts\nTous les concerts <https://www.billets.ca/concerts>\nOffres spéciales, préventes et nouvelles!\nNe manquez rien! Recevez des offres exclusives, préventes et actualités directement par courriel ou SMS.\nEn poursuivant, vous autorisez Billets.ca à vous envoyer des offres et préventes par message texte et/ou courriel.\nSalles et villes près de Montreal\nChanger d’emplacement\nSalles\nVilles\nSalles\nPlace Bell <https://www.billets.ca/salles/place-bell>\nCentre Bell <https://www.billets.ca/salles/centre-bell>\nStade IGA <https://www.billets.ca/salles/stade-uniprix>\nThéâtre St-Denis <https://www.billets.ca/salles/theatre-st-denis>\nCircuit Gilles-Villeneuve <https://www.billets.ca/salles/circuit-gilles-villeneuve>\nCentre d'Excellence Sports Rousseau <https://www.billets.ca/salles/centre-dexcellence-sports-rousseau>\nMTELUS <https://www.billets.ca/salles/mtelus>\nParc Jean Drapeau <https://www.billets.ca/salles/parc-jean-drapeau>\nToutes les salles <https://www.billets.ca/salles>\nVendre vos billets\nVendez vos billets facilement et rapidement sur la place de marché de la billetterie alternative la plus importante au Canada.\nAffichez vos billets gratuitement et rapid",
+   "jsonld": [],
+   "heures": [],
+   "liens": [
+    "https://ca.linkedin.com/company/billets-ca",
+    "https://static.billets.ca/next_ui/41699414225/icon-512-fr.png",
+    "https://static.billets.ca/next_ui/_next/static/chunks/127ul6cccohp8.js?dpl=41699414225",
+    "https://static.billets.ca/next_ui/_next/static/chunks/170qb0f_p6rwe.css?dpl=41699414225",
+    "https://static.billets.ca/next_ui/_next/static/chunks/3hywf6jyydu39.css?dpl=41699414225",
+    "https://twitter.com/billets_ca",
+    "https://www.billets.ca",
+    "https://www.billets.ca/alouettes-de-montreal-billets",
+    "https://www.billets.ca/canadiens-de-montreal-billets",
+    "https://www.billets.ca/cf-montreal-billets",
+    "https://www.billets.ca/rocket-de-laval-billets",
+    "https://www.instagram.com/billets.ca/",
+    "https://www.tickets.ca"
+   ]
+  },
+  "navigateur_images": {
+   "og": "https://static.billets.ca/next_ui/41699414225/opengraph-image-fr.png",
+   "img": [
+    "https://static.billets.ca/hero_slide/bd50a3d4-09f1-4b78-82b9-4e77e98b5a2a/mfr/image-1284x1680.avif | Canadiens de Montréal",
+    "https://static.billets.ca/hero_slide/401b173e-3db6-4789-a6e4-70252e06ddd0/mfr/image-1284x1680.avif | Rocket de Laval",
+    "https://static.billets.ca/hero_slide/cbf84759-667a-4b5e-9d25-4e7c62c14efb/mfr/image-1284x1680.avif | CF Montréal",
+    "https://static.billets.ca/hero_slide/1ac454ed-7281-4494-b751-54f073136841/mfr/image-1284x1680.avif | Alouettes de Montréal",
+    "https://static.billets.ca/artist/rrx/s1/rocket-de-laval-310x310.avif | Rocket de Laval",
+    "https://static.billets.ca/artist/kz9/s1/angine-de-poitrine-310x310.avif | Angine de Poitrine",
+    "https://static.billets.ca/artist/ti6/s1/the-neighbourhood-310x310.avif | The Neighbourhood",
+    "https://static.billets.ca/artist/sim/s1/simple-plan-310x310.avif | Simple Plan",
+    "https://static.billets.ca/artist/gvy/s1/greta-von-fleet-200x200.avif | Greta Van Fleet",
+    "https://static.billets.ca/artist/hil/s1/hilary-duff-200x200.avif | Hilary Duff",
+    "https://static.billets.ca/artist/dn7/s1/dean-brody-200x200.avif | Dean Brody",
+    "https://static.billets.ca/artist/xez/s1/the-red-clay-strays-200x200.avif | The Red Clay Strays",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-calendar-background.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-calendar-foreground.avif | ",
+    "https://static.billets.ca/artist/kz9/v2/angine-de-poitrine-180x288.avif | Angine de Poitrine",
+    "https://static.billets.ca/artist/ti6/v2/the-neighbourhood-180x288.avif | The Neighbourhood",
+    "https://static.billets.ca/artist/sim/v2/simple-plan-180x288.avif | Simple Plan",
+    "https://static.billets.ca/artist/gvy/v2/greta-von-fleet-180x288.avif | Greta Van Fleet",
+    "https://static.billets.ca/artist/hil/v2/hilary-duff-180x288.avif | Hilary Duff",
+    "https://static.billets.ca/artist/dn7/v2/dean-brody-180x288.avif | Dean Brody",
+    "https://static.billets.ca/artist/xez/v2/the-red-clay-strays-180x288.avif | The Red Clay Strays",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-background.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-foreground-left.avif | ",
+    "https://static.billets.ca/next_ui/41699414225/assets/images/section-newsletter-foreground-right.avif | ",
+    "https://static.billets.ca/venue/ayyrl/s1/mts-center-82x82.avif | "
+   ],
+   "iframes": []
+  },
+  "navigateur": {
+   "taille": 4928,
+   "texte": "Billets.ca | Billets de Concert, Sport, Spectacle et Humour - Soyez Là | Billets.ca\nAller au contenu principal <https://www.billets.ca/#main>\nBillets.ca | Billets de Concert, Sport, Spectacle et Humour - Soyez Là\nCanadiens de Montréal\nSaison 2026-2027\nLa saison est bientôt de retour. Ressens chaque mise en échec, chaque arrêt spectaculaire et chaque but qui fait vibrer le Centre Bell. Ne manque rien de l'action.\nAchetez vos billets! <https://www.billets.ca/canadiens-de-montreal-billets>\nRocket de Laval\nSaison 2026-2027\nL'avenir du hockey commence ici. Vivez l'intensité de chaque match, l'énergie de la foule et l'émotion de chaque but à la Place Bell.\nAchetez vos billets! <https://www.billets.ca/rocket-de-laval-billets>\nCF Montréal\nSaison 2026\nCF Montréal poursuit son parcours au sein de la Major League Soccer avec des ambitions renouvelées de briller sur la scène nord-américaine...\nAchetez vos billets ! <https://www.billets.ca/cf-montreal-billets>\nAlouettes de Montréal\nSaison 2026\nEncouragez votre équipe de football favorite au Stade Mémorial Percival-Molson!\nAchetez vos billets! <https://www.billets.ca/alouettes-de-montreal-billets>\nTop 10\nÀ venir\nRabais\nPréventes\nTop 10\n1 Rocket de Laval 39 événements <https://www.billets.ca/rocket-de-laval-billets>\n2 Angine de Poitrine 14 événements <https://www.billets.ca/angine-de-poitrine-billets>\n3 The Neighbourhood 5 événements <https://www.billets.ca/the-neighbourhood-billets>\n4 Simple Plan 16 événements <https://www.billets.ca/simple-plan-billets>\n5 Greta Van Fleet 6 événements <https://www.billets.ca/greta-van-fleet-billets>\n6 Hilary Duff 10 événements <https://www.billets.ca/hilary-duff-billets>\n7 Dean Brody 12 événements <https://www.billets.ca/dean-brody-billets>\n8 The Red Clay Strays 3 événements <https://www.billets.ca/the-red-clay-strays-billets>\nCalendrier des événements\nLe seul calendrier culturel regroupant TOUS les événements du Québec en un seul endroit!\nConcerts, festivals, spectacles d’humour et événements sportifs; vous trouverez facilement quoi faire près de chez vous en un seul clic!\nConsulter le calendrier <https://www.billets.ca/calendrier>\nÉvénements près de Winnipeg\nChanger d’emplacement\nConcerts\nSports\nSpectacles\nHumour\nConcerts\nAngine de Poitrine 14 événements <https://www.billets.ca/angine-de-poitrine-billets>\nThe Neighbourhood 5 événements <https://www.billets.ca/the-neighbourhood-billets>\nSimple Plan 16 événements <https://www.billets.ca/simple-plan-billets>\nGreta Van Fleet 6 événements <https://www.billets.ca/greta-van-fleet-billets>\nHilary Duff 10 événements <https://www.billets.ca/hilary-duff-billets>\nDean Brody 12 événements <https://www.billets.ca/dean-brody-billets>\nThe Red Clay Strays 3 événements <https://www.billets.ca/the-red-clay-strays-billets>\nTous les concerts <https://www.billets.ca/concerts>\nOffres spéciales, préventes et nouvelles!\nNe manquez rien! Recevez des offres exclusives, préventes et actualités directement par courriel ou SMS.\nEn poursuivant, vous autor",
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"CA\",\"addressLocality\":\"Montréal\",\"addressRegion\":\"Québec\",\"postalCode\":\"H4C 2K1\",\"streetAddress\":\"780 ave Brewster\"},\"contactPoint\":[{\"@type\":\"ContactPoint\",\"areaServed\":\"CA\",\"availableLanguage\":[\"Français\"],\"contactType\":\"Service à la clientèle\",\"email\":\"info@billets.ca\",\"hoursAvailable\":[{\"@type\":\"OpeningHoursSpecification\",\"closes\":\"21:00:00-05:00\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"description\":\"Heures indiquées en EST (heure de l'Est)\",\"opens\":\"09:00:00-05:00\"}],\"telephone\":\"514 935-9999\"},{\"@type\":\"ContactPoint\",\"areaServed\":\"CA\",\"availableLanguage\":[\"English\"],\"contactType\":\"Customer service\",\"email\":\"info@tickets.ca\",\"hoursAvailable\":[{\"@type\":\"OpeningHoursSpecification\",\"closes\":\"21:00:00-05:00\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"description\":\"Hours shown in EST (Eastern Time)\",\"opens\":\"09:00:00-05:00\"}],\"telephone\":\"416 673-7077\"}],\"description\":\"Billets.ca est la plus grande place de marché du Canada pour acheter ou vendre des billets de concerts, de spectacles ou de sports. Billets garantis conformes et valides.\",\"name\":\"Billets.ca\",\"url\":\"https://www.billets.ca\",\"alternateName\":\"Tickets.ca\",\"logo\":\"https://static.billets.ca/next_ui/41699414225/assets/images/billets.png\",\"sameAs\":[\"https://www.tickets.ca\",\"https://www.facebook.com/Billets.ca\",\"https://www.instagram.com/billets.ca/\",\"https://twitter.com/billets_ca\",\"https://ca.linkedin.com/company/billets-ca\"]}"
+   ],
+   "heures": [],
+   "liens": [
+    "https://ca.linkedin.com/company/billets-ca",
+    "https://static.billets.ca",
+    "https://static.billets.ca/next_ui/41699414225/icon-512-fr.png",
+    "https://static.billets.ca/next_ui/_next/static/chunks/127ul6cccohp8.js?dpl=41699414225",
+    "https://static.billets.ca/next_ui/_next/static/chunks/170qb0f_p6rwe.css?dpl=41699414225",
+    "https://static.billets.ca/next_ui/_next/static/chunks/3hywf6jyydu39.css?dpl=41699414225",
+    "https://twitter.com/billets_ca",
+    "https://www.billets.ca",
+    "https://www.billets.ca/alouettes-de-montreal-billets",
+    "https://www.billets.ca/canadiens-de-montreal-billets",
+    "https://www.billets.ca/cf-montreal-billets",
+    "https://www.billets.ca/rocket-de-laval-billets",
+    "https://www.instagram.com/billets.ca/",
+    "https://www.tickets.ca",
+    "https://www.tickets.ca/"
+   ]
+  }
  }
 }
