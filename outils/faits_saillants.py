@@ -388,7 +388,7 @@ def slide_pick(p, n, tot):
 body{{background:{coul(k)};gap:34px}}
 .vis{{height:600px;flex:none;display:flex;align-items:center;justify-content:center}}
 .cad{{position:relative;max-width:100%;max-height:100%;display:flex}}
-.cad img{{max-width:936px;max-height:600px;border-radius:28px;display:block}}
+.cad img{{max-width:936px;max-height:600px;max-width:none;max-height:none;border-radius:28px;display:block}}
 .cr{{position:absolute;right:16px;bottom:14px;font-size:20px;font-weight:500;background:rgba(255,255,255,.55);border-radius:999px;padding:4px 14px}}
 .dec{{position:absolute;left:18px;top:16px;font-size:26px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:6px 18px}}
 .in{{display:flex;flex-direction:column;gap:16px;flex:1;min-height:0}}
@@ -404,7 +404,9 @@ h2{{margin:0;font-size:{min(tt, 92)}px;line-height:.95;font-weight:900;letter-sp
     if not img:
         css += "\n.vis{display:none}\nh2{font-size:%dpx}" % _taille_titre(e["titre"], 130)
     decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
-    vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="">{decouv}'
+    # l'affiche garde ses proportions et prend le plus de place possible dans le cadre (même une petite image)
+    ajuste = "var w=this.naturalWidth,h=this.naturalHeight,r=Math.min(936/w,600/h);this.style.width=(w*r)+'px';this.style.height=(h*r)+'px'"
+    vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="" onload="{ajuste}">{decouv}'
            + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div></div>")
     return page2(1080, 1350, f"""{vis}<div class="in">
 <div class="l1"><span class="dis">{escape(nom_disc(k))}</span><span class="hr">{_heure(e)}</span></div>
