@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script>/* Aperçu du nouveau design : ?v2 l'active (gardé sur cet appareil), ?v1 revient à l'ancien */
-try{var q=location.search;if(/[?&]v2\b/.test(q))localStorage.setItem("ccmtl-v2","1");if(/[?&]v1\b/.test(q))localStorage.removeItem("ccmtl-v2");if(localStorage.getItem("ccmtl-v2"))document.documentElement.classList.add("v2")}catch(e){}</script>
+var v2=true;try{var q=location.search;localStorage.removeItem("ccmtl-v2");if(/[?&]v1\b/.test(q))localStorage.setItem("ccmtl-v1","1");if(/[?&]v2\b/.test(q))localStorage.removeItem("ccmtl-v1");if(localStorage.getItem("ccmtl-v1"))v2=false}catch(e){}if(v2)document.documentElement.classList.add("v2")</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700;800&family=Permanent+Marker&family=Caveat:wght@600&family=Figtree:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="v2.css?v=1793896105">
