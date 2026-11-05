@@ -1,29 +1,17 @@
 {
- "total": 1528,
- "echecs": 88,
+ "total": 1501,
+ "echecs": 7,
  "par_site": {
-  "sorstu.ca": {
-   "affiches": 66,
-   "echecs": 66
+  "images.sk-static.com": {
+   "affiches": 199,
+   "echecs": 2
   },
-  "res.cloudinary.com": {
-   "affiches": 674,
-   "echecs": 8
-  },
-  "spectaculos.ca": {
-   "affiches": 6,
-   "echecs": 6
-  },
-  "www.eventbrite.ca": {
-   "affiches": 3,
-   "echecs": 3
-  },
-  "images.ra.co": {
+  "www.eventbrite.com": {
    "affiches": 2,
    "echecs": 2
   },
-  "gg.festapp.io": {
-   "affiches": 166,
+  "ma.to": {
+   "affiches": 1,
    "echecs": 1
   },
   "images.ctfassets.net": {
@@ -34,31 +22,15 @@
    "affiches": 1,
    "echecs": 1
   },
-  "www.concordia.ca": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "www.pointe-claire.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "cdn.caligram.com": {
-   "affiches": 8,
+   "affiches": 6,
    "echecs": 0
   },
-  "mato.s3.us-east-1.amazonaws.com": {
-   "affiches": 10,
+  "res.cloudinary.com": {
+   "affiches": 659,
    "echecs": 0
   },
-  "festivalarabe.com": {
-   "affiches": 5,
-   "echecs": 0
-  },
-  "lefifa.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "ccmtl.ca": {
+  "www.concordia.ca": {
    "affiches": 1,
    "echecs": 0
   },
@@ -66,36 +38,8 @@
    "affiches": 1,
    "echecs": 0
   },
-  "tpos.s3.amazonaws.com": {
-   "affiches": 92,
-   "echecs": 0
-  },
-  "legesu.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "funnation.ca": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "panm360.com": {
-   "affiches": 24,
-   "echecs": 0
-  },
-  "theatresaintecatherine.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 30,
-   "echecs": 0
-  },
-  "www.mado.qc.ca": {
-   "affiches": 8,
-   "echecs": 0
-  },
   "coeurdessciences.uqam.ca": {
-   "affiches": 4,
+   "affiches": 5,
    "echecs": 0
   },
   "festivalcinemania.com": {
@@ -107,47 +51,95 @@
    "echecs": 0
   },
   "s1.ticketm.net": {
-   "affiches": 7,
+   "affiches": 9,
    "echecs": 0
   },
   "www.lamechecourte.ca": {
    "affiches": 5,
    "echecs": 0
   },
-  "images.sk-static.com": {
-   "affiches": 158,
-   "echecs": 0
-  },
   "duceppe.com": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "tuxedov1.blob.core.windows.net": {
+   "affiches": 10,
+   "echecs": 0
+  },
+  "festivalarabe.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
+  "tpos.s3.amazonaws.com": {
+   "affiches": 102,
+   "echecs": 0
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 55,
+   "echecs": 0
+  },
+  "panm360.com": {
+   "affiches": 24,
+   "echecs": 0
+  },
+  "gg.festapp.io": {
+   "affiches": 166,
    "echecs": 0
   },
   "reseauartactuel.org": {
    "affiches": 7,
    "echecs": 0
   },
+  "www.foufouneselectriques.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "montreal.askapunk.net": {
-   "affiches": 26,
+   "affiches": 30,
+   "echecs": 0
+  },
+  "services-medias.uqam.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "mato.s3.us-east-1.amazonaws.com": {
+   "affiches": 4,
    "echecs": 0
   },
   "cdn.placedesarts.com": {
-   "affiches": 23,
+   "affiches": 24,
    "echecs": 0
   },
-  "cdn.ma.to": {
-   "affiches": 5,
+  "s3.amazonaws.com": {
+   "affiches": 4,
    "echecs": 0
   },
   "www.festivalnuitsdafrique.com": {
    "affiches": 4,
    "echecs": 0
   },
+  "www.mado.qc.ca": {
+   "affiches": 8,
+   "echecs": 0
+  },
+  "casinos.lotoquebec.com": {
+   "affiches": 6,
+   "echecs": 0
+  },
+  "www.universe.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "images.squarespace-cdn.com": {
-   "affiches": 7,
+   "affiches": 19,
    "echecs": 0
   },
   "assets.nuwebgroup.com": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "funnation.ca": {
+   "affiches": 6,
    "echecs": 0
   },
   "seatgeekimages.com": {
@@ -155,19 +147,19 @@
    "echecs": 0
   },
   "rideauvert.qc.ca": {
-   "affiches": 1,
+   "affiches": 2,
    "echecs": 0
   },
   "applications-media.feverup.com": {
    "affiches": 2,
    "echecs": 0
   },
-  "tuxedov1.blob.core.windows.net": {
-   "affiches": 3,
-   "echecs": 0
-  },
   "studio011.ca": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "cdn.ma.to": {
+   "affiches": 2,
    "echecs": 0
   },
   "lalumierecollective.org": {
@@ -179,11 +171,11 @@
    "echecs": 0
   },
   "pauline-julien.com": {
-   "affiches": 19,
+   "affiches": 18,
    "echecs": 0
   },
   "static.wixstatic.com": {
-   "affiches": 2,
+   "affiches": 3,
    "echecs": 0
   },
   "lelivart.com": {
@@ -194,16 +186,12 @@
    "affiches": 1,
    "echecs": 0
   },
-  "casinos.lotoquebec.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
   "theatreoutremont.ca": {
    "affiches": 1,
    "echecs": 0
   },
   "image.tmdb.org": {
-   "affiches": 5,
+   "affiches": 6,
    "echecs": 0
   },
   "ent-nts.ca": {
@@ -211,10 +199,18 @@
    "echecs": 0
   },
   "ridm.ca": {
-   "affiches": 66,
+   "affiches": 29,
+   "echecs": 0
+  },
+  "cafconc.ca": {
+   "affiches": 1,
    "echecs": 0
   },
   "casteliers.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "festivalbachmontreal.com": {
    "affiches": 1,
    "echecs": 0
   },
@@ -232,55 +228,39 @@
   }
  },
  "exemples": {
-  "res.cloudinary.com": [
-   "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/xfcplnkx19lo5zucnixb.jpg",
-   "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ispqvyrbwkupdgyvijid.jpg",
-   "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ojz0oy3tretbzpm24ply.jpg"
+  "ma.to": [
+   "https://ma.to/og-image-default.png"
   ],
-  "sorstu.ca": [
-   "https://sorstu.ca/wp-content/uploads/artists/new/georges_662x0.jpg",
-   "https://sorstu.ca/wp-content/uploads/artists/new/jazz-sessions_662x0.jpg",
-   "https://sorstu.ca/wp-content/uploads/artists/new/la-cathedrale-engloutie_662x0.jpg"
-  ],
-  "spectaculos.ca": [
-   "https://spectaculos.ca/assets/images/uploads/event_34882_1782477266.jpg",
-   "https://spectaculos.ca/assets/images/uploads/event_blurfit_981709ab_1781266365.jpg",
-   "https://spectaculos.ca/og/fr/56342.png"
-  ],
-  "images.ra.co": [
-   "https://images.ra.co/e4a7691a17bc1a68ae31da4bcaa2ae194ce456bc.png",
-   "https://images.ra.co/8fc748d6b1550c7f014e04b089bb92f9072b9466.jpg"
-  ],
-  "www.eventbrite.ca": [
-   "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195727898%252F235372789431%252F1%252Foriginal.20261013-205204%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Daf68bd1ca63d54edf4b81b6c717f3076&w=1200&q=75",
-   "https://www.eventbrite.ca/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195464583%252F537859143107%252F1%252Foriginal.20261009-170717%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D7563c2c5435e0dc73eca7bb3e1295e44&w=1200&q=75",
-   "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195712795%252F537859143107%252F1%252Foriginal.20261013-181040%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D0beb11dfc1c0fa865c1c1aa09e46e8e5&w=1200&q=75"
-  ],
-  "gg.festapp.io": [
-   "https://gg.festapp.io/small_1792509651_small_camembert.png"
+  "www.eventbrite.com": [
+   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195177411%252F1296453055783%252F1%252Foriginal.20261006-140407%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D3b7bf9774b9dbdfb4442439f788bdfb7&w=1200&q=75",
+   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193695236%252F1296453055783%252F1%252Foriginal.20260916-210100%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Dd69eed74297cf7ed18da2e5335fcfe89&w=1200&q=75"
   ],
   "static-assets.artlogic.net": [
    "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
+  ],
+  "images.sk-static.com": [
+   "https://images.sk-static.com/images/media/profile_images/artists/9097169/medium_avatar",
+   "https://images.sk-static.com/images/media/profile_images/artists/10410398/medium_avatar"
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
-  "expo": 5,
-  "conference": 24,
-  "musique": 157,
-  "cinema": 20,
-  "poesie": 9,
-  "danse": 2,
-  "quiz": 84,
-  "theatre": 14,
-  "fete": 35,
   "lettres": 19,
-  "humour": 38,
-  "jeune": 14,
-  "atelier": 6,
-  "autre": 1,
-  "cirque": 2
+  "conference": 30,
+  "humour": 46,
+  "theatre": 25,
+  "quiz": 86,
+  "musique": 118,
+  "danse": 6,
+  "fete": 31,
+  "jeune": 8,
+  "cirque": 2,
+  "cinema": 17,
+  "expo": 4,
+  "poesie": 3,
+  "atelier": 3,
+  "autre": 1
  }
 }
