@@ -349,18 +349,18 @@ def _periode(s):
 
 def slide_couverture(s):
     css = """
-h1{margin:0;font-size:150px;line-height:.9;font-weight:900;letter-spacing:-.055em}
+h1{margin:0;font-size:170px;line-height:.92;font-weight:900;letter-spacing:-.055em}
 .menu{flex:1;display:flex;flex-direction:column;gap:14px;font-size:38px;font-weight:700;white-space:nowrap}
 .menu b{font-weight:900}
 .bas{flex:1;display:flex;align-items:flex-end;justify-content:space-between;gap:30px;min-height:0}
-.logo{width:470px;max-height:100%;object-fit:contain;display:block}"""
+.logo{width:520px;max-height:100%;object-fit:contain;display:block}"""
     lignes = [T(f"<b>{len(s['picks'])}</b> sorties à voir", f"<b>{len(s['picks'])}</b> must-sees")] \
         + ([T("Les festivals", "Festivals")] if s["festivals"] else []) \
         + ([T("La salle de la semaine", "Venue of the week")] if s["salle"] else []) \
         + [T(f"<b>{s['total']}</b> sorties en tout", f"<b>{s['total']}</b> events in all")]
     logo = _logo()
     return page2(1080, 1350, f"""<div class="tete">{marque2()}<span class="pill">{_periode2(s)}</span></div>
-{T('<h1>La sélection<br>de la <span class="ov">semaine</span></h1>', '<h1>This<br><span class="ov">week&rsquo;s</span><br>picks</h1>')}
+{T('<h1>La sélection<br>de la<br><span class="ov">semaine</span></h1>', '<h1>This<br><span class="ov">week&rsquo;s</span><br>picks</h1>')}
 <div class="bas"><div class="menu">{''.join(f'<div>{x}</div>' for x in lignes)}</div>{f'<img class="logo" src="{logo}" alt="">' if logo else ''}</div>
 {pied(T("glisse →", "swipe →"))}""", css)
 
@@ -461,10 +461,10 @@ def slide_salle(s):
 .sur{{font-size:34px;font-weight:900}}
 h1{{margin:0;font-size:{_taille_titre(sa['lieu'], 130)}px;line-height:.92;font-weight:900;letter-spacing:-.05em}}
 .qr{{margin:-20px 0 0;font-size:36px;font-weight:500}}
-.rg{{gap:18px}}.ev{{padding:20px 28px;gap:6px}}.ev .k{{font-size:24px}}.ev .t2{{font-size:38px}}.ev .t{{font-size:40px}}.ev .s{{font-size:24px}}
+.rg{{gap:18px;flex:1;justify-content:center}}.ev{{padding:20px 28px;gap:6px}}.ev .k{{font-size:24px}}.ev .t2{{font-size:38px}}.ev .t{{font-size:40px}}.ev .s{{font-size:24px}}
 .jb{{width:110px}}.jb .a{{font-size:24px}}.jb .b{{font-size:54px}}"""
     vus = set()
-    rangs = "".join(_rang(e, e["discipline"], vus, quand(e).split(" · ")[0]) for e in sa["events"][:7])
+    rangs = "".join(_rang(e, e["discipline"], vus, "") for e in sa["events"][:7])
     return page2(1080, 1350, f"""<div class="tete"><span class="pill">{T("La salle de la semaine", "Venue of the week")}</span>{marque2(30)}</div>
 <h1>{escape(sa['lieu'])}</h1>{f'<p class="qr">{escape(sa["quartier"])}</p>' if sa.get("quartier") else ''}
 <div class="rg">{rangs}</div>{pied()}""", css)
