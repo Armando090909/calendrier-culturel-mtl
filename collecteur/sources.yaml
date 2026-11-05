@@ -124,6 +124,17 @@ sources:
   - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4]}
   - {nom: "Cinéma L'Amour (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/cinemalamour", lieu: "Cinéma L'Amour", discipline: musique, jours_semaine: [1, 4]}  # 5 nov. 2026 : concerts et soirées seulement (salle aussi de cinéma pour adultes)
   - {nom: "Théâtre Plaza", cle: salles, type: page_ia, url: "https://theatreplaza.ca/evenements/", lieu: "Théâtre Plaza", discipline: musique, jours_semaine: [0, 2, 4]}  # 5 nov. 2026 : soirées Kino (billets Zeffy, absentes des billetteries lues)
+  # ---- Audit des salles du 5 nov. 2026 (Google Maps + liste d'Alexandre) : sites vérifiés lisibles par notre robot
+  - {nom: "The Comedy Nest", cle: salles, type: page_ia, url: "https://www.comedynest.com/", lieu: "The Comedy Nest", discipline: humour, jours_semaine: [0, 3]}
+  - {nom: "Comedyville", cle: salles, type: page_ia, url: "https://www.comedyville.ca/", lieu: "Comedyville", discipline: humour, jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Cinéma Public", cle: salles, type: page_ia, url: "https://cinemapublic.ca/", lieu: "Cinéma Public", discipline: cinema, jours_semaine: [0, 2, 4]}
+  - {nom: "L'Illusion, Théâtre de marionnettes", cle: salles, type: page_ia, url: "https://www.illusiontheatre.com/", lieu: "L'Illusion, Théâtre de marionnettes", discipline: jeune, jours_semaine: [1, 4]}
+  - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/", lieu: "Studio 303", discipline: danse, jours_semaine: [1, 4]}
+  - {nom: "Théâtre de la LNI", cle: salles, type: page_ia, url: "https://www.lni.ca/", discipline: humour, jours_semaine: [1, 4]}
+  - {nom: "Bistro à Jojo", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/", discipline: jeune, jours_semaine: [2]}
+  - {nom: "Librairie L'Euguélionne", cle: salles, type: page_ia, url: "https://www.librairieleuguelionne.com/", lieu: "L'Euguélionne", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Librairie Drawn & Quarterly (événements)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   # ---------- Conférences, idées, savoirs (ouverts au public) ----------
   # Pages de programmation lues par l'IA ; les activités internes (soutenances, réunions) sont écartées par la consigne.
   - {nom: "UPop Montréal (université populaire)", cle: salles, type: page_ia, url: "https://www.upopmontreal.com/horaire/", discipline: conference, jours_semaine: [0, 3]}
