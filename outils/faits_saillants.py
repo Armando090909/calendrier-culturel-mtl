@@ -586,7 +586,7 @@ def condenses(s):
     return out
 
 
-# ---------------------------------------------------------------- Bannières (Facebook, Bluesky), comme le haut du site
+# ---------------------------------------------------------------- Bannières (Facebook, Bluesky), comme le haut du site (logo : docs/logo-ccmtl.webp)
 def banniere(w, h, sur, decale=0):
     """Le haut du site : « Calendrier culturel de Montréal », « Qu'est-ce qu'on fait ce soir ? » et le dessin.
     sur : largeur utile au centre (Facebook coupe les côtés sur téléphone) ; decale : déplacement vers la droite
