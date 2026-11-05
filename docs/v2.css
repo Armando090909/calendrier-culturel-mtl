@@ -210,3 +210,24 @@ html.v2 .prix-tel,html.v2 .btl-c{display:none}
   html.v2 .actions .btn{padding:10px 6px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
   html.v2 .btl-l{display:none}html.v2 .btl-c{display:inline}
 }
+
+/* Écouter / voir : sous l'affiche */
+html.v2 .det-vis .ecoute{margin-top:10px}
+
+/* Bas de page (nouveau) : mise à jour sous la ligne ; programmation dans un ovale ; don au centre ; liens à droite */
+html.v2 .note,html.v2 .pied{display:none}
+html.v2 .v2-pied{display:flex;flex-direction:column;gap:34px;border-top:2px solid var(--ink);padding-top:14px;margin-top:24px}
+html.v2 .vp-maj .refresh{margin:0;font-size:14px;color:var(--ink);text-align:left}
+html.v2 .vp-prog{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+html.v2 .vp-prog p{margin:0;font-size:clamp(20px,2.4vw,28px);font-weight:900;letter-spacing:-.02em}
+html.v2 .vp-pill{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px;border:3px solid var(--ink);border-radius:999px;padding:6px}
+html.v2 .vp-pill a{font-weight:700;font-size:16px;text-decoration:none;color:var(--ink);border-radius:999px;padding:11px 20px;border:0;background:transparent}
+html.v2 .vp-pill a.go{background:var(--ink);color:var(--bg)}
+html.v2 .vp-pill a:not(.go):hover{background:var(--chip-off)}
+html.v2 .vp-don{display:flex;flex-direction:column;align-items:center;gap:14px}
+html.v2 .vp-don .don-bt{font-size:20px;padding:16px 34px}
+html.v2 .vp-don .don-pop{max-width:560px;padding:16px 20px}
+html.v2 .vp-liens{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}
+@media (max-width:560px){html.v2 .vp-liens{justify-content:center}html.v2 .vp-pill{border-radius:28px}}
+html.v2 .vp-maj .refresh{font-family:var(--f-body);font-weight:500;transform:none;line-height:1.4}
+html.v2 .vp-prog p{color:var(--ink)}

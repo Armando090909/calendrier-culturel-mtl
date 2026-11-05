@@ -84,6 +84,8 @@ PAGES = {
         ('<div class="loading">Chargement des événements…</div>', '<div class="loading">Loading events…</div>'),
         ('<summary>Expositions et art public <span id="xcount"></span></summary>', '<summary>Exhibitions and public art <span id="xcount"></span></summary>'),
         ("<p>Tu fais de la programmation d'événements ?</p>", '<p>Do you program events?</p>'),
+        ("<p>Tu fais de la programmation d'événements&nbsp;?</p>", '<p>Do you program events?</p>'),
+        ('<a class="pied-bt" href="mailto:info@ccmtl.ca">Nous joindre</a>', '<a class="pied-bt" href="mailto:info@ccmtl.ca">Contact us</a>'),
         ('hidden target="_blank" rel="noopener">+ Proposer un événement</a><a href="salles.html">Partager un calendrier</a>',
          'hidden target="_blank" rel="noopener">+ Submit an event</a><a href="salles.html">Share a calendar</a>'),
     ],

@@ -9,6 +9,13 @@ const DISC=EN?[["theatre","Theatre"],["musique","Music"],["danse","Dance"],["cir
   :[["theatre","Théâtre"],["musique","Musique"],["danse","Danse"],["cirque","Cirque"],["humour","Humour et cabaret"],["cinema","Cinéma"],["poesie","Poésie, slam et rap battle"],["lettres","Littérature"],["conference","Conférences"],["jeune","Jeune public"],["atelier","Ateliers"],["fete","Fêtes et célébrations"],["quiz","Quiz"],["expo","Vernissages"],["autre","Autre / à préciser"]];
 const DISC_LABEL=Object.fromEntries(DISC);
 const V2=document.documentElement.classList.contains("v2"); // aperçu du nouveau design (?v2)
+// Nouveau design : le bas de page est réorganisé (mise à jour, programmation dans un ovale, don au centre, liens à droite)
+if(V2)(()=>{const q=s=>document.querySelector(s),f=q(".v2-pied");if(!f)return;
+  const mv=(el,dest)=>{if(el&&dest)dest.appendChild(el)};
+  mv(q("#majInfo"),q(".vp-maj"));
+  document.querySelectorAll(".note .toplinks a").forEach(a=>mv(a,q(".vp-pill")));
+  mv(q("#donBtn"),q(".vp-don"));mv(q("#donPop"),q(".vp-don"));
+  [...document.querySelectorAll(".pied-bts .pied-bt")].reverse().forEach(a=>q(".vp-liens").prepend(a));})();
 // Stations de métro (coordonnées approximatives) et lignes, dans l'ordre
 const STN={"Angrignon":[45.4462,-73.6036],"Monk":[45.4510,-73.5932],"Jolicoeur":[45.4570,-73.5818],"Verdun":[45.4594,-73.5718],"De l'Église":[45.4620,-73.5668],"LaSalle":[45.4708,-73.5662],"Charlevoix":[45.4782,-73.5695],"Lionel-Groulx":[45.4829,-73.5797],"Atwater":[45.4898,-73.5862],"Guy-Concordia":[45.4958,-73.5795],"Peel":[45.5010,-73.5750],"McGill":[45.5040,-73.5717],"Place-des-Arts":[45.5080,-73.5687],"Saint-Laurent":[45.5107,-73.5649],"Berri-UQAM":[45.5153,-73.5612],"Beaudry":[45.5190,-73.5560],"Papineau":[45.5236,-73.5522],"Frontenac":[45.5332,-73.5521],"Préfontaine":[45.5418,-73.5545],"Joliette":[45.5470,-73.5513],"Pie-IX":[45.5536,-73.5516],"Viau":[45.5610,-73.5476],"Assomption":[45.5694,-73.5469],"Cadillac":[45.5770,-73.5464],"Langelier":[45.5829,-73.5432],"Radisson":[45.5893,-73.5398],"Honoré-Beaugrand":[45.5965,-73.5352],
  "Côte-Vertu":[45.5141,-73.6829],"Du Collège":[45.5093,-73.6744],"De la Savane":[45.5005,-73.6614],"Namur":[45.4949,-73.6527],"Plamondon":[45.4945,-73.6385],"Côte-Sainte-Catherine":[45.4924,-73.6332],"Snowdon":[45.4855,-73.6280],"Villa-Maria":[45.4797,-73.6197],"Vendôme":[45.4738,-73.6040],"Place-Saint-Henri":[45.4771,-73.5867],"Georges-Vanier":[45.4889,-73.5764],"Lucien-L'Allier":[45.4950,-73.5711],"Bonaventure":[45.4979,-73.5672],"Square-Victoria–OACI":[45.5019,-73.5631],"Place-d'Armes":[45.5061,-73.5600],"Champ-de-Mars":[45.5104,-73.5563],"Sherbrooke":[45.5193,-73.5689],"Mont-Royal":[45.5245,-73.5817],"Laurier":[45.5276,-73.5891],"Rosemont":[45.5314,-73.5976],"Beaubien":[45.5354,-73.6045],"Jean-Talon":[45.5394,-73.6136],"Jarry":[45.5434,-73.6287],"Crémazie":[45.5461,-73.6383],"Sauvé":[45.5508,-73.6560],"Henri-Bourassa":[45.5557,-73.6680],
@@ -166,17 +173,17 @@ function detailHTML(e){
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">${L("Itinéraire","Directions")}</a>
         <button type="button" class="btn ghost" data-partage="${e._i}">${L("Partager","Share")}</button>
       </div>`;
-  const extra=`${ecoute}${calHTML(e)}`;
+  const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
   return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
       ${lieuHTML(e,true)}
-      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}
+      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2&&!media?ecoute:""}
       ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
     </div>
-    ${media?`<div class="det-vis">${media}</div>`:""}
+    ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
     <div class="det-side seul">${actions}${extra}</div>
   </article>`;
 }
