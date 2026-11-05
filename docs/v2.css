@@ -277,4 +277,4 @@ html.v2 .det-side .cal{margin-top:auto;border-top:0;padding-top:6px;justify-cont
 html.v2 .det-side{align-self:stretch}
 html.v2 .v1i{display:none}
 /* Crédit de l'affiche : voile très pâle, juste assez pour rester lisible sur une image sombre */
-html.v2 .det-aff figcaption{background:rgba(255,255,255,.5);color:#000}
+html.v2 .det-aff figcaption{background:rgba(255,255,255,.35);color:#000}
