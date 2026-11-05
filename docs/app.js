@@ -437,6 +437,11 @@ function clamp(){
   if(!st.week||addDays(st.week,6)<D.debut||st.week>D.fin)st.week=monday(st.day);
   if(!st.month||st.month<D.debut.slice(0,7)||st.month>D.fin.slice(0,7))st.month=st.day.slice(0,7);
 }
+// Nouveau design : un titre dont un mot est trop long pour la largeur (« SCHTROUMPFMANIA ») est réduit,
+// point par point, plutôt que de laisser une lettre seule sur la ligne suivante
+function ajusterTitres(){if(!V2)return;document.querySelectorAll(".ev.det h3.t").forEach(h=>{h.style.fontSize="";
+  let n=0;const base=parseFloat(getComputedStyle(h).fontSize);while(h.scrollWidth>h.clientWidth+1&&n<14){n++;h.style.fontSize=(base-n)+"px"}})}
+addEventListener("resize",()=>{clearTimeout(ajusterTitres.t);ajusterTitres.t=setTimeout(ajusterTitres,150)});
 function render(){
   if(!D)return;clamp();
   renderChips();
@@ -452,6 +457,7 @@ function render(){
   $("s-time").setAttribute("aria-pressed",st.sort!=="dist");$("s-dist").setAttribute("aria-pressed",st.sort==="dist");
   $("pt").value=st.pt;$("rayon").value=String(st.rayon);
   save();
+  if(V2)requestAnimationFrame(ajusterTitres);
 }
 function renderFooter(){
   const auj=iso(new Date()),ecart=Math.round((new Date(auj+"T12:00")-new Date(D.miseAJour+"T12:00"))/864e5);

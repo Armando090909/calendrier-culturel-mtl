@@ -295,3 +295,5 @@ html.v2 .ev.det:has(.tm.nh) h3.t{padding-right:0}
 }
 @media (max-width:700px){html.v2 .vp-pill a{display:flex;align-items:center;justify-content:center}}
 @media (max-width:700px){html.v2 .vp-pill a{white-space:nowrap;font-size:13px;padding:11px 6px}}
+/* Titres : pas de coupure au milieu d'un mot (le site réduit plutôt la taille du titre) */
+html.v2 .ev.det h3.t{overflow-wrap:normal;word-break:normal;hyphens:manual}

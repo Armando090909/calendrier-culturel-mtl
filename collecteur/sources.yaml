@@ -122,6 +122,7 @@ sources:
   # Salles repérées en oct. 2026 (comparaison avec d'autres calendriers) : sites des lieux eux-mêmes
   - {nom: "Centre des musiciens du monde", cle: salles, type: page_ia, url: "https://centredesmusiciensdumonde.com/", lieu: "Centre des musiciens du monde", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4]}
+  - {nom: "Cinéma L'Amour (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/cinemalamour", lieu: "Cinéma L'Amour", discipline: musique, jours_semaine: [1, 4]}  # 5 nov. 2026 : concerts et soirées seulement (salle aussi de cinéma pour adultes)
   # ---------- Conférences, idées, savoirs (ouverts au public) ----------
   # Pages de programmation lues par l'IA ; les activités internes (soutenances, réunions) sont écartées par la consigne.
   - {nom: "UPop Montréal (université populaire)", cle: salles, type: page_ia, url: "https://www.upopmontreal.com/horaire/", discipline: conference, jours_semaine: [0, 3]}

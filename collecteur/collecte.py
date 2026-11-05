@@ -643,6 +643,8 @@ def main() -> int:
             r = memo_ia.get(cle)
             if r is not None and (r.get("_err") or (not r.get("heure") and not r.get("v"))):
                 r = None  # échec technique, ou lu avant la 2e version (navigateur, heures d'ouverture) : on réessaie
+            if r is not None and e["lieu"] == "Lieu à confirmer" and not r.get("lieu") and r.get("v", 0) < 3:
+                r = None  # salle introuvable au 1er essai : relu dans le navigateur (3e version)
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
                 try:
@@ -650,9 +652,9 @@ def main() -> int:
                         texte = texte_page(telecharger(e["url"], "text/html").text, e["url"])
                     except Exception:
                         texte = ""
-                    if len(texte) < 400:  # page affichée par JavaScript, ou refusée au simple téléchargement
+                    if len(texte) < 400 or e["lieu"] == "Lieu à confirmer":  # page en JavaScript, refusée, ou salle à trouver
                         texte = texte_page(connecteurs.page_rendue(e["url"]), e["url"])
-                    r = memo_ia[cle] = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=2)
+                    r = memo_ia[cle] = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=3)
                 except Exception as exc:
                     r = memo_ia[cle] = {"_err": str(exc)[:80]}
             if not r or r.get("_err"):
