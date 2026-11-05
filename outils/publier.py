@@ -155,7 +155,7 @@ PROFIL_BLUESKY = {
 
 def profil_bluesky():
     """Nom affiché et description du compte Bluesky (la recherche de Bluesky ne trouve que ce qui y est écrit).
-    L'avatar et la bannière existants sont conservés."""
+    L'avatar devient la pastille ccmtl (docs/logos/avatar.png) ; la bannière existante est conservée."""
     ident, mdp = os.environ.get("BLUESKY_IDENTIFIANT"), os.environ.get("BLUESKY_MOT_DE_PASSE")
     if not ident or not mdp:
         return None
@@ -167,6 +167,12 @@ def profil_bluesky():
     rec = r.json().get("value", {}) if r.ok else {}
     rec = dict(rec, **PROFIL_BLUESKY)
     rec["$type"] = "app.bsky.actor.profile"
+    f_avatar = RACINE / "docs" / "logos" / "avatar.png"  # la pastille ccmtl
+    if f_avatar.exists() and not ESSAI:
+        b = requests.post("https://bsky.social/xrpc/com.atproto.repo.uploadBlob", timeout=60, data=f_avatar.read_bytes(),
+                          headers=dict(h, **{"Content-Type": "image/png"}))
+        b.raise_for_status()
+        rec["avatar"] = b.json()["blob"]
     if ESSAI:
         return "essai : profil Bluesky prêt (" + rec["displayName"] + ")"
     r = requests.post("https://bsky.social/xrpc/com.atproto.repo.putRecord", headers=h, timeout=30,

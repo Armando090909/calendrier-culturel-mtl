@@ -64,6 +64,9 @@ PAS_VEDETTE = re.compile(r"(?i)grands explorateurs|aventuriers voyageurs|documen
 
 
 def quand(e):
+    if e.get("_jusqu"):  # série présentée toute la semaine (choix fait à la main)
+        f = date.fromisoformat(e["_jusqu"])
+        return f"until {MOIS_EN[f.month - 1]} {f.day}" if LANGUE == "en" else f"jusqu'au {f.day} {MOIS[f.month - 1]}"
     d = date.fromisoformat(e["date"])
     if LANGUE == "en":
         h = ""
@@ -304,6 +307,14 @@ def page2(w, h, corps, css=""):
             .replace("CSS", css).replace("BODY", corps))
 
 
+def pastille(taille=150):
+    f = RACINE / "docs" / "logos" / "avatar-400.webp"
+    if not f.exists():
+        return marque2(26)
+    return (f'<img src="data:image/webp;base64,{_b64.b64encode(f.read_bytes()).decode()}" alt="ccmtl" '
+            f'style="width:{taille}px;height:{taille}px;flex:none;display:block">')
+
+
 def marque2(taille=44):
     return (f'<p class="mq" style="font-size:{taille}px">'
             + T("Calendrier culturel<br><span>de Montréal</span>", "Montréal's cultural<br><span>calendar</span>") + "</p>")
@@ -314,10 +325,12 @@ def pied(droite=""):
 
 
 def _heure(e):
-    return (e.get("heure") or "")[:5]
+    return "" if e.get("_jusqu") else (e.get("heure") or "")[:5]
 
 
 def _jour_long(e):
+    if e.get("_jusqu"):
+        return quand(e)[0].upper() + quand(e)[1:]
     d = date.fromisoformat(e["date"])
     if LANGUE == "en":
         return f"{['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][d.weekday()]}, {MOIS_EN[d.month - 1]} {d.day}"
@@ -372,30 +385,31 @@ def slide_pick(p, n, tot):
     accroche = p.get("accroche_en", "") if LANGUE == "en" else p["accroche"]
     tt = _taille_titre(e["titre"])
     css = f"""
-.c{{flex:1;min-height:0;background:{coul(k)};border-radius:48px;overflow:hidden;display:flex;flex-direction:column}}
-.vis{{height:500px;flex:none;position:relative;background:rgba(0,0,0,.08)}}
-.vis img{{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}}
-.cr{{position:absolute;right:20px;bottom:18px;font-size:20px;font-weight:500;background:rgba(255,255,255,.55);border-radius:999px;padding:4px 14px}}
-.dec{{position:absolute;left:24px;top:22px;font-size:26px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:6px 18px}}
-.in{{padding:40px 52px 46px;display:flex;flex-direction:column;gap:18px;flex:1;min-height:0}}
+body{{background:{coul(k)};gap:34px}}
+.vis{{height:600px;flex:none;display:flex;align-items:center;justify-content:center}}
+.cad{{position:relative;max-width:100%;max-height:100%;display:flex}}
+.cad img{{max-width:936px;max-height:600px;border-radius:28px;display:block}}
+.cr{{position:absolute;right:16px;bottom:14px;font-size:20px;font-weight:500;background:rgba(255,255,255,.55);border-radius:999px;padding:4px 14px}}
+.dec{{position:absolute;left:18px;top:16px;font-size:26px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:6px 18px}}
+.in{{display:flex;flex-direction:column;gap:16px;flex:1;min-height:0}}
 .l1{{display:flex;justify-content:space-between;align-items:baseline}}
 .dis{{font-size:34px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}}
 .hr{{font-size:64px;font-weight:900;line-height:1}}
-h2{{margin:0;font-size:{tt}px;line-height:.95;font-weight:900;letter-spacing:-.045em;
-  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:normal}}
-.acc{{margin:0;font-size:34px;font-weight:500;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
+h2{{margin:0;font-size:{min(tt, 92)}px;line-height:.95;font-weight:900;letter-spacing:-.045em;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:normal}}
+.acc{{margin:0;font-size:32px;font-weight:500;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
 .bas{{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;min-width:0}}
 .bas .j{{flex:none;font-size:32px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:10px 24px}}
 .bas .lieu{{font-size:32px;font-weight:700;line-height:1.1}}"""
     if not img:
-        css += "\n.vis{display:none}"
+        css += "\n.vis{display:none}\nh2{font-size:%dpx}" % _taille_titre(e["titre"], 130)
     decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
-    vis = (f'<div class="vis"><img src="{escape(img)}" alt="">{decouv}'
-           + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div>")
-    return page2(1080, 1350, f"""<div class="c">{vis}<div class="in">
+    vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="">{decouv}'
+           + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div></div>")
+    return page2(1080, 1350, f"""{vis}<div class="in">
 <div class="l1"><span class="dis">{escape(nom_disc(k))}</span><span class="hr">{_heure(e)}</span></div>
 <h2>{escape(e['titre'])}</h2>{f'<p class="acc">{escape(accroche)}</p>' if accroche else ''}
-<div class="bas"><span class="j">{_jour_long(e)}</span><span class="lieu">{escape(e['lieu'])}</span></div></div></div>
+<div class="bas"><span class="j">{_jour_long(e)}</span><span class="lieu">{escape(e['lieu'])}</span></div></div>
 {pied(f"{n} / {tot}")}""", css)
 
 
@@ -448,9 +462,14 @@ CSS_RANGS = """
 def _rang(e, k, vus, sous):
     d = date.fromisoformat(e["date"])
     jours = JOURS if LANGUE == "fr" else ["Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."]
-    vide = " vide" if e["date"] in vus else ""
-    vus.add(e["date"])
-    return (f'<div class="lg"><span class="jb{vide}"><span class="a">{jours[d.weekday()]}</span><span class="b">{d.day}</span></span>'
+    vide = " vide" if e["date"] in vus and not e.get("_jusqu") else ""
+    if not e.get("_jusqu"):
+        vus.add(e["date"])
+    a, b = jours[d.weekday()], d.day
+    if e.get("_jusqu"):
+        f = date.fromisoformat(e["_jusqu"])
+        a, b = T("jusq.", "until"), f.day
+    return (f'<div class="lg"><span class="jb{vide}"><span class="a">{a}</span><span class="b">{b}</span></span>'
             f'<span class="ev" style="--c:{coul(k)}"><span class="h"><span class="k">{escape(nom_disc(k))}</span><span class="t2">{_heure(e)}</span></span>'
             f'<span class="t">{escape(e["titre"])}</span><span class="s">{escape(sous)}</span></span></div>')
 
@@ -505,7 +524,7 @@ h1{margin:0;font-size:76px;font-weight:900;letter-spacing:-.04em;line-height:.95
     vus = set()
     rangs = "".join(_rang(p["e"], p["k"], vus, p["e"]["lieu"]) for p in s["picks"])
     autres = s["total"] - len(s["picks"])
-    return page2(1080, 1920 if story else 1350, f"""<div class="tete">{T('<h1>À voir<br>cette <span class="ov">semaine</span></h1>', '<h1>Worth seeing<br><span class="ov">this week</span></h1>')}{marque2(26)}</div>
+    return page2(1080, 1920 if story else 1350, f"""<div class="tete">{T('<h1>À voir<br>cette <span class="ov">semaine</span></h1>', '<h1>Worth seeing<br><span class="ov">this week</span></h1>')}{pastille()}</div>
 <div class="rg">{rangs}</div>{pied(T(f"Ainsi que {autres} autres sorties →", f"Plus {autres} more events →"))}""", css)
 
 
@@ -525,7 +544,7 @@ h2{margin:0;font-size:76px;font-weight:900;letter-spacing:-.04em;line-height:.95
     salle = (f'<div class="sa"><span class="sur">{T("La salle de la semaine", "Venue of the week")}</span><h3>{escape(sa["lieu"])}</h3>'
              + "".join(f'<div class="e"><b>{quand(e)}</b><span>{escape(e["titre"])}</span></div>' for e in sa["events"][:5])
              + "</div>") if sa else ""
-    return page2(1080, 1350, f"""<div class="tete">{T('<h2>Les <span class="ov">festivals</span></h2>', '<h2><span class="ov">Festivals</span></h2>')}{marque2(26)}</div>
+    return page2(1080, 1350, f"""<div class="tete">{T('<h2>Les <span class="ov">festivals</span></h2>', '<h2><span class="ov">Festivals</span></h2>')}{pastille()}</div>
 <div class="fs">{_fests(s, 6, petit=True)}</div>{salle}{pied()}""", css)
 
 

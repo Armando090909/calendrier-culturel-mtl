@@ -5,56 +5,54 @@
   {
    "k": "theatre",
    "e": {
-    "date": "2026-11-02",
-    "heure": "20:00",
-    "discipline": "humour",
-    "titre": "Impro CIA - Coalition des improvisateurs anonymes",
-    "lieu": "Petit Campus",
-    "url": "https://lepointdevente.com/tickets/cafecampusshows",
+    "date": "2026-11-04",
+    "heure": "19:30",
+    "discipline": "theatre",
+    "titre": "La Cathédrale engloutie",
+    "lieu": "Théâtre de Quat'Sous",
+    "url": "https://sorstu.ca/artiste/la-cathedrale-engloutie/",
     "complet": false,
     "jeunePublic": false,
-    "source": "salles",
-    "resume": "Match d'improvisation présenté par la Coalition des improvisateurs anonymes.",
-    "billets": "https://lepointdevente.com/tickets/cafecampusshows",
-    "aussi": [
-     "theatre"
-    ],
+    "source": "sorstu",
+    "resume": "Pièce de théâtre de Rebecca Deraspe, présentée au Théâtre de Quat'Sous.",
     "affiche": {
-     "credit": "lepointdevente.com",
-     "lien": "https://lepointdevente.com/tickets/cafecampusshows",
-     "url": "https://tpos.s3.amazonaws.com/events/B4Z/26/10/12/001/b4z261012001-1152x648-fr-6ab4240a.png"
+     "url": "https://quatsous.com/uploads/images/_1200x630_crop_center-center_82_none/Visuel-site-web-Cathedrale_V2.jpg?mtime=1792424451",
+     "credit": "quatsous.com",
+     "lien": "https://quatsous.com/programmation/saison-2026-2027/la-cathedrale-engloutie"
     },
-    "resume_en": "Improv match presented by the Coalition des improvisateurs anonymes.",
-    "ics": "2026-11-02-impro-cia-coalition-des-improvisateurs-anonymes-3d2b43"
+    "resume_en": "Play by Rebecca Deraspe, presented at Théâtre de Quat'Sous.",
+    "ics": "2026-11-04-la-cathedrale-engloutie-7433e6",
+    "_jusqu": "2026-11-08"
    },
-   "accroche": "Match d'improvisation présenté par la Coalition des improvisateurs anonymes.",
-   "accroche_en": "Improv match presented by the Coalition des improvisateurs anonymes.",
+   "accroche": "À la mort de sa grand-mère, Léna, 16 ans, hérite d'un vieux piano désaccordé. Une pièce de Rebecca Déraspe.",
+   "accroche_en": "When her grandmother dies, 16-year-old Léna inherits an old, out-of-tune piano. A play by Rebecca Déraspe.",
    "mode": ""
   },
   {
    "k": "humour",
    "e": {
     "date": "2026-11-03",
-    "heure": "21:00",
+    "heure": "20:00",
     "discipline": "humour",
-    "titre": "Full Gisèle",
-    "lieu": "Cabaret Mado",
-    "url": "http://www.mado.qc.ca/",
+    "titre": "Pardon?! (P-A Méthot)",
+    "lieu": "Théâtre St-Denis",
+    "url": "https://funnation.ca/spectacle/p-a-methot-pardon-theatre-st-denis-montreal-3-nov-2026-2000/",
     "complet": false,
     "jeunePublic": false,
     "source": "salles",
-    "resume": "Spectacle de drag présenté au cabaret, en soirée.",
-    "billets": "https://lepointdevente.com/billets/fullgisele2",
+    "resume": "Spectacle d'humour de P-A Méthot présenté au Théâtre St-Denis.",
+    "prix": "100.51 $",
+    "billets": "https://spectaculos.ca/fr/spectacle/p-a-methot-montreal",
     "affiche": {
-     "credit": "mado.qc.ca",
-     "lien": "http://www.mado.qc.ca/",
-     "url": "https://www.mado.qc.ca/wp-content/uploads/1791846133FullGisele_261103-horizontal.jpg"
+     "url": "https://funnation.ca/wp-content/uploads/2025/11/PAMet_Pardon_1080x1080_Aff.jpg",
+     "credit": "funnation.ca",
+     "lien": "https://funnation.ca/spectacle/p-a-methot-pardon-theatre-st-denis-montreal-3-nov-2026-2000/"
     },
-    "resume_en": "Drag show presented at the cabaret, in the evening.",
-    "ics": "2026-11-03-full-gisele-e1755f"
+    "resume_en": "Comedy show by P-A Méthot presented at the Théâtre St-Denis.",
+    "ics": "2026-11-03-pardon-p-a-methot-f91d0f"
    },
-   "accroche": "Un spectacle de drag, en soirée, pour te laisser surprendre.",
-   "accroche_en": "A drag show, held at night, to let you be surprised.",
+   "accroche": "P-A Méthot présente son spectacle d'humour Pardon?! au Théâtre St-Denis.",
+   "accroche_en": "P-A Méthot brings his stand-up show Pardon?! to the Théâtre St-Denis.",
    "mode": ""
   },
   {
@@ -63,37 +61,93 @@
     "date": "2026-11-04",
     "heure": "19:00",
     "discipline": "cinema",
-    "titre": "Colombie, tout en couleur",
-    "lieu": "Théâtre Desjardins",
-    "url": "https://www.theatredesjardins.com/programmation/colombie-tout-en-couleur/",
+    "titre": "Mille secrets, mille dangers - Philippe Falardeau",
+    "lieu": "Bibliothèque de Notre-Dame-de-Grâce",
+    "url": "https://montreal.ca/evenements/mille-secrets-mille-dangers-philippe-falardeau-114882",
     "complet": false,
     "jeunePublic": false,
-    "source": "salles",
-    "resume": "Film documentaire de voyage présenté dans la série Les Grands Explorateurs.",
+    "source": "ville",
+    "resume": "Cinéma gratuit",
+    "prix": "Gratuit",
+    "billets": "https://cdn-ndg.tuxedobillet.com/main/mille-secrets-mille-dangers",
     "affiche": {
-     "url": "https://www.theatredesjardins.com/app/uploads/2026/05/tuxedo-image-colombie-tout-en-couleur.jpg",
-     "credit": "theatredesjardins.com",
-     "lien": "https://www.theatredesjardins.com/programmation/colombie-tout-en-couleur/"
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/uswxckvwp9days6yhhq1.jpg",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/uswxckvwp9days6yhhq1.jpg",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/mille-secrets-mille-dangers-philippe-falardeau-114882"
     },
-    "billets": "https://theatredesjardins-abonnes.tuxedobillet.com/Th%C3%A9%C3%A2tre%20Desjardins%20-%20Abonnes/colombie-tout-en-couleur",
     "liens": [
      {
-      "type": "youtube",
-      "url": "https://www.youtube.com/watch?v=w4Msck4UeGA?feature=oembed",
-      "source": "page"
+      "type": "bande-annonce",
+      "url": "https://www.youtube.com/watch?v=bSwJWzXLfBk",
+      "source": "tmdb"
      }
     ],
-    "resume_en": "Travel documentary film presented in the Les Grands Explorateurs series.",
-    "ics": "2026-11-04-colombie-tout-en-couleur-8f3f1a"
+    "resume_en": "Free film screening.",
+    "ics": "2026-11-04-mille-secrets-mille-dangers-philippe-falardeau-1cd460"
    },
-   "accroche": "Un documentaire de voyage qui te fait découvrir la Colombie en couleurs.",
-   "accroche_en": "A travel documentary that takes you through Colombia in full colour.",
+   "accroche": "Le film de Philippe Falardeau, en projection gratuite.",
+   "accroche_en": "Philippe Falardeau's film, in a free screening.",
+   "mode": ""
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-11-05",
+    "heure": "21:00",
+    "discipline": "musique",
+    "titre": "Catherine Leduc + Perma",
+    "lieu": "L'Escogriffe",
+    "url": "https://coupdecoeur.ca",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "festival": "coupdecoeur",
+    "resume": "Concert de chanson francophone, coup de cœur présenté par Sors-tu?, avec la première partie Perma.",
+    "style": "pop",
+    "billets": "https://lepointdevente.com/billets/ccf26-passepro?lang=fr",
+    "liens": [
+     {
+      "type": "bandcamp",
+      "url": "https://catherineleduc.bandcamp.com/",
+      "source": "musicbrainz",
+      "nom": "Catherine Leduc"
+     },
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/4LxF9fwHDq7kISldOF8aKn",
+      "source": "musicbrainz",
+      "nom": "Catherine Leduc"
+     },
+     {
+      "type": "apple",
+      "url": "https://music.apple.com/us/artist/280523513",
+      "source": "musicbrainz",
+      "nom": "Catherine Leduc"
+     },
+     {
+      "type": "site",
+      "url": "https://www.equalvision.com/artists/perma/",
+      "source": "musicbrainz",
+      "nom": "Perma"
+     }
+    ],
+    "resume_en": "Francophone song concert, a critics' pick presented by Sors-tu?, with opening act Perma.",
+    "ics": "2026-11-05-catherine-leduc-perma-9c0f6c",
+    "affiche": {
+     "url": "https://tpos.s3.amazonaws.com/events/OUP/26/11/05/001/ccf26-cathleduc-vermeil-1152x648-fr-6a99e131.png",
+     "credit": "lepointdevente.com",
+     "lien": "https://lepointdevente.com/billets/ccf26-cathleduc-perma?lang=fr"
+    }
+   },
+   "accroche": "Catherine Leduc revient avec un troisième album solo, dream pop. En première partie : Perma.",
+   "accroche_en": "Catherine Leduc returns with a third solo album of dream pop. Opening act: Perma.",
    "mode": ""
   },
   {
    "k": "danse",
    "e": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "heure": "19:00",
     "discipline": "danse",
     "titre": "Léo Hit Coupal + Hanna Sybille Müller",
@@ -102,54 +156,18 @@
     "complet": false,
     "jeunePublic": false,
     "source": "sorstu",
-    "resume": "Un duo de danse contemporaine présenté à la Tangente.",
+    "resume": "Pièce de danse signée par deux artistes, présentée à la salle Tangente.",
     "affiche": {
      "url": "https://sorstu.ca/wp-content/uploads/artists/new/leo-hit-coupal-hanna-sybille-muller_662x0.jpg",
      "credit": "sorstu.ca",
      "lien": "https://sorstu.ca/artiste/leo-hit-coupal-hanna-sybille-muller/",
      "petit": "https://sorstu.ca/wp-content/uploads/artists/square/new/leo-hit-coupal-hanna-sybille-muller_100x100.jpg"
     },
-    "billets": "https://tangentedanse.ca/evenement/leo-hit-coupal-hanna-sybille-muller/?utm_source=sorstu&utm_medium=affiliate&utm_campaign=2611-leo_coupal_hanna_sybille_muller-v_mtl-fr",
-    "resume_en": "A contemporary dance duo presented at La Tangente.",
-    "ics": "2026-11-05-leo-hit-coupal-hanna-sybille-muller-f95003"
+    "resume_en": "Dance piece by two artists, presented at Salle Tangente.",
+    "ics": "2026-11-06-leo-hit-coupal-hanna-sybille-muller-4ac070"
    },
    "accroche": "Un duo de danse contemporaine signé par deux artistes, à découvrir.",
    "accroche_en": "A contemporary dance duo by two artists, worth discovering.",
-   "mode": ""
-  },
-  {
-   "k": "musique",
-   "e": {
-    "date": "2026-11-06",
-    "heure": "21:00",
-    "discipline": "musique",
-    "titre": "Zéa Calla (lancement)",
-    "lieu": "Cabaret Lion d'Or",
-    "url": "https://festapp.io/festivals/coup-de-coeur-francophone/2026",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "festival",
-    "festival": "coupdecoeur",
-    "resume": "Concert electropop de Zéa Calla, présenté comme un coup de coeur francophone.",
-    "style": "pop",
-    "affiche": {
-     "credit": "festapp.io",
-     "lien": "https://festapp.io/festivals/coup-de-coeur-francophone/2026",
-     "url": "https://gg.festapp.io/1e68e685-94e7-46d1-a266-8b3d58eaced4"
-    },
-    "billets": "https://lepointdevente.com/billets/ccf26-passepro?lang=fr",
-    "liens": [
-     {
-      "type": "soundcloud",
-      "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A455850024&color=%23944255&auto_playx=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-      "source": "page"
-     }
-    ],
-    "resume_en": "Electropop concert by Zéa Calla, presented as a francophone favourite.",
-    "ics": "2026-11-06-zea-calla-lancement-f43bab"
-   },
-   "accroche": "Une soirée electropop pour découvrir Zéa Calla, un coup de cœur francophone.",
-   "accroche_en": "An electropop launch night to discover Zéa Calla, a francophone coup de cœur.",
    "mode": ""
   },
   {
