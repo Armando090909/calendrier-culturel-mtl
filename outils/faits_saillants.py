@@ -647,7 +647,7 @@ def rendre_bannieres(dossier):
         nav.close()
 
 
-# ---------------------------------------------------------------- Reel (vidéo verticale, sans musique)
+# ---------------------------------------------------------------- Reel (vidéo verticale 1080 × 1920, sans musique)
 def reel(images, sortie):
     """Vidéo verticale 1080 × 1920 (30 i/s) faite des cartons du carrousel, avec un glissement entre chacun.
     Sans musique : on la publie à la main depuis l'appli Instagram en ajoutant la chanson de l'artiste de la semaine
