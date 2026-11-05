@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-14-saturday-after-dusk-comedy-eb6da9@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T200000
+DTEND;TZID=America/Toronto:20261114T220000
+SUMMARY:Saturday After Dusk Comedy
+LOCATION:Estrella\, Montréal
+URL:https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dus
+ k-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator
+DESCRIPTION:Premier spectacle de stand-up en anglais du samedi soir\, en ve
+ rsion plus tôt en soirée.\nPrix : 15 à 20 $\nDétails : https://www.eve
+ ntbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-s
+ t-laurent-tickets-1105535920699?aff=oddtdtcreator\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

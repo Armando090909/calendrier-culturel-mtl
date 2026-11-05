@@ -329,6 +329,7 @@
   "quartier": "Centre-Sud"
  },
  "Cabaret Mado": null,
+ "Cabaret de Curiosités": null,
  "Cabaret des Amants": null,
  "Cabaret du Casino de Montréal": {
   "alias": [
@@ -445,6 +446,7 @@
   "quartier": "LaSalle"
  },
  "Centre culturel et communautaire de Cartierville": null,
+ "Centre d'art Jacques-et-Michel-Auger": null,
  "Centre d'exposition Lethbridge": {
   "lat": 45.505,
   "lon": -73.713,
@@ -483,6 +485,11 @@
   "quartier": "Vieux-Montréal"
  },
  "Chez Bozo": null,
+ "Chez l'Éditeur": {
+  "lat": 45.54123,
+  "lon": -73.61471,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Chiguer Art Contemporain": {
   "adresse": "372, rue Sainte-Catherine Ouest, espace 416 (édifice Belgo), Montréal",
   "alias": [],
@@ -630,6 +637,7 @@
   "lon": -73.56,
   "quartier": "Pointe-Saint-Charles"
  },
+ "Espace Together": null,
  "Espace des possibles": {
   "lat": 45.54035,
   "lon": -73.59924,
@@ -879,6 +887,7 @@
   "lon": -73.59117,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "La Cabine Comédie Club": null,
  "La Cale - Pub Zéro Déchets": null,
  "La Cale - pub zéro déchet": null,
  "La Chapelle Saint-Louis": {
@@ -937,6 +946,11 @@
   "lon": -73.58491,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "La graine brûlée": {
+  "lat": 45.51673,
+  "lon": -73.55792,
+  "quartier": "Ville-Marie"
+ },
  "La petite Place des Arts": null,
  "Langage Plus": null,
  "Le 9e": {
@@ -954,6 +968,7 @@
   "lon": -73.588,
   "quartier": "Plateau"
  },
+ "Le Bordel 2": null,
  "Le Calypso": null,
  "Le Carlton Signature": null,
  "Le Carré 150": null,
@@ -1225,6 +1240,7 @@
   "lon": -73.5794,
   "quartier": "Centre-ville"
  },
+ "Musée du Bas-Saint-Laurent": null,
  "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
  "N'était-ce pas l'été": null,
  "NINI Salon à Cocktails": null,
@@ -1402,6 +1418,11 @@
   "lat": 45.438,
   "lon": -73.625,
   "quartier": "LaSalle"
+ },
+ "Planétarium": {
+  "lat": 45.56064,
+  "lon": -73.55054,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
  "Plusieurs lieux": null,
  "Pointe-Claire Public Library - Central": null,
