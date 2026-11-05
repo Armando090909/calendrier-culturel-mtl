@@ -269,3 +269,9 @@ html.v2 .prix-side{display:block;position:static;transform:none;font-size:22px;m
 html.v2 .det-info > .prix-main{display:none}
 @media (max-width:900px){html.v2 .prix-side{display:none}}
 html.v2 .vp-don{margin-top:36px}
+/* Liens d'écoute : toujours une seule ligne ; agendas sans « + mon agenda », en bas à droite */
+html.v2 .det-vis .ecoute.v2e{flex-wrap:nowrap;gap:5px;overflow:hidden}
+html.v2 .det-vis .ecoute.v2e a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:11.5px;padding:4px 9px}
+html.v2 .cal .calk{display:none}
+html.v2 .det-side .cal{margin-top:auto;border-top:0;padding-top:6px;justify-content:flex-end;flex-wrap:nowrap}
+html.v2 .det-side{align-self:stretch}

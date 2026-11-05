@@ -150,6 +150,10 @@ const NOMS_LIEN={bandcamp:"Bandcamp",spotify:"Spotify",apple:"Apple Music",deeze
 function ecouteHTML(e){
   const d=discs(e),film=d.includes("cinema"),mus=d.includes("musique");
   if(!film&&!mus)return"";
+  if(V2&&e.liens&&e.liens.length){ // nouveau design : une seule ligne de pastilles, un lien par service, sans les noms
+    const vus=new Set(),ls=e.liens.filter(l=>!vus.has(l.type)&&vus.add(l.type)).slice(0,4);
+    const court={apple:"Apple Music",site:L("Site","Website")};
+    return `<div class="ecoute v2e">${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener"${l.nom?` title="${esc(l.nom)}"`:""}>${esc(court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)}</a>`).join("")}</div>`}
   if(e.liens&&e.liens.length){
     const parNom={};e.liens.forEach(l=>{const k=l.nom||"";(parNom[k]=parNom[k]||[]).push(l)});
     return `<div class="ecoute"><span>${film?L("Voir :","Watch:"):L("Écouter :","Listen:")}</span>${Object.entries(parNom).map(([nom,ls])=>
