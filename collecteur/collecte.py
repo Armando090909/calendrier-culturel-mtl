@@ -363,6 +363,7 @@ def main() -> int:
 
     # ---- Nettoyage
     nouveaux_lieux, geo_restants = [], int(reglages.get("max_geolocalisations", 40))
+    geo_reessais, deja_reessayes = [int(reglages.get("max_relocalisations", 40))], set()  # salles connues sans position
 
     def lieu_canon(nom: str, adresse: str, ville: str) -> str | None:
         """Nom canonique de la salle, ou None si elle est hors de l'île."""
@@ -377,6 +378,20 @@ def main() -> int:
             return None
         c = lieux.trouver(nom)
         if c:
+            # Salle connue mais jamais localisée (première recherche ratée) : on réessaie, avec l'adresse si on l'a
+            ancien = lieux.data.get(c)
+            if not (ancien or {}).get("lat") and geo_reessais[0] > 0 and c not in deja_reessayes \
+                    and plat(c) not in PAS_DES_SALLES and c != "Lieu à confirmer":
+                deja_reessayes.add(c)
+                geo_reessais[0] -= 1
+                essais = ([f"{adresse}, Montréal"] if adresse and re.search(r"\d", adresse) else []) + [f"{c}, Montréal"]
+                for requete in essais:
+                    info = geo.localiser(requete, ua)
+                    if info and not info.get("hors_ile") and dans_ile(info.get("lat"), info.get("lon")):
+                        info["alias"] = (ancien or {}).get("alias", []) if isinstance(ancien, dict) else []
+                        lieux.data[c] = info
+                        print(f"  salle localisée au 2e essai : {c}")
+                        break
             return c
         info = None
         if geo_restants > 0:
