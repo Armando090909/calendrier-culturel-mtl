@@ -15,6 +15,7 @@
  "Alūr Restaurant & Lounge": null,
  "Amphithéâtre du Gesù": null,
  "Ancien Théâtre Desjardins": null,
+ "Arprim": null,
  "Arsenal art contemporain": {
   "lat": 45.4918,
   "lon": -73.5628,
@@ -24,6 +25,11 @@
   "lat": 45.534,
   "lon": -73.6,
   "quartier": "Petite-Patrie"
+ },
+ "Atelier Circulaire": {
+  "lat": 45.52693,
+  "lon": -73.59486,
+  "quartier": "Le Plateau-Mont-Royal"
  },
  "Atelier de l'Île": null,
  "Atrium des Grands Ballets (Édifice Wilder)": {
@@ -50,7 +56,12 @@
   "lon": -73.6,
   "quartier": "Petite-Patrie"
  },
- "Bar Lanjeu": null,
+ "Bar Lanjeu": {
+  "alias": [],
+  "lat": 45.64105,
+  "lon": -73.50225,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
  "Bar Le Ritz PDB": {
   "alias": [
    "Bar Le Ritz P.D.B."
@@ -69,7 +80,12 @@
   "lon": -73.58881,
   "quartier": "Le Sud-Ouest"
  },
- "Basilique Notre-Dame": null,
+ "Basilique Notre-Dame": {
+  "alias": [],
+  "lat": 45.50444,
+  "lon": -73.55599,
+  "quartier": "Ville-Marie"
+ },
  "Batiment 7": {
   "lat": 45.48092,
   "lon": -73.55223,
@@ -281,7 +297,12 @@
   "lon": -73.5823,
   "quartier": "Saint-Henri"
  },
- "Brasserie Beaubien": null,
+ "Brasserie Beaubien": {
+  "alias": [],
+  "lat": 45.53121,
+  "lon": -73.60774,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Brasserie des Patriotes": {
   "lat": 45.59033,
   "lon": -73.51676,
@@ -346,6 +367,7 @@
   "lon": -73.5728,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Centre Bang": null,
  "Centre Bell": {
   "alias": [
    "Bell Centre"
@@ -354,8 +376,18 @@
   "lon": -73.5693,
   "quartier": "Centre-ville"
  },
+ "Centre CLARK": {
+  "lat": 45.51714,
+  "lon": -73.58185,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Centre Caztel": null,
- "Centre Pierre-Peladeau": null,
+ "Centre Pierre-Peladeau": {
+  "alias": [],
+  "lat": 45.51349,
+  "lon": -73.56227,
+  "quartier": "Ville-Marie"
+ },
  "Centre SAGAMIE": null,
  "Centre Sanaaq": {
   "lat": 45.4925,
@@ -503,7 +535,12 @@
   "quartier": "Quartier des spectacles"
  },
  "Commodore Ballroom": null,
- "Conservatoire de Musique De Montreal": null,
+ "Conservatoire de Musique De Montreal": {
+  "alias": [],
+  "lat": 45.5238,
+  "lon": -73.58637,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "DARE-DARE": null,
  "DATCHA": null,
  "Dazibao": {
@@ -511,7 +548,17 @@
   "lon": -73.5975,
   "quartier": "Mile End"
  },
- "Deli Planet": null,
+ "Deli Planet": {
+  "alias": [],
+  "lat": 45.5007,
+  "lon": -73.56728,
+  "quartier": "Ville-Marie"
+ },
+ "Double's": {
+  "lat": 45.52038,
+  "lon": -73.59713,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Duceppe": {
   "lat": 45.508,
   "lon": -73.5665,
@@ -613,6 +660,11 @@
   "quartier": "Quartier latin"
  },
  "Foyer Yves-Gagnon": null,
+ "Galerie B-312": {
+  "lat": 45.5015,
+  "lon": -73.56939,
+  "quartier": "Ville-Marie"
+ },
  "Galerie C.O.A": {
   "adresse": "6405, boul. Saint-Laurent, Montréal",
   "alias": [
@@ -729,6 +781,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Garage à Simon": null,
  "Gesù": {
   "alias": [
    "Église du Gesù"
@@ -820,7 +873,12 @@
   "lon": -73.577,
   "quartier": "Plateau"
  },
- "La Librairie": null,
+ "La Librairie": {
+  "alias": [],
+  "lat": 45.49871,
+  "lon": -73.61862,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "La Licorne": {
   "lat": 45.533,
   "lon": -73.577,
@@ -844,7 +902,12 @@
   "lon": -73.5935,
   "quartier": "Mile End"
  },
- "La Toscadura": null,
+ "La Toscadura": {
+  "alias": [],
+  "lat": 45.51925,
+  "lon": -73.58491,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "La petite Place des Arts": null,
  "Langage Plus": null,
  "Le 9e": {
@@ -876,7 +939,12 @@
   "quartier": "Plateau"
  },
  "Le Minotaure": null,
- "Le Monastère": null,
+ "Le Monastère": {
+  "alias": [],
+  "lat": 45.51941,
+  "lon": -73.61806,
+  "quartier": "Outremont"
+ },
  "Le National": {
   "lat": 45.519,
   "lon": -73.554,
@@ -884,7 +952,12 @@
  },
  "Le Palace": null,
  "Le Red Room": null,
- "Le Ritz": null,
+ "Le Ritz": {
+  "alias": [],
+  "lat": 45.53273,
+  "lon": -73.62036,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Le Studio TD": {
   "alias": [
    "Studio TD"
@@ -1076,6 +1149,7 @@
  },
  "Moonshine": null,
  "Multiple venues": null,
+ "Multiples salles": null,
  "Musée McCord Stewart": {
   "lat": 45.5045,
   "lon": -73.5737,
@@ -1093,7 +1167,12 @@
   "lon": -73.559,
   "quartier": "Griffintown"
  },
- "Newspeak": null,
+ "Newspeak": {
+  "alias": [],
+  "lat": 45.51246,
+  "lon": -73.56215,
+  "quartier": "Ville-Marie"
+ },
  "Non précisé": null,
  "O Patro Vys": {
   "lat": 45.5225,
@@ -1115,6 +1194,7 @@
   "lon": -73.56816,
   "quartier": "Ville-Marie"
  },
+ "OPTICA, centre d'art contemporain": null,
  "Occurrence": null,
  "Office national du film (ONF)": {
   "lat": 45.5087,
@@ -1336,7 +1416,12 @@
  "Salle Norman-McLaren": null,
  "Salle Octave-Crémazie": null,
  "Salle Odyssée": null,
- "Salle Paul-Desmarais": null,
+ "Salle Paul-Desmarais": {
+  "alias": [],
+  "lat": 45.49097,
+  "lon": -73.579,
+  "quartier": "Ville-Marie"
+ },
  "Salle Pauline-Julien": null,
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
@@ -1472,6 +1557,7 @@
   "lon": -73.56,
   "quartier": "Quartier latin"
  },
+ "Théâtre Le Patriote": null,
  "Théâtre Lio": null,
  "Théâtre Lionel-Groulx": null,
  "Théâtre MainLine": {
@@ -1636,6 +1722,7 @@
   "lon": -73.5975,
   "quartier": "Mile End"
  },
+ "festival triste 2026": null,
  "le dragon": {
   "lat": 45.5078,
   "lon": -73.56089,

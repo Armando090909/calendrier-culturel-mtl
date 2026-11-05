@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-06-fiveonefourfest-e4cd85@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261106T193000
+DTEND;TZID=America/Toronto:20261106T213000
+SUMMARY:FIVEONEFOURFEST
+LOCATION:Théâtre Sainte-Catherine\, Montréal
+URL:https://theatresaintecatherine.com/event/fiveonefourfest/
+DESCRIPTION:FIVEONEFOURFEST Les rappeurs montréalais émergents alec\, Yel
+ lowrice\, Montex\, noseriez\, 9$slatt\, dbezz et le DJ ohsaith se réuniss
+ ent pour…\nDétails : https://outlook.live.com/owa/?path=/calendar/actio
+ n/compose&rrv=addevent&startdt=2026-11-06T19%3A30%3A00-05%3A00&enddt=2026-
+ 11-06T23%3A00%3A00-05%3A00&location&subject=FIVEONEFOURFEST&body=%3Cp%20st
+ yle%3D%22text-align%3A%20center%3B%22%3Ehttps%3A%2F%2Fthepointofsale.com%2
+ Ftickets%2Ffestonefourfest%3Flang%3Den%3C%2Fp%3EFIVEONEFOURFEST%3Cp%20styl
+ e%3D%22text-align%3A%20center%3B%22%3EUp%20and%20coming%20montreal%20rappe
+ rs%20alec%2C%20Yellowrice%2C%20Montex%2C%20noseriez%2C%209%24slatt%2C%20db
+ ezz%20and%20dj%20ohsaith%20come%20together%20for%20the%20first%20FIVEONEFO
+ URFEST%21%3C%2Fp%3E\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
