@@ -13,7 +13,19 @@ D = Path(__file__).resolve().parent / "diag"
 HEURE = re.compile(r"(?i)\b\d{1,2}\s?(?:h|:)\s?\d{0,2}\s?(?:am|pm)?\b|\b\d{1,2}\s?(?:am|pm)\b")
 out = {}
 import hashlib  # noqa: E402
-for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.strip().startswith(("http", "IMG ", "JSON "))]:
+for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.strip().startswith(("http", "IMG ", "JSON ", "FICHIER "))]:
+    if ligne.startswith("FICHIER "):  # fichier complet (données ouvertes) gardé dans outils/diag/fichiers/
+        url = ligne[8:]
+        try:
+            rep = c.requests.get(url, timeout=120, headers={"User-Agent": c.UA})
+            (D / "fichiers").mkdir(exist_ok=True)
+            nom = re.sub(r"[^A-Za-z0-9._-]+", "_", url.split("?")[0].rstrip("/").split("/")[-1])[-80:] or "fichier"
+            (D / "fichiers" / nom).write_bytes(rep.content)
+            out[url] = {"statut": rep.status_code, "octets": len(rep.content), "fichier": nom}
+        except Exception as exc:
+            out[url] = {"erreur": str(exc)[:200]}
+        print(url, out[url])
+        continue
     if ligne.startswith("JSON "):  # réponse d'une API publique (extrait)
         url = ligne[5:]
         try:
