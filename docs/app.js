@@ -154,6 +154,7 @@ function ecouteHTML(e){
     const parNom={};e.liens.forEach(l=>{const k=l.nom||"";(parNom[k]=parNom[k]||[]).push(l)});
     return `<div class="ecoute"><span>${film?L("Voir :","Watch:"):L("Écouter :","Listen:")}</span>${Object.entries(parNom).map(([nom,ls])=>
       `${nom&&Object.keys(parNom).length>1?`<em>${esc(nom)}</em>`:""}${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label||NOMS_LIEN[l.type]||l.type)}</a>`).join("")}`).join("")}</div>`}
+  if(V2)return""; // nouveau design : sans lien vérifié, rien (les gens chercheront s'ils le veulent)
   const q=encodeURIComponent(film?artiste(e.titre)+L(" bande-annonce"," trailer"):artiste(e.titre)+" "+e.lieu.split(/[–(]/)[0]+" Montréal");
   return `<div class="ecoute rech"><span>${L("Pas encore de lien vérifié :","No verified link yet:")}</span><a href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener">${L("chercher sur YouTube","search YouTube")}</a></div>`}
 // Vue Jour : fiche détaillée
@@ -181,10 +182,10 @@ function detailHTML(e){
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
       ${lieuHTML(e,true)}
       ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2&&!media?ecoute:""}
-      ${e.prix&&!V2?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
+      ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
     </div>
     ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
-    <div class="det-side seul">${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
+    <div class="det-side seul">${actions}${extra}</div>
   </article>`;
 }
 function renderChips(){

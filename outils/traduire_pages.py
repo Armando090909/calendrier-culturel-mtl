@@ -33,6 +33,8 @@ COMMUNS = [
      '<a class="langue" id="langue" href="../" hreflang="fr" lang="fr" title="Version française">FR</a>'),
     ('<p class="wordmark">calendrier culturel <b>mtl</b></p>', '<p class="wordmark">montreal\'s cultural <b>calendar</b></p>'),
     ('href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr"', 'href="https://creativecommons.org/licenses/by-nc/4.0/deed.en"'),
+    ('<br>Données de la Ville de Montréal sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"',
+     '<br>City of Montréal data under licence <a href="https://creativecommons.org/licenses/by/4.0/deed.en"'),
     ('<a class="pied-bt" href="sources.html">Nos sources et salles</a>', '<a class="pied-bt" href="sources.html">Our sources & venues</a>'),
     ('<a class="pied-bt" href="archives.html">Archives</a>', '<a class="pied-bt" href="archives.html">Archive</a>'),
     ('Faire un don 2 $ ♥', 'Donate $2 ♥'),
