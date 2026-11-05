@@ -566,7 +566,9 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
   const series=[];D.expos=D.expos.filter(x=>{
     if(!x.discipline||x.discipline==="expo"||!DISC_LABEL[x.discipline])return true;
     // Dates précises déjà connues, période d'un festival, ou même page déjà vue : pas de répétition quotidienne
-    if(x.festival||titres.has(cle(x.titre))||(x.url&&pages.has(x.url)))return false;
+    // (aussi quand les dates précises portent un titre plus long : « Vitesse-lumière – Dromologie 101 » pour « Vitesse-lumière »)
+    const k=cle(x.titre);
+    if(x.festival||titres.has(k)||(k.length>=8&&[...titres].some(t=>t.startsWith(k+" ")))||(x.url&&pages.has(x.url)))return false;
     if(x.url)pages.add(x.url);
     // Horaire lu sur la page du spectacle (x.horaire) : bonne heure chaque jour, et pas d'entrée les jours de relâche
     let H=x.horaire;const hj=H&&H.jours||{},hd=H&&H.dates||{},avecJours=Object.keys(hj).length>0,avecDates=Object.keys(hd).length>0;
