@@ -195,22 +195,18 @@ html.v2 .hero{margin-top:28px}
   html.v2 .hero .sub{margin-top:40px;padding-top:24px}
 }
 
-/* Fiche : heure en haut à droite, discipline à sa place, prix collé au bord droit ; 3 boutons sur une ligne */
-html.v2 .ev.det{position:relative}
-html.v2 .ev.det .det-top .tm{position:absolute;top:24px;right:24px;margin:0}
-html.v2 .ev.det h3.t{padding-right:120px}
-html.v2 .det-top{display:flex;align-items:baseline;gap:6px 10px}
-html.v2 .det-top .prix-main{margin-left:auto;font-size:20px;white-space:nowrap}
-html.v2 .det-side .actions,html.v2 .actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;flex-direction:row}
-html.v2 .actions .btn{padding:10px 6px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+/* Fiche sur téléphone : heure en haut à droite, une ligne sous le titre, discipline et prix (collé à droite)
+   sur la même ligne, 3 boutons égaux sur une ligne. Sur ordinateur, la fiche reste comme avant. */
+html.v2 .prix-tel,html.v2 .btl-c{display:none}
 @media (max-width:900px){
-  html.v2 .ev.det .det-top .tm{top:20px;right:20px;font-size:15px;padding:4px 11px}
+  html.v2 .ev.det{position:relative}
+  html.v2 .det-info,html.v2 .det-top{position:static}
+  html.v2 .ev.det .det-top .tm{position:absolute;top:20px;right:20px;margin:0;font-size:15px;padding:4px 11px}
   html.v2 .ev.det h3.t{padding-right:96px}
+  html.v2 .det-top{display:flex;align-items:baseline;gap:6px 10px;border-top:2px solid #000;padding-top:10px;margin-top:4px}
+  html.v2 .det-top .prix-tel{display:inline;position:static;transform:none;margin-left:auto;font-size:20px;white-space:nowrap}
+  html.v2 .det-info > .prix-main{display:none}
+  html.v2 .det-side .actions,html.v2 .actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  html.v2 .actions .btn{padding:10px 6px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+  html.v2 .btl-l{display:none}html.v2 .btl-c{display:inline}
 }
-@media (min-width:901px){
-  html.v2 .dayview .ev.det,html.v2 .dayview .ev.det:has(.det-side),html.v2 .dayview .ev.det:has(.det-side.seul){grid-template-columns:minmax(0,1fr) 410px}
-  html.v2 .dayview .ev.det:has(.det-vis):has(.det-side.seul){grid-template-columns:minmax(0,1fr) 220px 410px}
-}
-html.v2 .det-info,html.v2 .det-top{position:static}
-html.v2 .actions .btn{font-size:14px}
-html.v2 .det-top .prix-main{position:static;transform:none}

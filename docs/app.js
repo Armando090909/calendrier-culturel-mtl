@@ -162,7 +162,7 @@ function detailHTML(e){
   const img=aff?`<figure class="det-aff"><a href="${esc(aff.lien||e.url)}" target="_blank" rel="noopener"><img src="${esc(aff.url)}" alt="${L("Affiche : ","Poster: ")}${esc(e.titre)}" loading="lazy" referrerpolicy="no-referrer"${aff.petit?` data-petit="${esc(aff.petit)}"`:""} onerror="if(this.dataset.petit&&this.src!==this.dataset.petit){this.src=this.dataset.petit;return}const v=this.closest('.det-vis');this.closest('figure').remove();if(v&&!v.children.length)v.remove()"></a><figcaption>${aff.salle?L("Image de la salle : ","Venue image: "):L("Image : ","Image: ")}${esc(aff.credit||"")}</figcaption></figure>`:"";
   // L'affiche et la carte à droite, avec prix, billets et itinéraire juste dessous ; écouter et agenda sous le résumé.
   const actions=`<div class="actions">
-        <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?(V2?L("Billets","Tickets"):L("Acheter des billets","Buy tickets")):/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?L("Voir l'événement","See the event"):L("Billets et infos","Tickets & info")}</a>
+        <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?(V2?`<span class="btl-l">${L("Acheter des billets","Buy tickets")}</span><span class="btl-c">${L("Billets","Tickets")}</span>`:L("Acheter des billets","Buy tickets")):/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?L("Voir l'événement","See the event"):L("Billets et infos","Tickets & info")}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">${L("Itinéraire","Directions")}</a>
         <button type="button" class="btn ghost" data-partage="${e._i}">${L("Partager","Share")}</button>
       </div>`;
@@ -171,10 +171,10 @@ function detailHTML(e){
   return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
-      <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
+      <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
       ${lieuHTML(e,true)}
       ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}
-      ${e.prix&&!V2?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
+      ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
     </div>
     ${media?`<div class="det-vis">${media}</div>`:""}
     <div class="det-side seul">${actions}${extra}</div>
