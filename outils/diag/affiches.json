@@ -1,6 +1,6 @@
 {
  "total": 1514,
- "echecs": 4,
+ "echecs": 5,
  "par_site": {
   "www.eventbrite.com": {
    "affiches": 2,
@@ -8,6 +8,10 @@
   },
   "images.ctfassets.net": {
    "affiches": 15,
+   "echecs": 1
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 59,
    "echecs": 1
   },
   "static-assets.artlogic.net": {
@@ -84,10 +88,6 @@
   },
   "cdn.placedesarts.com": {
    "affiches": 27,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 59,
    "echecs": 0
   },
   "tpos.s3.amazonaws.com": {
@@ -235,6 +235,9 @@
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195177411%252F1296453055783%252F1%252Foriginal.20261006-140407%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D3b7bf9774b9dbdfb4442439f788bdfb7&w=1200&q=75",
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193695236%252F1296453055783%252F1%252Foriginal.20260916-210100%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Dd69eed74297cf7ed18da2e5335fcfe89&w=1200&q=75"
+  ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/EGb5qggc6Iv2HbbdjR1-PArMLtGkOytEWuuHfjaqDko/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL2h4bWpuZHFt/a2x4NnAwYXp3cTRh/M3ZoYWUwZWg"
   ],
   "static-assets.artlogic.net": [
    "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
