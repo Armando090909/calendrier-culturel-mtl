@@ -81,6 +81,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-test.txt"; then
             export PUBLIER=oui SEULEMENT="$(head -1 outils/reseaux/demande-test.txt | tr -d ' \r')"
+            export SEMAINE_PUBLIER="$(sed -n 2p outils/reseaux/demande-test.txt | tr -d ' \r')"
             # « tout » : la publication normale de la semaine (notée comme faite), lancée à la main
             [ "$SEULEMENT" = tout ] && export SEULEMENT=""
             echo "Test ciblé : $SEULEMENT"

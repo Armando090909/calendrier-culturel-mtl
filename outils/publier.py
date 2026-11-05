@@ -662,7 +662,8 @@ def main():
     DOSSIER.mkdir(parents=True, exist_ok=True)
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
     data = json.loads((RACINE / "docs" / "data.json").read_text(encoding="utf-8"))
-    debut = visuels.lundi_a_venir()
+    sem = os.environ.get("SEMAINE_PUBLIER", "")  # republier une semaine déjà choisie (demande-test.txt, 2e ligne)
+    debut = date.fromisoformat(sem) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", sem) else visuels.lundi_a_venir()
     semaine = debut.isoformat()
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
     reseaux = ("bluesky", "instagram", "threads", "facebook", "instagram_story", "facebook_story")

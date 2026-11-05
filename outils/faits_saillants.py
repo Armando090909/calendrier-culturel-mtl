@@ -235,7 +235,7 @@ def choisir(data, debut, etat):
             n = sum(1 for e in evs if e.get("festival") == f["id"])
             nom = f["nom"] if len(f["nom"]) <= 30 else (f.get("court") or f["nom"])
             fests.append({"nom": nom, "debut": f["debut"], "fin": f["fin"], "n": n,
-                          "coul": COUL.get((f.get("disciplines") or ["autre"])[0], "#7d8597"),
+                          "coul": coul((f.get("disciplines") or ["autre"])[0]),
                           "en_cours": f["debut"] <= fin.isoformat()})
     fests.sort(key=lambda f: (not f["en_cours"], f["debut"]))
     # La salle de la semaine : un bar ou une petite salle (surtout musique, humour, fêtes), 3 à 12 soirées,
@@ -258,14 +258,86 @@ def choisir(data, debut, etat):
     return {"debut": debut, "fin": fin, "picks": picks, "festivals": fests[:7], "salle": salle, "total": total, "expos": expos}
 
 
-# ---------------------------------------------------------------- Visuels
-CSS_COMMUN = """body{padding:80px 84px;display:flex;flex-direction:column}
-.marque{font-size:40px}
-.tete{display:flex;justify-content:space-between;align-items:center;gap:30px}
-.tete .marque{margin-left:auto;transform-origin:right;white-space:nowrap;font-size:32px;flex:none}
-.pied{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
-.pied .url{font-size:40px;background:var(--hl);border:4px solid var(--ink);border-radius:14px;padding:6px 18px;box-shadow:6px 6px 0 var(--ink)}
-.pied .p{font-family:var(--display);font-weight:800;font-size:30px;color:var(--muted)}"""
+# ---------------------------------------------------------------- Visuels (style v2 du site : crème, noir, Figtree, couleurs pastel)
+import base64 as _b64
+
+COUL2 = {"theatre": "#F2837B", "musique": "#3A75F0", "danse": "#8EC1F2", "humour": "#EE7F45", "cinema": "#B1D8B8",
+         "jeune": "#FBBA16", "poesie": "#B9A3E3", "lettres": "#9BCCD0", "quiz": "#1FA3A3", "social": "#C49A6C",
+         "fete": "#E04F9C", "conference": "#2DAA55", "atelier": "#B8B23A", "expo": "#F6E08A", "cirque": "#F2A65A"}
+AUTRE = "#CFC8BA"
+_ANCIENNES = {c.lower(): COUL2.get(k, AUTRE) for k, _, c in v.DISC}  # sélections enregistrées avec l'ancienne palette
+
+
+def coul(k):
+    return COUL2.get(k, AUTRE)
+
+
+def _coul_fest(c):
+    return _ANCIENNES.get((c or "").lower(), c or AUTRE)
+
+
+def _logo():
+    f = RACINE / "docs" / "logo-ccmtl.webp"
+    return "data:image/webp;base64," + _b64.b64encode(f.read_bytes()).decode() if f.exists() else ""
+
+
+PAGE2 = """<!doctype html><html lang="LANG"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,700;0,900;1,900&display=block">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{width:Wpx;height:Hpx;overflow:hidden;background:#F5EFE3;color:#000;font-family:Figtree,system-ui,sans-serif;
+  padding:72px;display:flex;flex-direction:column;gap:40px}
+.ov{border:.04em solid #000;border-radius:999px;padding:0 .2em .08em;display:inline-block;line-height:.95}
+.mq{margin:0;font-size:44px;font-weight:900;letter-spacing:-.02em;line-height:1}
+.mq span{font-weight:500}
+.tete{display:flex;justify-content:space-between;align-items:flex-start;gap:30px}
+.pill{font-size:34px;font-weight:900;border:3px solid #000;border-radius:999px;padding:8px 26px;white-space:nowrap}
+.pied{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #000;padding-top:28px}
+.pied .u{font-size:40px;font-weight:900}
+.pied .d{font-size:30px;font-weight:700}
+CSS
+</style></head><body>BODY</body></html>"""
+
+
+def page2(w, h, corps, css=""):
+    return (PAGE2.replace("LANG", LANGUE).replace("Wpx", f"{w}px").replace("Hpx", f"{h}px")
+            .replace("CSS", css).replace("BODY", corps))
+
+
+def marque2(taille=44):
+    return (f'<p class="mq" style="font-size:{taille}px">'
+            + T("Calendrier culturel<br><span>de Montréal</span>", "Montréal's cultural<br><span>calendar</span>") + "</p>")
+
+
+def pied(droite=""):
+    return f'<div class="pied"><span class="u">ccmtl.ca</span><span class="d">{droite}</span></div>'
+
+
+def _heure(e):
+    return (e.get("heure") or "")[:5]
+
+
+def _jour_long(e):
+    d = date.fromisoformat(e["date"])
+    if LANGUE == "en":
+        return f"{['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][d.weekday()]}, {MOIS_EN[d.month - 1]} {d.day}"
+    return f"{['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'][d.weekday()]} {d.day} {MOIS[d.month - 1]}"
+
+
+def _court(d):
+    return f"{d.day} {MOIS[d.month - 1]}" if LANGUE == "fr" else f"{MOIS_EN[d.month - 1]} {d.day}"
+
+
+def _periode2(s):
+    d, f = s["debut"], s["fin"]
+    if LANGUE == "en":
+        return f"{MOIS_EN[d.month - 1]} {d.day} → {'' if d.month == f.month else MOIS_EN[f.month - 1] + ' '}{f.day}"
+    return f"{d.day}{' ' + MOIS[d.month - 1] if d.month != f.month else ''} → {f.day} {MOIS[f.month - 1]}"
+
+
+def _taille_titre(t, grand=100):
+    n = len(t)
+    return grand if n <= 18 else int(grand * .84) if n <= 30 else int(grand * .7) if n <= 45 else int(grand * .58)
 
 
 def _periode(s):
@@ -276,103 +348,136 @@ def _periode(s):
 
 
 def slide_couverture(s):
-    css = CSS_COMMUN + """
-h1{font-family:var(--display);font-weight:800;font-size:96px;line-height:1.06;letter-spacing:-.035em;margin:70px 0 0}
-.dates{font-family:var(--hand);font-size:60px;color:var(--pop);transform:rotate(-2deg);margin:30px 0 0;align-self:flex-end}
-.menu{margin-top:64px;display:flex;flex-direction:column;gap:22px}
-.menu div{display:flex;align-items:center;gap:22px;font-size:40px;font-weight:700}
-.menu .stn{width:46px;height:46px;border-width:11px;flex:none}
-.glisse{font-family:var(--display);font-weight:800;font-size:34px}"""
-    lignes = [T(f"{len(s['picks'])} sorties à voir", f"{len(s['picks'])} must-sees")] \
+    css = """
+h1{margin:0;font-size:150px;line-height:.9;font-weight:900;letter-spacing:-.055em}
+.menu{flex:1;display:flex;flex-direction:column;gap:14px;font-size:38px;font-weight:700;white-space:nowrap}
+.menu b{font-weight:900}
+.bas{flex:1;display:flex;align-items:flex-end;justify-content:space-between;gap:30px;min-height:0}
+.logo{width:470px;max-height:100%;object-fit:contain;display:block}"""
+    lignes = [T(f"<b>{len(s['picks'])}</b> sorties à voir", f"<b>{len(s['picks'])}</b> must-sees")] \
         + ([T("Les festivals", "Festivals")] if s["festivals"] else []) \
         + ([T("La salle de la semaine", "Venue of the week")] if s["salle"] else []) \
-        + [T(f"{s['total']} sorties en tout", f"{s['total']} events in all")]
-    return v.page(1080, 1350, f"""<div class="tete">{marque()}</div>
-{T("<h1>Qu'est-ce<br>qu'on fait<br><span class='hl'>cette semaine</span>&nbsp;?</h1>", "<h1>What's on<br>in Montréal<br><span class='hl'>this week</span>?</h1>")}<div class="dates">{_periode(s)}</div>
-<div class="menu">{''.join(f'<div><span class="stn"></span>{escape(l)}</div>' for l in lignes)}</div>
-<div class="pied"><span class="url">ccmtl.ca</span><span class="glisse">{T("glisse →", "swipe →")}</span></div>""", css)
+        + [T(f"<b>{s['total']}</b> sorties en tout", f"<b>{s['total']}</b> events in all")]
+    logo = _logo()
+    return page2(1080, 1350, f"""<div class="tete">{marque2()}<span class="pill">{_periode2(s)}</span></div>
+{T('<h1>La sélection<br>de la <span class="ov">semaine</span></h1>', '<h1>This<br><span class="ov">week&rsquo;s</span><br>picks</h1>')}
+<div class="bas"><div class="menu">{''.join(f'<div>{x}</div>' for x in lignes)}</div>{f'<img class="logo" src="{logo}" alt="">' if logo else ''}</div>
+{pied(T("glisse →", "swipe →"))}""", css)
 
 
 def slide_pick(p, n, tot):
     e, k = p["e"], p["k"]
-    coul = COUL.get(k, "#7d8597")
     aff = e.get("affiche") or {}
-    img = aff.get("url") or ""
-    credit = aff.get("credit") or ""
-    lieu = escape(e["lieu"])
-    css = CSS_COMMUN + f"""
-.tag{{flex:none;font-family:var(--display);font-weight:800;font-size:34px;color:#fff;background:{coul};
-  border:4px solid var(--ink);border-radius:999px;padding:8px 26px;box-shadow:5px 5px 0 var(--ink)}}
-.dec{{position:absolute;top:18px;right:18px;font-family:var(--hand);font-size:40px;color:var(--ink);background:var(--hl);padding:4px 16px;
-  border:3px solid var(--ink);border-radius:10px;transform:rotate(4deg);box-shadow:4px 4px 0 var(--ink)}}
-.vis{{margin-top:34px;height:540px;border:4px solid var(--ink);border-radius:26px;overflow:hidden;box-shadow:10px 10px 0 {coul};
-  background:{coul};display:grid;place-items:center;position:relative}}
-.vis img{{width:100%;height:100%;object-fit:cover;display:block}}
-.vis .sans{{font-family:var(--display);font-weight:800;font-size:96px;line-height:1.05;color:#fff;text-align:center;padding:40px}}
-h2{{font-family:var(--display);font-weight:800;font-size:{56 if len(e['titre']) < 40 else 46}px;line-height:1.08;letter-spacing:-.02em;margin:34px 0 10px;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
-.q{{font-size:36px;font-weight:800}} .l{{font-size:34px;font-weight:600;color:#2b2f36;margin-top:6px}}
-.acc{{font-size:31px;line-height:1.28;margin-top:14px;margin-bottom:20px;color:#2b2f36;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
-.cr{{font-size:20px;color:var(--muted);margin-top:8px}}"""
-    vis = f'<img src="{escape(img)}" alt="">' if img else f'<span class="sans">{escape(nom_disc(k))}</span>'
-    decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
+    img, credit = aff.get("url") or "", aff.get("credit") or ""
     accroche = p.get("accroche_en", "") if LANGUE == "en" else p["accroche"]
-    return v.page(1080, 1350, f"""<div class="tete"><span class="tag">{escape(nom_disc(k))}</span>{marque()}</div>
-<div class="vis">{vis}{decouv}</div>{f'<div class="cr">{T("Image : ", "Image: ")}{escape(credit)}</div>' if img and credit else ''}
-<h2>{escape(e['titre'])}</h2><div class="q">{quand(e)}</div><div class="l">{lieu}</div>
-<div class="acc">{escape(accroche)}</div>
-<div class="pied"><span class="url">ccmtl.ca</span><span class="p">{n}/{tot}</span></div>""", css)
+    tt = _taille_titre(e["titre"])
+    css = f"""
+.c{{flex:1;min-height:0;background:{coul(k)};border-radius:48px;overflow:hidden;display:flex;flex-direction:column}}
+.vis{{height:500px;flex:none;position:relative;background:rgba(0,0,0,.08)}}
+.vis img{{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}}
+.cr{{position:absolute;right:20px;bottom:18px;font-size:20px;font-weight:500;background:rgba(255,255,255,.55);border-radius:999px;padding:4px 14px}}
+.dec{{position:absolute;left:24px;top:22px;font-size:26px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:6px 18px}}
+.in{{padding:40px 52px 46px;display:flex;flex-direction:column;gap:18px;flex:1;min-height:0}}
+.l1{{display:flex;justify-content:space-between;align-items:baseline}}
+.dis{{font-size:34px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}}
+.hr{{font-size:64px;font-weight:900;line-height:1}}
+h2{{margin:0;font-size:{tt}px;line-height:.95;font-weight:900;letter-spacing:-.045em;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:normal}}
+.acc{{margin:0;font-size:34px;font-weight:500;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
+.bas{{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;min-width:0}}
+.bas .j{{flex:none;font-size:32px;font-weight:900;background:#F5EFE3;border:2px solid #000;border-radius:999px;padding:10px 24px}}
+.bas .lieu{{font-size:32px;font-weight:700;line-height:1.1}}"""
+    if not img:
+        css += "\n.vis{display:none}"
+    decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
+    vis = (f'<div class="vis"><img src="{escape(img)}" alt="">{decouv}'
+           + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div>")
+    return page2(1080, 1350, f"""<div class="c">{vis}<div class="in">
+<div class="l1"><span class="dis">{escape(nom_disc(k))}</span><span class="hr">{_heure(e)}</span></div>
+<h2>{escape(e['titre'])}</h2>{f'<p class="acc">{escape(accroche)}</p>' if accroche else ''}
+<div class="bas"><span class="j">{_jour_long(e)}</span><span class="lieu">{escape(e['lieu'])}</span></div></div></div>
+{pied(f"{n} / {tot}")}""", css)
+
+
+def _dates_fest(f):
+    a, b = date.fromisoformat(f["debut"]), date.fromisoformat(f["fin"])
+    if LANGUE == "en":
+        return f"until {_court(b)}" if f["en_cours"] else f"from {_court(a)}"
+    return f"jusqu'au {_court(b)}" if f["en_cours"] else f"dès le {_court(a)}"
+
+
+CSS_FEST = """
+.fs{display:flex;flex-direction:column;gap:14px}
+.f{display:flex;align-items:center;gap:20px;border-radius:24px;padding:20px 28px;background:var(--c);border:3px solid var(--c)}
+.f.av{background:transparent;border-color:#000}
+.f .nm{font-size:40px;font-weight:900;flex:1;line-height:1.05;letter-spacing:-.02em}
+.f .d{font-size:28px;font-weight:700;white-space:nowrap}
+.leg{font-size:26px;font-weight:500;display:flex;gap:26px;align-items:center}
+.leg i{display:inline-block;width:26px;height:26px;border-radius:8px;vertical-align:-4px;margin-right:8px;background:#000}
+.leg i.o{background:transparent;border:3px solid #000}"""
+
+
+def _fests(s, n=7, petit=False):
+    return "".join(f'<div class="f{"" if f["en_cours"] else " av"}" style="--c:{_coul_fest(f["coul"])}{";padding:14px 24px" if petit else ""}">'
+                   f'<span class="nm"{" style=font-size:34px" if petit else ""}>{escape(f["nom"])}</span>'
+                   f'<span class="d"{" style=font-size:26px" if petit else ""}>{_dates_fest(f)}</span></div>' for f in s["festivals"][:n])
 
 
 def slide_festivals(s):
-    css = CSS_COMMUN + """
-h1{font-family:var(--display);font-weight:800;font-size:84px;line-height:1.05;letter-spacing:-.03em;margin:0}
-.tete{margin-bottom:50px}
-.tete h1{white-space:nowrap;font-size:66px}
-.f{display:flex;align-items:center;gap:22px;border:4px solid var(--ink);border-radius:20px;padding:20px 26px;background:#fff;
-  box-shadow:6px 6px 0 var(--ink);margin-bottom:20px}
-.f .pt{width:40px;height:40px;border-radius:50%;border:10px solid var(--c);background:#fff;flex:none;box-shadow:0 0 0 3px var(--ink)}
-.f .pt.plein{background:var(--c);border-color:var(--ink);border-width:3px;box-shadow:none}
-.f .nm{font-family:var(--display);font-weight:800;font-size:38px;flex:1;line-height:1.1}
-.f .d{font-size:28px;font-weight:700;color:var(--muted);text-align:right;line-height:1.2}
-.leg{font-size:26px;color:var(--muted);margin:6px 0 24px}"""
-    def dates(f):
-        a, b = date.fromisoformat(f["debut"]), date.fromisoformat(f["fin"])
-        if LANGUE == "en":
-            return f"until {MOIS_EN[b.month - 1]} {b.day}" if f["en_cours"] else f"from {MOIS_EN[a.month - 1]} {a.day}"
-        return (f"jusqu'au {b.day} {MOIS[b.month - 1]}" if f["en_cours"] else f"dès le {a.day} {MOIS[a.month - 1]}")
-    items = "".join(f'<div class="f" style="--c:{f["coul"]}"><span class="pt{" plein" if f["en_cours"] else ""}"></span><span class="nm">{escape(f["nom"])}</span>'
-                    f'<span class="d">{dates(f)}</span></div>' for f in s["festivals"])
-    return v.page(1080, 1350, f"""<div class="tete"><h1>{T("Les <span class='hl'>festivals</span>", "<span class='hl'>Festivals</span>")}</h1>{marque()}</div>{items}
-<div class="leg">{T("pastille pleine : en cours · cercle : à venir · couleur : discipline", "solid dot: on now · ring: coming up · colour: discipline")}</div>
-<div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
+    css = CSS_FEST + """
+h1{margin:0;font-size:120px;line-height:.9;font-weight:900;letter-spacing:-.05em}"""
+    return page2(1080, 1350, f"""<div class="tete">{T('<h1>Les <span class="ov">festivals</span></h1>', '<h1><span class="ov">Festivals</span></h1>')}{marque2(30)}</div>
+<div class="fs">{_fests(s)}</div>
+<div class="leg"><span><i></i>{T("en cours", "on now")}</span><span><i class="o"></i>{T("à venir", "coming up")}</span><span>{T("couleur : discipline", "colour: discipline")}</span></div>
+{pied()}""", css)
+
+
+CSS_RANGS = """
+.rg{display:flex;flex-direction:column;gap:12px}
+.lg{display:flex;gap:16px;align-items:stretch}
+.jb{width:92px;flex:none;border:2px solid #000;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.jb .a{font-size:20px;font-weight:700}.jb .b{font-size:44px;font-weight:900;line-height:1}
+.jb.vide{visibility:hidden}
+.ev{flex:1;min-width:0;background:var(--c);border-radius:22px;padding:14px 22px;display:flex;flex-direction:column;gap:2px}
+.ev .h{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.ev .k{font-size:20px;font-weight:700}.ev .t2{font-size:30px;font-weight:900;line-height:1}
+.ev .t{font-size:30px;font-weight:900;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev .s{font-size:20px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}"""
+
+
+def _rang(e, k, vus, sous):
+    d = date.fromisoformat(e["date"])
+    jours = JOURS if LANGUE == "fr" else ["Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."]
+    vide = " vide" if e["date"] in vus else ""
+    vus.add(e["date"])
+    return (f'<div class="lg"><span class="jb{vide}"><span class="a">{jours[d.weekday()]}</span><span class="b">{d.day}</span></span>'
+            f'<span class="ev" style="--c:{coul(k)}"><span class="h"><span class="k">{escape(nom_disc(k))}</span><span class="t2">{_heure(e)}</span></span>'
+            f'<span class="t">{escape(e["titre"])}</span><span class="s">{escape(sous)}</span></span></div>')
 
 
 def slide_salle(s):
     sa = s["salle"]
-    css = CSS_COMMUN + """
-.sur{font-family:var(--display);font-weight:800;font-size:32px;color:var(--muted);white-space:nowrap}
-h1{margin-top:40px !important}
-h1{font-family:var(--display);font-weight:800;font-size:88px;line-height:1.04;letter-spacing:-.03em;margin:10px 0 6px}
-.qr{font-family:var(--hand);font-size:44px;color:var(--pop);transform:rotate(-1.5deg);margin-bottom:34px}
-.evs{flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px}
-.ev{display:flex;gap:26px;align-items:baseline;border-bottom:3px dashed #dde1e8;padding:22px 0}
-.ev .w{font-family:var(--display);font-weight:800;font-size:30px;width:380px;flex:none;white-space:nowrap}
-.ev .t{font-size:38px;font-weight:700;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"""
-    evs = "".join(f'<div class="ev"><span class="w">{quand(e)}</span><span class="t">{escape(e["titre"])}</span></div>' for e in sa["events"])
-    return v.page(1080, 1350, f"""<div class="tete"><div class="sur">{T("La salle de la semaine", "Venue of the week")}</div>{marque()}</div><h1><span class="hl">{escape(sa['lieu'])}</span></h1>
-<div class="qr">{escape(sa['quartier'] or '')}</div><div class="evs">{evs}</div>
-<div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
+    css = CSS_RANGS + f"""
+.sur{{font-size:34px;font-weight:900}}
+h1{{margin:0;font-size:{_taille_titre(sa['lieu'], 130)}px;line-height:.92;font-weight:900;letter-spacing:-.05em}}
+.qr{{margin:-20px 0 0;font-size:36px;font-weight:500}}
+.rg{{gap:18px}}.ev{{padding:20px 28px;gap:6px}}.ev .k{{font-size:24px}}.ev .t2{{font-size:38px}}.ev .t{{font-size:40px}}.ev .s{{font-size:24px}}
+.jb{{width:110px}}.jb .a{{font-size:24px}}.jb .b{{font-size:54px}}"""
+    vus = set()
+    rangs = "".join(_rang(e, e["discipline"], vus, quand(e).split(" · ")[0]) for e in sa["events"][:7])
+    return page2(1080, 1350, f"""<div class="tete"><span class="pill">{T("La salle de la semaine", "Venue of the week")}</span>{marque2(30)}</div>
+<h1>{escape(sa['lieu'])}</h1>{f'<p class="qr">{escape(sa["quartier"])}</p>' if sa.get("quartier") else ''}
+<div class="rg">{rangs}</div>{pied()}""", css)
 
 
 def slide_fin(s):
-    css = """body{background:var(--hl);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:90px}
-.n{font-family:var(--display);font-weight:800;font-size:200px;letter-spacing:-.04em;line-height:1}
-.t{font-family:var(--display);font-weight:800;font-size:60px;margin-top:10px}
-.s{font-size:38px;font-weight:600;margin-top:40px;max-width:820px;line-height:1.3}
-.url{margin-top:70px;font-family:var(--display);font-weight:800;font-size:76px;background:#fff;border:5px solid var(--ink);border-radius:22px;padding:14px 34px;box-shadow:10px 10px 0 var(--ink)}"""
-    return v.page(1080, 1350, f"""<div class="n">{s['total']}</div><div class="t">{T("sorties cette semaine", "events this week")}</div>
-<div class="s">{T("Par discipline, par date ou près de ta station de métro. Gratuit, sans pub.", "By discipline, by date or near your metro station. Free, no ads.")}</div><div class="url">ccmtl.ca</div>""", css)
+    css = """body{justify-content:center;align-items:center;text-align:center}
+.n{font-size:220px;font-weight:900;letter-spacing:-.05em;line-height:.9}
+.t{font-size:64px;font-weight:900;letter-spacing:-.03em}
+.s{font-size:38px;font-weight:500;max-width:820px;line-height:1.3}
+.u{font-size:80px;font-weight:900;border:4px solid #000;border-radius:999px;padding:6px 44px 14px}"""
+    return page2(1080, 1350, f"""<div class="n">{s['total']}</div><div class="t">{T("sorties cette semaine", "events this week")}</div>
+<div class="s">{T("Par discipline, par date ou près de ta station de métro. Gratuit, sans pub.", "By discipline, by date or near your metro station. Free, no ads.")}</div><div class="u">ccmtl.ca</div>""", css)
 
 
 def slides(s):
@@ -388,109 +493,40 @@ def slides(s):
     return out[:10]  # Instagram : 10 images au plus
 
 
-# ---------------------------------------------------------------- Cartons condensés (Threads, Bluesky)
-def _bande_jours(s, marques):
-    """La semaine en ligne de métro, comme sur le site : 7 stations, celles qui ont un coup de cœur sont pleines."""
-    jours = [s["debut"] + timedelta(days=i) for i in range(7)]
-    noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
-    return ('<div class="strip">' + "".join(
-        f'<div class="j{" on" if d.isoformat() in marques else ""}"><span class="dd">{d.day}</span><span class="dn">{noms[i]}</span></div>'
-        for i, d in enumerate(jours)) + "</div>")
-
-
-CSS_LISTE = """
-.strip{position:relative;display:grid;grid-template-columns:repeat(7,1fr);margin:22px 0 24px}
-.strip::before{content:"";position:absolute;left:7%;right:7%;top:34px;height:14px;border-radius:8px;
-  background:linear-gradient(90deg,var(--vert) 0 25%,var(--orange) 25% 50%,var(--jaune) 50% 75%,var(--bleu) 75%)}
-.j{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px}
-.j .dd{font-family:var(--display);font-weight:800;font-size:28px;width:70px;height:70px;border-radius:50%;display:grid;place-items:center;
-  background:#fff;border:6px solid #c9ced8;color:#5b616e}
-.j.on .dd{border-color:var(--ink);color:var(--ink)}
-.j .dn{font-family:var(--display);font-weight:800;font-size:20px;color:var(--muted);letter-spacing:.06em}
-.boite{border:6px solid var(--pop);border-radius:30px;background:#fff7c2;padding:18px}
-.liste{border:5px solid var(--ink);border-radius:20px;background:#fff;overflow:hidden;box-shadow:6px 6px 0 var(--ink)}
-.r{display:flex;border-bottom:3px solid #e6e9ef}
-.r:last-child{border-bottom:0}
-.r .b{width:16px;flex:none;background:var(--c)}
-.r .tx{padding:13px 22px;min-width:0}
-.r .t{font-family:var(--display);font-weight:800;font-size:31px;line-height:1.15;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.r .q{font-size:27px;margin-top:6px;color:#2b2f36;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.r .q b{font-weight:800}
-"""
-
-
+# ---------------------------------------------------------------- Cartons condensés (Threads, Bluesky) et story
 def slide_condense_liste(s, story=False):
-    """La sélection de la semaine sur un seul carton : une ligne de métro verticale à gauche, une station par jour
-    (vis-à-vis de sa sortie), et la liste dans le style « Aujourd'hui » du site (barre de couleur, titre, heure, salle)."""
-    css = CSS_COMMUN + CSS_LISTE + """
-body{padding:60px 64px}
-h1{font-family:var(--display);font-weight:800;font-size:44px;line-height:1.05;letter-spacing:-.03em;margin:0;white-space:nowrap}
-.tete .marque{font-size:26px}
-.sous{font-family:var(--hand);font-size:36px;color:var(--pop);margin:22px 0 18px 120px}
-.metro{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-evenly;margin-bottom:30px}
-.metro::before{content:"";position:absolute;left:44px;top:40px;bottom:40px;width:16px;border-radius:9px;
-  background:linear-gradient(180deg,var(--vert) 0 25%,var(--orange) 25% 50%,var(--jaune) 50% 75%,var(--bleu) 75%)}
-.lg{position:relative;display:flex;align-items:center;gap:22px}
-.st{width:104px;flex:none;display:flex;flex-direction:column;align-items:center;gap:2px}
-.st .dd{font-family:var(--display);font-weight:800;font-size:30px;width:76px;height:76px;border-radius:50%;display:grid;place-items:center;
-  background:#fff;border:7px solid var(--ink)}
-.st .dn{font-family:var(--display);font-weight:800;font-size:17px;color:var(--muted);letter-spacing:.06em;background:#fff;padding:0 4px;border-radius:4px}
-.st.vide .dd{visibility:hidden}.st.vide .dn{visibility:hidden}
-.r{flex:1;min-width:0;border:4px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff;box-shadow:5px 5px 0 var(--ink)}
-.r .tx{padding:18px 22px}
-.r .t{font-size:31px}
-.r .q{font-size:26px;margin-top:7px}
-.pied.autres{justify-content:flex-end;gap:18px}
-.encore{font-family:var(--hand);font-size:38px;color:var(--ink);transform:rotate(-2deg);white-space:nowrap}
-.fl{font-family:var(--display);font-weight:800;font-size:48px}"""
-    if LANGUE == "en":  # « montreal's cultural calendar » est plus long que « calendrier culturel mtl »
-        css += "\nh1{font-size:38px}\n.tete .marque{font-size:22px}"
+    """La sélection de la semaine sur un seul carton : une rangée par sortie (jour, discipline, heure, titre, salle)."""
+    css = CSS_RANGS + """
+h1{margin:0;font-size:76px;font-weight:900;letter-spacing:-.04em;line-height:.95}
+.tete{align-items:flex-end}
+.mq{text-align:right}"""
     if story:  # 1080 × 1920 : le haut (~250 px) et le bas (~280 px) sont couverts par l'interface d'Instagram
-        css += "\nbody{padding:250px 64px 290px}\n.metro{margin-bottom:40px}"
-    noms = ["LUN.", "MAR.", "MER.", "JEU.", "VEN.", "SAM.", "DIM."] if LANGUE == "fr" else ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
-    lignes, vus = [], set()
-    for p in s["picks"]:
-        e = p["e"]
-        d = date.fromisoformat(e["date"])
-        heure = quand(e).split(" · ", 1)[1] if " · " in quand(e) else ""
-        st = (f'<div class="st{" vide" if e["date"] in vus else ""}"><span class="dd">{d.day}</span><span class="dn">{noms[d.weekday()]}</span></div>')
-        vus.add(e["date"])
-        lignes.append(f'<div class="lg">{st}<div class="r" style="display:flex;--c:{COUL.get(p["k"], "#7d8597")}"><span class="b"></span><div class="tx">'
-                      f'<div class="t">{escape(e["titre"])}</div><div class="q">{f"<b>{heure}</b> · " if heure else ""}{escape(e["lieu"])}</div></div></div></div>')
-    return v.page(1080, 1920 if story else 1350, f"""<div class="tete"><h1>{T("À voir <span class='hl'>cette semaine</span>", "Worth seeing <span class='hl'>this week</span>")}</h1>{marque()}</div>
-<div class="sous">{_periode(s)}</div><div class="metro">{''.join(lignes)}</div>
-<div class="pied autres"><span class="encore">{T(f"Ainsi que {s['total'] - len(s['picks'])} autres sorties", f"Plus {s['total'] - len(s['picks'])} more events")}</span><span class="fl">→</span><span class="url">ccmtl.ca</span></div>""", css)
+        css += "\nbody{padding:250px 72px 290px}\n.rg{gap:20px}\n.ev{padding:20px 26px;gap:4px}\n.ev .t{font-size:34px}\n.ev .k,.ev .s{font-size:22px}\n.jb{width:104px}\n.jb .b{font-size:50px}"
+    vus = set()
+    rangs = "".join(_rang(p["e"], p["k"], vus, p["e"]["lieu"]) for p in s["picks"])
+    autres = s["total"] - len(s["picks"])
+    return page2(1080, 1920 if story else 1350, f"""<div class="tete">{T('<h1>À voir<br>cette <span class="ov">semaine</span></h1>', '<h1>Worth seeing<br><span class="ov">this week</span></h1>')}{marque2(26)}</div>
+<div class="rg">{rangs}</div>{pied(T(f"Ainsi que {autres} autres sorties →", f"Plus {autres} more events →"))}""", css)
 
 
 def slide_condense_infos(s):
     """Festivals et salle de la semaine sur un seul carton."""
-    css = CSS_COMMUN + """
-body{padding:64px 70px}
-h2{font-family:var(--display);font-weight:800;font-size:48px;margin:0 0 18px;letter-spacing:-.02em}
-.f{display:flex;align-items:center;gap:16px;border:4px solid var(--ink);border-radius:16px;padding:10px 18px;background:#fff;box-shadow:5px 5px 0 var(--ink);margin-bottom:12px}
-.f .pt{width:28px;height:28px;border-radius:50%;border:7px solid var(--c);background:#fff;flex:none;box-shadow:0 0 0 3px var(--ink)}
-.f .pt.plein{background:var(--c);border-color:var(--ink);border-width:3px;box-shadow:none}
-.f .nm{font-family:var(--display);font-weight:800;font-size:28px;flex:1;line-height:1.1}
-.f .d{font-size:22px;font-weight:700;color:var(--muted);white-space:nowrap}
-.sa{margin-top:30px;border-top:4px solid var(--ink);padding-top:26px}
-.sa h3{font-family:var(--display);font-weight:800;font-size:56px;margin:4px 0 10px}
-.sa .ev{display:flex;gap:20px;font-size:28px;padding:8px 0;border-bottom:3px dashed #dde1e8}
-.sa .ev .w{font-family:var(--display);font-weight:800;font-size:23px;width:300px;flex:none;white-space:nowrap}
-.sa .ev .t{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}"""
-    def dates(f):
-        a, b = date.fromisoformat(f["debut"]), date.fromisoformat(f["fin"])
-        if LANGUE == "en":
-            return f"until {MOIS_EN[b.month - 1]} {b.day}" if f["en_cours"] else f"from {MOIS_EN[a.month - 1]} {a.day}"
-        return f"jusqu'au {b.day} {MOIS[b.month - 1]}" if f["en_cours"] else f"dès le {a.day} {MOIS[a.month - 1]}"
-    fests = "".join(f'<div class="f" style="--c:{f["coul"]}"><span class="pt{" plein" if f["en_cours"] else ""}"></span>'
-                    f'<span class="nm">{escape(f["nom"])}</span><span class="d">{dates(f)}</span></div>' for f in s["festivals"][:6])
+    css = CSS_FEST + """
+h2{margin:0;font-size:76px;font-weight:900;letter-spacing:-.04em;line-height:.95}
+.fs{gap:10px}
+.sa{display:flex;flex-direction:column;gap:12px}
+.sa .sur{font-size:28px;font-weight:900}
+.sa h3{margin:0;font-size:60px;font-weight:900;letter-spacing:-.04em;line-height:1}
+.sa .e{display:flex;gap:20px;font-size:30px;border-top:2px solid #000;padding-top:12px}
+.sa .e b{width:330px;flex:none;white-space:nowrap}
+.sa h3{font-size:72px !important}
+.sa .e span{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}"""
     sa = s["salle"]
-    salle = (f'<div class="sa"><div class="p" style="font-family:var(--display);font-weight:800;font-size:28px;color:var(--muted)">'
-             f'{T("La salle de la semaine", "Venue of the week")}</div><h3><span class="hl">{escape(sa["lieu"])}</span></h3>'
-             + "".join(f'<div class="ev"><span class="w">{quand(e)}</span><span class="t">{escape(e["titre"])}</span></div>' for e in sa["events"][:5])
+    salle = (f'<div class="sa"><span class="sur">{T("La salle de la semaine", "Venue of the week")}</span><h3>{escape(sa["lieu"])}</h3>'
+             + "".join(f'<div class="e"><b>{quand(e)}</b><span>{escape(e["titre"])}</span></div>' for e in sa["events"][:5])
              + "</div>") if sa else ""
-    return v.page(1080, 1350, f"""<div class="tete"><h2>{T("Les festivals", "Festivals")}</h2>{marque()}</div>
-{fests}{salle}<div class="pied"><span class="url">ccmtl.ca</span></div>""", css)
+    return page2(1080, 1350, f"""<div class="tete">{T('<h2>Les <span class="ov">festivals</span></h2>', '<h2><span class="ov">Festivals</span></h2>')}{marque2(26)}</div>
+<div class="fs">{_fests(s, 6, petit=True)}</div>{salle}{pied()}""", css)
 
 
 def stories(s):
@@ -571,7 +607,12 @@ def main():
     debut = date.fromisoformat(sem) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", sem) else v.lundi_a_venir()
     f_etat = RACINE / "outils" / "reseaux" / "etat.json"
     etat = json.loads(f_etat.read_text(encoding="utf-8")) if f_etat.exists() else {}
-    s = choisir(data, debut, etat)
+    f_sel = RACINE / "outils" / "reseaux" / "selections" / f"{debut.isoformat()}.json"
+    if f_sel.exists():  # sélection déjà faite (aperçu du dimanche ou semaine publiée) : on la redessine telle quelle
+        s = json.loads(f_sel.read_text(encoding="utf-8"))
+        s["debut"], s["fin"] = date.fromisoformat(s["debut"]), date.fromisoformat(s["fin"])
+    else:
+        s = choisir(data, debut, etat)
     global LANGUE
     for langue in ("fr", "en"):
         LANGUE = langue
