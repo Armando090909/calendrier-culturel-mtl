@@ -3,30 +3,29 @@
  "fin": "2026-11-08",
  "picks": [
   {
-   "k": "theatre",
+   "k": "danse",
    "e": {
-    "date": "2026-11-04",
-    "heure": "19:30",
-    "discipline": "theatre",
-    "titre": "La Cathédrale engloutie",
-    "lieu": "Théâtre de Quat'Sous",
-    "url": "https://sorstu.ca/artiste/la-cathedrale-engloutie/",
+    "date": "2026-11-02",
+    "heure": "19:00",
+    "discipline": "danse",
+    "titre": "Marcus Merasty + Noel Transcendance Vezina",
+    "lieu": "Tangente",
+    "url": "https://sorstu.ca/artiste/marcus-merasty-noel-transcendance-vezina/",
     "complet": false,
     "jeunePublic": false,
     "source": "sorstu",
-    "resume": "Pièce de théâtre de Rebecca Deraspe, présentée au Théâtre de Quat'Sous.",
+    "resume": "Une soirée de danse présentée dans le cadre de la série LABdiff10.",
     "affiche": {
-     "url": "https://quatsous.com/uploads/images/_1200x630_crop_center-center_82_none/Visuel-site-web-Cathedrale_V2.jpg?mtime=1792424451",
-     "credit": "quatsous.com",
-     "lien": "https://quatsous.com/programmation/saison-2026-2027/la-cathedrale-engloutie"
+     "url": "https://www.quebecdanse.org/wp-content/uploads/public/4.-aut26_labdiff10_credit-isadora-ayesha-lima_750x375.png",
+     "credit": "Isadora Ayesha Lima · quebecdanse.org",
+     "lien": "https://tangentedanse.ca/evenement/marcus-merasty-noel-transcendance-vezina/"
     },
-    "resume_en": "Play by Rebecca Deraspe, presented at Théâtre de Quat'Sous.",
-    "ics": "2026-11-04-la-cathedrale-engloutie-7433e6",
-    "_jusqu": "2026-11-08"
+    "resume_en": "A dance evening presented as part of the LABdiff10 series.",
+    "ics": "2026-11-02-marcus-merasty-noel-transcendance-vezina-9e31fa"
    },
-   "accroche": "À la mort de sa grand-mère, Léna, 16 ans, hérite d'un vieux piano désaccordé. Une pièce de Rebecca Déraspe.",
-   "accroche_en": "When her grandmother dies, 16-year-old Léna inherits an old, out-of-tune piano. A play by Rebecca Déraspe.",
-   "mode": ""
+   "mode": "",
+   "accroche": "Deux œuvres en cours de création, partagées lors d'une soirée conviviale dans l'Espace Vert de Tangente.",
+   "accroche_en": "Two works in progress, shared during a convivial evening in Tangente's Espace Vert."
   },
   {
    "k": "humour",
@@ -145,28 +144,29 @@
    "mode": ""
   },
   {
-   "k": "danse",
+   "k": "theatre",
    "e": {
     "date": "2026-11-06",
-    "heure": "19:00",
-    "discipline": "danse",
-    "titre": "Léo Hit Coupal + Hanna Sybille Müller",
-    "lieu": "Tangente",
-    "url": "https://sorstu.ca/artiste/leo-hit-coupal-hanna-sybille-muller/",
+    "heure": "20:00",
+    "discipline": "theatre",
+    "titre": "Georges",
+    "lieu": "La Licorne",
+    "url": "https://sorstu.ca/artiste/georges/",
     "complet": false,
     "jeunePublic": false,
     "source": "sorstu",
-    "resume": "Pièce de danse signée par deux artistes, présentée à la salle Tangente.",
+    "resume": "Pièce de théâtre dont le texte est de Nathalie Doummar, présentée à La Licorne.",
     "affiche": {
-     "og": "https://tangentedanse.ca/evenement/leo-hit-coupal-hanna-sybille-muller/",
-     "credit": "tangentedanse.ca"
+     "url": "https://theatrelalicorne.com/wp-content/uploads/2026/04/Georges_Site.jpg",
+     "credit": "theatrelalicorne.com",
+     "lien": "https://theatrelalicorne.com/pieces/georges/"
     },
-    "resume_en": "Dance piece by two artists, presented at Salle Tangente.",
-    "ics": "2026-11-06-leo-hit-coupal-hanna-sybille-muller-4ac070"
+    "resume_en": "Play with text by Nathalie Doummar, presented at La Licorne.",
+    "ics": "2026-11-06-georges-4f3f46"
    },
-   "accroche": "Un duo de danse contemporaine signé par deux artistes, à découvrir.",
-   "accroche_en": "A contemporary dance duo by two artists, worth discovering.",
-   "mode": ""
+   "mode": "",
+   "accroche": "Georges, père de famille d'origine égyptienne, et ses deux enfants nés au Québec. Un texte de Nathalie Doummar.",
+   "accroche_en": "Georges, an Egyptian-born father, and his two Québec-born children. A play by Nathalie Doummar."
   },
   {
    "k": "poesie",

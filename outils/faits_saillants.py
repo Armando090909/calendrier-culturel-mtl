@@ -586,6 +586,47 @@ def condenses(s):
     return out
 
 
+# ---------------------------------------------------------------- Bannières (Facebook, Bluesky), comme le haut du site
+def banniere(w, h, sur, decale=0):
+    """Le haut du site : « Calendrier culturel de Montréal », « Qu'est-ce qu'on fait ce soir ? » et le dessin.
+    sur : largeur utile au centre (Facebook coupe les côtés sur téléphone) ; decale : déplacement vers la droite
+    (sur Bluesky, la photo de profil couvre le coin en bas à gauche)."""
+    u = h / 1000  # unité : tout est proportionnel à la hauteur
+    css = f"""body{{padding:0 0 0 {decale}px;display:grid;place-items:center}}
+.z{{width:{sur}px;height:{h}px;display:grid;grid-template-columns:auto 1fr;gap:{int(70 * u)}px;align-items:center;
+  padding:{int(110 * u)}px {int(40 * u)}px {int(120 * u)}px}}
+.g{{display:flex;flex-direction:column;gap:{int(56 * u)}px}}
+.mq{{font-size:{int(64 * u)}px}}
+h1{{margin:0;font-weight:900;font-size:{int(215 * u)}px;line-height:.88;letter-spacing:-.055em;display:flex;flex-direction:column;align-items:flex-start}}
+h1 i{{font-style:normal}}
+.d{{height:100%;display:flex;align-items:center;justify-content:flex-end;min-width:0}}
+.d img{{max-width:100%;max-height:100%;display:block}}"""
+    logo = _logo()
+    return page2(w, h, f"""<div class="z"><div class="g">{marque2(int(64 * u))}
+<h1><span>Qu'est-ce</span><span>qu'on fait</span><span><i class="ov">ce soir</i>&nbsp;?</span></h1></div>
+<div class="d">{f'<img src="{logo}" alt="">' if logo else ''}</div></div>""", css)
+
+
+def bannieres():
+    """(nom, html, largeur, hauteur) : Facebook 1640 × 624 (zone sûre au centre), Bluesky 3000 × 1000 (3:1)."""
+    return [("banniere-facebook", banniere(1640, 624, 1180), 1640, 624),
+            ("banniere-bluesky", banniere(3000, 1000, 2200, decale=420), 3000, 1000)]
+
+
+def rendre_bannieres(dossier):
+    from playwright.sync_api import sync_playwright
+    dossier.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as p:
+        nav = p.chromium.launch()
+        for nom, html, w, h in bannieres():
+            pg = nav.new_page(viewport={"width": w, "height": h})
+            pg.set_content(html, wait_until="networkidle", timeout=60000)
+            pg.evaluate("document.fonts.ready")
+            pg.wait_for_timeout(1000)
+            pg.screenshot(path=str(dossier / f"{nom}.png"))
+        nav.close()
+
+
 # ---------------------------------------------------------------- Textes
 def textes(s):
     """Textes d'accompagnement dans la langue courante (LANGUE) : instagram (long), threads (moyen), bluesky (court)."""
@@ -668,6 +709,7 @@ def main():
         for r, x in t.items():
             print(f"--- {langue} {r} ({len(x)} caractères)\n{x}\n")
     LANGUE = "fr"
+    rendre_bannieres(RACINE / "outils" / "reseaux" / "apercu" / "bannieres")
 
 if __name__ == "__main__":
     main()
