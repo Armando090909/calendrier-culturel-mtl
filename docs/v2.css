@@ -278,3 +278,19 @@ html.v2 .det-side{align-self:stretch}
 html.v2 .v1i{display:none}
 /* Crédit de l'affiche : voile très pâle, juste assez pour rester lisible sur une image sombre */
 html.v2 .det-aff figcaption{background:rgba(255,255,255,.35);color:#000}
+
+/* Fiche sans heure précise (« heure à confirmer », « voir horaire ») : la mention reste sur la ligne de la discipline */
+html.v2 .ev.det .det-top .tm.nh{position:static;font-size:13px;padding:3px 10px;font-style:italic}
+html.v2 .ev.det:has(.tm.nh) h3.t{padding-right:0}
+
+/* Bas de page sur téléphone : plus équilibré */
+@media (max-width:700px){
+  html.v2 .vp-long{display:none}
+  html.v2 .vp-prog{align-self:stretch;align-items:center;text-align:center}
+  html.v2 .vp-prog p{font-size:20px}
+  html.v2 .vp-pill{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+  html.v2 .vp-pill a{font-size:13.5px;padding:11px 8px;text-align:center;line-height:1.2}
+  html.v2 .vp-liens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  html.v2 .vp-liens .pied-bt{font-size:13.5px;padding:10px 6px;text-align:center;white-space:nowrap}
+}
+@media (max-width:700px){html.v2 .vp-pill a{display:flex;align-items:center;justify-content:center}}
