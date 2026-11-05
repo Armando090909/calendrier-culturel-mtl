@@ -968,6 +968,11 @@ def details_ville(html: str, jour: str) -> dict:
             out["lieu"] = str(loc["name"]).strip()
             adr = loc.get("address") or ""
             out["adresse"] = adr.get("streetAddress", "") if isinstance(adr, dict) else str(adr)
+        st = str(o.get("eventStatus") or "")
+        if st.endswith("EventCancelled"):
+            out["statut"] = "annule"
+        elif st.endswith(("EventPostponed", "EventRescheduled")):
+            out["statut"] = "reporte"
         sd = str(o.get("startDate") or "")
         if sd[:10] == jour:
             m = re.search(r"T(\d{2}):(\d{2})", sd)
@@ -991,6 +996,15 @@ def details_ville(html: str, jour: str) -> dict:
         if isinstance(img, str) and img.startswith("http"):
             out["image"] = img
     soupe = BeautifulSoup(html, "html.parser")
+    if "statut" not in out:
+        for t in soupe.find_all(["span", "div", "p", "strong"], limit=400):
+            mot = t.get_text(" ", strip=True)
+            if mot in ("Annulé", "Annulée", "Annulés"):
+                out["statut"] = "annule"
+                break
+            if mot in ("Reporté", "Reportée", "Reportés"):
+                out["statut"] = "reporte"
+                break
     if "lieu" not in out:
         titre = soupe.find(lambda t: t.name in ("h2", "h3", "h4", "p", "div", "span") and t.get_text(strip=True) == "Renseignements")
         bloc = titre

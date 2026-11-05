@@ -114,7 +114,7 @@ function saveIcs(i){const e=byId[i];if(!e)return;
 }
 
 function flagsHTML(e){
-  return (e.complet?`<span class="badge">${L("Complet","Sold out")}</span>`:"")+(e.serie?`<span class="badge s">${L("à l'affiche jusqu'au ","running until ")}${fmt(e.serie.fin)}</span>`:"");
+  return (e.statut==="reporte"?`<span class="badge">${L("Reporté","Postponed")}</span>`:"")+(e.complet?`<span class="badge">${L("Complet","Sold out")}</span>`:"")+(e.serie?`<span class="badge s">${L("à l'affiche jusqu'au ","running until ")}${fmt(e.serie.fin)}</span>`:"");
 }
 function lieuHTML(e,grand){
   const c=D.lieux[e.lieu],k=dist(e.lieu);

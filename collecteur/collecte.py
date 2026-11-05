@@ -191,6 +191,21 @@ def images_des_salles(events: list[dict], aujourd) -> None:
     print(f"Images de salle : {n} événements sans affiche reçoivent l'image de leur salle ({lus} sites lus).")
 
 
+def liens_billets(html: str, page: str) -> list[str]:
+    """Liens d'une page de spectacle qui mènent à la billetterie (texte ou adresse « billet », « ticket », « réserv »)."""
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+    out = []
+    for a in BeautifulSoup(html or "", "html.parser").find_all("a", href=True):
+        texte = a.get_text(" ", strip=True).lower()
+        href = urljoin(page, a["href"])
+        if not href.startswith("http") or "facebook.com" in href or "mailto:" in href:
+            continue
+        if re.search(r"billet|ticket|r[ée]serv|achet|acheter|buy", texte + " " + href.lower()) and href not in out:
+            out.append(href)
+    return out[:5]
+
+
 def nettoyer_resumes(elements: list[dict]) -> None:
     """Résumés propres pour la section française : balises et entités HTML retirées, adresses web retirées,
     phrases automatiques de Songkick (« X at Y at 2026-… ») supprimées, résumés anglais traduits en français
@@ -474,6 +489,8 @@ def main() -> int:
                     im = det_mac["image"]
                     e["affiche"] = {"url": im.replace("w_1920,", "w_1000,"), "petit": im.replace("w_1920,", "w_240,"),
                                     "credit": "Ville de Montréal", "lien": e["url"]}
+                if det_mac.get("statut"):
+                    e["statut"] = det_mac["statut"]  # « annule » (retiré plus bas) ou « reporte » (affiché)
                 continue
         det = memo_v.get(e["url"])
         if det and det.get("_err") and det.get("le") != aujourd.isoformat():
@@ -496,7 +513,14 @@ def main() -> int:
             e["heure"] = det["heure"]
         if not e.get("billets") and det.get("billets"):
             e["billets"] = det["billets"]
+        if det.get("statut"):
+            e["statut"] = det["statut"]
     f_vp.write_text(json.dumps(memo_v, ensure_ascii=False), encoding="utf-8")
+    # Événements annoncés « annulé » par la Ville : retirés du calendrier
+    annules = [e for e in events if e.get("statut") == "annule"]
+    if annules:
+        events[:] = [e for e in events if e.get("statut") != "annule"]
+        print(f"Fiches de la Ville : {len(annules)} événements annulés retirés.")
     # Pages des sources refusées aux serveurs de GitHub (403), pour l'ordinateur à Montréal
     (SORTIE.parent / "pages_a_lire.json").write_text(json.dumps(sorted(connecteurs.BLOQUEES), ensure_ascii=False),
                                                      encoding="utf-8")
@@ -879,6 +903,10 @@ def main() -> int:
             del memo_h[cle]
             memo_h[cle + "|v3"] = True
             essai_v2 = True
+        elif memo_h.get(cle) == {} and not memo_h.get(cle + "|v4"):  # 4e essai : les liens « Billets » de la page
+            del memo_h[cle]
+            memo_h[cle + "|v4"] = True
+            essai_v2 = True
         else:
             essai_v2 = bool(memo_h.get(cle + "|v2"))
         if cle not in memo_h and ia.disponible() and lus_h < int(reglages.get("max_horaires_ia", 60)):
@@ -889,9 +917,24 @@ def main() -> int:
                 if len(texte) < 800 or essai_v2:  # page affichée par JavaScript
                     texte = texte_page(connecteurs.page_rendue(x["url"]), x["url"])
                 h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
-                if not h and essai_v2 and str(x.get("billets", "")).startswith("http") and x["billets"] != x["url"]:
-                    texte = texte_page(connecteurs.page_rendue(x["billets"]), x["billets"])
-                    h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
+                if not h and essai_v2:
+                    # La billetterie : le lien connu, sinon les liens « Billets / Réserver » de la page du spectacle
+                    # (ex. Théâtre d'Aujourd'hui : les dates et heures ne sont que dans la section billets)
+                    cibles = [x["billets"]] if str(x.get("billets", "")).startswith("http") and x["billets"] != x["url"] else []
+                    cibles += [u for u in liens_billets(html, x["url"]) if u not in cibles and u != x["url"]]
+                    for u in cibles[:3]:
+                        try:
+                            tb = texte_page(connecteurs.page_rendue(u), u)
+                        except Exception as exc:
+                            tb = ""
+                            if "403" in str(exc):
+                                connecteurs.BLOQUEES.add(u)  # lue demain par le Pi à Montréal
+                                tb = texte_page(connecteurs.page_mac(u) or "", u)
+                        if len(tb) > 200:
+                            h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], tb)
+                            if h:
+                                print(f"  horaire « {x['titre'][:30]} » trouvé sur la billetterie : {u[:70]}")
+                                break
                 memo_h[cle] = h
             except Exception as exc:
                 print(f"  horaire « {x['titre'][:30]} » : {exc}")
