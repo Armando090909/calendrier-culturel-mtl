@@ -457,10 +457,30 @@ CSS_FEST = """
 .leg i.o{background:transparent;border:3px solid #000}"""
 
 
+# Couleurs de rechange pour les festivals : jamais deux fois la même couleur dans une publication
+# (couleurs du logo d'abord, puis les autres)
+ORDRE_FEST = ["#3A75F0", "#FBBA16", "#E22028", "#2DAA55", "#E04F9C", "#E04E25", "#B8A5E3", "#9DCCD1", "#E2B2B4",
+              "#1FA3A3", "#F2A65A", "#F6E08A", "#C49A6C", "#B8B23A", "#8FA3B5", "#CFC8BA"]
+
+
+def couleurs_festivals(fests):
+    """Une couleur différente par festival : celle de sa discipline si elle est libre, sinon la prochaine libre."""
+    prises, out = set(), []
+    for f in fests:
+        c = _coul_fest(f["coul"]).upper()
+        if c in prises:
+            c = next((x for x in ORDRE_FEST if x not in prises), c)
+        prises.add(c)
+        out.append(c)
+    return out
+
+
 def _fests(s, n=7, petit=False):
-    return "".join(f'<div class="f{"" if f["en_cours"] else " av"}" style="--c:{_coul_fest(f["coul"])}{";padding:14px 24px" if petit else ""}">'
+    fs_ = s["festivals"][:n]
+    return "".join(f'<div class="f{"" if f["en_cours"] else " av"}" style="--c:{c}{";padding:14px 24px" if petit else ""}">'
                    f'<span class="nm"{" style=font-size:34px" if petit else ""}>{escape(f["nom"])}</span>'
-                   f'<span class="d"{" style=font-size:26px" if petit else ""}>{_dates_fest(f)}</span></div>' for f in s["festivals"][:n])
+                   f'<span class="d"{" style=font-size:26px" if petit else ""}>{_dates_fest(f)}</span></div>'
+                   for f, c in zip(fs_, couleurs_festivals(fs_)))
 
 
 def slide_festivals(s):
