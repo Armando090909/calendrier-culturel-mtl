@@ -89,8 +89,6 @@
   "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02",
   "Cinéma Moderne": "2026-11-03",
   "Formulaire : événements proposés": "2026-11-04",
-  "Théâtre Prospero": "2026-11-05",
-  "ma.to – communauté (quiz, trivia)": "2026-11-05",
   "Cinéma L'Amour (ma.to)": "2026-11-05",
   "Théâtre de la LNI": "2026-11-05",
   "Bistro à Jojo": "2026-11-05",
@@ -103,7 +101,6 @@
   "Bain Mathieu": "2026-11-05",
   "Le Château (Ciné-Théâtre)": "2026-11-05",
   "Théâtre Bouches Décousues": "2026-11-05",
-  "Théâtre Mirella et Lino Saputo (CLDV)": "2026-11-05",
   "Qu'en dit Raton?": "2026-11-05",
   "Studio PACA (Les Foutoukours)": "2026-11-05",
   "La Rocambolesque": "2026-11-05",
@@ -116,30 +113,35 @@
   "Salle Joseph-Rouleau (Jeunesses Musicales)": "2026-11-05",
   "Théâtre St-James": "2026-11-05",
   "Théâtre Cartier": "2026-11-05",
-  "Cat's Corner (danse swing)": "2026-11-05"
+  "Cat's Corner (danse swing)": "2026-11-05",
+  "Festival · Monde Arabe (1)": "2026-10-26",
+  "Festival · RIDM (1)": "2026-10-26",
+  "Festival · RIDM (10)": "2026-10-26",
+  "Festival · RIDM (11)": "2026-10-26"
  },
  "Duran Contemporain": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-05"
+  "dernier_ok": "2026-11-06"
  },
  "Théâtre MainLine": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-05"
+  "dernier_ok": "2026-11-06"
  },
  "ma.to – communauté (quiz, trivia)": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-04"
+  "dernier_ok": "2026-11-06"
  },
  "ma.to (musique live)": {
   "essai": "2026-11-04",
   "echecs": 1,
-  "dernier_ok": "2026-11-05"
+  "dernier_ok": "2026-11-06"
  },
  "Théâtre Prospero": {
   "essai": "2026-11-05",
-  "echecs": 1
+  "echecs": 1,
+  "dernier_ok": "2026-11-06"
  }
 }

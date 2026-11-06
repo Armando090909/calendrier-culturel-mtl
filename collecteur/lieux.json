@@ -322,6 +322,7 @@
  "Burton Cummings Theatre": null,
  "CIRCA art actuel": null,
  "Cabaret Fouf": null,
+ "Cabaret Foufs": null,
  "Cabaret Guy-Aubert": null,
  "Cabaret Lion d'Or": {
   "lat": 45.5245,
@@ -473,6 +474,11 @@
   "lat": 45.52349,
   "lon": -73.5916,
   "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Centre socioculturel de l'Île-Bizard": {
+  "lat": 45.48862,
+  "lon": -73.88231,
+  "quartier": "L'Île-Bizard–Sainte-Geneviève"
  },
  "Chalet du parc Armand-Bombardier": {
   "lat": 45.64012,
@@ -827,6 +833,7 @@
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
+ "Henry F. Hall Building": null,
  "Henry F. Hall Building (H-1120), Concordia": null,
  "History": null,
  "Hollywood Theatre": null,
@@ -839,6 +846,7 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "J.W. McConnell Building": null,
  "J.W. McConnell Building (LB), Concordia": null,
  "J.W. McConnell Building, Leonard & Bina Ellen Art Gallery": null,
  "Jardin botanique": {
@@ -847,6 +855,7 @@
   "quartier": "Rosemont–La Petite-Patrie"
  },
  "Judith J-2805": null,
+ "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Koujina Café": null,
  "L'Adversaire – Pub et boutique ludiques": null,
  "L'Artère fabricathèque": null,
@@ -1050,6 +1059,7 @@
   "lon": -73.5785,
   "quartier": "Plateau"
  },
+ "Long Bar Restaurant": null,
  "Lopez": {
   "lat": 45.53799,
   "lon": -73.60692,
@@ -1216,6 +1226,7 @@
   "quartier": ""
  },
  "Milieux Institute for Arts, Culture and Technology, Concordia University": null,
+ "Milieux Institute, Sir George Williams Campus": null,
  "Molson Canadian Centre at Casino New-Brunswick": null,
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
@@ -1284,6 +1295,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Office national du film - Salle Alanis-Obomsawin": null,
+ "Office national du film du Canada": null,
  "Oratoire Saint-Joseph": {
   "lat": 45.4925,
   "lon": -73.6178,
@@ -1344,6 +1356,11 @@
   "quartier": "LaSalle"
  },
  "Parc Louis-Querbes": null,
+ "Parc Montcalm": {
+  "lat": 45.54491,
+  "lon": -73.60041,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Parc Outremont": {
   "lat": 45.52059,
   "lon": -73.60365,
@@ -1362,6 +1379,8 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Pavillon Hubert-Aquin (A), UQAM": null,
+ "Pavillon Judith-Jasmin (J), UQAM": null,
  "Pavillon de l'île": null,
  "Peterborough Memorial Centre": null,
  "Petit Campus": {
@@ -1382,6 +1401,7 @@
   "lon": -73.571,
   "quartier": "Centre-ville"
  },
+ "Piratex": null,
  "Place Chaumont": null,
  "Place Gennevilliers-Laliberté": null,
  "Place Rodolphe-Rousseau": {
@@ -1450,6 +1470,11 @@
  },
  "Regart, centre d'artistes en art actuel": null,
  "Rio Theatre": null,
+ "Rockette Bar - Montreal": {
+  "lat": 45.5239,
+  "lon": -73.58248,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Rogers Arena": null,
  "Rue Ontario Est": {
   "lat": 45.525,
@@ -1590,6 +1615,8 @@
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
  },
+ "Teatro Amelia e Lino Saputo": null,
+ "Teatro Mirella & Lino Saputo": null,
  "The Arena at Pickering Casino Resort": null,
  "The Axis Club": null,
  "The Church of St John the Evangelist": null,
@@ -1806,6 +1833,11 @@
   "lat": 45.48097,
   "lon": -73.60019,
   "quartier": ""
+ },
+ "Visual Arts Building": {
+  "lat": 45.49579,
+  "lon": -73.57397,
+  "quartier": "Ville-Marie"
  },
  "Vogue Theatre": null,
  "Wiggle Room": {
