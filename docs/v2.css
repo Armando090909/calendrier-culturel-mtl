@@ -77,7 +77,7 @@ html.v2 .partial{background:var(--surface);border-radius:999px}
 /* Grille de la semaine : tuiles de jour, cartes pleine couleur, aujourd'hui en rouge à 30 % */
 html.v2 .board{gap:8px}
 html.v2 .col{gap:6px}
-html.v2 .col.today{background:rgba(226,32,40,.3);border-radius:18px;padding:6px;margin:-6px;outline:0}
+html.v2 .col.today{background:none;border-radius:0;padding:0;margin:0;outline:0}
 html.v2 .colhead{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--f-body);text-transform:none;text-align:center;
   background:var(--bg);color:var(--ink);border:2.5px solid var(--ink);border-radius:14px;padding:10px 8px 12px}
 html.v2 .colhead:hover:not(:disabled){color:var(--ink);background:var(--surface)}
@@ -150,7 +150,6 @@ html.v2 .don-pop{background:var(--surface);border:2px solid var(--ink);border-ra
   html.v2 .v2-titre{font-size:clamp(52px,15vw,80px)}
   html.v2 .sub{font-size:16px}
   html.v2 .board{grid-template-columns:1fr;gap:16px}
-  html.v2 .col.today{margin:0;padding:8px}
   html.v2 .colhead{flex-direction:row;align-items:baseline;gap:10px;padding:8px 12px;border-radius:12px;text-align:left}
   html.v2 .ch-n{order:-1;font-size:30px}
   html.v2 .ch-c{margin-left:auto}
@@ -336,3 +335,10 @@ html.v2 .btn{font-family:var(--f-body)}
 html.v2 #view.glisse-g{animation:glisse-g .22s ease-out}
 html.v2 #view.glisse-d{animation:glisse-d .22s ease-out}
 @media (prefers-reduced-motion:reduce){html.v2 #view.glisse-g,html.v2 #view.glisse-d{animation:none}}
+
+/* La rangée des jours reste en haut de l'écran quand on descend (ordinateur) : chaque tête de jour est collante, et
+   les colonnes ont toutes la hauteur de la plus longue pour que les têtes restent ensemble jusqu'au bas de la semaine */
+@media (min-width:701px){
+  html.v2 .board{align-items:stretch}
+  html.v2 .board .col>.colhead{position:sticky;top:0;z-index:4;box-shadow:0 -10px 0 10px var(--bg)}
+}
