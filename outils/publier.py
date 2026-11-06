@@ -730,9 +730,50 @@ def epingles():
         sys.exit(1)
 
 
+def epingles_threads_bluesky():
+    """Threads : les 3 carrousels (FR puis EN). Bluesky : « Qui on est » en français (4 images), version anglaise en réponse."""
+    pub = DOSSIER / "epingles" / "pub"
+    erreurs = []
+    for prefixe, texte in EPINGLES:
+        jpgs = sorted(pub.glob(f"fr-{prefixe}-*.jpg")) + sorted(pub.glob(f"en-{prefixe}-*.jpg"))
+        urls = [url_publique(str(j.relative_to(RACINE))) for j in jpgs]
+        texte = texte.replace("LIEN", "https://ccmtl.ca")
+        if len(texte) > 500:
+            texte = texte[:470].rsplit(" ", 1)[0] + "… https://ccmtl.ca"
+        try:
+            print(f"{prefixe} threads : {threads(texte, urls, [f'ccmtl.ca · {j.stem}' for j in jpgs])}")
+        except Exception as exc:
+            erreurs.append(prefixe)
+            print(f"{prefixe} threads : ÉCHEC {exc} {getattr(getattr(exc, 'response', None), 'text', '')[:300]}")
+    alt_fr = ["C’est quoi, ccmtl ?", "Tout ce qui se passe sur l’île, au même endroit. Gratuit, sans pub, bénévole, indépendant.",
+              "Notre mission : mieux connecter les artistes et leur public.", "Qu’est-ce qu’on fait ce soir ? La réponse est sur ccmtl.ca."]
+    alt_en = ["What is ccmtl?", "Everything happening on the island, in one place. Free, no ads, volunteer-run, independent.",
+              "Our mission: connecting artists with their audience.", "What’s on tonight? The answer is on ccmtl.ca."]
+    fr = sorted(pub.glob("fr-1-qui-*.jpg"))[:4]
+    en = sorted(pub.glob("en-1-qui-*.jpg"))[:4]
+    try:
+        fs.LANGUE = "fr"
+        r = bluesky([("C’est quoi, ccmtl ? Le calendrier culturel gratuit, indépendant et bénévole de l’île de Montréal. "
+                      "Notre mission : mieux connecter les artistes et leur public. ccmtl.ca",
+                      [(j.read_bytes(), a) for j, a in zip(fr, alt_fr)]),
+                     ("EN · What is ccmtl? Montréal’s free, independent, volunteer-run cultural calendar. "
+                      "Our mission: connecting artists with their audience. ccmtl.ca",
+                      [(j.read_bytes(), a) for j, a in zip(en, alt_en)])])
+        print(f"1-qui bluesky : {r}")
+    except Exception as exc:
+        erreurs.append("bluesky")
+        print(f"1-qui bluesky : ÉCHEC {exc} {getattr(getattr(exc, 'response', None), 'text', '')[:300]}")
+    finally:
+        fs.LANGUE = "fr"
+    if erreurs:
+        sys.exit(1)
+
+
 def main():
     if SEULEMENT == ["epingles"]:
         return epingles()
+    if SEULEMENT == ["epingles_threads_bluesky"]:
+        return epingles_threads_bluesky()
     if ETAPE == "apercu":
         return apercu()
     if ETAPE == "consignes":
