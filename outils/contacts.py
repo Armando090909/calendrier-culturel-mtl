@@ -25,7 +25,27 @@ PREFERES = re.compile(r"(?i)^(info|programmation|programmation|booking|communica
                       r"medias|marketing|bonjour|hello|contact|salut|direction|diffusion)@")
 
 
+def _cfemail(code: str) -> str:
+    """Adresse protégée par Cloudflare (data-cfemail) : décodage XOR."""
+    try:
+        k = int(code[:2], 16)
+        return "".join(chr(int(code[i:i + 2], 16) ^ k) for i in range(2, len(code), 2))
+    except ValueError:
+        return ""
+
+
+def _devoiler(html: str) -> str:
+    """Rend lisibles les adresses masquées : Cloudflare, « info [at] site [dot] ca », « info(at)site.ca »."""
+    html = html or ""
+    extra = [_cfemail(c) for c in re.findall(r'data-cfemail="([0-9a-f]+)"', html)]
+    extra += [_cfemail(c) for c in re.findall(r"/cdn-cgi/l/email-protection#([0-9a-f]+)", html)]
+    t = re.sub(r"\s*[\[(]\s*(?:at|arobase|@)\s*[\])]\s*", "@", html, flags=re.I)
+    t = re.sub(r"\s*[\[(]\s*(?:dot|point)\s*[\])]\s*", ".", t, flags=re.I)
+    return t + " " + " ".join(extra)
+
+
 def courriels(html: str) -> list[str]:
+    html = _devoiler(html)
     trouves = re.findall(r'mailto:([^"\'?>\s]+)', html or "") + COURRIEL.findall(html or "")
     out = []
     for x in trouves:
@@ -78,37 +98,50 @@ def un_site(nom, url, salle=""):
     return r
 
 
-def main():
-    medias = [un_site(n, u) for n, u in MEDIAS]
-    (RACINE / "outils" / "diag" / "contacts_medias.json").write_text(json.dumps(medias, ensure_ascii=False, indent=1), encoding="utf-8")
-    if (RACINE / "outils" / "diag" / "contacts.json").exists():
-        return  # salles déjà faites
-    conf = yaml.safe_load((RACINE / "collecteur" / "sources.yaml").read_text(encoding="utf-8"))
-    sources = conf if isinstance(conf, list) else conf.get("sources", [])
-    vus, out = set(), []
-    for s in sources:
-        url = str(s.get("url") or "")
-        hote = urlparse(url).netloc.lower().removeprefix("www.")
-        if not url.startswith("http") or any(a in hote for a in AGREGATEURS) or hote in vus:
+CHEMINS = ("contact", "contact/", "nous-joindre", "nous-joindre/", "contactez-nous", "fr/contact", "en/contact",
+           "contact-us", "a-propos", "about", "infos")
+
+
+def completer(r: dict) -> dict:
+    """2e passage pour un site sans courriel : sa page de contact et les adresses habituelles, lues aussi dans le
+    navigateur (adresses écrites par JavaScript ou masquées), en respectant robots.txt."""
+    if r.get("courriels"):
+        return r
+    base = r["site"] if r["site"].count("/") <= 3 else f"{urlparse(r['site']).scheme}://{urlparse(r['site']).netloc}/"
+    essais = list(dict.fromkeys([r.get("contact") or "", r["site"]] + [base + c for c in CHEMINS]))
+    lus = 0
+    for u in [x for x in essais if x]:
+        if lus >= 6 or not c.robots_permet(u):
             continue
-        vus.add(hote)
-        accueil = f"{urlparse(url).scheme}://{urlparse(url).netloc}/"
-        r = {"nom": s.get("nom"), "salle": s.get("lieu") or "", "site": accueil, "courriels": [], "contact": ""}
+        html = ""
         try:
-            html = c.telecharger(accueil, "text/html").text
-            r["courriels"] = courriels(html)
-            r["contact"] = page_contact(html, accueil)
-            if r["contact"] and len(r["courriels"]) < 1:
-                time.sleep(1)
-                r["courriels"] = courriels(c.telecharger(r["contact"], "text/html").text)
-        except Exception as exc:
-            r["erreur"] = str(exc)[:120]
-        out.append(r)
-        print(r["nom"], r["courriels"][:2], r["contact"][:60], r.get("erreur", ""))
+            html = c.telecharger(u, "text/html").text
+        except Exception:
+            pass
+        if not courriels(html):
+            try:
+                html = c.page_rendue(u)
+            except Exception:
+                html = html or ""
+        lus += 1
+        trouves = courriels(html)
+        if trouves:
+            r["courriels"], r["contact"] = trouves, r.get("contact") or u
+            r.pop("erreur", None)
+            break
         time.sleep(1)
-    (RACINE / "outils" / "diag" / "contacts.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{len(out)} sites ; {sum(1 for r in out if r['courriels'])} avec une adresse courriel ; "
-          f"{sum(1 for r in out if not r['courriels'] and r['contact'])} avec une page de contact seulement.")
+    print(r["nom"], r["courriels"][:2])
+    return r
+
+
+def main():
+    d = RACINE / "outils" / "diag"
+    for nom in ("contacts.json", "contacts_medias.json"):
+        f = d / nom
+        if f.exists():
+            rs = [completer(r) for r in json.loads(f.read_text(encoding="utf-8"))]
+            f.write_text(json.dumps(rs, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"{nom} : {sum(1 for r in rs if r['courriels'])} / {len(rs)} avec une adresse")
 
 
 if __name__ == "__main__":
