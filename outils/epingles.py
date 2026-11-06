@@ -99,7 +99,7 @@ def qui():
     s4 = page(f"""<div style="display:flex;flex-direction:column;align-items:center;gap:40px;margin:auto 0;text-align:center">
 <h2 style="font-size:130px">{T('Qu’est-ce qu’on fait <span class="ov">ce soir</span>&nbsp;?', 'What’s on <span class="ov">tonight</span>?')}</h2>
 <p style="margin:0 auto">{T("La réponse est sur ccmtl.ca. Lien dans la bio.", "The answer is on ccmtl.ca. Link in bio.")}</p></div>""", 4, tot,
-              deco((5, "right:-60px;bottom:30px;width:230px;transform:rotate(-90deg)"), (8, "left:-90px;top:-40px;width:360px"),
+              deco((5, "right:-50px;bottom:150px;width:260px;transform:rotate(-90deg)"), (8, "left:-90px;top:-40px;width:360px"),
                    (1, "right:110px;top:110px;width:110px")))
     return [("1-qui-1", s1), ("1-qui-2", s2), ("1-qui-3", s3), ("1-qui-4", s4)]
 
@@ -112,8 +112,8 @@ def mode():
 {T('<h1>Mode<br>d’<span class="ov">emploi</span></h1>', '<h1>How it<br><span class="ov">works</span></h1>')}
 <p>{T("Le site en 5 gestes.", "The site in 5 moves.")}</p>""", 1, tot,
               deco((3, "right:-90px;top:90px;width:430px;transform:rotate(-6deg)"), (6, "right:430px;top:330px;width:70px")))
-    s2 = page(f"""<style>.z{{gap:26px}}.li{{font-size:35px !important;gap:16px}}.li i{{width:24px;height:24px;margin-top:8px}}</style><span class="k">1 · {T("Choisis ta vue", "Pick your view")}</span>
-<h2 style="font-size:84px">{T('La semaine ou <span class="ov">le jour</span>&nbsp;?', 'The week or <span class="ov">the day</span>?')}</h2>
+    s2 = page(f"""<style>.z{{gap:26px}}.li{{font-size:40px !important;gap:18px}}.li i{{width:26px;height:26px;margin-top:10px}}</style><span class="k">1 · {T("Choisis ta vue", "Pick your view")}</span>
+<h2 style="font-size:100px">{T('La semaine ou <span class="ov">le jour</span>&nbsp;?', 'The week or <span class="ov">the day</span>?')}</h2>
 <div class="liste">
 <div class="li"><i style="background:{C['musique']}"></i><span>{T("Le mode <b>Semaine</b> te donne une vue d’ensemble : les 7 jours côte à côte, pour repérer rapidement ce qui s’en vient. Sur téléphone, tu glisses d’un jour à l’autre.",
   "<b>Week</b> view gives you the big picture: all 7 days side by side, to spot quickly what’s coming. On your phone, you swipe from one day to the next.")}</span></div>
