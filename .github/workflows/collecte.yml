@@ -168,7 +168,26 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+      # GitHub Pages met parfois plus de 10 min (son maximum) à copier les ~8 000 fichiers : on réessaie une fois,
+      # et un échec n'est signalé (courriel) que si le site en ligne n'a plus été mis à jour depuis plus d'un jour.
       - id: deploiement
         uses: actions/deploy-pages@v4
+        continue-on-error: true
         with:
-          timeout: 1800000  # 30 min : GitHub Pages met parfois plus de 10 min à copier les ~5 000 pages
+          timeout: 600000
+      - id: deploiement2
+        if: steps.deploiement.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 600000
+      - name: Site en ligne à jour ?
+        if: steps.deploiement.outcome == 'failure' && steps.deploiement2.outcome == 'failure'
+        run: |
+          EN_LIGNE=$(curl -fsS "https://ccmtl.ca/data.json?t=$(date +%s)" | python3 -c "import json,sys; print(json.load(sys.stdin).get('miseAJour',''))" || echo "")
+          HIER=$(TZ=America/Toronto date -d yesterday +%F)
+          echo "Données en ligne du : ${EN_LIGNE:-inconnu}"
+          if [ -z "$EN_LIGNE" ] || [[ "$EN_LIGNE" < "$HIER" ]]; then
+            echo "::error::Le site en ligne n'est plus mis à jour depuis le $EN_LIGNE (deux publications ratées)."; exit 1
+          fi
+          echo "::warning::Publication ratée deux fois (GitHub Pages trop lent), mais le site en ligne date du $EN_LIGNE : la prochaine publication rattrapera."
