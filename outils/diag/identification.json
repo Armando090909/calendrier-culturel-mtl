@@ -4,18 +4,13 @@
    "compte": "tangentedanse",
    "sur": true,
    "source": "https://tangentedanse.ca/"
-  },
-  "artiste": {
-   "compte": "sorstuca",
-   "sur": false,
-   "source": "https://sorstu.ca/artiste/marcus-merasty-noel-transcendance-vezina/"
   }
  },
  "humour": {
-  "artiste": {
-   "compte": "spectaculos.ca",
-   "sur": false,
-   "source": "https://spectaculos.ca/fr/spectacle/p-a-methot-montreal"
+  "salle": {
+   "compte": "espace_st_denis",
+   "sur": true,
+   "source": "https://espacestdenis.com/"
   }
  },
  "cinema": {},
@@ -31,17 +26,12 @@
    "compte": "theatrelalicorne",
    "sur": true,
    "source": "https://theatrelalicorne.com/"
-  },
-  "artiste": {
-   "compte": "sorstuca",
-   "sur": false,
-   "source": "https://sorstu.ca/artiste/georges/"
   }
  },
  "poesie": {
-  "artiste": {
+  "salle": {
    "compte": "maisoncultureclaudeleveillee",
-   "sur": false,
+   "sur": true,
    "source": "https://lepointdevente.com/billets/4ne261107001?lang=fr"
   }
  },

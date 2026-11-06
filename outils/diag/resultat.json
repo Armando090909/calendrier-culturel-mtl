@@ -1,10 +1,10 @@
 {
  "https://dns.google/resolve?name=ccmtl.ca&type=TXT": {
   "statut": 200,
-  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"ccmtl.ca.\",\"type\":16}],\"Answer\":[{\"name\":\"ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"google-site-verification=1wf3nD1deYlwuJx9_5hFY7rMor0tminMiYIMWaUsQsg\"},{\"name\":\"ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"v=spf1 include:spf.efwd.registrar-servers.com include:_spf.google.com ~all\"}],\"Comment\":\"Response from 2610:a1:1024::200.\"}"
+  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"ccmtl.ca.\",\"type\":16}],\"Answer\":[{\"name\":\"ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"v=spf1 include:spf.efwd.registrar-servers.com include:_spf.google.com ~all\"},{\"name\":\"ccmtl.ca.\",\"type\":16,\"TTL\":1799,\"data\":\"google-site-verification=1wf3nD1deYlwuJx9_5hFY7rMor0tminMiYIMWaUsQsg\"}],\"Comment\":\"Response from 156.154.133.200.\"}"
  },
  "https://dns.google/resolve?name=www.ccmtl.ca&type=CNAME": {
   "statut": 200,
-  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"www.ccmtl.ca.\",\"type\":5}],\"Answer\":[{\"name\":\"www.ccmtl.ca.\",\"type\":5,\"TTL\":1799,\"data\":\"armando090909.github.io.\"}],\"Comment\":\"Response from 156.154.133.200.\"}"
+  "extrait": "{\"Status\":0,\"TC\":false,\"RD\":true,\"RA\":true,\"AD\":false,\"CD\":false,\"Question\":[{\"name\":\"www.ccmtl.ca.\",\"type\":5}],\"Answer\":[{\"name\":\"www.ccmtl.ca.\",\"type\":5,\"TTL\":1799,\"data\":\"armando090909.github.io.\"}],\"Comment\":\"Response from 156.154.132.200.\"}"
  }
 }
