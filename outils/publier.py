@@ -546,6 +546,10 @@ def apercu():
     try:  # comptes Instagram de la salle et de l'artiste, trouvés sur les pages officielles
         import identification
         s["tags"] = identification.trouver(s["picks"])
+        # comptes confirmés d'avance par Alexandre (outils/reseaux/preferences/<lundi>.json, « tags »)
+        f_pref = DOSSIER / "preferences" / f"{semaine}.json"
+        for k, hs in (json.loads(f_pref.read_text(encoding="utf-8")).get("tags") or {}).items() if f_pref.exists() else []:
+            s["tags"].setdefault(k, {})["ajouts"] = [h.lstrip("@").lower() for h in hs]
     except Exception as exc:
         print(f"Identification : échec ({exc})")
     _sauver_selection(s, semaine)

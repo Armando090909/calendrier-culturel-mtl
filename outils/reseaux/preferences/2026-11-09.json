@@ -18,5 +18,34 @@
   "jeune": "La jeune fille qui pleurait des perles",
   "humour": "La LIM"
  },
- "festivals": true
+ "festivals": true,
+ "tags": {
+  "cinema": [
+   "felixdegivry",
+   "festivalcinemania"
+  ],
+  "danse": [
+   "compagnievirginiebrunelle"
+  ],
+  "expo": [
+   "galeriepfoac",
+   "leila.zelli"
+  ],
+  "theatre": [
+   "sallepaulinejulien",
+   "jesuiscommetoutlemonde"
+  ],
+  "musique": [
+   "foufouneselectriques",
+   "jonathan_personne",
+   "coupdecoeurf"
+  ],
+  "jeune": [
+   "clydehenryproductions"
+  ],
+  "humour": [
+   "cabaretliondor",
+   "lim_impro"
+  ]
+ }
 }
