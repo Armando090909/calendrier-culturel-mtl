@@ -298,21 +298,19 @@ html.v2 .ev.det:has(.tm.nh) h3.t{padding-right:0}
 /* Titres : pas de coupure au milieu d'un mot (le site réduit plutôt la taille du titre) */
 html.v2 .ev.det h3.t{overflow-wrap:normal;word-break:normal;hyphens:manual}
 
-/* Téléphone : une journée à la fois, on glisse de gauche à droite ; onglets des jours au-dessus */
-html.v2 .jtabs{display:none}
+/* Téléphone : une journée à la fois, on glisse de gauche à droite ; la date du jour reste collée en haut */
+html.v2 .jtete{display:none}
 @media (max-width:700px){
-  html.v2 .jtabs{display:flex;gap:6px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;margin-bottom:6px;overflow-x:auto;scrollbar-width:none}
-  html.v2 .jtabs::-webkit-scrollbar{display:none}
-  html.v2 .jtab{flex:1 0 auto;min-width:44px;display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;font-family:var(--f-body);
-    background:transparent;color:var(--ink);border:2px solid var(--ink);border-radius:14px;padding:5px 6px;cursor:pointer}
-  html.v2 .jtab span{font-size:12px;font-weight:700}
-  html.v2 .jtab b{font-size:20px;font-weight:900;line-height:1.05}
-  html.v2 .jtab.on{background:var(--ink);color:var(--bg)}
+  html.v2 .jtete{display:block;position:sticky;top:0;z-index:5;overflow:hidden;background:var(--bg);padding:8px 0 8px;margin-bottom:-2px}
+  html.v2 .jt-in{display:flex;gap:14px;will-change:transform}
+  html.v2 .jt-c{flex:0 0 100%;min-width:0}
+  html.v2 .jt-c .colhead{width:100%}
+  html.v2 .jt-c.today .colhead{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  html.v2 .board .col>.colhead{display:none}
   html.v2 .board{display:flex;grid-template-columns:none;gap:14px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;
     align-items:flex-start;scrollbar-width:none;overscroll-behavior-x:contain;transition:height .2s}
   html.v2 .board::-webkit-scrollbar{display:none}
   html.v2 .board .col{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always}
-  html.v2 .board .col.today{flex-basis:100%}
 }
 
 /* Pages secondaires (sources, salles, archives) au nouveau style */
