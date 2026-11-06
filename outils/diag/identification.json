@@ -1,0 +1,49 @@
+{
+ "danse": {
+  "salle": {
+   "compte": "tangentedanse",
+   "sur": true,
+   "source": "https://tangentedanse.ca/"
+  },
+  "artiste": {
+   "compte": "sorstuca",
+   "sur": false,
+   "source": "https://sorstu.ca/artiste/marcus-merasty-noel-transcendance-vezina/"
+  }
+ },
+ "humour": {
+  "artiste": {
+   "compte": "spectaculos.ca",
+   "sur": false,
+   "source": "https://spectaculos.ca/fr/spectacle/p-a-methot-montreal"
+  }
+ },
+ "cinema": {},
+ "musique": {
+  "artiste": {
+   "compte": "coupdecoeurf",
+   "sur": false,
+   "source": "https://coupdecoeur.ca"
+  }
+ },
+ "theatre": {
+  "salle": {
+   "compte": "theatrelalicorne",
+   "sur": true,
+   "source": "https://theatrelalicorne.com/"
+  },
+  "artiste": {
+   "compte": "sorstuca",
+   "sur": false,
+   "source": "https://sorstu.ca/artiste/georges/"
+  }
+ },
+ "poesie": {
+  "artiste": {
+   "compte": "maisoncultureclaudeleveillee",
+   "sur": false,
+   "source": "https://lepointdevente.com/billets/4ne261107001?lang=fr"
+  }
+ },
+ "cirque": {}
+}

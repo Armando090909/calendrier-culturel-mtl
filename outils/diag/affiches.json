@@ -1,17 +1,33 @@
 {
  "total": 1574,
- "echecs": 10,
+ "echecs": 47,
  "par_site": {
+  "theatreplaza.ca": {
+   "affiches": 12,
+   "echecs": 12
+  },
+  "www.mado.qc.ca": {
+   "affiches": 7,
+   "echecs": 7
+  },
+  "lalumierecollective.org": {
+   "affiches": 7,
+   "echecs": 7
+  },
+  "coeurdessciences.uqam.ca": {
+   "affiches": 4,
+   "echecs": 4
+  },
+  "cabaretliondor.com": {
+   "affiches": 4,
+   "echecs": 4
+  },
   "www.eventbrite.com": {
    "affiches": 4,
    "echecs": 3
   },
   "westmount.org": {
    "affiches": 2,
-   "echecs": 2
-  },
-  "pauline-julien.com": {
-   "affiches": 17,
    "echecs": 2
   },
   "images.ctfassets.net": {
@@ -22,7 +38,27 @@
    "affiches": 1,
    "echecs": 1
   },
+  "espacelevraimonde.ca": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "espacelibre.qc.ca": {
+   "affiches": 1,
+   "echecs": 1
+  },
   "lelivart.com": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "theatreoutremont.ca": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "www.foufouneselectriques.com": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "agoradanse.com": {
    "affiches": 1,
    "echecs": 1
   },
@@ -110,10 +146,6 @@
    "affiches": 23,
    "echecs": 0
   },
-  "theatreplaza.ca": {
-   "affiches": 12,
-   "echecs": 0
-  },
   "panm360.com": {
    "affiches": 1,
    "echecs": 0
@@ -140,10 +172,6 @@
   },
   "www.festivalnuitsdafrique.com": {
    "affiches": 3,
-   "echecs": 0
-  },
-  "www.mado.qc.ca": {
-   "affiches": 7,
    "echecs": 0
   },
   "lebordel.ca": {
@@ -190,28 +218,16 @@
    "affiches": 4,
    "echecs": 0
   },
-  "lalumierecollective.org": {
-   "affiches": 7,
-   "echecs": 0
-  },
   "illusiontheatre.com": {
    "affiches": 2,
-   "echecs": 0
-  },
-  "coeurdessciences.uqam.ca": {
-   "affiches": 4,
    "echecs": 0
   },
   "maps.gstatic.com": {
    "affiches": 1,
    "echecs": 0
   },
-  "cabaretliondor.com": {
-   "affiches": 4,
-   "echecs": 0
-  },
-  "espacelevraimonde.ca": {
-   "affiches": 1,
+  "pauline-julien.com": {
+   "affiches": 17,
    "echecs": 0
   },
   "cdn.simpletix.com": {
@@ -220,10 +236,6 @@
   },
   "www.studio303.ca": {
    "affiches": 2,
-   "echecs": 0
-  },
-  "espacelibre.qc.ca": {
-   "affiches": 1,
    "echecs": 0
   },
   "promotix.s3.us-east-1.amazonaws.com": {
@@ -238,10 +250,6 @@
    "affiches": 4,
    "echecs": 0
   },
-  "theatreoutremont.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "ent-nts.ca": {
    "affiches": 1,
    "echecs": 0
@@ -252,10 +260,6 @@
   },
   "ridm.ca": {
    "affiches": 67,
-   "echecs": 0
-  },
-  "www.foufouneselectriques.com": {
-   "affiches": 1,
    "echecs": 0
   },
   "cafconc.ca": {
@@ -278,10 +282,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "agoradanse.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "www.montrealcomiccon.com": {
    "affiches": 1,
    "echecs": 0
@@ -292,27 +292,63 @@
   }
  },
  "exemples": {
+  "theatreplaza.ca": [
+   "https://theatreplaza.ca/wp-content/uploads/2026/10/FB-_-Projo.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/10/The-Return-1280x720-plaza-theatre-poster-1.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/09/Zeina-Maan-souffles-du-Levant.png"
+  ],
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195177411%252F1296453055783%252F1%252Foriginal.20261006-140407%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D3b7bf9774b9dbdfb4442439f788bdfb7&w=1200&q=75",
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193695236%252F1296453055783%252F1%252Foriginal.20260916-210100%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Dd69eed74297cf7ed18da2e5335fcfe89&w=1200&q=75",
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
   ],
+  "www.mado.qc.ca": [
+   "https://www.mado.qc.ca/wp-content/uploads/1792021092MadoRecoit-261106-Horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1788537205JimmyMoore-Celine-261107-horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1791846133FullGisele_261103-horizontal.jpg"
+  ],
   "westmount.org": [
    "https://westmount.org/resize/7a2537c2c72e4a61681518d695497350-1",
    "https://westmount.org/resize/75b63746529733172b2d280c6279fe36-1"
   ],
+  "lalumierecollective.org": [
+   "https://lalumierecollective.org/wp-content/uploads/2026/10/lukefowler_a_visit_with_robert_001.jpg",
+   "https://lalumierecollective.org/wp-content/uploads/2026/10/Capture-decran-le-2026-10-09-a-14.23.56.png",
+   "https://lalumierecollective.org/wp-content/uploads/2026/10/Capture-decran-le-2026-10-08-a-14.04.37.png"
+  ],
   "static-assets.artlogic.net": [
    "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
   ],
-  "pauline-julien.com": [
-   "https://pauline-julien.com/wp-content/uploads/2026/04/LGE_2627_Colombie_950x685.jpg",
-   "https://pauline-julien.com/wp-content/uploads/2026/01/TH_NeigesurAbidjan@Valerie-Remise.jpg"
+  "coeurdessciences.uqam.ca": [
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/CinePopcorn_IA600.jpg",
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg",
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg"
+  ],
+  "cabaretliondor.com": [
+   "https://cabaretliondor.com/ldo-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+   "https://cabaretliondor.com/ldo-content/uploads/2026/10/brian-sam.png",
+   "https://cabaretliondor.com/ldo-content/uploads/2026/10/BRIAN-PITON_YASMINA-LÉVEILLÉ_1152x648_17nov.jpg"
+  ],
+  "espacelevraimonde.ca": [
+   "https://espacelevraimonde.ca/wp-content/uploads/2026/09/Image-principale-SITE-WEB-19-1024x560.png"
+  ],
+  "espacelibre.qc.ca": [
+   "https://espacelibre.qc.ca/wp-content/uploads/2026/11/Apero_Swing.png"
   ],
   "lelivart.com": [
    "https://lelivart.com/app/uploads/2026/10/LABYRINTHE-1080x1440-5-copy-4-100.jpg"
   ],
+  "theatreoutremont.ca": [
+   "https://theatreoutremont.ca/wp-content/uploads/2025/09/Visuel-site-intenet.png"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "www.foufouneselectriques.com": [
+   "https://www.foufouneselectriques.com/wp-content/uploads/2024/10/foufs_stock001-2.jpg"
+  ],
+  "agoradanse.com": [
+   "https://agoradanse.com/wp-content/uploads/2026/06/Laffront-des-chimeres-by-Sarah-Seene.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
