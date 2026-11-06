@@ -1,6 +1,6 @@
 {
  "total": 1574,
- "echecs": 8,
+ "echecs": 10,
  "par_site": {
   "www.eventbrite.com": {
    "affiches": 4,
@@ -8,6 +8,10 @@
   },
   "westmount.org": {
    "affiches": 2,
+   "echecs": 2
+  },
+  "pauline-julien.com": {
+   "affiches": 17,
    "echecs": 2
   },
   "images.ctfassets.net": {
@@ -202,10 +206,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "pauline-julien.com": {
-   "affiches": 17,
-   "echecs": 0
-  },
   "cabaretliondor.com": {
    "affiches": 4,
    "echecs": 0
@@ -303,6 +303,10 @@
   ],
   "static-assets.artlogic.net": [
    "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
+  ],
+  "pauline-julien.com": [
+   "https://pauline-julien.com/wp-content/uploads/2026/04/LGE_2627_Colombie_950x685.jpg",
+   "https://pauline-julien.com/wp-content/uploads/2026/01/TH_NeigesurAbidjan@Valerie-Remise.jpg"
   ],
   "lelivart.com": [
    "https://lelivart.com/app/uploads/2026/10/LABYRINTHE-1080x1440-5-copy-4-100.jpg"

@@ -1,0 +1,211 @@
+[
+ {
+  "nom": "PAN M 360",
+  "salle": "",
+  "site": "https://panm360.com/",
+  "courriels": [],
+  "contact": "https://panm360.com/contact/"
+ },
+ {
+  "nom": "Cult MTL",
+  "salle": "",
+  "site": "https://cultmtl.com/",
+  "courriels": [],
+  "contact": "https://cultmtl.com/about-contact/"
+ },
+ {
+  "nom": "MTL Blog",
+  "salle": "",
+  "site": "https://www.mtlblog.com/",
+  "courriels": [],
+  "contact": "https://www.mtlblog.com/contact-us ",
+  "erreur": "404 Client Error: Not Found for url: https://www.mtlblog.com/contact-us%20"
+ },
+ {
+  "nom": "Narcity Québec",
+  "salle": "",
+  "site": "https://www.narcity.com/",
+  "courriels": [],
+  "contact": "https://www.narcity.com/contact-us"
+ },
+ {
+  "nom": "Nightlife.ca",
+  "salle": "",
+  "site": "https://nightlife.ca/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "403 Client Error: Forbidden for url: https://nightlife.ca/"
+ },
+ {
+  "nom": "Urbania",
+  "salle": "",
+  "site": "https://urbania.ca/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "403 Client Error: Forbidden for url: https://urbania.ca/"
+ },
+ {
+  "nom": "Journal Métro",
+  "salle": "",
+  "site": "https://journalmetro.com/",
+  "courriels": [
+   "info@journalmetro.com",
+   "info@journalmetro.comr",
+   "direction@journalmetro.com",
+   "orobichaud@journalmetro.com"
+  ],
+  "contact": "https://journalmetro.com/contactez-nous/"
+ },
+ {
+  "nom": "Baron Mag",
+  "salle": "",
+  "site": "https://www.baronmag.com/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "403 Client Error: Forbidden for url: https://www.baronmag.com/"
+ },
+ {
+  "nom": "Le Devoir (culture)",
+  "salle": "",
+  "site": "https://www.ledevoir.com/",
+  "courriels": [],
+  "contact": "https://www.ledevoir.com/culture/medias"
+ },
+ {
+  "nom": "CIBL 101,5",
+  "salle": "",
+  "site": "https://cibl1015.com/",
+  "courriels": [
+   "utilisateur@domaine.com",
+   "administration@cibl1015.com"
+  ],
+  "contact": "https://cibl1015.com/nous-joindre"
+ },
+ {
+  "nom": "CISM 89,3",
+  "salle": "",
+  "site": "https://cism893.ca/",
+  "courriels": [
+   "info@cism893.ca",
+   "maubre@cism893.ca",
+   "edubuc@cism893.ca",
+   "fcantin@cism893.ca",
+   "musique@cism893.ca"
+  ],
+  "contact": "https://cism893.ca/contact"
+ },
+ {
+  "nom": "CKUT 90,3",
+  "salle": "",
+  "site": "https://ckut.ca/",
+  "courriels": [
+   "elections@ssmu.ca"
+  ],
+  "contact": "https://ckut.ca/about/contact/"
+ },
+ {
+  "nom": "Radio Centre-Ville",
+  "salle": "",
+  "site": "https://radiocentreville.com/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "HTTPSConnectionPool(host='radiocentreville.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCert"
+ },
+ {
+  "nom": "Montréal Campus",
+  "salle": "",
+  "site": "https://montrealcampus.ca/",
+  "courriels": [
+   "info@accesmedia.com",
+   "montrealcampus@gmail.com",
+   "opinion@montrealcampus.ca"
+  ],
+  "contact": "https://montrealcampus.ca/nous-joindre/"
+ },
+ {
+  "nom": "Quartier Libre",
+  "salle": "",
+  "site": "https://quartierlibre.ca/",
+  "courriels": [],
+  "contact": "https://quartierlibre.ca/contact/"
+ },
+ {
+  "nom": "Le Délit",
+  "salle": "",
+  "site": "https://www.delitfrancais.com/",
+  "courriels": [],
+  "contact": ""
+ },
+ {
+  "nom": "The McGill Daily",
+  "salle": "",
+  "site": "https://www.mcgilldaily.com/",
+  "courriels": [],
+  "contact": ""
+ },
+ {
+  "nom": "The Link (Concordia)",
+  "salle": "",
+  "site": "https://thelinknewspaper.ca/",
+  "courriels": [
+   "news@thelinknewspaper.ca",
+   "copy@thelinknewspaper.ca",
+   "photo@thelinknewspaper.ca",
+   "video@thelinknewspaper.ca",
+   "editor@thelinknewspaper.ca"
+  ],
+  "contact": "https://thelinknewspaper.ca/contact"
+ },
+ {
+  "nom": "The Concordian",
+  "salle": "",
+  "site": "https://theconcordian.com/",
+  "courriels": [
+   "editor@theconcordian.com"
+  ],
+  "contact": "https://theconcordian.com/2026/11/quickspin-press-play-lisa/"
+ },
+ {
+  "nom": "Le Mouton Noir / Bible urbaine",
+  "salle": "",
+  "site": "https://labibleurbaine.com/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "403 Client Error: Forbidden for url: https://labibleurbaine.com/"
+ },
+ {
+  "nom": "Sors-tu? (blogue)",
+  "salle": "",
+  "site": "https://sorstu.ca/",
+  "courriels": [
+   "vasb@fbefgh.pn"
+  ],
+  "contact": "https://sorstu.ca/contact/"
+ },
+ {
+  "nom": "Pieuvre.ca",
+  "salle": "",
+  "site": "https://www.pieuvre.ca/",
+  "courriels": [
+   "info@pieuvre.ca",
+   "hugo@pieuvre.ca",
+   "nouvelles@pieuvre.ca"
+  ],
+  "contact": "https://www.pieuvre.ca/2017/01/09/contactez-nous/"
+ },
+ {
+  "nom": "Mattv",
+  "salle": "",
+  "site": "https://mattv.ca/",
+  "courriels": [],
+  "contact": "https://mattv.ca/contact/"
+ },
+ {
+  "nom": "Tourisme Montréal (mtl.org)",
+  "salle": "",
+  "site": "https://www.mtl.org/",
+  "courriels": [],
+  "contact": "",
+  "erreur": "502 Server Error: Bad Gateway for url: https://www.mtl.org/"
+ }
+]
