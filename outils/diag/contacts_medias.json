@@ -10,7 +10,12 @@
   "nom": "Cult MTL",
   "salle": "",
   "site": "https://cultmtl.com/",
-  "courriels": [],
+  "courriels": [
+   "info@cultmontreal.com",
+   "ads@cultmontreal.com",
+   "justine.smith@cultmontreal.com",
+   "lorraine.carpenter@cultmontreal.com"
+  ],
   "contact": "https://cultmtl.com/about-contact/"
  },
  {
@@ -32,17 +37,23 @@
   "nom": "Nightlife.ca",
   "salle": "",
   "site": "https://nightlife.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://nightlife.ca/"
+  "courriels": [
+   "medias@obox.group"
+  ],
+  "contact": "https://nightlife.ca/"
  },
  {
   "nom": "Urbania",
   "salle": "",
   "site": "https://urbania.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://urbania.ca/"
+  "courriels": [
+   "info@urbania.ca",
+   "jobs@urbania.ca",
+   "techno@urbania.ca",
+   "publicite@urbania.ca",
+   "u003einfo@urbania.ca"
+  ],
+  "contact": "https://urbania.ca/contact"
  },
  {
   "nom": "Journal Métro",
@@ -68,7 +79,13 @@
   "nom": "Le Devoir (culture)",
   "salle": "",
   "site": "https://www.ledevoir.com/",
-  "courriels": [],
+  "courriels": [
+   "avisdev@ledevoir.com",
+   "opinion@ledevoir.com",
+   "redaction@ledevoir.com",
+   "promotion@ledevoir.com",
+   "production@ledevoir.com"
+  ],
   "contact": "https://www.ledevoir.com/culture/medias"
  },
  {
@@ -204,8 +221,9 @@
   "nom": "Tourisme Montréal (mtl.org)",
   "salle": "",
   "site": "https://www.mtl.org/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "502 Server Error: Bad Gateway for url: https://www.mtl.org/"
+  "courriels": [
+   "info@mtl.org"
+  ],
+  "contact": "https://www.mtl.org/"
  }
 ]

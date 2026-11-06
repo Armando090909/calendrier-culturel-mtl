@@ -1,6 +1,6 @@
 {
  "total": 1574,
- "echecs": 8,
+ "echecs": 9,
  "par_site": {
   "www.eventbrite.com": {
    "affiches": 4,
@@ -12,6 +12,10 @@
   },
   "images.ctfassets.net": {
    "affiches": 15,
+   "echecs": 1
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 58,
    "echecs": 1
   },
   "static-assets.artlogic.net": {
@@ -96,10 +100,6 @@
   },
   "mato.s3.us-east-1.amazonaws.com": {
    "affiches": 5,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 58,
    "echecs": 0
   },
   "www.theatredesjardins.com": {
@@ -309,6 +309,9 @@
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/cz465rkAHy-hF20aqJQHdS3j0gNo7RbkyC7w6A77vic/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tLzl3MjR6MGZ6/M3hnOGx5aDcwamd6/ZXFidGhubXE"
   ]
  },
  "sans_affiche_par_discipline": {

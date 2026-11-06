@@ -57,7 +57,9 @@
   "nom": "Théâtre Prospero",
   "salle": "Théâtre Prospero",
   "site": "https://theatreprospero.com/",
-  "courriels": [],
+  "courriels": [
+   "billetterie@theatreprospero.com"
+  ],
   "contact": "https://theatreprospero.com/le-prospero/dans-les-medias"
  },
  {
@@ -126,7 +128,9 @@
   "nom": "MAI",
   "salle": "Montréal, arts interculturels (MAI)",
   "site": "https://m-a-i.qc.ca/",
-  "courriels": [],
+  "courriels": [
+   "info@m-a-i.qc.ca"
+  ],
   "contact": "https://m-a-i.qc.ca/contact/"
  },
  {
@@ -190,7 +194,9 @@
   "nom": "Place des Arts",
   "salle": "",
   "site": "https://www.placedesarts.com/",
-  "courriels": [],
+  "courriels": [
+   "gzaccardelli@placedesarts.com"
+  ],
   "contact": "https://www.placedesarts.com/communiques"
  },
  {
@@ -216,7 +222,13 @@
   "nom": "Tangente",
   "salle": "Tangente",
   "site": "https://tangentedanse.ca/",
-  "courriels": [],
+  "courriels": [
+   "programmation@tangentedanse.ca",
+   "dg@tangentedanse.ca",
+   "dt@tangentedanse.ca",
+   "adt2@tangentedanse.ca",
+   "adt1@tangentedanse.ca"
+  ],
   "contact": "https://tangentedanse.ca/"
  },
  {
@@ -316,16 +328,19 @@
   "nom": "Théâtre de la LNI",
   "salle": "",
   "site": "https://www.lni.ca/",
-  "courriels": [],
-  "contact": ""
+  "courriels": [
+   "info@lni.ca"
+  ],
+  "contact": "https://www.lni.ca/"
  },
  {
   "nom": "Bistro à Jojo",
   "salle": "Bistro à Jojo",
   "site": "https://www.bistroajojo.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.bistroajojo.com/"
+  "courriels": [
+   "bistroajojo.montreal@gmail.com"
+  ],
+  "contact": "https://www.bistroajojo.com/"
  },
  {
   "nom": "Tortue Berlue (théâtre jeune public)",
@@ -340,15 +355,23 @@
   "nom": "Librairie L'Euguélionne",
   "salle": "L'Euguélionne",
   "site": "https://www.librairieleuguelionne.com/",
-  "courriels": [],
-  "contact": ""
+  "courriels": [
+   "info@librairieleuguelionne.com",
+   "commandes@librairieleuguelionne.com",
+   "evenements@librairieleuguelionne.com",
+   "comptabilite@librairieleuguelionne.com",
+   "consignations@librairieleuguelionne.com"
+  ],
+  "contact": "https://www.librairieleuguelionne.com/contact"
  },
  {
   "nom": "Librairie Drawn & Quarterly (événements)",
   "salle": "Librairie Drawn & Quarterly",
   "site": "https://mtl.drawnandquarterly.com/",
-  "courriels": [],
-  "contact": ""
+  "courriels": [
+   "librairie@drawnandquarterly.com"
+  ],
+  "contact": "https://mtl.drawnandquarterly.com/"
  },
  {
   "nom": "Le Bordel Comédie Club",
@@ -381,9 +404,11 @@
   "nom": "La Cenne",
   "salle": "La Cenne",
   "site": "https://www.lacenne.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.lacenne.com/"
+  "courriels": [
+   "info@lacenne.com",
+   "infolacenne@gmail.com"
+  ],
+  "contact": "https://www.lacenne.com/"
  },
  {
   "nom": "Diese Onze",
@@ -432,16 +457,19 @@
   "nom": "Espace Le Vrai Monde?",
   "salle": "Espace Le Vrai Monde?",
   "site": "https://www.espacelevraimonde.com/",
-  "courriels": [],
-  "contact": ""
+  "courriels": [
+   "f.lemay@collegeahuntsic.qc.ca"
+  ],
+  "contact": "https://www.espacelevraimonde.com/nous-joindre"
  },
  {
   "nom": "Théâtre Mirella et Lino Saputo (CLDV)",
   "salle": "Théâtre Mirella et Lino Saputo",
   "site": "https://cldv.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.cldv.ca/"
+  "courriels": [
+   "productionslebouclier@gmail.com"
+  ],
+  "contact": "https://cldv.ca/"
  },
  {
   "nom": "Qu'en dit Raton?",
@@ -474,9 +502,11 @@
   "nom": "Librairie Le Port de tête",
   "salle": "Librairie Le Port de tête",
   "site": "https://www.leportdetete.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.leportdetete.com/"
+  "courriels": [
+   "librairie@leportdetete.com",
+   "martinturcotte@leportdetete.com"
+  ],
+  "contact": "https://www.leportdetete.com/"
  },
  {
   "nom": "Festival / Maison de la poésie de Montréal",
@@ -500,9 +530,10 @@
   "nom": "Cabaret de Curiosités",
   "salle": "Cabaret de Curiosités",
   "site": "https://cabaretdecuriosites.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.cabaretdecuriosites.com/"
+  "courriels": [
+   "cabaret.curiosites@gmail.com"
+  ],
+  "contact": "https://cabaretdecuriosites.com/"
  },
  {
   "nom": "Victoria Hall (Westmount)",
@@ -517,9 +548,10 @@
   "nom": "MC Hall",
   "salle": "MC Hall",
   "site": "https://mchall.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://mchall.ca/"
+  "courriels": [
+   "info@mchall.ca"
+  ],
+  "contact": "https://mchall.ca/contact"
  },
  {
   "nom": "Le Red Room",
@@ -653,7 +685,13 @@
   "nom": "McGill – événements",
   "salle": "",
   "site": "https://www.mcgill.ca/",
-  "courriels": [],
+  "courriels": [
+   "hr.hr@mcgill.ca",
+   "executive@mcgill.ca",
+   "student.services@mcgill.ca",
+   "studentsuccess.scs@mcgill.ca",
+   "housing.residences@mcgill.ca"
+  ],
   "contact": "https://www.mcgill.ca/contact-us/"
  },
  {
@@ -694,9 +732,10 @@
   "nom": "Tourisme Montréal – sorties en famille",
   "salle": "",
   "site": "https://www.mtl.org/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "502 Server Error: Bad Gateway for url: https://www.mtl.org/"
+  "courriels": [
+   "info@mtl.org"
+  ],
+  "contact": "https://www.mtl.org/"
  },
  {
   "nom": "Réseau art actuel (centres d'artistes, vernissages)",
@@ -787,7 +826,13 @@
   "nom": "Blouin Division",
   "salle": "Blouin Division",
   "site": "https://blouin-division.com/",
-  "courriels": [],
+  "courriels": [
+   "info@blouin-division.com",
+   "lcarusi@blouin-division.com",
+   "dtoutant@blouin-division.com",
+   "tbenedict@blouin-division.com",
+   "vbellerose@blouin-division.com"
+  ],
   "contact": "https://blouin-division.com/press/"
  },
  {
@@ -835,9 +880,11 @@
   "nom": "ELLEPHANT",
   "salle": "ELLEPHANT",
   "site": "https://ellephant.org/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://ellephant.org/"
+  "courriels": [
+   "info@ellephant.org",
+   "info@ellephantart.org"
+  ],
+  "contact": "https://ellephant.org/"
  },
  {
   "nom": "Galerie C.O.A",
@@ -958,9 +1005,10 @@
   "nom": "TIAN Contemporain",
   "salle": "TIAN Contemporain",
   "site": "https://fr.tiancontemporain.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://fr.tiancontemporain.com/"
+  "courriels": [
+   "info@tiancontemporain.com"
+  ],
+  "contact": "https://fr.tiancontemporain.com/"
  },
  {
   "nom": "Wishbone Galerie d'art",
@@ -990,17 +1038,19 @@
   "nom": "Club Balattou (musiques du monde)",
   "salle": "Club Balattou",
   "site": "https://www.balattou.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.balattou.com/"
+  "courriels": [
+   "bookingbalattou@festivalnuitsdafrique.com"
+  ],
+  "contact": "https://www.balattou.com/contact"
  },
  {
   "nom": "Cabaret Jazz L'Entracte",
   "salle": "Cabaret Jazz L'Entracte",
   "site": "https://www.entractejazz.org/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.entractejazz.org/"
+  "courriels": [
+   "exemple@monsite.com"
+  ],
+  "contact": "https://www.entractejazz.org/contact"
  },
  {
   "nom": "Hurley's Irish Pub (trad, folk)",
@@ -1015,9 +1065,12 @@
   "nom": "Le Balcon",
   "salle": "Le Balcon",
   "site": "https://www.lebalcon.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.lebalcon.ca/"
+  "courriels": [
+   "rprp@lebalcon.ca",
+   "location@lebalcon.ca",
+   "billetterie@lebalcon.ca"
+  ],
+  "contact": "https://www.lebalcon.ca/nous-joindre"
  },
  {
   "nom": "Turbo Haüs",
@@ -1048,9 +1101,10 @@
   "nom": "Le Belmont",
   "salle": "Le Belmont",
   "site": "https://www.lebelmont.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.lebelmont.ca/"
+  "courriels": [
+   "lebelmont.mtl@gmail.com"
+  ],
+  "contact": "https://www.lebelmont.ca/"
  },
  {
   "nom": "Ausgang Plaza",
@@ -1143,9 +1197,14 @@
   "nom": "SAT – Société des arts technologiques",
   "salle": "Société des arts technologiques (SAT)",
   "site": "https://sat.qc.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://sat.qc.ca/"
+  "courriels": [
+   "info@sat.qc.ca",
+   "communications@sat.qc.ca",
+   "location@sat.qc.ca",
+   "jeunesse@sat.qc.ca",
+   "pavillon@sat.qc.ca"
+  ],
+  "contact": "https://sat.qc.ca/contact"
  },
  {
   "nom": "Laugh It Off MTL (humour, scènes ouvertes)",
@@ -1168,24 +1227,28 @@
   "nom": "Wiggle Room (burlesque, cabaret)",
   "salle": "Wiggle Room",
   "site": "https://www.wiggleroom.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.wiggleroom.ca/"
+  "courriels": [
+   "wiggleroommtl@gmail.com"
+  ],
+  "contact": "https://www.wiggleroom.ca/"
  },
  {
   "nom": "Caf' Conc' (cabaret)",
   "salle": "Caf' Conc'",
   "site": "https://cafeconcert.ca/",
-  "courriels": [],
-  "contact": ""
+  "courriels": [
+   "info@triadespectacles.ca"
+  ],
+  "contact": "https://cafeconcert.ca/"
  },
  {
   "nom": "Espace La Risée",
   "salle": "Espace La Risée",
   "site": "https://www.espacelarisee.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.espacelarisee.com/"
+  "courriels": [
+   "prodsddm@gmail.com"
+  ],
+  "contact": "https://www.espacelarisee.com/"
  },
  {
   "nom": "InfiniTheatre",
@@ -1298,17 +1361,19 @@
   "nom": "Slamontréal",
   "salle": "",
   "site": "https://www.incendiesdeparoles.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.incendiesdeparoles.com/"
+  "courriels": [
+   "slamontreal.org@gmail.com"
+  ],
+  "contact": "https://www.incendiesdeparoles.com/"
  },
  {
   "nom": "GSIMtl (slam de poésie)",
   "salle": "",
   "site": "https://www.gsimtl.com/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.gsimtl.com/"
+  "courriels": [
+   "exemple@monsite.com"
+  ],
+  "contact": "https://www.gsimtl.com/"
  },
  {
   "nom": "La Livrerie",
@@ -1342,7 +1407,9 @@
   "nom": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
   "salle": "",
   "site": "https://www.theatredesjardins.com/",
-  "courriels": [],
+  "courriels": [
+   "info@theatredesjardins.com"
+  ],
   "contact": "https://www.theatredesjardins.com/nous-joindre/"
  },
  {
@@ -1372,8 +1439,13 @@
   "nom": "Eastern Bloc",
   "salle": "Eastern Bloc",
   "site": "https://easternbloc.ca/",
-  "courriels": [],
-  "contact": "",
-  "erreur": "403 Client Error: Forbidden for url: https://www.easternbloc.ca/"
+  "courriels": [
+   "info@easternbloc.ca",
+   "dg@easternbloc.ca",
+   "lab@easternbloc.ca",
+   "tech@easternbloc.ca",
+   "comm@easternbloc.ca"
+  ],
+  "contact": "https://easternbloc.ca/contact"
  }
 ]
