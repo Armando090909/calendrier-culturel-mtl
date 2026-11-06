@@ -549,6 +549,9 @@ def apercu():
         # comptes confirmés d'avance par Alexandre (outils/reseaux/preferences/<lundi>.json, « tags »)
         f_pref = DOSSIER / "preferences" / f"{semaine}.json"
         for k, hs in (json.loads(f_pref.read_text(encoding="utf-8")).get("tags") or {}).items() if f_pref.exists() else []:
+            seul = k in (json.loads(f_pref.read_text(encoding="utf-8")).get("tags_seulement") or [])
+            if seul:  # seulement ces comptes (ceux trouvés automatiquement sont écartés)
+                s["tags"][k] = {}
             s["tags"].setdefault(k, {})["ajouts"] = [h.lstrip("@").lower() for h in hs]
     except Exception as exc:
         print(f"Identification : échec ({exc})")
