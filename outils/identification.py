@@ -19,13 +19,16 @@ PAS_DES_COMPTES = {"p", "reel", "reels", "explore", "accounts", "stories", "tv",
 # agrégateurs et billetteries : leur compte n'est ni la salle ni l'artiste
 AGREGATEURS = {"sorstu", "sorstu.ca", "songkick", "eventbrite", "lepointdevente", "ticketmaster", "ticketmasterca",
                "evenko", "festapp", "tuxedobillet", "ra.co", "residentadvisor", "showpass", "dice.fm", "zeffy",
-               "villedemontreal", "mtlville", "panm360", "spectaculos", "admission", "ticketpro"}
+               "villedemontreal", "mtlville", "panm360", "spectaculos", "admission", "ticketpro", "sorstuca",
+               "pointdevente", "festivalfinder", "quoifaire", "mtlblog", "narcity", "tourismemontreal"}
 
 
 def comptes(html: str) -> list[str]:
     """Comptes Instagram présents dans une page, du plus fréquent au moins fréquent."""
     c = Counter(h.lower().rstrip(".") for h in RE_IG.findall(html or ""))
-    return [h for h, _ in c.most_common() if h not in PAS_DES_COMPTES and h not in AGREGATEURS]
+    plat_ = lambda x: re.sub(r"[._]", "", x)  # noqa: E731
+    agr = {plat_(a) for a in AGREGATEURS}
+    return [h for h, _ in c.most_common() if h not in PAS_DES_COMPTES and not any(a in plat_(h) for a in agr)]
 
 
 def _lire(url: str) -> str:
@@ -55,6 +58,12 @@ def sites_des_salles() -> dict:
         if lieu and u.startswith("http") and not any(a in u for a in ("songkick", "sorstu", "ra.co", "ma.to", "luma.com",
                                                                         "zeffy", "eventbrite", "montreal.ca")):
             out.setdefault(lieu, f"{urlparse(u).scheme}://{urlparse(u).netloc}/")
+    f = RACINE / "outils" / "diag" / "contacts.json"
+    if f.exists():
+        import json
+        for r in json.loads(f.read_text(encoding="utf-8")):
+            if r.get("salle") and r.get("site"):
+                out.setdefault(r["salle"], r["site"])
     return out
 
 
@@ -77,6 +86,12 @@ def trouver(picks: list[dict]) -> dict:
         salle = (r.get("salle") or {}).get("compte")
         for u in pages[:3]:
             cs = [c for c in comptes(_lire(u)) if c != salle]
+            if "salle" not in r:  # compte au nom de la salle sur la page de l'événement (ex. maison de la culture)
+                s_ = next((c for c in cs if _ressemble(c, e["lieu"])), None)
+                if s_:
+                    r["salle"] = {"compte": s_, "sur": True, "source": u}
+                    salle = s_
+                    cs = [c for c in cs if c != s_]
             proches = [c for c in cs if _ressemble(c, e["titre"])]
             if proches:
                 r["artiste"] = {"compte": proches[0], "sur": True, "source": u}
