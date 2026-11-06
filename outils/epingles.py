@@ -100,7 +100,7 @@ def qui():
     s4 = page(f"""<div style="display:flex;flex-direction:column;align-items:center;gap:40px;margin:auto 0;text-align:center">{avatar(400)}
 <h2>{T('Qu’est-ce qu’on fait <span class="ov">ce soir</span>&nbsp;?', 'What’s on <span class="ov">tonight</span>?')}</h2>
 <p style="margin:0 auto">{T("La réponse est sur ccmtl.ca. Lien dans la bio.", "The answer is on ccmtl.ca. Link in bio.")}</p></div>""", 4, tot,
-              deco((6, "left:90px;top:120px;width:80px"), (1, "right:110px;top:150px;width:120px"), (7, "right:160px;bottom:300px;width:80px")))
+              deco((6, "left:90px;top:120px;width:80px"), (1, "right:110px;top:150px;width:120px"), (7, "right:150px;bottom:150px;width:80px")))
     return [("1-qui-1", s1), ("1-qui-2", s2), ("1-qui-3", s3), ("1-qui-4", s4)]
 
 
