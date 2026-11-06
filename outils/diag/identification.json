@@ -1,39 +1,82 @@
 {
- "danse": {
-  "salle": {
-   "compte": "tangentedanse",
-   "sur": true,
-   "source": "https://tangentedanse.ca/"
-  }
- },
- "humour": {
-  "salle": {
-   "compte": "espace_st_denis",
-   "sur": true,
-   "source": "https://espacestdenis.com/"
-  }
- },
- "cinema": {},
- "musique": {
+ "cinema": {
   "artiste": {
-   "compte": "coupdecoeurf",
-   "sur": false,
-   "source": "https://coupdecoeur.ca"
+   "compte": "felixdegivry",
+   "sur": true,
+   "source": "https://www.instagram.com/remembers_productions/",
+   "qui": "Félix de Givry"
+  }
+ },
+ "danse": {
+  "artiste": {
+   "compte": "compagnievirginiebrunelle",
+   "sur": true,
+   "source": "https://ladansesurlesroutes.com/en/artistes-membres/compagnie-virginie-brunelle/",
+   "qui": "Compagnie Virginie Brunelle"
+  }
+ },
+ "expo": {
+  "salle": {
+   "compte": "galeriepfoac",
+   "sur": true,
+   "source": "https://www.pfoac.com/"
+  },
+  "artiste": {
+   "compte": "leila.zelli",
+   "sur": true,
+   "source": "https://topo.art/en/artiste/leila-zelli/",
+   "qui": "Leila Zelli"
   }
  },
  "theatre": {
   "salle": {
-   "compte": "theatrelalicorne",
+   "compte": "sallepaulinejulien",
    "sur": true,
-   "source": "https://theatrelalicorne.com/"
+   "source": "https://pauline-julien.com/"
+  },
+  "artiste": {
+   "compte": "jesuiscommetoutlemonde",
+   "sur": false,
+   "source": "https://www.instagram.com/jesuiscommetoutlemonde/",
+   "qui": "Iannicko N'Doua"
   }
  },
- "poesie": {
+ "musique": {
   "salle": {
-   "compte": "maisoncultureclaudeleveillee",
+   "compte": "foufouneselectriques",
    "sur": true,
-   "source": "https://lepointdevente.com/billets/4ne261107001?lang=fr"
+   "source": "https://foufouneselectriques.com/"
+  },
+  "artiste": {
+   "compte": "jonathan_personne",
+   "sur": true,
+   "source": "https://www.youtube.com/@jonathanpersonne",
+   "qui": "Jonathan Personne"
+  },
+  "festival": {
+   "compte": "coupdecoeurf",
+   "sur": true,
+   "source": "https://coupdecoeur.ca"
   }
  },
- "cirque": {}
+ "jeune": {
+  "salle": {
+   "compte": "culturelasalle",
+   "sur": true,
+   "source": "https://lepointdevente.com/billets/o98261114001?lang=fr"
+  },
+  "artiste": {
+   "compte": "clydehenryproductions",
+   "sur": true,
+   "source": "https://theoscarproject.substack.com/p/412-filmmaker-interview-with-chris",
+   "qui": "Chris Lavis et Maciek Szczerbowski (Clyde Henry Productions)"
+  }
+ },
+ "humour": {
+  "salle": {
+   "compte": "cabaretliondor",
+   "sur": true,
+   "source": "https://cabaretliondor.com/"
+  }
+ }
 }
