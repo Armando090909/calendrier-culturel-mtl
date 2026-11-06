@@ -65,7 +65,12 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
                        "jsonld": re.findall(r'(?s)<script[^>]*ld\+json[^>]*>(.*?)</script>', html)[:2],
                        "heures": [txt[max(0, m.start() - 60):m.end() + 20] for m in HEURE.finditer(txt)][:15],
                        "liens": sorted({a for a in re.findall(r'href="(https?://[^"]+)"', html)
-                                        if any(k in a for k in ("event", "evenement", "spectacle", "show", "billet", "ticket"))})[:30]}
+                                        if any(k in a for k in ("event", "evenement", "spectacle", "show", "billet", "ticket"))})[:30],
+                       # tous les liens du site (texte + adresse), pour trouver la page de programmation
+                       "menu": [((x.get_text(" ", strip=True) or "")[:50] + " → " + c.urljoin(url, x.get("href")))[:200]
+                                for x in soupe.find_all("a", href=True)
+                                if re.search(r"(?i)program|calend|agenda|horaire|spectacl|event|événement|evenement|concert|show|saison|season|billet|ticket|activit|atelier|lancement|cours|danse|soir",
+                                             (x.get("href") or "") + " " + x.get_text(" ", strip=True))][:60]}
         except Exception as exc:
             r[mode] = {"erreur": str(exc)[:300]}
     out[url] = r
