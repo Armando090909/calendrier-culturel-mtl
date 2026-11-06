@@ -1,10 +1,14 @@
 {
  "total": 1574,
- "echecs": 6,
+ "echecs": 8,
  "par_site": {
   "www.eventbrite.com": {
    "affiches": 4,
    "echecs": 3
+  },
+  "westmount.org": {
+   "affiches": 2,
+   "echecs": 2
   },
   "images.ctfassets.net": {
    "affiches": 15,
@@ -174,10 +178,6 @@
    "affiches": 3,
    "echecs": 0
   },
-  "westmount.org": {
-   "affiches": 2,
-   "echecs": 0
-  },
   "applications-media.feverup.com": {
    "affiches": 3,
    "echecs": 0
@@ -296,6 +296,10 @@
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195177411%252F1296453055783%252F1%252Foriginal.20261006-140407%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D3b7bf9774b9dbdfb4442439f788bdfb7&w=1200&q=75",
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193695236%252F1296453055783%252F1%252Foriginal.20260916-210100%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Dd69eed74297cf7ed18da2e5335fcfe89&w=1200&q=75",
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
+  ],
+  "westmount.org": [
+   "https://westmount.org/resize/7a2537c2c72e4a61681518d695497350-1",
+   "https://westmount.org/resize/75b63746529733172b2d280c6279fe36-1"
   ],
   "static-assets.artlogic.net": [
    "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
