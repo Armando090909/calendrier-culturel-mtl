@@ -170,3 +170,5 @@ jobs:
           path: docs
       - id: deploiement
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000  # 30 min : GitHub Pages met parfois plus de 10 min à copier les ~5 000 pages
