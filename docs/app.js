@@ -637,6 +637,8 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
   if(pe)cible=D.events.find(x=>x.ics===pe)||null;
   if(cible){st.day=cible.date;st.view="day"}
   else if(pd&&/^\d{4}-\d{2}-\d{2}$/.test(pd)&&inRange(pd)){st.day=pd;st.view="day"}
+  // ?q=… : une recherche toute faite (ex. ccmtl.ca/?q=Théâtre Plaza, le lien envoyé à une salle)
+  const pq=(P.get("q")||"").trim().slice(0,80);if(pq&&!cible){st.q=pq;$("q").value=pq}
   render();
   // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
   if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700)}
