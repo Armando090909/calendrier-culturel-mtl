@@ -628,9 +628,11 @@ h1 i{{font-style:normal}}
 
 
 def bannieres():
-    """(nom, html, largeur, hauteur) : Facebook 1640 × 624 (zone sûre au centre), Bluesky 3000 × 1000 (3:1)."""
+    """(nom, html, largeur, hauteur) : Facebook 1640 × 624 (zone sûre au centre), Bluesky 3000 × 1000 (3:1),
+    aperçu des liens partagés 1200 × 630."""
     return [("banniere-facebook", banniere(1640, 624, 1180), 1640, 624),
-            ("banniere-bluesky", banniere(3000, 1000, 2200, decale=420), 3000, 1000)]
+            ("banniere-bluesky", banniere(3000, 1000, 2200, decale=420), 3000, 1000),
+            ("partage", banniere(1200, 630, 1120), 1200, 630)]  # image d'aperçu des liens (docs/partage.png)
 
 
 def rendre_bannieres(dossier):
