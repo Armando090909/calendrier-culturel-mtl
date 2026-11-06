@@ -303,7 +303,7 @@ def _jeton_page(jeton, page):
 
 
 
-def facebook(texte, urls, alts):
+def facebook(texte, urls, alts, maximum=10):
     jeton, page = os.environ.get("FACEBOOK_JETON"), os.environ.get("FACEBOOK_PAGE_ID")
     if not jeton or not page:
         return None
@@ -314,7 +314,7 @@ def facebook(texte, urls, alts):
     if ESSAI:
         return "essai : connexion Facebook réussie (" + moi.json().get("name", "?") + ")"
     photos = []
-    for url in urls[:10]:  # photos téléversées sans être publiées, puis rattachées à une seule publication
+    for url in urls[:maximum]:  # photos téléversées sans être publiées, puis rattachées à une seule publication
         r = requests.post(f"{base}/{page}/photos", timeout=60, data={"url": url, "published": "false", "access_token": jeton})
         r.raise_for_status()
         photos.append(r.json()["id"])
@@ -670,7 +670,69 @@ def _lien(texte, langue):
     return texte[:i] + url + texte[i + 8:] if i >= 0 else texte + "\n" + url
 
 
+# ---------------------------------------------------------------- Publications à épingler (outils/epingles.py)
+EPINGLES = [
+    ("1-qui", "C’est quoi, ccmtl ? Le calendrier culturel gratuit, indépendant et bénévole de l’île de Montréal. "
+              "Notre mission : mieux connecter les artistes et leur public. Théâtre, musique, danse, humour, cinéma, expos… "
+              "près de 3 000 sorties à venir, mises à jour chaque matin.\n\n"
+              "EN · What is ccmtl? Montréal’s free, independent, volunteer-run cultural calendar. Our mission: connecting "
+              "artists with their audience. Nearly 3,000 upcoming events, updated every morning.\n\nLIEN"),
+    ("2-mode", "Mode d’emploi : la semaine d’un coup d’œil ou une journée en détail, les festivals, les catégories, "
+               "les billets, l’écoute, ton agenda et l’itinéraire. Et pour les artistes et les salles : ajoute tes shows, c’est gratuit.\n\n"
+               "EN · How it works: the week at a glance or one day in detail, festivals, categories, tickets, listening, "
+               "your calendar and directions. Artists and venues: add your shows for free.\n\nLIEN"),
+    ("3-partage", "Fais passer le mot ! Un calendrier n’est utile que si on le connaît : abonne-toi, partage, parles-en à "
+                  "ta salle préférée. Et si tu peux, un don de 2 $ par virement Interac à info@ccmtl.ca aide à la maintenance "
+                  "et à l’amélioration du site. Merci ♥\n\n"
+                  "EN · Spread the word! Follow, share, tell your favourite venue. And if you can, a $2 Interac e-Transfer "
+                  "to info@ccmtl.ca helps maintain and improve the site. Thank you ♥\n\nLIEN"),
+]
+
+
+def epingles():
+    """Les 3 publications à épingler : chacune a ses cartons français puis anglais. Instagram n'accepte que 10 images
+    par carrousel par l'API : une publication plus longue n'y est pas envoyée (à publier à la main dans l'appli)."""
+    src = DOSSIER / "epingles"
+    pub = src / "pub"
+    pub.mkdir(parents=True, exist_ok=True)
+    lots = []
+    for prefixe, texte in EPINGLES:
+        jpgs = []
+        for langue in ("fr", "en"):
+            for png in sorted((src / langue).glob(f"{prefixe}-*.png")):
+                j = pub / f"{langue}-{png.stem}.jpg"
+                j.write_bytes(jpeg(png))
+                jpgs.append(j)
+        lots.append((prefixe, texte, jpgs))
+    if not ESSAI:
+        subprocess.run(["git", "add", str(pub.relative_to(RACINE))], check=True)
+        subprocess.run(["git", "commit", "-m", "Publications à épingler (images)"], check=False)
+        subprocess.run(["git", "pull", "--rebase", "-X", "theirs", "origin", "main"], check=False)
+        subprocess.run(["git", "push"], check=True)
+        time.sleep(20)
+    erreurs = []
+    for prefixe, texte, jpgs in lots:
+        urls = [url_publique(str(j.relative_to(RACINE))) for j in jpgs]
+        alts = [f"ccmtl.ca · {prefixe} · {j.stem}" for j in jpgs]
+        travaux = [("facebook", lambda: facebook(texte.replace("LIEN", "https://ccmtl.ca"), urls, alts, maximum=20))]
+        if len(jpgs) <= 10:
+            travaux.insert(0, ("instagram", lambda: instagram(texte.replace("LIEN", "ccmtl.ca (lien dans la bio) #MTL #Montréal #culturemtl #sortiesmtl"), urls, alts)))
+        else:
+            print(f"{prefixe} : {len(jpgs)} images, plus que les 10 permises par l'API d'Instagram ; à publier à la main.")
+        for nom, fn in travaux:
+            try:
+                print(f"{prefixe} {nom} : {fn()}")
+            except Exception as exc:
+                detail = getattr(getattr(exc, "response", None), "text", "") or ""
+                erreurs.append(f"{prefixe} {nom} : {exc} {detail[:300]}")
+                print(f"{prefixe} {nom} : ÉCHEC {exc} {detail[:300]}")
+    if erreurs:
+        sys.exit(1)
+
+
 def main():
+    if SEULEMENT == ["epingles"]:
+        return epingles()
     if ETAPE == "apercu":
         return apercu()
     if ETAPE == "consignes":
