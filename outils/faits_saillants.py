@@ -740,7 +740,11 @@ def textes(s):
     HASH = " ".join((fixes + festifs[:2] + reste)[:5])
     try:  # comptes Instagram identifiés (salle, artiste), mentionnés à la fin de la ligne de la sortie
         import identification
-        ment = {p["k"]: "".join(" @" + h for h in identification.comptes_retenus(s, p["k"])) for p in s["picks"]}
+        ment, vus_ = {}, []  # Instagram : 20 mentions au plus par texte ; un compte n'est mentionné qu'une fois
+        for p in s["picks"]:
+            hs = [h for h in identification.comptes_retenus(s, p["k"]) if h not in vus_][:max(0, 20 - len(vus_))]
+            vus_ += hs
+            ment[p["k"]] = "".join(" @" + h for h in hs)
     except Exception:
         ment = {}
     lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
