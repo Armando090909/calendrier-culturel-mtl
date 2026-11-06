@@ -718,6 +718,26 @@ def images_du_reel(dossier):
 # ---------------------------------------------------------------- Textes
 def textes(s):
     """Textes d'accompagnement dans la langue courante (LANGUE) : instagram (long), threads (moyen), bluesky (court)."""
+    # Instagram n'accepte plus que 5 mots-clics par publication : 2 fixes, puis les festivals des sorties choisies
+    # (nom court du festival), puis des mots-clics généraux pour compléter
+    import unicodedata
+    fixes = ["#MTL", "#Montreal" if LANGUE == "en" else "#Montréal"]
+    fest_ids = list(dict.fromkeys(p["e"].get("festival") for p in s["picks"] if p["e"].get("festival")))
+    try:
+        tous = json.loads((RACINE / "docs" / "festivals.json").read_text(encoding="utf-8"))
+    except Exception:
+        tous = []
+    festifs = []
+    for fid in fest_ids:
+        f = next((x for x in tous if x.get("id") == fid), None)
+        nom = (f or {}).get("court") or (f or {}).get("nom") or ""
+        nom = nom.replace("œ", "oe").replace("Œ", "Oe").replace("æ", "ae")
+        mots = re.findall(r"[A-Za-z0-9]+", unicodedata.normalize("NFD", nom).encode("ascii", "ignore").decode())
+        mot = "".join(m[:1].upper() + m[1:] for m in mots)  # « Coup de cœur » → #CoupDeCoeur
+        if 3 <= len(mot) <= 30:
+            festifs.append("#" + mot)
+    reste = ["#MontrealEvents", "#MontrealArts", "#MTLnightlife"] if LANGUE == "en" else ["#sortiesmtl", "#culturemtl", "#quoifaireamontreal"]
+    HASH = " ".join((fixes + festifs[:2] + reste)[:5])
     try:  # comptes Instagram identifiés (salle, artiste), mentionnés à la fin de la ligne de la sortie
         import identification
         ment = {p["k"]: "".join(" @" + h for h in identification.comptes_retenus(s, p["k"])) for p in s["picks"]}
@@ -731,8 +751,7 @@ def textes(s):
         long = (f"What's on in Montréal this week? This week's selection, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals on now: {fest}" if fest else "")
                 + (f"\n📍 Venue of the week: {s['salle']['lieu']}" if s["salle"] else "")
-                + f"\n\nAnd {s['total']} events in all on ccmtl.ca (link in bio).\n\n"
-                "#MTL #Montreal #MontrealEvents #MTLnightlife #MontrealArts")
+                + f"\n\nAnd {s['total']} events in all on ccmtl.ca (link in bio).\n\n" + HASH)
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
         court = ("What's on in Montréal this week? Worth seeing: " + " · ".join(n[:45] for n in noms)
                  + ("… Festivals: " + ", ".join([f["nom"] for f in s["festivals"] if f["en_cours"]][:3]) + "…" if fest else "…")
@@ -742,8 +761,7 @@ def textes(s):
         long = (f"Qu'est-ce qu'on fait cette semaine ? La sélection de la semaine, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals en cours : {fest}" if fest else "")
                 + (f"\n📍 La salle de la semaine : {s['salle']['lieu']}" if s["salle"] else "")
-                + f"\n\nEt {s['total']} sorties en tout sur ccmtl.ca (lien dans la bio).\n\n"
-                "#MTL #Montréal #sortiesmtl #quoifaireamontreal #culturemtl")
+                + f"\n\nEt {s['total']} sorties en tout sur ccmtl.ca (lien dans la bio).\n\n" + HASH)
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
         court = ("Qu'est-ce qu'on fait cette semaine ? À voir : " + " · ".join(n[:45] for n in noms)
                  + ("… Festivals : " + ", ".join([f["nom"] for f in s["festivals"] if f["en_cours"]][:3]) + "…" if fest else "…")
