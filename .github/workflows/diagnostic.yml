@@ -3,7 +3,7 @@ name: Diagnostic de pages
 on:
   push:
     branches: [main]
-    paths: ["outils/diag/urls.txt", "outils/explorer_api.py", "outils/captures.py", "outils/verifier_affiches.py"]
+    paths: ["outils/diag/urls.txt", "outils/explorer_api.py", "outils/captures.py", "outils/verifier_affiches.py", "outils/contacts.py"]
   workflow_dispatch:
 concurrency:
   group: diagnostic
@@ -16,6 +16,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -30,6 +32,9 @@ jobs:
       - run: python outils/diag.py
         env:
           CONTACT: ${{ vars.CONTACT }}
+      - name: Coordonnées publiques des salles (promotion)
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep -q "outils/contacts.py"; then ROBOTS_MODE=respecter python outils/contacts.py || true; fi
       - name: Captures d'écran du site
         run: python outils/captures.py || true
       - name: Affiches qui ne s'affichent pas
