@@ -182,12 +182,30 @@ def choisir(data, debut, etat):
     # Une « tête d'affiche » chaque semaine (un gros nom, pour l'attention) : musique une semaine sur deux, sinon une
     # autre discipline principale à tour de rôle
     modes["musique" if semaine_no % 2 == 0 else PRINCIPALES[1 + (semaine_no // 2) % 4]] = "tête d'affiche"
+    # Souhaits d'Alexandre pour cette semaine (outils/reseaux/preferences/<lundi>.json) : des disciplines, des
+    # événements précis par discipline (titre ou partie du titre), et la préférence pour les festivals en cours
+    f_pref = RACINE / "outils" / "reseaux" / "preferences" / f"{debut.isoformat()}.json"
+    prefs = json.loads(f_pref.read_text(encoding="utf-8")) if f_pref.exists() else {}
+    if prefs.get("disciplines"):
+        disciplines = list(dict.fromkeys(prefs["disciplines"]))[:7]
+        for k in disciplines:
+            modes.setdefault(k, "connu")
+    from normalisation import plat as _plat
+    voulus = {k: _plat(v) for k, v in (prefs.get("choix") or {}).items()}
+    bonus_fest = 4 if prefs.get("festivals") else 0
     sel = lambda e: int(hashlib.md5((e["titre"] + debut.isoformat()).encode()).hexdigest()[:6], 16)  # noqa: E731
     cands = {}
     for k in disciplines:
+        if voulus.get(k):  # événement demandé : ses représentations de la semaine seulement
+            cs = [e for e in evs if voulus[k] in _plat(e["titre"])]
+            if cs:
+                cs.sort(key=lambda e: (-score(e), e["date"]))
+                cands[k] = cs[:5]
+                continue
+            print(f"  souhait « {prefs['choix'][k]} » ({k}) : introuvable cette semaine, choix habituel")
         cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5
               and not PAS_VEDETTE.search(e["titre"] + " " + (e.get("resume") or ""))]
-        cs.sort(key=lambda e: (-score(e), sel(e)))
+        cs.sort(key=lambda e: (-score(e) - bonus_fest * bool(e.get("festival")), sel(e)))
         # les 12 meilleures fiches, plus la meilleure de chaque jour (pour pouvoir couvrir toute la semaine)
         garde = cs[:12] + [next(e for e in cs if e["date"] == j) for j in sorted({e["date"] for e in cs})]
         garde = list({id(e): e for e in garde}.values())

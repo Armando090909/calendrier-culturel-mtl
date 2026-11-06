@@ -511,7 +511,7 @@ def _resume_selection(s, sha, semaine):
         t_ = (s.get("tags") or {}).get(k) or {}
         if t_.get("aucun"):
             return "\n  🏷️ personne"
-        bouts = [f"{'salle' if q == 'salle' else 'artiste'} @{v['compte']}" + ("" if v.get("sur") or v.get("confirme") else " **(à confirmer)**")
+        bouts = [f"{q} @{v['compte']}" + ("" if v.get("sur") or v.get("confirme") else " **(à confirmer)**")
                  for q, v in t_.items() if isinstance(v, dict) and v.get("compte")]
         bouts += [f"@{h}" for h in t_.get("ajouts") or []]
         return "\n  🏷️ " + (", ".join(bouts) if bouts else "aucun compte trouvé")

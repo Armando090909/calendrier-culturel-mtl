@@ -67,6 +67,15 @@ def sites_des_salles() -> dict:
     return out
 
 
+def _festivals() -> list:
+    import json
+    f = RACINE / "docs" / "festivals.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+
+FESTIVALS = _festivals()
+
+
 def trouver(picks: list[dict]) -> dict:
     """{discipline: {"salle": {"compte", "sur", "source"}, "artiste": {...}}} pour chaque sortie."""
     sites = sites_des_salles()
@@ -98,6 +107,15 @@ def trouver(picks: list[dict]) -> dict:
                 break
             if cs and "artiste" not in r and urlparse(u).netloc != urlparse(site or "").netloc:
                 r["artiste"] = {"compte": cs[0], "sur": False, "source": u}
+        # le festival, si la sortie en fait partie : son propre site
+        if e.get("festival"):
+            fest = next((f for f in FESTIVALS if f.get("id") == e["festival"]), None)
+            if fest and str(fest.get("site") or "").startswith("http"):
+                cs = [c for c in comptes(_lire(fest["site"])) if c not in {(v or {}).get("compte") for v in r.values()}]
+                if cs:
+                    r["festival"] = {"compte": cs[0], "sur": True, "source": fest["site"]}
+                    if (r.get("artiste") or {}).get("compte") == cs[0]:
+                        del r["artiste"]
         out[k] = r
         print(f"  identification {k} : " + ", ".join(f"{q} @{v['compte']}{'' if v['sur'] else ' (à confirmer)'}"
                                                     for q, v in r.items()) or "rien")
