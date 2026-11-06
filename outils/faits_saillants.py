@@ -696,8 +696,13 @@ def images_du_reel(dossier):
 # ---------------------------------------------------------------- Textes
 def textes(s):
     """Textes d'accompagnement dans la langue courante (LANGUE) : instagram (long), threads (moyen), bluesky (court)."""
-    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])})"
-              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])}: {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])})"
+    try:  # comptes Instagram identifiés (salle, artiste), mentionnés à la fin de la ligne de la sortie
+        import identification
+        ment = {p["k"]: "".join(" @" + h for h in identification.comptes_retenus(s, p["k"])) for p in s["picks"]}
+    except Exception:
+        ment = {}
+    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
+              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])}: {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
               for p in s["picks"]]
     fest = ", ".join(f["nom"] for f in s["festivals"] if f["en_cours"])
     if LANGUE == "en":

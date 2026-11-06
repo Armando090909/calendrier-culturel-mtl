@@ -216,7 +216,7 @@ def _compte_ig():
     return base, jeton, ig, nom
 
 
-def instagram(texte, urls, alts):
+def instagram(texte, urls, alts, etiquettes=None):
     c = _compte_ig()
     if not c:
         return None
@@ -224,9 +224,17 @@ def instagram(texte, urls, alts):
     if ESSAI:
         return "essai : connexion Instagram réussie (" + nom + ")"
     enfants = []
-    for url, alt in zip(urls[:10], alts):
-        c = requests.post(f"{base}/{ig}/media", timeout=60, data={"image_url": url, "is_carousel_item": "true",
-                                                                  "alt_text": alt, "access_token": jeton})
+    for i, (url, alt) in enumerate(zip(urls[:10], alts)):
+        donnees = {"image_url": url, "is_carousel_item": "true", "alt_text": alt, "access_token": jeton}
+        noms = (etiquettes or [[]] * len(urls))[i] if etiquettes and i < len(etiquettes) else []
+        if noms:  # comptes identifiés sur l'image (en haut, côte à côte)
+            donnees["user_tags"] = json.dumps([{"username": n, "x": round(0.3 + 0.4 * j / max(1, len(noms) - 1), 2) if len(noms) > 1 else 0.5,
+                                                "y": 0.25} for j, n in enumerate(noms)])
+        c = requests.post(f"{base}/{ig}/media", timeout=60, data=donnees)
+        if not c.ok and noms:  # compte introuvable ou privé : l'image part sans identification
+            print(f"  identification refusée ({', '.join(noms)}) : {c.text[:200]}")
+            donnees.pop("user_tags")
+            c = requests.post(f"{base}/{ig}/media", timeout=60, data=donnees)
         c.raise_for_status()
         enfants.append(c.json()["id"])
     for cid in enfants:
@@ -426,6 +434,9 @@ AIDE = f"""**Sans réponse de ta part, tout part lundi matin.** Pour changer que
 |---|---|
 | `cinéma : Mille secrets, mille dangers` | remplace la sortie de cette discipline par cet événement (titre tel qu'il est sur ccmtl.ca, ou une partie) |
 | `retirer cirque` | enlève la sortie de cette discipline |
+| `tag danse : @compte @autre` | identifie ces comptes Instagram sur la sortie de cette discipline (remplace les comptes « à confirmer ») |
+| `pas de tag danse` | n'identifie personne sur cette sortie |
+| `tags ok` | identifie aussi tous les comptes « à confirmer » |
 | `stop` | rien n'est publié cette semaine |
 | `ok` | publier (après un `stop` ou une consigne non comprise) |
 
@@ -496,8 +507,16 @@ def _gh(*args, entree=None):
 def _resume_selection(s, sha, semaine):
     img = lambda lg, nom: f"https://raw.githubusercontent.com/{DEPOT}/{sha}/outils/reseaux/{semaine}/{lg}/{nom}"  # noqa: E731
     fs.LANGUE = "fr"
+    def tags(k):
+        t_ = (s.get("tags") or {}).get(k) or {}
+        if t_.get("aucun"):
+            return "\n  🏷️ personne"
+        bouts = [f"{'salle' if q == 'salle' else 'artiste'} @{v['compte']}" + ("" if v.get("sur") or v.get("confirme") else " **(à confirmer)**")
+                 for q, v in t_.items() if isinstance(v, dict) and v.get("compte")]
+        bouts += [f"@{h}" for h in t_.get("ajouts") or []]
+        return "\n  🏷️ " + (", ".join(bouts) if bouts else "aucun compte trouvé")
     lignes = [f"- **{fs.nom_disc(p['k'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
-              + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") for p in s["picks"]]
+              + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") + tags(p["k"]) for p in s["picks"]]
     fests = ", ".join(f["nom"] for f in s["festivals"]) or "aucun"
     noms = sorted(j.name for j in (DOSSIER / semaine / "fr").glob("*.jpg"))
     carrousel = " ".join(f'<img src="{img("fr", n)}" width="160">' for n in noms if n[0].isdigit())
@@ -524,6 +543,11 @@ def apercu():
         return
     data = json.loads((RACINE / "docs" / "data.json").read_text(encoding="utf-8"))
     s = fs.choisir(data, date.fromisoformat(semaine), etat)
+    try:  # comptes Instagram de la salle et de l'artiste, trouvés sur les pages officielles
+        import identification
+        s["tags"] = identification.trouver(s["picks"])
+    except Exception as exc:
+        print(f"Identification : échec ({exc})")
     _sauver_selection(s, semaine)
     _rendre(s, semaine)
     sha = _envoyer(f"Aperçu de la publication du {semaine}")
@@ -610,6 +634,27 @@ def consignes():
     change = False
     for ligne in [x.strip() for x in texte.splitlines() if x.strip()]:
         l = plat(ligne)
+        # Identification Instagram : « tag danse : @compte », « pas de tag danse », « tags ok »
+        mt = re.match(r"\s*tags?\s+([^:@]{2,30}?)\s*:\s*(.*@.*)$", ligne, re.I)
+        if mt and alias.get(plat(mt.group(1)).split()[0] if plat(mt.group(1)) else ""):
+            k = alias[plat(mt.group(1)).split()[0]]
+            handles = [h.lower().rstrip(".") for h in re.findall(r"@([A-Za-z0-9_.]{2,30})", mt.group(2))]
+            s.setdefault("tags", {})[k] = {"ajouts": handles}
+            faits.append(f"🏷️ {fs.NOMS[k]} : identification de " + ", ".join("@" + h for h in handles) + ".")
+            continue
+        mt = re.match(r"pas de tags?\s+(\w+)", l)
+        if mt and alias.get(mt.group(1)):
+            k = alias[mt.group(1)]
+            s.setdefault("tags", {})[k] = {"aucun": True}
+            faits.append(f"🏷️ {fs.NOMS[k]} : personne ne sera identifié.")
+            continue
+        if re.fullmatch(r"tags? (ok|oui|confirmes?)", l):
+            for t_ in (s.get("tags") or {}).values():
+                for v in t_.values():
+                    if isinstance(v, dict):
+                        v["confirme"] = True
+            faits.append("🏷️ Tous les comptes proposés seront identifiés.")
+            continue
         if re.fullmatch(r"(stop|non|pause|annule[r]?|pas cette semaine)", l):
             s["_statut"] = "stop"
             faits.append("⏸️ Publication suspendue cette semaine (écris `ok` pour la relancer).")
@@ -640,6 +685,11 @@ def consignes():
             ancien = next((p for p in s["picks"] if p["k"] == k), None)
             nouveau = {"k": k, "e": e, "accroche": acc, "accroche_en": acc_en, "mode": (ancien or {}).get("mode", "connu")}
             s["picks"] = [p for p in s["picks"] if p["k"] != k] + [nouveau]
+            try:
+                import identification
+                s.setdefault("tags", {})[k] = identification.trouver([nouveau])[k]
+            except Exception as exc:
+                print(f"Identification : échec ({exc})")
             s["picks"].sort(key=lambda p: (p["e"]["date"], p["e"].get("heure") or "99"))
             change = True
             faits.append(f"🔁 {fs.NOMS[k]} : {e['titre']} — {e['lieu']}, {fs.quand(e)}.")
@@ -660,6 +710,16 @@ def consignes():
     statut = "suspendue ⏸️" if s.get("_statut") == "stop" else "prévue lundi matin ✅"
     corps += f"\n\n**Publication : {statut}**"
     _gh("issue", "comment", num, "--repo", DEPOT, "--body-file", "-", entree=corps)
+
+
+def _etiquettes(s, jpg):
+    """Comptes Instagram à identifier sur un carton (celui d'une sortie, nommé « 03-danse »)."""
+    try:
+        import identification
+        k = jpg.stem.split("-", 1)[1]
+        return identification.comptes_retenus(s, k) if any(p["k"] == k for p in s["picks"]) else []
+    except Exception:
+        return []
 
 
 def _lien(texte, langue):
@@ -824,9 +884,10 @@ def main():
         condense = [i for i, j in enumerate(jpgs) if j.stem.startswith("c")]         # 2 cartons condensés
         print(f"[{langue}] images : {len(jpgs)} ; textes : " + ", ".join(f"{k} {len(x)} car." for k, x in t.items()))
         travaux = (("bluesky", bluesky, ([(t["bluesky"], [(jpgs[i].read_bytes(), alts[i]) for i in condense])],)),
-                   ("instagram", instagram, (t["instagram"], [urls[i] for i in complet], [alts[i] for i in complet])),
+                   ("instagram", instagram, (t["instagram"], [urls[i] for i in complet], [alts[i] for i in complet],
+                                             [_etiquettes(s, jpgs[i]) for i in complet])),
                    ("threads", threads, (_lien(t["threads"], langue), [urls[i] for i in condense], [alts[i] for i in condense])),
-                   ("facebook", facebook, (_lien(t["instagram"].split("\n\n#")[0], langue), [urls[i] for i in complet], [alts[i] for i in complet])),
+                   ("facebook", facebook, (re.sub(r" @[A-Za-z0-9_.]+", "", _lien(t["instagram"].split("\n\n#")[0], langue)), [urls[i] for i in complet], [alts[i] for i in complet])),
                    ("instagram_story", instagram_story, ([urls[i] for i in story],)),
                    ("facebook_story", facebook_story, ([urls[i] for i in story],)))
         for nom, fn, args in travaux:
