@@ -26,6 +26,7 @@ reglages:
   horizon_complet_jours: 14    # au-delà, le site affiche « liste partielle »
   minimum_evenements: 30       # en dessous, la collecte est jugée ratée et l'ancien calendrier reste en ligne
   max_geolocalisations: 40     # nouvelles salles placées sur la carte par passage (OpenStreetMap)
+  max_relocalisations: 150     # salles connues encore sans position, relocalisées par passage (adresse de lieux.json d’abord)
   max_pages_autre: 80          # pages d'événements lues pour classer les titres ambigus
 
 noms_sources:
@@ -130,28 +131,28 @@ sources:
   - {nom: "Cinéma Public", cle: salles, type: page_ia, url: "https://cinemapublic.ca/", lieu: "Cinéma Public", discipline: cinema, jours_semaine: [0, 2, 4]}
   - {nom: "L'Illusion, Théâtre de marionnettes", cle: salles, type: page_ia, url: "https://www.illusiontheatre.com/", lieu: "L'Illusion, Théâtre de marionnettes", discipline: jeune, jours_semaine: [1, 4]}
   - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/", lieu: "Studio 303", discipline: danse, jours_semaine: [1, 4]}
-  - {nom: "Théâtre de la LNI", cle: salles, type: page_ia, url: "https://www.lni.ca/", discipline: humour, jours_semaine: [1, 4]}
+  - {nom: "Théâtre de la LNI", cle: salles, type: page_ia, url: "https://www.lni.ca/evenements/", discipline: humour, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Bistro à Jojo", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3], navigateur: true}
-  - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/", discipline: jeune, jours_semaine: [2]}
+  - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/spectacles/", discipline: jeune, jours_semaine: [2], navigateur: true}
   - {nom: "Librairie L'Euguélionne", cle: salles, type: page_ia, url: "https://www.librairieleuguelionne.com/", lieu: "L'Euguélionne", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Librairie Drawn & Quarterly (événements)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   # sites fournis par Alexandre (5 nov.) ; ceux qui refusent GitHub sont lus par le Pi à Montréal
   - {nom: "Le Bordel Comédie Club", cle: salles, type: page_ia, url: "https://www.lebordel.ca/", lieu: "Le Bordel Comédie Club", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "La Cabine Comédie Club", cle: salles, type: page_ia, url: "https://lacabinecomedie.ca/", lieu: "La Cabine Comédie Club", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "Montreal Comedy Club", cle: salles, type: page_ia, url: "https://mtlcomedyclub.com/", lieu: "Montreal Comedy Club", discipline: humour, jours_semaine: [0, 3]}
-  - {nom: "La Cenne", cle: salles, type: page_ia, url: "https://www.lacenne.com/", lieu: "La Cenne", discipline: musique, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "La Cenne", cle: salles, type: page_ia, url: "https://www.lacenne.com/programmation", lieu: "La Cenne", discipline: musique, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Diese Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Diese Onze", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Modavie (musique live)", cle: salles, type: page_ia, url: "https://modavie.com/en/live-music/", lieu: "Modavie", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Le Système (RA)", cle: salles, type: page_ia, url: "https://ra.co/clubs/201918", lieu: "Le Système", discipline: fete, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Bain Mathieu", cle: salles, type: page_ia, url: "https://www.bainmathieu.ca/", lieu: "Bain Mathieu", discipline: autre, jours_semaine: [2]}
-  - {nom: "Le Château (Ciné-Théâtre)", cle: salles, type: page_ia, url: "https://lechateaumontreal.com/", lieu: "Ciné-Théâtre Le Château", discipline: musique, jours_semaine: [1, 4]}
-  - {nom: "Théâtre Bouches Décousues", cle: salles, type: page_ia, url: "https://www.theatrebouchesdecousues.com/", discipline: jeune, jours_semaine: [2]}
+  - {nom: "Bain Mathieu", cle: salles, type: page_ia, url: "https://bainmathieu.ca/programmation/", lieu: "Bain Mathieu", discipline: autre, jours_semaine: [2], navigateur: true}
+  - {nom: "Le Château (Ciné-Théâtre)", cle: salles, type: page_ia, url: "https://lechateaumontreal.com/evenements", lieu: "Ciné-Théâtre Le Château", discipline: musique, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Théâtre Bouches Décousues", cle: salles, type: page_ia, url: "https://theatrebouchesdecousues.com/calendrier", discipline: jeune, jours_semaine: [2], navigateur: true}
   - {nom: "Espace Le Vrai Monde?", cle: salles, type: page_ia, url: "https://www.espacelevraimonde.com/", lieu: "Espace Le Vrai Monde?", discipline: theatre, jours_semaine: [1, 4]}
   - {nom: "Théâtre Mirella et Lino Saputo (CLDV)", cle: salles, type: page_ia, url: "https://cldv.ca/fr/", lieu: "Théâtre Mirella et Lino Saputo", discipline: theatre, jours_semaine: [1, 4]}
-  - {nom: "Qu'en dit Raton?", cle: salles, type: page_ia, url: "https://www.quenditraton.com/", lieu: "Qu'en dit Raton?", discipline: jeune, jours_semaine: [2]}
-  - {nom: "Studio PACA (Les Foutoukours)", cle: salles, type: page_ia, url: "https://lesfoutoukours.com/fr/studios-paca/", lieu: "Studio PACA", discipline: cirque, jours_semaine: [2]}
-  - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://rocambolesque.ca/", lieu: "La Rocambolesque", discipline: humour, jours_semaine: [0, 3]}
-  - {nom: "Librairie Le Port de tête", cle: salles, type: page_ia, url: "https://www.leportdetete.com/", lieu: "Librairie Le Port de tête", discipline: lettres, jours_semaine: [1, 4]}
+  - {nom: "Qu'en dit Raton?", cle: salles, type: page_ia, url: "https://www.quenditraton.com/spectacles/", lieu: "Qu'en dit Raton?", discipline: jeune, jours_semaine: [2], navigateur: true}
+  - {nom: "Studio PACA (Les Foutoukours)", cle: salles, type: page_ia, url: "https://lesfoutoukours.com/fr/calendrier/", lieu: "Studio PACA", discipline: cirque, jours_semaine: [2], navigateur: true}
+  - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://rocambolesque.ca/calendrier/", lieu: "La Rocambolesque", discipline: humour, jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Librairie Le Port de tête", cle: salles, type: page_ia, url: "https://www.leportdetete.com/evenements", lieu: "Librairie Le Port de tête", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Cabaret Jazz L'Entracte (Zeffy)", cle: salles, type: page_ia, url: "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "N'était-ce pas l'été (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/netaitcepaslete", lieu: "N'était-ce pas l'été", discipline: lettres, jours_semaine: [1, 4]}
   - {nom: "Festival / Maison de la poésie de Montréal", cle: salles, type: page_ia, url: "https://www.festivaldelapoesiedemontreal.com/fr/accueil", discipline: poesie, jours_semaine: [1, 4]}
@@ -161,14 +162,14 @@ sources:
   - {nom: "MC Hall", cle: salles, type: page_ia, url: "https://mchall.ca/", lieu: "MC Hall", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "Le Red Room", cle: salles, type: page_ia, url: "https://www.leredroom.com/", lieu: "Le Red Room", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Salle Marguerite-Bourgeoys", cle: salles, type: page_ia, url: "https://www.sallemb.com/", lieu: "Salle Marguerite-Bourgeoys", discipline: musique, jours_semaine: [2]}
-  - {nom: "Montreal Improv", cle: salles, type: page_ia, url: "https://www.montrealimprov.com/", lieu: "Montreal Improv", discipline: humour, jours_semaine: [0, 3]}
+  - {nom: "Montreal Improv", cle: salles, type: page_ia, url: "https://www.montrealimprov.com/shows", lieu: "Montreal Improv", discipline: humour, jours_semaine: [0, 3], navigateur: true}
   - {nom: "Together Club (Luma)", cle: salles, type: page_ia, url: "https://luma.com/togetherclub", discipline: social, jours_semaine: [1, 4], navigateur: true}  # soirées sociales ; seules celles à Montréal sont gardées
   # Répertoires de lieux (données ouvertes : Ville de Montréal 2020, SIT Québec 2026) — 5 nov. 2026
-  - {nom: "Théâtre Paradoxe", cle: salles, type: page_ia, url: "https://theatreparadoxe.com/", lieu: "Théâtre Paradoxe", discipline: musique, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Salle Joseph-Rouleau (Jeunesses Musicales)", cle: salles, type: page_ia, url: "https://jmcanada.ca/", lieu: "Salle Joseph-Rouleau", discipline: musique, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Théâtre Paradoxe", cle: salles, type: page_ia, url: "https://theatreparadoxe.com/fr/calendrier", lieu: "Théâtre Paradoxe", discipline: musique, jours_semaine: [1, 4], navigateur: true}
+  - {nom: "Salle Joseph-Rouleau (Jeunesses Musicales)", cle: salles, type: page_ia, url: "https://www.jmcanada.ca/fr/public/nos-concerts-et-activites/a-la-salle-joseph-rouleau/", lieu: "Salle Joseph-Rouleau", discipline: musique, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Théâtre St-James", cle: salles, type: page_ia, url: "https://www.stjamestheatre.ca/", lieu: "Théâtre St-James", discipline: musique, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Théâtre Cartier", cle: salles, type: page_ia, url: "https://theatrecartier.ca/", lieu: "Théâtre Cartier", discipline: theatre, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Cat's Corner (danse swing)", cle: salles, type: page_ia, url: "https://www.catscorner.ca/", lieu: "Cat's Corner", discipline: danse, jours_semaine: [2]}
+  - {nom: "Cat's Corner (danse swing)", cle: salles, type: page_ia, url: "https://www.catscorner.ca/events", lieu: "Cat's Corner", discipline: danse, jours_semaine: [2], navigateur: true}
   - {nom: "Planétarium (soirées spéciales)", cle: salles, type: page_ia, url: "https://espacepourlavie.ca/planetarium", lieu: "Planétarium Rio Tinto Alcan", discipline: conference, jours_semaine: [1, 4], navigateur: true, garder: "soir[ée]e|sp[ée]cial|conf[ée]rence|concert|nuit|festival|lancement|5 ?[àa] ?7|causerie|rencontre|observation"}  # pas les projections quotidiennes
   # ---------- Conférences, idées, savoirs (ouverts au public) ----------
   # Pages de programmation lues par l'IA ; les activités internes (soutenances, réunions) sont écartées par la consigne.

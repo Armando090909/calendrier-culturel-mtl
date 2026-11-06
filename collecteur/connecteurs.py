@@ -992,8 +992,13 @@ def details_ville(html: str, jour: str) -> dict:
         st = str(o.get("eventStatus") or "")
         if st.endswith("EventCancelled"):
             out["statut"] = "annule"
-        elif st.endswith(("EventPostponed", "EventRescheduled")):
+        elif st.endswith("EventPostponed"):  # reporté, sans nouvelle date
             out["statut"] = "reporte"
+        elif st.endswith("EventRescheduled"):
+            # déplacé : la date affichée est la nouvelle ; on le signale seulement si elle diffère vraiment de l'ancienne
+            avant, apres = str(o.get("previousStartDate") or "")[:16], str(o.get("startDate") or "")[:16]
+            if avant and apres and avant != apres:
+                out["statut"] = "nouvelle_date"
         sd = str(o.get("startDate") or "")
         if sd[:10] == jour:
             m = re.search(r"T(\d{2}):(\d{2})", sd)

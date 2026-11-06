@@ -191,6 +191,23 @@ def images_des_salles(events: list[dict], aujourd) -> None:
     print(f"Images de salle : {n} événements sans affiche reçoivent l'image de leur salle ({lus} sites lus).")
 
 
+def lieu_jsonld(html: str) -> dict:
+    """Salle et adresse d'un événement d'après ses données schema.org (location.name, location.address)."""
+    for bloc in re.findall(r'(?s)<script[^>]*ld\+json[^>]*>(.*?)</script>', html or ""):
+        try:
+            d = json.loads(bloc)
+        except Exception:
+            continue
+        for x in (d if isinstance(d, list) else d.get("@graph", [d]) if isinstance(d, dict) else []):
+            loc = x.get("location") if isinstance(x, dict) else None
+            loc = loc[0] if isinstance(loc, list) and loc else loc
+            if isinstance(loc, dict) and loc.get("name"):
+                a = loc.get("address") or {}
+                adr = a if isinstance(a, str) else ", ".join(str(a.get(k)) for k in ("streetAddress", "postalCode") if a.get(k))
+                return {"lieu": str(loc["name"]).strip(), "adresse": adr}
+    return {}
+
+
 def liens_billets(html: str, page: str) -> list[str]:
     """Liens d'une page de spectacle qui mènent à la billetterie (texte ou adresse « billet », « ticket », « réserv »)."""
     from bs4 import BeautifulSoup
@@ -400,11 +417,15 @@ def main() -> int:
                     and plat(c) not in PAS_DES_SALLES and c != "Lieu à confirmer":
                 deja_reessayes.add(c)
                 geo_reessais[0] -= 1
-                essais = ([f"{adresse}, Montréal"] if adresse and re.search(r"\d", adresse) else []) + [f"{c}, Montréal"]
+                connue = (ancien or {}).get("adresse", "") if isinstance(ancien, dict) else ""  # adresse notée dans lieux.json
+                essais = ([f"{connue}, Montréal"] if connue else []) \
+                    + ([f"{adresse}, Montréal"] if adresse and re.search(r"\d", adresse) else []) + [f"{c}, Montréal"]
                 for requete in essais:
                     info = geo.localiser(requete, ua)
                     if info and not info.get("hors_ile") and dans_ile(info.get("lat"), info.get("lon")):
                         info["alias"] = (ancien or {}).get("alias", []) if isinstance(ancien, dict) else []
+                        if connue:
+                            info["adresse"] = connue
                         lieux.data[c] = info
                         print(f"  salle localisée au 2e essai : {c}")
                         break
@@ -643,18 +664,23 @@ def main() -> int:
             r = memo_ia.get(cle)
             if r is not None and (r.get("_err") or (not r.get("heure") and not r.get("v"))):
                 r = None  # échec technique, ou lu avant la 2e version (navigateur, heures d'ouverture) : on réessaie
-            if r is not None and e["lieu"] == "Lieu à confirmer" and not r.get("lieu") and r.get("v", 0) < 3:
-                r = None  # salle introuvable au 1er essai : relu dans le navigateur (3e version)
+            if r is not None and e["lieu"] == "Lieu à confirmer" and not r.get("lieu") and r.get("v", 0) < 4:
+                r = None  # salle introuvable : relu dans le navigateur (3e version), puis données schema.org (4e)
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
                 try:
                     try:
-                        texte = texte_page(telecharger(e["url"], "text/html").text, e["url"])
+                        html = telecharger(e["url"], "text/html").text
                     except Exception:
-                        texte = ""
+                        html = ""
+                    texte = texte_page(html, e["url"]) if html else ""
                     if len(texte) < 400 or e["lieu"] == "Lieu à confirmer":  # page en JavaScript, refusée, ou salle à trouver
-                        texte = texte_page(connecteurs.page_rendue(e["url"]), e["url"])
-                    r = memo_ia[cle] = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=3)
+                        html = connecteurs.page_rendue(e["url"])
+                        texte = texte_page(html, e["url"])
+                    r = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=4)
+                    if not r.get("lieu"):  # la salle est souvent dans les données schema.org de la page (ex. UdeM)
+                        r.update({k: v for k, v in lieu_jsonld(html).items() if v})
+                    memo_ia[cle] = r
                 except Exception as exc:
                     r = memo_ia[cle] = {"_err": str(exc)[:80]}
             if not r or r.get("_err"):
@@ -898,6 +924,14 @@ def main() -> int:
         cle = f'{x["url"]}|{x["debut"]}|{x["fin"]}'
         # 2e méthode (v2) pour les pages où l'horaire n'a pas été trouvé : la page affichée dans le navigateur (calendrier
         # de représentations en JavaScript ou dans un cadre de billetterie), puis la page de la billetterie elle-même.
+        # Horaire déjà lu mais périmé (la page ne montrait que la première représentation, ex. Centaur) alors que le
+        # spectacle est encore à l'affiche : relu une fois, en passant par la billetterie
+        ancien = memo_h.get(cle) or {}
+        if ancien and not ancien.get("jours") and ancien.get("dates") and max(ancien["dates"]) < aujourd.isoformat() \
+                and not memo_h.get(cle + "|v5"):
+            memo_h[cle] = {}
+            memo_h[cle + "|v5"] = True
+            memo_h.pop(cle + "|v4", None)
         if memo_h.get(cle) == {} and not memo_h.get(cle + "|v2"):
             del memo_h[cle]
             memo_h[cle + "|v2"] = True

@@ -13,7 +13,9 @@
  "Ahkwayaonhkeh": null,
  "Algonquin Commons Theatre": null,
  "Alūr Restaurant & Lounge": null,
- "Amphithéâtre du Gesù": null,
+ "Amphithéâtre du Gesù": {
+  "adresse": "1200 rue De Bleury"
+ },
  "Ancien Théâtre Desjardins": null,
  "Arprim": null,
  "Arsenal art contemporain": {
@@ -116,7 +118,9 @@
   "lon": -73.62502,
   "quartier": "Montréal-Nord"
  },
- "Bibliothèque Hochelaga": null,
+ "Bibliothèque Hochelaga": {
+  "adresse": "1870 rue Davidson"
+ },
  "Bibliothèque Hélène-Charbonneau": {
   "alias": [
    "Bibliothèque Hélène-Charbonneau (bibliothèque d'Ahuntsic)"
@@ -189,7 +193,9 @@
   "lon": -73.606,
   "quartier": "Outremont"
  },
- "Bibliothèque Saint-Charles": null,
+ "Bibliothèque Saint-Charles": {
+  "adresse": "2333 rue Mullins"
+ },
  "Bibliothèque Saul-Bellow": {
   "lat": 45.444,
   "lon": -73.69,
@@ -216,8 +222,12 @@
   "lon": -73.625,
   "quartier": "Côte-des-Neiges"
  },
- "Bibliothèque de L'Île-Bizard": null,
- "Bibliothèque de La Petite-Patrie": null,
+ "Bibliothèque de L'Île-Bizard": {
+  "adresse": "500 montée de l'Église"
+ },
+ "Bibliothèque de La Petite-Patrie": {
+  "adresse": "6707 avenue De Lorimier"
+ },
  "Bibliothèque de Notre-Dame-de-Grâce": {
   "lat": 45.47559,
   "lon": -73.61507,
@@ -248,7 +258,9 @@
   "lon": -73.59773,
   "quartier": "Saint-Léonard"
  },
- "Bibliothèque de Saint-Michel": null,
+ "Bibliothèque de Saint-Michel": {
+  "adresse": "7601 rue François-Perrault"
+ },
  "Bibliothèque de Saint-Pierre": {
   "lat": 45.448,
   "lon": -73.655,
@@ -279,8 +291,9 @@
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
- "Bibliothèques, cafés, musées et autres lieux du Grand Montréal": null,
- "Biosphère": null,
+ "Biosphère": {
+  "adresse": "160 chemin du Tour-de-l'Isle"
+ },
  "Bistro de Beta Bloc": null,
  "Blouin Division": {
   "adresse": "2020, rue William, Montréal",
@@ -329,7 +342,9 @@
   "lon": -73.5545,
   "quartier": "Centre-Sud"
  },
- "Cabaret Mado": null,
+ "Cabaret Mado": {
+  "adresse": "1115 rue Sainte-Catherine Est"
+ },
  "Cabaret de Curiosités": null,
  "Cabaret des Amants": null,
  "Cabaret du Casino de Montréal": {
@@ -548,7 +563,9 @@
   "quartier": "Quartier latin"
  },
  "Clavier": null,
- "Club Balattou": null,
+ "Club Balattou": {
+  "adresse": "4372 boulevard Saint-Laurent"
+ },
  "Club Soda": {
   "lat": 45.51,
   "lon": -73.563,
@@ -563,7 +580,9 @@
  },
  "Cénotaphe, près de l'hôtel de ville de Westmount": null,
  "DARE-DARE": null,
- "DATCHA": null,
+ "DATCHA": {
+  "adresse": "98 avenue Laurier Ouest"
+ },
  "Dazibao": {
   "lat": 45.5257,
   "lon": -73.5975,
@@ -597,7 +616,6 @@
   "lon": -73.604,
   "quartier": "Mile End"
  },
- "ELEKTRA": null,
  "ELLEPHANT": {
   "adresse": "1201, rue Saint-Dominique, Montréal",
   "alias": [],
@@ -636,7 +654,6 @@
   "quartier": "Plateau"
  },
  "Espace Panache": null,
- "Espace SAT": null,
  "Espace Séquence": null,
  "Espace Tapage": {
   "lat": 45.483,
@@ -819,7 +836,12 @@
   "quartier": "Centre-ville"
  },
  "Grand Chapiteau Vancouver": null,
- "Grande Bibliothèque de BAnQ - Auditorium": null,
+ "Grande Bibliothèque": {
+  "alias": [
+   "Grande Bibliothèque de BAnQ - Auditorium",
+   "BAnQ Grande Bibliothèque"
+  ]
+ },
  "Grizzly Fuzz": null,
  "Groupe Intervention Vidéo": null,
  "Grumpy's Bar": {
@@ -833,7 +855,9 @@
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
- "Henry F. Hall Building": null,
+ "Henry F. Hall Building": {
+  "adresse": "1455 boulevard De Maisonneuve Ouest"
+ },
  "Henry F. Hall Building (H-1120), Concordia": null,
  "History": null,
  "Hollywood Theatre": null,
@@ -846,7 +870,9 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
- "J.W. McConnell Building": null,
+ "J.W. McConnell Building": {
+  "adresse": "1400 boulevard De Maisonneuve Ouest"
+ },
  "J.W. McConnell Building (LB), Concordia": null,
  "J.W. McConnell Building, Leonard & Bina Ellen Art Gallery": null,
  "Jardin botanique": {
@@ -868,7 +894,9 @@
   "alias": [
    "L'Esco",
    "L'Escogriffe Bar Spectacle (L'Esco)",
-   "L'Escogriffe Bar"
+   "L'Escogriffe Bar",
+   "L’esco",
+   "L’Esco"
   ],
   "lat": 45.5238,
   "lon": -73.5822,
@@ -977,7 +1005,14 @@
   "lon": -73.588,
   "quartier": "Plateau"
  },
- "Le Bordel 2": null,
+ "Le Bordel Comédie Club": {
+  "alias": [
+   "Le Bordel 2",
+   "Le Bordel 1",
+   "Le Bordel"
+  ],
+  "adresse": "312 rue Ontario Est"
+ },
  "Le Calypso": null,
  "Le Carlton Signature": null,
  "Le Carré 150": null,
@@ -1065,9 +1100,6 @@
   "lon": -73.60692,
   "quartier": "Rosemont–La Petite-Patrie"
  },
- "Ludger-Duvernay Theatre": null,
- "L’esco": null,
- "M For Montreal 2026": null,
  "MAC Montréal": null,
  "MEM - Centre des mémoires montréalaises": {
   "lat": 45.50941,
@@ -1236,10 +1268,13 @@
  "Monument-National": {
   "lat": 45.5089,
   "lon": -73.5626,
-  "quartier": "Quartier des spectacles"
+  "quartier": "Quartier des spectacles",
+  "alias": [
+   "Ludger-Duvernay Theatre",
+   "Salle Ludger-Duvernay"
+  ]
  },
  "Moonshine": null,
- "Multiple venues": null,
  "Multiples salles": null,
  "Musée McCord Stewart": {
   "lat": 45.5045,
@@ -1266,7 +1301,6 @@
   "lon": -73.56215,
   "quartier": "Ville-Marie"
  },
- "Non précisé": null,
  "O Patro Vys": {
   "lat": 45.5225,
   "lon": -73.583,
@@ -1292,10 +1326,12 @@
  "Office national du film (ONF)": {
   "lat": 45.5087,
   "lon": -73.5672,
-  "quartier": "Quartier des spectacles"
+  "quartier": "Quartier des spectacles",
+  "alias": [
+   "Office national du film - Salle Alanis-Obomsawin",
+   "Office national du film du Canada"
+  ]
  },
- "Office national du film - Salle Alanis-Obomsawin": null,
- "Office national du film du Canada": null,
  "Oratoire Saint-Joseph": {
   "lat": 45.4925,
   "lon": -73.6178,
@@ -1379,8 +1415,12 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
- "Pavillon Hubert-Aquin (A), UQAM": null,
- "Pavillon Judith-Jasmin (J), UQAM": null,
+ "Pavillon Hubert-Aquin (A), UQAM": {
+  "adresse": "400 rue Sainte-Catherine Est"
+ },
+ "Pavillon Judith-Jasmin (J), UQAM": {
+  "adresse": "405 rue Sainte-Catherine Est"
+ },
  "Pavillon de l'île": null,
  "Peterborough Memorial Centre": null,
  "Petit Campus": {
@@ -1388,7 +1428,6 @@
   "lon": -73.571,
   "quartier": "Plateau"
  },
- "Pictura Triennale de peinture de Montréal": null,
  "Pierre-François Ouellette art contemporain": {
   "adresse": "963, rue Rachel Est, Montréal",
   "alias": [],
@@ -1486,7 +1525,9 @@
   "alias": [
    "Society for Arts & Technology",
    "Société des arts technologiques",
-   "Society for Arts and Technology"
+   "Society for Arts and Technology",
+   "Espace SAT",
+   "Satosphère"
   ],
   "lat": 45.5105,
   "lon": -73.563,
@@ -1515,7 +1556,9 @@
  "Salle Claudia-Ebacher": null,
  "Salle Desjardins-Telus": null,
  "Salle Dussault": null,
- "Salle Désilets du Cégep Marie-Victorin": null,
+ "Salle Désilets du Cégep Marie-Victorin": {
+  "adresse": "7000 rue Marie-Victorin"
+ },
  "Salle Edwin-Bélanger": null,
  "Salle Fernand-Seguin": null,
  "Salle Jean-Claude-Germain": null,
@@ -1540,20 +1583,23 @@
   "lon": -73.579,
   "quartier": "Ville-Marie"
  },
- "Salle Pauline-Julien": null,
+ "Salle Pauline-Julien": {
+  "adresse": "15615 boulevard Gouin Ouest"
+ },
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
   "lon": -73.559,
   "quartier": "Quartier latin"
  },
- "Salle Richard-Sauvageau": null,
+ "Salle Richard-Sauvageau": {
+  "adresse": "12004 boulevard Rolland"
+ },
  "Salle Théatre La Scène": null,
  "Salle Wilfrid-Pelletier": {
   "lat": 45.508,
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
- "Salle d'exposition": null,
  "Salle de spectacle de l’église Jean XXIII": null,
  "Salle principale": null,
  "Salle Émile-Legault": {
@@ -1563,7 +1609,6 @@
  },
  "Salon urbain": null,
  "Sample Listening Bar": null,
- "Satosphère": null,
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
  "Société d'art vocal": null,
@@ -1589,7 +1634,6 @@
   "quartier": "Quartier latin"
  },
  "Studio-théâtre des Grands Ballets": null,
- "TBA": null,
  "TIAN Contemporain": {
   "adresse": "819, avenue Atwater, Montréal",
   "alias": [],
@@ -1616,7 +1660,6 @@
   "quartier": "Quartier des spectacles"
  },
  "Teatro Amelia e Lino Saputo": null,
- "Teatro Mirella & Lino Saputo": null,
  "The Arena at Pickering Casino Resort": null,
  "The Axis Club": null,
  "The Church of St John the Evangelist": null,
@@ -1707,7 +1750,11 @@
  "Théâtre Mirella et Lino Saputo": {
   "lat": 45.585,
   "lon": -73.59,
-  "quartier": "Saint-Léonard"
+  "quartier": "Saint-Léonard",
+  "alias": [
+   "Teatro Mirella & Lino Saputo",
+   "Teatro Mirella e Lino Saputo"
+  ]
  },
  "Théâtre Outremont": {
   "lat": 45.5225,
@@ -1810,8 +1857,12 @@
   "lon": -73.67267,
   "quartier": "Ahuntsic-Cartierville"
  },
- "Université Concordia - Auditorium des diplômés de la SGWU": null,
- "Upstairs Jazz Bar & Grill": null,
+ "Université Concordia - Auditorium des diplômés de la SGWU": {
+  "adresse": "1455 boulevard De Maisonneuve Ouest"
+ },
+ "Upstairs Jazz Bar & Grill": {
+  "adresse": "1254 rue Mackay"
+ },
  "Ursa": {
   "lat": 45.523,
   "lon": -73.602,
@@ -1871,14 +1922,12 @@
   "lon": -73.5975,
   "quartier": "Mile End"
  },
- "festival triste 2026": null,
  "le dragon": {
   "lat": 45.5078,
   "lon": -73.56089,
   "quartier": "Ville-Marie"
  },
  "neverclub": null,
- "non indiqué": null,
  "École Saint-Rémi annexe": {
   "lat": 45.58986,
   "lon": -73.63773,
@@ -1941,7 +1990,9 @@
   "lon": -73.581,
   "quartier": "Centre-ville"
  },
- "Église St. Andrew & St. Paul": null,
+ "Église St. Andrew & St. Paul": {
+  "adresse": "3415 rue Redpath"
+ },
  "Église St. George": {
   "lat": 45.4985,
   "lon": -73.5714,
@@ -1952,5 +2003,7 @@
   "lon": -73.5683,
   "quartier": "Centre-ville"
  },
- "Église de Saint-Jean l'Évangéliste": null
+ "Église de Saint-Jean l'Évangéliste": {
+  "adresse": "137 avenue du Président-Kennedy"
+ }
 }

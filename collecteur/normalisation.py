@@ -178,6 +178,9 @@ LIEUX_HORS_ILE = {
     "theatre telebec", "la boite a bleuets", "salle jean cossette", "centre caztel", "theatre hector charland",
     "theatre gilles vigneault", "salle andre mathieu", "theatre lionel groulx", "salle odyssee",
     "premier acte", "le cercle", "le grand theatre de quebec", "grand theatre de quebec", "theatre petit champlain",
+    # vus le 6 nov. 2026 : Moncton, Rivière-du-Loup, Québec, Sainte-Agathe, Otterburn Park, Saint-Hyacinthe
+    "molson canadian centre at casino new brunswick", "casino new brunswick", "musee du bas saint laurent",
+    "salle edwin belanger", "theatre le patriote", "les diffusions pointe valaine", "le zaricot",
 }
 
 
@@ -203,7 +206,11 @@ PAS_DES_SALLES = {"en salle", "a l exterieur", "en ligne", "nan", "none", "plusi
                   "lieu a confirmer", "a confirmer", "virtuel", "online",
                   # titres de pages d'erreur pris pour des noms de salle (vu le 2 nov. 2026 : « Error 403 »)
                   "error 403", "error 404", "erreur 403", "erreur 404", "403 forbidden", "404 not found", "forbidden",
-                  "access denied", "page not found", "page introuvable", "just a moment", "attention required"}
+                  "access denied", "page not found", "page introuvable", "just a moment", "attention required",
+                  # mentions vagues lues dans les agendas (vu le 6 nov. 2026)
+                  "multiple venues", "non precise", "non indique", "tba", "to be announced", "m for montreal 2026",
+                  "festival triste 2026", "bibliotheques cafes musees et autres lieux du grand montreal", "salle d exposition",
+                  "elektra", "pictura triennale de peinture de montreal"}
 
 
 # Clés de salles trop générales ou qui sont aussi des noms de lieux (quartier, rue) : « La Librairie » ne doit pas
