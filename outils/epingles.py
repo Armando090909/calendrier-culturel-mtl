@@ -76,7 +76,7 @@ def qui():
     s1 = page(f"""{fs.marque2()}
 <div style="display:flex;justify-content:center;margin:auto 0 0">{avatar(380)}</div>
 {T('<h1>C’est quoi,<br><span class="ov">ccmtl</span>&nbsp;?</h1>', '<h1>What is<br><span class="ov">ccmtl</span>?</h1>')}
-<p>{T("Le calendrier culturel de l’île de Montréal.", "Montréal’s cultural calendar, for the whole island.")}</p>""", 1, tot,
+""", 1, tot,
               deco((6, "left:110px;top:230px;width:70px"), (1, "right:120px;top:210px;width:110px")))
     s2 = page(f"""<span class="k">{T("Qui on est", "Who we are")}</span>
 <h2>{T('Tout ce qui se passe sur l’île, <span class="ov">au même endroit</span>.', 'Everything happening on the island, <span class="ov">in one place</span>.')}</h2>
@@ -115,8 +115,8 @@ def mode():
     s2 = page(f"""<style>.z{{gap:26px}}.li{{font-size:40px !important;gap:18px}}.li i{{width:26px;height:26px;margin-top:10px}}</style><span class="k">1 · {T("Choisis ta vue", "Pick your view")}</span>
 <h2 style="font-size:90px;white-space:nowrap">{T('La semaine ou <span class="ov">le jour</span>&nbsp;?', 'The week or <span class="ov">the day</span>?')}</h2>
 <div class="liste">
-<div class="li"><i style="background:{C['musique']}"></i><span>{T("Le mode <b>Semaine</b> te donne une vue d’ensemble : les 7 jours côte à côte, pour repérer rapidement ce qui s’en vient. Sur téléphone, tu glisses d’un jour à l’autre.",
-  "<b>Week</b> view gives you the big picture: all 7 days side by side, to spot quickly what’s coming. On your phone, you swipe from one day to the next.")}</span></div>
+<div class="li"><i style="background:{C['musique']}"></i><span>{T("Le mode <b>Semaine</b> te donne une vue d’ensemble : les 7 jours côte à côte, pour repérer rapidement ce qui s’en vient.",
+  "<b>Week</b> view gives you the big picture: all 7 days side by side, to spot quickly what’s coming.")}</span></div>
 <div class="li"><i style="background:{C['jeune']}"></i><span>{T("Le mode <b>Jour</b> montre une seule journée, avec tous les détails de chaque sortie.",
   "<b>Day</b> view shows a single day, with every detail of each event.")}</span></div>
 </div>
@@ -133,10 +133,9 @@ def mode():
             ("lettres", T("Littérature", "Literature"))]
     s3 = page(f"""<span class="k">2 · {T("Filtre", "Filter")}</span>
 <h2>{T('Tout voir, ou <span class="ov">seulement</span> ce qui t’intéresse.', 'See it all, or <span class="ov">only</span> what you like.')}</h2>
-<div class="pills" style="align-items:center"><span class="bt" style="display:flex;gap:30px;padding:10px 30px"><b>{T("tout", "all")}</b><b>{T("aucun", "none")}</b></span></div>
-<div class="pills">{''.join(f'<span class="pl" style="background:{C[k]}">{n}</span>' for k, n in cats)}</div>
-<p>{T("Tu peux choisir toutes les catégories d’un coup, ou seulement celles qui t’intéressent : touche une catégorie pour l’ajouter ou l’enlever. Tu peux aussi chercher un artiste, une salle ou un festival.",
-      "You can pick all categories at once, or only the ones you like: tap a category to add or remove it. You can also search for an artist, a venue or a festival.")}</p>""", 3, tot,
+<div class="pills" style="align-items:center">{''.join(f'<span class="pl" style="background:{C[k]}">{n}</span>' for k, n in cats)}<span style="display:inline-flex;border:3px solid #000;border-radius:999px;padding:4px;gap:4px;font-size:32px;font-weight:700"><span style="background:#000;color:#F5EFE3;border-radius:999px;padding:6px 22px">{T("tout", "all")}</span><span style="padding:6px 22px">{T("aucun", "none")}</span></span></div>
+<p>{T("Tu peux choisir toutes les catégories d’un coup, ou seulement celles qui t’intéressent. Tu peux aussi chercher un artiste, une salle ou un festival.",
+      "You can pick all categories at once, or only the ones you like. You can also search for an artist, a venue or a festival.")}</p>""", 3, tot,
               deco((1, "right:60px;top:70px;width:120px")))
     s4 = page(f"""<span class="k">3 · {T("Ouvre une sortie", "Open an event")}</span>
 <h2>{T('Tout ce qu’il faut <span class="ov">savoir</span>.', 'All you need <span class="ov">to know</span>.')}</h2>
@@ -149,7 +148,7 @@ def mode():
   "Missed something? The <b>archives</b> keep everything that played on the island since launch, by day, week or month.")}</span></div>
 </div>""", 4, tot)
     s5 = page(f"""<span class="k">4 · {T("Avant d’y aller", "Before you go")}</span>
-<h2>{T('Écoute, planifie, <span class="ov">vas-y</span>.', 'Listen, plan, <span class="ov">go</span>.')}</h2>
+<h2>{T('Planifie ta <span class="ov">sortie</span>.', 'Plan your <span class="ov">night out</span>.')}</h2>
 <div class="pills"><span class="bt n">{T("Acheter des billets", "Buy tickets")}</span><span class="bt">▶ {T("Bande-annonce", "Trailer")}</span>
 <span class="bt">Spotify</span><span class="bt">Apple Music</span><span class="bt">+ Google</span><span class="bt">+ Outlook</span><span class="bt">+ Apple</span>
 <span class="bt">{T("Itinéraire", "Directions")}</span><span class="bt">{T("Partager", "Share")}</span></div>
@@ -159,7 +158,7 @@ def mode():
 </div>""", 5, tot, deco((8, "right:-140px;bottom:170px;width:360px;transform:rotate(-8deg)")))
     s6 = page(f"""<span class="k">5 · {T("Tu fais de la programmation ?", "You program events?")}</span>
 <h2>{T('Ajoute tes shows, <span class="ov">c’est gratuit</span>.', 'Add your shows, <span class="ov">it’s free</span>.')}</h2>
-<div class="pills"><span class="bt n">{T("Propose un événement", "Submit an event")}</span><span class="bt">{T("Partage un calendrier", "Share a calendar")}</span></div>
+<div class="pills" style="margin:24px 0"><span class="bt n">{T("Propose un événement", "Submit an event")}</span><span class="bt">{T("Partage un calendrier", "Share a calendar")}</span></div>
 <p>{T("Artistes, salles, festivals : donne-nous le lien de ton agenda en ligne et on le relit chaque jour. Ou propose un événement en deux minutes, au bas du site.",
       "Artists, venues, festivals: give us your online calendar link and we read it every day. Or submit an event in two minutes, at the bottom of the site.")}</p>
 <p style="font-size:34px">{T("Le site existe aussi en anglais : ccmtl.ca/en", "The site is also in French: ccmtl.ca")}</p>""", 6, tot,
@@ -184,8 +183,8 @@ def partage():
 </div>""", 2, tot, deco((8, "right:-110px;bottom:120px;width:400px;transform:rotate(-8deg)"), (1, "left:70px;bottom:200px;width:100px")))
     s3 = page(f"""<span class="k">{T("Et si tu peux", "And if you can")}</span>
 <h2>{T('Un don de <span class="ov">2 $</span>, ça compte.', 'A <span class="ov">$2</span> donation counts.')}</h2>
-<p>{T("ccmtl est gratuit, sans pub et fait par des bénévoles. Il y a quand même des frais : les dons servent seulement à la maintenance du site.",
-      "ccmtl is free, ad-free and volunteer-run. There are still some costs: donations only go to maintaining the site.")}</p>
+<p>{T("ccmtl est gratuit, sans pub et fait par des bénévoles. Il y a quand même des frais. Les dons servent seulement à la maintenance et à l’amélioration du site.",
+      "ccmtl is free, ad-free and volunteer-run. There are still some costs. Donations only go to maintaining and improving the site.")}</p>
 <div class="carte" style="--c:{C['fete']};max-width:none"><span class="d" style="font-size:28px;font-weight:700">{T("Virement Interac, sans frais", "Interac e-Transfer, no fees")}</span>
 <span class="t" style="font-size:54px">info@ccmtl.ca</span></div>
 <p style="font-size:34px">{T("Merci ♥", "Thank you ♥")}</p>""", 3, tot,

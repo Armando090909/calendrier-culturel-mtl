@@ -486,6 +486,16 @@ function carrousel(viser){
     const c=cs.reduce((m,c)=>Math.abs(c.offsetLeft-b.offsetLeft-b.scrollLeft)<Math.abs(m.offsetLeft-b.offsetLeft-b.scrollLeft)?c:m,cs[0]);actif(c)},90)},{passive:true})}
 }
 TEL.addEventListener?.("change",()=>carrousel());
+/* Téléphone, mode Jour : glisser vers la gauche ou la droite pour passer au jour suivant ou précédent */
+(()=>{let x0=null,y0=0;const zone=()=>document.getElementById("view");
+  addEventListener("touchstart",e=>{x0=null;if(!V2||!TEL.matches||st.view!=="day"||!zone()?.contains(e.target)||e.touches.length>1)return;
+    if(e.target.closest("input,select,textarea,.chips,.jtete"))return;x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+  addEventListener("touchend",e=>{if(x0===null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
+    if(Math.abs(dx)<70||Math.abs(dx)<1.6*Math.abs(dy))return;
+    const j=addDays(st.day,dx<0?1:-1);if(!inRange(j))return;
+    st.day=j;render();const v=zone();if(v){v.classList.remove("glisse-g","glisse-d");void v.offsetWidth;v.classList.add(dx<0?"glisse-g":"glisse-d")}
+    const h=document.querySelector(".dayhead");if(h&&h.getBoundingClientRect().top<0)window.scrollTo({top:h.getBoundingClientRect().top+scrollY-10})},{passive:true});
+})();
 addEventListener("resize",()=>{clearTimeout(carrousel.t);carrousel.t=setTimeout(()=>carrousel(),200)});
 function renderFooter(){
   const auj=iso(new Date()),ecart=Math.round((new Date(auj+"T12:00")-new Date(D.miseAJour+"T12:00"))/864e5);

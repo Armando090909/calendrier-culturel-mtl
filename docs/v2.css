@@ -329,3 +329,10 @@ html.v2 .srcitem{background:var(--surface);border-width:2px;border-radius:16px}
 html.v2 .srcitem .n{font-family:var(--f-body);background:var(--chip-off)}
 html.v2 .qhead{font-family:var(--f-body);font-weight:900;text-transform:none;font-size:18px}
 html.v2 .btn{font-family:var(--f-body)}
+
+/* Téléphone, mode Jour : petit glissement quand on change de jour d'un geste */
+@keyframes glisse-g{from{transform:translateX(40px);opacity:.3}to{transform:none;opacity:1}}
+@keyframes glisse-d{from{transform:translateX(-40px);opacity:.3}to{transform:none;opacity:1}}
+html.v2 #view.glisse-g{animation:glisse-g .22s ease-out}
+html.v2 #view.glisse-d{animation:glisse-d .22s ease-out}
+@media (prefers-reduced-motion:reduce){html.v2 #view.glisse-g,html.v2 #view.glisse-d{animation:none}}
