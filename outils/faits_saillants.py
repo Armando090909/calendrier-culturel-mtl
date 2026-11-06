@@ -224,20 +224,24 @@ def choisir(data, debut, etat):
             if id(e) not in pris and e["date"] not in jours_vus:
                 autres.append(e)
                 jours_vus.add(e["date"])
-        opts += [(e, 4, ("", "")) for e in autres[:2]]
+        opts += [(e, 4, ("", "")) for e in autres[:6]]  # un candidat pour chaque autre jour : une sortie par jour
         options[k] = opts
     # Un événement par jour autant que possible : on essaie toutes les combinaisons (3 options par discipline) et on
     # garde celle qui couvre le plus de jours différents, puis les meilleurs rangs ; jamais deux fois la même salle.
     import itertools
     ks = [k for k in disciplines if options.get(k)]
     meilleur, meilleur_score = None, None
+    import math
+    while math.prod(len(options[k]) for k in ks) > 2_000_000:  # garde le calcul rapide : moins d'options par discipline
+        k_max = max(ks, key=lambda k: len(options[k]))
+        options[k_max] = options[k_max][:-1]
     for combo in itertools.product(*[options[k] for k in ks]):
         lieux = [c[0]["lieu"] for c in combo]
         titres = [c[0]["titre"] for c in combo]
         if len(set(lieux)) < len(lieux) or len(set(titres)) < len(titres):
             continue
         jours = len({c[0]["date"] for c in combo})
-        sc = 5 * jours - sum(c[1] for c in combo)  # un jour de plus vaut un peu de qualité, pas n'importe quoi
+        sc = 30 * jours - sum(c[1] for c in combo)  # une sortie par jour d'abord ; la qualité départage
         if meilleur_score is None or sc > meilleur_score:
             meilleur, meilleur_score = combo, sc
     picks = []

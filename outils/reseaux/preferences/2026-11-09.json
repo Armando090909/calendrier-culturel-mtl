@@ -1,13 +1,22 @@
 {
- "_note": "Souhaits d'Alexandre (6 nov.) pour la semaine du 9 novembre : littérature et un vernissage à la place de la conférence ; festivals favorisés.",
- "disciplines": ["musique", "theatre", "danse", "humour", "cinema", "lettres", "expo"],
+ "_note": "Souhaits d'Alexandre (6 nov.) pour la semaine du 9 novembre : littérature et un vernissage à la place de la conférence ; festivals favorisés. Une sortie par jour : littérature le lundi.",
+ "disciplines": [
+  "musique",
+  "theatre",
+  "danse",
+  "humour",
+  "cinema",
+  "lettres",
+  "expo"
+ ],
  "choix": {
   "musique": "Jonathan Personne",
   "theatre": "Neige sur Abidjan",
   "danse": "Virginie Brunelle",
   "humour": "La LIM",
   "cinema": "La jeune fille qui pleurait des perles",
-  "expo": "Leila Zelli"
+  "expo": "Leila Zelli",
+  "lettres": "La fabrique journalistique des célébrités"
  },
  "festivals": true
 }
