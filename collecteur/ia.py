@@ -84,6 +84,22 @@ def _appel(prompt: str, max_tokens: int = 16000) -> str:
     return "".join(b.get("text", "") for b in blocs if b.get("type") == "text")
 
 
+def chercher_web(prompt: str, max_recherches: int = 3) -> str:
+    """Même appel, avec l'outil de recherche web de l'API (quelques recherches au plus). Renvoie le texte final."""
+    entetes = {"x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    if os.environ.get("ANTHROPIC_WORKSPACE_ID"):
+        entetes["anthropic-workspace-id"] = os.environ["ANTHROPIC_WORKSPACE_ID"]
+    r = requests.post(API, timeout=240, headers=entetes, json={
+        "model": MODELE, "max_tokens": 4000,
+        "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_recherches}],
+        "messages": [{"role": "user", "content": prompt}],
+    })
+    if r.status_code >= 400:
+        raise RuntimeError(f"API {r.status_code} : {r.text[:300]}")
+    blocs = r.json().get("content", [])
+    return "".join(b.get("text", "") for b in blocs if b.get("type") == "text")
+
+
 def lire_json(texte: str):
     """Extrait le premier objet ou tableau JSON d'une réponse (tolère les blocs ```json)."""
     texte = re.sub(r"```(?:json)?", "", texte).strip()
