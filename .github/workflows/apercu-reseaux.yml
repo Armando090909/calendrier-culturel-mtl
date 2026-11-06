@@ -3,7 +3,7 @@ name: Aperçu réseaux
 on:
   push:
     branches: [main]
-    paths: ["outils/faits_saillants.py", "outils/reseaux/demande-apercu.txt"]
+    paths: ["outils/faits_saillants.py", "outils/epingles.py", "outils/reseaux/demande-apercu.txt"]
   workflow_dispatch:
 concurrency:
   group: apercu-reseaux
@@ -31,12 +31,14 @@ jobs:
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           SEMAINE: ${{ vars.SEMAINE_APERCU }}
         run: python outils/faits_saillants.py
+      - name: Publications épinglées
+        run: python outils/epingles.py
       - run: |
           git config user.name "collecte-automatique"
           git config user.email "actions@users.noreply.github.com"
           # l'aperçu remplace entièrement le précédent : on repart de la dernière version du dépôt (pas de conflit)
-          cp -r outils/reseaux/apercu /tmp/apercu
+          cp -r outils/reseaux/apercu /tmp/apercu; cp -r outils/reseaux/epingles /tmp/epingles
           git fetch -q origin main && git reset -q --hard origin/main
-          rm -rf outils/reseaux/apercu && cp -r /tmp/apercu outils/reseaux/apercu
-          git add -A outils/reseaux/apercu
+          rm -rf outils/reseaux/apercu outils/reseaux/epingles && cp -r /tmp/apercu outils/reseaux/apercu && cp -r /tmp/epingles outils/reseaux/epingles
+          git add -A outils/reseaux/apercu outils/reseaux/epingles
           git commit -m "Aperçu de la publication de la semaine" && git push || true
