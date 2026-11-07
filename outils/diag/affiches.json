@@ -1,72 +1,120 @@
 {
- "total": 1574,
+ "total": 1562,
  "echecs": 9,
  "par_site": {
-  "www.eventbrite.com": {
-   "affiches": 4,
-   "echecs": 3
-  },
   "westmount.org": {
    "affiches": 2,
    "echecs": 2
   },
-  "images.ctfassets.net": {
-   "affiches": 15,
+  "img.casadelpopolo.com": {
+   "affiches": 54,
    "echecs": 1
   },
-  "img.casadelpopolo.com": {
-   "affiches": 58,
+  "images.ctfassets.net": {
+   "affiches": 10,
+   "echecs": 1
+  },
+  "ma.to": {
+   "affiches": 1,
    "echecs": 1
   },
   "static-assets.artlogic.net": {
    "affiches": 1,
    "echecs": 1
   },
+  "www.eventbrite.com": {
+   "affiches": 2,
+   "echecs": 1
+  },
   "lelivart.com": {
    "affiches": 1,
    "echecs": 1
   },
-  "calendrier.umontreal.ca": {
-   "affiches": 6,
-   "echecs": 0
-  },
-  "cdn.caligram.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "res.cloudinary.com": {
-   "affiches": 655,
-   "echecs": 0
-  },
-  "www.concordia.ca": {
-   "affiches": 5,
-   "echecs": 0
-  },
-  "gg.festapp.io": {
-   "affiches": 152,
-   "echecs": 0
-  },
-  "reseauartactuel.org": {
-   "affiches": 3,
-   "echecs": 0
-  },
-  "festivalcinemania.com": {
+  "freight.cargo.site": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
   },
-  "montreal.askapunk.net": {
-   "affiches": 28,
-   "echecs": 0
-  },
-  "images.lumacdn.com": {
-   "affiches": 11,
+  "assets.nuwebgroup.com": {
+   "affiches": 1,
    "echecs": 0
   },
   "www.lamechecourte.ca": {
    "affiches": 5,
    "echecs": 0
   },
-  "assets.cdn.filesafe.space": {
+  "gg.festapp.io": {
+   "affiches": 142,
+   "echecs": 0
+  },
+  "res.cloudinary.com": {
+   "affiches": 634,
+   "echecs": 0
+  },
+  "tuxedov1.blob.core.windows.net": {
+   "affiches": 13,
+   "echecs": 0
+  },
+  "cdn.placedesarts.com": {
+   "affiches": 25,
+   "echecs": 0
+  },
+  "www.cinematheque.qc.ca": {
+   "affiches": 11,
+   "echecs": 0
+  },
+  "funnation.ca": {
+   "affiches": 7,
+   "echecs": 0
+  },
+  "seatgeekimages.com": {
+   "affiches": 6,
+   "echecs": 0
+  },
+  "www.mado.qc.ca": {
+   "affiches": 7,
+   "echecs": 0
+  },
+  "reseauartactuel.org": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "festivalcinemania.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "rideauvert.qc.ca": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "cdn.caligram.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "image.tmdb.org": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "lebordel.ca": {
+   "affiches": 7,
+   "echecs": 0
+  },
+  "images.squarespace-cdn.com": {
+   "affiches": 46,
+   "echecs": 0
+  },
+  "tpos.s3.amazonaws.com": {
+   "affiches": 108,
+   "echecs": 0
+  },
+  "montreal.askapunk.net": {
+   "affiches": 30,
+   "echecs": 0
+  },
+  "static.wixstatic.com": {
+   "affiches": 11,
+   "echecs": 0
+  },
+  "img1.wsimg.com": {
    "affiches": 1,
    "echecs": 0
   },
@@ -75,11 +123,15 @@
    "echecs": 0
   },
   "images.sk-static.com": {
-   "affiches": 202,
+   "affiches": 193,
    "echecs": 0
   },
-  "theatresaintecatherine.com": {
-   "affiches": 3,
+  "theatreplaza.ca": {
+   "affiches": 10,
+   "echecs": 0
+  },
+  "s1.ticketm.net": {
+   "affiches": 8,
    "echecs": 0
   },
   "studio011.ca": {
@@ -90,92 +142,40 @@
    "affiches": 1,
    "echecs": 0
   },
-  "tpos.s3.amazonaws.com": {
-   "affiches": 110,
-   "echecs": 0
-  },
-  "cdn.placedesarts.com": {
-   "affiches": 27,
-   "echecs": 0
-  },
-  "mato.s3.us-east-1.amazonaws.com": {
-   "affiches": 5,
-   "echecs": 0
-  },
   "www.theatredesjardins.com": {
    "affiches": 23,
    "echecs": 0
   },
-  "theatreplaza.ca": {
-   "affiches": 12,
-   "echecs": 0
-  },
-  "panm360.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "seatgeekimages.com": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "duceppe.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "s1.ticketm.net": {
-   "affiches": 9,
+  "mato.s3.us-east-1.amazonaws.com": {
+   "affiches": 3,
    "echecs": 0
   },
   "comedynest.com": {
    "affiches": 8,
    "echecs": 0
   },
-  "tuxedov1.blob.core.windows.net": {
-   "affiches": 13,
-   "echecs": 0
-  },
-  "www.festivalnuitsdafrique.com": {
+  "festivalarabe.com": {
    "affiches": 3,
-   "echecs": 0
-  },
-  "www.mado.qc.ca": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "lebordel.ca": {
-   "affiches": 8,
-   "echecs": 0
-  },
-  "images.squarespace-cdn.com": {
-   "affiches": 23,
-   "echecs": 0
-  },
-  "assets.nuwebgroup.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "funnation.ca": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "rideauvert.qc.ca": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "static.wixstatic.com": {
-   "affiches": 8,
-   "echecs": 0
-  },
-  "img1.wsimg.com": {
-   "affiches": 1,
    "echecs": 0
   },
   "s3.amazonaws.com": {
    "affiches": 5,
    "echecs": 0
   },
-  "image.tmdb.org": {
-   "affiches": 3,
+  "www.festivalnuitsdafrique.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "assets.cdn.filesafe.space": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "www.foufouneselectriques.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "images.lumacdn.com": {
+   "affiches": 10,
    "echecs": 0
   },
   "applications-media.feverup.com": {
@@ -186,11 +186,23 @@
    "affiches": 4,
    "echecs": 0
   },
+  "theatresaintecatherine.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "www.concordia.ca": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "lalumierecollective.org": {
    "affiches": 7,
    "echecs": 0
   },
   "illusiontheatre.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "calendrier.umontreal.ca": {
    "affiches": 2,
    "echecs": 0
   },
@@ -238,7 +250,15 @@
    "affiches": 4,
    "echecs": 0
   },
+  "www.jmcanada.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "theatreoutremont.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "lesfoutoukours.com": {
    "affiches": 1,
    "echecs": 0
   },
@@ -251,18 +271,18 @@
    "echecs": 0
   },
   "ridm.ca": {
-   "affiches": 67,
+   "affiches": 82,
    "echecs": 0
   },
-  "www.foufouneselectriques.com": {
-   "affiches": 1,
+  "cdn.ca.yapla.com": {
+   "affiches": 4,
    "echecs": 0
   },
   "cafconc.ca": {
    "affiches": 1,
    "echecs": 0
   },
-  "cdn.ca.yapla.com": {
+  "s3.ca-central-1.amazonaws.com": {
    "affiches": 1,
    "echecs": 0
   },
@@ -285,17 +305,11 @@
   "www.montrealcomiccon.com": {
    "affiches": 1,
    "echecs": 0
-  },
-  "freight.cargo.site": {
-   "affiches": 1,
-   "echecs": 0
   }
  },
  "exemples": {
-  "www.eventbrite.com": [
-   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1195177411%252F1296453055783%252F1%252Foriginal.20261006-140407%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D3b7bf9774b9dbdfb4442439f788bdfb7&w=1200&q=75",
-   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193695236%252F1296453055783%252F1%252Foriginal.20260916-210100%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Dd69eed74297cf7ed18da2e5335fcfe89&w=1200&q=75",
-   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
+  "ma.to": [
+   "https://ma.to/og-image-default.png"
   ],
   "westmount.org": [
    "https://westmount.org/resize/7a2537c2c72e4a61681518d695497350-1",
@@ -307,29 +321,35 @@
   "lelivart.com": [
    "https://lelivart.com/app/uploads/2026/10/LABYRINTHE-1080x1440-5-copy-4-100.jpg"
   ],
+  "www.eventbrite.com": [
+   "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "freight.cargo.site": [
+   "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
   ],
   "img.casadelpopolo.com": [
    "https://img.casadelpopolo.com/cz465rkAHy-hF20aqJQHdS3j0gNo7RbkyC7w6A77vic/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tLzl3MjR6MGZ6/M3hnOGx5aDcwamd6/ZXFidGhubXE"
   ]
  },
  "sans_affiche_par_discipline": {
-  "conference": 21,
-  "jeune": 4,
-  "danse": 4,
-  "theatre": 33,
-  "musique": 95,
-  "humour": 38,
-  "fete": 24,
-  "lettres": 16,
-  "cirque": 7,
+  "atelier": 123,
+  "lettres": 27,
+  "conference": 27,
+  "musique": 107,
+  "humour": 44,
+  "theatre": 34,
+  "fete": 21,
+  "danse": 3,
   "expo": 5,
-  "quiz": 87,
+  "cirque": 10,
+  "quiz": 89,
   "cinema": 15,
-  "poesie": 2,
+  "poesie": 3,
   "social": 1,
-  "autre": 1,
-  "atelier": 1
+  "jeune": 3,
+  "autre": 1
  }
 }
