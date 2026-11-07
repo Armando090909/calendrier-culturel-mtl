@@ -497,6 +497,21 @@ TEL.addEventListener?.("change",()=>carrousel());
     const h=document.querySelector(".dayhead");if(h&&h.getBoundingClientRect().top<0)window.scrollTo({top:h.getBoundingClientRect().top+scrollY-10})},{passive:true});
 })();
 addEventListener("resize",()=>{clearTimeout(carrousel.t);carrousel.t=setTimeout(()=>carrousel(),200)});
+/* Bouton « retour » du navigateur : chaque changement de vue (Semaine → Jour, festival, expositions…) ajoute une étape
+   à l'historique ; « retour » ramène à la vue précédente, au même endroit de la page, au lieu de quitter le site.
+   Changer de jour ou de semaine dans une même vue ne fait que mettre l'étape à jour (pas de pile de jours). */
+const _rendu=render;let enRetour=false;try{history.scrollRestoration="manual"}catch(x){}
+const etatVue=()=>({v:st.view,d:st.day,w:st.week,m:st.month,f:st.fest||null,c:st.cible??null});
+render=function(){_rendu();if(enRetour)return;
+  const s=etatVue(),h=history.state&&history.state.ccmtl;
+  try{
+    if(h&&(h.v!==s.v||h.f!==s.f)){history.replaceState({ccmtl:h,y:scrollY},"");history.pushState({ccmtl:s,y:0},"")}
+    else history.replaceState({ccmtl:s,y:(history.state&&history.state.y)||0},"");
+  }catch(x){}};
+addEventListener("popstate",e=>{const h=e.state&&e.state.ccmtl;if(!h)return;enRetour=true;
+  st.view=h.v;st.day=h.d;st.week=h.w;st.month=h.m;st.fest=h.f;st.cible=h.c;
+  try{_rendu()}finally{enRetour=false}
+  const y=e.state.y||0;requestAnimationFrame(()=>requestAnimationFrame(()=>scrollTo(0,y)))});
 function renderFooter(){
   const auj=iso(new Date()),ecart=Math.round((new Date(auj+"T12:00")-new Date(D.miseAJour+"T12:00"))/864e5);
   const quand=ecart<=0?L("ce matin","this morning"):ecart===1?L("hier","yesterday"):L(`${JOURS[new Date(D.miseAJour+"T12:00").getDay()].toLowerCase()} dernier`,`last ${JOURS[new Date(D.miseAJour+"T12:00").getDay()]}`);
