@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1911,
+  "evenements": 1885,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 31,
+  "evenements": 33,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 190,
+  "evenements": 232,
   "erreur": false
  },
  {
@@ -316,9 +316,9 @@
  },
  {
   "nom": "Théâtre de la LNI",
-  "url": "https://www.lni.ca",
+  "url": "https://www.lni.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -330,7 +330,7 @@
  },
  {
   "nom": "Tortue Berlue (théâtre jeune public)",
-  "url": "https://www.tortueberlue.com",
+  "url": "https://www.tortueberlue.com/spectacles",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
@@ -372,9 +372,9 @@
  },
  {
   "nom": "La Cenne",
-  "url": "https://www.lacenne.com",
+  "url": "https://www.lacenne.com/programmation",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -400,23 +400,23 @@
  },
  {
   "nom": "Bain Mathieu",
-  "url": "https://www.bainmathieu.ca",
+  "url": "https://bainmathieu.ca/programmation",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Le Château (Ciné-Théâtre)",
-  "url": "https://lechateaumontreal.com",
+  "url": "https://lechateaumontreal.com/evenements",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Théâtre Bouches Décousues",
-  "url": "https://www.theatrebouchesdecousues.com",
+  "url": "https://theatrebouchesdecousues.com/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -435,30 +435,30 @@
  },
  {
   "nom": "Qu'en dit Raton?",
-  "url": "https://www.quenditraton.com",
+  "url": "https://www.quenditraton.com/spectacles",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Studio PACA (Les Foutoukours)",
-  "url": "https://lesfoutoukours.com/fr/studios-paca",
+  "url": "https://lesfoutoukours.com/fr/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 10,
   "erreur": false
  },
  {
   "nom": "La Rocambolesque",
-  "url": "https://rocambolesque.ca",
+  "url": "https://rocambolesque.ca/calendrier",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Librairie Le Port de tête",
-  "url": "https://www.leportdetete.com",
+  "url": "https://www.leportdetete.com/evenements",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 17,
   "erreur": false
  },
  {
@@ -526,9 +526,9 @@
  },
  {
   "nom": "Montreal Improv",
-  "url": "https://www.montrealimprov.com",
+  "url": "https://www.montrealimprov.com/shows",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 27,
   "erreur": false
  },
  {
@@ -540,16 +540,16 @@
  },
  {
   "nom": "Théâtre Paradoxe",
-  "url": "https://theatreparadoxe.com",
+  "url": "https://theatreparadoxe.com/fr/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 3,
   "erreur": false
  },
  {
   "nom": "Salle Joseph-Rouleau (Jeunesses Musicales)",
-  "url": "https://jmcanada.ca",
+  "url": "https://www.jmcanada.ca/fr/public/nos-concerts-et-activites/a-la-salle-joseph-rouleau",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -568,9 +568,23 @@
  },
  {
   "nom": "Cat's Corner (danse swing)",
-  "url": "https://www.catscorner.ca",
+  "url": "https://www.catscorner.ca/events",
   "type": "page lue par l'IA",
   "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "LESPACEMAKER – événements",
+  "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
+  "type": "calendrier iCal",
+  "evenements": 58,
+  "erreur": false
+ },
+ {
+  "nom": "LESPACEMAKER – formations",
+  "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
+  "type": "calendrier iCal",
+  "evenements": 89,
   "erreur": false
  },
  {
@@ -1431,7 +1445,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 105,
+  "evenements": 107,
   "erreur": false
  },
  {

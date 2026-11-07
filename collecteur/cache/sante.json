@@ -2,39 +2,24 @@
  "ouverts": {
   "champ:jambase.com:heure": {
    "depuis": "2026-11-05",
-   "jours": 2,
-   "issue": null
-  },
-  "source:Festival · Monde Arabe (1)": {
-   "depuis": "2026-11-06",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (1)": {
-   "depuis": "2026-11-06",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (10)": {
-   "depuis": "2026-11-06",
-   "jours": 1,
-   "issue": null
-  },
-  "source:Festival · RIDM (11)": {
-   "depuis": "2026-11-06",
-   "jours": 1,
-   "issue": null
+   "jours": 3,
+   "issue": 5
   },
   "champ:leredroom.com:heure": {
    "depuis": "2026-11-06",
-   "jours": 1,
+   "jours": 2,
    "issue": null
+  },
+  "robots:calendar.google.com,omniwebticketing.com": {
+   "depuis": "2026-11-07",
+   "jours": 1,
+   "issue": 6
   }
  },
  "sources_ok": {
-  "Ville de Montréal – événements publics": 1911,
-  "Ask A Punk (DIY, punk, hardcore)": 31,
-  "Sors-tu? (14 prochains jours)": 190,
+  "Ville de Montréal – événements publics": 1885,
+  "Ask A Punk (DIY, punk, hardcore)": 33,
+  "Sors-tu? (14 prochains jours)": 232,
   "Songkick (concerts, 2 mois)": 371,
   "Espace GO": 1,
   "TNM": 1,
@@ -73,19 +58,29 @@
   "Cinéma Public": 1,
   "L'Illusion, Théâtre de marionnettes": 3,
   "Studio 303": 8,
+  "Théâtre de la LNI": 5,
   "Librairie Drawn & Quarterly (événements)": 3,
   "Le Bordel Comédie Club": 30,
   "La Cabine Comédie Club": 30,
   "Montreal Comedy Club": 14,
+  "La Cenne": 2,
+  "Théâtre Bouches Décousues": 4,
   "Espace Le Vrai Monde?": 3,
   "Théâtre Mirella et Lino Saputo (CLDV)": 4,
+  "Studio PACA (Les Foutoukours)": 10,
+  "Librairie Le Port de tête": 17,
   "N'était-ce pas l'été (ma.to)": 2,
   "Festival / Maison de la poésie de Montréal": 1,
   "La Brassée (café-concerts)": 6,
   "Cabaret de Curiosités": 3,
   "Victoria Hall (Westmount)": 2,
   "Le Red Room": 16,
+  "Montreal Improv": 27,
   "Together Club (Luma)": 20,
+  "Théâtre Paradoxe": 3,
+  "Salle Joseph-Rouleau (Jeunesses Musicales)": 6,
+  "LESPACEMAKER – événements": 58,
+  "LESPACEMAKER – formations": 89,
   "Planétarium (soirées spéciales)": 1,
   "UPop Montréal (université populaire)": 16,
   "Cœur des sciences UQAM (conférences grand public)": 4,
@@ -171,12 +166,13 @@
   "Club Balattou (billetterie)": 17,
   "Le Belmont (billetterie)": 2,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 5,
-  "Soirées quiz (hebdomadaires)": 105,
+  "Soirées quiz (hebdomadaires)": 107,
   "Ligues d'improvisation (hebdomadaires)": 9,
   "ma.to – communauté (quiz, trivia)": 1,
   "Wiggle Room (ma.to)": 2,
   "Le Balcon (ma.to)": 3,
   "PAN M 360 – agenda musique": 38,
+  "Festival · Monde Arabe (1)": 24,
   "Festival · Monde Arabe (2)": 2,
   "Festival · CINEMANIA": 230,
   "Festival · Festival Bach": 65,
@@ -184,6 +180,7 @@
   "Festival · Mundial": 1,
   "Festival · M pour Montréal (1)": 27,
   "Festival · M pour Montréal (2)": 1,
+  "Festival · RIDM (1)": 3,
   "Festival · RIDM (2)": 29,
   "Festival · RIDM (3)": 38,
   "Festival · RIDM (4)": 35,
@@ -192,9 +189,12 @@
   "Festival · RIDM (7)": 3,
   "Festival · RIDM (8)": 27,
   "Festival · RIDM (9)": 1,
+  "Festival · RIDM (10)": 32,
+  "Festival · RIDM (11)": 48,
   "Festival · Salon du livre": 2,
   "Festival · Casteliers": 2,
   "Festival · FIFA": 1,
+  "Festival · Sommets de l'animation": 88,
   "Festival · Francos": 1,
   "Festival · Festival de Jazz": 5,
   "Festival · Nuits d'Afrique": 4,
@@ -211,7 +211,8 @@
   "2026-11-03": 2464,
   "2026-11-04": 2375,
   "2026-11-05": 2431,
-  "2026-11-06": 2509
+  "2026-11-06": 2509,
+  "2026-11-07": 2656
  },
- "dernier_jour": "2026-11-06"
+ "dernier_jour": "2026-11-07"
 }
