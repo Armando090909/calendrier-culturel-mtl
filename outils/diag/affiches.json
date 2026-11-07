@@ -1,14 +1,14 @@
 {
  "total": 1562,
- "echecs": 9,
+ "echecs": 19,
  "par_site": {
+  "theatreplaza.ca": {
+   "affiches": 10,
+   "echecs": 10
+  },
   "westmount.org": {
    "affiches": 2,
    "echecs": 2
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 54,
-   "echecs": 1
   },
   "images.ctfassets.net": {
    "affiches": 10,
@@ -27,6 +27,10 @@
    "echecs": 1
   },
   "lelivart.com": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "theatreoutremont.ca": {
    "affiches": 1,
    "echecs": 1
   },
@@ -126,10 +130,6 @@
    "affiches": 193,
    "echecs": 0
   },
-  "theatreplaza.ca": {
-   "affiches": 10,
-   "echecs": 0
-  },
   "s1.ticketm.net": {
    "affiches": 8,
    "echecs": 0
@@ -148,6 +148,10 @@
   },
   "mato.s3.us-east-1.amazonaws.com": {
    "affiches": 3,
+   "echecs": 0
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 54,
    "echecs": 0
   },
   "comedynest.com": {
@@ -254,10 +258,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "theatreoutremont.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "lesfoutoukours.com": {
    "affiches": 1,
    "echecs": 0
@@ -308,6 +308,11 @@
   }
  },
  "exemples": {
+  "theatreplaza.ca": [
+   "https://theatreplaza.ca/wp-content/uploads/2026/10/The-Return-1280x720-plaza-theatre-poster-1.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/09/Zeina-Maan-souffles-du-Levant.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/09/Convivencia.png"
+  ],
   "ma.to": [
    "https://ma.to/og-image-default.png"
   ],
@@ -321,6 +326,9 @@
   "lelivart.com": [
    "https://lelivart.com/app/uploads/2026/10/LABYRINTHE-1080x1440-5-copy-4-100.jpg"
   ],
+  "theatreoutremont.ca": [
+   "https://theatreoutremont.ca/wp-content/uploads/2025/09/Visuel-site-intenet.png"
+  ],
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
   ],
@@ -329,9 +337,6 @@
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
-  ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/cz465rkAHy-hF20aqJQHdS3j0gNo7RbkyC7w6A77vic/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tLzl3MjR6MGZ6/M3hnOGx5aDcwamd6/ZXFidGhubXE"
   ]
  },
  "sans_affiche_par_discipline": {
