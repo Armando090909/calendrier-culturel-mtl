@@ -54,7 +54,15 @@ def pages(p, limite=15):
 
 def liste(nom, p, limite=8):
     d = api(f"stats/{nom}", limit=limite, **p)
-    return [(s.get("name") or "(direct)", int(s.get("count") or 0)) for s in (d.get("stats") or [])]
+    noms = {"ig": "Instagram", "l.instagram.com": "Instagram", "instagram.com": "Instagram", "www.instagram.com": "Instagram",
+            "www.facebook.com": "Facebook", "m.facebook.com": "Facebook", "l.facebook.com": "Facebook", "lm.facebook.com": "Facebook",
+            "facebook.com": "Facebook", "www.google.com": "Google", "google.com": "Google", "bsky.app": "Bluesky",
+            "www.threads.net": "Threads", "threads.net": "Threads", "l.threads.com": "Threads", "": "(direct ou inconnu)"}
+    out = {}
+    for x in d.get("stats") or []:
+        n = noms.get((x.get("name") or "").lower(), x.get("name"))
+        out[n] = out.get(n, 0) + int(x.get("count") or 0)
+    return sorted(out.items(), key=lambda kv: -kv[1])
 
 
 def ecart(n, avant):
@@ -67,8 +75,9 @@ def ecart(n, avant):
 def libelle(chemin, titre):
     if chemin.startswith(("/e/", "/en/e/")):
         return f"Événement : {titre.split(' · ')[0] or chemin}"
-    if chemin in ("/", "/en/"):
-        return "Accueil" + (" (anglais)" if chemin == "/en/" else "")
+    c = chemin.split("?")[0].removesuffix("index.html").rstrip("/") or "/"
+    if c in ("/", "/en"):
+        return "Accueil" + (" (anglais)" if c == "/en" else "")
     return titre.split(" · ")[0] or chemin
 
 
