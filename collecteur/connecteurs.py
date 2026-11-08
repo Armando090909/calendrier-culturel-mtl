@@ -963,7 +963,7 @@ def recurrents(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             evs.append(brut(titre=r["titre"], date=j.isoformat(), heure=r.get("heure"), lieu=r["lieu"],
                             adresse=r.get("adresse", ""), ville="Montréal", url=r.get("source", ""),
                             discipline=cfg.get("discipline", ""), source=cfg["cle_source"],
-                            description=f"Chaque {jours_fr[int(r['jour'])]}, à confirmer auprès du lieu (vérifié le {r.get('verifie')})."))
+                            description=r.get("resume") or f"Chaque {jours_fr[int(r['jour'])]} (activité régulière : horaire à vérifier auprès du lieu)."))
             j += timedelta(days=7)
     return evs, []
 
