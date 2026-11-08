@@ -1,47 +1,25 @@
 {
- "date": "2026-11-07",
+ "date": "2026-11-08",
  "statut": "publié",
- "evenements": 2656,
- "expositions": 218,
+ "evenements": 2505,
+ "expositions": 212,
  "nouvelles_salles": [
-  "Altigone",
-  "Chasse-Galerie",
-  "EA Rawlinson Centre For The Arts",
-  "Engineering, Computer Science and Visual Arts Integrated Complex",
-  "Espace Malraux",
-  "Espace Republic Corner",
-  "Esplanade Arts & Heritage Centre",
-  "Jeanne & Peter Lougheed Performing Arts Centre",
-  "Key City Theatre",
-  "La Cenne",
+  "Centre Gadbois",
+  "Centre des Arts Shenkman",
+  "Espace culturel Georges-Émile-Lapalme",
   "La SAT",
-  "Le Pantoum",
-  "Le Port de tête",
-  "Le Sémaphore",
-  "Maison de la culture Bellechasse",
-  "Maison de la culture Francis-Brisson",
-  "Maison de quartier de Doulon",
-  "Montreal Improv",
-  "Off-Bach",
-  "Revelstoke Performing Arts Centre",
-  "Sainte-Agathe-des-Monts",
-  "Salle Joseph-Rouleau",
-  "Sid Williams Theatre",
-  "Surry Arts Centre",
-  "The Arden Theatre",
-  "The Port Theatre",
-  "Usine Rolland",
-  "Vieux bureau de poste",
-  "Vieux couvent de Saint-Prime"
+  "Lieu non précisé"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 0,
-   "erreurs": 0,
-   "exemples_erreurs": [],
-   "completees_par_mac": 838,
-   "heures_trouvees": 835,
-   "salles_trouvees": 818
+   "lues": 1,
+   "erreurs": 1,
+   "exemples_erreurs": [
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/cafe-philo-avec-jean-pierre-lepage-120927"
+   ],
+   "completees_par_mac": 798,
+   "heures_trouvees": 795,
+   "salles_trouvees": 778
   },
   "formulaire": {
    "lignes": 1,
@@ -67,13 +45,6 @@
    ]
   },
   "redites_retirees": [
-   "2026-11-07 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
-   "2026-11-07 : « Comedie Club » (La Cabine Comédie Club) = « Les samedis Comédie Club à 22$ » (Le Saint-Jean Comédie Club)",
-   "2026-11-07 : « Comédie club » (Le Bordel Comédie Club) = « Les samedis Comédie Club à 22$ » (Le Saint-Jean Comédie Club)",
-   "2026-11-07 : « FINALE - Slamontréal » (Maison de la culture Claude-Léveillée) = « Finale de Slamontréal » (Chez l'Éditeur)",
-   "2026-11-07 : « Comédie club » (Le Bordel Comédie Club) = « Comedie Club » (La Cabine Comédie Club)",
-   "2026-11-07 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
-   "2026-11-07 : « Coup de cœur francophone : Tempête Solaire et LePa » (Quai des Brumes) = « Tempête Solaire » (L'Escogriffe)",
    "2026-11-08 : « Solarium (compagnie L'eau du bain) » (Studio-théâtre des Grands Ballets) = « Solarium – L'eau du bain (installation, tout âge,  » (Atrium des Grands Ballets (Édifice Wilder))",
    "2026-11-08 : « Nina Kraviz @ Le Studio TD » (Le Studio TD) = « Nina Kraviz » (L'Olympia)",
    "2026-11-09 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
@@ -86,11 +57,12 @@
    "2026-11-18 : « Cosmic Dog Fog » (Club Soda) = « Mario2 & Cosmic Dog Fog WLS » (La Sotterenea)",
    "2026-11-19 : « Le Ren » (Club Soda) = « Le Ren » (Casa del Popolo)",
    "2026-11-19 : « Mzrabelle » (Club Soda) = « Mzrabelle, XLOWW & Vago » (Le Belmont)",
-   "2026-11-20 : « Less Toches + Les Tireux d'Roches + Margaret Tract » (Petit Campus) = « OFF : Less Toches, Les Tireux d'Roches & Margaret  » (Café Campus)",
+   "2026-11-20 : « Mundial Montréal OFF : Less Toches, Les Tireux d'R » (Café Campus) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Mundial Montréal OFF : Daughters of Donbas & Hildá » (O Patro Vys) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
    "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-20 : « Calamine » (Club Soda) = « Calamine : M pour Montréal (avec Changeline) » (Foufounes Électriques)",
+   "2026-11-20 : « Calamine » (Club Soda) = « Calamine : M pour Montréal » (Foufounes Électriques)",
    "2026-11-21 : « CELEBRATION - Le meilleur party dansant Motown Pop » (Le Balcon) = « Célébration! » (Wiggle Room)",
-   "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval @ MTELUS » (MTELUS)",
+   "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval » (MTELUS)",
    "2026-11-21 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
    "2026-11-28 : « Bach talk : Bach en quatre villes » (Clavier) = « Bach en quatre villes (Off-Bach, Luc Beauséjour) » (Off-Bach)",
    "2026-11-29 : « Les Variations Goldberg (Off-Bach, Luc Beauséjour) » (Off-Bach) = « Conférence 2 : Les Variations Goldberg » (Clavier)",
@@ -104,32 +76,23 @@
   ],
   "catalogues": [
    {
-    "nom": "MOLDEAD",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album moldead)"
-     ],
-     "contre": []
-    }
+    "nom": "Erotic Discount"
+   },
+   {
+    "nom": "Le Port de Tête"
+   },
+   {
+    "nom": "Anouk Lefebvre"
    }
   ],
+  "decouverte": [
+   "sans piste : Théâtre Beanfield (14 événements dans les agendas)",
+   "ajoutée : Théâtre Maisonneuve → https://www.placedesarts.com (21)",
+   "sans piste : Le Verre Bouteille (11 événements dans les agendas)",
+   "sans piste : Deli Planet (7 événements dans les agendas)",
+   "sans piste : Chez Bozo (5 événements dans les agendas)"
+  ],
   "robots_refus": {
-   "omniwebticketing.com/cinematheque/": 34,
    "calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6": 1,
    "calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3": 1
   }
@@ -138,7 +101,7 @@
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 1822,
+   "evenements": 1740,
    "series": 63,
    "erreur": null,
    "diagnostic": [
@@ -153,7 +116,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 232,
+   "evenements": 195,
    "series": 0,
    "erreur": null
   },
@@ -490,7 +453,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1501 caractères de texte : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1502 caractères de texte : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -752,13 +715,13 @@
   },
   {
    "source": "LESPACEMAKER – événements",
-   "evenements": 58,
+   "evenements": 56,
    "series": 0,
    "erreur": null
   },
   {
    "source": "LESPACEMAKER – formations",
-   "evenements": 89,
+   "evenements": 88,
    "series": 0,
    "erreur": null
   },
@@ -1697,7 +1660,7 @@
   },
   {
    "source": "Soirées quiz (hebdomadaires)",
-   "evenements": 107,
+   "evenements": 108,
    "series": 0,
    "erreur": null
   },
@@ -2062,7 +2025,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
    ]
   },
   {
@@ -2192,8 +2155,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4182 caractères de texte : https://osheaga.com"
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com"
    ]
   },
   {

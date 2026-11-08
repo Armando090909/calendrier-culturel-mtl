@@ -2,24 +2,24 @@
  "ouverts": {
   "champ:jambase.com:heure": {
    "depuis": "2026-11-05",
-   "jours": 3,
+   "jours": 4,
    "issue": 5
   },
   "champ:leredroom.com:heure": {
    "depuis": "2026-11-06",
-   "jours": 2,
-   "issue": null
+   "jours": 3,
+   "issue": 7
   },
-  "robots:calendar.google.com,omniwebticketing.com": {
-   "depuis": "2026-11-07",
+  "robots:calendar.google.com": {
+   "depuis": "2026-11-08",
    "jours": 1,
-   "issue": 6
+   "issue": 8
   }
  },
  "sources_ok": {
-  "Ville de Montréal – événements publics": 1885,
+  "Ville de Montréal – événements publics": 1803,
   "Ask A Punk (DIY, punk, hardcore)": 33,
-  "Sors-tu? (14 prochains jours)": 232,
+  "Sors-tu? (14 prochains jours)": 195,
   "Songkick (concerts, 2 mois)": 371,
   "Espace GO": 1,
   "TNM": 1,
@@ -79,8 +79,8 @@
   "Together Club (Luma)": 20,
   "Théâtre Paradoxe": 3,
   "Salle Joseph-Rouleau (Jeunesses Musicales)": 6,
-  "LESPACEMAKER – événements": 58,
-  "LESPACEMAKER – formations": 89,
+  "LESPACEMAKER – événements": 56,
+  "LESPACEMAKER – formations": 88,
   "Planétarium (soirées spéciales)": 1,
   "UPop Montréal (université populaire)": 16,
   "Cœur des sciences UQAM (conférences grand public)": 4,
@@ -166,7 +166,7 @@
   "Club Balattou (billetterie)": 17,
   "Le Belmont (billetterie)": 2,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 5,
-  "Soirées quiz (hebdomadaires)": 107,
+  "Soirées quiz (hebdomadaires)": 108,
   "Ligues d'improvisation (hebdomadaires)": 9,
   "ma.to – communauté (quiz, trivia)": 1,
   "Wiggle Room (ma.to)": 2,
@@ -212,7 +212,8 @@
   "2026-11-04": 2375,
   "2026-11-05": 2431,
   "2026-11-06": 2509,
-  "2026-11-07": 2656
+  "2026-11-07": 2656,
+  "2026-11-08": 2505
  },
- "dernier_jour": "2026-11-07"
+ "dernier_jour": "2026-11-08"
 }

@@ -1,1 +1,22 @@
-{}
+{
+ "_essayes": {
+  "Théâtre Beanfield": "2026-11-08",
+  "Théâtre Maisonneuve": "2026-11-08",
+  "Le Verre Bouteille": "2026-11-08",
+  "Deli Planet": "2026-11-08",
+  "Chez Bozo": "2026-11-08"
+ },
+ "Théâtre Maisonneuve (découverte)": {
+  "type": "page_ia",
+  "cle": "salles",
+  "url": "https://www.placedesarts.com",
+  "lieu": "Théâtre Maisonneuve",
+  "navigateur": true,
+  "jours_semaine": [
+   0,
+   3
+  ],
+  "ajoute": "2026-11-08",
+  "dernier_ok": "2026-11-08"
+ }
+}

@@ -439,6 +439,11 @@
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Centre Caztel": null,
+ "Centre Gadbois": {
+  "lat": 45.46717,
+  "lon": -73.59474,
+  "quartier": "Le Sud-Ouest"
+ },
  "Centre Pierre-Peladeau": {
   "alias": [],
   "lat": 45.51349,
@@ -507,6 +512,7 @@
   "lon": -73.56207,
   "quartier": "Ville-Marie"
  },
+ "Centre des Arts Shenkman": null,
  "Centre des arts actuels SKOL": null,
  "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
@@ -712,6 +718,11 @@
   "quartier": "Pointe-Saint-Charles"
  },
  "Espace Together": null,
+ "Espace culturel Georges-Émile-Lapalme": {
+  "lat": 45.50838,
+  "lon": -73.56625,
+  "quartier": "Ville-Marie"
+ },
  "Espace des possibles": {
   "lat": 45.54035,
   "lon": -73.59924,
@@ -1173,6 +1184,7 @@
   "lon": -73.56149,
   "quartier": "Ville-Marie"
  },
+ "Lieu non précisé": null,
  "Livart": {
   "lat": 45.521,
   "lon": -73.5785,
