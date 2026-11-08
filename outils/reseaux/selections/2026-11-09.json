@@ -1,0 +1,395 @@
+{
+ "debut": "2026-11-09",
+ "fin": "2026-11-15",
+ "picks": [
+  {
+   "k": "cinema",
+   "e": {
+    "date": "2026-11-09",
+    "heure": "18:00",
+    "discipline": "cinema",
+    "titre": "Adieu monde cruel",
+    "lieu": "Cineplex Quartier Latin",
+    "url": "https://festapp.io/festivals/cinemania/2026",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "festival": "cinemania",
+    "affiche": {
+     "credit": "festapp.io",
+     "lien": "https://festapp.io/festivals/cinemania/2026",
+     "url": "https://gg.festapp.io/small_1792509664_small_adieu_monde_cruel.png"
+    },
+    "billets": "https://festivalcinemania.ticketpro.ca/fr/pages",
+    "liens": [
+     {
+      "type": "bande-annonce",
+      "url": "https://www.youtube.com/watch?v=z7QEGX9dJz4",
+      "source": "tmdb"
+     }
+    ],
+    "ics": "2026-11-09-adieu-monde-cruel-31f10c"
+   },
+   "accroche": "",
+   "accroche_en": "",
+   "mode": "connu"
+  },
+  {
+   "k": "danse",
+   "e": {
+    "date": "2026-11-10",
+    "heure": "20:00",
+    "discipline": "danse",
+    "titre": "Sans quoi nous crèverons - Compagnie Virginie Brunelle",
+    "lieu": "Bibliothèque Frontenac",
+    "url": "https://montreal.ca/evenements/sans-quoi-nous-creverons-compagnie-virginie-brunelle-120485",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "ville",
+    "resume": "Découvrez le regard incisif de Virginie Brunelle : une chorégraphie où 5 danseurs unis lancent un cri libérateur contre l’érosion de notre condition humaine.",
+    "prix": "Gratuit",
+    "billets": "https://frontenac.tuxedobillet.com/Janine-Sutto/sans-quoi-nous-creverons",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/qw5foreipo6x55z4vobk.jpg",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/qw5foreipo6x55z4vobk.jpg",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/sans-quoi-nous-creverons-compagnie-virginie-brunelle-120485"
+    },
+    "resume_en": "Discover the incisive vision of Virginie Brunelle: a choreography in which 5 united dancers let out a liberating cry against the erosion of our human condition.",
+    "ics": "2026-11-10-sans-quoi-nous-creverons-compagnie-virginie-brunel-13e9f4"
+   },
+   "accroche": "Cinq danseurs lancent un cri libérateur contre l'érosion de notre condition humaine.",
+   "accroche_en": "Five dancers raise a liberating cry against the erosion of our human condition.",
+   "mode": "découverte"
+  },
+  {
+   "k": "expo",
+   "e": {
+    "date": "2026-11-11",
+    "heure": "17:00",
+    "discipline": "expo",
+    "titre": "Vernissage : Leila Zelli, The Streets Bear Their Footsteps",
+    "lieu": "Pierre-François Ouellette art contemporain",
+    "url": "https://www.pfoac.com/en/exhibitions/283-leila-zelli-les-rues-portent-leurs-pas/overview/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "galeries",
+    "resume": "Vernissage de l'exposition de Leila Zelli, en présence de l'artiste, mêlant dessins, vidéos et sculptures sur la liberté des femmes.",
+    "prix": "Gratuit",
+    "affiche": {
+     "url": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg",
+     "credit": "pfoac.com",
+     "lien": "https://www.pfoac.com/en/exhibitions/283-leila-zelli-les-rues-portent-leurs-pas/overview/"
+    },
+    "resume_en": "Opening of Leila Zelli's exhibition, in the presence of the artist, blending drawings, videos and sculptures on women's freedom.",
+    "ics": "2026-11-11-vernissage-leila-zelli-the-streets-bear-their-foot-002343"
+   },
+   "accroche": "Dessins, vidéos et sculptures sur la liberté des femmes, en présence de l'artiste.",
+   "accroche_en": "Drawings, videos and sculptures on women's freedom, with the artist present.",
+   "mode": "connu"
+  },
+  {
+   "k": "theatre",
+   "e": {
+    "date": "2026-11-12",
+    "heure": "20:00",
+    "discipline": "theatre",
+    "titre": "Neige sur Abidjan",
+    "lieu": "Salle Pauline-Julien",
+    "url": "https://pauline-julien.com/artistes/neige-sur-abidjan/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Pièce de théâtre se déroulant à Abidjan, proposée dans la série Théâtre.",
+    "billets": "https://pauline-julien.tuxedobillet.com/",
+    "affiche": {
+     "url": "https://pauline-julien.com/wp-content/uploads/2026/01/TH_NeigesurAbidjan@Valerie-Remise.jpg",
+     "credit": "pauline-julien.com",
+     "lien": "https://pauline-julien.com/artistes/neige-sur-abidjan/"
+    },
+    "prix": "20 à 42 $",
+    "resume_en": "Play set in Abidjan, presented in the Théâtre series.",
+    "ics": "2026-11-12-neige-sur-abidjan-a0da4e"
+   },
+   "accroche": "Une pièce qui se déroule à Abidjan, dans la série Théâtre.",
+   "accroche_en": "A play set in Abidjan, part of the Théâtre series.",
+   "mode": "découverte"
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-11-13",
+    "heure": "21:00",
+    "discipline": "musique",
+    "titre": "Jonathan Personne",
+    "lieu": "Foufounes Électriques",
+    "url": "https://festapp.io/festivals/coup-de-coeur-francophone/2026",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "festival": "coupdecoeur",
+    "resume": "Concert shoegaze du Coup de coeur francophone, avec Coup Dur en première partie.",
+    "style": "pop",
+    "affiche": {
+     "credit": "festapp.io",
+     "lien": "https://festapp.io/festivals/coup-de-coeur-francophone/2026",
+     "url": "https://gg.festapp.io/6b01dde4-eeff-43c2-bf40-68d829afd8fa"
+    },
+    "billets": "https://lepointdevente.com/billets/ccf26-passepro?lang=fr",
+    "liens": [
+     {
+      "type": "bandcamp",
+      "url": "https://jonathanpersonne.bandcamp.com/",
+      "source": "musicbrainz",
+      "nom": "Jonathan Personne"
+     }
+    ],
+    "resume_en": "Shoegaze concert from Coup de coeur francophone, with Coup Dur opening.",
+    "ics": "2026-11-13-jonathan-personne-7e86c7"
+   },
+   "accroche": "Shoegaze avec Coup Dur en première partie, du Coup de coeur francophone.",
+   "accroche_en": "Shoegaze with Coup Dur opening, from the Coup de coeur francophone.",
+   "mode": "tête d'affiche"
+  },
+  {
+   "k": "jeune",
+   "e": {
+    "date": "2026-11-14",
+    "heure": "14:00",
+    "discipline": "jeune",
+    "titre": "La jeune fille qui pleurait des perles de Chris lavis et Maciek szczerbowski",
+    "lieu": "Centre culturel et communautaire Henri-Lemieux",
+    "url": "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343",
+    "complet": false,
+    "jeunePublic": true,
+    "source": "ville",
+    "resume": "Cinéma, culture, LaSalle, billetterie",
+    "prix": "Gratuit",
+    "billets": "https://lepointdevente.com/billets/o98261114001?lang=fr",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343"
+    },
+    "sous": "cinema",
+    "liens": [
+     {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=FMqVSk57934?enablejsapi=1",
+      "source": "page"
+     },
+     {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=RIIh9WPCdzA?enablejsapi=1",
+      "source": "page"
+     }
+    ],
+    "resume_en": "Cinema, culture, LaSalle, box office",
+    "ics": "2026-11-14-la-jeune-fille-qui-pleurait-des-perles-de-chris-la-7c7907"
+   },
+   "accroche": "Une création de Chris Lavis et Maciek Szczerbowski à découvrir sur place.",
+   "accroche_en": "A work by Chris Lavis and Maciek Szczerbowski to discover in person.",
+   "mode": "connu"
+  },
+  {
+   "k": "humour",
+   "e": {
+    "date": "2026-11-15",
+    "heure": null,
+    "discipline": "humour",
+    "titre": "La LIM – Ligue d'improvisation montréalaise",
+    "lieu": "Cabaret Lion d'Or",
+    "url": "https://www.mtl.org/en/what-to-do/festivals-and-events/lim-improvisation-lion-d-or",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "recurrents",
+    "resume": "Chaque dimanche, à confirmer auprès du lieu (vérifié le 2026-10-30).",
+    "aussi": [
+     "theatre"
+    ],
+    "affiche": {
+     "url": "https://cabaretliondor.com/ldo-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
+     "credit": "cabaretliondor.com",
+     "lien": "https://cabaretliondor.com/",
+     "salle": true
+    },
+    "resume_en": "Every Sunday, to be confirmed with the venue (checked 2026-10-30).",
+    "ics": "2026-11-15-la-lim-ligue-d-improvisation-montrealaise-c387f6"
+   },
+   "accroche": "Improvisation en direct chaque dimanche ; horaire à confirmer auprès du lieu.",
+   "accroche_en": "Live improv every Sunday; showtime to be confirmed with the venue.",
+   "mode": "connu"
+  }
+ ],
+ "festivals": [
+  {
+   "nom": "ELEKTRA",
+   "debut": "2026-10-15",
+   "fin": "2026-11-15",
+   "n": 0,
+   "coul": "#F6E08A",
+   "en_cours": true
+  },
+  {
+   "nom": "Monde Arabe",
+   "debut": "2026-10-30",
+   "fin": "2026-11-15",
+   "n": 12,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Festival de films CINEMANIA",
+   "debut": "2026-11-02",
+   "fin": "2026-11-15",
+   "n": 121,
+   "coul": "#2DAA55",
+   "en_cours": true
+  },
+  {
+   "nom": "Festival Bach",
+   "debut": "2026-11-04",
+   "fin": "2026-12-09",
+   "n": 3,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Coup de cœur francophone",
+   "debut": "2026-11-05",
+   "fin": "2026-11-15",
+   "n": 43,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Cinéma israélien",
+   "debut": "2026-11-15",
+   "fin": "2026-11-29",
+   "n": 0,
+   "coul": "#2DAA55",
+   "en_cours": true
+  },
+  {
+   "nom": "Mundial Montréal",
+   "debut": "2026-11-17",
+   "fin": "2026-11-21",
+   "n": 0,
+   "coul": "#3A75F0",
+   "en_cours": false
+  }
+ ],
+ "salle": {
+  "lieu": "Théâtre Plaza",
+  "events": [
+   {
+    "date": "2026-11-11",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Convivencia",
+    "lieu": "Théâtre Plaza",
+    "url": "https://festivalarabe.com/spectacle/convivencia",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "resume": "Voyage poétique et musical qui relie l'Espagne médiévale aux traditions séfarades, mozarabes et arabo-andalouses, porté par une quête d'identité.",
+    "prix": "42 $",
+    "billets": "https://lepointdevente.com/billets/mnr261111001?lang=fr",
+    "festival": "fma",
+    "style": "classique",
+    "affiche": {
+     "url": "https://theatreplaza.ca/wp-content/uploads/2026/09/Convivencia.png",
+     "credit": "theatreplaza.ca",
+     "lien": "https://theatreplaza.ca/evenements/convivencia/"
+    },
+    "resume_en": "A poetic and musical journey linking medieval Spain to Sephardic, Mozarabic and Arab-Andalusian traditions, driven by a quest for identity.",
+    "ics": "2026-11-11-convivencia-f904f8"
+   },
+   {
+    "date": "2026-11-12",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Al Qahwa",
+    "lieu": "Théâtre Plaza",
+    "url": "https://festivalarabe.com/spectacle/al-qahwa",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "resume": "Un ensemble torontois mêle chant arabe classique, poésie et rythmes populaires égyptiens dans une soirée inspirée des cafés du Moyen-Orient.",
+    "prix": "45,92 $",
+    "billets": "https://lepointdevente.com/billets/mnr261112001?lang=fr",
+    "festival": "fma",
+    "style": "classique",
+    "affiche": {
+     "credit": "festivalarabe.com",
+     "lien": "https://festivalarabe.com/spectacle/al-qahwa",
+     "url": "https://festivalarabe.com/assets/events/al-qahwa_2026-09-23-143525_kjge.png"
+    },
+    "liens": [
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/7hKGeaYihwIQmAKfhzAqwW",
+      "source": "wikidata",
+      "nom": "Al Qahwa"
+     }
+    ],
+    "resume_en": "A Toronto ensemble blends classical Arabic singing, poetry and popular Egyptian rhythms in an evening inspired by Middle Eastern cafés.",
+    "ics": "2026-11-12-al-qahwa-440b8f"
+   },
+   {
+    "date": "2026-11-13",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Atomic Mummus",
+    "lieu": "Théâtre Plaza",
+    "url": "https://theatreplaza.ca/evenements/atomic-mummus/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Spectacle musical du groupe Atomic Mummus au Théâtre Plaza.",
+    "billets": "https://lepointdevente.com/billets/7j0261113001?lang=fr",
+    "affiche": {
+     "url": "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-13-novembre-2026-V2.jpg",
+     "credit": "theatreplaza.ca",
+     "lien": "https://theatreplaza.ca/evenements/atomic-mummus/",
+     "petit": "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-13-novembre-2026-V2-1024x572.jpg"
+    },
+    "resume_en": "Musical show by the band Atomic Mummus at Théâtre Plaza.",
+    "ics": "2026-11-13-atomic-mummus-f67d24"
+   },
+   {
+    "date": "2026-11-14",
+    "heure": "20:30",
+    "discipline": "musique",
+    "titre": "OPJV – Festival Gros Joueurs",
+    "lieu": "Théâtre Plaza",
+    "url": "https://theatreplaza.ca/evenements/opjv-festival-gros-joueurs/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Soirée du festival Gros Joueurs, présentée par l'OPJV au Théâtre Plaza.",
+    "billets": "https://lepointdevente.com/billets/opjv-grosjoueurs?lang=fr",
+    "affiche": {
+     "url": "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-14-novembre-2026-V2.jpeg",
+     "credit": "theatreplaza.ca",
+     "lien": "https://theatreplaza.ca/evenements/opjv-festival-gros-joueurs/"
+    },
+    "liens": [
+     {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=TiNoFVBFBgo?enablejsapi=1",
+      "source": "page"
+     }
+    ],
+    "resume_en": "Gros Joueurs festival night, presented by l'OPJV at Théâtre Plaza.",
+    "ics": "2026-11-14-opjv-festival-gros-joueurs-f8babd"
+   }
+  ],
+  "quartier": "Petite-Patrie"
+ },
+ "total": 661,
+ "expos": 134,
+ "_statut": "ok",
+ "_issue": null
+}
