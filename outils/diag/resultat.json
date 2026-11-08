@@ -1,62 +1,52 @@
 {
- "https://omniwebticketing.com/robots.txt": {
-  "statut": 200,
-  "octets": 59,
-  "fichier": "robots.txt"
- },
- "https://omniwebticketing.com/cinematheque/": {
+ "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343": {
   "simple": {
-   "erreur": "503 Server Error: Service Unavailable for url: https://omniwebticketing.com/cinematheque/"
+   "erreur": "403 Client Error: Forbidden for url: https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343"
   },
   "navigateur_images": {
-   "og": null,
+   "og": "https://res.cloudinary.com/villemontreal/image/upload/w_1200,h_630,c_fill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg",
    "img": [
-    "../files-theatre-cinematheque/images/Main_Banner.png | Logo",
-    "../files-theatre-cinematheque/images/posters/lotsr_affiche_720x1080-fr-1790705967.png | Poster",
-    "../files-theatre-cinematheque/images/posters/naza_onesheet_fr_748x1080-fr-1792094207.png | Poster"
+    "https://cdn-cookieyes.com/assets/images/close.svg | ",
+    "https://res.cloudinary.com/villemontreal/image/upload/w_1200,ar_4:3,c_fill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg | La jeune fille qui pleurait des perles",
+    "https://res.cloudinary.com/villemontreal/image/upload/w_560,h_140,c_limit/f_auto,dpr_auto,q_auto/v1/portail/dki0hgfjfzp6gdlvs9g1.png | Logo de Ciné-Quartier",
+    "https://res.cloudinary.com/villemontreal/image/upload/w_128,ar_1:1,c_fill/f_auto,dpr_auto,q_auto/v1/portail/ywzltogwcb0x5cbpagrm.jpg | ",
+    "https://res.cloudinary.com/villemontreal/image/upload/w_128,ar_1:1,c_fill/f_auto,dpr_auto,q_auto/v1/portail/fehy3miwyrh9eidro3ub.jpg | ",
+    "https://res.cloudinary.com/villemontreal/image/upload/w_128,ar_1:1,c_fill/f_auto,dpr_auto,q_auto/v1/portail/gsecanxqnfy7r3evuxkx.png | ",
+    "https://www.facebook.com/tr?id=118796892154318&ev=PageView&noscript=1 | "
    ],
-   "iframes": []
-  },
-  "navigateur": {
-   "taille": 315,
-   "texte": "Accueil <https://www.cinematheque.qc.ca/>\nBilletterie <https://omniwebticketing.com/cinematheque/>\nRécupérer transactions <https://omniwebticketing.com/cinematheque/?confretrieval=0>\nLes retardataires ne seront plus admis.es dans nos salles de projections   /   Latecomers will no longer be admitted in our theaters",
-   "jsonld": [],
-   "heures": [],
-   "liens": [
-    "https://omniwebticketing.com/cinematheque/",
-    "https://omniwebticketing.com/cinematheque/?confretrieval=0"
-   ],
-   "menu": [
-    "Billetterie → https://omniwebticketing.com/cinematheque/",
-    "Récupérer transactions → https://omniwebticketing.com/cinematheque/?confretrieval=0"
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-TFDV82X"
    ]
-  }
- },
- "https://omniwebticketing.com/cinematheque/?schdate=2026-11-12": {
-  "simple": {
-   "erreur": "503 Server Error: Service Unavailable for url: https://omniwebticketing.com/cinematheque/?schdate=2026-11-12"
-  },
-  "navigateur_images": {
-   "og": null,
-   "img": [
-    "../files-theatre-cinematheque/images/Main_Banner.png | Logo",
-    "../files-theatre-cinematheque/images/posters/naza_onesheet_fr_748x1080-fr-1792094207.png | Poster",
-    "../files-theatre-cinematheque/images/posters/violence_affiche_747x1080-fr-1793643694.png | Poster"
-   ],
-   "iframes": []
   },
   "navigateur": {
-   "taille": 315,
-   "texte": "Accueil <https://www.cinematheque.qc.ca/>\nBilletterie <https://omniwebticketing.com/cinematheque/>\nRécupérer transactions <https://omniwebticketing.com/cinematheque/?confretrieval=0>\nLes retardataires ne seront plus admis.es dans nos salles de projections   /   Latecomers will no longer be admitted in our theaters",
-   "jsonld": [],
-   "heures": [],
+   "taille": 9941,
+   "texte": "La jeune fille qui pleurait des perles de Chris lavis et Maciek szczerbowski | Ville de Montréal\nNous utilisons des témoins\nNous avons besoin de votre consentement pour recueillir certains témoins (cookies) que nous utilisons pour améliorer votre expérience sur notre site et diffuser des contenus et des publicités personnalisés. \nPolitique relative aux fichiers témoins <https://montreal.ca/sujets/politique-de-confidentialite>\nPersonnaliser\nTout accepter\nPréférences en matière de consentement\nLe respect de votre vie privée est important pour nous. Nous utilisons certains fichiers témoins pour personnaliser nos contenus et améliorer continuellement votre expérience numérique. D'autres sont indispensables au bon fonctionnement et à la sécurité de nos sites et ne peuvent pas être désactivés.... \nVoir plus\nEssentiels\nActif par défaut\nCes témoins sont indispensables pour exécuter les fonctions de base d’un site web. Ils ne conservent aucune donnée personnelle.\nFichier témoin\n__cf_bm\nDurée\n30 minute\nDescription\nCloudflare a placé ce témoin pour prendre en charge la gestion des robots Cloudflare.\nFichier témoin\ncookieyes-consent\nDurée\n1 an\nDescription\nCookieYes place ce témoin pour mémoriser les préférences des utilisateurs en matière de consentement afin que leurs préférences soient respectées lors des visites ultérieures de ce site. Il ne collecte ni ne stocke aucune information personnelle sur les visiteurs du site.\nFonctionnels\nLes témoins fonctionnels permettent d'exécuter certaines fonctionnalités comme le partage du contenu sur les réseaux sociaux, la collecte de commentaires et d'autres fonctionnalités tierces.\nFichier témoin\nportal_recent_boroughs\nDurée\nsession\nDescription\nCe fichier témoin permet de garder en mémoire le dernier arrondissement consulté.\nFichier témoin\nportal_selected_borough\nDurée\nsession\nDescription\nCe fichier témoin permet de garder en mémoire l'arrondissement sélectionné.\nAnalytiques\nCes témoins nous permettent d'analyser la navigation sur nos sites afin d'améliorer leur fonctionnement.\nFichier témoin\ncebs\nDurée\nsession\nDescription\nCrazyegg utilise ce témoin pour retracer la session utilisateur en cours.\nFichier témoin\nYSC\nDurée\nsession\nDescription\nYouTube place ce témoin pour suivre les vues des vidéos intégrées dans les pages YouTube.\nFichier témoin\n_ce.gtld\nDurée\nsession\nDescription\nCrazzegg installe ce fichier pour identifier le domaine de premier niveau.\nFichier témoin\nCONSENT\nDurée\n2 an\nDescription\nYouTube place ce témoin par le biais des vidéos YouTube intégrées et enregistre des données statistiques anonymes.\nFichier témoin\n_fbc\nDurée\n3 mois\nDescription\nFacebook place ce fichier pour mémoriser la dernière visite.\nFichier témoin\nvuid\nDurée\n1 an 1 mois 4 jour\nDescription\nVimeo installe ce témoin pour collecter des informations de suivi en définissant un identifiant unique pour intégrer des vidéos sur le site web.\nFichier témoin\n_ga\nDurée\n1 an 1 mois 4 jour\nDescription\nGoogle Analytics utilise ce témoin pour calculer les",
+   "jsonld": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Event\",\"name\":\"La jeune fille qui pleurait des perles de Chris lavis et Maciek szczerbowski\",\"description\":\"<p>L’animation <em>La jeune fille qui pleurait des perles,</em> gagnant de l'oscar du meilleur court métrage d'animation en 2026.</p>\",\"image\":\"https://res.cloudinary.com/villemontreal/image/upload/w_1920,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg\",\"url\":\"https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343\",\"eventAttendanceMode\":\"OfflineEventAttendanceMode\",\"location\":{\"@type\":\"Place\",\"name\":\"Centre culturel et communautaire Henri-Lemieux\",\"url\":\"https://montreal.ca/lieux/centre-culturel-et-communautaire-henri-lemieux\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"7644, rue Édouard\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H8P1T3\",\"addressRegion\":\"QC\",\"addressCountry\":\"CA\"}},\"startDate\":\"2026-11-14T14:00:00-05:00\",\"endDate\":\"2026-11-14T14:30:00-05:00\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"offers\":{\"@type\":\"Offer\",\"price\":0,\"priceCurrency\":\"CAD\"}}"
+   ],
+   "heures": [
+    "peur de l’eau de Gints Zilbalodis Samedi 14 novembre 2026 à 14 h 00 Centre culturel et c",
+    "ole : Ciné-jeunes : Hitpig le film Jeudi 19 novembre 2026 à 16 h 15 Bibliothèque L'Octog",
+    "ppel du Nord de Michèle Stephenson Mardi 24 novembre 2026 à 19 h 00 Centre culturel et c"
+   ],
    "liens": [
-    "https://omniwebticketing.com/cinematheque/",
-    "https://omniwebticketing.com/cinematheque/?confretrieval=0"
+    "https://lepointdevente.com/billets/o98261114001?lang=fr",
+    "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343"
    ],
    "menu": [
-    "Billetterie → https://omniwebticketing.com/cinematheque/",
-    "Récupérer transactions → https://omniwebticketing.com/cinematheque/?confretrieval=0"
+    "Accéder au contenu → https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343#shell-main-content",
+    "Journal d'activités → https://montreal.ca/mon-compte-2/mon-fil-dactualites",
+    "Journal d'activités → https://montreal.ca/mon-compte-2/mon-fil-dactualites",
+    "Événements → https://montreal.ca/evenements",
+    "Voir la carte ﻿ → https://montreal.ca/#section-mapEvent002",
+    "Billetterie → https://lepointdevente.com/billets/o98261114001?lang=fr",
+    "Flow, le chat qui n’avait plus peur de l’eau de Gi → https://montreal.ca/evenements/flow-le-chat-qui-navait-plus-peur-de-leau-de-gints-zilbalodis-117345",
+    "On s'amuse après l'école : Ciné-jeunes : Hitpig le → https://montreal.ca/evenements/samuse-apres-lecole-cine-jeunes-hitpig-le-film-117773",
+    "L’appel du Nord de Michèle Stephenson Mardi 24 nov → https://montreal.ca/evenements/lappel-du-nord-de-michele-stephenson-117348",
+    "Tous nos événements → https://montreal.ca/evenements?orderBy=dc_temporal.start&dc_coverage.boroughs.code=LSL",
+    "Maisons de la culture → https://montreal.ca/evenements?mtl_content.evenements.tags.code=PR004&orderBy=dc_title",
+    "Famille → https://montreal.ca/evenements?mtl_content.evenements.target_audience.code=CLI04&orderBy=dc_title",
+    "Cinéma → https://montreal.ca/evenements?mtl_content.evenements.event_type.subType.code=TEV11&orderBy=dc_title"
    ]
   }
  }
