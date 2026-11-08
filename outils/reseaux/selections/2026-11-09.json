@@ -77,8 +77,8 @@
     "resume": "Vernissage de l'exposition de Leila Zelli, en présence de l'artiste, mêlant dessins, vidéos et sculptures sur la liberté des femmes.",
     "prix": "Gratuit",
     "affiche": {
-     "url": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg",
-     "credit": "pfoac.com",
+     "url": "https://raw.githubusercontent.com/Armando090909/calendrier-culturel-mtl/main/docs/affiches/leila-zelli.jpg",
+     "credit": "@leila.zelli",
      "lien": "https://www.pfoac.com/en/exhibitions/283-leila-zelli-les-rues-portent-leurs-pas/overview/"
     },
     "resume_en": "Opening of Leila Zelli's exhibition, in the presence of the artist, blending drawings, videos and sculptures on women's freedom.",
@@ -209,10 +209,9 @@
      "theatre"
     ],
     "affiche": {
-     "url": "https://cabaretliondor.com/ldo-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
-     "credit": "cabaretliondor.com",
-     "lien": "https://cabaretliondor.com/",
-     "salle": true
+     "url": "https://raw.githubusercontent.com/Armando090909/calendrier-culturel-mtl/main/docs/affiches/lim.jpg",
+     "credit": "@lim_impro",
+     "lien": "https://ccmtl.ca"
     },
     "resume_en": "Every Sunday, to be confirmed with the venue (checked 2026-10-30).",
     "ics": "2026-11-15-la-lim-ligue-d-improvisation-montrealaise-c387f6"
@@ -392,79 +391,29 @@
  "expos": 134,
  "tags": {
   "cinema": {
-   "artiste": {
-    "compte": "felixdegivry",
-    "sur": true,
-    "source": "https://www.instagram.com/remembers_productions/",
-    "qui": "Félix de Givry"
-   },
    "ajouts": [
     "felixdegivry",
     "festivalcinemania"
    ]
   },
   "danse": {
-   "artiste": {
-    "compte": "compagnievirginiebrunelle",
-    "sur": true,
-    "source": "https://ladansesurlesroutes.com/en/artistes-membres/compagnie-virginie-brunelle/",
-    "qui": "Compagnie Virginie Brunelle"
-   },
    "ajouts": [
     "compagnievirginiebrunelle"
    ]
   },
   "expo": {
-   "salle": {
-    "compte": "galeriepfoac",
-    "sur": true,
-    "source": "https://www.pfoac.com/"
-   },
-   "artiste": {
-    "compte": "leila.zelli",
-    "sur": true,
-    "source": "https://www.instagram.com/leila.zelli/",
-    "qui": "Leila Zelli"
-   },
    "ajouts": [
     "galeriepfoac",
     "leila.zelli"
    ]
   },
   "theatre": {
-   "salle": {
-    "compte": "sallepaulinejulien",
-    "sur": true,
-    "source": "https://pauline-julien.com/"
-   },
-   "artiste": {
-    "compte": "orangenoyee",
-    "sur": true,
-    "source": "https://vimeo.com/orangenoyee",
-    "qui": "Orange Noyée (compagnie de production de Neige sur Abidjan, auteur : Iannicko N'"
-   },
    "ajouts": [
     "sallepaulinejulien",
     "jesuiscommetoutlemonde"
    ]
   },
   "musique": {
-   "salle": {
-    "compte": "foufouneselectriques",
-    "sur": true,
-    "source": "https://foufouneselectriques.com/"
-   },
-   "artiste": {
-    "compte": "jonathan_personne",
-    "sur": true,
-    "source": "https://www.youtube.com/@jonathanpersonne",
-    "qui": "Jonathan Personne"
-   },
-   "festival": {
-    "compte": "coupdecoeurf",
-    "sur": true,
-    "source": "https://coupdecoeur.ca"
-   },
    "ajouts": [
     "foufouneselectriques",
     "jonathan_personne",
@@ -478,11 +427,6 @@
    ]
   },
   "humour": {
-   "salle": {
-    "compte": "cabaretliondor",
-    "sur": true,
-    "source": "https://cabaretliondor.com/"
-   },
    "ajouts": [
     "cabaretliondor",
     "lim_impro"

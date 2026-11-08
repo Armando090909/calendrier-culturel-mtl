@@ -2,3 +2,5 @@
 # et associée à l'événement par sa date et un mot de son titre. Elle remplace toute autre image.
 # « aussi » (facultatif) : catégories ajoutées à l'événement (ex. [cinema]).
 - {date: 2026-11-03, titre_contient: "Chronique d'une ville", image: "affiches/chronique-d-une-ville.jpg", aussi: [cinema]}
+- {date: 2026-11-15, titre_contient: "La LIM", image: "affiches/lim.jpg"}
+- {date: 2026-11-11, titre_contient: "Leila Zelli", image: "affiches/leila-zelli.jpg"}
