@@ -14,6 +14,7 @@ import time
 import os
 import re
 import sys
+import signal
 import traceback
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -303,6 +304,14 @@ def traduire_resumes(elements: list[dict]) -> None:
           f"{sum(1 for e in elements if e.get('resume_en'))} éléments avec résumé anglais.")
 
 
+class SourceTropLongue(Exception):
+    pass
+
+
+def _trop_long(*_):
+    raise SourceTropLongue("source abandonnée après 10 minutes sans fin de lecture")
+
+
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
@@ -351,7 +360,14 @@ def main() -> int:
             continue
         try:
             connecteurs.DIAG.clear()
-            e, sr = CONNECTEURS[s["type"]](s, aujourd, fin)
+            # garde-fou : une source qui ne répond plus (page ou navigateur bloqué) est abandonnée après 10 minutes,
+            # et sa dernière lecture réussie est reprise, au lieu de bloquer toute la collecte
+            signal.signal(signal.SIGALRM, _trop_long)
+            signal.alarm(600)
+            try:
+                e, sr = CONNECTEURS[s["type"]](s, aujourd, fin)
+            finally:
+                signal.alarm(0)
             # Page momentanément illisible (ex. « 504 Gateway Time-out » de la billetterie) : on garde la dernière
             # lecture réussie de moins de 7 jours plutôt que de faire disparaître tous ses spectacles
             if not e and not sr and any("illisible" in d for d in connecteurs.DIAG) and fichier_cache.exists():
