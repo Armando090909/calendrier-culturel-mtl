@@ -415,10 +415,13 @@ def _og_image(page):
         return ""
 
 
+IMAGE_GENERIQUE = re.compile(r"(?i)default[-_]?(user|image|avatar|profile)|placeholder|no[-_]?image|avatar[-_]default|blank\.(png|jpe?g)")
+
+
 def _affiche(e):
     aff = e.get("affiche") or {}
     img, credit = aff.get("url") or "", aff.get("credit") or ""
-    if any(h in img for h in HOTES_SANS_AFFICHE):
+    if any(h in img for h in HOTES_SANS_AFFICHE) or IMAGE_GENERIQUE.search(img):
         img = credit = ""
     if not img and aff.get("og"):
         img, credit = _og_image(aff["og"]), aff.get("credit") or ""
@@ -449,10 +452,12 @@ h2{{margin:0;font-size:{min(tt, 92)}px;line-height:.95;font-weight:900;letter-sp
 .bas .lieu{{font-size:32px;font-weight:700;line-height:1.1}}"""
     if not img:
         css += "\n.vis{display:none}\nh2{font-size:%dpx}" % _taille_titre(e["titre"], 130)
+    # image qui ne se charge pas (site qui refuse, adresse morte) : même mise en page que sans image
+    css += "\n.sansimg .vis{display:none}\n.sansimg h2{font-size:%dpx}" % _taille_titre(e["titre"], 130)
     decouv = f'<span class="dec">{T("découverte", "discovery")}</span>' if p.get("mode") == "découverte" else ""
     # l'affiche garde ses proportions et prend le plus de place possible dans le cadre (même une petite image)
     ajuste = "var w=this.naturalWidth,h=this.naturalHeight,r=Math.min(936/w,600/h);this.style.width=(w*r)+'px';this.style.height=(h*r)+'px'"
-    vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="" onload="{ajuste}">{decouv}'
+    vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="" onload="{ajuste}" onerror="document.body.classList.add(&#39;sansimg&#39;)">{decouv}'
            + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div></div>")
     return page2(1080, 1350, f"""{vis}<div class="in">
 <div class="l1"><span class="dis">{escape(nom_disc(k))}</span><span class="hr">{_heure(e)}</span></div>
