@@ -52,7 +52,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install playwright==1.48.0 requests pillow imageio-ffmpeg
+      - run: pip install -r collecteur/requirements.txt pillow imageio-ffmpeg  # pyyaml, bs4… : identification des comptes
       - uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
@@ -89,6 +89,7 @@ jobs:
           # demande-envoi-apercu.txt : envoyer l'aperçu du dimanche tout de suite (rien n'est publié)
           if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-envoi-apercu.txt"; then
             export ETAPE=apercu
+            grep -qi forcer outils/reseaux/demande-envoi-apercu.txt && export FORCER=1  # refaire l'aperçu déjà envoyé
           fi
           python outils/publier.py
       - name: Enregistrer
