@@ -6757,6 +6757,39 @@
 "jeunePublic": true,
 "source": "salles",
 "sous": "theatre"
+},
+{
+"date": "2026-11-14",
+"heure": "14:00",
+"discipline": "jeune",
+"titre": "La jeune fille qui pleurait des perles de Chris lavis et Maciek szczerbowski",
+"lieu": "Centre culturel et communautaire Henri-Lemieux",
+"url": "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343",
+"complet": false,
+"jeunePublic": true,
+"source": "manuel",
+"resume": "Cinéma, culture, LaSalle, billetterie",
+"prix": "Gratuit",
+"billets": "https://lepointdevente.com/billets/o98261114001?lang=fr",
+"affiche": {
+"url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg",
+"petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/lpijoiiq12omed64rgrh.jpg",
+"credit": "Ville de Montréal",
+"lien": "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343"
+},
+"sous": "cinema",
+"liens": [
+{
+"type": "youtube",
+"url": "https://www.youtube.com/watch?v=FMqVSk57934?enablejsapi=1",
+"source": "page"
+},
+{
+"type": "youtube",
+"url": "https://www.youtube.com/watch?v=RIIh9WPCdzA?enablejsapi=1",
+"source": "page"
+}
+]
 }
 ],
 "expos": [
