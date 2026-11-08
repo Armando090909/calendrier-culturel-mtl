@@ -30,8 +30,8 @@
     ],
     "ics": "2026-11-09-adieu-monde-cruel-31f10c"
    },
-   "accroche": "Un film à l'affiche du Quartier Latin, à voir en salle lundi.",
-   "accroche_en": "A film showing at the Quartier Latin, to catch on the big screen Monday.",
+   "accroche": "",
+   "accroche_en": "",
    "mode": "connu"
   },
   {
@@ -58,8 +58,8 @@
     "resume_en": "Discover the incisive vision of Virginie Brunelle: a choreography in which 5 united dancers let out a liberating cry against the erosion of our human condition.",
     "ics": "2026-11-10-sans-quoi-nous-creverons-compagnie-virginie-brunel-13e9f4"
    },
-   "accroche": "Cinq danseurs lancent un cri libérateur contre l'érosion de notre condition humaine.",
-   "accroche_en": "Five dancers raise a liberating cry against the erosion of our human condition.",
+   "accroche": "Tu verras cinq danseurs unis lancer un cri libérateur contre l'érosion de notre condition.",
+   "accroche_en": "Five united dancers unleash a liberating cry against the erosion of our human condition.",
    "mode": "découverte"
   },
   {
@@ -111,8 +111,8 @@
     "resume_en": "Play set in Abidjan, presented in the Théâtre series.",
     "ics": "2026-11-12-neige-sur-abidjan-a0da4e"
    },
-   "accroche": "Une pièce ancrée à Abidjan, présentée dans la série Théâtre.",
-   "accroche_en": "A play set in Abidjan, presented in the Théâtre series.",
+   "accroche": "Une pièce qui te transporte à Abidjan, dans la série Théâtre.",
+   "accroche_en": "A play that takes you to Abidjan, part of the Théâtre series.",
    "mode": "découverte"
   },
   {
@@ -147,8 +147,8 @@
     "resume_en": "Shoegaze concert from Coup de coeur francophone, with Coup Dur opening.",
     "ics": "2026-11-13-jonathan-personne-7e86c7"
    },
-   "accroche": "Du shoegaze en tête d'affiche, avec Coup Dur en première partie.",
-   "accroche_en": "Shoegaze headliner, with Coup Dur opening.",
+   "accroche": "Shoegaze du Coup de coeur francophone, avec Coup Dur en première partie.",
+   "accroche_en": "Shoegaze from the Coup de coeur francophone, with Coup Dur opening.",
    "mode": "tête d'affiche"
   },
   {
@@ -157,7 +157,7 @@
     "date": "2026-11-14",
     "heure": "14:00",
     "discipline": "jeune",
-    "titre": "La jeune fille qui pleurait des perles de Chris lavis et Maciek szczerbowski",
+    "titre": "La jeune fille qui pleurait des perles",
     "lieu": "Centre culturel et communautaire Henri-Lemieux",
     "url": "https://montreal.ca/evenements/la-jeune-fille-qui-pleurait-des-perles-de-chris-lavis-et-maciek-szczerbowski-117343",
     "complet": false,
@@ -188,8 +188,8 @@
     "resume_en": "Cinema, culture, LaSalle, box office",
     "ics": "2026-11-14-la-jeune-fille-qui-pleurait-des-perles-de-chris-la-7c7907"
    },
-   "accroche": "Une proposition jeunesse au Centre Henri-Lemieux, à LaSalle.",
-   "accroche_en": "A youth program at the Centre Henri-Lemieux, in LaSalle.",
+   "accroche": "Une œuvre jeunesse autour d'une jeune fille qui pleurait des perles.",
+   "accroche_en": "A youth work about a young girl who cried pearls.",
    "mode": "connu"
   },
   {
@@ -217,8 +217,8 @@
     "resume_en": "Every Sunday, to be confirmed with the venue (checked 2026-10-30).",
     "ics": "2026-11-15-la-lim-ligue-d-improvisation-montrealaise-c387f6"
    },
-   "accroche": "Des matchs d'improvisation où tout se joue sur le moment, chaque dimanche.",
-   "accroche_en": "Improv matches where everything is played in the moment, every Sunday.",
+   "accroche": "Chaque dimanche, à confirmer auprès du lieu (vérifié le 2026-10-30).",
+   "accroche_en": "Every Sunday, to be confirmed with the venue (verified on 2026-10-30).",
    "mode": "connu"
   }
  ],
@@ -407,8 +407,8 @@
    "artiste": {
     "compte": "compagnievirginiebrunelle",
     "sur": true,
-    "source": "https://vimeo.com/683854955",
-    "qui": "Virginie Brunelle (Compagnie Virginie Brunelle)"
+    "source": "https://ladansesurlesroutes.com/en/artistes-membres/compagnie-virginie-brunelle/",
+    "qui": "Compagnie Virginie Brunelle"
    },
    "ajouts": [
     "compagnievirginiebrunelle"
@@ -423,7 +423,7 @@
    "artiste": {
     "compte": "leila.zelli",
     "sur": true,
-    "source": "https://topo.art/en/artiste/leila-zelli/",
+    "source": "https://www.instagram.com/leila.zelli/",
     "qui": "Leila Zelli"
    },
    "ajouts": [
@@ -438,10 +438,10 @@
     "source": "https://pauline-julien.com/"
    },
    "artiste": {
-    "compte": "jesuiscommetoutlemonde",
-    "sur": false,
-    "source": "https://www.instagram.com/jesuiscommetoutlemonde/",
-    "qui": "Iannicko N'Doua"
+    "compte": "orangenoyee",
+    "sur": true,
+    "source": "https://vimeo.com/orangenoyee",
+    "qui": "Orange Noyée (compagnie de production de Neige sur Abidjan, auteur : Iannicko N'"
    },
    "ajouts": [
     "sallepaulinejulien",
@@ -490,5 +490,5 @@
   }
  },
  "_statut": "ok",
- "_issue": "10"
+ "_issue": null
 }
