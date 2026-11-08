@@ -6,12 +6,12 @@ name: Réseaux sociaux
 on:
   schedule:
     - cron: "23 13-21 * * 1"   # lundi, chaque heure de 8 h 23 à 16 h 23 (Montréal, hiver) : la première qui démarre publie
-    - cron: "7 22-23 * * 0"    # dimanche 17 h 07 et 18 h 07 : aperçu envoyé pour approbation (renfort de cron-job.org)
+    - cron: "7 13-14 * * 0"    # dimanche 8 h 07 et 9 h 07 : aperçu envoyé pour approbation (toute la journée pour le regarder)
   issue_comment:
     types: [created]           # réponse dans l'avis d'aperçu : consignes appliquées tout de suite
   push:
     branches: [main]
-    paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt"]
+    paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt", "outils/reseaux/demande-envoi-apercu.txt"]
     # demande-essai.txt : essai de connexion (rien n'est publié)
     # demande-test.txt : publie pour vrai les seuls formats écrits dans le fichier (ex. instagram_story,facebook_story),
     # ou « tout » pour la publication normale de la semaine
@@ -73,7 +73,7 @@ jobs:
           PUBLIER: ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.essai)) && 'essai' || 'oui' }}
           FORCER: ${{ inputs.forcer && '1' || '0' }}
           SEULEMENT: ${{ inputs.seulement }}
-          ETAPE: ${{ github.event_name == 'issue_comment' && 'consignes' || (github.event.schedule == '7 22-23 * * 0' || inputs.etape == 'apercu') && 'apercu' || '' }}
+          ETAPE: ${{ github.event_name == 'issue_comment' && 'consignes' || (github.event.schedule == '7 13-14 * * 0' || inputs.etape == 'apercu') && 'apercu' || '' }}
           NUMERO_AVIS: ${{ github.event.issue.number }}
           COMMENTAIRE: ${{ github.event.comment.body }}
         run: |
@@ -85,6 +85,10 @@ jobs:
             # « tout » : la publication normale de la semaine (notée comme faite), lancée à la main
             [ "$SEULEMENT" = tout ] && export SEULEMENT=""
             echo "Test ciblé : $SEULEMENT"
+          fi
+          # demande-envoi-apercu.txt : envoyer l'aperçu du dimanche tout de suite (rien n'est publié)
+          if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-envoi-apercu.txt"; then
+            export ETAPE=apercu
           fi
           python outils/publier.py
       - name: Enregistrer
