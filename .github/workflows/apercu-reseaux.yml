@@ -3,7 +3,7 @@ name: Aperçu réseaux
 on:
   push:
     branches: [main]
-    paths: ["outils/faits_saillants.py", "outils/epingles.py", "outils/reseaux/demande-apercu.txt"]
+    paths: ["outils/faits_saillants.py", "outils/epingles.py", "outils/reseaux/demande-apercu.txt", "outils/reseaux/selections/**"]  # sélection corrigée à la main : visuels refaits
   workflow_dispatch:
 concurrency:
   group: apercu-reseaux
