@@ -511,10 +511,13 @@ def _resume_selection(s, sha, semaine):
         t_ = (s.get("tags") or {}).get(k) or {}
         if t_.get("aucun"):
             return "\n  🏷️ personne"
-        bouts = [f"{q} @{v['compte']}" + ("" if v.get("sur") or v.get("confirme") else " **(à confirmer)**")
-                 for q, v in t_.items() if isinstance(v, dict) and v.get("compte")]
-        bouts += [f"@{h}" for h in t_.get("ajouts") or []]
-        return "\n  🏷️ " + (", ".join(bouts) if bouts else "aucun compte trouvé")
+        # ce qui sera vraiment identifié (au plus 3 comptes, sans doublon), puis les comptes trouvés mais pas retenus
+        import identification
+        retenus = identification.comptes_retenus(s, k)
+        doutes = [f"@{v['compte']}" for q, v in t_.items() if isinstance(v, dict) and v.get("compte")
+                  and v["compte"] not in retenus and not (v.get("sur") or v.get("confirme"))]
+        return ("\n  🏷️ " + (", ".join(f"@{h}" for h in retenus) if retenus else "aucun compte identifié")
+                + (f" · à confirmer : {', '.join(doutes)}" if doutes else ""))
     lignes = [f"- **{fs.nom_disc(p['k'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
               + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") + tags(p["k"]) for p in s["picks"]]
     fests = ", ".join(f["nom"] for f in s["festivals"]) or "aucun"
