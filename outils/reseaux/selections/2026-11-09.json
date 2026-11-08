@@ -30,8 +30,8 @@
     ],
     "ics": "2026-11-09-adieu-monde-cruel-31f10c"
    },
-   "accroche": "",
-   "accroche_en": "",
+   "accroche": "Un film à l'affiche du Quartier Latin, à voir en salle lundi.",
+   "accroche_en": "A film showing at the Quartier Latin, to catch on the big screen Monday.",
    "mode": "connu"
   },
   {
@@ -111,8 +111,8 @@
     "resume_en": "Play set in Abidjan, presented in the Théâtre series.",
     "ics": "2026-11-12-neige-sur-abidjan-a0da4e"
    },
-   "accroche": "Une pièce qui se déroule à Abidjan, dans la série Théâtre.",
-   "accroche_en": "A play set in Abidjan, part of the Théâtre series.",
+   "accroche": "Une pièce ancrée à Abidjan, présentée dans la série Théâtre.",
+   "accroche_en": "A play set in Abidjan, presented in the Théâtre series.",
    "mode": "découverte"
   },
   {
@@ -147,8 +147,8 @@
     "resume_en": "Shoegaze concert from Coup de coeur francophone, with Coup Dur opening.",
     "ics": "2026-11-13-jonathan-personne-7e86c7"
    },
-   "accroche": "Shoegaze avec Coup Dur en première partie, du Coup de coeur francophone.",
-   "accroche_en": "Shoegaze with Coup Dur opening, from the Coup de coeur francophone.",
+   "accroche": "Du shoegaze en tête d'affiche, avec Coup Dur en première partie.",
+   "accroche_en": "Shoegaze headliner, with Coup Dur opening.",
    "mode": "tête d'affiche"
   },
   {
@@ -188,8 +188,8 @@
     "resume_en": "Cinema, culture, LaSalle, box office",
     "ics": "2026-11-14-la-jeune-fille-qui-pleurait-des-perles-de-chris-la-7c7907"
    },
-   "accroche": "Une création de Chris Lavis et Maciek Szczerbowski à découvrir sur place.",
-   "accroche_en": "A work by Chris Lavis and Maciek Szczerbowski to discover in person.",
+   "accroche": "Une proposition jeunesse au Centre Henri-Lemieux, à LaSalle.",
+   "accroche_en": "A youth program at the Centre Henri-Lemieux, in LaSalle.",
    "mode": "connu"
   },
   {
@@ -217,8 +217,8 @@
     "resume_en": "Every Sunday, to be confirmed with the venue (checked 2026-10-30).",
     "ics": "2026-11-15-la-lim-ligue-d-improvisation-montrealaise-c387f6"
    },
-   "accroche": "Improvisation en direct chaque dimanche ; horaire à confirmer auprès du lieu.",
-   "accroche_en": "Live improv every Sunday; showtime to be confirmed with the venue.",
+   "accroche": "Des matchs d'improvisation où tout se joue sur le moment, chaque dimanche.",
+   "accroche_en": "Improv matches where everything is played in the moment, every Sunday.",
    "mode": "connu"
   }
  ],
@@ -390,6 +390,105 @@
  },
  "total": 661,
  "expos": 134,
+ "tags": {
+  "cinema": {
+   "artiste": {
+    "compte": "felixdegivry",
+    "sur": true,
+    "source": "https://www.instagram.com/remembers_productions/",
+    "qui": "Félix de Givry"
+   },
+   "ajouts": [
+    "felixdegivry",
+    "festivalcinemania"
+   ]
+  },
+  "danse": {
+   "artiste": {
+    "compte": "compagnievirginiebrunelle",
+    "sur": true,
+    "source": "https://vimeo.com/683854955",
+    "qui": "Virginie Brunelle (Compagnie Virginie Brunelle)"
+   },
+   "ajouts": [
+    "compagnievirginiebrunelle"
+   ]
+  },
+  "expo": {
+   "salle": {
+    "compte": "galeriepfoac",
+    "sur": true,
+    "source": "https://www.pfoac.com/"
+   },
+   "artiste": {
+    "compte": "leila.zelli",
+    "sur": true,
+    "source": "https://topo.art/en/artiste/leila-zelli/",
+    "qui": "Leila Zelli"
+   },
+   "ajouts": [
+    "galeriepfoac",
+    "leila.zelli"
+   ]
+  },
+  "theatre": {
+   "salle": {
+    "compte": "sallepaulinejulien",
+    "sur": true,
+    "source": "https://pauline-julien.com/"
+   },
+   "artiste": {
+    "compte": "jesuiscommetoutlemonde",
+    "sur": false,
+    "source": "https://www.instagram.com/jesuiscommetoutlemonde/",
+    "qui": "Iannicko N'Doua"
+   },
+   "ajouts": [
+    "sallepaulinejulien",
+    "jesuiscommetoutlemonde"
+   ]
+  },
+  "musique": {
+   "salle": {
+    "compte": "foufouneselectriques",
+    "sur": true,
+    "source": "https://foufouneselectriques.com/"
+   },
+   "artiste": {
+    "compte": "jonathan_personne",
+    "sur": true,
+    "source": "https://www.youtube.com/@jonathanpersonne",
+    "qui": "Jonathan Personne"
+   },
+   "festival": {
+    "compte": "coupdecoeurf",
+    "sur": true,
+    "source": "https://coupdecoeur.ca"
+   },
+   "ajouts": [
+    "foufouneselectriques",
+    "jonathan_personne",
+    "coupdecoeurf"
+   ]
+  },
+  "jeune": {
+   "ajouts": [
+    "henrilemieux_",
+    "clydehenryproductions"
+   ]
+  },
+  "humour": {
+   "salle": {
+    "compte": "cabaretliondor",
+    "sur": true,
+    "source": "https://cabaretliondor.com/"
+   },
+   "ajouts": [
+    "cabaretliondor",
+    "lim_impro"
+   ]
+  }
+ },
  "_statut": "ok",
- "_issue": "9"
+ "_issue": null
 }
