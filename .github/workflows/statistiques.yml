@@ -1,0 +1,25 @@
+# Rapport hebdomadaire des visites (GoatCounter), envoyé comme avis GitHub le lundi matin (outils/statistiques.py).
+# Essai sans envoi : pousser outils/diag/demande-statistiques.txt (la date d'un lundi, ou vide pour la semaine finie).
+name: Statistiques
+on:
+  schedule:
+    - cron: "41 12 * * 1"   # lundi 7 h 41 (Montréal, hiver)
+  push:
+    branches: [main]
+    paths: ["outils/diag/demande-statistiques.txt"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rapport
+        env:
+          GOATCOUNTER_JETON: ${{ secrets.GOATCOUNTER_JETON }}
+          GH_TOKEN: ${{ github.token }}
+          ESSAI: ${{ github.event_name == 'push' && '1' || '0' }}
+        run: python3 outils/statistiques.py $(cat outils/diag/demande-statistiques.txt 2>/dev/null | head -1)
