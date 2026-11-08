@@ -42,14 +42,18 @@ def total(p):
     return int(d.get("total") or d.get("total_utc") or 0)
 
 
-def pages(p, limite=15):
+def pages(p, limite=15, actions=False):
+    """Pages vues ; avec actions=True, les actions comptées dans le site (événement ouvert, festival, vue)."""
     d = api("stats/hits", limit=limite, **p)
     out = []
     for h in d.get("hits") or []:
-        if h.get("event"):
+        if bool(h.get("event")) != actions:
             continue
         out.append((h.get("path") or "", h.get("title") or "", int(h.get("count") or 0)))
     return out
+
+
+VUES = {"week": "Semaine", "day": "Jour", "fest": "Festivals", "musee": "Expositions", "month": "Mois"}
 
 
 def liste(nom, p, limite=8):
@@ -91,10 +95,30 @@ def rapport(lundi):
     if pg:
         L += ["### Pages les plus vues", "", "| Page | Visites |", "|---|---|"]
         L += [f"| {libelle(c, t)} | {k} |" for c, t, k in pg[:10]]
-        ev = [(c, t, k) for c, t, k in pages(p, 100) if "/e/" in c][:5]
-        if ev:
-            L += ["", "### Événements les plus consultés", ""] + [f"1. {libelle(c, t)[12:]} : {k}" for c, t, k in ev]
         L.append("")
+    try:
+        act = pages(p, 100, actions=True)
+    except Exception as exc:
+        print(f"actions : {exc}")
+        act = []
+    # événements ouverts dans le site, plus les pages d'événement arrivées par un lien partagé ou Google
+    ev = {}
+    for c, t, k in act:
+        if c.startswith("evenement/"):
+            ev[t] = ev.get(t, 0) + k
+    for c, t, k in pages(p, 100):
+        if "/e/" in c:
+            n = libelle(c, t)[12:]
+            ev[n] = ev.get(n, 0) + k
+    if ev:
+        L += ["### Événements les plus consultés", ""]
+        L += [f"1. {t} : {k}" for t, k in sorted(ev.items(), key=lambda kv: -kv[1])[:10]] + [""]
+    fe = sorted([(t, k) for c, t, k in act if c.startswith("festival/")], key=lambda x: -x[1])[:5]
+    if fe:
+        L += ["### Festivals consultés", ""] + [f"- {t} : {k}" for t, k in fe] + [""]
+    vu = [(VUES.get(c[4:], c[4:]), k) for c, t, k in act if c.startswith("vue/")]
+    if vu:
+        L += ["### Vues utilisées", ""] + [f"- {t} : {k}" for t, k in sorted(vu, key=lambda x: -x[1])] + [""]
     for nom, titre in (("toprefs", "D'où viennent les visiteurs"), ("locations", "Pays"), ("systems", "Appareils")):
         try:
             x = liste(nom, p)

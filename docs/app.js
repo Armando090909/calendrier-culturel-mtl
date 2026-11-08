@@ -500,12 +500,16 @@ addEventListener("resize",()=>{clearTimeout(carrousel.t);carrousel.t=setTimeout(
 /* Bouton « retour » du navigateur : chaque changement de vue (Semaine → Jour, festival, expositions…) ajoute une étape
    à l'historique ; « retour » ramène à la vue précédente, au même endroit de la page, au lieu de quitter le site.
    Changer de jour ou de semaine dans une même vue ne fait que mettre l'étape à jour (pas de pile de jours). */
+/* Statistiques (GoatCounter, sans témoins) : ouverture d'un événement, d'un festival, changement de vue.
+   Comptés comme « événements » GoatCounter, à part des visites. */
+const compter=(path,title)=>{try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path,title,event:true})}catch(x){}};
 const _rendu=render;let enRetour=false;try{history.scrollRestoration="manual"}catch(x){}
 const etatVue=()=>({v:st.view,d:st.day,w:st.week,m:st.month,f:st.fest||null,c:st.cible??null});
 render=function(){_rendu();if(enRetour)return;
   const s=etatVue(),h=history.state&&history.state.ccmtl;
   try{
-    if(h&&(h.v!==s.v||h.f!==s.f)){history.replaceState({ccmtl:h,y:scrollY},"");history.pushState({ccmtl:s,y:0},"")}
+    if(h&&(h.v!==s.v||h.f!==s.f)){history.replaceState({ccmtl:h,y:scrollY},"");history.pushState({ccmtl:s,y:0},"");
+      if(s.f&&s.f!==h.f)compter("festival/"+s.f,(FESTID[s.f]&&FESTID[s.f].nom)||s.f);else if(s.v!==h.v)compter("vue/"+s.v,"Vue "+s.v)}
     else history.replaceState({ccmtl:s,y:(history.state&&history.state.y)||0},"");
   }catch(x){}};
 addEventListener("popstate",e=>{const h=e.state&&e.state.ccmtl;if(!h)return;enRetour=true;
@@ -533,7 +537,7 @@ $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||
 $("view").addEventListener("click",e=>{
   const c=e.target.closest(".cell");if(c&&!c.disabled){st.day=c.dataset.d;st.week=monday(st.day);st.view="day";render();return}
   const jt=e.target.closest('[data-act="jtab"]');if(jt){carrousel(jt.dataset.d);return}
-  const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){sortirRecherche();st.day=ev.date;st.view="day";st.cible=ev._i;render();
+  const r=e.target.closest(".row[data-ev]");if(r){const ev=byId[r.dataset.ev];if(ev){compter("evenement/"+(ev.ics||ev.date+"-"+ev.titre.slice(0,40)),`${ev.titre} · ${ev.lieu}`);sortirRecherche();st.day=ev.date;st.view="day";st.cible=ev._i;render();
     const a=$("ev-"+ev._i);if(a){a.classList.add("flash");a.scrollIntoView({block:"start",behavior:"smooth"})}}return}
   const xt=e.target.closest("[data-xtype]");if(xt){st.xtype=xt.dataset.xtype;render();return}
   const xw=e.target.closest("[data-xw]");if(xw){st.xweek=addDays(st.xweek,Number(xw.dataset.xw));render();return}
