@@ -28,6 +28,7 @@ def api(chemin, **params):
             if exc.code == 429 and essai < 3:  # limite de requêtes : on patiente
                 time.sleep(5 * (essai + 1))
                 continue
+            print(f"GoatCounter {chemin} : {exc.code} {exc.read()[:300]!r}")
             raise
     return {}
 
@@ -110,6 +111,11 @@ def main():
                  "(Settings → Secrets and variables → Actions). Le rapport partira dès le lundi suivant.")
         print(corps)
         return
+    if os.environ.get("ESSAI") == "1":  # essai : vérifier la clé et le site d'abord
+        try:
+            print("compte :", json.dumps(api("me"))[:300])
+        except Exception as exc:
+            print("me :", exc)
     corps = rapport(lundi)
     print(corps)
     if os.environ.get("ESSAI") == "1":
