@@ -377,8 +377,14 @@ def main() -> int:
                     connecteurs.DIAG.append(f"page illisible : données du {c['date']} conservées")
                     print(f"  page illisible : données du {c['date']} conservées")
             if s.get("festival"):
+                # seulement ce qui tombe pendant le festival : le site d'un festival est parfois celui de la salle qui
+                # l'organise (ex. les Sommets du cinéma d'animation sur cinematheque.qc.ca), qui annonce aussi le reste
+                d1, d2 = s.get("fest_debut") or "", s.get("fest_fin") or ""
                 for x in e + sr:
-                    x["festival"] = s["festival"]
+                    a = str(x.get("date") or x.get("debut") or "")[:10]
+                    b = str(x.get("date") or x.get("fin") or a)[:10]
+                    if not (d1 and d2 and a) or (a <= d2 and b >= d1):
+                        x["festival"] = s["festival"]
             bruts += e
             series += sr
             rapport.append({"source": s["nom"], "evenements": len(e), "series": len(sr), "erreur": None,

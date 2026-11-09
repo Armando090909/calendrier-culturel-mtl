@@ -59,6 +59,7 @@ def sources(fests: list[dict], aujourd: date) -> list[dict]:
         for i, url in enumerate(pages):
             out.append({"nom": f"Festival · {f['court']}" + (f" ({i + 1})" if len(pages) > 1 else ""), "type": "page_ia",
                         "url": url, "cle_source": "festival", "festival": f["id"], "lieu": f.get("lieu", ""),
+                        "fest_debut": str(f.get("debut") or ""), "fest_fin": str(f.get("fin") or ""),
                         "discipline": f["disciplines"][0] if len(f.get("disciplines", [])) == 1 else "",
                         "jours_semaine": jours, "details": True})
     return out

@@ -42,7 +42,7 @@ festivals:
   - {id: petitsbonheurs, nom: "Festival Petits bonheurs (tout-petits)", court: Petits bonheurs, disciplines: [jeune], debut: 2026-05-01, fin: 2026-05-10, site: "https://petitsbonheurs.ca"}
   - {id: accesasie, nom: "Festival Accès Asie", court: Accès Asie, disciplines: [musique, danse, theatre, expo], debut: 2026-05-01, fin: 2026-05-31, site: "https://accesasie.com"}
   - {id: sudasiatique, nom: "Festival du film sud-asiatique de Montréal", court: Film sud-asiatique, disciplines: [cinema], debut: 2026-05-01, fin: 2026-05-24, site: "https://saffm.ca", verifier: true}
-  - {id: sommets, nom: "Les Sommets du cinéma d'animation", court: Sommets de l'animation, disciplines: [cinema], debut: 2026-05-11, fin: 2026-05-16, site: "https://www.cinematheque.qc.ca"}
+  - {id: sommets, nom: "Les Sommets du cinéma d'animation", court: Sommets de l'animation, disciplines: [cinema], debut: 2027-05-03, fin: 2027-05-08, site: "https://www.cinematheque.qc.ca"}  # dates confirmées par la Cinémathèque (9 nov. 2026)
   - {id: fbdm, nom: "Festival BD de Montréal", court: Festival BD, disciplines: [lettres, jeune], debut: 2026-05-15, fin: 2026-05-17, site: "https://fbdm-mcaf.ca"}
   - {id: piknic, nom: "Piknic Électronik (les dimanches)", court: Piknic Électronik, disciplines: [musique], debut: 2026-05-17, fin: 2026-10-18, lieu: "Parc Jean-Drapeau", site: "https://piknicelectronik.com"}
   - {id: poesie, nom: "Festival de la poésie de Montréal", court: Festival de la poésie, disciplines: [poesie], debut: 2026-05-21, fin: 2026-05-31, site: "https://festivalpoesiemontreal.com", verifier: true}
