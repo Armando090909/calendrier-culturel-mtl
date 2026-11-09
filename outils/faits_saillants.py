@@ -32,7 +32,8 @@ NOMS = {"theatre": "Théâtre", "musique": "Musique", "danse": "Danse", "cirque"
         "cinema": "Cinéma", "poesie": "Poésie et slam", "lettres": "Littérature", "conference": "Conférence",
         "jeune": "Jeune public", "atelier": "Atelier", "fete": "Fête", "quiz": "Quiz", "social": "Rencontre", "expo": "Vernissage"}
 EMOJI = {"theatre": "🎭", "musique": "🎶", "danse": "💃", "cirque": "🎪", "humour": "😂", "cinema": "🎬", "poesie": "✒️",
-         "lettres": "📚", "conference": "🎙️", "jeune": "🧸"}
+         "lettres": "📚", "conference": "🎙️", "jeune": "🧸", "expo": "🖼️", "atelier": "🛠️", "fete": "🎉", "quiz": "❓",
+         "social": "🤝"}
 NOMS_EN = {"theatre": "Theatre", "musique": "Music", "danse": "Dance", "cirque": "Circus", "humour": "Comedy",
            "cinema": "Film", "poesie": "Poetry & slam", "lettres": "Literature", "conference": "Talk",
            "jeune": "Kids & family", "atelier": "Workshop", "fete": "Party", "quiz": "Quiz", "social": "Social", "expo": "Opening"}
@@ -752,8 +753,13 @@ def textes(s):
             ment[p["k"]] = "".join(" @" + h for h in hs)
     except Exception:
         ment = {}
-    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
-              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])}: {p['e']['titre']} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
+    # « Vernissage : Vernissage : X » → « Vernissage : X » (le titre reprend déjà le nom de la catégorie)
+    def _titre(p_):
+        t = p_["e"]["titre"]
+        n = nom_disc(p_["k"])
+        return t[len(n):].lstrip(" :–-") if t.lower().startswith(n.lower()) and len(t) > len(n) + 3 else t
+    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
+              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])}: {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
               for p in s["picks"]]
     fest = ", ".join(f["nom"] for f in s["festivals"] if f["en_cours"])
     if LANGUE == "en":
