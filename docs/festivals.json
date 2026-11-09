@@ -151,6 +151,21 @@
   "site": "https://salondulivredemontreal.com"
  },
  {
+  "id": "noeldansleparc",
+  "nom": "Noël dans le parc",
+  "court": "Noël dans le parc",
+  "disciplines": [
+   "musique",
+   "jeune",
+   "fete"
+  ],
+  "debut": "2026-12-04",
+  "fin": "2026-12-25",
+  "lieu": "Parc La Fontaine",
+  "site": "https://noeldansleparc.com",
+  "verifier": true
+ },
+ {
   "id": "igloofest",
   "nom": "Igloofest",
   "court": "Igloofest",

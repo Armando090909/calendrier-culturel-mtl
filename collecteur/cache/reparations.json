@@ -104,7 +104,23 @@
   "Salle Marguerite-Bourgeoys": "2026-11-05",
   "Théâtre St-James": "2026-11-05",
   "Théâtre Cartier": "2026-11-05",
-  "Cat's Corner (danse swing)": "2026-11-05"
+  "Cat's Corner (danse swing)": "2026-11-05",
+  "Festival · Monde Arabe (1)": "2026-10-26",
+  "Festival · Monde Arabe (2)": "2026-10-26",
+  "Festival · M pour Montréal (1)": "2026-10-26",
+  "Festival · RIDM (1)": "2026-10-26",
+  "Festival · RIDM (7)": "2026-10-26",
+  "Festival · Casteliers": "2026-10-26",
+  "Orchestre Métropolitain": "2026-11-09",
+  "Orchestre classique de Montréal": "2026-11-09",
+  "Cinéma Public": "2026-11-09",
+  "Studio 303": "2026-11-09",
+  "Le Bordel Comédie Club": "2026-11-09",
+  "Le Belmont": "2026-11-09",
+  "Wiggle Room (ma.to)": "2026-11-09",
+  "Duran Contemporain": "2026-11-09",
+  "Théâtre MainLine": "2026-11-09",
+  "Théâtre Prospero": "2026-11-09"
  },
  "Duran Contemporain": {
   "essai": "2026-11-02",
@@ -119,16 +135,44 @@
  "ma.to – communauté (quiz, trivia)": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-08"
+  "dernier_ok": "2026-11-09"
  },
  "ma.to (musique live)": {
   "essai": "2026-11-04",
   "echecs": 1,
-  "dernier_ok": "2026-11-08"
+  "dernier_ok": "2026-11-09"
  },
  "Théâtre Prospero": {
   "essai": "2026-11-05",
   "echecs": 1,
   "dernier_ok": "2026-11-08"
+ },
+ "Cinéma Public": {
+  "essai": "2026-11-09",
+  "url": "https://cinemapublic.ca/horaire/",
+  "ancienne": "https://cinemapublic.ca/",
+  "le": "2026-11-09",
+  "n": 51,
+  "echecs": 0
+ },
+ "Studio 303": {
+  "essai": "2026-11-09",
+  "echecs": 1
+ },
+ "Le Bordel Comédie Club": {
+  "essai": "2026-11-09",
+  "url": "https://lebordel.ca/spectacles/open-mic/",
+  "ancienne": "https://www.lebordel.ca/",
+  "le": "2026-11-09",
+  "n": 16,
+  "echecs": 0
+ },
+ "Wiggle Room (ma.to)": {
+  "essai": "2026-11-09",
+  "url": "https://ma.to/events/washington",
+  "ancienne": "https://ma.to/venue/wiggleroommtl",
+  "le": "2026-11-09",
+  "n": 17,
+  "echecs": 0
  }
 }

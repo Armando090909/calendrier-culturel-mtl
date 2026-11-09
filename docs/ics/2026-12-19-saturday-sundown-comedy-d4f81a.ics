@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-19-saturday-sundown-comedy-d4f81a@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261219T190000
+DTEND;TZID=America/Toronto:20261219T210000
+SUMMARY:Saturday Sundown Comedy
+LOCATION:Deli Planet\, Montréal
+URL:https://www.eventbrite.com/e/comedy-show-montreal-7-pm-early-evening-co
+ medy-at-a-montreal-comedy-club-tickets-2004565966768?aff=oddtdtcreator
+DESCRIPTION:Spectacle de stand-up en anglais en début de soirée à Gare C
+ entrale.\nPrix : 15 à 25 $\nDétails : https://www.eventbrite.com/e/comed
+ y-show-montreal-7-pm-early-evening-comedy-at-a-montreal-comedy-club-ticket
+ s-2004565966768?aff=oddtdtcreator\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

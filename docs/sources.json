@@ -3,28 +3,28 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1803,
+  "evenements": 1752,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 33,
+  "evenements": 31,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 195,
+  "evenements": 202,
   "erreur": false
  },
  {
   "nom": "Songkick (concerts, 2 mois)",
   "url": "https://www.songkick.com/metro-areas/27377-canada-montreal/-",
   "type": "page lue par l'IA",
-  "evenements": 371,
+  "evenements": 373,
   "erreur": false
  },
  {
@@ -45,7 +45,7 @@
   "nom": "Duceppe",
   "url": "https://duceppe.com",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -66,7 +66,7 @@
   "nom": "Théâtre Prospero",
   "url": "https://theatreprospero.com",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -87,14 +87,14 @@
   "nom": "Théâtre Denise-Pelletier",
   "url": "https://www.denise-pelletier.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 1,
   "erreur": false
  },
  {
   "nom": "Usine C",
   "url": "https://usine-c.com",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -122,7 +122,7 @@
   "nom": "MAI",
   "url": "https://m-a-i.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -136,7 +136,7 @@
   "nom": "Théâtre Outremont",
   "url": "http://www.theatreoutremont.ca/fr/accueil",
   "type": "page lue par l'IA",
-  "evenements": 34,
+  "evenements": 31,
   "erreur": false
  },
  {
@@ -150,14 +150,14 @@
   "nom": "Espace St-Denis",
   "url": "https://espacestdenis.com",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 5,
   "erreur": false
  },
  {
   "nom": "Théâtre Sainte-Catherine",
   "url": "http://theatresaintecatherine.com",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -171,7 +171,28 @@
   "nom": "Place des Arts",
   "url": "https://www.placedesarts.com/en/programming",
   "type": "page lue par l'IA",
-  "evenements": 58,
+  "evenements": 48,
+  "erreur": false
+ },
+ {
+  "nom": "Place des Arts – destination des Fêtes",
+  "url": "https://www.placedesarts.com/destination-du-temps-des-fetes",
+  "type": "page lue par l'IA",
+  "evenements": 4,
+  "erreur": false
+ },
+ {
+  "nom": "Orchestre Métropolitain",
+  "url": "https://www.orchestremetropolitain.com/fr/concerts",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Orchestre classique de Montréal",
+  "url": "https://www.orchestre.ca",
+  "type": "page lue par l'IA",
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -199,7 +220,7 @@
   "nom": "La Chapelle",
   "url": "https://www.lachapelle.org/en/programming/season-2026-2027",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -227,14 +248,14 @@
   "nom": "Spectaculos (humour, 6 pages)",
   "url": "https://spectaculos.ca/fr/categorie/humour/montreal",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 26,
   "erreur": false
  },
  {
   "nom": "evenko (humour)",
   "url": "https://evenko.ca/fr/evenements/humour",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -248,14 +269,14 @@
   "nom": "Théâtre Sainte-Catherine (impro et humour)",
   "url": "http://theatresaintecatherine.com",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 2,
   "erreur": false
  },
  {
   "nom": "Centre des musiciens du monde",
   "url": "https://centredesmusiciensdumonde.com",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -276,28 +297,28 @@
   "nom": "Théâtre Plaza",
   "url": "https://theatreplaza.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 9,
   "erreur": false
  },
  {
   "nom": "The Comedy Nest",
   "url": "https://www.comedynest.com",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 9,
   "erreur": false
  },
  {
   "nom": "Comedyville",
   "url": "https://www.comedyville.ca",
   "type": "page lue par l'IA",
-  "evenements": 23,
+  "evenements": 27,
   "erreur": false
  },
  {
   "nom": "Cinéma Public",
   "url": "https://cinemapublic.ca",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -311,7 +332,7 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -353,14 +374,14 @@
   "nom": "Le Bordel Comédie Club",
   "url": "https://www.lebordel.ca",
   "type": "page lue par l'IA",
-  "evenements": 30,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "La Cabine Comédie Club",
   "url": "https://lacabinecomedie.ca",
   "type": "page lue par l'IA",
-  "evenements": 30,
+  "evenements": 28,
   "erreur": false
  },
  {
@@ -514,7 +535,7 @@
   "nom": "Le Red Room",
   "url": "https://www.leredroom.com",
   "type": "page lue par l'IA",
-  "evenements": 16,
+  "evenements": 13,
   "erreur": false
  },
  {
@@ -528,7 +549,7 @@
   "nom": "Montreal Improv",
   "url": "https://www.montrealimprov.com/shows",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 24,
   "erreur": false
  },
  {
@@ -584,7 +605,7 @@
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 88,
+  "evenements": 90,
   "erreur": false
  },
  {
@@ -661,14 +682,14 @@
   "nom": "Cabaret Lion d'Or (billetterie)",
   "url": "https://lepointdevente.com/liondor",
   "type": "page lue par l'IA",
-  "evenements": 19,
+  "evenements": 17,
   "erreur": false
  },
  {
   "nom": "Cabaret Lion d'Or (LIM et spectacles)",
   "url": "https://cabaretliondor.com",
   "type": "page lue par l'IA",
-  "evenements": 22,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -682,7 +703,7 @@
   "nom": "Tourisme Montréal – sorties en famille",
   "url": "https://www.mtl.org/fr/experience/guide-culturel-enfants-ados",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 26,
   "erreur": false
  },
  {
@@ -710,7 +731,7 @@
   "nom": "Réseau art actuel (centres d'artistes, vernissages)",
   "url": "https://reseauartactuel.org/evenements/page//?intervalle=semaine",
   "type": "page lue par l'IA",
-  "evenements": 72,
+  "evenements": 56,
   "erreur": false
  },
  {
@@ -731,7 +752,7 @@
   "nom": "evenko (concerts)",
   "url": "https://evenko.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 19,
   "erreur": false
  },
  {
@@ -752,7 +773,7 @@
   "nom": "Bar Le Ritz PDB",
   "url": "http://www.barleritzpdb.com",
   "type": "page lue par l'IA",
-  "evenements": 22,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -787,14 +808,14 @@
   "nom": "Théâtre St-Denis",
   "url": "https://theatrestdenis.com",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 5,
   "erreur": false
  },
  {
   "nom": "Blouin Division",
   "url": "https://blouin-division.com/en/exhibitions",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -815,7 +836,7 @@
   "nom": "Duran Contemporain",
   "url": "https://durancontemporain.com",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -878,7 +899,7 @@
   "nom": "Galerie Simon Blais",
   "url": "https://www.galeriesimonblais.com/fr/expos",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -892,14 +913,14 @@
   "nom": "McBride Contemporain",
   "url": "https://mcbridecontemporain.com",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 3,
   "erreur": false
  },
  {
   "nom": "Pangée",
   "url": "https://pangeepangee.com",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -948,7 +969,7 @@
   "nom": "Upstairs Jazz Bar & Grill",
   "url": "https://www.upstairsjazz.com",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -962,7 +983,7 @@
   "nom": "Club Balattou (musiques du monde)",
   "url": "https://www.balattou.com",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -1018,14 +1039,14 @@
   "nom": "Le Belmont",
   "url": "https://www.lebelmont.ca",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Ausgang Plaza",
   "url": "https://www.ausgangplaza.com/evenements",
   "type": "page lue par l'IA",
-  "evenements": 14,
+  "evenements": 13,
   "erreur": false
  },
  {
@@ -1053,21 +1074,21 @@
   "nom": "Le Studio TD",
   "url": "https://lestudiotd.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 2,
   "erreur": false
  },
  {
   "nom": "MTELUS",
   "url": "https://mtelus.com/fr/evenements?vue=grille",
   "type": "page lue par l'IA",
-  "evenements": 19,
+  "evenements": 18,
   "erreur": false
  },
  {
   "nom": "Cabaret du Casino de Montréal",
   "url": "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 12,
   "erreur": false
  },
  {
@@ -1081,7 +1102,7 @@
   "nom": "Casa del Popolo – La Toscadura",
   "url": "https://casadelpopolo.com/fr/events/la-toscadura",
   "type": "page lue par l'IA",
-  "evenements": 16,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -1095,7 +1116,7 @@
   "nom": "Casa del Popolo – La Sotterenea",
   "url": "https://casadelpopolo.com/fr/events/la-sotterenea",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -1109,14 +1130,14 @@
   "nom": "Bar Datcha",
   "url": "https://bardatcha.ca",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 9,
   "erreur": false
  },
  {
   "nom": "SAT – Société des arts technologiques",
   "url": "https://sat.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1130,7 +1151,7 @@
   "nom": "Cabaret Mado (drag)",
   "url": "http://www.mado.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 52,
+  "evenements": 48,
   "erreur": false
  },
  {
@@ -1144,7 +1165,7 @@
   "nom": "Caf' Conc' (cabaret)",
   "url": "https://cafeconcert.ca",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -1165,7 +1186,7 @@
   "nom": "Théâtre MainLine",
   "url": "http://www.mainlinetheatre.ca",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -1186,7 +1207,7 @@
   "nom": "La Comédie de Montréal",
   "url": "http://www.lacomedie.ca",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 13,
   "erreur": false
  },
  {
@@ -1200,7 +1221,7 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca/en/montreal",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -1235,7 +1256,7 @@
   "nom": "Librairie Drawn & Quarterly (lancements, lectures)",
   "url": "https://mtl.drawnandquarterly.com/events",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1263,28 +1284,28 @@
   "nom": "La Livrerie",
   "url": "https://www.lalivrerie.com/programmation",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 14,
   "erreur": false
  },
  {
   "nom": "Salle Pauline-Julien (ouest de l'île)",
   "url": "https://pauline-julien.com/programmation-spectacle",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 22,
   "erreur": false
  },
  {
   "nom": "Pointe-Claire – Stewart Hall et activités",
   "url": "https://www.pointe-claire.ca/en/culture-sports-and-recreation/programming-and-registration/calendar-of-events-and-activities",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 2,
   "erreur": false
  },
  {
   "nom": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
   "url": "https://www.theatredesjardins.com",
   "type": "page lue par l'IA",
-  "evenements": 28,
+  "evenements": 24,
   "erreur": false
  },
  {
@@ -1326,7 +1347,7 @@
   "nom": "La Lumière Collective",
   "url": "https://lalumierecollective.org",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -1340,7 +1361,7 @@
   "nom": "Quai des Brumes (billetterie)",
   "url": "https://lepointdevente.com/lieux/lequaidesbrumes",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1354,14 +1375,14 @@
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 33,
+  "evenements": 30,
   "erreur": false
  },
  {
   "nom": "Turbo Haüs (billetterie)",
   "url": "https://lepointdevente.com/lieux/turbohaus-2",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -1375,7 +1396,7 @@
   "nom": "Espace La Risée (billetterie)",
   "url": "https://lepointdevente.com/lieux/l-espace-la-risee",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -1389,7 +1410,7 @@
   "nom": "Club Soda (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-soda",
   "type": "page lue par l'IA",
-  "evenements": 30,
+  "evenements": 28,
   "erreur": false
  },
  {
@@ -1403,7 +1424,7 @@
   "nom": "O Patro Vys (billetterie)",
   "url": "https://lepointdevente.com/lieux/o-patro-vys",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 12,
   "erreur": false
  },
  {
@@ -1417,7 +1438,7 @@
   "nom": "Club Balattou (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-balattou",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 14,
   "erreur": false
  },
  {
@@ -1431,28 +1452,28 @@
   "nom": "Le Belmont (billetterie)",
   "url": "https://lepointdevente.com/lieux/lebelmont",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
   "nom": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
   "url": "https://lepointdevente.com/lieux/maison-culturelle-et-communautaire-de-montreal-nord-mcc",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 108,
+  "evenements": 105,
   "erreur": false
  },
  {
   "nom": "Ligues d'improvisation (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 9,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -1466,14 +1487,14 @@
   "nom": "Wiggle Room (ma.to)",
   "url": "https://ma.to/venue/wiggleroommtl",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 0,
   "erreur": false
  },
  {
   "nom": "Le Balcon (ma.to)",
   "url": "https://ma.to/venue/lebalconcabaret",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -1487,7 +1508,7 @@
   "nom": "PAN M 360 – agenda musique",
   "url": "https://panm360.com/en/agenda-360",
   "type": "page lue par l'IA",
-  "evenements": 38,
+  "evenements": 35,
   "erreur": false
  }
 ]

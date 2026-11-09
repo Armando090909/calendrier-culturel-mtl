@@ -21,6 +21,7 @@
   "lon": -73.56599,
   "quartier": "Ville-Marie"
  },
+ "Anacostia Neighborhood Library": null,
  "Ancien Théâtre Desjardins": null,
  "Arprim": null,
  "Arsenal art contemporain": {
@@ -57,6 +58,7 @@
  },
  "Auditorium Fernand-Bilodeau": null,
  "Auditorium des Archives nationales — BAnQ": null,
+ "Auditorium des diplômés de la SGWU (H-110), Université Concordia": null,
  "Ausgang Plaza": {
   "lat": 45.537,
   "lon": -73.607,
@@ -73,6 +75,11 @@
   "lat": 45.64105,
   "lon": -73.50225,
   "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
+ "Bar Le Record": {
+  "lat": 45.54376,
+  "lon": -73.62014,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
  "Bar Le Ritz PDB": {
   "alias": [
@@ -108,6 +115,7 @@
   "lon": -73.55223,
   "quartier": "Le Sud-Ouest"
  },
+ "Ben's Next Door": null,
  "Benny Fab": {
   "lat": 45.46638,
   "lon": -73.63096,
@@ -317,6 +325,7 @@
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Bibliothèques, cafés, musées et autres lieux participants": null,
  "Biosphère": {
   "adresse": "160 chemin du Tour-de-l'Isle",
   "alias": [],
@@ -357,6 +366,7 @@
   "lon": -73.51676,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
+ "Bullfeathers Capitol Hill": null,
  "Burgundy Lion": {
   "lat": 45.48277,
   "lon": -73.5752,
@@ -471,7 +481,12 @@
   "quartier": "Shaughnessy"
  },
  "Centre communautaire Elgar": null,
- "Centre communautaire Gerry-Robertson": null,
+ "Centre communautaire Gerry-Robertson": {
+  "alias": [],
+  "lat": 45.50477,
+  "lon": -73.78327,
+  "quartier": "Pierrefonds-Roxboro"
+ },
  "Centre communautaire Painter": {
   "lat": 45.52915,
   "lon": -73.6761,
@@ -513,6 +528,7 @@
   "quartier": "Ville-Marie"
  },
  "Centre des Arts Shenkman": null,
+ "Centre des arts Juliette-Lassonde": null,
  "Centre des arts actuels SKOL": null,
  "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
@@ -898,6 +914,7 @@
   "lon": -73.568,
   "quartier": "Centre-ville"
  },
+ "Good Company Doughnuts & Cafe": null,
  "Grand Chapiteau Vancouver": null,
  "Grande Bibliothèque": {
   "alias": [
@@ -929,6 +946,7 @@
   "quartier": "Ville-Marie"
  },
  "Henry F. Hall Building (H-1120), Concordia": null,
+ "Hill Center": null,
  "History": null,
  "Hollywood Theatre": null,
  "Houston Avenue Bar & Grill": null,
@@ -940,6 +958,8 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "Institut d'études en art canadien Gail et Stephen A. Jarislowsky": null,
+ "Instituto Cultural Mexicano": null,
  "J.W. McConnell Building": {
   "adresse": "1400 boulevard De Maisonneuve Ouest"
  },
@@ -951,6 +971,7 @@
   "quartier": "Rosemont–La Petite-Patrie"
  },
  "Jeanne & Peter Lougheed Performing Arts Centre": null,
+ "Jelleff Recreation Center": null,
  "Judith J-2805": null,
  "Key City Theatre": null,
  "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
@@ -1103,7 +1124,12 @@
  },
  "Le Calypso": null,
  "Le Carlton Signature": null,
- "Le Carré 150": null,
+ "Le Carré 150": {
+  "alias": [],
+  "lat": 45.50359,
+  "lon": -73.56726,
+  "quartier": "Ville-Marie"
+ },
  "Le Cheval Blanc": {
   "lat": 45.51821,
   "lon": -73.56428,
@@ -1185,11 +1211,14 @@
   "quartier": "Ville-Marie"
  },
  "Lieu non précisé": null,
+ "Lincoln Memorial": null,
+ "Little Pearl": null,
  "Livart": {
   "lat": 45.521,
   "lon": -73.5785,
   "quartier": "Plateau"
  },
+ "Locoshop Angus": null,
  "Long Bar Restaurant": null,
  "Lopez": {
   "lat": 45.53799,
@@ -1255,6 +1284,7 @@
   "lon": -73.62373,
   "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
+ "Maison de la Culture de l'Avenir": null,
  "Maison de la culture Ahuntsic": {
   "lat": 45.551,
   "lon": -73.66,
@@ -1331,6 +1361,7 @@
   "lon": -73.567,
   "quartier": "Quartier des spectacles"
  },
+ "Manifest 002 at Union Market": null,
  "Marché Bonsecours": {
   "lat": 45.50958,
   "lon": -73.55134,
@@ -1351,6 +1382,7 @@
   "quartier": ""
  },
  "Meadowvale Theatre": null,
+ "Meridian Hall": null,
  "Microbrasserie 4 Origines": {
   "lat": 45.47803,
   "lon": -73.78587,
@@ -1376,6 +1408,7 @@
  },
  "Moonshine": null,
  "Multiples salles": null,
+ "Museum of the Bible": null,
  "Musée McCord Stewart": {
   "lat": 45.5045,
   "lon": -73.5737,
@@ -1390,6 +1423,7 @@
  "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
  "N'était-ce pas l'été": null,
  "NINI Salon à Cocktails": null,
+ "National Building Museum": null,
  "New City Gas": {
   "lat": 45.492,
   "lon": -73.559,
@@ -1491,6 +1525,11 @@
   "lat": 45.429,
   "lon": -73.64,
   "quartier": "LaSalle"
+ },
+ "Parc La Fontaine": {
+  "lat": 45.52626,
+  "lon": -73.56897,
+  "quartier": "Le Plateau-Mont-Royal"
  },
  "Parc Leroux": {
   "lat": 45.43435,
@@ -1622,15 +1661,27 @@
   "lon": -73.582,
   "quartier": "Plateau"
  },
+ "Quartier des Spectacles": {
+  "lat": 45.508,
+  "lon": -73.56531,
+  "quartier": "Ville-Marie"
+ },
  "Regart, centre d'artistes en art actuel": null,
+ "Relume": null,
  "Revelstoke Performing Arts Centre": null,
  "Rio Theatre": null,
+ "Rock Creek Park": null,
  "Rockette Bar - Montreal": {
   "lat": 45.5239,
   "lon": -73.58248,
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Rogers Arena": null,
+ "Royal Theatre": {
+  "lat": 45.51484,
+  "lon": -73.57429,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Rue Ontario Est": {
   "lat": 45.525,
   "lon": -73.558,
@@ -1807,6 +1858,7 @@
   "lon": -73.58511,
   "quartier": "Ville-Marie"
  },
+ "The Daily Dish Restaurant": null,
  "The Danforth Music Hall": null,
  "The Fox Cabaret": null,
  "The Great Hall": null,
@@ -1992,6 +2044,7 @@
  "UQAM - Pavillon Judith-Jasmin": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
+ "URBANISTA RESTO BAR": null,
  "Union des familles d'Ahuntsic": {
   "lat": 45.54809,
   "lon": -73.67267,
@@ -2042,6 +2095,7 @@
   "quartier": "Ville-Marie"
  },
  "Vogue Theatre": null,
+ "Washington, DC": null,
  "Wiggle Room": {
   "lat": 45.51608,
   "lon": -73.57779,
@@ -2055,6 +2109,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Wrabyn Boutique": null,
  "Yves Laroche Galerie d'art": {
   "adresse": "99, rue Chabanel Ouest, suite 224, Montréal",
   "alias": [],
@@ -2153,6 +2208,11 @@
   "lon": -73.5714,
   "quartier": "Centre-ville"
  },
+ "Église St. Georges": {
+  "lat": 45.4976,
+  "lon": -73.5691,
+  "quartier": "Ville-Marie"
+ },
  "Église St. John the Evangelist": {
   "lat": 45.5072,
   "lon": -73.5683,
@@ -2164,5 +2224,7 @@
   "lat": 45.50979,
   "lon": -73.56797,
   "quartier": "Ville-Marie"
- }
+ },
+ "Église du Sacré-Cœur-de-Jésus": null,
+ "Île de la tortue, Abya Yala": null
 }
