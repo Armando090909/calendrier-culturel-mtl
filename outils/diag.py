@@ -61,7 +61,7 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
                                    "img": [(i.get("src") or i.get("data-src") or "")[:150] + " | " + (i.get("alt") or "")[:60]
                                            for i in soupe.find_all("img")][:25],
                                    "iframes": [f.get("src", "")[:150] for f in soupe.find_all("iframe")][:10]}
-            r[mode] = {"taille": len(txt), "texte": txt[:3000],
+            r[mode] = {"taille": len(txt), "texte": txt[:8000],
                        "jsonld": re.findall(r'(?s)<script[^>]*ld\+json[^>]*>(.*?)</script>', html)[:2],
                        "heures": [txt[max(0, m.start() - 60):m.end() + 20] for m in HEURE.finditer(txt)][:15],
                        "liens": sorted({a for a in re.findall(r'href="(https?://[^"]+)"', html)
