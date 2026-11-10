@@ -23,6 +23,7 @@
  },
  "Anacostia Neighborhood Library": null,
  "Ancien Théâtre Desjardins": null,
+ "Annexe Herb Linder": null,
  "Arprim": null,
  "Arsenal art contemporain": {
   "lat": 45.4918,
@@ -33,6 +34,11 @@
   "lat": 45.534,
   "lon": -73.6,
   "quartier": "Petite-Patrie"
+ },
+ "Aréna Edgar Rouleau": {
+  "lat": 45.44148,
+  "lon": -73.75822,
+  "quartier": ""
  },
  "Atelier Circulaire": {
   "lat": 45.52693,
@@ -50,6 +56,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Au Vieux - Brasserie Festive": null,
+ "Au cœur du Village Dorval": null,
  "Auberge St Gabriel - Montreal": {
   "alias": [],
   "lat": 45.50635,
@@ -57,6 +64,7 @@
   "quartier": "Ville-Marie"
  },
  "Auditorium Fernand-Bilodeau": null,
+ "Auditorium Serge Nolet": null,
  "Auditorium des Archives nationales — BAnQ": null,
  "Auditorium des diplômés de la SGWU (H-110), Université Concordia": null,
  "Ausgang Plaza": {
@@ -120,6 +128,11 @@
   "lat": 45.46638,
   "lon": -73.63096,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
+ "Bibliothèque": {
+  "lat": 45.50327,
+  "lon": -73.57594,
+  "quartier": "Ville-Marie"
  },
  "Bibliothèque Benny": {
   "lat": 45.472,
@@ -374,6 +387,7 @@
  },
  "Burton Cummings Theatre": null,
  "CIRCA art actuel": null,
+ "CRÉR": null,
  "Cabaret Fouf": null,
  "Cabaret Foufs": null,
  "Cabaret Guy-Aubert": null,
@@ -492,6 +506,11 @@
   "lon": -73.6761,
   "quartier": "Saint-Laurent"
  },
+ "Centre communautaire Sarto-Desnoyers": {
+  "lat": 45.43992,
+  "lon": -73.75449,
+  "quartier": ""
+ },
  "Centre communautaire d'Anjou": {
   "lat": 45.605,
   "lon": -73.565,
@@ -504,6 +523,11 @@
   "lat": 45.52018,
   "lon": -73.61978,
   "quartier": "Outremont"
+ },
+ "Centre culturel Peter B. Yeomans": {
+  "lat": 45.43954,
+  "lon": -73.75627,
+  "quartier": ""
  },
  "Centre culturel de Pierrefonds": {
   "lat": 45.49661,
@@ -551,6 +575,11 @@
   "lon": -73.88231,
   "quartier": "L'Île-Bizard–Sainte-Geneviève"
  },
+ "Centre-ville de Montréal": {
+  "lat": 45.49555,
+  "lon": -73.57045,
+  "quartier": ""
+ },
  "Chalet du parc Armand-Bombardier": {
   "lat": 45.64012,
   "lon": -73.59565,
@@ -583,6 +612,11 @@
   "lat": 45.5084,
   "lon": -73.5521,
   "quartier": "Vieux-Montréal"
+ },
+ "Château Saint-Ambroise": {
+  "lat": 45.47514,
+  "lon": -73.5804,
+  "quartier": "Le Sud-Ouest"
  },
  "Cineplex Quartier Latin": {
   "lat": 45.5146,
@@ -652,6 +686,7 @@
   "lon": -73.59358,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Davies Chalet": null,
  "Dazibao": {
   "lat": 45.5257,
   "lon": -73.5975,
@@ -663,6 +698,7 @@
   "lon": -73.56728,
   "quartier": "Ville-Marie"
  },
+ "Diagonale": null,
  "Double's": {
   "lat": 45.52038,
   "lon": -73.59713,
@@ -686,6 +722,7 @@
   "quartier": "Mile End"
  },
  "EA Rawlinson Centre For The Arts": null,
+ "EISODE": null,
  "ELLEPHANT": {
   "adresse": "1201, rue Saint-Dominique, Montréal",
   "alias": [],
@@ -938,6 +975,7 @@
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
+ "Hanifl Performing Arts Centre": null,
  "Henry F. Hall Building": {
   "adresse": "1455 boulevard De Maisonneuve Ouest",
   "alias": [],
@@ -1008,6 +1046,7 @@
   "lon": -73.556,
   "quartier": "Village"
  },
+ "L'imprimerie, centre d'artistes": null,
  "L'Écart": null,
  "LB-145 et en ligne via Zoom, Concordia": null,
  "LB-2, J.W. McConnell Building": null,
@@ -1097,6 +1136,9 @@
  "La petite Place des Arts": null,
  "Langage Plus": null,
  "Le 9e": {
+  "alias": [
+   "Le 9e (centre Eaton)"
+  ],
   "lat": 45.5035,
   "lon": -73.571,
   "quartier": "Centre-ville"
@@ -1637,6 +1679,7 @@
   "lon": -73.55054,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
+ "Plein sud, centre d'exposition en art actuel": null,
  "Plusieurs lieux": null,
  "Pointe-Claire Public Library - Central": null,
  "Pointe-à-Callière": {
@@ -1801,6 +1844,7 @@
  "Sid Williams Theatre": null,
  "Société d'art vocal": null,
  "Southern Alberta Jubilee Auditorium": null,
+ "Sports and Recreation Centre": null,
  "Square Saint-Louis": {
   "lat": 45.51712,
   "lon": -73.56983,
@@ -2025,6 +2069,11 @@
  },
  "Théâtre du cuivre": null,
  "Théâtre l'Aparté": null,
+ "Town Hall": {
+  "lat": 45.43326,
+  "lon": -73.68109,
+  "quartier": "Lachine"
+ },
  "Turbo Haüs": {
   "alias": [
    "Turbo Haus",
@@ -2082,6 +2131,11 @@
   "quartier": "Quartier des spectacles"
  },
  "Vaste et Vague": null,
+ "Veterans Park": {
+  "lat": 45.5247,
+  "lon": -73.55592,
+  "quartier": "Ville-Marie"
+ },
  "Victoria Hall": {
   "lat": 45.48097,
   "lon": -73.60019,
@@ -2164,6 +2218,11 @@
   "lat": 45.55973,
   "lon": -73.64083,
   "quartier": "Ahuntsic-Cartierville"
+ },
+ "Église Saint-Joachim": {
+  "lat": 45.42686,
+  "lon": -73.82515,
+  "quartier": "Village de Pointe-Claire"
  },
  "Église Saint-Joseph": {
   "lat": 45.66295,

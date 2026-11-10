@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-10-la-ou-tout-se-rassemble-52fd1b@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261110T170000
+DTEND;TZID=America/Toronto:20261110T190000
+SUMMARY:Là où tout se rassemble
+LOCATION:Salle Fernand-Seguin\, Montréal
+URL:https://www.cinematheque.qc.ca/fr/cinema/la-ou-tout-se-rassemble/
+DESCRIPTION:Un documentaire suivant de jeunes Autochtones et non-Autochtone
+ s qui tissent des liens à travers un projet de correspondance.\nPrix : 12
+  à 14 $\nDétails : https://omniwebticketing.com/cinematheque/?schdate=20
+ 26-11-10&perfix=14497\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-04-la-bataille-de-gaulle-liberte-partie-2-014414@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:La bataille de Gaulle : Liberté (partie 2)
+LOCATION:Théâtre Outremont\, Montréal
+URL:https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-bataill
+ e-de-gaulle-liberte-partie-2
+DESCRIPTION:Heure à confirmer. Deuxième partie de la projection La batail
+ le de Gaulle\, consacrée à la Libération\, dans le cadre de Ciné-Outre
+ mont.\nDétails : https://theatreoutremont.tuxedobillet.com/web/cine-outre
+ mont-la-bataille-de-gaulle-liberte-partie-2\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-grande-soiree-musicale-du-classique-au-rock-2-wood-f31b86@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261113T200000
+DTEND;TZID=America/Toronto:20261113T220000
+SUMMARY:Grande soirée musicale | Du classique au rock 2 - Wooden Shapes
+LOCATION:Auditorium Serge Nolet\, Montréal
+URL:https://www.ville.dorval.qc.ca/fr/evenements/arts-et-culture/du-classiq
+ ue-au-rock-2-wooden-shapes
+DESCRIPTION:Soirée musicale mêlant répertoire classique et grands succè
+ s rock\, interprétés par Wooden Shapes.\nDétails : https://www.ville.do
+ rval.qc.ca/fr/loisirs-et-culture/arts-et-culture/billetterie-en-ligne\n(cc
+ mtl.ca)
+END:VEVENT
+END:VCALENDAR

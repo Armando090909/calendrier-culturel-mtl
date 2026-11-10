@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-14-cinquante-nuances-de-bleu-le-bleu-dans-l-histoire-c8365c@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T140000
+DTEND;TZID=America/Toronto:20261114T160000
+SUMMARY:Cinquante nuances de bleu : Le bleu dans l'histoire\, dans l'art et
+  dans le design
+LOCATION:Bibliothèque\, Montréal
+URL:https://www.beaconsfield.ca/fr/evenements/ateliers-et-conferences/cinqu
+ ante-nuances-de-bleu-le-bleu-dans-lhistoire-dans-lart-et-dans-le-design
+DESCRIPTION:Exposé sur la place de la couleur bleue dans l'histoire\, l'ar
+ t et le design.\nDétails : https://www.beaconsfield.ca/fr/culture-et-lois
+ irs/installations-et-parcs/reservation-de-salles-et-dinstallations\n(ccmtl
+ .ca)
+END:VEVENT
+END:VCALENDAR

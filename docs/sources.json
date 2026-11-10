@@ -3,28 +3,28 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1752,
+  "evenements": 1777,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 31,
+  "evenements": 37,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 202,
+  "evenements": 186,
   "erreur": false
  },
  {
   "nom": "Songkick (concerts, 2 mois)",
   "url": "https://www.songkick.com/metro-areas/27377-canada-montreal/-",
   "type": "page lue par l'IA",
-  "evenements": 373,
+  "evenements": 371,
   "erreur": false
  },
  {
@@ -52,7 +52,7 @@
   "nom": "Théâtre du Rideau Vert",
   "url": "https://www.rideauvert.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -136,7 +136,7 @@
   "nom": "Théâtre Outremont",
   "url": "http://www.theatreoutremont.ca/fr/accueil",
   "type": "page lue par l'IA",
-  "evenements": 31,
+  "evenements": 30,
   "erreur": false
  },
  {
@@ -157,7 +157,7 @@
   "nom": "Théâtre Sainte-Catherine",
   "url": "http://theatresaintecatherine.com",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -171,7 +171,7 @@
   "nom": "Place des Arts",
   "url": "https://www.placedesarts.com/en/programming",
   "type": "page lue par l'IA",
-  "evenements": 48,
+  "evenements": 36,
   "erreur": false
  },
  {
@@ -189,10 +189,10 @@
   "erreur": false
  },
  {
-  "nom": "Orchestre classique de Montréal",
-  "url": "https://www.orchestre.ca",
+  "nom": "Orchestre Métropolitain – Des airs de fêtes",
+  "url": "https://orchestremetropolitain.com/fr/concerts/des-airs-de-fetes-2026",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -262,14 +262,14 @@
   "nom": "Place des Arts (humour)",
   "url": "https://www.placedesarts.com/discipline/humour",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "Théâtre Sainte-Catherine (impro et humour)",
   "url": "http://theatresaintecatherine.com",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -311,14 +311,14 @@
   "nom": "Comedyville",
   "url": "https://www.comedyville.ca",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 28,
   "erreur": false
  },
  {
   "nom": "Cinéma Public",
   "url": "https://cinemapublic.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 55,
   "erreur": false
  },
  {
@@ -374,7 +374,7 @@
   "nom": "Le Bordel Comédie Club",
   "url": "https://www.lebordel.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -731,7 +731,7 @@
   "nom": "Réseau art actuel (centres d'artistes, vernissages)",
   "url": "https://reseauartactuel.org/evenements/page//?intervalle=semaine",
   "type": "page lue par l'IA",
-  "evenements": 56,
+  "evenements": 68,
   "erreur": false
  },
  {
@@ -752,7 +752,7 @@
   "nom": "evenko (concerts)",
   "url": "https://evenko.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 19,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -787,7 +787,7 @@
   "nom": "Newspeak",
   "url": "https://newspeakmtl.com",
   "type": "page lue par l'IA",
-  "evenements": 15,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -969,7 +969,7 @@
   "nom": "Upstairs Jazz Bar & Grill",
   "url": "https://www.upstairsjazz.com",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -1011,7 +1011,7 @@
   "nom": "Le Balcon",
   "url": "https://www.lebalcon.ca",
   "type": "page lue par l'IA",
-  "evenements": 22,
+  "evenements": 27,
   "erreur": false
  },
  {
@@ -1039,7 +1039,7 @@
   "nom": "Le Belmont",
   "url": "https://www.lebelmont.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -1074,7 +1074,7 @@
   "nom": "Le Studio TD",
   "url": "https://lestudiotd.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -1088,7 +1088,7 @@
   "nom": "Cabaret du Casino de Montréal",
   "url": "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 14,
   "erreur": false
  },
  {
@@ -1116,7 +1116,7 @@
   "nom": "Casa del Popolo – La Sotterenea",
   "url": "https://casadelpopolo.com/fr/events/la-sotterenea",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -1158,14 +1158,14 @@
   "nom": "Wiggle Room (burlesque, cabaret)",
   "url": "https://www.wiggleroom.ca/fr/shows",
   "type": "page lue par l'IA",
-  "evenements": 19,
+  "evenements": 18,
   "erreur": false
  },
  {
   "nom": "Caf' Conc' (cabaret)",
   "url": "https://cafeconcert.ca",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1207,7 +1207,7 @@
   "nom": "La Comédie de Montréal",
   "url": "http://www.lacomedie.ca",
   "type": "page lue par l'IA",
-  "evenements": 13,
+  "evenements": 12,
   "erreur": false
  },
  {
@@ -1277,7 +1277,7 @@
   "nom": "GSIMtl (slam de poésie)",
   "url": "https://www.gsimtl.com/spectaclesGSIMTl2026",
   "type": "page lue par l'IA",
-  "evenements": 10,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -1285,6 +1285,48 @@
   "url": "https://www.lalivrerie.com/programmation",
   "type": "page lue par l'IA",
   "evenements": 14,
+  "erreur": false
+ },
+ {
+  "nom": "Dorval – calendrier",
+  "url": "https://www.ville.dorval.qc.ca/fr/evenements",
+  "type": "page lue par l'IA",
+  "evenements": 7,
+  "erreur": false
+ },
+ {
+  "nom": "Beaconsfield – calendrier",
+  "url": "https://www.beaconsfield.ca/fr/evenements",
+  "type": "page lue par l'IA",
+  "evenements": 7,
+  "erreur": false
+ },
+ {
+  "nom": "Côte-Saint-Luc – calendrier",
+  "url": "https://cotesaintluc.org/events",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "Montréal-Ouest – calendrier",
+  "url": "https://montreal-west.ca/en/events",
+  "type": "page lue par l'IA",
+  "evenements": 6,
+  "erreur": false
+ },
+ {
+  "nom": "Montréal-Est – calendrier",
+  "url": "https://ville.montreal-est.qc.ca/evenements",
+  "type": "page lue par l'IA",
+  "evenements": 1,
+  "erreur": false
+ },
+ {
+  "nom": "Lakeshore Players (théâtre, Dorval)",
+  "url": "https://www.lakeshoreplayers.org",
+  "type": "page lue par l'IA",
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -1298,7 +1340,7 @@
   "nom": "Pointe-Claire – Stewart Hall et activités",
   "url": "https://www.pointe-claire.ca/en/culture-sports-and-recreation/programming-and-registration/calendar-of-events-and-activities",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -1312,7 +1354,7 @@
   "nom": "Pierrefonds-Roxboro – spectacles",
   "url": "https://montreal.ca/articles/spectacles-pierrefonds-roxboro-43673",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1438,7 +1480,7 @@
   "nom": "Club Balattou (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-balattou",
   "type": "page lue par l'IA",
-  "evenements": 14,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -1480,7 +1522,7 @@
   "nom": "ma.to – communauté (quiz, trivia)",
   "url": "https://ma.to/events/montreal/anytime/community",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -1508,7 +1550,7 @@
   "nom": "PAN M 360 – agenda musique",
   "url": "https://panm360.com/en/agenda-360",
   "type": "page lue par l'IA",
-  "evenements": 35,
+  "evenements": 37,
   "erreur": false
  }
 ]
