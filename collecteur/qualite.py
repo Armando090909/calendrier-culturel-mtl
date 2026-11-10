@@ -34,6 +34,7 @@ F_CONTRE = CACHE / "qualite_contreverif.json"
 LIEUX_VAGUES = re.compile(r"(?i)^(salle( principale| \w)?|studio( \w)?|grande salle|petite salle|lieu à confirmer|"
                           r"en ligne|online|tba|à venir|scène|scene|main stage|auditorium)$")
 NOTE_INTERNE = re.compile(r"(?i)à confirmer auprès du lieu|vérifié le \d{4}|\bTODO\b|lorem ipsum|\[(à|a) compléter\]")
+ANNULE = re.compile(r"(?i)^\W*(annulé|annule|cancell?ed|reporté|postponed)\b|\b(annulé|cancell?ed)\W*$|\((annulé|cancell?ed)\)")
 TITRE_VIDE = re.compile(r"(?i)^(tba|tbd|test|sans titre|untitled|événement|event|à venir|coming soon)$")
 MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre",
            "décembre"]
@@ -134,6 +135,9 @@ def regles(events: list[dict], expos: list[dict], coord) -> tuple[list, list, li
             continue
         if TITRE_VIDE.match((e.get("titre") or "").strip()) or len((e.get("titre") or "").strip()) < 3:
             note("titre vide", e, "retirée")
+            continue
+        if ANNULE.search(e.get("titre") or ""):
+            note("annulée", e, "retirée")
             continue
         h = e.get("heure") or ""
         # entre 2 h et 7 h : improbable, sauf pour les soirées (after-hours, raves) où ça arrive vraiment

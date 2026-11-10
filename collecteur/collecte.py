@@ -939,6 +939,26 @@ def main() -> int:
                                       ensure_ascii=False, indent=1), encoding="utf-8")
         return 1
 
+    # Corrections vérifiées à la main (collecteur/corrections.json) : heure, date ou retrait d'une sortie précise, et
+    # horaire d'un spectacle à l'affiche (clé : son adresse). Elles passent avant ce que la collecte a lu.
+    f_corr = Path(__file__).parent / "corrections.json"
+    corr = json.loads(f_corr.read_text(encoding="utf-8")) if f_corr.exists() else {}
+    n_corr, retires = 0, set()
+    for c in corr.get("evenements", []):
+        for e in events:
+            if e["date"] == c["date"] and e["lieu"] == c["lieu"] and c["titre"].lower() in e["titre"].lower():
+                n_corr += 1
+                if c.get("retirer"):
+                    retires.add(id(e))
+                if "heure" in c:  # "" : heure lue par erreur (ex. heure de fin), retirée
+                    e["heure"] = c["heure"] or None
+                if c.get("nouvelle_date"):
+                    e["date"] = c["nouvelle_date"]
+    events = [e for e in events if id(e) not in retires]
+    series_manuelles = corr.get("series", {})
+    expos = [x for x in expos if x.get("url") not in corr.get("series_retirees", [])]  # doublons repérés à la main
+    print(f"Corrections à la main : {n_corr} sorties corrigées ou retirées.")
+
     # Pièces, danse, cirque « à l'affiche du X au Y » : l'horaire de la semaine (relâches comprises), lu une fois par
     # Claude sur la page du spectacle. Le site s'en sert pour placer chaque représentation à la bonne heure.
     f_hor = CACHE / "horaires.json"
@@ -1003,7 +1023,7 @@ def main() -> int:
                 memo_h[cle] = h
             except Exception as exc:
                 print(f"  horaire « {x['titre'][:30]} » : {exc}")
-        h = memo_h.get(cle)
+        h = series_manuelles.get(x["url"]) or memo_h.get(cle)
         # Une liste de dates qui ne contient plus aucune représentation à venir (page qui ne montre que la première,
         # par exemple) ne sert pas : on n'en tient pas compte plutôt que de faire disparaître le spectacle.
         # Dates de la page toutes hors de la période annoncée (ex. agenda de la salle erroné) : la page du spectacle

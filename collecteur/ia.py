@@ -113,8 +113,10 @@ def lire_json(texte: str):
     raise ValueError("réponse sans JSON lisible")
 
 
-def extraire_page(url: str, texte: str, debut: str, fin: str) -> dict:
+def extraire_page(url: str, texte: str, debut: str, fin: str, mise_en_page: str = "") -> dict:
     prompt = CONSIGNE.format(url=url, debut=debut, fin=fin, texte=texte[:MAX_CARACTERES])
+    if mise_en_page:  # vérifiée à la main par l'équipe (sources.yaml), pas tirée de la page
+        prompt = prompt.replace("Texte de la page :\n<<<", f"Disposition de cette page, vérifiée par l'équipe : {mise_en_page}\n\nTexte de la page :\n<<<", 1)
     data = lire_json(_appel(prompt))
     if not isinstance(data, dict):
         data = {"evenements": data if isinstance(data, list) else []}

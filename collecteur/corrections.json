@@ -1,0 +1,244 @@
+{
+ "_note": "Corrections vérifiées à la main (source entre parenthèses). Elles passent avant la collecte ; celles dont la date est passée n'ont plus d'effet.",
+ "evenements": [
+  {
+   "date": "2026-11-10",
+   "lieu": "Le Red Room",
+   "titre": "Down2Techno x Pulse",
+   "nouvelle_date": "2026-11-11",
+   "heure": "22:00",
+   "source": "lepointdevente.com ds6261111001"
+  },
+  {
+   "date": "2026-11-11",
+   "lieu": "Le Red Room",
+   "titre": "Future Jungle",
+   "nouvelle_date": "2026-11-12",
+   "source": "leredroom.com : date écrite après le titre"
+  },
+  {
+   "date": "2026-11-12",
+   "lieu": "Le Red Room",
+   "titre": "Hard Mafia",
+   "nouvelle_date": "2026-11-13",
+   "heure": "",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "Le Red Room",
+   "titre": "Kerosene Dubz",
+   "nouvelle_date": "2026-11-14",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-14",
+   "lieu": "Le Red Room",
+   "titre": "Down2Techno: C4k3",
+   "nouvelle_date": "2026-11-18",
+   "heure": "22:00",
+   "source": "lepointdevente.com ds6261118001"
+  },
+  {
+   "date": "2026-11-18",
+   "lieu": "Le Red Room",
+   "titre": "Nctrnl-001",
+   "nouvelle_date": "2026-11-19",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-19",
+   "lieu": "Le Red Room",
+   "titre": "Technocid",
+   "nouvelle_date": "2026-11-20",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-20",
+   "lieu": "Le Red Room",
+   "titre": "Next Gems",
+   "nouvelle_date": "2026-11-21",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-21",
+   "lieu": "Le Red Room",
+   "titre": "Down2Techno: N0vatek",
+   "nouvelle_date": "2026-11-25",
+   "heure": "22:00",
+   "source": "lepointdevente.com ds6261125001"
+  },
+  {
+   "date": "2026-11-25",
+   "lieu": "Le Red Room",
+   "titre": "No Cut November",
+   "nouvelle_date": "2026-11-26",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-27",
+   "lieu": "Le Red Room",
+   "titre": "Techno Seasons",
+   "nouvelle_date": "2026-11-28",
+   "source": "leredroom.com"
+  },
+  {
+   "date": "2026-11-12",
+   "lieu": "DATCHA",
+   "titre": "Andie b2b",
+   "heure": "23:00",
+   "source": "technoairlines.com"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "DATCHA",
+   "titre": "NAE, No Police",
+   "heure": "22:00",
+   "source": "technoairlines.com"
+  },
+  {
+   "date": "2026-11-14",
+   "lieu": "DATCHA",
+   "titre": "Fence Hop",
+   "heure": "22:00",
+   "source": "technoairlines.com"
+  },
+  {
+   "date": "2026-11-11",
+   "lieu": "Espace le vrai monde?",
+   "titre": "Malaise dans la civilisation",
+   "heure": "20:00",
+   "source": "espacelevraimonde.ca"
+  },
+  {
+   "date": "2026-11-12",
+   "lieu": "Espace le vrai monde?",
+   "titre": "Des choses à tuer",
+   "heure": "19:00",
+   "source": "espacelevraimonde.ca"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "Espace le vrai monde?",
+   "titre": "SOON",
+   "heure": "13:30",
+   "source": "espacelevraimonde.ca"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "Bar L'Hémisphère gauche",
+   "titre": "Guidestones",
+   "heure": "19:30",
+   "source": "songkick (portes)"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "Turbo Haüs",
+   "titre": "Hearts of Palm",
+   "heure": "20:00",
+   "source": "songkick (portes)"
+  },
+  {
+   "date": "2026-11-13",
+   "lieu": "Casa del Popolo",
+   "titre": "Marc McLaughlin",
+   "heure": "20:00",
+   "source": "songkick (portes)"
+  },
+  {
+   "date": "2026-11-14",
+   "lieu": "MTELUS",
+   "titre": "Nicolas Reyes",
+   "heure": "20:00",
+   "source": "songkick (portes)"
+  },
+  {
+   "date": "2026-11-15",
+   "lieu": "Le Ministère",
+   "titre": "MEZZÉ-MUSIQUE",
+   "heure": "19:00",
+   "source": "leministere.ca (portes 18 h)"
+  },
+  {
+   "date": "2026-11-15",
+   "lieu": "Le Ministère",
+   "titre": "Laura Niquay",
+   "retirer": true,
+   "source": "leministere.ca : ANNULÉ"
+  }
+ ],
+ "series": {
+  "https://centaurtheatre.com/fr/shows/holiday-in-zurich/": {
+   "jours": {},
+   "dates": {
+    "2026-11-10": [
+     "20:00"
+    ],
+    "2026-11-11": [
+     "12:00",
+     "20:00"
+    ],
+    "2026-11-12": [
+     "20:00"
+    ],
+    "2026-11-13": [
+     "20:00"
+    ],
+    "2026-11-14": [
+     "14:00",
+     "20:00"
+    ],
+    "2026-11-15": [
+     "14:00"
+    ],
+    "2026-11-17": [
+     "20:00"
+    ],
+    "2026-11-18": [
+     "12:00",
+     "20:00"
+    ],
+    "2026-11-19": [
+     "20:00"
+    ],
+    "2026-11-20": [
+     "20:00"
+    ],
+    "2026-11-21": [
+     "14:00",
+     "20:00"
+    ],
+    "2026-11-22": [
+     "14:00"
+    ]
+   }
+  },
+  "https://theatrestdenis.com/fr/programmation/le-grenier-presente-par-les-7-doigts/": {
+   "jours": {},
+   "dates": {
+    "2026-11-10": [
+     "20:00"
+    ],
+    "2026-11-11": [
+     "20:00"
+    ],
+    "2026-11-12": [
+     "20:00"
+    ],
+    "2026-11-13": [
+     "20:00"
+    ],
+    "2026-11-14": [
+     "15:00",
+     "20:00"
+    ],
+    "2026-11-15": [
+     "15:00"
+    ]
+   }
+  }
+ },
+ "series_retirees": [
+  "https://www.mtl.org/fr/experience/cirque-montrealais-oeuvre"
+ ]
+}

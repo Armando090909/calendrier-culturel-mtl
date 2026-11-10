@@ -426,13 +426,13 @@ def sauver_memoire(aujourd: date) -> None:
     EMPREINTES.write_text(json.dumps(garde, ensure_ascii=False), encoding="utf-8")
 
 
-def extraire_avec_memoire(url: str, texte: str, debut: date, fin: date) -> dict:
-    cle = hashlib.sha1((url + "\n" + texte).encode()).hexdigest()
+def extraire_avec_memoire(url: str, texte: str, debut: date, fin: date, mise_en_page: str = "") -> dict:
+    cle = hashlib.sha1((url + "\n" + mise_en_page + texte).encode()).hexdigest()
     m = _mem().get(cle)
     if m and m.get("debut", "") <= debut.isoformat() and m.get("fin", "") >= (fin - timedelta(days=14)).isoformat():
         m["vu"] = date.today().isoformat()
         return m["data"]
-    data = ia.extraire_page(url, texte, debut.isoformat(), fin.isoformat())
+    data = ia.extraire_page(url, texte, debut.isoformat(), fin.isoformat(), mise_en_page)
     _mem()[cle] = {"data": data, "debut": debut.isoformat(), "fin": fin.isoformat(), "vu": date.today().isoformat()}
     return data
 
@@ -616,7 +616,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             except Exception:
                 pass
         try:
-            data = extraire_avec_memoire(url, texte, debut, fin)
+            # « mise_en_page » : disposition particulière de la page (ex. date écrite APRÈS le titre), vérifiée à la main
+            data = extraire_avec_memoire(url, texte, debut, fin, cfg.get("mise_en_page", ""))
         except Exception as exc:
             print(f"  IA en échec pour {url} : {exc}")
             DIAG.append(f"IA en échec ({str(exc)[:80]}) : {url}")
@@ -629,7 +630,7 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                 html2 = page_rendue(url)
                 texte2 = texte_page(html2, url)
                 if len(texte2) > len(texte) * 1.2:
-                    data2 = extraire_avec_memoire(url, texte2, debut, fin)
+                    data2 = extraire_avec_memoire(url, texte2, debut, fin, cfg.get("mise_en_page", ""))
                     if data2["evenements"] or data2["series"]:
                         data, texte = data2, texte2
                         DIAG.append(f"trouvé dans le navigateur (automatique) : {url}")
