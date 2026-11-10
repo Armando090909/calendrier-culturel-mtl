@@ -181,7 +181,7 @@ function detailHTML(e){
         <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?(V2?`<span class="btl-l">${L("Acheter des billets","Buy tickets")}</span><span class="btl-c">${L("Billets","Tickets")}</span>`:L("Acheter des billets","Buy tickets")):/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?L("Voir l'événement","See the event"):L("Billets et infos","Tickets & info")}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">${L("Itinéraire","Directions")}</a>
         <button type="button" class="btn ghost" data-partage="${e._i}">${L("Partager","Share")}</button>
-      </div>${signalerHTML(e)}`;
+      </div>`;
   const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
   return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
@@ -191,9 +191,11 @@ function detailHTML(e){
       ${lieuHTML(e,true)}
       ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2&&!media?ecoute:""}
       ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
+      ${signalerHTML(e)}
     </div>
     ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
     <div class="det-side seul">${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
+    ${signalerHTML(e,"tel")}
   </article>`;
 }
 function renderChips(){
@@ -551,12 +553,12 @@ $("view").addEventListener("click",e=>{
   const pb=e.target.closest("[data-partage]");if(pb)partager(byId[pb.dataset.partage],pb);
 });
 /* « Signaler une erreur » : un courriel tout prêt à info@ccmtl.ca, avec la fiche concernée */
-function signalerHTML(e){
+function signalerHTML(e,cl){
   const lien=e.ics?`https://ccmtl.ca/${L("","en/")}e/${e.ics}.html`:`https://ccmtl.ca/${L("","en/")}?d=${e.date}`;
   const sujet=L("Erreur sur ccmtl.ca : ","Error on ccmtl.ca: ")+e.titre;
   const corps=L("Fiche : ","Listing: ")+`${e.titre} · ${fmtLong(e.date)}${e.heure?" · "+hFmt(e.heure):""} · ${e.lieu}\n${lien}\n\n`
     +L("Ce qui est inexact (heure, date, salle, prix, annulé…) :\n","What is wrong (time, date, venue, price, cancelled…):\n");
-  return `<p class="signaler"><a href="mailto:info@ccmtl.ca?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}">${L("Une erreur dans cette fiche ? Signalez-la","Something wrong in this listing? Let us know")}</a></p>`}
+  return `<p class="signaler${cl?" "+cl:""}"><a href="mailto:info@ccmtl.ca?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}">${L("Signaler une erreur","Report an error")}</a></p>`}
 function partager(ev,bt){if(!ev)return;
   const url=ev.ics?`https://ccmtl.ca/${L("","en/")}e/${ev.ics}.html`:`https://ccmtl.ca/${L("","en/")}?d=${ev.date}`;
   const d={title:ev.titre,text:`${ev.titre} · ${fmtLong(ev.date)}${ev.heure?" · "+hFmt(ev.heure):""} · ${ev.lieu}`,url};
