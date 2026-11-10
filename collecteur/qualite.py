@@ -88,6 +88,30 @@ def zone(c: dict | None) -> str | None:
 
 
 # ---------------------------------------------------------------- 1. règles
+# tournées : « Match d'impro | POITIERS (France) », « Spectacle — Paris », « (Belgique) »…
+HORS_QC = re.compile(r"(?i)\((france|belgique|suisse|europe|usa|états-unis|etats-unis|ontario|toronto|ottawa|"
+                     r"québec \(ville\)|ville de québec|gatineau|sherbrooke|laval|longueuil)\)|"
+                     r"\b(paris|lyon|marseille|bruxelles|genève|geneve|nantes|tours|poitiers|bordeaux|lille|toulouse|"
+                     r"rennes|strasbourg|new york|toronto|ottawa)\s*\((france|belgique|suisse|usa|ontario)\)")
+
+
+def nettoyer_texte(e: dict, note) -> None:
+    """Entités HTML (« &rsquo; », « &thinsp; »), apostrophes échappées (« l\\'équipe ») et espaces bizarres."""
+    import html as _html
+    for k in ("titre", "lieu", "resume", "resume_en", "prix"):
+        v = e.get(k)
+        if not isinstance(v, str) or not v:
+            continue
+        n = v
+        for _ in range(3):
+            n = _html.unescape(n)
+        n = n.replace("\\'", "'").replace('\\"', '"').replace("\u2009", " ").replace("\u202f", " ").replace("\xa0", " ")
+        n = re.sub(r"\s+([:;!?»])", r" \1", n)
+        n = re.sub(r"[ \t]{2,}", " ", n).strip()
+        if n != v:
+            e[k] = n
+            if k == "titre":
+                note("titre mal encodé", e, "corrigé")
 def regles(events: list[dict], expos: list[dict], coord) -> tuple[list, list, list[dict]]:
     journal = []
 
@@ -95,9 +119,16 @@ def regles(events: list[dict], expos: list[dict], coord) -> tuple[list, list, li
         journal.append({"regle": regle, "action": action, "titre": e.get("titre", "")[:90], "date": e.get("date") or e.get("debut"),
                         "lieu": e.get("lieu", ""), "source": e.get("source", ""), "url": e.get("url", "")})
 
+    for e in events + expos:
+        nettoyer_texte(e, note)
     garder = []
     for e in events:
         z = zone(coord(e.get("lieu", "")))
+        # lieu inconnu (pas de position sur l'île) ET titre qui nomme une ville ou un pays d'ailleurs : date de tournée.
+        # Un groupe « (Toronto) » dans un concert aux Foufounes reste, puisque la salle est connue sur l'île.
+        if z in (None, "hors île") and HORS_QC.search(f"{e.get('titre', '')} | {e.get('lieu', '')}"):
+            note("hors de l'île (ville étrangère dans le titre)", e, "retirée")
+            continue
         if z == "hors île":
             note("hors de l'île", e, "retirée")
             continue
