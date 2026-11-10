@@ -294,6 +294,12 @@ sources:
   - {nom: "GSIMtl (slam de poésie)", cle: salles, type: page_ia, url: "https://www.gsimtl.com/spectaclesGSIMTl2026", discipline: poesie, jours_semaine: [0]}
   - {nom: "La Livrerie", cle: salles, type: page_ia, url: "https://www.lalivrerie.com/programmation", lieu: "La Livrerie", discipline: lettres, jours_semaine: [0]}
   # ---------- Extrémités de l'île (ouest, sud-ouest, villes liées) ----------
+  # Villes liées (9 nov. 2026) : calendriers municipaux ; seules les sorties culturelles sont gardées (pas les séances du conseil, collectes…)
+  - {nom: "Dorval – calendrier", cle: salles, type: page_ia, url: "https://www.ville.dorval.qc.ca/fr/evenements", ville: "Dorval", jours_semaine: [0, 3]}
+  - {nom: "Beaconsfield – calendrier", cle: salles, type: page_ia, url: "https://www.beaconsfield.ca/fr/evenements", ville: "Beaconsfield", jours_semaine: [0, 3]}
+  - {nom: "Côte-Saint-Luc – calendrier", cle: salles, type: page_ia, url: "https://cotesaintluc.org/events/", ville: "Côte-Saint-Luc", jours_semaine: [0, 3]}
+  - {nom: "Montréal-Ouest – calendrier", cle: salles, type: page_ia, url: "https://montreal-west.ca/en/events/", ville: "Montréal-Ouest", jours_semaine: [0, 3]}
+  - {nom: "Montréal-Est – calendrier", cle: salles, type: page_ia, url: "https://ville.montreal-est.qc.ca/evenements/", ville: "Montréal-Est", jours_semaine: [0, 3]}
   - {nom: "Salle Pauline-Julien (ouest de l'île)", cle: salles, type: page_ia, url: "https://pauline-julien.com/programmation-spectacle/", lieu: "Salle Pauline-Julien", jours_semaine: [0]}
   - {nom: "Pointe-Claire – Stewart Hall et activités", cle: salles, type: page_ia, url: "https://www.pointe-claire.ca/en/culture-sports-and-recreation/programming-and-registration/calendar-of-events-and-activities", jours_semaine: [0]}
   - {nom: "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)", cle: salles, type: page_ia, url: "https://www.theatredesjardins.com/", jours_semaine: [0]}
