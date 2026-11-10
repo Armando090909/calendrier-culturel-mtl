@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-17-vers-des-soins-pour-toustes-acces-aux-soins-pour-l-199804@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261117T120000
+DTEND;TZID=America/Toronto:20261117T140000
+SUMMARY:Vers des soins pour toustes : accès aux soins pour les communauté
+ s doublement minoritaires
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://calendrier.umontreal.ca/activite/vers-des-soins-pour-toustes-ac
+ ces-aux-soins-pour-les-communautes-doublement-minoritaires
+DESCRIPTION:Discussion sur les obstacles d'accès aux soins que vivent les 
+ personnes issues de deux groupes minoritaires.\nPrix : Gratuit\nDétails :
+  https://calendrier.umontreal.ca/activite/vers-des-soins-pour-toustes-acce
+ s-aux-soins-pour-les-communautes-doublement-minoritaires\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

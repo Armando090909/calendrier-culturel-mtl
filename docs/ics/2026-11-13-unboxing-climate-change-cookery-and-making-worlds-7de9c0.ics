@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-unboxing-climate-change-cookery-and-making-worlds-7de9c0@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261113T110000
+DTEND;TZID=America/Toronto:20261113T130000
+SUMMARY:Unboxing: Climate Change Cookery and Making Worlds
+LOCATION:J.W. McConnell Building\, Montréal
+URL:https://www.concordia.ca/cuevents/offices/provost/fourth-space/2026/11/
+ 13/cup-unboxing.html
+DESCRIPTION:Atelier de type dévoilement autour de la cuisine face aux chan
+ gements climatiques et de la création de mondes possibles.\nDétails : ht
+ tps://www.concordia.ca/cuevents/offices/provost/fourth-space/2026/11/13/cu
+ p-unboxing.html\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -6,7 +6,7 @@
   "doublon (salle au nom vague)": 5,
   "activité de plusieurs mois classée hors exposition": 1,
   "page de la sortie disparue": 15,
-  "date absente de la page officielle": 21
+  "date absente de la page officielle": 23
  },
  "journal": [
   {
@@ -218,7 +218,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "Nitassinan — séance",
    "date": "2026-11-10",
    "lieu": "Cinéma Public",
@@ -227,7 +227,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "NAZA — séance",
    "date": "2026-11-10",
    "lieu": "Cinéma Public",
@@ -236,7 +236,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "Océan — séance",
    "date": "2026-11-10",
    "lieu": "Cinéma Public",
@@ -308,7 +308,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "Jim Queen — séance",
    "date": "2026-11-10",
    "lieu": "Cinéma Public",
@@ -316,8 +316,17 @@
    "url": "https://cinemapublic.ca/seances/jim-queen-2026-11-10-2000"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tisser nos vies: l'art comme force d'action",
+   "date": "2026-11-11",
+   "lieu": "Écomusée du fier monde",
+   "source": "salles",
+   "url": "https://evenements.uqam.ca/evenements/tisser-nos-vies-l-art-comme-force-d-action/34495"
+  },
+  {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "Un renversement — séance",
    "date": "2026-11-11",
    "lieu": "Cinéma Public",
@@ -344,7 +353,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "NAZA — séance",
    "date": "2026-11-11",
    "lieu": "Cinéma Public",
@@ -371,7 +380,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "The History of Concrete — séance",
    "date": "2026-11-11",
    "lieu": "Cinéma Public",
@@ -380,7 +389,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "Ha-Chan, Shake Your Booty! — séance",
    "date": "2026-11-12",
    "lieu": "Cinéma Public",
@@ -389,7 +398,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "NAZA — séance",
    "date": "2026-11-12",
    "lieu": "Cinéma Public",
@@ -398,7 +407,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "La meilleure façon, c’est par accident — séance",
    "date": "2026-11-12",
    "lieu": "Cinéma Public",
@@ -422,6 +431,15 @@
    "lieu": "Librairie Drawn & Quarterly",
    "source": "salles",
    "url": "https://mtl.drawnandquarterly.com/events"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ivan Boivin Flamand - Nitehi",
+   "date": "2026-11-12",
+   "lieu": "Maison de la culture Francis-Brisson",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/ivan-boivin-flamand/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -452,7 +470,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "You Can See Everything — séance",
    "date": "2026-11-12",
    "lieu": "Cinéma Public",
@@ -470,7 +488,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "The Sandbox — séance",
    "date": "2026-11-13",
    "lieu": "Cinéma Public",
@@ -479,7 +497,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "6 portraits néoréalistes — séance",
    "date": "2026-11-13",
    "lieu": "Cinéma Public",
@@ -488,7 +506,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "La guerre froide — séance",
    "date": "2026-11-13",
    "lieu": "Cinéma Public",
@@ -515,7 +533,7 @@
   },
   {
    "regle": "page de la sortie disparue",
-   "action": "retirée",
+   "action": "lien remplacé par l'accueil du site",
    "titre": "La bola negra — séance",
    "date": "2026-11-13",
    "lieu": "Cinéma Public",
@@ -542,18 +560,18 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 281,
-  "page disparue": 15,
+  "date confirmée": 285,
+  "lien mort remplacé": 15,
   "page illisible": 35,
-  "date absente de la page": 21
+  "date absente de la page": 23
  },
  "controle": null,
  "sources_a_surveiller": [
   {
    "source": "cinemapublic.ca",
    "erreurs": 41,
-   "sorties": 80,
-   "taux": 51.2
+   "sorties": 95,
+   "taux": 43.2
   },
   {
    "source": "cinematheque.qc.ca",
