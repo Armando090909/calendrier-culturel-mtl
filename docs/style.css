@@ -570,3 +570,7 @@ footer:empty{display:none}
 /* En anglais, mois et jours prennent la majuscule (le minuscule stylistique reste en français) */
 html[lang="en"] .nav .navlabel,html[lang="en"] .colhead{text-transform:none}
 .resume,.det h3,.det-titre{overflow-wrap:anywhere}
+
+/* lien « Signaler une erreur » sous les boutons de la fiche */
+.signaler{margin:.6rem 0 0;font-size:.85rem;opacity:.75}
+.signaler a{color:inherit;text-decoration:underline}

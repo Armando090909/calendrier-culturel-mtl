@@ -127,8 +127,59 @@ def rapport(lundi):
             continue
         if x:
             L += [f"### {titre}", ""] + [f"- {a} : {b}" for a, b in x] + [""]
+    L += exactitude(lundi)
     L += ["---", f"Détails : {SITE}"]
     return "\n".join(L)
+
+
+def exactitude(lundi):
+    """Section « Exactitude » : ce que les contrôles de chaque collecte ont corrigé, retiré ou signalé dans la semaine
+    (collecteur/qualite.py), le contrôle aléatoire du lundi et les sources à surveiller."""
+    from collections import Counter
+    from pathlib import Path
+    f = Path(__file__).resolve().parent.parent / "collecteur" / "cache" / "qualite_historique.json"
+    try:
+        h = json.loads(f.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    jours = [(lundi + timedelta(days=i)).isoformat() for i in range(8)]  # jusqu'au lundi matin inclus
+    regles, cv, exemples = Counter(), Counter(), []
+    for j in jours:
+        x = h.get(j) or {}
+        for r in x.get("journal") or []:
+            regles[(r["regle"], r["action"])] += 1
+            if len(exemples) < 8 and r["regle"] not in ("date absente de la page officielle",):
+                exemples.append(r)
+        cv.update(x.get("contreverif") or {})
+    L = ["### Exactitude", ""]
+    if regles:
+        L += ["| Contrôle | Action | Nombre |", "|---|---|---|"]
+        L += [f"| {r} | {a} | {n} |" for (r, a), n in regles.most_common()]
+        L.append("")
+    else:
+        L += ["Aucune correction cette semaine.", ""]
+    if cv:
+        t = sum(cv.values())
+        L += [f"**Contre-vérification des sorties à 3 jours** : {t} vérifications — "
+              + ", ".join(f"{k} : {v}" for k, v in cv.most_common()), ""]
+    ctl = [v for k, v in (h.get("_controles") or {}).items() if k in jours]
+    if ctl:
+        c = ctl[-1]
+        L += [f"**Contrôle aléatoire** : {c['exactes']} sorties exactes sur {c['verifiees']} ({c['taux']} %)."]
+        for e in c.get("erreurs", [])[:6]:
+            L.append(f"- {e['titre']} ({e['date']}, {e['lieu']}) : " + ", ".join(f"{k} → {v}" for k, v in e["faux"].items()))
+        L.append("")
+    if exemples:
+        L += ["Exemples :"] + [f"- {r['regle']} : {r['titre']} ({r['date']}, {r['lieu']}) — {r['action']}" for r in exemples] + [""]
+    try:
+        q = json.loads((f.parent.parent.parent / "docs" / "qualite.json").read_text(encoding="utf-8"))
+        if q.get("sources_a_surveiller"):
+            L += ["**Sources à surveiller** (erreurs sur 28 jours) :"]
+            L += [f"- {s['source']} : {s['erreurs']} erreurs sur {s['sorties']} sorties ({s['taux']} %)" for s in q["sources_a_surveiller"][:8]]
+            L.append("")
+    except (OSError, ValueError):
+        pass
+    return L
 
 
 MOIS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre",

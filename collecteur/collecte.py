@@ -31,6 +31,7 @@ import decouverte  # noqa: E402
 import festivals as fest  # noqa: E402
 import geo  # noqa: E402
 import ia  # noqa: E402
+import qualite  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
 from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
@@ -1027,6 +1028,22 @@ def main() -> int:
 
     affiches_bloquees(events + expos)
     nettoyer_resumes(events + expos)
+
+    # ---- Exactitude (collecteur/qualite.py) : règles, contre-vérification des 3 prochains jours, contrôle du lundi
+    try:
+        events, expos, journal_q = qualite.regles(events, expos, lieux.coord)
+        events, j2, stats_cv = qualite.contre_verifier(events, aujourd, telecharger, texte_page)
+        journal_q += j2
+        controle = qualite.controle_aleatoire(events, aujourd, telecharger, texte_page, ia) if aujourd.weekday() == 0 else None
+        a_surveiller = qualite.fiabilite(events, journal_q, controle, aujourd)
+        qualite.ecrire(aujourd, journal_q, stats_cv, controle, a_surveiller)
+        notes["qualite"] = {"regles": len(journal_q), "contreverif": stats_cv,
+                            "controle": controle and f"{controle['exactes']}/{controle['verifiees']} exactes"}
+        print(f"Exactitude : {len(journal_q)} corrections ou alertes ; contre-vérification {stats_cv}"
+              + (f" ; contrôle aléatoire {controle['exactes']}/{controle['verifiees']}" if controle else ""))
+    except Exception as exc:
+        traceback.print_exc(limit=2)
+        print(f"Exactitude : contrôles en échec ({exc}) ; publication quand même")
     traduire_resumes(events + expos)
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}

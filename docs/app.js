@@ -114,7 +114,7 @@ function saveIcs(i){const e=byId[i];if(!e)return;
 }
 
 function flagsHTML(e){
-  return (e.statut==="reporte"?`<span class="badge">${L("Reporté","Postponed")}</span>`:e.statut==="nouvelle_date"?`<span class="badge">${L("Nouvelle date","New date")}</span>`:"")+(e.complet?`<span class="badge">${L("Complet","Sold out")}</span>`:"")+(e.serie?`<span class="badge s">${L("à l'affiche jusqu'au ","running until ")}${fmt(e.serie.fin)}</span>`:"");
+  return (e.statut==="reporte"?`<span class="badge">${L("Reporté","Postponed")}</span>`:e.statut==="nouvelle_date"?`<span class="badge">${L("Nouvelle date","New date")}</span>`:"")+(e.complet?`<span class="badge">${L("Complet","Sold out")}</span>`:"")+(e.aConfirmer?`<span class="badge">${L("Date à confirmer","Date to be confirmed")}</span>`:"")+(e.serie?`<span class="badge s">${L("à l'affiche jusqu'au ","running until ")}${fmt(e.serie.fin)}</span>`:"");
 }
 function lieuHTML(e,grand){
   const c=D.lieux[e.lieu],k=dist(e.lieu);
@@ -181,7 +181,7 @@ function detailHTML(e){
         <a class="btn" href="${esc(e.billets||e.url)}" target="_blank" rel="noopener">${e.billets?(V2?`<span class="btl-l">${L("Acheter des billets","Buy tickets")}</span><span class="btl-c">${L("Billets","Tickets")}</span>`:L("Acheter des billets","Buy tickets")):/gratuit|free|entrée libre|contribution volontaire/i.test(e.prix||"")?L("Voir l'événement","See the event"):L("Billets et infos","Tickets & info")}</a>
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">${L("Itinéraire","Directions")}</a>
         <button type="button" class="btn ghost" data-partage="${e._i}">${L("Partager","Share")}</button>
-      </div>`;
+      </div>${signalerHTML(e)}`;
   const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
   return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
@@ -550,6 +550,13 @@ $("view").addEventListener("click",e=>{
   const b=e.target.closest("[data-ics]");if(b)saveIcs(Number(b.dataset.ics));
   const pb=e.target.closest("[data-partage]");if(pb)partager(byId[pb.dataset.partage],pb);
 });
+/* « Signaler une erreur » : un courriel tout prêt à info@ccmtl.ca, avec la fiche concernée */
+function signalerHTML(e){
+  const lien=e.ics?`https://ccmtl.ca/${L("","en/")}e/${e.ics}.html`:`https://ccmtl.ca/${L("","en/")}?d=${e.date}`;
+  const sujet=L("Erreur sur ccmtl.ca : ","Error on ccmtl.ca: ")+e.titre;
+  const corps=L("Fiche : ","Listing: ")+`${e.titre} · ${fmtLong(e.date)}${e.heure?" · "+hFmt(e.heure):""} · ${e.lieu}\n${lien}\n\n`
+    +L("Ce qui est inexact (heure, date, salle, prix, annulé…) :\n","What is wrong (time, date, venue, price, cancelled…):\n");
+  return `<p class="signaler"><a href="mailto:info@ccmtl.ca?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}">${L("Une erreur dans cette fiche ? Signalez-la","Something wrong in this listing? Let us know")}</a></p>`}
 function partager(ev,bt){if(!ev)return;
   const url=ev.ics?`https://ccmtl.ca/${L("","en/")}e/${ev.ics}.html`:`https://ccmtl.ca/${L("","en/")}?d=${ev.date}`;
   const d={title:ev.titre,text:`${ev.titre} · ${fmtLong(ev.date)}${ev.heure?" · "+hFmt(ev.heure):""} · ${ev.lieu}`,url};
