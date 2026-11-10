@@ -94,7 +94,10 @@ sources:
   - {nom: Théâtre Prospero, cle: theatre, type: page_ia, url: "https://theatreprospero.com/", lieu: Théâtre Prospero, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: La Licorne, cle: theatre, type: page_ia, url: "https://theatrelalicorne.com/", lieu: La Licorne, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Théâtre d'Aujourd'hui, cle: theatre, type: page_ia, url: "https://theatredaujourdhui.qc.ca/", lieu: "Théâtre d'Aujourd'hui", discipline: theatre, jours_semaine: [0, 3]}
-  - {nom: Théâtre Denise-Pelletier, cle: theatre, type: page_ia, url: "https://www.denise-pelletier.qc.ca/", lieu: Théâtre Denise-Pelletier, discipline: theatre, jours_semaine: [0, 3]}
+  # 10 nov. 2026 : le TDP nous a demandé d'ajouter toute sa programmation (courriel de G. Bougie Riopel). Le calendrier donne
+  # chaque représentation (salle, heure, grand public ou scolaire) ; la page des pièces donne les accueils qui n'y sont pas.
+  - {nom: "Théâtre Denise-Pelletier – calendrier", cle: theatre, type: page_ia, url: "https://www.denise-pelletier.qc.ca/calendrier/", lieu: Théâtre Denise-Pelletier, discipline: theatre, jours_semaine: [0, 3], mise_en_page: "chaque représentation donne le jour, le mois, la salle (Salle Denise-Pelletier ou Salle Fred-Barry), la pièce et l'heure ; une représentation marquée « Scolaire » est réservée aux groupes scolaires : ne la garde pas. Donne chaque représentation grand public comme un événement daté ; le lieu est toujours « Théâtre Denise-Pelletier » (les deux salles sont dans le même bâtiment)."}
+  - {nom: "Théâtre Denise-Pelletier – pièces", cle: theatre, type: page_ia, url: "https://www.denise-pelletier.qc.ca/pieces/", lieu: Théâtre Denise-Pelletier, discipline: theatre, jours_semaine: [0, 3], mise_en_page: "ne garde que La nuit m'avale et Medea Luz : les autres pièces ont déjà chaque représentation datée par le calendrier du théâtre"}
   - {nom: Usine C, cle: theatre, type: page_ia, url: "https://usine-c.com/", lieu: Usine C, jours_semaine: [0, 3]}
   - {nom: Centaur, cle: theatre, type: page_ia, url: "https://centaurtheatre.com/fr/", lieu: Théâtre Centaur, discipline: theatre, jours_semaine: [0, 3], navigateur: true}
   - {nom: Centre Segal, cle: theatre, type: page_ia, url: "https://www.segalcentre.org/fr/home", lieu: Centre Segal, jours_semaine: [0, 3], navigateur: true}
