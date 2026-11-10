@@ -67,6 +67,13 @@ def robots_permet(url: str) -> bool:
     return rp is None or rp.can_fetch("CalendrierCulturelMTL", url)
 
 
+def _autre_ville(demande: str, final: str) -> bool:
+    """Vrai si une page demandée pour Montréal a été redirigée ailleurs (ex. ma.to qui envoie les serveurs de GitHub,
+    situés aux États-Unis, vers les événements de Washington)."""
+    a, b = (demande or "").lower(), (final or "").lower()
+    return any(v in a for v in ("montreal", "mtl")) and b and not any(v in b for v in ("montreal", "mtl"))
+
+
 def telecharger(url: str, accept: str = "*/*") -> requests.Response:
     import os
     if not robots_permet(url):
@@ -76,6 +83,8 @@ def telecharger(url: str, accept: str = "*/*") -> requests.Response:
             raise PermissionError(f"robots.txt du site : lecture non souhaitée ({url})")
     r = requests.get(url, timeout=40, headers={"User-Agent": UA, "Accept": accept, "Accept-Language": "fr-CA,fr;q=0.9,en;q=0.5"})
     r.raise_for_status()
+    if _autre_ville(url, r.url):
+        raise ValueError(f"page redirigée vers une autre ville ({r.url[:80]}) : ignorée")
     if not r.encoding or r.encoding.lower() == "iso-8859-1":
         r.encoding = r.apparent_encoding or "utf-8"
     return r
@@ -463,6 +472,8 @@ def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
             page.mouse.wheel(0, 4000)
             page.wait_for_timeout(500)
         page.wait_for_timeout(attente_ms)
+        if _autre_ville(url, page.url):
+            raise RuntimeError(f"page redirigée vers une autre ville ({page.url[:80]}) (navigateur)")
         html = page.content()
         # Beaucoup de sites (Wix, Squarespace, billetteries intégrées) affichent leur calendrier dans un cadre (iframe) :
         # on ajoute le contenu de chaque cadre à la page.
