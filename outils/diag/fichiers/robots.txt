@@ -1,14 +1,137 @@
-# robots.txt for https://www.placedesarts.com/
+# The Main - Montreal's City Magazine
+# robots.txt
 
-sitemap: https://www.placedesarts.com/sitemaps-1-sitemap.xml
-sitemap: https://www.placedesarts.com/en/sitemaps-1-sitemap.xml
-
-# live - don't allow web crawlers to index cpresources/ or vendor/
-
+# Global rules
 User-agent: *
-Disallow: /cpresources/
-Disallow: /vendor/
-Disallow: /.env
-Disallow: /cache/
+Allow: /
+Allow: /directory/
+Allow: /guide/
+Allow: /articles/
+Allow: /place/
+Allow: /llms.txt
+Allow: /llms-full.txt
 
+# Next.js static assets - allow CSS/media for rendering, block JSON/manifests for crawl budget
+Allow: /_next/static/css/
+Allow: /_next/static/media/
+Allow: /_next/static/chunks/
+# Article and guide images are served through the image optimizer; Google
+# requires image URLs to be crawlable for Images and Discover.
+Allow: /_next/image
+Disallow: /_next/
+Disallow: /*.json$
 
+Disallow: /*?ref=*
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*preview=true
+Disallow: /*draft=true
+Disallow: /account/
+Disallow: /auth/
+Disallow: /awards/
+Disallow: /fr/awards/
+Disallow: /studio/
+Disallow: /events/
+Disallow: /event/
+Disallow: /fr/events/
+Disallow: /fr/event/
+
+# AI answer engines fetch a page when someone asks a question and link back
+# to it in the answer. Allowed, with no crawl delay, so we can be cited.
+# A bot that matches a named group ignores the * group, so the private paths
+# are repeated here.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /_next/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /account/
+Disallow: /auth/
+Disallow: /studio/
+Disallow: /awards/
+Disallow: /fr/awards/
+Disallow: /events/
+Disallow: /event/
+Disallow: /fr/events/
+Disallow: /fr/event/
+Disallow: /*?ref=*
+Disallow: /*preview=true
+Disallow: /*draft=true
+Disallow: /directory/*/*?businesstype=*
+Disallow: /directory/*/2
+Disallow: /directory/*/3
+Disallow: /directory/*/4
+Disallow: /directory/*/5
+Disallow: /directory/*/6
+Disallow: /directory/*/7
+Disallow: /directory/*/8
+Disallow: /directory/*/9
+Disallow: /directory/*/10
+Allow: /
+
+# AI training crawlers copy pages to train models and send no readers back.
+# Blocked. This does not affect Google Search or Google's AI Overviews, which
+# use Googlebot, nor the answer engines above.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+User-agent: Applebot
+Allow: /articles/
+Allow: /fr/articles/
+Allow: /guide/
+Allow: /fr/guide/
+Allow: /apple-news-feed.xml
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /studio/
+
+User-agent: AwarioRssBot
+Disallow: /
+
+User-agent: AwarioSmartBot
+Disallow: /
+
+# Crawl-delay directive (default for all other bots)
+Crawl-delay: 1
+
+# Google News Crawler - Explicit permissions for news content
+User-agent: Googlebot-News
+Allow: /articles/
+Allow: /fr/articles/
+Allow: /bulletin/
+Allow: /fr/bulletin/
+Allow: /guide/
+Allow: /fr/guide/
+Disallow: /directory/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /studio/
+
+# Sitemap URLs - Standard sitemap for general crawling
+Sitemap: https://www.themain.com/sitemap.xml
+
+# Google News Sitemap - Dedicated news content feed
+Sitemap: https://www.themain.com/news-sitemap.xml
+
+# Apple News Feed - Optimized RSS for Apple News Publisher
+# See: https://www.themain.com/apple-news-feed.xml
+
+# LLMs.txt - AI content documentation
+# See: https://www.themain.com/llms.txt
