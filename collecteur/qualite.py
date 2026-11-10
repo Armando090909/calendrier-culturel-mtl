@@ -7,7 +7,7 @@
    - résumé qui ressemble à une note interne (« à confirmer auprès du lieu », « vérifié le… ») : résumé retiré ;
    - titre vide ou de remplissage (« TBA », « test »).
 2. Contre-vérification (chaque nuit) : les sorties des 3 prochains jours sont relues sur leur page officielle ; la date
-   doit y figurer. Page disparue (404/410) : sortie retirée. Date absente : sortie marquée « à confirmer ».
+   doit y figurer. Page disparue (404/410) : lien remplacé par l'accueil du site (pas retirée). Date absente : sortie marquée « à confirmer ».
 3. Contrôle aléatoire (le lundi) : 20 sorties tirées au hasard, comparées par l'IA à leur page (titre, date, heure,
    salle, prix). Le taux d'exactitude est gardé semaine après semaine.
 4. Fiabilité des sources : erreurs comptées par site d'origine sur 28 jours ; les sources qui se trompent souvent sont signalées.
@@ -235,10 +235,14 @@ def contre_verifier(events: list[dict], aujourd: date, telecharger, texte_page, 
             r = memo[cle]
         for e in evs:
             if r.get("code") in (404, 410):
-                e["_retirer"] = True
-                stats["page disparue"] += 1
-                journal.append({"regle": "page de la sortie disparue", "action": "retirée", "titre": e["titre"][:90],
-                                "date": e["date"], "lieu": e.get("lieu", ""), "source": e.get("source", ""), "url": url})
+                # Lien mort : pas une preuve d'annulation (10 nov. 2026 : 15 séances du Cinéma Public retirées à tort,
+                # les adresses de séance changent ou sont reconstituées). La sortie reste, avec la page d'accueil du site.
+                u = urlparse(url)
+                e["url"] = f"{u.scheme}://{u.netloc}/"
+                stats["lien mort remplacé"] += 1
+                journal.append({"regle": "page de la sortie disparue", "action": "lien remplacé par l'accueil du site",
+                                "titre": e["titre"][:90], "date": e["date"], "lieu": e.get("lieu", ""),
+                                "source": e.get("source", ""), "url": url})
             elif r.get("code") != 200:
                 stats["page illisible"] += 1  # refus du site, panne : on ne conclut rien
             elif e["date"] in (r.get("dates") or []):
