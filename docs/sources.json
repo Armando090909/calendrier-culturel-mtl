@@ -17,7 +17,7 @@
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 181,
+  "evenements": 180,
   "erreur": false
  },
  {
@@ -84,8 +84,15 @@
   "erreur": false
  },
  {
-  "nom": "Théâtre Denise-Pelletier",
-  "url": "https://www.denise-pelletier.qc.ca",
+  "nom": "Théâtre Denise-Pelletier – calendrier",
+  "url": "https://www.denise-pelletier.qc.ca/calendrier",
+  "type": "page lue par l'IA",
+  "evenements": 12,
+  "erreur": false
+ },
+ {
+  "nom": "Théâtre Denise-Pelletier – pièces",
+  "url": "https://www.denise-pelletier.qc.ca/pieces",
   "type": "page lue par l'IA",
   "evenements": 1,
   "erreur": false
@@ -563,7 +570,7 @@
   "nom": "Théâtre Paradoxe",
   "url": "https://theatreparadoxe.com/fr/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -633,7 +640,7 @@
   "nom": "UQAM – événements",
   "url": "https://evenements.uqam.ca",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 9,
   "erreur": false
  },
  {

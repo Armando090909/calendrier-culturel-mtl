@@ -1,12 +1,9 @@
 {
  "date": "2026-11-10",
  "statut": "publié",
- "evenements": 2590,
- "expositions": 226,
- "nouvelles_salles": [
-  "FB - Faubourg Building",
-  "Montreal West Train Station"
- ],
+ "evenements": 2604,
+ "expositions": 225,
+ "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
    "lues": 0,
@@ -55,12 +52,13 @@
    "2026-11-19 : « dead ex girlfriends » (Club Soda) = « Lisa LeBlanc – M pour Montréal, avec Les Shirley e » (Théâtre Plaza)",
    "2026-11-19 : « Le Ren » (Club Soda) = « Le Ren – M pour Montréal, avec Bells Larsen & Jank » (Casa del Popolo)",
    "2026-11-19 : « Mzrabelle » (Club Soda) = « Mzrabelle, XLOWW & Vago » (Le Belmont)",
-   "2026-11-20 : « Mundial Montréal OFF – Less Toches, Les Tireux d'R » (Café Campus) = « Mundial Montréal OFF – Laura Niquay et invités » (Quai des Brumes)",
-   "2026-11-20 : « Mundial Montréal OFF – Daughters of Donbas & Hildá » (O Patro Vys) = « Mundial Montréal OFF – Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Mundial Montréal OFF : Less Toches, Les Tireux d'R » (Café Campus) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Mundial Montréal OFF : Daughters of Donbas & Hildá » (O Patro Vys) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Spectacle au Théâtre du Nouveau Monde (titre non i » (Théâtre du Nouveau Monde) = « Écouter le nouveau monde » (Club Balattou)",
    "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-20 : « Calamine » (Club Soda) = « Calamine – M pour Montréal » (Foufounes Électriques)",
+   "2026-11-20 : « Calamine » (Club Soda) = « Calamine (M pour Montréal) » (Foufounes Électriques)",
    "2026-11-21 : « Celebration - Le meilleur party dansant Motown Pop » (Le Balcon) = « Célébration! » (Wiggle Room)",
-   "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval » (MTELUS)",
+   "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval @ MTELUS » (MTELUS)",
    "2026-11-21 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
    "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-11-28 : « Bach en quatre villes » (Lieu à confirmer) = « Luc Beauséjour : Bach dans quatre villes (mini-con » (Espace Off-Bach (3487, boul. Saint-Laurent))",
@@ -74,12 +72,12 @@
   ],
   "catalogues": [],
   "qualite": {
-   "regles": 61,
+   "regles": 60,
    "contreverif": {
-    "date confirmée": 285,
+    "date confirmée": 290,
     "lien mort remplacé": 15,
     "page illisible": 35,
-    "date absente de la page": 23
+    "date absente de la page": 22
    },
    "controle": null
   },
@@ -107,7 +105,7 @@
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 181,
+   "evenements": 180,
    "series": 0,
    "erreur": null
   },
@@ -177,11 +175,19 @@
    "note": "repris du 2026-11-09"
   },
   {
-   "source": "Théâtre Denise-Pelletier",
+   "source": "Théâtre Denise-Pelletier – calendrier",
+   "evenements": 12,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "trouvé dans le navigateur (automatique) : https://www.denise-pelletier.qc.ca/calendrier/"
+   ]
+  },
+  {
+   "source": "Théâtre Denise-Pelletier – pièces",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-11-09"
+   "erreur": null
   },
   {
    "source": "Usine C",
@@ -463,7 +469,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1498 caractères de texte : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1503 caractères de texte : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -677,7 +683,7 @@
   },
   {
    "source": "Théâtre Paradoxe",
-   "evenements": 3,
+   "evenements": 4,
    "series": 0,
    "erreur": null
   },
@@ -747,7 +753,7 @@
   },
   {
    "source": "UQAM – événements",
-   "evenements": 5,
+   "evenements": 9,
    "series": 0,
    "erreur": null
   },
@@ -791,11 +797,7 @@
    "source": "Hexagram – conférences (recherche-création)",
    "evenements": 0,
    "series": 1,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (HTTPSConnectionPool(host='hexagram.ca', port=443): Max retries exceeded with url) : https://hexagram.ca/en/category/activities/conferences-en/",
-    "page illisible : données du 2026-11-10 conservées"
-   ]
+   "erreur": null
   },
   {
    "source": "Cabaret Lion d'Or (billetterie)",
@@ -2071,7 +2073,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
    ]
   },
   {
@@ -2219,9 +2221,7 @@
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "lue dans le navigateur (automatique) : https://ilesoniq.com"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · LASSO",

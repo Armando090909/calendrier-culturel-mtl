@@ -6,7 +6,7 @@
   "doublon (salle au nom vague)": 5,
   "activité de plusieurs mois classée hors exposition": 1,
   "page de la sortie disparue": 15,
-  "date absente de la page officielle": 23
+  "date absente de la page officielle": 22
  },
  "journal": [
   {
@@ -316,15 +316,6 @@
    "url": "https://cinemapublic.ca/seances/jim-queen-2026-11-10-2000"
   },
   {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Tisser nos vies: l'art comme force d'action",
-   "date": "2026-11-11",
-   "lieu": "Écomusée du fier monde",
-   "source": "salles",
-   "url": "https://evenements.uqam.ca/evenements/tisser-nos-vies-l-art-comme-force-d-action/34495"
-  },
-  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "Un renversement — séance",
@@ -379,6 +370,15 @@
    "url": "https://festivalarabe.com/spectacle/convivencia"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Voyage voyage",
+   "date": "2026-11-13",
+   "lieu": "Théâtre Denise-Pelletier",
+   "source": "theatre",
+   "url": "https://www.denise-pelletier.qc.ca/pieces/voyage-voyage/"
+  },
+  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "The History of Concrete — séance",
@@ -431,15 +431,6 @@
    "lieu": "Librairie Drawn & Quarterly",
    "source": "salles",
    "url": "https://mtl.drawnandquarterly.com/events"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Ivan Boivin Flamand - Nitehi",
-   "date": "2026-11-12",
-   "lieu": "Maison de la culture Francis-Brisson",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/ivan-boivin-flamand/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -560,10 +551,10 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 285,
+  "date confirmée": 290,
   "lien mort remplacé": 15,
   "page illisible": 35,
-  "date absente de la page": 23
+  "date absente de la page": 22
  },
  "controle": null,
  "sources_a_surveiller": [
