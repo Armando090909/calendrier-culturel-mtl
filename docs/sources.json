@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1777,
+  "evenements": 1763,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 37,
+  "evenements": 35,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 186,
+  "evenements": 230,
   "erreur": false
  },
  {
@@ -66,7 +66,7 @@
   "nom": "Théâtre Prospero",
   "url": "https://theatreprospero.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -332,14 +332,14 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
   "nom": "Théâtre de la LNI",
   "url": "https://www.lni.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -367,7 +367,7 @@
   "nom": "Librairie Drawn & Quarterly (événements)",
   "url": "https://mtl.drawnandquarterly.com/events",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -493,7 +493,7 @@
   "nom": "N'était-ce pas l'été (ma.to)",
   "url": "https://ma.to/venue/netaitcepaslete",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -563,7 +563,7 @@
   "nom": "Théâtre Paradoxe",
   "url": "https://theatreparadoxe.com/fr/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -598,14 +598,14 @@
   "nom": "LESPACEMAKER – événements",
   "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 56,
+  "evenements": 54,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 90,
+  "evenements": 92,
   "erreur": false
  },
  {
@@ -647,7 +647,7 @@
   "nom": "Concordia – événements",
   "url": "https://www.concordia.ca/events.html",
   "type": "page lue par l'IA",
-  "evenements": 13,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -668,7 +668,7 @@
   "nom": "Centre Canadien d'Architecture – événements (Eventbrite)",
   "url": "https://www.eventbrite.ca/o/15745877961",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -836,7 +836,7 @@
   "nom": "Duran Contemporain",
   "url": "https://durancontemporain.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 1,
   "erreur": false
  },
  {
@@ -1186,7 +1186,7 @@
   "nom": "Théâtre MainLine",
   "url": "http://www.mainlinetheatre.ca",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -1221,7 +1221,7 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca/en/montreal",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -1508,7 +1508,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 105,
+  "evenements": 100,
   "erreur": false
  },
  {
@@ -1529,7 +1529,7 @@
   "nom": "Wiggle Room (ma.to)",
   "url": "https://ma.to/venue/wiggleroommtl",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 2,
   "erreur": false
  },
  {

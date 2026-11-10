@@ -1,0 +1,102 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-10-colloque-defis-lies-aux-aleas-hydrometeorologiques-12378d@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261110T090000
+DTEND;TZID=America/Toronto:20261110T110000
+SUMMARY:Colloque Défis liés aux aléas hydrométéorologiques dans un mon
+ de complexe et incertain
+LOCATION:Centre Pierre-Peladeau\, Montréal
+URL:https://evenements.uqam.ca/evenements/colloque-defis-lies-aux-aleas-hyd
+ rometeorologiques-dans-un-monde-complexe-et-incertain/34586?date=2026-11-1
+ 0_09-00-00
+DESCRIPTION:Colloque sur les défis posés par les aléas hydrométéorolog
+ iques dans un contexte incertain et complexe.\nPrix : Gratuit\nDétails : 
+ https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20261109
+ T090000Z/20261110T170000Z&location=UQAM%20-%20Centre%20Pierre-P%C3%A9ladea
+ u%20(Q)%20(300%2C%20boulevard%20de%20Maisonneuve%20Est%2C%20Montr%C3%A9al%
+ 20null)&text=D%C3%A9fis%20li%C3%A9s%20aux%20al%C3%A9as%20hydrom%C3%A9t%C3%
+ A9orologiques%20dans%20un%20monde%20complexe%20et%20incertain&details=%3Cp
+ %3E%3Cstrong%3EVous%20%C3%AAtes%20cordialement%20invit%C3%A9.es%20au%20col
+ loque%20%C2%AB%20D%C3%A9fis%20li%C3%A9s%20aux%20al%C3%A9as%20hydrom%C3%A9t
+ %C3%A9orologiques%20dans%20un%20monde%20complexe%20et%20incertain%20%C2%BB
+ %2C%20qui%20aura%20lieu%20dans%20le%20cadre%20des%20Entretiens%20Jacques%2
+ 0Cartier%202026%2C%209%20et%2010%20novembre%202026%2C%20au%C2%A0Salon%20or
+ ange%2C%20%C3%A0%20l'UQAM.%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3EL%E2%80%99%C3
+ %A9v%C3%A9nement%20est%20organis%C3%A9%20conjointement%20par%20l'UQAM%C2%A
+ 0et%C2%A0Sciences%20Po%C2%A0Lyon.%C2%A0Les%20Entretiens%20Jacques%20Cartie
+ r%20sont%20un%20%C3%A9v%C3%A8nement%20interdisciplinaire%20incontournable%
+ 20r%C3%A9unissant%20des%20experts%20et%20d%C3%A9cideurs%20d%E2%80%99Auverg
+ ne-Rh%C3%B4ne-Alpes%20(France)%2C%20du%20Qu%C3%A9bec%20et%20de%20la%20fran
+ cophonie%20canadienne.%3C%2Fp%3E%0A%3Cp%3EL%E2%80%99%C3%A9dition%202026%20
+ abordera%20des%20th%C3%A8mes%20tels%C2%A0%3A%C2%A0%C2%A0Les%20repr%C3%A9se
+ ntations%20autour%20de%20l'eau%C2%A0Les%20enjeux%20actuels%20%22nouveaux%2
+ 2%20et%20limites%20des%20approches%20en%20situation%20de%20complexit%C3%A9
+ %C2%A0Les%20nouvelles%20approches%2C%20innovations%20collectives%20et%20pr
+ ospectives%C2%A0%3C%2Fp%3E%0A%3Cp%3EIl%20s%E2%80%99agit%20d%E2%80%99un%20%
+ C3%A9v%C3%A8nement%20gratuit%2C%20ouvert%20au%20public.%20Un%20cocktail%20
+ de%20r%C3%A9seautage%20aura%20lieu%20le%209%20novembre.Des%20pauses%20sant
+ %C3%A9%20seront%20fournies%20pendant%20les%20deux%20jours%20du%20colloque.
+ %C2%A0%3C%2Fp%3E%0A%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fcan01.safelinks.p
+ rotection.outlook.com%2F%3Furl%3Dhttps%253A%252F%252Fentretiensjacquescart
+ ier.com%252Fevents%252Fdefis-lies-aux-aleas-hydrometeorologiques-dans-un-m
+ onde-complexe-et-incertain-2%252F%26amp%3Bdata%3D05%257C02%257Ccirnu.eva%2
+ 540uqam.ca%257Cf717018986b042a7301608defc7d0ba4%257C12cb4e1a42da491c90e17a
+ 7a9753506f%257C0%257C0%257C639225811152053497%257CUnknown%257CTWFpbGZsb3d8
+ eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbC
+ IsIldUIjoyfQ%253D%253D%257C0%257C%257C%257C%26amp%3Bsdata%3D8azbLbAjv0kY2w
+ 5N00pVT1BTrNjPnzOWczsY%252BKc0CgQ%253D%26amp%3Breserved%3D0%22%3EProgramme
+ %20de%20lundi%209%20novembre%20-%20D%C3%A9fis%20li%C3%A9s%20aux%20al%C3%A9
+ as%20hydrom%C3%A9t%C3%A9orologiques%20dans%20un%20monde%20complexe%20et%20
+ incertain%20%7C%20Entretiens%20Jacques%20Cartier%3C%2Fa%3E%3C%2Fp%3E%0A%3C
+ p%3EProgramme%20de%20mardi%2010%20novembre%C2%A0%3Ca%20href%3D%22https%3A%
+ 2F%2Fcan01.safelinks.protection.outlook.com%2F%3Furl%3Dhttps%253A%252F%252
+ Fentretiensjacquescartier.com%252Fevents%252Fdefis-lies-aux-aleas-hydromet
+ eorologiques-dans-un-monde-complexe-et-incertain%252F%26amp%3Bdata%3D05%25
+ 7C02%257Ccirnu.eva%2540uqam.ca%257Cf717018986b042a7301608defc7d0ba4%257C12
+ cb4e1a42da491c90e17a7a9753506f%257C0%257C0%257C639225811152076753%257CUnkn
+ own%257CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW
+ 4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%253D%253D%257C0%257C%257C%257C%26amp%3Bsd
+ ata%3DYqjwioEjpa1rWwuzsrYsFWFn1se6F%252Bf0KXbyqjKO9u4%253D%26amp%3Breserve
+ d%3D0%22%3ED%C3%A9fis%20li%C3%A9s%20aux%20al%C3%A9as%20hydrom%C3%A9t%C3%A9
+ orologiques%20dans%20un%20monde%20complexe%20et%20incertain%20%7C%20Entret
+ iens%20Jacques%20Cartier%3C%2Fa%3E%C2%A0%3C%2Fp%3E%0A%3Cp%3EInscription%20
+ obligatoire%C2%A0%3A%C2%A0%3Ca%20href%3D%22https%3A%2F%2Fwww.billetweb.fr%
+ 2Fdefis-lies-aux-aleas-hydrometeorologiques-dans-un-monde-complexe-et-ince
+ rtain%22%3Ehttps%3A%2F%2Fwww.billetweb.fr%2Fdefis-lies-aux-aleas-hydromete
+ orologiques-dans-un-monde-complexe-et-incertain%3C%2Fa%3E%C2%A0%3C%2Fp%3E%
+ 0A%3Cp%3EEn%20savoir%20plus%20sur%20les%20entretiens%20Jacques%20Cartier%C
+ 2%A0%3Ca%20href%3D%22https%3A%2F%2Fcan01.safelinks.protection.outlook.com%
+ 2F%3Furl%3Dhttps%253A%252F%252Fentretiensjacquescartier.com%252Fque-sont-l
+ es-entretiens-jacques-cartier%252F%26amp%3Bdata%3D05%257C02%257Ccirnu.eva%
+ 2540uqam.ca%257Cf717018986b042a7301608defc7d0ba4%257C12cb4e1a42da491c90e17
+ a7a9753506f%257C0%257C0%257C639225811152024735%257CUnknown%257CTWFpbGZsb3d
+ 8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpb
+ CIsIldUIjoyfQ%253D%253D%257C0%257C%257C%257C%26amp%3Bsdata%3D1NpDcq4DHOe3R
+ u2ACjvbhflRDjKvConAqlgnxolmPLw%253D%26amp%3Breserved%3D0%22%3EQue%20sont%2
+ 0les%20Entretiens%20Jacques%20Cartier%20%3F%20%7C%20Entretiens%20Jacques%2
+ 0Cartier%3C%2Fa%3E%3C%2Fp%3E\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
