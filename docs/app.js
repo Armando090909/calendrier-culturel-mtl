@@ -170,7 +170,7 @@ function detailHTML(e){
   const carte=c&&CFG.cartes!==false?`<iframe class="carte" loading="lazy" title="${L("Carte : ","Map: ")}${esc(e.lieu)}" src="https://www.openstreetmap.org/export/embed.html?bbox=${(c.lon-.006).toFixed(4)}%2C${(c.lat-.0035).toFixed(4)}%2C${(c.lon+.006).toFixed(4)}%2C${(c.lat+.0035).toFixed(4)}&layer=mapnik&marker=${c.lat}%2C${c.lon}"></iframe>`:"";
   // Affiche : image fournie par la salle (formulaire), sinon l'image de promotion de la page officielle,
   // affichée depuis son site d'origine avec le crédit et le lien. Si elle ne charge pas, le cadre disparaît.
-  let aff=e.image?{url:e.image,credit:L("fournie par l'organisateur","provided by the organizer")}:(CFG.affiches!==false&&e.affiche&&!e.affiche.salle&&e.affiche)||null; // image de la page d'accueil d'une salle : souvent un autre spectacle, pas affichée
+  let aff=e.image?{url:e.image,credit:L("fournie par l'organisateur","provided by the organizer")}:(CFG.affiches!==false&&e.affiche)||null; // image de salle : seulement pour les salles vérifiées (images_de_salle, sources.yaml)
   // Songkick : la vignette (« medium_avatar », environ 60 px) est remplacée par la grande version du même fichier ;
   // si elle manque, la taille intermédiaire prend le relais (data-petit)
   if(aff&&/images\.sk-static\.com\/.+\/(small|medium)_avatar$/.test(aff.url))

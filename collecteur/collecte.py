@@ -142,7 +142,7 @@ AGREGATEURS = ("sorstu.ca", "songkick.com", "facebook.com", "eventbrite", "lepoi
                "venuepilot", "tixr", "seetickets", "yapla", "eventzilla", "allevents", "meetup")
 
 
-def images_des_salles(events: list[dict], aujourd) -> None:
+def images_des_salles(events: list[dict], aujourd, permises=None) -> None:
     """Événement sans aucune affiche : l'image de partage du site de la salle (son logo ou sa photo), étiquetée
     comme image de la salle. Le site de la salle est déduit des adresses de ses propres événements."""
     from collections import Counter
@@ -181,9 +181,11 @@ def images_des_salles(events: list[dict], aujourd) -> None:
             memo[h] = {"image": a["url"] if a else None, "le": aujourd.isoformat()}
     n = 0
     # 9 nov. 2026 : l'image de la page d'accueil d'une salle montre souvent UN AUTRE spectacle (ex. Espace Le Vrai
-    # Monde?) ; une fiche sans image vaut mieux qu'une image trompeuse. Désactivé.
-    for e in (events if os.environ.get("IMAGE_DE_SALLE") == "1" else []):
-        if not e.get("affiche") and not e.get("image") and e.get("lieu") in site:
+    # Monde?) : seulement pour les salles dont l'image est vérifiée (logo, façade, la salle elle-même),
+    # liste « images_de_salle » de sources.yaml
+    permises = set(permises or [])
+    for e in events:
+        if not e.get("affiche") and not e.get("image") and e.get("lieu") in site and e.get("lieu") in permises:
             im = (memo.get(site[e["lieu"]]) or {}).get("image")
             if im and not decouverte.bloquee(im):
                 e["affiche"] = {"url": im, "credit": site[e["lieu"]], "lien": f"https://{site[e['lieu']]}/", "salle": True}
@@ -912,7 +914,7 @@ def main() -> int:
     except Exception as exc:
         print(f"Liens de découverte en échec : {exc}")
     try:
-        images_des_salles(events, aujourd)
+        images_des_salles(events, aujourd, reglages.get("images_de_salle"))
     except Exception as exc:
         print(f"Images de salle en échec : {exc}")
     # Liens ajoutés à la main (collecteur/liens_manuels.json) : passent avant les liens trouvés.

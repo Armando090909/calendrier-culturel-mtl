@@ -22,7 +22,8 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["docs/**", ".github/workflows/**"]
+    paths: ["docs/**", ".github/workflows/**", "outils/diag/demande-collecte.txt"]
+    # demande-collecte.txt + « [collecte] » dans le message : collecte complète tout de suite (sinon le site seulement)
 
 concurrency:
   group: collecte
@@ -48,7 +49,7 @@ jobs:
 
   collecte:
     needs: verif
-    if: github.event_name != 'push' && needs.verif.outputs.fait != 'oui'
+    if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     permissions:

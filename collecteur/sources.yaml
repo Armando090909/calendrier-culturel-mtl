@@ -28,6 +28,9 @@ reglages:
   max_geolocalisations: 40     # nouvelles salles placées sur la carte par passage (OpenStreetMap)
   max_relocalisations: 150     # salles connues encore sans position, relocalisées par passage (adresse de lieux.json d’abord)
   max_pages_autre: 80          # pages d'événements lues pour classer les titres ambigus
+  # salles dont l'image de page d'accueil peut illustrer une sortie sans affiche (logo, façade, la salle elle-même ;
+  # images regardées le 9 nov. 2026 : logo ou façade, pas l'image d'un autre spectacle)
+  images_de_salle: ["La Cabine Comédie Club", "Salle Joseph-Rouleau", "La Brassée", "Upstairs Jazz Bar & Grill", "Foufounes Électriques"]
   max_horaires_ia: 150         # spectacles à l'affiche dont l'horaire est cherché par passage (pages lues par l'IA)
 
 noms_sources:
