@@ -104,7 +104,12 @@ def etiqueter(items: list[dict], fests: list[dict]) -> None:
         h = urlparse(f.get("site", "")).netloc.replace("www.", "")
         if h and "mtl.org" not in h:
             domaines[h] = f["id"]
+    par_id = {f["id"]: f for f in fests}
     for e in items:
+        # étiquette posée ailleurs (source, formulaire, mémoire) mais hors des dates de l'édition : retirée
+        # (ex. concerts de l'année au Club Balattou annoncés sur le site des Nuits d'Afrique)
+        if e.get("festival") in par_id and not _dans_edition(e, par_id[e["festival"]]):
+            del e["festival"]
         if e.get("festival"):
             continue
         t = f" {plat(e.get('titre', ''))} "
@@ -114,14 +119,15 @@ def etiqueter(items: list[dict], fests: list[dict]) -> None:
                 break
         else:
             h = urlparse(e.get("url", "")).netloc.replace("www.", "")
-            if h in domaines:
+            if h in domaines and _dans_edition(e, par_id[domaines[h]]):
                 e["festival"] = domaines[h]
 
 
 def _dans_edition(e: dict, f: dict) -> bool:
-    d = _d(e.get("date") or e.get("debut"))
+    a = _d(e.get("date") or e.get("debut"))
+    b = _d(e.get("date") or e.get("fin")) or a  # exposition : il suffit que sa période touche celle du festival
     d1, d2 = _d(f.get("debut")) or _d(f.get("fin")), _d(f.get("fin"))
-    return not (d and d1 and d2) or d1 - timedelta(days=1) <= d <= d2 + timedelta(days=1)
+    return not (a and d1 and d2) or (a <= d2 + timedelta(days=1) and b >= d1 - timedelta(days=1))
 
 
 def publier(fests: list[dict], sortie: Path) -> None:

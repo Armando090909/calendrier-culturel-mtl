@@ -107,7 +107,7 @@ sources:
   - {nom: Place des Arts, cle: salles, type: page_ia, url: "https://www.placedesarts.com/en/programming", jours_semaine: [0, 3]}
   - {nom: "Place des Arts – destination des Fêtes", cle: salles, type: page_ia, url: "https://www.placedesarts.com/destination-du-temps-des-fetes", jours_semaine: [0, 3]}
   - {nom: "Orchestre Métropolitain", cle: salles, type: page_ia, url: "https://www.orchestremetropolitain.com/fr/concerts/", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Orchestre classique de Montréal", cle: salles, type: page_ia, url: "https://www.orchestre.ca/", discipline: musique, navigateur: true, jours_semaine: [0, 3]}
+  - {nom: "Orchestre Métropolitain – Des airs de fêtes", cle: salles, type: page_ia, url: "https://orchestremetropolitain.com/fr/concerts/des-airs-de-fetes-2026/", discipline: musique, jours_semaine: [0, 3]}
   - {nom: Danse Danse, cle: salles, type: page_ia, url: "https://www.dansedanse.ca/fr/spectacles", discipline: danse, jours_semaine: [0, 3]}
   - {nom: Agora de la danse, cle: salles, type: page_ia, url: "https://agoradanse.com/programmation/", lieu: Agora de la danse, discipline: danse, jours_semaine: [0, 3]}
   - {nom: Tangente, cle: salles, type: page_ia, url: "https://tangentedanse.ca/en/event/", lieu: Tangente, discipline: danse, jours_semaine: [0, 3]}
