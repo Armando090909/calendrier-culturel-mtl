@@ -180,7 +180,9 @@ def images_des_salles(events: list[dict], aujourd) -> None:
             a = decouverte.affiche_page(html, accueil) if html else None
             memo[h] = {"image": a["url"] if a else None, "le": aujourd.isoformat()}
     n = 0
-    for e in events:
+    # 9 nov. 2026 : l'image de la page d'accueil d'une salle montre souvent UN AUTRE spectacle (ex. Espace Le Vrai
+    # Monde?) ; une fiche sans image vaut mieux qu'une image trompeuse. Désactivé.
+    for e in (events if os.environ.get("IMAGE_DE_SALLE") == "1" else []):
         if not e.get("affiche") and not e.get("image") and e.get("lieu") in site:
             im = (memo.get(site[e["lieu"]]) or {}).get("image")
             if im and not decouverte.bloquee(im):
@@ -950,10 +952,11 @@ def main() -> int:
         # Horaire déjà lu mais périmé (la page ne montrait que la première représentation, ex. Centaur) alors que le
         # spectacle est encore à l'affiche : relu une fois, en passant par la billetterie
         ancien = memo_h.get(cle) or {}
+        # (relu tous les 3 jours tant que le spectacle est à l'affiche, pas une seule fois)
         if ancien and not ancien.get("jours") and ancien.get("dates") and max(ancien["dates"]) < aujourd.isoformat() \
-                and not memo_h.get(cle + "|v5"):
+                and str(memo_h.get(cle + "|v5")) < (aujourd - timedelta(days=3)).isoformat():
             memo_h[cle] = {}
-            memo_h[cle + "|v5"] = True
+            memo_h[cle + "|v5"] = aujourd.isoformat()
             memo_h.pop(cle + "|v4", None)
         if memo_h.get(cle) == {} and not memo_h.get(cle + "|v2"):
             del memo_h[cle]

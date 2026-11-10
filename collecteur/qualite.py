@@ -167,6 +167,14 @@ def regles(events: list[dict], expos: list[dict], coord) -> tuple[list, list, li
             x.pop("resume_en", None)
     expos_g = []
     for x in expos:
+        # « conférence » ou « autre » affichée tous les jours pendant des mois : c'est une exposition ou un parcours
+        try:
+            duree = (date.fromisoformat(x["fin"]) - date.fromisoformat(x["debut"])).days
+        except (KeyError, ValueError):
+            duree = 0
+        if duree > 90 and x.get("discipline") in ("conference", "autre", "", None) and not x.get("horaire"):
+            note("activité de plusieurs mois classée hors exposition", x, "reclassée en exposition")
+            x["discipline"] = "expo"
         if zone(coord(x.get("lieu", ""))) == "hors île":
             note("hors de l'île", x, "retirée")
             continue

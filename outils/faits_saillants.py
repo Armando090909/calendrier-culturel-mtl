@@ -422,7 +422,7 @@ IMAGE_GENERIQUE = re.compile(r"(?i)default[-_]?(user|image|avatar|profile)|place
 def _affiche(e):
     aff = e.get("affiche") or {}
     img, credit = aff.get("url") or "", aff.get("credit") or ""
-    if any(h in img for h in HOTES_SANS_AFFICHE) or IMAGE_GENERIQUE.search(img):
+    if any(h in img for h in HOTES_SANS_AFFICHE) or IMAGE_GENERIQUE.search(img) or aff.get("salle"):
         img = credit = ""
     if not img and aff.get("og"):
         img, credit = _og_image(aff["og"]), aff.get("credit") or ""
