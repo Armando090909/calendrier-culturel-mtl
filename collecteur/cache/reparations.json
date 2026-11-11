@@ -11,11 +11,9 @@
   "Festival · Festival des clowns": "2026-10-26",
   "Festival · RVQC": "2026-10-26",
   "Festival · Metropolis bleu": "2026-10-26",
-  "Festival · Jamais Lu": "2026-10-26",
   "Festival · Petits bonheurs": "2026-10-26",
   "Festival · Accès Asie": "2026-10-26",
   "Festival · Film sud-asiatique": "2026-10-26",
-  "Festival · Festival BD": "2026-10-26",
   "Festival · Piknic Électronik": "2026-10-26",
   "Festival · Festival de la poésie": "2026-10-26",
   "Festival · FTA": "2026-10-26",
@@ -46,14 +44,11 @@
   "Festival · WI Blues": "2026-10-26",
   "Festival · Cinéma sous les étoiles": "2026-10-26",
   "Festival · OM au Mont-Royal": "2026-10-26",
-  "La Licorne": "2026-11-02",
   "Centre Segal": "2026-11-02",
-  "Danse Danse": "2026-11-02",
   "McGill – événements": "2026-11-02",
   "BAnQ – activités": "2026-11-02",
   "La Mèche courte (festival jeune public)": "2026-11-02",
   "Tourisme Montréal – expositions automne-hiver": "2026-11-02",
-  "Piranha Bar": "2026-11-02",
   "Café Campus / Petit Campus": "2026-11-02",
   "Galerie C.O.A": "2026-11-02",
   "Galerie Lacerte art contemporain": "2026-11-02",
@@ -67,27 +62,19 @@
   "Cabaret Jazz L'Entracte": "2026-11-02",
   "Bistro à Jojo (blues)": "2026-11-02",
   "Hurley's Irish Pub (trad, folk)": "2026-11-02",
-  "Turbo Haüs": "2026-11-02",
   "Système MTL": "2026-11-02",
   "Théâtre Rialto": "2026-11-02",
   "Le National (La Tulipe)": "2026-11-02",
   "Resident Advisor – Montréal (électro, raves)": "2026-11-02",
-  "Laugh It Off MTL (humour, scènes ouvertes)": "2026-11-02",
   "Espace La Risée": "2026-11-02",
-  "InfiniTheatre": "2026-11-02",
   "Théâtre de l'Esquisse": "2026-11-02",
   "Circuit-Est centre chorégraphique": "2026-11-02",
   "La Serre – arts vivants": "2026-11-02",
   "Slamontréal": "2026-11-02",
   "LaSalle – programmation culturelle": "2026-11-02",
-  "Casa del Popolo / Sala Rossa": "2026-11-02",
   "Eastern Bloc": "2026-11-02",
-  "Théâtre Rialto (billetterie)": "2026-11-02",
-  "Le Balattou (billetterie, 2e page)": "2026-11-02",
   "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02",
-  "Cinéma Moderne": "2026-11-03",
   "Formulaire : événements proposés": "2026-11-04",
-  "Cinéma L'Amour (ma.to)": "2026-11-05",
   "Bistro à Jojo": "2026-11-05",
   "Tortue Berlue (théâtre jeune public)": "2026-11-05",
   "Librairie L'Euguélionne": "2026-11-05",
@@ -103,13 +90,21 @@
   "Salle Marguerite-Bourgeoys": "2026-11-05",
   "Théâtre St-James": "2026-11-05",
   "Théâtre Cartier": "2026-11-05",
-  "Cat's Corner (danse swing)": "2026-11-05",
   "Orchestre Métropolitain": "2026-11-09",
-  "Orchestre classique de Montréal": "2026-11-09"
+  "Orchestre classique de Montréal": "2026-11-09",
+  "Festival · Monde Arabe (1)": "2026-10-26",
+  "Festival · Monde Arabe (2)": "2026-10-26",
+  "Festival · Festival Bach": "2026-10-26",
+  "Festival · RIDM (8)": "2026-10-26",
+  "La Cabine Comédie Club": "2026-11-10",
+  "Pierre-François Ouellette art contemporain": "2026-11-10",
+  "Duran Contemporain": "2026-11-10",
+  "Théâtre MainLine": "2026-11-10",
+  "Théâtre Prospero": "2026-11-10"
  },
  "Duran Contemporain": {
-  "essai": "2026-11-02",
-  "echecs": 1,
+  "essai": "2026-11-10",
+  "echecs": 2,
   "dernier_ok": "2026-11-10"
  },
  "Théâtre MainLine": {
@@ -167,5 +162,21 @@
  "Galerie C.O.A": {
   "essai": "2026-11-09",
   "echecs": 1
+ },
+ "Librairie L'Euguélionne": {
+  "essai": "2026-11-10",
+  "echecs": 1
+ },
+ "La Cabine Comédie Club": {
+  "essai": "2026-11-10",
+  "echecs": 1
+ },
+ "Pierre-François Ouellette art contemporain": {
+  "essai": "2026-11-10",
+  "url": "https://www.pfoac.com/exhibitions/",
+  "ancienne": "https://www.pfoac.com/en/exhibitions/forthcoming/",
+  "le": "2026-11-10",
+  "n": 2,
+  "echecs": 0
  }
 }
