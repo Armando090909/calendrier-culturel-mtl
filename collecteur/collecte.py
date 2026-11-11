@@ -351,16 +351,26 @@ def main() -> int:
     bruts, series, rapport = [], [], []
     CACHE.mkdir(exist_ok=True)
     force = os.environ.get("TOUT_RELIRE") == "1"
-    for s in sources:
+    # Collecte en deux temps (11 nov. 2026) : ETAPE_COLLECTE=lecture lit les sources et garde chaque lecture en cache,
+    # puis ETAPE_COLLECTE=assemblage bâtit le site à partir de ces lectures, sans relire. Chaque temps a sa propre limite
+    # de durée : une lecture trop longue n'empêche plus la mise en ligne.
+    etape = os.environ.get("ETAPE_COLLECTE", "")
+    f_bloq = CACHE / "bloquees_lecture.json"
+    if etape == "assemblage" and f_bloq.exists():
+        connecteurs.BLOQUEES.update(json.loads(f_bloq.read_text(encoding="utf-8")))
+    for i_src, s in enumerate(sources):
         print(f"→ {s['nom']} ({s['type']})")
         fichier_cache = CACHE / (re.sub(r"[^a-z0-9]+", "-", plat(s["nom"]))[:60] + ".json")
+        if etape == "lecture" and i_src % 20 == 19:
+            sauver_memoire(aujourd)  # une lecture interrompue garde ce que l'IA a déjà lu
         jours = s.get("jours_semaine")  # ex. [0, 3] = lundi et jeudi seulement (économise l'IA)
-        if jours and aujourd.weekday() not in jours and not force and fichier_cache.exists():
+        if (etape == "assemblage" or jours and aujourd.weekday() not in jours and not force) and fichier_cache.exists():
             c = json.loads(fichier_cache.read_text(encoding="utf-8"))
             bruts += c["evenements"]
             series += c["series"]
             rapport.append({"source": s["nom"], "evenements": len(c["evenements"]), "series": len(c["series"]),
-                            "erreur": None, "note": f"repris du {c['date']}"})
+                            "erreur": None, "note": f"repris du {c['date']}",
+                            **({"diagnostic": c["diagnostic"]} if c.get("diagnostic") else {})})
             print(f"  repris du cache ({c['date']})")
             continue
         try:
@@ -396,8 +406,8 @@ def main() -> int:
                             **({"diagnostic": connecteurs.DIAG[:3]} if connecteurs.DIAG else {})})
             print(f"  {len(e)} événements, {len(sr)} séries")
             if e or sr:
-                fichier_cache.write_text(json.dumps({"date": aujourd.isoformat(), "evenements": e, "series": sr},
-                                                    ensure_ascii=False), encoding="utf-8")
+                fichier_cache.write_text(json.dumps({"date": aujourd.isoformat(), "evenements": e, "series": sr,
+                                                     "diagnostic": connecteurs.DIAG[:12]}, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             traceback.print_exc(limit=1)
             note = None
@@ -407,6 +417,12 @@ def main() -> int:
                 series += c["series"]
                 note = f"en panne, données du {c['date']} conservées"
             rapport.append({"source": s["nom"], "evenements": 0, "series": 0, "erreur": str(exc)[:300], "note": note})
+
+    if etape == "lecture":
+        sauver_memoire(aujourd)
+        f_bloq.write_text(json.dumps(sorted(connecteurs.BLOQUEES), ensure_ascii=False), encoding="utf-8")
+        print(f"Lecture terminée : {len(bruts)} événements et {len(series)} séries en cache ; l'assemblage suit.")
+        return 0
 
     # ---- Réparation automatique des sources devenues muettes (nouvelle adresse cherchée sur leur propre site)
     journal_rep = []
