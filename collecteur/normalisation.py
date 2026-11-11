@@ -306,7 +306,7 @@ class Lieux:
 
 
 # ---------- Doublons ----------
-PRIORITE = {"formulaire": 0, "calendrier": 1, "festival": 2, "theatre": 2, "ville": 3, "sorstu": 4, "askapunk": 5, "songkick": 6, "ia": 7}
+PRIORITE = {"formulaire": 0, "calendrier": 1, "festival": 2, "theatre": 2, "salles": 2, "ville": 3, "sorstu": 4, "askapunk": 5, "songkick": 6, "ia": 7}
 
 
 GENERIQUES = {"soiree", "concert", "spectacle", "show", "festival", "les", "the", "une", "des", "atelier", "lancement",
@@ -332,6 +332,9 @@ COMPLEXES = {
     "usine c": [], "la chapelle": ["chapelle scenes contemporaines"],
     "salle bourgie": ["musee des beaux arts", "bourgie"],
     "sat": ["societe des arts technologiques", "society for arts technology", "society for arts and technology"],
+    # salles à l'intérieur d'un même bâtiment, annoncées tantôt par le bâtiment, tantôt par la salle (11 nov. 2026)
+    "cinematheque quebecoise": ["fernand seguin", "claude jutra", "cinematheque"],
+    "maison culturelle et communautaire de montreal nord": ["julio jean pierre"],
 }
 _MOTS_LIEU = {"et", "and", "st", "ste", "saint", "sainte", "the", "le", "la", "les", "l", "de", "du", "des", "d", "salle",
               "theatre", "eglise", "church", "montreal", "mtl", "bar", "club", "a", "au"}
@@ -412,7 +415,12 @@ def meme_evenement(a: dict, b: dict) -> bool:
     # Même festival, même jour, même heure, même salle : le même spectacle sous deux titres
     if meme_fest and meme_heure:
         return True
-    ma, mb = _mots(a["titre"]), _mots(b["titre"])
+    ta_, tb_ = a["titre"], b["titre"]
+    # Même préfixe de série ou de festival (« CINEMANIA : film A » / « CINEMANIA : film B ») : on compare la suite
+    pa, pb = re.split(r"\s[:|–—-]\s|:\s", ta_, maxsplit=1), re.split(r"\s[:|–—-]\s|:\s", tb_, maxsplit=1)
+    if len(pa) == 2 and len(pb) == 2 and plat(pa[0]) == plat(pb[0]) and pa[1].strip() and pb[1].strip():
+        ta_, tb_ = pa[1], pb[1]
+    ma, mb = _mots(ta_), _mots(tb_)
     if not ma or not mb:
         return False
     if ma[0] == mb[0] and ma[0] not in GENERIQUES and ma[0] not in MOTS_COURANTS:
@@ -421,9 +429,16 @@ def meme_evenement(a: dict, b: dict) -> bool:
         return True
     # Deux sites, deux titres (« Claudio Simonetti's Goblin : Tenebre » / « Goblin Tenebre »),
     # ou le même festival dont une version n'a pas d'heure : un mot rare en commun suffit.
+    rares = lambda m: {w for w in m if len(w) >= 5 and w not in GENERIQUES and w not in MOTS_COURANTS}  # noqa: E731
     if autre_source or (meme_fest and une_sans_heure):
-        rares = lambda m: {w for w in m if len(w) >= 5 and w not in GENERIQUES and w not in MOTS_COURANTS}  # noqa: E731
         return bool(rares(ma) & rares(mb))
+    # Même site, même salle, même heure, deux titres (version française et anglaise d'une même page, ex. « Les mille et
+    # une notes de Shéhérazade » / « The Thousand and One Notes of Sheherazade ») : au moins 2 mots rares en commun,
+    # soit la moitié de ceux du titre le plus court
+    ra_, rb_ = rares(ma), rares(mb)
+    if meme_heure and ra_ and rb_:
+        commun = len(ra_ & rb_)
+        return commun >= 2 and commun >= len(min(ra_, rb_, key=len)) / 2
     return False
 
 
@@ -495,8 +510,18 @@ def _fusion_meme_page(events: list[dict]) -> list[dict]:
     return out
 
 
+CONFLITS: list[dict] = []  # désaccords entre sources sur une même sortie (rapport « Exactitude »)
+HEURES_BIDON = ("12:00", "00:00")  # heure par défaut de certains agrégateurs quand la vraie n'est pas connue
+
+
+def _dom(e: dict) -> str:
+    return urlparse(e.get("url") or "").netloc.replace("www.", "")
+
+
 def dedoublonner(events: list[dict]) -> list[dict]:
     events = _fusion_meme_page(events)
+    for e in events:
+        e.setdefault("_sources", {_dom(e) or e.get("source", "")})
     seaux: dict[tuple, list[dict]] = {}
     for e in events:
         garde = seaux.setdefault(e["date"], [])
@@ -506,6 +531,14 @@ def dedoublonner(events: list[dict]) -> list[dict]:
                         (bool(old.get("heure")), -PRIORITE.get(old.get("source", ""), 9))
                 if mieux:
                     garde[i], e = e, old
+                garde[i]["_sources"] = garde[i]["_sources"] | e.get("_sources", set())
+                if e.get("heure") and garde[i].get("heure") and e["heure"] != garde[i]["heure"]:
+                    CONFLITS.append({"regle": "heures différentes selon les sources", "action":
+                                     f"{garde[i]['heure']} gardée ({_dom(garde[i]) or garde[i].get('source')}), "
+                                     f"{e['heure']} écartée ({_dom(e) or e.get('source')})",
+                                     "titre": garde[i]["titre"][:90], "date": garde[i]["date"],
+                                     "lieu": garde[i].get("lieu", ""), "source": garde[i].get("source", ""),
+                                     "url": garde[i].get("url", "")})
                 # On garde ce que l'autre version savait de plus (festival, heure, salle, prix, billets…)
                 for k in ("festival", "heure", "prix", "billets", "resume", "image", "_image_src", "aussi", "style"):
                     if not garde[i].get(k) and e.get(k):
@@ -537,6 +570,34 @@ def dedoublonner(events: list[dict]) -> list[dict]:
                 continue
         garde.append(e)
     tous = garde
+    # Même spectacle, même salle, même jour, mais une heure par défaut (12 h, minuit) chez un agrégateur et une vraie
+    # heure ailleurs (ex. Coco Belliveau au Gesù : 12 h sur Spectaculos, 20 h sur Sors-tu?) : une seule fiche, la vraie heure
+    retires = set()
+    par_jour2: dict[str, list[dict]] = {}
+    for e in tous:
+        par_jour2.setdefault(e["date"], []).append(e)
+    for L in par_jour2.values():
+        for a in L:
+            if id(a) in retires or a.get("heure") not in HEURES_BIDON:
+                continue
+            for b in L:
+                if b is a or id(b) in retires or not b.get("heure") or b["heure"] in HEURES_BIDON or _dom(a) == _dom(b) \
+                        or not lieux_proches(a.get("lieu", ""), b.get("lieu", "")):
+                    continue
+                ta, tb = _titre_net(a["titre"]), _titre_net(b["titre"])
+                if ta == tb or (min(len(ta), len(tb)) >= 5 and (ta in tb or tb in ta)):
+                    retires.add(id(a))
+                    b["_sources"] = b["_sources"] | a.get("_sources", set())
+                    for k in ("prix", "billets", "resume", "image", "_image_src"):
+                        if not b.get(k) and a.get(k):
+                            b[k] = a[k]
+                    CONFLITS.append({"regle": "heure par défaut d'un agrégateur", "action": f"{a['heure']} écartée, {b['heure']} gardée",
+                                     "titre": b["titre"][:90], "date": b["date"], "lieu": b.get("lieu", ""),
+                                     "source": a.get("source", ""), "url": a.get("url", "")})
+                    break
+    tous = [e for e in tous if id(e) not in retires]
+    for e in tous:  # nombre de sites qui annoncent la sortie : 2 ou plus = confirmée par recoupement
+        e["confirmations"] = len({s for s in e.pop("_sources", set()) if s})
     return sorted(tous, key=lambda e: (e["date"], e.get("heure") or "99", e["titre"]))
 
 

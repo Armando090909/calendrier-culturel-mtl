@@ -1077,9 +1077,18 @@ def main() -> int:
         events, expos, journal_q = qualite.regles(events, expos, lieux.coord)
         events, j2, stats_cv = qualite.contre_verifier(events, aujourd, telecharger, texte_page)
         journal_q += j2
+        import normalisation as _norm
+        journal_q += _norm.CONFLITS  # désaccords entre sources (heures différentes, heure par défaut écartée)
         controle = qualite.controle_aleatoire(events, aujourd, telecharger, texte_page, ia) if aujourd.weekday() == 0 else None
         a_surveiller = qualite.fiabilite(events, journal_q, controle, aujourd)
         qualite.ecrire(aujourd, journal_q, stats_cv, controle, a_surveiller)
+        try:  # sorties annoncées par 2 sites ou plus (recoupées), pour le rapport du lundi
+            fq = SORTIE.parent / "qualite.json"
+            q = json.loads(fq.read_text(encoding="utf-8"))
+            q["recoupees"] = {"total": len(events), "deux_sources_ou_plus": sum(1 for e in events if e.get("confirmations", 1) >= 2)}
+            fq.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception as exc:
+            print(f"Recoupement : {exc}")
         notes["qualite"] = {"regles": len(journal_q), "contreverif": stats_cv,
                             "controle": controle and f"{controle['exactes']}/{controle['verifiees']} exactes"}
         print(f"Exactitude : {len(journal_q)} corrections ou alertes ; contre-vérification {stats_cv}"

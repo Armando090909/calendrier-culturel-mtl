@@ -148,7 +148,7 @@ def exactitude(lundi):
         x = h.get(j) or {}
         for r in x.get("journal") or []:
             regles[(r["regle"], r["action"])] += 1
-            if len(exemples) < 8 and r["regle"] not in ("date absente de la page officielle",):
+            if len(exemples) < 12 and r["regle"] not in ("date absente de la page officielle",):
                 exemples.append(r)
         cv.update(x.get("contreverif") or {})
     L = ["### Exactitude", ""]
@@ -169,10 +169,19 @@ def exactitude(lundi):
         for e in c.get("erreurs", [])[:6]:
             L.append(f"- {e['titre']} ({e['date']}, {e['lieu']}) : " + ", ".join(f"{k} → {v}" for k, v in e["faux"].items()))
         L.append("")
+    desacc = [r for j in jours for r in ((h.get(j) or {}).get("journal") or [])
+              if r["regle"] in ("heures différentes selon les sources", "heure par défaut d'un agrégateur")]
+    if desacc:
+        L += [f"**Doublons et désaccords entre sources** ({len(desacc)}) :"]
+        L += [f"- {r['titre']} ({r['date']}, {r['lieu']}) : {r['action']}" for r in desacc[:10]] + [""]
     if exemples:
         L += ["Exemples :"] + [f"- {r['regle']} : {r['titre']} ({r['date']}, {r['lieu']}) — {r['action']}" for r in exemples] + [""]
     try:
         q = json.loads((f.parent.parent.parent / "docs" / "qualite.json").read_text(encoding="utf-8"))
+        rc = q.get("recoupees") or {}
+        if rc.get("total"):
+            L += [f"**Recoupement** : {rc['deux_sources_ou_plus']} sorties sur {rc['total']} "
+                  f"({round(100 * rc['deux_sources_ou_plus'] / rc['total'])} %) sont annoncées par au moins 2 sites.", ""]
         if q.get("sources_a_surveiller"):
             L += ["**Sources à surveiller** (erreurs sur 28 jours) :"]
             L += [f"- {s['source']} : {s['erreurs']} erreurs sur {s['sorties']} sorties ({s['taux']} %)" for s in q["sources_a_surveiller"][:8]]
