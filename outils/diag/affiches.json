@@ -1,13 +1,9 @@
 {
- "total": 1525,
- "echecs": 6,
+ "total": 1530,
+ "echecs": 5,
  "par_site": {
   "images.ctfassets.net": {
    "affiches": 25,
-   "echecs": 1
-  },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
    "echecs": 1
   },
   "www.eventbrite.com": {
@@ -30,10 +26,6 @@
    "affiches": 5,
    "echecs": 0
   },
-  "cdn.caligram.com": {
-   "affiches": 4,
-   "echecs": 0
-  },
   "www.concordia.ca": {
    "affiches": 6,
    "echecs": 0
@@ -48,6 +40,10 @@
   },
   "res.cloudinary.com": {
    "affiches": 589,
+   "echecs": 0
+  },
+  "cdn.caligram.com": {
+   "affiches": 6,
    "echecs": 0
   },
   "cinemapublic.ca": {
@@ -79,7 +75,7 @@
    "echecs": 0
   },
   "images.sk-static.com": {
-   "affiches": 173,
+   "affiches": 174,
    "echecs": 0
   },
   "assets.cdn.filesafe.space": {
@@ -186,6 +182,10 @@
    "affiches": 17,
    "echecs": 0
   },
+  "www.denise-pelletier.qc.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "cdn.simpletix.com": {
    "affiches": 1,
    "echecs": 0
@@ -238,6 +238,10 @@
    "affiches": 6,
    "echecs": 0
   },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "mato.s3.us-east-1.amazonaws.com": {
    "affiches": 2,
    "echecs": 0
@@ -283,7 +287,7 @@
    "echecs": 0
   },
   "cdn.ca.yapla.com": {
-   "affiches": 4,
+   "affiches": 5,
    "echecs": 0
   },
   "cafconc.ca": {
@@ -346,28 +350,25 @@
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
   ],
-  "images.ctfassets.net": [
-   "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
-  ],
   "s3.eu-west-1.amazonaws.com": [
    "https://s3.eu-west-1.amazonaws.com/offloadmedia.feverup.com/montrealsecret.co/wp-content/uploads/2026/06/17094455/12-QM-Festif-2025-.-Dominic-Courchesne.jpg"
   ],
+  "images.ctfassets.net": [
+   "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
-  ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
   "atelier": 120,
   "lettres": 31,
   "conference": 23,
-  "musique": 129,
+  "musique": 127,
   "quiz": 85,
-  "theatre": 36,
-  "cirque": 9,
-  "humour": 60,
+  "theatre": 37,
+  "cirque": 8,
+  "humour": 59,
   "jeune": 10,
   "expo": 3,
   "cinema": 9,
