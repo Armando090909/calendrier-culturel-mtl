@@ -427,7 +427,7 @@ def sauver_memoire(aujourd: date) -> None:
 
 
 def extraire_avec_memoire(url: str, texte: str, debut: date, fin: date, mise_en_page: str = "") -> dict:
-    cle = hashlib.sha1((url + "\n" + mise_en_page + texte).encode()).hexdigest()
+    cle = hashlib.sha1((url + "\n" + mise_en_page + "|v2|" + texte).encode()).hexdigest()  # v2 : avec « a_venir »
     m = _mem().get(cle)
     if m and m.get("debut", "") <= debut.isoformat() and m.get("fin", "") >= (fin - timedelta(days=14)).isoformat():
         m["vu"] = date.today().isoformat()
@@ -692,6 +692,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         if not data["evenements"] and not data["series"] and url not in suivis:
             DIAG.append(f"page presque vide ({len(texte)} caractères ; site en JavaScript ?) : {url}" if len(texte) < 600
                         else f"aucun événement trouvé dans {len(texte)} caractères de texte : {url}")
+        if isinstance(data.get("a_venir"), int):  # toute la saison annoncée par la page, au-delà de la période du site
+            DIAG.append(f"annonces à venir dans la page : {data['a_venir']} ({url})")
         # « details » : une page de programmation qui ne donne pas les heures → on lit la page de chaque spectacle
         if cfg.get("details") and url not in suivis:
             hote = urlparse(url).netloc
@@ -723,7 +725,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                                    source=cfg["cle_source"]))
     # Récolte mince (une salle qui n'annonce que 2 ou 3 spectacles, c'est presque toujours une page mal choisie) :
     # on élargit aux pages de programmation trouvées dans le menu du site, puis dans celui de sa page d'accueil.
-    if len(evs) + len(series) <= SEUIL_MINCE and premiere and PROGRAMMATION_AUTO and not cfg.get("elargi") \
+    saison = [int(m.group(1)) for d in DIAG for m in [re.match(r"annonces à venir dans la page : (\d+)", d)] if m]
+    if (max(saison) if saison else len(evs) + len(series)) <= SEUIL_MINCE and premiere and PROGRAMMATION_AUTO and not cfg.get("elargi") \
             and not cfg.get("accueil_seulement") and not cfg.get("festival") and not cfg.get("garder") \
             and cfg.get("cle") != "galeries" and cfg.get("discipline") != "expo":
         u0 = urlparse(premiere["url"])

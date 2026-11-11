@@ -79,14 +79,20 @@ def problemes(rapport, data, etat):
     for s in rapport.get("sources", []):
         c = salles.get(s["source"])
         n = s.get("evenements", 0) + s.get("series", 0)
-        if c and not s.get("erreur") and n <= 3:
+        # Ce que les pages de la salle annoncent pour TOUTE la saison (pas seulement les 8 semaines du site) : une salle
+        # dont les pages lues n'annoncent que 3 spectacles ou moins pour l'année, c'est presque sûrement la mauvaise page.
+        saison = [int(m.group(1)) for d in s.get("diagnostic", []) for m in [re.match(r"annonces à venir dans la page : (\d+)", d)] if m]
+        a_venir = max(saison) if saison else None
+        if c and not s.get("erreur") and (a_venir is not None and a_venir <= 3 or a_venir is None and n == 0):
             elargi = next((d for d in s.get("diagnostic", []) if "élargie" in d), "")
-            minces.append(f"- **{c['lieu']}** ({s['source']}) : {n} sortie(s) — lue : {c['url']}"
+            minces.append(f"- **{c['lieu']}** ({s['source']}) : "
+                          + (f"{a_venir} spectacle(s) annoncé(s) pour toute la saison" if a_venir is not None else "aucune sortie")
+                          + f" — lue : {c['url']}"
                           + (f"\n  - pages essayées : {elargi.split(' à ', 1)[-1][:300]}" if elargi else ""))
     if minces:
-        out["mince"] = ("Salles qui n'annoncent que 0 à 3 sorties : élargir la recherche",
-                        f"{len(minces)} salles n'annoncent que 0 à 3 sorties, même après la lecture des pages de "
-                        "programmation trouvées dans le menu de leur site :\n\n" + "\n".join(sorted(minces)),
+        out["mince"] = ("Salles dont la programmation semble incomplète : élargir la recherche",
+                        f"{len(minces)} salles n'annoncent que 0 à 3 spectacles pour toute la saison, même après la lecture "
+                        "des pages de programmation trouvées dans le menu de leur site :\n\n" + "\n".join(sorted(minces)),
                         "Pour chaque salle : trouver sa page de programmation ou de calendrier (saison en cours) et la "
                         "donner à Claude, qui l'inscrit dans sources.yaml. Une salle fermée pour la saison peut être "
                         "marquée « mince_ok: true ».")

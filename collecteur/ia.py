@@ -28,7 +28,9 @@ Réponds UNIQUEMENT avec un objet JSON, sans texte autour :
    "complet": true/false, "annule": true/false, "jeune_public": true/false}}],
  "series": [{{"titre": "...", "lieu": "...", "ville": "...", "debut": "AAAA-MM-JJ", "fin": "AAAA-MM-JJ",
    "discipline": "theatre|danse|cirque|jeune|expo|autre", "url": "... ou null", "billets": "... ou null",
-   "prix": "... ou null", "resume": "... ou null"}}]}}
+   "prix": "... ou null", "resume": "... ou null"}}],
+ "a_venir": nombre de spectacles ou d'événements DIFFÉRENTS que la page annonce pour l'avenir, TOUTE la saison comprise
+   (même après le {fin} ; un même spectacle joué plusieurs soirs compte pour 1)}}
 
 Règles :
 - "evenements" = une représentation à une date précise. Une pièce jouée plusieurs soirs avec les dates listées donne une entrée par date.
