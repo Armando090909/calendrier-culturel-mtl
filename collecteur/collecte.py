@@ -736,6 +736,51 @@ def main() -> int:
                 corriges_ia += 1
         f_ia.write_text(json.dumps(memo_ia, ensure_ascii=False), encoding="utf-8")
     print(f"Fiches complétées par l'IA : {corriges_ia} champs ({lus_ia} pages lues).")
+
+    # Heures par la billetterie (11 nov. 2026) : une billetterie affiche forcément l'heure de la représentation.
+    # 1) dans l'adresse elle-même (Tuxedo : …/voyage-voyage/20261111200000 = le 11 nov. à 20 h) ;
+    # 2) sinon la page de billetterie lue (navigateur si besoin), puis par Claude. Au plus 80 pages par nuit.
+    f_bil = CACHE / "heures_billetterie.json"
+    memo_b = json.loads(f_bil.read_text(encoding="utf-8")) if f_bil.exists() else {}
+    trouvees_b, lues_b = 0, 0
+    BLOQUEES_BIL = ("zeffy.com", "ra.co", "facebook.com", "instagram.com", "ticketmaster", "eventbrite")
+    for e in events:
+        if e["heure"]:
+            continue
+        liens = [u for u in [e.get("billets") or "", *(e.get("_autres_urls") or [])]
+                 if u.startswith("http") and u != e["url"] and not any(b in u for b in BLOQUEES_BIL)]
+        for u in liens:
+            m = re.search(r"/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})\d{2}/?(?:\?|$)", u)
+            if m and f"{m[1]}-{m[2]}-{m[3]}" == e["date"] and 8 <= int(m[4]) <= 23:
+                e["heure"] = f"{m[4]}:{m[5]}"
+                trouvees_b += 1
+                break
+            cle = u + "|" + e["date"]
+            r = memo_b.get(cle)
+            if r is None and lues_b < int(reglages.get("max_billetteries", 80)):
+                lues_b += 1
+                r = {}
+                try:
+                    try:
+                        html = telecharger(u, "text/html").text
+                    except Exception:
+                        html = ""
+                    h = heure_page(html, e["date"]) if html else None
+                    if not h:
+                        html = connecteurs.page_rendue(u)
+                        h = heure_page(html, e["date"])
+                    if not h and ia.disponible():
+                        h = (ia.champs_page(e["titre"], e["date"], texte_page(html, u)) or {}).get("heure")
+                    r = {"heure": h} if h else {"le": aujourd.isoformat()}
+                except Exception as exc:
+                    r = {"_err": str(exc)[:80]}
+                memo_b[cle] = r
+            if r and r.get("heure"):
+                e["heure"] = r["heure"]
+                trouvees_b += 1
+                break
+    f_bil.write_text(json.dumps(memo_b, ensure_ascii=False), encoding="utf-8")
+    print(f"Heures par la billetterie : {trouvees_b} trouvées ({lues_b} pages lues).")
     print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues ({rendues} dans le navigateur), "
           f"{sum(1 for e in sans if e['heure'])} heures trouvées.")
 
