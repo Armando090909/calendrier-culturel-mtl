@@ -13,7 +13,7 @@ permissions:
   issues: write
 jobs:
   rapport:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4

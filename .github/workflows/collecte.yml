@@ -31,7 +31,7 @@ concurrency:
 
 jobs:
   verif:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     outputs:
       fait: ${{ steps.deja.outputs.fait }}
     steps:
@@ -51,7 +51,7 @@ jobs:
   lecture:
     needs: verif
     if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 150
     permissions:
       contents: write
@@ -75,8 +75,8 @@ jobs:
           key: playwright-${{ runner.os }}-1.48
       - name: Installer le navigateur
         run: |
-          # le serveur de paquets d'Ubuntu échoue parfois (11 nov. 2026) : jusqu'à 3 essais
-          for i in 1 2 3; do python -m playwright install --with-deps chromium && exit 0; echo "essai $i raté"; sleep 45; done; exit 1
+          # sans les paquets système si le serveur d'Ubuntu ne répond pas (ils sont déjà sur l'image GitHub)
+          python -m playwright install --with-deps chromium || python -m playwright install chromium
 
       - name: Tests
         run: python -m unittest discover -s collecteur/tests
@@ -116,7 +116,7 @@ jobs:
   assemblage:
     needs: [verif, lecture]
     if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 120
     permissions:
       contents: write
@@ -143,8 +143,8 @@ jobs:
           key: playwright-${{ runner.os }}-1.48
       - name: Installer le navigateur
         run: |
-          # le serveur de paquets d'Ubuntu échoue parfois (11 nov. 2026) : jusqu'à 3 essais
-          for i in 1 2 3; do python -m playwright install --with-deps chromium && exit 0; echo "essai $i raté"; sleep 45; done; exit 1
+          # sans les paquets système si le serveur d'Ubuntu ne répond pas (ils sont déjà sur l'image GitHub)
+          python -m playwright install --with-deps chromium || python -m playwright install chromium
 
       - name: Assembler le site
         env:
@@ -209,7 +209,7 @@ jobs:
   publication:
     needs: assemblage
     if: always() && needs.assemblage.result != 'cancelled'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     permissions:
       pages: write
       id-token: write

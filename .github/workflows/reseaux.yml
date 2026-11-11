@@ -40,7 +40,7 @@ jobs:
   publier:
     # réponses dans un avis : seulement celles du propriétaire, dans un avis d'aperçu
     if: github.event_name != 'issue_comment' || (contains(github.event.issue.labels.*.name, 'apercu-reseaux') && github.event.comment.user.login == github.repository_owner)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 20
     permissions:
       contents: write
@@ -57,7 +57,7 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-1.48
-      - run: python -m playwright install --with-deps chromium
+      - run: python -m playwright install --with-deps chromium || python -m playwright install chromium
       - name: Publier
         env:
           GH_TOKEN: ${{ github.token }}

@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   apercu:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 20
     permissions:
       contents: write
@@ -24,7 +24,7 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-1.48
-      - run: python -m playwright install --with-deps chromium
+      - run: python -m playwright install --with-deps chromium || python -m playwright install chromium
       - name: Aperçu
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
