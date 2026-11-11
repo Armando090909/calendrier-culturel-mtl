@@ -574,7 +574,8 @@ _PROG = re.compile(r"(?i)programm|saison|season|calendrier|calendar|agenda|spect
 _PAS_PROG = re.compile(r"(?i)abonn|subscri|archive|pass[ée]e?s|past|pr[ée]c[ée]dent|faq|contact|location|rental|don\b|"
                        r"donat|boutique|shop|emploi|job|carri|presse|press|m[ée]dia|scolaire|school|[ée]ducati|"
                        r"politique|privacy|confidential|connexion|login|compte|account|panier|cart|infolettre|newsletter|"
-                       r"facebook|instagram|twitter|youtube|mailto:|tel:|\.pdf|\.jpg|\.png|#|appel|call-for|soumettre|submit")
+                       r"facebook|instagram|twitter|youtube|mailto:|tel:|\.pdf|\.jpg|\.png|#|appel|call-for|soumettre|submit|"
+                       r"bilan|mot-d|[ée]dito|direction|camp|p[ée]dagog|ant[ée]rieur|priv[ée]|accessib|r[ée]servation|a-propos|about")
 
 
 PROGRAMMATION_AUTO = True  # pages de programmation cherchées depuis la page d'accueil (10 nov. 2026)
