@@ -51,7 +51,7 @@ jobs:
     needs: verif
     if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 170  # 11 nov. 2026 : une relecture complète dépassait 2 h
     permissions:
       contents: write
       issues: write  # avis « proposition à juger »

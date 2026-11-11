@@ -252,7 +252,7 @@ def nettoyer_resumes(elements: list[dict]) -> None:
     memo = json.loads(f_fr.read_text(encoding="utf-8")) if f_fr.exists() else {}
     anglais = [e for e in elements if e.get("resume")
                and len(_MOTS_EN.findall(e["resume"])) >= 3 > len(_MOTS_FR.findall(e["resume"]))]
-    a_faire = list(dict.fromkeys(e["resume"] for e in anglais if e["resume"] not in memo))[:600]
+    a_faire = list(dict.fromkeys(e["resume"] for e in anglais if e["resume"] not in memo))[:240]  # le reste suit les jours suivants
     if a_faire and ia.disponible():
         for i in range(0, len(a_faire), 60):
             part = a_faire[i:i + 60]
@@ -283,7 +283,7 @@ def traduire_resumes(elements: list[dict]) -> None:
     if a_faire and ia.disponible():
         from concurrent.futures import ThreadPoolExecutor
         # les plus proches d'abord (ordre du calendrier) ; au plus 1500 par jour, le reste suit le lendemain
-        parts = [a_faire[i:i + 60] for i in range(0, min(len(a_faire), 1500), 60)]
+        parts = [a_faire[i:i + 60] for i in range(0, min(len(a_faire), 600), 60)]  # 11 nov. 2026 : 1500 d'un coup dépassait le temps permis
 
         def un(part):
             try:
@@ -1052,7 +1052,9 @@ def main() -> int:
     print(f"Séries retirées (sans salle, saison déjà détaillée ou annonce de saison) : {avant_n - len(expos)}")
 
     affiches_bloquees(events + expos)
+    print(f"[{datetime.now():%H:%M:%S}] résumés…", flush=True)
     nettoyer_resumes(events + expos)
+    print(f"[{datetime.now():%H:%M:%S}] exactitude…", flush=True)
 
     # ---- Exactitude (collecteur/qualite.py) : règles, contre-vérification des 3 prochains jours, contrôle du lundi
     try:
@@ -1069,7 +1071,9 @@ def main() -> int:
     except Exception as exc:
         traceback.print_exc(limit=2)
         print(f"Exactitude : contrôles en échec ({exc}) ; publication quand même")
+    print(f"[{datetime.now():%H:%M:%S}] traductions…", flush=True)
     traduire_resumes(events + expos)
+    print(f"[{datetime.now():%H:%M:%S}] écriture du site…", flush=True)
 
     utilises = {e["lieu"] for e in events} | {x["lieu"] for x in expos}
     noms_sources = conf.get("noms_sources", {})
