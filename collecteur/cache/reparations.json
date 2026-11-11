@@ -33,7 +33,6 @@
   "Festival · Quartiers Danses": "2026-10-26",
   "Festival · FIL": "2026-10-26",
   "Festival · POP Montréal": "2026-10-26",
-  "Festival · Film Black": "2026-10-26",
   "Festival · Phénomena": "2026-10-26",
   "Festival · FNC": "2026-10-26",
   "Festival · Under Pressure": "2026-10-26",
@@ -54,9 +53,7 @@
   "Galerie Lacerte art contemporain": "2026-11-02",
   "Galerie Nicolas Robert": "2026-11-02",
   "Galerie Robert Poulin": "2026-11-02",
-  "Galerie Robertson Arès": "2026-11-02",
   "Galerie Patrick Mikhail": "2026-11-02",
-  "Wishbone Galerie d'art": "2026-11-02",
   "Yves Laroche Galerie d'art": "2026-11-02",
   "Dièse Onze": "2026-11-02",
   "Cabaret Jazz L'Entracte": "2026-11-02",
@@ -71,7 +68,6 @@
   "Circuit-Est centre chorégraphique": "2026-11-02",
   "La Serre – arts vivants": "2026-11-02",
   "Slamontréal": "2026-11-02",
-  "LaSalle – programmation culturelle": "2026-11-02",
   "Eastern Bloc": "2026-11-02",
   "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02",
   "Formulaire : événements proposés": "2026-11-04",
@@ -91,41 +87,32 @@
   "Théâtre St-James": "2026-11-05",
   "Théâtre Cartier": "2026-11-05",
   "Orchestre Métropolitain": "2026-11-09",
-  "Orchestre classique de Montréal": "2026-11-09",
-  "Festival · Monde Arabe (1)": "2026-10-26",
-  "Festival · Monde Arabe (2)": "2026-10-26",
-  "Festival · Festival Bach": "2026-10-26",
-  "Festival · RIDM (8)": "2026-10-26",
-  "La Cabine Comédie Club": "2026-11-10",
-  "Pierre-François Ouellette art contemporain": "2026-11-10",
-  "Duran Contemporain": "2026-11-10",
-  "Théâtre MainLine": "2026-11-10",
-  "Théâtre Prospero": "2026-11-10"
+  "Orchestre classique de Montréal": "2026-11-09"
  },
  "Duran Contemporain": {
   "essai": "2026-11-10",
   "echecs": 2,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Théâtre MainLine": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "ma.to – communauté (quiz, trivia)": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "ma.to (musique live)": {
   "essai": "2026-11-04",
   "echecs": 1,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Théâtre Prospero": {
   "essai": "2026-11-05",
   "echecs": 1,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Cinéma Public": {
   "essai": "2026-11-09",
@@ -134,12 +121,12 @@
   "le": "2026-11-09",
   "n": 51,
   "echecs": 0,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Studio 303": {
   "essai": "2026-11-09",
   "echecs": 1,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Le Bordel Comédie Club": {
   "essai": "2026-11-09",
@@ -148,7 +135,7 @@
   "le": "2026-11-09",
   "n": 16,
   "echecs": 0,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Wiggle Room (ma.to)": {
   "essai": "2026-11-09",
@@ -157,7 +144,7 @@
   "le": "2026-11-09",
   "n": 17,
   "echecs": 0,
-  "dernier_ok": "2026-11-10"
+  "dernier_ok": "2026-11-11"
  },
  "Galerie C.O.A": {
   "essai": "2026-11-09",
@@ -169,7 +156,8 @@
  },
  "La Cabine Comédie Club": {
   "essai": "2026-11-10",
-  "echecs": 1
+  "echecs": 1,
+  "dernier_ok": "2026-11-11"
  },
  "Pierre-François Ouellette art contemporain": {
   "essai": "2026-11-10",
@@ -177,6 +165,7 @@
   "ancienne": "https://www.pfoac.com/en/exhibitions/forthcoming/",
   "le": "2026-11-10",
   "n": 2,
-  "echecs": 0
+  "echecs": 0,
+  "dernier_ok": "2026-11-11"
  }
 }
