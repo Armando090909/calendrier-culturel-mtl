@@ -317,6 +317,15 @@ def _trop_long(*_):
     raise SourceTropLongue("source abandonnée après 10 minutes sans fin de lecture")
 
 
+class DecouverteTropLongue(BaseException):
+    """BaseException, pas Exception : les « except Exception » de la découverte ne peuvent pas l'avaler
+    (11 nov. 2026 : l'arrêt à 35 minutes était attrapé dans la boucle, qui continuait jusqu'à l'annulation)."""
+
+
+def _decouverte_trop_longue(*_):
+    raise DecouverteTropLongue("découverte arrêtée après 35 minutes")
+
+
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
@@ -975,7 +984,7 @@ def main() -> int:
     print(f"[{datetime.now():%H:%M:%S}] découverte (affiches, billets, liens d'écoute)…", flush=True)
     # garde-fou : au plus 35 minutes, quoi qu'il arrive (11 nov. 2026 : 86 minutes, l'assemblage n'a jamais fini) ;
     # ce qui a été trouvé est gardé et la suite reprend à la collecte suivante
-    signal.signal(signal.SIGALRM, _trop_long)
+    signal.signal(signal.SIGALRM, _decouverte_trop_longue)
     signal.alarm(35 * 60)
     try:
         n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
@@ -983,8 +992,8 @@ def main() -> int:
         print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
         # Décisions Deezer / Apple Music (indices pour et contre) : dans le rapport, pour contrôle
         notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
-    except Exception as exc:
-        print(f"Liens de découverte en échec ou arrêtés : {exc}")
+    except (Exception, DecouverteTropLongue) as exc:
+        print(f"Liens de découverte en échec ou arrêtés : {exc}", flush=True)
     finally:
         signal.alarm(0)
     print(f"[{datetime.now():%H:%M:%S}] découverte terminée", flush=True)
