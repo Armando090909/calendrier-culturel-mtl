@@ -364,7 +364,13 @@ def main() -> int:
         if etape == "lecture" and i_src % 20 == 19:
             sauver_memoire(aujourd)  # une lecture interrompue garde ce que l'IA a déjà lu
         jours = s.get("jours_semaine")  # ex. [0, 3] = lundi et jeudi seulement (économise l'IA)
-        if (etape == "assemblage" or jours and aujourd.weekday() not in jours and not force) and fichier_cache.exists():
+        deja_lue = False
+        if fichier_cache.exists() and not force:  # déjà lue aujourd'hui (collecte relancée) : pas relue
+            try:
+                deja_lue = json.loads(fichier_cache.read_text(encoding="utf-8")).get("date") == aujourd.isoformat()
+            except ValueError:
+                pass
+        if (etape == "assemblage" or deja_lue or jours and aujourd.weekday() not in jours and not force) and fichier_cache.exists():
             c = json.loads(fichier_cache.read_text(encoding="utf-8"))
             bruts += c["evenements"]
             series += c["series"]
@@ -966,6 +972,11 @@ def main() -> int:
             e["_artistes"] = memo_a[plat(e["titre"])]
     print(f"Artistes : {sum(1 for e in concerts if e.get('_artistes'))} concerts avec des noms d'artistes extraits.")
     affiches_bloquees(events)  # avant la découverte : elle cherchera l'affiche sur la billetterie
+    print(f"[{datetime.now():%H:%M:%S}] découverte (affiches, billets, liens d'écoute)…", flush=True)
+    # garde-fou : au plus 35 minutes, quoi qu'il arrive (11 nov. 2026 : 86 minutes, l'assemblage n'a jamais fini) ;
+    # ce qui a été trouvé est gardé et la suite reprend à la collecte suivante
+    signal.signal(signal.SIGALRM, _trop_long)
+    signal.alarm(35 * 60)
     try:
         n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
                                  page_rendue=connecteurs.page_rendue)
@@ -973,7 +984,10 @@ def main() -> int:
         # Décisions Deezer / Apple Music (indices pour et contre) : dans le rapport, pour contrôle
         notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
     except Exception as exc:
-        print(f"Liens de découverte en échec : {exc}")
+        print(f"Liens de découverte en échec ou arrêtés : {exc}")
+    finally:
+        signal.alarm(0)
+    print(f"[{datetime.now():%H:%M:%S}] découverte terminée", flush=True)
     try:
         images_des_salles(events, aujourd, reglages.get("images_de_salle"))
     except Exception as exc:
