@@ -142,7 +142,7 @@ sources:
   - {nom: "L'Illusion, Théâtre de marionnettes", cle: salles, type: page_ia, url: "https://www.illusiontheatre.com/", lieu: "L'Illusion, Théâtre de marionnettes", discipline: jeune, jours_semaine: [1, 4]}
   - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/", lieu: "Studio 303", discipline: danse, jours_semaine: [1, 4]}
   - {nom: "Théâtre de la LNI", cle: salles, type: page_ia, url: "https://www.lni.ca/evenements/", discipline: humour, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Bistro à Jojo", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Bistro à Jojo", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/livemusic", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
   - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/spectacles/", discipline: jeune, jours_semaine: [2], navigateur: true}
   - {nom: "Librairie L'Euguélionne", cle: salles, type: page_ia, url: "https://www.librairieleuguelionne.com/", lieu: "L'Euguélionne", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Librairie Drawn & Quarterly (événements)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
@@ -169,7 +169,7 @@ sources:
   - {nom: "La Brassée (café-concerts)", cle: salles, type: page_ia, url: "https://labrassee.cafe/", lieu: "La Brassée", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Cabaret de Curiosités", cle: salles, type: page_ia, url: "https://cabaretdecuriosites.com/", lieu: "Cabaret de Curiosités", discipline: humour, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Victoria Hall (Westmount)", cle: salles, type: page_ia, url: "https://westmount.org/en/victoria-hall-community-centre/", lieu: "Victoria Hall", discipline: musique, jours_semaine: [1, 4]}
-  - {nom: "MC Hall", cle: salles, type: page_ia, url: "https://mchall.ca/", lieu: "MC Hall", discipline: musique, jours_semaine: [0, 3], navigateur: true}
+  - {nom: "MC Hall", cle: salles, type: page_ia, url: "https://mchall.ca/", lieu: "MC Hall", discipline: musique, jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
   - {nom: "Le Red Room", cle: salles, type: page_ia, url: "https://www.leredroom.com/", lieu: "Le Red Room", discipline: musique, jours_semaine: [0, 3], mise_en_page: "la date de chaque soirée est écrite APRÈS son titre et son lien de billetterie, pas avant ; ex. « Down2Techno x Pulse <lien> 11 Novembre » = le 11 novembre"}  # 9 nov. 2026 : dates décalées d'une soirée
   - {nom: "Salle Marguerite-Bourgeoys", cle: salles, type: page_ia, url: "https://www.sallemb.com/", lieu: "Salle Marguerite-Bourgeoys", discipline: musique, jours_semaine: [2]}
   - {nom: "Montreal Improv", cle: salles, type: page_ia, url: "https://www.montrealimprov.com/shows", lieu: "Montreal Improv", discipline: humour, jours_semaine: [0, 3], navigateur: true}
@@ -220,7 +220,7 @@ sources:
   - {nom: Bar Le Ritz PDB, cle: salles, type: page_ia, url: "http://www.barleritzpdb.com/", lieu: Bar Le Ritz PDB, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Foufounes Électriques, cle: salles, type: page_ia, url: "https://foufouneselectriques.com/", lieu: Foufounes Électriques, discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
   - {nom: Newspeak, cle: salles, type: page_ia, url: "https://newspeakmtl.com/", lieu: Newspeak, discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
+  - {nom: Piranha Bar, cle: salles, type: page_ia, url: "https://piranhabar.ca/", lieu: Piranha Bar, discipline: musique, jours_semaine: [0, 2, 4], navigateur: true, par_le_pi: true}
   - {nom: Café Campus / Petit Campus, cle: salles, type: page_ia, url: "https://cafecampus.com/", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
   - {nom: Théâtre St-Denis, cle: salles, type: page_ia, url: "https://theatrestdenis.com/", lieu: Théâtre St-Denis, jours_semaine: [0, 3]}
 
@@ -254,7 +254,7 @@ sources:
   - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Bistro à Jojo (blues)", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Bistro à Jojo (blues)", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/livemusic", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 2, 4], par_le_pi: true}
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
   - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}
@@ -262,9 +262,9 @@ sources:
   - {nom: "Le Ministère", cle: salles, type: page_ia, url: "https://leministere.ca/", lieu: "Le Ministère", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Le Belmont", cle: salles, type: page_ia, url: "https://www.lebelmont.ca/", lieu: "Le Belmont", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Ausgang Plaza", cle: salles, type: page_ia, url: "https://www.ausgangplaza.com/evenements", lieu: "Ausgang Plaza", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true}
-  - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3], navigateur: true}
-  - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Système MTL", cle: salles, type: page_ia, url: "https://www.systememtl.com/", lieu: "Système", discipline: musique, jours_semaine: [0, 2, 4], navigateur: true, par_le_pi: true}
+  - {nom: "Théâtre Rialto", cle: salles, type: page_ia, url: "https://www.theatrerialto.ca/", lieu: "Théâtre Rialto", jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
+  - {nom: "Le National (La Tulipe)", cle: salles, type: page_ia, url: "http://latulipe.ca/", lieu: "Le National", jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
   - {nom: "Le Studio TD", cle: salles, type: page_ia, url: "https://lestudiotd.com/fr", lieu: "Le Studio TD", jours_semaine: [0, 3]}
   - {nom: "MTELUS", cle: salles, type: page_ia, url: "https://mtelus.com/fr/evenements?vue=grille", lieu: "MTELUS", jours_semaine: [0, 3]}
   - {nom: "Cabaret du Casino de Montréal", cle: salles, type: page_ia, url: "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino", lieu: "Cabaret du Casino de Montréal", jours_semaine: [0, 3]}
@@ -319,7 +319,7 @@ sources:
   - {nom: Casa del Popolo / Sala Rossa, cle: salles, type: page_ia, url: "https://casadelpopolo.com/", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Ursa, cle: salles, type: page_ia, url: "https://ursamtl.com/", lieu: Ursa, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: La Lumière Collective, cle: salles, type: page_ia, url: "https://lalumierecollective.org/", lieu: La Lumière Collective, adresse: "7080 rue Alexandra, Montréal", jours_semaine: [0, 3]}
-  - {nom: Eastern Bloc, cle: salles, type: page_ia, url: "https://easternbloc.ca/", lieu: Eastern Bloc, jours_semaine: [0, 3]}
+  - {nom: Eastern Bloc, cle: salles, type: page_ia, url: "https://easternbloc.ca/", lieu: Eastern Bloc, jours_semaine: [0, 3], par_le_pi: true}
 
   # ---- Billetterie Le Point de vente (28 oct. 2026) : pages « lieu », lisibles sans navigateur.
   # Pour les salles dont le site est en JavaScript ou refuse les robots (Quai des Brumes, Café Campus, Rialto…).

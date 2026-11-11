@@ -47,9 +47,14 @@ API_PUBLIQUES = ("musicbrainz.org/ws/", "query.wikidata.org/sparql", "api.themov
                  "donnees.montreal.ca")
 
 
+# Pages lues avec l'accord écrit de l'organisme concerné : le robots.txt de la plateforme qui les héberge ne s'applique pas.
+PERMISSIONS = ("calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c",  # LESPACEMAKER, accord le 10 nov. 2026
+               "calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o")  # LESPACEMAKER (formations), idem
+
+
 def robots_permet(url: str) -> bool:
     from urllib.robotparser import RobotFileParser
-    if any(a in url for a in API_PUBLIQUES):
+    if any(a in url for a in API_PUBLIQUES + PERMISSIONS):
         return True
     u = urlparse(url)
     hote = f"{u.scheme}://{u.netloc}"
@@ -621,7 +626,14 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             # « navigateur: true » : site en JavaScript ; un vrai navigateur (Chrome invisible) affiche la page d'abord.
             # Les liens suivis (« details ») restent lus normalement, sauf s'ils sont du même site en JavaScript.
             avec_nav = cfg.get("navigateur") or any(d in url for d in NAV_AUTO)
-            html = page_rendue(url) if avec_nav else telecharger(url, "text/html").text
+            # « par_le_pi » : site qui refuse ou tronque les serveurs de GitHub ; la page lue par le Pi à Montréal passe
+            # en premier (mise sur sa liste à chaque collecte), sinon on essaie quand même de la lire d'ici
+            html = None
+            if cfg.get("par_le_pi"):
+                BLOQUEES.add(url)
+                html = page_mac(url)
+            if html is None:
+                html = page_rendue(url) if avec_nav else telecharger(url, "text/html").text
         except Exception as exc:
             # Refus des serveurs de GitHub (403) : la page lue depuis l'ordinateur à Montréal, si elle est récente
             # Refus (403) ou connexion coupée depuis les serveurs de GitHub (certains sites filtrent les centres de
