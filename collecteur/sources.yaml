@@ -92,7 +92,7 @@ sources:
   - {nom: Théâtre du Rideau Vert, cle: theatre, type: page_ia, url: "https://www.rideauvert.qc.ca/", lieu: Théâtre du Rideau Vert, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Théâtre de Quat'Sous, cle: theatre, type: page_ia, url: "https://quatsous.com/", lieu: "Théâtre de Quat'Sous", discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Théâtre Prospero, cle: theatre, type: page_ia, url: "https://theatreprospero.com/", lieu: Théâtre Prospero, discipline: theatre, jours_semaine: [0, 3]}
-  - {nom: La Licorne, cle: theatre, type: page_ia, url: "https://theatrelalicorne.com/", lieu: La Licorne, discipline: theatre, jours_semaine: [0, 3]}
+  - {nom: La Licorne, cle: theatre, type: page_ia, url: "https://theatrelalicorne.com/saisons/2026-2027/", lieu: La Licorne, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: Théâtre d'Aujourd'hui, cle: theatre, type: page_ia, url: "https://theatredaujourdhui.qc.ca/", lieu: "Théâtre d'Aujourd'hui", discipline: theatre, jours_semaine: [0, 3]}
   # 10 nov. 2026 : le TDP nous a demandé d'ajouter toute sa programmation (courriel de G. Bougie Riopel). Le calendrier donne
   # chaque représentation (salle, heure, grand public ou scolaire) ; la page des pièces donne les accueils qui n'y sont pas.

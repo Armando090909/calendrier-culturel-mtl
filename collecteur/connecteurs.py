@@ -577,7 +577,8 @@ _PAS_PROG = re.compile(r"(?i)abonn|subscri|archive|pass[ée]e?s|past|pr[ée]c[é
                        r"facebook|instagram|twitter|youtube|mailto:|tel:|\.pdf|\.jpg|\.png|#|appel|call-for|soumettre|submit")
 
 
-PROGRAMMATION_AUTO = False  # activé après vérification sur les vrais menus des salles (audit du 10 nov. 2026)
+PROGRAMMATION_AUTO = True  # pages de programmation cherchées depuis la page d'accueil (10 nov. 2026)
+SEUIL_MINCE = 3  # une salle qui n'annonce que 3 sorties ou moins : on élargit la recherche aux autres pages du site
 
 
 def pages_programmation(html: str, url: str, debut: date, n: int = 3) -> list[str]:
@@ -613,6 +614,7 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     evs, series = [], []
     pages = list(urls_modele(cfg, debut, fin))
     vues, suivis = set(pages), set()
+    premiere = {}  # html de la première page lue : son menu sert à élargir la recherche si la récolte est mince
     for url in pages:
         try:
             # « navigateur: true » : site en JavaScript ; un vrai navigateur (Chrome invisible) affiche la page d'abord.
@@ -632,6 +634,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                 DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
                 continue
             DIAG.append(f"page lue depuis Montréal (ordinateur) : {url}")
+        premiere.setdefault("html", html)
+        premiere.setdefault("url", url)
         # Page d'accueil : on lit aussi les pages de programmation du site (menu « Programmation », « Saison… »)
         if url == cfg["url"] and re.fullmatch(r"/?((fr|en)/?)?((home|accueil|index\.html?)/?)?", urlparse(url).path) \
                 and PROGRAMMATION_AUTO and not cfg.get("accueil_seulement"):
@@ -717,6 +721,30 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                                    discipline=s.get("discipline") or "autre", url=s.get("url") or url,
                                    resume=s.get("resume") or "", prix=s.get("prix") or "", billets=s.get("billets") or "",
                                    source=cfg["cle_source"]))
+    # Récolte mince (une salle qui n'annonce que 2 ou 3 spectacles, c'est presque toujours une page mal choisie) :
+    # on élargit aux pages de programmation trouvées dans le menu du site, puis dans celui de sa page d'accueil.
+    if len(evs) + len(series) <= SEUIL_MINCE and premiere and PROGRAMMATION_AUTO and not cfg.get("elargi") \
+            and not cfg.get("accueil_seulement") and not cfg.get("festival") and not cfg.get("garder") \
+            and cfg.get("cle") != "galeries" and cfg.get("discipline") != "expo":
+        u0 = urlparse(premiere["url"])
+        candidats = pages_programmation(premiere["html"], premiere["url"], debut, 4)
+        if u0.path not in ("", "/"):
+            try:
+                accueil = f"{u0.scheme}://{u0.netloc}/"
+                candidats += pages_programmation(telecharger(accueil, "text/html").text, accueil, debut, 3)
+            except Exception:
+                pass
+        candidats = [c for c in dict.fromkeys(candidats) if c not in vues][:4]
+        if candidats:
+            DIAG.append(f"récolte mince ({len(evs) + len(series)}) : recherche élargie à " + ", ".join(candidats))
+            for c in candidats:
+                try:
+                    e2, s2 = page_ia(dict(cfg, url=c, repeter=None, elargi=True, accueil_seulement=True), debut, fin)
+                except Exception as exc:
+                    DIAG.append(f"page élargie illisible ({str(exc)[:60]}) : {c}")
+                    continue
+                evs += e2
+                series += s2
     if cfg.get("garder"):  # page générale : on ne garde que les titres qui correspondent (ex. « quiz|trivia »)
         evs = [e for e in evs if re.search(cfg["garder"], e["titre"] + " " + e.get("description", ""), re.I)]
         series = [x for x in series if re.search(cfg["garder"], x["titre"], re.I)]

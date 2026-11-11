@@ -93,7 +93,7 @@ jobs:
           PROPOSITIONS_CSV_URL: ${{ vars.PROPOSITIONS_CSV_URL }}
           CALENDRIERS_CSV_URL: ${{ vars.CALENDRIERS_CSV_URL }}
           CONTACT: ${{ vars.CONTACT }}
-          TOUT_RELIRE: ${{ inputs.tout_relire && '1' || '0' }}
+          TOUT_RELIRE: ${{ (inputs.tout_relire || (github.event_name == 'push' && contains(github.event.head_commit.message, '[tout relire]'))) && '1' || '0' }}
           DECOUVERTE: ${{ inputs.decouverte && '1' || '0' }}
         run: python -u collecteur/collecte.py
 

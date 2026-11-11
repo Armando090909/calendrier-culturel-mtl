@@ -6,7 +6,9 @@ Problèmes suivis :
 - une source qui donnait des événements et n'en donne plus (ou est en erreur) depuis 3 collectes ;
 - un site dont la moitié des fiches (au moins 10) restent sans heure ou sans salle depuis 3 collectes ;
 - une chute de plus de 25 % du nombre total d'événements ;
-- des sites qui demandent aux robots de ne pas lire certaines pages (robots.txt) : signalé une fois.
+- des sites qui demandent aux robots de ne pas lire certaines pages (robots.txt) : signalé une fois ;
+- des salles qui n'annoncent que 3 sorties ou moins, même après la recherche élargie aux pages de programmation de leur
+  site (2 collectes de suite) : un seul avis, tenu à jour, avec la liste des salles à chercher à la main.
 
 Mémoire : collecteur/cache/sante.json. Lancé par la collecte (GH_TOKEN fourni), avant l'enregistrement.
 """
@@ -63,6 +65,31 @@ def problemes(rapport, data, etat):
         out["total"] = ("Baisse du nombre d'événements",
                         f"{total} événements aujourd'hui, contre {maxi} récemment (−{round(100 * (1 - total / maxi))} %).",
                         "Regarder les sources en erreur dans le rapport de collecte.")
+    # Salles à la programmation mince : 3 sorties ou moins, même après la recherche élargie (connecteurs.page_ia)
+    try:
+        import yaml
+        cfg = yaml.safe_load((RACINE / "collecteur" / "sources.yaml").read_text(encoding="utf-8"))
+        cfg = cfg["sources"] if isinstance(cfg, dict) else cfg
+        salles = {c["nom"]: c for c in cfg if c.get("type") == "page_ia" and c.get("lieu") and not c.get("festival")
+                  and not c.get("garder") and not c.get("mince_ok")
+                  and c.get("cle") != "galeries" and c.get("discipline") != "expo"}  # une galerie montre 1 ou 2 expos à la fois
+    except Exception:
+        salles = {}
+    minces = []
+    for s in rapport.get("sources", []):
+        c = salles.get(s["source"])
+        n = s.get("evenements", 0) + s.get("series", 0)
+        if c and not s.get("erreur") and n <= 3:
+            elargi = next((d for d in s.get("diagnostic", []) if "élargie" in d), "")
+            minces.append(f"- **{c['lieu']}** ({s['source']}) : {n} sortie(s) — lue : {c['url']}"
+                          + (f"\n  - pages essayées : {elargi.split(' à ', 1)[-1][:300]}" if elargi else ""))
+    if minces:
+        out["mince"] = ("Salles qui n'annoncent que 0 à 3 sorties : élargir la recherche",
+                        f"{len(minces)} salles n'annoncent que 0 à 3 sorties, même après la lecture des pages de "
+                        "programmation trouvées dans le menu de leur site :\n\n" + "\n".join(sorted(minces)),
+                        "Pour chaque salle : trouver sa page de programmation ou de calendrier (saison en cours) et la "
+                        "donner à Claude, qui l'inscrit dans sources.yaml. Une salle fermée pour la saison peut être "
+                        "marquée « mince_ok: true ».")
     robots = (rapport.get("notes") or {}).get("robots_refus") or {}
     sites = sorted({k.split("/")[0] for k in robots})
     if sites:
@@ -85,7 +112,9 @@ def main():
     for cle, (titre, detail, action) in actuels.items():
         p = ouverts.setdefault(cle, {"depuis": jour, "jours": 0, "issue": None})
         p["jours"] += 1
-        seuil = 1 if cle.startswith(("robots:", "total")) else JOURS_AVANT_AVIS
+        seuil = 1 if cle.startswith(("robots:", "total")) else 2 if cle == "mince" else JOURS_AVANT_AVIS
+        if cle == "mince" and p["issue"]:  # avis déjà ouvert : sa liste est tenue à jour
+            gh("issue", "edit", str(p["issue"]), "--body", f"{detail}\n\n**Mis à jour** : {jour}.\n\n**À faire** : {action}")
         if p["jours"] >= seuil and not p["issue"]:
             corps = (f"{detail}\n\n**Depuis** : {p['depuis']} ({p['jours']} collecte(s)).\n\n**Ce que le programme a déjà essayé** : "
                      "relecture de la page, navigateur, lecture par l'IA, dernière lecture réussie conservée.\n\n"
