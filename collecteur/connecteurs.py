@@ -568,6 +568,44 @@ def lieux_par_texte(html: str, evs: list[dict]) -> int:
     return n
 
 
+_PROG = re.compile(r"(?i)programm|saison|season|calendrier|calendar|agenda|spectacles|[àa][- ]l[’'-]?affiche|"
+                   r"[ée]v[ée]nements|events?\b|shows?\b|what[’'s]* on|concerts|horaire|films?\b|s[ée]ances|cin[ée]ma|"
+                   r"expositions?|exhibitions?|activit[ée]s|prochain|upcoming|line-?up|repr[ée]sentations")
+_PAS_PROG = re.compile(r"(?i)abonn|subscri|archive|pass[ée]e?s|past|pr[ée]c[ée]dent|faq|contact|location|rental|don\b|"
+                       r"donat|boutique|shop|emploi|job|carri|presse|press|m[ée]dia|scolaire|school|[ée]ducati|"
+                       r"politique|privacy|confidential|connexion|login|compte|account|panier|cart|infolettre|newsletter|"
+                       r"facebook|instagram|twitter|youtube|mailto:|tel:|\.pdf|\.jpg|\.png|#|appel|call-for|soumettre|submit")
+
+
+PROGRAMMATION_AUTO = False  # activé après vérification sur les vrais menus des salles (audit du 10 nov. 2026)
+
+
+def pages_programmation(html: str, url: str, debut: date, n: int = 3) -> list[str]:
+    """Les pages de programmation d'un site, trouvées dans les liens de sa page d'accueil (menu « Programmation »,
+    « Saison 2026-2027 », « Calendrier »…). La saison en cours est préférée ; les saisons passées sont écartées.
+    (10 nov. 2026 : le TDP, Usine C, La Licorne… n'étaient lus que par leur page d'accueil, qui montre 2 ou 3 vedettes.)"""
+    hote = urlparse(url).netloc.removeprefix("www.")
+    a, b = debut.year, debut.year + 1
+    saison = re.compile(rf"{a - 1 if debut.month < 7 else a}\W?(20)?{str(a if debut.month < 7 else b)[2:]}")
+    vieilles = re.compile("|".join(rf"\b{y}\W?(20)?{str(y + 1)[2:]}\b" for y in range(a - 6, (a - 1 if debut.month >= 7 else a - 2) + 1)))
+    notes = {}
+    for x in BeautifulSoup(html, "html.parser").find_all("a", href=True):
+        lien = urljoin(url, x["href"]).split("#")[0]
+        texte = x.get_text(" ", strip=True)[:80]
+        u = urlparse(lien)
+        if u.netloc.removeprefix("www.") != hote or u.path in ("", "/") or lien.rstrip("/") == url.rstrip("/"):
+            continue
+        quoi = f"{texte} {u.path}"
+        if not _PROG.search(quoi) or _PAS_PROG.search(quoi) or vieilles.search(quoi):
+            continue
+        # une rubrique (/programmation, /saison/2026-2027) plutôt que la fiche d'un seul spectacle
+        note = 3 if saison.search(quoi) else 0
+        note += 2 if re.search(r"(?i)programm|saison|season|calendrier|calendar|agenda", quoi) else 0
+        note -= u.path.strip("/").count("/")
+        notes[lien] = max(notes.get(lien, -99), note)
+    return [l for l, _ in sorted(notes.items(), key=lambda kv: -kv[1])][:n]
+
+
 def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     if not ia.disponible():
         print("  (sautée : pas de clé ANTHROPIC_API_KEY)")
@@ -594,6 +632,17 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                 DIAG.append(f"page illisible ({str(exc)[:80]}) : {url}")
                 continue
             DIAG.append(f"page lue depuis Montréal (ordinateur) : {url}")
+        # Page d'accueil : on lit aussi les pages de programmation du site (menu « Programmation », « Saison… »)
+        if url == cfg["url"] and re.fullmatch(r"/?((fr|en)/?)?((home|accueil|index\.html?)/?)?", urlparse(url).path) \
+                and PROGRAMMATION_AUTO and not cfg.get("accueil_seulement"):
+            try:
+                autres = [p for p in pages_programmation(html, url, debut) if p not in vues]
+            except Exception:
+                autres = []
+            if autres:
+                vues.update(autres)
+                pages += autres
+                DIAG.append("pages de programmation lues aussi : " + ", ".join(autres))
         # Données structurées présentes ? On les préfère (gratuites et exactes).
         e2, s2 = evenements_jsonld(html, url, dict(cfg, cle_source=cfg["cle_source"]), debut, fin)
         if e2 and "festapp.io" in url and sum(1 for e in e2 if not e["lieu"]) > len(e2) / 3:
