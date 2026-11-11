@@ -1084,7 +1084,10 @@ def main() -> int:
                 memo_h[cle] = h
             except Exception as exc:
                 print(f"  horaire « {x['titre'][:30]} » : {exc}")
-        h = series_manuelles.get(x["url"]) or memo_h.get(cle)
+        hm = series_manuelles.get(x["url"])
+        if hm and hm.get("_titre") and plat(hm["_titre"]) not in plat(x["titre"]):
+            hm = None  # même adresse pour plusieurs spectacles (page d'accueil d'une salle) : le titre doit correspondre
+        h = ({k: v for k, v in hm.items() if not k.startswith("_")} if hm else None) or memo_h.get(cle)
         # Une liste de dates qui ne contient plus aucune représentation à venir (page qui ne montre que la première,
         # par exemple) ne sert pas : on n'en tient pas compte plutôt que de faire disparaître le spectacle.
         # Dates de la page toutes hors de la période annoncée (ex. agenda de la salle erroné) : la page du spectacle
