@@ -1,41 +1,174 @@
 {
- "https://lesecuries.com/": {
+ "https://auxecuries.com/": {
   "statut": 200,
   "simple_images": {
-   "og": null,
-   "img": [],
-   "iframes": [],
+   "og": "http://auxecuries.com/wp-content/uploads/2022/01/Casteliers_TPE_1.jpg",
+   "img": [
+    "https://auxecuries.com/wp-content/uploads/2026/05/TAE_Logo_Saison_26-27.jpg | Aux Écuries",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/hamburger.png | Menu mobile",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/close.png | Menu mobile",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/looking-glass.png | Loupe de recherche",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/close.png | Loupe de recherche",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/looking-glass.png | ",
+    "https://auxecuries.com/wp-content/uploads/2026/09/IMG_3762-1024x683.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_05-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_06-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_07-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_08-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/caret-up.png | "
+   ],
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-P8ZS2QS3"
+   ],
    "calendriers": []
   },
   "simple": {
-   "taille": 0,
-   "texte": "",
-   "jsonld": [],
+   "taille": 1992,
+   "texte": "Théâtre Aux Écuries - Montréal\nSkip to content <https://auxecuries.com/#primary>\nTHÉÂTRE AUX ÉCURIES\nSAISON 26-27\nDÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 <https://auxecuries.com/programmation/#tout>\nDÉCOUVREZ LES AVANTAGES DU FORFAIT CRINQUÉ\nPLUS D'INFORMATION <https://auxecuries.com/tarifs-2025-2026/>\nMARIOUPOL\nHÔTEL-MOTEL\nDU 22 SEPTEMBRE AU 10 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/marioupol/>\nCAMPAGNE DE FINANCEMENT 2026\nFAIRE UN DON <https://auxecuries.com/evenements/campagne-de-financement-2026/>\nANGLE MORT\nSTÉPHANIE MORIN-ROBERT\nDU 14 AU 16 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/angle-mort/>\nLÉON LE NUL\nTHÉÂTRE DE LA PIRE ESPÈCE\nDU 20 AU 24 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/leon-le-nul-3/>\nVOUS ÊTES ICI\nLA SERRE - ARTS VIVANTS\nDU 30 OCTOBRE AU 1ER NOVEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/>\nLES VEUVES PARALLÈLES\nCLAUDINE RIVEST\nDU 24 NOVEMBRE AU 5 DÉCEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/les-veuves-paralleles/>\nPICHICHI\nMARIANA TAYLER\nDU 2 AU 20 FÉVRIER\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/pichichi/>\nMENAJ\nCOLLECTIF THÉÂTRAL POTOMITAN\nDU 16 AU 27 MARS\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/menaj/>\nSANS NOUS\nTHÉÂTRE I.N.K.\nDU 13 AU 24 AVRIL\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/sans-nous/>\nSOIRÉE-BÉNÉFICE 2026\nÉvénements spéciaux\nJeudi 12 novembre 2026\nEn savoir plus → <https://auxecuries.com/evenements/soiree-benefice-2026/>\nLES VEUVES PARALLÈLES\nSpectacles\nDu 24 nov. — 5 déc. 2026\nEn savoir plus → <https://auxecuries.com/evenements/les-veuves-paralleles/>\nPICHICHI\nSpectacles\n2 — 20 février 2027\nEn savoir plus → <https://auxecuries.com/evenements/pichichi/>\nMENAJ\nSpectacles\n16 — 27 mars 2027\nEn savoir plus → <https://auxecuries.com/evenements/menaj/>\nSANS NOUS\nSpectacles\n13 — 24 avril 2027\nEn savoir plus → <https://auxecuries.com/evenements/sans-nous/>\n ×",
+   "jsonld": [
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/auxecuries.com\\/\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"name\":\"Théâtre Aux Écuries - Montréal\",\"isPartOf\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\"},\"datePublished\":\"2020-06-11T12:26:03+00:00\",\"dateModified\":\"2026-11-02T15:44:18+00:00\",\"description\":\"Consulter la programmation 2026-2027\",\"breadcrumb\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#breadcrumb\"},\"inLanguage\":\"fr-CA\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/auxecuries.com\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/auxecuries.com\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/auxecuries.com\\/#website\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"name\":\"Aux Écuries\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/auxecuries.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-CA\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\",\"name\":\"Théâtre Aux Écuries\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-CA\",\"@id\":\"https:\\/\\/auxecuries.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/auxecuries.com\\/wp-content\\/uploads\\/2025\\/05\\/TAE_Logo-1.jpg\",\"contentUrl\":\"https:\\/\\/auxecuries.com\\/wp-content\\/uploads\\/2025\\/05\\/TAE_Logo-1.jpg\",\"width\":250,\"height\":328,\"caption\":\"Théâtre Aux Écuries\"},\"image\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#\\/schema\\/logo\\/image\\/\"}}]}"
+   ],
    "heures": [],
-   "liens": [],
-   "menu": []
+   "liens": [
+    "https://auxecuries.com/billetterie/",
+    "https://auxecuries.com/billetterie/vendredi-dis-ton-prix/",
+    "https://auxecuries.com/evenements/angle-mort/",
+    "https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "https://auxecuries.com/evenements/leon-le-nul-3/",
+    "https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "https://auxecuries.com/evenements/marioupol/",
+    "https://auxecuries.com/evenements/menaj/",
+    "https://auxecuries.com/evenements/pichichi/",
+    "https://auxecuries.com/evenements/sans-nous/",
+    "https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/",
+    "https://auxecuries.com/programmation/#spectacle",
+    "https://auxecuries.tuxedobillet.com/"
+   ],
+   "menu": [
+    "PROGRAMMATION → https://auxecuries.com/programmation",
+    "Rencontres sectorielles → https://auxecuries.com/programmation/#rencontre",
+    "Brochure 2026-2027 → http://auxecuries.com/wp-content/uploads/2026/05/TAE_Brochure_Saison-2026-2027_finale.pdf",
+    "Archives → https://auxecuries.com/programmation/archives/",
+    "Billetterie en ligne → https://auxecuries.tuxedobillet.com/",
+    "Informations et horaire → https://auxecuries.com/billetterie/",
+    "Vendredi dis-ton-prix → https://auxecuries.com/billetterie/vendredi-dis-ton-prix/",
+    "Projets de médiation → https://auxecuries.com/programmation/projets-mediation/",
+    "CAMPAGNE DE FINANCEMENT 2026-2027 → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "SOIRÉE-BÉNÉFICE 2026 → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "Programmation 2026-2027 → https://auxecuries.com/programmation/#spectacle",
+    "Brochure 2026/2027 → http://auxecuries.com/wp-content/uploads/2026/05/TAE_Brochure_Saison-2026-2027_finale.pdf",
+    "Billetterie en ligne → https://auxecuries.tuxedobillet.com/",
+    "CAMPAGNE DE FINANCEMENT 2026-2027 → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "SOIRÉE-BÉNÉFICE 2026 → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "Archives → https://auxecuries.com/programmation/archives/",
+    "DÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 → https://auxecuries.com/programmation/#tout",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/marioupol/",
+    "FAIRE UN DON → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/angle-mort/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/leon-le-nul-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/pichichi/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/menaj/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/sans-nous/",
+    "En savoir plus → → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "En savoir plus → → https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "En savoir plus → → https://auxecuries.com/evenements/pichichi/",
+    "En savoir plus → → https://auxecuries.com/evenements/menaj/",
+    "En savoir plus → → https://auxecuries.com/evenements/sans-nous/",
+    "Archives → https://auxecuries.com/programmation/archives/"
+   ]
   },
   "navigateur_images": {
-   "og": null,
-   "img": [],
-   "iframes": [],
+   "og": "http://auxecuries.com/wp-content/uploads/2022/01/Casteliers_TPE_1.jpg",
+   "img": [
+    "https://auxecuries.com/wp-content/uploads/2026/05/TAE_Logo_Saison_26-27.jpg | Aux Écuries",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/hamburger.png | Menu mobile",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/close.png | Menu mobile",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/looking-glass.png | Loupe de recherche",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/close.png | Loupe de recherche",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/looking-glass.png | ",
+    "https://auxecuries.com/wp-content/uploads/2026/09/IMG_3762-1024x683.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_05-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_06-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_07-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/uploads/2026/04/TAE_Tuiles-spectacles-26-27_08-1024x751.jpg | ",
+    "https://auxecuries.com/wp-content/themes/auxecuries-2020/images/icons/caret-up.png | "
+   ],
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-P8ZS2QS3"
+   ],
    "calendriers": []
   },
   "navigateur": {
-   "taille": 236,
-   "texte": "Access Denied\nAccess Denied\nYou don't have permission to access \"http://forsale.godaddy.com/forsale/lesecuries.com?\" on this server.\nReference #18.1b13d517.1794507805.5657717c\nhttps://errors.edgesuite.net/18.1b13d517.1794507805.5657717c",
-   "jsonld": [],
+   "taille": 3459,
+   "texte": "Théâtre Aux Écuries - Montréal\nSkip to content <https://auxecuries.com/#primary>\nLÉON LE NUL\nTHÉÂTRE DE LA PIRE ESPÈCE\nDU 20 AU 24 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/leon-le-nul-3/>\nVOUS ÊTES ICI\nLA SERRE - ARTS VIVANTS\nDU 30 OCTOBRE AU 1ER NOVEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/>\nLES VEUVES PARALLÈLES\nCLAUDINE RIVEST\nDU 24 NOVEMBRE AU 5 DÉCEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/les-veuves-paralleles/>\nPICHICHI\nMARIANA TAYLER\nDU 2 AU 20 FÉVRIER\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/pichichi/>\nMENAJ\nCOLLECTIF THÉÂTRAL POTOMITAN\nDU 16 AU 27 MARS\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/menaj/>\nSANS NOUS\nTHÉÂTRE I.N.K.\nDU 13 AU 24 AVRIL\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/sans-nous/>\nTHÉÂTRE AUX ÉCURIES\nSAISON 26-27\nDÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 <https://auxecuries.com/programmation/#tout>\nDÉCOUVREZ LES AVANTAGES DU FORFAIT CRINQUÉ\nPLUS D'INFORMATION <https://auxecuries.com/tarifs-2025-2026/>\nMARIOUPOL\nHÔTEL-MOTEL\nDU 22 SEPTEMBRE AU 10 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/marioupol/>\nCAMPAGNE DE FINANCEMENT 2026\nFAIRE UN DON <https://auxecuries.com/evenements/campagne-de-financement-2026/>\nANGLE MORT\nSTÉPHANIE MORIN-ROBERT\nDU 14 AU 16 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/angle-mort/>\nLÉON LE NUL\nTHÉÂTRE DE LA PIRE ESPÈCE\nDU 20 AU 24 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/leon-le-nul-3/>\nVOUS ÊTES ICI\nLA SERRE - ARTS VIVANTS\nDU 30 OCTOBRE AU 1ER NOVEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/>\nLES VEUVES PARALLÈLES\nCLAUDINE RIVEST\nDU 24 NOVEMBRE AU 5 DÉCEMBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/les-veuves-paralleles/>\nPICHICHI\nMARIANA TAYLER\nDU 2 AU 20 FÉVRIER\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/pichichi/>\nMENAJ\nCOLLECTIF THÉÂTRAL POTOMITAN\nDU 16 AU 27 MARS\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/menaj/>\nSANS NOUS\nTHÉÂTRE I.N.K.\nDU 13 AU 24 AVRIL\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/sans-nous/>\nTHÉÂTRE AUX ÉCURIES\nSAISON 26-27\nDÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 <https://auxecuries.com/programmation/#tout>\nDÉCOUVREZ LES AVANTAGES DU FORFAIT CRINQUÉ\nPLUS D'INFORMATION <https://auxecuries.com/tarifs-2025-2026/>\nMARIOUPOL\nHÔTEL-MOTEL\nDU 22 SEPTEMBRE AU 10 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/marioupol/>\nCAMPAGNE DE FINANCEMENT 2026\nFAIRE UN DON <https://auxecuries.com/evenements/campagne-de-financement-2026/>\nANGLE MORT\nSTÉPHANIE MORIN-ROBERT\nDU 14 AU 16 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/angle-mort/>\nLÉON LE NUL\nTHÉÂTRE DE LA PIRE ESPÈCE\nDU 20 AU 24 OCTOBRE\nACHETEZ VOS BILLETS <https://auxecuries.com/evenements/leon-le-nul-3/>\n‹\n›\nSOIRÉE-BÉNÉFICE 2026\nÉvénements spéciaux\nJeudi 12 novembre 2026\nEn savoir plus → <https://auxecuries.com/evenements/soiree-benefice-2026/>\nLES VEUVES PARALLÈLES\nSpectacles\nDu 24 nov. — 5 déc. 2026\nEn savoir plus → <https://auxecuries.com/evenements/les-veuves-paralleles/>\nPICHICHI\nSpectacles\n2 — 20 février 2027\nEn savoir plus → <https://auxecuries.com/evenements/pichichi/>\nMENAJ\nSpectacles\n16 — 27 mars 2027\nEn savoir plus → <https://auxecuries.com/evenements/menaj/>\nSANS NOUS\nSpectacles\n13 — 24 avril 2027\nEn savoir plus → <https://auxecuries.com/evenements/sans-nous/>\n ×",
+   "jsonld": [
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/auxecuries.com\\/\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"name\":\"Théâtre Aux Écuries - Montréal\",\"isPartOf\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\"},\"datePublished\":\"2020-06-11T12:26:03+00:00\",\"dateModified\":\"2026-11-02T15:44:18+00:00\",\"description\":\"Consulter la programmation 2026-2027\",\"breadcrumb\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#breadcrumb\"},\"inLanguage\":\"fr-CA\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/auxecuries.com\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/auxecuries.com\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/auxecuries.com\\/#website\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"name\":\"Aux Écuries\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/auxecuries.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-CA\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/auxecuries.com\\/#organization\",\"name\":\"Théâtre Aux Écuries\",\"url\":\"https:\\/\\/auxecuries.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-CA\",\"@id\":\"https:\\/\\/auxecuries.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/auxecuries.com\\/wp-content\\/uploads\\/2025\\/05\\/TAE_Logo-1.jpg\",\"contentUrl\":\"https:\\/\\/auxecuries.com\\/wp-content\\/uploads\\/2025\\/05\\/TAE_Logo-1.jpg\",\"width\":250,\"height\":328,\"caption\":\"Théâtre Aux Écuries\"},\"image\":{\"@id\":\"https:\\/\\/auxecuries.com\\/#\\/schema\\/logo\\/image\\/\"}}]}"
+   ],
    "heures": [],
-   "liens": [],
-   "menu": []
-  }
- },
- "https://www.lesecuries.ca/": {
-  "simple": {
-   "erreur": "HTTPSConnectionPool(host='www.lesecuries.ca', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.lesecuries.ca', port=443): Failed to resolve 'www.lesecuries.ca' ([Errno -2] Name or service not known)\"))"
-  },
-  "navigateur": {
-   "erreur": "Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.lesecuries.ca/\nCall log:\nnavigating to \"https://www.lesecuries.ca/\", waiting until \"domcontentloaded\"\n"
+   "liens": [
+    "https://auxecuries.com/billetterie/",
+    "https://auxecuries.com/billetterie/vendredi-dis-ton-prix/",
+    "https://auxecuries.com/evenements/angle-mort/",
+    "https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "https://auxecuries.com/evenements/leon-le-nul-3/",
+    "https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "https://auxecuries.com/evenements/marioupol/",
+    "https://auxecuries.com/evenements/menaj/",
+    "https://auxecuries.com/evenements/pichichi/",
+    "https://auxecuries.com/evenements/sans-nous/",
+    "https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/",
+    "https://auxecuries.com/programmation/#spectacle",
+    "https://auxecuries.tuxedobillet.com/"
+   ],
+   "menu": [
+    "PROGRAMMATION → https://auxecuries.com/programmation",
+    "Rencontres sectorielles → https://auxecuries.com/programmation/#rencontre",
+    "Brochure 2026-2027 → http://auxecuries.com/wp-content/uploads/2026/05/TAE_Brochure_Saison-2026-2027_finale.pdf",
+    "Archives → https://auxecuries.com/programmation/archives/",
+    "Billetterie en ligne → https://auxecuries.tuxedobillet.com/",
+    "Informations et horaire → https://auxecuries.com/billetterie/",
+    "Vendredi dis-ton-prix → https://auxecuries.com/billetterie/vendredi-dis-ton-prix/",
+    "Projets de médiation → https://auxecuries.com/programmation/projets-mediation/",
+    "CAMPAGNE DE FINANCEMENT 2026-2027 → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "SOIRÉE-BÉNÉFICE 2026 → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "Programmation 2026-2027 → https://auxecuries.com/programmation/#spectacle",
+    "Brochure 2026/2027 → http://auxecuries.com/wp-content/uploads/2026/05/TAE_Brochure_Saison-2026-2027_finale.pdf",
+    "Billetterie en ligne → https://auxecuries.tuxedobillet.com/",
+    "CAMPAGNE DE FINANCEMENT 2026-2027 → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "SOIRÉE-BÉNÉFICE 2026 → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "Archives → https://auxecuries.com/programmation/archives/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/leon-le-nul-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/pichichi/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/menaj/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/sans-nous/",
+    "DÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 → https://auxecuries.com/programmation/#tout",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/marioupol/",
+    "FAIRE UN DON → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/angle-mort/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/leon-le-nul-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/vous-etes-ici-you-are-here-3/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/pichichi/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/menaj/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/sans-nous/",
+    "DÉCOUVREZ TOUTE LA PROGRAMMATION 26-27 → https://auxecuries.com/programmation/#tout",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/marioupol/",
+    "FAIRE UN DON → https://auxecuries.com/evenements/campagne-de-financement-2026/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/angle-mort/",
+    "ACHETEZ VOS BILLETS → https://auxecuries.com/evenements/leon-le-nul-3/",
+    "En savoir plus → → https://auxecuries.com/evenements/soiree-benefice-2026/",
+    "En savoir plus → → https://auxecuries.com/evenements/les-veuves-paralleles/",
+    "En savoir plus → → https://auxecuries.com/evenements/pichichi/",
+    "En savoir plus → → https://auxecuries.com/evenements/menaj/",
+    "En savoir plus → → https://auxecuries.com/evenements/sans-nous/",
+    "Archives → https://auxecuries.com/programmation/archives/"
+   ]
   }
  }
 }
