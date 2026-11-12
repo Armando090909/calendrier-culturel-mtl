@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-24-festival-triste-les-larmes-de-terre-avec-lia-kuri-ba1fa7@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261124T200000
+DTEND;TZID=America/Toronto:20261124T220000
+SUMMARY:Festival Triste: « Les larmes de terre » avec Lia Kuri et Mon dou
+ x Saigneur (solo)
+LOCATION:P'tit Ours\, Montréal
+URL:https://casadelpopolo.com/fr/events/2026-11-25-festival-triste-les-larm
+ es-de-terre-musique-et-texte-inspires-par-la-terre-nourriciere-avec-lia-ku
+ ri-et-mon-doux-saigneur-solo
+DESCRIPTION:Spectacle mêlant musique et textes inspirés par la terre\, da
+ ns le cadre du Festival Triste.\nPrix : 20\,00 $\nDétails : https://www.v
+ enuepilot.co/fr/events/195821/orders/new\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

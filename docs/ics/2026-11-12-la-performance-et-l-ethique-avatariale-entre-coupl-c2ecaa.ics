@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-12-la-performance-et-l-ethique-avatariale-entre-coupl-c2ecaa@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261112T124500
+DTEND;TZID=America/Toronto:20261112T144500
+SUMMARY:La performance et l'éthique avatariale entre couplage de données 
+ et réseau en santé
+LOCATION:Pavillon Hubert-Aquin (A)\, UQAM\, Montréal
+URL:https://evenements.uqam.ca/evenements/la-performance-et-l-ethique-avata
+ riale-entre-couplage-de-donnees-et-reseau-en-sante/34719?date=2026-11-12_1
+ 2-45-00
+DESCRIPTION:Exposé sur les enjeux éthiques des avatars en santé\, liés 
+ au couplage de données et aux réseaux.\nDétails : https://evenements.uq
+ am.ca/evenements/la-performance-et-l-ethique-avatariale-entre-couplage-de-
+ donnees-et-reseau-en-sante/34719?date=2026-11-12_12-45-00\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

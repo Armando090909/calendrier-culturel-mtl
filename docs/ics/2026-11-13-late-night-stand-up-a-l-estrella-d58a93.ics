@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-late-night-stand-up-a-l-estrella-d58a93@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261113T220000
+DTEND;TZID=America/Toronto:20261114T000000
+SUMMARY:Late-Night Stand-Up à l'Estrella
+LOCATION:Estrella\, Montréal
+URL:https://admitone.com/events/montreal/community/comedy/late-night-stand-
+ up-comedy-show-by-mtlcomedyclub-com/6a59ac34a7443a1a5b132ad9
+DESCRIPTION:Spectacle d'humour en anglais en soirée tardive\, avec bouché
+ es et boissons avant le début.\nPrix : 17\,50 à 20 $\nDétails : https:/
+ /admitone.com/events/montreal/community/comedy/late-night-stand-up-comedy-
+ show-by-mtlcomedyclub-com/6a59ac34a7443a1a5b132ad9\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

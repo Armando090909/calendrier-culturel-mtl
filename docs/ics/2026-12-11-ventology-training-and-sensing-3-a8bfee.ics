@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-11-ventology-training-and-sensing-3-a8bfee@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Ventology Training and Sensing #3
+LOCATION:Lieu non précisé\, Montréal
+URL:https://dare-dare.org/en/events/ventology_training_and_sensing
+DESCRIPTION:Heure à confirmer. Séance de formation participative où les 
+ participants explorent les systèmes de ventilation du quartier Saint-Henr
+ i par l'odorat\, l'ouïe et la mesure.\nDétails : https://docs.google.com
+ /forms/d/e/1FAIpQLSfhCX0qBzEO3SEoa-fCVUvBYg7QtrOLK08Eh3babCq6Inf7BQ/viewfo
+ rm\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

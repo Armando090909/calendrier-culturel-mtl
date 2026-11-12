@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-14-andrew-packer-stand-up-comedy-live-in-montreal-43e4fb@ccmtl.
+ ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T190000
+DTEND;TZID=America/Toronto:20261114T210000
+SUMMARY:Andrew Packer: Stand Up Comedy Live in Montreal
+LOCATION:Théâtre Sainte-Catherine\, Montréal
+URL:https://theatresaintecatherine.com/event/andrew-packer-stand-up-comedy-
+ live-in-montreal/
+DESCRIPTION:Andrew Packer: Stand Up Comedy Live in Montreal Tickets\, Satur
+ day\, November 14 • 7 PM - 8:30 PM | Eventbrite Andrew Packer: Stand Up 
+ Comedy Live in Montreal Stand up comedian fresh the…\nDétails : https:/
+ /outlook.live.com/owa/?path=/calendar/action/compose&rrv=addevent&startdt=
+ 2026-11-14T19%3A00%3A00-05%3A00&enddt=2026-11-14T20%3A30%3A00-05%3A00&loca
+ tion&subject=Andrew%20Packer%3A%20Stand%20Up%20Comedy%20Live%20in%20Montre
+ al&body=%3Cp%20style%3D%22text-align%3A%20center%22%3EAndrew%20Packer%3A%2
+ 0Stand%20Up%20Comedy%20Live%20in%20Montreal%20Tickets%2C%20Saturday%2C%20N
+ ovember%2014%20%C2%A0%E2%80%A2%C2%A0%207%20PM%20-%208%3A30%20PM%20%7C%20Ev
+ entbrite%3C%2Fp%3E%3Cp%20style%3D%22text-align%3A%20center%22%3EAndrew%20P
+ acker%3A%20Stand%20Up%20Comedy%20Live%20in%20Montreal%3C%2Fp%3EStand%20up%
+ 20comedian%20fresh%20the%20release%20his%20new%20Dry%20Bar%20Comedy%20Spec
+ ial.%20Often%20recognized%20from%20KILL%20TONY%20or%20his%20Youtube%20chan
+ nel%27s%20%22Man%20News%22.An%20unforgettable%20night%20of%20stand-up%20co
+ medy%20with%20internationally%20touring%20comedian%20Andrew%20Packer.%20Bi
+ g%20laughs%2C%20sharp%20takes%2C%20and%20material%20everyone%20in%20your%2
+ 0group%20will%20connect%20with.Andrew%20Packer%20is%20well%20known%20for%2
+ 0his%20stand%20out%20performance%20on%20the%20hit%20show%20KILL%20TONY%20a
+ nd%20for%20MAN%20NEWS%3B%20his%20comedy%20news%20series%20that%20has%20att
+ racted%20over%20one%20billion%20views%20on%20Youtube.%20On%20stage%2C%20An
+ drew%20has%20headlined%20in%20over%2015%20countries%2C%20with%20highlight%
+ 20performances%20on%20Netflix%20is%20a%20Joke%20Radio%2C%20CBC%2C%20Halifa
+ x%20Comedy%20Festival%2C%20CRAVE%2C%20Just%20F%20%28Voir%20la%20descriptio
+ n%20compl%C3%A8te%20de%20%C3%89v%C3%A8nement%20ici%C2%A0%3A%20https%3A%2F%
+ 2Ftheatresaintecatherine.com%2Fevent%2Fandrew-packer-stand-up-comedy-live-
+ in-montreal%2F%29\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

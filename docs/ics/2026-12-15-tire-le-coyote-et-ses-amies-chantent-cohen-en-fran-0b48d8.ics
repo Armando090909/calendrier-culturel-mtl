@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-15-tire-le-coyote-et-ses-amies-chantent-cohen-en-fran-0b48d8@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261215T200000
+DTEND;TZID=America/Toronto:20261215T220000
+SUMMARY:Tire le coyote et ses ami·es chantent Cohen… en français
+LOCATION:Théâtre d'Aujourd'hui\, Montréal
+URL:https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen
+DESCRIPTION:Spectacle musical et théâtral autour de Leonard Cohen\, avec 
+ Tire le coyote\, Salomé Leclerc\, Safia Nolin et Antoine Corriveau\, mise
+  en scène Alexia Bürger\, au CTD’A à Montréal\, pour 3 soirs seuleme
+ nt.\nDétails : https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote
+ -cohen\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

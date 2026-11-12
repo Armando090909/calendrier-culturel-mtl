@@ -1,155 +1,200 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "statut": "publié",
- "evenements": 2604,
- "expositions": 225,
- "nouvelles_salles": [],
+ "evenements": 2933,
+ "expositions": 242,
+ "nouvelles_salles": [
+  "Argo Bookshop",
+  "Association Récréative Milton-Parc",
+  "Atelier La Coulée",
+  "Bande Passante",
+  "Bibliothèque publique de Pointe-Claire - Centrale",
+  "Biodôme | Espace pour la vie",
+  "Bootlegger Cocktail Bar & Cuisine Montréal",
+  "Cat's Corner",
+  "Centre Culturel Stewart Hall de la Ville de Pointe-Claire",
+  "Centre communautaire et aquatique",
+  "Centre récréatif Édouard-Rivet",
+  "Ciné-Campus",
+  "Comedyville",
+  "Espace ONF",
+  "Espace PRO",
+  "Honey Martin",
+  "Infinithéâtre + Casa d'Italia",
+  "La Trattoria Dell'Arte",
+  "Librairie Drawn &#038; Quarterly",
+  "Librairie Joie de livres",
+  "Librairie L’Euguélionne",
+  "Librairie Raffin &#8211; Plaza St-Hubert",
+  "Lieu inconnu",
+  "Local D-R200 du Pavillon Athanas-David",
+  "Local PK-1140, Pavillon Président-Kennedy",
+  "Lord William Pub",
+  "Maison internationale des arts de la marionnette",
+  "Marché des Éclusiers",
+  "Parc Lafontaine",
+  "Parc des Vétérans",
+  "Pavillon Adrien-Pinard",
+  "Pavillon Président-Kennedy",
+  "Pavillon des sciences de la gestion",
+  "Petite-Bourgogne, espace public",
+  "Salle Albert-Dumouchel",
+  "Studio PACA",
+  "TNM",
+  "TOHU",
+  "Tabac Villeray",
+  "Théâtre Granada",
+  "Théâtre des Deux Rives",
+  "UQAM - En ligne",
+  "UQAM - Pavillon Paul-Gérin-Lajoie",
+  "Wishbone Gallery",
+  "École de design de l'UQAM",
+  "Église Saint-Arsène"
+ ],
  "notes": {
   "fiches_ville": {
    "lues": 0,
    "erreurs": 0,
    "exemples_erreurs": [],
-   "completees_par_mac": 780,
-   "heures_trouvees": 777,
-   "salles_trouvees": 761
-  },
-  "formulaire": {
-   "lignes": 1,
-   "oui": 1,
-   "non": 0,
-   "acceptees_auto": 0,
-   "ia": true,
-   "colonnes": [
-    "Horodateur",
-    "Titre de l'événement",
-    "Date de l'événement",
-    "Heure (ex. 20 h)",
-    "Lieu (nom de la salle)",
-    "Adresse",
-    "Discipline",
-    "Lien de la page de l'événement",
-    "Jeune public ?",
-    "Description courte (2 ou 3 phrases)",
-    "Prix (ex. 15 $, Gratuit, Contribution volontaire)",
-    "Lien pour acheter des billets (billetterie)",
-    "Image : lien vers une photo du groupe ou du spectacle",
-    "Approuvé"
-   ]
+   "completees_par_mac": 751,
+   "heures_trouvees": 744,
+   "salles_trouvees": 732
   },
   "redites_retirees": [
-   "2026-11-10 : « P'tit Belliveau @ Montreal » (Lieu à confirmer) = « P'tit Belliveau » (Espace transmission)",
+   "2026-11-11 : « Cérémonie du jour du Souvenir à Outremont » (Parc Outremont) = « Cérémonie du Jour du Souvenir » (Parc des Vétérans)",
+   "2026-11-11 : « Cérémonie du Jour du souvenir » (Veterans Park) = « Cérémonie du Jour du Souvenir » (Parc des Vétérans)",
+   "2026-11-11 : « Julie Aubé et BAIE » (Petit Campus) = « Baie » (Petit Campus)",
+   "2026-11-11 : « Rachelle Elie » (Le Studio-Cabaret) = « Rachelle Élie - Lâchée lousse » (Théâtre St-Denis)",
+   "2026-11-12 : « NoVa - Montreal Off CINARS » (Centre Sanaaq) = « Nova - Les Foutoukours » (Centre Sanaaq)",
    "2026-11-12 : « Allan Rayman » (URBANISTA RESTO BAR) = « Allan Rayman » (Théâtre Fairmount)",
-   "2026-11-13 : « Héroïnes et passions lyriques » (Maison de la culture Mercier) = « Héroïnes et passions lyriques - Orchestre métropol » (Bibliothèque Mercier)",
-   "2026-11-13 : « Lancement du balado « Mes gants prennent feu chaqu » (Lieu à confirmer) = « Mes gants prennent feu chaque fois » (Espace Culturel Kawalees)",
-   "2026-11-13 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-14 : « Mary In The Junkyard @ Café Campus » (Café Campus) = « Mary In The Junkyard » (Petit Campus)",
-   "2026-11-14 : « NOVA SPEI + BURNING ATTIC + UNLESS WE FIGHT » (Cabaret Fouf) = « Nova Spei » (Foufounes Électriques)",
+   "2026-11-12 : « Thursday Pro-Am Comedy Night » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
+   "2026-11-13 : « 13 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 13 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
+   "2026-11-13 : « Héroïnes et passions lyriques - Orchestre métropol » (Bibliothèque Mercier) = « Héroïnes et passions lyriques » (Maison de la culture Mercier)",
+   "2026-11-13 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy (Early Show) » (Deli Planet)",
+   "2026-11-14 : « Micro ouvert autochtone | Saturday's Festivities » (Espace culturel Georges-Émile-Lapalme) = « Micro ouvert autochtone | Festivités du samedi » (Espace culturel Georges-Émile-Lapalme)",
+   "2026-11-14 : « 14 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB) = « 14 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount)",
+   "2026-11-14 : « Boucar Diouf à la Maison Théâtre de Montréal » (Maison Théâtre) = « Boucar Diouf » (Théâtre Desjardins)",
+   "2026-11-14 : « Joan Bluteau - Avec le temps... Dalida » (Théâtre St-Denis) = « Joan Bluteau : Avec le temps…. Dalida » (Le Studio-Cabaret)",
+   "2026-11-14 : « Mary In The Junkyard » (Café Campus) = « Mary in the Junkyard » (Petit Campus)",
+   "2026-11-14 : « Nova Spei » (Foufounes Électriques) = « NOVA SPEI + BURNING ATTIC + UNLESS WE FIGHT » (Cabaret Fouf)",
    "2026-11-14 : « Saturday Night Comedy » (Deli Planet) = « Saturday After Dusk Comedy » (Estrella)",
-   "2026-11-15 : « Micro ouvert autochtone | Festivités du dimanche » (Lieu à confirmer) = « Micro ouvert autochtone | Festivités de dimanche » (Lieu à confirmer)",
-   "2026-11-15 : « DOOM SCROLL + THE YOU AND ME'S » (Cabaret Fouf) = « Doom Scroll @ Foufounes Électriques » (Foufounes Électriques)",
+   "2026-11-15 : « Doom Scroll @ Foufounes Électriques » (Foufounes Électriques) = « DOOM SCROLL + THE YOU AND ME'S » (Cabaret Fouf)",
    "2026-11-15 : « Resavoir @ L'Escogriffe Bar Spectacle (L'Esco) » (L'Escogriffe) = « Resavoir » (Bar Le Ritz PDB)",
-   "2026-11-18 : « Cosmic Dog Fog » (Club Soda) = « Mario2 & Cosmic Dog Fog WLS » (La Sotterenea)",
-   "2026-11-19 : « dead ex girlfriends » (Club Soda) = « Lisa LeBlanc – M pour Montréal, avec Les Shirley e » (Théâtre Plaza)",
-   "2026-11-19 : « Le Ren » (Club Soda) = « Le Ren – M pour Montréal, avec Bells Larsen & Jank » (Casa del Popolo)",
-   "2026-11-19 : « Mzrabelle » (Club Soda) = « Mzrabelle, XLOWW & Vago » (Le Belmont)",
-   "2026-11-20 : « Mundial Montréal OFF : Less Toches, Les Tireux d'R » (Café Campus) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
-   "2026-11-20 : « Mundial Montréal OFF : Daughters of Donbas & Hildá » (O Patro Vys) = « Mundial Montréal OFF : Laura Niquay et invités » (Quai des Brumes)",
-   "2026-11-20 : « Spectacle au Théâtre du Nouveau Monde (titre non i » (Théâtre du Nouveau Monde) = « Écouter le nouveau monde » (Club Balattou)",
-   "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-20 : « Calamine » (Club Soda) = « Calamine (M pour Montréal) » (Foufounes Électriques)",
-   "2026-11-21 : « Celebration - Le meilleur party dansant Motown Pop » (Le Balcon) = « Célébration! » (Wiggle Room)",
-   "2026-11-21 : « PERCEVAL » (Club Soda) = « Perceval @ MTELUS » (MTELUS)",
+   "2026-11-19 : « Les Shirley » (Club Soda) = « Lisa LeBlanc, Les Shirley & dead ex girlfriends » (Théâtre Plaza)",
+   "2026-11-19 : « Thursday Night Pro/Am Comedy » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
+   "2026-11-20 : « SÉLECTION OFFICIELLE - GEOFFROY » (Le Ministère) = « SÉLECTION OFFICIELLE - Hawa B & Afrotronix » (Le Belmont)",
+   "2026-11-20 : « Mundial Montréal OFF, avec Less Toches, Les Tireux » (Café Campus) = « Mundial Montréal OFF, avec Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Mundial Montréal OFF, avec Daughters of Donbas et  » (O Patro Vys) = « Mundial Montréal OFF, avec Laura Niquay et invités » (Quai des Brumes)",
+   "2026-11-20 : « Dominic Paquet - J'COMPRENDS LA GAME » (Centre Pierre-Peladeau) = « J'comprends la game » (Salle Pierre-Mercure)",
+   "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy (Early Show) » (Deli Planet)",
+   "2026-11-21 : « SECRET CITY - 20E ANNIVERSAIRE » (Club Soda) = « SECRET CITY - 20E ANNIVERSAIRE | SUUNS, PLANTS AND » (Club Soda)",
+   "2026-11-21 : « Fine Food Market » (Club Soda) = « Evenko présente dans le cadre de M pour Montréal : » (La Sala Rossa)",
    "2026-11-21 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
-   "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-28 : « Bach en quatre villes » (Lieu à confirmer) = « Luc Beauséjour : Bach dans quatre villes (mini-con » (Espace Off-Bach (3487, boul. Saint-Laurent))",
+   "2026-11-26 : « L'Étrange Noël de Monsieur Jack (ciné-concert) » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack de Tim Bur » (Maison symphonique)",
+   "2026-11-26 : « Le songe d'une nuit d'été d'après William Shakespe » (Théâtre Outremont) = « Le Songe d'une nuit d'été » (Maison internationale des arts de la marionnette)",
+   "2026-11-27 : « L'Étrange Noël de Monsieur Jack (ciné-concert) » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack de Tim Bur » (Maison symphonique)",
+   "2026-11-27 : « Le songe d'une nuit d'été d'après William Shakespe » (Théâtre Outremont) = « Le Songe d'une nuit d'été » (Maison internationale des arts de la marionnette)",
+   "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy (Early Show) » (Deli Planet)",
+   "2026-11-28 : « Patrice L'Écuyer - Après seulement 32 ans d'absenc » (Centre Pierre-Peladeau) = « Après seulement 32 ans d'absence sur scène » (Salle Pierre-Mercure)",
    "2026-11-28 : « Saturday Night Comedy » (Deli Planet) = « Saturday After Dusk Comedy » (Estrella)",
-   "2026-12-03 : « Bach, Européen avant l'heure » (Lieu à confirmer) = « Luc Beauséjour : Bach, un Européen avant l'heure ( » (Espace Off-Bach (3487, boul. Saint-Laurent))",
-   "2026-12-04 : « Noël autour du monde » (Maison culturelle et communautaire de Montréal-Nord) = « Noël autour du monde| Montréal Guitare Trio (MG3 » (Bibliothèque Julio-Jean-Pierre)",
-   "2026-12-12 : « Casse-Noisette, le conte - Théâtre Ciel Ouvert » (Maison culturelle et communautaire de Montréal-Nord) = « Casse-Noisette, le conte - Théâtre Ciel Ouvert » (Bibliothèque Julio-Jean-Pierre)",
+   "2026-12-13 : « Dépouillement de l'arbre de Noël » (Centre récréatif Édouard-Rivet) = « Dépouillement de l'arbre de Noël » (CRÉR)",
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-29 : « Punch Créole » (Gesù) = « Punch Créole » (Salle Pierre-Mercure)"
   ],
-  "catalogues": [],
   "qualite": {
-   "regles": 60,
+   "regles": 164,
    "contreverif": {
-    "date confirmée": 290,
-    "lien mort remplacé": 15,
-    "page illisible": 35,
-    "date absente de la page": 22
+    "date absente de la page": 35,
+    "date confirmée": 292,
+    "page illisible": 43,
+    "lien mort remplacé": 13,
+    "non relues (limite)": 51
    },
    "controle": null
-  },
-  "robots_refus": {
-   "calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6": 1,
-   "calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3": 1
   }
  },
  "alerte": null,
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 1698,
-   "series": 65,
+   "evenements": 1626,
+   "series": 61,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
     "colonnes du fichier : titre, url_fiche, description, date_debut, date_fin, type_evenement, public_cible, emplacement, inscription, cout, arrondissement, titre_adresse, adresse_principale, adresse_secondaire, code_postal, lat, long, X, Y"
    ]
   },
   {
    "source": "Ask A Punk (DIY, punk, hardcore)",
-   "evenements": 35,
+   "evenements": 32,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 180,
+   "evenements": 267,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 7 (https://sorstu.ca/calendrier-spectacles/novembre-2026/11/?contexte=tous)",
+    "annonces à venir dans la page : 0 (https://sorstu.ca/calendrier-spectacles/novembre-2026/12/?contexte=tous)",
+    "annonces à venir dans la page : 0 (https://sorstu.ca/calendrier-spectacles/novembre-2026/14/?contexte=tous)",
+    "annonces à venir dans la page : 2 (https://sorstu.ca/calendrier-spectacles/novembre-2026/15/?contexte=tous)",
+    "annonces à venir dans la page : 7 (https://sorstu.ca/calendrier-spectacles/novembre-2026/16/?contexte=tous)",
+    "annonces à venir dans la page : 5 (https://sorstu.ca/calendrier-spectacles/novembre-2026/17/?contexte=tous)",
+    "annonces à venir dans la page : 43 (https://sorstu.ca/calendrier-spectacles/novembre-2026/18/?contexte=tous)",
+    "annonces à venir dans la page : 0 (https://sorstu.ca/calendrier-spectacles/novembre-2026/19/?contexte=tous)",
+    "annonces à venir dans la page : 40 (https://sorstu.ca/calendrier-spectacles/novembre-2026/20/?contexte=tous)",
+    "annonces à venir dans la page : 32 (https://sorstu.ca/calendrier-spectacles/novembre-2026/21/?contexte=tous)",
+    "annonces à venir dans la page : 7 (https://sorstu.ca/calendrier-spectacles/novembre-2026/22/?contexte=tous)",
+    "annonces à venir dans la page : 13 (https://sorstu.ca/calendrier-spectacles/novembre-2026/23/?contexte=tous)"
+   ]
   },
   {
    "source": "Songkick (concerts, 2 mois)",
    "evenements": 366,
    "series": 5,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Espace GO",
-   "evenements": 0,
-   "series": 1,
+   "evenements": 1,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "TNM",
    "evenements": 0,
-   "series": 1,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Duceppe",
-   "evenements": 0,
+   "evenements": 65,
    "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre du Rideau Vert",
-   "evenements": 6,
+   "evenements": 12,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre de Quat'Sous",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 18,
+   "series": 6,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Prospero",
@@ -161,47 +206,44 @@
   {
    "source": "La Licorne",
    "evenements": 0,
-   "series": 0,
+   "series": 4,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 5906 caractères de texte : https://theatrelalicorne.com/"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre d'Aujourd'hui",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 2,
+   "series": 5,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Denise-Pelletier – calendrier",
    "evenements": 12,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "trouvé dans le navigateur (automatique) : https://www.denise-pelletier.qc.ca/calendrier/"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Denise-Pelletier – pièces",
    "evenements": 0,
-   "series": 1,
-   "erreur": null
+   "series": 2,
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Usine C",
    "evenements": 0,
-   "series": 1,
+   "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Centaur",
-   "evenements": 0,
-   "series": 1,
+   "evenements": 8,
+   "series": 7,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Centre Segal",
@@ -209,78 +251,80 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 14761 caractères de texte : https://www.segalcentre.org/fr/home"
+    "pages de programmation lues aussi : https://www.segalcentre.org/fr/calendar, https://www.segalcentre.org/fr/shows/2026-2027/its-a-good-life-if-you-dont-weaken-fr, https://www.segalcentre.org/fr/shows/2026-2027/hester-street-fr",
+    "aucun événement trouvé dans 14761 caractères de texte : https://www.segalcentre.org/fr/home",
+    "annonces à venir dans la page : 0 (https://www.segalcentre.org/fr/home)"
    ]
   },
   {
    "source": "Espace Libre",
    "evenements": 1,
-   "series": 2,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "MAI",
-   "evenements": 1,
-   "series": 2,
+   "evenements": 4,
+   "series": 5,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Maison Théâtre",
    "evenements": 0,
-   "series": 2,
+   "series": 8,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Outremont",
-   "evenements": 30,
+   "evenements": 69,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Le Gesù",
-   "evenements": 1,
-   "series": 0,
+   "evenements": 25,
+   "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Espace St-Denis",
-   "evenements": 1,
-   "series": 4,
+   "evenements": 26,
+   "series": 7,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Sainte-Catherine",
-   "evenements": 3,
+   "evenements": 51,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "TOHU",
-   "evenements": 0,
-   "series": 2,
+   "evenements": 3,
+   "series": 8,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Place des Arts",
-   "evenements": 36,
+   "evenements": 38,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Place des Arts – destination des Fêtes",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Orchestre Métropolitain",
@@ -288,7 +332,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 17070 caractères de texte : https://www.orchestremetropolitain.com/fr/concerts/"
+    "aucun événement trouvé dans 17070 caractères de texte : https://www.orchestremetropolitain.com/fr/concerts/",
+    "annonces à venir dans la page : 13 (https://www.orchestremetropolitain.com/fr/concerts/)"
    ]
   },
   {
@@ -296,154 +341,157 @@
    "evenements": 6,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Danse Danse",
-   "evenements": 0,
+   "evenements": 8,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 5555 caractères de texte : https://www.dansedanse.ca/fr/spectacles"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Agora de la danse",
-   "evenements": 1,
-   "series": 2,
+   "evenements": 2,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Tangente",
    "evenements": 0,
    "series": 4,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Chapelle",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 11,
+   "series": 6,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Usine C (saison)",
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "École nationale de cirque",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Fun Nation (humour)",
    "evenements": 12,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Spectaculos (humour, 6 pages)",
    "evenements": 26,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "evenko (humour)",
-   "evenements": 20,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Place des Arts (humour)",
-   "evenements": 3,
-   "series": 1,
+   "evenements": 154,
+   "series": 16,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Sainte-Catherine (impro et humour)",
-   "evenements": 3,
+   "evenements": 51,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Centre des musiciens du monde",
-   "evenements": 3,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Terminal Comédie Club (ma.to)",
-   "evenements": 1,
+   "evenements": 7,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cinéma L'Amour (ma.to)",
-   "evenements": 0,
+   "evenements": 5,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 2141 caractères de texte : https://ma.to/venue/cinemalamour"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Plaza",
-   "evenements": 9,
+   "evenements": 11,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 12 (https://theatreplaza.ca/evenements/)"
+   ]
   },
   {
    "source": "The Comedy Nest",
-   "evenements": 9,
+   "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Comedyville",
-   "evenements": 28,
+   "evenements": 44,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cinéma Public",
-   "evenements": 55,
+   "evenements": 49,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "L'Illusion, Théâtre de marionnettes",
-   "evenements": 2,
-   "series": 1,
-   "erreur": null
+   "evenements": 6,
+   "series": 3,
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Studio 303",
-   "evenements": 2,
+   "evenements": 3,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre de la LNI",
-   "evenements": 4,
+   "evenements": 6,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Bistro à Jojo",
@@ -451,7 +499,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2069 caractères de texte : https://www.bistroajojo.com/"
+    "aucun événement trouvé dans 1430 caractères de texte : https://www.bistroajojo.com/livemusic",
+    "annonces à venir dans la page : 6 (https://www.bistroajojo.com/livemusic)"
    ]
   },
   {
@@ -460,7 +509,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3951 caractères de texte : https://www.tortueberlue.com/spectacles/"
+    "aucun événement trouvé dans 3951 caractères de texte : https://www.tortueberlue.com/spectacles/",
+    "annonces à venir dans la page : 7 (https://www.tortueberlue.com/spectacles/)"
    ]
   },
   {
@@ -469,21 +519,23 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1503 caractères de texte : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1498 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
    "source": "Librairie Drawn & Quarterly (événements)",
    "evenements": 4,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Le Bordel Comédie Club",
-   "evenements": 18,
+   "evenements": 17,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Cabine Comédie Club",
@@ -494,16 +546,17 @@
   },
   {
    "source": "Montreal Comedy Club",
-   "evenements": 14,
+   "evenements": 13,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Cenne",
-   "evenements": 2,
+   "evenements": 4,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Diese Onze",
@@ -538,7 +591,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/"
+    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -547,30 +601,40 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
    "source": "Théâtre Bouches Décousues",
-   "evenements": 4,
-   "series": 0,
+   "evenements": 2,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-07"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://theatrebouchesdecousues.com/calendrier)",
+    "récolte mince (2) : recherche élargie à https://theatrebouchesdecousues.com/spectacles, https://theatrebouchesdecousues.com/spectacles/tournees-en-biblio, https://theatrebouchesdecousues.com/spectacles/repertoire-spectacles, https://theatrebouchesdecousues.com/spectacles/en-attendant-la-cloche",
+    "aucun événement trouvé dans 7269 caractères de texte : https://theatrebouchesdecousues.com/spectacles",
+    "annonces à venir dans la page : 6 (https://theatrebouchesdecousues.com/spectacles)",
+    "aucun événement trouvé dans 6248 caractères de texte : https://theatrebouchesdecousues.com/spectacles/tournees-en-biblio",
+    "annonces à venir dans la page : 2 (https://theatrebouchesdecousues.com/spectacles/tournees-en-biblio)",
+    "aucun événement trouvé dans 9080 caractères de texte : https://theatrebouchesdecousues.com/spectacles/repertoire-spectacles",
+    "annonces à venir dans la page : 0 (https://theatrebouchesdecousues.com/spectacles/repertoire-spectacles)"
+   ]
   },
   {
    "source": "Espace Le Vrai Monde?",
    "evenements": 3,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Mirella et Lino Saputo (CLDV)",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://cldv.ca/fr/"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Qu'en dit Raton?",
@@ -578,15 +642,23 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/"
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
    ]
   },
   {
    "source": "Studio PACA (Les Foutoukours)",
-   "evenements": 10,
+   "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-07"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://lesfoutoukours.com/fr/calendrier/)",
+    "récolte mince (10) : recherche élargie à https://lesfoutoukours.com/en/calendar/, https://lesfoutoukours.com/fr/spectacles/, https://lesfoutoukours.com/event/nova-montreal-off-cinars-qc/, https://lesfoutoukours.com/event/glob-cranbrook-bc/",
+    "annonces à venir dans la page : 3 (https://lesfoutoukours.com/en/calendar/)",
+    "aucun événement trouvé dans 4448 caractères de texte : https://lesfoutoukours.com/fr/spectacles/",
+    "annonces à venir dans la page : 4 (https://lesfoutoukours.com/fr/spectacles/)"
+   ]
   },
   {
    "source": "La Rocambolesque",
@@ -594,14 +666,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 9488 caractères de texte : https://rocambolesque.ca/calendrier/"
+    "aucun événement trouvé dans 9488 caractères de texte : https://rocambolesque.ca/calendrier/",
+    "annonces à venir dans la page : 0 (https://rocambolesque.ca/calendrier/)",
+    "récolte mince (0) : recherche élargie à https://rocambolesque.ca/evenements-corporatifs, https://rocambolesque.ca/plateformes-de-jeu/, https://rocambolesque.ca/evenement/spectacles-personnalises/"
    ]
   },
   {
    "source": "Librairie Le Port de tête",
    "evenements": 17,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret Jazz L'Entracte (Zeffy)",
@@ -614,34 +689,38 @@
   },
   {
    "source": "N'était-ce pas l'été (ma.to)",
-   "evenements": 1,
+   "evenements": 10,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival / Maison de la poésie de Montréal",
    "evenements": 2,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Brassée (café-concerts)",
-   "evenements": 6,
+   "evenements": 33,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret de Curiosités",
-   "evenements": 3,
+   "evenements": 16,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Victoria Hall (Westmount)",
-   "evenements": 2,
-   "series": 0,
-   "erreur": null
+   "evenements": 7,
+   "series": 1,
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "MC Hall",
@@ -649,15 +728,16 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3225 caractères de texte : https://mchall.ca/"
+    "aucun événement trouvé dans 3225 caractères de texte : https://mchall.ca/",
+    "annonces à venir dans la page : 0 (https://mchall.ca/)"
    ]
   },
   {
    "source": "Le Red Room",
-   "evenements": 13,
+   "evenements": 57,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Salle Marguerite-Bourgeoys",
@@ -673,25 +753,28 @@
    "evenements": 24,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Together Club (Luma)",
    "evenements": 20,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre Paradoxe",
    "evenements": 4,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Salle Joseph-Rouleau (Jeunesses Musicales)",
    "evenements": 6,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre St-James",
@@ -699,7 +782,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -708,66 +792,80 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
    "source": "Cat's Corner (danse swing)",
-   "evenements": 0,
+   "evenements": 6,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "aucun événement trouvé dans 7946 caractères de texte : https://www.catscorner.ca/events"
+    "aucun événement trouvé dans 7946 caractères de texte : https://www.catscorner.ca/events",
+    "annonces à venir dans la page : 3 (https://www.catscorner.ca/events)",
+    "récolte mince (0) : recherche élargie à https://www.catscorner.ca/community-activities, https://www.catscorner.ca/what-we-do-1",
+    "aucun événement trouvé dans 4230 caractères de texte : https://www.catscorner.ca/community-activities",
+    "annonces à venir dans la page : 0 (https://www.catscorner.ca/community-activities)",
+    "annonces à venir dans la page : 6 (https://www.catscorner.ca/what-we-do-1)"
    ]
   },
   {
    "source": "LESPACEMAKER – événements",
    "evenements": 55,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "LESPACEMAKER – formations",
-   "evenements": 92,
+   "evenements": 88,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Planétarium (soirées spéciales)",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "UPop Montréal (université populaire)",
    "evenements": 16,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cœur des sciences UQAM (conférences grand public)",
-   "evenements": 4,
+   "evenements": 19,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "UQAM – événements",
-   "evenements": 9,
+   "evenements": 58,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Université de Montréal – calendrier",
-   "evenements": 5,
+   "evenements": 62,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Concordia – événements",
    "evenements": 7,
    "series": 4,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "McGill – événements",
@@ -784,34 +882,38 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "IA en échec (réponse sans JSON lisible) : https://www.banq.qc.ca/activites/"
+    "IA en échec (réponse sans JSON lisible) : https://www.banq.qc.ca/activites/",
+    "récolte mince (0) : recherche élargie à https://www.banq.qc.ca/calendrier/a-venir, https://www.banq.qc.ca/calendrier/en-tout-temps, https://www.banq.qc.ca/calendrier/a-venir/147212, https://www.banq.qc.ca/calendrier/a-venir/147228",
+    "page presque vide (471 caractères ; site en JavaScript ?) : https://www.banq.qc.ca/calendrier/a-venir"
    ]
   },
   {
    "source": "Centre Canadien d'Architecture – événements (Eventbrite)",
    "evenements": 6,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Hexagram – conférences (recherche-création)",
    "evenements": 0,
    "series": 1,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret Lion d'Or (billetterie)",
    "evenements": 17,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
    "evenements": 18,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Mèche courte (festival jeune public)",
@@ -819,7 +921,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2732 caractères de texte : https://www.lamechecourte.ca/programmation"
+    "aucun événement trouvé dans 2732 caractères de texte : https://www.lamechecourte.ca/programmation",
+    "annonces à venir dans la page : 14 (https://www.lamechecourte.ca/programmation)"
    ]
   },
   {
@@ -827,21 +930,21 @@
    "evenements": 13,
    "series": 13,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Place des Arts junior",
-   "evenements": 3,
-   "series": 0,
+   "evenements": 158,
+   "series": 29,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Tourisme Montréal – expositions des musées",
    "evenements": 2,
    "series": 9,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Tourisme Montréal – expositions automne-hiver",
@@ -854,74 +957,112 @@
   },
   {
    "source": "Réseau art actuel (centres d'artistes, vernissages)",
-   "evenements": 7,
-   "series": 61,
+   "evenements": 8,
+   "series": 57,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Art Mûr (expositions à venir)",
    "evenements": 2,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "ma.to (musique live)",
    "evenements": 18,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 18 (https://ma.to/events/montreal/anytime/live-music)"
+   ]
   },
   {
    "source": "evenko (concerts)",
    "evenements": 20,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 554 (https://evenko.ca/fr/evenements)"
+   ]
   },
   {
    "source": "Théâtre Fairmount",
-   "evenements": 19,
+   "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://theatrefairmount.com/vnements/allan-rayman-theatre-fairmount/20261112-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-5jnwg, https://theatrefairmount.com/vnements/cannelle-theatre-fairmount/20261113-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-5jnwg-kh6nk, https://theatrefairmount.com/vnements/the-record-company-theatre-fairmount/20261113-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-55k3-433g8",
+    "annonces à venir dans la page : 37 (https://theatrefairmount.com/)"
+   ]
   },
   {
    "source": "Club Soda",
-   "evenements": 8,
+   "evenements": 36,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://clubsoda.ca/fr/evenements, https://clubsoda.ca/fr/billetterie/horaire, https://clubsoda.ca/fr/evenements/austentatious-an-improvised-jane-austen-novel",
+    "lue dans le navigateur (automatique) : https://clubsoda.ca/",
+    "annonces à venir dans la page : 8 (https://clubsoda.ca/)",
+    "annonces à venir dans la page : 54 (https://clubsoda.ca/fr/evenements)",
+    "aucun événement trouvé dans 917 caractères de texte : https://clubsoda.ca/fr/billetterie/horaire",
+    "annonces à venir dans la page : 0 (https://clubsoda.ca/fr/billetterie/horaire)"
+   ]
   },
   {
    "source": "Bar Le Ritz PDB",
-   "evenements": 18,
+   "evenements": 20,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : http://www.barleritzpdb.com/vnements/the-olllam-bar-le-ritz-pdb/20261111-25bhh-ngtlb-c2xwh-egb2b-hwn-xlsytug-w3ns6-wyban, http://www.barleritzpdb.com/vnements/sadurn-bar-le-ritz-pdb/20261113-25bhh-ngtlb-c2xwh-egb2b-hwn-xlsytug-w3ns6-e3tpy, http://www.barleritzpdb.com/vnements/hommage-the-cure-bar-le-ritz-pdb/20261114-25bhh-ngtlb-c2xwh-egb2b-hwn-xlsytug-w3ns6-e3tpy-cbz2sma",
+    "annonces à venir dans la page : 59 (http://www.barleritzpdb.com/)"
+   ]
   },
   {
    "source": "Foufounes Électriques",
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://www.foufouneselectriques.com/export-events/4425_0/?nonce=9f712194f6, https://www.foufouneselectriques.com/export-events/4419_0/?nonce=9f712194f6, https://www.foufouneselectriques.com/export-events/4427_0/?nonce=9f712194f6",
+    "annonces à venir dans la page : 5 (https://foufouneselectriques.com/)",
+    "page illisible (Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/export-event) : https://www.foufouneselectriques.com/export-events/4425_0/?nonce=9f712194f6",
+    "page illisible (Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/export-event) : https://www.foufouneselectriques.com/export-events/4419_0/?nonce=9f712194f6",
+    "page illisible (Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/export-event) : https://www.foufouneselectriques.com/export-events/4427_0/?nonce=9f712194f6"
+   ]
   },
   {
    "source": "Newspeak",
-   "evenements": 11,
+   "evenements": 14,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://newspeakmtl.com/evenements/2026-11-13-biscits-3gnyp, https://newspeakmtl.com/evenements/2026-11-13-biscits-3gnyp?format=ical, https://newspeakmtl.com/evenements/2026-11-14-yaego-msica-electronica-en-vivo-tour",
+    "annonces à venir dans la page : 17 (https://newspeakmtl.com/)",
+    "annonces à venir dans la page : 1 (https://newspeakmtl.com/evenements/2026-11-13-biscits-3gnyp?format=ical)"
+   ]
   },
   {
    "source": "Piranha Bar",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "page presque vide (248 caractères ; site en JavaScript ?) : https://piranhabar.ca/"
+    "pages de programmation lues aussi : https://piranhabar.ca/events",
+    "page presque vide (248 caractères ; site en JavaScript ?) : https://piranhabar.ca/",
+    "annonces à venir dans la page : 0 (https://piranhabar.ca/)",
+    "annonces à venir dans la page : 32 (https://piranhabar.ca/events)"
    ]
   },
   {
@@ -930,36 +1071,37 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
    "source": "Théâtre St-Denis",
-   "evenements": 1,
-   "series": 4,
+   "evenements": 4,
+   "series": 16,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Blouin Division",
    "evenements": 0,
-   "series": 3,
+   "series": 5,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Bradley Ertaskiran",
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Chiguer Art Contemporain",
    "evenements": 0,
-   "series": 2,
+   "series": 7,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Duran Contemporain",
@@ -973,14 +1115,14 @@
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "ELLEPHANT",
    "evenements": 0,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Galerie C.O.A",
@@ -988,15 +1130,15 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (403 Client Error: Ip Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
    "source": "Galerie Hugues Charbonneau",
    "evenements": 0,
-   "series": 1,
+   "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Galerie Lacerte art contemporain",
@@ -1004,7 +1146,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2151 caractères de texte : https://www.galerielacerte.com"
+    "pages de programmation lues aussi : https://galerielacerte.com/acceuil",
+    "aucun événement trouvé dans 2151 caractères de texte : https://www.galerielacerte.com",
+    "annonces à venir dans la page : 0 (https://www.galerielacerte.com)"
    ]
   },
   {
@@ -1013,7 +1157,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1116 caractères de texte : https://www.galerienicolasrobert.com"
+    "pages de programmation lues aussi : https://www.galerienicolasrobert.com/expositions",
+    "aucun événement trouvé dans 1116 caractères de texte : https://www.galerienicolasrobert.com",
+    "annonces à venir dans la page : 0 (https://www.galerienicolasrobert.com)"
    ]
   },
   {
@@ -1022,52 +1168,51 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6483 caractères de texte : https://galerierobertpoulin.com"
+    "aucun événement trouvé dans 6483 caractères de texte : https://galerierobertpoulin.com",
+    "annonces à venir dans la page : 0 (https://galerierobertpoulin.com)"
    ]
   },
   {
    "source": "Galerie Robertson Arès",
    "evenements": 0,
-   "series": 0,
+   "series": 2,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 1307 caractères de texte : https://galerierobertsonares.com"
-   ]
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Galerie Simon Blais",
    "evenements": 0,
    "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Galeries Bellemare Lambert",
    "evenements": 0,
-   "series": 1,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "McBride Contemporain",
-   "evenements": 1,
-   "series": 2,
+   "evenements": 2,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Pangée",
    "evenements": 1,
-   "series": 4,
+   "series": 5,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Patel Brown",
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Galerie Patrick Mikhail",
@@ -1090,16 +1235,14 @@
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Wishbone Galerie d'art",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 995 caractères de texte : https://wishboneart.com"
-   ]
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Yves Laroche Galerie d'art",
@@ -1107,15 +1250,22 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2037 caractères de texte : https://www.yveslaroche.com"
+    "pages de programmation lues aussi : https://yveslaroche.com/exhibition/",
+    "aucun événement trouvé dans 2037 caractères de texte : https://www.yveslaroche.com",
+    "annonces à venir dans la page : 0 (https://www.yveslaroche.com)"
    ]
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
-   "evenements": 7,
+   "evenements": 19,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://www.upstairsjazz.com/calendar-2/, https://www.upstairsjazz.com/calendar/, https://www.upstairsjazz.com/events/upstairs-jam-session-hosted-by-jim-doxas-with-special-guest-steve-raegele/",
+    "annonces à venir dans la page : 4 (https://www.upstairsjazz.com/)",
+    "annonces à venir dans la page : 1 (https://www.upstairsjazz.com/events/upstairs-jam-session-hosted-by-jim-doxas-with-special-guest-steve-raegele/)"
+   ]
   },
   {
    "source": "Dièse Onze",
@@ -1128,10 +1278,23 @@
   },
   {
    "source": "Club Balattou (musiques du monde)",
-   "evenements": 2,
+   "evenements": 17,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/",
+    "pages de programmation lues aussi : https://www.balattou.com/concerts-a-l-annee, https://www.balattou.com/copie-de-syli-d-or-2, https://www.balattou.com/event-details/cumbia-control-2",
+    "annonces à venir dans la page : 6 (https://www.balattou.com/)",
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/concerts-a-l-annee",
+    "annonces à venir dans la page : 15 (https://www.balattou.com/concerts-a-l-annee)",
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/copie-de-syli-d-or-2",
+    "aucun événement trouvé dans 1823 caractères de texte : https://www.balattou.com/copie-de-syli-d-or-2",
+    "annonces à venir dans la page : 36 (https://www.balattou.com/copie-de-syli-d-or-2)",
+    "page lue depuis Montréal (ordinateur) : https://www.balattou.com/event-details/cumbia-control-2",
+    "aucun événement trouvé dans 1691 caractères de texte : https://www.balattou.com/event-details/cumbia-control-2",
+    "annonces à venir dans la page : 1 (https://www.balattou.com/event-details/cumbia-control-2)"
+   ]
   },
   {
    "source": "Cabaret Jazz L'Entracte",
@@ -1140,7 +1303,8 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://www.entractejazz.org/",
-    "page presque vide (459 caractères ; site en JavaScript ?) : https://www.entractejazz.org/"
+    "page presque vide (459 caractères ; site en JavaScript ?) : https://www.entractejazz.org/",
+    "annonces à venir dans la page : 0 (https://www.entractejazz.org/)"
    ]
   },
   {
@@ -1149,8 +1313,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://www.bistroajojo.com/",
-    "page presque vide (360 caractères ; site en JavaScript ?) : https://www.bistroajojo.com/"
+    "aucun événement trouvé dans 1430 caractères de texte : https://www.bistroajojo.com/livemusic",
+    "annonces à venir dans la page : 6 (https://www.bistroajojo.com/livemusic)"
    ]
   },
   {
@@ -1159,7 +1323,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2721 caractères de texte : http://www.hurleysirishpub.com/"
+    "pages de programmation lues aussi : https://www.hurleysirishpub.com/event-directory/",
+    "aucun événement trouvé dans 2721 caractères de texte : http://www.hurleysirishpub.com/",
+    "annonces à venir dans la page : 0 (http://www.hurleysirishpub.com/)"
    ]
   },
   {
@@ -1167,15 +1333,27 @@
    "evenements": 27,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebalcon.ca/",
+    "pages de programmation lues aussi : https://www.lebalcon.ca/programme-fidelite",
+    "annonces à venir dans la page : 36 (https://www.lebalcon.ca/)",
+    "page lue depuis Montréal (ordinateur) : https://www.lebalcon.ca/programme-fidelite",
+    "aucun événement trouvé dans 2413 caractères de texte : https://www.lebalcon.ca/programme-fidelite",
+    "annonces à venir dans la page : 0 (https://www.lebalcon.ca/programme-fidelite)"
+   ]
   },
   {
    "source": "Turbo Haüs",
-   "evenements": 0,
+   "evenements": 21,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "aucun événement trouvé dans 2664 caractères de texte : https://turbohaus.ca/"
+    "pages de programmation lues aussi : https://turbohaus.ca/cal",
+    "aucun événement trouvé dans 2664 caractères de texte : https://turbohaus.ca/",
+    "annonces à venir dans la page : 0 (https://turbohaus.ca/)",
+    "annonces à venir dans la page : 0 (https://turbohaus.ca/cal)"
    ]
   },
   {
@@ -1183,28 +1361,47 @@
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page illisible (Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://quaidesbrumes.ca/\nCall log:\n) : https://quaidesbrumes.ca/",
+    "page illisible : données du 2026-11-11 conservées"
+   ]
   },
   {
    "source": "Le Ministère",
-   "evenements": 8,
+   "evenements": 26,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://leministere.ca/evenements/laura-niquay-comptines-atikamekw-e-aistahiak-les-six-saisons, https://leministere.ca/evenements, https://leministere.ca/evenements/bonne-nuit-cherie-soleil-secret-ccf2026",
+    "annonces à venir dans la page : 8 (https://leministere.ca/)",
+    "annonces à venir dans la page : 27 (https://leministere.ca/evenements)"
+   ]
   },
   {
    "source": "Le Belmont",
-   "evenements": 3,
+   "evenements": 10,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.lebelmont.ca/",
+    "pages de programmation lues aussi : https://www.lebelmont.ca/evenements",
+    "annonces à venir dans la page : 3 (https://www.lebelmont.ca/)",
+    "page lue depuis Montréal (ordinateur) : https://www.lebelmont.ca/evenements",
+    "annonces à venir dans la page : 8 (https://www.lebelmont.ca/evenements)"
+   ]
   },
   {
    "source": "Ausgang Plaza",
    "evenements": 13,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 33 (https://www.ausgangplaza.com/evenements)"
+   ]
   },
   {
    "source": "Système MTL",
@@ -1212,7 +1409,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://www.systememtl.com/"
+    "page presque vide (135 caractères ; site en JavaScript ?) : https://www.systememtl.com/",
+    "annonces à venir dans la page : 0 (https://www.systememtl.com/)"
    ]
   },
   {
@@ -1221,7 +1419,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (172 caractères ; site en JavaScript ?) : https://www.theatrerialto.ca/"
+    "page presque vide (172 caractères ; site en JavaScript ?) : https://www.theatrerialto.ca/",
+    "annonces à venir dans la page : 0 (https://www.theatrerialto.ca/)"
    ]
   },
   {
@@ -1230,59 +1429,83 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (32 caractères ; site en JavaScript ?) : http://latulipe.ca/"
+    "page presque vide (32 caractères ; site en JavaScript ?) : http://latulipe.ca/",
+    "annonces à venir dans la page : 0 (http://latulipe.ca/)"
    ]
   },
   {
    "source": "Le Studio TD",
-   "evenements": 11,
+   "evenements": 14,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "MTELUS",
-   "evenements": 18,
+   "evenements": 19,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret du Casino de Montréal",
    "evenements": 12,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cinéma Moderne",
-   "evenements": 0,
+   "evenements": 6,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "IA en échec (réponse sans JSON lisible) : https://www.cinemamoderne.com/horaire/"
+    "IA en échec (réponse sans JSON lisible) : https://www.cinemamoderne.com/horaire/",
+    "récolte mince (0) : recherche élargie à https://www.cinemamoderne.com/horaire/2026/10, https://www.cinemamoderne.com/horaire/2026/12, https://www.cinemamoderne.com/films/details/conte-dautomne-2/, https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-quarterly/",
+    "aucun événement trouvé dans 63576 caractères de texte : https://www.cinemamoderne.com/horaire/2026/10",
+    "annonces à venir dans la page : 54 (https://www.cinemamoderne.com/horaire/2026/10)",
+    "annonces à venir dans la page : 5 (https://www.cinemamoderne.com/horaire/2026/12)",
+    "aucun événement trouvé dans 1993 caractères de texte : https://www.cinemamoderne.com/films/details/conte-dautomne-2/",
+    "annonces à venir dans la page : 0 (https://www.cinemamoderne.com/films/details/conte-dautomne-2/)",
+    "aucun événement trouvé dans 2312 caractères de texte : https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-quarterly/",
+    "annonces à venir dans la page : 1 (https://www.cinemamoderne.com/films/details/the-lost-boys-x-drawn-quarterly/)"
    ]
   },
   {
    "source": "Casa del Popolo – La Toscadura",
-   "evenements": 15,
+   "evenements": 87,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 1 (https://casadelpopolo.com/fr/events/la-toscadura)",
+    "récolte mince (15) : recherche élargie à https://casadelpopolo.com/fr, https://casadelpopolo.com/fr/events/casa-del-popolo, https://casadelpopolo.com/fr/events/la-sala-rossa, https://casadelpopolo.com/fr/events/la-sotterenea",
+    "IA en échec (réponse sans JSON lisible) : https://casadelpopolo.com/fr",
+    "annonces à venir dans la page : 27 (https://casadelpopolo.com/fr/events/casa-del-popolo)",
+    "annonces à venir dans la page : 32 (https://casadelpopolo.com/fr/events/la-sala-rossa)",
+    "annonces à venir dans la page : 22 (https://casadelpopolo.com/fr/events/la-sotterenea)"
+   ]
   },
   {
    "source": "Casa del Popolo – P'tit Ours",
-   "evenements": 28,
+   "evenements": 26,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 27 (https://casadelpopolo.com/fr/events/ptit-ours)"
+   ]
   },
   {
    "source": "Casa del Popolo – La Sotterenea",
-   "evenements": 20,
+   "evenements": 24,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 22 (https://casadelpopolo.com/fr/events/la-sotterenea)"
+   ]
   },
   {
    "source": "Resident Advisor – Montréal (électro, raves)",
@@ -1290,7 +1513,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -1298,44 +1521,45 @@
    "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 9 (https://bardatcha.ca/)"
+   ]
   },
   {
    "source": "SAT – Société des arts technologiques",
    "evenements": 0,
    "series": 6,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Laugh It Off MTL (humour, scènes ouvertes)",
-   "evenements": 0,
+   "evenements": 20,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 1848 caractères de texte : https://www.laughitoffmtl.ca/fr"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret Mado (drag)",
-   "evenements": 48,
+   "evenements": 49,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Wiggle Room (burlesque, cabaret)",
    "evenements": 18,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Caf' Conc' (cabaret)",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Espace La Risée",
@@ -1348,12 +1572,10 @@
   },
   {
    "source": "InfiniTheatre",
-   "evenements": 0,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "page presque vide (200 caractères ; site en JavaScript ?) : http://www.infinitheatre.com/"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre MainLine",
@@ -1367,7 +1589,7 @@
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Théâtre de l'Esquisse",
@@ -1375,15 +1597,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (585 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/"
+    "pages de programmation lues aussi : https://theatredelesquisse.qc.ca/calendrier/, https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
+    "page presque vide (585 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/",
+    "annonces à venir dans la page : 0 (https://theatredelesquisse.qc.ca/)"
    ]
   },
   {
    "source": "La Comédie de Montréal",
-   "evenements": 12,
+   "evenements": 56,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Circuit-Est centre chorégraphique",
@@ -1391,12 +1615,13 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6929 caractères de texte : https://circuit-est.qc.ca/"
+    "aucun événement trouvé dans 6929 caractères de texte : https://circuit-est.qc.ca/",
+    "annonces à venir dans la page : 4 (https://circuit-est.qc.ca/)"
    ]
   },
   {
    "source": "Studio 303",
-   "evenements": 2,
+   "evenements": 3,
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-10"
@@ -1407,43 +1632,44 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/"
+    "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/",
+    "annonces à venir dans la page : 0 (https://laserre.ca/)"
    ]
   },
   {
    "source": "DARE-DARE (art public)",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 1,
+   "series": 4,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Monument-National",
    "evenements": 6,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Le Livart (centre d'art multidisciplinaire)",
-   "evenements": 1,
-   "series": 1,
+   "evenements": 5,
+   "series": 4,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Librairie Drawn & Quarterly (lancements, lectures)",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La poésie partout (calendrier)",
    "evenements": 0,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Slamontréal",
@@ -1452,7 +1678,8 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://www.incendiesdeparoles.com/slamontreal",
-    "aucun événement trouvé dans 6023 caractères de texte : https://www.incendiesdeparoles.com/slamontreal"
+    "aucun événement trouvé dans 6023 caractères de texte : https://www.incendiesdeparoles.com/slamontreal",
+    "annonces à venir dans la page : 2 (https://www.incendiesdeparoles.com/slamontreal)"
    ]
   },
   {
@@ -1460,109 +1687,111 @@
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "La Livrerie",
-   "evenements": 14,
+   "evenements": 13,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Dorval – calendrier",
    "evenements": 4,
    "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Beaconsfield – calendrier",
-   "evenements": 7,
+   "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Côte-Saint-Luc – calendrier",
-   "evenements": 1,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Montréal-Ouest – calendrier",
    "evenements": 6,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Montréal-Est – calendrier",
-   "evenements": 1,
+   "evenements": 13,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Lakeshore Players (théâtre, Dorval)",
    "evenements": 0,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Salle Pauline-Julien (ouest de l'île)",
    "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Pointe-Claire – Stewart Hall et activités",
-   "evenements": 3,
+   "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Salle Jean-Grimaldi / Théâtre Desjardins (LaSalle)",
-   "evenements": 24,
+   "evenements": 52,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Pierrefonds-Roxboro – spectacles",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "LaSalle – programmation culturelle",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 10,
+   "series": 4,
    "erreur": null,
-   "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214",
-    "aucun événement trouvé dans 3321 caractères de texte : https://montreal.ca/articles/programmation-culturelle-de-lasalle-61214"
-   ]
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "150 ans du parc du Mont-Royal",
    "evenements": 0,
    "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Casa del Popolo / Sala Rossa",
-   "evenements": 0,
+   "evenements": 48,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "IA en échec (réponse sans JSON lisible) : https://casadelpopolo.com/"
+    "pages de programmation lues aussi : https://casadelpopolo.com/fr, https://casadelpopolo.com/fr/events/casa-del-popolo, https://casadelpopolo.com/fr/events/la-sala-rossa",
+    "IA en échec (réponse sans JSON lisible) : https://casadelpopolo.com/",
+    "IA en échec (réponse sans JSON lisible) : https://casadelpopolo.com/fr",
+    "annonces à venir dans la page : 27 (https://casadelpopolo.com/fr/events/casa-del-popolo)",
+    "annonces à venir dans la page : 32 (https://casadelpopolo.com/fr/events/la-sala-rossa)"
    ]
   },
   {
@@ -1570,14 +1799,18 @@
    "evenements": 28,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page illisible (page redirigée vers une autre ville (https://casadelpopolo.com/fr/events/ptit-ou) : https://ursamtl.com/",
+    "page illisible : données du 2026-11-11 conservées"
+   ]
   },
   {
    "source": "La Lumière Collective",
    "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Eastern Bloc",
@@ -1585,8 +1818,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://easternbloc.ca/",
-    "aucun événement trouvé dans 1298 caractères de texte : https://easternbloc.ca/"
+    "pages de programmation lues aussi : https://www.easternbloc.ca/post/exhibition-on-air",
+    "aucun événement trouvé dans 1298 caractères de texte : https://easternbloc.ca/",
+    "aucun événement trouvé dans 2085 caractères de texte : https://www.easternbloc.ca/post/exhibition-on-air"
    ]
   },
   {
@@ -1594,142 +1828,188 @@
    "evenements": 6,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 7 (https://lepointdevente.com/lieux/lequaidesbrumes)"
+   ]
   },
   {
    "source": "Café Campus (billetterie)",
    "evenements": 5,
    "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 8 (https://lepointdevente.com/lieux/cafecampus)"
+   ]
   },
   {
    "source": "Café Campus et Petit Campus – shows (billetterie)",
    "evenements": 30,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 32 (https://lepointdevente.com/tickets/cafecampusshows)"
+   ]
   },
   {
    "source": "Turbo Haüs (billetterie)",
-   "evenements": 8,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 8 (https://lepointdevente.com/lieux/turbohaus-2)"
+   ]
   },
   {
    "source": "Théâtre Rialto (billetterie)",
-   "evenements": 0,
+   "evenements": 14,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "aucun événement trouvé dans 5504 caractères de texte : https://lepointdevente.com/lieux/theatre-rialto"
+    "aucun événement trouvé dans 5504 caractères de texte : https://lepointdevente.com/lieux/theatre-rialto",
+    "annonces à venir dans la page : 0 (https://lepointdevente.com/lieux/theatre-rialto)",
+    "récolte mince (0) : recherche élargie à https://lepointdevente.com/gestion/, https://lepointdevente.com/billets/gvk261111001, https://lepointdevente.com/billets/gvk261111002",
+    "aucun événement trouvé dans 5448 caractères de texte : https://lepointdevente.com/gestion/",
+    "annonces à venir dans la page : 0 (https://lepointdevente.com/gestion/)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111001)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111002)"
    ]
   },
   {
    "source": "Espace La Risée (billetterie)",
-   "evenements": 0,
+   "evenements": 20,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "L'Escogriffe (billetterie)",
-   "evenements": 2,
+   "evenements": 17,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://lepointdevente.com/lieux/bar-spectacle-l-escogriffe)",
+    "récolte mince (3) : recherche élargie à https://lepointdevente.com/gestion/, https://lepointdevente.com/billets/gvk261111001, https://lepointdevente.com/billets/gvk261111002",
+    "aucun événement trouvé dans 5448 caractères de texte : https://lepointdevente.com/gestion/",
+    "annonces à venir dans la page : 0 (https://lepointdevente.com/gestion/)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111001)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111002)"
+   ]
   },
   {
    "source": "Club Soda (billetterie)",
-   "evenements": 28,
+   "evenements": 29,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Ausgang Plaza (billetterie)",
-   "evenements": 1,
+   "evenements": 15,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://lepointdevente.com/lieux/ausgang-plaza)",
+    "récolte mince (1) : recherche élargie à https://lepointdevente.com/gestion/, https://lepointdevente.com/billets/gvk261111001, https://lepointdevente.com/billets/gvk261111002",
+    "aucun événement trouvé dans 5448 caractères de texte : https://lepointdevente.com/gestion/",
+    "annonces à venir dans la page : 0 (https://lepointdevente.com/gestion/)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111001)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111002)"
+   ]
   },
   {
    "source": "O Patro Vys (billetterie)",
    "evenements": 11,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Centre Sanaaq (billetterie)",
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Club Balattou (billetterie)",
-   "evenements": 15,
+   "evenements": 14,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
-  },
-  {
-   "source": "Le Balattou (billetterie, 2e page)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "aucun événement trouvé dans 5542 caractères de texte : https://lepointdevente.com/lieux/lebalattou"
+    "annonces à venir dans la page : 13 (https://lepointdevente.com/lieux/club-balattou)"
    ]
   },
   {
-   "source": "Le Belmont (billetterie)",
-   "evenements": 3,
+   "source": "Le Balattou (billetterie, 2e page)",
+   "evenements": 14,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
+  },
+  {
+   "source": "Le Belmont (billetterie)",
+   "evenements": 17,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://lepointdevente.com/lieux/lebelmont)",
+    "récolte mince (3) : recherche élargie à https://lepointdevente.com/gestion/, https://lepointdevente.com/billets/gvk261111001, https://lepointdevente.com/billets/gvk261111002",
+    "aucun événement trouvé dans 5448 caractères de texte : https://lepointdevente.com/gestion/",
+    "annonces à venir dans la page : 0 (https://lepointdevente.com/gestion/)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111001)",
+    "annonces à venir dans la page : 2 (https://lepointdevente.com/billets/gvk261111002)"
+   ]
   },
   {
    "source": "Maison culturelle et communautaire de Montréal-Nord (billetterie)",
    "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Soirées quiz (hebdomadaires)",
-   "evenements": 100,
+   "evenements": 102,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Ligues d'improvisation (hebdomadaires)",
-   "evenements": 8,
+   "evenements": 9,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "ma.to – communauté (quiz, trivia)",
-   "evenements": 2,
-   "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-09"
-  },
-  {
-   "source": "Wiggle Room (ma.to)",
-   "evenements": 2,
-   "series": 0,
-   "erreur": null,
-   "note": "repris du 2026-11-05"
-  },
-  {
-   "source": "Le Balcon (ma.to)",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
+  },
+  {
+   "source": "Wiggle Room (ma.to)",
+   "evenements": 9,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-10"
+  },
+  {
+   "source": "Le Balcon (ma.to)",
+   "evenements": 4,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
@@ -1742,16 +2022,17 @@
   },
   {
    "source": "PAN M 360 – agenda musique",
-   "evenements": 37,
+   "evenements": 38,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Formulaire : événements proposés",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
-   "erreur": null
+   "erreur": null,
+   "note": "repris du 2026-11-03"
   },
   {
    "source": "Festival · ELEKTRA",
@@ -1768,29 +2049,44 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/"
+    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/",
+    "annonces à venir dans la page : 0 (https://compagnietheatrecreole.ca/festitheatrecreole/)"
    ]
   },
   {
    "source": "Festival · Monde Arabe (1)",
-   "evenements": 24,
+   "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-04"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/programmation",
+    "annonces à venir dans la page : 39 (https://festivalarabe.com/programmation)",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/la-diva-du-desert",
+    "annonces à venir dans la page : 1 (https://festivalarabe.com/spectacle/la-diva-du-desert)",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/al-qahwa",
+    "annonces à venir dans la page : 1 (https://festivalarabe.com/spectacle/al-qahwa)",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/le-livre-des-reines",
+    "annonces à venir dans la page : 1 (https://festivalarabe.com/spectacle/le-livre-des-reines)",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/du-sarod-au-violoncelle",
+    "annonces à venir dans la page : 0 (https://festivalarabe.com/spectacle/du-sarod-au-violoncelle)",
+    "lue dans le navigateur (automatique) : https://festivalarabe.com/spectacle/ormuz-ou-le-naufrage-du-droit-international",
+    "annonces à venir dans la page : 1 (https://festivalarabe.com/spectacle/ormuz-ou-le-naufrage-du-droit-international)"
+   ]
   },
   {
    "source": "Festival · Monde Arabe (2)",
-   "evenements": 2,
-   "series": 0,
+   "evenements": 0,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-06"
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Festival · CINEMANIA",
-   "evenements": 124,
+   "evenements": 94,
    "series": 47,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Festival · La Mèche courte",
@@ -1798,120 +2094,218 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1728 caractères de texte : https://www.lamechecourte.ca/programmation"
+    "aucun événement trouvé dans 1728 caractères de texte : https://www.lamechecourte.ca/programmation",
+    "annonces à venir dans la page : 8 (https://www.lamechecourte.ca/programmation)"
    ]
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 6,
+   "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 45 (https://festivalbachmontreal.com/programmation/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/concert-ouverture-2026/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/concert-dorgue-et-choeur/)"
+   ]
   },
   {
    "source": "Festival · Coup de cœur",
-   "evenements": 61,
+   "evenements": 52,
    "series": 14,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Festival · Mundial",
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://www.mundialmontreal.com/programmation-2026/, https://www.mundialmontreal.com/mentorat-mundial-montreal/",
+    "annonces à venir dans la page : 1 (https://mundialmontreal.com)",
+    "aucun événement trouvé dans 2582 caractères de texte : https://www.mundialmontreal.com/programmation-2026/",
+    "annonces à venir dans la page : 0 (https://www.mundialmontreal.com/programmation-2026/)",
+    "aucun événement trouvé dans 4735 caractères de texte : https://www.mundialmontreal.com/mentorat-mundial-montreal/",
+    "annonces à venir dans la page : 0 (https://www.mundialmontreal.com/mentorat-mundial-montreal/)"
+   ]
   },
   {
    "source": "Festival · M pour Montréal (1)",
-   "evenements": 27,
+   "evenements": 12,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-06"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page lue depuis Montréal (ordinateur) : https://www.jambase.com/festival/m-pour-montreal-2026",
+    "annonces à venir dans la page : 95 (https://www.jambase.com/festival/m-pour-montreal-2026)",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/cpr-annie) : https://www.jambase.com/band/cpr-annie",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/born-at-midnit) : https://www.jambase.com/band/born-at-midnite",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/home-counties) : https://www.jambase.com/band/home-counties",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/646yf4t) : https://www.jambase.com/band/646yf4t",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/loviet) : https://www.jambase.com/band/loviet",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/suuns) : https://www.jambase.com/band/suuns",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/dj-lani) : https://www.jambase.com/band/dj-lani",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/irdens-exantus) : https://www.jambase.com/band/irdens-exantus",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/shirehead) : https://www.jambase.com/band/shirehead",
+    "page illisible (403 Client Error: Forbidden for url: https://www.jambase.com/band/mario2) : https://www.jambase.com/band/mario2"
+   ]
   },
   {
    "source": "Festival · M pour Montréal (2)",
-   "evenements": 3,
-   "series": 2,
+   "evenements": 0,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "page illisible (406 Client Error: Not Acceptable for url: https://www.songkick.com/festivals/873) : https://www.songkick.com/festivals/873454-m-for-montreal",
+    "page illisible : données du 2026-11-11 conservées"
+   ]
   },
   {
    "source": "Festival · RIDM (1)",
-   "evenements": 3,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-28"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 3 (https://ridm.ca/fr/grille-horaire)"
+   ]
   },
   {
    "source": "Festival · RIDM (2)",
-   "evenements": 25,
-   "series": 2,
+   "evenements": 29,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-20)",
+    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/rendez-vous-onf-portes-ouvertes)",
+    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/doggerland)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/party-de-la-releve-completement-bingo-)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-vanishing-point)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-belle-annee)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/l-ile-aux-tresors)",
+    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/lecon-de-cinema-aziz-zoromba)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/vernissage-exposition-plateformes)",
+    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/5-a-7-de-la-releve)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/weeping-rocks)"
+   ]
   },
   {
    "source": "Festival · RIDM (3)",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 22 (https://ridm.ca/fr/grille-horaire?date=2026-11-21)"
+   ]
   },
   {
    "source": "Festival · RIDM (4)",
-   "evenements": 36,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-22)"
+   ]
   },
   {
    "source": "Festival · RIDM (5)",
-   "evenements": 19,
+   "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 13 (https://ridm.ca/fr/grille-horaire?date=2026-11-23)"
+   ]
   },
   {
    "source": "Festival · RIDM (6)",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 14 (https://ridm.ca/fr/grille-horaire?date=2026-11-24)"
+   ]
   },
   {
    "source": "Festival · RIDM (7)",
-   "evenements": 3,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-06"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-25)"
+   ]
   },
   {
    "source": "Festival · RIDM (8)",
    "evenements": 26,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 17 (https://ridm.ca/fr/grille-horaire?date=2026-11-26)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/kubana)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-heard-that-they-are-not-going-to-see-each-other-anymore)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-peur-la-nuit)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/cinema-autochtone-recits-et-nouvelles-formes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-have-never-been-on-an-airplane)",
+    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/from-dawn-to-dawn)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/mother-you-have-not-died-yet-but-you-will-and-when-you-do-you-will-finally-be-alive-again)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/with-love-and-rage)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/evenements/enregistrement-dun-balado-de-choq-le-monde-dans-mes-oreilles-avec-ivan-markovic)"
+   ]
   },
   {
    "source": "Festival · RIDM (9)",
-   "evenements": 24,
-   "series": 1,
-   "erreur": null,
-   "note": "repris du 2026-11-09"
-  },
-  {
-   "source": "Festival · RIDM (10)",
-   "evenements": 29,
-   "series": 2,
-   "erreur": null,
-   "note": "repris du 2026-11-09"
-  },
-  {
-   "source": "Festival · RIDM (11)",
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 22 (https://ridm.ca/fr/grille-horaire?date=2026-11-27)"
+   ]
+  },
+  {
+   "source": "Festival · RIDM (10)",
+   "evenements": 31,
+   "series": 1,
+   "erreur": null,
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 19 (https://ridm.ca/fr/grille-horaire?date=2026-11-28)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/petit-tom)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/aanikoobijigan-ancestor-great-grandparent-great-grandchild)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/remise-de-prix)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/discussion-recherche-rigoureuse-et-liberte-formelle)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/l-estive)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/letters-from-an-inner-exile)",
+    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/living-containers)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-tale-of-silyan)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-de-cloture-chez-ba)"
+   ]
+  },
+  {
+   "source": "Festival · RIDM (11)",
+   "evenements": 2,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "annonces à venir dans la page : 26 (https://ridm.ca/fr/grille-horaire?date=2026-11-29)"
+   ]
   },
   {
    "source": "Festival · image+nation",
@@ -1920,22 +2314,38 @@
    "erreur": null,
    "diagnostic": [
     "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org"
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
   {
    "source": "Festival · Salon du livre",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 13,
+   "series": 4,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://www.salondulivredemontreal.com/slm-pro-volet-professionnel/programmation, https://www.salondulivredemontreal.com/actualites/la-programmation-du-salon-du-livre-de-montreal-est-devoilee, https://www.salondulivredemontreal.com/actualites/decouvrez-la-programmation-du-slm-pro",
+    "annonces à venir dans la page : 5 (https://salondulivredemontreal.com)",
+    "annonces à venir dans la page : 13 (https://www.salondulivredemontreal.com/slm-pro-volet-professionnel/programmation)",
+    "annonces à venir dans la page : 19 (https://www.salondulivredemontreal.com/actualites/la-programmation-du-salon-du-livre-de-montreal-est-devoilee)",
+    "aucun événement trouvé dans 11817 caractères de texte : https://www.salondulivredemontreal.com/actualites/decouvrez-la-programmation-du-slm-pro",
+    "annonces à venir dans la page : 0 (https://www.salondulivredemontreal.com/actualites/decouvrez-la-programmation-du-slm-pro)"
+   ]
   },
   {
    "source": "Festival · Noël dans le parc",
-   "evenements": 1,
-   "series": 0,
+   "evenements": 56,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://noeldansleparc.com/programmation-2025/, https://noeldansleparc.com/parc-lafontaine/",
+    "annonces à venir dans la page : 2 (https://noeldansleparc.com)",
+    "aucun événement trouvé dans 1027 caractères de texte : https://noeldansleparc.com/programmation-2025/",
+    "annonces à venir dans la page : 0 (https://noeldansleparc.com/programmation-2025/)",
+    "annonces à venir dans la page : 39 (https://noeldansleparc.com/parc-lafontaine/)"
+   ]
   },
   {
    "source": "Festival · Igloofest",
@@ -1943,16 +2353,25 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3533 caractères de texte : https://igloofest.ca"
+    "pages de programmation lues aussi : https://igloofest.ca/fr/festival, https://igloofest.ca/fr/nouvelles/prog-2027, https://igloofest.ca/fr/nouvelles/les-igloofetes-reviennent",
+    "aucun événement trouvé dans 3533 caractères de texte : https://igloofest.ca",
+    "annonces à venir dans la page : 4 (https://igloofest.ca)"
    ]
   },
   {
    "source": "Festival · Festival Lumino",
    "evenements": 0,
-   "series": 0,
+   "series": 1,
    "erreur": null,
+   "note": "repris du 2026-11-11",
    "diagnostic": [
-    "aucun événement trouvé dans 1820 caractères de texte : https://luminomtl.com"
+    "pages de programmation lues aussi : https://www.luminomtl.com/fr/activites/oeuvres-exterieures/horizon, https://www.luminomtl.com/fr/activites/videoprojections/le-coffre-a-jouets-degivre",
+    "trouvé dans le navigateur (automatique) : https://luminomtl.com",
+    "annonces à venir dans la page : 1 (https://luminomtl.com)",
+    "aucun événement trouvé dans 2344 caractères de texte : https://www.luminomtl.com/fr/activites/oeuvres-exterieures/horizon",
+    "annonces à venir dans la page : 0 (https://www.luminomtl.com/fr/activites/oeuvres-exterieures/horizon)",
+    "aucun événement trouvé dans 2684 caractères de texte : https://www.luminomtl.com/fr/activites/videoprojections/le-coffre-a-jouets-degivre",
+    "annonces à venir dans la page : 0 (https://www.luminomtl.com/fr/activites/videoprojections/le-coffre-a-jouets-degivre)"
    ]
   },
   {
@@ -1962,22 +2381,23 @@
    "erreur": null,
    "diagnostic": [
     "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com"
+    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
    ]
   },
   {
    "source": "Festival · Casteliers",
-   "evenements": 2,
+   "evenements": 6,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-10-27"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · FIFA",
-   "evenements": 1,
+   "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Vues d'Afrique",
@@ -1985,7 +2405,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3057 caractères de texte : https://vuesdafrique.org"
+    "pages de programmation lues aussi : https://vuesdafrique.org/programmation/, https://vuesdafrique.org/activites/, https://vuesdafrique.org/matinees-cine-jeunesse-et-seances-familiales/",
+    "aucun événement trouvé dans 3057 caractères de texte : https://vuesdafrique.org",
+    "annonces à venir dans la page : 0 (https://vuesdafrique.org)"
    ]
   },
   {
@@ -2017,12 +2439,10 @@
   },
   {
    "source": "Festival · Jamais Lu",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 6973 caractères de texte : https://jamaislu.com"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Petits bonheurs",
@@ -2030,7 +2450,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3092 caractères de texte : https://petitsbonheurs.ca"
+    "pages de programmation lues aussi : https://petitsbonheurs.ca/spectacles",
+    "aucun événement trouvé dans 3092 caractères de texte : https://petitsbonheurs.ca",
+    "annonces à venir dans la page : 0 (https://petitsbonheurs.ca)"
    ]
   },
   {
@@ -2039,7 +2461,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3004 caractères de texte : https://accesasie.com"
+    "pages de programmation lues aussi : https://accesasie.com/programmation/?_annee=2026",
+    "aucun événement trouvé dans 3004 caractères de texte : https://accesasie.com",
+    "annonces à venir dans la page : 0 (https://accesasie.com)"
    ]
   },
   {
@@ -2056,16 +2480,14 @@
    "evenements": 114,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Festival BD",
-   "evenements": 0,
+   "evenements": 15,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 1123 caractères de texte : https://fbdm-mcaf.ca"
-   ]
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Piknic Électronik",
@@ -2073,7 +2495,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com"
+    "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -2091,7 +2515,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1298 caractères de texte : https://fta.ca"
+    "aucun événement trouvé dans 1326 caractères de texte : https://fta.ca",
+    "annonces à venir dans la page : 0 (https://fta.ca)"
    ]
   },
   {
@@ -2100,7 +2525,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3993 caractères de texte : https://offta.com"
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 3993 caractères de texte : https://offta.com",
+    "annonces à venir dans la page : 12 (https://offta.com)"
    ]
   },
   {
@@ -2109,7 +2536,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1495 caractères de texte : https://muralfestival.com"
+    "aucun événement trouvé dans 1495 caractères de texte : https://muralfestival.com",
+    "annonces à venir dans la page : 1 (https://muralfestival.com)"
    ]
   },
   {
@@ -2118,7 +2546,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 7071 caractères de texte : https://festivalmontreal.org"
+    "pages de programmation lues aussi : https://festivalmontreal.org/programmation-2026/, https://festivalmontreal.org/programmation/bachamidi1/, https://festivalmontreal.org/programmation/pour-lamour-de-brahms/",
+    "aucun événement trouvé dans 7071 caractères de texte : https://festivalmontreal.org",
+    "annonces à venir dans la page : 0 (https://festivalmontreal.org)"
    ]
   },
   {
@@ -2127,6 +2557,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
+    "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
     "lue dans le navigateur (automatique) : https://montrealfringe.ca",
     "page presque vide (441 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
@@ -2136,14 +2567,14 @@
    "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Festival de Jazz",
-   "evenements": 2,
+   "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Complètement Cirque",
@@ -2151,15 +2582,17 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1072 caractères de texte : https://montrealcompletementcirque.com"
+    "pages de programmation lues aussi : https://montrealcompletementcirque.com/fr/spectacles",
+    "aucun événement trouvé dans 1072 caractères de texte : https://montrealcompletementcirque.com",
+    "annonces à venir dans la page : 0 (https://montrealcompletementcirque.com)"
    ]
   },
   {
    "source": "Festival · Nuits d'Afrique",
-   "evenements": 8,
+   "evenements": 25,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Juste pour rire",
@@ -2167,7 +2600,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6283 caractères de texte : https://hahaha.com"
+    "pages de programmation lues aussi : https://www.hahaha.com/fr/public/raccourcis/calendrier-957?lang=fr, https://www.hahaha.com/fr/public/spectacles-247/, https://www.hahaha.com/fr/public/spectacles-247?lang=fr",
+    "aucun événement trouvé dans 6283 caractères de texte : https://hahaha.com",
+    "annonces à venir dans la page : 6 (https://hahaha.com)"
    ]
   },
   {
@@ -2176,7 +2611,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1849 caractères de texte : https://zoofest.com"
+    "pages de programmation lues aussi : https://zoofest.com/public/spectacles-106?lang=fr",
+    "aucun événement trouvé dans 1849 caractères de texte : https://zoofest.com",
+    "annonces à venir dans la page : 0 (https://zoofest.com)"
    ]
   },
   {
@@ -2185,7 +2622,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3785 caractères de texte : https://fantasiafestival.com"
+    "pages de programmation lues aussi : https://fantasiafestival.com/fr/agenda, https://fantasiafestival.com/fr/festival-2026/programmation, https://fantasiafestival.com/fr/festival-2026/programmes-de-courts",
+    "aucun événement trouvé dans 3785 caractères de texte : https://fantasiafestival.com",
+    "annonces à venir dans la page : 0 (https://fantasiafestival.com)"
    ]
   },
   {
@@ -2194,7 +2633,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 9142 caractères de texte : https://fiertemontreal.com"
+    "pages de programmation lues aussi : https://fiertemontreal.com/fr/festival/evenements, https://fiertemontreal.com/fr/actualites/communique-lancement-de-programmation-2026, https://fiertemontreal.com/fr/communautaire/programmes",
+    "aucun événement trouvé dans 9142 caractères de texte : https://fiertemontreal.com",
+    "annonces à venir dans la page : 3 (https://fiertemontreal.com)"
    ]
   },
   {
@@ -2204,7 +2645,8 @@
    "erreur": null,
    "diagnostic": [
     "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4182 caractères de texte : https://osheaga.com"
+    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
+    "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
   {
@@ -2213,7 +2655,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3128 caractères de texte : https://presenceautochtone.ca"
+    "pages de programmation lues aussi : https://www.presenceautochtone.ca/festival/programmation-fipa-2026/, https://www.presenceautochtone.ca/festival/calendrier/, https://www.presenceautochtone.ca/inscription-film-et-reglements/",
+    "aucun événement trouvé dans 3128 caractères de texte : https://presenceautochtone.ca",
+    "annonces à venir dans la page : 4 (https://presenceautochtone.ca)"
    ]
   },
   {
@@ -2225,10 +2669,10 @@
   },
   {
    "source": "Festival · LASSO",
-   "evenements": 2,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · MUTEK",
@@ -2237,6 +2681,7 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://montreal.mutek.org",
+    "pages de programmation lues aussi : https://montreal.mutek.org/en/schedule/all-year-round",
     "aucun événement trouvé dans 3499 caractères de texte : https://montreal.mutek.org"
    ]
   },
@@ -2246,7 +2691,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 785 caractères de texte : https://festivaltradmontreal.ca"
+    "pages de programmation lues aussi : https://festivaltradmontreal.ca/l-agenda-du-ftm/",
+    "aucun événement trouvé dans 785 caractères de texte : https://festivaltradmontreal.ca",
+    "annonces à venir dans la page : 1 (https://festivaltradmontreal.ca)"
    ]
   },
   {
@@ -2264,7 +2711,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 4883 caractères de texte : https://festival-fil.qc.ca"
+    "pages de programmation lues aussi : https://festival-fil.qc.ca/calendrier-2026/, https://festival-fil.qc.ca/spectacles-concerts-et-cabarets/, https://festival-fil.qc.ca/2026-cinema/",
+    "aucun événement trouvé dans 4883 caractères de texte : https://festival-fil.qc.ca",
+    "annonces à venir dans la page : 0 (https://festival-fil.qc.ca)"
    ]
   },
   {
@@ -2273,17 +2722,16 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 34636 caractères de texte : https://festapp.io/fr/festivals/pop-montreal/2026"
+    "aucun événement trouvé dans 34636 caractères de texte : https://festapp.io/fr/festivals/pop-montreal/2026",
+    "annonces à venir dans la page : 106 (https://festapp.io/fr/festivals/pop-montreal/2026)"
    ]
   },
   {
    "source": "Festival · Film Black",
-   "evenements": 0,
+   "evenements": 1,
    "series": 0,
    "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 7628 caractères de texte : https://montrealblackfilm.com"
-   ]
+   "note": "repris du 2026-11-11"
   },
   {
    "source": "Festival · Phénomena",
@@ -2291,7 +2739,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1094 caractères de texte : https://festivalphenomena.com"
+    "pages de programmation lues aussi : https://festivalphenomena.com/phenomena/fr/festival/2026/horaire",
+    "aucun événement trouvé dans 1094 caractères de texte : https://festivalphenomena.com",
+    "annonces à venir dans la page : 1 (https://festivalphenomena.com)"
    ]
   },
   {
@@ -2309,21 +2759,33 @@
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Comiccon",
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Comiccon des Fêtes",
    "evenements": 2,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-11",
+   "diagnostic": [
+    "pages de programmation lues aussi : https://www.montrealcomiccon.com/artistes/?guests_type=cinema-fr, https://www.montrealcomiccon.com/horaire-2/, https://www.montrealcomiccon.com/salle-dexposition/",
+    "annonces à venir dans la page : 2 (https://www.montrealcomiccon.com)",
+    "lue dans le navigateur (automatique) : https://www.montrealcomiccon.com/artistes/?guests_type=cinema-fr",
+    "aucun événement trouvé dans 632 caractères de texte : https://www.montrealcomiccon.com/artistes/?guests_type=cinema-fr",
+    "annonces à venir dans la page : 0 (https://www.montrealcomiccon.com/artistes/?guests_type=cinema-fr)",
+    "lue dans le navigateur (automatique) : https://www.montrealcomiccon.com/horaire-2/",
+    "page presque vide (539 caractères ; site en JavaScript ?) : https://www.montrealcomiccon.com/horaire-2/",
+    "annonces à venir dans la page : 0 (https://www.montrealcomiccon.com/horaire-2/)",
+    "aucun événement trouvé dans 10083 caractères de texte : https://www.montrealcomiccon.com/salle-dexposition/",
+    "annonces à venir dans la page : 0 (https://www.montrealcomiccon.com/salle-dexposition/)"
+   ]
   },
   {
    "source": "Festival · Under Pressure",
@@ -2331,7 +2793,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 13069 caractères de texte : https://underpressure.ca"
+    "pages de programmation lues aussi : https://underpressure.ca/events2020/",
+    "aucun événement trouvé dans 13069 caractères de texte : https://underpressure.ca",
+    "annonces à venir dans la page : 1 (https://underpressure.ca)"
    ]
   },
   {
@@ -2340,7 +2804,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2386 caractères de texte : https://suoniperilpopolo.org"
+    "pages de programmation lues aussi : https://suoniperilpopolo.org/fr/horaire/suoni-per-il-popolo-burning-cosmos-residency-presents-farida-amadou-jah-sun-jairus-sharif-skin-tone-mustafa-rafiq, https://suoniperilpopolo.org/fr/horaire/ratchet-orchestra-bellbird-invite-e-s, https://suoniperilpopolo.org/fr/horaire/lost-children-label-tape-launch",
+    "aucun événement trouvé dans 2386 caractères de texte : https://suoniperilpopolo.org",
+    "annonces à venir dans la page : 0 (https://suoniperilpopolo.org)"
    ]
   },
   {
@@ -2349,7 +2815,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 26805 caractères de texte : https://escalesimprobables.com"
+    "aucun événement trouvé dans 26805 caractères de texte : https://escalesimprobables.com",
+    "annonces à venir dans la page : 0 (https://escalesimprobables.com)"
    ]
   },
   {
@@ -2359,15 +2826,16 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/",
-    "aucun événement trouvé dans 8478 caractères de texte : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/"
+    "aucun événement trouvé dans 8478 caractères de texte : https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/",
+    "annonces à venir dans la page : 1 (https://sortirauquebec.com/en/listing/festival/ru-reappropriation-urbaine/)"
    ]
   },
   {
    "source": "Festival · Concerts Campbell",
    "evenements": 9,
-   "series": 1,
+   "series": 2,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   },
   {
    "source": "Festival · Shows de ruelle",
@@ -2376,7 +2844,8 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
-    "aucun événement trouvé dans 10672 caractères de texte : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/"
+    "aucun événement trouvé dans 10676 caractères de texte : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
+    "annonces à venir dans la page : 1 (https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/)"
    ]
   },
   {
@@ -2385,7 +2854,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com"
+    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com",
+    "annonces à venir dans la page : 4 (https://westislandbluesfestival.com)"
    ]
   },
   {
@@ -2394,7 +2864,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 45055 caractères de texte : https://cinemasouslesetoiles.org/programmation/grille-horaire/"
+    "aucun événement trouvé dans 45055 caractères de texte : https://cinemasouslesetoiles.org/programmation/grille-horaire/",
+    "annonces à venir dans la page : 42 (https://cinemasouslesetoiles.org/programmation/grille-horaire/)"
    ]
   },
   {
@@ -2403,15 +2874,16 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 9492 caractères de texte : https://orchestremetropolitain.com/fr/lom-au-pied-du-mont-royal/"
+    "aucun événement trouvé dans 9492 caractères de texte : https://orchestremetropolitain.com/fr/lom-au-pied-du-mont-royal/",
+    "annonces à venir dans la page : 0 (https://orchestremetropolitain.com/fr/lom-au-pied-du-mont-royal/)"
    ]
   },
   {
    "source": "Théâtre Maisonneuve (découverte)",
-   "evenements": 14,
-   "series": 4,
+   "evenements": 10,
+   "series": 3,
    "erreur": null,
-   "note": "repris du 2026-11-09"
+   "note": "repris du 2026-11-10"
   }
  ]
 }

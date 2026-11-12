@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-16-vente-d-ornements-des-creations-locales-pour-illum-7681af@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Vente d'ornements : des créations locales pour illuminer vos fête
+ s!
+LOCATION:Bibliothèque\, Montréal
+URL:https://www.beaconsfield.ca/fr/evenements/evenements-etincelle/des-crea
+ tions-locales-pour-illuminer-vos-fetes-au-profit-de-la-campagne-du-centre-
+ culturel
+DESCRIPTION:Heure à confirmer. Vente d'ornements de fêtes issus de créat
+ eurs locaux\, au profit de la campagne du centre culturel\, dès le 16 nov
+ embre.\nDétails : https://www.beaconsfield.ca/fr/culture-et-loisirs/insta
+ llations-et-parcs/reservation-de-salles-et-dinstallations\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

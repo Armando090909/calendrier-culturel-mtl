@@ -24,6 +24,7 @@
  "Anacostia Neighborhood Library": null,
  "Ancien Théâtre Desjardins": null,
  "Annexe Herb Linder": null,
+ "Argo Bookshop": null,
  "Arprim": null,
  "Arsenal art contemporain": {
   "lat": 45.4918,
@@ -40,11 +41,13 @@
   "lon": -73.75822,
   "quartier": ""
  },
+ "Association Récréative Milton-Parc": null,
  "Atelier Circulaire": {
   "lat": 45.52693,
   "lon": -73.59486,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Atelier La Coulée": null,
  "Atelier de l'Île": null,
  "Atrium des Grands Ballets (Édifice Wilder)": {
   "alias": [
@@ -71,6 +74,11 @@
   "lat": 45.537,
   "lon": -73.607,
   "quartier": "Petite-Patrie"
+ },
+ "Bande Passante": {
+  "lat": 45.52232,
+  "lon": -73.59083,
+  "quartier": "Le Plateau-Mont-Royal"
  },
  "Bar HAL": null,
  "Bar L'Hémisphère gauche": {
@@ -333,12 +341,14 @@
   "lon": -73.6371,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "Bibliothèque publique de Pointe-Claire - Centrale": null,
  "Bibliothèque éphémère de l'Est de Rosemont": {
   "lat": 45.57297,
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
  "Bibliothèques, cafés, musées et autres lieux participants": null,
+ "Biodôme | Espace pour la vie": null,
  "Biosphère": {
   "adresse": "160 chemin du Tour-de-l'Isle",
   "alias": [],
@@ -360,6 +370,7 @@
   "lon": -73.538,
   "quartier": "Mercier"
  },
+ "Bootlegger Cocktail Bar & Cuisine Montréal": null,
  "Bradley Ertaskiran": {
   "adresse": "3550, rue Saint-Antoine Ouest, Montréal",
   "alias": [],
@@ -448,6 +459,11 @@
   "lon": -73.5728,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Cat's Corner": {
+  "lat": 45.53264,
+  "lon": -73.55207,
+  "quartier": "Ville-Marie"
+ },
  "Centre Bang": null,
  "Centre Bell": {
   "alias": [
@@ -463,6 +479,7 @@
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Centre Caztel": null,
+ "Centre Culturel Stewart Hall de la Ville de Pointe-Claire": null,
  "Centre Gadbois": {
   "lat": 45.46717,
   "lon": -73.59474,
@@ -516,6 +533,7 @@
   "lon": -73.565,
   "quartier": "Anjou"
  },
+ "Centre communautaire et aquatique": null,
  "Centre communautaire intergénérationnel": {
   "alias": [
    "Centre communautaire intergénérationnel (CCI)"
@@ -570,6 +588,7 @@
   "lon": -73.5916,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Centre récréatif Édouard-Rivet": null,
  "Centre socioculturel de l'Île-Bizard": {
   "lat": 45.48862,
   "lon": -73.88231,
@@ -631,6 +650,7 @@
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
+ "Ciné-Campus": null,
  "Cinéma Beaubien": {
   "lat": 45.5408,
   "lon": -73.6031,
@@ -670,6 +690,7 @@
   "lon": -73.563,
   "quartier": "Quartier des spectacles"
  },
+ "Comedyville": null,
  "Commodore Ballroom": null,
  "Conservatoire de Musique De Montreal": {
   "alias": [],
@@ -757,11 +778,13 @@
   "quartier": "Centre-Sud"
  },
  "Espace Malraux": null,
+ "Espace ONF": null,
  "Espace Off-Bach (3487, boul. Saint-Laurent)": {
   "lat": 45.5129,
   "lon": -73.5735,
   "quartier": "Plateau"
  },
+ "Espace PRO": null,
  "Espace Panache": null,
  "Espace Republic Corner": null,
  "Espace Séquence": null,
@@ -988,6 +1011,7 @@
  "Hill Center": null,
  "History": null,
  "Hollywood Theatre": null,
+ "Honey Martin": null,
  "Houston Avenue Bar & Grill": null,
  "Hurley's Irish Pub": {
   "lat": 45.49672,
@@ -997,6 +1021,7 @@
  "Hurleys Irish Pub": null,
  "Igloofest": null,
  "Impérial Bell": null,
+ "Infinithéâtre + Casa d'Italia": null,
  "Institut d'études en art canadien Gail et Stephen A. Jarislowsky": null,
  "Instituto Cultural Mexicano": null,
  "J.W. McConnell Building": {
@@ -1133,6 +1158,7 @@
   "lon": -73.58491,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "La Trattoria Dell'Arte": null,
  "La graine brûlée": {
   "lat": 45.51673,
   "lon": -73.55792,
@@ -1252,11 +1278,32 @@
   "lon": -73.60406,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Librairie Drawn &#038; Quarterly": {
+  "lat": 45.5247,
+  "lon": -73.6048,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Librairie Joie de livres": {
+  "lat": 45.52372,
+  "lon": -73.59393,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Librairie L’Euguélionne": {
+  "lat": 45.51897,
+  "lon": -73.55637,
+  "quartier": "Ville-Marie"
+ },
+ "Librairie Raffin &#8211; Plaza St-Hubert": {
+  "lat": 45.53535,
+  "lon": -73.60167,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Librairie Zone Libre": {
   "lat": 45.51232,
   "lon": -73.56149,
   "quartier": "Ville-Marie"
  },
+ "Lieu inconnu": null,
  "Lieu non précisé": null,
  "Lincoln Memorial": null,
  "Little Pearl": null,
@@ -1265,12 +1312,19 @@
   "lon": -73.5785,
   "quartier": "Plateau"
  },
+ "Local D-R200 du Pavillon Athanas-David": null,
+ "Local PK-1140, Pavillon Président-Kennedy": null,
  "Locoshop Angus": null,
  "Long Bar Restaurant": null,
  "Lopez": {
   "lat": 45.53799,
   "lon": -73.60692,
   "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "Lord William Pub": {
+  "lat": 45.48691,
+  "lon": -73.56703,
+  "quartier": "Le Sud-Ouest"
  },
  "MAC Montréal": null,
  "MEM - Centre des mémoires montréalaises": {
@@ -1400,6 +1454,7 @@
   "lon": -73.5,
   "quartier": "Pointe-aux-Trembles"
  },
+ "Maison internationale des arts de la marionnette": null,
  "Maison symphonique": {
   "alias": [
    "Maison Symphonique de Montréal"
@@ -1412,6 +1467,11 @@
  "Marché Bonsecours": {
   "lat": 45.50958,
   "lon": -73.55134,
+  "quartier": "Ville-Marie"
+ },
+ "Marché des Éclusiers": {
+  "lat": 45.4985,
+  "lon": -73.55222,
   "quartier": "Ville-Marie"
  },
  "Massey Hall": null,
@@ -1579,6 +1639,7 @@
   "lon": -73.56897,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Parc Lafontaine": null,
  "Parc Leroux": {
   "lat": 45.43435,
   "lon": -73.59513,
@@ -1600,6 +1661,11 @@
   "lon": -73.56075,
   "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
  },
+ "Parc des Vétérans": {
+  "lat": 45.5247,
+  "lon": -73.55592,
+  "quartier": "Ville-Marie"
+ },
  "Parc du Mont-Royal": {
   "alias": [],
   "lat": 45.5054,
@@ -1613,6 +1679,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Pavillon Adrien-Pinard": null,
  "Pavillon Hubert-Aquin (A), UQAM": {
   "adresse": "400 rue Sainte-Catherine Est",
   "alias": [],
@@ -1621,15 +1688,34 @@
   "quartier": "Ville-Marie"
  },
  "Pavillon Judith-Jasmin (J), UQAM": {
-  "adresse": "405 rue Sainte-Catherine Est"
+  "adresse": "405 rue Sainte-Catherine Est",
+  "alias": [],
+  "lat": 45.5145,
+  "lon": -73.56071,
+  "quartier": "Ville-Marie"
+ },
+ "Pavillon Président-Kennedy": {
+  "alias": [],
+  "lat": 45.509,
+  "lon": -73.5686,
+  "quartier": "Ville-Marie"
  },
  "Pavillon de l'île": null,
+ "Pavillon des sciences de la gestion": {
+  "alias": [
+   "Pavillon des sciences de la gestion (R)"
+  ],
+  "lat": 45.51336,
+  "lon": -73.56115,
+  "quartier": "Ville-Marie"
+ },
  "Peterborough Memorial Centre": null,
  "Petit Campus": {
   "lat": 45.5146,
   "lon": -73.571,
   "quartier": "Plateau"
  },
+ "Petite-Bourgogne, espace public": null,
  "Pierre-François Ouellette art contemporain": {
   "adresse": "963, rue Rachel Est, Montréal",
   "alias": [],
@@ -1757,6 +1843,7 @@
  "Sainte-Agathe-des-Monts": null,
  "Sainte-Catherine Hall": null,
  "Salle 1120, Henry F. Hall Building": null,
+ "Salle Albert-Dumouchel": null,
  "Salle Albert-Rousseau": null,
  "Salle André-Mathieu": null,
  "Salle Bourgie": {
@@ -1866,6 +1953,11 @@
   "lon": -73.56693,
   "quartier": "Ville-Marie"
  },
+ "Studio PACA": {
+  "lat": 45.48893,
+  "lon": -73.58237,
+  "quartier": "Ville-Marie"
+ },
  "Studio St-Denis": {
   "lat": 45.515,
   "lon": -73.562,
@@ -1880,16 +1972,24 @@
   "lon": -73.5781,
   "quartier": "Saint-Henri"
  },
+ "TNM": null,
  "TOHU": {
   "alias": [
    "La TOHU",
-   "TOHU, la Cité des arts du cirque"
+   "TOHU, la Cité des arts du cirque",
+   "TOHU (exposition virtuelle)",
+   "TOHU (exposition extérieure)"
   ],
   "lat": 45.56,
   "lon": -73.615,
   "quartier": "Saint-Michel"
  },
  "TOPO": null,
+ "Tabac Villeray": {
+  "lat": 45.54877,
+  "lon": -73.61674,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Tangente": {
   "alias": [
    "Tangente Danse"
@@ -1966,6 +2066,7 @@
   "quartier": "Mile End"
  },
  "Théâtre Gilles-Vigneault": null,
+ "Théâtre Granada": null,
  "Théâtre Hector-Charland": null,
  "Théâtre La Comédie de Montréal": {
   "lat": 45.515,
@@ -2060,6 +2161,7 @@
   "lon": -73.574,
   "quartier": "Plateau"
  },
+ "Théâtre des Deux Rives": null,
  "Théâtre des Eskers": null,
  "Théâtre du Marais": null,
  "Théâtre du Nouveau Monde": {
@@ -2095,8 +2197,10 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UQAM - En ligne": null,
  "UQAM - Pavillon Hubert-Aquin": null,
  "UQAM - Pavillon Judith-Jasmin": null,
+ "UQAM - Pavillon Paul-Gérin-Lajoie": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
  "URBANISTA RESTO BAR": null,
@@ -2169,6 +2273,7 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
+ "Wishbone Gallery": null,
  "Wrabyn Boutique": null,
  "Yves Laroche Galerie d'art": {
   "adresse": "99, rue Chabanel Ouest, suite 224, Montréal",
@@ -2204,6 +2309,7 @@
   "lon": -73.64716,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "École de design de l'UQAM": null,
  "Écomusée du fier monde": {
   "lat": 45.52033,
   "lon": -73.56366,
@@ -2215,6 +2321,11 @@
   "quartier": "Verdun"
  },
  "Église Saint-Antoine de Lavaltrie": null,
+ "Église Saint-Arsène": {
+  "lat": 45.54093,
+  "lon": -73.60921,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Église Saint-Enfant-Jésus-du-Mile-End": {
   "lat": 45.524,
   "lon": -73.596,

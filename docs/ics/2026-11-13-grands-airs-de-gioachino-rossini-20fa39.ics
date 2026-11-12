@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-grands-airs-de-gioachino-rossini-20fa39@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261113T133000
+DTEND;TZID=America/Toronto:20261113T153000
+SUMMARY:Grands airs de Gioachino Rossini
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://calendrier.umontreal.ca/activite/grands-airs-de-gioachino-rossi
+ ni
+DESCRIPTION:Concert présentant de célèbres airs d'opéra de Gioachino Ro
+ ssini.\nDétails : https://bellesheures.umontreal.ca/activites/grands-airs
+ -de-gioachino-rossini/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

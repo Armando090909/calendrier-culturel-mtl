@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-19-seminaire-au-dic-perception-tokens-for-visual-reas-221d9c@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261119T103000
+DTEND;TZID=America/Toronto:20261119T123000
+SUMMARY:Séminaire au DIC : «Perception tokens for visual reasoning» par 
+ Ranjay Krishna
+LOCATION:Pavillon Président-Kennedy\, Montréal
+URL:https://evenements.uqam.ca/evenements/seminaire-au-dic-perception-token
+ s-for-visual-reasoning/34629?date=2026-11-19_10-30-00
+DESCRIPTION:Séminaire sur l'utilisation de jetons de perception pour le ra
+ isonnement visuel en intelligence artificielle.\nPrix : Gratuit\nDétails 
+ : https://www.dic.uqam.ca\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

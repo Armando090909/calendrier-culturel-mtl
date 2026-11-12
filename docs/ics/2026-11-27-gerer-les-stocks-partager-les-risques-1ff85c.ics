@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-27-gerer-les-stocks-partager-les-risques-1ff85c@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261127T131500
+DTEND;TZID=America/Toronto:20261127T151500
+SUMMARY:Gérer les stocks\, partager les risques
+LOCATION:Espace PRO\, Montréal
+URL:https://programmation.salondulivredemontreal.com/activites/gerer-les-st
+ ocks-partager-les-risques
+DESCRIPTION:Table ronde sur les décisions risquées prises par les acteurs
+  de la chaîne du livre et sur les moyens de mieux partager ces risques.\n
+ Détails : https://programmation.salondulivredemontreal.com/activites/gere
+ r-les-stocks-partager-les-risques\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

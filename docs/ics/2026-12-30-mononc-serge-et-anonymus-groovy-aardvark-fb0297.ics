@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-30-mononc-serge-et-anonymus-groovy-aardvark-fb0297@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261230T200000
+DTEND;TZID=America/Toronto:20261230T220000
+SUMMARY:Mononc' Serge et Anonymus & Groovy Aardvark
+LOCATION:MTELUS\, Montréal
+URL:https://mtelus.com/fr/evenements?vue=grille
+DESCRIPTION:Soirée musicale avec Mononc' Serge et Anonymus\, accompagnés 
+ de Groovy Aardvark et Rouge Pompier.\nDétails : https://evenko.ca/fr/even
+ ements/mtelus/mononc-serge-et-anonymus-groovy-aardvark?code=e009343\n(ccmt
+ l.ca)
+END:VEVENT
+END:VCALENDAR

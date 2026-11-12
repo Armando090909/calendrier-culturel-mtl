@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-20-bituin-us-a-live-music-show-and-fundraiser-801817@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261120T200000
+DTEND;TZID=America/Toronto:20261120T220000
+SUMMARY:BITUIN US: a LIVE music show and fundraiser
+LOCATION:Théâtre Sainte-Catherine\, Montréal
+URL:https://theatresaintecatherine.com/event/bituin-us-a-live-music-show-an
+ d-fundraiser/
+DESCRIPTION:BITUIN US est une célébration des artistes philippins les plu
+ s dynamiques de Montréal. Nous avons soigneusement sélectionné cette vi
+ trine pour explorer les nombreuses…\nDétails : https://outlook.live.com
+ /owa/?path=/calendar/action/compose&rrv=addevent&startdt=2026-11-20T20%3A0
+ 0%3A00-05%3A00&enddt=2026-11-20T23%3A00%3A00-05%3A00&location&subject=BITU
+ IN%20US%3A%20a%20LIVE%20music%20show%20and%20fundraiser&body=%3Cp%20style%
+ 3D%22text-align%3A%20center%3B%22%3Ehttps%3A%2F%2Fthepointofsale.com%2Ftic
+ kets%2Fbituinus%3Flang%3Den%3C%2Fp%3EBITUIN%20US%20is%20a%20celebration%20
+ of%20Montreal%27s%20most%20vivacious%20Filipino%20artists.%20We%27ve%20car
+ efully%20curated%20this%20showcase%20to%20explore%20the%20many%20layers%20
+ of%20what%20it%20means%20to%20be%20a%20Filipino%20creating%20in%20the%20ci
+ ty%20we%20love.%20More%20than%20a%20concert%2C%20this%20event%20serves%20a
+ s%20a%20community%20fundraiser%2C%20with%20all%20proceeds%20going%20direct
+ ly%20toward%20supporting%20the%20artists%2C%20the%20dedicated%20team%20who
+ %20made%20it%20all%20possible%2C%20and%20future%20initiatives%20that%20upl
+ ift%20and%20showcase%20Filipino%20creators.Performances%20by%3ALES%20CARLS
+ AMIHAN%20LEONORSAMSTRONGCRISTINE%20TOCACHRIS%20CARODYDOMINIQUEYZABOBrought
+ %20to%20you%20by%20Filipinos%20of%20Montreal%20and%20Th%C3%A9%C3%A2tre%20S
+ ainte%20Catherine%3Cp%20style%3D%22text-align%3A%20center%3B%22%3E%3C%2Fp%
+ 3E\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

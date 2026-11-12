@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-05-the-chosen-battle-vi-2a9de8@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261205T190000
+DTEND;TZID=America/Toronto:20261205T210000
+SUMMARY:The Chosen Battle VI
+LOCATION:Théâtre Fairmount\, Montréal
+URL:https://theatrefairmount.com/vnements/the-chosen-battle-theatre-fairmou
+ nt/20261205-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-55k3-ya9ht-tt7z3-nmc8h
+DESCRIPTION:Battle de danse urbaine présentée par UEZ\, réservée aux 18
+  ans et plus.\nDétails : https://www.universe.com/events/the-chosen-battl
+ e-vi-tickets-LGQ73P\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

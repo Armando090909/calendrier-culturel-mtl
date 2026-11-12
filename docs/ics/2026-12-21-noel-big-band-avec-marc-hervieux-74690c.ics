@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-21-noel-big-band-avec-marc-hervieux-74690c@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261221T193000
+DTEND;TZID=America/Toronto:20261221T213000
+SUMMARY:Noël Big Band avec Marc Hervieux
+LOCATION:Cabaret du Casino de Montréal\, Montréal
+URL:https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-c
+ asino/marc-hervieux-noel-big-band
+DESCRIPTION:Chansons de Noël revisitées en version big band swing\, avec 
+ grands succès d'époque.\nPrix : À partir de 69 $\nDétails : http://www
+ .songkick.com/concerts/43400080-marc-hervieux-at-cabaret-du-casino-de-mont
+ real?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

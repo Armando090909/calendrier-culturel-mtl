@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-02-ensemble-murmurosi-chants-polyphoniques-d-hiver-e34536@ccmtl
+ .ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261202T210000
+DTEND;TZID=America/Toronto:20261202T230000
+SUMMARY:Ensemble Murmurosi : Chants polyphoniques d'hiver
+LOCATION:Église Saint-Enfant-Jésus-du-Mile-End\, Montréal
+URL:https://centredesmusiciensdumonde.com/nouvelles/la-serie-concerts-intim
+ es-devoile-sa-programmation-2026-2027/
+DESCRIPTION:Le trio ukrainien Murmurosi interprète a cappella des chants d
+ 'hiver liés à Noël et au Nouvel An\, issus des traditions de Kyiv et Po
+ ltava.\nPrix : 32 à 39 $\nDétails : https://centredesmusiciensdumonde.tu
+ xedobillet.com/Centre%20des%20musiciens%20du%20monde/ensemble-murmurosi--c
+ hants-polyphoniques-dhiver\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
