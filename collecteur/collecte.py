@@ -1087,7 +1087,7 @@ def main() -> int:
         ancien = memo_h.get(cle) or {}
         # (relu tous les 3 jours tant que le spectacle est à l'affiche, pas une seule fois)
         if ancien and not ancien.get("jours") and ancien.get("dates") and max(ancien["dates"]) < aujourd.isoformat() \
-                and str(memo_h.get(cle + "|v5")) < (aujourd - timedelta(days=3)).isoformat():
+                and (memo_h.get(cle + "|v5") or "") < (aujourd - timedelta(days=3)).isoformat():
             memo_h[cle] = {}
             memo_h[cle + "|v5"] = aujourd.isoformat()
             memo_h.pop(cle + "|v4", None)
@@ -1103,7 +1103,7 @@ def main() -> int:
             del memo_h[cle]
             memo_h[cle + "|v4"] = True
             essai_v2 = True
-        elif memo_h.get(cle) == {} and str(memo_h.get(cle + "|v6")) < (aujourd - timedelta(days=7)).isoformat():
+        elif memo_h.get(cle) == {} and (memo_h.get(cle + "|v6") or "") < (aujourd - timedelta(days=7)).isoformat():
             # 5e essai, puis chaque semaine tant que rien n'est trouvé (une billetterie peut ouvrir ses dates plus tard)
             del memo_h[cle]
             memo_h[cle + "|v6"] = aujourd.isoformat()
