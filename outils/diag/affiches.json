@@ -1,6 +1,6 @@
 {
  "total": 1449,
- "echecs": 9,
+ "echecs": 10,
  "par_site": {
   "turbohaus.ca": {
    "affiches": 10,
@@ -8,6 +8,10 @@
   },
   "calendrier.umontreal.ca": {
    "affiches": 21,
+   "echecs": 1
+  },
+  "westmount.org": {
+   "affiches": 2,
    "echecs": 1
   },
   "images.ctfassets.net": {
@@ -92,10 +96,6 @@
   },
   "www.beaconsfield.ca": {
    "affiches": 5,
-   "echecs": 0
-  },
-  "westmount.org": {
-   "affiches": 2,
    "echecs": 0
   },
   "images.lumacdn.com": {
@@ -396,6 +396,9 @@
   ],
   "s3.eu-west-1.amazonaws.com": [
    "https://s3.eu-west-1.amazonaws.com/offloadmedia.feverup.com/montrealsecret.co/wp-content/uploads/2026/06/17094455/12-QM-Festif-2025-.-Dominic-Courchesne.jpg"
+  ],
+  "westmount.org": [
+   "https://westmount.org/storage/app/resources/resize/1200_0_0_0_auto/img_5133832a2c70c5eda5b81ddb1c342ea4.png"
   ],
   "turbohaus.ca": [
    "https://turbohaus.ca/api/media/file/drink-draw.jpg",
