@@ -136,8 +136,8 @@ sources:
   - {nom: "Théâtre Sainte-Catherine (impro et humour)", cle: salles, type: page_ia, url: "http://theatresaintecatherine.com/", lieu: Théâtre Sainte-Catherine, jours_semaine: [0, 3]}
   # Salles repérées en oct. 2026 (comparaison avec d'autres calendriers) : sites des lieux eux-mêmes
   - {nom: "Centre des musiciens du monde", cle: salles, type: page_ia, url: "https://centredesmusiciensdumonde.com/", lieu: "Centre des musiciens du monde", discipline: musique, jours_semaine: [0, 3], navigateur: true}
-  - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4]}
-  - {nom: "Cinéma L'Amour (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/cinemalamour", lieu: "Cinéma L'Amour", discipline: musique, jours_semaine: [1, 4]}  # 5 nov. 2026 : concerts et soirées seulement (salle aussi de cinéma pour adultes)
+  - {nom: "Terminal Comédie Club (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/terminalcomedieclub", lieu: "Le Terminal Comédie Club", discipline: humour, jours_semaine: [1, 4], par_le_pi: true}
+  - {nom: "Cinéma L'Amour (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/cinemalamour", lieu: "Cinéma L'Amour", discipline: musique, jours_semaine: [1, 4], par_le_pi: true}  # 5 nov. 2026 : concerts et soirées seulement (salle aussi de cinéma pour adultes)
   - {nom: "Théâtre Plaza", cle: salles, type: page_ia, url: "https://theatreplaza.ca/evenements/", lieu: "Théâtre Plaza", discipline: musique, jours_semaine: [0, 2, 4]}  # 5 nov. 2026 : soirées Kino (billets Zeffy, absentes des billetteries lues)
   # ---- Audit des salles du 5 nov. 2026 (Google Maps + liste d'Alexandre) : sites vérifiés lisibles par notre robot
   - {nom: "The Comedy Nest", cle: salles, type: page_ia, url: "https://www.comedynest.com/", lieu: "The Comedy Nest", discipline: humour, jours_semaine: [0, 3]}
@@ -166,7 +166,7 @@ sources:
   # Rocambolesque (12 nov. 2026) : le calendrier de leur site est une image Canva ; leur billetterie donne chaque match avec l'heure et le lieu
   - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://lepointdevente.com/larocambolesque", discipline: humour, jours_semaine: [0, 3], mise_en_page: "chaque match d'improvisation donne les équipes, la date, l'heure et la salle (ex. Aux Angles Ronds) : le lieu est cette salle. Ajoute « La Rocambolesque » au titre."}
   - {nom: "Librairie Le Port de tête", cle: salles, type: page_ia, url: "https://www.leportdetete.com/evenements", lieu: "Librairie Le Port de tête", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "N'était-ce pas l'été (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/netaitcepaslete", lieu: "N'était-ce pas l'été", discipline: lettres, jours_semaine: [1, 4]}
+  - {nom: "N'était-ce pas l'été (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/netaitcepaslete", lieu: "N'était-ce pas l'été", discipline: lettres, jours_semaine: [1, 4], par_le_pi: true}
   - {nom: "Festival / Maison de la poésie de Montréal", cle: salles, type: page_ia, url: "https://www.festivaldelapoesiedemontreal.com/fr/accueil", discipline: poesie, jours_semaine: [1, 4]}
   - {nom: "La Brassée (café-concerts)", cle: salles, type: page_ia, url: "https://labrassee.cafe/", lieu: "La Brassée", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Cabaret de Curiosités", cle: salles, type: page_ia, url: "https://cabaretdecuriosites.com/", lieu: "Cabaret de Curiosités", discipline: humour, jours_semaine: [1, 4], navigateur: true}
@@ -222,7 +222,7 @@ sources:
   # ---------- Musique : salles qui affichent l'heure (Songkick ne la donne pas) ----------
   # Quand un concert est aussi sur Songkick, la version avec l'heure est gardée. Adresses à vérifier :
   # si le rapport montre 0 événement, remplacez par la page « calendrier / shows » de la salle.
-  - {nom: ma.to (musique live), cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/live-music", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: ma.to (musique live), cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/live-music", discipline: musique, jours_semaine: [0, 2, 4], par_le_pi: true}
   - {nom: evenko (concerts), cle: salles, type: page_ia, url: "https://evenko.ca/fr/evenements", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Théâtre Fairmount, cle: salles, type: page_ia, url: "https://theatrefairmount.com/", lieu: Théâtre Fairmount, discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: Club Soda, cle: salles, type: page_ia, url: "https://clubsoda.ca/", lieu: Club Soda, discipline: musique, jours_semaine: [0, 2, 4]}
@@ -356,9 +356,9 @@ sources:
   - {nom: "Soirées quiz (hebdomadaires)", cle: recurrents, type: recurrents, groupe: quiz, discipline: quiz}
   - {nom: "Ligues d'improvisation (hebdomadaires)", cle: recurrents, type: recurrents, groupe: impro, discipline: humour}
   - {nom: "Musique live hebdomadaire (Modavie)", cle: recurrents, type: recurrents, groupe: musique_hebdo, discipline: musique}
-  - {nom: "ma.to – communauté (quiz, trivia)", cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/community", garder: "quiz|trivia|jeu-questionnaire|questionnaire", discipline: quiz, jours_semaine: [0, 3]}
+  - {nom: "ma.to – communauté (quiz, trivia)", cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/community", garder: "quiz|trivia|jeu-questionnaire|questionnaire", discipline: quiz, jours_semaine: [0, 3], par_le_pi: true}
 
   # ---- Salles qui refusent le robot (403) : leurs pages sur des billetteries et agendas publics (28 oct. 2026)
-  - {nom: "Wiggle Room (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/wiggleroommtl", lieu: "Wiggle Room", discipline: humour, jours_semaine: [0, 3]}
-  - {nom: "Le Balcon (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/lebalconcabaret", lieu: "Le Balcon", jours_semaine: [0, 3]}
+  - {nom: "Wiggle Room (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/wiggleroommtl", lieu: "Wiggle Room", discipline: humour, jours_semaine: [0, 3], par_le_pi: true}
+  - {nom: "Le Balcon (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/lebalconcabaret", lieu: "Le Balcon", jours_semaine: [0, 3], par_le_pi: true}
   - {nom: "PAN M 360 – agenda musique", cle: salles, type: page_ia, url: "https://panm360.com/en/agenda-360/", discipline: musique, jours_semaine: [0, 3]}

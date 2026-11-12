@@ -19,8 +19,7 @@ quiz:
 
 # Improvisation : ligues hebdomadaires dont le site n'affiche pas les dates de façon lisible.
 # mois : la saison (la série n'apparaît que ces mois-là).
-impro:
-  - {titre: "La LIM – Ligue d'improvisation montréalaise", lieu: "Cabaret Lion d'Or", adresse: "1676 rue Ontario Est", jour: 6, mois: [9, 10, 11, 12, 1, 2, 3, 4, 5], verifie: 2026-10-30, resume: "Des matchs d'improvisation où tout se joue sur le moment, chaque dimanche.", source: "https://www.mtl.org/en/what-to-do/festivals-and-events/lim-improvisation-lion-d-or"}
+impro: []  # 12 nov. 2026 : la LIM retirée d'ici (la billetterie du Lion d'Or donne ses vraies dates et l'heure, 20 h ; la série hebdomadaire ajoutait des dimanches sans match)
 
 # Musique live chaque soir (12 nov. 2026, vérifié par l'équipe sur https://modavie.com/en/live-music/ : « every night, from 7pm to 10pm »,
 # deux salles). Le site refuse les robots : à revérifier à la main tous les 1-2 mois (la distribution peut changer).
