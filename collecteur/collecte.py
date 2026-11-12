@@ -317,15 +317,6 @@ def _trop_long(*_):
     raise SourceTropLongue("source abandonnée après 10 minutes sans fin de lecture")
 
 
-class DecouverteTropLongue(BaseException):
-    """BaseException, pas Exception : les « except Exception » de la découverte ne peuvent pas l'avaler
-    (11 nov. 2026 : l'arrêt à 35 minutes était attrapé dans la boucle, qui continuait jusqu'à l'annulation)."""
-
-
-def _decouverte_trop_longue(*_):
-    raise DecouverteTropLongue("découverte arrêtée après 35 minutes")
-
-
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
@@ -982,20 +973,37 @@ def main() -> int:
     print(f"Artistes : {sum(1 for e in concerts if e.get('_artistes'))} concerts avec des noms d'artistes extraits.")
     affiches_bloquees(events)  # avant la découverte : elle cherchera l'affiche sur la billetterie
     print(f"[{datetime.now():%H:%M:%S}] découverte (affiches, billets, liens d'écoute)…", flush=True)
-    # garde-fou : au plus 35 minutes, quoi qu'il arrive (11 nov. 2026 : 86 minutes, l'assemblage n'a jamais fini) ;
-    # ce qui a été trouvé est gardé et la suite reprend à la collecte suivante
-    signal.signal(signal.SIGALRM, _decouverte_trop_longue)
-    signal.alarm(35 * 60)
+    # Dans un processus séparé, arrêté de l'extérieur après 35 minutes quoi qu'il arrive (12 nov. 2026 : un arrêt
+    # programmé à l'intérieur ne suffisait pas, l'assemblage a été annulé deux fois). Voir decouverte_seule.py.
+    import subprocess
+    cache = Path(__file__).parent / "cache"
+    (cache / "_decouverte_resultat.json").unlink(missing_ok=True)
+    (cache / "_decouverte_evenements.json").write_text(json.dumps(events, ensure_ascii=False, default=lambda o: list(o) if isinstance(o, (set, frozenset)) else str(o)), encoding="utf-8")
+    delai = 35
+    proc = subprocess.Popen([sys.executable, "-u", str(Path(__file__).parent / "decouverte_seule.py"),
+                             str(int(reglages.get("max_recherches_decouverte", 500))), str(delai), aujourd.isoformat()])
     try:
-        n = decouverte.enrichir(events, aujourd, telecharger, int(reglages.get("max_recherches_decouverte", 500)),
-                                 page_rendue=connecteurs.page_rendue)
-        print(f"Découverte : {n} concerts ou films avec des liens vérifiés.")
-        # Décisions Deezer / Apple Music (indices pour et contre) : dans le rapport, pour contrôle
-        notes["catalogues"] = decouverte.JOURNAL_CATALOGUES[-300:]
-    except (Exception, DecouverteTropLongue) as exc:
-        print(f"Liens de découverte en échec ou arrêtés : {exc}", flush=True)
-    finally:
-        signal.alarm(0)
+        proc.wait(timeout=delai * 60)
+    except subprocess.TimeoutExpired:
+        print(f"Découverte arrêtée après {delai} minutes ; la suite reprendra à la prochaine collecte.", flush=True)
+        proc.terminate()
+        try:
+            proc.wait(timeout=20)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            proc.wait()
+    try:
+        notes["catalogues"] = json.loads((cache / "_decouverte_resultat.json").read_text(encoding="utf-8"))["catalogues"]
+    except Exception:
+        pass
+    # Ce qui a été trouvé (la mémoire, enregistrée en cours de route) est appliqué aux événements, sans réseau.
+    try:
+        n = decouverte.enrichir(events, aujourd, telecharger, 0, max_affiches=0, page_rendue=None)
+        print(f"Découverte appliquée : {n} concerts ou films avec des liens vérifiés.")
+    except Exception as exc:
+        print(f"Découverte : application de la mémoire en échec : {exc}")
+    (cache / "_decouverte_evenements.json").unlink(missing_ok=True)
+    (cache / "_decouverte_resultat.json").unlink(missing_ok=True)
     print(f"[{datetime.now():%H:%M:%S}] découverte terminée", flush=True)
     try:
         images_des_salles(events, aujourd, reglages.get("images_de_salle"))

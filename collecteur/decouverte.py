@@ -733,6 +733,8 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
                 if (not pm or "prix" not in pm or not pm.get("v2") or (not pm.get("affiche") and pm["le"] < vieux)) \
                         and lues_affiche < max_affiches and time.time() < fin_affiches:
                     lues_affiche += 1
+                    if lues_affiche % 40 == 0:  # enregistrée en cours de route : un arrêt de l'extérieur ne perd rien
+                        MEMOIRE.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
                     try:
                         try:
                             html = telecharger(url, "text/html").text
@@ -793,6 +795,8 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
             if not src or e.get("affiche") or e.get("image") or freq.get(src, 0) >= 3:
                 continue
             cle = "img:" + src
+            if cle not in memo and max_affiches == 0:  # passage « mémoire seulement » : aucun accès au réseau
+                continue
             if cle not in memo:
                 try:
                     r = requests.get(src, timeout=20, stream=True, headers={"User-Agent": "CalendrierCulturelMTL/1.0 (+https://ccmtl.ca)"})
@@ -821,6 +825,8 @@ def enrichir(events: list[dict], aujourd: date, telecharger, max_recherches: int
             frais = m and (m["liens"] or (m["le"] >= vieux and m.get(version)))
             if not frais and cherches < max_recherches and time.time() < fin_budget:
                 cherches += 1
+                if cherches % 20 == 0:
+                    MEMOIRE.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
                 liens = []
                 echec = False
                 contexte = plat(e["titre"] + " " + e.get("resume", ""))
