@@ -166,7 +166,6 @@ sources:
   # Rocambolesque (12 nov. 2026) : le calendrier de leur site est une image Canva ; leur billetterie donne chaque match avec l'heure et le lieu
   - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://lepointdevente.com/larocambolesque", discipline: humour, jours_semaine: [0, 3], mise_en_page: "chaque match d'improvisation donne les équipes, la date, l'heure et la salle (ex. Aux Angles Ronds) : le lieu est cette salle. Ajoute « La Rocambolesque » au titre."}
   - {nom: "Librairie Le Port de tête", cle: salles, type: page_ia, url: "https://www.leportdetete.com/evenements", lieu: "Librairie Le Port de tête", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Cabaret Jazz L'Entracte (Zeffy)", cle: salles, type: page_ia, url: "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "N'était-ce pas l'été (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/netaitcepaslete", lieu: "N'était-ce pas l'été", discipline: lettres, jours_semaine: [1, 4]}
   - {nom: "Festival / Maison de la poésie de Montréal", cle: salles, type: page_ia, url: "https://www.festivaldelapoesiedemontreal.com/fr/accueil", discipline: poesie, jours_semaine: [1, 4]}
   - {nom: "La Brassée (café-concerts)", cle: salles, type: page_ia, url: "https://labrassee.cafe/", lieu: "La Brassée", discipline: musique, jours_semaine: [0, 3]}
@@ -263,7 +262,7 @@ sources:
   - {nom: "Upstairs Jazz Bar & Grill", cle: salles, type: page_ia, url: "https://www.upstairsjazz.com/", lieu: "Upstairs Jazz Bar & Grill", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "http://www.dieseonze.com/calendrier.php?l=fr", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4], mise_en_page: "calendrier du mois : chaque jour donne l'heure et le spectacle ; « FERME / CLOSED » veut dire qu'il n'y a pas de spectacle ce soir-là."}  # le site n'accepte pas https (12 nov. 2026)
   - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4], par_le_pi: true}  # l'accueil (lu par le Pi) affiche les 6 prochains spectacles ; Zeffy bloque les robots
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
   - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}
@@ -362,5 +361,4 @@ sources:
   # ---- Salles qui refusent le robot (403) : leurs pages sur des billetteries et agendas publics (28 oct. 2026)
   - {nom: "Wiggle Room (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/wiggleroommtl", lieu: "Wiggle Room", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "Le Balcon (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/lebalconcabaret", lieu: "Le Balcon", jours_semaine: [0, 3]}
-  - {nom: "Cabaret Jazz L'Entracte (billetterie Zeffy)", cle: salles, type: page_ia, url: "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "PAN M 360 – agenda musique", cle: salles, type: page_ia, url: "https://panm360.com/en/agenda-360/", discipline: musique, jours_semaine: [0, 3]}
