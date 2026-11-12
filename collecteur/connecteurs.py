@@ -459,7 +459,10 @@ def _demarrer_navigateur() -> None:
     atexit.register(fermer_navigateur)
 
 
-def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
+_CLIC = re.compile(r"(?i)billets?|tickets?|acheter|r[ée]server|r[ée]servation|choisir une date|s[ée]lectionne|dates|horaires?|repr[ée]sentations|book|calendrier")
+
+
+def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0, cliquer: bool = False) -> str:
     """HTML d'une page après exécution de son JavaScript, dans Chrome sans fenêtre (Playwright).
     Le même nom de robot que pour les autres téléchargements. Les images, polices et vidéos ne sont pas chargées.
     Un onglet neuf par page ; si Chrome plante, il est relancé et la page réessayée une fois."""
@@ -481,6 +484,27 @@ def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
         if _autre_ville(url, page.url):
             raise RuntimeError(f"page redirigée vers une autre ville ({page.url[:80]}) (navigateur)")
         html = page.content()
+        if cliquer:
+            # 12 nov. 2026 : sur plusieurs sites (Espace St-Denis, billetteries de théâtre), les dates et heures n'apparaissent
+            # qu'après un clic sur « Billets » ou « Sélectionnez une date » (fenêtre qui s'ouvre sur la page). On clique sur
+            # au plus 3 de ces boutons (pas les liens vers d'autres pages : ceux-là sont lus à part) et on garde ce qui s'affiche.
+            boutons = page.locator("button, [role=button], a[href^='#'], a[href^='javascript']").filter(has_text=_CLIC)
+            for i in range(min(boutons.count(), 3)):
+                try:
+                    boutons.nth(i).click(timeout=5000)
+                    page.wait_for_timeout(2500)
+                    html += "\n<section data-clic>" + page.content() + "</section>"
+                    for cadre in page.frames[1:]:
+                        try:
+                            html += "\n<section data-cadre>" + cadre.content() + "</section>"
+                        except Exception:
+                            pass
+                    if page.url.split("#")[0] != url.split("#")[0]:
+                        page.go_back(timeout=15000)
+                        page.wait_for_timeout(1500)
+                    page.keyboard.press("Escape")
+                except Exception:
+                    pass
         # Beaucoup de sites (Wix, Squarespace, billetteries intégrées) affichent leur calendrier dans un cadre (iframe) :
         # on ajoute le contenu de chaque cadre à la page.
         for cadre in page.frames[1:]:
@@ -492,7 +516,7 @@ def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
     except Exception as exc:
         if _essai == 0 and re.search(r"(?i)crash|closed|disconnected|Target", str(exc)):
             fermer_navigateur()  # Chrome a planté : on le relance, et on réessaie cette page une fois
-            return page_rendue(url, attente_ms, _essai=1)
+            return page_rendue(url, attente_ms, _essai=1, cliquer=cliquer)
         raise
     finally:
         try:
