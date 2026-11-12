@@ -1104,8 +1104,7 @@ def main() -> int:
             memo_h[cle + "|v4"] = True
             essai_v2 = True
         elif memo_h.get(cle) == {} and str(memo_h.get(cle + "|v6")) < (aujourd - timedelta(days=7)).isoformat():
-            # 5e essai, puis chaque semaine tant que rien n'est trouvé : la page affichée en cliquant sur « Billets »,
-            # « Sélectionnez une date »… (12 nov. 2026 : TNM, Théâtre d'Aujourd'hui, Espace St-Denis)
+            # 5e essai, puis chaque semaine tant que rien n'est trouvé (une billetterie peut ouvrir ses dates plus tard)
             del memo_h[cle]
             memo_h[cle + "|v6"] = aujourd.isoformat()
             essai_v2 = True
@@ -1117,7 +1116,7 @@ def main() -> int:
                 html = telecharger(x["url"], "text/html").text
                 texte = texte_page(html, x["url"])
                 if len(texte) < 800 or essai_v2:  # page affichée par JavaScript (et, au 5e essai, en cliquant)
-                    texte = texte_page(connecteurs.page_rendue(x["url"], cliquer=bool(memo_h.get(cle + "|v6"))), x["url"])
+                    texte = texte_page(connecteurs.page_rendue(x["url"]), x["url"])
                 h = ia.horaire_serie(x["titre"], x["debut"], x["fin"], texte)
                 if not h and essai_v2:
                     # La billetterie : le lien connu, sinon les liens « Billets / Réserver » de la page du spectacle
@@ -1126,7 +1125,9 @@ def main() -> int:
                     cibles += [u for u in liens_billets(html, x["url"]) if u not in cibles and u != x["url"]]
                     for u in cibles[:3]:
                         try:
-                            tb = texte_page(connecteurs.page_rendue(u, cliquer=bool(memo_h.get(cle + "|v6"))), u)
+                            # 12 s d'attente : les calendriers de billetterie (ex. TNM) se remplissent lentement ; à 2,5 s,
+                            # la page était encore vide (12 nov. 2026 : vérifié, tout l'horaire apparaît à 15 s)
+                            tb = texte_page(connecteurs.page_rendue(u, 12000), u)
                         except Exception as exc:
                             tb = ""
                             if "403" in str(exc):
