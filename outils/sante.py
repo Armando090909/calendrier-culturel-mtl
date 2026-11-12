@@ -23,6 +23,9 @@ from urllib.parse import urlparse
 RACINE = Path(__file__).resolve().parent.parent
 F_ETAT = RACINE / "collecteur" / "cache" / "sante.json"
 JOURS_AVANT_AVIS = 3
+# Une salle n'est signalée comme « mince » qu'après 3 semaines de suite (12 nov. 2026, demande de l'équipe :
+# une programmation ne bouge pas en quelques jours, surtout pour les lieux d'expositions ou de festivals).
+JOURS_MINCE = 21
 
 
 def gh(*args):
@@ -76,6 +79,9 @@ def problemes(rapport, data, etat):
     except Exception:
         salles = {}
     minces = []
+    jour = date.fromisoformat(rapport.get("date") or date.today().isoformat())
+    depuis = etat.setdefault("minces_depuis", {})  # source -> premier jour où elle a paru mince
+    vues = set()
     for s in rapport.get("sources", []):
         c = salles.get(s["source"])
         n = s.get("evenements", 0) + s.get("series", 0)
@@ -84,14 +90,22 @@ def problemes(rapport, data, etat):
         saison = [int(m.group(1)) for d in s.get("diagnostic", []) for m in [re.match(r"annonces à venir dans la page : (\d+)", d)] if m]
         a_venir = max(saison) if saison else None
         if c and not s.get("erreur") and (a_venir is not None and a_venir <= 3 or a_venir is None and n == 0):
+            vues.add(s["source"])
+            premier = depuis.setdefault(s["source"], jour.isoformat())
+            if (jour - date.fromisoformat(premier)).days < JOURS_MINCE:
+                continue  # pas encore 3 semaines : on attend
             elargi = next((d for d in s.get("diagnostic", []) if "élargie" in d), "")
             minces.append(f"- **{c['lieu']}** ({s['source']}) : "
                           + (f"{a_venir} spectacle(s) annoncé(s) pour toute la saison" if a_venir is not None else "aucune sortie")
                           + f" — lue : {c['url']}"
+                          + f" (depuis le {premier})"
                           + (f"\n  - pages essayées : {elargi.split(' à ', 1)[-1][:300]}" if elargi else ""))
+    for src in list(depuis):
+        if src not in vues:
+            del depuis[src]  # la salle annonce de nouveau sa programmation : le compte repart à zéro
     if minces:
         out["mince"] = ("Salles dont la programmation semble incomplète : élargir la recherche",
-                        f"{len(minces)} salles n'annoncent que 0 à 3 spectacles pour toute la saison, même après la lecture "
+                        f"{len(minces)} salles n'annoncent que 0 à 3 spectacles pour toute la saison depuis au moins 3 semaines, même après la lecture "
                         "des pages de programmation trouvées dans le menu de leur site :\n\n" + "\n".join(sorted(minces)),
                         "Pour chaque salle : trouver sa page de programmation ou de calendrier (saison en cours) et la "
                         "donner à Claude, qui l'inscrit dans sources.yaml. Une salle fermée pour la saison peut être "
@@ -118,7 +132,7 @@ def main():
     for cle, (titre, detail, action) in actuels.items():
         p = ouverts.setdefault(cle, {"depuis": jour, "jours": 0, "issue": None})
         p["jours"] += 1
-        seuil = 1 if cle.startswith(("robots:", "total")) else 2 if cle == "mince" else JOURS_AVANT_AVIS
+        seuil = 1 if cle.startswith(("robots:", "total")) else 1 if cle == "mince" else JOURS_AVANT_AVIS  # « mince » : les 3 semaines sont comptées salle par salle
         if cle == "mince" and p["issue"]:  # avis déjà ouvert : sa liste est tenue à jour
             gh("issue", "edit", str(p["issue"]), "--body", f"{detail}\n\n**Mis à jour** : {jour}.\n\n**À faire** : {action}")
         if p["jours"] >= seuil and not p["issue"]:
