@@ -198,6 +198,7 @@ sources:
   - {nom: "Hexagram – conférences (recherche-création)", cle: salles, type: page_ia, url: "https://hexagram.ca/en/category/activities/conferences-en/", discipline: conference, jours_semaine: [1, 4]}
   # Improvisation : LIM (dimanches, Cabaret Lion d'Or), LNI (MTELUS et ailleurs). Pages lues par l'IA, avec le navigateur.
   - {nom: "Cabaret Lion d'Or (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/liondor", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
+  - {nom: "LIM – saison (billetterie)", cle: salles, type: page_ia, url: "https://lepointdevente.com/billets/lim20262027", lieu: "Cabaret Lion d'Or", discipline: humour, jours_semaine: [0, 3], mise_en_page: "chaque match de la LIM est listé avec sa date et son heure ; ne garde pas la passe de saison. Titre : « LIM – Ligue d'improvisation montréalaise »."}  # toute la saison 2026-2027 (donnée par l'équipe, 12 nov. 2026)
   - {nom: "Cabaret Lion d'Or (LIM et spectacles)", cle: salles, type: page_ia, url: "https://cabaretliondor.com/", lieu: "Cabaret Lion d'Or", jours_semaine: [0, 3], navigateur: true}
 
   # ---------- Jeune public ----------
