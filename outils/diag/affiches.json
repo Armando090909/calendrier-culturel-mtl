@@ -1,7 +1,11 @@
 {
  "total": 1449,
- "echecs": 10,
+ "echecs": 12,
  "par_site": {
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
+   "echecs": 3
+  },
   "turbohaus.ca": {
    "affiches": 10,
    "echecs": 2
@@ -16,10 +20,6 @@
   },
   "images.ctfassets.net": {
    "affiches": 44,
-   "echecs": 1
-  },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
    "echecs": 1
   },
   "lelivart.com": {
@@ -410,11 +410,13 @@
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
   ],
+  "www.ville.dorval.qc.ca": [
+   "https://www.ville.dorval.qc.ca/resize/5dec8bd6c594bc9f2b14574b7b54725f-1",
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg",
+   "https://www.ville.dorval.qc.ca/resize/9e271916e53c1bbf2f2b793368d4418c-1"
+  ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
-  ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
