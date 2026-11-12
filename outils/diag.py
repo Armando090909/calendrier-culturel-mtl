@@ -35,6 +35,28 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
             out[url] = {"erreur": str(exc)[:200]}
         print(url, str(out[url])[:200])
         continue
+    if ligne.startswith("RESEAU "):  # adresses appelées par la page pendant l'affichage (trouver l'API d'un calendrier)
+        url = ligne[7:]
+        try:
+            if "ctx" not in c._NAV:
+                c._demarrer_navigateur()
+            page, appels = c._NAV["ctx"].new_page(), []
+            def _rep(rp):
+                if rp.request.resource_type in ("xhr", "fetch", "document", "script"):
+                    try:
+                        corps = rp.text()[:600] if rp.request.resource_type in ("xhr", "fetch") else ""
+                    except Exception:
+                        corps = ""
+                    appels.append({"url": rp.url[:400], "type": rp.request.resource_type, "statut": rp.status, "debut": corps})
+            page.on("response", _rep)
+            page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(20000)
+            page.close()
+            out[url] = {"appels": [a for a in appels if not re.search(r"parastorage|wixstatic|google|gstatic|visitor-analytics|frog\.wix", a["url"])][:60]}
+        except Exception as exc:
+            out[url] = {"erreur": str(exc)[:200]}
+        print(url, str(out[url])[:300])
+        continue
     if ligne.startswith("IMG "):  # image : taille et empreinte (repérer les images par défaut identiques)
         url = ligne[4:]
         try:
