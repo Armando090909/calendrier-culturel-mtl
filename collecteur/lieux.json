@@ -24,7 +24,12 @@
  "Anacostia Neighborhood Library": null,
  "Ancien Théâtre Desjardins": null,
  "Annexe Herb Linder": null,
- "Argo Bookshop": null,
+ "Argo Bookshop": {
+  "alias": [],
+  "lat": 45.49335,
+  "lon": -73.58004,
+  "quartier": "Ville-Marie"
+ },
  "Arprim": null,
  "Arsenal art contemporain": {
   "lat": 45.4918,
@@ -588,7 +593,12 @@
   "lon": -73.5916,
   "quartier": "Le Plateau-Mont-Royal"
  },
- "Centre récréatif Édouard-Rivet": null,
+ "Centre récréatif Édouard-Rivet": {
+  "alias": [],
+  "lat": 45.62848,
+  "lon": -73.50037,
+  "quartier": ""
+ },
  "Centre socioculturel de l'Île-Bizard": {
   "lat": 45.48862,
   "lon": -73.88231,
@@ -1046,6 +1056,11 @@
  "Koujina Café": null,
  "L'Adversaire – Pub et boutique ludiques": null,
  "L'Artère fabricathèque": null,
+ "L'Entracte": {
+  "lat": 45.49232,
+  "lon": -73.5761,
+  "quartier": "Ville-Marie"
+ },
  "L'Entrepôt – maison de la culture de Lachine": {
   "lat": 45.433,
   "lon": -73.686,
@@ -1639,7 +1654,12 @@
   "lon": -73.56897,
   "quartier": "Le Plateau-Mont-Royal"
  },
- "Parc Lafontaine": null,
+ "Parc Lafontaine": {
+  "alias": [],
+  "lat": 45.52626,
+  "lon": -73.56897,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Parc Leroux": {
   "lat": 45.43435,
   "lon": -73.59513,
@@ -1679,7 +1699,12 @@
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
  },
- "Pavillon Adrien-Pinard": null,
+ "Pavillon Adrien-Pinard": {
+  "alias": [],
+  "lat": 45.51052,
+  "lon": -73.5699,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Pavillon Hubert-Aquin (A), UQAM": {
   "adresse": "400 rue Sainte-Catherine Est",
   "alias": [],
@@ -1694,6 +1719,7 @@
   "lon": -73.56071,
   "quartier": "Ville-Marie"
  },
+ "Pavillon Paul-Gérin-Lajoie": null,
  "Pavillon Président-Kennedy": {
   "alias": [],
   "lat": 45.509,

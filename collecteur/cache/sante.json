@@ -2,18 +2,18 @@
  "ouverts": {
   "champ:calendrier.umontreal.ca:salle": {
    "depuis": "2026-11-11",
-   "jours": 1,
+   "jours": 2,
    "issue": null
   },
   "champ:leministere.ca:heure": {
    "depuis": "2026-11-11",
-   "jours": 1,
+   "jours": 2,
    "issue": null
   },
   "mince": {
    "depuis": "2026-11-11",
-   "jours": 1,
-   "issue": null
+   "jours": 2,
+   "issue": 14
   }
  },
  "sources_ok": {
@@ -130,6 +130,7 @@
   "Wishbone Galerie d'art": 1,
   "Upstairs Jazz Bar & Grill": 19,
   "Club Balattou (musiques du monde)": 17,
+  "Cabaret Jazz L'Entracte": 6,
   "Le Balcon": 27,
   "Turbo Haüs": 21,
   "Quai des Brumes": 2,
@@ -248,7 +249,8 @@
   "2026-11-08": 2505,
   "2026-11-09": 2547,
   "2026-11-10": 2568,
-  "2026-11-11": 2933
+  "2026-11-11": 2933,
+  "2026-11-12": 2806
  },
- "dernier_jour": "2026-11-11"
+ "dernier_jour": "2026-11-12"
 }
