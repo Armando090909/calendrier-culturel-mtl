@@ -459,7 +459,8 @@ def _demarrer_navigateur() -> None:
     atexit.register(fermer_navigateur)
 
 
-_CLIC = re.compile(r"(?i)billets?|tickets?|acheter|r[ée]server|r[ée]servation|choisir une date|s[ée]lectionne|dates|horaires?|repr[ée]sentations|book|calendrier")
+# (pas de « (?i) » : Playwright passe l'expression au JavaScript, qui ne le connaît pas ; re.IGNORECASE est traduit)
+_CLIC = re.compile(r"billets?|tickets?|acheter|r[ée]server|r[ée]servation|choisir une date|s[ée]lectionne|dates|horaires?|repr[ée]sentations|book|calendrier", re.IGNORECASE)
 
 
 def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0, cliquer: bool = False) -> str:
@@ -488,8 +489,12 @@ def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0, cliquer: bool
             # 12 nov. 2026 : sur plusieurs sites (Espace St-Denis, billetteries de théâtre), les dates et heures n'apparaissent
             # qu'après un clic sur « Billets » ou « Sélectionnez une date » (fenêtre qui s'ouvre sur la page). On clique sur
             # au plus 3 de ces boutons (pas les liens vers d'autres pages : ceux-là sont lus à part) et on garde ce qui s'affiche.
-            boutons = page.locator("button, [role=button], a[href^='#'], a[href^='javascript']").filter(has_text=_CLIC)
-            for i in range(min(boutons.count(), 3)):
+            try:
+                boutons = page.locator("button, [role=button], a[href^='#'], a[href^='javascript']").filter(has_text=_CLIC)
+                n_boutons = min(boutons.count(), 3)
+            except Exception:
+                n_boutons = 0
+            for i in range(n_boutons):
                 try:
                     boutons.nth(i).click(timeout=5000)
                     page.wait_for_timeout(2500)
