@@ -1,1 +1,90 @@
-{}
+{
+ "https://www.bistroajojo.com/livemusic": {
+  "appels": [
+   {
+    "url": "https://www.bistroajojo.com/livemusic",
+    "type": "document",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://browser.sentry-cdn.com/7.120.3/modulemetadata.es5.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://www.bistroajojo.com/_api/v1/access-tokens?cacheBust=1794494082812-2872799561-3088723066",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "{\"hs\":1527837350,\"visitorId\":\"2c07478d-be64-4d6e-8dbc-a001e9e405c8\",\"svSession\":\"6480bcd24b4d09b104a7a7f275d4d3d11161077c75ebb3cb48703f966d9609c1f22eb679e1a89f111f9816ac39fb53c11e60994d53964e647acf431e4f798bcd9f651cca1aefc8337875a03aa74ae288c4796f5a0fb9212563f2819121ad0e691674b0ebe2cdd58c0fd4a7f7674c418a8da22338d2da8b9d8a0e2a41b33f9baf0b62ede275252baa5570fd5e6de47c11\",\"ctToken\":\"NzBJSUhWeThFNTJFWWF6d0NmSUtjcTBOVWhBT25DYWcxWmQzMGV3Z0FxWXx7InVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChjb21wYXRpYmxlOyBDYWxlbmRyaWVyQ3VsdHVyZWxNVEwvMS4wOyAraHR0cHM6Ly9jY210bC5jYTsgcHJvamV0IGLDqW7DqXZvbGUgc2FucyBidXQgbHVjcmF0aW"
+   },
+   {
+    "url": "https://www.bistroajojo.com/_api/tag-manager/api/v1/tags/sites/c717c9c1-6a3e-4e4b-9af5-2995d9e719ed?wixSite=false&htmlsiteId=4fb5e932-31df-48a0-9ec9-661234c9f41a&language=fr",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "{\"tags\":[],\"errors\":[],\"config\":{\"consentPolicy\":null,\"geo\":\"US\",\"experiments\":{\"specs.cookieConsent.PolicyByGlobalPrivacyControl\":\"true\",\"specs.cookieConsent.CcpHostsIntegrationSUPPORT\":\"true\",\"specs.tagManagerConfigOverrides\":\"true\",\"specs.cookieConsent.CcpHostsIntegrationLOGIN_PAGE_SYMPHONY\":\"true\",\"specs.tagManagerRenderTagByPageID\":\"true\",\"wixBannerUseNewCipaDesign\":\"A\",\"specs.tagManagerUseRouterAndPremiumForSiteMetadata\":\"true\",\"specs.ignoreDisabledAppMarketTemplates\":\"false\",\"specs.tagManagerEmbedScriptsFreeSites\":\"true\",\"specs.cookieConsent.gtmDeferredDataLayerPush\":\"false\",\"specs.cook"
+   },
+   {
+    "url": "https://browser.sentry-cdn.com/7.120.3/bundle.tracing.es5.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://panorama.wixapps.net/api/v1/bulklog",
+    "type": "fetch",
+    "statut": 204,
+    "debut": ""
+   },
+   {
+    "url": "https://plugin.eventscalendar.co/widget.html?pageId=i4bej&compId=comp-lw7ztuwi2&viewerCompId=comp-lw7ztuwi2&siteRevision=151&viewMode=site&deviceType=desktop&locale=fr&tz=America%2FToronto&regionalLanguage=fr&width=979&height=564&instance=fZN-Ii1Y3AME0LxV3yi4ngjfM4w_audEfaOOkM0H5F8.eyJpbnN0YW5jZUlkIjoiMTNkN2M2ODQtNzdhYi0wMWI1LTBmZDgtYTNkMjVmZjA3Yjc5IiwiYXBwRGVmSWQiOiIxMzNiYjExZS1iM2RiLTdlM2ItNDliY",
+    "type": "document",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://dist.eventscalendar.co/embed.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://panorama.wixapps.net/api/v1/bulklog",
+    "type": "fetch",
+    "statut": 204,
+    "debut": ""
+   },
+   {
+    "url": "https://cdn.jsdelivr.net/npm/js-md5@0.7.2/src/md5.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.5/fingerprint2.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://inffuse.eventscalendar.co/js/v0.1/calendar/data?exclude=events&_referrer=https%3A%2F%2Fwww.bistroajojo.com%2F",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "{\"platform\": \"wix\", \"server\": \"https://inffuse.eventscalendar.co\", \"alias\": null, \"app\": {\"data\": {}, \"meta\": {\"id\": \"calendar\"}}, \"demo_mode\": false, \"view_mode\": \"site\", \"billing_service\": \"\", \"editing\": false, \"wix\": {\"compId\": \"comp-lw7ztuwi2\", \"load_sdk\": false, \"load_ui\": false, \"demo_mode\": false}, \"quotas\": {}, \"site\": {\"meta\": {\"id\": \"13d7c684-77ab-01b5-0fd8-a3d25ff07b79\", \"created\": 1429829681000, \"platform\": \"wix\", \"key_name\": \"13d7c684-77ab-01b5-0fd8-a3d25ff07b79\", \"user_id\": \"user_Jo3psNeRIZvm4nFJQQYHF\", \"plan\": \"premium\", \"plan_override\": null, \"domain\": \"http://bistroajojomontre"
+   },
+   {
+    "url": "https://inffuse.eventscalendar.co/api/v0.1/projects/proj_Kc954zP3E3CGX5voTxxTD/data/public/events?user=user_Jo3psNeRIZvm4nFJQQYHF&app=calendar",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "{\"result\": true, \"value\": [{\"endHour\": 3, \"allday\": false, \"end\": \"1438819200000\", \"description\": \"Trio Blues / Rock\", \"title\": \"FREDY FREEDOM\", \"dateonly\": false, \"endMinutes\": 0, \"start\": \"1438732800000\", \"startMinutes\": 30, \"startHour\": 22}, {\"endHour\": 3, \"allday\": false, \"end\": \"1438905600000\", \"description\": \"Full Band Blues / Funk / Rock\", \"title\": \"KENNY DUPREE\", \"dateonly\": false, \"endMinutes\": 0, \"start\": \"1438819200000\", \"startMinutes\": 30, \"startHour\": 22}, {\"endHour\": 3, \"allday\": false, \"end\": \"1438992000000\", \"description\": \"Full band Blues / Funk / Rock\", \"title\": \"WANG DANG DO"
+   },
+   {
+    "url": "https://inffuse.eventscalendar.co/api/v0.1/analytics/track",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "{\"result\": true}"
+   }
+  ]
+ }
+}
