@@ -100,7 +100,8 @@ sources:
   - {nom: "Théâtre Denise-Pelletier – pièces", cle: theatre, type: page_ia, url: "https://www.denise-pelletier.qc.ca/pieces/", lieu: Théâtre Denise-Pelletier, discipline: theatre, jours_semaine: [0, 3], mise_en_page: "ne garde que La nuit m'avale et Medea Luz : les autres pièces ont déjà chaque représentation datée par le calendrier du théâtre"}
   - {nom: Usine C, cle: theatre, type: page_ia, url: "https://usine-c.com/", lieu: Usine C, jours_semaine: [0, 3]}
   - {nom: Centaur, cle: theatre, type: page_ia, url: "https://centaurtheatre.com/fr/", lieu: Théâtre Centaur, discipline: theatre, jours_semaine: [0, 3], navigateur: true}
-  - {nom: Centre Segal, cle: theatre, type: page_ia, url: "https://www.segalcentre.org/fr/home", lieu: Centre Segal, jours_semaine: [0, 3], navigateur: true}
+  # Segal (12 nov. 2026) : l'accueil ne donnait rien ; la programmation complète est sur leur billetterie (Spektrix)
+  - {nom: Centre Segal, cle: theatre, type: page_ia, url: "https://purchase.segalcentre.org/Events", lieu: Centre Segal, jours_semaine: [0, 3], navigateur: true, mise_en_page: "chaque spectacle donne son titre puis sa date ou sa période (ex. « Sun November 22, 2026 - Sun December 20, 2026 » = une série de représentations). Les représentations spéciales d'une pièce déjà listée (Thursday Night Out, Touch Tour, Audio-Described Performance) sont des représentations de cette même pièce : ne les donne pas comme des spectacles séparés."}
   - {nom: Espace Libre, cle: theatre, type: page_ia, url: "http://espacelibre.qc.ca/", lieu: Espace Libre, discipline: theatre, jours_semaine: [0, 3]}
   - {nom: MAI, cle: theatre, type: page_ia, url: "https://m-a-i.qc.ca/", lieu: "Montréal, arts interculturels (MAI)", jours_semaine: [0, 3]}
   - {nom: Maison Théâtre, cle: theatre, type: page_ia, url: "https://www.maisontheatre.com/", lieu: Maison Théâtre, discipline: theatre, jours_semaine: [0, 3]}
@@ -113,7 +114,7 @@ sources:
   - {nom: TOHU, cle: salles, type: page_ia, url: "https://tohu.ca/en/season/shows?type=events", lieu: TOHU, discipline: cirque, jours_semaine: [0, 3]}
   - {nom: Place des Arts, cle: salles, type: page_ia, url: "https://www.placedesarts.com/en/programming", jours_semaine: [0, 3]}
   - {nom: "Place des Arts – destination des Fêtes", cle: salles, type: page_ia, url: "https://www.placedesarts.com/destination-du-temps-des-fetes", jours_semaine: [0, 3]}
-  - {nom: "Orchestre Métropolitain", cle: salles, type: page_ia, url: "https://www.orchestremetropolitain.com/fr/concerts/", discipline: musique, jours_semaine: [0, 3]}
+  - {nom: "Orchestre Métropolitain", cle: salles, type: page_ia, url: "https://orchestremetropolitain.com/fr/programmation/", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Orchestre Métropolitain – Des airs de fêtes", cle: salles, type: page_ia, url: "https://orchestremetropolitain.com/fr/concerts/des-airs-de-fetes-2026/", discipline: musique, jours_semaine: [0, 3]}
   - {nom: Danse Danse, cle: salles, type: page_ia, url: "https://www.dansedanse.ca/fr/spectacles", discipline: danse, jours_semaine: [0, 3]}
   - {nom: Agora de la danse, cle: salles, type: page_ia, url: "https://agoradanse.com/programmation/", lieu: Agora de la danse, discipline: danse, jours_semaine: [0, 3]}
@@ -143,7 +144,7 @@ sources:
   - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/", lieu: "Studio 303", discipline: danse, jours_semaine: [1, 4]}
   - {nom: "Théâtre de la LNI", cle: salles, type: page_ia, url: "https://www.lni.ca/evenements/", discipline: humour, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Bistro à Jojo", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/livemusic", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
-  - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/spectacles/", discipline: jeune, jours_semaine: [2], navigateur: true}
+  - {nom: "Tortue Berlue (théâtre jeune public)", cle: salles, type: page_ia, url: "https://www.tortueberlue.com/calendrier-automne-et-noel-2026/", discipline: jeune, jours_semaine: [2]}  # page de calendrier de la saison (à changer à la saison suivante, voir Actualités)
   - {nom: "Librairie L'Euguélionne", cle: salles, type: page_ia, url: "https://www.librairieleuguelionne.com/", lieu: "L'Euguélionne", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Librairie Drawn & Quarterly (événements)", cle: salles, type: page_ia, url: "https://mtl.drawnandquarterly.com/events", lieu: "Librairie Drawn & Quarterly", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   # sites fournis par Alexandre (5 nov.) ; ceux qui refusent GitHub sont lus par le Pi à Montréal
@@ -151,8 +152,6 @@ sources:
   - {nom: "La Cabine Comédie Club", cle: salles, type: page_ia, url: "https://lacabinecomedie.ca/", lieu: "La Cabine Comédie Club", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "Montreal Comedy Club", cle: salles, type: page_ia, url: "https://mtlcomedyclub.com/", lieu: "Montreal Comedy Club", discipline: humour, jours_semaine: [0, 3]}
   - {nom: "La Cenne", cle: salles, type: page_ia, url: "https://www.lacenne.com/programmation", lieu: "La Cenne", discipline: musique, jours_semaine: [1, 4], navigateur: true}
-  - {nom: "Diese Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Diese Onze", discipline: musique, jours_semaine: [0, 3]}
-  - {nom: "Modavie (musique live)", cle: salles, type: page_ia, url: "https://modavie.com/en/live-music/", lieu: "Modavie", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Le Système (RA)", cle: salles, type: page_ia, url: "https://ra.co/clubs/201918", lieu: "Le Système", discipline: fete, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Bain Mathieu", cle: salles, type: page_ia, url: "https://bainmathieu.ca/programmation/", lieu: "Bain Mathieu", discipline: autre, jours_semaine: [2], navigateur: true}
   - {nom: "Le Château (Ciné-Théâtre)", cle: salles, type: page_ia, url: "https://lechateaumontreal.com/evenements", lieu: "Ciné-Théâtre Le Château", discipline: musique, jours_semaine: [1, 4], navigateur: true}
@@ -161,7 +160,8 @@ sources:
   - {nom: "Théâtre Mirella et Lino Saputo (CLDV)", cle: salles, type: page_ia, url: "https://cldv.ca/fr/", lieu: "Théâtre Mirella et Lino Saputo", discipline: theatre, jours_semaine: [1, 4]}
   - {nom: "Qu'en dit Raton?", cle: salles, type: page_ia, url: "https://www.quenditraton.com/spectacles/", lieu: "Qu'en dit Raton?", discipline: jeune, jours_semaine: [2], navigateur: true}
   - {nom: "Studio PACA (Les Foutoukours)", cle: salles, type: page_ia, url: "https://lesfoutoukours.com/fr/calendrier/", lieu: "Studio PACA", discipline: cirque, jours_semaine: [2], navigateur: true}
-  - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://rocambolesque.ca/calendrier/", lieu: "La Rocambolesque", discipline: humour, jours_semaine: [0, 3], navigateur: true}
+  # Rocambolesque (12 nov. 2026) : le calendrier de leur site est une image Canva ; leur billetterie donne chaque match avec l'heure et le lieu
+  - {nom: "La Rocambolesque", cle: salles, type: page_ia, url: "https://lepointdevente.com/larocambolesque", discipline: humour, jours_semaine: [0, 3], mise_en_page: "chaque match d'improvisation donne les équipes, la date, l'heure et la salle (ex. Aux Angles Ronds) : le lieu est cette salle. Ajoute « La Rocambolesque » au titre."}
   - {nom: "Librairie Le Port de tête", cle: salles, type: page_ia, url: "https://www.leportdetete.com/evenements", lieu: "Librairie Le Port de tête", discipline: lettres, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Cabaret Jazz L'Entracte (Zeffy)", cle: salles, type: page_ia, url: "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 3], navigateur: true}
   - {nom: "N'était-ce pas l'été (ma.to)", cle: salles, type: page_ia, url: "https://ma.to/venue/netaitcepaslete", lieu: "N'était-ce pas l'été", discipline: lettres, jours_semaine: [1, 4]}
@@ -250,7 +250,7 @@ sources:
   # =============== Tour des « bijoux » (27 oct. 2026) : voir collecteur/RECHERCHES.md ===============
   # ---------- Boîtes à musique, jazz, musiques du monde, bars de quartier ----------
   - {nom: "Upstairs Jazz Bar & Grill", cle: salles, type: page_ia, url: "https://www.upstairsjazz.com/", lieu: "Upstairs Jazz Bar & Grill", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4]}
+  - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "http://www.dieseonze.com/calendrier.php?l=fr", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4], mise_en_page: "calendrier du mois : chaque jour donne l'heure et le spectacle ; « FERME / CLOSED » veut dire qu'il n'y a pas de spectacle ce soir-là."}  # le site n'accepte pas https (12 nov. 2026)
   - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
@@ -340,6 +340,7 @@ sources:
   # ---- Soirées quiz (28 oct. 2026) : rendez-vous hebdomadaires vérifiés (collecteur/recurrents.yaml) + ma.to « community »
   - {nom: "Soirées quiz (hebdomadaires)", cle: recurrents, type: recurrents, groupe: quiz, discipline: quiz}
   - {nom: "Ligues d'improvisation (hebdomadaires)", cle: recurrents, type: recurrents, groupe: impro, discipline: humour}
+  - {nom: "Musique live hebdomadaire (Modavie)", cle: recurrents, type: recurrents, groupe: musique_hebdo, discipline: musique}
   - {nom: "ma.to – communauté (quiz, trivia)", cle: salles, type: page_ia, url: "https://ma.to/events/montreal/anytime/community", garder: "quiz|trivia|jeu-questionnaire|questionnaire", discipline: quiz, jours_semaine: [0, 3]}
 
   # ---- Salles qui refusent le robot (403) : leurs pages sur des billetteries et agendas publics (28 oct. 2026)
