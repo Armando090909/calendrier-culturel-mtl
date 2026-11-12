@@ -842,6 +842,25 @@ def main() -> int:
         print(f"Heures, 2e passage : {len(sans2)} sans heure, {lues2} pages lues, {sum(1 for e in sans2 if e['heure'])} trouvées.")
     except Exception as exc:
         print(f"Heures, 2e passage en échec : {exc}")
+    # Heure du même soir (12 nov. 2026) : un spectacle venu d'un agrégateur (Songkick, JamBase, ma.to…) sans heure, dans une
+    # salle dont le site ou la billetterie n'annonce qu'UN spectacle ce soir-là, avec son heure : c'est presque sûrement
+    # le même (ex. Club Soda le 18 nov. : « Koriass, Mara Tremblay… » chez Songkick = le concert-bénéfice de CIBL à 20 h).
+    try:
+        agreg = ("songkick.com", "jambase.com", "ma.to", "bandsintown.com", "allevents", "mtl.org", "montrealsecret")
+        par_soir: dict = {}
+        for e in events:
+            if e.get("heure") and not any(a in e.get("url", "") for a in agreg):
+                par_soir.setdefault((e["date"], plat(e["lieu"])), set()).add(e["heure"])
+        n_soir = 0
+        for e in events:
+            if not e.get("heure") and any(a in e.get("url", "") for a in agreg):
+                h = par_soir.get((e["date"], plat(e["lieu"])))
+                if h and len(h) == 1:
+                    e["heure"] = next(iter(h))
+                    n_soir += 1
+        print(f"Heures du même soir (seul spectacle annoncé par la salle) : {n_soir}.")
+    except Exception as exc:
+        print(f"Heures du même soir en échec : {exc}")
     # Dernier contrôle : un même spectacle vivant (pas un film ni une expo) ne doit pas apparaître deux fois le même jour
     import normalisation as _norm
     for f in festivals:
