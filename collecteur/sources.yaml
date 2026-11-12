@@ -204,8 +204,16 @@ sources:
   - {nom: Place des Arts junior, cle: salles, type: page_ia, url: "https://www.placedesarts.com/discipline/jeunes-publics", jours_semaine: [0, 3]}
 
   # ---------- Musées, galeries, vernissages ----------
-  - {nom: Tourisme Montréal – expositions des musées, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/expositions-musees-montreal", jours_semaine: [0]}
-  - {nom: Tourisme Montréal – expositions automne-hiver, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/expositions-automne-hiver-montreal", jours_semaine: [0]}
+  # Page des musées de Tourisme Montréal (12 nov. 2026) : le téléchargement simple répond 502, le navigateur la lit (36 000 caractères).
+  # L'ancienne page « automne-hiver » n'existe plus : retirée.
+  - {nom: Tourisme Montréal – expositions des musées, cle: salles, type: page_ia, url: "https://www.mtl.org/fr/experience/expositions-musees-montreal", jours_semaine: [0, 3], navigateur: true}
+  # Musées absents du site au 12 nov. 2026 (comparaison avec la page de Tourisme Montréal)
+  - {nom: "MAC – Musée d'art contemporain (programme)", cle: salles, type: page_ia, url: "https://macm.org/quoi-faire-au-mac/", lieu: "Musée d'art contemporain de Montréal", jours_semaine: [0, 3], par_le_pi: true}  # refuse GitHub (403)
+  - {nom: "MAC – Musée d'art contemporain (expositions)", cle: salles, type: page_ia, url: "https://macm.org/expositions/", lieu: "Musée d'art contemporain de Montréal", discipline: expo, jours_semaine: [0], par_le_pi: true}
+  - {nom: "Écomusée du fier monde", cle: salles, type: page_ia, url: "https://ecomusee.qc.ca/programmation/", lieu: "Écomusée du fier monde", jours_semaine: [0, 3], navigateur: true}
+  - {nom: "Musée des Hospitalières", cle: salles, type: page_ia, url: "https://museedeshospitalieres.qc.ca/activites/", lieu: "Musée des Hospitalières de l'Hôtel-Dieu de Montréal", jours_semaine: [0]}
+  - {nom: "Arsenal art contemporain (expositions)", cle: salles, type: page_ia, url: "https://www.arsenalcontemporary.com/montreal/expositions/", lieu: "Arsenal art contemporain", discipline: expo, jours_semaine: [0]}
+  - {nom: "Espace pour la vie – calendrier (Biosphère, Biodôme, Jardin botanique, Insectarium)", cle: salles, type: page_ia, url: "https://espacepourlavie.ca/biosphere", jours_semaine: [0, 3], navigateur: true, mise_en_page: "calendrier des activités des 5 musées d'Espace pour la vie : chaque activité donne sa période, le musée (son lieu) et le titre. Ne garde que les activités et expositions temporaires, pas les visites et animations permanentes."}
   - {nom: "Réseau art actuel (centres d'artistes, vernissages)", cle: salles, type: page_ia, url: "https://reseauartactuel.org/evenements/page/{page}/?intervalle=semaine", repeter: mois, mois: 1, pages: 4, jours_semaine: [0, 3]}
   - {nom: Art Mûr (expositions à venir), cle: salles, type: page_ia, url: "https://artmur.com/expositions-a-venir/", lieu: Art Mûr, jours_semaine: [0]}
 
@@ -288,9 +296,12 @@ sources:
   # Tango Libre (12 nov. 2026, donné par l'équipe) : refuse les connexions de GitHub, lu par le Pi
   - {nom: "Tango Libre", cle: salles, type: page_ia, url: "https://tangolibre.ca/horaires/", lieu: "Tango Libre", discipline: danse, jours_semaine: [0, 3], par_le_pi: true, mise_en_page: "horaire d'une école de tango : ne garde que les soirées ouvertes au public (milongas, pratiques, spectacles, soirées dansantes), pas les cours."}
   - {nom: "La Comédie de Montréal", cle: salles, type: page_ia, url: "http://www.lacomedie.ca/", lieu: "Théâtre La Comédie de Montréal", jours_semaine: [0]}
-  - {nom: "Circuit-Est centre chorégraphique", cle: salles, type: page_ia, url: "https://circuit-est.qc.ca/", discipline: danse, jours_semaine: [0]}
+  - {actif: false, nom: "Circuit-Est centre chorégraphique", cle: salles, type: page_ia, url: "https://circuit-est.qc.ca/", discipline: danse, jours_semaine: [0]}
   - {nom: "Studio 303", cle: salles, type: page_ia, url: "https://www.studio303.ca/en/montreal/", lieu: "Studio 303", jours_semaine: [0]}
   - {nom: "La Serre – arts vivants", cle: salles, type: page_ia, url: "https://laserre.ca/", jours_semaine: [0]}
+  # Festivals de La Serre (12 nov. 2026, demandés par l'équipe) : pages lues chaque lundi, la programmation y paraît avant chaque édition
+  - {nom: "DOUZE DOUZE (La Serre)", cle: salles, type: page_ia, url: "https://laserre.ca/initiative/douze-douze/", discipline: theatre, jours_semaine: [0], mise_en_page: "festival de performances gratuites sur 12 heures dans Ahuntsic-Cartierville : chaque performance donne son heure, son titre, l'artiste et son lieu (📍). Ajoute « DOUZE DOUZE » au titre."}
+  - {nom: "OFFTA", cle: salles, type: page_ia, url: "https://offta.com/", discipline: theatre, jours_semaine: [0]}
   - {nom: "DARE-DARE (art public)", cle: salles, type: page_ia, url: "https://dare-dare.org/en", discipline: expo, jours_semaine: [0]}
   - {nom: "Monument-National", cle: salles, type: page_ia, url: "https://monumentnational.com/fr", lieu: "Monument-National", jours_semaine: [0, 3]}
   - {nom: "Le Livart (centre d'art multidisciplinaire)", cle: salles, type: page_ia, url: "https://lelivart.com/", lieu: "Le Livart", jours_semaine: [0]}
