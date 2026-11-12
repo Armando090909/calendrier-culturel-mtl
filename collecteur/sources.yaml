@@ -169,7 +169,6 @@ sources:
   - {nom: "La Brassée (café-concerts)", cle: salles, type: page_ia, url: "https://labrassee.cafe/", lieu: "La Brassée", discipline: musique, jours_semaine: [0, 3]}
   - {nom: "Cabaret de Curiosités", cle: salles, type: page_ia, url: "https://cabaretdecuriosites.com/", lieu: "Cabaret de Curiosités", discipline: humour, jours_semaine: [1, 4], navigateur: true}
   - {nom: "Victoria Hall (Westmount)", cle: salles, type: page_ia, url: "https://westmount.org/en/victoria-hall-community-centre/", lieu: "Victoria Hall", discipline: musique, jours_semaine: [1, 4]}
-  - {nom: "MC Hall", cle: salles, type: page_ia, url: "https://mchall.ca/", lieu: "MC Hall", discipline: musique, jours_semaine: [0, 3], navigateur: true, par_le_pi: true}
   - {nom: "Le Red Room", cle: salles, type: page_ia, url: "https://www.leredroom.com/", lieu: "Le Red Room", discipline: musique, jours_semaine: [0, 3], mise_en_page: "la date de chaque soirée est écrite APRÈS son titre et son lien de billetterie, pas avant ; ex. « Down2Techno x Pulse <lien> 11 Novembre » = le 11 novembre"}  # 9 nov. 2026 : dates décalées d'une soirée
   - {nom: "Salle Marguerite-Bourgeoys", cle: salles, type: page_ia, url: "https://www.sallemb.com/", lieu: "Salle Marguerite-Bourgeoys", discipline: musique, jours_semaine: [2]}
   - {nom: "Montreal Improv", cle: salles, type: page_ia, url: "https://www.montrealimprov.com/shows", lieu: "Montreal Improv", discipline: humour, jours_semaine: [0, 3], navigateur: true}
@@ -254,7 +253,6 @@ sources:
   - {nom: "Dièse Onze", cle: salles, type: page_ia, url: "https://www.dieseonze.com/", lieu: "Dièse Onze", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Club Balattou (musiques du monde)", cle: salles, type: page_ia, url: "https://www.balattou.com/", lieu: "Club Balattou", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Cabaret Jazz L'Entracte", cle: salles, type: page_ia, url: "https://www.entractejazz.org/", lieu: "Cabaret Jazz L'Entracte", discipline: musique, jours_semaine: [0, 2, 4]}
-  - {nom: "Bistro à Jojo (blues)", cle: salles, type: page_ia, url: "https://www.bistroajojo.com/livemusic", lieu: "Bistro à Jojo", discipline: musique, jours_semaine: [0, 2, 4], par_le_pi: true}
   - {nom: "Hurley's Irish Pub (trad, folk)", cle: salles, type: page_ia, url: "http://www.hurleysirishpub.com/", lieu: "Hurley's Irish Pub", discipline: musique, jours_semaine: [0]}
   - {nom: "Le Balcon", cle: salles, type: page_ia, url: "https://www.lebalcon.ca/", lieu: "Le Balcon", discipline: musique, jours_semaine: [0, 2, 4]}
   - {nom: "Turbo Haüs", cle: salles, type: page_ia, url: "https://turbohaus.ca/", lieu: "Turbo Haüs", discipline: musique, jours_semaine: [0, 2, 4]}

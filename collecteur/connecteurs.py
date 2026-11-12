@@ -453,6 +453,7 @@ def _demarrer_navigateur() -> None:
     # « plante » au bout de quelques pages lourdes (5 nov. 2026 : 20 sources perdues d'un coup)
     _NAV["nav"] = _NAV["pw"].chromium.launch(args=["--disable-dev-shm-usage", "--disable-gpu"])
     ctx = _NAV["nav"].new_context(user_agent=UA, locale="fr-CA", viewport={"width": 1280, "height": 2000})
+    ctx.set_default_timeout(30000)  # aucune attente sans limite (12 nov. 2026 : la découverte restait bloquée dans le navigateur)
     ctx.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
     _NAV["ctx"] = ctx
     atexit.register(fermer_navigateur)
