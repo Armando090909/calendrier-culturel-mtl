@@ -60,7 +60,10 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
             r[mode + "_images"] = {"og": og.get("content") if og else None,
                                    "img": [(i.get("src") or i.get("data-src") or "")[:150] + " | " + (i.get("alt") or "")[:60]
                                            for i in soupe.find_all("img")][:25],
-                                   "iframes": [f.get("src", "")[:150] for f in soupe.find_all("iframe")][:10]}
+                                   "iframes": [f.get("src", "")[:150] for f in soupe.find_all("iframe")][:10],
+                                   # calendriers intégrés : l'identifiant du calendrier (Google, eventscalendar.co, ICS…)
+                                   "calendriers": [html[max(0, m.start() - 150):m.end() + 250] for m in re.finditer(
+                                       r"proj_[A-Za-z0-9]+|eventscalendar\.co[^\"' ]*|calendar\.google\.com[^\"' ]*|[^\"' ]+\.ics\b", html)][:8]}
             r[mode] = {"taille": len(txt), "texte": txt[:8000],
                        "jsonld": re.findall(r'(?s)<script[^>]*ld\+json[^>]*>(.*?)</script>', html)[:2],
                        "heures": [txt[max(0, m.start() - 60):m.end() + 20] for m in HEURE.finditer(txt)][:15],
