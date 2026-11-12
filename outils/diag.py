@@ -44,7 +44,9 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
             out[url] = {"erreur": str(exc)[:200]}
         print(url, out[url])
         continue
-    url = ligne
+    url, attente = ligne, 2500
+    if " attente=" in ligne:  # « adresse attente=15000 » : calendrier lent à s'afficher
+        url, attente = ligne.split(" attente=")[0].strip(), int(ligne.split(" attente=")[1])
     r = {}
     for mode in ("simple", "navigateur"):
         try:
@@ -52,7 +54,7 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
                 rep = c.telecharger(url, "text/html")
                 html, r["statut"] = rep.text, rep.status_code
             else:
-                html = c.page_rendue(url)
+                html = c.page_rendue(url, attente)
             txt = c.texte_page(html, url)
             from bs4 import BeautifulSoup
             soupe = BeautifulSoup(html, "html.parser")
