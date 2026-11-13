@@ -334,6 +334,20 @@ def main() -> int:
     reglages = conf.get("reglages", {})
     if ESSAI and not RAPIDE:
         reglages.update({k: 2 for k in BUDGETS_RESEAU + ("max_styles_ia", "max_artistes_ia")})
+    if not RAPIDE:
+        # Deux garde-fous (13 nov. 2026, enrichissement figé 1 h 50) : 1) toutes les 20 min, la pile d'appels est
+        # écrite dans le journal (on voit où le programme travaille ou attend) ; 2) après 90 min, plus aucune nouvelle
+        # page n'est lue (budgets mis à 0) : le site s'écrit avec ce qui est trouvé, avant la limite de 2 h de GitHub.
+        import faulthandler
+        import threading
+        faulthandler.dump_traceback_later(20 * 60, repeat=True)
+
+        def _assez():
+            reglages.update({k: 0 for k in BUDGETS_RESEAU})
+            print("Temps : 90 min écoulées, plus de nouvelles pages ; le reste attendra la prochaine collecte.", flush=True)
+        minuterie = threading.Timer(90 * 60, _assez)
+        minuterie.daemon = True
+        minuterie.start()
     if RAPIDE:
         reglages.update({k: 0 for k in BUDGETS_RESEAU})
         print("Publication rapide : seulement ce qui est déjà connu (l'enrichissement suit et republie).")

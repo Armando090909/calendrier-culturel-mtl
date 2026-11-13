@@ -9,6 +9,8 @@ Format d'une série (exposition ou pièce « à l'affiche ») :
 from __future__ import annotations
 
 import hashlib
+import os
+import signal
 import atexit
 import csv
 import io
@@ -459,7 +461,71 @@ def _demarrer_navigateur() -> None:
     atexit.register(fermer_navigateur)
 
 
-def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
+# Navigateur dans un processus à part (13 nov. 2026) : Chrome peut rester bloqué sans jamais rendre la main, et
+# aucune limite de temps interne (Playwright, signal) ne l'interrompt de façon fiable ; l'enrichissement du 13 nov.
+# est resté figé 1 h 50 jusqu'à la limite de GitHub. Ici, chaque page a au plus LIMITE_PAGE secondes : passé ce délai,
+# le processus du navigateur (et son Chrome) est tué de l'extérieur, la page compte comme illisible, et la page
+# suivante relance un navigateur neuf.
+LIMITE_PAGE = 120
+_TRAVAILLEUR = {}
+
+
+def _boucle_travailleur(conn) -> None:
+    os.setpgrp()  # son propre groupe : on peut le tuer avec Chrome et le pilote Playwright d'un seul coup
+    while True:
+        try:
+            demande = conn.recv()
+        except EOFError:
+            break
+        if demande is None:
+            break
+        try:
+            conn.send(("ok", _page_rendue_locale(*demande)))
+        except Exception as exc:
+            conn.send(("err", f"{type(exc).__name__}: {exc}"))
+    fermer_navigateur()
+
+
+def _arreter_travailleur() -> None:
+    t = _TRAVAILLEUR.pop("p", None)
+    if t is None:
+        return
+    try:
+        os.killpg(t.pid, signal.SIGKILL)
+    except Exception:
+        pass
+    t.join(5)
+
+
+def page_rendue(url: str, attente_ms: int = 2500) -> str:
+    """HTML d'une page après exécution de son JavaScript (voir _page_rendue_locale), avec une limite de temps sûre."""
+    import multiprocessing
+    if "p" not in _TRAVAILLEUR or not _TRAVAILLEUR["p"].is_alive():
+        _arreter_travailleur()
+        mp = multiprocessing.get_context("fork")
+        a, b = mp.Pipe()
+        p = mp.Process(target=_boucle_travailleur, args=(b,), daemon=True)
+        p.start()
+        _TRAVAILLEUR.update(p=p, conn=a)
+        if not _TRAVAILLEUR.get("atexit"):
+            atexit.register(_arreter_travailleur)
+            _TRAVAILLEUR["atexit"] = True
+    conn = _TRAVAILLEUR["conn"]
+    conn.send((url, attente_ms))
+    if not conn.poll(LIMITE_PAGE):
+        _arreter_travailleur()
+        raise RuntimeError(f"navigateur bloqué plus de {LIMITE_PAGE} s : abandonné (navigateur)")
+    try:
+        etat, val = conn.recv()
+    except EOFError:
+        _arreter_travailleur()
+        raise RuntimeError("navigateur arrêté (navigateur)")
+    if etat == "err":
+        raise RuntimeError(val)
+    return val
+
+
+def _page_rendue_locale(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
     """HTML d'une page après exécution de son JavaScript, dans Chrome sans fenêtre (Playwright).
     Le même nom de robot que pour les autres téléchargements. Les images, polices et vidéos ne sont pas chargées.
     Un onglet neuf par page ; si Chrome plante, il est relancé et la page réessayée une fois."""
@@ -492,7 +558,7 @@ def page_rendue(url: str, attente_ms: int = 2500, _essai: int = 0) -> str:
     except Exception as exc:
         if _essai == 0 and re.search(r"(?i)crash|closed|disconnected|Target", str(exc)):
             fermer_navigateur()  # Chrome a planté : on le relance, et on réessaie cette page une fois
-            return page_rendue(url, attente_ms, _essai=1)
+            return _page_rendue_locale(url, attente_ms, _essai=1)
         raise
     finally:
         try:
