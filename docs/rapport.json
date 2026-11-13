@@ -1,24 +1,29 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "statut": "publié",
- "evenements": 2806,
- "expositions": 243,
+ "evenements": 2860,
+ "expositions": 247,
  "nouvelles_salles": [
-  "L'Entracte",
-  "Pavillon Paul-Gérin-Lajoie"
+  "Archives nationales à Montréal",
+  "Aux Angles Ronds",
+  "Bibliothèque de Cowansville",
+  "Diese Onze",
+  "La Petite Bibliothèque Verte",
+  "Modavie",
+  "Tango Libre",
+  "Ville de L'Île-Perrot",
+  "Ville de Plessisville"
  ],
  "notes": {
   "fiches_ville": {
    "lues": 0,
    "erreurs": 0,
    "exemples_erreurs": [],
-   "completees_par_mac": 732,
-   "heures_trouvees": 725,
-   "salles_trouvees": 713
+   "completees_par_mac": 710,
+   "heures_trouvees": 703,
+   "salles_trouvees": 691
   },
   "redites_retirees": [
-   "2026-11-12 : « Allan Rayman » (URBANISTA RESTO BAR) = « Allan Rayman » (Théâtre Fairmount)",
-   "2026-11-12 : « Thursday Pro-Am Comedy Night » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
    "2026-11-13 : « 13 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 13 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
    "2026-11-13 : « Héroïnes et passions lyriques - Orchestre métropol » (Bibliothèque Mercier) = « Héroïnes et passions lyriques » (Maison de la culture Mercier)",
    "2026-11-13 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy (Early Show) » (Deli Planet)",
@@ -59,13 +64,13 @@
    "2026-12-29 : « Punch Créole » (Gesù) = « Punch Créole » (Salle Pierre-Mercure)"
   ],
   "qualite": {
-   "regles": 155,
+   "regles": 146,
    "contreverif": {
-    "date absente de la page": 37,
-    "date confirmée": 278,
-    "lien mort remplacé": 15,
-    "page illisible": 52,
-    "non relues (limite)": 50
+    "date absente de la page": 38,
+    "date confirmée": 232,
+    "page illisible": 59,
+    "lien mort remplacé": 16,
+    "non relues (limite)": 28
    },
    "controle": null
   }
@@ -188,6 +193,24 @@
    "note": "repris du 2026-11-10"
   },
   {
+   "source": "Théâtre Aux Écuries",
+   "evenements": 2,
+   "series": 1,
+   "erreur": null,
+   "diagnostic": [
+    "annonces à venir dans la page : 9 (https://auxecuries.com/programmation/)"
+   ]
+  },
+  {
+   "source": "Théâtre Aux Écuries (billetterie)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "annonces à venir dans la page : 4 (https://auxecuries.tuxedobillet.com/)"
+   ]
+  },
+  {
    "source": "Usine C",
    "evenements": 0,
    "series": 2,
@@ -203,13 +226,11 @@
   },
   {
    "source": "Centre Segal",
-   "evenements": 0,
-   "series": 0,
+   "evenements": 3,
+   "series": 1,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.segalcentre.org/fr/calendar, https://www.segalcentre.org/fr/shows/2026-2027/its-a-good-life-if-you-dont-weaken-fr, https://www.segalcentre.org/fr/shows/2026-2027/hester-street-fr",
-    "aucun événement trouvé dans 14761 caractères de texte : https://www.segalcentre.org/fr/home",
-    "annonces à venir dans la page : 0 (https://www.segalcentre.org/fr/home)"
+    "annonces à venir dans la page : 12 (https://purchase.segalcentre.org/Events)"
    ]
   },
   {
@@ -288,8 +309,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 17070 caractères de texte : https://www.orchestremetropolitain.com/fr/concerts/",
-    "annonces à venir dans la page : 13 (https://www.orchestremetropolitain.com/fr/concerts/)"
+    "aucun événement trouvé dans 16899 caractères de texte : https://orchestremetropolitain.com/fr/programmation/",
+    "annonces à venir dans la page : 13 (https://orchestremetropolitain.com/fr/programmation/)"
    ]
   },
   {
@@ -461,12 +482,11 @@
   },
   {
    "source": "Tortue Berlue (théâtre jeune public)",
-   "evenements": 0,
+   "evenements": 7,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 3951 caractères de texte : https://www.tortueberlue.com/spectacles/",
-    "annonces à venir dans la page : 7 (https://www.tortueberlue.com/spectacles/)"
+    "annonces à venir dans la page : 5 (https://www.tortueberlue.com/calendrier-automne-et-noel-2026/)"
    ]
   },
   {
@@ -475,7 +495,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
+    "aucun événement trouvé dans 1501 caractères de texte : https://www.librairieleuguelionne.com/",
     "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
@@ -513,24 +533,6 @@
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-10"
-  },
-  {
-   "source": "Diese Onze",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (HTTPSConnectionPool(host='www.dieseonze.com', port=443): Max retries exceeded wi) : https://www.dieseonze.com/"
-   ]
-  },
-  {
-   "source": "Modavie (musique live)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://modavie.com/en/live-music/"
-   ]
   },
   {
    "source": "Le Système (RA)",
@@ -618,13 +620,11 @@
   },
   {
    "source": "La Rocambolesque",
-   "evenements": 0,
+   "evenements": 29,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 9488 caractères de texte : https://rocambolesque.ca/calendrier/",
-    "annonces à venir dans la page : 0 (https://rocambolesque.ca/calendrier/)",
-    "récolte mince (0) : recherche élargie à https://rocambolesque.ca/evenements-corporatifs, https://rocambolesque.ca/plateformes-de-jeu/, https://rocambolesque.ca/evenement/spectacles-personnalises/"
+    "annonces à venir dans la page : 26 (https://lepointdevente.com/larocambolesque)"
    ]
   },
   {
@@ -633,15 +633,6 @@
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-10"
-  },
-  {
-   "source": "Cabaret Jazz L'Entracte (Zeffy)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl"
-   ]
   },
   {
    "source": "N'était-ce pas l'été (ma.to)",
@@ -677,16 +668,6 @@
    "series": 1,
    "erreur": null,
    "note": "repris du 2026-11-10"
-  },
-  {
-   "source": "MC Hall",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 3225 caractères de texte : https://mchall.ca/",
-    "annonces à venir dans la page : 0 (https://mchall.ca/)"
-   ]
   },
   {
    "source": "Le Red Room",
@@ -834,13 +815,11 @@
   },
   {
    "source": "BAnQ – activités",
-   "evenements": 0,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "IA en échec (réponse sans JSON lisible) : https://www.banq.qc.ca/activites/",
-    "récolte mince (0) : recherche élargie à https://www.banq.qc.ca/calendrier/a-venir, https://www.banq.qc.ca/calendrier/en-tout-temps, https://www.banq.qc.ca/calendrier/a-venir/147212, https://www.banq.qc.ca/calendrier/a-venir/147228",
-    "page presque vide (471 caractères ; site en JavaScript ?) : https://www.banq.qc.ca/calendrier/a-venir"
+    "annonces à venir dans la page : 56 (https://www.banq.qc.ca/calendrier/a-venir)"
    ]
   },
   {
@@ -865,6 +844,15 @@
    "note": "repris du 2026-11-10"
   },
   {
+   "source": "LIM – saison (billetterie)",
+   "evenements": 3,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "annonces à venir dans la page : 21 (https://lepointdevente.com/billets/lim20262027)"
+   ]
+  },
+  {
    "source": "Cabaret Lion d'Or (LIM et spectacles)",
    "evenements": 18,
    "series": 0,
@@ -877,8 +865,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 2732 caractères de texte : https://www.lamechecourte.ca/programmation",
-    "annonces à venir dans la page : 14 (https://www.lamechecourte.ca/programmation)"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -903,12 +891,62 @@
    "note": "repris du 2026-11-10"
   },
   {
-   "source": "Tourisme Montréal – expositions automne-hiver",
+   "source": "MAC – Musée d'art contemporain (programme)",
    "evenements": 0,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (502 Server Error: Bad Gateway for url: https://www.mtl.org/fr/experience/exposit) : https://www.mtl.org/fr/experience/expositions-automne-hiver-montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://macm.org/quoi-faire-au-mac/) : https://macm.org/quoi-faire-au-mac/"
+   ]
+  },
+  {
+   "source": "MAC – Musée d'art contemporain (expositions)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (403 Client Error: Forbidden for url: https://macm.org/expositions/) : https://macm.org/expositions/"
+   ]
+  },
+  {
+   "source": "Écomusée du fier monde",
+   "evenements": 1,
+   "series": 1,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 7439 caractères de texte : https://ecomusee.qc.ca/programmation/",
+    "annonces à venir dans la page : 1 (https://ecomusee.qc.ca/programmation/)",
+    "récolte mince (0) : recherche élargie à https://ecomusee.qc.ca/programmation/le-bingo-de-lecomusee/, https://ecomusee.qc.ca/programmation/tisser-nos-vies/, https://ecomusee.qc.ca/programmation/patrimoine-du-centre-sud/, https://ecomusee.qc.ca/programmation/circuits-urbains-autoguides/"
+   ]
+  },
+  {
+   "source": "Musée des Hospitalières",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 3731 caractères de texte : https://museedeshospitalieres.qc.ca/activites/",
+    "annonces à venir dans la page : 0 (https://museedeshospitalieres.qc.ca/activites/)",
+    "récolte mince (0) : recherche élargie à https://museedeshospitalieres.qc.ca/expositions/, https://museedeshospitalieres.qc.ca/activites-familles/, https://museedeshospitalieres.qc.ca/en/activites/, https://museedeshospitalieres.qc.ca/activites/jeanne-mance-1606-1673/"
+   ]
+  },
+  {
+   "source": "Arsenal art contemporain (expositions)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 11080 caractères de texte : https://www.arsenalcontemporary.com/montreal/expositions/",
+    "annonces à venir dans la page : 2 (https://www.arsenalcontemporary.com/montreal/expositions/)"
+   ]
+  },
+  {
+   "source": "Espace pour la vie – calendrier (Biosphère, Biodôme, Jardin botanique, Insectarium)",
+   "evenements": 3,
+   "series": 2,
+   "erreur": null,
+   "diagnostic": [
+    "annonces à venir dans la page : 47 (https://espacepourlavie.ca/biosphere)"
    ]
   },
   {
@@ -1028,7 +1066,7 @@
    "erreur": null,
    "diagnostic": [
     "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "annonces à venir dans la page : 0 (https://cafecampus.com/)"
    ]
   },
   {
@@ -1225,11 +1263,11 @@
   },
   {
    "source": "Dièse Onze",
-   "evenements": 0,
+   "evenements": 21,
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (HTTPSConnectionPool(host='www.dieseonze.com', port=443): Max retries exceeded wi) : https://www.dieseonze.com/"
+    "annonces à venir dans la page : 16 (http://www.dieseonze.com/calendrier.php?l=fr)"
    ]
   },
   {
@@ -1257,19 +1295,10 @@
    "evenements": 6,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-12",
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://www.entractejazz.org/",
     "annonces à venir dans la page : 6 (https://www.entractejazz.org/)"
-   ]
-  },
-  {
-   "source": "Bistro à Jojo (blues)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 1430 caractères de texte : https://www.bistroajojo.com/livemusic",
-    "annonces à venir dans la page : 6 (https://www.bistroajojo.com/livemusic)"
    ]
   },
   {
@@ -1552,9 +1581,19 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://theatredelesquisse.qc.ca/calendrier/, https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
-    "page presque vide (585 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/",
-    "annonces à venir dans la page : 0 (https://theatredelesquisse.qc.ca/)"
+    "aucun événement trouvé dans 4299 caractères de texte : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
+    "annonces à venir dans la page : 4 (https://theatredelesquisse.qc.ca/accueil/a-laffiche/)"
+   ]
+  },
+  {
+   "source": "Tango Libre",
+   "evenements": 18,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "lue dans le navigateur (automatique) : https://tangolibre.ca/horaires/",
+    "page presque vide (598 caractères ; site en JavaScript ?) : https://tangolibre.ca/horaires/",
+    "annonces à venir dans la page : 0 (https://tangolibre.ca/horaires/)"
    ]
   },
   {
@@ -1563,16 +1602,6 @@
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-10"
-  },
-  {
-   "source": "Circuit-Est centre chorégraphique",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "aucun événement trouvé dans 6929 caractères de texte : https://circuit-est.qc.ca/",
-    "annonces à venir dans la page : 4 (https://circuit-est.qc.ca/)"
-   ]
   },
   {
    "source": "Studio 303",
@@ -1589,6 +1618,27 @@
    "diagnostic": [
     "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/",
     "annonces à venir dans la page : 0 (https://laserre.ca/)"
+   ]
+  },
+  {
+   "source": "DOUZE DOUZE (La Serre)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "aucun événement trouvé dans 26250 caractères de texte : https://laserre.ca/initiative/douze-douze/",
+    "annonces à venir dans la page : 13 (https://laserre.ca/initiative/douze-douze/)"
+   ]
+  },
+  {
+   "source": "OFFTA",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 4001 caractères de texte : https://offta.com/",
+    "annonces à venir dans la page : 12 (https://offta.com/)"
    ]
   },
   {
@@ -1946,6 +1996,12 @@
    "note": "repris du 2026-11-11"
   },
   {
+   "source": "Musique live hebdomadaire (Modavie)",
+   "evenements": 122,
+   "series": 0,
+   "erreur": null
+  },
+  {
    "source": "ma.to – communauté (quiz, trivia)",
    "evenements": 1,
    "series": 0,
@@ -1965,15 +2021,6 @@
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-10"
-  },
-  {
-   "source": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
-   "evenements": 0,
-   "series": 0,
-   "erreur": null,
-   "diagnostic": [
-    "page illisible (403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl"
-   ]
   },
   {
    "source": "PAN M 360 – agenda musique",
@@ -2335,9 +2382,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.montrealenlumiere.com/fr/programmation/artistes, https://www.montrealenlumiere.com/fr/programmation/artists, https://www.montrealenlumiere.com/fr/experience-spectacles",
-    "aucun événement trouvé dans 1721 caractères de texte : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
+    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
+    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -2451,8 +2498,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -2556,7 +2603,7 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://www.hahaha.com/fr/public/raccourcis/calendrier-957?lang=fr, https://www.hahaha.com/fr/public/spectacles-247/, https://www.hahaha.com/fr/public/spectacles-247?lang=fr",
-    "aucun événement trouvé dans 6283 caractères de texte : https://hahaha.com",
+    "aucun événement trouvé dans 6317 caractères de texte : https://hahaha.com",
     "annonces à venir dans la page : 6 (https://hahaha.com)"
    ]
   },
@@ -2599,8 +2646,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
+    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -2677,8 +2724,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 34636 caractères de texte : https://festapp.io/fr/festivals/pop-montreal/2026",
-    "annonces à venir dans la page : 106 (https://festapp.io/fr/festivals/pop-montreal/2026)"
+    "page illisible (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))) : https://festapp.io/fr/festivals/pop-montreal/2026"
    ]
   },
   {
@@ -2799,7 +2845,7 @@
    "erreur": null,
    "diagnostic": [
     "page lue depuis Montréal (ordinateur) : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
-    "aucun événement trouvé dans 10676 caractères de texte : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
+    "aucun événement trouvé dans 10780 caractères de texte : https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/",
     "annonces à venir dans la page : 1 (https://sortirauquebec.com/en/listing/concerts-and-live-shows/shows-de-ruelle/)"
    ]
   },

@@ -2,18 +2,8 @@
  "ouverts": {
   "champ:calendrier.umontreal.ca:salle": {
    "depuis": "2026-11-11",
-   "jours": 2,
-   "issue": null
-  },
-  "champ:leministere.ca:heure": {
-   "depuis": "2026-11-11",
-   "jours": 2,
-   "issue": null
-  },
-  "mince": {
-   "depuis": "2026-11-11",
-   "jours": 2,
-   "issue": 14
+   "jours": 3,
+   "issue": 15
   }
  },
  "sources_ok": {
@@ -31,8 +21,10 @@
   "Théâtre d'Aujourd'hui": 7,
   "Théâtre Denise-Pelletier – calendrier": 12,
   "Théâtre Denise-Pelletier – pièces": 2,
+  "Théâtre Aux Écuries": 3,
   "Usine C": 2,
   "Centaur": 15,
+  "Centre Segal": 4,
   "Espace Libre": 4,
   "MAI": 9,
   "Maison Théâtre": 8,
@@ -65,6 +57,7 @@
   "L'Illusion, Théâtre de marionnettes": 9,
   "Studio 303": 3,
   "Théâtre de la LNI": 6,
+  "Tortue Berlue (théâtre jeune public)": 7,
   "Librairie Drawn & Quarterly (événements)": 4,
   "Le Bordel Comédie Club": 17,
   "La Cabine Comédie Club": 28,
@@ -74,6 +67,7 @@
   "Espace Le Vrai Monde?": 3,
   "Théâtre Mirella et Lino Saputo (CLDV)": 4,
   "Studio PACA (Les Foutoukours)": 22,
+  "La Rocambolesque": 29,
   "Librairie Le Port de tête": 17,
   "N'était-ce pas l'été (ma.to)": 10,
   "Festival / Maison de la poésie de Montréal": 2,
@@ -94,13 +88,17 @@
   "UQAM – événements": 58,
   "Université de Montréal – calendrier": 62,
   "Concordia – événements": 11,
+  "BAnQ – activités": 4,
   "Centre Canadien d'Architecture – événements (Eventbrite)": 6,
   "Hexagram – conférences (recherche-création)": 1,
   "Cabaret Lion d'Or (billetterie)": 17,
+  "LIM – saison (billetterie)": 3,
   "Cabaret Lion d'Or (LIM et spectacles)": 18,
   "Tourisme Montréal – sorties en famille": 26,
   "Place des Arts junior": 187,
   "Tourisme Montréal – expositions des musées": 11,
+  "Écomusée du fier monde": 2,
+  "Espace pour la vie – calendrier (Biosphère, Biodôme, Jardin botanique, Insectarium)": 5,
   "Réseau art actuel (centres d'artistes, vernissages)": 65,
   "Art Mûr (expositions à venir)": 4,
   "ma.to (musique live)": 18,
@@ -129,6 +127,7 @@
   "TIAN Contemporain": 1,
   "Wishbone Galerie d'art": 1,
   "Upstairs Jazz Bar & Grill": 19,
+  "Dièse Onze": 21,
   "Club Balattou (musiques du monde)": 17,
   "Cabaret Jazz L'Entracte": 6,
   "Le Balcon": 27,
@@ -153,6 +152,7 @@
   "InfiniTheatre": 4,
   "Théâtre MainLine": 5,
   "Repercussion Theatre": 1,
+  "Tango Libre": 18,
   "La Comédie de Montréal": 56,
   "DARE-DARE (art public)": 5,
   "Monument-National": 7,
@@ -193,6 +193,7 @@
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 4,
   "Soirées quiz (hebdomadaires)": 102,
   "Ligues d'improvisation (hebdomadaires)": 9,
+  "Musique live hebdomadaire (Modavie)": 122,
   "ma.to – communauté (quiz, trivia)": 1,
   "Wiggle Room (ma.to)": 9,
   "Le Balcon (ma.to)": 4,
@@ -250,7 +251,32 @@
   "2026-11-09": 2547,
   "2026-11-10": 2568,
   "2026-11-11": 2933,
-  "2026-11-12": 2806
+  "2026-11-12": 2806,
+  "2026-11-13": 2860
  },
- "dernier_jour": "2026-11-12"
+ "dernier_jour": "2026-11-13",
+ "minces_depuis": {
+  "Librairie L'Euguélionne": "2026-11-13",
+  "Le Système (RA)": "2026-11-13",
+  "Bain Mathieu": "2026-11-13",
+  "Le Château (Ciné-Théâtre)": "2026-11-13",
+  "Salle Marguerite-Bourgeoys": "2026-11-13",
+  "Théâtre St-James": "2026-11-13",
+  "Théâtre Cartier": "2026-11-13",
+  "MAC – Musée d'art contemporain (programme)": "2026-11-13",
+  "Écomusée du fier monde": "2026-11-13",
+  "Musée des Hospitalières": "2026-11-13",
+  "Hurley's Irish Pub (trad, folk)": "2026-11-13",
+  "Turbo Haüs": "2026-11-13",
+  "Système MTL": "2026-11-13",
+  "Théâtre Rialto": "2026-11-13",
+  "Le National (La Tulipe)": "2026-11-13",
+  "Espace La Risée": "2026-11-13",
+  "Tango Libre": "2026-11-13",
+  "Eastern Bloc": "2026-11-13",
+  "Théâtre Rialto (billetterie)": "2026-11-13",
+  "L'Escogriffe (billetterie)": "2026-11-13",
+  "Ausgang Plaza (billetterie)": "2026-11-13",
+  "Le Belmont (billetterie)": "2026-11-13"
+ }
 }

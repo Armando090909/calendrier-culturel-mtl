@@ -42,9 +42,7 @@
   "Festival · WI Blues": "2026-10-26",
   "Festival · Cinéma sous les étoiles": "2026-10-26",
   "Festival · OM au Mont-Royal": "2026-10-26",
-  "Centre Segal": "2026-11-02",
   "McGill – événements": "2026-11-02",
-  "BAnQ – activités": "2026-11-02",
   "La Mèche courte (festival jeune public)": "2026-11-02",
   "Tourisme Montréal – expositions automne-hiver": "2026-11-02",
   "Café Campus / Petit Campus": "2026-11-02",
@@ -54,7 +52,6 @@
   "Galerie Robert Poulin": "2026-11-02",
   "Galerie Patrick Mikhail": "2026-11-02",
   "Yves Laroche Galerie d'art": "2026-11-02",
-  "Dièse Onze": "2026-11-02",
   "Bistro à Jojo (blues)": "2026-11-02",
   "Hurley's Irish Pub (trad, folk)": "2026-11-02",
   "Système MTL": "2026-11-02",
@@ -69,7 +66,6 @@
   "Eastern Bloc": "2026-11-02",
   "Cabaret Jazz L'Entracte (billetterie Zeffy)": "2026-11-02",
   "Bistro à Jojo": "2026-11-05",
-  "Tortue Berlue (théâtre jeune public)": "2026-11-05",
   "Librairie L'Euguélionne": "2026-11-05",
   "Diese Onze": "2026-11-05",
   "Modavie (musique live)": "2026-11-05",
@@ -77,39 +73,45 @@
   "Bain Mathieu": "2026-11-05",
   "Le Château (Ciné-Théâtre)": "2026-11-05",
   "Qu'en dit Raton?": "2026-11-05",
-  "La Rocambolesque": "2026-11-05",
   "Cabaret Jazz L'Entracte (Zeffy)": "2026-11-05",
   "MC Hall": "2026-11-05",
   "Salle Marguerite-Bourgeoys": "2026-11-05",
   "Théâtre St-James": "2026-11-05",
   "Théâtre Cartier": "2026-11-05",
   "Orchestre Métropolitain": "2026-11-09",
-  "Orchestre classique de Montréal": "2026-11-09"
+  "Orchestre classique de Montréal": "2026-11-09",
+  "Théâtre Aux Écuries (billetterie)": "2026-11-13",
+  "MAC – Musée d'art contemporain (programme)": "2026-11-13",
+  "MAC – Musée d'art contemporain (expositions)": "2026-11-13",
+  "Musée des Hospitalières": "2026-11-13",
+  "Arsenal art contemporain (expositions)": "2026-11-13",
+  "DOUZE DOUZE (La Serre)": "2026-11-13",
+  "OFFTA": "2026-11-13"
  },
  "Duran Contemporain": {
   "essai": "2026-11-10",
   "echecs": 2,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Théâtre MainLine": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "ma.to – communauté (quiz, trivia)": {
   "essai": "2026-11-02",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "ma.to (musique live)": {
   "essai": "2026-11-04",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Théâtre Prospero": {
   "essai": "2026-11-05",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Cinéma Public": {
   "essai": "2026-11-09",
@@ -118,12 +120,12 @@
   "le": "2026-11-09",
   "n": 51,
   "echecs": 0,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Studio 303": {
   "essai": "2026-11-09",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Le Bordel Comédie Club": {
   "essai": "2026-11-09",
@@ -132,7 +134,7 @@
   "le": "2026-11-09",
   "n": 16,
   "echecs": 0,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Wiggle Room (ma.to)": {
   "essai": "2026-11-09",
@@ -141,7 +143,7 @@
   "le": "2026-11-09",
   "n": 17,
   "echecs": 0,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Galerie C.O.A": {
   "essai": "2026-11-09",
@@ -154,7 +156,7 @@
  "La Cabine Comédie Club": {
   "essai": "2026-11-10",
   "echecs": 1,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  },
  "Pierre-François Ouellette art contemporain": {
   "essai": "2026-11-10",
@@ -163,6 +165,6 @@
   "le": "2026-11-10",
   "n": 2,
   "echecs": 0,
-  "dernier_ok": "2026-11-12"
+  "dernier_ok": "2026-11-13"
  }
 }

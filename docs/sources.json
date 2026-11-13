@@ -98,6 +98,20 @@
   "erreur": false
  },
  {
+  "nom": "Théâtre Aux Écuries",
+  "url": "https://auxecuries.com/programmation",
+  "type": "page lue par l'IA",
+  "evenements": 3,
+  "erreur": false
+ },
+ {
+  "nom": "Théâtre Aux Écuries (billetterie)",
+  "url": "https://auxecuries.tuxedobillet.com",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
   "nom": "Usine C",
   "url": "https://usine-c.com",
   "type": "page lue par l'IA",
@@ -113,9 +127,9 @@
  },
  {
   "nom": "Centre Segal",
-  "url": "https://www.segalcentre.org/fr/home",
+  "url": "https://purchase.segalcentre.org/Events",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -190,7 +204,7 @@
  },
  {
   "nom": "Orchestre Métropolitain",
-  "url": "https://www.orchestremetropolitain.com/fr/concerts",
+  "url": "https://orchestremetropolitain.com/fr/programmation",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
@@ -358,9 +372,9 @@
  },
  {
   "nom": "Tortue Berlue (théâtre jeune public)",
-  "url": "https://www.tortueberlue.com/spectacles",
+  "url": "https://www.tortueberlue.com/calendrier-automne-et-noel-2026",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -403,20 +417,6 @@
   "url": "https://www.lacenne.com/programmation",
   "type": "page lue par l'IA",
   "evenements": 4,
-  "erreur": false
- },
- {
-  "nom": "Diese Onze",
-  "url": "https://www.dieseonze.com",
-  "type": "page lue par l'IA",
-  "evenements": 0,
-  "erreur": false
- },
- {
-  "nom": "Modavie (musique live)",
-  "url": "https://modavie.com/en/live-music",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {
@@ -477,9 +477,9 @@
  },
  {
   "nom": "La Rocambolesque",
-  "url": "https://rocambolesque.ca/calendrier",
+  "url": "https://lepointdevente.com/larocambolesque",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 29,
   "erreur": false
  },
  {
@@ -487,13 +487,6 @@
   "url": "https://www.leportdetete.com/evenements",
   "type": "page lue par l'IA",
   "evenements": 17,
-  "erreur": false
- },
- {
-  "nom": "Cabaret Jazz L'Entracte (Zeffy)",
-  "url": "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {
@@ -529,13 +522,6 @@
   "url": "https://westmount.org/en/victoria-hall-community-centre",
   "type": "page lue par l'IA",
   "evenements": 8,
-  "erreur": false
- },
- {
-  "nom": "MC Hall",
-  "url": "https://mchall.ca",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {
@@ -666,9 +652,9 @@
  },
  {
   "nom": "BAnQ – activités",
-  "url": "https://www.banq.qc.ca/activites",
+  "url": "https://www.banq.qc.ca/calendrier/a-venir",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -693,6 +679,13 @@
   "erreur": false
  },
  {
+  "nom": "LIM – saison (billetterie)",
+  "url": "https://lepointdevente.com/billets/lim20262027",
+  "type": "page lue par l'IA",
+  "evenements": 3,
+  "erreur": false
+ },
+ {
   "nom": "Cabaret Lion d'Or (LIM et spectacles)",
   "url": "https://cabaretliondor.com",
   "type": "page lue par l'IA",
@@ -701,7 +694,7 @@
  },
  {
   "nom": "La Mèche courte (festival jeune public)",
-  "url": "https://www.lamechecourte.ca/programmation",
+  "url": "https://lamechecourte.tuxedobillet.com",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
@@ -728,10 +721,45 @@
   "erreur": false
  },
  {
-  "nom": "Tourisme Montréal – expositions automne-hiver",
-  "url": "https://www.mtl.org/fr/experience/expositions-automne-hiver-montreal",
+  "nom": "MAC – Musée d'art contemporain (programme)",
+  "url": "https://macm.org/quoi-faire-au-mac",
   "type": "page lue par l'IA",
   "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "MAC – Musée d'art contemporain (expositions)",
+  "url": "https://macm.org/expositions",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Écomusée du fier monde",
+  "url": "https://ecomusee.qc.ca/programmation",
+  "type": "page lue par l'IA",
+  "evenements": 2,
+  "erreur": false
+ },
+ {
+  "nom": "Musée des Hospitalières",
+  "url": "https://museedeshospitalieres.qc.ca/activites",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Arsenal art contemporain (expositions)",
+  "url": "https://www.arsenalcontemporary.com/montreal/expositions",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Espace pour la vie – calendrier (Biosphère, Biodôme, Jardin botanique, Insectarium)",
+  "url": "https://espacepourlavie.ca/biosphere",
+  "type": "page lue par l'IA",
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -981,9 +1009,9 @@
  },
  {
   "nom": "Dièse Onze",
-  "url": "https://www.dieseonze.com",
+  "url": "http://www.dieseonze.com/calendrier.php?l=fr",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 21,
   "erreur": false
  },
  {
@@ -998,13 +1026,6 @@
   "url": "https://www.entractejazz.org",
   "type": "page lue par l'IA",
   "evenements": 6,
-  "erreur": false
- },
- {
-  "nom": "Bistro à Jojo (blues)",
-  "url": "https://www.bistroajojo.com/livemusic",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {
@@ -1205,9 +1226,16 @@
  },
  {
   "nom": "Théâtre de l'Esquisse",
-  "url": "https://theatredelesquisse.qc.ca",
+  "url": "https://theatredelesquisse.qc.ca/accueil/a-laffiche",
   "type": "page lue par l'IA",
   "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "Tango Libre",
+  "url": "https://tangolibre.ca/horaires",
+  "type": "page lue par l'IA",
+  "evenements": 18,
   "erreur": false
  },
  {
@@ -1215,13 +1243,6 @@
   "url": "http://www.lacomedie.ca",
   "type": "page lue par l'IA",
   "evenements": 56,
-  "erreur": false
- },
- {
-  "nom": "Circuit-Est centre chorégraphique",
-  "url": "https://circuit-est.qc.ca",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {
@@ -1234,6 +1255,20 @@
  {
   "nom": "La Serre – arts vivants",
   "url": "https://laserre.ca",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "DOUZE DOUZE (La Serre)",
+  "url": "https://laserre.ca/initiative/douze-douze",
+  "type": "page lue par l'IA",
+  "evenements": 0,
+  "erreur": false
+ },
+ {
+  "nom": "OFFTA",
+  "url": "https://offta.com",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
@@ -1526,6 +1561,13 @@
   "erreur": false
  },
  {
+  "nom": "Musique live hebdomadaire (Modavie)",
+  "url": "",
+  "type": "recurrents",
+  "evenements": 122,
+  "erreur": false
+ },
+ {
   "nom": "ma.to – communauté (quiz, trivia)",
   "url": "https://ma.to/events/montreal/anytime/community",
   "type": "page lue par l'IA",
@@ -1544,13 +1586,6 @@
   "url": "https://ma.to/venue/lebalconcabaret",
   "type": "page lue par l'IA",
   "evenements": 4,
-  "erreur": false
- },
- {
-  "nom": "Cabaret Jazz L'Entracte (billetterie Zeffy)",
-  "url": "https://www.zeffy.com/fr-CA/organizations/cabaret-jazz-lentracte-osbl",
-  "type": "page lue par l'IA",
-  "evenements": 0,
   "erreur": false
  },
  {

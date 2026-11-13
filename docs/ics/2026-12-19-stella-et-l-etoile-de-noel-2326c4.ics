@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-19-stella-et-l-etoile-de-noel-2326c4@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261219T110000
+DTEND;TZID=America/Toronto:20261219T130000
+SUMMARY:Stella et l'étoile de Noël
+LOCATION:Ville de L'Île-Perrot\, Montréal
+URL:https://www.ile-perrot.qc.ca/evenements/bibliotheque/noel-stella-et-let
+ oile-de-noel-presente-par-theatre-tortue-berlue
+DESCRIPTION:Spectacle de Noël pour enfants\, présenté dans le cadre de l
+ a tournée Théâtre chez vous.\nDétails : https://www.ile-perrot.qc.ca/e
+ venements/bibliotheque/noel-stella-et-letoile-de-noel-presente-par-theatre
+ -tortue-berlue\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

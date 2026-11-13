@@ -24,6 +24,7 @@
  "Anacostia Neighborhood Library": null,
  "Ancien Théâtre Desjardins": null,
  "Annexe Herb Linder": null,
+ "Archives nationales à Montréal": null,
  "Argo Bookshop": {
   "alias": [],
   "lat": 45.49335,
@@ -80,6 +81,7 @@
   "lon": -73.607,
   "quartier": "Petite-Patrie"
  },
+ "Aux Angles Ronds": null,
  "Bande Passante": {
   "lat": 45.52232,
   "lon": -73.59083,
@@ -269,6 +271,7 @@
   "quartier": "Montréal-Nord"
  },
  "Bibliothèque de Cartierville": null,
+ "Bibliothèque de Cowansville": null,
  "Bibliothèque de Côte-des-Neiges": {
   "lat": 45.498,
   "lon": -73.625,
@@ -730,6 +733,11 @@
   "quartier": "Ville-Marie"
  },
  "Diagonale": null,
+ "Diese Onze": {
+  "lat": 45.52141,
+  "lon": -73.57692,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Double's": {
   "lat": 45.52038,
   "lon": -73.59713,
@@ -1154,6 +1162,7 @@
   "lon": -73.6215,
   "quartier": "Mile-Ex"
  },
+ "La Petite Bibliothèque Verte": null,
  "La Petite Boîte Noire": null,
  "La Pointe Sec": null,
  "La SAT": null,
@@ -1512,6 +1521,11 @@
  },
  "Milieux Institute for Arts, Culture and Technology, Concordia University": null,
  "Milieux Institute, Sir George Williams Campus": null,
+ "Modavie": {
+  "lat": 45.50547,
+  "lon": -73.55396,
+  "quartier": "Ville-Marie"
+ },
  "Molson Canadian Centre at Casino New-Brunswick": null,
  "Montreal Improv": null,
  "Montreal West Train Station": null,
@@ -1719,7 +1733,12 @@
   "lon": -73.56071,
   "quartier": "Ville-Marie"
  },
- "Pavillon Paul-Gérin-Lajoie": null,
+ "Pavillon Paul-Gérin-Lajoie": {
+  "alias": [],
+  "lat": 45.51321,
+  "lon": -73.55864,
+  "quartier": "Ville-Marie"
+ },
  "Pavillon Président-Kennedy": {
   "alias": [],
   "lat": 45.509,
@@ -2024,6 +2043,7 @@
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
  },
+ "Tango Libre": null,
  "Teatro Amelia e Lino Saputo": null,
  "The Arden Theatre": null,
  "The Arena at Pickering Casino Resort": null,
@@ -2279,6 +2299,8 @@
  },
  "Vieux bureau de poste": null,
  "Vieux couvent de Saint-Prime": null,
+ "Ville de L'Île-Perrot": null,
+ "Ville de Plessisville": null,
  "Visual Arts Building": {
   "lat": 45.49579,
   "lon": -73.57397,
