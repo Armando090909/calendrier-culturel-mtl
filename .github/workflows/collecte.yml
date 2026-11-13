@@ -122,7 +122,7 @@ jobs:
     needs: [verif, lecture]
     if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
-    timeout-minutes: 120
+    timeout-minutes: 45
     permissions:
       contents: write
       issues: write  # avis « proposition à juger »
@@ -168,6 +168,7 @@ jobs:
           TOUT_RELIRE: ${{ (inputs.tout_relire || (github.event_name == 'push' && contains(github.event.head_commit.message, '[tout relire]'))) && '1' || '0' }}
           DECOUVERTE: ${{ inputs.decouverte && '1' || '0' }}
           ETAPE_COLLECTE: assemblage
+          COLLECTE_RAPIDE: "1"  # publication rapide : l'enrichissement suit
         run: python -u collecteur/collecte.py
 
       # Bilan de santé : un avis (issue GitHub, donc un courriel) seulement pour un problème qui dure
@@ -217,55 +218,99 @@ jobs:
   publication:
     needs: assemblage
     if: always() && needs.assemblage.result != 'cancelled'
-    runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploiement.outputs.page_url }}
+    uses: ./.github/workflows/publier.yml
+
+  # 3e temps (13 nov. 2026) : enrichissement (heures sur les pages et billetteries, horaires des pièces, affiches,
+  # liens d'écoute, traductions, contre-vérification), puis le site est republié. Le site est déjà en ligne : si cette
+  # étape est lente ou plante, rien n'est perdu, et ce qu'elle a trouvé est gardé en mémoire pour la fois suivante.
+  enrichissement:
+    needs: [assemblage, publication]
+    if: always() && needs.assemblage.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
-      - uses: actions/configure-pages@v5
-      # Version anglaise des pages fixes (docs/en/), refaite à partir des pages françaises
-      - name: Pages anglaises
-        run: python3 outils/traduire_pages.py
-      - name: Polices hébergées sur le site
-        run: python3 outils/polices.py
-      # Numéro de version sur app.js et style.css : les navigateurs prennent la nouvelle version tout de suite
-      - name: Version des fichiers
+          ref: ${{ github.ref_name }}  # avec les lectures enregistrées par le 1er temps
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: collecteur/requirements.txt
+
+      - name: Installer
+        run: pip install -r collecteur/requirements.txt
+
+      # Chrome sans fenêtre, pour les salles dont le site s'affiche en JavaScript (« navigateur: true »)
+      - name: Mémoire du navigateur
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-1.48
+      - name: Installer le navigateur
         run: |
-          V=$(date +%Y%m%d%H%M)
-          sed -i -E "s#(href|src)=\"((\.\./)?(app\.js|style\.css))(\?v=[0-9]+)?\"#\1=\"\2?v=$V\"#g" docs/*.html docs/en/*.html
-          grep -h -o -E '(app|style)[.](js|css)[?]v=[0-9]+' docs/*.html docs/en/*.html | sort -u || true
-      # Pages pour Google et les aperçus de partage : une par événement, une par jour, sitemap.xml
-      - name: Pages des événements et des jours
-        run: python3 outils/pages.py
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-      # GitHub Pages met parfois plus de 10 min (son maximum) à copier les ~8 000 fichiers : on réessaie une fois,
-      # et un échec n'est signalé (courriel) que si le site en ligne n'a plus été mis à jour depuis plus d'un jour.
-      - id: deploiement
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-        with:
-          timeout: 600000
-      - id: deploiement2
-        if: steps.deploiement.outcome == 'failure'
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-        with:
-          timeout: 600000
-      - name: Site en ligne à jour ?
-        if: steps.deploiement.outcome == 'failure' && steps.deploiement2.outcome == 'failure'
+          # sans les paquets système si le serveur d'Ubuntu ne répond pas (ils sont déjà sur l'image GitHub)
+          python -m playwright install --with-deps chromium || python -m playwright install chromium
+
+      - name: Enrichir et rebâtir le site
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          TIDAL_CLIENT_ID: ${{ secrets.TIDAL_CLIENT_ID }}
+          TIDAL_CLIENT_SECRET: ${{ secrets.TIDAL_CLIENT_SECRET }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          PROPOSITIONS_CSV_URL: ${{ vars.PROPOSITIONS_CSV_URL }}
+          CALENDRIERS_CSV_URL: ${{ vars.CALENDRIERS_CSV_URL }}
+          CONTACT: ${{ vars.CONTACT }}
+          TOUT_RELIRE: ${{ (inputs.tout_relire || (github.event_name == 'push' && contains(github.event.head_commit.message, '[tout relire]'))) && '1' || '0' }}
+          DECOUVERTE: ${{ inputs.decouverte && '1' || '0' }}
+          ETAPE_COLLECTE: assemblage
+        run: python -u collecteur/collecte.py
+
+
+      - name: Enregistrer
+        if: always()
         run: |
-          EN_LIGNE=$(curl -fsS "https://ccmtl.ca/data.json?t=$(date +%s)" | python3 -c "import json,sys; print(json.load(sys.stdin).get('miseAJour',''))" || echo "")
-          HIER=$(TZ=America/Toronto date -d yesterday +%F)
-          echo "Données en ligne du : ${EN_LIGNE:-inconnu}"
-          if [ -z "$EN_LIGNE" ] || [[ "$EN_LIGNE" < "$HIER" ]]; then
-            echo "::error::Le site en ligne n'est plus mis à jour depuis le $EN_LIGNE (deux publications ratées)."; exit 1
+          git config user.name "collecte-automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A docs/ics docs/archives && git add docs/ville_a_lire.json docs/pages_a_lire.json docs/data.json docs/rapport.json docs/festivals.json docs/sources.json collecteur/lieux.json collecteur/cache 2>/dev/null || true
+          git add docs/qualite.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau."
+          else
+            git commit -m "Enrichissement du $(TZ=America/Toronto date +%F)"
+            # Si le code a changé pendant la collecte, on se met à jour avant d'envoyer (les données de la collecte gagnent)
+            for essai in 1 2 3; do  # --autostash : même protection que pour la lecture (13 nov. 2026)
+              git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 10
+            done
           fi
-          echo "::warning::Publication ratée deux fois (GitHub Pages trop lent), mais le site en ligne date du $EN_LIGNE : la prochaine publication rattrapera."
+
+      # Fait échouer l'étape (donc un courriel de GitHub) si l'API Claude a refusé : crédits épuisés ou clé refusée.
+      - name: Alerte API Claude
+        if: always()
+        run: |
+          if grep -q '"alerte": "credits"' docs/rapport.json; then
+            echo "::error::Crédits de l'API Claude épuisés : rechargez sur https://platform.claude.com (Billing)."; exit 1
+          elif grep -q '"alerte": "cle"' docs/rapport.json; then
+            echo "::error::Clé de l'API Claude refusée : vérifiez le secret ANTHROPIC_API_KEY dans GitHub."; exit 1
+          fi
+
+  republication:
+    needs: enrichissement
+    if: always() && needs.enrichissement.result == 'success'
+    permissions:
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publier.yml
