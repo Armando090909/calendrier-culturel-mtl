@@ -108,8 +108,13 @@ jobs:
           git add collecteur/cache 2>/dev/null || true
           if git diff --cached --quiet; then echo "Rien de nouveau."; else
             git commit -m "Lecture des sources du $(TZ=America/Toronto date +%F)"
-            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort
-            git push
+            # --autostash (13 nov. 2026) : la lecture modifie aussi des fichiers hors du cache (ex. docs/) ; sans ça,
+            # « git pull --rebase » refusait (« You have unstaged changes ») et les lectures du jour n'étaient pas envoyées
+            for essai in 1 2 3; do
+              git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 10
+            done
           fi
 
   # 2e temps : le site bâti à partir des lectures, sans relire ; publié même si la lecture a dépassé sa limite
@@ -184,8 +189,11 @@ jobs:
           else
             git commit -m "Collecte du $(TZ=America/Toronto date +%F)"
             # Si le code a changé pendant la collecte, on se met à jour avant d'envoyer (les données de la collecte gagnent)
-            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort
-            git push
+            for essai in 1 2 3; do  # --autostash : même protection que pour la lecture (13 nov. 2026)
+              git pull --rebase --autostash -X theirs origin "${GITHUB_REF_NAME}" && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 10
+            done
           fi
 
       # Un avis (issue GitHub, donc un courriel) par proposition du formulaire mise de côté par le tri automatique
