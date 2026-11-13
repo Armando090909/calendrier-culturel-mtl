@@ -1,155 +1,77 @@
 {
- "https://espacestdenis.com/fr/": {
-  "simple": {
-   "erreur": "403 Client Error: Forbidden for url: https://espacestdenis.com/fr/"
-  },
-  "navigateur": {
-   "erreur": "403  (navigateur)"
-  }
- },
- "https://theatredaujourdhui.qc.ca/": {
+ "https://theatredaujourdhui.tuxedobillet.com/": {
   "statut": 200,
   "simple_images": {
    "og": null,
-   "img": [
-    " | ",
-    " | ",
-    " | Tire le coyote et ses ami·es chantent Cohen… en français",
-    " | Madeleine",
-    " | Ne priez pas pour nous",
-    " | BIMBO",
-    " | L’affaire Magnolia",
-    " | Paradis Ébène",
-    " | Un accueil émotif pour Fondre à Rouyn-Noranda",
-    " | La pièce « Le palais des glaces » au CTD’A : Tobie Bureau-Hu",
-    " | Le Palais des Glaces",
-    " | Celle qui dit non au cornet à 275 $",
-    " | Lumière sur Cohen avec Tire le coyote",
-    " | ",
-    "/_nuxt/logo.DiHG1dTI.svg | ",
-    "/_nuxt/logo-mobile.BQMxdBAI.svg | ",
-    "data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22 | Rechercher"
-   ],
+   "img": [],
    "iframes": [],
    "calendriers": []
   },
   "simple": {
-   "taille": 5058,
-   "texte": "Centre du Théâtre d’Aujourd’hui\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nDavid Paquet\nSalle Michelle-Rossignol\n10\n novembre au \n5\n décembre \n2026\nBillets\nDétails <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nVitesse-lumière <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nJacques Laroche\nSalle Jean-Claude-Germain\n3\n au \n21\n novembre \n2026\nBillets\nDétails <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nEn supplémentaires <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nÀ venir\nEn supplémentaires Événement <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nTire le coyote et ses ami·es chantent Cohen… en français <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nTire le coyote\nSalle Michelle-Rossignol\n15\n au \n19\n décembre \n2026\nBillets\nMadeleine <https://theatredaujourdhui.qc.ca/spectacles/madeleine>\nMaxime Robin\nSalle Jean-Claude-Germain\n19\n janvier au \n6\n février \n2027\nBillets\nNe priez pas pour nous <https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous>\nCharles Fournier\nSalle Michelle-Rossignol\n2\n au \n27\n février \n2027\nBillets\nBIMBO <https://theatredaujourdhui.qc.ca/spectacles/bimbo>\nGeneviève Labelle et Mélodie Noël Rousseau\nSalle Jean-Claude-Germain\n2\n au \n20\n mars \n2027\nBillets\nL’affaire Magnolia <https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia>\nMaud de Palma-Duquet\nSalle Michelle-Rossignol\n6\n avril au \n1\ner\n mai \n2027\nBillets\nParadis Ébène <https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene>\nPhara Thibault\nSalle Jean-Claude-Germain\n20\n avril au \n8\n mai \n2027\nBillets\nActualités <https://theatredaujourdhui.qc.ca/actualites>\nVoir tout <https://theatredaujourdhui.qc.ca/actualites>\n« Dès les premières répliques, on retrouve avec ravissement la plume de Paquet, qui n’a rien perdu de sa superbe, aussi pointue dans le vitriolique que dans le déjanté. » <https://revuejeu.org/2026/11/11/le-palais-des-glaces-miroir-effarant/>\nCritiques\n12\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\n« À cette éloquente scénographie signée Patrice Charbonneau-Brunelle […] s’allient les magnifiques et signifiants éclairages élaborés par Cédric Delorme-Bouchard ainsi que le vibrant environnement sonore mis au point par Vincent Legault. » <https://www.ledevoir.com/culture/theatre/1024247/palais-glaces-reflet-trop-affute-etre-flatteur>\nCritiques\n12\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\n« […] Le Palais des Glaces de David Paquet est une pièce décapante et grand-guignolesque. Une comédie dystopique, mais ancrée dans l’urgence du présent. Et portée par une distribution complètement investie dans l’univers de l’auteur. » <https://www.lapresse.ca/arts/theatre/2026-11-11/critique-le-palais-des-glaces/le-monde-est-sans-pitie.php>\nCritiques\n11\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nMédias\n11\n novembre \n2026\nUn accueil émotif pour Fondre à Rouyn-Noranda <https://ici.radio-canada.ca/article/info/2298510/reception-fondre-theatre-rouyn-noranda>\nRadio-Canada\nFondre <https://theatredaujourdhui.qc.ca/spectacles/fondre>\nMédias\n11\n novembre \n2026\nLa pièce « Le palais des glaces » au CTD ’A : Tobie Bureau-Huot <https://ici.radio-canada.ca/ohdio/premiere/emissions/votre-retour/segments/rattrapage/2526159/culture-avec-tobie-bureau-huot>\nVotre retour, \nICI\n Première\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nLivres\n11\n novembre \n2026\nLe Palais des Glaces <https://lemeac.com/livres/le-palais-des-glaces/>\nDavid Paquet\nLeméac Éditeur\nMédias\n10\n novembre \n2026\nCelle qui dit non au cornet à 275 $ <https://www.lapresse.ca/arts/theatre/2026-11-10/dominique-quesnel-dans-le-palais-des-glaces/celle-qui-dit-non-au-cornet-a-275.php>\nLa Presse\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nMédias\n9\n novembre \n2026\nLumière sur Cohen avec Tire le coyote <https://ici.radio-canada.ca/ohdio/musique/emissions/14127/lumiere-sur-cohen-avec-tire-le-coyote>\nRadio-Canada\nTire le coyote et ses ami·es chantent Cohen… en français <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nCrédit : \nValaska\nAbonnez-vous !\nChoisissez au moins trois spectacles parmi la saison \n2026\n — \n2027\n et profitez d’un rabais progressif, d’une grande flexibilité et de privilèges exclusifs.\nJe m’abonne ! <https://theatredaujourdhui-abonnement.tuxedobillet.com>\nBillets\nDonner <https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmbEtxdnJ0aW5pVzBXV2I3eXR1VEcxV21GQU5XYlZDLWpISWV4NDJuNEEzZ2FBb0xrRUFMd193Y0I.*_gcl_au*MjI1OTgwNzYuMTc3ODYxODk4Ng..*_ga*MTEzNzEwODcwNS4xNzcwODMzNTcz*_ga_QDNTB9F195*czE3Nzk4OTA5NDAkbzc0JGcxJHQxNzc5OTAxNzU1JGo2MCRsMCRoMA..>",
+   "taille": 46,
+   "texte": "Billetterie - Boxoffice\nChargement en cours...",
    "courriels": [],
    "contact": [],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@id\":\"https://theatredaujourdhui.qc.ca/#website\",\"@type\":\"WebSite\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"url\":\"https://theatredaujourdhui.qc.ca\",\"publisher\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#webpage\",\"@type\":\"WebPage\",\"description\":\"Le Centre du Théâtre d'Aujourd'hui est une institution théâtrale et un centre dramatique fondé en 1968 et situé à Montréal (Québec).\",\"url\":\"https://theatredaujourdhui.qc.ca\",\"about\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\"},\"breadcrumb\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#breadcrumb\"},\"isPartOf\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#website\"},\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://theatredaujourdhui.qc.ca\"]}],\"primaryImageOfPage\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#logo\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\",\"@type\":\"Organization\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"type\":\"Organization\",\"url\":\"https://theatredaujourdhui.qc.ca/\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"3900, rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2W 2M2\",\"addressRegion\":\"Québec\",\"addressCountry\":\"Canada\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#breadcrumb\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"name\":\"Accueil\",\"position\":1}]},{\"@id\":\"https://theatredaujourdhui.qc.ca/#logo\",\"@type\":\"ImageObject\",\"caption\":\"Centre du Théâtre d’Aujourd’hui\",\"contentUrl\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\",\"url\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\"},{\"@id\":\"https://theatredaujourdhui.qc.ca/#organization\",\"@type\":\"Organization\",\"logo\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"url\":\"https://theatredaujourdhui.qc.ca/\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"3900, rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2W 2M2\",\"addressRegion\":\"Québec\",\"addressCountry\":\"Canada\"}}]}"
-   ],
+   "jsonld": [],
    "heures": [],
-   "liens": [
-    "https://theatredaujourdhui-abonnement.tuxedobillet.com",
-    "https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&amp;_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmbEtxdnJ0aW5pVzBXV2I3eXR1VEcxV21GQU5XYlZDLWpISWV4NDJuNEEzZ2FBb0xrRUFMd193Y0I.*_gcl_au*MjI1OTgwNzYuMTc3ODYxODk4Ng..*_ga*MTEzNzEwODcwNS4xNzcwODMzNTcz*_ga_QDNTB9F195*czE3Nzk4OTA5NDAkbzc0JGcxJHQxNzc5OTAxNzU1JGo2MCRsMCRoMA.."
-   ],
-   "menu": [
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Détails → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    " → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Vitesse-lumière → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "Détails → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "En supplémentaires → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "En supplémentaires Événement → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    "Tire le coyote et ses ami·es chantent Cohen… en fr → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    " → https://theatredaujourdhui.qc.ca/spectacles/madeleine",
-    "Madeleine → https://theatredaujourdhui.qc.ca/spectacles/madeleine",
-    " → https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous",
-    "Ne priez pas pour nous → https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous",
-    " → https://theatredaujourdhui.qc.ca/spectacles/bimbo",
-    "BIMBO → https://theatredaujourdhui.qc.ca/spectacles/bimbo",
-    " → https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia",
-    "L’affaire Magnolia → https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia",
-    " → https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene",
-    "Paradis Ébène → https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Fondre → https://theatredaujourdhui.qc.ca/spectacles/fondre",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Tire le coyote et ses ami·es chantent Cohen… en fr → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    "Je m’abonne ! → https://theatredaujourdhui-abonnement.tuxedobillet.com",
-    "Conditions générales d’achat de billets → https://theatredaujourdhui.qc.ca/politiques/conditions-dachat",
-    "Donner → https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDc"
-   ]
+   "liens": [],
+   "menu": []
   },
   "navigateur_images": {
-   "og": null,
+   "og": "https://tuxedov1.blob.core.windows.net/global/TuxedoFacebook.png",
    "img": [
-    " | ",
-    " | ",
-    " | Tire le coyote et ses ami·es chantent Cohen… en français",
-    " | Madeleine",
-    " | Ne priez pas pour nous",
-    " | BIMBO",
-    " | L’affaire Magnolia",
-    " | Paradis Ébène",
-    " | Un accueil émotif pour Fondre à Rouyn-Noranda",
-    " | La pièce « Le palais des glaces » au CTD’A : Tobie Bureau-Hu",
-    " | Le Palais des Glaces",
-    " | Celle qui dit non au cornet à 275 $",
-    " | Lumière sur Cohen avec Tire le coyote",
-    " | ",
-    "/assets/3.svg | ",
-    "/assets/9.svg | ",
-    "/assets/0.svg | ",
-    "/assets/0.svg | ",
-    "/uploads/Couverture_3900_Volume16_finale-2.jpg | Volume 16",
-    "/uploads/Tranche_3900_Volume16_finale.jpg | Volume 16",
-    "/_nuxt/logo.DiHG1dTI.svg | ",
-    "/_nuxt/logo-mobile.BQMxdBAI.svg | ",
-    "data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22 | Rechercher"
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/cms/cms_-NbG7estqCQSft_2tmCB_.png | ",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/bannerPlanning/bannerPlanning_-OrPHvJ0gdi4ghdoCUPr_.png | ",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Vitesse%20lumi%C3%A8re%20%7C%20Dromologie%20101_-OrQdTtc9bqMbfL_nZV | Vitesse-lumière | Dromologie 101",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Le%20Palais%20des%20Glaces_-OrQfRFtYnyInqWMOcx8_.jpg | Le Palais des Glaces",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Tire%20le%20coyote%20et%20ses%20ami%C2%B7es%20chantent%20Cohen%E2%8 | Tire le coyote et ses ami·es chantent Cohen… en français",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Madeleine_-OrQgVOH8J_ADQ5R-qLS_.jpg | Madeleine",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Ne%20priez%20pas%20pour%20nous_-OrQhjqMjux9Hwx-tyCL_.jpg | Ne priez pas pour nous",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/BIMBO_-OrQjkKSSxoomZ-9F_Hf_.jpg | BIMBO",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/L%27affaire%20Magnolia_-OrTRv989J7hEgVwg55w_.jpg | L'affaire Magnolia",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/show/Spectacle%209_-OrTYH0SFR7YGwvITpgy_.jpg | Paradis Ébène",
+    "https://tuxedov1.blob.core.windows.net/tuxedo-theatredaujourdhui-default-rtdb/fundraising/fundraising_-P29TILy5zliVkEgHEOw_.png | Soutenez le CTD'A !"
    ],
-   "iframes": [],
+   "iframes": [
+    "https://js.stripe.com/v2/channel.html?stripe_xdm_e=https%3A%2F%2Ftheatredaujourdhui.tuxedobillet.com&stripe_xdm_c=default816694&stripe_xdm_p=1#__strip",
+    "https://js.stripe.com/v2/m/outer.html#referrer=&title=Billetterie%20-%20Boxoffice&url=https%3A%2F%2Ftheatredaujourdhui.tuxedobillet.com%2F&muid=NA&sid",
+    "https://m.stripe.network/inner.html#referrer=&title=Billetterie%20-%20Boxoffice&url=https%3A%2F%2Ftheatredaujourdhui.tuxedobillet.com%2F&muid=NA&sid=N"
+   ],
    "calendriers": []
   },
   "navigateur": {
-   "taille": 5058,
-   "texte": "Centre du Théâtre d’Aujourd’hui\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nDavid Paquet\nSalle Michelle-Rossignol\n10\n novembre au \n5\n décembre \n2026\nBillets\nDétails <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nVitesse-lumière <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nJacques Laroche\nSalle Jean-Claude-Germain\n3\n au \n21\n novembre \n2026\nBillets\nDétails <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nEn supplémentaires <https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere>\nÀ venir\nEn supplémentaires Événement <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nTire le coyote et ses ami·es chantent Cohen… en français <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nTire le coyote\nSalle Michelle-Rossignol\n15\n au \n19\n décembre \n2026\nBillets\nMadeleine <https://theatredaujourdhui.qc.ca/spectacles/madeleine>\nMaxime Robin\nSalle Jean-Claude-Germain\n19\n janvier au \n6\n février \n2027\nBillets\nNe priez pas pour nous <https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous>\nCharles Fournier\nSalle Michelle-Rossignol\n2\n au \n27\n février \n2027\nBillets\nBIMBO <https://theatredaujourdhui.qc.ca/spectacles/bimbo>\nGeneviève Labelle et Mélodie Noël Rousseau\nSalle Jean-Claude-Germain\n2\n au \n20\n mars \n2027\nBillets\nL’affaire Magnolia <https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia>\nMaud de Palma-Duquet\nSalle Michelle-Rossignol\n6\n avril au \n1\ner\n mai \n2027\nBillets\nParadis Ébène <https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene>\nPhara Thibault\nSalle Jean-Claude-Germain\n20\n avril au \n8\n mai \n2027\nBillets\nActualités <https://theatredaujourdhui.qc.ca/actualites>\nVoir tout <https://theatredaujourdhui.qc.ca/actualites>\n« Dès les premières répliques, on retrouve avec ravissement la plume de Paquet, qui n’a rien perdu de sa superbe, aussi pointue dans le vitriolique que dans le déjanté. » <https://revuejeu.org/2026/11/11/le-palais-des-glaces-miroir-effarant/>\nCritiques\n12\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\n« À cette éloquente scénographie signée Patrice Charbonneau-Brunelle […] s’allient les magnifiques et signifiants éclairages élaborés par Cédric Delorme-Bouchard ainsi que le vibrant environnement sonore mis au point par Vincent Legault. » <https://www.ledevoir.com/culture/theatre/1024247/palais-glaces-reflet-trop-affute-etre-flatteur>\nCritiques\n12\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\n« […] Le Palais des Glaces de David Paquet est une pièce décapante et grand-guignolesque. Une comédie dystopique, mais ancrée dans l’urgence du présent. Et portée par une distribution complètement investie dans l’univers de l’auteur. » <https://www.lapresse.ca/arts/theatre/2026-11-11/critique-le-palais-des-glaces/le-monde-est-sans-pitie.php>\nCritiques\n11\n novembre \n2026\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nMédias\n11\n novembre \n2026\nUn accueil émotif pour Fondre à Rouyn-Noranda <https://ici.radio-canada.ca/article/info/2298510/reception-fondre-theatre-rouyn-noranda>\nRadio-Canada\nFondre <https://theatredaujourdhui.qc.ca/spectacles/fondre>\nMédias\n11\n novembre \n2026\nLa pièce « Le palais des glaces » au CTD ’A : Tobie Bureau-Huot <https://ici.radio-canada.ca/ohdio/premiere/emissions/votre-retour/segments/rattrapage/2526159/culture-avec-tobie-bureau-huot>\nVotre retour, \nICI\n Première\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nLivres\n11\n novembre \n2026\nLe Palais des Glaces <https://lemeac.com/livres/le-palais-des-glaces/>\nDavid Paquet\nLeméac Éditeur\nMédias\n10\n novembre \n2026\nCelle qui dit non au cornet à 275 $ <https://www.lapresse.ca/arts/theatre/2026-11-10/dominique-quesnel-dans-le-palais-des-glaces/celle-qui-dit-non-au-cornet-a-275.php>\nLa Presse\nLe Palais des Glaces <https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces>\nMédias\n9\n novembre \n2026\nLumière sur Cohen avec Tire le coyote <https://ici.radio-canada.ca/ohdio/musique/emissions/14127/lumiere-sur-cohen-avec-tire-le-coyote>\nRadio-Canada\nTire le coyote et ses ami·es chantent Cohen… en français <https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen>\nCrédit : \nValaska\nAbonnez-vous !\nChoisissez au moins trois spectacles parmi la saison \n2026\n — \n2027\n et profitez d’un rabais progressif, d’une grande flexibilité et de privilèges exclusifs.\nJe m’abonne ! <https://theatredaujourdhui-abonnement.tuxedobillet.com>\nBillets\nDonner <https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmbEtxdnJ0aW5pVzBXV2I3eXR1VEcxV21GQU5XYlZDLWpISWV4NDJuNEEzZ2FBb0xrRUFMd193Y0I.*_gcl_au*MjI1OTgwNzYuMTc3ODYxODk4Ng..*_ga*MTEzNzEwODcwNS4xNzcwODMzNTcz*_ga_QDNTB9F195*czE3Nzk4OTA5NDAkbzc0JGcxJHQxNzc5OTAxNzU1JGo2MCRsMCRoMA..>",
+   "taille": 1462,
+   "texte": "Centre du Theatre d'Aujourd'hui\nEn vente\n - \nTous les spectacles\nPlus de détails À partir du 13 nov. 2026 Vitesse-lumière | Dromologie 101 Jacques Laroche <https://theatredaujourdhui.tuxedobillet.com/Main/vitesse-lumiere>\nPlus de détails À partir du 13 nov. 2026 Le Palais des Glaces David Paquet <https://theatredaujourdhui.tuxedobillet.com/Main/le-palais-des-glaces>\nPlus de détails À partir du 15 déc. 2026 Tire le coyote et ses ami·es chantent Cohen… en français Tire le coyote <https://theatredaujourdhui.tuxedobillet.com/Main/tire-le-coyote-cohen>\nPlus de détails À partir du 19 janv. 2027 Madeleine Maxime Robin <https://theatredaujourdhui.tuxedobillet.com/Main/madeleine>\nPlus de détails À partir du 2 févr. 2027 Ne priez pas pour nous Charles Fournier <https://theatredaujourdhui.tuxedobillet.com/Main/ne-priez-pas-pour-nous>\nPlus de détails À partir du 2 mars 2027 BIMBO Geneviève Labelle et Mélodie Noël Rousseau <https://theatredaujourdhui.tuxedobillet.com/Main/bimbo>\nPlus de détails À partir du 6 avr. 2027 L'affaire Magnolia Maud de Palma-Duquet <https://theatredaujourdhui.tuxedobillet.com/Main/laffaire-magnolia>\nPlus de détails À partir du 20 avr. 2027 Paradis Ébène Phara Thibault <https://theatredaujourdhui.tuxedobillet.com/Main/paradis-ebene>\nNos activités de financement\nPlus de détails Soutenez le CTD'A ! <https://theatredaujourdhui.tuxedobillet.com/Main/Appuyer-le-CTDA>\nStripe Internal Communication Channel\nStripeM-Outer\nStripeM-Inner",
    "courriels": [],
    "contact": [],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@id\":\"https://theatredaujourdhui.qc.ca/#website\",\"@type\":\"WebSite\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"url\":\"https://theatredaujourdhui.qc.ca\",\"publisher\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#webpage\",\"@type\":\"WebPage\",\"description\":\"Le Centre du Théâtre d'Aujourd'hui est une institution théâtrale et un centre dramatique fondé en 1968 et situé à Montréal (Québec).\",\"url\":\"https://theatredaujourdhui.qc.ca\",\"about\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\"},\"breadcrumb\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#breadcrumb\"},\"isPartOf\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#website\"},\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://theatredaujourdhui.qc.ca\"]}],\"primaryImageOfPage\":{\"@id\":\"https://theatredaujourdhui.qc.ca/#logo\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#identity\",\"@type\":\"Organization\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"type\":\"Organization\",\"url\":\"https://theatredaujourdhui.qc.ca/\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"3900, rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2W 2M2\",\"addressRegion\":\"Québec\",\"addressCountry\":\"Canada\"}},{\"@id\":\"https://theatredaujourdhui.qc.ca/#breadcrumb\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"name\":\"Accueil\",\"position\":1}]},{\"@id\":\"https://theatredaujourdhui.qc.ca/#logo\",\"@type\":\"ImageObject\",\"caption\":\"Centre du Théâtre d’Aujourd’hui\",\"contentUrl\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\",\"url\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\"},{\"@id\":\"https://theatredaujourdhui.qc.ca/#organization\",\"@type\":\"Organization\",\"logo\":\"https://theatredaujourdhui.qc.ca/assets/logo.jpg\",\"name\":\"Centre du Théâtre d’Aujourd’hui\",\"url\":\"https://theatredaujourdhui.qc.ca/\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"3900, rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2W 2M2\",\"addressRegion\":\"Québec\",\"addressCountry\":\"Canada\"}}]}"
-   ],
+   "jsonld": [],
    "heures": [],
    "liens": [
-    "https://theatredaujourdhui-abonnement.tuxedobillet.com",
-    "https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&amp;_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmbEtxdnJ0aW5pVzBXV2I3eXR1VEcxV21GQU5XYlZDLWpISWV4NDJuNEEzZ2FBb0xrRUFMd193Y0I.*_gcl_au*MjI1OTgwNzYuMTc3ODYxODk4Ng..*_ga*MTEzNzEwODcwNS4xNzcwODMzNTcz*_ga_QDNTB9F195*czE3Nzk4OTA5NDAkbzc0JGcxJHQxNzc5OTAxNzU1JGo2MCRsMCRoMA.."
+    "https://theatredaujourdhui-abonnement.tuxedobillet.com/",
+    "https://theatredaujourdhui-abonnement.tuxedobillet.com/?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&amp;_gl=1*1vrbf62*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmbEtxdnJ0aW5pVzBXV2I3eXR1VEcxV21GQU5XYlZDLWpISWV4NDJuNEEzZ2FBb0xrRUFMd193Y0I.*_gcl_au*MTk4NTE5MzE2LjE3NzA4MzM1NzM.*_ga*MTEzNzEwODcwNS4xNzcwODMzNTcz*_ga_QDNTB9F195*czE3NzgxNjIyNTYkbzY0JGcxJHQxNzc4MTcwNTMxJGo1MiRsMCRoMA..",
+    "https://theatredaujourdhui.tuxedobillet.com/Main/Appuyer-le-CTDA"
    ],
    "menu": [
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Détails → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    " → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Vitesse-lumière → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "Détails → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "En supplémentaires → https://theatredaujourdhui.qc.ca/spectacles/vitesse-lumiere",
-    "En supplémentaires Événement → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    "Tire le coyote et ses ami·es chantent Cohen… en fr → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    " → https://theatredaujourdhui.qc.ca/spectacles/madeleine",
-    "Madeleine → https://theatredaujourdhui.qc.ca/spectacles/madeleine",
-    " → https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous",
-    "Ne priez pas pour nous → https://theatredaujourdhui.qc.ca/spectacles/ne-priez-pas-pour-nous",
-    " → https://theatredaujourdhui.qc.ca/spectacles/bimbo",
-    "BIMBO → https://theatredaujourdhui.qc.ca/spectacles/bimbo",
-    " → https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia",
-    "L’affaire Magnolia → https://theatredaujourdhui.qc.ca/spectacles/laffaire-magnolia",
-    " → https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene",
-    "Paradis Ébène → https://theatredaujourdhui.qc.ca/spectacles/paradis-ebene",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Fondre → https://theatredaujourdhui.qc.ca/spectacles/fondre",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Le Palais des Glaces → https://theatredaujourdhui.qc.ca/spectacles/le-palais-des-glaces",
-    "Tire le coyote et ses ami·es chantent Cohen… en fr → https://theatredaujourdhui.qc.ca/spectacles/tire-le-coyote-cohen",
-    "Je m’abonne ! → https://theatredaujourdhui-abonnement.tuxedobillet.com",
-    "Conditions générales d’achat de billets → https://theatredaujourdhui.qc.ca/politiques/conditions-dachat",
-    "Donner → https://theatredaujourdhui-philanthropie.tuxedobillet.com/philanthropie/Appuyer-le-CTDA?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&_gl=1*m0jbtr*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDc"
+    "S’abonner → https://theatredaujourdhui-abonnement.tuxedobillet.com/?axeptio_token=R-WgRiEeSo-cYRXKfNlUPZGzCz&_gl=1*1vrbf62*_gcl_aw*R0NMLjE3NzQ4MTA1MjMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENMLUZYRXktZDFmb",
+    "S'abonner → https://theatredaujourdhui-abonnement.tuxedobillet.com/",
+    "Faire un don → https://theatredaujourdhui.tuxedobillet.com/Main/Appuyer-le-CTDA"
    ]
+  }
+ },
+ "https://theatredaujourdhui.qc.ca/nous-joindre": {
+  "simple": {
+   "erreur": "500 Server Error: Internal Server Error for url: https://theatredaujourdhui.qc.ca/nous-joindre"
+  },
+  "navigateur": {
+   "erreur": "500  (navigateur)"
+  }
+ },
+ "https://theatredaujourdhui.qc.ca/contact": {
+  "simple": {
+   "erreur": "500 Server Error: Internal Server Error for url: https://theatredaujourdhui.qc.ca/contact"
+  },
+  "navigateur": {
+   "erreur": "500  (navigateur)"
   }
  }
 }

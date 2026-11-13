@@ -1,7 +1,11 @@
 {
  "total": 1449,
- "echecs": 10,
+ "echecs": 19,
  "par_site": {
+  "theatreplaza.ca": {
+   "affiches": 8,
+   "echecs": 8
+  },
   "turbohaus.ca": {
    "affiches": 10,
    "echecs": 2
@@ -23,6 +27,10 @@
    "echecs": 1
   },
   "s3.eu-west-1.amazonaws.com": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "theatreoutremont.ca": {
    "affiches": 1,
    "echecs": 1
   },
@@ -136,10 +144,6 @@
   },
   "cdn.placedesarts.com": {
    "affiches": 30,
-   "echecs": 0
-  },
-  "theatreplaza.ca": {
-   "affiches": 8,
    "echecs": 0
   },
   "legesu.com": {
@@ -270,10 +274,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "theatreoutremont.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "image.tmdb.org": {
    "affiches": 7,
    "echecs": 0
@@ -391,11 +391,19 @@
   "calendrier.umontreal.ca": [
    "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Piano.png"
   ],
+  "theatreplaza.ca": [
+   "https://theatreplaza.ca/wp-content/uploads/2026/09/Al-Qahwa.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-13-novembre-2026-V2.jpg",
+   "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-14-novembre-2026-V2.jpeg"
+  ],
   "lelivart.com": [
    "https://lelivart.com/app/uploads/2026/10/LABYRINTHE-1080x1440-5-copy-4-100.jpg"
   ],
   "s3.eu-west-1.amazonaws.com": [
    "https://s3.eu-west-1.amazonaws.com/offloadmedia.feverup.com/montrealsecret.co/wp-content/uploads/2026/06/17094455/12-QM-Festif-2025-.-Dominic-Courchesne.jpg"
+  ],
+  "theatreoutremont.ca": [
+   "https://theatreoutremont.ca/wp-content/uploads/2025/09/Visuel-site-intenet.png"
   ],
   "turbohaus.ca": [
    "https://turbohaus.ca/api/media/file/drink-draw.jpg",
