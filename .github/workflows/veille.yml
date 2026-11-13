@@ -1,0 +1,47 @@
+# Alarme (13 nov. 2026) : si le site en ligne n'a pas été mis à jour aujourd'hui à 11 h (la collecte de la nuit
+# a échoué et ses renforts aussi), un avis est ouvert, donc un courriel. Il se ferme tout seul au retour à la normale.
+name: Veille du site
+
+on:
+  schedule:
+    - cron: "23 16 * * *"  # 11 h 23 à Montréal l'hiver (12 h 23 l'été)
+    - cron: "23 22 * * *"  # 17 h 23 l'hiver
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Site à jour ?
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          TITRE="[Alarme] Le site n'a pas été mis à jour aujourd'hui"
+          AUJ=$(TZ=America/Toronto date +%F)
+          EN_LIGNE=$(curl -fsS "https://ccmtl.ca/data.json?t=$(date +%s)" | python3 -c "import json,sys; print(json.load(sys.stdin).get('miseAJour',''))" || echo "")
+          echo "Données en ligne du : ${EN_LIGNE:-illisibles} (aujourd'hui : $AUJ)"
+          OUVERT=$(gh api "repos/$REPO/issues?state=open&per_page=100" -q ".[] | select(.title == \"$TITRE\") | .number" | head -1)
+          if [ "$EN_LIGNE" = "$AUJ" ]; then
+            if [ -n "$OUVERT" ]; then
+              gh api -X POST "repos/$REPO/issues/$OUVERT/comments" -f body="Réglé : le site est de nouveau à jour ($EN_LIGNE)." >/dev/null
+              gh api -X PATCH "repos/$REPO/issues/$OUVERT" -f state=closed >/dev/null
+              echo "Alarme fermée."
+            fi
+            exit 0
+          fi
+          if [ -z "$OUVERT" ]; then
+            DERNIERES=$(gh api "repos/$REPO/actions/workflows/collecte.yml/runs?per_page=5" -q '.workflow_runs[] | "- \(.created_at[:16]) : \(.conclusion // .status) — \(.html_url)"')
+            gh api -X POST "repos/$REPO/issues" -f title="$TITRE" -f body="Le site en ligne date du **${EN_LIGNE:-inconnu}** (aujourd'hui : $AUJ).
+
+          Dernières collectes :
+          $DERNIERES
+
+          À faire : ouvrir la dernière collecte en échec et lire l'étape en rouge, ou demander à Claude « la collecte a-t-elle marché ? ». Cet avis se fermera tout seul quand le site sera à jour." >/dev/null
+            echo "Alarme ouverte."
+          else
+            echo "Alarme déjà ouverte (#$OUVERT)."
+          fi

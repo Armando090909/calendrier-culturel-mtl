@@ -164,7 +164,7 @@ def images_des_salles(events: list[dict], aujourd, permises=None) -> None:
     for lieu in sorted(besoin):
         h = site[lieu]
         m = memo.get(h)
-        if (not m or m["le"] < vieux) and lus < 60:
+        if (not m or m["le"] < vieux) and lus < (0 if RAPIDE else 60):
             lus += 1
             accueil = f"https://{h}/"
             try:
@@ -252,8 +252,8 @@ def nettoyer_resumes(elements: list[dict]) -> None:
     memo = json.loads(f_fr.read_text(encoding="utf-8")) if f_fr.exists() else {}
     anglais = [e for e in elements if e.get("resume")
                and len(_MOTS_EN.findall(e["resume"])) >= 3 > len(_MOTS_FR.findall(e["resume"]))]
-    a_faire = list(dict.fromkeys(e["resume"] for e in anglais if e["resume"] not in memo))[:240]  # le reste suit les jours suivants
-    if a_faire and ia.disponible():
+    a_faire = list(dict.fromkeys(e["resume"] for e in anglais if e["resume"] not in memo))[:(5 if ESSAI else 240)]  # le reste suit les jours suivants
+    if a_faire and ia.disponible() and not RAPIDE:
         for i in range(0, len(a_faire), 60):
             part = a_faire[i:i + 60]
             try:
@@ -280,10 +280,10 @@ def traduire_resumes(elements: list[dict]) -> None:
     a_faire = list(dict.fromkeys(e["resume"] for e in sorted(elements, key=lambda x: x.get("date") or x.get("debut") or "")
                                  if e.get("resume") and not e.get("resume_en") and e["resume"] not in memo))
     faits = 0
-    if a_faire and ia.disponible():
+    if a_faire and ia.disponible() and not RAPIDE:
         from concurrent.futures import ThreadPoolExecutor
         # les plus proches d'abord (ordre du calendrier) ; au plus 1500 par jour, le reste suit le lendemain
-        parts = [a_faire[i:i + 60] for i in range(0, min(len(a_faire), 600), 60)]  # 11 nov. 2026 : 1500 d'un coup dépassait le temps permis
+        parts = [a_faire[i:i + 60] for i in range(0, min(len(a_faire), 5 if ESSAI else 600), 60)]  # 11 nov. 2026 : 1500 d'un coup dépassait le temps permis
 
         def un(part):
             try:
@@ -313,6 +313,18 @@ class SourceTropLongue(Exception):
     pass
 
 
+# Publication rapide (13 nov. 2026) : l'assemblage publie le site avec ce qui est déjà connu (lectures du jour, mémoires
+# des heures, horaires, affiches, résumés), sans lire de nouvelles pages ni attendre d'enrichissement. L'enrichissement
+# (COLLECTE_RAPIDE absent) passe ensuite, remplit les mémoires et republie : une étape lente ou en panne ne peut plus
+# empêcher la mise en ligne.
+RAPIDE = os.environ.get("COLLECTE_RAPIDE") == "1"
+# Collecte d'essai (13 nov. 2026, .github/workflows/essai.yml) : chaque étape tourne, avec de tout petits budgets,
+# pour attraper une erreur de code avant qu'elle touche la vraie collecte.
+ESSAI = os.environ.get("COLLECTE_ESSAI") == "1"
+BUDGETS_RESEAU = ("max_pages_ville", "max_pages_autre", "max_pages_heure", "max_pages_heure_nav", "max_pages_ia_champs",
+                  "max_billetteries", "max_horaires_ia", "max_recherches_decouverte")
+
+
 def _trop_long(*_):
     raise SourceTropLongue("source abandonnée après 10 minutes sans fin de lecture")
 
@@ -320,6 +332,11 @@ def _trop_long(*_):
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
+    if ESSAI and not RAPIDE:
+        reglages.update({k: 2 for k in BUDGETS_RESEAU + ("max_styles_ia", "max_artistes_ia")})
+    if RAPIDE:
+        reglages.update({k: 0 for k in BUDGETS_RESEAU})
+        print("Publication rapide : seulement ce qui est déjà connu (l'enrichissement suit et republie).")
     aujourd = datetime.now(MTL).date()
     fin = aujourd + timedelta(days=int(reglages.get("horizon_jours", 60)))
     ua = f'CalendrierCulturelMTL/1.0 ({os.environ.get("CONTACT") or "contact non configuré"})'
@@ -358,6 +375,8 @@ def main() -> int:
     f_bloq = CACHE / "bloquees_lecture.json"
     if etape == "assemblage" and f_bloq.exists():
         connecteurs.BLOQUEES.update(json.loads(f_bloq.read_text(encoding="utf-8")))
+    if os.environ.get("ESSAI_SOURCES"):  # collecte d'essai : quelques sources seulement (expression sur le nom)
+        sources = [s for s in sources if re.search(os.environ["ESSAI_SOURCES"], s["nom"])]
     for i_src, s in enumerate(sources):
         print(f"→ {s['nom']} ({s['type']})")
         fichier_cache = CACHE / (re.sub(r"[^a-z0-9]+", "-", plat(s["nom"]))[:60] + ".json")
@@ -434,8 +453,9 @@ def main() -> int:
     journal_rep = []
     try:
         etat_sante = json.loads((CACHE / "sante.json").read_text(encoding="utf-8")) if (CACHE / "sante.json").exists() else {}
-        e_rep, s_rep, journal_rep = autoentretien.reparer(sources, rapport, CONNECTEURS["page_ia"], connecteurs.page_rendue,
-                                                          telecharger, aujourd, fin, etat_sante.get("sources_ok", {}))
+        e_rep, s_rep, journal_rep = ([], [], []) if RAPIDE or ESSAI else autoentretien.reparer(
+            sources, rapport, CONNECTEURS["page_ia"], connecteurs.page_rendue, telecharger, aujourd, fin,
+            etat_sante.get("sources_ok", {}))
         bruts += e_rep
         series += s_rep
         for ligne in journal_rep:
@@ -998,11 +1018,12 @@ def main() -> int:
     cache = Path(__file__).parent / "cache"
     (cache / "_decouverte_resultat.json").unlink(missing_ok=True)
     (cache / "_decouverte_evenements.json").write_text(json.dumps(events, ensure_ascii=False, default=lambda o: list(o) if isinstance(o, (set, frozenset)) else str(o)), encoding="utf-8")
-    delai = 35
-    proc = subprocess.Popen([sys.executable, "-u", str(Path(__file__).parent / "decouverte_seule.py"),
+    delai = 3 if ESSAI else 35
+    proc = None if RAPIDE else subprocess.Popen([sys.executable, "-u", str(Path(__file__).parent / "decouverte_seule.py"),
                              str(int(reglages.get("max_recherches_decouverte", 500))), str(delai), aujourd.isoformat()])
     try:
-        proc.wait(timeout=delai * 60)
+        if proc:
+            proc.wait(timeout=delai * 60)
     except subprocess.TimeoutExpired:
         print(f"Découverte arrêtée après {delai} minutes ; la suite reprendra à la prochaine collecte.", flush=True)
         proc.terminate()
@@ -1084,14 +1105,16 @@ def main() -> int:
         # de représentations en JavaScript ou dans un cadre de billetterie), puis la page de la billetterie elle-même.
         # Horaire déjà lu mais périmé (la page ne montrait que la première représentation, ex. Centaur) alors que le
         # spectacle est encore à l'affiche : relu une fois, en passant par la billetterie
-        ancien = memo_h.get(cle) or {}
+        ancien = {} if RAPIDE else (memo_h.get(cle) or {})
         # (relu tous les 3 jours tant que le spectacle est à l'affiche, pas une seule fois)
         if ancien and not ancien.get("jours") and ancien.get("dates") and max(ancien["dates"]) < aujourd.isoformat() \
                 and (memo_h.get(cle + "|v5") or "") < (aujourd - timedelta(days=3)).isoformat():
             memo_h[cle] = {}
             memo_h[cle + "|v5"] = aujourd.isoformat()
             memo_h.pop(cle + "|v4", None)
-        if memo_h.get(cle) == {} and not memo_h.get(cle + "|v2"):
+        if RAPIDE:
+            essai_v2 = False  # publication rapide : seulement l'horaire déjà connu ; les essais suivent à l'enrichissement
+        elif memo_h.get(cle) == {} and not memo_h.get(cle + "|v2"):
             del memo_h[cle]
             memo_h[cle + "|v2"] = True
             essai_v2 = True
@@ -1180,11 +1203,12 @@ def main() -> int:
     # ---- Exactitude (collecteur/qualite.py) : règles, contre-vérification des 3 prochains jours, contrôle du lundi
     try:
         events, expos, journal_q = qualite.regles(events, expos, lieux.coord)
-        events, j2, stats_cv = qualite.contre_verifier(events, aujourd, telecharger, texte_page)
+        events, j2, stats_cv = qualite.contre_verifier(events, aujourd, telecharger, texte_page,
+                                                       max_pages=0 if RAPIDE else 2 if ESSAI else 220)
         journal_q += j2
         import normalisation as _norm
         journal_q += _norm.CONFLITS  # désaccords entre sources (heures différentes, heure par défaut écartée)
-        controle = qualite.controle_aleatoire(events, aujourd, telecharger, texte_page, ia) if aujourd.weekday() == 0 else None
+        controle = qualite.controle_aleatoire(events, aujourd, telecharger, texte_page, ia) if aujourd.weekday() == 0 and not RAPIDE else None
         a_surveiller = qualite.fiabilite(events, journal_q, controle, aujourd)
         qualite.ecrire(aujourd, journal_q, stats_cv, controle, a_surveiller)
         try:  # sorties annoncées par 2 sites ou plus (recoupées), pour le rapport du lundi
@@ -1235,7 +1259,7 @@ def main() -> int:
     if journal_rep:
         notes["reparations"] = journal_rep
     # ---- Découverte de nouvelles sources : une fois par semaine (dimanche), ou sur demande (DECOUVERTE=1)
-    if aujourd.weekday() == 6 or os.environ.get("DECOUVERTE") == "1":
+    if (aujourd.weekday() == 6 or os.environ.get("DECOUVERTE") == "1") and not RAPIDE:
         try:
             notes["decouverte"] = autoentretien.decouvrir(events, sources, rapport, CONNECTEURS["page_ia"], telecharger,
                                                           aujourd, fin)
