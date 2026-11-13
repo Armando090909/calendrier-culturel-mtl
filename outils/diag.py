@@ -89,6 +89,10 @@ for ligne in [l.strip() for l in (D / "urls.txt").read_text().splitlines() if l.
                                    "calendriers": [html[max(0, m.start() - 150):m.end() + 250] for m in re.finditer(
                                        r"proj_[A-Za-z0-9]+|eventscalendar\.co[^\"' ]*|calendar\.google\.com[^\"' ]*|[^\"' ]+\.ics\b", html)][:8]}
             r[mode] = {"taille": len(txt), "texte": txt[:8000],
+                       # courriels affichés (pour écrire aux salles) et liens de contact
+                       "courriels": sorted(set(re.findall(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", txt)))[:10],
+                       "contact": sorted({c.urljoin(url, x.get("href")) for x in soupe.find_all("a", href=True)
+                                          if re.search(r"(?i)contact|joindre|nous-joindre|equipe|équipe", (x.get("href") or "") + " " + x.get_text(" ", strip=True))})[:8],
                        "jsonld": re.findall(r'(?s)<script[^>]*ld\+json[^>]*>(.*?)</script>', html)[:2],
                        "heures": [txt[max(0, m.start() - 60):m.end() + 20] for m in HEURE.finditer(txt)][:15],
                        "liens": sorted({a for a in re.findall(r'href="(https?://[^"]+)"', html)
