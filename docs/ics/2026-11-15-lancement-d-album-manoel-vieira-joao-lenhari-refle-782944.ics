@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-15-lancement-d-album-manoel-vieira-joao-lenhari-refle-782944@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261115T190000
+DTEND;TZID=America/Toronto:20261115T210000
+SUMMARY:Lancement d'album Manoel Vieira & João Lenhari : reflexions (1er s
+ et)
+LOCATION:Upstairs Jazz Bar & Grill\, Montréal
+URL:https://www.upstairsjazz.com/
+DESCRIPTION:Duo trompette et piano en improvisation\, lancement de l'album 
+ reflexions\, avec une musique intime et spontanée.\nPrix : 15 $ + tx\nDé
+ tails : https://widgets.libroreserve.com/WEB/QC016994658341/book\n(ccmtl.c
+ a)
+END:VEVENT
+END:VCALENDAR

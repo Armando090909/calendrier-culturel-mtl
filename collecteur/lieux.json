@@ -720,6 +720,7 @@
   "lon": -73.59358,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "David Braley Health Sciences Centre": null,
  "Davies Chalet": null,
  "Dazibao": {
   "lat": 45.5257,
@@ -732,6 +733,7 @@
   "lon": -73.56728,
   "quartier": "Ville-Marie"
  },
+ "Devant l'hôtel de ville": null,
  "Diagonale": null,
  "Diese Onze": {
   "lat": 45.52141,
@@ -769,6 +771,7 @@
   "lon": -73.5638,
   "quartier": "Quartier des spectacles"
  },
+ "ER Building, salle 672": null,
  "EV 1-715, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Eastern Bloc": {
   "lat": 45.533,
@@ -844,6 +847,7 @@
   "quartier": "Saint-Laurent"
  },
  "Fais-moi l'art": null,
+ "Faubourg Building, salle 620": null,
  "FirstOntario Centre": null,
  "FirstOntario Concert Hall": null,
  "Fondation Grantham pour l'art et l'environnement": null,
@@ -1037,6 +1041,7 @@
   "quartier": "Ville-Marie"
  },
  "Hurleys Irish Pub": null,
+ "Hybride": null,
  "Igloofest": null,
  "Impérial Bell": null,
  "Infinithéâtre + Casa d'Italia": null,
@@ -1058,6 +1063,7 @@
  },
  "Jeanne & Peter Lougheed Performing Arts Centre": null,
  "Jelleff Recreation Center": null,
+ "John Molson Building, salle MB 7.270": null,
  "Judith J-2805": null,
  "Key City Theatre": null,
  "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
@@ -1187,6 +1193,11 @@
   "lat": 45.51673,
   "lon": -73.55792,
   "quartier": "Ville-Marie"
+ },
+ "La librairie Jean-Brillant": {
+  "lat": 45.49871,
+  "lon": -73.61862,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "La petite Place des Arts": null,
  "Langage Plus": null,
@@ -1831,6 +1842,11 @@
   "lon": -73.58937,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Pub La Cale": {
+  "lat": 45.53868,
+  "lon": -73.60844,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "Quai 5160 – Maison de la culture de Verdun": {
   "lat": 45.448,
   "lon": -73.577,
@@ -2247,6 +2263,7 @@
  "UQAM - Pavillon Hubert-Aquin": null,
  "UQAM - Pavillon Judith-Jasmin": null,
  "UQAM - Pavillon Paul-Gérin-Lajoie": null,
+ "UQAM - Pavillon de Musique": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
  "URBANISTA RESTO BAR": null,
@@ -2450,5 +2467,6 @@
   "quartier": "Ville-Marie"
  },
  "Église du Sacré-Cœur-de-Jésus": null,
+ "Événement virtuel": null,
  "Île de la tortue, Abya Yala": null
 }

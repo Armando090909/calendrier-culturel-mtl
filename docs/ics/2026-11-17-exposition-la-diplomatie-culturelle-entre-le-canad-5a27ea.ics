@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-17-exposition-la-diplomatie-culturelle-entre-le-canad-5a27ea@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261117T083000
+DTEND;TZID=America/Toronto:20261117T103000
+SUMMARY:Exposition : La diplomatie culturelle entre le Canada et l'Asie de 
+ l'Est
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://calendrier.umontreal.ca/activite/exposition-la-diplomatie-cultu
+ relle-entre-le-canada-et-lasie-de-lest-30
+DESCRIPTION:Exposition sur les relations culturelles entre le Canada et l'A
+ sie de l'Est.\nDétails : https://calendrier.umontreal.ca/activite/exposit
+ ion-la-diplomatie-culturelle-entre-le-canada-et-lasie-de-lest-30\n(ccmtl.c
+ a)
+END:VEVENT
+END:VCALENDAR

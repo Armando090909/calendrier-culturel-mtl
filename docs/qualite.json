@@ -1,13 +1,14 @@
 {
  "date": "2026-11-13",
  "regles": {
-  "titre mal encodé": 17,
+  "titre mal encodé": 19,
   "hors de l'île (ville étrangère dans le titre)": 2,
+  "heure improbable": 1,
   "doublon (salle au nom vague)": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 38,
+  "date absente de la page officielle": 41,
   "page de la sortie disparue": 16,
-  "heures différentes selon les sources": 68,
+  "heures différentes selon les sources": 59,
   "heure par défaut d'un agrégateur": 2
  },
  "journal": [
@@ -19,6 +20,15 @@
    "lieu": "Maison de quartier de Doulon",
    "source": "salles",
    "url": "https://lni.ca/evenement/match-dimpro-nantes-france-20261113/"
+  },
+  {
+   "regle": "titre mal encodé",
+   "action": "corrigé",
+   "titre": "LANCEMENT D'ALBUM | CANICULE",
+   "date": "2026-11-13",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://clubsoda.ca/fr/evenements/lancement-dalbum-canicule"
   },
   {
    "regle": "titre mal encodé",
@@ -140,6 +150,15 @@
   {
    "regle": "titre mal encodé",
    "action": "corrigé",
+   "titre": "Scene Trippers, Dream Clippers, What do you feel? What do you make real? - Nicole Crozier",
+   "date": "2026-11-06",
+   "lieu": "Bibliothèque de Notre-Dame-de-Grâce",
+   "source": "",
+   "url": "https://montreal.ca/evenements/scene-trippers-dream-clippers-what-do-you-feel-what-do-you-make-real-nicole-crozier-114873"
+  },
+  {
+   "regle": "titre mal encodé",
+   "action": "corrigé",
    "titre": "Liminal : Étirer les marges - Maria Ezcurra",
    "date": "2026-11-07",
    "lieu": "Lieu à confirmer",
@@ -172,6 +191,15 @@
    "lieu": "Maison de quartier de Doulon",
    "source": "salles",
    "url": "https://lni.ca/evenement/match-dimpro-nantes-france-20261113/"
+  },
+  {
+   "regle": "heure improbable",
+   "action": "heure 04:30 retirée",
+   "titre": "Gabriel Dharmoo - Exploration vocale",
+   "date": "2026-11-17",
+   "lieu": "Studio 303",
+   "source": "salles",
+   "url": "https://www.studio303.ca/programmation/gabriel-dharmoo-exploration-vocale-26-27-fr/"
   },
   {
    "regle": "hors de l'île (ville étrangère dans le titre)",
@@ -298,6 +326,24 @@
    "lieu": "La Cabine Comédie Club",
    "source": "salles",
    "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Lancement d'album Manoel Vieira & João Lenhari : reflexions (1er set)",
+   "date": "2026-11-15",
+   "lieu": "Upstairs Jazz Bar & Grill",
+   "source": "salles",
+   "url": "https://www.upstairsjazz.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Lancement d'album Manoel Vieira & João Lenhari : reflexions (3e set)",
+   "date": "2026-11-15",
+   "lieu": "Upstairs Jazz Bar & Grill",
+   "source": "salles",
+   "url": "https://www.upstairsjazz.com/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -572,6 +618,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Oryza",
+   "date": "2026-11-14",
+   "lieu": "Espace le vrai monde?",
+   "source": "salles",
+   "url": "https://www.espacelevraimonde.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "CHA",
    "date": "2026-11-15",
    "lieu": "La Petite Bibliothèque Verte",
@@ -715,66 +770,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "10:30 gardée (montreal.ca), 11:30 écartée (montreal.ca)",
-   "titre": "Lis avec Poilu (Groupe 1)",
-   "date": "2026-11-29",
-   "lieu": "Bibliothèque de Pierrefonds",
-   "source": "ville",
-   "url": "https://montreal.ca/evenements/lis-avec-poilu-groupe-1-116608"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (sorstu.ca), 21:00 écartée (sorstu.ca)",
-   "titre": "Kinji00",
-   "date": "2026-11-20",
-   "lieu": "Club Soda",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/kinji00/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (sorstu.ca), 20:30 écartée (songkick.com)",
-   "titre": "Sassy 009",
-   "date": "2026-11-17",
-   "lieu": "L'Escogriffe",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/sassy-009/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (sorstu.ca), 20:00 écartée (songkick.com)",
-   "titre": "Orville Peck",
-   "date": "2026-11-19",
-   "lieu": "MTELUS",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/orville-peck/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (espacestdenis.com), 21:00 écartée (espacestdenis.com)",
    "titre": "Dweezil Zappa : Like Father, Like Son",
    "date": "2026-11-17",
    "lieu": "Théâtre St-Denis",
    "source": "theatre",
    "url": "https://espacestdenis.com/fr/programmation/dweezil-zappa/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (espacestdenis.com), 20:00 écartée (sorstu.ca)",
-   "titre": "Undertale: The Determination Symphony",
-   "date": "2026-11-20",
-   "lieu": "Théâtre St-Denis",
-   "source": "theatre",
-   "url": "https://espacestdenis.com/fr/programmation/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "19:15 gardée (dansedanse.ca), 20:00 écartée (sorstu.ca)",
-   "titre": "Dance Me - Musique de Leonard Cohen",
-   "date": "2026-11-24",
-   "lieu": "Théâtre Maisonneuve",
-   "source": "salles",
-   "url": "https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-leonard-cohen"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -877,7 +878,7 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (foufouneselectriques.com), 19:30 écartée (sorstu.ca)",
+   "action": "19:00 gardée (foufouneselectriques.com), 19:30 écartée (montreal.askapunk.net)",
    "titre": "M POUR MONTRÉAL: BÉTON ARMÉ + FAZE + ZOUZ",
    "date": "2026-11-18",
    "lieu": "Foufounes Électriques",
@@ -886,12 +887,21 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (espacestdenis.com), 21:00 écartée (theatrestdenis.com)",
-   "titre": "Dweezil Zappa : Like Father, Like Son",
-   "date": "2026-11-17",
-   "lieu": "Théâtre St-Denis",
-   "source": "theatre",
-   "url": "https://espacestdenis.com/fr/programmation/dweezil-zappa/"
+   "action": "19:00 gardée (piranhabar.ca), 20:00 écartée (songkick.com)",
+   "titre": "SICKSENSE, NAILED et FATAL SWITCH",
+   "date": "2026-11-19",
+   "lieu": "Piranha Bar",
+   "source": "salles",
+   "url": "https://piranhabar.ca/events/sicksense-nailed-et-fatal-switch"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (piranhabar.ca), 19:00 écartée (songkick.com)",
+   "titre": "SIMON MCKAY, LINDSAY SCHOOLCRAFT et URIAL",
+   "date": "2026-12-04",
+   "lieu": "Piranha Bar",
+   "source": "salles",
+   "url": "https://piranhabar.ca/events/simon-mckay-lindsay-schoolcraft-et-urial"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -919,6 +929,24 @@
    "lieu": "Théâtre St-Denis",
    "source": "theatre",
    "url": "https://espacestdenis.com/fr/programmation/dweezil-zappa/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (espacestdenis.com), 21:00 écartée (theatrestdenis.com)",
+   "titre": "Dweezil Zappa : Like Father, Like Son",
+   "date": "2026-11-17",
+   "lieu": "Théâtre St-Denis",
+   "source": "theatre",
+   "url": "https://espacestdenis.com/fr/programmation/dweezil-zappa/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:00 gardée (upstairsjazz.com), 20:15 écartée (upstairsjazz.com)",
+   "titre": "Lancement d'album Manoel Vieira & João Lenhari : reflexions (1er set)",
+   "date": "2026-11-15",
+   "lieu": "Upstairs Jazz Bar & Grill",
+   "source": "salles",
+   "url": "https://www.upstairsjazz.com/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -928,15 +956,6 @@
    "lieu": "Club Balattou",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/pna261113001?lang=fr"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (mtelus.com), 19:00 écartée (sorstu.ca)",
-   "titre": "Orville Peck",
-   "date": "2026-11-19",
-   "lieu": "MTELUS",
-   "source": "salles",
-   "url": "https://mtelus.com/fr/evenements?vue=grille"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -958,21 +977,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "22:00 gardée (casadelpopolo.com), 21:00 écartée (sorstu.ca)",
-   "titre": "blesse : lancement d'album « Transit »",
-   "date": "2026-11-19",
-   "lieu": "La Sala Rossa",
+   "action": "20:00 gardée (casadelpopolo.com), 19:30 écartée (montreal.askapunk.net)",
+   "titre": "Heavy Trip & Negative Capabilities present Magic Tuber Stringband + Geneviève Heistek + Je",
+   "date": "2026-12-05",
+   "lieu": "P'tit Ours",
    "source": "salles",
-   "url": "https://casadelpopolo.com/fr/events/2026-11-20-blesse-lancement-d-album-transit"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:30 gardée (casadelpopolo.com), 22:00 écartée (sorstu.ca)",
-   "titre": "M for Mothland - Xela Edna, Birds of Prrrey, Still Depths, TVOD, BALACLAVA",
-   "date": "2026-11-20",
-   "lieu": "La Sala Rossa",
-   "source": "salles",
-   "url": "https://casadelpopolo.com/fr/events/2026-11-21-m-for-mothland-xela-edna-birds-of-prrrey-still-depths-tvod-balaclava"
+   "url": "https://casadelpopolo.com/fr/events/2026-12-06-heavy-trip-negative-capabilities-present-magic-tuber-stringband-genevieve-heistek-jesse-eckerlin"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1000,15 +1010,6 @@
    "lieu": "La Sotterenea",
    "source": "salles",
    "url": "https://casadelpopolo.com/fr/events/2026-12-13-noise-for-society-night-2"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (casadelpopolo.com), 19:30 écartée (montreal.askapunk.net)",
-   "titre": "Heavy Trip & Negative Capabilities present Magic Tuber Stringband + Geneviève Heistek + Je",
-   "date": "2026-12-05",
-   "lieu": "P'tit Ours",
-   "source": "salles",
-   "url": "https://casadelpopolo.com/fr/events/2026-12-06-heavy-trip-negative-capabilities-present-magic-tuber-stringband-genevieve-heistek-jesse-eckerlin"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1072,15 +1073,6 @@
    "lieu": "Club Soda",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/clb261113001"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (lepointdevente.com), 20:00 écartée (sorstu.ca)",
-   "titre": "Kinji00 | Expo 00",
-   "date": "2026-11-20",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://lepointdevente.com/billets/clb261120001"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1201,21 +1193,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (lebelmont.ca), 22:30 écartée (lepointdevente.com)",
-   "titre": "M pour Montréal présente Mzrabelle, XLOWW & Vago",
-   "date": "2026-11-19",
-   "lieu": "Le Belmont",
-   "source": "salles",
-   "url": "https://www.lebelmont.ca/evenements"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:30 gardée (panm360.com), 22:00 écartée (festapp.io)",
-   "titre": "Adieu Narcisse et CHÉRI",
+   "action": "23:55 gardée (leministere.ca), 22:00 écartée (festapp.io)",
+   "titre": "ADIEU NARCISSE + CHÉRI (AFTER)",
    "date": "2026-11-13",
    "lieu": "Le Ministère",
    "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
+   "url": "https://leministere.ca/evenements/adieu-narcisse-cheri-ccf2026"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1282,15 +1265,6 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:15 gardée (noeldansleparc.com), 20:30 écartée (noeldansleparc.com)",
-   "titre": "Abraxas Cirque",
-   "date": "2026-12-05",
-   "lieu": "Parc La Fontaine",
-   "source": "festival",
-   "url": "https://noeldansleparc.com/parc-lafontaine/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
    "titre": "GINOLA LÉLÉ & Mawara Band",
    "date": "2026-11-13",
@@ -1310,28 +1284,28 @@
   {
    "regle": "heure par défaut d'un agrégateur",
    "action": "12:00 écartée, 20:00 gardée",
-   "titre": "ETIENNE DANO",
-   "date": "2026-11-14",
-   "lieu": "Gesù",
-   "source": "salles",
-   "url": "https://spectaculos.ca/fr/spectacle/etienne-dano-montreal"
-  },
-  {
-   "regle": "heure par défaut d'un agrégateur",
-   "action": "12:00 écartée, 20:00 gardée",
    "titre": "Daniel Sloss",
    "date": "2026-11-21",
    "lieu": "L'Olympia",
    "source": "salles",
    "url": "https://spectaculos.ca/fr/spectacle/daniel-sloss-montreal"
+  },
+  {
+   "regle": "heure par défaut d'un agrégateur",
+   "action": "12:00 écartée, 20:00 gardée",
+   "titre": "ETIENNE DANO",
+   "date": "2026-11-14",
+   "lieu": "Gesù",
+   "source": "salles",
+   "url": "https://spectaculos.ca/fr/spectacle/etienne-dano-montreal"
   }
  ],
  "contreverif": {
-  "date absente de la page": 38,
-  "date confirmée": 232,
-  "page illisible": 59,
-  "lien mort remplacé": 16,
-  "non relues (limite)": 28
+  "date absente de la page": 41,
+  "date confirmée": 211,
+  "non relues (limite)": 55,
+  "page illisible": 58,
+  "lien mort remplacé": 16
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1343,9 +1317,9 @@
   },
   {
    "source": "espacestdenis.com",
-   "erreurs": 28,
+   "erreurs": 27,
    "sorties": 59,
-   "taux": 47.5
+   "taux": 45.8
   },
   {
    "source": "cinemapublic.ca",
@@ -1355,15 +1329,15 @@
   },
   {
    "source": "panm360.com",
-   "erreurs": 31,
+   "erreurs": 30,
    "sorties": 83,
-   "taux": 37.3
+   "taux": 36.1
   },
   {
    "source": "fbdm-mcaf.ca",
    "erreurs": 8,
-   "sorties": 29,
-   "taux": 27.6
+   "sorties": 28,
+   "taux": 28.6
   },
   {
    "source": "legesu.com",
@@ -1384,16 +1358,16 @@
    "taux": 12.1
   },
   {
-   "source": "mtelus.com",
-   "erreurs": 6,
-   "sorties": 53,
-   "taux": 11.3
-  },
-  {
    "source": "spectaculos.ca",
    "erreurs": 8,
    "sorties": 75,
    "taux": 10.7
+  },
+  {
+   "source": "mtelus.com",
+   "erreurs": 5,
+   "sorties": 52,
+   "taux": 9.6
   },
   {
    "source": "theatresaintecatherine.com",
@@ -1403,9 +1377,9 @@
   },
   {
    "source": "lepointdevente.com",
-   "erreurs": 43,
-   "sorties": 627,
-   "taux": 6.9
+   "erreurs": 42,
+   "sorties": 640,
+   "taux": 6.6
   },
   {
    "source": "eventbrite.com",
@@ -1415,7 +1389,7 @@
   }
  ],
  "recoupees": {
-  "total": 2860,
-  "deux_sources_ou_plus": 319
+  "total": 2896,
+  "deux_sources_ou_plus": 289
  }
 }

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-14-seminaire-de-l-est-du-canada-sur-la-logique-et-la-91d791@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261114T093000
+DTEND;TZID=America/Toronto:20261114T113000
+SUMMARY:Séminaire de l'Est du Canada sur la logique et la programmation 20
+ 26
+LOCATION:Pavillon Président-Kennedy\, Montréal
+URL:https://evenements.uqam.ca/evenements/seminaire-de-l-est-du-canada-sur-
+ la-logique-et-la-programmation-2026/34763
+DESCRIPTION:Séminaire scientifique sur la logique et la programmation\, r
+ éunissant des chercheurs de l'Est du Canada.\nDétails : https://evenemen
+ ts.uqam.ca/evenements/seminaire-de-l-est-du-canada-sur-la-logique-et-la-pr
+ ogrammation-2026/34763\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-13-political-science-department-presents-guest-speake-98815f@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261113T123000
+DTEND;TZID=America/Toronto:20261113T143000
+SUMMARY:Political Science Department Presents Guest Speaker Dr Althea-Maria
+  Rivas
+LOCATION:Henry F. Hall Building\, Montréal
+URL:https://www.concordia.ca/cuevents/artsci/polisci/2026/11/13/political-s
+ cience-department-presents-guest-speaker-dr-althea-ma.html
+DESCRIPTION:Conférence d'une invitée du Département de science politique
+  sur des enjeux politiques contemporains.\nDétails : https://www.concordi
+ a.ca/cuevents/artsci/polisci/2026/11/13/political-science-department-prese
+ nts-guest-speaker-dr-althea-ma.html\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
