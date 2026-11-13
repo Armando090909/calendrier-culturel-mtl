@@ -344,8 +344,6 @@ def main() -> int:
     ancien = json.loads(SORTIE.read_text(encoding="utf-8")) if SORTIE.exists() else None
 
     sources = [dict(s, cle_source=s.get("cle", "ia")) for s in conf.get("sources", []) if s.get("actif", True)]
-    if os.environ.get("ESSAI_SOURCES"):  # collecte d'essai : quelques sources seulement (expression sur le nom)
-        sources = [s for s in sources if re.search(os.environ["ESSAI_SOURCES"], s["nom"])]
     if os.environ.get("PROPOSITIONS_CSV_URL"):
         sources.append({"nom": "Formulaire : événements proposés", "type": "propositions",
                         "url": os.environ["PROPOSITIONS_CSV_URL"], "cle_source": "formulaire"})
@@ -377,6 +375,8 @@ def main() -> int:
     f_bloq = CACHE / "bloquees_lecture.json"
     if etape == "assemblage" and f_bloq.exists():
         connecteurs.BLOQUEES.update(json.loads(f_bloq.read_text(encoding="utf-8")))
+    if os.environ.get("ESSAI_SOURCES"):  # collecte d'essai : quelques sources seulement (expression sur le nom)
+        sources = [s for s in sources if re.search(os.environ["ESSAI_SOURCES"], s["nom"])]
     for i_src, s in enumerate(sources):
         print(f"→ {s['nom']} ({s['type']})")
         fichier_cache = CACHE / (re.sub(r"[^a-z0-9]+", "-", plat(s["nom"]))[:60] + ".json")
