@@ -4,14 +4,16 @@
  "evenements": 2830,
  "expositions": 245,
  "nouvelles_salles": [
-  "Centre Roger-Rousseau",
-  "Salle Pratt & Whitney Canada"
+  "SAT"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 0,
-   "erreurs": 0,
-   "exemples_erreurs": [],
+   "lues": 2,
+   "erreurs": 2,
+   "exemples_erreurs": [
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/chants-de-noel-dici-et-dailleurs-ensemble-alkemia-94",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/conference-testaments-122002"
+   ],
    "completees_par_mac": 694,
    "heures_trouvees": 687,
    "salles_trouvees": 678
@@ -58,10 +60,1058 @@
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-29 : « Punch Créole » (Gesù) = « Punch Créole » (Salle Pierre-Mercure)"
   ],
+  "catalogues": [
+   {
+    "nom": "Jean Michel Pilc Trio",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album together vol 2 live at sweet basil)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Solane",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre electro/hiphop/pop ≠ jazz"
+     ]
+    }
+   },
+   {
+    "nom": "Starlight Trio Swing"
+   },
+   {
+    "nom": "ENTROPY"
+   },
+   {
+    "nom": "DOUBLE CROSS",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album a strange pleasure)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Virginie Reid",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "bONZE Trio"
+   },
+   {
+    "nom": "FIELDING",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : rock",
+      "Last.fm cite l'album : magazine"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "Last.fm cite l'album : magazine"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "The Co-Conspirators",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album half a tank of gas a full case of beer)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "CANICULE TROPICALE"
+   },
+   {
+    "nom": "Charlotte Van Dyke-Talbot & Co"
+   },
+   {
+    "nom": "Dan Thouin Trio"
+   },
+   {
+    "nom": "Manoel Vieira",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : reflexions",
+      "maison de disques : effendi",
+      "genre concordant : jazz",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : reflexions",
+      "maison de disques : effendi",
+      "album sorti autour du lancement"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Devon Gillingham",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Gabe Newman",
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre pop ≠ classique"
+     ]
+    }
+   },
+   {
+    "nom": "The Jem",
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Cpt. Uncle",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "THE YOU AND ME'S",
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Kevin Dean",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz",
+      "Last.fm cite l'album : venous lake"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi",
+      "Last.fm cite l'album : venous lake"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Alex Bellegarde Jazz Latin Quartet"
+   },
+   {
+    "nom": "Lucas Porter",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : classique"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre folk/pop ≠ classique"
+     ]
+    }
+   },
+   {
+    "nom": "Marie-Jeanne Paquet & Co"
+   },
+   {
+    "nom": "Julie Morisod Quartet"
+   },
+   {
+    "nom": "Pithy Cats"
+   },
+   {
+    "nom": "Adam Goulet",
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Mark & the Shufflers"
+   },
+   {
+    "nom": "Alex Bellegarde Trio",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album floating)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Sam Baggs"
+   },
+   {
+    "nom": "Growve"
+   },
+   {
+    "nom": "Elizabeth Cormier & Co"
+   },
+   {
+    "nom": "Elodie Miron & Band"
+   },
+   {
+    "nom": "Combo Jazz de l'Université de Montréal"
+   },
+   {
+    "nom": "Jeffrey Simons & Band"
+   },
+   {
+    "nom": "6odem3",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Joe Sullivan Sextet",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi",
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi",
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "G.L. Chambers & Band"
+   },
+   {
+    "nom": "domlebo",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album bien sur)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Andy King's Swingtime Express"
+   },
+   {
+    "nom": "YAMA//SATO"
+   },
+   {
+    "nom": "Mini-Mélo",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Michael Occhipinti",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz",
+      "Last.fm cite l'album : creation dream the songs of bruce cockburn"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz",
+      "Last.fm cite l'album : the sicilian jazz project"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "Last.fm cite l'album : the sicilian jazz project"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Nossa Bossa",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rubber Room Report",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "The Clover Seeds"
+   },
+   {
+    "nom": "Coral Egan Trio"
+   },
+   {
+    "nom": "Jean Millaire"
+   },
+   {
+    "nom": "Bob Wiseman",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Joshua Marc Séguin",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Thierry Du Sablon 4tet"
+   },
+   {
+    "nom": "Sam Orsini"
+   },
+   {
+    "nom": "Les Mardis Big Band"
+   },
+   {
+    "nom": "Kill Daizy"
+   },
+   {
+    "nom": "Alex Bellegarde Trio",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album floating)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Tevet Sela",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi",
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "maison de disques : effendi"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "WASSENAL"
+   },
+   {
+    "nom": "Marie Fatima Rudolph Trio"
+   },
+   {
+    "nom": "maolie fleurent",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre folk ≠ electro"
+     ]
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "The Satisfactory",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Jean Pierre Zanella Quartet"
+   },
+   {
+    "nom": "Les Frères Sissokho"
+   },
+   {
+    "nom": "Donny Lives"
+   },
+   {
+    "nom": "Steph & The Machines"
+   },
+   {
+    "nom": "MIBENSON SYLVAIN"
+   },
+   {
+    "nom": "Michael Jerome Browne & the Backbeat Boys"
+   },
+   {
+    "nom": "Jean Millaire"
+   },
+   {
+    "nom": "Andrée Dupré"
+   },
+   {
+    "nom": "The Bloodshots",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album bad moon rising)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "The Count Ferrara",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "re:mplacé"
+   },
+   {
+    "nom": "Dominiq Hamel",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rachella Wred",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rough Trade",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "Last.fm cite l'album : avoid freud"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "Last.fm cite l'album : avoid freud"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Alex Paquette et les insulaires"
+   },
+   {
+    "nom": "La Touche Manouche"
+   },
+   {
+    "nom": "SIMON MCKAY",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "DREA XÙ",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Croc Jazz",
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : jazz"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur apple (album fou de vous)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Marie-Pierre Daigle",
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur apple (album marie mitaine et les pieds)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "GS DE LA LIQS"
+   },
+   {
+    "nom": "ISTATI"
+   },
+   {
+    "nom": "LOUIS GINGRAS ET LES JALOUX"
+   },
+   {
+    "nom": "TOTALLIUM",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Sloche Piquante"
+   },
+   {
+    "nom": "This Belongs To You"
+   },
+   {
+    "nom": "THE LOVE CATS PROJECT"
+   },
+   {
+    "nom": "Paesler",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : rock",
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : rock",
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album first aid)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "girl with dream",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "a.d. walsh",
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "BURTON C BELL AND THE VOID"
+   },
+   {
+    "nom": "Marie Cauchon"
+   },
+   {
+    "nom": "TETRATERIUM",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur apple (album ninth floor)"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : monde"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur apple (album ninth floor)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Garçons à marier",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album la dot)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album la dot)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "John Papadimitriou",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "REGGAE UPRISING BAND"
+   },
+   {
+    "nom": "Les Voix Ferrées",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : pop"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album en concert au rialto)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Murmurosi",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album bohutyn)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album bohutyn)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Irish Tree"
+   },
+   {
+    "nom": "NÜMONIA",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : rock"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : rock"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album hypnotic)"
+     ],
+     "contre": []
+    }
+   }
+  ],
   "qualite": {
-   "regles": 86,
+   "regles": 137,
    "contreverif": {
-    "non relues (limite)": 329
+    "date absente de la page": 35,
+    "date confirmée": 211,
+    "lien mort remplacé": 16,
+    "page illisible": 59,
+    "non relues (limite)": 8
    },
    "controle": null
   }
@@ -199,7 +1249,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-pl) : https://auxecuries.tuxedobillet.com/"
+    "annonces à venir dans la page : 4 (https://auxecuries.tuxedobillet.com/)"
    ]
   },
   {
@@ -522,7 +1572,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1502 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
@@ -577,7 +1628,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -586,7 +1637,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
+    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -595,7 +1647,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
@@ -647,7 +1700,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
    ]
   },
   {
@@ -805,7 +1859,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -814,7 +1869,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
@@ -980,7 +2036,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -1190,7 +2247,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
@@ -1617,7 +2675,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2168,7 +3226,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -2452,7 +3510,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -2696,8 +3755,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
-    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -2782,8 +3841,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
-    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },

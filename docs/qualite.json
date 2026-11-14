@@ -6,6 +6,8 @@
   "hors de l'île (ville étrangère dans le titre)": 1,
   "doublon (salle au nom vague)": 2,
   "activité de plusieurs mois classée hors exposition": 1,
+  "date absente de la page officielle": 35,
+  "page de la sortie disparue": 16,
   "heures différentes selon les sources": 62,
   "heure par défaut d'un agrégateur": 2
  },
@@ -207,6 +209,465 @@
    "lieu": "Parc du Mont-Royal",
    "source": "",
    "url": "https://150montroyal.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ian Blurton's Future Now + Ace of Wands",
+   "date": "2026-11-14",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/14/ian-blurtons-future-now--ace-of-wands"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Marché des fêtes au Locoshop Angus",
+   "date": "2026-11-14",
+   "lieu": "Locoshop Angus",
+   "source": "festival",
+   "url": "https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Marché des fêtes au Locoshop Angus",
+   "date": "2026-11-15",
+   "lieu": "Locoshop Angus",
+   "source": "festival",
+   "url": "https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-14",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-14-945"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Artisans Westmount 2026",
+   "date": "2026-11-15",
+   "lieu": "Victoria Hall",
+   "source": "salles",
+   "url": "https://westmount.org/en/events/community-events/artisans-westmount-2026"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-14",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-14-1145"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "L’esprit des lieux — séance",
+   "date": "2026-11-14",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/lesprit-des-lieux-2026-11-14-1500"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le fantôme dans la machine",
+   "date": "2026-11-15",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/le-fantome-dans-la-machine/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ensemble pendant les fêtes! (Inscription)",
+   "date": "2026-11-14",
+   "lieu": "UQAM - Pavillon Hubert-Aquin",
+   "source": "salles",
+   "url": "https://evenements.uqam.ca/evenements/ensemble-pendant-les-fetes-inscription/34743"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Filipiñana — séance",
+   "date": "2026-11-14",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/filipinana-2026-11-14-1745"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-14",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "LA SOIREE HAUTE TENSION",
+   "date": "2026-11-14",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Rogier Bak - Back to the future",
+   "date": "2026-11-15",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Open Mic à La Cabine",
+   "date": "2026-11-17",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Café ottoman : entre saveurs et traditions musicales",
+   "date": "2026-11-14",
+   "lieu": "Église Saint-Enfant-Jésus-du-Mile-End",
+   "source": "salles",
+   "url": "https://centredesmusiciensdumonde.tuxedobillet.com/Centre%20des%20musiciens%20du%20monde/cafe-ottoman-entre-saveurs-et-traditions-musicales"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "LA TOURNÉE 123PUNK 2026",
+   "date": "2026-11-14",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "NOVA SPEI + BURNING ATTIC + UNLESS WE FIGHT",
+   "date": "2026-11-14",
+   "lieu": "Cabaret Fouf",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "CAROLINE + THRESHOLD",
+   "date": "2026-11-15",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "DOOM SCROLL + THE YOU AND ME'S",
+   "date": "2026-11-15",
+   "lieu": "Cabaret Fouf",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "La mémoire de ma mère",
+   "date": "2026-11-14",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/lorchestre-dhommes-orchestres-la-memoire"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday After Dusk Comedy",
+   "date": "2026-11-14",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée blues live band avec Martin Goyette",
+   "date": "2026-11-14",
+   "lieu": "Cat's Corner",
+   "source": "salles",
+   "url": "https://www.catscorner.ca/what-we-do-1"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-14",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-14-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Late-Night Stand-Up Comedy à l'Estrella",
+   "date": "2026-11-14",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/1207555193089"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Late Night Comedy",
+   "date": "2026-11-14",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/saturday-night-comedy-after-dark-montreal-1015-pm-comedyville-tickets-184944833977?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Broadway Café: Our Favourite Things",
+   "date": "2026-11-14",
+   "lieu": "Centre Segal",
+   "source": "theatre",
+   "url": "https://purchase.segalcentre.org/Events"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "CHA",
+   "date": "2026-11-15",
+   "lieu": "La Petite Bibliothèque Verte",
+   "source": "salles",
+   "url": "https://www.pbv-lgl.org/index.php/fr-ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ciné-Récré – Famille : Jeux d'enfants",
+   "date": "2026-11-15",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/jeux-denfants"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Le secret des mésanges — séance",
+   "date": "2026-11-15",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/le-secret-des-mesanges-2026-11-15-1030"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Là où tout se rassemble — séance",
+   "date": "2026-11-15",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-ou-tout-se-rassemble-2026-11-15-1300"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Practica",
+   "date": "2026-11-15",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Homles — séance",
+   "date": "2026-11-15",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/homles-2026-11-15-1515"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Violence du corps de l’autre — séance",
+   "date": "2026-11-15",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/violence-du-corps-de-lautre-2026-11-15-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "D+Q Cooks! Cookbook Club: So Good",
+   "date": "2026-11-15",
+   "lieu": "Librairie Drawn & Quarterly",
+   "source": "salles",
+   "url": "https://mtl.drawnandquarterly.com/events"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "China Broadcasting Performing Arts Troupe",
+   "date": "2026-11-15",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/china-broadcasting-performing-arts-troupe"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Xiangsheng et sketches comiques – Tournée canadienne 2026",
+   "date": "2026-11-15",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/china-broadcasting-performing-arts-troupe"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The History of Concrete — séance",
+   "date": "2026-11-15",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-15-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Backstage",
+   "date": "2026-11-16",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/16/the-backstage"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The History of Concrete — séance",
+   "date": "2026-11-16",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-16-1345"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-16",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-16-1600"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Thelma & Louise",
+   "date": "2026-11-16",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-thelma-and-louise"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Filipiñana — séance",
+   "date": "2026-11-16",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/filipinana-2026-11-16-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Stand-Up Comedy au McKibbin's",
+   "date": "2026-11-16",
+   "lieu": "McKibbin's",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/909825722227"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Violence du corps de l’autre — séance",
+   "date": "2026-11-16",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/violence-du-corps-de-lautre-2026-11-16-2015"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Gabriel Dharmoo - Exploration vocale",
+   "date": "2026-11-17",
+   "lieu": "Studio 303",
+   "source": "salles",
+   "url": "https://www.studio303.ca/programmation/gabriel-dharmoo-exploration-vocale-26-27-fr/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Gabriel Dharmoo – Exploration vocale",
+   "date": "2026-11-17",
+   "lieu": "Studio 303",
+   "source": "salles",
+   "url": "https://www.studio303.ca/programmation/gabriel-dharmoo-exploration-vocale-26-27-fr/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The History of Concrete — séance",
+   "date": "2026-11-17",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-17-1545"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-17",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-17-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Meet & Make #28 – Paper Lampshades 🏮",
+   "date": "2026-11-17",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/meet-and-make-28"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée open HAS",
+   "date": "2026-11-17",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/17/soire-open-has"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Retour à Laval",
+   "date": "2026-11-17",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/retour-a-laval"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -786,7 +1247,11 @@
   }
  ],
  "contreverif": {
-  "non relues (limite)": 329
+  "date absente de la page": 35,
+  "date confirmée": 211,
+  "lien mort remplacé": 16,
+  "page illisible": 59,
+  "non relues (limite)": 8
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -804,9 +1269,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 106,
+   "erreurs": 122,
    "sorties": 270,
-   "taux": 39.3
+   "taux": 45.2
   },
   {
    "source": "panm360.com",

@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-14-chants-de-noel-d-ici-et-d-ailleurs-ensemble-alkemi-11f905@cc
+UID:2026-12-14-chants-de-noel-d-ici-et-d-ailleurs-ensemble-alkemi-51bbe2@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
+DTSTART;TZID=America/Toronto:20261214T140000
+DTEND;TZID=America/Toronto:20261214T160000
 SUMMARY:Chants de Noël d'ici et d'ailleurs - Ensemble Alkemia
 LOCATION:Parc De Mésy\, Montréal
 URL:https://montreal.ca/evenements/chants-de-noel-dici-et-dailleurs-ensembl
  e-alkemia-94850
-DESCRIPTION:Heure à confirmer. L'ensemble Alkemia\, un trio vocal exceptio
- nnel pour une spectacle de chant du temps des fêtes. Gratuit.\nPrix : Gra
- tuit\nDétails : https://montreal.ca/evenements/chants-de-noel-dici-et-dai
- lleurs-ensemble-alkemia-94850\n(ccmtl.ca)
+DESCRIPTION:L'ensemble Alkemia\, un trio vocal exceptionnel pour une specta
+ cle de chant du temps des fêtes. Gratuit.\nPrix : Gratuit\nDétails : htt
+ ps://montreal.ca/evenements/chants-de-noel-dici-et-dailleurs-ensemble-alke
+ mia-94850\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

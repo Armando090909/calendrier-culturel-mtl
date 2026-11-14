@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-11-conference-testaments-9691d7@ccmtl.ca
+UID:2026-12-11-conference-testaments-09136a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
+DTSTART;TZID=America/Toronto:20261211T103000
+DTEND;TZID=America/Toronto:20261211T123000
 SUMMARY:Conférence : testaments
 LOCATION:Benny Fab\, Montréal
 URL:https://montreal.ca/evenements/conference-testaments-122002
-DESCRIPTION:Heure à confirmer. Une conférence juridique et légale grâce
-  à un avocat bénévole d'Éducaloi. Pour un public adulte et francophone
- .\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/conference-te
- staments-122002\n(ccmtl.ca)
+DESCRIPTION:Une conférence juridique et légale grâce à un avocat béné
+ vole d'Éducaloi. Pour un public adulte et francophone.\nPrix : Gratuit\nD
+ étails : https://montreal.ca/evenements/conference-testaments-122002\n(cc
+ mtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-20-la-nuit-de-la-poesie-augmentee-66ffa6@ccmtl.ca
+UID:2026-11-20-la-nuit-de-la-poesie-augmentee-eab237@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261120T200000
 DTEND;TZID=America/Toronto:20261120T220000
 SUMMARY:La Nuit de la poésie augmentée
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:SAT\, Montréal
 URL:https://www.festivaldelapoesiedemontreal.com/fr/accueil/la-nuit-de-la-p
  oesie-augmentee
 DESCRIPTION:Soirée de poésie augmentée organisée avec la SAT\, le Salon
