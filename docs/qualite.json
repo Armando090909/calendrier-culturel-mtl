@@ -1248,7 +1248,7 @@
  ],
  "contreverif": {
   "date absente de la page": 35,
-  "date confirmée": 211,
+  "date confirmée": 206,
   "lien mort remplacé": 16,
   "page illisible": 59,
   "non relues (limite)": 8
@@ -1282,8 +1282,8 @@
   {
    "source": "fbdm-mcaf.ca",
    "erreurs": 10,
-   "sorties": 36,
-   "taux": 27.8
+   "sorties": 35,
+   "taux": 28.6
   },
   {
    "source": "legesu.com",
@@ -1336,12 +1336,12 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 49,
-   "sorties": 799,
+   "sorties": 797,
    "taux": 6.1
   }
  ],
  "recoupees": {
-  "total": 2830,
+  "total": 2822,
   "deux_sources_ou_plus": 289
  }
 }
