@@ -61,7 +61,8 @@ def sources(fests: list[dict], aujourd: date) -> list[dict]:
                         "url": url, "cle_source": "festival", "festival": f["id"], "lieu": f.get("lieu", ""),
                         "fest_debut": str(f.get("debut") or ""), "fest_fin": str(f.get("fin") or ""),
                         "discipline": f["disciplines"][0] if len(f.get("disciplines", [])) == 1 else "",
-                        "jours_semaine": jours, "details": True})
+                        "jours_semaine": jours, "details": True,
+                        **({"mise_en_page": f["mise_en_page"]} if f.get("mise_en_page") else {})})
     return out
 
 

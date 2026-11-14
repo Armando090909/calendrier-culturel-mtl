@@ -383,6 +383,14 @@ def main() -> int:
     bruts, series, rapport = [], [], []
     CACHE.mkdir(exist_ok=True)
     force = os.environ.get("TOUT_RELIRE") == "1"
+    # Relire certaines sources aujourd'hui, hors de leurs jours habituels (14 nov. 2026) : outils/diag/relire.txt,
+    # une ligne « AAAA-MM-JJ expression » (ex. « 2026-11-14 RIDM »). Seules les lignes datées d'aujourd'hui comptent.
+    a_relire = []
+    f_relire = Path(__file__).resolve().parent.parent / "outils" / "diag" / "relire.txt"
+    if f_relire.exists():
+        for ligne in f_relire.read_text(encoding="utf-8").splitlines():
+            if ligne.startswith(aujourd.isoformat() + " "):
+                a_relire.append(ligne.split(" ", 1)[1].strip())
     # Collecte en deux temps (11 nov. 2026) : ETAPE_COLLECTE=lecture lit les sources et garde chaque lecture en cache,
     # puis ETAPE_COLLECTE=assemblage bâtit le site à partir de ces lectures, sans relire. Chaque temps a sa propre limite
     # de durée : une lecture trop longue n'empêche plus la mise en ligne.
@@ -399,12 +407,13 @@ def main() -> int:
             sauver_memoire(aujourd)  # une lecture interrompue garde ce que l'IA a déjà lu
         jours = s.get("jours_semaine")  # ex. [0, 3] = lundi et jeudi seulement (économise l'IA)
         deja_lue = False
-        if fichier_cache.exists() and not force:  # déjà lue aujourd'hui (collecte relancée) : pas relue
+        force_s = force or any(re.search(r, s["nom"]) for r in a_relire)
+        if fichier_cache.exists() and not force_s:  # déjà lue aujourd'hui (collecte relancée) : pas relue
             try:
                 deja_lue = json.loads(fichier_cache.read_text(encoding="utf-8")).get("date") == aujourd.isoformat()
             except ValueError:
                 pass
-        if (etape == "assemblage" or deja_lue or jours and aujourd.weekday() not in jours and not force) and fichier_cache.exists():
+        if (etape == "assemblage" or deja_lue or jours and aujourd.weekday() not in jours and not force_s) and fichier_cache.exists():
             c = json.loads(fichier_cache.read_text(encoding="utf-8"))
             bruts += c["evenements"]
             series += c["series"]
