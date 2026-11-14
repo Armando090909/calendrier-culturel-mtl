@@ -1,35 +1,15 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "regles": {
-  "titre mal encodé": 19,
-  "hors de l'île (ville étrangère dans le titre)": 2,
+  "titre mal encodé": 17,
   "heure improbable": 1,
+  "hors de l'île (ville étrangère dans le titre)": 1,
   "doublon (salle au nom vague)": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 41,
-  "page de la sortie disparue": 16,
-  "heures différentes selon les sources": 59,
+  "heures différentes selon les sources": 62,
   "heure par défaut d'un agrégateur": 2
  },
  "journal": [
-  {
-   "regle": "titre mal encodé",
-   "action": "corrigé",
-   "titre": "Match d’impro | NANTES (France)",
-   "date": "2026-11-13",
-   "lieu": "Maison de quartier de Doulon",
-   "source": "salles",
-   "url": "https://lni.ca/evenement/match-dimpro-nantes-france-20261113/"
-  },
-  {
-   "regle": "titre mal encodé",
-   "action": "corrigé",
-   "titre": "LANCEMENT D'ALBUM | CANICULE",
-   "date": "2026-11-13",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://clubsoda.ca/fr/evenements/lancement-dalbum-canicule"
-  },
   {
    "regle": "titre mal encodé",
    "action": "corrigé",
@@ -184,15 +164,6 @@
    "url": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231"
   },
   {
-   "regle": "hors de l'île (ville étrangère dans le titre)",
-   "action": "retirée",
-   "titre": "Match d’impro | NANTES (France)",
-   "date": "2026-11-13",
-   "lieu": "Maison de quartier de Doulon",
-   "source": "salles",
-   "url": "https://lni.ca/evenement/match-dimpro-nantes-france-20261113/"
-  },
-  {
    "regle": "heure improbable",
    "action": "heure 04:30 retirée",
    "titre": "Gabriel Dharmoo - Exploration vocale",
@@ -238,528 +209,6 @@
    "url": "https://150montroyal.ca/"
   },
   {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Hearts of Palm + Jim's Plumbing & Electrical + Sparring Partner + High Rise",
-   "date": "2026-11-13",
-   "lieu": "Turbo Haüs",
-   "source": "salles",
-   "url": "https://turbohaus.ca/calendrier/2026/11/13/hearts-of-palm--jims-plumbing--electrical--sparring-partner--high-rise"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "The Sandbox — séance",
-   "date": "2026-11-13",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/the-sandbox-2026-11-13-1415"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "6 portraits néoréalistes — séance",
-   "date": "2026-11-13",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/6-portraits-neorealistes-2026-11-13-1615"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "La guerre froide — séance",
-   "date": "2026-11-13",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/la-guerre-froide-2026-11-13-1800"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Liaisons arabo-persanes, ce que le monde arabe doit à l'Iran",
-   "date": "2026-11-13",
-   "lieu": "Koujina Café",
-   "source": "festival",
-   "url": "https://festivalarabe.com/spectacle/liaisons-arabo-persanes-ce-que-le-monde-arabe-doit-a-liran-2"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Comedie Club à La Cabine",
-   "date": "2026-11-13",
-   "lieu": "La Cabine Comédie Club",
-   "source": "salles",
-   "url": "https://lacabinecomedie.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "QUEBEKISTAN avec Purush et Radi 30-30",
-   "date": "2026-11-13",
-   "lieu": "La Cabine Comédie Club",
-   "source": "salles",
-   "url": "https://lacabinecomedie.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Comedie Club à La Cabine",
-   "date": "2026-11-14",
-   "lieu": "La Cabine Comédie Club",
-   "source": "salles",
-   "url": "https://lacabinecomedie.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "LA SOIREE HAUTE TENSION",
-   "date": "2026-11-14",
-   "lieu": "La Cabine Comédie Club",
-   "source": "salles",
-   "url": "https://lacabinecomedie.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Rogier Bak - Back to the future",
-   "date": "2026-11-15",
-   "lieu": "La Cabine Comédie Club",
-   "source": "salles",
-   "url": "https://lacabinecomedie.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Lancement d'album Manoel Vieira & João Lenhari : reflexions (1er set)",
-   "date": "2026-11-15",
-   "lieu": "Upstairs Jazz Bar & Grill",
-   "source": "salles",
-   "url": "https://www.upstairsjazz.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Lancement d'album Manoel Vieira & João Lenhari : reflexions (3e set)",
-   "date": "2026-11-15",
-   "lieu": "Upstairs Jazz Bar & Grill",
-   "source": "salles",
-   "url": "https://www.upstairsjazz.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "✨SCORPIO CABARET✨",
-   "date": "2026-11-13",
-   "lieu": "Cabaret de Curiosités",
-   "source": "salles",
-   "url": "https://app.promotix.com/events/details/---SCORPIO-CABARET----tickets"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "La bola negra — séance",
-   "date": "2026-11-13",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-13-2000"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "La mémoire de ma mère",
-   "date": "2026-11-13",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/lorchestre-dhommes-orchestres-la-memoire"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "La mémoire de ma mère",
-   "date": "2026-11-14",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/lorchestre-dhommes-orchestres-la-memoire"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Lancement du balado PoésieGo! et soirée de poésie",
-   "date": "2026-11-13",
-   "lieu": "Espace Culturel Kawalees",
-   "source": "festival",
-   "url": "https://festivalarabe.com/spectacle/mes-gants-prennent-feu-chaque-fois"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Le fantôme dans la machine",
-   "date": "2026-11-15",
-   "lieu": "Duceppe",
-   "source": "theatre",
-   "url": "https://duceppe.com/le-fantome-dans-la-machine/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Voyage voyage",
-   "date": "2026-11-13",
-   "lieu": "Théâtre Denise-Pelletier",
-   "source": "theatre",
-   "url": "https://www.denise-pelletier.qc.ca/pieces/voyage-voyage/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Soirée de danse",
-   "date": "2026-11-13",
-   "lieu": "Tango Libre",
-   "source": "salles",
-   "url": "https://tangolibre.ca/activites/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Practica",
-   "date": "2026-11-15",
-   "lieu": "Tango Libre",
-   "source": "salles",
-   "url": "https://tangolibre.ca/activites/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Downtown Stomp - soirée danse sociale swing",
-   "date": "2026-11-13",
-   "lieu": "Lieu à confirmer",
-   "source": "salles",
-   "url": "https://www.catscorner.ca/what-we-do-1"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Soirée blues live band avec Martin Goyette",
-   "date": "2026-11-14",
-   "lieu": "Cat's Corner",
-   "source": "salles",
-   "url": "https://www.catscorner.ca/what-we-do-1"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Friday Night Comedy (Early Show)",
-   "date": "2026-11-13",
-   "lieu": "Deli Planet",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Ian Blurton's Future Now + Ace of Wands",
-   "date": "2026-11-14",
-   "lieu": "Turbo Haüs",
-   "source": "salles",
-   "url": "https://turbohaus.ca/calendrier/2026/11/14/ian-blurtons-future-now--ace-of-wands"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Marché des fêtes au Locoshop Angus",
-   "date": "2026-11-14",
-   "lieu": "Locoshop Angus",
-   "source": "festival",
-   "url": "https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Marché des fêtes au Locoshop Angus",
-   "date": "2026-11-15",
-   "lieu": "Locoshop Angus",
-   "source": "festival",
-   "url": "https://montrealsecret.co/en/campbell-concerts-this-series-of-free-concerts-is-a-must-see-in-montreal-this-summer/"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "NAZA — séance",
-   "date": "2026-11-14",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/naza-2026-11-14-945"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Artisans Westmount 2026",
-   "date": "2026-11-15",
-   "lieu": "Victoria Hall",
-   "source": "salles",
-   "url": "https://westmount.org/en/events/community-events/artisans-westmount-2026"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "La bola negra — séance",
-   "date": "2026-11-14",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-14-1145"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "L’esprit des lieux — séance",
-   "date": "2026-11-14",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/lesprit-des-lieux-2026-11-14-1500"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "Filipiñana — séance",
-   "date": "2026-11-14",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/filipinana-2026-11-14-1745"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Café ottoman : entre saveurs et traditions musicales",
-   "date": "2026-11-14",
-   "lieu": "Église Saint-Enfant-Jésus-du-Mile-End",
-   "source": "salles",
-   "url": "https://centredesmusiciensdumonde.tuxedobillet.com/Centre%20des%20musiciens%20du%20monde/cafe-ottoman-entre-saveurs-et-traditions-musicales"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "LA TOURNÉE 123PUNK 2026",
-   "date": "2026-11-14",
-   "lieu": "Foufounes Électriques",
-   "source": "salles",
-   "url": "https://foufouneselectriques.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "NOVA SPEI + BURNING ATTIC + UNLESS WE FIGHT",
-   "date": "2026-11-14",
-   "lieu": "Cabaret Fouf",
-   "source": "salles",
-   "url": "https://foufouneselectriques.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "CAROLINE + THRESHOLD",
-   "date": "2026-11-15",
-   "lieu": "Foufounes Électriques",
-   "source": "salles",
-   "url": "https://foufouneselectriques.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "DOOM SCROLL + THE YOU AND ME'S",
-   "date": "2026-11-15",
-   "lieu": "Cabaret Fouf",
-   "source": "salles",
-   "url": "https://foufouneselectriques.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Saturday After Dusk Comedy",
-   "date": "2026-11-14",
-   "lieu": "Estrella",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "You Can See Everything — séance",
-   "date": "2026-11-14",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-14-2000"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Late-Night Stand-Up Comedy à l'Estrella",
-   "date": "2026-11-14",
-   "lieu": "Estrella",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/1207555193089"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Saturday Late Night Comedy",
-   "date": "2026-11-14",
-   "lieu": "Estrella",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/saturday-night-comedy-after-dark-montreal-1015-pm-comedyville-tickets-184944833977?aff=oddtdtcreator"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Broadway Café: Our Favourite Things",
-   "date": "2026-11-14",
-   "lieu": "Centre Segal",
-   "source": "theatre",
-   "url": "https://purchase.segalcentre.org/Events"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Oryza",
-   "date": "2026-11-14",
-   "lieu": "Espace le vrai monde?",
-   "source": "salles",
-   "url": "https://www.espacelevraimonde.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "CHA",
-   "date": "2026-11-15",
-   "lieu": "La Petite Bibliothèque Verte",
-   "source": "salles",
-   "url": "https://www.pbv-lgl.org/index.php/fr-ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Ciné-Récré – Famille : Jeux d'enfants",
-   "date": "2026-11-15",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/jeux-denfants"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "Le secret des mésanges — séance",
-   "date": "2026-11-15",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/le-secret-des-mesanges-2026-11-15-1030"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "Là où tout se rassemble — séance",
-   "date": "2026-11-15",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/la-ou-tout-se-rassemble-2026-11-15-1300"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "Homles — séance",
-   "date": "2026-11-15",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/homles-2026-11-15-1515"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "Violence du corps de l’autre — séance",
-   "date": "2026-11-15",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/violence-du-corps-de-lautre-2026-11-15-1800"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "D+Q Cooks! Cookbook Club: So Good",
-   "date": "2026-11-15",
-   "lieu": "Librairie Drawn & Quarterly",
-   "source": "salles",
-   "url": "https://mtl.drawnandquarterly.com/events"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "China Broadcasting Performing Arts Troupe",
-   "date": "2026-11-15",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/china-broadcasting-performing-arts-troupe"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Xiangsheng et sketches comiques – Tournée canadienne 2026",
-   "date": "2026-11-15",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/china-broadcasting-performing-arts-troupe"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "The History of Concrete — séance",
-   "date": "2026-11-15",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-15-2030"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "The Backstage",
-   "date": "2026-11-16",
-   "lieu": "Turbo Haüs",
-   "source": "salles",
-   "url": "https://turbohaus.ca/calendrier/2026/11/16/the-backstage"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "The History of Concrete — séance",
-   "date": "2026-11-16",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-16-1345"
-  },
-  {
-   "regle": "page de la sortie disparue",
-   "action": "lien remplacé par l'accueil du site",
-   "titre": "NAZA — séance",
-   "date": "2026-11-16",
-   "lieu": "Cinéma Public",
-   "source": "salles",
-   "url": "https://cinemapublic.ca/seances/naza-2026-11-16-1600"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Thelma & Louise",
-   "date": "2026-11-16",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-thelma-and-louise"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "16:30 gardée (montreal.ca), 15:30 écartée (montreal.ca)",
-   "titre": "Lis avec Poilu",
-   "date": "2026-11-13",
-   "lieu": "Bibliothèque de Parc-Extension",
-   "source": "ville",
-   "url": "https://montreal.ca/evenements/lis-avec-poilu-116126"
-  },
-  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -770,12 +219,111 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "10:30 gardée (montreal.ca), 11:30 écartée (montreal.ca)",
+   "titre": "Lis avec Poilu (Groupe 1)",
+   "date": "2026-11-29",
+   "lieu": "Bibliothèque de Pierrefonds",
+   "source": "ville",
+   "url": "https://montreal.ca/evenements/lis-avec-poilu-groupe-1-116608"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (sorstu.ca), 21:00 écartée (sorstu.ca)",
+   "titre": "Kinji00 - M pour Montréal",
+   "date": "2026-11-20",
+   "lieu": "Club Soda",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/kinji00/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (sorstu.ca), 20:30 écartée (songkick.com)",
+   "titre": "Sassy 009",
+   "date": "2026-11-17",
+   "lieu": "L'Escogriffe",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/sassy-009/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:00 gardée (sorstu.ca), 20:00 écartée (songkick.com)",
+   "titre": "Orville Peck – Man Turned Mule",
+   "date": "2026-11-19",
+   "lieu": "MTELUS",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/orville-peck/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (sorstu.ca), 19:00 écartée (songkick.com)",
+   "titre": "Émile Bourgault",
+   "date": "2026-11-19",
+   "lieu": "Chez Bozo",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/emile-bourgault/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (sorstu.ca), 19:00 écartée (songkick.com)",
+   "titre": "Tommy Fleece - Avec Reserv",
+   "date": "2026-11-20",
+   "lieu": "Bar Le Ritz PDB",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/tommy-fleece/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (espacestdenis.com), 21:00 écartée (espacestdenis.com)",
    "titre": "Dweezil Zappa : Like Father, Like Son",
    "date": "2026-11-17",
    "lieu": "Théâtre St-Denis",
    "source": "theatre",
    "url": "https://espacestdenis.com/fr/programmation/dweezil-zappa/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "21:00 gardée (espacestdenis.com), 20:00 écartée (sorstu.ca)",
+   "titre": "Undertale: The Determination Symphony",
+   "date": "2026-11-20",
+   "lieu": "Théâtre St-Denis",
+   "source": "theatre",
+   "url": "https://espacestdenis.com/fr/programmation/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:15 gardée (dansedanse.ca), 20:00 écartée (sorstu.ca)",
+   "titre": "Dance Me - Musique de Leonard Cohen",
+   "date": "2026-11-24",
+   "lieu": "Théâtre Maisonneuve",
+   "source": "salles",
+   "url": "https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-leonard-cohen"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:15 gardée (dansedanse.ca), 20:00 écartée (sorstu.ca)",
+   "titre": "Dance Me - Musique de Leonard Cohen",
+   "date": "2026-11-25",
+   "lieu": "Théâtre Maisonneuve",
+   "source": "salles",
+   "url": "https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-leonard-cohen"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:15 gardée (dansedanse.ca), 20:00 écartée (sorstu.ca)",
+   "titre": "Dance Me - Musique de Leonard Cohen",
+   "date": "2026-11-26",
+   "lieu": "Théâtre Maisonneuve",
+   "source": "salles",
+   "url": "https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-leonard-cohen"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:15 gardée (dansedanse.ca), 20:00 écartée (sorstu.ca)",
+   "titre": "Dance Me - Musique de Leonard Cohen",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Maisonneuve",
+   "source": "salles",
+   "url": "https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-leonard-cohen"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -842,15 +390,6 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (theatrefairmount.com), 18:30 écartée (songkick.com)",
-   "titre": "13 NOVEMBRE 2026 — Théâtre Fairmount",
-   "date": "2026-11-13",
-   "lieu": "Théâtre Fairmount",
-   "source": "salles",
-   "url": "https://theatrefairmount.com/vnements/cannelle-theatre-fairmount/20261113-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-5jnwg-kh6nk"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (theatrefairmount.com), 19:00 écartée (songkick.com)",
    "titre": "Twentythree + Too Many Strikers",
    "date": "2026-11-23",
@@ -869,16 +408,7 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (barleritzpdb.com), 19:00 écartée (songkick.com)",
-   "titre": "TOMMY FLEECE",
-   "date": "2026-11-20",
-   "lieu": "Bar Le Ritz PDB",
-   "source": "salles",
-   "url": "http://www.barleritzpdb.com/vnements/tommy-fleece-bar-le-ritz-pdb/20261120-25bhh-ngtlb-c2xwh-egb2b-hwn-p2crlo-7cdbx-sjnd-gxj9n"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (foufouneselectriques.com), 19:30 écartée (montreal.askapunk.net)",
+   "action": "19:00 gardée (foufouneselectriques.com), 19:30 écartée (sorstu.ca)",
    "titre": "M POUR MONTRÉAL: BÉTON ARMÉ + FAZE + ZOUZ",
    "date": "2026-11-18",
    "lieu": "Foufounes Électriques",
@@ -950,12 +480,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (balattou.com)",
-   "titre": "GINOLA LÉLÉ & Mawara Band",
-   "date": "2026-11-13",
-   "lieu": "Club Balattou",
+   "action": "20:00 gardée (mtelus.com), 19:00 écartée (sorstu.ca)",
+   "titre": "Orville Peck",
+   "date": "2026-11-19",
+   "lieu": "MTELUS",
    "source": "salles",
-   "url": "https://lepointdevente.com/billets/pna261113001?lang=fr"
+   "url": "https://mtelus.com/fr/evenements?vue=grille"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -977,21 +507,21 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "20:30 gardée (casadelpopolo.com), 20:00 écartée (sorstu.ca)",
+   "titre": "Bellbird",
+   "date": "2026-11-23",
+   "lieu": "P'tit Ours",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-11-24-bellbird"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (casadelpopolo.com), 19:30 écartée (montreal.askapunk.net)",
    "titre": "Heavy Trip & Negative Capabilities present Magic Tuber Stringband + Geneviève Heistek + Je",
    "date": "2026-12-05",
    "lieu": "P'tit Ours",
    "source": "salles",
    "url": "https://casadelpopolo.com/fr/events/2026-12-06-heavy-trip-negative-capabilities-present-magic-tuber-stringband-genevieve-heistek-jesse-eckerlin"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (casadelpopolo.com), 19:00 écartée (songkick.com)",
-   "titre": "Daniel James McFadyen",
-   "date": "2026-11-13",
-   "lieu": "La Sotterenea",
-   "source": "salles",
-   "url": "https://casadelpopolo.com/fr/events/2026-11-14-daniel-james-mcfadyen"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1010,6 +540,24 @@
    "lieu": "La Sotterenea",
    "source": "salles",
    "url": "https://casadelpopolo.com/fr/events/2026-12-13-noise-for-society-night-2"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "22:00 gardée (casadelpopolo.com), 21:00 écartée (sorstu.ca)",
+   "titre": "blesse lancement d'album \"Transit\"",
+   "date": "2026-11-19",
+   "lieu": "La Sala Rossa",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-11-20-blesse-lancement-d-album-transit"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:30 gardée (casadelpopolo.com), 22:00 écartée (sorstu.ca)",
+   "titre": "M for Mothland - Xela Edna, Birds of Prrrey, Still Depths, TVOD, BALACLAVA",
+   "date": "2026-11-20",
+   "lieu": "La Sala Rossa",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-11-21-m-for-mothland-xela-edna-birds-of-prrrey-still-depths-tvod-balaclava"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1064,15 +612,6 @@
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/co91"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (lepointdevente.com), 19:00 écartée (sorstu.ca)",
-   "titre": "LANCEMENT D'ALBUM | CANICULE",
-   "date": "2026-11-13",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://lepointdevente.com/billets/clb261113001"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1193,24 +732,6 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "23:55 gardée (leministere.ca), 22:00 écartée (festapp.io)",
-   "titre": "ADIEU NARCISSE + CHÉRI (AFTER)",
-   "date": "2026-11-13",
-   "lieu": "Le Ministère",
-   "source": "salles",
-   "url": "https://leministere.ca/evenements/adieu-narcisse-cheri-ccf2026"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "21:30 gardée (panm360.com), 22:30 écartée (festapp.io)",
-   "titre": "Catherine Jeanne-d'Arc et La Monarque",
-   "date": "2026-11-13",
-   "lieu": "Quai des Brumes",
-   "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "21:30 gardée (panm360.com), 22:30 écartée (festapp.io)",
    "titre": "Kat Pereira et Chénier",
    "date": "2026-11-14",
@@ -1229,48 +750,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:30 gardée (panm360.com), 22:30 écartée (festapp.io)",
-   "titre": "Élégie et Louis-Charles",
-   "date": "2026-11-13",
-   "lieu": "L'Escogriffe",
-   "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (panm360.com), 21:00 écartée (festapp.io)",
-   "titre": "Jonathan Personne et Coup Dur",
-   "date": "2026-11-13",
-   "lieu": "Foufounes Électriques",
-   "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (lepointdevente.com), 21:00 écartée (festapp.io)",
-   "titre": "LANCEMENT D'ALBUM | CANICULE",
-   "date": "2026-11-13",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://lepointdevente.com/billets/clb261113001"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "17:30 gardée (ridm.ca), 19:30 écartée (montreal.ca)",
    "titre": "Un souffle à la fois",
    "date": "2026-11-24",
    "lieu": "Maison Théâtre",
    "source": "festival",
    "url": "https://ridm.ca/fr/films/un-souffle-a-la-fois"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
-   "titre": "GINOLA LÉLÉ & Mawara Band",
-   "date": "2026-11-13",
-   "lieu": "Club Balattou",
-   "source": "salles",
-   "url": "https://lepointdevente.com/billets/pna261113001?lang=fr"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1301,95 +786,97 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 41,
-  "date confirmée": 211,
-  "non relues (limite)": 55,
-  "page illisible": 58,
-  "lien mort remplacé": 16
+  "non relues (limite)": 329
  },
  "controle": null,
  "sources_a_surveiller": [
   {
    "source": "balattou.com",
-   "erreurs": 39,
-   "sorties": 39,
+   "erreurs": 52,
+   "sorties": 52,
    "taux": 100.0
   },
   {
    "source": "espacestdenis.com",
-   "erreurs": 27,
-   "sorties": 59,
-   "taux": 45.8
+   "erreurs": 36,
+   "sorties": 74,
+   "taux": 48.6
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 101,
-   "sorties": 232,
-   "taux": 43.5
+   "erreurs": 106,
+   "sorties": 270,
+   "taux": 39.3
   },
   {
    "source": "panm360.com",
-   "erreurs": 30,
-   "sorties": 83,
-   "taux": 36.1
+   "erreurs": 32,
+   "sorties": 94,
+   "taux": 34.0
   },
   {
    "source": "fbdm-mcaf.ca",
-   "erreurs": 8,
-   "sorties": 28,
-   "taux": 28.6
+   "erreurs": 10,
+   "sorties": 36,
+   "taux": 27.8
   },
   {
    "source": "legesu.com",
-   "erreurs": 9,
-   "sorties": 35,
-   "taux": 25.7
+   "erreurs": 12,
+   "sorties": 44,
+   "taux": 27.3
+  },
+  {
+   "source": "dansedanse.ca",
+   "erreurs": 6,
+   "sorties": 32,
+   "taux": 18.8
   },
   {
    "source": "theatrefairmount.com",
-   "erreurs": 9,
-   "sorties": 73,
-   "taux": 12.3
-  },
-  {
-   "source": "cinematheque.qc.ca",
-   "erreurs": 19,
-   "sorties": 157,
+   "erreurs": 11,
+   "sorties": 91,
    "taux": 12.1
   },
   {
+   "source": "cinematheque.qc.ca",
+   "erreurs": 21,
+   "sorties": 181,
+   "taux": 11.6
+  },
+  {
    "source": "spectaculos.ca",
-   "erreurs": 8,
-   "sorties": 75,
-   "taux": 10.7
+   "erreurs": 10,
+   "sorties": 87,
+   "taux": 11.5
   },
   {
    "source": "mtelus.com",
-   "erreurs": 5,
-   "sorties": 52,
-   "taux": 9.6
+   "erreurs": 7,
+   "sorties": 68,
+   "taux": 10.3
   },
   {
    "source": "theatresaintecatherine.com",
-   "erreurs": 6,
-   "sorties": 74,
-   "taux": 8.1
-  },
-  {
-   "source": "lepointdevente.com",
-   "erreurs": 42,
-   "sorties": 640,
-   "taux": 6.6
+   "erreurs": 8,
+   "sorties": 95,
+   "taux": 8.4
   },
   {
    "source": "eventbrite.com",
-   "erreurs": 6,
-   "sorties": 109,
-   "taux": 5.5
+   "erreurs": 8,
+   "sorties": 131,
+   "taux": 6.1
+  },
+  {
+   "source": "lepointdevente.com",
+   "erreurs": 49,
+   "sorties": 799,
+   "taux": 6.1
   }
  ],
  "recoupees": {
-  "total": 2896,
+  "total": 2830,
   "deux_sources_ou_plus": 289
  }
 }
