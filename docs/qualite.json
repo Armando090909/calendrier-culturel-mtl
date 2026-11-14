@@ -6,8 +6,8 @@
   "hors de l'île (ville étrangère dans le titre)": 1,
   "doublon (salle au nom vague)": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 35,
-  "page de la sortie disparue": 16,
+  "date absente de la page officielle": 36,
+  "page de la sortie disparue": 17,
   "heures différentes selon les sources": 62,
   "heure par défaut d'un agrégateur": 2
  },
@@ -670,6 +670,24 @@
    "url": "https://theatreoutremont.tuxedobillet.com/web/retour-a-laval"
   },
   {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Chronovisor — séance",
+   "date": "2026-11-17",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/chronovisor-2026-11-17-2100"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Créer Autrement",
+   "date": "2026-11-17",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.com/evenements/bistro-brain/"
+  },
+  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -1247,11 +1265,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 35,
-  "date confirmée": 206,
-  "lien mort remplacé": 16,
-  "page illisible": 59,
-  "non relues (limite)": 8
+  "date absente de la page": 36,
+  "date confirmée": 211,
+  "lien mort remplacé": 17,
+  "page illisible": 60
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1269,9 +1286,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 122,
+   "erreurs": 123,
    "sorties": 270,
-   "taux": 45.2
+   "taux": 45.6
   },
   {
    "source": "panm360.com",

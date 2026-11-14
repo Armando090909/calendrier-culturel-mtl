@@ -55,14 +55,169 @@
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-29 : « Punch Créole » (Gesù) = « Punch Créole » (Salle Pierre-Mercure)"
   ],
+  "catalogues": [
+   {
+    "nom": "ETIENNE DANO"
+   },
+   {
+    "nom": "Ian Blurton's Future Now",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : imperial filth",
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : imperial filth",
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : imperial filth"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Chénier"
+   },
+   {
+    "nom": "Les Mardis Big Band"
+   },
+   {
+    "nom": "Altsys Orchestra"
+   },
+   {
+    "nom": "Cuerpos",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre electro ≠ rock"
+     ]
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "BITUIN US"
+   },
+   {
+    "nom": "Thierry Du Sablon 4tet"
+   },
+   {
+    "nom": "Laurent Perreault-Jolicoeur 4tet"
+   },
+   {
+    "nom": "Too Many Strikers"
+   },
+   {
+    "nom": "Killed",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre electro/hiphop/pop ≠ metal"
+     ]
+    }
+   },
+   {
+    "nom": "BURTON C BELL AND THE VOID"
+   },
+   {
+    "nom": "BORNBROKEN",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal",
+      "Last.fm : artiste d'ici, même genre (metal)"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal",
+      "Last.fm : artiste d'ici, même genre (metal)"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album a nation of ignorance)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Papagroove",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Nicolas Pellerin",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : nicolas pellerin et les grands hurleurs",
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : nicolas pellerin et les grands hurleurs",
+      "genre concordant : folk"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : nicolas pellerin et les grands hurleurs"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Le P'tit Gros Bison"
+   },
+   {
+    "nom": "Bass Cathedral"
+   }
+  ],
   "qualite": {
-   "regles": 137,
+   "regles": 139,
    "contreverif": {
-    "date absente de la page": 35,
-    "date confirmée": 206,
-    "lien mort remplacé": 16,
-    "page illisible": 59,
-    "non relues (limite)": 8
+    "date absente de la page": 36,
+    "date confirmée": 211,
+    "lien mort remplacé": 17,
+    "page illisible": 60
    },
    "controle": null
   }
@@ -200,7 +355,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-pl) : https://auxecuries.tuxedobillet.com/"
+    "annonces à venir dans la page : 4 (https://auxecuries.tuxedobillet.com/)"
    ]
   },
   {
@@ -523,7 +678,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1498 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
@@ -578,7 +734,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -587,7 +743,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
+    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -596,7 +753,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
@@ -648,7 +806,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
    ]
   },
   {
@@ -806,7 +965,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -815,7 +975,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
@@ -981,7 +1142,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -1191,7 +1353,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
@@ -2169,7 +2332,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -2453,7 +2616,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -2519,8 +2683,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
+    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
+    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -2696,8 +2861,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
-    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -2782,8 +2947,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
-    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 3718 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
