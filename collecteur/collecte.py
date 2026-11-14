@@ -9,6 +9,7 @@ Variables d'environnement (facultatives) :
 """
 from __future__ import annotations
 
+import collections
 import json
 import time
 import os
@@ -942,17 +943,27 @@ def main() -> int:
     # Pièces, films, concerts « à l'affiche du … au … » : le site les montre chaque jour de la période.
     # On les retire quand les dates précises sont déjà connues (même titre parmi les événements), quand la période
     # est celle d'un festival (ex. un film de CINEMANIA « du 2 au 15 nov. »), ou quand la même page est déjà là.
-    titres = {plat(e["titre"])[:25] for e in events}
-    pages, gardees = set(), []
+    # 14 nov. 2026 : une seule date connue ne suffit pas (une fiche Sors-tu du 22 nov. faisait disparaître les
+    # 19 représentations de « Confessions » au TNM). Il faut au moins 3 dates ; sinon on garde la série et on retire
+    # ces 1 ou 2 fiches, qui feraient doublon avec elle ces jours-là.
+    titres = collections.Counter(plat(e["titre"])[:25] for e in events)
+    pages, gardees, absorbees = set(), [], set()
     for x in expos:
         if x["discipline"] != "expo":
-            if x.get("festival") or plat(x["titre"])[:25] in titres:
+            t = plat(x["titre"])[:25]
+            if x.get("festival") or titres[t] >= 3:
                 continue
+            if titres[t]:
+                absorbees.add((t, x["debut"], x["fin"]))
             if x.get("url") and x["url"] in pages:
                 continue
             pages.add(x.get("url"))
         gardees.append(x)
     expos = gardees
+    if absorbees:
+        avant_n = len(events)
+        events = [e for e in events if not any(plat(e["titre"])[:25] == t and d1 <= e["date"] <= d2 for t, d1, d2 in absorbees)]
+        print(f"Fiches isolées remplacées par la série complète du spectacle : {avant_n - len(events)}")
     # La même exposition annoncée deux fois (« Exposition : X » à « Lieu à confirmer » et « X » à la bibliothèque) :
     # même titre (sans « Exposition : »), même date de fin -> on garde la version qui a une vraie salle.
     def _cle_expo(x):

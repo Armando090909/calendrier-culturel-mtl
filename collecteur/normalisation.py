@@ -42,6 +42,7 @@ NON_CULTUREL = [
     # événements d'affaires / corporatifs (pas de la culture)
     "c2 montreal", "mtl connecte", "reseautage", "networking", "salon de l emploi", "foire de l emploi",
     "conference d affaires", "sommet d affaires", "webinaire", "formation professionnelle", "gala corporatif",
+    "congress",  # congrès médicaux ou professionnels (14 nov. 2026 : « Perioperative Care Congress »)
 ]
 
 REGLES = [
