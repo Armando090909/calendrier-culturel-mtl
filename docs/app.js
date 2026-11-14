@@ -630,7 +630,7 @@ fetch(BASE+"festivals.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(
   if(D)render()});
 fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(j=>{
   D=j;
-  if(EN)[...D.events,...D.expos].forEach(e=>{if(e.lieu==="Lieu à confirmer")e.lieu="Venue TBA"});
+  if(EN)[...D.events,...D.expos].forEach(e=>{if(e.lieu==="Lieu à confirmer")e.lieu="Venue TBA";else if(e.lieu==="En ligne")e.lieu="Online"});
   // Pièces, danse et cirque « à l'affiche du X au Y » : une entrée par jour, pour qu'elles suivent les filtres
   const mot=t=>(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").split(/[^a-z0-9]+/).find(w=>w.length>2)||"";
   const deja=new Set(D.events.map(e=>e.date+"|"+e.lieu+"|"+mot(e.titre)));

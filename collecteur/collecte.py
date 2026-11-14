@@ -330,6 +330,20 @@ def _trop_long(*_):
     raise SourceTropLongue("source abandonnée après 10 minutes sans fin de lecture")
 
 
+# Événements en ligne (14 nov. 2026) : le champ « lieu » ou « ville » de la source le dit (« En ligne », « Zoom »,
+# « Événement virtuel »), ou, faute de salle, la description parle d'une séance en ligne (pas d'une inscription en ligne).
+_EN_LIGNE_LIEU = re.compile(r"^(en ligne|virtuel|virtuelle|evenement virtuel|evenement en ligne|virtual|virtual event|online|"
+                            r"zoom|teams|microsoft teams|google meet|webinaire|webinar|visioconference|diffusion en ligne)\b")
+_EN_LIGNE_TEXTE = re.compile(r"(?i)\b(sur zoom|via zoom|par zoom|zoom|microsoft teams|google meet|visioconf[ée]rence|webinaire|webinar|"
+                             r"(conf[ée]rence|s[ée]rie|cycle|cours|atelier|s[ée]ance|rencontre|introduction|initiation|volet|[ée]pisode|"
+                             r"discussion|causerie|lecture|formation|activit[ée]|[ée]v[ée]nement|panel|table ronde)s?\b[^.\n]{0,40}\b(en ligne|virtuel(le)?s?))\b")
+_PAS_EN_LIGNE = re.compile(r"(?i)\b(inscri\w*|billet\w*|r[ée]serv\w*|achat|acheter|disponible\w*|formulaire|vente)\s+(est\s+|sont\s+)?(obligatoire\s+)?en ligne")
+
+
+def en_ligne_selon_texte(texte: str) -> bool:
+    return bool(_EN_LIGNE_TEXTE.search(_PAS_EN_LIGNE.sub(" ", texte or "")))
+
+
 def main() -> int:
     conf = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
     reglages = conf.get("reglages", {})
@@ -495,6 +509,8 @@ def main() -> int:
         """Nom canonique de la salle, ou None si elle est hors de l'île."""
         nonlocal geo_restants
         nom = (nom or "").strip() or (adresse or "").split(",")[0].strip()
+        if _EN_LIGNE_LIEU.search(plat(nom)) or _EN_LIGNE_LIEU.search(plat(ville or "")):
+            return "En ligne"  # 14 nov. 2026 : conférences en visio affichées « En ligne », plus « Lieu à confirmer »
         if not nom or plat(nom) in PAS_DES_SALLES:
             return ""
         m = re.fullmatch(r"@(-?[\d.]+),(-?[\d.]+)", nom)
@@ -553,6 +569,8 @@ def main() -> int:
             lieu = b["lieu"].strip()
         if lieu is None:
             continue
+        if not lieu and en_ligne_selon_texte(b["titre"] + " \n " + (b.get("description") or "")):
+            lieu = "En ligne"
         if not lieu and b["source"] == "sorstu":
             continue  # Sors-tu? couvre tout le Québec et le Canada : sans salle, impossible de savoir si c'est à Montréal
         if b["discipline"] == "jeune":
