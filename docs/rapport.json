@@ -1,7 +1,7 @@
 {
  "date": "2026-11-14",
  "statut": "publié",
- "evenements": 2822,
+ "evenements": 2891,
  "expositions": 251,
  "nouvelles_salles": [],
  "notes": {
@@ -54,162 +54,6 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-29 : « Punch Créole » (Gesù) = « Punch Créole » (Salle Pierre-Mercure)"
-  ],
-  "catalogues": [
-   {
-    "nom": "ETIENNE DANO"
-   },
-   {
-    "nom": "Ian Blurton's Future Now",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : imperial filth",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : imperial filth",
-      "Last.fm : artiste d'ici, même genre (rock)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : imperial filth"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Chénier"
-   },
-   {
-    "nom": "Les Mardis Big Band"
-   },
-   {
-    "nom": "Altsys Orchestra"
-   },
-   {
-    "nom": "Cuerpos",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre electro ≠ rock"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "BITUIN US"
-   },
-   {
-    "nom": "Thierry Du Sablon 4tet"
-   },
-   {
-    "nom": "Laurent Perreault-Jolicoeur 4tet"
-   },
-   {
-    "nom": "Too Many Strikers"
-   },
-   {
-    "nom": "Killed",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre electro/hiphop/pop ≠ metal"
-     ]
-    }
-   },
-   {
-    "nom": "BURTON C BELL AND THE VOID"
-   },
-   {
-    "nom": "BORNBROKEN",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal",
-      "Last.fm : artiste d'ici, même genre (metal)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal",
-      "Last.fm : artiste d'ici, même genre (metal)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album a nation of ignorance)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Papagroove",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Nicolas Pellerin",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : nicolas pellerin et les grands hurleurs",
-      "genre concordant : folk"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : nicolas pellerin et les grands hurleurs",
-      "genre concordant : folk"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album nommé sur la page : nicolas pellerin et les grands hurleurs"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Le P'tit Gros Bison"
-   },
-   {
-    "nom": "Bass Cathedral"
-   }
   ],
   "qualite": {
    "regles": 139,
@@ -355,7 +199,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "annonces à venir dans la page : 4 (https://auxecuries.tuxedobillet.com/)"
+    "page illisible (Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-pl) : https://auxecuries.tuxedobillet.com/"
    ]
   },
   {
@@ -458,7 +302,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 16648 caractères de texte : https://orchestremetropolitain.com/fr/programmation/",
+    "aucun événement trouvé dans 16397 caractères de texte : https://orchestremetropolitain.com/fr/programmation/",
     "annonces à venir dans la page : 13 (https://orchestremetropolitain.com/fr/programmation/)"
    ]
   },
@@ -678,8 +522,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1498 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -734,7 +577,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -743,8 +586,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -753,8 +595,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -806,8 +647,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -965,8 +805,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -975,8 +814,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1142,8 +980,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1353,8 +1190,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -1781,7 +1617,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2332,7 +2168,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -2458,156 +2294,224 @@
   },
   {
    "source": "Festival · RIDM (1)",
-   "evenements": 1,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 3 (https://ridm.ca/fr/grille-horaire)"
+    "annonces à venir dans la page : 3 (https://ridm.ca/fr/grille-horaire)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/to-hold-a-mountain)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-douverture-avec-dj-catherine-piche)"
    ]
   },
   {
    "source": "Festival · RIDM (2)",
-   "evenements": 26,
+   "evenements": 57,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 21 (https://ridm.ca/fr/grille-horaire?date=2026-11-20)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/amilcar)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/beyrouth-jamais-plus)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/weeping-rocks)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-vanishing-point)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/doggerland)",
+    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-20)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ce-que-nous-cachent-les-arbres)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/rendez-vous-onf-portes-ouvertes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/second-generation)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/vers-les-colonies)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/vernissage-exposition-plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/teleplasm)",
+    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/la-soiree-de-la-releve-radio-canada)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-belle-annee)",
-    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/vernissage-exposition-plateformes)",
-    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/lecon-de-cinema-aziz-zoromba)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/crocodile)",
-    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/les-films-de-la-releve-collegiale)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/la-soiree-de-la-releve-radio-canada)"
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/party-de-la-releve-completement-bingo-)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/intersecting-memory)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/une-zone-dechos)"
    ]
   },
   {
    "source": "Festival · RIDM (3)",
-   "evenements": 1,
-   "series": 0,
+   "evenements": 37,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 22 (https://ridm.ca/fr/grille-horaire?date=2026-11-21)"
+    "annonces à venir dans la page : 22 (https://ridm.ca/fr/grille-horaire?date=2026-11-21)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/to-hold-a-mountain)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/mesdames-et-messieurs-brian-mulroney)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-ultra-runner)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/once-upon-a-time-in-harlem)",
+    "annonces à venir dans la page : 6 (https://ridm.ca/fr/evenements/performance-vingt-cinq-ans-se-sont-ecoules-entre-nos-dents)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/lecon-de-cinema-bani-khoshnoudi)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/amilcar)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ici-ailleurs)",
+    "annonces à venir dans la page : 10 (https://ridm.ca/fr/evenements/soiree-festive-avec-dj-lia-plutonic)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/alea-jacarandas)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-heard-that-they-are-not-going-to-see-each-other-anymore)"
    ]
   },
   {
    "source": "Festival · RIDM (4)",
-   "evenements": 1,
+   "evenements": 43,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-22)"
+    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-22)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/our-home-was-buried-in-a-land-we-could-never-find)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/pour-que-le-silence-ne-lemporte-pas)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-silent-majority-speaks)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/once-upon-a-time-in-harlem)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/crocodile)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/in-the-sweet-arms)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/evenements/bieres-et-cameras)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-flower-and-the-flood)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/hanabi)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/invisible-landscape)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/weeping-rocks)"
    ]
   },
   {
    "source": "Festival · RIDM (5)",
-   "evenements": 2,
+   "evenements": 23,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 13 (https://ridm.ca/fr/grille-horaire?date=2026-11-23)"
+    "annonces à venir dans la page : 13 (https://ridm.ca/fr/grille-horaire?date=2026-11-23)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/intersecting-memory)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/above-the-waterline)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/our-home-was-buried-in-a-land-we-could-never-find)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/forgotten-spaceman)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-de-lancement-louf)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/partout-et-nulle-part)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/cem)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/revolutionaries-never-die)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/films/louf)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/everything-else-is-noise)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/djeliya-memoire-du-mande)"
    ]
   },
   {
    "source": "Festival · RIDM (6)",
-   "evenements": 1,
+   "evenements": 29,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 14 (https://ridm.ca/fr/grille-horaire?date=2026-11-24)"
+    "annonces à venir dans la page : 18 (https://ridm.ca/fr/grille-horaire?date=2026-11-24)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/un-souffle-a-la-fois)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/doggerland)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/luciernagas)",
+    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/performance-constellations)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-flower-and-the-flood)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/invisible-landscape)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/sunset)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/discussion-territoires-en-conversation-voix-des-balkans-occidentaux)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/foam-of-worlds)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/petit-tom)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/visions-fete-ses-12-ans)"
    ]
   },
   {
    "source": "Festival · RIDM (7)",
-   "evenements": 1,
-   "series": 0,
+   "evenements": 22,
+   "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 0 (https://ridm.ca/fr/grille-horaire?date=2026-11-25)"
+    "annonces à venir dans la page : 14 (https://ridm.ca/fr/grille-horaire?date=2026-11-25)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/promised-spaces)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/fly-fly-sadness)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/virages)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-beauty-of-the-donkey)",
+    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/with-love-and-rage)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/mesdames-et-messieurs-brian-mulroney)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-belle-annee)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/quand-janet-dort)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ici-ailleurs)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-karaoke-)"
    ]
   },
   {
    "source": "Festival · RIDM (8)",
-   "evenements": 26,
+   "evenements": 27,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-11",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
     "annonces à venir dans la page : 17 (https://ridm.ca/fr/grille-horaire?date=2026-11-26)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/un-souffle-a-la-fois)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/kubana)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-heard-that-they-are-not-going-to-see-each-other-anymore)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-peur-la-nuit)",
-    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/cinema-autochtone-recits-et-nouvelles-formes)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-have-never-been-on-an-airplane)",
-    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/from-dawn-to-dawn)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/evenements/enregistrement-dun-balado-de-choq-le-monde-dans-mes-oreilles-avec-ivan-markovic)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/drift)",
+    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-balkans-occidentaux-performance-musicale-de-blerta-kosova)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/mother-you-have-not-died-yet-but-you-will-and-when-you-do-you-will-finally-be-alive-again)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/with-love-and-rage)",
-    "annonces à venir dans la page : 2 (https://ridm.ca/fr/evenements/enregistrement-dun-balado-de-choq-le-monde-dans-mes-oreilles-avec-ivan-markovic)"
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/inuguiniq)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-peur-la-nuit)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/i-heard-that-they-are-not-going-to-see-each-other-anymore)",
+    "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)"
    ]
   },
   {
    "source": "Festival · RIDM (9)",
-   "evenements": 25,
+   "evenements": 41,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 15 (https://ridm.ca/fr/grille-horaire?date=2026-11-27)",
-    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/des-grues-et-des-voix)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/see-through-the-hollowed-blue-hellebore)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/letters-from-an-inner-exile)",
+    "annonces à venir dans la page : 23 (https://ridm.ca/fr/grille-horaire?date=2026-11-27)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/kubana)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/virages)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/pour-que-le-silence-ne-lemporte-pas)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/same-water)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/cueilli-sous-le-bananier)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/nos-ruines-fertiles)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/berce-nous-encore)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/in-the-sweet-arms)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/concrete-turned-to-sand)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/disturbed-earth)",
-    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/nos-ruines-fertiles)",
-    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-de-lancement-double-nos-echos-dans-les-ruines)",
-    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/plateformes)"
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/see-through-the-hollowed-blue-hellebore)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/que-notre-voix-lemporte)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/haralez-the-noisy-beginnings-of-the-cradle)"
    ]
   },
   {
    "source": "Festival · RIDM (10)",
-   "evenements": 31,
+   "evenements": 33,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-11",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 19 (https://ridm.ca/fr/grille-horaire?date=2026-11-28)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/petit-tom)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/aanikoobijigan-ancestor-great-grandparent-great-grandchild)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)",
+    "annonces à venir dans la page : 20 (https://ridm.ca/fr/grille-horaire?date=2026-11-28)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/remise-de-prix)",
-    "annonces à venir dans la page : 4 (https://ridm.ca/fr/evenements/discussion-recherche-rigoureuse-et-liberte-formelle)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/l-estive)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/bas-book)",
+    "annonces à venir dans la page : 2 (https://ridm.ca/fr/films/nos-ruines-fertiles)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/mother-you-have-not-died-yet-but-you-will-and-when-you-do-you-will-finally-be-alive-again)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/aanikoobijigan-ancestor-great-grandparent-great-grandchild)",
     "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/letters-from-an-inner-exile)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/fly-fly-sadness)",
     "annonces à venir dans la page : 5 (https://ridm.ca/fr/evenements/plateformes)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/living-containers)",
-    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-tale-of-silyan)",
-    "annonces à venir dans la page : 9 (https://ridm.ca/fr/evenements/soiree-de-cloture-chez-ba)"
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/ceremony)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/evenements/soiree-de-cloture-chez-ba)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/partout-et-nulle-part)"
    ]
   },
   {
    "source": "Festival · RIDM (11)",
-   "evenements": 2,
+   "evenements": 48,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-14",
    "diagnostic": [
-    "annonces à venir dans la page : 26 (https://ridm.ca/fr/grille-horaire?date=2026-11-29)"
+    "annonces à venir dans la page : 26 (https://ridm.ca/fr/grille-horaire?date=2026-11-29)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/bas-book)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/same-water)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/the-ultra-runner)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/revolutionaries-never-die)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/hanabi)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/see-through-the-hollowed-blue-hellebore)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/la-peur-la-nuit)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/searching-for-sara)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/visite-guidee)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/alea-jacarandas)",
+    "annonces à venir dans la page : 1 (https://ridm.ca/fr/films/haralez-the-noisy-beginnings-of-the-cradle)"
    ]
   },
   {
@@ -2616,8 +2520,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -2683,9 +2586,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -2861,8 +2763,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -2947,8 +2849,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 3718 caractères de texte : https://osheaga.com",
+    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
