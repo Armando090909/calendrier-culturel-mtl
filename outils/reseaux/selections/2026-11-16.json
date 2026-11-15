@@ -76,8 +76,8 @@
     "heure": "",
     "_jusqu": "2026-12-05"
    },
-   "accroche": "Dominique Quesnel joue dans cette pièce de David Paquet.",
-   "accroche_en": "Dominique Quesnel stars in this play by David Paquet.",
+   "accroche": "Va voir Dominique Quesnel dans cette pièce de David Paquet.",
+   "accroche_en": "Go see Dominique Quesnel in this David Paquet play.",
    "mode": "connu"
   },
   {
@@ -105,29 +105,65 @@
     "resume_en": "Claudia explores her Malagasy roots through insects, in a monumental textile work. This piece is a love letter to her grandmother...",
     "ics": "2026-11-17-la-nostalgie-du-papillon-malgache-claudia-chan-tak-433550"
    },
-   "accroche": "Claudia Chan Tak explore ses origines malgaches à travers les insectes, en textile.",
-   "accroche_en": "Claudia Chan Tak explores her Malagasy roots through insects, in monumental textile work.",
+   "accroche": "Suis Claudia dans ses origines malgaches, à travers insectes et textile monumental.",
+   "accroche_en": "Follow Claudia through her Malagasy origins, via insects and monumental textile.",
    "mode": "connu"
   },
   {
    "k": "lettres",
    "e": {
-    "date": "2026-11-19",
-    "heure": "18:30",
+    "date": "2026-11-18",
+    "heure": "18:00",
     "discipline": "lettres",
-    "titre": "Causerie - Gabrielle Filteau-Chiba",
-    "lieu": "La Livrerie",
-    "url": "https://www.lalivrerie.com/programmation/causerie-gabrielle-filteau-chiba-1",
+    "titre": "Panel des Plumes de Rosepatrie : Ce que permet la fiction",
+    "lieu": "Bibliothèque de La Petite-Patrie",
+    "url": "https://montreal.ca/evenements/panel-des-plumes-de-rosepatrie-ce-que-permet-la-fiction-118424",
     "complet": false,
     "jeunePublic": false,
-    "source": "salles",
-    "resume": "Discussion avec l'autrice autour de Cerise Noire, roman mêlant récit amoureux, aventure et thriller psychologique.",
+    "source": "ville",
+    "resume": "Activité gratuite offerte par la bibliothèque de La Petite-Patrie dans l’arrondissement de Rosemont–La Petite-Patrie.",
+    "prix": "Gratuit",
+    "billets": "https://forms.cloud.microsoft/r/dLdLwW6yk1",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/x9r6h26fesrvajhnptl6.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/x9r6h26fesrvajhnptl6.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/panel-des-plumes-de-rosepatrie-ce-que-permet-la-fiction-118424"
+    },
     "confirmations": 1,
-    "resume_en": "Discussion with the author about Cerise Noire, a novel blending a love story, adventure and psychological thriller.",
-    "ics": "2026-11-19-causerie-gabrielle-filteau-chiba-31fa49"
+    "resume_en": "Free activity offered by La Petite-Patrie Library in the Rosemont–La Petite-Patrie borough.",
+    "ics": "2026-11-18-panel-des-plumes-de-rosepatrie-ce-que-permet-la-fi-f13bac"
    },
-   "accroche": "Discute avec l'autrice de Cerise Noire, entre récit amoureux, aventure et thriller.",
-   "accroche_en": "Talk with the author of Cerise Noire, blending love story, adventure and psychological thriller.",
+   "accroche": "Viens réfléchir à ce que la fiction permet, en entrée libre.",
+   "accroche_en": "Come explore what fiction makes possible, free admission.",
+   "mode": "connu"
+  },
+  {
+   "k": "atelier",
+   "e": {
+    "date": "2026-11-19",
+    "heure": "16:30",
+    "discipline": "atelier",
+    "titre": "Atelier culinaire après l'école",
+    "lieu": "Bibliothèque L'Octogone",
+    "url": "https://montreal.ca/evenements/atelier-culinaire-apres-lecole-116521",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "ville",
+    "resume": "Informez-vous à propos de cette activité offerte par la bibliothèque L'Octogone.",
+    "prix": "Gratuit",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/uuz8oghf0pedovag41cc.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/uuz8oghf0pedovag41cc.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/atelier-culinaire-apres-lecole-116521"
+    },
+    "confirmations": 1,
+    "resume_en": "Find out more about this activity offered by the L'Octogone library.",
+    "ics": "2026-11-19-atelier-culinaire-apres-l-ecole-f9bdd5"
+   },
+   "accroche": "Viens cuisiner après l'école, à la bibliothèque.",
+   "accroche_en": "Come cook after school, at the library.",
    "mode": "connu"
   },
   {
@@ -153,37 +189,8 @@
     "resume_en": "Augmented poetry evening organized with the SAT, the Salon du livre de Montréal and the festival.",
     "ics": "2026-11-20-la-nuit-de-la-poesie-augmentee-eab237"
    },
-   "accroche": "Une soirée de poésie augmentée organisée avec la SAT et le Salon du livre de Montréal.",
-   "accroche_en": "An evening of augmented poetry organized with the SAT and the Salon du livre de Montréal.",
-   "mode": "connu"
-  },
-  {
-   "k": "cirque",
-   "e": {
-    "date": "2026-11-21",
-    "heure": "19:30",
-    "discipline": "cirque",
-    "titre": "Cabaret : 25 ans de cirque psychomagique ! - Les Productions Carmagnole célèbrent leurs 25 ans !",
-    "lieu": "Maison de la culture Maisonneuve",
-    "url": "https://montreal.ca/evenements/cabaret-25-ans-de-cirque-psychomagique-les-productions-carmagnole-celebrent-leurs-25-ans-116381",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "ville",
-    "resume": "Le 21 novembre à 19 h 30, retrouvez les personnages emblématiques et les folies de Carmagnole dans un cabaret de cirque psychomagique.",
-    "prix": "Gratuit",
-    "billets": "https://lepointdevente.com/maisondelaculturemaisonneuve",
-    "affiche": {
-     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ccayfhseih9tpk6wsrzw.jpg",
-     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ccayfhseih9tpk6wsrzw.jpg",
-     "credit": "Ville de Montréal",
-     "lien": "https://montreal.ca/evenements/cabaret-25-ans-de-cirque-psychomagique-les-productions-carmagnole-celebrent-leurs-25-ans-116381"
-    },
-    "confirmations": 1,
-    "resume_en": "On November 21 at 7:30 p.m., meet the iconic characters and the madness of Carmagnole in a psychomagic circus cabaret.",
-    "ics": "2026-11-21-cabaret-25-ans-de-cirque-psychomagique-les-product-0a61ca"
-   },
-   "accroche": "Les personnages emblématiques de Carmagnole fêtent 25 ans de cirque psychomagique.",
-   "accroche_en": "Carmagnole's iconic characters celebrate 25 years of psychomagic circus.",
+   "accroche": "Viens voir la poésie se faire augmentée, avec le Salon du livre.",
+   "accroche_en": "Come see poetry get augmented, with the Salon du livre de Montréal.",
    "mode": "connu"
   },
   {
@@ -218,8 +225,8 @@
     "resume_en": "A film by Matthew Rankin, built from archival material, offering a satirical and psychedelic portrait of Brian Mulroney.",
     "ics": "2026-11-21-mesdames-et-messieurs-brian-mulroney-843641"
    },
-   "accroche": "Un portrait satirique et psychédélique de Brian Mulroney, construit à partir d'archives.",
-   "accroche_en": "A satirical, psychedelic portrait of Brian Mulroney built from archival footage.",
+   "accroche": "Plonge dans un portrait satirique et psychédélique de Brian Mulroney, tissé d'archives.",
+   "accroche_en": "Dive into a satirical, psychedelic portrait of Brian Mulroney, built from archives.",
    "mode": "tête d'affiche"
   },
   {
@@ -265,8 +272,8 @@
     "resume_en": "Performance by Olivier Bélisle as part of the déplogue! series.",
     "ics": "2026-11-22-olivier-belisle-deplogue-cdf812"
    },
-   "accroche": "Viens découvrir Olivier Bélisle en prestation dans la série déplogue!",
-   "accroche_en": "Discover Olivier Bélisle performing in the déplogue! series.",
+   "accroche": "Découvre Olivier Bélisle en prestation dans la série déplogue!.",
+   "accroche_en": "Discover Olivier Bélisle in performance in the déplogue! series.",
    "mode": "découverte"
   }
  ],
@@ -465,32 +472,13 @@
     "source": "https://lepointdevente.com/billets/ut9261117002?lang=fr"
    }
   },
-  "lettres": {
-   "salle": {
-    "compte": "lalivrerie",
-    "sur": true,
-    "source": "https://www.lalivrerie.com/"
-   },
-   "artiste": {
-    "compte": "gabriellefilteauchiba",
-    "sur": true,
-    "source": "https://www.instagram.com/gabriellefilteauchiba/",
-    "qui": "Gabrielle Filteau-Chiba"
-   }
-  },
+  "lettres": {},
+  "atelier": {},
   "poesie": {
    "artiste": {
     "compte": "festivaldelapoesiedemontreal",
     "sur": true,
     "source": "https://www.festivaldelapoesiedemontreal.com/fr/accueil/la-nuit-de-la-poesie-augmentee"
-   }
-  },
-  "cirque": {
-   "artiste": {
-    "compte": "productions_carmagnole",
-    "sur": true,
-    "source": "https://www.instagram.com/productions_carmagnole/",
-    "qui": "Les Productions Carmagnole"
    }
   },
   "cinema": {
@@ -520,5 +508,5 @@
   }
  },
  "_statut": "ok",
- "_issue": "16"
+ "_issue": null
 }
