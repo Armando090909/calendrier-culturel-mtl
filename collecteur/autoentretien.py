@@ -34,7 +34,7 @@ MOTS = re.compile(r"(?i)programm|calendri|agenda|[ée]v[ée]nement|events?\b|spe
                   r"tickets?|saison|season|whats-on|a-l-affiche|à l.affiche|expositions?|activit|conf[ée]rences?|horaire|lineup")
 CHEMINS = ("/programmation", "/calendrier", "/evenements", "/events", "/spectacles", "/agenda", "/shows", "/fr/programmation",
            "/fr/evenements", "/concerts")
-AGREGATEURS = ("songkick.com", "sorstu.ca", "lepointdevente.com", "thepointofsale.com", "ma.to", "montreal.ca",
+AGREGATEURS = ("songkick.com", "sorstu.ca", "lepointdevente.com", "thepointofsale.com", "ma.to", "://montreal.ca",
                "festapp.io", "eventbrite.", "zeffy.com", "facebook.com", "instagram.com", "ra.co", "mtl.org",
                "sortirauquebec.com", "jambase.com", "exclaim.ca", "bandsintown.com", "myscena.org", "lavitrine.com",
                "google.com", "goo.gl", "linktr.ee", "youtube.com", "spotify.com", "bandcamp.com")
@@ -172,7 +172,7 @@ def reparer(sources: list[dict], rapport: list[dict], page_ia, page_rendue, tele
 
 def _agregateur(url: str) -> bool:
     h = urlparse(url).netloc.lower()
-    return not h or any(a in h for a in AGREGATEURS)
+    return not h or any(a in "://" + h for a in AGREGATEURS)  # « ://montreal.ca » : la Ville, pas umontreal.ca
 
 
 EXCLUS = re.compile(r"(?i)cineplex|cinema banque scotia|cinemas? guzzo|centre bell|stade|parc jean.drapeau|universit")

@@ -207,7 +207,7 @@ def contre_verifier(events: list[dict], aujourd: date, telecharger, texte_page, 
     memo = {k: v for k, v in memo.items() if v.get("le", "") >= (aujourd - timedelta(days=2)).isoformat()}
     fin = (aujourd + timedelta(days=3)).isoformat()
     a_voir = [e for e in events if aujourd.isoformat() <= e.get("date", "") <= fin and str(e.get("url", "")).startswith("http")
-              and not any(h in urlparse(e["url"]).netloc for h in NON_RELUS)]
+              and not any(urlparse(e["url"]).netloc.removeprefix("www.") == h for h in NON_RELUS)]
     pages = {}
     for e in a_voir:
         pages.setdefault(e["url"], []).append(e)
@@ -288,7 +288,7 @@ def controle_aleatoire(events: list[dict], aujourd: date, telecharger, texte_pag
         return None
     fin = (aujourd + timedelta(days=14)).isoformat()
     candidats = [e for e in events if aujourd.isoformat() <= e.get("date", "") <= fin and str(e.get("url", "")).startswith("http")
-                 and not any(h in urlparse(e["url"]).netloc for h in NON_RELUS)]
+                 and not any(urlparse(e["url"]).netloc.removeprefix("www.") == h for h in NON_RELUS)]
     random.seed(aujourd.isoformat())
     random.shuffle(candidats)
     lots = []

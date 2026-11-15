@@ -53,7 +53,8 @@ REGLES = [
     ("expo", ["vernissage", "finissage", "visite commentee", "visite guidee de l exposition"]),
     ("atelier", ["atelier", "ateliers", "initiation", "fabrication", "creation textile", "tricot", "couture", "broderie",
                  "perlage", "linogravure", "coloriage", "collage", "club d art", "club de laine", "machine a coudre",
-                 "art therapie", "bricolage", "bricolo", "medialab", "creer avec", "creation d", "creation de", "fabrique", "zine", "zines"]),
+                 "art therapie", "bricolage", "bricolo", "medialab", "creer avec", "fabrique", "zine", "zines"]),
+    # (15 nov. 2026 : « création de » retiré : « Création d'Orange Noyée » est une pièce nouvelle, pas un atelier)
     ("conference", ["conference", "colloque", "causerie", "table ronde", "panel", "seminaire", "cafe philo",
                     "philosophique", "talk", "entretien public", "mini conference", "midi conference", "debat",
                     "rencontre avec", "rencontre informelle", "recits", "temoignages", "discussion", "echange avec",

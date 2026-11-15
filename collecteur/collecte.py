@@ -137,7 +137,7 @@ def affiches_bloquees(elements: list[dict]) -> None:
 
 
 AGREGATEURS = ("sorstu.ca", "songkick.com", "facebook.com", "eventbrite", "lepointdevente", "thepointofsale", "ticketpro",
-               "ticketmaster", "evenko", "universe.com", "festapp", "montreal.ca", "spectaculos", "askapunk", "ra.co",
+               "ticketmaster", "evenko", "universe.com", "festapp", "://montreal.ca", "spectaculos", "askapunk", "ra.co",
                "bandsintown", "mtl.org", "caligram", "tourisme", "instagram.com", "linktr.ee", "google.", "billet", "ticket",
                "mpourmontreal", "funnation", "admission", "dice.fm", "showpass", "zeffy", "lepointdevente", "uqam.ca",
                "venuepilot", "tixr", "seetickets", "yapla", "eventzilla", "allevents", "meetup")
@@ -153,7 +153,7 @@ def images_des_salles(events: list[dict], aujourd, permises=None) -> None:
     hotes: dict[str, Counter] = {}
     for e in events:
         h = (urlparse(e.get("url", "")).hostname or "").replace("www.", "")
-        if h and not any(a in h for a in AGREGATEURS) and e.get("lieu") not in ("", "Lieu à confirmer"):
+        if h and not any(a in "://" + h for a in AGREGATEURS) and e.get("lieu") not in ("", "Lieu à confirmer"):
             hotes.setdefault(e["lieu"], Counter())[h] += 1
     site = {lieu: c.most_common(1)[0][0] for lieu, c in hotes.items()}
     # un même site pour 4 salles ou plus : un diffuseur ou une ville, pas le site de la salle
@@ -777,7 +777,8 @@ def main() -> int:
     if ia.disponible():
         for e in events:
             if (e["heure"] and e["lieu"] != "Lieu à confirmer") or not e["url"].startswith("http") \
-                    or any(d in e["url"] for d in ("montreal.ca", "songkick.com", "facebook.com", "instagram.com")):
+                    or any(d in e["url"] for d in ("://montreal.ca", "songkick.com", "facebook.com", "instagram.com")):
+                # (15 nov. 2026 : « ://montreal.ca » et non « montreal.ca », qui écartait aussi calendrier.umontreal.ca)
                 continue
             cle = e["url"] + "|" + e["date"]
             r = memo_ia.get(cle)
@@ -982,11 +983,21 @@ def main() -> int:
     # 19 représentations de « Confessions » au TNM). Il faut au moins 3 dates ; sinon on garde la série et on retire
     # ces 1 ou 2 fiches, qui feraient doublon avec elle ces jours-là.
     titres = collections.Counter(plat(e["titre"])[:25] for e in events)
+    # 15 nov. 2026 : même spectacle sous un titre plus long dans les fiches datées de la même salle (« Zamân or on a… »
+    # en série, « Mani Soleymanlou, Valaire - Zamân or on a… » en fiches) : compté aussi
+    par_salle = collections.defaultdict(list)
+    for e in events:
+        par_salle[e["lieu"]].append(plat(e["titre"]))
+    def _dates_connues(x):
+        t = plat(x["titre"])[:25]
+        if len(t) < 12:
+            return titres[t]
+        return max(titres[t], sum(1 for te in par_salle.get(x["lieu"], []) if t in te or (len(te) >= 12 and te[:25].strip() in plat(x["titre"]))))
     pages, gardees, absorbees = set(), [], set()
     for x in expos:
         if x["discipline"] != "expo":
             t = plat(x["titre"])[:25]
-            if x.get("festival") or titres[t] >= 3:
+            if x.get("festival") or _dates_connues(x) >= 3:
                 continue
             if titres[t]:
                 absorbees.add((t, x["debut"], x["fin"]))
@@ -1158,7 +1169,7 @@ def main() -> int:
     lus_h = 0
     for x in expos:
         if x.get("discipline") in (None, "", "expo") or not str(x.get("url", "")).startswith("http") \
-                or "montreal.ca" in x["url"] or x.get("fin", "") < aujourd.isoformat():
+                or "://montreal.ca" in x["url"] or x.get("fin", "") < aujourd.isoformat():
             continue
         cle = f'{x["url"]}|{x["debut"]}|{x["fin"]}'
         # 2e méthode (v2) pour les pages où l'horaire n'a pas été trouvé : la page affichée dans le navigateur (calendrier
