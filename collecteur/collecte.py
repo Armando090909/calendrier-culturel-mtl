@@ -340,6 +340,14 @@ _EN_LIGNE_TEXTE = re.compile(r"(?i)\b(sur zoom|via zoom|par zoom|zoom|microsoft 
 _PAS_EN_LIGNE = re.compile(r"(?i)\b(inscri\w*|billet\w*|r[ée]serv\w*|achat|acheter|disponible\w*|formulaire|vente)\s+(est\s+|sont\s+)?(obligatoire\s+)?en ligne")
 
 
+# Titres de remplacement écrits par l'IA quand la page ne donne pas le nom du spectacle (14 nov. 2026 : « Titre non
+# indiqué sur la page » au Balcon, « Spectacle sans titre indiqué » au TNM) : une fiche sans titre n'informe pas.
+TITRE_ABSENT = re.compile(r"(?i)^\s*((spectacle|[ée]v[ée]nement|concert|soir[ée]e|activit[ée]|film|pi[èe]ce)\s+)?"
+                          r"(sans titre (indiqu[ée]|pr[ée]cis[ée]|connu)|titre (non |pas )?(indiqu[ée]|pr[ée]cis[ée]|connu|disponible|communiqu[ée])"
+                          r"|titre inconnu|titre [àa] (venir|confirmer|d[ée]terminer)|title (not given|unknown|tba|tbd)"
+                          r"|(sans titre|untitled)\s*$)")  # « Sans titre » seul (une œuvre peut s'appeler « Sans titre (…) »)
+
+
 def en_ligne_selon_texte(texte: str) -> bool:
     return bool(_EN_LIGNE_TEXTE.search(_PAS_EN_LIGNE.sub(" ", texte or "")))
 
@@ -560,7 +568,7 @@ def main() -> int:
             continue
         if b["annule"] or d < aujourd or d > fin or not b["titre"]:
             continue
-        if est_non_culturel(b["titre"], b["categorie"]):
+        if est_non_culturel(b["titre"], b["categorie"]) or TITRE_ABSENT.search(b["titre"]):
             continue
         lieu = lieu_canon(b["lieu"], b["adresse"], b["ville"])
         if lieu is None and b["source"] == "formulaire" and b["lieu"]:
@@ -938,7 +946,7 @@ def main() -> int:
             d1, d2 = date.fromisoformat(s["debut"]), date.fromisoformat(s["fin"])
         except ValueError:
             continue
-        if d2 < aujourd or d1 > fin or est_non_culturel(s["titre"]):
+        if d2 < aujourd or d1 > fin or est_non_culturel(s["titre"]) or TITRE_ABSENT.search(s["titre"]):
             continue
         lieu = lieu_canon(s["lieu"], s.get("adresse", ""), s.get("ville", ""))
         if lieu is None:
