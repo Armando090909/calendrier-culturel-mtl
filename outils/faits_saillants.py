@@ -199,6 +199,10 @@ def choisir(data, debut, etat):
     for k in disciplines:
         if voulus.get(k):  # événement demandé : ses représentations de la semaine seulement
             cs = [e for e in evs if voulus[k] in _plat(e["titre"])]
+            if not cs:  # pièce « à l'affiche du … au … » (série) : présentée « jusqu'au … » (14 nov. 2026)
+                cs = [dict(x, date=max(x["debut"], debut.isoformat()), heure="", _jusqu=x["fin"])
+                      for x in data.get("expos", []) if voulus[k] in _plat(x["titre"])
+                      and x["debut"] <= fin.isoformat() and x["fin"] >= debut.isoformat()]
             if cs:
                 cs.sort(key=lambda e: (-score(e), e["date"]))
                 cands[k] = cs[:5]
