@@ -12,6 +12,7 @@ import hashlib
 import json
 import os
 import re
+from urllib.parse import urlparse
 import sys
 from collections import Counter, defaultdict
 from datetime import date, timedelta
@@ -410,6 +411,7 @@ h1{margin:0;font-size:170px;line-height:.92;font-weight:900;letter-spacing:-.055
 
 
 HOTES_SANS_AFFICHE = ("sorstu.ca",)  # sites qui refusent qu'on reprenne leurs images
+AGREGATEURS_IMG = ("songkick.com", "jambase.com", "bandsintown.com", "allevents", "facebook.com", "instagram.com")
 
 
 def _og_image(page):
@@ -434,6 +436,13 @@ def _affiche(e):
         img = credit = ""
     if not img and aff.get("og"):
         img, credit = _og_image(aff["og"]), aff.get("credit") or ""
+    # 15 nov. 2026 : sortie sans affiche (pièce à l'affiche, causerie) : l'image de partage de sa page officielle
+    page = e.get("url") or ""
+    if not img and page.startswith("http") and not any(h in page for h in HOTES_SANS_AFFICHE + AGREGATEURS_IMG):
+        img = _og_image(page)
+        if IMAGE_GENERIQUE.search(img):
+            img = ""
+        credit = urlparse(page).netloc.removeprefix("www.") if img else ""
     return img, (credit if img else "")
 
 

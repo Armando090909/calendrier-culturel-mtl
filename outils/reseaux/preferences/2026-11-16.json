@@ -1,18 +1,21 @@
 {
- "_note": "Souhaits d'Alexandre (14 nov.) pour la semaine du 16 novembre : Le Palais des Glaces (théâtre, à l'affiche jusqu'au 5 déc.), Mesdames et Messieurs, Brian Mulroney (RIDM, sam. 21 nov.), Olivier Bélisle en musique ; pas d'humour ni de jeune public (faits la semaine dernière), plutôt poésie, littérature ou conférence. Poésie : La Nuit de la poésie augmentée (SAT) plutôt qu'une conférence sur les finances.",
+ "_note": "Souhaits d'Alexandre (14-15 nov.) pour la semaine du 16 novembre : une sortie par jour. Lun. Le Palais des Glaces (jusqu'au 5 déc.), mar. danse (papillon malgache), mer. Panel des Plumes, jeu. atelier culinaire (L'Octogone), ven. Nuit de la poésie, sam. Brian Mulroney (RIDM), dim. Olivier Bélisle. Pas d'humour ni de jeune public (faits la semaine dernière).",
  "disciplines": [
   "theatre",
-  "musique",
   "danse",
-  "cinema",
-  "cirque",
   "lettres",
-  "poesie"
+  "atelier",
+  "poesie",
+  "cinema",
+  "musique"
  ],
  "choix": {
   "theatre": "Le Palais des Glaces",
+  "danse": "La nostalgie du papillon malgache",
+  "lettres": "Panel des Plumes de Rosepatrie",
+  "atelier": "Atelier culinaire après l'école",
+  "poesie": "La Nuit de la poésie augmentée",
   "cinema": "Mesdames et Messieurs, Brian Mulroney",
-  "musique": "Olivier Bélisle",
-  "poesie": "La Nuit de la poésie augmentée"
+  "musique": "Olivier Bélisle"
  }
 }
