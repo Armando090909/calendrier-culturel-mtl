@@ -1,9 +1,13 @@
 {
- "total": 1475,
- "echecs": 16,
+ "total": 1521,
+ "echecs": 20,
  "par_site": {
   "turbohaus.ca": {
    "affiches": 14,
+   "echecs": 4
+  },
+  "centaurtheatre.com": {
+   "affiches": 4,
    "echecs": 4
   },
   "calendrier.umontreal.ca": {
@@ -26,12 +30,12 @@
    "affiches": 1,
    "echecs": 1
   },
-  "www.eventbrite.com": {
-   "affiches": 1,
+  "ridm.ca": {
+   "affiches": 100,
    "echecs": 1
   },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 3,
+  "www.eventbrite.com": {
+   "affiches": 1,
    "echecs": 1
   },
   "calendrier.espacepourlavie.ca": {
@@ -143,7 +147,7 @@
    "echecs": 0
   },
   "tpos.s3.amazonaws.com": {
-   "affiches": 142,
+   "affiches": 141,
    "echecs": 0
   },
   "www.theatredesjardins.com": {
@@ -306,10 +310,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "ridm.ca": {
-   "affiches": 53,
-   "echecs": 0
-  },
   "cafconc.ca": {
    "affiches": 1,
    "echecs": 0
@@ -328,6 +328,10 @@
   },
   "xjlpttrziisldlclhsth.supabase.co": {
    "affiches": 2,
+   "echecs": 0
+  },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 3,
    "echecs": 0
   },
   "s3.ca-central-1.amazonaws.com": {
@@ -352,10 +356,6 @@
   },
   "cotesaintluc.org": {
    "affiches": 1,
-   "echecs": 0
-  },
-  "centaurtheatre.com": {
-   "affiches": 4,
    "echecs": 0
   },
   "festivalbachmontreal.com": {
@@ -438,18 +438,23 @@
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
   ],
+  "ridm.ca": [
+   "https://ridm.ca/img/generated/movie_gallery/18717_Jocelyne-Saab-dans-Beyrouth-ma-ville-1982.png"
+  ],
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Compagnie-Marie-Chouinard-Henri-Michaux-Mouvements-et-Solos-et-duos-choisis-1.jpg"
+  ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
   "calendrier.espacepourlavie.ca": [
    "https://calendrier.espacepourlavie.ca/images/eplv-og.jpg"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
-  ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
@@ -457,14 +462,14 @@
   "social": 4,
   "jeune": 19,
   "theatre": 62,
-  "cirque": 7,
+  "cirque": 5,
   "lettres": 27,
   "musique": 300,
   "humour": 65,
   "fete": 43,
   "quiz": 89,
   "conference": 29,
-  "cinema": 14,
+  "cinema": 7,
   "danse": 12,
   "expo": 2,
   "poesie": 1
