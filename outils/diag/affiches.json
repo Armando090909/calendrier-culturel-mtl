@@ -1,13 +1,9 @@
 {
  "total": 1521,
- "echecs": 20,
+ "echecs": 16,
  "par_site": {
   "turbohaus.ca": {
    "affiches": 14,
-   "echecs": 4
-  },
-  "centaurtheatre.com": {
-   "affiches": 4,
    "echecs": 4
   },
   "calendrier.umontreal.ca": {
@@ -358,6 +354,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "centaurtheatre.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "festivalbachmontreal.com": {
    "affiches": 1,
    "echecs": 0
@@ -444,11 +444,6 @@
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Compagnie-Marie-Chouinard-Henri-Michaux-Mouvements-et-Solos-et-duos-choisis-1.jpg"
-  ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
   "calendrier.espacepourlavie.ca": [
    "https://calendrier.espacepourlavie.ca/images/eplv-og.jpg"
