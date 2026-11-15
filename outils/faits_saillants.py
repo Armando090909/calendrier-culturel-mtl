@@ -393,14 +393,18 @@ h1{margin:0;font-size:170px;line-height:.92;font-weight:900;letter-spacing:-.055
 .menu{flex:1;display:flex;flex-direction:column;gap:14px;font-size:38px;font-weight:700;white-space:nowrap}
 .menu b{font-weight:900}
 .bas{flex:1;display:flex;align-items:flex-end;justify-content:space-between;gap:30px;min-height:0}
-.logo{width:520px;max-height:100%;object-fit:contain;display:block}"""
+.logo{width:520px;max-height:100%;object-fit:contain;display:block}
+.per{display:flex;justify-content:center}
+.per span{font-size:58px;font-weight:900;background:#F5EFE3;border:4px solid #000;border-radius:999px;padding:12px 44px;white-space:nowrap}"""
     lignes = [T(f"<b>{len(s['picks'])}</b> sorties à voir", f"<b>{len(s['picks'])}</b> must-sees")] \
         + ([T("Les festivals", "Festivals")] if s["festivals"] else []) \
         + ([T("La salle de la semaine", "Venue of the week")] if s["salle"] else []) \
         + [T(f"<b>{s['total']}</b> sorties en tout", f"<b>{s['total']}</b> events in all")]
     logo = _logo()
-    return page2(1080, 1350, f"""<div class="tete">{marque2()}<span class="pill">{_periode2(s)}</span></div>
+    # 14 nov. 2026 : les dates étaient en haut à droite, sous l'icône « carrousel » de la grille Instagram ; au centre
+    return page2(1080, 1350, f"""<div class="tete">{marque2()}</div>
 {T('<h1>La sélection<br>de la<br><span class="ov">semaine</span></h1>', '<h1>This<br><span class="ov">week&rsquo;s</span><br>picks</h1>')}
+<div class="per"><span>{_periode2(s)}</span></div>
 <div class="bas"><div class="menu">{''.join(f'<div>{x}</div>' for x in lignes)}</div>{f'<img class="logo" src="{logo}" alt="">' if logo else ''}</div>
 {pied(T("glisse →", "swipe →"))}""", css)
 
