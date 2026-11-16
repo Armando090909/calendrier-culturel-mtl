@@ -231,9 +231,22 @@ def instagram(texte, urls, alts, etiquettes=None):
             donnees["user_tags"] = json.dumps([{"username": n, "x": round(0.3 + 0.4 * j / max(1, len(noms) - 1), 2) if len(noms) > 1 else 0.5,
                                                 "y": 0.25} for j, n in enumerate(noms)])
         c = requests.post(f"{base}/{ig}/media", timeout=60, data=donnees)
+        if not c.ok and len(noms) > 1:  # 16 nov. 2026 : un seul compte introuvable faisait tomber tous les autres
+            gardes = []
+            for n in noms:  # chaque compte essayé seul ; on garde ceux qu'Instagram accepte
+                essai = dict(donnees, user_tags=json.dumps([{"username": n, "x": 0.5, "y": 0.25}]))
+                e_ = requests.post(f"{base}/{ig}/media", timeout=60, data=essai)
+                if e_.ok:
+                    gardes.append(n)
+                else:
+                    print(f"  identification refusée ({n}) : {e_.text[:120]}")
+            if gardes:
+                donnees["user_tags"] = json.dumps([{"username": n, "x": round(0.3 + 0.4 * j / max(1, len(gardes) - 1), 2) if len(gardes) > 1 else 0.5,
+                                                    "y": 0.25} for j, n in enumerate(gardes)])
+                c = requests.post(f"{base}/{ig}/media", timeout=60, data=donnees)
         if not c.ok and noms:  # compte introuvable ou privé : l'image part sans identification
             print(f"  identification refusée ({', '.join(noms)}) : {c.text[:200]}")
-            donnees.pop("user_tags")
+            donnees.pop("user_tags", None)
             c = requests.post(f"{base}/{ig}/media", timeout=60, data=donnees)
         c.raise_for_status()
         enfants.append(c.json()["id"])
