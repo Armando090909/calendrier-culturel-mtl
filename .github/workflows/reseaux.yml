@@ -91,6 +91,10 @@ jobs:
             export ETAPE=apercu
             grep -qi forcer outils/reseaux/demande-envoi-apercu.txt && export FORCER=1  # refaire l'aperçu déjà envoyé
           fi
+          # 16 nov. 2026 : une exécution en attente (concurrence) partait de la version du dépôt au moment où elle a été
+          # demandée, donc d'un état des publications périmé ; elle a republié toute la semaine. On repart de la dernière
+          # version avant de publier.
+          git pull --rebase origin main
           python outils/publier.py
       - name: Enregistrer
         if: always()
