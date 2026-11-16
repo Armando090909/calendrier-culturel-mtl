@@ -1,4 +1,9 @@
 {
+ "4750, Av. Henri-Julien": {
+  "lat": 45.5238,
+  "lon": -73.58637,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Abbotsford Centre": null,
  "AdMare": null,
  "Adélard": null,
@@ -995,6 +1000,11 @@
   "quartier": "Quartier des spectacles"
  },
  "Garage à Simon": null,
+ "Gare Beaconsfield": {
+  "lat": 45.43512,
+  "lon": -73.84796,
+  "quartier": ""
+ },
  "Gesù": {
   "alias": [
    "Église du Gesù"
@@ -1206,6 +1216,7 @@
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "La petite Place des Arts": null,
+ "Lakeshore Players Theatre": null,
  "Langage Plus": null,
  "Le 9e": {
   "alias": [
@@ -1347,6 +1358,7 @@
  "Lieu inconnu": null,
  "Lieu non précisé": null,
  "Lincoln Memorial": null,
+ "Little Burgundy": null,
  "Little Pearl": null,
  "Livart": {
   "lat": 45.521,
@@ -1356,6 +1368,7 @@
  "Local D-R200 du Pavillon Athanas-David": null,
  "Local PK-1140, Pavillon Président-Kennedy": null,
  "Locoshop Angus": null,
+ "London Music Hall": null,
  "Long Bar Restaurant": null,
  "Lopez": {
   "lat": 45.53799,
@@ -1490,6 +1503,7 @@
   "quartier": "Plateau"
  },
  "Maison de quartier de Doulon": null,
+ "Maison des arts participatifs (MAP) / Centre culturel Calixa-Lavallée": null,
  "Maison du citoyen": {
   "lat": 45.656,
   "lon": -73.5,
@@ -1568,6 +1582,7 @@
   "lon": -73.5737,
   "quartier": "Centre-ville"
  },
+ "Musée d'histoire et du patrimoine de Dorval": null,
  "Musée des beaux-arts de Montréal": {
   "lat": 45.4985,
   "lon": -73.5794,
@@ -1828,6 +1843,11 @@
   "lon": -73.625,
   "quartier": "LaSalle"
  },
+ "Planète BD": {
+  "lat": 45.52115,
+  "lon": -73.57628,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Planétarium": {
   "lat": 45.56064,
   "lon": -73.55054,
@@ -1835,6 +1855,11 @@
  },
  "Plein sud, centre d'exposition en art actuel": null,
  "Plusieurs lieux": null,
+ "Point Zéro": {
+  "lat": 45.50017,
+  "lon": -73.57297,
+  "quartier": "Ville-Marie"
+ },
  "Pointe-Claire Public Library - Central": null,
  "Pointe-à-Callière": {
   "lat": 45.5025,
@@ -1868,6 +1893,7 @@
   "lon": -73.56531,
   "quartier": "Ville-Marie"
  },
+ "Ras L'Bock": null,
  "Regart, centre d'artistes en art actuel": null,
  "Relume": null,
  "Revelstoke Performing Arts Centre": null,
@@ -1994,6 +2020,7 @@
   "lon": -73.674,
   "quartier": "Saint-Laurent"
  },
+ "Salon Wabasso": null,
  "Salon urbain": {
   "alias": [],
   "lat": 45.51679,
@@ -2474,6 +2501,7 @@
   "lon": -73.56797,
   "quartier": "Ville-Marie"
  },
+ "Église de St-Jean l'Évangéliste": null,
  "Église du Sacré-Cœur-de-Jésus": null,
  "Événement virtuel": null,
  "Île de la tortue, Abya Yala": null

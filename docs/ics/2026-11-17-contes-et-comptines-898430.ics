@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-17-contes-et-comptines-898430@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261117T103000
+DTEND;TZID=America/Toronto:20261117T123000
+SUMMARY:Contes et comptines
+LOCATION:Bibliothèque publique de Pointe-Claire - Centrale\, Montréal
+URL:https://www.pointe-claire.ca/bibliotheque-culture-sports-et-loisirs/pro
+ grammation-culturelle-sportive/calendrier-des-evenements-et-activites/cont
+ es-et-comptines-22
+DESCRIPTION:Lecture de contes et comptines pour les tout-petits à la bibli
+ othèque centrale.\nDétails : https://www.pointe-claire.ca/bibliotheque-c
+ ulture-sports-et-loisirs/programmation-culturelle-sportive/calendrier-des-
+ evenements-et-activites/contes-et-comptines-22\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

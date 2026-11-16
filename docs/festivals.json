@@ -292,9 +292,10 @@
    "theatre",
    "lettres"
   ],
-  "debut": "2026-05-01",
-  "fin": "2026-05-09",
-  "site": "https://jamaislu.com"
+  "debut": "2026-12-01",
+  "fin": "2026-12-05",
+  "site": "https://jamaislu.com",
+  "verifier": true
  },
  {
   "id": "petitsbonheurs",
@@ -581,10 +582,11 @@
   "disciplines": [
    "musique"
   ],
-  "debut": "2026-08-15",
-  "fin": "2026-08-16",
+  "debut": "2027-08-14",
+  "fin": "2027-08-15",
   "lieu": "Parc Jean-Drapeau",
-  "site": "https://lassomontreal.com"
+  "site": "https://lassomontreal.com",
+  "verifier": true
  },
  {
   "id": "mutek",
