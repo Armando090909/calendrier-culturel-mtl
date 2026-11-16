@@ -21,6 +21,15 @@ def bluesky(uris):
             break
     s.raise_for_status()
     h = {"Authorization": "Bearer " + s.json()["accessJwt"]}
+    # réponses du fil (même si le premier message est déjà effacé) : nos messages dont la racine est l'un de ces fils
+    lr = requests.get("https://bsky.social/xrpc/com.atproto.repo.listRecords", headers=h, timeout=30,
+                      params={"repo": did, "collection": "app.bsky.feed.post", "limit": 100})
+    for rec in lr.json().get("records", []) if lr.ok else []:
+        racine = (((rec.get("value") or {}).get("reply") or {}).get("root") or {}).get("uri")
+        if racine in uris:
+            r = requests.post("https://bsky.social/xrpc/com.atproto.repo.deleteRecord", headers=h, timeout=30,
+                              json={"repo": did, "collection": "app.bsky.feed.post", "rkey": rec["uri"].rsplit("/", 1)[-1]})
+            print(f"bluesky réponse {rec['uri']} : {'effacé' if r.ok else r.text[:200]}")
     for uri in uris:
         # le fil entier (le premier message et ses réponses), seulement nos propres messages
         t = requests.get("https://bsky.social/xrpc/app.bsky.feed.getPostThread", headers=h, params={"uri": uri, "depth": 20}, timeout=30)
