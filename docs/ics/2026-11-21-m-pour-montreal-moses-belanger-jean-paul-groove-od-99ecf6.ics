@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-21-m-pour-montreal-moses-belanger-jean-paul-groove-od-99ecf6@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261121T224500
+DTEND;TZID=America/Toronto:20261122T004500
+SUMMARY:M Pour Montréal | Moses Belanger + Jean-Paul Groove + ODEZA
+LOCATION:Quai des Brumes\, Montréal
+URL:https://lepointdevente.com/billets/jhp261121001?lang=fr&#038;fbclid=IwY
+ 2xjawUz7wtleHRuA2FlbQIxMABwZG9mAWJyaWQRMVB1OWVLbHZhUzNmQzBFeEhzcnRjBmFwcF9
+ pZBAyMjIwMzkxNzg4MjAwODkyAAEegMO3MZPj7SYtiNpjikNn10Gajz0zC53yXAkUwGkueHVtU
+ Dg-CH3kM_HHbvs_aem_YZpnId2GGbzZ1ccIeoSrcA
+DESCRIPTION:M pour Montréal\, WB Musiques\, Folivora Records et Rose Festi
+ val présentent Moses Belanger\, Jean-Paul Groove (Belgique) et ODEZA (Fra
+ nce). Un spectacle présenté dans le cadre de la programmation du…\nDé
+ tails : https://lepointdevente.com/billets/jhp261121001?lang=fr&#038\;fbcl
+ id=IwY2xjawUz7wtleHRuA2FlbQIxMABwZG9mAWJyaWQRMVB1OWVLbHZhUzNmQzBFeEhzcnRjB
+ mFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEegMO3MZPj7SYtiNpjikNn10Gajz0zC53yXAkUwGk
+ ueHVtUDg-CH3kM_HHbvs_aem_YZpnId2GGbzZ1ccIeoSrcA\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
