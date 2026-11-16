@@ -1,0 +1,24 @@
+# Suppression de publications en double (outils/reseaux/demande-suppression.json), lancée quand ce fichier change.
+name: Supprimer des doublons
+on:
+  push:
+    branches: [main]
+    paths: ["outils/reseaux/demande-suppression.json"]
+jobs:
+  supprimer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Supprimer
+        env:
+          BLUESKY_IDENTIFIANT: ${{ secrets.BLUESKY_IDENTIFIANT }}
+          BLUESKY_MOT_DE_PASSE: ${{ secrets.BLUESKY_MOT_DE_PASSE }}
+          THREADS_JETON: ${{ secrets.THREADS_JETON }}
+          FACEBOOK_JETON: ${{ secrets.FACEBOOK_JETON }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        run: python outils/supprimer_doublons.py
