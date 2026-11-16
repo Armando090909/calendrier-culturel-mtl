@@ -1001,9 +1001,11 @@ def main() -> int:
                 continue
             if titres[t]:
                 absorbees.add((t, x["debut"], x["fin"]))
-            if x.get("url") and x["url"] in pages:
+            # même page à une ponctuation près (16 nov. 2026 : « …quon-avait- » et « …quon-avait-> », reste de « <lien> »)
+            u = re.sub(r"[>\-/\s]+$", "", x.get("url") or "")
+            if u and u in pages:
                 continue
-            pages.add(x.get("url"))
+            pages.add(u)
         gardees.append(x)
     expos = gardees
     if absorbees:
