@@ -51,7 +51,8 @@ API_PUBLIQUES = ("musicbrainz.org/ws/", "query.wikidata.org/sparql", "api.themov
 
 # Pages lues avec l'accord écrit de l'organisme concerné : le robots.txt de la plateforme qui les héberge ne s'applique pas.
 PERMISSIONS = ("calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c",  # LESPACEMAKER, accord le 10 nov. 2026
-               "calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o")  # LESPACEMAKER (formations), idem
+               "calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o",  # LESPACEMAKER (formations), idem
+               "omniwebticketing.com/cinematheque")  # Cinémathèque québécoise, accord obtenu le 17 nov. 2026
 
 
 def robots_permet(url: str) -> bool:

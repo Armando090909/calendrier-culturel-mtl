@@ -38,3 +38,7 @@ musique_hebdo:
   - {titre: "Solane by Starlight Trio Swing (jazz) – 2e étage", lieu: "Modavie", adresse: "1 rue Saint-Paul Ouest", jour: 5, heure: "19:00", verifie: 2026-11-12, resume: "Jazz swing au 2e étage du Modavie, chaque samedi de 19 h à 22 h.", source: "https://modavie.com/en/live-music/"}
   - {titre: "Jean Millaire & Andrée Dupré (blues) – 1er étage", lieu: "Modavie", adresse: "1 rue Saint-Paul Ouest", jour: 6, heure: "19:00", verifie: 2026-11-12, resume: "Blues au 1er étage du Modavie, chaque dimanche de 19 h à 22 h.", source: "https://modavie.com/en/live-music/"}
   - {titre: "Charlotte Van Dyke-Talbot & Co (jazz) – 2e étage", lieu: "Modavie", adresse: "1 rue Saint-Paul Ouest", jour: 6, heure: "19:00", verifie: 2026-11-12, resume: "Jazz au 2e étage du Modavie, chaque dimanche de 19 h à 22 h.", source: "https://modavie.com/en/live-music/"}
+
+# Ateliers chaque semaine (17 nov. 2026, donné par l'équipe).
+ateliers_hebdo:
+  - {titre: "Atelier de modèle vivant", lieu: "Le Livart", adresse: "3980 rue Saint-Denis", jour: 3, heure: "18:30", verifie: 2026-11-17, resume: "Dessin d'après modèle vivant au Livart, chaque jeudi de 18 h 30 à 20 h 30.", source: "https://lelivart.com/produit/atelier-de-modele-vivant-les-jeudis-18h30-a-20h30/"}
