@@ -208,8 +208,15 @@ def schema_event(e: dict, lieux: dict, url: str, image: str) -> dict:
             "address": {"@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA"}}
     if c.get("lat"):
         lieu["geo"] = {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lon"]}
-    ev = {"@context": "https://schema.org", "@type": "Event", "name": e["titre"], "startDate": debut, "url": url,
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    # 17 nov. 2026 (avis de Google Search Console) : date de fin = début (l'heure de fin n'est pas connue : rien d'inventé) ;
+    # événement en ligne décrit comme tel. Le prix, les artistes et la date de mise en vente ne sont donnés que
+    # lorsque la source les fournit : on ne les invente pas.
+    en_ligne = e["lieu"] == "En ligne"
+    if en_ligne:
+        lieu = {"@type": "VirtualLocation", "url": e.get("url") or url}
+    ev = {"@context": "https://schema.org", "@type": "Event", "name": e["titre"], "startDate": debut, "endDate": debut,
+          "url": url,
+          "eventAttendanceMode": "https://schema.org/" + ("OnlineEventAttendanceMode" if en_ligne else "OfflineEventAttendanceMode"),
           "eventStatus": "https://schema.org/EventScheduled", "location": lieu, "image": [image]}
     if resume(e):
         ev["description"] = resume(e)
