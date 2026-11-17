@@ -21,19 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-24-exposition-germination-des-vestiges-delise-m-pomer-04ec4b@cc
+UID:2026-11-24-exposition-germination-des-vestiges-d-elise-m-pome-2e0ab5@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261124T170000
 DTEND;TZID=America/Toronto:20261124T190000
-SUMMARY:EXPOSITION : Germination des vestiges d’Élise M. Pomerleau
+SUMMARY:EXPOSITION : Germination des vestiges d'Élise M. Pomerleau
 LOCATION:La Cenne\, Montréal
 URL:https://www.lacenne.com/event-details/exposition-germination-des-vestig
  es-delise-m-pomerleau
-DESCRIPTION:Exposition jusqu'au 10 janvier Heures d’ouverture : Lundi: 10
-  à 16h30 Mardi: 10h à 16h Mercredi: 10h00 à 12h30 Jeudi: 10h à 12h30 a
- insi que lors des Ciné-perché.\nDétails : https://www.lacenne.com/event
- -details/exposition-germination-des-vestiges-delise-m-pomerleau\n(ccmtl.ca
- )
+DESCRIPTION:Présentation d'une exposition d'œuvres de l'artiste Élise M.
+  Pomerleau.\nPrix : Gratuit\nDétails : https://www.lacenne.com/event-deta
+ ils/exposition-germination-des-vestiges-delise-m-pomerleau\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

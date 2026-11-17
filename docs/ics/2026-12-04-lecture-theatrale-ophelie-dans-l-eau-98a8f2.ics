@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-lecture-theatrale-ophelie-dans-l-eau-182363@ccmtl.ca
+UID:2026-12-04-lecture-theatrale-ophelie-dans-l-eau-98a8f2@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261204T193000
 DTEND;TZID=America/Toronto:20261204T213000
 SUMMARY:Lecture théâtrale | Ophélie dans l'eau
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Centre d'essai de l'UdeM\, Montréal
 URL:https://calendrier.umontreal.ca/activite/lecture-theatrale-ophelie-dans
  -leau-1
 DESCRIPTION:Lecture théâtrale payante de la pièce Ophélie dans l'eau\, 
- deuxième soirée.\nPrix : Payant\nDétails : https://calendrier.umontreal
- .ca/activite/lecture-theatrale-ophelie-dans-leau-1\n(ccmtl.ca)
+ deuxième soirée.\nPrix : Payant\nDétails : https://culture-umontreal.tu
+ xedobillet.com/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

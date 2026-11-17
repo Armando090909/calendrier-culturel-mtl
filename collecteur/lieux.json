@@ -594,6 +594,7 @@
  },
  "Centre culturel et communautaire de Cartierville": null,
  "Centre d'art Jacques-et-Michel-Auger": null,
+ "Centre d'essai de l'UdeM": null,
  "Centre d'exposition Lethbridge": {
   "lat": 45.505,
   "lon": -73.713,
@@ -1773,6 +1774,12 @@
   "lat": 45.51052,
   "lon": -73.5699,
   "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Pavillon Athanase-David": {
+  "alias": [],
+  "lat": 45.51363,
+  "lon": -73.56151,
+  "quartier": "Ville-Marie"
  },
  "Pavillon Hubert-Aquin (A), UQAM": {
   "adresse": "400 rue Sainte-Catherine Est",

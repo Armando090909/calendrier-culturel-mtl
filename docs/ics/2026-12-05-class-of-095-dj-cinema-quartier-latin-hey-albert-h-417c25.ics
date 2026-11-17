@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-18-bougies-gourmandes-31dde0@ccmtl.ca
+UID:2026-12-05-class-of-095-dj-cinema-quartier-latin-hey-albert-h-417c25@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
-SUMMARY:Bougies gourmandes
-LOCATION:Bar de Courcelle\, Montréal
-URL:https://montreal.ca/evenements/bougies-gourmandes-116996
-DESCRIPTION:Heure à confirmer. Découvrez l’art de la bougie comestible.
-  Une atelier scientifique présentée à la bibliothèque Saint-Henri.\nPr
- ix : Gratuit\nDétails : https://montreal.ca/evenements/bougies-gourmandes
- -116996\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261205T220000
+DTEND;TZID=America/Toronto:20261206T000000
+SUMMARY:CLASS OF 095 - DJ Cinéma Quartier Latin\, HEY: ALBERT\, HALO\, .ap
+ e
+LOCATION:DATCHA\, Montréal
+URL:https://bardatcha.ca/
+DESCRIPTION:Soirée club intitulée Class of 095 avec plusieurs DJ invités
+ .\nDétails : https://ra.co/events/2584285\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

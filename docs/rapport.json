@@ -4,17 +4,17 @@
  "evenements": 2609,
  "expositions": 234,
  "nouvelles_salles": [
-  "Grey Nuns Annex, salle 1.210",
-  "John Molson Building, salle ABCD",
-  "Salle Vincent-Spain — Complexe culturel Félix-Leclerc",
-  "UQAM - Pavillon Athanase-David",
-  "Vanier Extension, salle 328.04"
+  "Centre d'essai de l'UdeM",
+  "Pavillon Athanase-David"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 0,
-   "erreurs": 0,
-   "exemples_erreurs": [],
+   "lues": 2,
+   "erreurs": 2,
+   "exemples_erreurs": [
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/lespace-entre-nous-production-pendar-110653",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/visite-accompagnee-topographie-du-chaos-120194"
+   ],
    "completees_par_mac": 628,
    "heures_trouvees": 620,
    "salles_trouvees": 618
@@ -46,13 +46,107 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
+  "catalogues": [
+   {
+    "nom": "Théo Quinio"
+   },
+   {
+    "nom": "Rivakked Envy"
+   },
+   {
+    "nom": "Midnight Boogaloo"
+   },
+   {
+    "nom": "Orbital Ensemble",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "album nommé sur la page : orbital",
+      "Last.fm : artiste d'ici, même genre (rock)"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [
+      "album nommé sur la page : orbital",
+      "Last.fm : artiste d'ici, même genre (jazz)"
+     ],
+     "contre": [
+      "genre jazz/monde ≠ metal"
+     ]
+    }
+   },
+   {
+    "nom": "TOMMYPHYLL",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre monde ≠ metal"
+     ]
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre hiphop/pop ≠ metal"
+     ]
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Moses Belanger",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "LAST DANCE AMONG WOLVES",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : metal"
+     ],
+     "contre": []
+    }
+   }
+  ],
   "qualite": {
-   "regles": 95,
+   "regles": 137,
    "contreverif": {
-    "non relues (limite)": 398
+    "date confirmée": 211,
+    "page illisible": 52,
+    "lien mort remplacé": 10,
+    "date absente de la page": 32,
+    "non relues (limite)": 93
    },
    "controle": null
-  }
+  },
+  "reparations": [
+   "non réparée : Galerie Robert Poulin (8 pages essayées)",
+   "non réparée : Galerie Patrick Mikhail (8 pages essayées)",
+   "non réparée : Yves Laroche Galerie d'art (8 pages essayées)",
+   "non réparée : Hurley's Irish Pub (trad, folk) (8 pages essayées)"
+  ]
  },
  "alerte": null,
  "sources": [
@@ -246,7 +340,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-pl) : https://auxecuries.tuxedobillet.com/"
+    "annonces à venir dans la page : 4 (https://auxecuries.tuxedobillet.com/)"
    ]
   },
   {
@@ -716,7 +810,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
@@ -785,7 +880,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
+    "page lue depuis Montréal (ordinateur) : https://ra.co/clubs/201918",
+    "aucun événement trouvé dans 1199 caractères de texte : https://ra.co/clubs/201918",
+    "annonces à venir dans la page : 0 (https://ra.co/clubs/201918)"
    ]
   },
   {
@@ -794,7 +891,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
+    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -803,7 +901,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
@@ -850,7 +949,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
    ]
   },
   {
@@ -1021,7 +1121,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -1030,7 +1131,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
@@ -1206,7 +1308,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -1451,7 +1554,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
@@ -1532,7 +1636,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -1953,7 +2057,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2693,7 +2797,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -2939,7 +3043,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3005,8 +3110,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
+    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
+    "aucun événement trouvé dans 4140 caractères de texte : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -3201,8 +3307,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
-    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -3316,7 +3422,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },

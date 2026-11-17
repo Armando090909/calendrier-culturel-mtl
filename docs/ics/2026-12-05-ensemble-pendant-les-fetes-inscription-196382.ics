@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-ensemble-pendant-les-fetes-inscription-fcc970@ccmtl.ca
+UID:2026-12-05-ensemble-pendant-les-fetes-inscription-196382@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
+DTSTART;TZID=America/Toronto:20261205T170000
+DTEND;TZID=America/Toronto:20261205T190000
 SUMMARY:Ensemble pendant les fêtes! (Inscription)
 LOCATION:UQAM - Pavillon Hubert-Aquin\, Montréal
 URL:https://evenements.uqam.ca/evenements/ensemble-pendant-les-fetes-inscri
  ption/34743?date=2026-12-05_00-00-00
-DESCRIPTION:Heure à confirmer. Activité festive de fin d'année au Pavill
- on Hubert-Aquin\, sur inscription préalable.\nDétails : https://evenemen
- ts.uqam.ca/evenements/ensemble-pendant-les-fetes-inscription/34743?date=20
- 26-12-05_00-00-00\n(ccmtl.ca)
+DESCRIPTION:Activité festive de fin d'année au Pavillon Hubert-Aquin\, su
+ r inscription préalable.\nPrix : Gratuit\nDétails : https://evenements.u
+ qam.ca/evenements/ensemble-pendant-les-fetes-inscription/34743?date=2026-1
+ 2-05_00-00-00\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

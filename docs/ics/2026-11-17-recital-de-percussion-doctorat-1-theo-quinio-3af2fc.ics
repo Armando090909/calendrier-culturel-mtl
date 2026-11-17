@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-17-recital-de-percussion-doctorat-1-theo-quinio-f017ba@ccmtl.ca
+UID:2026-11-17-recital-de-percussion-doctorat-1-theo-quinio-3af2fc@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261117T200000
 DTEND;TZID=America/Toronto:20261117T220000
 SUMMARY:Récital de percussion (Doctorat 1) - Théo Quinio
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Salle Claude-Champagne\, Montréal
 URL:https://calendrier.umontreal.ca/activite/recital-de-percussion-doctorat
  -1-theo-quinio
-DESCRIPTION:Récital de percussion donné par Théo Quinio dans le cadre de
-  son doctorat.\nDétails : https://calendrier.umontreal.ca/activite/recita
- l-de-percussion-doctorat-1-theo-quinio\n(ccmtl.ca)
+DESCRIPTION:Récital de percussion donné par un étudiant au doctorat.\nPr
+ ix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite/recital-
+ de-percussion-doctorat-1-theo-quinio\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

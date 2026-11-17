@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-16-visite-accompagnee-topographie-du-chaos-6b78da@ccmtl.ca
+UID:2027-01-16-visite-accompagnee-topographie-du-chaos-200cf8@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270116
-DTEND;VALUE=DATE:20270117
+DTSTART;TZID=America/Toronto:20270116T133000
+DTEND;TZID=America/Toronto:20270116T153000
 SUMMARY:Visite accompagnée - Topographie du chaos
 LOCATION:Bibliothèque de Parc-Extension\, Montréal
 URL:https://montreal.ca/evenements/visite-accompagnee-topographie-du-chaos-
  120194
-DESCRIPTION:Heure à confirmer. Visite accompagnée gratuite de l’exposit
- ion Topographie du chaos avec Michel Martineau à la Maison de la culture 
- de Parc-Extension.\nPrix : Gratuit\nDétails : https://montreal.ca/eveneme
- nts/visite-accompagnee-topographie-du-chaos-120194\n(ccmtl.ca)
+DESCRIPTION:Visite accompagnée gratuite de l’exposition Topographie du c
+ haos avec Michel Martineau à la Maison de la culture de Parc-Extension.\n
+ Prix : Gratuit\nDétails : https://lepointdevente.com/billets/visiteaccomp
+ agneetopographieduchaos?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

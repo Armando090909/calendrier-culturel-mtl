@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-19-curiosa-fantasmer-le-passe-218d1a@ccmtl.ca
+UID:2026-11-18-bougies-gourmandes-0084d2@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261119T090000
-DTEND;TZID=America/Toronto:20261119T110000
-SUMMARY:Curiosa : fantasmer le passé
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://calendrier.umontreal.ca/activite/curiosa-fantasmer-le-passe-71
-DESCRIPTION:Exposition explorant la manière dont le passé est imaginé et
-  fantasmé.\nDétails : https://calendrier.umontreal.ca/activite/curiosa-f
- antasmer-le-passe-71\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261118T163000
+DTEND;TZID=America/Toronto:20261118T183000
+SUMMARY:Bougies gourmandes
+LOCATION:Bar de Courcelle\, Montréal
+URL:https://montreal.ca/evenements/bougies-gourmandes-116996
+DESCRIPTION:Découvrez l’art de la bougie comestible. Une atelier scienti
+ fique présentée à la bibliothèque Saint-Henri.\nPrix : Gratuit\nDétai
+ ls : https://montreal.ca/evenements/bougies-gourmandes-116996\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

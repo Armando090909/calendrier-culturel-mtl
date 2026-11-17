@@ -21,17 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-soiree-test-a-l-aveugle-musical-musical-blind-test-82ee88@cc
+UID:2026-11-25-soiree-test-a-l-aveugle-musical-musical-blind-test-60b6e9@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T170000
 DTEND;TZID=America/Toronto:20261125T190000
 SUMMARY:Soirée test à l'aveugle musical | Musical blind test
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:3200\, rue Jean-Brillant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/soiree-test-a-laveugle-musical
  -musical-blind-test
 DESCRIPTION:Soirée de quiz musical à l'aveugle où il faut deviner les mo
- rceaux joués.\nDétails : https://calendrier.umontreal.ca/activite/soiree
- -test-a-laveugle-musical-musical-blind-test\n(ccmtl.ca)
+ rceaux joués.\nPrix : Gratuit\nDétails : https://vieetudiante.umontreal.
+ ca/activites/soiree-test-a-laveugle-musical-musical-blind-test/16542\n(ccm
+ tl.ca)
 END:VEVENT
 END:VCALENDAR
