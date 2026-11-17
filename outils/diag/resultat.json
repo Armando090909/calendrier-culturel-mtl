@@ -1,112 +1,84 @@
 {
- "https://monastere.ca/": {
+ "https://librairieleuguelionne.com/a-propos/accessibilite/organiser-un-evenement-a-leuguelionne/": {
+  "simple": {
+   "erreur": "404 Client Error: Not Found for url: https://librairieleuguelionne.com/a-propos/accessibilite/organiser-un-evenement-a-leuguelionne/"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 404 Not Found (navigateur)"
+  }
+ },
+ "https://www.hurleysirishpub.com/event-directory/": {
   "statut": 200,
   "simple_images": {
-   "og": "https://monastere.ca/wp-content/uploads/2025/03/Entree-Remparts-ete-022-1024x682.jpg",
+   "og": "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png",
    "img": [
-    "https://www.facebook.com/tr?id=957891331009032&ev=PageView&noscript=1 | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Logotype_Vectoriel_Monastere-1.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Symbole.png | ",
-    "https://monastere.ca/wp-content/uploads/2023/07/bandeau-citation-700x467.webp | Monastere des Augustines - Vieux-Québec",
-    "https://monastere.ca/wp-content/uploads/2023/07/le-comptoir-commande.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | "
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2025/09/sSEPTEMBER-2025-scaled.jpg?x59041 | "
    ],
    "iframes": [
-    "https://www.googletagmanager.com/ns.html?id=GTM-TGX2BNM",
-    ""
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.6574247076405!2d-73.5759238!3d45.4968429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a69e33c2f6",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18926.878588292915!2d-73.646235778634!3d45.46636777045083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13."
    ],
    "calendriers": []
   },
   "simple": {
-   "taille": 3802,
-   "texte": "Se ressourcer au cœur de l'histoire - Monastère des Augustines\nAller au contenu <https://monastere.ca/#content>\nSe ressourcer au cœur de l’histoire\nDans le Vieux-Québec, un patrimoine de près de quatre siècles vous permet de vivre une expérience mieux-être unique.\nVivre le Monastère...\nLors d'un séjour <https://monastere.ca/forfaits/>\nLors d’une retraite de groupe <https://monastere.ca/retraites/>\nLe temps d’un massage <https://monastere.ca/massages-et-soins/>\nAu Musée <https://monastere.ca/musee/>\nLe temps d’une activité <https://monastere.ca/activites/>\nEn mangeant santé <https://monastere.ca/manger-sante/>\nAvec un accès journalier <https://monastere.ca/acces-journalier/>\nEn y organisant un événement <https://monastere.ca/organiser-un-evenement/>\nEn tant que proche aidant <https://monastere.ca/sejour/sejours-pour-proches-aidants/>\nEn tant que soignant <https://monastere.ca/sejour/sejours-pour-soignants/>\nEn tant qu'enseignant <https://monastere.ca/sejour/sejours-enseignants/>\nEn se joignant à l'équipe <https://monastere.ca/offres-demploi/>\nDécouvrir\nDormir dans un monastère\nSéjourner dans l’ancien cloître restauré des Augustines est une excellente façon de se ressourcer! Deux types de chambres sont disponibles. Détente, confort et simplicité sont au rendez-vous.\nChambres authentiques\nCes anciennes chambres d’Augustines ont été reconverties selon les standards actuels, tout en gardant leur charme d’antan.\nDécouvrir <https://monastere.ca/chambres/#chambres-authentiques>\nVoir les disponibilités <https://app.mews.com/distributor/152dcfd6-ea0e-4d08-8349-b23a00204aff>\nChambres contemporaines\nCes chambres ont été construites lors de la restauration du Monastère, et ce, en parfaite harmonie avec le caractère patrimonial des lieux.\nDécouvrir <https://monastere.ca/chambres/#chambres-contemporaines>\nVoir les disponibilités <https://app.mews.com/distributor/152dcfd6-ea0e-4d08-8349-b23a00204aff>\nx\nLe forfait Temps des Fêtes Zen est de retour\nCette année, faites du mieux-être votre plus précieux cadeau avec notre forfait Temps des Fêtes Zen, valide du 13 décembre 2026 au 4 février 2027. C’est l’occasion de prendre du recul, de souffler un peu et de vous offrir une pause bien méritée. Vos Fêtes n’en seront que plus belles!\nDécouvrir <https://monastere.ca/forfait/temps-des-fetes-zen/>\nLa Loto-Répit: au bénéfice des personnes proches aidantes\nLa Loto-Répit de la Fiducie du patrimoine culturel des Augustines est de retour en 2026! Chaque billet soutient directement le programme de répit du Monastère pour les personnes proches aidantes. Courez la chance de remporter l’un des trois grands prix, d’une valeur totale de 6 398$, obtenus grâce à la générosité de nombreux partenaires.\nParticiper <https://monastere.ca/tirage-de-la-loto-repit/>\nSe ressourcer pleinement\nVous désirez tenter l’expérience complète du Monastère en ajoutant des repas, un massage ou une activité à votre séjour? Nos forfaits ont été conçus pour répondre à tous les besoins.\nDécouvrir nos forfaits <https://monastere.ca/forfaits/>\nSéjour monastique À partir de 164,00 $ <https://monastere.ca/forfait/sejour-monastique/>\nSérénité À partir de 285,00 $ <https://monastere.ca/forfait/serenite/>\nDécouverte et équilibre À partir de 258,00 $ <https://monastere.ca/forfait/decouvrerte-et-equilibre/>\nTranquillité sommeil À partir de 765,00 $ <https://monastere.ca/forfait/tranquillite-sommeil/>\nQuoi faire au Monastère\nSe ressourcer grâce à plusieurs activités qui font du bien.\nVivre une retraite au Monastère\nSe permettre une expérience de groupe dans une ambiance humaine et chaleureuse.\nUn lieu qui a du sens\nServices aux proches aidants\nVous prenez soin d’un être cher? Des séjours et des activités vous sont offerts.\nContribuer au legs\nFaire un don afin que notre mission se poursuive au fil du temps.",
+   "taille": 325,
+   "texte": "Events - Hurleys\nEvents\nLIVE MUSIC EVERY NIGHT (~10 PM) SEPTEMBER 2025\nSundays ~ Patrick Lesyk\nMondays ~ Bud Rice and Dave Gossage\nTuesdays ~ Kate Bevan -Baker and Dave Gossage\n Wednsdays ~ Sean Dagher and Dave Gossage\nThursdays ~ The Reese Witherspoons\n*Please note there may be some changes and adjustments\nNo events found.",
    "courriels": [],
    "contact": [
-    "https://monastere.ca/nous-joindre/#stationnements",
-    "https://monastere.ca/nous-joindre/#transport_commun",
-    "https://monastere.ca/offres-demploi/"
+    "https://www.hurleysirishpub.com/contact/"
    ],
    "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/monastere.ca\\/\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Se ressourcer au cœur de l'histoire - Monastère des Augustines\",\"isPartOf\":{\"@id\":\"https:\\/\\/monastere.ca\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"datePublished\":\"2023-07-14T16:59:23+00:00\",\"dateModified\":\"2026-11-05T17:08:22+00:00\",\"description\":\"Dans le Vieux-Québec, il est possible de se ressourcer grâce à un patrimoine riche de près de quatre siècles d’histoire.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/monastere.ca\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"width\":2000,\"height\":1333},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/monastere.ca\\/#website\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Monastère des Augustines\",\"description\":\"Monastère des Augustines, un havre patrimonial authentique de santé et de mieux-être avec atelier, spa, musée, restaurant et hôtellerie au Québec.\",\"publisher\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/monastere.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/monastere.ca\\/#organization\",\"name\":\"Monastère des Augustines\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"width\":1,\"height\":1,\"caption\":\"Monastère des Augustines\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/monastere.ca\\/?locale=fr_CA\",\"https:\\/\\/www.instagram.com\\/lemonasteredesaugustines\\/\",\"https:\\/\\/www.linkedin.com\\/company\\/le-monastere-des-augustines\\/?originalSubdomain=ca\",\"https:\\/\\/fr.tripadvisor.ca\\/Hotel_Review-g155033-d8460643-Reviews-Le_Monastere_des_Augustines-Quebec_City_Quebec.html\"]}]}"
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\",\"name\":\"Events - Hurleys\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\"},\"datePublished\":\"2024-09-20T01:17:54+00:00\",\"dateModified\":\"2025-09-03T14:47:12+00:00\",\"description\":\"Discover Hurley’s Irish Pub events in Montreal – live music, special gatherings, and more. Stay updated on what’s happening!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.hurleysirishpub.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"name\":\"Hurleys Irish Pub\",\"description\":\"Irish pub\",\"publisher\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.hurleysirishpub.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\",\"name\":\"Hurleys Irish Pub\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"contentUrl\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"width\":769,\"height\":760,\"caption\":\"Hurleys Irish Pub\"},\"image\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.instagram.com\\/shawn.swick\\/\"]}]}"
    ],
-   "heures": [],
+   "heures": [
+    "Events - Hurleys\nEvents\nLIVE MUSIC EVERY NIGHT (~10 PM) SEPTEMBER 2025\nSun"
+   ],
    "liens": [
-    "https://monastere.ca/organiser-un-evenement/",
-    "https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "https://monastere.ca/organiser-un-evenement/#tab-retraite"
+    "https://www.hurleysirishpub.com/event-directory/",
+    "https://www.hurleysirishpub.com/events/?ical=1",
+    "https://www.hurleysirishpub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hurleysirishpub.com%2Fevent-directory%2F",
+    "https://www.hurleysirishpub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hurleysirishpub.com%2Fevent-directory%2F&#038;format=xml",
+    "https://www.hurleysirishpub.com/wp-json/tribe/events/v1/"
    ],
    "menu": [
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Le temps d’une activité → https://monastere.ca/activites/",
-    "En y organisant un événement → https://monastere.ca/organiser-un-evenement/"
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Book your event → https://www.hurleysirishpub.com/reservations/"
    ]
   },
   "navigateur_images": {
-   "og": "https://monastere.ca/wp-content/uploads/2025/03/Entree-Remparts-ete-022-1024x682.jpg",
+   "og": "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png",
    "img": [
-    "https://www.facebook.com/tr?id=957891331009032&ev=PageView&noscript=1 | ",
-    "https://cdn-cookieyes.com/assets/images/revisit.svg | Revisit consent button",
-    "https://cdn-cookieyes.com/assets/images/close.svg | ",
-    "https://cdn-cookieyes.com/assets/images/poweredbtcky.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Logotype_Vectoriel_Monastere-1.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Symbole.png | ",
-    "https://monastere.ca/wp-content/uploads/2023/07/bandeau-citation-700x467.webp | Monastere des Augustines - Vieux-Québec",
-    "https://monastere.ca/wp-content/uploads/2023/07/le-comptoir-commande.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | "
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2025/09/sSEPTEMBER-2025-scaled.jpg?x59041 | ",
+    " | en",
+    " | fr",
+    "/wp-content/plugins/gtranslate/flags/svg/en-ca.svg | en",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | "
    ],
    "iframes": [
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.6574247076405!2d-73.5759238!3d45.4968429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a69e33c2f6",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18926.878588292915!2d-73.646235778634!3d45.46636777045083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.",
     "",
-    "https://www.googletagmanager.com/ns.html?id=GTM-TGX2BNM",
     "",
     "",
     ""
@@ -114,153 +86,103 @@
    "calendriers": []
   },
   "navigateur": {
-   "taille": 15523,
-   "texte": "Se ressourcer au cœur de l'histoire - Monastère des Augustines\nNous respectons votre vie privée.\nNous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou des contenus personnalisés et analyser notre trafic. En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies.\nPersonnaliser\nAccepter tout\nPersonnaliser les préférences en matière de consentement\nNous utilisons des cookies pour vous aider à naviguer efficacement et à exécuter certaines fonctionnalités. Vous trouverez des informations détaillées sur tous les cookies sous chaque catégorie de consentement ci-dessous.\nLes cookies qui sont catégorisés comme « nécessaires » sont stockés sur votre navigateur car ils sont essentiels pour permettre les fonctionnalités de base du site. ... \nAfficher plus\nNécessaire\nToujours actif\nLes cookies nécessaires sont cruciaux pour les fonctions de base du site Web et celui-ci ne fonctionnera pas comme prévu sans eux.Ces cookies ne stockent aucune donnée personnellement identifiable.\nCookie\n__cf_bm\nDurée\n1 heure\nDescription\nCloudflare a placé ce témoin pour prendre en charge la gestion des robots Cloudflare.\nCookie\nrc::a\nDurée\nN'expire jamais\nDescription\nThis cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.\nCookie\nrc::c\nDurée\nsession\nDescription\nThis cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.\nCookie\nlocalization\nDurée\n1 an\nDescription\nThe localization cookie stores user preferences for language and region to provide a personalized browsing experience.\nCookie\ncart_currency\nDurée\n14 jour\nDescription\nShopify sets this cookie to remember the user’s country of origin and populate the correct transaction currency.\nCookie\ncart\nDurée\n3 mois\nDescription\n Shopify sets this cookie to provide a connection with the shopping cart.\nCookie\nXSRF-TOKEN\nDurée\n2 heure\nDescription\nWix a placé ce témoin à des fins de sécurité.\nCookie\nci_session\nDurée\n2 heure\nDescription\nThis cookie is set as default session Cookie name in config.php in config folder in CodeIgniter.\nCookie\nwordpress_test_cookie\nDurée\nsession\nDescription\nWordPress définit ce témoin pour déterminer si les témoins sont activés sur les navigateurs des utilisateurs.\nCookie\nJSESSIONID\nDurée\nsession\nDescription\nNew Relic utilise ce témoin pour stocker un identifiant de session afin que New Relic puisse surveiller le nombre de sessions pour une application.\nCookie\ncookieyes-*\nDurée\n1 an\nDescription\nCookieYes sets this cookie for consent solution management.\nCookie\nPHPSESSID\nDurée\nsession\nDescription\nCe témoin est natif des applications PHP. Le témoin stocke et identifie un identifiant de session unique d’un utilisateur afin de gérer les sessions d’utilisateurs sur le site Internet. Ce témoin est un témoin de session et sera supprimé lorsque toutes les fenêtres du navigateur seront fermées.\nCookie\n_shop_app_essential\nDurée\n1 an\nDescription\nShopify sets this cookie, which contains essential information required for the proper functioning of Shop.app.\nCookie\n_shopify_test\nDurée\nsession\nDescription\nShopify sets this cookie to check cookie capabilities on the client.\nCookie\nwpEmojiSettingsSupports\nDurée\nsession\nDescription\nWordPress sets this cookie when a user interacts with emojis on a WordPress site. It helps determine if the user's browser can display emojis properly.\nCookie\nwordpress_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie when a user logs in to the WordPress administration. It stores the user's authentication details, allowing them to access the backend. \nCookie\nwordpress_sec_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to provide protection against hackers and store account details.\nCookie\nwordpress_logged_in_*\nDurée\npassé(e)\nDescription\nWordPress sets this to indicate that you are logged in and who you are, for most interface use.\nCookie\nwp-settings-*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to preserve the user’s wp-admin settings.\nCookie\nwp-settings-time-*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to preserve the user’s wp-admin settings. \nCookie\nwordpressuser_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to authenticate users and maintain their login session. It ensures that logged-in users can navigate the website securely and access authorised areas such as their account dashboard or the admin panel.\nCookie\nwordpresspass_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to authenticate logged-in users securely. It stores an encrypted version of the password to verify user credentials while ensuring that the actual password is never exposed.\nFonctionnelle\nLes cookies fonctionnels permettent d'exécuter certaines fonctionnalités telles que le partage du contenu du site Web sur des plateformes de médias sociaux, la collecte de commentaires et d'autres fonctionnalités tierces.\nCookie\nwp-wpml_current_language\nDurée\nsession\nDescription\nLe plug-in multilingue de WordPress définit ce témoin pour stocker les paramètres actuels de la langue/du langage.\nCookie\nlang\nDurée\n1 mois\nDescription\nLinkedIn utilise ce témoin pour mémoriser le paramètre de langue d’un utilisateur.\nCookie\nsp_t\nDurée\n1 an\nDescription\nThe sp_t cookie is set by Spotify to implement audio content from Spotify on the website and also registers information on user interaction related to the audio content.\nCookie\nsp_landing\nDurée\n1 jour\nDescription\nThe sp_landing is set by Spotify to implement audio content from Spotify on the website and also registers information on user interaction related to the audio content.\nCookie\nytidb::LAST_RESULT_ENTRY_KEY\nDurée\nN'expire jamais\nDescription\nThe cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user. This information is used to improve the user experience by providing more relevant search results in the future.\nAnalytique\nLes cookies analytiques sont utilisés pour comprendre comment les visiteurs interagissent avec le site Web. Ces cookies aident à fournir des informations sur le nombre de visiteurs, le taux de rebond, la source de trafic, etc.\nCookie\n_ga_*\nDurée\n1 an 1 mois 4 jour\nDescription\nGoogle Analytics sets this cookie to store and count page views.\nCookie\n_ga\nDurée\n1 an 1 mois 4 jour\nDescription\nGoogle Analytics utilise ce témoin pour calculer les données relatives aux visiteurs, aux sessions et aux campagnes et suivre l’utilisation du site pour le rapport d’analyse du site. Le témoin stocke les informations de manière anonyme et attribue un numéro généré de manière aléatoire pour reconnaître les visiteurs uniques.\nCookie\ncheckout_locale\nDurée\nsession\nDescription\nShopify sets this cookie for shopping cart, checkout and payment purposes.\nCookie\n_gid\nDurée\n1 jour\nDescription\nGoogle Analytics utilise ce témoin pour stocker des informations sur la façon dont les visiteurs utilisent un site Internet tout en créant un rapport d’analyse des performances du site. Certaines des données collectées comprennent le nombre de visiteurs, leur source et les pages qu’ils visitent de manière anonyme.\nCookie\n_fbp\nDurée\n3 mois\nDescription\nFacebook définit ce témoin pour afficher des publicités lorsque vous êtes sur Facebook ou sur une plateforme numérique alimentée par la publicité de Facebook après avoir visité le site Internet.\nCookie\nprism_*\nDurée\n1 mois\nDescription\nActive Campaign sets this cookie to track and store interactions.\nCookie\n_hjSessionUser_*\nDurée\n1 an\nDescription\nHotjar sets this cookie to ensure data from subsequent visits to the same site is attributed to the same user ID, which persists in the Hotjar User ID, which is unique to that site.\nCookie\n_hjSession_*\nDurée\n1 heure\nDescription\nHotjar sets this cookie to ensure data from subsequent visits to the same site is attributed to the same user ID, which persists in the Hotjar User ID, which is unique to that site.\nCookie\n_gat_UA-",
+   "taille": 1810,
+   "texte": "Events - Hurleys\nEvents\nLIVE MUSIC EVERY NIGHT (~10 PM) SEPTEMBER 2025\nSundays ~ Patrick Lesyk\nMondays ~ Bud Rice and Dave Gossage\nTuesdays ~ Kate Bevan -Baker and Dave Gossage\n Wednsdays ~ Sean Dagher and Dave Gossage\nThursdays ~ The Reese Witherspoons\n*Please note there may be some changes and adjustments\nNo events found.\nEnglish <https://www.hurleysirishpub.com/event-directory/>\nFrench <https://www.hurleysirishpub.com/event-directory/>\nen\nKeystroke\nAction\n←\nMove left\n→\nMove right\n↑\nMove up\n↓\nMove down\n+\nZoom in\n-\nZoom out\nHome\nJump left by 75%\nEnd\nJump right by 75%\nPage Up\nJump up by 75%\nPage Down\nJump down by 75%\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nMap Data\nMap data ©2026 Google\nMap data ©2026 Google\n100 m \nClick to toggle between metric and imperial units\nTerms <https://www.google.com/intl/en_CA/help/terms_maps.html>\nReport a map error <https://www.google.com/maps/@45.4968805,-73.5747597,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3>\nBESbswy\nBESbswy\nKeystroke\nAction\n←\nMove left\n→\nMove right\n↑\nMove up\n↓\nMove down\n+\nZoom in\n-\nZoom out\nHome\nJump left by 75%\nEnd\nJump right by 75%\nPage Up\nJump up by 75%\nPage Down\nJump down by 75%\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nMap Data\nMap data ©2026 Google\nMap data ©2026 Google\n1 km \nClick to toggle between metric and imperial units\nTerms <https://www.google.com/intl/en_CA/help/terms_maps.html>\nReport a map error <https://www.google.com/maps/@45.4556115,-73.7542119,13z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3>\nBESbswy\nBESbswy",
    "courriels": [],
    "contact": [
-    "https://monastere.ca/nous-joindre/#stationnements",
-    "https://monastere.ca/nous-joindre/#transport_commun",
-    "https://monastere.ca/offres-demploi/"
+    "https://www.hurleysirishpub.com/contact/"
    ],
    "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/monastere.ca\\/\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Se ressourcer au cœur de l'histoire - Monastère des Augustines\",\"isPartOf\":{\"@id\":\"https:\\/\\/monastere.ca\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"datePublished\":\"2023-07-14T16:59:23+00:00\",\"dateModified\":\"2026-11-05T17:08:22+00:00\",\"description\":\"Dans le Vieux-Québec, il est possible de se ressourcer grâce à un patrimoine riche de près de quatre siècles d’histoire.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/monastere.ca\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"width\":2000,\"height\":1333},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/monastere.ca\\/#website\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Monastère des Augustines\",\"description\":\"Monastère des Augustines, un havre patrimonial authentique de santé et de mieux-être avec atelier, spa, musée, restaurant et hôtellerie au Québec.\",\"publisher\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/monastere.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/monastere.ca\\/#organization\",\"name\":\"Monastère des Augustines\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"width\":1,\"height\":1,\"caption\":\"Monastère des Augustines\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/monastere.ca\\/?locale=fr_CA\",\"https:\\/\\/www.instagram.com\\/lemonasteredesaugustines\\/\",\"https:\\/\\/www.linkedin.com\\/company\\/le-monastere-des-augustines\\/?originalSubdomain=ca\",\"https:\\/\\/fr.tripadvisor.ca\\/Hotel_Review-g155033-d8460643-Reviews-Le_Monastere_des_Augustines-Quebec_City_Quebec.html\"]}]}"
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\",\"name\":\"Events - Hurleys\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\"},\"datePublished\":\"2024-09-20T01:17:54+00:00\",\"dateModified\":\"2025-09-03T14:47:12+00:00\",\"description\":\"Discover Hurley’s Irish Pub events in Montreal – live music, special gatherings, and more. Stay updated on what’s happening!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/event-directory\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.hurleysirishpub.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"name\":\"Hurleys Irish Pub\",\"description\":\"Irish pub\",\"publisher\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.hurleysirishpub.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\",\"name\":\"Hurleys Irish Pub\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"contentUrl\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"width\":769,\"height\":760,\"caption\":\"Hurleys Irish Pub\"},\"image\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.instagram.com\\/shawn.swick\\/\"]}]}"
    ],
-   "heures": [],
+   "heures": [
+    "Events - Hurleys\nEvents\nLIVE MUSIC EVERY NIGHT (~10 PM) SEPTEMBER 2025\nSun"
+   ],
    "liens": [
-    "https://monastere.ca/organiser-un-evenement/",
-    "https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "https://monastere.ca/organiser-un-evenement/#tab-retraite"
+    "https://www.hurleysirishpub.com/event-directory/",
+    "https://www.hurleysirishpub.com/events/?ical=1",
+    "https://www.hurleysirishpub.com/wp-content/plugins/events-calendar-modules-for-divi/assets/css/ecmdicons.min.css?x59041",
+    "https://www.hurleysirishpub.com/wp-content/plugins/events-calendar-modules-for-divi/styles/style.min.css?x59041",
+    "https://www.hurleysirishpub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hurleysirishpub.com%2Fevent-directory%2F",
+    "https://www.hurleysirishpub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hurleysirishpub.com%2Fevent-directory%2F&amp;format=xml",
+    "https://www.hurleysirishpub.com/wp-json/tribe/events/v1/"
    ],
    "menu": [
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Le temps d’une activité → https://monastere.ca/activites/",
-    "En y organisant un événement → https://monastere.ca/organiser-un-evenement/"
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Book your event → https://www.hurleysirishpub.com/reservations/"
    ]
   }
  },
- "https://www.monastere.ca/fr/": {
+ "https://www.hurleysirishpub.com/contact/": {
   "statut": 200,
   "simple_images": {
-   "og": "https://monastere.ca/wp-content/uploads/2025/03/Entree-Remparts-ete-022-1024x682.jpg",
+   "og": "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png",
    "img": [
-    "https://www.facebook.com/tr?id=957891331009032&ev=PageView&noscript=1 | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Logotype_Vectoriel_Monastere-1.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Symbole.png | ",
-    "https://monastere.ca/wp-content/uploads/2023/07/bandeau-citation-700x467.webp | Monastere des Augustines - Vieux-Québec",
-    "https://monastere.ca/wp-content/uploads/2023/07/le-comptoir-commande.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | "
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2025/03/Group-18-1.jpg?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/08/Group-9-2.jpg?x59041 | "
    ],
    "iframes": [
-    "https://www.googletagmanager.com/ns.html?id=GTM-TGX2BNM",
-    ""
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.6574247076405!2d-73.5759238!3d45.4968429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a69e33c2f6",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18926.878588292915!2d-73.646235778634!3d45.46636777045083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13."
    ],
    "calendriers": []
   },
   "simple": {
-   "taille": 3809,
-   "texte": "Se ressourcer au cœur de l'histoire - Monastère des Augustines\nAller au contenu <https://www.monastere.ca/fr/#content>\nSe ressourcer au cœur de l’histoire\nDans le Vieux-Québec, un patrimoine de près de quatre siècles vous permet de vivre une expérience mieux-être unique.\nVivre le Monastère...\nLors d'un séjour <https://monastere.ca/forfaits/>\nLors d’une retraite de groupe <https://monastere.ca/retraites/>\nLe temps d’un massage <https://monastere.ca/massages-et-soins/>\nAu Musée <https://monastere.ca/musee/>\nLe temps d’une activité <https://monastere.ca/activites/>\nEn mangeant santé <https://monastere.ca/manger-sante/>\nAvec un accès journalier <https://monastere.ca/acces-journalier/>\nEn y organisant un événement <https://monastere.ca/organiser-un-evenement/>\nEn tant que proche aidant <https://monastere.ca/sejour/sejours-pour-proches-aidants/>\nEn tant que soignant <https://monastere.ca/sejour/sejours-pour-soignants/>\nEn tant qu'enseignant <https://monastere.ca/sejour/sejours-enseignants/>\nEn se joignant à l'équipe <https://monastere.ca/offres-demploi/>\nDécouvrir\nDormir dans un monastère\nSéjourner dans l’ancien cloître restauré des Augustines est une excellente façon de se ressourcer! Deux types de chambres sont disponibles. Détente, confort et simplicité sont au rendez-vous.\nChambres authentiques\nCes anciennes chambres d’Augustines ont été reconverties selon les standards actuels, tout en gardant leur charme d’antan.\nDécouvrir <https://monastere.ca/chambres/#chambres-authentiques>\nVoir les disponibilités <https://app.mews.com/distributor/152dcfd6-ea0e-4d08-8349-b23a00204aff>\nChambres contemporaines\nCes chambres ont été construites lors de la restauration du Monastère, et ce, en parfaite harmonie avec le caractère patrimonial des lieux.\nDécouvrir <https://monastere.ca/chambres/#chambres-contemporaines>\nVoir les disponibilités <https://app.mews.com/distributor/152dcfd6-ea0e-4d08-8349-b23a00204aff>\nx\nLe forfait Temps des Fêtes Zen est de retour\nCette année, faites du mieux-être votre plus précieux cadeau avec notre forfait Temps des Fêtes Zen, valide du 13 décembre 2026 au 4 février 2027. C’est l’occasion de prendre du recul, de souffler un peu et de vous offrir une pause bien méritée. Vos Fêtes n’en seront que plus belles!\nDécouvrir <https://monastere.ca/forfait/temps-des-fetes-zen/>\nLa Loto-Répit: au bénéfice des personnes proches aidantes\nLa Loto-Répit de la Fiducie du patrimoine culturel des Augustines est de retour en 2026! Chaque billet soutient directement le programme de répit du Monastère pour les personnes proches aidantes. Courez la chance de remporter l’un des trois grands prix, d’une valeur totale de 6 398$, obtenus grâce à la générosité de nombreux partenaires.\nParticiper <https://monastere.ca/tirage-de-la-loto-repit/>\nSe ressourcer pleinement\nVous désirez tenter l’expérience complète du Monastère en ajoutant des repas, un massage ou une activité à votre séjour? Nos forfaits ont été conçus pour répondre à tous les besoins.\nDécouvrir nos forfaits <https://monastere.ca/forfaits/>\nSéjour monastique À partir de 164,00 $ <https://monastere.ca/forfait/sejour-monastique/>\nSérénité À partir de 285,00 $ <https://monastere.ca/forfait/serenite/>\nDécouverte et équilibre À partir de 258,00 $ <https://monastere.ca/forfait/decouvrerte-et-equilibre/>\nTranquillité sommeil À partir de 765,00 $ <https://monastere.ca/forfait/tranquillite-sommeil/>\nQuoi faire au Monastère\nSe ressourcer grâce à plusieurs activités qui font du bien.\nVivre une retraite au Monastère\nSe permettre une expérience de groupe dans une ambiance humaine et chaleureuse.\nUn lieu qui a du sens\nServices aux proches aidants\nVous prenez soin d’un être cher? Des séjours et des activités vous sont offerts.\nContribuer au legs\nFaire un don afin que notre mission se poursuive au fil du temps.",
+   "taille": 710,
+   "texte": "Contact - Hurleys\nContact us\nHurley’s Irish Pub\nOur famous flagship location\n1225 Crescent Street  Montreal, Quebec  514.861.4111* \nInstagram @hurleysirishpub\n *Please note that during peak times the phone is unlikely to be answered. \nBetter to drop by and chat over a pint instead! Or just use the form below. 😉\nHurley’s YUL\nPierre Trudeau Airport (two locations)\nGate 52, International\nGate 81, United States\nEnjoy our famous friendliness, delicious fare, and North America’s best pint of Guinness while on your way in or out of Montreal.\nContact Us\nOur flagship location in downtown Montreal, on three floors with a cozy historic ambiance, multiple interior and exterior areas and music seven nights a week.",
    "courriels": [],
    "contact": [
-    "https://monastere.ca/nous-joindre/#stationnements",
-    "https://monastere.ca/nous-joindre/#transport_commun",
-    "https://monastere.ca/offres-demploi/"
+    "https://www.hurleysirishpub.com/contact/"
    ],
    "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/monastere.ca\\/\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Se ressourcer au cœur de l'histoire - Monastère des Augustines\",\"isPartOf\":{\"@id\":\"https:\\/\\/monastere.ca\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"datePublished\":\"2023-07-14T16:59:23+00:00\",\"dateModified\":\"2026-11-05T17:08:22+00:00\",\"description\":\"Dans le Vieux-Québec, il est possible de se ressourcer grâce à un patrimoine riche de près de quatre siècles d’histoire.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/monastere.ca\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"width\":2000,\"height\":1333},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/monastere.ca\\/#website\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Monastère des Augustines\",\"description\":\"Monastère des Augustines, un havre patrimonial authentique de santé et de mieux-être avec atelier, spa, musée, restaurant et hôtellerie au Québec.\",\"publisher\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/monastere.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/monastere.ca\\/#organization\",\"name\":\"Monastère des Augustines\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"width\":1,\"height\":1,\"caption\":\"Monastère des Augustines\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/monastere.ca\\/?locale=fr_CA\",\"https:\\/\\/www.instagram.com\\/lemonasteredesaugustines\\/\",\"https:\\/\\/www.linkedin.com\\/company\\/le-monastere-des-augustines\\/?originalSubdomain=ca\",\"https:\\/\\/fr.tripadvisor.ca\\/Hotel_Review-g155033-d8460643-Reviews-Le_Monastere_des_Augustines-Quebec_City_Quebec.html\"]}]}"
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\",\"name\":\"Contact - Hurleys\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\"},\"datePublished\":\"2024-08-16T19:32:25+00:00\",\"dateModified\":\"2026-10-19T21:14:30+00:00\",\"description\":\"Contact Hurley’s Irish Pub in Montreal for reservations, events, and inquiries. Experience great drinks, live music, and hospitality!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.hurleysirishpub.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"name\":\"Hurleys Irish Pub\",\"description\":\"Irish pub\",\"publisher\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.hurleysirishpub.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\",\"name\":\"Hurleys Irish Pub\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"contentUrl\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"width\":769,\"height\":760,\"caption\":\"Hurleys Irish Pub\"},\"image\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.instagram.com\\/shawn.swick\\/\"]}]}"
    ],
    "heures": [],
    "liens": [
-    "https://monastere.ca/organiser-un-evenement/",
-    "https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "https://monastere.ca/organiser-un-evenement/#tab-retraite"
+    "https://www.hurleysirishpub.com/event-directory/",
+    "https://www.hurleysirishpub.com/events/?ical=1",
+    "https://www.hurleysirishpub.com/wp-json/tribe/events/v1/"
    ],
    "menu": [
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Le temps d’une activité → https://monastere.ca/activites/",
-    "En y organisant un événement → https://monastere.ca/organiser-un-evenement/"
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Book your event → https://www.hurleysirishpub.com/reservations/"
    ]
   },
   "navigateur_images": {
-   "og": "https://monastere.ca/wp-content/uploads/2025/03/Entree-Remparts-ete-022-1024x682.jpg",
+   "og": "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png",
    "img": [
-    "https://www.facebook.com/tr?id=957891331009032&ev=PageView&noscript=1 | ",
-    "https://cdn-cookieyes.com/assets/images/revisit.svg | Revisit consent button",
-    "https://cdn-cookieyes.com/assets/images/close.svg | ",
-    "https://cdn-cookieyes.com/assets/images/poweredbtcky.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Logotype_Vectoriel_Monastere-1.svg | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Symbole.png | ",
-    "https://monastere.ca/wp-content/uploads/2023/07/bandeau-citation-700x467.webp | Monastere des Augustines - Vieux-Québec",
-    "https://monastere.ca/wp-content/uploads/2023/07/le-comptoir-commande.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_3.webp | Deux femmes méditent au Monastère des Augustines",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_4.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_2.webp | Monastère des Augustines - Accueil entrée extérieure",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_5.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_6.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/08/Image_Carrousel_Accueil_7.webp | ",
-    "https://monastere.ca/wp-content/uploads/2023/09/Image_Carrousel_Accueil-954x954.webp | "
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/12/Hulreys-logo-2.png?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2025/03/Group-18-1.jpg?x59041 | ",
+    "https://www.hurleysirishpub.com/wp-content/uploads/2024/08/Group-9-2.jpg?x59041 | ",
+    " | en",
+    " | fr",
+    "/wp-content/plugins/gtranslate/flags/svg/en-ca.svg | en",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
+    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | "
    ],
    "iframes": [
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.6574247076405!2d-73.5759238!3d45.4968429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a69e33c2f6",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18926.878588292915!2d-73.646235778634!3d45.46636777045083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.",
     "",
-    "https://www.googletagmanager.com/ns.html?id=GTM-TGX2BNM",
     "",
     "",
     ""
@@ -268,300 +190,28 @@
    "calendriers": []
   },
   "navigateur": {
-   "taille": 15530,
-   "texte": "Se ressourcer au cœur de l'histoire - Monastère des Augustines\nNous respectons votre vie privée.\nNous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou des contenus personnalisés et analyser notre trafic. En cliquant sur « Tout accepter », vous consentez à notre utilisation des cookies.\nPersonnaliser\nAccepter tout\nPersonnaliser les préférences en matière de consentement\nNous utilisons des cookies pour vous aider à naviguer efficacement et à exécuter certaines fonctionnalités. Vous trouverez des informations détaillées sur tous les cookies sous chaque catégorie de consentement ci-dessous.\nLes cookies qui sont catégorisés comme « nécessaires » sont stockés sur votre navigateur car ils sont essentiels pour permettre les fonctionnalités de base du site. ... \nAfficher plus\nNécessaire\nToujours actif\nLes cookies nécessaires sont cruciaux pour les fonctions de base du site Web et celui-ci ne fonctionnera pas comme prévu sans eux.Ces cookies ne stockent aucune donnée personnellement identifiable.\nCookie\n__cf_bm\nDurée\n1 heure\nDescription\nCloudflare a placé ce témoin pour prendre en charge la gestion des robots Cloudflare.\nCookie\nrc::a\nDurée\nN'expire jamais\nDescription\nThis cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.\nCookie\nrc::c\nDurée\nsession\nDescription\nThis cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.\nCookie\nlocalization\nDurée\n1 an\nDescription\nThe localization cookie stores user preferences for language and region to provide a personalized browsing experience.\nCookie\ncart_currency\nDurée\n14 jour\nDescription\nShopify sets this cookie to remember the user’s country of origin and populate the correct transaction currency.\nCookie\ncart\nDurée\n3 mois\nDescription\n Shopify sets this cookie to provide a connection with the shopping cart.\nCookie\nXSRF-TOKEN\nDurée\n2 heure\nDescription\nWix a placé ce témoin à des fins de sécurité.\nCookie\nci_session\nDurée\n2 heure\nDescription\nThis cookie is set as default session Cookie name in config.php in config folder in CodeIgniter.\nCookie\nwordpress_test_cookie\nDurée\nsession\nDescription\nWordPress définit ce témoin pour déterminer si les témoins sont activés sur les navigateurs des utilisateurs.\nCookie\nJSESSIONID\nDurée\nsession\nDescription\nNew Relic utilise ce témoin pour stocker un identifiant de session afin que New Relic puisse surveiller le nombre de sessions pour une application.\nCookie\ncookieyes-*\nDurée\n1 an\nDescription\nCookieYes sets this cookie for consent solution management.\nCookie\nPHPSESSID\nDurée\nsession\nDescription\nCe témoin est natif des applications PHP. Le témoin stocke et identifie un identifiant de session unique d’un utilisateur afin de gérer les sessions d’utilisateurs sur le site Internet. Ce témoin est un témoin de session et sera supprimé lorsque toutes les fenêtres du navigateur seront fermées.\nCookie\n_shop_app_essential\nDurée\n1 an\nDescription\nShopify sets this cookie, which contains essential information required for the proper functioning of Shop.app.\nCookie\n_shopify_test\nDurée\nsession\nDescription\nShopify sets this cookie to check cookie capabilities on the client.\nCookie\nwpEmojiSettingsSupports\nDurée\nsession\nDescription\nWordPress sets this cookie when a user interacts with emojis on a WordPress site. It helps determine if the user's browser can display emojis properly.\nCookie\nwordpress_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie when a user logs in to the WordPress administration. It stores the user's authentication details, allowing them to access the backend. \nCookie\nwordpress_sec_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to provide protection against hackers and store account details.\nCookie\nwordpress_logged_in_*\nDurée\npassé(e)\nDescription\nWordPress sets this to indicate that you are logged in and who you are, for most interface use.\nCookie\nwp-settings-*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to preserve the user’s wp-admin settings.\nCookie\nwp-settings-time-*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to preserve the user’s wp-admin settings. \nCookie\nwordpressuser_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to authenticate users and maintain their login session. It ensures that logged-in users can navigate the website securely and access authorised areas such as their account dashboard or the admin panel.\nCookie\nwordpresspass_*\nDurée\npassé(e)\nDescription\nWordPress sets this cookie to authenticate logged-in users securely. It stores an encrypted version of the password to verify user credentials while ensuring that the actual password is never exposed.\nFonctionnelle\nLes cookies fonctionnels permettent d'exécuter certaines fonctionnalités telles que le partage du contenu du site Web sur des plateformes de médias sociaux, la collecte de commentaires et d'autres fonctionnalités tierces.\nCookie\nwp-wpml_current_language\nDurée\nsession\nDescription\nLe plug-in multilingue de WordPress définit ce témoin pour stocker les paramètres actuels de la langue/du langage.\nCookie\nlang\nDurée\n1 mois\nDescription\nLinkedIn utilise ce témoin pour mémoriser le paramètre de langue d’un utilisateur.\nCookie\nsp_t\nDurée\n1 an\nDescription\nThe sp_t cookie is set by Spotify to implement audio content from Spotify on the website and also registers information on user interaction related to the audio content.\nCookie\nsp_landing\nDurée\n1 jour\nDescription\nThe sp_landing is set by Spotify to implement audio content from Spotify on the website and also registers information on user interaction related to the audio content.\nCookie\nytidb::LAST_RESULT_ENTRY_KEY\nDurée\nN'expire jamais\nDescription\nThe cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user. This information is used to improve the user experience by providing more relevant search results in the future.\nAnalytique\nLes cookies analytiques sont utilisés pour comprendre comment les visiteurs interagissent avec le site Web. Ces cookies aident à fournir des informations sur le nombre de visiteurs, le taux de rebond, la source de trafic, etc.\nCookie\n_ga_*\nDurée\n1 an 1 mois 4 jour\nDescription\nGoogle Analytics sets this cookie to store and count page views.\nCookie\n_ga\nDurée\n1 an 1 mois 4 jour\nDescription\nGoogle Analytics utilise ce témoin pour calculer les données relatives aux visiteurs, aux sessions et aux campagnes et suivre l’utilisation du site pour le rapport d’analyse du site. Le témoin stocke les informations de manière anonyme et attribue un numéro généré de manière aléatoire pour reconnaître les visiteurs uniques.\nCookie\ncheckout_locale\nDurée\nsession\nDescription\nShopify sets this cookie for shopping cart, checkout and payment purposes.\nCookie\n_gid\nDurée\n1 jour\nDescription\nGoogle Analytics utilise ce témoin pour stocker des informations sur la façon dont les visiteurs utilisent un site Internet tout en créant un rapport d’analyse des performances du site. Certaines des données collectées comprennent le nombre de visiteurs, leur source et les pages qu’ils visitent de manière anonyme.\nCookie\n_fbp\nDurée\n3 mois\nDescription\nFacebook définit ce témoin pour afficher des publicités lorsque vous êtes sur Facebook ou sur une plateforme numérique alimentée par la publicité de Facebook après avoir visité le site Internet.\nCookie\nprism_*\nDurée\n1 mois\nDescription\nActive Campaign sets this cookie to track and store interactions.\nCookie\n_hjSessionUser_*\nDurée\n1 an\nDescription\nHotjar sets this cookie to ensure data from subsequent visits to the same site is attributed to the same user ID, which persists in the Hotjar User ID, which is unique to that site.\nCookie\n_hjSession_*\nDurée\n1 heure\nDescription\nHotjar sets this cookie to ensure data from subsequent visits to the same site is attributed to the same user ID, which persists in the Hotjar User ID, which is unique to that site.\nCookie\n_gat_UA-",
+   "taille": 2179,
+   "texte": "Contact - Hurleys\nContact us\nHurley’s Irish Pub\nOur famous flagship location\n1225 Crescent Street  Montreal, Quebec  514.861.4111* \nInstagram @hurleysirishpub\n *Please note that during peak times the phone is unlikely to be answered. \nBetter to drop by and chat over a pint instead! Or just use the form below. 😉\nHurley’s YUL\nPierre Trudeau Airport (two locations)\nGate 52, International\nGate 81, United States\nEnjoy our famous friendliness, delicious fare, and North America’s best pint of Guinness while on your way in or out of Montreal.\nContact Us\nOur flagship location in downtown Montreal, on three floors with a cozy historic ambiance, multiple interior and exterior areas and music seven nights a week.\nEnglish <https://www.hurleysirishpub.com/contact/>\nFrench <https://www.hurleysirishpub.com/contact/>\nen\nKeystroke\nAction\n←\nMove left\n→\nMove right\n↑\nMove up\n↓\nMove down\n+\nZoom in\n-\nZoom out\nHome\nJump left by 75%\nEnd\nJump right by 75%\nPage Up\nJump up by 75%\nPage Down\nJump down by 75%\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nMap Data\nMap data ©2026 Google\nMap data ©2026 Google\n100 m \nClick to toggle between metric and imperial units\nTerms <https://www.google.com/intl/en_CA/help/terms_maps.html>\nReport a map error <https://www.google.com/maps/@45.4968805,-73.5747597,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3>\nBESbswy\nBESbswy\nKeystroke\nAction\n←\nMove left\n→\nMove right\n↑\nMove up\n↓\nMove down\n+\nZoom in\n-\nZoom out\nHome\nJump left by 75%\nEnd\nJump right by 75%\nPage Up\nJump up by 75%\nPage Down\nJump down by 75%\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nSorry, we have no imagery here.\nMap Data\nMap data ©2026 Google\nMap data ©2026 Google\n1 km \nClick to toggle between metric and imperial units\nTerms <https://www.google.com/intl/en_CA/help/terms_maps.html>\nReport a map error <https://www.google.com/maps/@45.4556115,-73.7542119,13z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3>\nBESbswy\nBESbswy",
    "courriels": [],
    "contact": [
-    "https://monastere.ca/nous-joindre/#stationnements",
-    "https://monastere.ca/nous-joindre/#transport_commun",
-    "https://monastere.ca/offres-demploi/"
+    "https://www.hurleysirishpub.com/contact/"
    ],
    "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/monastere.ca\\/\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Se ressourcer au cœur de l'histoire - Monastère des Augustines\",\"isPartOf\":{\"@id\":\"https:\\/\\/monastere.ca\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"datePublished\":\"2023-07-14T16:59:23+00:00\",\"dateModified\":\"2026-11-05T17:08:22+00:00\",\"description\":\"Dans le Vieux-Québec, il est possible de se ressourcer grâce à un patrimoine riche de près de quatre siècles d’histoire.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/monastere.ca\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#primaryimage\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2025\\/03\\/Entree-Remparts-ete-022.jpg\",\"width\":2000,\"height\":1333},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/monastere.ca\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/monastere.ca\\/#website\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"name\":\"Monastère des Augustines\",\"description\":\"Monastère des Augustines, un havre patrimonial authentique de santé et de mieux-être avec atelier, spa, musée, restaurant et hôtellerie au Québec.\",\"publisher\":{\"@id\":\"https:\\/\\/monastere.ca\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/monastere.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/monastere.ca\\/#organization\",\"name\":\"Monastère des Augustines\",\"url\":\"https:\\/\\/monastere.ca\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"contentUrl\":\"https:\\/\\/monastere.ca\\/wp-content\\/uploads\\/2023\\/07\\/logo-monastere.svg\",\"width\":1,\"height\":1,\"caption\":\"Monastère des Augustines\"},\"image\":{\"@id\":\"https:\\/\\/monastere.ca\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/monastere.ca\\/?locale=fr_CA\",\"https:\\/\\/www.instagram.com\\/lemonasteredesaugustines\\/\",\"https:\\/\\/www.linkedin.com\\/company\\/le-monastere-des-augustines\\/?originalSubdomain=ca\",\"https:\\/\\/fr.tripadvisor.ca\\/Hotel_Review-g155033-d8460643-Reviews-Le_Monastere_des_Augustines-Quebec_City_Quebec.html\"]}]}"
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\",\"name\":\"Contact - Hurleys\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\"},\"datePublished\":\"2024-08-16T19:32:25+00:00\",\"dateModified\":\"2026-10-19T21:14:30+00:00\",\"description\":\"Contact Hurley’s Irish Pub in Montreal for reservations, events, and inquiries. Experience great drinks, live music, and hospitality!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/contact\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.hurleysirishpub.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#website\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"name\":\"Hurleys Irish Pub\",\"description\":\"Irish pub\",\"publisher\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.hurleysirishpub.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#organization\",\"name\":\"Hurleys Irish Pub\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"contentUrl\":\"https:\\/\\/www.hurleysirishpub.com\\/wp-content\\/uploads\\/2024\\/12\\/Hulreys-logo-2.png\",\"width\":769,\"height\":760,\"caption\":\"Hurleys Irish Pub\"},\"image\":{\"@id\":\"https:\\/\\/www.hurleysirishpub.com\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.instagram.com\\/shawn.swick\\/\"]}]}"
    ],
    "heures": [],
    "liens": [
-    "https://monastere.ca/organiser-un-evenement/",
-    "https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "https://monastere.ca/organiser-un-evenement/#tab-retraite"
+    "https://www.hurleysirishpub.com/event-directory/",
+    "https://www.hurleysirishpub.com/events/?ical=1",
+    "https://www.hurleysirishpub.com/wp-content/plugins/events-calendar-modules-for-divi/assets/css/ecmdicons.min.css?x59041",
+    "https://www.hurleysirishpub.com/wp-content/plugins/events-calendar-modules-for-divi/styles/style.min.css?x59041",
+    "https://www.hurleysirishpub.com/wp-json/tribe/events/v1/"
    ],
    "menu": [
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Calendrier d’activités → https://monastere.ca/activites/",
-    "Activités muséales → https://monastere.ca/activites/?category=activites-museales&start_date",
-    "Activités muséales pour groupes → https://monastere.ca/activites/?category=activites-museales-pour-groupes&start_date",
-    "Corporatif → https://monastere.ca/organiser-un-evenement/#tab-corporatif",
-    "Privé → https://monastere.ca/organiser-un-evenement/#tab-prive",
-    "Retraite → https://monastere.ca/organiser-un-evenement/#tab-retraite",
-    "Organisation en santé → https://monastere.ca/organiser-un-evenement/#tab-organisations-en-sante",
-    "Le temps d’une activité → https://monastere.ca/activites/",
-    "En y organisant un événement → https://monastere.ca/organiser-un-evenement/"
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Events → https://www.hurleysirishpub.com/event-directory/",
+    "Book your event → https://www.hurleysirishpub.com/reservations/"
    ]
-  }
- },
- "https://lepointdevente.com/lemonastere": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://cdn.lepointdevente.com/themes/tpos/ogp-img-fr-5f32b556.gif",
-   "img": [
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
-    "https://tpos.s3.amazonaws.com/event-groups/7ZA/cabaretdecirquenovembre2026-1152x648-fr-6ab3ee4d.png | Cabaret des fêtes - Novembre 2026",
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "//cdn.lepointdevente.com/themes/cartecadeau-3/giftcard-img-fr-5fe0dbf4.png | Sur la scène Davignon On Stage",
-    "//cdn.lepointdevente.com/themes/cartescadeauxesp/giftcard-img-fr-655671f9.png | Espace Sophia",
-    "//cdn.lepointdevente.com/themes/cartecadeaulebar/giftcard-img-fr-6aa45515.png | Le Baratineur",
-    "//cdn.lepointdevente.com/themes/cartecadeau-7/giftcard-img-fr-5fe0e7fc.png | NSPW Pro Wrestling Academy",
-    "//cdn.lepointdevente.com/themes/cartecadeaumusiq/giftcard-img-fr-66be07a8.png | Festival de musique de chambre de Montréal",
-    "//cdn.lepointdevente.com/themes/cartecadeau-11/giftcard-img-fr-686ffc7d.png | La Slague",
-    "//cdn.lepointdevente.com/themes/cartecadeau/giftcard-img-fr-61c4e5c7.png | District 7 Production",
-    "//cdn.lepointdevente.com/themes/rocklacauze2021/giftcard-img-fr-61dca5a5.png | Rock la cauze",
-    "//cdn.lepointdevente.com/themes/cartecadeau-4/giftcard-img-fr-61ed6b87.png | Le Zaricot",
-    "//cdn.lepointdevente.com/themes/cartecadeaulesgr/giftcard-img-fr-654bb2a3.png | Les Grands Bois - Arts et Spectacles",
-    "//cdn.lepointdevente.com/themes/cartecadeau-8/giftcard-img-fr-6aeb8fb0.png | CELEB'Événements INC.",
-    "//cdn.lepointdevente.com/themes/sallejuliepothie/giftcard-img-fr-66be0822.png | Salle Julie-Pothier",
-    "//cdn.lepointdevente.com/themes/cartescadeaux/giftcard-img-fr-6a2714da.png | Le Saint-Jean Comédie Club",
-    "//cdn.lepointdevente.com/themes/cartecadeau-9/giftcard-img-fr-61ed6b35.png | Moulin Marcoux",
-    "//cdn.lepointdevente.com/themes/cartecadeaugft/giftcard-img-fr-63810db0.png | Les Grandes Fêtes TELUS",
-    "//cdn.lepointdevente.com/themes/cartecadeau-6/giftcard-img-fr-5fe0cf6f.png | Comité culturel de la Salle Augustin-Norbert-Morin",
-    "//cdn.lepointdevente.com/themes/cartecadeau-12/giftcard-img-fr-673f78f3.png | Les Productions Les 2 vallées"
-   ],
-   "iframes": [],
-   "calendriers": []
-  },
-  "simple": {
-   "taille": 5671,
-   "texte": "Le Monastère - Lepointdevente.com\nPasser au contenu <https://lepointdevente.com/lemonastere#skip-content-anchor>\nMenu principal\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nAide\nCentre d'aide <http://aide.lepointdevente.com/>\nTutoriels vidéos <https://www.youtube.com/@Lepointdeventecom-vu9lt/videos>\nF.A.Q. <https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com>\nÉtudes de cas <https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas>\nBonnes pratiques <https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques>\nFormations <https://lepointdevente.com/organisateurs/landing-page/formations>\nEnglish <https://lepointdevente.com/?lang=en>\nConnexion <https://lepointdevente.com/connexion/>\nMon compte <https://lepointdevente.com/mon-compte/>\nGestion des événements <https://lepointdevente.com/gestion/>\nPanier d'achat <https://lepointdevente.com/panier>\nDéconnexion <https://lepointdevente.com/deconnexion/>\nCréer un événement <https://lepointdevente.com/organisateurs>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un événement <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Longueuil <https://lepointdevente.com/?type=physical&locality=2&radius=0>\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nConditions d'utilisation <https://lepointdevente.com/conditions/>\nPolitique de confidentialité <https://lepointdevente.com/conditions/#confidentialite>\nPréférences de confidentialité\nÀ \nDans un rayon de \n km\n de \nRechercher partout\n(\nPlus d'options\n)\nLe Monastère\n+1 438-558-1863 <tel:+1 438-558-1863>\nbilletterie@le-monastere.ca <mailto:billetterie@le-monastere.ca>\nle-monastere.ca <https://le-monastere.ca>\nÉvénements à venir\nCabaret des fêtes - Novembre 2026 Du 19 au 21 novembre 2026 Centre St Jax, Montréal, QC <https://lepointdevente.com/billets/cabaretdecirquenovembre2026>\n© 2010–2026 Tous droits réservés\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un compte <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Longueuil <https://lepointdevente.com/?type=physical&locality=2&radius=0>\nUtilisation de cookies\nNous utilisons des témoins (cookies) pour améliorer votre expérience de navigation, offrir des fonctionnalités relatives à notre site et analyser le trafic de nos sites.\nEn cliquant sur « Tout accepter », vous consentez à ce que nous utilisions tous les types de témoins. Des informations complémentaires se trouvent dans nos \npolitiques de confidentialités <https://lepointdevente.com/conditions/#confidentialite>\n.\nGérer les préférences\nTout accepter\nGérer les préférences\nEssentiels\n Ces témoins sont essentiels au fonctionnement de notre site et sans eux, notre site ne fonctionnera pas correctement. Ces témoins sont nécessaires, par exemple, pour la connexion à un compte client et pour assurer la sécurité de nos sites. L’activation des témoins essentiels est donc obligatoire. \nFonctionnels\n Ces témoins servent à améliorer votre expérience de navigation en enregistrant certaines de vos préférences. Si vous désactivez ces témoins, certaines de vos préférences ne seront plus enregistrées, mais vous pourrez quand même utiliser nos sites sans problème. \nMarketing\n Ces témoins collectent de l’information sur la façon dont les utilisateurs naviguent sur nos sites sans permettre de les identifier directement. Les données recueillies sont utilisées afin d’étudier et d’améliorer l’expérience de navigation sur nos sites. Ces témoins nous permettent, par exemple, d’identifier les pages les plus visitées sur nos sites. \nRetour\nConfirmer\n Ce panier d'achat est hébergé par \nLepointdevente.com <https://lepointdevente.com>\n. Des témoins (cookies) essentiels au fonctionnement du panier d'achat sont en place pour activer des fonctions de base, comme la navigation et la sécurité. Ce sont les seuls témoins activés. En utilisant ce panier d'achat, vous acceptez l'utilisation de ces témoins.",
-   "courriels": [
-    "billetterie@le-monastere.ca"
-   ],
-   "contact": [
-    "https://lepointdevente.com/contact/"
-   ],
-   "jsonld": [],
-   "heures": [],
-   "liens": [
-    "http://aide.lepointdevente.com/",
-    "http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "http://blog.lepointdevente.com/",
-    "https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "https://facebook.com/lepointdevente",
-    "https://instagram.com/lepointdevente",
-    "https://lepointdevente.com",
-    "https://lepointdevente.com/lemonastere",
-    "https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "https://lepointdevente.com/organisateurs/landing-page/formations",
-    "https://twitter.com/lepointdevente",
-    "https://www.linkedin.com/company/lepointdevente-com",
-    "https://www.tiktok.com/@lepointdevente.com",
-    "https://www.youtube.com/@Lepointdeventecom-vu9lt/videos"
-   ],
-   "menu": [
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Centre d'aide → http://aide.lepointdevente.com/",
-    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
-    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
-    "Gestion des événements → https://lepointdevente.com/gestion/",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Centre d'aide → http://aide.lepointdevente.com/",
-    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
-    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
-    "Gestion des événements → https://lepointdevente.com/gestion/",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Acheter des billets → https://lepointdevente.com/",
-    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Événements → https://lepointdevente.com/",
-    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
-    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
-    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
-    "Événements à Longueuil → https://lepointdevente.com/?type=physical&locality=2&radius=0",
-    "Facebook → https://facebook.com/lepointdevente",
-    "Twitter → https://twitter.com/lepointdevente",
-    "Instagram → https://instagram.com/lepointdevente",
-    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
-    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "billetterie@le-monastere.ca → mailto:billetterie@le-monastere.ca",
-    "Cabaret des fêtes - Novembre 2026 Du 19 au 21 nove → https://lepointdevente.com/billets/cabaretdecirquenovembre2026",
-    "Facebook → https://facebook.com/lepointdevente",
-    "Twitter → https://twitter.com/lepointdevente",
-    "Instagram → https://instagram.com/lepointdevente",
-    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
-    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
-    "Acheter des billets → https://lepointdevente.com/",
-    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "Événements → https://lepointdevente.com/",
-    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
-    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
-    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
-    "Événements à Longueuil → https://lepointdevente.com/?type=physical&locality=2&radius=0",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Lepointdevente.com → https://lepointdevente.com",
-    " → https://lepointdevente.com/carte-cadeau/celeb-evenements-inc"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://cdn.lepointdevente.com/themes/tpos/ogp-img-fr-5f32b556.gif",
-   "img": [
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
-    "https://tpos.s3.amazonaws.com/event-groups/7ZA/cabaretdecirquenovembre2026-1152x648-fr-6ab3ee4d.png | Cabaret des fêtes - Novembre 2026",
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
-    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
-    "//cdn.lepointdevente.com/themes/cartecadeau-3/giftcard-img-fr-5fe0dbf4.png | Sur la scène Davignon On Stage",
-    "//cdn.lepointdevente.com/themes/cartescadeauxesp/giftcard-img-fr-655671f9.png | Espace Sophia",
-    "//cdn.lepointdevente.com/themes/cartecadeaulebar/giftcard-img-fr-6aa45515.png | Le Baratineur",
-    "//cdn.lepointdevente.com/themes/cartecadeau-7/giftcard-img-fr-5fe0e7fc.png | NSPW Pro Wrestling Academy",
-    "//cdn.lepointdevente.com/themes/cartecadeaumusiq/giftcard-img-fr-66be07a8.png | Festival de musique de chambre de Montréal",
-    "//cdn.lepointdevente.com/themes/cartecadeau-11/giftcard-img-fr-686ffc7d.png | La Slague",
-    "//cdn.lepointdevente.com/themes/cartecadeau/giftcard-img-fr-61c4e5c7.png | District 7 Production",
-    "//cdn.lepointdevente.com/themes/rocklacauze2021/giftcard-img-fr-61dca5a5.png | Rock la cauze",
-    "//cdn.lepointdevente.com/themes/cartecadeau-4/giftcard-img-fr-61ed6b87.png | Le Zaricot",
-    "//cdn.lepointdevente.com/themes/cartecadeaulesgr/giftcard-img-fr-654bb2a3.png | Les Grands Bois - Arts et Spectacles",
-    "//cdn.lepointdevente.com/themes/cartecadeau-8/giftcard-img-fr-6aeb8fb0.png | CELEB'Événements INC.",
-    "//cdn.lepointdevente.com/themes/sallejuliepothie/giftcard-img-fr-66be0822.png | Salle Julie-Pothier",
-    "//cdn.lepointdevente.com/themes/cartescadeaux/giftcard-img-fr-6a2714da.png | Le Saint-Jean Comédie Club",
-    "//cdn.lepointdevente.com/themes/cartecadeau-9/giftcard-img-fr-61ed6b35.png | Moulin Marcoux",
-    "//cdn.lepointdevente.com/themes/cartecadeaugft/giftcard-img-fr-63810db0.png | Les Grandes Fêtes TELUS",
-    "//cdn.lepointdevente.com/themes/cartecadeau-6/giftcard-img-fr-5fe0cf6f.png | Comité culturel de la Salle Augustin-Norbert-Morin",
-    "//cdn.lepointdevente.com/themes/cartecadeau-12/giftcard-img-fr-673f78f3.png | Les Productions Les 2 vallées"
-   ],
-   "iframes": [
-    ""
-   ],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 5680,
-   "texte": "Le Monastère - Lepointdevente.com\nPasser au contenu <https://lepointdevente.com/lemonastere#skip-content-anchor>\nMenu principal\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nAide\nCentre d'aide <http://aide.lepointdevente.com/>\nTutoriels vidéos <https://www.youtube.com/@Lepointdeventecom-vu9lt/videos>\nF.A.Q. <https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com>\nÉtudes de cas <https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas>\nBonnes pratiques <https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques>\nFormations <https://lepointdevente.com/organisateurs/landing-page/formations>\nEnglish <https://lepointdevente.com/?lang=en>\nConnexion <https://lepointdevente.com/connexion/>\nConnexion\nMon compte <https://lepointdevente.com/mon-compte/>\nGestion des événements <https://lepointdevente.com/gestion/>\nPanier d'achat <https://lepointdevente.com/panier>\nDéconnexion <https://lepointdevente.com/deconnexion/>\nCréer un événement <https://lepointdevente.com/organisateurs>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un événement <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Longueuil <https://lepointdevente.com/?type=physical&locality=2&radius=0>\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nConditions d'utilisation <https://lepointdevente.com/conditions/>\nPolitique de confidentialité <https://lepointdevente.com/conditions/#confidentialite>\nPréférences de confidentialité\nRechercher partout\n(\nPlus d'options\n)\nLe Monastère\n+1 438-558-1863 <tel:+1 438-558-1863>\nbilletterie@le-monastere.ca <mailto:billetterie@le-monastere.ca>\nle-monastere.ca <https://le-monastere.ca>\nÉvénements à venir\nCabaret des fêtes - Novembre 2026 Du 19 au 21 novembre 2026 Centre St Jax, Montréal, QC <https://lepointdevente.com/billets/cabaretdecirquenovembre2026>\n© 2010–2026 Tous droits réservés\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un compte <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Longueuil <https://lepointdevente.com/?type=physical&locality=2&radius=0>\nUtilisation de cookies\nNous utilisons des témoins (cookies) pour améliorer votre expérience de navigation, offrir des fonctionnalités relatives à notre site et analyser le trafic de nos sites.\nEn cliquant sur « Tout accepter », vous consentez à ce que nous utilisions tous les types de témoins. Des informations complémentaires se trouvent dans nos \npolitiques de confidentialités <https://lepointdevente.com/conditions/#confidentialite>\n.\nGérer les préférences\nTout accepter\nGérer les préférences\nEssentiels\n Ces témoins sont essentiels au fonctionnement de notre site et sans eux, notre site ne fonctionnera pas correctement. Ces témoins sont nécessaires, par exemple, pour la connexion à un compte client et pour assurer la sécurité de nos sites. L’activation des témoins essentiels est donc obligatoire. \nFonctionnels\n Ces témoins servent à améliorer votre expérience de navigation en enregistrant certaines de vos préférences. Si vous désactivez ces témoins, certaines de vos préférences ne seront plus enregistrées, mais vous pourrez quand même utiliser nos sites sans problème. \nMarketing\n Ces témoins collectent de l’information sur la façon dont les utilisateurs naviguent sur nos sites sans permettre de les identifier directement. Les données recueillies sont utilisées afin d’étudier et d’améliorer l’expérience de navigation sur nos sites. Ces témoins nous permettent, par exemple, d’identifier les pages les plus visitées sur nos sites. \nRetour\nConfirmer\n Ce panier d'achat est hébergé par \nLepointdevente.com <https://lepointdevente.com>\n. Des témoins (cookies) essentiels au fonctionnement du panier d'achat sont en place pour activer des fonctions de base, comme la navigation et la sécurité. Ce sont les seuls témoins activés. En utilisant ce panier d'achat, vous acceptez l'utilisation de ces témoins. \nprev\nnext\nDétection du zoom",
-   "courriels": [
-    "billetterie@le-monastere.ca"
-   ],
-   "contact": [
-    "https://lepointdevente.com/contact/"
-   ],
-   "jsonld": [],
-   "heures": [],
-   "liens": [
-    "http://aide.lepointdevente.com/",
-    "http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "http://blog.lepointdevente.com/",
-    "https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "https://cdn.lepointdevente.com/releases/6af63a30/plugins/embed/embed.css",
-    "https://facebook.com/lepointdevente",
-    "https://instagram.com/lepointdevente",
-    "https://lepointdevente.com",
-    "https://lepointdevente.com/lemonastere",
-    "https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "https://lepointdevente.com/organisateurs/landing-page/formations",
-    "https://twitter.com/lepointdevente",
-    "https://www.linkedin.com/company/lepointdevente-com",
-    "https://www.tiktok.com/@lepointdevente.com",
-    "https://www.youtube.com/@Lepointdeventecom-vu9lt/videos"
-   ],
-   "menu": [
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Centre d'aide → http://aide.lepointdevente.com/",
-    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
-    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
-    "Gestion des événements → https://lepointdevente.com/gestion/",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Centre d'aide → http://aide.lepointdevente.com/",
-    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
-    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
-    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
-    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
-    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
-    "Gestion des événements → https://lepointdevente.com/gestion/",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Acheter des billets → https://lepointdevente.com/",
-    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "Créer un événement → https://lepointdevente.com/organisateurs",
-    "Événements → https://lepointdevente.com/",
-    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
-    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
-    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
-    "Événements à Longueuil → https://lepointdevente.com/?type=physical&locality=2&radius=0",
-    "Facebook → https://facebook.com/lepointdevente",
-    "Twitter → https://twitter.com/lepointdevente",
-    "Instagram → https://instagram.com/lepointdevente",
-    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
-    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "billetterie@le-monastere.ca → mailto:billetterie@le-monastere.ca",
-    "Cabaret des fêtes - Novembre 2026 Du 19 au 21 nove → https://lepointdevente.com/billets/cabaretdecirquenovembre2026",
-    "Facebook → https://facebook.com/lepointdevente",
-    "Twitter → https://twitter.com/lepointdevente",
-    "Instagram → https://instagram.com/lepointdevente",
-    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
-    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
-    "Acheter des billets → https://lepointdevente.com/",
-    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
-    "Événements → https://lepointdevente.com/",
-    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
-    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
-    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
-    "Événements à Longueuil → https://lepointdevente.com/?type=physical&locality=2&radius=0",
-    "Blogue → http://blog.lepointdevente.com/",
-    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
-    "Lepointdevente.com → https://lepointdevente.com",
-    " → https://lepointdevente.com/carte-cadeau/celeb-evenements-inc"
-   ]
-  }
- },
- "https://www.cinematheque.qc.ca/robots.txt": {
-  "simple": {
-   "erreur": "403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/robots.txt"
-  },
-  "navigateur_images": {
-   "og": null,
-   "img": [],
-   "iframes": [],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 145,
-   "texte": "User-agent: bingbot\nCrawl-delay: 30\nUser-agent: msnbot\nCrawl-delay: 30\nUser-Agent: *\nAllow: /\nSitemap: https://www.cinematheque.qc.ca/sitemap.xml",
-   "courriels": [],
-   "contact": [],
-   "jsonld": [],
-   "heures": [],
-   "liens": [],
-   "menu": []
   }
  }
 }

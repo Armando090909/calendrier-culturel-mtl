@@ -1,11 +1,7 @@
 {
  "total": 1375,
- "echecs": 22,
+ "echecs": 18,
  "par_site": {
-  "centaurtheatre.com": {
-   "affiches": 4,
-   "echecs": 4
-  },
   "calendrier.umontreal.ca": {
    "affiches": 19,
    "echecs": 3
@@ -322,6 +318,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "centaurtheatre.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "nevermonday-collective.bloomtickets.ca": {
    "affiches": 1,
    "echecs": 0
@@ -415,11 +415,6 @@
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Compagnie-Marie-Chouinard-Henri-Michaux-Mouvements-et-Solos-et-duos-choisis-1.jpg"
-  ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
