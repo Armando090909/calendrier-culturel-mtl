@@ -35,7 +35,7 @@ import ia  # noqa: E402
 import qualite  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
-from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
+from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, raison_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -560,6 +560,15 @@ def main() -> int:
         nouveaux_lieux.append(nom_propre)
         return lieux.ajouter(nom_propre, info, alias=nom)
 
+    # Fiches écartées (17 nov. 2026) : chaque règle note ce qu'elle retire, avec la raison, dans docs/rejets.json,
+    # pour voir si une règle est trop sévère (petits lieux, activités bénévoles) ou trop permissive.
+    rejets = collections.defaultdict(list)
+
+    def rejeter(regle, x, detail=""):
+        rejets[regle].append({"titre": x.get("titre", ""), "date": x.get("date") or f'{x.get("debut", "")} → {x.get("fin", "")}',
+                              "lieu": x.get("lieu", ""), "url": x.get("url", ""), "source": x.get("source", ""),
+                              **({"detail": detail} if detail else {})})
+
     events = []
     for b in bruts:
         try:
@@ -567,8 +576,14 @@ def main() -> int:
         except ValueError:
             continue
         if b["annule"] or d < aujourd or d > fin or not b["titre"]:
+            if b["annule"] and aujourd <= d <= fin:
+                rejeter("annulé selon la source", b)
             continue
-        if est_non_culturel(b["titre"], b["categorie"]) or TITRE_ABSENT.search(b["titre"]):
+        if est_non_culturel(b["titre"], b["categorie"]):
+            rejeter("pas une sortie culturelle", b, raison_non_culturel(b["titre"], b["categorie"]))
+            continue
+        if TITRE_ABSENT.search(b["titre"]):
+            rejeter("titre absent", b)
             continue
         lieu = lieu_canon(b["lieu"], b["adresse"], b["ville"])
         if lieu is None and b["source"] == "formulaire" and b["lieu"]:
@@ -576,10 +591,12 @@ def main() -> int:
             print(f"  formulaire : lieu « {b['lieu']} » non confirmé sur l'île par la carte ; gardé quand même")
             lieu = b["lieu"].strip()
         if lieu is None:
+            rejeter("hors de l'île", b, " · ".join(x for x in (b["lieu"], b["adresse"], b["ville"]) if x))
             continue
         if not lieu and en_ligne_selon_texte(b["titre"] + " \n " + (b.get("description") or "")):
             lieu = "En ligne"
         if not lieu and b["source"] == "sorstu":
+            rejeter("Sors-tu sans salle (peut-être hors de Montréal)", b)
             continue  # Sors-tu? couvre tout le Québec et le Canada : sans salle, impossible de savoir si c'est à Montréal
         if b["discipline"] == "jeune":
             b["jeune_public"], b["discipline"] = True, ""
@@ -947,10 +964,14 @@ def main() -> int:
             d1, d2 = date.fromisoformat(s["debut"]), date.fromisoformat(s["fin"])
         except ValueError:
             continue
-        if d2 < aujourd or d1 > fin or est_non_culturel(s["titre"]) or TITRE_ABSENT.search(s["titre"]):
+        if d2 < aujourd or d1 > fin:
+            continue
+        if est_non_culturel(s["titre"]) or TITRE_ABSENT.search(s["titre"]):
+            rejeter("série : pas culturelle ou sans titre", s, raison_non_culturel(s["titre"]) if est_non_culturel(s["titre"]) else "titre absent")
             continue
         lieu = lieu_canon(s["lieu"], s.get("adresse", ""), s.get("ville", ""))
         if lieu is None:
+            rejeter("série : hors de l'île", s, " · ".join(x for x in (s["lieu"], s.get("adresse", ""), s.get("ville", "")) if x))
             continue
         k = plat(s["titre"])[:40] + "|" + plat(lieu or "")[:20]
         if k in vus:
@@ -998,6 +1019,7 @@ def main() -> int:
         if x["discipline"] != "expo":
             t = plat(x["titre"])[:25]
             if x.get("festival") or _dates_connues(x) >= 3:
+                rejeter("série remplacée par ses dates précises" if not x.get("festival") else "série de festival (les séances datées suffisent)", x)
                 continue
             if titres[t]:
                 absorbees.add((t, x["debut"], x["fin"]))
@@ -1008,6 +1030,9 @@ def main() -> int:
     expos = gardees
     if absorbees:
         avant_n = len(events)
+        for e in events:
+            if any(plat(e["titre"])[:25] == t and d1 <= e["date"] <= d2 for t, d1, d2 in absorbees):
+                rejeter("fiche isolée remplacée par la série du spectacle", e)
         events = [e for e in events if not any(plat(e["titre"])[:25] == t and d1 <= e["date"] <= d2 for t, d1, d2 in absorbees)]
         print(f"Fiches isolées remplacées par la série complète du spectacle : {avant_n - len(events)}")
     # La même exposition annoncée deux fois (« Exposition : X » à « Lieu à confirmer » et « X » à la bibliothèque) :
@@ -1157,6 +1182,9 @@ def main() -> int:
                     e["heure"] = c["heure"] or None
                 if c.get("nouvelle_date"):
                     e["date"] = c["nouvelle_date"]
+    for e in events:
+        if id(e) in retires:
+            rejeter("retirée à la main (corrections.json)", e)
     events = [e for e in events if id(e) not in retires]
     series_manuelles = corr.get("series", {})
     expos = [x for x in expos if x.get("url") not in corr.get("series_retirees", [])]  # doublons repérés à la main
@@ -1259,6 +1287,13 @@ def main() -> int:
     # festival), ou la page d'accueil d'un organisme dont les soirées sont déjà au calendrier avec leur date et leur heure.
     hotes_dates = {urlparse(e["url"]).netloc for e in events if e.get("heure") and e["url"].startswith("http")}
     avant_n = len(expos)
+    gardees_ids = {id(x) for x in expos if x.get("discipline") in (None, "", "expo") or not (
+        (x["lieu"] in ("", "Lieu à confirmer") and x["debut"] < (date.fromisoformat(x["fin"]) - timedelta(days=7)).isoformat())
+        or (urlparse(x.get("url", "")).path in ("", "/") and urlparse(x.get("url", "")).netloc in hotes_dates)
+        or (re.search(r"(?i)d[ée]voil|communiqu|/actualit|/news/|/blogu?e?/|/presse/", x.get("url", "")) and not x.get("horaire")))}
+    for x in expos:
+        if id(x) not in gardees_ids:
+            rejeter("série : sans salle, saison déjà détaillée ou annonce de saison", x)
     expos = [x for x in expos if x.get("discipline") in (None, "", "expo") or not (
         (x["lieu"] in ("", "Lieu à confirmer") and x["debut"] < (date.fromisoformat(x["fin"]) - timedelta(days=7)).isoformat())
         or (urlparse(x.get("url", "")).path in ("", "/") and urlparse(x.get("url", "")).netloc in hotes_dates)
@@ -1321,6 +1356,41 @@ def main() -> int:
         except Exception as exc:
             print(f"Archives en échec : {exc}")
     agenda.publier(events, SORTIE.parent / "ics")  # un fichier .ics par événement (ajout direct au calendrier)
+    try:  # disparitions depuis la publication précédente (sorties à venir qui ne sont plus au calendrier)
+        # référence : la publication de la veille, gardée à la première écriture du jour (les écritures suivantes du
+        # même jour, assemblage rapide puis enrichissement, se comparent à elle aussi)
+        f_veille = CACHE / "publication_veille.json"
+        ref = json.loads(f_veille.read_text(encoding="utf-8")) if f_veille.exists() else {}
+        if ref.get("_jour") != aujourd.isoformat() and SORTIE.exists():
+            ref = json.loads(SORTIE.read_text(encoding="utf-8"))
+            ref = {"_jour": aujourd.isoformat(), "events": ref.get("events", []), "expos": ref.get("expos", [])}
+            if not ESSAI:
+                f_veille.write_text(json.dumps(ref, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        avant = ref
+        cle_ = lambda x: (plat(x.get("titre", ""))[:30], x.get("date") or x.get("debut", ""))  # noqa: E731  (salle précisée : pas une disparition)
+        maintenant = {cle_(x) for x in data["events"] + data["expos"]}
+        motifs = {}
+        for regle, xs in rejets.items():
+            for x in xs:
+                motifs.setdefault((plat(x["titre"])[:30], x["date"].split(" → ")[0]), regle)
+        disparues = []
+        for x in (avant.get("events") or []) + (avant.get("expos") or []):
+            fin_x = x.get("date") or x.get("fin", "")
+            if fin_x >= aujourd.isoformat() and cle_(x) not in maintenant:
+                disparues.append({"titre": x.get("titre"), "date": x.get("date") or f'{x.get("debut")} → {x.get("fin")}',
+                                  "lieu": x.get("lieu"), "url": x.get("url"),
+                                  "raison": motifs.get(cle_(x), "plus annoncée par sa source (ou titre, date ou salle changés)")})
+        (SORTIE.parent / "rejets.json").write_text(json.dumps({
+            "date": aujourd.isoformat(),
+            "regles": {r: len(xs) for r, xs in sorted(rejets.items(), key=lambda kv: -len(kv[1]))},
+            "par_motif": {r: dict(collections.Counter(x.get("detail", "") for x in xs).most_common(60))
+                          for r, xs in rejets.items() if any(x.get("detail") for x in xs)},
+            "exemples": {r: xs[:40] for r, xs in rejets.items()},
+            "disparues": {"total": len(disparues), "liste": disparues[:300]},
+        }, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"Fiches écartées : {sum(len(x) for x in rejets.values())} ; disparues depuis hier : {len(disparues)}.")
+    except Exception as exc:
+        print(f"Rapport des fiches écartées en échec : {exc}")
     SORTIE.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     try:  # page « Nos sources » : une erreur ici ne doit pas empêcher le rapport et la mémoire des salles
         ecrire_liste_sources(conf, rapport)

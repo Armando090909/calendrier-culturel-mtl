@@ -30,14 +30,17 @@ def _has(text: str, mots: list[str]) -> bool:
 
 # Mots qui signalent une activité à écarter (cours, services, vie municipale…)
 NON_CULTUREL = [
+    # 17 nov. 2026 (décision de l'équipe) : tout ce qui sert à aller vers l'autre, parler, créer, penser ou s'émerveiller
+    # reste au calendrier : contes, clubs de lecture, jeux, cuisine, tricot et couture, conversation, éveil musical,
+    # échecs, science… ont été retirés de cette liste. Restent écartés : sport, cours et services, vie municipale, affaires.
     "yoga", "pilates", "zumba", "tai chi", "callisthenie", "cardio", "gym", "gym douce", "aide aux devoirs",
     "entraide aux devoirs", "informatique", "ipad", "iphone", "ping", "techno express", "soutien technique",
-    "depannage", "conversation", "francisation", "parlons francais", "cours de", "atelier de francais",
+    "depannage", "francisation", "parlons francais", "cours de", "atelier de francais",
     "seance du", "conseil d arrondissement", "comite", "consultation", "audition des opinions", "seance d information",
-    "marche fermier", "collecte de sang", "tricot", "couture", "jeux video", "jeu video", "jeux de societe",
-    "ludotheque", "lego", "bingo", "scrabble", "echecs", "cerveaux actifs", "aines", "bebe conte", "bebes contes",
-    "heure du conte", "contes pour les poupons", "matinee des tout petits", "eveil musical", "sac ados",
-    "club de lecture", "club de code", "impression 3d", "robotique", "hydroponie", "cuisine", "investissement",
+    "marche fermier", "collecte de sang", "groupes scolaires", "reserve aux groupes",  # pas ouvert au public
+    "ludotheque", "lego", "bingo", "cerveaux actifs", "aines",
+    "sac ados",
+    "club de code", "impression 3d", "robotique", "hydroponie", "investissement",
     "inauguration", "desensibilisation", "linkedin", "photoshop", "illustrator", "word", "logiciel",
     # événements d'affaires / corporatifs (pas de la culture)
     "c2 montreal", "mtl connecte", "reseautage", "networking", "salon de l emploi", "foire de l emploi",
@@ -49,7 +52,12 @@ REGLES = [
     ("quiz", ["quiz", "trivia", "jeu questionnaire", "pub quiz", "soiree quiz", "quizz"]),
     ("social", ["speed friending", "speed dating", "soiree rencontre", "rencontres amicales", "se faire des amis",
                 "make new friends", "echange linguistique", "tandem linguistique", "language exchange", "social club",
-                "together club", "soiree celibataires", "singles night", "meetup social"]),
+                "together club", "soiree celibataires", "singles night", "meetup social",
+                # 17 nov. 2026 : activités gardées par décision de l'équipe (aller vers l'autre, parler, jouer)
+                "conversation", "cafe conversation", "jeux de societe", "soiree jeux", "soiree de jeux", "echecs",
+                "scrabble", "jeux video", "jeu video", "club de jeux"]),
+    ("jeune", ["heure du conte", "bebes contes", "bebe conte", "contes pour les poupons", "matinee des tout petits",
+               "eveil musical", "eveil a la lecture", "conte pour enfants", "contes pour enfants"]),
     ("expo", ["vernissage", "finissage", "visite commentee", "visite guidee de l exposition"]),
     ("atelier", ["atelier", "ateliers", "initiation", "fabrication", "creation textile", "tricot", "couture", "broderie",
                  "perlage", "linogravure", "coloriage", "collage", "club d art", "club de laine", "machine a coudre",
@@ -69,7 +77,7 @@ REGLES = [
     ("cinema", ["cine", "cinema", "film", "projection", "documentaire", "bibliocinema", "court metrage"]),
     ("poesie", ["poesie", "poete", "poetes", "poetique", "slam", "slameur", "slameuse", "spoken word", "rap battle",
                 "battle de rap", "battle rap", "joute verbale", "clash de rap", "rap contender", "ligue de rap", "scene ouverte poesie", "micro ouvert poesie"]),
-    ("lettres", ["lecture", "auteur", "autrice", "litterature", "litteraire", "roman", "rencontre d auteur",
+    ("lettres", ["club de lecture", "lecture", "auteur", "autrice", "litterature", "litteraire", "roman", "rencontre d auteur",
                  "lancement de livre", "lancement du livre", "lancement litteraire", "conte pour adultes",
                  "soiree de contes", "club de lecture", "salon du livre", "bd", "bande dessinee"]),
     ("musique", ["concert", "musique", "jazz", "orchestre", "quatuor", "chorale", "chanson", "rap", "hip hop",
@@ -90,6 +98,7 @@ CATEGORIES = {
     "exposition": "expo", "arts visuels": "expo",
     "societe et histoire": "conference", "art de la parole": "poesie", "art et artisanat": "atelier",
     "fete et marche": "fete", "club de lecture": "lettres",
+    "science et techno": "conference", "jeux": "social", "cuisine": "atelier",  # catégories gardées (17 nov. 2026)
 }
 
 
@@ -118,12 +127,19 @@ def disciplines_aussi(titre: str, description: str, disc: str, lieu: str = "") -
 
 # Catégories de la Ville qui ne sont pas des sorties culturelles (services, ateliers pratiques, vie municipale)
 CATEGORIES_EXCLUES = ["sport", "loisir sportif", "vie democratique", "consultation", "soutien et echange", "bien etre",
-                      "jeux", "science et techno", "informatique", "cuisine", "rencontre avec personne elue",
+                      "informatique", "rencontre avec personne elue",  # « jeux », « science et techno », « cuisine » : gardés (17 nov. 2026)
                       "conseil et comite", "langues", "jardinage", "assemblee publique"]
 
 
 def est_non_culturel(titre: str, categorie: str = "") -> bool:
     return _has(titre, NON_CULTUREL) or _has(categorie, CATEGORIES_EXCLUES)
+
+
+def raison_non_culturel(titre: str, categorie: str = "") -> str:
+    """Le mot (ou la catégorie) qui écarte la fiche, pour le rapport des fiches écartées."""
+    t, c = f" {plat(titre)} ", f" {plat(categorie)} "
+    m = next((m for m in NON_CULTUREL if f" {m} " in t), None)
+    return f"mot « {m} » dans le titre" if m else f"catégorie « {next((m for m in CATEGORIES_EXCLUES if f' {m} ' in c), '?')} »"
 
 
 def classer(titre: str, categorie: str = "", description: str = "", defaut: str = "") -> str:
