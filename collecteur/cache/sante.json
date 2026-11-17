@@ -2,24 +2,19 @@
  "ouverts": {
   "champ:calendrier.umontreal.ca:salle": {
    "depuis": "2026-11-11",
-   "jours": 6,
+   "jours": 7,
    "issue": 15
   },
-  "champ:leredroom.com:heure": {
-   "depuis": "2026-11-16",
-   "jours": 1,
-   "issue": null
-  },
-  "champ:bardatcha.ca:heure": {
-   "depuis": "2026-11-16",
+  "champ:leministere.ca:heure": {
+   "depuis": "2026-11-17",
    "jours": 1,
    "issue": null
   }
  },
  "sources_ok": {
-  "Ville de Montréal – événements publics": 1458,
-  "Ask A Punk (DIY, punk, hardcore)": 24,
-  "Sors-tu? (14 prochains jours)": 237,
+  "Ville de Montréal – événements publics": 1451,
+  "Ask A Punk (DIY, punk, hardcore)": 26,
+  "Sors-tu? (14 prochains jours)": 192,
   "Songkick (concerts, 2 mois)": 371,
   "Espace GO": 4,
   "TNM": 3,
@@ -65,41 +60,41 @@
   "Comedyville": 46,
   "Cinéma Public": 54,
   "L'Illusion, Théâtre de marionnettes": 3,
-  "Studio 303": 2,
+  "Studio 303": 10,
   "Théâtre de la LNI": 4,
   "Tortue Berlue (théâtre jeune public)": 7,
-  "Librairie Drawn & Quarterly (événements)": 4,
+  "Librairie Drawn & Quarterly (événements)": 3,
   "Le Bordel Comédie Club": 18,
   "La Cabine Comédie Club": 21,
   "Montreal Comedy Club": 14,
-  "La Cenne": 4,
+  "La Cenne": 6,
   "Théâtre Bouches Décousues": 5,
-  "Espace Le Vrai Monde?": 1,
+  "Espace Le Vrai Monde?": 3,
   "Théâtre Mirella et Lino Saputo (CLDV)": 4,
   "Studio PACA (Les Foutoukours)": 22,
   "La Rocambolesque": 33,
-  "Librairie Le Port de tête": 12,
+  "Librairie Le Port de tête": 13,
   "N'était-ce pas l'été (ma.to)": 10,
   "Festival / Maison de la poésie de Montréal": 3,
   "La Brassée (café-concerts)": 31,
-  "Cabaret de Curiosités": 14,
-  "Victoria Hall (Westmount)": 8,
+  "Cabaret de Curiosités": 13,
+  "Victoria Hall (Westmount)": 4,
   "Le Red Room": 20,
   "Montreal Improv": 16,
-  "Together Club (Luma)": 19,
-  "Théâtre Paradoxe": 3,
-  "Salle Joseph-Rouleau (Jeunesses Musicales)": 6,
+  "Together Club (Luma)": 18,
+  "Théâtre Paradoxe": 5,
+  "Salle Joseph-Rouleau (Jeunesses Musicales)": 4,
   "Cat's Corner (danse swing)": 6,
   "LESPACEMAKER – événements": 64,
-  "LESPACEMAKER – formations": 82,
+  "LESPACEMAKER – formations": 79,
   "Planétarium (soirées spéciales)": 1,
   "UPop Montréal (université populaire)": 8,
   "Cœur des sciences UQAM (conférences grand public)": 21,
-  "UQAM – événements": 34,
-  "Université de Montréal – calendrier": 71,
-  "Concordia – événements": 12,
+  "UQAM – événements": 40,
+  "Université de Montréal – calendrier": 43,
+  "Concordia – événements": 15,
   "BAnQ – activités": 4,
-  "Centre Canadien d'Architecture – événements (Eventbrite)": 7,
+  "Centre Canadien d'Architecture – événements (Eventbrite)": 8,
   "Hexagram – conférences (recherche-création)": 1,
   "Cabaret Lion d'Or (billetterie)": 21,
   "LIM – saison (billetterie)": 3,
@@ -201,7 +196,7 @@
   "Le Balattou (billetterie, 2e page)": 10,
   "Le Belmont (billetterie)": 12,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 13,
-  "Soirées quiz (hebdomadaires)": 105,
+  "Soirées quiz (hebdomadaires)": 100,
   "Ligues d'improvisation (hebdomadaires)": 9,
   "Musique live hebdomadaire (Modavie)": 122,
   "ma.to – communauté (quiz, trivia)": 1,
@@ -249,7 +244,6 @@
   "Théâtre Maisonneuve (découverte)": 8
  },
  "totaux": {
-  "2026-11-03": 2464,
   "2026-11-04": 2375,
   "2026-11-05": 2431,
   "2026-11-06": 2509,
@@ -262,9 +256,10 @@
   "2026-11-13": 2860,
   "2026-11-14": 2830,
   "2026-11-15": 2731,
-  "2026-11-16": 2640
+  "2026-11-16": 2640,
+  "2026-11-17": 2609
  },
- "dernier_jour": "2026-11-16",
+ "dernier_jour": "2026-11-17",
  "minces_depuis": {
   "Librairie L'Euguélionne": "2026-11-13",
   "Le Système (RA)": "2026-11-13",
@@ -291,6 +286,7 @@
   "Théâtre Sainte-Catherine (impro et humour)": "2026-11-16",
   "Quai des Brumes": "2026-11-16",
   "Le Livart (centre d'art multidisciplinaire)": "2026-11-16",
-  "Librairie Drawn & Quarterly (lancements, lectures)": "2026-11-16"
+  "Librairie Drawn & Quarterly (lancements, lectures)": "2026-11-16",
+  "Librairie Drawn & Quarterly (événements)": "2026-11-17"
  }
 }
