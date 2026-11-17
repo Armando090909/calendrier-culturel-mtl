@@ -125,7 +125,10 @@ sources:
   - {nom: La Chapelle, cle: salles, type: page_ia, url: "https://www.lachapelle.org/en/programming/season-2026-2027", lieu: La Chapelle Scènes contemporaines, jours_semaine: [0, 3]}
   - {nom: Usine C (saison), cle: salles, type: page_ia, url: "https://usine-c.com/saison/saison-2026-2027", lieu: Usine C, jours_semaine: [0, 3]}
   - {nom: École nationale de cirque, cle: salles, type: page_ia, url: "https://www.ecolenationaledecirque.ca/en", discipline: cirque, jours_semaine: [0, 3]}
-  # À ajouter quand vous aurez leur page programme : Le Monastère (cabaret de cirque), Grands Ballets, Studio 303,
+  # Le Monastère (17 nov. 2026, demandé par l'équipe) : sa page d'organisateur sur Lepointdevente liste les cabarets à venir ;
+  # la salle change (ex. Centre St-Jax) : elle est lue sur la page de chaque spectacle
+  - {nom: "Le Monastère (cabaret de cirque)", cle: salles, type: page_ia, url: "https://lepointdevente.com/lemonastere", discipline: cirque, jours_semaine: [0, 3], details: true, max_details: 10, mise_en_page: "page d'organisateur : « Événements à venir » donne chaque cabaret, sa période (ex. Du 19 au 21 novembre 2026), sa salle et le lien de sa page de billets ; donne chaque cabaret avec son lien, la page de billets donne chaque représentation et son heure."}
+  # À ajouter quand vous aurez leur page programme : Grands Ballets, Studio 303,
   # Circuit-Est, Cirque Éloize, Les 7 Doigts, École de cirque de Verdun.
 
   # ---------- Humour ----------
