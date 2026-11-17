@@ -1,5 +1,26 @@
 {
- "https://www.cinemacinoche.com/robots.txt": {
+ "https://www.cinematheque.qc.ca/robots.txt": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/robots.txt"
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [],
+   "iframes": [],
+   "calendriers": []
+  },
+  "navigateur": {
+   "taille": 145,
+   "texte": "User-agent: bingbot\nCrawl-delay: 30\nUser-agent: msnbot\nCrawl-delay: 30\nUser-Agent: *\nAllow: /\nSitemap: https://www.cinematheque.qc.ca/sitemap.xml",
+   "courriels": [],
+   "contact": [],
+   "jsonld": [],
+   "heures": [],
+   "liens": [],
+   "menu": []
+  }
+ },
+ "https://omniwebticketing.com/robots.txt": {
   "statut": 200,
   "simple_images": {
    "og": null,
@@ -8,8 +29,8 @@
    "calendriers": []
   },
   "simple": {
-   "taille": 120,
-   "texte": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nSitemap: https://www.cinemacinoche.com/wp-sitemap.xml",
+   "taille": 59,
+   "texte": "# Block all bots from all sites\r\nUser-agent: *\r\nDisallow: /",
    "courriels": [],
    "contact": [],
    "jsonld": [],
@@ -24,8 +45,8 @@
    "calendriers": []
   },
   "navigateur": {
-   "taille": 120,
-   "texte": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nSitemap: https://www.cinemacinoche.com/wp-sitemap.xml",
+   "taille": 57,
+   "texte": "# Block all bots from all sites\nUser-agent: *\nDisallow: /",
    "courriels": [],
    "contact": [],
    "jsonld": [],
@@ -34,9 +55,181 @@
    "menu": []
   }
  },
- "https://www.cinemacinoche.com/events/?ical=1": {
+ "https://www.cinematheque.qc.ca/fr/programmation/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://www.cinematheque.qc.ca/fr/programmation/"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 403  (navigateur)"
+  }
+ },
+ "https://omniwebticketing.com/cinematheque/?schdate=2026-11-20": {
+  "simple": {
+   "erreur": "503 Server Error: Service Unavailable for url: https://omniwebticketing.com/cinematheque/?schdate=2026-11-20"
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "../files-theatre-cinematheque/images/Main_Banner.png | Logo",
+    "../files-theatre-cinematheque/images/posters/17_En-conversation-Joxean-Fernandez.png | Poster",
+    "../files-theatre-cinematheque/images/posters/17_Nouvelles restaurations basques 1.png | Poster",
+    "../files-theatre-cinematheque/images/posters/naza_onesheet_fr_748x1080-fr-1792094207.png | Poster",
+    "../files-theatre-cinematheque/images/posters/17_Obaba.png | Poster",
+    "../files-theatre-cinematheque/images/posters/vieille-corneille_affiche_748x1080-fr-1792763275.png | Poster",
+    "../files-theatre-cinematheque/images/posters/violence_affiche_747x1080-fr-1793643694.png | Poster"
+   ],
+   "iframes": [],
+   "calendriers": []
+  },
+  "navigateur": {
+   "taille": 315,
+   "texte": "Accueil <https://www.cinematheque.qc.ca/>\nBilletterie <https://omniwebticketing.com/cinematheque/>\nRécupérer transactions <https://omniwebticketing.com/cinematheque/?confretrieval=0>\nLes retardataires ne seront plus admis.es dans nos salles de projections   /   Latecomers will no longer be admitted in our theaters",
+   "courriels": [],
+   "contact": [],
+   "jsonld": [],
+   "heures": [],
+   "liens": [
+    "https://omniwebticketing.com/cinematheque/",
+    "https://omniwebticketing.com/cinematheque/?confretrieval=0"
+   ],
+   "menu": [
+    "Billetterie → https://omniwebticketing.com/cinematheque/",
+    "Récupérer transactions → https://omniwebticketing.com/cinematheque/?confretrieval=0"
+   ]
+  }
+ },
+ "https://www.banq.qc.ca/calendrier/a-venir/147715": {
   "statut": 200,
-  "octets": 7328,
-  "fichier": "events"
+  "simple_images": {
+   "og": "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg",
+   "img": [
+    "/themes/custom/banq_lyxn_glider/images/logo-banq-2.svg | BAnQ : Accueil",
+    "/sites/default/files/2026-10/menu-a11y_0.svg | Préférences visuelles",
+    "/sites/default/files/2026-10/menu-aide.svg | Aide",
+    "/sites/default/files/2026-10/menu-recherche.svg | Rechercher",
+    "/sites/default/files/2026-10/menu-dossier_1_1.svg | Mon dossier",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    " | ",
+    " | ",
+    " | ",
+    "/sites/default/files/2023-07/banq-new-footer-logo.svg | Logo BAnQ",
+    "/sites/default/files/2023-03/logo_quebec.svg | Logo du gouvernement du Québec."
+   ],
+   "iframes": [
+    "https://bq-passage.banq.qc.ca/ns.html?id=GTM-MZT2GP",
+    ""
+   ],
+   "calendriers": []
+  },
+  "simple": {
+   "taille": 2507,
+   "texte": "Sans mots (v. o. en anglais avec sous-titres en français) | BAnQ\nAller au contenu principal <https://www.banq.qc.ca/calendrier/a-venir/147715#main-content>\nCollections <https://www.banq.qc.ca/collections/>\nServices <https://www.banq.qc.ca/services/>\nOutils de recherche <https://www.banq.qc.ca/collections/outils-de-recherche/>\nArticles et suggestions <https://www.banq.qc.ca/explorer/>\nFormations et guides <https://www.banq.qc.ca/services/apprendre/>\nÉducation <https://www.banq.qc.ca/education/>\nEspace Jeunes <https://www.banq.qc.ca/jeunes/>\nNotre institution <https://www.banq.qc.ca/notre-institution/>\nHeures et coordonnées <https://www.banq.qc.ca/calendrier/a-venir/147715>\nActivités <https://www.banq.qc.ca/calendrier/a-venir/147715>\nPrésentation visuelle\nRecherche <https://www.banq.qc.ca/calendrier/a-venir/147715>\nObtenir de l’aide <https://www.banq.qc.ca/calendrier/a-venir/147715>\nNous joindre <https://www.banq.qc.ca/obtenir-de-laide/>\nAccessibilité <https://www.banq.qc.ca/politique-daccessibilite/>\nConfidentialité <https://www.banq.qc.ca/politique-de-confidentialite/>\nFermer\nOptions d’accessibilité\nTaille du texte\nAjustez la taille du texte à vos besoins avec les boutons suivants.\n100 %\n150 %\n200 %\nThème visuel de la page\nAjustez le thème du site à vos besoins en cliquant sur les boutons ci-dessous :\nCouleurs d’origine\nContraste élevé\nContraste élevé inversé\nVidéo\n Afficher les sous-titres par défaut.\nBAnQ s’engage à offrir des collections et des services qui répondent aux besoins spécifiques des personnes handicapées ou en situation de handicap, en tenant compte de ses principes directeurs énumérés dans la \nPolitique d'accessibilité de BAnQ <https://www2.banq.qc.ca/a_propos_banq/mission_lois_reglements/lois_reglements_politiques/politiques_procedures/politique_accessibilite/index.html>\n. Les vidéos de sources extérieures à BAnQ peuvent comporter des obstacles à l’accessibilité et nous ne pouvons faire une transcription écrite pour toutes. Pour toute demande relative au sous-titrage des vidéos, veuillez \ncommuniquer avec nous <https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail>\n.\nFermer\nInformations complémentaires concernant la photo.\nInformations pratiques\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nSérie \nAutres activités suggérées\nInformations pratiques\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nFiltres\nSérie\nType\nÉvénement\nCalendrier\nAucune activité trouvée",
+   "courriels": [],
+   "contact": [
+    "https://www.banq.qc.ca/obtenir-de-laide/"
+   ],
+   "jsonld": [
+    "{\n    \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n            \"breadcrumb\": {\n                \"@type\": \"BreadcrumbList\",\n                \"itemListElement\": [\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 1,\n                        \"name\": \"Accueil\",\n                        \"item\": \"https://www.banq.qc.ca/\"\n                    },\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 2,\n                        \"name\": \"À venir\",\n                        \"item\": \"https://www.banq.qc.ca/calendrier/a-venir\"\n                    }\n                ]\n            }\n        }\n    ]\n}",
+    "\n{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"eventStatus\":\"http://schema.org/EventScheduled\",\"name\":\"Les grandes vues Sans mots (v. o. en anglais avec sous-titres en français)\",\"image\":\"http://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg\",\"startDate\":\"2026-11-17T14:00:00-0500\",\"endDate\":\"2026-11-17T16:00:00-0500\",\"description\":\"<p>Documentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : <em>There Are No Words</em>.</p>\\r\\n<p>En questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.</p>\\r\\n<p>Source : ONF</p>\\r\\n<p>Ce film est présenté en version originale en anglais avec sous-titres en français.</p>\\r\\n<p>La salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.</p>\\r\\n<p>Après la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.</p>\\r\\n<p>Travaux autour de la Grande Bibliothèque : <a href=\\\"https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1\\\" target=\\\"_blank\\\">pensez à vos déplacements</a>.</p>\\r\\n<p>25 places</p>\",\"location\":{\"@type\":\"Place\",\"name\":\"Grande Bibliothèque\",\"address\":{\"streetAddress\":\"475, boulevard De Maisonneuve Est\",\"addressLocality\":\"Montréal\",\"addressRegion\":\"QC\",\"postalCode\":\"H2L 5C4\",\"sameAs\":\"https://www.banq.qc.ca\"}},\"organizer\":{\"@type\":\"Organization\",\"name\":\"Bibliothèque et Archives nationales du Québec\",\"url\":\"https://www.banq.qc.ca\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0.00\",\"priceCurrency\":\"CAD\",\"url\":\"https://www.banq.qc.ca/calendrier/a-venir/147715\"}}\n"
+   ],
+   "heures": [],
+   "liens": [],
+   "menu": [
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
+    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir#types=Cin%C3%A9ma",
+    "Visites guidées → https://www.banq.qc.ca/calendrier/a-venir#types=Visite%20guid%C3%A9e",
+    "Ateliers → https://www.banq.qc.ca/calendrier/a-venir#types=Atelier",
+    "Contes → https://www.banq.qc.ca/calendrier/a-venir#types=Contes",
+    "Expositions → https://www.banq.qc.ca/calendrier/en-tout-temps",
+    "En ligne → https://www.banq.qc.ca/calendrier/a-venir#lieux=En%20ligne",
+    "Grande Bibliothèque → https://www.banq.qc.ca/calendrier/a-venir#lieux=Grande%20Biblioth%C3%A8que",
+    "Centres d’archives → https://www.banq.qc.ca/calendrier/a-venir#lieux=Archives%20nationales%20%C3%A0%20Montr%C3%A9al",
+    "Bibliothèque nationale (site Rosemont) → https://www.banq.qc.ca/calendrier/a-venir#lieux=Biblioth%C3%A8que%20nationale%20(site%20Rosemont)",
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
+    "À venir → https://www.banq.qc.ca/calendrier/a-venir",
+    "Sans mots (v. o. en anglais avec sous-titres en fr → https://www.banq.qc.ca/calendrier/a-venir/147715",
+    "Activités → https://www.banq.qc.ca/calendrier/a-venir/147715",
+    "communiquer avec nous → https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail",
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir"
+   ]
+  },
+  "navigateur_images": {
+   "og": "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg",
+   "img": [
+    "https://www.banq.qc.ca/sites/default/files/2024-04/logo_banq_noir.png | Logo",
+    "/themes/custom/banq_lyxn_glider/images/logo-banq-2.svg | BAnQ : Accueil",
+    "/sites/default/files/2026-10/menu-a11y_0.svg | Préférences visuelles",
+    "/sites/default/files/2026-10/menu-aide.svg | Aide",
+    "/sites/default/files/2026-10/menu-recherche.svg | Rechercher",
+    "/sites/default/files/2026-10/menu-dossier_1_1.svg | Mon dossier",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
+    "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg | Affiche du film.",
+    "https://banq.mhsoftware.com/attachments/24315/147715/GrandesVues_SansMots_tuile.jpg | Affiche du film.",
+    "https://www2.banq.qc.ca/images/activites/logo/Partenaires_ONF.png | En collaboration avec l’Office national du film du Canada (O",
+    "https://banq.mhsoftware.com/attachments/24315/147716/GrandesVues_SansMots_tuile.jpg | Affiche du film.",
+    "https://banq.mhsoftware.com/attachments/24319/147717/GrandesVues_Impossible_tuile.jpg | Affiche du film.",
+    "https://banq.mhsoftware.com/attachments/24344/147719/_FilmCartographie_SemaineGenealogie_Tuile.jpg | Affiche du film.",
+    "/sites/default/files/2023-07/banq-new-footer-logo.svg | Logo BAnQ",
+    "/sites/default/files/2023-03/logo_quebec.svg | Logo du gouvernement du Québec."
+   ],
+   "iframes": [
+    "https://bq-passage.banq.qc.ca/ns.html?id=GTM-MZT2GP",
+    ""
+   ],
+   "calendriers": []
+  },
+  "navigateur": {
+   "taille": 5296,
+   "texte": "Sans mots (v. o. en anglais avec sous-titres en français) | BAnQ\nContinuer sans accepter\n →\nPersonnalisez votre expérience\n Nous utilisons des témoins (souvent appelés cookies) pour améliorer votre expérience de navigation sur nos\n sites, afficher des contenus personnalisés et analyser la fréquentation de nos sites. En cliquant sur\n « Accepter », vous consentez à ce que nous utilisions tous les types de témoins. Vous pouvez modifier\n vos préférences en cliquant sur « Personnaliser ». Pour en savoir plus, consultez notre\nPolitique de confidentialité <https://www2.banq.qc.ca/p/confidentialite>\n.\nVoir nos partenaires\nPersonnaliser\nAccepter et fermer\nAller au contenu principal <https://www.banq.qc.ca/calendrier/a-venir/147715#main-content>\nCollections <https://www.banq.qc.ca/collections/>\nServices <https://www.banq.qc.ca/services/>\nOutils de recherche <https://www.banq.qc.ca/collections/outils-de-recherche/>\nArticles et suggestions <https://www.banq.qc.ca/explorer/>\nFormations et guides <https://www.banq.qc.ca/services/apprendre/>\nÉducation <https://www.banq.qc.ca/education/>\nEspace Jeunes <https://www.banq.qc.ca/jeunes/>\nNotre institution <https://www.banq.qc.ca/notre-institution/>\nHeures et coordonnées <https://www.banq.qc.ca/calendrier/a-venir/147715>\nActivités <https://www.banq.qc.ca/calendrier/a-venir/147715>\nPrésentation visuelle\nRecherche <https://www.banq.qc.ca/calendrier/a-venir/147715>\nObtenir de l’aide <https://www.banq.qc.ca/calendrier/a-venir/147715>\nNous joindre <https://www.banq.qc.ca/obtenir-de-laide/>\nAccessibilité <https://www.banq.qc.ca/politique-daccessibilite/>\nConfidentialité <https://www.banq.qc.ca/politique-de-confidentialite/>\nFermer\nOptions d’accessibilité\nTaille du texte\nAjustez la taille du texte à vos besoins avec les boutons suivants.\n100 %\n150 %\n200 %\nThème visuel de la page\nAjustez le thème du site à vos besoins en cliquant sur les boutons ci-dessous :\nCouleurs d’origine\nContraste élevé\nContraste élevé inversé\nVidéo\n Afficher les sous-titres par défaut.\nBAnQ s’engage à offrir des collections et des services qui répondent aux besoins spécifiques des personnes handicapées ou en situation de handicap, en tenant compte de ses principes directeurs énumérés dans la \nPolitique d'accessibilité de BAnQ <https://www2.banq.qc.ca/a_propos_banq/mission_lois_reglements/lois_reglements_politiques/politiques_procedures/politique_accessibilite/index.html>\n. Les vidéos de sources extérieures à BAnQ peuvent comporter des obstacles à l’accessibilité et nous ne pouvons faire une transcription écrite pour toutes. Pour toute demande relative au sous-titrage des vidéos, veuillez \ncommuniquer avec nous <https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail>\n.\nFermer\nSans mots (v. o. en anglais avec sous-titres en français)\nCinéma\nInformations complémentaires concernant la photo.\nInformations pratiques\nGrande Bibliothèque\nSalle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nAucune réservation requise. Places limitées.\nSérie \nLes grandes vues\nDocumentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : \nThere Are No Words\n.\nEn questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.\nSource : ONF\nCe film est présenté en version originale en anglais avec sous-titres en français.\nLa salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.\nAprès la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.\nTravaux autour de la Grande Bibliothèque : \npensez à vos déplacements <https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1>\n.\n25 places\nAutres activités suggérées\nSans mots (v. o. en anglais avec sous-titres en français) <https://www.banq.qc.ca/calendrier/a-venir/147716>\nCinéma\nMar. 17 novembre\nSans mots (v. o. en anglais avec sous-titres en français)\nSérie \nLes grandes vues\nPour les adultes\nÀ 18 h 30\nL’impossible (v. f. de The Impossible) <https://www.banq.qc.ca/calendrier/a-venir/147717>\nCinéma\nVen. 20 novembre\nL’impossible (v. f. de The Impossible)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 14 h\nCartographie des nuages (v. f. de Cloud Atlas) <https://www.banq.qc.ca/calendrier/a-venir/147719>\nCinéma\nSam. 21 novembre\nCartographie des nuages (v. f. de Cloud Atlas)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 13 h 30\nInformations pratiques\nGrande Bibliothèque\nSalle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nAucune réservation requise. Places limitées.\nFiltres\nFilms et culture cinéma <https://www.banq.qc.ca/calendrier/a-venir/#themes=Films et culture cinéma>\nSérie\nLes grandes vues <https://www.banq.qc.ca/calendrier/a-venir/#series=Les grandes vues>\nType\nCinéma <https://www.banq.qc.ca/calendrier/a-venir/#types=Cinéma>\nÉvénement\nCalendrier\nAucune activité trouvée",
+   "courriels": [],
+   "contact": [
+    "https://www.banq.qc.ca/obtenir-de-laide/"
+   ],
+   "jsonld": [
+    "{\n    \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n            \"breadcrumb\": {\n                \"@type\": \"BreadcrumbList\",\n                \"itemListElement\": [\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 1,\n                        \"name\": \"Accueil\",\n                        \"item\": \"https://www.banq.qc.ca/\"\n                    },\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 2,\n                        \"name\": \"À venir\",\n                        \"item\": \"https://www.banq.qc.ca/calendrier/a-venir\"\n                    }\n                ]\n            }\n        }\n    ]\n}",
+    "\n{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"eventStatus\":\"http://schema.org/EventScheduled\",\"name\":\"Les grandes vues Sans mots (v. o. en anglais avec sous-titres en français)\",\"image\":\"http://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg\",\"startDate\":\"2026-11-17T14:00:00-0500\",\"endDate\":\"2026-11-17T16:00:00-0500\",\"description\":\"<p>Documentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : <em>There Are No Words</em>.</p>\\r\\n<p>En questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.</p>\\r\\n<p>Source : ONF</p>\\r\\n<p>Ce film est présenté en version originale en anglais avec sous-titres en français.</p>\\r\\n<p>La salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.</p>\\r\\n<p>Après la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.</p>\\r\\n<p>Travaux autour de la Grande Bibliothèque : <a href=\\\"https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1\\\" target=\\\"_blank\\\">pensez à vos déplacements</a>.</p>\\r\\n<p>25 places</p>\",\"location\":{\"@type\":\"Place\",\"name\":\"Grande Bibliothèque\",\"address\":{\"streetAddress\":\"475, boulevard De Maisonneuve Est\",\"addressLocality\":\"Montréal\",\"addressRegion\":\"QC\",\"postalCode\":\"H2L 5C4\",\"sameAs\":\"https://www.banq.qc.ca\"}},\"organizer\":{\"@type\":\"Organization\",\"name\":\"Bibliothèque et Archives nationales du Québec\",\"url\":\"https://www.banq.qc.ca\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0.00\",\"priceCurrency\":\"CAD\",\"url\":\"https://www.banq.qc.ca/calendrier/a-venir/147715\"}}\n"
+   ],
+   "heures": [
+    "Salle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRés",
+    "tres en français.\nLa salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire ",
+    "res en français)\nSérie \nLes grandes vues\nPour les adultes\nÀ 18 h 30\nL’impossible (v. f. ",
+    "de The Impossible)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 14 h\nCartographie des nua",
+    "f. de Cloud Atlas)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 13 h 30\nInformations pratiqu",
+    "Salle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRés"
+   ],
+   "liens": [
+    "https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&amp;tf_4418095266203=portail"
+   ],
+   "menu": [
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
+    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir#types=Cin%C3%A9ma",
+    "Visites guidées → https://www.banq.qc.ca/calendrier/a-venir#types=Visite%20guid%C3%A9e",
+    "Ateliers → https://www.banq.qc.ca/calendrier/a-venir#types=Atelier",
+    "Contes → https://www.banq.qc.ca/calendrier/a-venir#types=Contes",
+    "Expositions → https://www.banq.qc.ca/calendrier/en-tout-temps",
+    "En ligne → https://www.banq.qc.ca/calendrier/a-venir#lieux=En%20ligne",
+    "Grande Bibliothèque → https://www.banq.qc.ca/calendrier/a-venir#lieux=Grande%20Biblioth%C3%A8que",
+    "Centres d’archives → https://www.banq.qc.ca/calendrier/a-venir#lieux=Archives%20nationales%20%C3%A0%20Montr%C3%A9al",
+    "Bibliothèque nationale (site Rosemont) → https://www.banq.qc.ca/calendrier/a-venir#lieux=Biblioth%C3%A8que%20nationale%20(site%20Rosemont)",
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
+    "À venir → https://www.banq.qc.ca/calendrier/a-venir",
+    "Sans mots (v. o. en anglais avec sous-titres en fr → https://www.banq.qc.ca/calendrier/a-venir/147715",
+    "Activités → https://www.banq.qc.ca/calendrier/a-venir/147715",
+    "communiquer avec nous → https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail",
+    "Sans mots (v. o. en anglais avec sous-titres en fr → https://www.banq.qc.ca/calendrier/a-venir/147716",
+    "L’impossible (v. f. de The Impossible) → https://www.banq.qc.ca/calendrier/a-venir/147717",
+    "Cartographie des nuages (v. f. de Cloud Atlas) → https://www.banq.qc.ca/calendrier/a-venir/147719",
+    "Films et culture cinéma → https://www.banq.qc.ca/calendrier/a-venir/#themes=Films et culture cinéma",
+    "Les grandes vues → https://www.banq.qc.ca/calendrier/a-venir/#series=Les grandes vues",
+    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir/#types=Cinéma",
+    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir"
+   ]
+  }
  }
 }

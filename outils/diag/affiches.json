@@ -1,11 +1,7 @@
 {
  "total": 1375,
- "echecs": 88,
+ "echecs": 75,
  "par_site": {
-  "calendrier.umontreal.ca": {
-   "affiches": 19,
-   "echecs": 16
-  },
   "lalumierecollective.org": {
    "affiches": 8,
    "echecs": 8
@@ -34,6 +30,10 @@
    "affiches": 4,
    "echecs": 4
   },
+  "calendrier.umontreal.ca": {
+   "affiches": 19,
+   "echecs": 3
+  },
   "cabaretliondor.com": {
    "affiches": 3,
    "echecs": 3
@@ -44,10 +44,6 @@
   },
   "www.lacomedie.ca": {
    "affiches": 3,
-   "echecs": 3
-  },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
    "echecs": 3
   },
   "www2.banq.qc.ca": {
@@ -62,6 +58,10 @@
    "affiches": 47,
    "echecs": 2
   },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
+   "echecs": 2
+  },
   "www.dansedanse.ca": {
    "affiches": 2,
    "echecs": 2
@@ -73,6 +73,10 @@
   "agoradanse.com": {
    "affiches": 2,
    "echecs": 2
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 88,
+   "echecs": 1
   },
   "freight.cargo.site": {
    "affiches": 1,
@@ -168,10 +172,6 @@
   },
   "www.labrassee.cafe": {
    "affiches": 1,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 88,
    "echecs": 0
   },
   "s1.ticketm.net": {
@@ -384,14 +384,14 @@
   }
  },
  "exemples": {
-  "calendrier.umontreal.ca": [
-   "https://calendrier.umontreal.ca/public/calendrier/_processed_/4/e/csm_M%C3%A9dia__3__54fcc0ff1f.jpg",
-   "https://calendrier.umontreal.ca/public/calendrier/images_activites_BIB/curiosa-calendrier.png",
-   "https://calendrier.umontreal.ca/public/calendrier/images_activites_BELLES-HEURES/Automne_2026/Design_sans_titre__51_.png"
-  ],
   "www.pointe-claire.ca": [
    "https://www.pointe-claire.ca/assets/images/catherine_2026-03-19-183738_uhnq.jpg",
    "https://www.pointe-claire.ca/assets/images/CA_adieu_opera.jpg"
+  ],
+  "calendrier.umontreal.ca": [
+   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/flute-traversiere.png",
+   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Percussions-classique.png",
+   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Piano.png"
   ],
   "lalumierecollective.org": [
    "https://lalumierecollective.org/wp-content/uploads/2026/10/Capture-decran-le-2026-10-08-a-14.04.37.png",
@@ -469,6 +469,9 @@
    "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
    "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/xvTNAqAqQPdd9Iovo2_rbZ4ebTWo-XP_w4gGh6YTbi8/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3NkODZ4YzEz/NXR6bWNzaWNuZms4/b3B2d3pweWk"
+  ],
   "coeurdessciences.uqam.ca": [
    "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg",
    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg",
@@ -484,8 +487,7 @@
   ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg",
-   "https://www.ville.dorval.qc.ca/resize/9e271916e53c1bbf2f2b793368d4418c-1"
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ],
   "lni.ca": [
    "https://lni.ca/wp-content/uploads/2025/10/banW_CARRE-2100_MatchTOURN-LNI-A-1.png"
