@@ -13,7 +13,7 @@ on:
 jobs:
   essai:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -74,7 +74,7 @@ jobs:
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           ETAPE_COLLECTE: assemblage
           COLLECTE_ESSAI: "1"
-        run: timeout 1200 python -u collecteur/collecte.py
+        run: timeout 1800 python -u collecteur/collecte.py
 
       - name: Site enrichi valable
         run: |
