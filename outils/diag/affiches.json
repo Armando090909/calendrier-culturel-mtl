@@ -1,31 +1,7 @@
 {
  "total": 1375,
- "echecs": 75,
+ "echecs": 22,
  "par_site": {
-  "lalumierecollective.org": {
-   "affiches": 8,
-   "echecs": 8
-  },
-  "www.comedyville.ca": {
-   "affiches": 7,
-   "echecs": 7
-  },
-  "www.mado.qc.ca": {
-   "affiches": 6,
-   "echecs": 6
-  },
-  "theatreplaza.ca": {
-   "affiches": 6,
-   "echecs": 6
-  },
-  "coeurdessciences.uqam.ca": {
-   "affiches": 5,
-   "echecs": 5
-  },
-  "leministere.ca": {
-   "affiches": 4,
-   "echecs": 4
-  },
   "centaurtheatre.com": {
    "affiches": 4,
    "echecs": 4
@@ -34,25 +10,13 @@
    "affiches": 19,
    "echecs": 3
   },
-  "cabaretliondor.com": {
-   "affiches": 3,
-   "echecs": 3
-  },
   "turbohaus.ca": {
    "affiches": 12,
-   "echecs": 3
-  },
-  "www.lacomedie.ca": {
-   "affiches": 3,
    "echecs": 3
   },
   "www2.banq.qc.ca": {
    "affiches": 3,
    "echecs": 3
-  },
-  "www.pointe-claire.ca": {
-   "affiches": 2,
-   "echecs": 2
   },
   "images.ctfassets.net": {
    "affiches": 47,
@@ -66,18 +30,6 @@
    "affiches": 2,
    "echecs": 2
   },
-  "centredesmusiciensdumonde.com": {
-   "affiches": 2,
-   "echecs": 2
-  },
-  "agoradanse.com": {
-   "affiches": 2,
-   "echecs": 2
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 88,
-   "echecs": 1
-  },
   "freight.cargo.site": {
    "affiches": 1,
    "echecs": 1
@@ -86,28 +38,16 @@
    "affiches": 2,
    "echecs": 1
   },
-  "espacelevraimonde.ca": {
-   "affiches": 1,
-   "echecs": 1
-  },
-  "tangolibre.ca": {
-   "affiches": 1,
-   "echecs": 1
-  },
-  "www.alexbellegarde.com": {
-   "affiches": 1,
-   "echecs": 1
-  },
   "westmount.org": {
    "affiches": 2,
    "echecs": 1
   },
-  "lni.ca": {
-   "affiches": 1,
-   "echecs": 1
-  },
   "cdn.caligram.com": {
    "affiches": 12,
+   "echecs": 0
+  },
+  "www.pointe-claire.ca": {
+   "affiches": 2,
    "echecs": 0
   },
   "res.cloudinary.com": {
@@ -132,6 +72,10 @@
   },
   "quaidesbrumes.ca": {
    "affiches": 6,
+   "echecs": 0
+  },
+  "lalumierecollective.org": {
+   "affiches": 8,
    "echecs": 0
   },
   "www.fbdm-mcaf.ca": {
@@ -162,6 +106,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "cabaretliondor.com": {
+   "affiches": 3,
+   "echecs": 0
+  },
   "theatresaintecatherine.com": {
    "affiches": 18,
    "echecs": 0
@@ -172,6 +120,10 @@
   },
   "www.labrassee.cafe": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 88,
    "echecs": 0
   },
   "s1.ticketm.net": {
@@ -192,6 +144,10 @@
   },
   "img.evbuc.com": {
    "affiches": 9,
+   "echecs": 0
+  },
+  "www.mado.qc.ca": {
+   "affiches": 6,
    "echecs": 0
   },
   "lebordel.ca": {
@@ -250,12 +206,24 @@
    "affiches": 2,
    "echecs": 0
   },
+  "theatreplaza.ca": {
+   "affiches": 6,
+   "echecs": 0
+  },
   "www.theatredesjardins.com": {
    "affiches": 21,
    "echecs": 0
   },
   "www.denise-pelletier.qc.ca": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "www.comedyville.ca": {
+   "affiches": 7,
+   "echecs": 0
+  },
+  "leministere.ca": {
+   "affiches": 4,
    "echecs": 0
   },
   "www.jambase.com": {
@@ -275,6 +243,14 @@
    "echecs": 0
   },
   "cafconc.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "www.lacomedie.ca": {
+   "affiches": 3,
+   "echecs": 0
+  },
+  "espacelevraimonde.ca": {
    "affiches": 1,
    "echecs": 0
   },
@@ -298,8 +274,16 @@
    "affiches": 1,
    "echecs": 0
   },
+  "tangolibre.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "s3.ca-central-1.amazonaws.com": {
    "affiches": 2,
+   "echecs": 0
+  },
+  "www.alexbellegarde.com": {
+   "affiches": 1,
    "echecs": 0
   },
   "mato.s3.us-east-1.amazonaws.com": {
@@ -346,8 +330,20 @@
    "affiches": 1,
    "echecs": 0
   },
+  "coeurdessciences.uqam.ca": {
+   "affiches": 5,
+   "echecs": 0
+  },
   "www.cinemamoderne.com": {
    "affiches": 5,
+   "echecs": 0
+  },
+  "centredesmusiciensdumonde.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "agoradanse.com": {
+   "affiches": 2,
    "echecs": 0
   },
   "lelivart.com": {
@@ -381,50 +377,20 @@
   "gxxdnght.com": {
    "affiches": 1,
    "echecs": 0
+  },
+  "lni.ca": {
+   "affiches": 1,
+   "echecs": 0
   }
  },
  "exemples": {
-  "www.pointe-claire.ca": [
-   "https://www.pointe-claire.ca/assets/images/catherine_2026-03-19-183738_uhnq.jpg",
-   "https://www.pointe-claire.ca/assets/images/CA_adieu_opera.jpg"
-  ],
   "calendrier.umontreal.ca": [
    "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/flute-traversiere.png",
    "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Percussions-classique.png",
    "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Piano.png"
   ],
-  "lalumierecollective.org": [
-   "https://lalumierecollective.org/wp-content/uploads/2026/10/Capture-decran-le-2026-10-08-a-14.04.37.png",
-   "https://lalumierecollective.org/wp-content/uploads/2026/11/Photo-1.png",
-   "https://lalumierecollective.org/wp-content/uploads/2026/08/The-Fourfold-2_1000.jpg"
-  ],
-  "cabaretliondor.com": [
-   "https://cabaretliondor.com/ldo-content/uploads/2026/10/brian-sam.png",
-   "https://cabaretliondor.com/ldo-content/uploads/2026/10/BRIAN-PITON_YASMINA-LÉVEILLÉ_1152x648_17nov.jpg",
-   "https://cabaretliondor.com/ldo-content/uploads/2026/07/Colin-boudrias.png"
-  ],
-  "www.mado.qc.ca": [
-   "https://www.mado.qc.ca/wp-content/uploads/1791846133FullGisele_261103-horizontal.jpg",
-   "https://www.mado.qc.ca/wp-content/uploads/1792520063261119-glamazon-horizontal.jpg",
-   "https://www.mado.qc.ca/wp-content/uploads/1792021092MadoRecoit-261106-Horizontal.jpg"
-  ],
   "freight.cargo.site": [
    "https://freight.cargo.site/w/1200/i/a135b0bf003cbb6b49e43b1feb94149c409da1db7c1cb326da21204112daef5f/RogerTellierCraig_2022.jpg"
-  ],
-  "theatreplaza.ca": [
-   "https://theatreplaza.ca/wp-content/uploads/2026/09/Affiche-19-novembre-2026-V2.jpg",
-   "https://theatreplaza.ca/wp-content/uploads/2026/10/Affiche-21-novembre-2026-V3.jpeg.jpg",
-   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-4-decembre-2026.png"
-  ],
-  "www.comedyville.ca": [
-   "https://www.comedyville.ca/wp-content/uploads/2022/02/Thursday-Night-Comedy-Shows-in-Montreal-Montreal-Comedy-Club.jpg",
-   "https://www.comedyville.ca/wp-content/uploads/2025/03/English-Comedy-Show-Best-Early-Montreal-Comedy-Show-in-Downtown-of-Montreal.jpg",
-   "https://www.comedyville.ca/wp-content/uploads/2024/10/Montreal-Comedy-Show-Montreal-Comedy-Club.png"
-  ],
-  "leministere.ca": [
-   "https://leministere.ca/assets/img/events/emma-beko-cicada-2/Ministere-Cicada-M-for-MTL-billeterie-1.png",
-   "https://leministere.ca/assets/img/events/skiifall-646yf4t-yama-sato/2011v2-banniere.png",
-   "https://leministere.ca/assets/img/events/skiifall-646yf4t-yama-sato/_eventMedium/SKIIFALL-16X9-1.jpg"
   ],
   "www.eventbrite.com": [
    "https://www.eventbrite.com/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194103363%252F2747173481601%252F1%252Foriginal.20260922-142405%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.498%26fp-y%3D0.022%26s%3D4f1eef2fb760b423d2aa7367e6d4c712&w=1200&q=75"
@@ -434,23 +400,9 @@
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg",
    "https://turbohaus.ca/api/media/file/cam-kahin.png"
   ],
-  "www.lacomedie.ca": [
-   "https://www.lacomedie.ca/wp-content/uploads/2016/11/Le-clan-des-divorcees-photo-theatre-montreal3.jpg",
-   "https://www.lacomedie.ca/wp-content/uploads/2025/10/Affiche-Chicane-de-Famille-la-mere-copie.jpg",
-   "https://www.lacomedie.ca/wp-content/uploads/2024/07/Affiche-LE-GRAND-SOIR-HIVER-2026-2027-copie.jpg"
-  ],
-  "espacelevraimonde.ca": [
-   "https://espacelevraimonde.ca/wp-content/uploads/2026/09/Image-principale-SITE-WEB-19.png"
-  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/3gJu1CSfyW7XGaU6ukP6HC/f4f5e9cc73056a3fb4cc4f530b134ab8/FF26-OpenGraph.jpg",
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
-  ],
-  "tangolibre.ca": [
-   "https://tangolibre.ca/wp-content/uploads/2025/01/Tangolibre-2025-W01.jpg"
-  ],
-  "www.alexbellegarde.com": [
-   "https://www.alexbellegarde.com/Latin/Alex-Bellegarde-montreal-Jazz-Festival-photo-banks.jpg"
   ],
   "westmount.org": [
    "https://westmount.org/storage/app/resources/resize/1200_0_0_0_auto/img_61e4b8711577332237c687509afd0c27.png"
@@ -469,28 +421,9 @@
    "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
    "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/xvTNAqAqQPdd9Iovo2_rbZ4ebTWo-XP_w4gGh6YTbi8/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3NkODZ4YzEz/NXR6bWNzaWNuZms4/b3B2d3pweWk"
-  ],
-  "coeurdessciences.uqam.ca": [
-   "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg",
-   "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg",
-   "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg"
-  ],
-  "centredesmusiciensdumonde.com": [
-   "https://centredesmusiciensdumonde.com/wp-content/uploads/2026/09/Couverture-Facebook-Concerts-intimes-2026-2027-4.png",
-   "https://centredesmusiciensdumonde.com/wp-content/uploads/2024/08/hamin_honari_horizonspetergram.jpg"
-  ],
-  "agoradanse.com": [
-   "https://agoradanse.com/wp-content/uploads/2026/10/acorps-vins_6.jpg",
-   "https://agoradanse.com/wp-content/uploads/2026/06/Laffront-des-chimeres-by-Sarah-Seene.jpg"
-  ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
-  ],
-  "lni.ca": [
-   "https://lni.ca/wp-content/uploads/2025/10/banW_CARRE-2100_MatchTOURN-LNI-A-1.png"
   ]
  },
  "sans_affiche_par_discipline": {
