@@ -126,6 +126,13 @@ def est_non_culturel(titre: str, categorie: str = "") -> bool:
     return _has(titre, NON_CULTUREL) or _has(categorie, CATEGORIES_EXCLUES)
 
 
+def raison_non_culturel(titre: str, categorie: str = "") -> str:
+    """Le mot (ou la catégorie) qui écarte la fiche, pour le rapport des fiches écartées."""
+    t, c = f" {plat(titre)} ", f" {plat(categorie)} "
+    m = next((m for m in NON_CULTUREL if f" {m} " in t), None)
+    return f"mot « {m} » dans le titre" if m else f"catégorie « {next((m for m in CATEGORIES_EXCLUES if f' {m} ' in c), '?')} »"
+
+
 def classer(titre: str, categorie: str = "", description: str = "", defaut: str = "") -> str:
     """Discipline d'après la catégorie de la source, puis les mots du titre, puis la description."""
     c = plat(categorie)
