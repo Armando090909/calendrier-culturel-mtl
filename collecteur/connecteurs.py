@@ -1201,9 +1201,15 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             try:
                 h2 = telecharger(lien, "text/html").text
             except UnicodeDecodeError:
-                # 18 nov. 2026 (BAnQ) : la fiche redirige (parfois deux fois) vers une adresse écrite en Latin-1 (« é »)
-                # que la bibliothèque « requests » ne sait pas décoder : on suit les redirections nous-mêmes
-                h2 = _suivre_redirections(lien)
+                # 18 nov. 2026 (BAnQ) : adresse ou en-tête en Latin-1 (« é ») que la bibliothèque « requests » ne sait pas
+                # décoder ; on suit les redirections nous-mêmes, et en dernier recours la fiche est ouverte dans le navigateur
+                try:
+                    h2 = _suivre_redirections(lien)
+                except UnicodeDecodeError:
+                    if not erreurs:
+                        import traceback
+                        print("    (détail) " + traceback.format_exc(limit=6).replace("\n", " | ")[-900:])
+                    h2 = page_rendue(lien, 500)
             e2, s2 = evenements_jsonld(h2, lien, cfg, debut, fin)
             if not e2 and not s2:
                 vides.append(f"{lien} ({len(h2)} car., {h2.count('application/ld+json')} blocs schema.org)")
