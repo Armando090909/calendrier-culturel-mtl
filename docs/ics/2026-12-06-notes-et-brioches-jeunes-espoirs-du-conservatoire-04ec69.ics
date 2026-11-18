@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-06-notes-et-brioches-jeunes-espoirs-du-conservatoire-04ec69@ccm
+ tl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261206T110000
+DTEND;TZID=America/Toronto:20261206T130000
+SUMMARY:Notes et brioches - Jeunes espoirs du Conservatoire de musique de M
+ ontréal
+LOCATION:L'Entrepôt – maison de la culture de Lachine\, Montréal
+URL:https://montreal.ca/evenements/notes-et-brioches-jeunes-espoirs-du-cons
+ ervatoire-de-musique-de-montreal-116053
+DESCRIPTION:L'Entrepôt\, maison de la culture de Lachine\, en collaboratio
+ n avec Concerts Lachine est heureux de présenter la série de concerts No
+ tes et brioches.\nPrix : Gratuit\nDétails : https://montreal.ca/evenement
+ s/notes-et-brioches-jeunes-espoirs-du-conservatoire-de-musique-de-montreal
+ -116053\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

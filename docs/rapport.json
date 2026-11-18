@@ -1,29 +1,30 @@
 {
  "date": "2026-11-18",
  "statut": "publié",
- "evenements": 3119,
+ "evenements": 3141,
  "expositions": 233,
  "nouvelles_salles": [
-  "Salle Serge-Garant"
+  "Bibliothèque Mordecai-Richler",
+  "Bibliothèque Réjean-Ducharme",
+  "Bibliothèque Saint-Henri",
+  "Centre culturel Georges-Vanier",
+  "Fabricathèque du Sud-Ouest",
+  "Maison de la culture Notre-Dame-de-Grâce – Botrel"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 15,
-   "erreurs": 15,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/club-de-lecture-de-pierrefonds-en-anglais-117311",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/club-de-lecture-de-pierrefonds-en-anglais-117312",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/club-de-tricot-maille-maille-115417"
-   ],
-   "completees_par_mac": 25,
-   "heures_trouvees": 24,
-   "salles_trouvees": 749
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
+   "completees_par_mac": 607,
+   "heures_trouvees": 595,
+   "salles_trouvees": 719
   },
   "redites_retirees": [
+   "2026-11-18 : « Heure du conte (18 mois à 5 ans) » (Lieu à confirmer) = « Heure du conte en mouvement » (Bibliothèque)",
    "2026-11-18 : « M pour Montréal : Béton Armé, Faze, zouz, 2120, Kn » (Club Soda) = « M POUR MONTRÉAL: BÉTON ARMÉ + FAZE + ZOUZ » (Foufounes Électriques)",
    "2026-11-18 : « 18 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB) = « 18 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount)",
    "2026-11-18 : « Insomnium @ Théâtre Beanfield » (Théâtre Beanfield) = « Amorphis & Insomnium » (Théâtre Beanfield)",
-   "2026-11-19 : « InterCultures - Danser les territoires | CREMCV » (Studio PACA) = « InterCultures - Danser les territoires | CREMCV » (Centre Sanaaq)",
    "2026-11-19 : « Les Shirley » (Club Soda) = « Lisa LeBlanc, Les Shirley & dead ex girlfriends » (Théâtre Plaza)",
    "2026-11-19 : « Emma Beko » (Club Soda) = « M pour Montréal : Emma Beko au Ministère » (Le Ministère)",
    "2026-11-20 : « 20 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 20 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
@@ -33,10 +34,11 @@
    "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-11-20 : « Do Nothing » (Club Soda) = « Do Nothing : M pour Montréal » (Casa del Popolo)",
    "2026-11-20 : « YAMA//SATO » (Club Soda) = « SKIIFALL, 646YF4T & YAMA//SATO » (Le Ministère)",
+   "2026-11-21 : « Festival du Jeu » (Lieu à confirmer) = « Festival du Jeu de Saint-Léonard » (Bibliothèque de Saint-Léonard)",
    "2026-11-21 : « SECRET CITY - 20E ANNIVERSAIRE » (Club Soda) = « SECRET CITY - 20E ANNIVERSAIRE | SUUNS, PLANTS AND » (Club Soda)",
    "2026-11-21 : « The Prowlers + Badterms + Street Code + Big Boss » (Foufounes Électriques) = « LSC BASH: THE PROWLERS + BADTERMS + STREET CODE +  » (Cabaret Fouf)",
    "2026-11-21 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
-   "2026-11-22 : « Conte d’hiver - BOP » (Lieu à confirmer) = « Conte d'hiver » (Théâtre Outremont)",
+   "2026-11-22 : « Festival du Jeu » (Lieu à confirmer) = « Festival du Jeu de Saint-Léonard » (Bibliothèque de Saint-Léonard)",
    "2026-11-26 : « L'Étrange Noël de Monsieur Jack en ciné-concert » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack de Tim Bur » (Maison symphonique)",
    "2026-11-26 : « Le songe d'une nuit d'été d'après William Shakespe » (Théâtre Outremont) = « LE SONGE D’UNE NUIT D’ÉTÉ » (Maison internationale des arts de la marionnette)",
    "2026-11-26 : « Ghostwoman @ Bar le Ritz PDB » (Bar Le Ritz PDB) = « GHOSTWOMAN » (Bar Le Ritz PDB)",
@@ -47,288 +49,23 @@
    "2026-11-28 : « Patrice L'Écuyer - Après seulement 32 ans d'absenc » (Centre Pierre-Peladeau) = « Après seulement 32 ans d'absence sur scène » (Salle Pierre-Mercure)",
    "2026-11-28 : « Saturday Night Comedy » (Deli Planet) = « Saturday After Dusk Comedy » (Estrella)",
    "2026-12-01 : « Open Mic au Saint-Jean Comédie Club » (Le Saint-Jean Comédie Club) = « Open-Mic » (Le Bordel Comédie Club)",
+   "2026-12-03 : « Luc Beauséjour : Bach, un Européen avant l'heure ( » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach, Européen avant l'heure » (Off-Bach)",
    "2026-12-04 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-12-05 : « Saturday Night Comedy » (Deli Planet) = « SATURDAY Night Comedy in Mile End | The Comedy Spo » (Espace Culturel Kawalees)",
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [
-   {
-    "nom": "Les Petits Ménestrels",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Jubilant",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre pop ≠ classique"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Moses Belanger",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Alison Notkin"
-   },
-   {
-    "nom": "Historical Feeling"
-   },
-   {
-    "nom": "Le Début du Monde",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "MATEUS VIDAL",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Croc Jazz",
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Muzi Chorale"
-   },
-   {
-    "nom": "Golden Line",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Pascale Pascale"
-   },
-   {
-    "nom": "Emile Patenaude"
-   },
-   {
-    "nom": "TETRATERIUM",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album ninth floor)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur apple (album ninth floor)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Hayley Bleho",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Steora"
-   },
-   {
-    "nom": "Montalbán",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Norm Dionne"
-   },
-   {
-    "nom": "SEAVER",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album beyond you there is me)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "MORT D'HOMME",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : rock"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album la chute)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album la chute)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Rachel Dara",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "H ii Regions",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   }
-  ],
   "qualite": {
-   "regles": 149,
+   "regles": 155,
    "contreverif": {
-    "date absente de la page": 51,
-    "date confirmée": 214,
+    "date absente de la page": 54,
+    "date confirmée": 213,
     "lien mort remplacé": 10,
     "page illisible": 41,
-    "non relues (limite)": 136
+    "non relues (limite)": 137
    },
    "controle": null
-  },
-  "reparations": [
-   "non réparée : Système MTL (8 pages essayées)",
-   "réparée : Théâtre Rialto → https://www.theatrerialto.ca/calendrier (9)",
-   "non réparée : Théâtre de l'Esquisse (8 pages essayées)",
-   "non réparée : La Serre – arts vivants (8 pages essayées)"
-  ]
+  }
  },
  "alerte": null,
  "sources": [
@@ -650,7 +387,7 @@
   },
   {
    "source": "Théâtre Sainte-Catherine",
-   "evenements": 23,
+   "evenements": 24,
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-18"
@@ -883,10 +620,10 @@
   },
   {
    "source": "Théâtre Plaza",
-   "evenements": 6,
+   "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
     "annonces à venir dans la page : 10 (https://theatreplaza.ca/evenements/)"
    ]
@@ -997,8 +734,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1501 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -1067,9 +803,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page lue depuis Montréal (ordinateur) : https://ra.co/clubs/201918",
-    "aucun événement trouvé dans 1199 caractères de texte : https://ra.co/clubs/201918",
-    "annonces à venir dans la page : 0 (https://ra.co/clubs/201918)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -1078,8 +812,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 0 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -1088,8 +821,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -1111,12 +843,12 @@
   },
   {
    "source": "Espace Le Vrai Monde?",
-   "evenements": 3,
+   "evenements": 4,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-17",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
-    "annonces à venir dans la page : 2 (https://www.espacelevraimonde.com/)"
+    "annonces à venir dans la page : 13 (https://espacelevraimonde.ca/programmation/)"
    ]
   },
   {
@@ -1136,8 +868,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://www.quenditraton.com/spectacles/",
-    "annonces à venir dans la page : 0 (https://www.quenditraton.com/spectacles/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1308,8 +1039,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1318,8 +1048,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1511,8 +1240,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1595,9 +1323,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://museedeshospitalieres.qc.ca/activites/",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://museedeshospitalieres.qc.ca/activites/",
-    "annonces à venir dans la page : 0 (https://museedeshospitalieres.qc.ca/activites/)"
+    "aucun événement trouvé dans 3731 caractères de texte : https://museedeshospitalieres.qc.ca/activites/",
+    "annonces à venir dans la page : 0 (https://museedeshospitalieres.qc.ca/activites/)",
+    "récolte mince (0) : recherche élargie à https://museedeshospitalieres.qc.ca/expositions/, https://museedeshospitalieres.qc.ca/activites-familles/, https://museedeshospitalieres.qc.ca/en/activites/, https://museedeshospitalieres.qc.ca/activites/jeanne-mance-1606-1673/"
    ]
   },
   {
@@ -1678,15 +1406,15 @@
   },
   {
    "source": "Club Soda",
-   "evenements": 34,
+   "evenements": 31,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
-    "pages de programmation lues aussi : https://clubsoda.ca/fr/evenements, https://clubsoda.ca/fr/billetterie/horaire, https://clubsoda.ca/fr/evenements/chaker-bou-abdalla-stofil",
+    "pages de programmation lues aussi : https://clubsoda.ca/fr/evenements, https://clubsoda.ca/fr/billetterie/horaire, https://clubsoda.ca/fr/evenements/jo-cormier-machine",
     "lue dans le navigateur (automatique) : https://clubsoda.ca/",
     "annonces à venir dans la page : 8 (https://clubsoda.ca/)",
-    "annonces à venir dans la page : 50 (https://clubsoda.ca/fr/evenements)",
+    "annonces à venir dans la page : 31 (https://clubsoda.ca/fr/evenements)",
     "aucun événement trouvé dans 917 caractères de texte : https://clubsoda.ca/fr/billetterie/horaire",
     "annonces à venir dans la page : 0 (https://clubsoda.ca/fr/billetterie/horaire)"
    ]
@@ -1707,13 +1435,13 @@
    "evenements": 5,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.foufouneselectriques.com/export-events/4430_0/?nonce=4cd903e1ab, https://www.foufouneselectriques.com/export-events/4432_0/?nonce=4cd903e1ab, https://www.foufouneselectriques.com/export-events/4481_0/?nonce=4cd903e1ab",
+    "pages de programmation lues aussi : https://www.foufouneselectriques.com/export-events/4430_0/?nonce=631ce73273, https://www.foufouneselectriques.com/export-events/4432_0/?nonce=631ce73273, https://www.foufouneselectriques.com/export-events/4481_0/?nonce=631ce73273",
     "annonces à venir dans la page : 5 (https://foufouneselectriques.com/)",
-    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4430_0/?nonce=4cd903e1ab",
-    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4432_0/?nonce=4cd903e1ab",
-    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4481_0/?nonce=4cd903e1ab"
+    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4430_0/?nonce=631ce73273",
+    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4432_0/?nonce=631ce73273",
+    "page illisible (Error: Page.goto: net::ERR_ABORTED at https://www.foufouneselectriques.com/expor) : https://www.foufouneselectriques.com/export-events/4481_0/?nonce=631ce73273"
    ]
   },
   {
@@ -1747,8 +1475,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 0 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -1829,7 +1556,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -1855,8 +1582,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.galerielacerte.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://www.galerielacerte.com",
+    "pages de programmation lues aussi : https://galerielacerte.com/acceuil",
+    "aucun événement trouvé dans 2151 caractères de texte : https://www.galerielacerte.com",
     "annonces à venir dans la page : 0 (https://www.galerielacerte.com)"
    ]
   },
@@ -2002,22 +1729,21 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.yveslaroche.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://www.yveslaroche.com",
+    "pages de programmation lues aussi : https://yveslaroche.com/exhibition/",
+    "aucun événement trouvé dans 2037 caractères de texte : https://www.yveslaroche.com",
     "annonces à venir dans la page : 0 (https://www.yveslaroche.com)"
    ]
   },
   {
    "source": "Upstairs Jazz Bar & Grill",
-   "evenements": 15,
+   "evenements": 20,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.upstairsjazz.com/calendar-2/, https://www.upstairsjazz.com/calendar/, https://www.upstairsjazz.com/events/manoel-vieira-joao-lenharialbum-launch-reflexions/",
+    "pages de programmation lues aussi : https://www.upstairsjazz.com/calendar-2/, https://www.upstairsjazz.com/calendar/, https://www.upstairsjazz.com/events/concordia-student-jazz-jam-2/",
     "annonces à venir dans la page : 5 (https://www.upstairsjazz.com/)",
-    "aucun événement trouvé dans 2498 caractères de texte : https://www.upstairsjazz.com/events/manoel-vieira-joao-lenharialbum-launch-reflexions/",
-    "annonces à venir dans la page : 1 (https://www.upstairsjazz.com/events/manoel-vieira-joao-lenharialbum-launch-reflexions/)"
+    "annonces à venir dans la page : 1 (https://www.upstairsjazz.com/events/concordia-student-jazz-jam-2/)"
    ]
   },
   {
@@ -2096,15 +1822,15 @@
   },
   {
    "source": "Le Ministère",
-   "evenements": 21,
+   "evenements": 22,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
     "pages de programmation lues aussi : https://leministere.ca/evenements, https://leministere.ca/evenements/emma-beko-cicada, https://leministere.ca/evenements/selection-officielle-geoffroy",
     "lue dans le navigateur (automatique) : https://leministere.ca/",
     "annonces à venir dans la page : 8 (https://leministere.ca/)",
-    "annonces à venir dans la page : 22 (https://leministere.ca/evenements)"
+    "annonces à venir dans la page : 23 (https://leministere.ca/evenements)"
    ]
   },
   {
@@ -2140,12 +1866,12 @@
   },
   {
    "source": "Théâtre Rialto",
-   "evenements": 0,
+   "evenements": 9,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-18",
    "diagnostic": [
-    "page presque vide (172 caractères ; site en JavaScript ?) : https://www.theatrerialto.ca/",
-    "annonces à venir dans la page : 0 (https://www.theatrerialto.ca/)"
+    "annonces à venir dans la page : 10 (https://www.theatrerialto.ca/calendrier)"
    ]
   },
   {
@@ -2154,8 +1880,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (212 caractères ; site en JavaScript ?) : http://latulipe.ca/?p=4",
-    "annonces à venir dans la page : 1 (http://latulipe.ca/?p=4)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : http://latulipe.ca/?p=4"
    ]
   },
   {
@@ -2238,7 +1963,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2359,9 +2084,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
-    "annonces à venir dans la page : 0 (https://theatredelesquisse.qc.ca/accueil/a-laffiche/)"
+    "aucun événement trouvé dans 4299 caractères de texte : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
+    "annonces à venir dans la page : 4 (https://theatredelesquisse.qc.ca/accueil/a-laffiche/)"
    ]
   },
   {
@@ -2411,8 +2135,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://laserre.ca/",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://laserre.ca/",
+    "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/",
     "annonces à venir dans la page : 0 (https://laserre.ca/)"
    ]
   },
@@ -2422,9 +2145,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://laserre.ca/initiative/douze-douze/",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://laserre.ca/initiative/douze-douze/",
-    "annonces à venir dans la page : 0 (https://laserre.ca/initiative/douze-douze/)"
+    "aucun événement trouvé dans 26250 caractères de texte : https://laserre.ca/initiative/douze-douze/",
+    "annonces à venir dans la page : 13 (https://laserre.ca/initiative/douze-douze/)"
    ]
   },
   {
@@ -2433,9 +2155,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://offta.com/",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://offta.com/",
-    "annonces à venir dans la page : 0 (https://offta.com/)"
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 4001 caractères de texte : https://offta.com/",
+    "annonces à venir dans la page : 12 (https://offta.com/)"
    ]
   },
   {
@@ -2686,10 +2408,10 @@
    "evenements": 28,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
     "page illisible (page redirigée vers une autre ville (https://casadelpopolo.com/fr/events/ptit-ou) : https://ursamtl.com/",
-    "page illisible : données du 2026-11-13 conservées"
+    "page illisible : données du 2026-11-16 conservées"
    ]
   },
   {
@@ -2994,7 +2716,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3003,8 +2725,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/",
-    "annonces à venir dans la page : 0 (https://compagnietheatrecreole.ca/festitheatrecreole/)"
+    "page illisible (500 Server Error: Internal Server Error for url: https://compagnietheatrecreole.) : https://compagnietheatrecreole.ca/festitheatrecreole/"
    ]
   },
   {
@@ -3054,14 +2775,23 @@
   },
   {
    "source": "Festival · Festival Bach",
-   "evenements": 3,
+   "evenements": 62,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-13",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
     "annonces à venir dans la page : 45 (https://festivalbachmontreal.com/programmation/)",
-    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/concert-ouverture-2026/)",
-    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/concert-dorgue-et-choeur/)"
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-concert-loic-lapatrie/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/sir-andras-schiff-piano/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/les-boreades/)",
+    "annonces à venir dans la page : 5 (https://festivalbachmontreal.com/concerts/off-mini-conference-luc-beausejour-26-1/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-talk-conference-cafe-croissant-avec-michael-maul/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-lheure-de-la-decouverte-udm/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-recital-stick-and-bow/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-concert-dominique-beausejour-ostiguy-marie-begin/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/off-table-ronde-avec-michael-maul/)",
+    "annonces à venir dans la page : 1 (https://festivalbachmontreal.com/concerts/vox-luminis/)",
+    "annonces à venir dans la page : 3 (https://festivalbachmontreal.com/concerts/81446-2/)"
    ]
   },
   {
@@ -3080,14 +2810,20 @@
    "evenements": 0,
    "series": 1,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-18",
    "diagnostic": [
     "pages de programmation lues aussi : https://www.mundialmontreal.com/programmation-2026/, https://www.mundialmontreal.com/mentorat-mundial-montreal/",
     "annonces à venir dans la page : 1 (https://mundialmontreal.com)",
-    "aucun événement trouvé dans 2582 caractères de texte : https://www.mundialmontreal.com/programmation-2026/",
-    "annonces à venir dans la page : 0 (https://www.mundialmontreal.com/programmation-2026/)",
+    "trouvé dans le navigateur (automatique) : https://www.mundialmontreal.com/programmation-2026/",
+    "annonces à venir dans la page : 15 (https://www.mundialmontreal.com/programmation-2026/)",
     "aucun événement trouvé dans 4735 caractères de texte : https://www.mundialmontreal.com/mentorat-mundial-montreal/",
-    "annonces à venir dans la page : 0 (https://www.mundialmontreal.com/mentorat-mundial-montreal/)"
+    "annonces à venir dans la page : 0 (https://www.mundialmontreal.com/mentorat-mundial-montreal/)",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE2MQ==",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE2NQ==",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE2OA==",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE3MQ==",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE2MA==",
+    "page illisible (404 Client Error: Not Found for url: https://www.mundialmontreal.com/widget/even) : https://www.mundialmontreal.com/widget/event/mundial-montreal-2026/planning/UGxhbm5pbmdfNDY1MTE2Ng=="
    ]
   },
   {
@@ -3327,8 +3063,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3394,9 +3129,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3910 caractères de texte : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -3429,9 +3163,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://vuesdafrique.org/programmation/, https://vuesdafrique.org/activites/, https://vuesdafrique.org/matinees-cine-jeunesse-et-seances-familiales/",
-    "aucun événement trouvé dans 3057 caractères de texte : https://vuesdafrique.org",
-    "annonces à venir dans la page : 0 (https://vuesdafrique.org)"
+    "page illisible (Response ended prematurely) : https://vuesdafrique.org"
    ]
   },
   {
@@ -3458,8 +3190,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3486,8 +3217,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://accesasie.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://accesasie.com",
+    "pages de programmation lues aussi : https://accesasie.com/programmation/?_annee=2026",
+    "aucun événement trouvé dans 3004 caractères de texte : https://accesasie.com",
     "annonces à venir dans la page : 0 (https://accesasie.com)"
    ]
   },
@@ -3530,8 +3261,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3559,9 +3290,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://offta.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://offta.com",
-    "annonces à venir dans la page : 0 (https://offta.com)"
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 3993 caractères de texte : https://offta.com",
+    "annonces à venir dans la page : 12 (https://offta.com)"
    ]
   },
   {
@@ -3580,8 +3311,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://festivalmontreal.org",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivalmontreal.org",
+    "pages de programmation lues aussi : https://festivalmontreal.org/programmation-2026/, https://festivalmontreal.org/programmation/bachamidi1/, https://festivalmontreal.org/programmation/pour-lamour-de-brahms/",
+    "aucun événement trouvé dans 7071 caractères de texte : https://festivalmontreal.org",
     "annonces à venir dans la page : 0 (https://festivalmontreal.org)"
    ]
   },
@@ -3592,8 +3323,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3706,8 +3437,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
-    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3761,9 +3491,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://festivaltradmontreal.ca",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivaltradmontreal.ca",
-    "annonces à venir dans la page : 0 (https://festivaltradmontreal.ca)"
+    "pages de programmation lues aussi : https://festivaltradmontreal.ca/l-agenda-du-ftm/",
+    "aucun événement trouvé dans 785 caractères de texte : https://festivaltradmontreal.ca",
+    "annonces à venir dans la page : 1 (https://festivaltradmontreal.ca)"
    ]
   },
   {
@@ -3772,9 +3502,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
-    "page presque vide (80 caractères ; site en JavaScript ?) : https://quartiersdanses.com",
-    "annonces à venir dans la page : 0 (https://quartiersdanses.com)"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
    ]
   },
   {
@@ -3811,9 +3539,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://festivalphenomena.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivalphenomena.com",
-    "annonces à venir dans la page : 0 (https://festivalphenomena.com)"
+    "pages de programmation lues aussi : https://festivalphenomena.com/phenomena/fr/festival/2026/horaire",
+    "aucun événement trouvé dans 1094 caractères de texte : https://festivalphenomena.com",
+    "annonces à venir dans la page : 1 (https://festivalphenomena.com)"
    ]
   },
   {
@@ -3888,9 +3616,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://underpressure.ca",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://underpressure.ca",
-    "annonces à venir dans la page : 0 (https://underpressure.ca)"
+    "pages de programmation lues aussi : https://underpressure.ca/events2020/",
+    "aucun événement trouvé dans 13069 caractères de texte : https://underpressure.ca",
+    "annonces à venir dans la page : 1 (https://underpressure.ca)"
    ]
   },
   {
@@ -3953,9 +3681,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://westislandbluesfestival.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://westislandbluesfestival.com",
-    "annonces à venir dans la page : 0 (https://westislandbluesfestival.com)"
+    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com",
+    "annonces à venir dans la page : 4 (https://westislandbluesfestival.com)"
    ]
   },
   {

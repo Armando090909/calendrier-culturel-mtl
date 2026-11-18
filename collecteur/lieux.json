@@ -253,6 +253,11 @@
   "lon": -73.52382,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
+ "Bibliothèque Mordecai-Richler": {
+  "lat": 45.52162,
+  "lon": -73.60174,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Bibliothèque Père-Ambroise": {
   "lat": 45.52279,
   "lon": -73.56268,
@@ -263,11 +268,21 @@
   "lon": -73.606,
   "quartier": "Outremont"
  },
+ "Bibliothèque Réjean-Ducharme": {
+  "lat": 45.48358,
+  "lon": -73.57511,
+  "quartier": "Le Sud-Ouest"
+ },
  "Bibliothèque Saint-Charles": {
   "adresse": "2333 rue Mullins",
   "alias": [],
   "lat": 45.47858,
   "lon": -73.56507,
+  "quartier": "Le Sud-Ouest"
+ },
+ "Bibliothèque Saint-Henri": {
+  "lat": 45.47265,
+  "lon": -73.58911,
   "quartier": "Le Sud-Ouest"
  },
  "Bibliothèque Saul-Bellow": {
@@ -290,7 +305,12 @@
   "lon": -73.63154,
   "quartier": "Montréal-Nord"
  },
- "Bibliothèque de Cartierville": null,
+ "Bibliothèque de Cartierville": {
+  "alias": [],
+  "lat": 45.53003,
+  "lon": -73.71581,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Bibliothèque de Cowansville": null,
  "Bibliothèque de Côte-des-Neiges": {
   "lat": 45.498,
@@ -552,7 +572,12 @@
   "lon": -73.5799,
   "quartier": "Shaughnessy"
  },
- "Centre communautaire Elgar": null,
+ "Centre communautaire Elgar": {
+  "alias": [],
+  "lat": 45.45728,
+  "lon": -73.54782,
+  "quartier": "Verdun"
+ },
  "Centre communautaire Gerry-Robertson": {
   "alias": [],
   "lat": 45.50477,
@@ -583,6 +608,11 @@
   "lon": -73.61978,
   "quartier": "Outremont"
  },
+ "Centre culturel Georges-Vanier": {
+  "lat": 45.48358,
+  "lon": -73.57511,
+  "quartier": "Le Sud-Ouest"
+ },
  "Centre culturel Peter B. Yeomans": {
   "lat": 45.43954,
   "lon": -73.75627,
@@ -598,7 +628,12 @@
   "lon": -73.615,
   "quartier": "LaSalle"
  },
- "Centre culturel et communautaire de Cartierville": null,
+ "Centre culturel et communautaire de Cartierville": {
+  "alias": [],
+  "lat": 45.53003,
+  "lon": -73.71581,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Centre d'art Jacques-et-Michel-Auger": null,
  "Centre d'essai de l'UdeM": null,
  "Centre d'exposition Lethbridge": {
@@ -884,6 +919,11 @@
   "lat": 45.51267,
   "lon": -73.67639,
   "quartier": "Saint-Laurent"
+ },
+ "Fabricathèque du Sud-Ouest": {
+  "lat": 45.47265,
+  "lon": -73.58911,
+  "quartier": "Le Sud-Ouest"
  },
  "Fais-moi l'art": null,
  "Faubourg Building, salle 620": null,
@@ -1517,6 +1557,11 @@
   "lon": -73.617,
   "quartier": "NDG"
  },
+ "Maison de la culture Notre-Dame-de-Grâce – Botrel": {
+  "lat": 45.47557,
+  "lon": -73.61438,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Maison de la culture de Côte-des-Neiges": {
   "lat": 45.498,
   "lon": -73.625,
@@ -2014,7 +2059,12 @@
  "Salle Jean-Louis-Millette": null,
  "Salle Joseph-Rouleau": null,
  "Salle Louis-Fréchette": null,
- "Salle Madeleine-Lahaye": null,
+ "Salle Madeleine-Lahaye": {
+  "alias": [],
+  "lat": 45.48859,
+  "lon": -73.88216,
+  "quartier": "L'Île-Bizard–Sainte-Geneviève"
+ },
  "Salle Michel Côté": null,
  "Salle Michelle-Rossignol": null,
  "Salle Méchatigan": null,

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-15-fabrication-de-baume-a-levres-biologique-adultes-74f2d2@ccmt
+ l.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261215T180000
+DTEND;TZID=America/Toronto:20261215T200000
+SUMMARY:Fabrication de baume à lèvres biologique (Adultes)
+LOCATION:Bibliothèque Frontenac\, Montréal
+URL:https://montreal.ca/evenements/fabrication-de-baume-levres-biologique-a
+ dultes-116932
+DESCRIPTION:Atelier de fabrication de baume à lèvre biologique à la bibl
+ iothèque Frontenac.\nPrix : Gratuit\nDétails : https://montreal.ca/evene
+ ments/fabrication-de-baume-levres-biologique-adultes-116932\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
