@@ -753,9 +753,30 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             # « mise_en_page » : disposition particulière de la page (ex. date écrite APRÈS le titre), vérifiée à la main
             data = extraire_avec_memoire(url, texte, debut, fin, cfg.get("mise_en_page", ""))
         except Exception as exc:
-            print(f"  IA en échec pour {url} : {exc}")
-            DIAG.append(f"IA en échec ({str(exc)[:80]}) : {url}")
-            continue
+            data = None
+            # 18 nov. 2026 : une très longue liste (BAnQ, ~100 activités) donne une réponse trop longue, coupée, donc
+            # illisible. On relit alors la page en morceaux (coupés entre deux lignes) et on réunit les réponses.
+            if "JSON" in str(exc) and len(texte) > 12000:
+                try:
+                    lignes, morceaux, cour = texte.split("\n"), [], ""
+                    for l_ in lignes:
+                        if len(cour) + len(l_) > 9000 and cour:
+                            morceaux.append(cour)
+                            cour = ""
+                        cour += l_ + "\n"
+                    morceaux.append(cour)
+                    data = {"evenements": [], "series": []}
+                    for m_ in morceaux[:8]:
+                        d_ = extraire_avec_memoire(url + "#morceau", m_, debut, fin, cfg.get("mise_en_page", ""))
+                        data["evenements"] += d_.get("evenements", [])
+                        data["series"] += d_.get("series", [])
+                    DIAG.append(f"page longue lue en {min(len(morceaux), 8)} morceaux : {url}")
+                except Exception as exc2:
+                    data, exc = None, exc2
+            if data is None:
+                print(f"  IA en échec pour {url} : {exc}")
+                DIAG.append(f"IA en échec ({str(exc)[:80]}) : {url}")
+                continue
         if not data["evenements"] and not data["series"] and url not in suivis and not avec_nav \
                 and _ESSAIS_NAV[0] < 25 and "pagemac" not in html[:200]:
             # rien trouvé : la programmation est peut-être chargée par JavaScript ; un essai dans le navigateur
