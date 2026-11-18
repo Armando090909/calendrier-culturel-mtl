@@ -167,7 +167,7 @@ def pages_bloquees(jeton, aujourd):
     code, txt = curl("https://ccmtl.ca/pages_a_lire.json")
     if code != 200:
         return True
-    robots, res = {}, {}
+    robots, res, refus = {}, {}, []
     for url in json.loads(txt)[:150]:
         hote = "/".join(url.split("/")[:3])
         if hote not in robots:
@@ -176,15 +176,20 @@ def pages_bloquees(jeton, aujourd):
             rp.parse(t.splitlines() if c == 200 and "<html" not in t[:500].lower() else [])
             robots[hote] = rp
         if not robots[hote].can_fetch("CalendrierCulturelMTL", url):
+            refus.append(f"{url} (robots.txt)")
             continue
         c, html = curl(url)
         if c == 200 and len(html) > 500:
             html = re.sub(r"(?is)<(script|style|svg|noscript)\b.*?</\1>", "", html)
             res[url] = {"le": aujourd, "html": base64.b64encode(gzip.compress(html.encode("utf-8"))).decode("ascii")}
+        else:  # 18 nov. 2026 : les pages refusées sont notées (journal et message d'envoi) pour savoir pourquoi
+            refus.append(f"{url} ({c or 'pas de réponse'}{', page vide' if c == 200 else ''})")
         time.sleep(PAUSE)
-    journal(f"Pages de salles lues : {len(res)}.")
-    return envoyer(jeton, "collecteur/cache/pages_mac.json", res, 3, f"Pages de salles lues depuis Montréal ({len(res)})") \
-        if res else True
+    journal(f"Pages de salles lues : {len(res)} ; refusées : {len(refus)}.")
+    for r in refus:
+        journal(f"  refusée : {r}")
+    msg = f"Pages de salles lues depuis Montréal ({len(res)})" + (f"\n\nRefusées :\n" + "\n".join(refus[:60]) if refus else "")
+    return envoyer(jeton, "collecteur/cache/pages_mac.json", res, 3, msg) if res else True
 
 
 if __name__ == "__main__":
