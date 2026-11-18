@@ -1169,8 +1169,9 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     """Page-liste dont chaque activité a sa fiche avec des données schema.org complètes (titre, date, heure, salle) :
     on relève les liens des fiches (motif « motif ») et on lit les données de chaque fiche, sans IA (18 nov. 2026, BAnQ :
     la liste ne donne pas la salle et mêle Montréal, Sept-Îles et Trois-Rivières ; la fiche, si)."""
-    html = telecharger(cfg["url"], "text/html").text
+    html = page_rendue(cfg["url"], 4000) if cfg.get("navigateur") else telecharger(cfg["url"], "text/html").text
     liens = list(dict.fromkeys(urljoin(cfg["url"], l) for l in re.findall(cfg["motif"], html)))
+    print(f"  {len(liens)} fiches trouvées sur la liste")
     evs, series, lues = [], [], 0
     for lien in liens[:int(cfg.get("max_fiches", 150))]:
         try:
