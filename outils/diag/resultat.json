@@ -1,15 +1,17 @@
 {
- "https://www.banq.qc.ca/robots.txt": {
+ "https://banq.mhsoftware.com/robots.txt": {
   "statut": 200,
   "simple_images": {
    "og": null,
    "img": [],
    "iframes": [],
-   "calendriers": []
+   "calendriers": [
+    "Disallow: /\n\nUser-agent: *\nDisallow: /manual/en/\nDisallow: /*.html?\nDisallow: /iCal/\nDisallow: /json/\nDisallow: /jsonp/\n\nUser-agent: Googlebot\nAllow: /iCal/calendar_id/*.ics\nDisallow: /manual/en/\nDisallow: /ViewDay.html\nDisallow: /ViewWeek.html\nDisallow: /ViewList.html\nDisallow: /ViewYear.html\nDisallow: /iCal/\n"
+   ]
   },
   "simple": {
-   "taille": 3299,
-   "texte": "#\n# robots.txt\n#\n# This file is to prevent the crawling and indexing of certain parts\n# of your site by web crawlers and spiders run by sites like Yahoo!\n# and Google. By telling these \"robots\" where not to go on your site,\n# you save bandwidth and server resources.\n#\n# This file will be ignored unless it is at the root of your host:\n# Used: http://example.com/robots.txt\n# Ignored: http://example.com/site/robots.txt\n#\n# For more information about the robots.txt standard, see:\n# http://www.robotstxt.org/robotstxt.html\nUser-agent: *\n# CSS, JS, Images\nAllow: /core/*.css$\nAllow: /core/*.css?\nAllow: /core/*.js$\nAllow: /core/*.js?\nAllow: /core/*.avif\nAllow: /core/*.gif\nAllow: /core/*.jpg\nAllow: /core/*.jpeg\nAllow: /core/*.png\nAllow: /core/*.svg\nAllow: /core/*.webp\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.avif\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /profiles/*.svg\nAllow: /profiles/*.webp\n# Directories\nDisallow: /core/\nDisallow: /profiles/\n# Files\nDisallow: /README.md\nDisallow: /composer/Metapackage/README.txt\nDisallow: /composer/Plugin/ProjectMessage/README.md\nDisallow: /composer/Plugin/Scaffold/README.md\nDisallow: /composer/Plugin/VendorHardening/README.txt\nDisallow: /composer/Template/README.txt\nDisallow: /modules/README.txt\nDisallow: /sites/README.txt\nDisallow: /themes/README.txt\n# Paths (clean URLs)\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /search?\nDisallow: /user/register\nDisallow: /user/password\nDisallow: /user/login\nDisallow: /user/logout\nDisallow: /media/oembed\nDisallow: /*/media/oembed\n# Paths (no clean URLs)\nDisallow: /index.php/admin/\nDisallow: /index.php/comment/reply/\nDisallow: /index.php/filter/tips\nDisallow: /index.php/node/add/\nDisallow: /index.php/search/\nDisallow: /index.php/search?\nDisallow: /index.php/user/password\nDisallow: /index.php/user/register\nDisallow: /index.php/user/login\nDisallow: /index.php/user/logout\nDisallow: /index.php/media/oembed\nDisallow: /index.php/*/media/oembed\n# PORTAIL-1914\nDisallow: /*?f%5B\n# robots.txt - blocage large des crawlers IA / LLM / answer engines\n# OpenAI\nUser-agent: GPTBot\nDisallow: /\nUser-agent: OAI-SearchBot\nDisallow: /\nUser-agent: ChatGPT-User\nDisallow: /\n# Anthropic\nUser-agent: ClaudeBot\nDisallow: /\nUser-agent: anthropic-ai\nDisallow: /\nUser-agent: Claude-Web\nDisallow: /\n# Meta\nUser-agent: Meta-ExternalAgent\nDisallow: /\nUser-agent: Meta-ExternalFetcher\nDisallow: /\nUser-agent: FacebookBot\nDisallow: /\n# Apple\nUser-agent: Applebot\nDisallow: /\nUser-agent: Applebot-Extended\nDisallow: /\n# Amazon\nUser-agent: Amazonbot\nDisallow: /\nUser-agent: Amzn-SearchBot\nDisallow: /\nUser-agent: Amzn-User\nDisallow: /\n# Perplexity\nUser-agent: PerplexityBot\nDisallow: /\nUser-agent: Perplexity-User\nDisallow: /\n# Common Crawl\nUser-agent: CCBot\nDisallow: /\n# ByteDance\nUser-agent: Bytespider\nDisallow: /\n# Cohere\nUser-agent: cohere-ai\nDisallow: /\n# Diffbot\nUser-agent: Diffbot\nDisallow: /\n# You.com\nUser-agent: YouBot\nDisallow: /\n# DuckDuckGo AI answers\nUser-agent: DuckAssistBot\nDisallow: /\n# Webz.io / Omgili\nUser-agent: Omgilibot\nDisallow: /\nUser-agent: omgili\nDisallow: /\n# Hive\nUser-agent: ImagesiftBot\nDisallow: /",
+   "taille": 473,
+   "texte": "User-agent: Baiduspider\nDisallow: /\nUser-agent: BUbiNG\nDisallow: /\nUser-agent: OmniExplorer_Bot\nDisallow: /\nUser-agent: webcrawler\nDisallow: /\nUser-agent: shopwiki\nDisallow: /\nUser-agent: *\nDisallow: /manual/en/\nDisallow: /*.html?\nDisallow: /iCal/\nDisallow: /json/\nDisallow: /jsonp/\nUser-agent: Googlebot\nAllow: /iCal/calendar_id/*.ics\nDisallow: /manual/en/\nDisallow: /ViewDay.html\nDisallow: /ViewWeek.html\nDisallow: /ViewList.html\nDisallow: /ViewYear.html\nDisallow: /iCal/",
    "courriels": [],
    "contact": [],
    "jsonld": [],
@@ -21,11 +23,13 @@
    "og": null,
    "img": [],
    "iframes": [],
-   "calendriers": []
+   "calendriers": [
+    "Disallow: /\n\nUser-agent: *\nDisallow: /manual/en/\nDisallow: /*.html?\nDisallow: /iCal/\nDisallow: /json/\nDisallow: /jsonp/\n\nUser-agent: Googlebot\nAllow: /iCal/calendar_id/*.ics\nDisallow: /manual/en/\nDisallow: /ViewDay.html\nDisallow: /ViewWeek.html\nDisallow: /ViewList.html\nDisallow: /ViewYear.html\nDisallow: /iCal/\n</pre></body></html>"
+   ]
   },
   "navigateur": {
-   "taille": 3299,
-   "texte": "#\n# robots.txt\n#\n# This file is to prevent the crawling and indexing of certain parts\n# of your site by web crawlers and spiders run by sites like Yahoo!\n# and Google. By telling these \"robots\" where not to go on your site,\n# you save bandwidth and server resources.\n#\n# This file will be ignored unless it is at the root of your host:\n# Used: http://example.com/robots.txt\n# Ignored: http://example.com/site/robots.txt\n#\n# For more information about the robots.txt standard, see:\n# http://www.robotstxt.org/robotstxt.html\nUser-agent: *\n# CSS, JS, Images\nAllow: /core/*.css$\nAllow: /core/*.css?\nAllow: /core/*.js$\nAllow: /core/*.js?\nAllow: /core/*.avif\nAllow: /core/*.gif\nAllow: /core/*.jpg\nAllow: /core/*.jpeg\nAllow: /core/*.png\nAllow: /core/*.svg\nAllow: /core/*.webp\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.avif\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /profiles/*.svg\nAllow: /profiles/*.webp\n# Directories\nDisallow: /core/\nDisallow: /profiles/\n# Files\nDisallow: /README.md\nDisallow: /composer/Metapackage/README.txt\nDisallow: /composer/Plugin/ProjectMessage/README.md\nDisallow: /composer/Plugin/Scaffold/README.md\nDisallow: /composer/Plugin/VendorHardening/README.txt\nDisallow: /composer/Template/README.txt\nDisallow: /modules/README.txt\nDisallow: /sites/README.txt\nDisallow: /themes/README.txt\n# Paths (clean URLs)\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /search?\nDisallow: /user/register\nDisallow: /user/password\nDisallow: /user/login\nDisallow: /user/logout\nDisallow: /media/oembed\nDisallow: /*/media/oembed\n# Paths (no clean URLs)\nDisallow: /index.php/admin/\nDisallow: /index.php/comment/reply/\nDisallow: /index.php/filter/tips\nDisallow: /index.php/node/add/\nDisallow: /index.php/search/\nDisallow: /index.php/search?\nDisallow: /index.php/user/password\nDisallow: /index.php/user/register\nDisallow: /index.php/user/login\nDisallow: /index.php/user/logout\nDisallow: /index.php/media/oembed\nDisallow: /index.php/*/media/oembed\n# PORTAIL-1914\nDisallow: /*?f%5B\n# robots.txt - blocage large des crawlers IA / LLM / answer engines\n# OpenAI\nUser-agent: GPTBot\nDisallow: /\nUser-agent: OAI-SearchBot\nDisallow: /\nUser-agent: ChatGPT-User\nDisallow: /\n# Anthropic\nUser-agent: ClaudeBot\nDisallow: /\nUser-agent: anthropic-ai\nDisallow: /\nUser-agent: Claude-Web\nDisallow: /\n# Meta\nUser-agent: Meta-ExternalAgent\nDisallow: /\nUser-agent: Meta-ExternalFetcher\nDisallow: /\nUser-agent: FacebookBot\nDisallow: /\n# Apple\nUser-agent: Applebot\nDisallow: /\nUser-agent: Applebot-Extended\nDisallow: /\n# Amazon\nUser-agent: Amazonbot\nDisallow: /\nUser-agent: Amzn-SearchBot\nDisallow: /\nUser-agent: Amzn-User\nDisallow: /\n# Perplexity\nUser-agent: PerplexityBot\nDisallow: /\nUser-agent: Perplexity-User\nDisallow: /\n# Common Crawl\nUser-agent: CCBot\nDisallow: /\n# ByteDance\nUser-agent: Bytespider\nDisallow: /\n# Cohere\nUser-agent: cohere-ai\nDisallow: /\n# Diffbot\nUser-agent: Diffbot\nDisallow: /\n# You.com\nUser-agent: YouBot\nDisallow: /\n# DuckDuckGo AI answers\nUser-agent: DuckAssistBot\nDisallow: /\n# Webz.io / Omgili\nUser-agent: Omgilibot\nDisallow: /\nUser-agent: omgili\nDisallow: /\n# Hive\nUser-agent: ImagesiftBot\nDisallow: /",
+   "taille": 473,
+   "texte": "User-agent: Baiduspider\nDisallow: /\nUser-agent: BUbiNG\nDisallow: /\nUser-agent: OmniExplorer_Bot\nDisallow: /\nUser-agent: webcrawler\nDisallow: /\nUser-agent: shopwiki\nDisallow: /\nUser-agent: *\nDisallow: /manual/en/\nDisallow: /*.html?\nDisallow: /iCal/\nDisallow: /json/\nDisallow: /jsonp/\nUser-agent: Googlebot\nAllow: /iCal/calendar_id/*.ics\nDisallow: /manual/en/\nDisallow: /ViewDay.html\nDisallow: /ViewWeek.html\nDisallow: /ViewList.html\nDisallow: /ViewYear.html\nDisallow: /iCal/",
    "courriels": [],
    "contact": [],
    "jsonld": [],
@@ -34,134 +38,113 @@
    "menu": []
   }
  },
- "https://www.banq.qc.ca/calendrier/a-venir/147717": {
-  "appels": [
-   {
-    "url": "https://www.banq.qc.ca/calendrier/a-venir/147717",
-    "type": "document",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://sdk.privacy-center.org/e2436f9f-3c99-4a96-8aa6-856674554710/loader.js?target_type=notice&target=RTQWWFfj",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://sdk.privacy-center.org/sdk/f229aca430fa21f2f62c0a348049e84d7490403b/modern/sdk.f229aca430fa21f2f62c0a348049e84d7490403b.js",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://bq-passage.banq.qc.ca/r7n239u010uypfl.js?awl=MZT2GP",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://code.jquery.com/jquery-3.6.4.min.js",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://www.banq.qc.ca/core/assets/vendor/jquery/jquery.min.js?v=4.0.0",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://www.banq.qc.ca/sites/default/files/js/js_78yk5uFNBV2XI_Y761v0YDCrqVcIKay5puydMopXfeU.js?scope=footer&delta=2&language=fr&theme=banq_lyxn_glider&include=eJxtiV0OwiAMgC9ExpGaApWgTctK0XF7YzL3om_fT0LZISOTFLT4BSjk2Dikz-V1CFRuhSwmVR9u2H9XZU3IMHwxjUCHc5NHLDY78nZqaHSDrn32eFG475NsQdGXVMNC8QxMFfMKs0FHdzIZUZ9kjAsy6yBI011l-xffI6lWXw",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://www.banq.qc.ca/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://www.banq.qc.ca/c99a4269-161c-4242-a3f0-28d44fa6ce24?",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "{\"ssresp\":\"3\",\"jsrecvd\":\"true\",\"__uzmaj\":\"a54df1ab-92e9-4fd3-a7f2-f2e95ca5ba1c\",\"__uzmbj\":\"1795032881\",\"__uzmcj\":\"468211061497\",\"__uzmdj\":\"1795032881\",\"__uzmlj\":\"GpslNJiG1/Q5mFYPNpPraAxTJ7uzm8S5F8r53qNmmnc=\",\"__uzmfj\":\"7f9000a54df1ab-92e9-4fd3-a7f2-f2e95ca5ba1c1-17950328813380-0051034821b0a7a42ca10\",\"uzmxj\":\"7fc000afec3fff-f614-4585-9495-0c14ad6894761-17950328813380-00efa323e5f8e04e24310\",\"dync\":\"uzmx\",\"jsbd2\":\"58e86a5d-ch8p-1370-666e-80b3774a5244\",\"mc\":{},\"mct\":\"\"}"
-   },
-   {
-    "url": "https://www.banq.qc.ca/c99a4269-161c-4242-a3f0-28d44fa6ce24?",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "{\"ssresp\":\"3\",\"jsrecvd\":\"true\",\"__uzmaj\":\"774d654c-0950-4807-a65e-7e6f54773524\",\"__uzmbj\":\"1795032881\",\"__uzmcj\":\"741121096393\",\"__uzmdj\":\"1795032881\",\"jsbd2\":\"54e12e89-ch8p-1370-7fb5-6cec538975a4\"}"
-   },
-   {
-    "url": "https://bq-passage.banq.qc.ca/y1na74kvba8xyms.js?id=G-5MMSQ5Q86S&gtm=4e6bh0&cx=c",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://bq-passage.banq.qc.ca/y1na74kvba8xyms.js?id=G-3DY3YB33EB&gtm=4e6bh0&cx=c",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://sdk.privacy-center.org/sdk/f229aca430fa21f2f62c0a348049e84d7490403b/modern/ui-web-fr-web.f229aca430fa21f2f62c0a348049e84d7490403b.js",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://js-agent.newrelic.com/nr-spa-1.324.1.min.js",
-    "type": "script",
-    "statut": 200,
-    "debut": ""
-   },
-   {
-    "url": "https://bq-passage.banq.qc.ca/br5c6tffu?tid=G-5MMSQ5Q86S&v=2&gtm=45he6bh0v873656388za20szb6335535zd6335535xf3xg2&_p=1795032880698&gcs=G100&gcd=13p3p3p2p5l1&npa=1&dma_cps=-&dma=1&ecid=1401095418&_eu=AAAAAGA&_fplc=0&are=1&cid=1950642968.1795032882&frm=0&pscdl=denied&rcb=14&sr=1280x2000&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&ua",
-    "type": "fetch",
-    "statut": 200,
-    "debut": "event: message\ndata: {\"response\":{\"status_code\":200,\"body\":\"\"}}\n\n"
-   },
-   {
-    "url": "https://bq-passage.banq.qc.ca/3o12to2ui?tid=G-3DY3YB33EB&v=2&gtm=45he6bh0v9115207387za20szb6335535zd6335535xf3xg2&_p=1795032880698&gcs=G100&gcd=13p3p3p2p5l1&npa=1&dma_cps=-&dma=1&ecid=965059813&_eu=AAAAAGA&_fplc=0&are=1&cid=1950642968.1795032882&frm=0&pscdl=denied&rcb=9&sr=1280x2000&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uam",
-    "type": "fetch",
-    "statut": 200,
-    "debut": "event: message\ndata: {\"response\":{\"status_code\":200,\"body\":\"\"}}\n\n"
-   },
-   {
-    "url": "https://bam.nr-data.net/browser/connect/2/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&s=450427fe630ded3f",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "{\"config\":{\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0},\"app\":{\"agents\":[{\"entityGuid\":\"NjI2NDUxMnxCUk9XU0VSfEFQUExJQ0FUSU9OfDE1ODkwMzE5Nzc\"}],\"igp\":\"\",\"nrServerTime\":1795032882191}}"
-   },
-   {
-    "url": "https://bam.nr-data.net/rum/2/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3311&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30&at=ShBWRwxIT0U%3D&af=err,spa,xhr,stn,ins&ap=1387&be=1754&fe=1177&dc=500&fp=2123&fcp=2123&perf=%7B%22timin",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
-   },
-   {
-    "url": "https://bam.nr-data.net/events/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3313&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
-   },
-   {
-    "url": "https://bam.nr-data.net/jserrors/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3315&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
-   },
-   {
-    "url": "https://bam.nr-data.net/events/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3317&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
-    "type": "xhr",
-    "statut": 200,
-    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
-   }
-  ]
+ "https://banq.mhsoftware.com/": {
+  "statut": 200,
+  "simple_images": {
+   "og": null,
+   "img": [
+    "BANQ.png | "
+   ],
+   "iframes": [],
+   "calendriers": []
+  },
+  "simple": {
+   "taille": 106,
+   "texte": "Calendrier web Bibliothèque et Archives nationales du Québec\nBibliothèque et Archives nationales du Québec",
+   "courriels": [],
+   "contact": [],
+   "jsonld": [],
+   "heures": [],
+   "liens": [],
+   "menu": [
+    "Semaine 47 → https://banq.mhsoftware.com/ViewWeek.html?week=47&year=2026&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    " → https://banq.mhsoftware.com/ViewDay.html?start=2461362&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    " → https://banq.mhsoftware.com/ViewDay.html?start=2461364&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "novembre → https://banq.mhsoftware.com/ViewCal.html?month=11&year=2026&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "1 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461346&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "2 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461347&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "3 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461348&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "4 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461349&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "5 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461350&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "6 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461351&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "7 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461352&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "8 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461353&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "9 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461354&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "10 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461355&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "11 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461356&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "12 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461357&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "13 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461358&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "14 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461359&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "15 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461360&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "16 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461361&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "17 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461362&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "18 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461363&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "19 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461364&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "20 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461365&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "21 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461366&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "22 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461367&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "23 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461368&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "24 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461369&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "25 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461370&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "26 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461371&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "27 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461372&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "28 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461373&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "29 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461374&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "30 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461375&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0"
+   ]
+  },
+  "navigateur_images": {
+   "og": null,
+   "img": [
+    "BANQ.png | "
+   ],
+   "iframes": [],
+   "calendriers": []
+  },
+  "navigateur": {
+   "taille": 106,
+   "texte": "Calendrier web Bibliothèque et Archives nationales du Québec\nBibliothèque et Archives nationales du Québec",
+   "courriels": [],
+   "contact": [],
+   "jsonld": [],
+   "heures": [],
+   "liens": [],
+   "menu": [
+    "Semaine 47 → https://banq.mhsoftware.com/ViewWeek.html?week=47&year=2026&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    " → https://banq.mhsoftware.com/ViewDay.html?start=2461362&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    " → https://banq.mhsoftware.com/ViewDay.html?start=2461364&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "novembre → https://banq.mhsoftware.com/ViewCal.html?month=11&year=2026&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "1 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461346&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "2 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461347&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "3 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461348&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "4 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461349&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "5 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461350&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "6 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461351&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "7 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461352&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "8 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461353&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "9 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461354&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "10 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461355&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "11 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461356&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "12 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461357&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "13 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461358&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "14 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461359&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "15 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461360&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "16 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461361&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "17 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461362&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "18 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461363&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "19 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461364&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "20 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461365&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "21 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461366&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "22 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461367&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "23 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461368&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "24 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461369&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "25 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461370&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "26 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461371&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "27 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461372&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "28 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461373&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "29 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461374&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0",
+    "30 → https://banq.mhsoftware.com/ViewDay.html?span=1&start=2461375&calendar_id=1&dropdown=1&integral=0&show_stop=0&show_resources=0"
+   ]
+  }
  }
 }
