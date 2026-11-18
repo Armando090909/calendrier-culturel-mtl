@@ -625,7 +625,7 @@ def main() -> int:
     # Fiches lues depuis un ordinateur à Montréal (docs/mac/ville_mac.py) : montreal.ca refuse les serveurs de GitHub
     f_mac = CACHE / "ville_mac.json"
     mac = json.loads(f_mac.read_text(encoding="utf-8")) if f_mac.exists() else {}
-    lues_v, fin_v, erreurs_v, par_mac = 0, time.time() + 10 * 60, [], 0
+    lues_v, fin_v, erreurs_v, par_mac, ville_refuse = 0, time.time() + 10 * 60, [], 0, False
     for e in a_lire:
         if e["url"] in mac:
             m = mac[e["url"]]
@@ -653,7 +653,7 @@ def main() -> int:
         det = memo_v.get(e["url"])
         if det and det.get("_err") and det.get("le") != aujourd.isoformat():
             det = None  # échec un autre jour : on réessaie
-        if det is None and lues_v < int(reglages.get("max_pages_ville", 500)) and time.time() < fin_v:
+        if det is None and not ville_refuse and lues_v < int(reglages.get("max_pages_ville", 500)) and time.time() < fin_v:
             lues_v += 1
             try:
                 det = memo_v[e["url"]] = connecteurs.details_ville(telecharger(e["url"], "text/html").text, e["date"])
@@ -662,7 +662,10 @@ def main() -> int:
                 det = memo_v[e["url"]] = {"_err": str(exc)[:120], "le": aujourd.isoformat()}
                 erreurs_v.append(str(exc)[:120])
                 if len(erreurs_v) >= 15 and not any("_err" not in v for v in memo_v.values()):
-                    break  # le site refuse tout : inutile d'insister aujourd'hui
+                    # le site refuse tout : on cesse de lire ses pages aujourd'hui, MAIS on continue d'appliquer les fiches
+                    # lues par l'ordinateur à Montréal (18 nov. 2026 : un « break » ici sautait 580 fiches du Pi,
+                    # d'où 800 sorties sans heure après l'enrichissement)
+                    ville_refuse = True
         if not det or det.get("_err"):
             continue
         if e["lieu"] == "Lieu à confirmer" and det.get("lieu"):
