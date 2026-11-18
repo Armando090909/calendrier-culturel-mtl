@@ -46,6 +46,7 @@ NON_CULTUREL = [
     "c2 montreal", "mtl connecte", "reseautage", "networking", "salon de l emploi", "foire de l emploi",
     "conference d affaires", "sommet d affaires", "webinaire", "formation professionnelle", "gala corporatif",
     "congress",  # congrès médicaux ou professionnels (14 nov. 2026 : « Perioperative Care Congress »)
+    "ensemble pendant les fetes",  # 18 nov. 2026 (équipe) : période d'inscription de l'UQAM, affichée chaque jour, pas une activité
 ]
 
 REGLES = [
