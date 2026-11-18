@@ -1175,7 +1175,16 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     evs, series, lues, vides, erreurs = [], [], 0, [], []
     for lien in liens[:int(cfg.get("max_fiches", 150))]:
         try:
-            h2 = telecharger(lien, "text/html").text
+            try:
+                h2 = telecharger(lien, "text/html").text
+            except UnicodeDecodeError:
+                # 18 nov. 2026 (BAnQ) : la fiche redirige vers une adresse écrite en Latin-1 (« é ») que la bibliothèque
+                # « requests » ne sait pas décoder ; on suit la redirection nous-mêmes, adresse encodée correctement
+                from urllib.parse import quote
+                r0 = requests.get(lien, timeout=40, allow_redirects=False, headers={"User-Agent": UA})
+                cible = r0.headers.get("Location", "")
+                cible = quote(cible.encode("latin-1").decode("latin-1"), safe=":/?&=#%")
+                h2 = telecharger(urljoin(lien, cible), "text/html").text
             e2, s2 = evenements_jsonld(h2, lien, cfg, debut, fin)
             if not e2 and not s2:
                 vides.append(f"{lien} ({len(h2)} car., {h2.count('application/ld+json')} blocs schema.org)")
