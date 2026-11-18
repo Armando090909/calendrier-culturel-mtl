@@ -1182,9 +1182,15 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                 # « requests » ne sait pas décoder ; on suit la redirection nous-mêmes, adresse encodée correctement
                 from urllib.parse import quote
                 r0 = requests.get(lien, timeout=40, allow_redirects=False, headers={"User-Agent": UA})
-                cible = r0.headers.get("Location", "")
-                cible = quote(cible.encode("latin-1").decode("latin-1"), safe=":/?&=#%")
-                h2 = telecharger(urljoin(lien, cible), "text/html").text
+                cible, h2 = r0.headers.get("Location", ""), None
+                for enc in ("latin-1", "utf-8"):  # l'adresse telle que le serveur l'a écrite, puis en UTF-8
+                    try:
+                        h2 = telecharger(urljoin(lien, quote(cible, safe=":/?&=#%", encoding=enc)), "text/html").text
+                        break
+                    except Exception:
+                        continue
+                if h2 is None:
+                    raise
             e2, s2 = evenements_jsonld(h2, lien, cfg, debut, fin)
             if not e2 and not s2:
                 vides.append(f"{lien} ({len(h2)} car., {h2.count('application/ld+json')} blocs schema.org)")
