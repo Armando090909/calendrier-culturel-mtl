@@ -76,7 +76,8 @@ const STYLES=EN?{rock:"Rock & indie",pop:"Pop & chanson",hiphop:"Hip-hop & R&B",
 // Pour les filtres : un spectacle jeune public n'apparaît que si « Jeune public » est coché (pas sous Théâtre, Musique…)
 const discsFiltre=e=>e.discipline==="jeune"?["jeune"]:e.discipline==="expo"?["expo"]:discs(e);
 // st.seul = "expo" : le calendrier d'accueil, mais avec les vernissages seulement (bouton Vernissages de la page Expositions)
-// st.cible : l'événement ouvert depuis la recherche ou un lien partagé reste visible ce jour-là, même si sa catégorie n'est pas cochée
+// st.cible : l'événement ouvert depuis la recherche ou un lien partagé reste visible ce jour-là, même si sa catégorie n'est pas cochée,
+// jusqu'à ce qu'on change les disciplines (18 nov. 2026 : il restait affiché quelle que soit la catégorie cochée)
 const visible=()=>D.events.filter(e=>(st.cible===e._i&&e.date===st.day)||(st.seul?e.discipline===st.seul:st.fest?e.festival===st.fest:discsFiltre(e).some(k=>st.on[k]))&&inRadius(e.lieu));
 const byTime=(a,b)=>(a.heure||"99").localeCompare(b.heure||"99");
 const byDist=(a,b)=>{const x=dist(a.lieu),y=dist(b.lieu);return (x===null?1e9:x)-(y===null?1e9:y)||byTime(a,b)};
@@ -530,7 +531,7 @@ $("pt").innerHTML=`<option value="">${L("— n'importe où —","— anywhere �
 
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b||b.disabled)return;
   if(b.dataset.page==="expos"){if(st.view==="musee")st.view="week";else{sortirRecherche();st.view="musee";st.fest=null}render();return}
-  st.on[b.dataset.k]=!st.on[b.dataset.k];if(st.view==="musee")st.view="week";render()});
+  st.on[b.dataset.k]=!st.on[b.dataset.k];st.cible=null;if(st.view==="musee")st.view="week";render()});
 $("strip").addEventListener("click",e=>{const b=e.target.closest(".day");if(!b||b.disabled)return;
   // En mode Semaine, on reste en Semaine : la journée choisie est mise en évidence et on s'y rend
   if(st.view==="week"){st.day=b.dataset.d;render();const c=document.querySelector(`.col[data-d="${st.day}"]`);
@@ -586,9 +587,9 @@ $("prev").addEventListener("click",()=>step(-1));
 $("next").addEventListener("click",()=>step(1));
 $("s-time").addEventListener("click",()=>{st.sort="time";render()});
 $("s-dist").addEventListener("click",()=>{st.sort="dist";render()});
-$("discTout").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.seul=null;if(st.view==="musee")st.view="week";render()});
-$("discRien").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=false);st.seul=null;if(st.view==="musee")st.view="week";render()});
-$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.rayon=0;render()});
+$("discTout").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.seul=null;st.cible=null;if(st.view==="musee")st.view="week";render()});
+$("discRien").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=false);st.seul=null;st.cible=null;if(st.view==="musee")st.view="week";render()});
+$("allOn").addEventListener("click",()=>{DISC.forEach(([k])=>st.on[k]=true);st.rayon=0;st.cible=null;render()});
 $("pt").addEventListener("change",e=>{st.pt=e.target.value;st.sort=st.pt?"dist":"time";render();if(st.pt==="addr"&&!st.custom)$("addr").focus()});
 $("rayon").addEventListener("change",e=>{st.rayon=Number(e.target.value);render()});
 // Carte du métro : décorative (une évocation), sans filtre
