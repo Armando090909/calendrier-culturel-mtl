@@ -810,6 +810,8 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
         for e in data["evenements"]:
             if not e.get("titre") or not e.get("date"):
                 continue
+            if cfg.get("lieu_obligatoire") and not (e.get("lieu") or cfg.get("lieu")):
+                continue  # 18 nov. 2026 (BAnQ) : sans sa fiche, on ne sait pas si l'activité est à Montréal ou à Sept-Îles
             evs.append(brut(titre=e.get("titre"), date=str(e.get("date"))[:10], heure=e.get("heure") or None,
                             lieu=e.get("lieu") or cfg.get("lieu", ""), ville=e.get("ville") or "",
                             url=e.get("url") or url, categorie=e.get("categorie") or "",
