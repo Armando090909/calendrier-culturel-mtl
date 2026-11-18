@@ -1,136 +1,167 @@
 {
- "https://www.banq.qc.ca/calendrier/a-venir/147715": {
+ "https://www.banq.qc.ca/robots.txt": {
   "statut": 200,
   "simple_images": {
-   "og": "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg",
-   "img": [
-    "/themes/custom/banq_lyxn_glider/images/logo-banq-2.svg | BAnQ : Accueil",
-    "/sites/default/files/2026-10/menu-a11y_0.svg | Préférences visuelles",
-    "/sites/default/files/2026-10/menu-aide.svg | Aide",
-    "/sites/default/files/2026-10/menu-recherche.svg | Rechercher",
-    "/sites/default/files/2026-10/menu-dossier_1_1.svg | Mon dossier",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    " | ",
-    " | ",
-    " | ",
-    "/sites/default/files/2023-07/banq-new-footer-logo.svg | Logo BAnQ",
-    "/sites/default/files/2023-03/logo_quebec.svg | Logo du gouvernement du Québec."
-   ],
-   "iframes": [
-    "https://bq-passage.banq.qc.ca/ns.html?id=GTM-MZT2GP",
-    ""
-   ],
+   "og": null,
+   "img": [],
+   "iframes": [],
    "calendriers": []
   },
   "simple": {
-   "taille": 2507,
-   "texte": "Sans mots (v. o. en anglais avec sous-titres en français) | BAnQ\nAller au contenu principal <https://www.banq.qc.ca/calendrier/a-venir/147715#main-content>\nCollections <https://www.banq.qc.ca/collections/>\nServices <https://www.banq.qc.ca/services/>\nOutils de recherche <https://www.banq.qc.ca/collections/outils-de-recherche/>\nArticles et suggestions <https://www.banq.qc.ca/explorer/>\nFormations et guides <https://www.banq.qc.ca/services/apprendre/>\nÉducation <https://www.banq.qc.ca/education/>\nEspace Jeunes <https://www.banq.qc.ca/jeunes/>\nNotre institution <https://www.banq.qc.ca/notre-institution/>\nHeures et coordonnées <https://www.banq.qc.ca/calendrier/a-venir/147715>\nActivités <https://www.banq.qc.ca/calendrier/a-venir/147715>\nPrésentation visuelle\nRecherche <https://www.banq.qc.ca/calendrier/a-venir/147715>\nObtenir de l’aide <https://www.banq.qc.ca/calendrier/a-venir/147715>\nNous joindre <https://www.banq.qc.ca/obtenir-de-laide/>\nAccessibilité <https://www.banq.qc.ca/politique-daccessibilite/>\nConfidentialité <https://www.banq.qc.ca/politique-de-confidentialite/>\nFermer\nOptions d’accessibilité\nTaille du texte\nAjustez la taille du texte à vos besoins avec les boutons suivants.\n100 %\n150 %\n200 %\nThème visuel de la page\nAjustez le thème du site à vos besoins en cliquant sur les boutons ci-dessous :\nCouleurs d’origine\nContraste élevé\nContraste élevé inversé\nVidéo\n Afficher les sous-titres par défaut.\nBAnQ s’engage à offrir des collections et des services qui répondent aux besoins spécifiques des personnes handicapées ou en situation de handicap, en tenant compte de ses principes directeurs énumérés dans la \nPolitique d'accessibilité de BAnQ <https://www2.banq.qc.ca/a_propos_banq/mission_lois_reglements/lois_reglements_politiques/politiques_procedures/politique_accessibilite/index.html>\n. Les vidéos de sources extérieures à BAnQ peuvent comporter des obstacles à l’accessibilité et nous ne pouvons faire une transcription écrite pour toutes. Pour toute demande relative au sous-titrage des vidéos, veuillez \ncommuniquer avec nous <https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail>\n.\nFermer\nInformations complémentaires concernant la photo.\nInformations pratiques\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nSérie \nAutres activités suggérées\nInformations pratiques\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nFiltres\nSérie\nType\nÉvénement\nCalendrier\nAucune activité trouvée",
+   "taille": 3299,
+   "texte": "#\n# robots.txt\n#\n# This file is to prevent the crawling and indexing of certain parts\n# of your site by web crawlers and spiders run by sites like Yahoo!\n# and Google. By telling these \"robots\" where not to go on your site,\n# you save bandwidth and server resources.\n#\n# This file will be ignored unless it is at the root of your host:\n# Used: http://example.com/robots.txt\n# Ignored: http://example.com/site/robots.txt\n#\n# For more information about the robots.txt standard, see:\n# http://www.robotstxt.org/robotstxt.html\nUser-agent: *\n# CSS, JS, Images\nAllow: /core/*.css$\nAllow: /core/*.css?\nAllow: /core/*.js$\nAllow: /core/*.js?\nAllow: /core/*.avif\nAllow: /core/*.gif\nAllow: /core/*.jpg\nAllow: /core/*.jpeg\nAllow: /core/*.png\nAllow: /core/*.svg\nAllow: /core/*.webp\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.avif\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /profiles/*.svg\nAllow: /profiles/*.webp\n# Directories\nDisallow: /core/\nDisallow: /profiles/\n# Files\nDisallow: /README.md\nDisallow: /composer/Metapackage/README.txt\nDisallow: /composer/Plugin/ProjectMessage/README.md\nDisallow: /composer/Plugin/Scaffold/README.md\nDisallow: /composer/Plugin/VendorHardening/README.txt\nDisallow: /composer/Template/README.txt\nDisallow: /modules/README.txt\nDisallow: /sites/README.txt\nDisallow: /themes/README.txt\n# Paths (clean URLs)\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /search?\nDisallow: /user/register\nDisallow: /user/password\nDisallow: /user/login\nDisallow: /user/logout\nDisallow: /media/oembed\nDisallow: /*/media/oembed\n# Paths (no clean URLs)\nDisallow: /index.php/admin/\nDisallow: /index.php/comment/reply/\nDisallow: /index.php/filter/tips\nDisallow: /index.php/node/add/\nDisallow: /index.php/search/\nDisallow: /index.php/search?\nDisallow: /index.php/user/password\nDisallow: /index.php/user/register\nDisallow: /index.php/user/login\nDisallow: /index.php/user/logout\nDisallow: /index.php/media/oembed\nDisallow: /index.php/*/media/oembed\n# PORTAIL-1914\nDisallow: /*?f%5B\n# robots.txt - blocage large des crawlers IA / LLM / answer engines\n# OpenAI\nUser-agent: GPTBot\nDisallow: /\nUser-agent: OAI-SearchBot\nDisallow: /\nUser-agent: ChatGPT-User\nDisallow: /\n# Anthropic\nUser-agent: ClaudeBot\nDisallow: /\nUser-agent: anthropic-ai\nDisallow: /\nUser-agent: Claude-Web\nDisallow: /\n# Meta\nUser-agent: Meta-ExternalAgent\nDisallow: /\nUser-agent: Meta-ExternalFetcher\nDisallow: /\nUser-agent: FacebookBot\nDisallow: /\n# Apple\nUser-agent: Applebot\nDisallow: /\nUser-agent: Applebot-Extended\nDisallow: /\n# Amazon\nUser-agent: Amazonbot\nDisallow: /\nUser-agent: Amzn-SearchBot\nDisallow: /\nUser-agent: Amzn-User\nDisallow: /\n# Perplexity\nUser-agent: PerplexityBot\nDisallow: /\nUser-agent: Perplexity-User\nDisallow: /\n# Common Crawl\nUser-agent: CCBot\nDisallow: /\n# ByteDance\nUser-agent: Bytespider\nDisallow: /\n# Cohere\nUser-agent: cohere-ai\nDisallow: /\n# Diffbot\nUser-agent: Diffbot\nDisallow: /\n# You.com\nUser-agent: YouBot\nDisallow: /\n# DuckDuckGo AI answers\nUser-agent: DuckAssistBot\nDisallow: /\n# Webz.io / Omgili\nUser-agent: Omgilibot\nDisallow: /\nUser-agent: omgili\nDisallow: /\n# Hive\nUser-agent: ImagesiftBot\nDisallow: /",
    "courriels": [],
-   "contact": [
-    "https://www.banq.qc.ca/obtenir-de-laide/"
-   ],
-   "jsonld": [
-    "{\n    \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n            \"breadcrumb\": {\n                \"@type\": \"BreadcrumbList\",\n                \"itemListElement\": [\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 1,\n                        \"name\": \"Accueil\",\n                        \"item\": \"https://www.banq.qc.ca/\"\n                    },\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 2,\n                        \"name\": \"À venir\",\n                        \"item\": \"https://www.banq.qc.ca/calendrier/a-venir\"\n                    }\n                ]\n            }\n        }\n    ]\n}",
-    "\n{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"eventStatus\":\"http://schema.org/EventScheduled\",\"name\":\"Les grandes vues Sans mots (v. o. en anglais avec sous-titres en français)\",\"image\":\"http://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg\",\"startDate\":\"2026-11-17T14:00:00-0500\",\"endDate\":\"2026-11-17T16:00:00-0500\",\"description\":\"<p>Documentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : <em>There Are No Words</em>.</p>\\r\\n<p>En questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.</p>\\r\\n<p>Source : ONF</p>\\r\\n<p>Ce film est présenté en version originale en anglais avec sous-titres en français.</p>\\r\\n<p>La salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.</p>\\r\\n<p>Après la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.</p>\\r\\n<p>Travaux autour de la Grande Bibliothèque : <a href=\\\"https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1\\\" target=\\\"_blank\\\">pensez à vos déplacements</a>.</p>\\r\\n<p>25 places</p>\",\"location\":{\"@type\":\"Place\",\"name\":\"Grande Bibliothèque\",\"address\":{\"streetAddress\":\"475, boulevard De Maisonneuve Est\",\"addressLocality\":\"Montréal\",\"addressRegion\":\"QC\",\"postalCode\":\"H2L 5C4\",\"sameAs\":\"https://www.banq.qc.ca\"}},\"organizer\":{\"@type\":\"Organization\",\"name\":\"Bibliothèque et Archives nationales du Québec\",\"url\":\"https://www.banq.qc.ca\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0.00\",\"priceCurrency\":\"CAD\",\"url\":\"https://www.banq.qc.ca/calendrier/a-venir/147715\"}}\n"
-   ],
+   "contact": [],
+   "jsonld": [],
    "heures": [],
    "liens": [],
-   "menu": [
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
-    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir#types=Cin%C3%A9ma",
-    "Visites guidées → https://www.banq.qc.ca/calendrier/a-venir#types=Visite%20guid%C3%A9e",
-    "Ateliers → https://www.banq.qc.ca/calendrier/a-venir#types=Atelier",
-    "Contes → https://www.banq.qc.ca/calendrier/a-venir#types=Contes",
-    "Expositions → https://www.banq.qc.ca/calendrier/en-tout-temps",
-    "En ligne → https://www.banq.qc.ca/calendrier/a-venir#lieux=En%20ligne",
-    "Grande Bibliothèque → https://www.banq.qc.ca/calendrier/a-venir#lieux=Grande%20Biblioth%C3%A8que",
-    "Centres d’archives → https://www.banq.qc.ca/calendrier/a-venir#lieux=Archives%20nationales%20%C3%A0%20Montr%C3%A9al",
-    "Bibliothèque nationale (site Rosemont) → https://www.banq.qc.ca/calendrier/a-venir#lieux=Biblioth%C3%A8que%20nationale%20(site%20Rosemont)",
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
-    "À venir → https://www.banq.qc.ca/calendrier/a-venir",
-    "Sans mots (v. o. en anglais avec sous-titres en fr → https://www.banq.qc.ca/calendrier/a-venir/147715",
-    "Activités → https://www.banq.qc.ca/calendrier/a-venir/147715",
-    "communiquer avec nous → https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail",
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir"
-   ]
+   "menu": []
   },
   "navigateur_images": {
-   "og": "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg",
-   "img": [
-    "https://www.banq.qc.ca/sites/default/files/2024-04/logo_banq_noir.png | Logo",
-    "/themes/custom/banq_lyxn_glider/images/logo-banq-2.svg | BAnQ : Accueil",
-    "/sites/default/files/2026-10/menu-a11y_0.svg | Préférences visuelles",
-    "/sites/default/files/2026-10/menu-aide.svg | Aide",
-    "/sites/default/files/2026-10/menu-recherche.svg | Rechercher",
-    "/sites/default/files/2026-10/menu-dossier_1_1.svg | Mon dossier",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "/themes/custom/banq_lyxn_glider/logo.svg | BAnQ Logo",
-    "https://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg | Affiche du film.",
-    "https://banq.mhsoftware.com/attachments/24315/147715/GrandesVues_SansMots_tuile.jpg | Affiche du film.",
-    "https://www2.banq.qc.ca/images/activites/logo/Partenaires_ONF.png | En collaboration avec l’Office national du film du Canada (O",
-    "https://banq.mhsoftware.com/attachments/24319/147717/GrandesVues_Impossible_tuile.jpg | Affiche du film.",
-    "https://banq.mhsoftware.com/attachments/24344/147719/_FilmCartographie_SemaineGenealogie_Tuile.jpg | Affiche du film.",
-    "https://banq.mhsoftware.com/attachments/24329/147728/PtitesVues_heidi_tuile.jpg | Affiche du film.",
-    "/sites/default/files/2023-07/banq-new-footer-logo.svg | Logo BAnQ",
-    "/sites/default/files/2023-03/logo_quebec.svg | Logo du gouvernement du Québec."
-   ],
-   "iframes": [
-    "https://bq-passage.banq.qc.ca/ns.html?id=GTM-MZT2GP",
-    ""
-   ],
+   "og": null,
+   "img": [],
+   "iframes": [],
    "calendriers": []
   },
   "navigateur": {
-   "taille": 5201,
-   "texte": "Sans mots (v. o. en anglais avec sous-titres en français) | BAnQ\nContinuer sans accepter\n →\nPersonnalisez votre expérience\n Nous utilisons des témoins (souvent appelés cookies) pour améliorer votre expérience de navigation sur nos\n sites, afficher des contenus personnalisés et analyser la fréquentation de nos sites. En cliquant sur\n « Accepter », vous consentez à ce que nous utilisions tous les types de témoins. Vous pouvez modifier\n vos préférences en cliquant sur « Personnaliser ». Pour en savoir plus, consultez notre\nPolitique de confidentialité <https://www2.banq.qc.ca/p/confidentialite>\n.\nVoir nos partenaires\nPersonnaliser\nAccepter et fermer\nAller au contenu principal <https://www.banq.qc.ca/calendrier/a-venir/147715#main-content>\nCollections <https://www.banq.qc.ca/collections/>\nServices <https://www.banq.qc.ca/services/>\nOutils de recherche <https://www.banq.qc.ca/collections/outils-de-recherche/>\nArticles et suggestions <https://www.banq.qc.ca/explorer/>\nFormations et guides <https://www.banq.qc.ca/services/apprendre/>\nÉducation <https://www.banq.qc.ca/education/>\nEspace Jeunes <https://www.banq.qc.ca/jeunes/>\nNotre institution <https://www.banq.qc.ca/notre-institution/>\nHeures et coordonnées <https://www.banq.qc.ca/calendrier/a-venir/147715>\nActivités <https://www.banq.qc.ca/calendrier/a-venir/147715>\nPrésentation visuelle\nRecherche <https://www.banq.qc.ca/calendrier/a-venir/147715>\nObtenir de l’aide <https://www.banq.qc.ca/calendrier/a-venir/147715>\nNous joindre <https://www.banq.qc.ca/obtenir-de-laide/>\nAccessibilité <https://www.banq.qc.ca/politique-daccessibilite/>\nConfidentialité <https://www.banq.qc.ca/politique-de-confidentialite/>\nFermer\nOptions d’accessibilité\nTaille du texte\nAjustez la taille du texte à vos besoins avec les boutons suivants.\n100 %\n150 %\n200 %\nThème visuel de la page\nAjustez le thème du site à vos besoins en cliquant sur les boutons ci-dessous :\nCouleurs d’origine\nContraste élevé\nContraste élevé inversé\nVidéo\n Afficher les sous-titres par défaut.\nBAnQ s’engage à offrir des collections et des services qui répondent aux besoins spécifiques des personnes handicapées ou en situation de handicap, en tenant compte de ses principes directeurs énumérés dans la \nPolitique d'accessibilité de BAnQ <https://www2.banq.qc.ca/a_propos_banq/mission_lois_reglements/lois_reglements_politiques/politiques_procedures/politique_accessibilite/index.html>\n. Les vidéos de sources extérieures à BAnQ peuvent comporter des obstacles à l’accessibilité et nous ne pouvons faire une transcription écrite pour toutes. Pour toute demande relative au sous-titrage des vidéos, veuillez \ncommuniquer avec nous <https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail>\n.\nFermer\nSans mots (v. o. en anglais avec sous-titres en français)\nCinéma\nInformations complémentaires concernant la photo.\nInformations pratiques\nGrande Bibliothèque\nSalle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nAucune réservation requise. Places limitées.\nSérie \nLes grandes vues\nDocumentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : \nThere Are No Words\n.\nEn questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.\nSource : ONF\nCe film est présenté en version originale en anglais avec sous-titres en français.\nLa salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.\nAprès la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.\nTravaux autour de la Grande Bibliothèque : \npensez à vos déplacements <https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1>\n.\n25 places\nAutres activités suggérées\nL’impossible (v. f. de The Impossible) <https://www.banq.qc.ca/calendrier/a-venir/147717>\nCinéma\nVen. 20 novembre\nL’impossible (v. f. de The Impossible)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 14 h\nCartographie des nuages (v. f. de Cloud Atlas) <https://www.banq.qc.ca/calendrier/a-venir/147719>\nCinéma\nSam. 21 novembre\nCartographie des nuages (v. f. de Cloud Atlas)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 13 h 30\nHeidi (v. f.) <https://www.banq.qc.ca/calendrier/a-venir/147728>\nCinéma\nSam. 21 novembre\nHeidi (v. f.)\nSérie \nLes p'tites vues\nPour tous\nÀ 13 h 30\nInformations pratiques\nGrande Bibliothèque\nSalle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRéservation > <https://www.banq.qc.ca/calendrier/a-venir/147715>\nAucune réservation requise. Places limitées.\nFiltres\nFilms et culture cinéma <https://www.banq.qc.ca/calendrier/a-venir/#themes=Films et culture cinéma>\nSérie\nLes grandes vues <https://www.banq.qc.ca/calendrier/a-venir/#series=Les grandes vues>\nType\nCinéma <https://www.banq.qc.ca/calendrier/a-venir/#types=Cinéma>\nÉvénement\nCalendrier\nAucune activité trouvée",
+   "taille": 3299,
+   "texte": "#\n# robots.txt\n#\n# This file is to prevent the crawling and indexing of certain parts\n# of your site by web crawlers and spiders run by sites like Yahoo!\n# and Google. By telling these \"robots\" where not to go on your site,\n# you save bandwidth and server resources.\n#\n# This file will be ignored unless it is at the root of your host:\n# Used: http://example.com/robots.txt\n# Ignored: http://example.com/site/robots.txt\n#\n# For more information about the robots.txt standard, see:\n# http://www.robotstxt.org/robotstxt.html\nUser-agent: *\n# CSS, JS, Images\nAllow: /core/*.css$\nAllow: /core/*.css?\nAllow: /core/*.js$\nAllow: /core/*.js?\nAllow: /core/*.avif\nAllow: /core/*.gif\nAllow: /core/*.jpg\nAllow: /core/*.jpeg\nAllow: /core/*.png\nAllow: /core/*.svg\nAllow: /core/*.webp\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.avif\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /profiles/*.svg\nAllow: /profiles/*.webp\n# Directories\nDisallow: /core/\nDisallow: /profiles/\n# Files\nDisallow: /README.md\nDisallow: /composer/Metapackage/README.txt\nDisallow: /composer/Plugin/ProjectMessage/README.md\nDisallow: /composer/Plugin/Scaffold/README.md\nDisallow: /composer/Plugin/VendorHardening/README.txt\nDisallow: /composer/Template/README.txt\nDisallow: /modules/README.txt\nDisallow: /sites/README.txt\nDisallow: /themes/README.txt\n# Paths (clean URLs)\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /search?\nDisallow: /user/register\nDisallow: /user/password\nDisallow: /user/login\nDisallow: /user/logout\nDisallow: /media/oembed\nDisallow: /*/media/oembed\n# Paths (no clean URLs)\nDisallow: /index.php/admin/\nDisallow: /index.php/comment/reply/\nDisallow: /index.php/filter/tips\nDisallow: /index.php/node/add/\nDisallow: /index.php/search/\nDisallow: /index.php/search?\nDisallow: /index.php/user/password\nDisallow: /index.php/user/register\nDisallow: /index.php/user/login\nDisallow: /index.php/user/logout\nDisallow: /index.php/media/oembed\nDisallow: /index.php/*/media/oembed\n# PORTAIL-1914\nDisallow: /*?f%5B\n# robots.txt - blocage large des crawlers IA / LLM / answer engines\n# OpenAI\nUser-agent: GPTBot\nDisallow: /\nUser-agent: OAI-SearchBot\nDisallow: /\nUser-agent: ChatGPT-User\nDisallow: /\n# Anthropic\nUser-agent: ClaudeBot\nDisallow: /\nUser-agent: anthropic-ai\nDisallow: /\nUser-agent: Claude-Web\nDisallow: /\n# Meta\nUser-agent: Meta-ExternalAgent\nDisallow: /\nUser-agent: Meta-ExternalFetcher\nDisallow: /\nUser-agent: FacebookBot\nDisallow: /\n# Apple\nUser-agent: Applebot\nDisallow: /\nUser-agent: Applebot-Extended\nDisallow: /\n# Amazon\nUser-agent: Amazonbot\nDisallow: /\nUser-agent: Amzn-SearchBot\nDisallow: /\nUser-agent: Amzn-User\nDisallow: /\n# Perplexity\nUser-agent: PerplexityBot\nDisallow: /\nUser-agent: Perplexity-User\nDisallow: /\n# Common Crawl\nUser-agent: CCBot\nDisallow: /\n# ByteDance\nUser-agent: Bytespider\nDisallow: /\n# Cohere\nUser-agent: cohere-ai\nDisallow: /\n# Diffbot\nUser-agent: Diffbot\nDisallow: /\n# You.com\nUser-agent: YouBot\nDisallow: /\n# DuckDuckGo AI answers\nUser-agent: DuckAssistBot\nDisallow: /\n# Webz.io / Omgili\nUser-agent: Omgilibot\nDisallow: /\nUser-agent: omgili\nDisallow: /\n# Hive\nUser-agent: ImagesiftBot\nDisallow: /",
    "courriels": [],
-   "contact": [
-    "https://www.banq.qc.ca/obtenir-de-laide/"
-   ],
-   "jsonld": [
-    "{\n    \"@context\": \"https://schema.org\",\n    \"@graph\": [\n        {\n            \"breadcrumb\": {\n                \"@type\": \"BreadcrumbList\",\n                \"itemListElement\": [\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 1,\n                        \"name\": \"Accueil\",\n                        \"item\": \"https://www.banq.qc.ca/\"\n                    },\n                    {\n                        \"@type\": \"ListItem\",\n                        \"position\": 2,\n                        \"name\": \"À venir\",\n                        \"item\": \"https://www.banq.qc.ca/calendrier/a-venir\"\n                    }\n                ]\n            }\n        }\n    ]\n}",
-    "\n{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"eventStatus\":\"http://schema.org/EventScheduled\",\"name\":\"Les grandes vues Sans mots (v. o. en anglais avec sous-titres en français)\",\"image\":\"http://banq.mhsoftware.com/attachments/24314/147715/GrandesVues_SansMots_page.jpg\",\"startDate\":\"2026-11-17T14:00:00-0500\",\"endDate\":\"2026-11-17T16:00:00-0500\",\"description\":\"<p>Documentaire de Min Sook Lee, Canada, ONF, 2025, 98 min. Titre original : <em>There Are No Words</em>.</p>\\r\\n<p>En questionnant son père, ancien agent des services secrets sud-coréens, la réalisatrice Min Sook Lee enquête sur le suicide de sa mère et dévoile l'impact du militarisme sur sa famille.</p>\\r\\n<p>Source : ONF</p>\\r\\n<p>Ce film est présenté en version originale en anglais avec sous-titres en français.</p>\\r\\n<p>La salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire spécialiste du cinéma répondra à vos questions et vous présentera le film projeté. Il vous suggérera également des documents des collections de BAnQ liés au film.</p>\\r\\n<p>Après la projection du film, nous vous invitons à converser avec le bibliothécaire et les autres cinéphiles sur vos impressions et réflexions.</p>\\r\\n<p>Travaux autour de la Grande Bibliothèque : <a href=\\\"https://www.banq.qc.ca/messages/travaux-autour-de-la-grande-bibliotheque-1\\\" target=\\\"_blank\\\">pensez à vos déplacements</a>.</p>\\r\\n<p>25 places</p>\",\"location\":{\"@type\":\"Place\",\"name\":\"Grande Bibliothèque\",\"address\":{\"streetAddress\":\"475, boulevard De Maisonneuve Est\",\"addressLocality\":\"Montréal\",\"addressRegion\":\"QC\",\"postalCode\":\"H2L 5C4\",\"sameAs\":\"https://www.banq.qc.ca\"}},\"organizer\":{\"@type\":\"Organization\",\"name\":\"Bibliothèque et Archives nationales du Québec\",\"url\":\"https://www.banq.qc.ca\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0.00\",\"priceCurrency\":\"CAD\",\"url\":\"https://www.banq.qc.ca/calendrier/a-venir/147715\"}}\n"
-   ],
-   "heures": [
-    "Salle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRés",
-    "tres en français.\nLa salle de visionnement sera ouverte dès 13 h 30. Un bibliothécaire ",
-    "de The Impossible)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 14 h\nCartographie des nua",
-    "f. de Cloud Atlas)\nSérie \nLes grandes vues\n13 ans et plus\nÀ 13 h 30\nHeidi (v. f.) <https",
-    " novembre\nHeidi (v. f.)\nSérie \nLes p'tites vues\nPour tous\nÀ 13 h 30\nInformations pratiqu",
-    "Salle de visionnement, niveau 4\nLe mardi 17 novembre 2026\nÀ 14 h\nPour les adultes\nRés"
-   ],
-   "liens": [
-    "https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&amp;tf_4418095266203=portail"
-   ],
-   "menu": [
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
-    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir#types=Cin%C3%A9ma",
-    "Visites guidées → https://www.banq.qc.ca/calendrier/a-venir#types=Visite%20guid%C3%A9e",
-    "Ateliers → https://www.banq.qc.ca/calendrier/a-venir#types=Atelier",
-    "Contes → https://www.banq.qc.ca/calendrier/a-venir#types=Contes",
-    "Expositions → https://www.banq.qc.ca/calendrier/en-tout-temps",
-    "En ligne → https://www.banq.qc.ca/calendrier/a-venir#lieux=En%20ligne",
-    "Grande Bibliothèque → https://www.banq.qc.ca/calendrier/a-venir#lieux=Grande%20Biblioth%C3%A8que",
-    "Centres d’archives → https://www.banq.qc.ca/calendrier/a-venir#lieux=Archives%20nationales%20%C3%A0%20Montr%C3%A9al",
-    "Bibliothèque nationale (site Rosemont) → https://www.banq.qc.ca/calendrier/a-venir#lieux=Biblioth%C3%A8que%20nationale%20(site%20Rosemont)",
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir",
-    "À venir → https://www.banq.qc.ca/calendrier/a-venir",
-    "Sans mots (v. o. en anglais avec sous-titres en fr → https://www.banq.qc.ca/calendrier/a-venir/147715",
-    "Activités → https://www.banq.qc.ca/calendrier/a-venir/147715",
-    "communiquer avec nous → https://services-distance.banq.qc.ca/hc/fr/requests/new?ticket_form_id=1900004312144&tf_4418095266203=portail",
-    "L’impossible (v. f. de The Impossible) → https://www.banq.qc.ca/calendrier/a-venir/147717",
-    "Cartographie des nuages (v. f. de Cloud Atlas) → https://www.banq.qc.ca/calendrier/a-venir/147719",
-    "Heidi (v. f.) → https://www.banq.qc.ca/calendrier/a-venir/147728",
-    "Films et culture cinéma → https://www.banq.qc.ca/calendrier/a-venir/#themes=Films et culture cinéma",
-    "Les grandes vues → https://www.banq.qc.ca/calendrier/a-venir/#series=Les grandes vues",
-    "Cinéma → https://www.banq.qc.ca/calendrier/a-venir/#types=Cinéma",
-    "Calendrier des activités → https://www.banq.qc.ca/calendrier/a-venir"
-   ]
+   "contact": [],
+   "jsonld": [],
+   "heures": [],
+   "liens": [],
+   "menu": []
   }
+ },
+ "https://www.banq.qc.ca/calendrier/a-venir/147717": {
+  "appels": [
+   {
+    "url": "https://www.banq.qc.ca/calendrier/a-venir/147717",
+    "type": "document",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://sdk.privacy-center.org/e2436f9f-3c99-4a96-8aa6-856674554710/loader.js?target_type=notice&target=RTQWWFfj",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://sdk.privacy-center.org/sdk/f229aca430fa21f2f62c0a348049e84d7490403b/modern/sdk.f229aca430fa21f2f62c0a348049e84d7490403b.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://bq-passage.banq.qc.ca/r7n239u010uypfl.js?awl=MZT2GP",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://code.jquery.com/jquery-3.6.4.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://www.banq.qc.ca/core/assets/vendor/jquery/jquery.min.js?v=4.0.0",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://www.banq.qc.ca/sites/default/files/js/js_78yk5uFNBV2XI_Y761v0YDCrqVcIKay5puydMopXfeU.js?scope=footer&delta=2&language=fr&theme=banq_lyxn_glider&include=eJxtiV0OwiAMgC9ExpGaApWgTctK0XF7YzL3om_fT0LZISOTFLT4BSjk2Dikz-V1CFRuhSwmVR9u2H9XZU3IMHwxjUCHc5NHLDY78nZqaHSDrn32eFG475NsQdGXVMNC8QxMFfMKs0FHdzIZUZ9kjAsy6yBI011l-xffI6lWXw",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://www.banq.qc.ca/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://www.banq.qc.ca/c99a4269-161c-4242-a3f0-28d44fa6ce24?",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "{\"ssresp\":\"3\",\"jsrecvd\":\"true\",\"__uzmaj\":\"a54df1ab-92e9-4fd3-a7f2-f2e95ca5ba1c\",\"__uzmbj\":\"1795032881\",\"__uzmcj\":\"468211061497\",\"__uzmdj\":\"1795032881\",\"__uzmlj\":\"GpslNJiG1/Q5mFYPNpPraAxTJ7uzm8S5F8r53qNmmnc=\",\"__uzmfj\":\"7f9000a54df1ab-92e9-4fd3-a7f2-f2e95ca5ba1c1-17950328813380-0051034821b0a7a42ca10\",\"uzmxj\":\"7fc000afec3fff-f614-4585-9495-0c14ad6894761-17950328813380-00efa323e5f8e04e24310\",\"dync\":\"uzmx\",\"jsbd2\":\"58e86a5d-ch8p-1370-666e-80b3774a5244\",\"mc\":{},\"mct\":\"\"}"
+   },
+   {
+    "url": "https://www.banq.qc.ca/c99a4269-161c-4242-a3f0-28d44fa6ce24?",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "{\"ssresp\":\"3\",\"jsrecvd\":\"true\",\"__uzmaj\":\"774d654c-0950-4807-a65e-7e6f54773524\",\"__uzmbj\":\"1795032881\",\"__uzmcj\":\"741121096393\",\"__uzmdj\":\"1795032881\",\"jsbd2\":\"54e12e89-ch8p-1370-7fb5-6cec538975a4\"}"
+   },
+   {
+    "url": "https://bq-passage.banq.qc.ca/y1na74kvba8xyms.js?id=G-5MMSQ5Q86S&gtm=4e6bh0&cx=c",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://bq-passage.banq.qc.ca/y1na74kvba8xyms.js?id=G-3DY3YB33EB&gtm=4e6bh0&cx=c",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://sdk.privacy-center.org/sdk/f229aca430fa21f2f62c0a348049e84d7490403b/modern/ui-web-fr-web.f229aca430fa21f2f62c0a348049e84d7490403b.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://js-agent.newrelic.com/nr-spa-1.324.1.min.js",
+    "type": "script",
+    "statut": 200,
+    "debut": ""
+   },
+   {
+    "url": "https://bq-passage.banq.qc.ca/br5c6tffu?tid=G-5MMSQ5Q86S&v=2&gtm=45he6bh0v873656388za20szb6335535zd6335535xf3xg2&_p=1795032880698&gcs=G100&gcd=13p3p3p2p5l1&npa=1&dma_cps=-&dma=1&ecid=1401095418&_eu=AAAAAGA&_fplc=0&are=1&cid=1950642968.1795032882&frm=0&pscdl=denied&rcb=14&sr=1280x2000&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&ua",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "event: message\ndata: {\"response\":{\"status_code\":200,\"body\":\"\"}}\n\n"
+   },
+   {
+    "url": "https://bq-passage.banq.qc.ca/3o12to2ui?tid=G-3DY3YB33EB&v=2&gtm=45he6bh0v9115207387za20szb6335535zd6335535xf3xg2&_p=1795032880698&gcs=G100&gcd=13p3p3p2p5l1&npa=1&dma_cps=-&dma=1&ecid=965059813&_eu=AAAAAGA&_fplc=0&are=1&cid=1950642968.1795032882&frm=0&pscdl=denied&rcb=9&sr=1280x2000&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uam",
+    "type": "fetch",
+    "statut": 200,
+    "debut": "event: message\ndata: {\"response\":{\"status_code\":200,\"body\":\"\"}}\n\n"
+   },
+   {
+    "url": "https://bam.nr-data.net/browser/connect/2/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&s=450427fe630ded3f",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "{\"config\":{\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0},\"app\":{\"agents\":[{\"entityGuid\":\"NjI2NDUxMnxCUk9XU0VSfEFQUExJQ0FUSU9OfDE1ODkwMzE5Nzc\"}],\"igp\":\"\",\"nrServerTime\":1795032882191}}"
+   },
+   {
+    "url": "https://bam.nr-data.net/rum/2/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3311&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30&at=ShBWRwxIT0U%3D&af=err,spa,xhr,stn,ins&ap=1387&be=1754&fe=1177&dc=500&fp=2123&fcp=2123&perf=%7B%22timin",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
+   },
+   {
+    "url": "https://bam.nr-data.net/events/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3313&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
+   },
+   {
+    "url": "https://bam.nr-data.net/jserrors/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3315&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
+   },
+   {
+    "url": "https://bam.nr-data.net/events/1/NRJS-e7833320edf79ac1a05?a=1570410631&v=1.324.1&to=ZldVMURSXEtQW0QIXF8ddgZCWl1WHnxCFENQXmsHV11DZ1JZXARdVVNFOXVcXExDV1wNVkNudARaVlxcUEpzDl1FQFgJWlZAFQ9cVRVSWF4%3D&rst=3317&s=450427fe630ded3f&ref=https://www.banq.qc.ca/calendrier/a-venir/147717&ptid=7c57578408ebfe30",
+    "type": "xhr",
+    "statut": 200,
+    "debut": "GIF89a\u0001\u0000\u0001\u0000\u0000\u0000\u0000,\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0002"
+   }
+  ]
  }
 }

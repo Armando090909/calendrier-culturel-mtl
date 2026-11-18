@@ -1,10 +1,14 @@
 {
- "total": 1660,
- "echecs": 21,
+ "total": 1665,
+ "echecs": 23,
  "par_site": {
-  "centaurtheatre.com": {
-   "affiches": 5,
-   "echecs": 5
+  "www.mado.qc.ca": {
+   "affiches": 6,
+   "echecs": 4
+  },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
+   "echecs": 4
   },
   "turbohaus.ca": {
    "affiches": 12,
@@ -16,10 +20,6 @@
   },
   "images.ctfassets.net": {
    "affiches": 45,
-   "echecs": 2
-  },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
    "echecs": 2
   },
   "www.dansedanse.ca": {
@@ -40,6 +40,10 @@
   },
   "westmount.org": {
    "affiches": 2,
+   "echecs": 1
+  },
+  "lni.ca": {
+   "affiches": 1,
    "echecs": 1
   },
   "www.fbdm-mcaf.ca": {
@@ -75,7 +79,7 @@
    "echecs": 0
   },
   "www.cinematheque.qc.ca": {
-   "affiches": 8,
+   "affiches": 9,
    "echecs": 0
   },
   "www.upstairsjazz.com": {
@@ -210,10 +214,6 @@
    "affiches": 7,
    "echecs": 0
   },
-  "www.mado.qc.ca": {
-   "affiches": 6,
-   "echecs": 0
-  },
   "quaidesbrumes.ca": {
    "affiches": 6,
    "echecs": 0
@@ -302,6 +302,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 0
+  },
   "casteliers.ca": {
    "affiches": 1,
    "echecs": 0
@@ -332,6 +336,10 @@
   },
   "nevermonday-collective.bloomtickets.ca": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "omniwebticketing.com": {
+   "affiches": 4,
    "echecs": 0
   },
   "www.alexbellegarde.com": {
@@ -385,10 +393,6 @@
   "gxxdnght.com": {
    "affiches": 1,
    "echecs": 0
-  },
-  "lni.ca": {
-   "affiches": 1,
-   "echecs": 0
   }
  },
  "exemples": {
@@ -406,9 +410,19 @@
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg",
    "https://turbohaus.ca/api/media/file/cam-kahin.png"
   ],
+  "www.mado.qc.ca": [
+   "https://www.mado.qc.ca/wp-content/uploads/1792021092MadoRecoit-261106-Horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1792351291TracyTrashShow-261101-horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1791846133FullGisele_261103-horizontal.jpg"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/3gJu1CSfyW7XGaU6ukP6HC/f4f5e9cc73056a3fb4cc4f530b134ab8/FF26-OpenGraph.jpg",
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "www.ville.dorval.qc.ca": [
+   "https://www.ville.dorval.qc.ca/resize/5dec8bd6c594bc9f2b14574b7b54725f-1",
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ],
   "westmount.org": [
    "https://westmount.org/storage/app/resources/resize/1200_0_0_0_auto/img_61e4b8711577332237c687509afd0c27.png"
@@ -422,32 +436,25 @@
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Compagnie-Marie-Chouinard-Henri-Michaux-Mouvements-et-Solos-et-duos-choisis-1.jpg"
   ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
-  ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
+  "lni.ca": [
+   "https://lni.ca/wp-content/uploads/2025/10/banW_CARRE-2100_MatchTOURN-LNI-A-1.png"
   ]
  },
  "sans_affiche_par_discipline": {
   "atelier": 125,
   "lettres": 15,
-  "musique": 309,
+  "musique": 310,
   "quiz": 86,
   "theatre": 58,
-  "humour": 53,
+  "humour": 54,
   "conference": 32,
   "social": 4,
   "fete": 44,
-  "autre": 4,
+  "cirque": 3,
   "jeune": 18,
   "danse": 16,
-  "cinema": 13,
+  "cinema": 9,
   "expo": 2,
-  "cirque": 2,
   "poesie": 1
  }
 }
