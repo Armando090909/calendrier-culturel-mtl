@@ -1165,6 +1165,29 @@ def recurrents(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     return evs, []
 
 
+def _suivre_redirections(url: str, max_sauts: int = 6) -> str:
+    """Suit les redirections à la main, en encodant l'adresse reçue (Latin-1 ou UTF-8) ; renvoie le HTML."""
+    from urllib.parse import quote
+    chemin = [url]
+    for _ in range(max_sauts):
+        if not robots_permet(url):
+            raise PermissionError(f"robots.txt : {url}")
+        r = requests.get(url, timeout=40, allow_redirects=False, headers={"User-Agent": UA, "Accept": "text/html"})
+        if r.status_code in (301, 302, 303, 307, 308) and r.headers.get("Location"):
+            loc = r.headers["Location"]  # déjà décodée en Latin-1 par requests (caractères bruts du serveur)
+            try:
+                loc.encode("ascii")
+            except UnicodeEncodeError:
+                loc = quote(loc, safe=":/?&=#%;+,@!$'()*~", encoding="latin-1")
+            url = urljoin(url, loc)
+            chemin.append(url)
+            continue
+        r.raise_for_status()
+        r.encoding = r.encoding if r.encoding and r.encoding.lower() != "iso-8859-1" else (r.apparent_encoding or "utf-8")
+        return r.text
+    raise RuntimeError("trop de redirections : " + " → ".join(chemin)[:300])
+
+
 def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     """Page-liste dont chaque activité a sa fiche avec des données schema.org complètes (titre, date, heure, salle) :
     on relève les liens des fiches (motif « motif ») et on lit les données de chaque fiche, sans IA (18 nov. 2026, BAnQ :
@@ -1178,19 +1201,9 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             try:
                 h2 = telecharger(lien, "text/html").text
             except UnicodeDecodeError:
-                # 18 nov. 2026 (BAnQ) : la fiche redirige vers une adresse écrite en Latin-1 (« é ») que la bibliothèque
-                # « requests » ne sait pas décoder ; on suit la redirection nous-mêmes, adresse encodée correctement
-                from urllib.parse import quote
-                r0 = requests.get(lien, timeout=40, allow_redirects=False, headers={"User-Agent": UA})
-                cible, h2 = r0.headers.get("Location", ""), None
-                for enc in ("latin-1", "utf-8"):  # l'adresse telle que le serveur l'a écrite, puis en UTF-8
-                    try:
-                        h2 = telecharger(urljoin(lien, quote(cible, safe=":/?&=#%", encoding=enc)), "text/html").text
-                        break
-                    except Exception:
-                        continue
-                if h2 is None:
-                    raise
+                # 18 nov. 2026 (BAnQ) : la fiche redirige (parfois deux fois) vers une adresse écrite en Latin-1 (« é »)
+                # que la bibliothèque « requests » ne sait pas décoder : on suit les redirections nous-mêmes
+                h2 = _suivre_redirections(lien)
             e2, s2 = evenements_jsonld(h2, lien, cfg, debut, fin)
             if not e2 and not s2:
                 vides.append(f"{lien} ({len(h2)} car., {h2.count('application/ld+json')} blocs schema.org)")
