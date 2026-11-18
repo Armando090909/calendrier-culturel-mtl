@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-02-apres-midi-creation-et-construction-258bcb@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Après-midi création et construction
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/apres-midi-creation-et-construction-1179
+ 19
+DESCRIPTION:Heure à confirmer. Mercier-Hochelaga-Maisonneuve Langelier bib
+ liothèque jeunes enfants LEGO Gravitrax PlusPlus construction création l
+ udique jeu jouer\nPrix : Gratuit\nDétails : https://montreal.ca/evenement
+ s/apres-midi-creation-et-construction-117919\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

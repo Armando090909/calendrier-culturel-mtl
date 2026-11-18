@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1451,
+  "evenements": 1410,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 26,
+  "evenements": 28,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 192,
+  "evenements": 226,
   "erreur": false
  },
  {
@@ -101,14 +101,14 @@
   "nom": "Théâtre Aux Écuries",
   "url": "https://auxecuries.com/programmation",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 2,
   "erreur": false
  },
  {
   "nom": "Théâtre Aux Écuries (billetterie)",
   "url": "https://auxecuries.tuxedobillet.com",
   "type": "page lue par l'IA",
-  "evenements": 0,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -176,9 +176,9 @@
  },
  {
   "nom": "Théâtre Sainte-Catherine",
-  "url": "http://theatresaintecatherine.com",
+  "url": "https://theatresaintecatherine.com/events",
   "type": "page lue par l'IA",
-  "evenements": 68,
+  "evenements": 23,
   "erreur": false
  },
  {
@@ -259,6 +259,13 @@
   "erreur": false
  },
  {
+  "nom": "Le Monastère (cabaret de cirque)",
+  "url": "https://lepointdevente.com/lemonastere",
+  "type": "page lue par l'IA",
+  "evenements": 18,
+  "erreur": false
+ },
+ {
   "nom": "Fun Nation (humour)",
   "url": "https://funnation.ca/spectacles/spectacles-dhumour",
   "type": "page lue par l'IA",
@@ -284,13 +291,6 @@
   "url": "https://www.placedesarts.com/discipline/humour",
   "type": "page lue par l'IA",
   "evenements": 151,
-  "erreur": false
- },
- {
-  "nom": "Théâtre Sainte-Catherine (impro et humour)",
-  "url": "http://theatresaintecatherine.com",
-  "type": "page lue par l'IA",
-  "evenements": 68,
   "erreur": false
  },
  {
@@ -339,7 +339,7 @@
   "nom": "Cinéma Public",
   "url": "https://cinemapublic.ca",
   "type": "page lue par l'IA",
-  "evenements": 54,
+  "evenements": 47,
   "erreur": false
  },
  {
@@ -444,12 +444,12 @@
   "nom": "Théâtre Bouches Décousues",
   "url": "https://theatrebouchesdecousues.com/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "Espace Le Vrai Monde?",
-  "url": "https://www.espacelevraimonde.com",
+  "url": "https://espacelevraimonde.ca/programmation",
   "type": "page lue par l'IA",
   "evenements": 3,
   "erreur": false
@@ -584,21 +584,35 @@
   "nom": "Cat's Corner (danse swing)",
   "url": "https://www.catscorner.ca/events",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – événements",
   "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 64,
+  "evenements": 60,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 79,
+  "evenements": 76,
+  "erreur": false
+ },
+ {
+  "nom": "Cinéma au Cinoche",
+  "url": "https://www.cinemacinoche.com/events/?ical=1",
+  "type": "calendrier iCal",
+  "evenements": 4,
+  "erreur": false
+ },
+ {
+  "nom": "Cinémathèque québécoise – programmation",
+  "url": "https://www.cinematheque.qc.ca/fr/programmation",
+  "type": "page lue par l'IA",
+  "evenements": 0,
   "erreur": false
  },
  {
@@ -787,7 +801,7 @@
   "nom": "evenko (concerts)",
   "url": "https://evenko.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 19,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -808,7 +822,7 @@
   "nom": "Bar Le Ritz PDB",
   "url": "http://www.barleritzpdb.com",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 16,
   "erreur": false
  },
  {
@@ -822,7 +836,7 @@
   "nom": "Newspeak",
   "url": "https://newspeakmtl.com",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 13,
   "erreur": false
  },
  {
@@ -1051,9 +1065,9 @@
  },
  {
   "nom": "Quai des Brumes",
-  "url": "https://quaidesbrumes.ca",
+  "url": "https://quaidesbrumes.ca/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -1092,8 +1106,8 @@
   "erreur": false
  },
  {
-  "nom": "Le National (La Tulipe)",
-  "url": "http://latulipe.ca",
+  "nom": "Le National",
+  "url": "http://latulipe.ca/?p=4",
   "type": "page lue par l'IA",
   "evenements": 0,
   "erreur": false
@@ -1123,21 +1137,21 @@
   "nom": "Cinéma Moderne",
   "url": "https://www.cinemamoderne.com/horaire",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 48,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – La Toscadura",
   "url": "https://casadelpopolo.com/fr/events/la-toscadura",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 11,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – P'tit Ours",
   "url": "https://casadelpopolo.com/fr/events/ptit-ours",
   "type": "page lue par l'IA",
-  "evenements": 23,
+  "evenements": 24,
   "erreur": false
  },
  {
@@ -1288,17 +1302,17 @@
   "erreur": false
  },
  {
-  "nom": "Le Livart (centre d'art multidisciplinaire)",
-  "url": "https://lelivart.com",
+  "nom": "Le Livart – expositions",
+  "url": "https://lelivart.com/exposition",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 1,
   "erreur": false
  },
  {
-  "nom": "Librairie Drawn & Quarterly (lancements, lectures)",
-  "url": "https://mtl.drawnandquarterly.com/events",
+  "nom": "Le Livart – activités",
+  "url": "https://lelivart.com/activite",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1417,7 +1431,7 @@
   "nom": "Casa del Popolo / Sala Rossa",
   "url": "https://casadelpopolo.com",
   "type": "page lue par l'IA",
-  "evenements": 41,
+  "evenements": 44,
   "erreur": false
  },
  {
@@ -1445,7 +1459,7 @@
   "nom": "Quai des Brumes (billetterie)",
   "url": "https://lepointdevente.com/lieux/lequaidesbrumes",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1459,7 +1473,7 @@
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 26,
   "erreur": false
  },
  {
@@ -1473,14 +1487,14 @@
   "nom": "Théâtre Rialto (billetterie)",
   "url": "https://lepointdevente.com/lieux/theatre-rialto",
   "type": "page lue par l'IA",
-  "evenements": 10,
+  "evenements": 8,
   "erreur": false
  },
  {
   "nom": "Espace La Risée (billetterie)",
   "url": "https://lepointdevente.com/lieux/l-espace-la-risee",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -1501,7 +1515,7 @@
   "nom": "Ausgang Plaza (billetterie)",
   "url": "https://lepointdevente.com/lieux/ausgang-plaza",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -1522,7 +1536,7 @@
   "nom": "Club Balattou (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-balattou",
   "type": "page lue par l'IA",
-  "evenements": 15,
+  "evenements": 17,
   "erreur": false
  },
  {
@@ -1536,7 +1550,7 @@
   "nom": "Le Belmont (billetterie)",
   "url": "https://lepointdevente.com/lieux/lebelmont",
   "type": "page lue par l'IA",
-  "evenements": 12,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -1550,7 +1564,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 100,
+  "evenements": 102,
   "erreur": false
  },
  {
@@ -1565,6 +1579,13 @@
   "url": "",
   "type": "recurrents",
   "evenements": 122,
+  "erreur": false
+ },
+ {
+  "nom": "Ateliers hebdomadaires",
+  "url": "",
+  "type": "recurrents",
+  "evenements": 9,
   "erreur": false
  },
  {
