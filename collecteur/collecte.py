@@ -522,8 +522,10 @@ def main() -> int:
         if not nom or plat(nom) in PAS_DES_SALLES:
             return ""
         m = re.fullmatch(r"@(-?[\d.]+),(-?[\d.]+)", nom)
-        if m:  # seulement des coordonnées : la salle connue la plus proche (moins de 150 m), sinon « à confirmer »
-            return lieux.plus_proche(float(m.group(1)), float(m.group(2)), 0.15) or ""
+        if m:  # seulement des coordonnées : la salle connue au même endroit (moins de 30 m), sinon « à confirmer »
+            # (18 nov. 2026 : à 150 m, l'heure du conte de la Caserne 26 était placée au Cinéma au Cinoche, son voisin ;
+            # « à confirmer », la fiche de la Ville lue par le Pi donne ensuite la vraie salle)
+            return lieux.plus_proche(float(m.group(1)), float(m.group(2)), 0.03) or ""
         if hors_ile(nom, adresse, ville):
             return None
         c = lieux.trouver(nom)
