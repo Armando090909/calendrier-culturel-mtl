@@ -1281,13 +1281,20 @@
   ]
  },
  "disparues": {
-  "total": 131,
+  "total": 134,
   "liste": [
    {
     "titre": "Miniconte bilingue",
     "date": "2026-11-18",
     "lieu": "Bibliothèque L'Octogone",
     "url": "https://montreal.ca/evenements/miniconte-bilingue-117796",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Vieille Corneille (VOF)",
+    "date": "2026-11-18",
+    "lieu": "Salle Fernand-Seguin",
+    "url": "https://www.cinematheque.qc.ca/fr/cinema/vieille-corneille/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1302,6 +1309,13 @@
     "date": "2026-11-18",
     "lieu": "LESPACEMAKER",
     "url": "",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "L'affaire Coffin (VOF)",
+    "date": "2026-11-18",
+    "lieu": "Salle principale",
+    "url": "https://www.cinematheque.qc.ca/fr/cinema/laffaire-coffin/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1337,6 +1351,13 @@
     "date": "2026-11-19",
     "lieu": "Studio PACA",
     "url": "https://montreal.ca/evenements/midi-musique-concours-omni-114809",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Vieille Corneille (VOF)",
+    "date": "2026-11-19",
+    "lieu": "Salle Fernand-Seguin",
+    "url": "https://www.cinematheque.qc.ca/fr/cinema/vieille-corneille/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {

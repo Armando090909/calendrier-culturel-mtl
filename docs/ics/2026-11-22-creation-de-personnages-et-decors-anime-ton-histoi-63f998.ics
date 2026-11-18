@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-22-creation-de-personnages-et-decors-anime-ton-histoi-63f998@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261122T140000
+DTEND;TZID=America/Toronto:20261122T160000
+SUMMARY:Création de personnages et décors : anime ton histoire ! (6 à 13
+  ans)
+LOCATION:Bibliothèque Frontenac\, Montréal
+URL:https://montreal.ca/evenements/creation-de-personnages-et-decors-anime-
+ ton-histoire-6-13-ans-115326
+DESCRIPTION:Création de personnages et décors : anime ton histoire ! Une 
+ activité d’animation image par image pour les jeunes de 6 à 13 ans à 
+ Frontenac.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/crea
+ tion-de-personnages-et-decors-anime-ton-histoire-6-13-ans-115326\n(ccmtl.c
+ a)
+END:VEVENT
+END:VCALENDAR

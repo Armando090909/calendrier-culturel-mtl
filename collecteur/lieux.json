@@ -84,6 +84,11 @@
  },
  "Auditorium Fernand-Bilodeau": null,
  "Auditorium Serge Nolet": null,
+ "Auditorium de Verdun": {
+  "lat": 45.46252,
+  "lon": -73.56174,
+  "quartier": "Verdun"
+ },
  "Auditorium des Archives nationales — BAnQ": {
   "alias": [],
   "lat": 45.51327,
@@ -424,6 +429,11 @@
   "quartier": "Mercier"
  },
  "Bootlegger Cocktail Bar & Cuisine Montréal": null,
+ "Boulodrome d'Anjou": {
+  "lat": 45.63859,
+  "lon": -73.53711,
+  "quartier": ""
+ },
  "Bradley Ertaskiran": {
   "adresse": "3550, rue Saint-Antoine Ouest, Montréal",
   "alias": [],
@@ -893,6 +903,11 @@
   "lat": 45.50838,
   "lon": -73.56625,
   "quartier": "Ville-Marie"
+ },
+ "Espace culturel de la Caserne 26": {
+  "lat": 45.52413,
+  "lon": -73.58277,
+  "quartier": "Le Plateau-Mont-Royal"
  },
  "Espace des possibles": {
   "lat": 45.54035,
@@ -1670,6 +1685,11 @@
  },
  "Musée du Bas-Saint-Laurent": null,
  "Musée du Centre commémoratif de l'Holocauste à Montréal": null,
+ "MédiaLAB des bibliothèques de Montréal-Nord": {
+  "lat": 45.61609,
+  "lon": -73.62062,
+  "quartier": "Montréal-Nord"
+ },
  "N'était-ce pas l'été": null,
  "NINI Salon à Cocktails": null,
  "National Building Museum": null,

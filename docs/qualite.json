@@ -5,7 +5,7 @@
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 65,
   "page de la sortie disparue": 17,
-  "heures différentes selon les sources": 72,
+  "heures différentes selon les sources": 75,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -929,6 +929,33 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "10:30 gardée (montreal.ca), 09:30 écartée (montreal.ca)",
+   "titre": "Heure du conte 0-2 ans",
+   "date": "2026-11-30",
+   "lieu": "Bibliothèque Saint-Charles",
+   "source": "ville",
+   "url": "https://montreal.ca/evenements/heure-du-conte-0-2-ans-119219"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "10:30 gardée (montreal.ca), 09:30 écartée (montreal.ca)",
+   "titre": "Heure du conte 0-2 ans",
+   "date": "2026-12-14",
+   "lieu": "Bibliothèque Saint-Charles",
+   "source": "ville",
+   "url": "https://montreal.ca/evenements/heure-du-conte-0-2-ans-119220"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "10:30 gardée (montreal.ca), 09:30 écartée (montreal.ca)",
+   "titre": "Heure du conte 0-2 ans",
+   "date": "2026-12-14",
+   "lieu": "Bibliothèque Saint-Charles",
+   "source": "ville",
+   "url": "https://montreal.ca/evenements/heure-du-conte-0-2-ans-119220"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (sorstu.ca), 21:00 écartée (sorstu.ca)",
    "titre": "Kinji00 : M pour Montréal",
    "date": "2026-11-20",
@@ -1571,7 +1598,7 @@
   "date absente de la page": 65,
   "date confirmée": 321,
   "lien mort remplacé": 17,
-  "page illisible": 52
+  "page illisible": 53
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1668,8 +1695,8 @@
   {
    "source": "cinematheque.qc.ca",
    "erreurs": 26,
-   "sorties": 247,
-   "taux": 10.5
+   "sorties": 254,
+   "taux": 10.2
   },
   {
    "source": "casinos.lotoquebec.com",
@@ -1709,7 +1736,7 @@
   }
  ],
  "recoupees": {
-  "total": 3140,
-  "deux_sources_ou_plus": 251
+  "total": 3136,
+  "deux_sources_ou_plus": 252
  }
 }
