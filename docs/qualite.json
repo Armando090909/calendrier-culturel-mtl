@@ -3,8 +3,8 @@
  "regles": {
   "titre mal encodé": 17,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 54,
-  "page de la sortie disparue": 10,
+  "date absente de la page officielle": 65,
+  "page de la sortie disparue": 17,
   "heures différentes selon les sources": 72,
   "heure par défaut d'un agrégateur": 1
  },
@@ -748,6 +748,168 @@
    "url": "https://cldv.tuxedobillet.com/main/italian-romantic-tenors"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le fantôme dans la machine",
+   "date": "2026-11-20",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/50ans/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le grand variété du Caf'Conc'",
+   "date": "2026-11-20",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafeconcert.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Cabaret Caf'Conc'",
+   "date": "2026-11-21",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafeconcert.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-20",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-21",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée de danse",
+   "date": "2026-11-20",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-20",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-20-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Comedy",
+   "date": "2026-11-20",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Thousand Island Records 10 ans + The Corps + Handheld + Still Insane + The Lookout",
+   "date": "2026-11-21",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/21/thousand-island-records-10-ans--the-corps--handheld--still-insane--the-lookout"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-21-1000"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1200"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1400"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Alex Gabriel: Live en concert",
+   "date": "2026-11-21",
+   "lieu": "Teatro Amelia e Lino Saputo",
+   "source": "salles",
+   "url": "https://cldv.tuxedobillet.com/main/alex-gabriel-live-en-concert"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saïf",
+   "date": "2026-11-21",
+   "lieu": "Le Studio TD",
+   "source": "salles",
+   "url": "https://lestudiotd.com/fr"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-21-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Night Comedy",
+   "date": "2026-11-21",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749?aff=oddtdtcreator"
+  },
+  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -1406,11 +1568,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 54,
-  "date confirmée": 213,
-  "lien mort remplacé": 10,
-  "page illisible": 41,
-  "non relues (limite)": 137
+  "date absente de la page": 65,
+  "date confirmée": 321,
+  "lien mort remplacé": 17,
+  "page illisible": 52
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1446,9 +1607,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 184,
+   "erreurs": 191,
    "sorties": 454,
-   "taux": 40.5
+   "taux": 42.1
   },
   {
    "source": "quaidesbrumes.ca",
@@ -1548,7 +1709,7 @@
   }
  ],
  "recoupees": {
-  "total": 3141,
+  "total": 3140,
   "deux_sources_ou_plus": 251
  }
 }
