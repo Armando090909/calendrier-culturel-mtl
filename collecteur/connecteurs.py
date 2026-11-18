@@ -16,6 +16,7 @@ import csv
 import io
 import json
 import re
+import time
 from pathlib import Path
 from datetime import date, datetime, timedelta
 from urllib.parse import parse_qs, urljoin, urlparse
@@ -1164,7 +1165,27 @@ def recurrents(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     return evs, []
 
 
-CONNECTEURS = {"recurrents": recurrents, "ville_csv": ville_csv, "ics": ics, "jsonld": jsonld, "gancio": gancio, "page_ia": page_ia,
+def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
+    """Page-liste dont chaque activité a sa fiche avec des données schema.org complètes (titre, date, heure, salle) :
+    on relève les liens des fiches (motif « motif ») et on lit les données de chaque fiche, sans IA (18 nov. 2026, BAnQ :
+    la liste ne donne pas la salle et mêle Montréal, Sept-Îles et Trois-Rivières ; la fiche, si)."""
+    html = telecharger(cfg["url"], "text/html").text
+    liens = list(dict.fromkeys(urljoin(cfg["url"], l) for l in re.findall(cfg["motif"], html)))
+    evs, series, lues = [], [], 0
+    for lien in liens[:int(cfg.get("max_fiches", 150))]:
+        try:
+            e2, s2 = evenements_jsonld(telecharger(lien, "text/html").text, lien, cfg, debut, fin)
+            evs += e2
+            series += s2
+            lues += 1
+        except Exception as exc:
+            DIAG.append(f"fiche illisible ({str(exc)[:60]}) : {lien}")
+        time.sleep(0.3)
+    DIAG.append(f"{lues} fiches lues sur {len(liens)} liens trouvés")
+    return evs, series
+
+
+CONNECTEURS = {"liens_jsonld": liens_jsonld, "recurrents": recurrents, "ville_csv": ville_csv, "ics": ics, "jsonld": jsonld, "gancio": gancio, "page_ia": page_ia,
                "auto": auto, "propositions": propositions}
 
 
