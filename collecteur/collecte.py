@@ -35,7 +35,7 @@ import ia  # noqa: E402
 import qualite  # noqa: E402
 from connecteurs import CONNECTEURS, sauver_memoire, calendriers_soumis, heure_page, resume_page, telecharger, texte_page  # noqa: E402
 import connecteurs  # noqa: E402
-from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, raison_non_culturel, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
+from normalisation import PAS_DES_SALLES, Lieux, classer, corriger_heure_festapp, dans_ile, dedoublonner, disciplines_aussi, est_non_culturel, raison_non_culturel, ajuster_discipline, hors_ile, plat, style_musique, doublons_du_jour, doublons_expos  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SORTIE = RACINE / "docs" / "data.json"
@@ -604,6 +604,7 @@ def main() -> int:
             b["jeune_public"], b["discipline"] = True, ""
         disc = b["discipline"] if b["discipline"] in {"theatre", "musique", "danse", "cirque", "humour", "cinema", "lettres", "poesie", "conference", "atelier", "fete", "quiz", "social", "expo"} \
             else classer(b["titre"], b["categorie"], description=b.get("description", ""), defaut=b["discipline"])
+        disc = ajuster_discipline(disc, b["titre"], b.get("description", ""), lieu or "")
         heure = b["heure"] if b["heure"] and re.fullmatch(r"\d{2}:\d{2}", b["heure"]) else None
         if "festapp.io" in (b["url"] or ""):
             heure = corriger_heure_festapp(b["date"], heure)

@@ -142,6 +142,33 @@ def raison_non_culturel(titre: str, categorie: str = "") -> str:
     return f"mot « {m} » dans le titre" if m else f"catégorie « {next((m for m in CATEGORIES_EXCLUES if f' {m} ' in c), '?')} »"
 
 
+# Fêtes du calendrier et congés (18 nov. 2026, règle de l'équipe) : seule raison de classer une sortie en « Fête ».
+FERIES = re.compile(r"\b(halloween|noel|christmas|xmas|holiday|holidays|des fetes|les fetes|temps des fetes|fin d annee|marche de noel|marche des fetes|"
+                    r"pere noel|santa|reveillon|jour de l an|nouvel an|new year|new years|saint sylvestre|thanksgiving|"
+                    r"action de grace|saint jean|st jean|fete nationale|fete du canada|canada day|1er juillet|saint patrick|"
+                    r"st patrick|paques|easter|hanoukka|hanukkah|chanukah|diwali|aid|eid|ramadan|iftar|nouvel an lunaire|"
+                    r"nouvel an chinois|lunar new year|saint valentin|st valentin|valentine|carnaval|mardi gras|jour du souvenir|"
+                    r"remembrance|kwanzaa|fete des meres|fete des peres|solstice|dia de los muertos|jour des morts|illumination)\b")
+SOIREE_MUSIQUE = re.compile(r"\b(dj|djs|dj set|b2b|party|club night|rave|soiree dansante|soiree de danse|piste de danse|danse party|"
+                            r"dance party|disco|karaoke|nonstop|clubbing|techno|house|afrobeat|reggaeton|dancehall|motown|"
+                            r"annees 80|annees 90|annees 2000|retro|hits|x larges|jeudis 2000|(les )?(lundis|mardis|mercredis|jeudis|vendredis|samedis|dimanches) (du|au|de|x|retro|2000))\b")
+SPECTACLE_DANSE = re.compile(r"\b(spectacle|choregraph|compagnie|cie|ballet|danseurs|danseuses|creation|interprete|"
+                             r"cours|atelier|initiation|milonga|practica|tango|swing|salsa|bachata|flamenco|contact improvisation)\b")
+
+
+def ajuster_discipline(disc: str, titre: str, resume: str = "", lieu: str = "") -> str:
+    """Règles de l'équipe (18 nov. 2026) : « Fête » seulement pour une fête du calendrier ou un congé (une soirée DJ de
+    Noël y va) ; une soirée dansante ou un DJ sans fête va en « Musique », pas en « Danse » ni en « Fête »."""
+    t = f" {plat(titre)} {plat((resume or '')[:300])} {plat(lieu or '')} "
+    if disc == "fete" and not FERIES.search(t):
+        return "musique" if SOIREE_MUSIQUE.search(t) else "social"
+    if disc == "danse" and SOIREE_MUSIQUE.search(t) and not SPECTACLE_DANSE.search(t):
+        return "fete" if FERIES.search(t) else "musique"
+    if disc in ("musique", "social", "autre") and SOIREE_MUSIQUE.search(t) and FERIES.search(t):
+        return "fete"  # soirée DJ de Noël, party du Jour de l'An
+    return disc
+
+
 def classer(titre: str, categorie: str = "", description: str = "", defaut: str = "") -> str:
     """Discipline d'après la catégorie de la source, puis les mots du titre, puis la description."""
     c = plat(categorie)
