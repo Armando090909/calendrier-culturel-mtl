@@ -1172,16 +1172,22 @@ def liens_jsonld(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
     html = page_rendue(cfg["url"], 4000) if cfg.get("navigateur") else telecharger(cfg["url"], "text/html").text
     liens = list(dict.fromkeys(urljoin(cfg["url"], l) for l in re.findall(cfg["motif"], html)))
     print(f"  {len(liens)} fiches trouvées sur la liste")
-    evs, series, lues = [], [], 0
+    evs, series, lues, vides, erreurs = [], [], 0, [], []
     for lien in liens[:int(cfg.get("max_fiches", 150))]:
         try:
-            e2, s2 = evenements_jsonld(telecharger(lien, "text/html").text, lien, cfg, debut, fin)
+            h2 = telecharger(lien, "text/html").text
+            e2, s2 = evenements_jsonld(h2, lien, cfg, debut, fin)
+            if not e2 and not s2:
+                vides.append(f"{lien} ({len(h2)} car., {h2.count('application/ld+json')} blocs schema.org)")
             evs += e2
             series += s2
             lues += 1
         except Exception as exc:
-            DIAG.append(f"fiche illisible ({str(exc)[:60]}) : {lien}")
+            erreurs.append(f"{lien} : {str(exc)[:80]}")
         time.sleep(0.3)
+    print(f"  {lues} fiches lues ({len(vides)} sans activité datée, {len(erreurs)} en erreur)")
+    for x in (vides[:3] + erreurs[:3]):
+        print(f"    {x}")
     DIAG.append(f"{lues} fiches lues sur {len(liens)} liens trouvés")
     return evs, series
 
