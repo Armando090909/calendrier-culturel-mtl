@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-21-atelier-de-mouvement-28060c@ccmtl.ca
+UID:2026-11-28-layton-giordani-59ae0b@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Atelier de mouvement
-LOCATION:Espace Libre\, Montréal
-URL:https://espacelibre.qc.ca/evenement/atelier-de-mouvement/
-DESCRIPTION:Heure à confirmer. Activité de mouvement proposée dans le ca
- dre des activités perpendiculaires d'Espace Libre.\nDétails : https://es
- pacelibre.qc.ca/evenement/atelier-de-mouvement/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261128T220000
+DTEND;TZID=America/Toronto:20261129T000000
+SUMMARY:Layton Giordani
+LOCATION:New City Gas\, Montréal
+URL:https://www.songkick.com/concerts/43368300-layton-giordani-at-new-city-
+ gas
+DESCRIPTION:Détails : https://www.songkick.com/concerts/43368300-layton-gi
+ ordani-at-new-city-gas\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-no-cut-november-6f5c81@ccmtl.ca
+UID:2026-11-28-baroque-baroque-stoylov-56944a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:No Cut November
-LOCATION:Le Red Room\, Montréal
-URL:https://fr.ra.co/events/2549283#new_tab
-DESCRIPTION:Heure à confirmer. Soirée électronique de fin de novembre au
-  Red Room.\nDétails : https://fr.ra.co/events/2549283#new_tab\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261128T200000
+DTEND;TZID=America/Toronto:20261128T220000
+SUMMARY:Baroque Baroque\, Stoylov
+LOCATION:Le Verre Bouteille\, Montréal
+URL:https://www.songkick.com/concerts/43404714-baroque-baroque-at-le-verre-
+ bouteille
+DESCRIPTION:Prix : 20 $\nDétails : https://www.songkick.com/concerts/43404
+ 714-baroque-baroque-at-le-verre-bouteille\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-jen-cardini-olympe4000-a4a45d@ccmtl.ca
+UID:2026-11-28-gift-a7f6e2@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:Jen Cardini\, Olympe4000
-LOCATION:SAT\, Montréal
-URL:https://www.songkick.com/concerts/43483416-jen-cardini-at-society-for-a
- rts-and-technology
-DESCRIPTION:Heure à confirmer. Prix : 19\,38 à 37\,20 $\nDétails : https
- ://www.songkick.com/concerts/43483416-jen-cardini-at-society-for-arts-and-
- technology\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261128T190000
+DTEND;TZID=America/Toronto:20261128T210000
+SUMMARY:GIFT
+LOCATION:Théâtre Fairmount\, Montréal
+URL:https://www.songkick.com/concerts/43218946-gift-usa-at-theatre-fairmoun
+ t-theatre
+DESCRIPTION:Détails : https://www.songkick.com/concerts/43218946-gift-usa-
+ at-theatre-fairmount-theatre\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

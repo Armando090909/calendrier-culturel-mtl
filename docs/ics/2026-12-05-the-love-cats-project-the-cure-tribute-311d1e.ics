@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-bleeder-hell-on-earth-a13c4b@ccmtl.ca
+UID:2026-12-05-the-love-cats-project-the-cure-tribute-311d1e@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
-SUMMARY:Bleeder: Hell on Earth
-LOCATION:Le Red Room\, Montréal
-URL:https://fr.ra.co/events/2579658#new_tab
-DESCRIPTION:Heure à confirmer. Soirée musicale sombre et puissante propos
- ée par Bleeder au Red Room.\nDétails : https://fr.ra.co/events/2579658#n
- ew_tab\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261205T235500
+DTEND;TZID=America/Toronto:20261206T015500
+SUMMARY:THE LOVE CATS PROJECT | THE CURE TRIBUTE
+LOCATION:Le Ministère\, Montréal
+URL:https://leministere.ca/
+DESCRIPTION:Hommage rock à The Cure\, présenté par The Love Cats Project
+  au Ministère.\nPrix : 38 $\nDétails : https://leministere.ca/evenements
+ /the-cure-tribute\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

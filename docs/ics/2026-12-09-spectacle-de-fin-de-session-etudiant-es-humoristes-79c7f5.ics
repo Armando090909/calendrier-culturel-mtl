@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-rymz-guide-pour-apprendre-a-voler-lancement-d-albu-946521@cc
+UID:2026-12-09-spectacle-de-fin-de-session-etudiant-es-humoristes-79c7f5@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261205T200000
-DTEND;TZID=America/Toronto:20261205T220000
-SUMMARY:Rymz - Guide pour apprendre à voler (Lancement d'album)
+DTSTART;TZID=America/Toronto:20261209T235500
+DTEND;TZID=America/Toronto:20261210T015500
+SUMMARY:SPECTACLE DE FIN DE SESSION | ÉTUDIANT.ES HUMORISTES CUVÉE 2027
 LOCATION:Club Soda\, Montréal
-URL:https://lepointdevente.com/billets/clb261205001
-DESCRIPTION:Lancement de l'album Guide pour apprendre à voler de Rymz.\nD
- étails : https://lepointdevente.com/billets/clb261205001\n(ccmtl.ca)
+URL:https://clubsoda.ca/fr/evenements
+DESCRIPTION:Prix : 18\,50 $\nDétails : https://clubsoda.ca/fr/evenements/s
+ pectacle-de-fin-de-session-etudiant-es-humoristes-cuvee-2027\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

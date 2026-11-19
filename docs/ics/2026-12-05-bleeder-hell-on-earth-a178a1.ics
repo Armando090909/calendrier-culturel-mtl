@@ -21,15 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-06-peter-pan-de-poche-2cc04d@ccmtl.ca
+UID:2026-12-05-bleeder-hell-on-earth-a178a1@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
-SUMMARY:Peter Pan (de poche)
-LOCATION:Espace le vrai monde?\, Montréal
-URL:https://espacelevraimonde.ca/programmation/
-DESCRIPTION:Heure à confirmer. Adaptation théâtrale condensée du conte 
- de Peter Pan\, présentée le 6 décembre 2026.\nDétails : https://ahunts
- ic.tuxedobillet.com/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261205T220000
+DTEND;TZID=America/Toronto:20261206T000000
+SUMMARY:Bleeder: Hell on Earth
+LOCATION:Le Red Room\, Montréal
+URL:https://fr.ra.co/events/2579658#new_tab
+DESCRIPTION:Soirée musicale sombre et puissante proposée par Bleeder au R
+ ed Room.\nDétails : https://fr.ra.co/events/2579658#new_tab\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,15 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-10-francois-e-13bb71@ccmtl.ca
+UID:2026-11-26-no-cut-november-23fe40@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
-SUMMARY:François.e
-LOCATION:Espace le vrai monde?\, Montréal
-URL:https://espacelevraimonde.ca/programmation/
-DESCRIPTION:Heure à confirmer. Spectacle annoncé à l'Espace le vrai mond
- e? le 10 décembre 2026.\nDétails : https://ahuntsic.tuxedobillet.com/\n(
- ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261126T220000
+DTEND;TZID=America/Toronto:20261127T000000
+SUMMARY:No Cut November
+LOCATION:Le Red Room\, Montréal
+URL:https://fr.ra.co/events/2549283#new_tab
+DESCRIPTION:Soirée électronique de fin de novembre au Red Room.\nDétails
+  : https://fr.ra.co/events/2549283#new_tab\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

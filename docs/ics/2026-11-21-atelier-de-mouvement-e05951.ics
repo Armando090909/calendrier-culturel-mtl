@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-gift-5014b5@ccmtl.ca
+UID:2026-11-21-atelier-de-mouvement-e05951@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261128T210000
-DTEND;TZID=America/Toronto:20261128T230000
-SUMMARY:GIFT
-LOCATION:Théâtre Fairmount\, Montréal
-URL:https://www.songkick.com/concerts/43218946-gift-usa-at-theatre-fairmoun
- t-theatre
-DESCRIPTION:Détails : https://www.songkick.com/concerts/43218946-gift-usa-
- at-theatre-fairmount-theatre\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T140000
+DTEND;TZID=America/Toronto:20261121T160000
+SUMMARY:Atelier de mouvement
+LOCATION:Espace Libre\, Montréal
+URL:https://espacelibre.qc.ca/evenement/atelier-de-mouvement/
+DESCRIPTION:Activité de mouvement proposée dans le cadre des activités p
+ erpendiculaires d'Espace Libre.\nPrix : Gratuit\nDétails : https://espace
+ libre.tuxedobillet.com/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

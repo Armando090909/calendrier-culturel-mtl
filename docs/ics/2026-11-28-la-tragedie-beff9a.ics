@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-lecture-theatrale-ophelie-dans-l-eau-0563b2@ccmtl.ca
+UID:2026-11-28-la-tragedie-beff9a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261203T193000
-DTEND;TZID=America/Toronto:20261203T213000
-SUMMARY:Lecture théâtrale | Ophélie dans l'eau
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://calendrier.umontreal.ca/activite/lecture-theatrale-ophelie-dans
- -leau
-DESCRIPTION:Lecture théâtrale payante de la pièce Ophélie dans l'eau.\n
- Prix : Payant\nDétails : https://culture-umontreal.tuxedobillet.com/\n(cc
- mtl.ca)
+DTSTART;TZID=America/Toronto:20261128T193000
+DTEND;TZID=America/Toronto:20261128T213000
+SUMMARY:La Tragédie
+LOCATION:Foufounes Électriques\, Montréal
+URL:https://www.songkick.com/concerts/43104115-la-tragedie-at-foufounes-ele
+ ctriques
+DESCRIPTION:Prix : 20 à 30 $\nDétails : https://www.songkick.com/concerts
+ /43104115-la-tragedie-at-foufounes-electriques\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

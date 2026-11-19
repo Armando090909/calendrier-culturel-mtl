@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-18-un-renversement-3f5d1e@ccmtl.ca
+UID:2026-12-03-lecture-theatrale-ophelie-dans-l-eau-c2bf43@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270118
-DTEND;VALUE=DATE:20270119
-SUMMARY:Un renversement
-LOCATION:Théâtre Outremont\, Montréal
-URL:https://theatreoutremont.tuxedobillet.com/web/cine-outremont-un-renvers
- ement
-DESCRIPTION:Heure à confirmer. Projection de cinéma dans la série Ciné-
- Outremont.\nDétails : https://theatreoutremont.tuxedobillet.com/web/cine-
- outremont-un-renversement\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261203T193000
+DTEND;TZID=America/Toronto:20261203T213000
+SUMMARY:Lecture théâtrale | Ophélie dans l'eau
+LOCATION:Centre d'essai de l'UdeM\, Montréal
+URL:https://calendrier.umontreal.ca/activite/lecture-theatrale-ophelie-dans
+ -leau
+DESCRIPTION:Lecture théâtrale payante de la pièce Ophélie dans l'eau.\n
+ Prix : Payant\nDétails : https://culture-umontreal.tuxedobillet.com/\n(cc
+ mtl.ca)
 END:VEVENT
 END:VCALENDAR

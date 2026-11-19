@@ -656,7 +656,12 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Centre d'art Jacques-et-Michel-Auger": null,
- "Centre d'essai de l'UdeM": null,
+ "Centre d'essai de l'UdeM": {
+  "alias": [],
+  "lat": 45.50719,
+  "lon": -73.61416,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Centre d'exposition Lethbridge": {
   "lat": 45.505,
   "lon": -73.713,
@@ -2304,7 +2309,12 @@
  },
  "Théâtre Le Patriote": null,
  "Théâtre Lio": null,
- "Théâtre Lionel-Groulx": null,
+ "Théâtre Lionel-Groulx": {
+  "alias": [],
+  "lat": 45.49922,
+  "lon": -73.61827,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Théâtre MainLine": {
   "lat": 45.51684,
   "lon": -73.57883,

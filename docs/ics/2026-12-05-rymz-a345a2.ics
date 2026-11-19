@@ -21,15 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-the-love-cats-project-the-cure-tribute-4ff122@ccmtl.ca
+UID:2026-12-05-rymz-a345a2@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
-SUMMARY:THE LOVE CATS PROJECT | THE CURE TRIBUTE
-LOCATION:Le Ministère\, Montréal
-URL:https://leministere.ca/
-DESCRIPTION:Heure à confirmer. Hommage rock à The Cure\, présenté par T
- he Love Cats Project au Ministère.\nDétails : https://leministere.ca/\n(
- ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261205T200000
+DTEND;TZID=America/Toronto:20261205T220000
+SUMMARY:RYMZ
+LOCATION:Club Soda\, Montréal
+URL:https://clubsoda.ca/fr/evenements
+DESCRIPTION:Lancement de l'album Guide pour apprendre à voler de Rymz.\nPr
+ ix : 45 $\nDétails : https://clubsoda.ca/fr/evenements/rymz\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

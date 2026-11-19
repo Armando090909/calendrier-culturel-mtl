@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-baroque-baroque-stoylov-d72c58@ccmtl.ca
+UID:2026-12-06-peter-pan-de-poche-35e038@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-SUMMARY:Baroque Baroque\, Stoylov
-LOCATION:Le Verre Bouteille\, Montréal
-URL:https://www.songkick.com/concerts/43404714-baroque-baroque-at-le-verre-
- bouteille
-DESCRIPTION:Heure à confirmer. Prix : 20 $\nDétails : https://www.songkic
- k.com/concerts/43404714-baroque-baroque-at-le-verre-bouteille\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261206T110000
+DTEND;TZID=America/Toronto:20261206T130000
+SUMMARY:Peter Pan (de poche)
+LOCATION:Espace le vrai monde?\, Montréal
+URL:https://espacelevraimonde.ca/programmation/
+DESCRIPTION:Adaptation théâtrale condensée du conte de Peter Pan\, prés
+ entée le 6 décembre 2026.\nPrix : 23 $\nDétails : https://espacelevraim
+ onde.ca/evenement/peter-pan-de-poche/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

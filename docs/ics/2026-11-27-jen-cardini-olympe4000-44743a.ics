@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-la-tragedie-8300fa@ccmtl.ca
+UID:2026-11-27-jen-cardini-olympe4000-44743a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-SUMMARY:La Tragédie
-LOCATION:Foufounes Électriques\, Montréal
-URL:https://www.songkick.com/concerts/43104115-la-tragedie-at-foufounes-ele
- ctriques
-DESCRIPTION:Heure à confirmer. Prix : 20 à 30 $\nDétails : https://www.s
- ongkick.com/concerts/43104115-la-tragedie-at-foufounes-electriques\n(ccmtl
- .ca)
+DTSTART;TZID=America/Toronto:20261127T220000
+DTEND;TZID=America/Toronto:20261128T000000
+SUMMARY:Jen Cardini\, Olympe4000
+LOCATION:SAT\, Montréal
+URL:https://www.songkick.com/concerts/43483416-jen-cardini-at-society-for-a
+ rts-and-technology
+DESCRIPTION:Prix : 19\,38 à 37\,20 $\nDétails : https://www.songkick.com/
+ concerts/43483416-jen-cardini-at-society-for-arts-and-technology\n(ccmtl.c
+ a)
 END:VEVENT
 END:VCALENDAR

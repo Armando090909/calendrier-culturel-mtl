@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-16-dan-bigras-cette-voix-dan-et-gerry-notre-histoire-156a00@ccm
+UID:2027-01-16-dan-bigras-cette-voix-dan-et-gerry-notre-histoire-868fa2@ccm
  tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270116
-DTEND;VALUE=DATE:20270117
+DTSTART;TZID=America/Toronto:20270116T200000
+DTEND;TZID=America/Toronto:20270116T220000
 SUMMARY:Dan Bigras – Cette Voix: Dan et Gerry\, notre histoire
 LOCATION:Théâtre Outremont\, Montréal
 URL:https://theatreoutremont.tuxedobillet.com/web/cette-voix-dan-et-gerry-n
  otre-histoire
-DESCRIPTION:Heure à confirmer. Spectacle musical de Dan Bigras racontant s
- on histoire avec Gerry.\nPrix : Rabais membre 3 $\nDétails : https://thea
- treoutremont.tuxedobillet.com/web/cette-voix-dan-et-gerry-notre-histoire\n
- (ccmtl.ca)
+DESCRIPTION:Spectacle musical de Dan Bigras racontant son histoire avec Ger
+ ry.\nPrix : Rabais membre 3 $\nDétails : https://theatreoutremont.tuxedob
+ illet.com/web/cette-voix-dan-et-gerry-notre-histoire\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

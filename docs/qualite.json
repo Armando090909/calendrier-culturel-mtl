@@ -4,8 +4,8 @@
   "titre mal encodé": 16,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 50,
-  "page de la sortie disparue": 10,
+  "date absente de la page officielle": 53,
+  "page de la sortie disparue": 19,
   "heures différentes selon les sources": 77,
   "heure par défaut d'un agrégateur": 1
  },
@@ -713,6 +713,114 @@
    "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1200"
   },
   {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1400"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Alex Gabriel: Live en concert",
+   "date": "2026-11-21",
+   "lieu": "Teatro Amelia e Lino Saputo",
+   "source": "salles",
+   "url": "https://cldv.tuxedobillet.com/main/alex-gabriel-live-en-concert"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-21-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Night Comedy (regular early show at 9 pm)",
+   "date": "2026-11-21",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749?aff=oddtdtcreator"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Shaun le mouton : la bêêête de la ferme — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/shaun-le-mouton-la-beeete-de-la-ferme-2026-11-22-1030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Conte d'hiver",
+   "date": "2026-11-22",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/conte-dhiver"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1300"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1500"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1700"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-22-1930"
+  },
+  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -1416,11 +1524,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 50,
-  "date confirmée": 206,
-  "lien mort remplacé": 10,
-  "page illisible": 37,
-  "non relues (limite)": 168
+  "date absente de la page": 53,
+  "date confirmée": 353,
+  "lien mort remplacé": 19,
+  "page illisible": 46
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1456,9 +1563,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 203,
+   "erreurs": 212,
    "sorties": 498,
-   "taux": 40.8
+   "taux": 42.6
   },
   {
    "source": "quaidesbrumes.ca",
@@ -1547,7 +1654,7 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 91,
-   "sorties": 1576,
+   "sorties": 1575,
    "taux": 5.8
   },
   {
@@ -1570,7 +1677,7 @@
   }
  ],
  "recoupees": {
-  "total": 3065,
-  "deux_sources_ou_plus": 252
+  "total": 3066,
+  "deux_sources_ou_plus": 251
  }
 }
