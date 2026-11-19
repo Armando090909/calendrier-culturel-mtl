@@ -206,6 +206,9 @@ HORS_ILE = [
     "vancouver", "calgary", "edmonton", "winnipeg", "halifax", "pickering", "abbotsford", "mississauga", "saskatoon",
     "lavaltrie", "berthierville", "saint jean sur richelieu", "saint jean de matha", "rawdon", "sorel", "beloeil",
     "saddledome", "peterborough", "sudbury", "oshawa", "barrie", "kitchener", "guelph", "belleville", "cornwall ontario",
+    # (19 nov. 2026 : « Glob – Surrey (BC) » et un spectacle à Sainte-Agathe-des-Monts affichés sans heure à Montréal)
+    "surrey", "burnaby", "kelowna", "nanaimo", "sainte agathe", "sainte adele", "val david", "mont laurier", "lachute",
+    "mirabel", "levis", "bromont", "sutton", "baie saint paul",
 ]
 
 # Salles hors de l'île souvent listées sans ville par les agendas pancanadiens (Sors-tu?, Songkick) : nom exact

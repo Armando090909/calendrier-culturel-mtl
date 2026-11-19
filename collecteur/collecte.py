@@ -22,7 +22,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import yaml
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
+
+from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).parent))
 import agenda  # noqa: E402
@@ -350,6 +352,111 @@ TITRE_ABSENT = re.compile(r"(?i)^\s*((spectacle|[ée]v[ée]nement|concert|soir[�
 
 def en_ligne_selon_texte(texte: str) -> bool:
     return bool(_EN_LIGNE_TEXTE.search(_PAS_EN_LIGNE.sub(" ", texte or "")))
+
+
+BLOQUEES_FICHE = ("zeffy.com", "ra.co", "facebook.com", "instagram.com", "ticketmaster", "eventbrite", "songkick.com",
+                  "jambase.com", "bandsintown.com", "google.com", "apple.com", "mailto:", "tel:")
+
+
+def _mots_titre(titre: str) -> list[str]:
+    return [m for m in plat(titre).split() if len(m) >= 4 and m not in ("avec", "pour", "dans", "show", "live", "concert",
+                                                                       "spectacle", "presente", "presents", "montreal")]
+
+
+def liens_candidats(texte: str, liens: list[str], page: str, titre: str) -> list[str]:
+    """Liens d'une page-liste qui mènent probablement à la fiche d'un événement : adresse qui reprend les mots du titre,
+    puis les liens écrits juste après le titre dans le texte de la page (« Titre <https://…> »)."""
+    mots = _mots_titre(titre)
+    if not mots:
+        return []
+    out = []
+    for u in liens:
+        slug = plat(urlparse(u).path + " " + urlparse(u).query)
+        if sum(1 for m in mots if m in slug) >= max(1, min(2, len(mots))):
+            out.append(u)
+    t = texte
+    mots_t = re.findall(r"\w+", titre)[:4]
+    motif = r"\W{1,3}".join(re.escape(m) for m in mots_t) if mots_t else "$^"
+    for m in re.finditer(motif, t, re.I):
+        out += re.findall(r"<(https?://[^>\s]+)>", t[m.start():m.start() + 400])[:2]
+    vus, res = set(), []
+    for u in out:
+        u = u.split("#")[0]
+        if u and u not in vus and u.rstrip("/") != page.split("#")[0].rstrip("/") and not any(b in u for b in BLOQUEES_FICHE):
+            vus.add(u)
+            res.append(u)
+    return res[:3]
+
+
+def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int, int]:
+    f_fp = CACHE / "heures_fiches.json"
+    memo = json.loads(f_fp.read_text(encoding="utf-8")) if f_fp.exists() else {}
+    aujourd_ = date.today()
+    limite = (aujourd_ + timedelta(days=int(reglages.get("jours_fiche_propre", 21)))).isoformat()
+    par_url = collections.Counter(e["url"] for e in events)
+    sans = sorted([e for e in events if not e.get("heure") and e["url"].startswith("http") and e["date"] <= limite
+                   and not any(b in e["url"] for b in BLOQUEES_FICHE + ("://montreal.ca",))
+                   and (par_url[e["url"]] >= 2 or urlparse(e["url"]).path.strip("/") in ("", "fr", "en", "evenements", "events",
+                        "programmation", "calendrier", "spectacles", "agenda", "billetterie", "en/events", "fr/evenements"))],
+                  key=lambda e: e["date"])
+    listes: dict = {}
+    trouvees, lues = 0, 0
+    for e in sans:
+        cle = e["url"].split("#")[0] + "|" + e["date"] + "|" + plat(e["titre"])[:40]
+        r = memo.get(cle)
+        recent = (aujourd_ - timedelta(days=2 if e["date"] <= (aujourd_ + timedelta(days=7)).isoformat() else 7)).isoformat()
+        if isinstance(r, str):
+            e["heure"] = r
+            trouvees += 1
+            continue
+        if isinstance(r, dict) and r.get("le", "") >= recent:
+            continue
+        if lues >= int(reglages.get("max_pages_fiche_propre", 60)):
+            continue
+        h = None
+        try:
+            page = e["url"].split("#")[0]
+            if page not in listes:
+                lues += 1
+                try:
+                    html = telecharger(page, "text/html").text
+                except Exception:
+                    html = ""
+                if len(texte_page(html, page)) < 400 if html else True:
+                    html = connecteurs.page_rendue(page)
+                soup = BeautifulSoup(html or "", "html.parser")
+                liens = [urljoin(page, a["href"]) for a in soup.find_all("a", href=True)]
+                listes[page] = (texte_page(html, page) if html else "", liens)
+            texte, liens = listes[page]
+            pt = plat(e["titre"])
+            for u in liens_candidats(texte, liens, page, e["titre"]):
+                if lues >= int(reglages.get("max_pages_fiche_propre", 60)):
+                    break
+                lues += 1
+                try:
+                    html2 = telecharger(u, "text/html").text
+                except Exception:
+                    html2 = ""
+                if not html2 or plat(e["titre"])[:20] not in plat(BeautifulSoup(html2, "html.parser").get_text(" ")):
+                    html2 = connecteurs.page_rendue(u)
+                t2 = plat(BeautifulSoup(html2 or "", "html.parser").get_text(" "))
+                mots = _mots_titre(e["titre"])
+                if not (pt[:20] in t2 or (mots and sum(1 for m in mots if m in t2) >= max(1, (len(mots) + 1) // 2 + (len(mots) > 2)))):
+                    continue  # page d'un autre spectacle
+                h = heure_page(html2, e["date"])
+                if not h and ia.disponible():
+                    h = (ia.champs_page(e["titre"], e["date"], texte_page(html2, u)) or {}).get("heure")
+                if h:
+                    e["heure"] = h
+                    trouvees += 1
+                    if not e.get("billets"):
+                        e["billets"] = u
+                    break
+        except Exception as exc:
+            print(f"  fiche propre de « {e['titre'][:40]} » : {exc}")
+        memo[cle] = h or {"le": aujourd_.isoformat()}
+    f_fp.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
+    return trouvees, lues
 
 
 def main() -> int:
@@ -798,7 +905,10 @@ def main() -> int:
     memo_ia = json.loads(f_ia.read_text(encoding="utf-8")) if f_ia.exists() else {}
     corriges_ia, lus_ia = 0, 0
     if ia.disponible():
-        for e in events:
+        # (19 nov. 2026) les plus proches d'abord : la limite de pages par nuit ne doit pas laisser de côté cette semaine
+        semaine = (aujourd + timedelta(days=7)).isoformat()
+        il_y_a_2j = (aujourd - timedelta(days=2)).isoformat()
+        for e in sorted(events, key=lambda x: x["date"]):
             if (e["heure"] and e["lieu"] != "Lieu à confirmer") or not e["url"].startswith("http") \
                     or any(d in e["url"] for d in ("://montreal.ca", "songkick.com", "facebook.com", "instagram.com")):
                 # (15 nov. 2026 : « ://montreal.ca » et non « montreal.ca », qui écartait aussi calendrier.umontreal.ca)
@@ -809,6 +919,8 @@ def main() -> int:
                 r = None  # échec technique, ou lu avant la 2e version (navigateur, heures d'ouverture) : on réessaie
             if r is not None and e["lieu"] == "Lieu à confirmer" and not r.get("lieu") and r.get("v", 0) < 4:
                 r = None  # salle introuvable : relu dans le navigateur (3e version), puis données schema.org (4e)
+            if r is not None and not e["heure"] and not r.get("heure") and e["date"] <= semaine and r.get("le", "") < il_y_a_2j:
+                r = None  # (19 nov. 2026) cette semaine : l'heure est souvent ajoutée tard par la salle, on relit aux 2 jours
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
                 try:
@@ -820,7 +932,13 @@ def main() -> int:
                     if len(texte) < 400 or e["lieu"] == "Lieu à confirmer":  # page en JavaScript, refusée, ou salle à trouver
                         html = connecteurs.page_rendue(e["url"])
                         texte = texte_page(html, e["url"])
-                    r = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=4)
+                    # page-liste : seulement le passage autour du titre (sinon réponse tronquée « sans JSON lisible »,
+                    # ou l'heure d'un autre spectacle de la liste)
+                    mots_t = re.findall(r"\w+", e["titre"])[:4]
+                    m_t = re.search(r"\W{1,3}".join(re.escape(m) for m in mots_t), texte, re.I) if mots_t else None
+                    if m_t and len(texte) > 6000:
+                        texte = texte[max(0, m_t.start() - 1500):m_t.start() + 2500]
+                    r = dict(ia.champs_page(e["titre"], e["date"], texte) or {}, v=4, le=aujourd.isoformat())
                     if not r.get("lieu"):  # la salle est souvent dans les données schema.org de la page (ex. UdeM)
                         r.update({k: v for k, v in lieu_jsonld(html).items() if v})
                     memo_ia[cle] = r
@@ -836,6 +954,16 @@ def main() -> int:
                 corriges_ia += 1
         f_ia.write_text(json.dumps(memo_ia, ensure_ascii=False), encoding="utf-8")
     print(f"Fiches complétées par l'IA : {corriges_ia} champs ({lus_ia} pages lues).")
+
+    # Fiche propre de l'événement (19 nov. 2026) : quand l'adresse est la page-liste de la salle (« leredroom.com/evenements/ »,
+    # « cldv.ca/fr/ »…), l'heure n'y est souvent pas, mais la liste mène à la page de l'événement (ou à sa billetterie) où elle
+    # est. On cherche ce lien (adresse qui reprend le titre, ou lien qui suit le titre dans la liste), on vérifie que la page
+    # trouvée parle bien du même spectacle (titre présent), puis on y lit l'heure. Priorité aux 7 prochains jours.
+    try:
+        n_fp, lues_fp = completer_par_fiche_propre(events, reglages)
+        print(f"Heures par la fiche propre de l'événement : {n_fp} trouvées ({lues_fp} pages lues).")
+    except Exception as exc:
+        print(f"Heures par la fiche propre en échec : {exc}")
 
     # Heures par la billetterie (11 nov. 2026) : une billetterie affiche forcément l'heure de la représentation.
     # 1) dans l'adresse elle-même (Tuxedo : …/voyage-voyage/20261111200000 = le 11 nov. à 20 h) ;

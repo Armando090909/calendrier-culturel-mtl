@@ -99,7 +99,8 @@ def chercher_dates(fests: list[dict], aujourd: date, telecharger, texte_page) ->
 def etiqueter(items: list[dict], fests: list[dict]) -> None:
     """Rattache un événement à un festival : par sa source, par le nom du festival dans le titre,
     ou par l'adresse de sa page (même site que le festival)."""
-    noms = [(f, plat(f["court"])) for f in fests if len(plat(f["court"])) >= 5]
+    # (19 nov. 2026) « alias » : autre nom de l'édition (ex. « M For Montreal » pour M pour Montréal chez Songkick)
+    noms = [(f, plat(n)) for f in fests for n in [f["court"], *f.get("alias", [])] if len(plat(n)) >= 5]
     domaines = {}
     for f in fests:
         h = urlparse(f.get("site", "")).netloc.replace("www.", "")
