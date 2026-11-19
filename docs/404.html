@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page introuvable · ccmtl.ca</title>
+<style>
+:root{--fond:#F5EFE3;--texte:#111}
+@media (prefers-color-scheme:dark){:root{--fond:#161616;--texte:#F5EFE3}}
+body{margin:0;background:var(--fond);color:var(--texte);font:18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:48px 16px}
+h1{font-size:32px;line-height:1.1;margin:0 0 16px}
+a{color:inherit}
+.btn{display:inline-block;margin:8px 8px 0 0;padding:10px 20px;border:2px solid currentColor;border-radius:999px;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+<h1 id="t">Cette sortie n'est plus au calendrier</h1>
+<p id="p">Elle est peut-être passée, ou son titre a changé. Voici les sorties de ce jour-là et le calendrier complet.</p>
+<p id="liens"><a class="btn" href="/">Tout le calendrier</a></p>
+</main>
+<script>
+// Fiche disparue (sortie passée ou renommée) : on propose le jour de la sortie, tiré de son adresse
+// (ex. /e/2026-11-14-titre-abc123.html → /jour/2026-11-14.html). La page garde son statut 404 pour Google.
+(function(){
+  var p=location.pathname, en=p.indexOf("/en/")===0, m=p.match(/(\d{4}-\d{2}-\d{2})/);
+  if(en){document.documentElement.lang="en";document.getElementById("t").textContent="This event is no longer on the calendar";
+    document.getElementById("p").textContent="It may be over, or its title changed. Here are the events of that day and the full calendar.";}
+  var l=document.getElementById("liens"), cal=l.querySelector("a"); cal.href=en?"/en/":"/"; cal.textContent=en?"Full calendar":"Tout le calendrier";
+  if(m){var j=document.createElement("a");j.className="btn";j.href=(en?"/en/day/":"/jour/")+m[1]+".html";
+    j.textContent=(en?"Events on ":"Sorties du ")+m[1];l.insertBefore(j,cal);}
+})();
+</script>
+</body>
+</html>

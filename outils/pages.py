@@ -251,7 +251,7 @@ def page_evenement(e: dict, lieux: dict) -> str:
 {f'<img src="{e_(aff)}" alt="{T('Affiche', 'Poster')} : {e_(e["titre"])}" referrerpolicy="no-referrer" onerror="this.remove()">' if aff else ""}
 <div class="boutons">
 {f'<a class="btn" href="{e_(billets)}" target="_blank" rel="noopener">{T("Acheter des billets", "Buy tickets") if e.get("billets") else T("Page de l’événement", "Event page")}</a>' if billets else ""}
-<a class="btn ghost" href="/ics/{e_(e['ics'])}.ics">{T('+ mon agenda', '+ my calendar')}</a>
+<a class="btn ghost" rel="nofollow" href="/ics/{e_(e['ics'])}.ics">{T('+ mon agenda', '+ my calendar')}</a>
 <button type="button" class="btn ghost" data-partage="{e_(url)}" data-titre="{e_(e['titre'])}" data-texte="{e_(quand + ' · ' + lieu(e))}">{T('Partager', 'Share')}</button>
 <a class="btn ghost" href="{T('/', '/en/')}?e={e_(e['ics'])}">{T('Voir dans le calendrier', 'View in the calendar')}</a>
 </div>

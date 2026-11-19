@@ -127,7 +127,7 @@ function lieuHTML(e,grand){
 function calHTML(e){
   const src=(EN&&SRC_EN[e.source])||(D.sources[e.source]||{}).nom||e.source;
   // iCal : lien vers le fichier .ics publié avec le site → « Ajouter au calendrier » directement (iPhone, Mac, Android…)
-  const ical=e.ics?`<a href="${BASE}ics/${e.ics}.ics" title="${L("Ajouter à Apple Calendrier, ou à l'agenda de ton téléphone","Add to Apple Calendar or your phone's calendar")}">iCal</a>`
+  const ical=e.ics?`<a rel="nofollow" href="${BASE}ics/${e.ics}.ics" title="${L("Ajouter à Apple Calendrier, ou à l'agenda de ton téléphone","Add to Apple Calendar or your phone's calendar")}">iCal</a>`
     :`<button type="button" data-ics="${e._i}" title="${L("Fichier .ics pour Apple Calendrier, Outlook, etc.",".ics file for Apple Calendar, Outlook, etc.")}">iCal</button>`;
   return `<div class="cal"><span class="calk">${L("+ mon agenda :","+ my calendar:")}</span><a href="${esc(gcal(e))}" target="_blank" rel="noopener" title="${L("Ajouter à Google Agenda","Add to Google Calendar")}">Google</a>${ical}<a href="${esc(outlook(e))}" target="_blank" rel="noopener" title="${L("Ajouter à Outlook","Add to Outlook")}">Outlook</a><span class="src">source${L(" : ",": ")}${esc(src)}</span></div>`;
 }
