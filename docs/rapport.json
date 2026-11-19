@@ -1,23 +1,18 @@
 {
  "date": "2026-11-19",
  "statut": "publié",
- "evenements": 3049,
+ "evenements": 3052,
  "expositions": 257,
- "nouvelles_salles": [
-  "BaNQ",
-  "Café Social B Hive",
-  "Hanifl Performing Arts Center",
-  "MAI – Montréal, arts interculturels",
-  "Maison de la culture Notre-Dame-de-Grâce - Monkland",
-  "Memento! - Brasserie Artisanale",
-  "Nomad Nation",
-  "Pavillon des Arts Collège Saint-Paul"
- ],
+ "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
-   "lues": 0,
-   "erreurs": 0,
-   "exemples_erreurs": [],
+   "lues": 15,
+   "erreurs": 15,
+   "exemples_erreurs": [
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-cuisine-tartes-et-tartelettes-116554",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-decoration-de-biscuits-avec-la-biscuiteri",
+    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-donjons-et-dragons-8-12-ans-117778"
+   ],
    "completees_par_mac": 958,
    "heures_trouvees": 946,
    "salles_trouvees": 929
@@ -43,21 +38,159 @@
    "2026-11-28 : « Patrice L'Écuyer - Après seulement 32 ans d'absenc » (Centre Pierre-Peladeau) = « Après seulement 32 ans d'absence sur scène » (Salle Pierre-Mercure)",
    "2026-11-28 : « Saturday Night Comedy (regular early show at 9 pm) » (Deli Planet) = « Saturday After Dusk Comedy (Earlier show in englis » (Estrella)",
    "2026-12-01 : « Open Mic au Saint-Jean Comédie Club » (Le Saint-Jean Comédie Club) = « Open-Mic » (Le Bordel Comédie Club)",
-   "2026-12-02 : « Petrouchka de Stravinsky : entre danse et traditio » (Maison symphonique) = « Petrouchka de Stravinsky : Entre danse et traditio » (Maison symphonique)",
    "2026-12-03 : « Luc Beauséjour : Bach, un Européen avant l'heure ( » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach, Européen avant l'heure » (Off-Bach)",
-   "2026-12-03 : « Petrouchka de Stravinsky : entre danse et traditio » (Maison symphonique) = « Petrouchka de Stravinsky : Entre danse et traditio » (Maison symphonique)",
    "2026-12-04 : « Friday Late Night Comedy (Late Night Edgy pro-am S » (Estrella) = « Friday Night Comedy (Early Show in English) » (Deli Planet)",
    "2026-12-05 : « Saturday Night Comedy (regular early show at 9 pm) » (Deli Planet) = « SATURDAY Night Comedy in Mile End | The Comedy Spo » (Espace Culturel Kawalees)",
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
+  "catalogues": [
+   {
+    "nom": "YAMA//SATO"
+   },
+   {
+    "nom": "MALPOULI"
+   },
+   {
+    "nom": "OTRO NIVEL",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": [
+      "genre monde ≠ electro"
+     ]
+    }
+   },
+   {
+    "nom": "GABA Collective"
+   },
+   {
+    "nom": "Sydney Sarayeva",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : electro"
+     ],
+     "contre": []
+    },
+    "apple": {
+     "ok": true,
+     "pour": [
+      "genre concordant : electro"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album caught in a crush)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Bleeder"
+   },
+   {
+    "nom": "LE MAQUIS",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Mrktbeatz"
+   },
+   {
+    "nom": "dtq3000"
+   },
+   {
+    "nom": "Gwinestefani"
+   },
+   {
+    "nom": "Jordan Gardner",
+    "deezer": {
+     "ok": true,
+     "pour": [
+      "genre concordant : electro"
+     ],
+     "contre": []
+    },
+    "tidal": {
+     "ok": true,
+     "pour": [
+      "même artiste que sur deezer (album babylon)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Rachel Dara",
+    "deezer": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "apple": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    },
+    "tidal": {
+     "ok": false,
+     "pour": [],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Loche Nisse Monster"
+   },
+   {
+    "nom": "Érick d'Orion",
+    "apple": {
+     "ok": true,
+     "pour": [
+      "maison de disques : dame",
+      "Last.fm : artiste d'ici, même genre (electro)"
+     ],
+     "contre": []
+    }
+   },
+   {
+    "nom": "Winston Hacking"
+   },
+   {
+    "nom": "Dayna McLeod"
+   }
+  ],
   "qualite": {
-   "regles": 95,
+   "regles": 155,
    "contreverif": {
-    "non relues (limite)": 472
+    "date absente de la page": 50,
+    "date confirmée": 210,
+    "lien mort remplacé": 10,
+    "page illisible": 39,
+    "non relues (limite)": 164
    },
    "controle": null
-  }
+  },
+  "reparations": [
+   "non réparée : Bistro à Jojo (8 pages essayées)",
+   "non réparée : Bain Mathieu (8 pages essayées)",
+   "non réparée : Le Château (Ciné-Théâtre) (8 pages essayées)",
+   "non réparée : Qu'en dit Raton? (8 pages essayées)"
+  ]
  },
  "alerte": null,
  "sources": [
@@ -729,7 +862,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
@@ -799,7 +933,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -808,7 +942,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
+    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -817,7 +952,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
@@ -864,7 +1000,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
    ]
   },
   {
@@ -1035,7 +1172,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -1044,7 +1182,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
@@ -1227,7 +1366,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -1458,7 +1598,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
@@ -1947,7 +2088,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2706,7 +2847,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3053,7 +3194,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3119,7 +3261,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
+    "pages de programmation lues aussi : https://www.montrealenlumiere.com/fr/programmation/artistes, https://www.montrealenlumiere.com/fr/programmation/artists, https://www.montrealenlumiere.com/fr/experience-spectacles",
+    "aucun événement trouvé dans 1491 caractères de texte : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3182,7 +3325,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
+    "page presque vide (79 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3315,8 +3459,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
-    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -3429,7 +3573,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
+    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3494,7 +3639,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
+    "page presque vide (80 caractères ; site en JavaScript ?) : https://quartiersdanses.com",
+    "annonces à venir dans la page : 0 (https://quartiersdanses.com)"
    ]
   },
   {
