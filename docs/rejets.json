@@ -1,30 +1,30 @@
 {
  "date": "2026-11-19",
  "regles": {
-  "pas une sortie culturelle": 358,
-  "hors de l'île": 169,
-  "série : hors de l'île": 24,
+  "pas une sortie culturelle": 366,
+  "hors de l'île": 223,
+  "série : hors de l'île": 28,
   "série remplacée par ses dates précises": 13,
   "titre absent": 6,
   "fiche isolée remplacée par la série du spectacle": 6,
   "annulé selon la source": 5,
   "série de festival (les séances datées suffisent)": 5,
   "Sors-tu sans salle (peut-être hors de Montréal)": 4,
-  "série : sans salle, saison déjà détaillée ou annonce de saison": 3,
-  "retirée à la main (corrections.json)": 1
+  "retirée à la main (corrections.json)": 4,
+  "série : sans salle, saison déjà détaillée ou annonce de saison": 2
  },
  "par_motif": {
   "pas une sortie culturelle": {
    "catégorie « soutien et echange »": 46,
    "catégorie « bien etre »": 36,
    "catégorie « sport »": 25,
+   "mot « yoga » dans le titre": 25,
    "mot « lego » dans le titre": 24,
    "catégorie « langues »": 23,
    "mot « seance du » dans le titre": 22,
    "catégorie « informatique »": 20,
    "mot « ludotheque » dans le titre": 18,
    "mot « ensemble pendant les fetes » dans le titre": 18,
-   "mot « yoga » dans le titre": 17,
    "mot « bingo » dans le titre": 10,
    "mot « informatique » dans le titre": 9,
    "mot « cerveaux actifs » dans le titre": 9,
@@ -56,6 +56,7 @@
    "mot « aines » dans le titre": 1
   },
   "hors de l'île": {
+   "Scène Desjardins d'Argenteuil · Lachute": 42,
    "Le Club Square Dix30 · 9200 Boulevard Leduc Brossard · Brossard": 15,
    "Bibliothèque Micheline-Gagnon · 11370, Notre-Dame (3e étage) Montréal-Est (Québec) H1B Montréal-Est · Montréal-Est": 9,
    "206 Rue Christophe Colomb E · Québec": 7,
@@ -73,6 +74,7 @@
    "Le Zénith de St-Eustache · 305, avenue Mathers Saint-Eustache · Saint-Eustache": 3,
    "Le Club, Square DIX30 · Brossard": 3,
    "Café 440 · Café 440 Sherbrooke · Sherbrooke": 3,
+   "MAC à Place Ville Marie · MAC à Place Ville Marie, Place Ville Marie - niveau Galérie, Montréal, Québec, H3B 3Y1": 3,
    "Théâtre de la Bordée · Québec": 2,
    "Théâtre Petit Champlain · Québec": 2,
    "Cabaret-Théâtre du Vieux Saint-Jean · 190 Rue Laurier Saint-Jean-sur-richelieu · Saint-Jean-sur-richelieu": 2,
@@ -88,6 +90,8 @@
    "Le Club Dix30 · Montréal · Montréal": 2,
    "Cabaret André-H.-Gagnon · Saint-Hyacinthe": 2,
    "Théâtre Granada · Sherbrooke": 2,
+   "Surry Arts Centre · Surrey (BC)": 2,
+   "The Port Theatre · Nanaimo (BC)": 2,
    "Théâtre C · Saguenay (QC)": 2,
    "La Petite boite noire · Sherbrooke": 2,
    "La Korrigane · Québec": 2,
@@ -111,18 +115,16 @@
    "Théâtre Gilles-Vigneault · Québec": 1,
    "Salle Louis-Fréchette · Québec": 1,
    "Orpheum Theatre · Vancouver": 1,
-   "Salle Albert-Rousseau · Québec": 1,
-   "Salle Odyssée · Québec": 1,
-   "History · Montréal": 1,
-   "Salle André-Mathieu · Montréal": 1,
-   "The Avalon Theatre At Niagara Fallsview Casino Resort · Niagara Falls": 1
+   "Salle Albert-Rousseau · Québec": 1
   },
   "série : hors de l'île": {
+   "Regart, centre d'artistes en art actuel · Lévis": 2,
    "Agrégat · Longueuil": 2,
    "Espace muséal Alfred-Pellan · Laval": 2,
    "Chiguer art contemporain Québec · Québec": 2,
    "Beloeil · Beloeil": 1,
    "Beloeil · Beloeil · Beloeil": 1,
+   "Atelier de l'Île · Val-David": 1,
    "DRAC - Art actuel Drummondville · Drummondville": 1,
    "Le Lieu - Inter - RiAP · Québec": 1,
    "L'Oeil de poisson · Québec": 1,
@@ -136,6 +138,7 @@
    "Galerie d'art du Parc · Trois-Rivières": 1,
    "Musée d'art de Joliette · Joliette": 1,
    "Galerie d'art Foreman · Sherbrooke": 1,
+   "L'Espace culturel du Quartier Saint-Nicolas · Lévis": 1,
    "Plein sud, centre d'exposition en art actuel · Longueuil": 1,
    "Maison de la culture Marcel-Robidas · Longueuil": 1,
    "Musée de Rimouski · Rimouski": 1
@@ -915,6 +918,22 @@
     "detail": "Beloeil · Beloeil · Beloeil"
    },
    {
+    "titre": "Jardin(s)",
+    "date": "2026-11-20 → 2027-01-24",
+    "lieu": "Regart, centre d'artistes en art actuel",
+    "url": "https://reseauartactuel.org/evenement/jardins/",
+    "source": "salles",
+    "detail": "Regart, centre d'artistes en art actuel · Lévis"
+   },
+   {
+    "titre": "Sarah Thibault",
+    "date": "2026-11-10 → 2026-11-20",
+    "lieu": "Atelier de l'Île",
+    "url": "https://reseauartactuel.org/evenement/sarah-thibault/",
+    "source": "salles",
+    "detail": "Atelier de l'Île · Val-David"
+   },
+   {
     "titre": "Morfofonium de Beth Frey en collaboration avec Phth",
     "date": "2026-11-07 → 2026-12-20",
     "lieu": "DRAC - Art actuel Drummondville",
@@ -1027,12 +1046,28 @@
     "detail": "Galerie d'art Foreman · Sherbrooke"
    },
    {
+    "titre": "4X10",
+    "date": "2026-09-25 → 2026-11-28",
+    "lieu": "Regart, centre d'artistes en art actuel",
+    "url": "https://reseauartactuel.org/evenement/4x10/",
+    "source": "salles",
+    "detail": "Regart, centre d'artistes en art actuel · Lévis"
+   },
+   {
     "titre": "Octopus 2 : Langage transgénérationnel d'Armand Diansambu",
     "date": "2026-09-20 → 2027-01-03",
     "lieu": "Espace muséal Alfred-Pellan",
     "url": "https://reseauartactuel.org/evenement/octopus-2-langage-transgenerationnel-darmand-diansambu/",
     "source": "salles",
     "detail": "Espace muséal Alfred-Pellan · Laval"
+   },
+   {
+    "titre": "Résistances incarnées",
+    "date": "2026-09-20 → 2026-12-13",
+    "lieu": "L'Espace culturel du Quartier Saint-Nicolas",
+    "url": "https://reseauartactuel.org/evenement/resistances-incarnees/",
+    "source": "salles",
+    "detail": "L'Espace culturel du Quartier Saint-Nicolas · Lévis"
    },
    {
     "titre": "Une île n'est pas l'autre",
@@ -1272,6 +1307,27 @@
     "lieu": "Foufounes Électriques",
     "url": "https://www.songkick.com/concerts/43375552-lucy-at-foufounes-electriques?utm_medium=organic&utm_source=microformat",
     "source": "songkick"
+   },
+   {
+    "titre": "Down2Techno: N0vatek, No Police, Ponsif",
+    "date": "2026-11-21",
+    "lieu": "Le Red Room",
+    "url": "https://leredroom.com/evenements/",
+    "source": "salles"
+   },
+   {
+    "titre": "No Cut November",
+    "date": "2026-11-25",
+    "lieu": "Le Red Room",
+    "url": "https://leredroom.com/evenements/",
+    "source": "salles"
+   },
+   {
+    "titre": "Techno Seasons: Fall",
+    "date": "2026-11-27",
+    "lieu": "Le Red Room",
+    "url": "https://leredroom.com/evenements/",
+    "source": "salles"
    }
   ],
   "série : sans salle, saison déjà détaillée ou annonce de saison": [
@@ -1288,18 +1344,11 @@
     "lieu": "Lieu à confirmer",
     "url": "https://www.gsimtl.com/",
     "source": ""
-   },
-   {
-    "titre": "Série Mythologie",
-    "date": "2026-09-08 → 2026-12-19",
-    "lieu": "Espace Libre",
-    "url": "https://espacelibre.qc.ca/devoilement-serie-mythologie/",
-    "source": ""
    }
   ]
  },
  "disparues": {
-  "total": 212,
+  "total": 231,
   "liste": [
    {
     "titre": "1,2,3 saute moutons : Le cirque",
@@ -1421,6 +1470,13 @@
     "raison": "pas une sortie culturelle"
    },
    {
+    "titre": "Jardin(s) – vernissage",
+    "date": "2026-11-20",
+    "lieu": "Regart, centre d'artistes en art actuel",
+    "url": "https://reseauartactuel.org/evenement/jardins/",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Velours Velours (concerts familiaux)",
     "date": "2026-11-20",
     "lieu": "Salle Claude-Legault",
@@ -1470,24 +1526,10 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
-    "titre": "Do Nothing : M pour Montréal",
-    "date": "2026-11-20",
-    "lieu": "Casa del Popolo",
-    "url": "https://sorstu.ca/artiste/do-nothing/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
     "titre": "Late-Night Stand-Up at Estrella (vendredi)",
     "date": "2026-11-20",
     "lieu": "Estrella",
     "url": "https://mtlcomedyclub.com/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "SKIIFALL, 646YF4T & YAMA//SATO",
-    "date": "2026-11-20",
-    "lieu": "Le Ministère",
-    "url": "https://leministere.ca/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1554,10 +1596,31 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Christine Morency - Bien faite En rodage",
+    "date": "2026-11-21",
+    "lieu": "Théâtre Desjardins",
+    "url": "https://lepointdevente.com/billets/1l2261121001",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Saturday Night Comedy",
     "date": "2026-11-21",
     "lieu": "Deli Planet",
     "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749?aff=oddtdtcreator",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Glob – Surrey (BC)",
+    "date": "2026-11-21",
+    "lieu": "Surry Arts Centre",
+    "url": "https://lesfoutoukours.com/event/glob-surrey-bc/",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Jean-Paul Groove",
+    "date": "2026-11-21",
+    "lieu": "Club Soda",
+    "url": "https://www.jambase.com/band/jean-paul-groove",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1607,6 +1670,27 @@
     "date": "2026-11-22",
     "lieu": "L'Escogriffe",
     "url": "https://sorstu.ca/artiste/jesse-roper/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ma petite boule d'amour",
+    "date": "2026-11-22",
+    "lieu": "Sainte-Agathe-des-Monts",
+    "url": "https://theatrebouchesdecousues.com/spectacles/ma-petite-boule-damour",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Glob – Nanaimo (BC)",
+    "date": "2026-11-23",
+    "lieu": "The Port Theatre",
+    "url": "https://lesfoutoukours.com/event/glob-nanaimo-bc/",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Ciné-Outremont : La méthode scandinave",
+    "date": "2026-11-23",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-methode-scandinave",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1974,6 +2058,13 @@
     "raison": "pas une sortie culturelle"
    },
    {
+    "titre": "Ciné-Outremont : La place",
+    "date": "2026-11-30",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-place",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Ensemble pendant les fêtes! (Inscription)",
     "date": "2026-11-30",
     "lieu": "UQAM - Pavillon Hubert-Aquin",
@@ -2086,6 +2177,13 @@
     "raison": "pas une sortie culturelle"
    },
    {
+    "titre": "Guillaume Pineault - En rodage",
+    "date": "2026-12-03",
+    "lieu": "Théâtre Desjardins",
+    "url": "https://lepointdevente.com/billets/1l2261203001",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "La Rocambolesque - Le Fabuleux Club d'Impro - Bleus/Jaunes",
     "date": "2026-12-03",
     "lieu": "Aux Angles Ronds",
@@ -2177,6 +2275,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Charles Brunet - Très très bon show",
+    "date": "2026-12-05",
+    "lieu": "Théâtre Desjardins",
+    "url": "https://lepointdevente.com/billets/1l2261205001",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Janette",
     "date": "2026-12-05",
     "lieu": "Duceppe",
@@ -2216,6 +2321,13 @@
     "date": "2026-12-07",
     "lieu": "Bibliothèque Saul-Bellow",
     "url": "https://montreal.ca/evenements/cercle-de-scrabble-118297",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ciné-Outremont : Une photo à Saïgon",
+    "date": "2026-12-07",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-une-photo-a-saigon",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -2303,6 +2415,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Danse 6.58 : Manifesto",
+    "date": "2026-12-09",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/6-58-manifesto",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Janette",
     "date": "2026-12-09",
     "lieu": "Duceppe",
@@ -2380,6 +2499,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Arielle Soucy – Un Noël folk",
+    "date": "2026-12-11",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/arielle-soucy-2026",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Janette",
     "date": "2026-12-11",
     "lieu": "Duceppe",
@@ -2391,7 +2517,7 @@
     "date": "2026-12-11",
     "lieu": "Théâtre Desjardins",
     "url": "https://lepointdevente.com/billets/1l2261211001",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+    "raison": "hors de l'île"
    },
    {
     "titre": "La Rocambolesque - Impro Momentum - Rouges-Verts",
@@ -2475,6 +2601,13 @@
     "date": "2026-12-13",
     "lieu": "Duceppe",
     "url": "https://duceppe.com/50ans/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ciné-Outremont : Tissé serré (Tight Lettuce)",
+    "date": "2026-12-14",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-tisse-serre",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -2597,6 +2730,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Ciné-Outremont : Vivaldi et moi",
+    "date": "2026-12-21",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-vivaldi-et-moi",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "La Rocambolesque - Martine fait de l'impro - Histoires d'improvisatrices",
     "date": "2026-12-21",
     "lieu": "Aux Angles Ronds",
@@ -2622,6 +2762,13 @@
     "date": "2026-12-27",
     "lieu": "Cabaret du Casino de Montréal",
     "url": "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/avenue-54-disco-show",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ciné-Outremont : La bataille de Gaulle : Résistance (partie 1)",
+    "date": "2026-12-28",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-bataille-de-gaulle-resistance-partie-1",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -2667,10 +2814,24 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Ciné-Outremont : La bataille de Gaulle : Liberté (partie 2)",
+    "date": "2027-01-04",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-bataille-de-gaulle-liberte-partie-2",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "3D & ÉLECTRONIQUE : Corvée Hebdomadaire",
     "date": "2027-01-06",
     "lieu": "LESPACEMAKER",
     "url": "",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ciné-Outremont : Un été en hiver (Two Seasons, Two Strangers)",
+    "date": "2027-01-11",
+    "lieu": "Théâtre Outremont",
+    "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-un-ete-en-hiver",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -2709,6 +2870,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "4X10",
+    "date": "2026-09-25 → 2026-11-28",
+    "lieu": "Regart, centre d'artistes en art actuel",
+    "url": "https://reseauartactuel.org/evenement/4x10/",
+    "raison": "série : hors de l'île"
+   },
+   {
     "titre": "Plateformes",
     "date": "2026-11-20 → 2026-11-28",
     "lieu": "OBORO",
@@ -2728,6 +2896,13 @@
     "lieu": "Maison de la culture Maisonneuve",
     "url": "https://montreal.ca/evenements/surcharge-benz-debrosse-116261",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Résistances incarnées",
+    "date": "2026-09-20 → 2026-12-13",
+    "lieu": "L'Espace culturel du Quartier Saint-Nicolas",
+    "url": "https://reseauartactuel.org/evenement/resistances-incarnees/",
+    "raison": "série : hors de l'île"
    },
    {
     "titre": "KiT!",
@@ -2756,6 +2931,13 @@
     "lieu": "Galerie de l'UQAM",
     "url": "https://galerie.uqam.ca/expositions/anahita-norouzi-rift/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Jardin(s)",
+    "date": "2026-11-20 → 2027-01-24",
+    "lieu": "Regart, centre d'artistes en art actuel",
+    "url": "https://reseauartactuel.org/evenement/jardins/",
+    "raison": "série : hors de l'île"
    },
    {
     "titre": "Notcimik (la forêt), se connaître pour savoir d'où l'on vient d'Amélie Courtois",

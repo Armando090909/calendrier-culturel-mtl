@@ -136,7 +136,7 @@
   "nom": "Espace Libre",
   "url": "http://espacelibre.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -157,7 +157,7 @@
   "nom": "Théâtre Outremont",
   "url": "http://www.theatreoutremont.ca/fr/accueil",
   "type": "page lue par l'IA",
-  "evenements": 63,
+  "evenements": 62,
   "erreur": false
  },
  {
@@ -297,7 +297,7 @@
   "nom": "Centre des musiciens du monde",
   "url": "https://centredesmusiciensdumonde.com",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -606,6 +606,13 @@
   "url": "https://www.cinemacinoche.com/events/?ical=1",
   "type": "calendrier iCal",
   "evenements": 4,
+  "erreur": false
+ },
+ {
+  "nom": "Montréal centre-ville – événements",
+  "url": "https://montrealcentreville.ca/evenements/?ical=1",
+  "type": "calendrier iCal",
+  "evenements": 12,
   "erreur": false
  },
  {

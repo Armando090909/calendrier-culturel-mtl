@@ -6,7 +6,7 @@
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 50,
   "page de la sortie disparue": 10,
-  "heures différentes selon les sources": 76,
+  "heures différentes selon les sources": 77,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -1002,6 +1002,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "23:59 gardée (spectaculos.ca), 23:55 écartée (clubsoda.ca)",
+   "titre": "Podcast Couple Ouvert au Club Soda",
+   "date": "2026-12-04",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://spectaculos.ca/fr/spectacle/couple-ouvert-montreal"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "19:00 gardée (piranhabar.ca), 20:00 écartée (songkick.com)",
    "titre": "SICKSENSE, NAILED et FATAL SWITCH",
    "date": "2026-11-19",
@@ -1408,10 +1417,10 @@
  ],
  "contreverif": {
   "date absente de la page": 50,
-  "date confirmée": 210,
+  "date confirmée": 206,
   "lien mort remplacé": 10,
-  "page illisible": 39,
-  "non relues (limite)": 164
+  "page illisible": 37,
+  "non relues (limite)": 168
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1525,9 +1534,9 @@
   },
   {
    "source": "spectaculos.ca",
-   "erreurs": 15,
+   "erreurs": 16,
    "sorties": 181,
-   "taux": 8.3
+   "taux": 8.8
   },
   {
    "source": "theatresaintecatherine.com",
@@ -1538,13 +1547,13 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 91,
-   "sorties": 1582,
+   "sorties": 1576,
    "taux": 5.8
   },
   {
    "source": "sorstu.ca",
    "erreurs": 53,
-   "sorties": 959,
+   "sorties": 960,
    "taux": 5.5
   },
   {
@@ -1561,7 +1570,7 @@
   }
  ],
  "recoupees": {
-  "total": 3052,
-  "deux_sources_ou_plus": 253
+  "total": 3065,
+  "deux_sources_ou_plus": 252
  }
 }

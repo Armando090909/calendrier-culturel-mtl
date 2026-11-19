@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-15-pria-b2b-zac-martel-b2b-nab-4afd0d@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20270115T193000
+DTEND;TZID=America/Toronto:20270115T213000
+SUMMARY:Prïa B2B Zac Martel B2B NAB
+LOCATION:Quai Jacques-Cartier\, Scène Vidéotron\, Montréal
+URL:https://igloofest.ca/fr/artistes/nab-b2b-pria-b2b-zac-martel
+DESCRIPTION:Set électronique à trois DJ sur la scène Vidéotron AMPER\, 
+ lors de la soirée du vendredi.\nDétails : https://billets.igloofest.ca/m
+ ul/go/abe5f8ca-46d1-4a48-aa5e-16b89ebee293?fac=IGLOOFEST&locale=fr-CA&skin
+ =igloofestmtl\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

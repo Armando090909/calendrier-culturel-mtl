@@ -1,18 +1,18 @@
 {
  "date": "2026-11-19",
  "statut": "publié",
- "evenements": 3052,
- "expositions": 257,
- "nouvelles_salles": [],
+ "evenements": 3065,
+ "expositions": 255,
+ "nouvelles_salles": [
+  "Boulevard René-Lévesque",
+  "Quai Jacques-Cartier, Scène Sapporo",
+  "Quai Jacques-Cartier, Scène Vidéotron"
+ ],
  "notes": {
   "fiches_ville": {
-   "lues": 15,
-   "erreurs": 15,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-cuisine-tartes-et-tartelettes-116554",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-decoration-de-biscuits-avec-la-biscuiteri",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-donjons-et-dragons-8-12-ans-117778"
-   ],
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
    "completees_par_mac": 958,
    "heures_trouvees": 946,
    "salles_trouvees": 929
@@ -24,12 +24,12 @@
    "2026-11-20 : « Mundial Montréal - OFF avec Less Toches, Les Tireu » (Café Campus) = « Less Toches + Les Tireux d'Roches + Margaret Tract » (Petit Campus)",
    "2026-11-20 : « Dominic Paquet - J'COMPRENDS LA GAME » (Centre Pierre-Peladeau) = « J'comprends la game » (Salle Pierre-Mercure)",
    "2026-11-20 : « Friday Late Night Comedy (Late Night Edgy pro-am S » (Estrella) = « Friday Night Comedy (Early Show in English) » (Deli Planet)",
-   "2026-11-20 : « Do Nothing - M pour Montréal » (Casa del Popolo) = « Do Nothing » (Club Soda)",
-   "2026-11-20 : « SKIIFALL, 646YF4T & YAMA//SATO » (Le Ministère) = « YAMA//SATO » (Club Soda)",
+   "2026-11-20 : « Do Nothing » (Club Soda) = « Do Nothing - M pour Montréal » (Casa del Popolo)",
+   "2026-11-20 : « YAMA//SATO » (Club Soda) = « SKIIFALL, 646YF4T & YAMA//SATO » (Le Ministère)",
    "2026-11-21 : « Brico-contes (3 à 6 ans) » (FabricARThèque du Vieux-Saint-Laurent) = « Brico-contes du samedi » (Bibliothèque)",
-   "2026-11-21 : « SECRET CITY - 20E ANNIVERSAIRE » (Club Soda) = « SECRET CITY - 20E ANNIVERSAIRE | SUUNS, PLANTS AND » (Club Soda)",
    "2026-11-21 : « The Prowlers + Badterms + Street Code + Big Boss » (Foufounes Électriques) = « LSC BASH: THE PROWLERS + BADTERMS + STREET CODE +  » (Cabaret Fouf)",
    "2026-11-21 : « Saturday Late Night Comedy (late night edgy show i » (Estrella) = « Saturday Night Comedy (regular early show at 9 pm) » (Deli Planet)",
+   "2026-11-21 : « Jean-Paul Groove » (Club Soda) = « M Pour Montréal | Moses Belanger + Jean-Paul Groov » (Quai des Brumes)",
    "2026-11-26 : « Le songe d'une nuit d'été d'après William Shakespe » (Théâtre Outremont) = « LE SONGE D’UNE NUIT D’ÉTÉ » (Maison internationale des arts de la marionnette)",
    "2026-11-26 : « Ghostwoman @ Bar le Ritz PDB » (Bar Le Ritz PDB) = « GHOSTWOMAN » (Bar Le Ritz PDB)",
    "2026-11-27 : « Alain Choquette – Entre histoires et illusions » (Salle Pierre-Mercure) = « Alain Choquette - Entre histoires et illusions » (Centre Pierre-Peladeau)",
@@ -44,153 +44,17 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [
-   {
-    "nom": "YAMA//SATO"
-   },
-   {
-    "nom": "MALPOULI"
-   },
-   {
-    "nom": "OTRO NIVEL",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre monde ≠ electro"
-     ]
-    }
-   },
-   {
-    "nom": "GABA Collective"
-   },
-   {
-    "nom": "Sydney Sarayeva",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album caught in a crush)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Bleeder"
-   },
-   {
-    "nom": "LE MAQUIS",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Mrktbeatz"
-   },
-   {
-    "nom": "dtq3000"
-   },
-   {
-    "nom": "Gwinestefani"
-   },
-   {
-    "nom": "Jordan Gardner",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album babylon)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Rachel Dara",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Loche Nisse Monster"
-   },
-   {
-    "nom": "Érick d'Orion",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "maison de disques : dame",
-      "Last.fm : artiste d'ici, même genre (electro)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Winston Hacking"
-   },
-   {
-    "nom": "Dayna McLeod"
-   }
-  ],
   "qualite": {
-   "regles": 155,
+   "regles": 156,
    "contreverif": {
     "date absente de la page": 50,
-    "date confirmée": 210,
+    "date confirmée": 206,
     "lien mort remplacé": 10,
-    "page illisible": 39,
-    "non relues (limite)": 164
+    "page illisible": 37,
+    "non relues (limite)": 168
    },
    "controle": null
-  },
-  "reparations": [
-   "non réparée : Bistro à Jojo (8 pages essayées)",
-   "non réparée : Bain Mathieu (8 pages essayées)",
-   "non réparée : Le Château (Ciné-Théâtre) (8 pages essayées)",
-   "non réparée : Qu'en dit Raton? (8 pages essayées)"
-  ]
+  }
  },
  "alerte": null,
  "sources": [
@@ -427,13 +291,13 @@
   },
   {
    "source": "Espace Libre",
-   "evenements": 0,
-   "series": 3,
+   "evenements": 1,
+   "series": 4,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-19",
    "diagnostic": [
     "pages de programmation lues aussi : https://espacelibre.qc.ca/programmation/, https://espacelibre.qc.ca/espace-libre-reconstruction/",
-    "annonces à venir dans la page : 8 (http://espacelibre.qc.ca/)",
+    "annonces à venir dans la page : 12 (http://espacelibre.qc.ca/)",
     "annonces à venir dans la page : 5 (https://espacelibre.qc.ca/programmation/)",
     "aucun événement trouvé dans 7445 caractères de texte : https://espacelibre.qc.ca/espace-libre-reconstruction/",
     "annonces à venir dans la page : 4 (https://espacelibre.qc.ca/espace-libre-reconstruction/)"
@@ -471,15 +335,15 @@
   },
   {
    "source": "Théâtre Outremont",
-   "evenements": 63,
+   "evenements": 62,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-19",
    "diagnostic": [
     "pages de programmation lues aussi : https://theatreoutremont.ca/programmation/, https://theatreoutremont.ca/cinema/",
-    "annonces à venir dans la page : 52 (http://www.theatreoutremont.ca/fr/accueil/)",
-    "annonces à venir dans la page : 52 (https://theatreoutremont.ca/programmation/)",
-    "annonces à venir dans la page : 11 (https://theatreoutremont.ca/cinema/)"
+    "annonces à venir dans la page : 50 (http://www.theatreoutremont.ca/fr/accueil/)",
+    "annonces à venir dans la page : 50 (https://theatreoutremont.ca/programmation/)",
+    "annonces à venir dans la page : 10 (https://theatreoutremont.ca/cinema/)"
    ]
   },
   {
@@ -588,7 +452,7 @@
    "evenements": 3,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-19",
    "diagnostic": [
     "annonces à venir dans la page : 9 (https://agoradanse.com/programmation/)"
    ]
@@ -709,17 +573,17 @@
   },
   {
    "source": "Centre des musiciens du monde",
-   "evenements": 8,
+   "evenements": 9,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-16",
+   "note": "repris du 2026-11-19",
    "diagnostic": [
-    "pages de programmation lues aussi : https://centredesmusiciensdumonde.com/nouvelles/la-serie-concerts-intimes-devoile-sa-programmation-2026-2027/, https://centredesmusiciensdumonde.com/programmation/, https://centredesmusiciensdumonde.com/programmation-old/festival-des-musiciens-du-monde/",
+    "pages de programmation lues aussi : https://centredesmusiciensdumonde.com/nouvelles/la-serie-concerts-intimes-devoile-sa-programmation-2026-2027/, https://centredesmusiciensdumonde.com/programmation/, https://centredesmusiciensdumonde.com/programmation/festival-des-musiciens-du-monde/",
     "annonces à venir dans la page : 10 (https://centredesmusiciensdumonde.com/)",
     "annonces à venir dans la page : 6 (https://centredesmusiciensdumonde.com/nouvelles/la-serie-concerts-intimes-devoile-sa-programmation-2026-2027/)",
     "annonces à venir dans la page : 10 (https://centredesmusiciensdumonde.com/programmation/)",
-    "aucun événement trouvé dans 8178 caractères de texte : https://centredesmusiciensdumonde.com/programmation-old/festival-des-musiciens-du-monde/",
-    "annonces à venir dans la page : 1 (https://centredesmusiciensdumonde.com/programmation-old/festival-des-musiciens-du-monde/)"
+    "aucun événement trouvé dans 7771 caractères de texte : https://centredesmusiciensdumonde.com/programmation/festival-des-musiciens-du-monde/",
+    "annonces à venir dans la page : 1 (https://centredesmusiciensdumonde.com/programmation/festival-des-musiciens-du-monde/)"
    ]
   },
   {
@@ -862,8 +726,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -933,7 +796,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -942,8 +805,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -952,8 +814,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -1000,8 +861,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1172,8 +1032,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1182,8 +1041,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1218,6 +1076,13 @@
   {
    "source": "Cinéma au Cinoche",
    "evenements": 4,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-19"
+  },
+  {
+   "source": "Montréal centre-ville – événements",
+   "evenements": 12,
    "series": 0,
    "erreur": null,
    "note": "repris du 2026-11-19"
@@ -1366,8 +1231,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1598,8 +1462,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -2847,7 +2710,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -2856,7 +2719,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (500 Server Error: Internal Server Error for url: https://compagnietheatrecreole.) : https://compagnietheatrecreole.ca/festitheatrecreole/"
+    "aucun événement trouvé dans 6254 caractères de texte : https://compagnietheatrecreole.ca/festitheatrecreole/",
+    "annonces à venir dans la page : 0 (https://compagnietheatrecreole.ca/festitheatrecreole/)"
    ]
   },
   {
@@ -2977,6 +2841,15 @@
    "diagnostic": [
     "page illisible (406 Client Error: Not Acceptable for url: https://www.songkick.com/festivals/873) : https://www.songkick.com/festivals/873454-m-for-montreal",
     "page illisible : données du 2026-11-16 conservées"
+   ]
+  },
+  {
+   "source": "Festival · M pour Montréal (3)",
+   "evenements": 0,
+   "series": 0,
+   "erreur": null,
+   "diagnostic": [
+    "page illisible (406 Client Error: Not Acceptable for url: https://www.songkick.com/festivals/873) : https://www.songkick.com/festivals/873454-m-for-montreal"
    ]
   },
   {
@@ -3194,8 +3067,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3230,13 +3102,20 @@
   },
   {
    "source": "Festival · Igloofest",
-   "evenements": 0,
+   "evenements": 15,
    "series": 0,
    "erreur": null,
+   "note": "repris du 2026-11-19",
    "diagnostic": [
     "pages de programmation lues aussi : https://igloofest.ca/fr/festival, https://igloofest.ca/fr/nouvelles/prog-2027, https://igloofest.ca/fr/nouvelles/les-igloofetes-reviennent",
-    "aucun événement trouvé dans 3533 caractères de texte : https://igloofest.ca",
-    "annonces à venir dans la page : 4 (https://igloofest.ca)"
+    "annonces à venir dans la page : 4 (https://igloofest.ca)",
+    "aucun événement trouvé dans 3469 caractères de texte : https://igloofest.ca/fr/festival",
+    "annonces à venir dans la page : 3 (https://igloofest.ca/fr/festival)",
+    "aucun événement trouvé dans 1430 caractères de texte : https://igloofest.ca/fr/nouvelles/prog-2027",
+    "annonces à venir dans la page : 12 (https://igloofest.ca/fr/nouvelles/prog-2027)",
+    "aucun événement trouvé dans 1420 caractères de texte : https://igloofest.ca/fr/nouvelles/les-igloofetes-reviennent",
+    "annonces à venir dans la page : 4 (https://igloofest.ca/fr/nouvelles/les-igloofetes-reviennent)",
+    "annonces à venir dans la page : 3 (https://igloofest.ca/fr/festival/2027-week-end-1)"
    ]
   },
   {
@@ -3261,8 +3140,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.montrealenlumiere.com/fr/programmation/artistes, https://www.montrealenlumiere.com/fr/programmation/artists, https://www.montrealenlumiere.com/fr/experience-spectacles",
-    "aucun événement trouvé dans 1491 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3325,8 +3203,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
-    "page presque vide (79 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3397,8 +3274,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3417,7 +3294,7 @@
    "erreur": null,
    "diagnostic": [
     "aucun événement trouvé dans 1250 caractères de texte : https://fta.ca",
-    "annonces à venir dans la page : 0 (https://fta.ca)"
+    "annonces à venir dans la page : 1 (https://fta.ca)"
    ]
   },
   {
@@ -3459,8 +3336,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3639,9 +3516,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
-    "page presque vide (80 caractères ; site en JavaScript ?) : https://quartiersdanses.com",
-    "annonces à venir dans la page : 0 (https://quartiersdanses.com)"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
    ]
   },
   {
