@@ -1,13 +1,17 @@
 {
  "total": 1657,
- "echecs": 11,
+ "echecs": 15,
  "par_site": {
+  "www.cinemacinoche.com": {
+   "affiches": 4,
+   "echecs": 4
+  },
   "turbohaus.ca": {
    "affiches": 12,
    "echecs": 3
   },
-  "img.casadelpopolo.com": {
-   "affiches": 91,
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
    "echecs": 2
   },
   "www.dansedanse.ca": {
@@ -134,6 +138,10 @@
    "affiches": 2,
    "echecs": 0
   },
+  "img.casadelpopolo.com": {
+   "affiches": 91,
+   "echecs": 0
+  },
   "theatreplaza.ca": {
    "affiches": 8,
    "echecs": 0
@@ -242,10 +250,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
-   "echecs": 0
-  },
   "tangolibre.ca": {
    "affiches": 1,
    "echecs": 0
@@ -312,10 +316,6 @@
   },
   "festivalbachmontreal.com": {
    "affiches": 1,
-   "echecs": 0
-  },
-  "www.cinemacinoche.com": {
-   "affiches": 4,
    "echecs": 0
   },
   "s3.amazonaws.com": {
@@ -413,9 +413,14 @@
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
   ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI",
-   "https://img.casadelpopolo.com/CuWoAVX_e48PoYyCYUSqCkdgW91KsfWIjlWTd0ZDLpY/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL2F1cWxnNnZr/NjJtMGQxNHh1NDlr/a2xveDhzYng"
+  "www.cinemacinoche.com": [
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/Popcorn-1991-still-05-800.jpg",
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/popcorn-05-head-mould-800.jpg",
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/WKSC_STILL1-800.jpg"
+  ],
+  "www.ville.dorval.qc.ca": [
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ]
  },
  "sans_affiche_par_discipline": {
