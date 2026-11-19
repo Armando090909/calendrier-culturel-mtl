@@ -1,11 +1,7 @@
 {
  "total": 1657,
- "echecs": 15,
+ "echecs": 11,
  "par_site": {
-  "www.cinemacinoche.com": {
-   "affiches": 4,
-   "echecs": 4
-  },
   "turbohaus.ca": {
    "affiches": 12,
    "echecs": 3
@@ -318,6 +314,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "www.cinemacinoche.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "s3.amazonaws.com": {
    "affiches": 8,
    "echecs": 0
@@ -412,11 +412,6 @@
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
-  ],
-  "www.cinemacinoche.com": [
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/Popcorn-1991-still-05-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/popcorn-05-head-mould-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/WKSC_STILL1-800.jpg"
   ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
