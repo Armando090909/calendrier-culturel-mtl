@@ -188,6 +188,9 @@ sources:
   - {nom: "LESPACEMAKER – formations", cle: calendrier, type: ics, url: "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics", lieu: "LESPACEMAKER", adresse: "2875 rue Hochelaga, Montréal", discipline: atelier}
   # Cinéma au Cinoche (17 nov. 2026) : inscrit par le formulaire « Ajouter mon calendrier » ; calendrier iCal du site (The Events Calendar)
   - {nom: "Cinéma au Cinoche", cle: calendrier, type: ics, url: "https://www.cinemacinoche.com/events/?ical=1", lieu: "Cinéma au Cinoche", adresse: "2210 avenue du Mont-Royal Est, Montréal", discipline: cinema}
+  # Montréal centre-ville (19 nov. 2026, équipe) : grands événements de rue et du centre-ville (Défilé du père Noël,
+  # Jeudis du MAC à Place Ville Marie…) ; calendrier iCal du site (The Events Calendar), permis par robots.txt
+  - {nom: "Montréal centre-ville – événements", cle: calendrier, type: ics, url: "https://montrealcentreville.ca/evenements/?ical=1"}
   # Cinémathèque québécoise (17 nov. 2026) : accord de l'organisme obtenu par l'équipe. Leur site refuse les serveurs de
   # GitHub (403) : lu par l'ordinateur à Montréal. Billetterie (omniwebticketing.com/cinematheque) : voir PERMISSIONS.
   - {nom: "Cinémathèque québécoise – programmation", cle: salles, type: page_ia, url: "https://www.cinematheque.qc.ca/fr/programmation/", lieu: "Cinémathèque québécoise", discipline: cinema, jours_semaine: [0, 3], par_le_pi: true}
