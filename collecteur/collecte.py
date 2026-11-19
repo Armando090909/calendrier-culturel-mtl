@@ -1317,7 +1317,17 @@ def main() -> int:
                 if "heure" in c:  # "" : heure lue par erreur (ex. heure de fin), retirée
                     e["heure"] = c["heure"] or None
                 if c.get("nouvelle_date"):
-                    e["date"] = c["nouvelle_date"]
+                    # (19 nov. 2026) la salle a pu corriger sa page entre-temps : si le spectacle est déjà lu au bon jour,
+                    # la copie au mauvais jour est retirée au lieu d'être déplacée (sinon il apparaît deux fois)
+                    deja = [x for x in events if x is not e and x["date"] == c["nouvelle_date"] and x["lieu"] == c["lieu"]
+                            and c["titre"].lower() in x["titre"].lower()]
+                    if deja:
+                        retires.add(id(e))
+                        for k in ("heure", "billets", "prix", "resume", "affiche"):
+                            if not deja[0].get(k) and e.get(k):
+                                deja[0][k] = e[k]
+                    else:
+                        e["date"] = c["nouvelle_date"]
     for e in events:
         if id(e) in retires:
             rejeter("retirée à la main (corrections.json)", e)
