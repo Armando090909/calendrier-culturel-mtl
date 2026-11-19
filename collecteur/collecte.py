@@ -325,7 +325,7 @@ RAPIDE = os.environ.get("COLLECTE_RAPIDE") == "1"
 # pour attraper une erreur de code avant qu'elle touche la vraie collecte.
 ESSAI = os.environ.get("COLLECTE_ESSAI") == "1"
 BUDGETS_RESEAU = ("max_pages_ville", "max_pages_autre", "max_pages_heure", "max_pages_heure_nav", "max_pages_ia_champs",
-                  "max_billetteries", "max_horaires_ia", "max_recherches_decouverte")
+                  "max_billetteries", "max_horaires_ia", "max_recherches_decouverte", "max_pages_fiche_propre")
 
 
 def _trop_long(*_):
@@ -460,6 +460,7 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
                     break
         except Exception as exc:
             print(f"  fiche propre de « {e['titre'][:40]} » : {exc}")
+            continue  # (19 nov. 2026) échec technique (navigateur, IA) : pas mémorisé, réessayé au prochain passage
         memo[cle] = h or {"le": aujourd_.isoformat()}
     f_fp.write_text(json.dumps(memo, ensure_ascii=False), encoding="utf-8")
     return trouvees, lues

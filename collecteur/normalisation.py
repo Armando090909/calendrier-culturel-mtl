@@ -233,8 +233,14 @@ LIEUX_HORS_ILE = {
 }
 
 
+_PROVINCE_ENTRE_PARENTHESES = re.compile(r"\((?:BC|B\.C\.|C\.?-B\.?|AB|Alb\.?|SK|MB|Man\.?|ON|Ont\.?|NB|N\.-B\.|NS|N\.-É\.|PE|NL|YT|NT|NU)\)")
+
+
 def hors_ile(*textes: str) -> bool:
     if any(plat(x) in LIEUX_HORS_ILE for x in textes if x):
+        return True
+    # (19 nov. 2026) « Glob – Courtenay (BC) » : une province autre que le Québec entre parenthèses
+    if any(_PROVINCE_ENTRE_PARENTHESES.search(x) for x in textes if x):
         return True
     t = " ".join(plat(x) for x in textes if x)
     return any(f" {m} " in f" {t} " for m in HORS_ILE)
