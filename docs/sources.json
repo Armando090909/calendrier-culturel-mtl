@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1410,
+  "evenements": 1366,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 28,
+  "evenements": 27,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 226,
+  "evenements": 189,
   "erreur": false
  },
  {
@@ -45,7 +45,7 @@
   "nom": "Duceppe",
   "url": "https://duceppe.com",
   "type": "page lue par l'IA",
-  "evenements": 55,
+  "evenements": 34,
   "erreur": false
  },
  {
@@ -80,7 +80,7 @@
   "nom": "Théâtre d'Aujourd'hui",
   "url": "https://theatredaujourdhui.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -143,7 +143,7 @@
   "nom": "MAI",
   "url": "https://m-a-i.qc.ca",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 15,
   "erreur": false
  },
  {
@@ -178,7 +178,7 @@
   "nom": "Théâtre Sainte-Catherine",
   "url": "https://theatresaintecatherine.com/events",
   "type": "page lue par l'IA",
-  "evenements": 24,
+  "evenements": 23,
   "erreur": false
  },
  {
@@ -192,14 +192,14 @@
   "nom": "Place des Arts",
   "url": "https://www.placedesarts.com/en/programming",
   "type": "page lue par l'IA",
-  "evenements": 37,
+  "evenements": 68,
   "erreur": false
  },
  {
   "nom": "Place des Arts – destination des Fêtes",
   "url": "https://www.placedesarts.com/destination-du-temps-des-fetes",
   "type": "page lue par l'IA",
-  "evenements": 61,
+  "evenements": 218,
   "erreur": false
  },
  {
@@ -262,7 +262,7 @@
   "nom": "Le Monastère (cabaret de cirque)",
   "url": "https://lepointdevente.com/lemonastere",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 19,
   "erreur": false
  },
  {
@@ -283,14 +283,14 @@
   "nom": "evenko (humour)",
   "url": "https://evenko.ca/fr/evenements/humour",
   "type": "page lue par l'IA",
-  "evenements": 20,
+  "evenements": 19,
   "erreur": false
  },
  {
   "nom": "Place des Arts (humour)",
   "url": "https://www.placedesarts.com/discipline/humour",
   "type": "page lue par l'IA",
-  "evenements": 151,
+  "evenements": 289,
   "erreur": false
  },
  {
@@ -325,14 +325,14 @@
   "nom": "The Comedy Nest",
   "url": "https://www.comedynest.com",
   "type": "page lue par l'IA",
-  "evenements": 22,
+  "evenements": 16,
   "erreur": false
  },
  {
   "nom": "Comedyville",
   "url": "https://www.comedyville.ca",
   "type": "page lue par l'IA",
-  "evenements": 46,
+  "evenements": 47,
   "erreur": false
  },
  {
@@ -395,14 +395,14 @@
   "nom": "Le Bordel Comédie Club",
   "url": "https://www.lebordel.ca",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 17,
   "erreur": false
  },
  {
   "nom": "La Cabine Comédie Club",
   "url": "https://lacabinecomedie.ca",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 19,
   "erreur": false
  },
  {
@@ -479,7 +479,7 @@
   "nom": "La Rocambolesque",
   "url": "https://lepointdevente.com/larocambolesque",
   "type": "page lue par l'IA",
-  "evenements": 33,
+  "evenements": 30,
   "erreur": false
  },
  {
@@ -507,7 +507,7 @@
   "nom": "La Brassée (café-concerts)",
   "url": "https://labrassee.cafe",
   "type": "page lue par l'IA",
-  "evenements": 31,
+  "evenements": 30,
   "erreur": false
  },
  {
@@ -528,7 +528,7 @@
   "nom": "Le Red Room",
   "url": "https://www.leredroom.com",
   "type": "page lue par l'IA",
-  "evenements": 20,
+  "evenements": 28,
   "erreur": false
  },
  {
@@ -591,14 +591,14 @@
   "nom": "LESPACEMAKER – événements",
   "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 60,
+  "evenements": 69,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 76,
+  "evenements": 74,
   "erreur": false
  },
  {
@@ -612,7 +612,7 @@
   "nom": "Cinémathèque québécoise – programmation",
   "url": "https://www.cinematheque.qc.ca/fr/programmation",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -665,13 +665,6 @@
   "erreur": false
  },
  {
-  "nom": "BAnQ – activités",
-  "url": "https://www.banq.qc.ca/calendrier/a-venir",
-  "type": "page lue par l'IA",
-  "evenements": 4,
-  "erreur": false
- },
- {
   "nom": "Centre Canadien d'Architecture – événements (Eventbrite)",
   "url": "https://www.eventbrite.ca/o/15745877961",
   "type": "page lue par l'IA",
@@ -689,21 +682,21 @@
   "nom": "Cabaret Lion d'Or (billetterie)",
   "url": "https://lepointdevente.com/liondor",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 19,
   "erreur": false
  },
  {
   "nom": "LIM – saison (billetterie)",
   "url": "https://lepointdevente.com/billets/lim20262027",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "Cabaret Lion d'Or (LIM et spectacles)",
   "url": "https://cabaretliondor.com",
   "type": "page lue par l'IA",
-  "evenements": 13,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -724,14 +717,14 @@
   "nom": "Place des Arts junior",
   "url": "https://www.placedesarts.com/discipline/jeunes-publics",
   "type": "page lue par l'IA",
-  "evenements": 113,
+  "evenements": 280,
   "erreur": false
  },
  {
   "nom": "Tourisme Montréal – expositions des musées",
   "url": "https://www.mtl.org/fr/experience/expositions-musees-montreal",
   "type": "page lue par l'IA",
-  "evenements": 38,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -780,7 +773,7 @@
   "nom": "Réseau art actuel (centres d'artistes, vernissages)",
   "url": "https://reseauartactuel.org/evenements/page//?intervalle=semaine",
   "type": "page lue par l'IA",
-  "evenements": 54,
+  "evenements": 80,
   "erreur": false
  },
  {
@@ -1102,7 +1095,7 @@
   "nom": "Théâtre Rialto",
   "url": "https://www.theatrerialto.ca",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -1116,7 +1109,7 @@
   "nom": "Le Studio TD",
   "url": "https://lestudiotd.com/fr",
   "type": "page lue par l'IA",
-  "evenements": 24,
+  "evenements": 16,
   "erreur": false
  },
  {
@@ -1347,14 +1340,14 @@
   "nom": "Dorval – calendrier",
   "url": "https://www.ville.dorval.qc.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 8,
   "erreur": false
  },
  {
   "nom": "Beaconsfield – calendrier",
   "url": "https://www.beaconsfield.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -1375,14 +1368,14 @@
   "nom": "Montréal-Est – calendrier",
   "url": "https://ville.montreal-est.qc.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 12,
   "erreur": false
  },
  {
   "nom": "Lakeshore Players (théâtre, Dorval)",
   "url": "https://www.lakeshoreplayers.org",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1494,7 +1487,7 @@
   "nom": "Espace La Risée (billetterie)",
   "url": "https://lepointdevente.com/lieux/l-espace-la-risee",
   "type": "page lue par l'IA",
-  "evenements": 15,
+  "evenements": 13,
   "erreur": false
  },
  {
@@ -1508,7 +1501,7 @@
   "nom": "Club Soda (billetterie)",
   "url": "https://lepointdevente.com/lieux/club-soda",
   "type": "page lue par l'IA",
-  "evenements": 22,
+  "evenements": 20,
   "erreur": false
  },
  {
@@ -1522,7 +1515,7 @@
   "nom": "O Patro Vys (billetterie)",
   "url": "https://lepointdevente.com/lieux/o-patro-vys",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -1543,7 +1536,7 @@
   "nom": "Le Balattou (billetterie, 2e page)",
   "url": "https://lepointdevente.com/lieux/lebalattou",
   "type": "page lue par l'IA",
-  "evenements": 10,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1564,7 +1557,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 102,
+  "evenements": 105,
   "erreur": false
  },
  {
@@ -1613,7 +1606,7 @@
   "nom": "PAN M 360 – agenda musique",
   "url": "https://panm360.com/en/agenda-360",
   "type": "page lue par l'IA",
-  "evenements": 38,
+  "evenements": 35,
   "erreur": false
  }
 ]

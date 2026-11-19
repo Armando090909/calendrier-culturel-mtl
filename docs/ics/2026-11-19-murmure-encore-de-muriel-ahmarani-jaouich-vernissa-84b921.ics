@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-19-murmure-encore-de-muriel-ahmarani-jaouich-vernissa-84b921@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261119T170000
+DTEND;TZID=America/Toronto:20261119T190000
+SUMMARY:Murmure encore de Muriel Ahmarani Jaouich - vernissage
+LOCATION:Maison de la culture du Plateau-Mont-Royal\, Montréal
+URL:https://reseauartactuel.org/evenement/murmure-encore-de-muriel-ahmarani
+ -jaouich/
+DESCRIPTION:Vernissage de l'exposition de Muriel Ahmarani Jaouich à la Mai
+ son de la culture du Plateau.\nDétails : https://reseauartactuel.org/even
+ ement/murmure-encore-de-muriel-ahmarani-jaouich/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
