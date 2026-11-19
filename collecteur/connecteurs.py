@@ -903,11 +903,18 @@ def _heure_du_jour(texte: str, jour: str) -> str | None:
     t = plat(texte)
     motifs = [rf"\b0?{j}(?:er)? {_MOIS[m - 1]}(?: {a})?", rf"\b0?{j}(?:er)? {_MOIS[m - 1][:3]}\w*(?: {a})?", rf"\b{_MOIS_EN[m - 1]} {j}(?:st|nd|rd|th)?(?: {a})?",
               rf"\b{_MOIS_EN[m - 1][:3]} {j}\b(?: {a})?", rf"\b{j} {_MOIS_EN[m - 1][:3]}\w*(?: {a})?",
-              rf"\b{a} {m:02d} {j:02d}\b", rf"\b{j:02d} {m:02d} {a}\b"]
+              rf"\b{a} {m:02d} {j:02d}\b", rf"\b{j:02d} {m:02d} {a}\b",
+              # (19 nov. 2026) calendrier sans mois, jour de semaine + quantième (Tuxedo : « jeu. 19 19H00 ») : le bon jour
+              # de la semaine pour ce quantième suffit à reconnaître la date
+              rf"\b{('lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim')[date(a, m, j).weekday()]}\w* 0?{j}\b",
+              rf"\b{('mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun')[date(a, m, j).weekday()]}\w* 0?{j}\b"]
     for motif in motifs:
         for d in re.finditer(motif, t):
             suite = t[d.end():d.end() + 70]
-            h = re.search(r"\b(\d{1,2}) ?h ?(\d{2})?\b|\b(\d{1,2}) (\d{2}) ?([ap]) ?m\b|\b(\d{1,2}) ?([ap]) ?m\b|\b(\d{1,2}) (\d{2})\b", suite)
+            # (19 nov. 2026) « 15 17 » seul (sans h ni am/pm) n'est une heure que collé à la date (« 2026 11 03 19 30 ») ;
+            # plus loin, c'est une liste de jours (« 21 novembre 2026 supplémentaires les 15 17 18 » ≠ 15 h 17)
+            h = next((x for x in re.finditer(r"\b(\d{1,2}) ?h ?(\d{2})?\b|\b(\d{1,2}) (\d{2}) ?([ap]) ?m\b|\b(\d{1,2}) ?([ap]) ?m\b|\b(\d{1,2}) (\d{2})\b", suite)
+                      if not x.group(8) or x.start() <= 3), None)
             if not h:
                 continue
             g = h.groups()

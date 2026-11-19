@@ -374,6 +374,12 @@ def liens_candidats(texte: str, liens: list[str], page: str, titre: str) -> list
         slug = plat(urlparse(u).path + " " + urlparse(u).query)
         if sum(1 for m in mots if m in slug) >= max(1, min(2, len(mots))):
             out.append(u)
+    # Billetterie Tuxedo liée seulement par son accueil (ex. Espace GO → espacego.tuxedobillet.com/) : la page du
+    # spectacle est …/main/<titre> (ex. …/main/ciseaux), où chaque représentation a son heure (19 nov. 2026)
+    for u in liens:
+        pu = urlparse(u)
+        if pu.netloc.endswith("tuxedobillet.com") and pu.path.strip("/") in ("", "main"):
+            out.append(f"{pu.scheme}://{pu.netloc}/main/{plat(titre).replace(' ', '-')}")
     t = texte
     mots_t = re.findall(r"\w+", titre)[:4]
     motif = r"\W{1,3}".join(re.escape(m) for m in mots_t) if mots_t else "$^"
@@ -862,11 +868,12 @@ def main() -> int:
         f_heures = CACHE / "heures.json"
         memo = json.loads(f_heures.read_text(encoding="utf-8")) if f_heures.exists() else {}
         sans = [e for e in events if not e["heure"] and e["url"].startswith("http")
-                and not any(d in e["url"] for d in reglages.get("sites_sans_heure", ["songkick.com"]))]
+                and not any(d in e["url"] for d in reglages.get("sites_sans_heure", []))]
         # Mémoire par page ET par date (une page peut lister plusieurs représentations). Une page sans heure trouvée est
         # relue dans le navigateur (heure souvent affichée par JavaScript), puis réessayée après 7 jours.
         lues, rendues, vieux_h = 0, 0, (aujourd - timedelta(days=7)).isoformat()
-        for e in sans:
+        # (19 nov. 2026) les plus proches d'abord ; Songkick lu aussi (sa fiche donne souvent l'heure ou l'ouverture des portes)
+        for e in sorted(sans, key=lambda x: x["date"]):
             cle = e["url"] + "|" + e["date"]
             v = memo.get(cle)
             if isinstance(v, str):
