@@ -1,6 +1,6 @@
 {
  "total": 1732,
- "echecs": 24,
+ "echecs": 23,
  "par_site": {
   "imgproxy.ra.co": {
    "affiches": 10,
@@ -12,7 +12,7 @@
   },
   "www.ville.dorval.qc.ca": {
    "affiches": 4,
-   "echecs": 3
+   "echecs": 2
   },
   "westmount.org": {
    "affiches": 2,
@@ -452,8 +452,7 @@
   ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg",
-   "https://www.ville.dorval.qc.ca/resize/9e271916e53c1bbf2f2b793368d4418c-1"
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
