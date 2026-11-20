@@ -194,6 +194,12 @@ def choisir(data, debut, etat):
             modes.setdefault(k, "connu")
     from normalisation import plat as _plat
     voulus = {k: _plat(v) for k, v in (prefs.get("choix") or {}).items()}
+    for k in voulus:  # (20 nov. 2026) un souhait dans une discipline absente cette semaine : elle remplace la dernière
+        if k not in disciplines:
+            garder = [d for d in disciplines if d in voulus]
+            autres_d = [d for d in disciplines if d not in voulus]
+            disciplines = autres_d[:7 - len(garder) - 1] + garder + [k]
+            modes.setdefault(k, "connu")
     bonus_fest = 4 if prefs.get("festivals") else 0
     sel = lambda e: int(hashlib.md5((e["titre"] + debut.isoformat()).encode()).hexdigest()[:6], 16)  # noqa: E731
     cands = {}
@@ -276,7 +282,17 @@ def choisir(data, debut, etat):
     for e in evs:
         par_lieu[e["lieu"]].append(e)
     salle = None
-    for lieu, es in sorted(par_lieu.items(), key=lambda x: (-sum(score(e) for e in x[1]) / len(x[1]), x[0])):
+    # Salle demandée par l'équipe (préférences « salle » : nom ou partie du nom), même avec une seule soirée (20 nov. 2026)
+    if prefs.get("salle"):
+        voulue = _plat(prefs["salle"])
+        for lieu, es in par_lieu.items():
+            if voulue in _plat(lieu):
+                salle = {"lieu": lieu, "events": sorted(es, key=lambda e: (e["date"], e.get("heure") or "99"))[:7],
+                         "quartier": ((data.get("lieux") or {}).get(lieu) or {}).get("quartier", "")}
+                break
+        if not salle:
+            print(f"  salle demandée « {prefs['salle']} » : aucune sortie cette semaine, choix habituel")
+    for lieu, es in ([] if salle else sorted(par_lieu.items(), key=lambda x: (-sum(score(e) for e in x[1]) / len(x[1]), x[0]))):
         dis = Counter(e["discipline"] for e in es)
         if lieu in deja or lieu == "Lieu à confirmer" or not 3 <= len(es) <= 12:
             continue
