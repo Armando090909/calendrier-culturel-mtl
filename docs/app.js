@@ -702,16 +702,23 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
     window.scrollTo({top:e.getBoundingClientRect().top+scrollY-90,behavior:"instant"})}
   function suivre(){const i=evs.findIndex(x=>x.getBoundingClientRect().bottom>90);if(i>=0)pouce.style.top=(100*i/evs.length)+"%"}
   if(TACTILE){
-    // le doigt doit partir du bord droit ET bouger verticalement : un toucher sans glisser reste un clic sur le bouton dessous
-    let x0=null,y0=0;
-    addEventListener("touchstart",e=>{x0=null;if(!dispo()||e.touches.length>1)return;const t=e.touches[0];
-      if(t.clientX>=innerWidth-BORD){x0=t.clientX;y0=t.clientY}},{passive:true});
-    addEventListener("touchmove",e=>{if(x0===null)return;const t=e.touches[0];
-      if(!glisse){if(Math.abs(t.clientY-y0)<8)return;if(Math.abs(t.clientX-x0)>Math.abs(t.clientY-y0)){x0=null;return}
-        glisse=true;suivre();montrer();rail.classList.add("actif")}
-      e.preventDefault();aller(t.clientY)},{passive:false});
-    const fin=()=>{x0=null;if(glisse){glisse=false;rail.classList.remove("actif");cacher(900)}};
-    addEventListener("touchend",fin,{passive:true});addEventListener("touchcancel",fin,{passive:true});
+    // Bande tactile invisible au bord droit (touch-action:none) : le navigateur ne fait pas défiler la page quand le doigt
+    // part de là, donc la réglette répond tout de suite (sur Android, un défilement déjà commencé ne peut plus être
+    // intercepté : 20 nov. 2026, DuckDuckGo). Un toucher sans glisser est renvoyé à l'élément dessous (Partager…).
+    const zone=document.createElement("div");zone.id="rail-zone";document.body.appendChild(zone);
+    let y0=null,x0=0;
+    const majZone=()=>{zone.hidden=rail.hidden};
+    zone.addEventListener("touchstart",e=>{if(!dispo()||e.touches.length>1){y0=null;return}const t=e.touches[0];x0=t.clientX;y0=t.clientY},{passive:true});
+    zone.addEventListener("touchmove",e=>{if(y0===null)return;const t=e.touches[0];
+      if(!glisse){if(Math.abs(t.clientY-y0)<6)return;glisse=true;suivre();montrer();rail.classList.add("actif")}
+      if(e.cancelable)e.preventDefault();aller(t.clientY)},{passive:false});
+    zone.addEventListener("touchend",e=>{
+      if(!glisse&&y0!==null){ // simple toucher : clic transmis à ce qu'il y a sous la bande
+        zone.style.pointerEvents="none";const el=document.elementFromPoint(x0,y0);zone.style.pointerEvents="";
+        const c=el&&el.closest("a,button,label,input,summary,[data-act]");if(c){e.preventDefault();c.click()}}
+      y0=null;if(glisse){glisse=false;rail.classList.remove("actif");cacher(900)}},{passive:false});
+    zone.addEventListener("touchcancel",()=>{y0=null;if(glisse){glisse=false;rail.classList.remove("actif");cacher(900)}});
+    new MutationObserver(majZone).observe(rail,{attributes:true,attributeFilter:["hidden"]});majZone();
   }else{
     addEventListener("mousemove",e=>{if(!dispo()||glisse)return;if(e.clientX>=innerWidth-BORD){suivre();montrer()}else cacher(350)},{passive:true});
     rail.addEventListener("pointerdown",e=>{if(!dispo())return;glisse=true;rail.classList.add("actif");rail.setPointerCapture(e.pointerId);aller(e.clientY);e.preventDefault()});

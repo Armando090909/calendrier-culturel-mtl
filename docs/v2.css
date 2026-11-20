@@ -360,3 +360,6 @@ html.v2 #view.glisse-d{animation:glisse-d .22s ease-out}
 #rail-h .rh-pouce{position:absolute;right:3px;width:17px;height:17px;margin-top:-8px;border-radius:50%;background:#E04F9C;border:3px solid #000}
 #rail-h .rh-bulle{position:absolute;right:56px;transform:translateY(-50%);background:#000;color:#F5EFE3;font:900 26px/1 var(--f-display,Figtree,sans-serif);padding:10px 16px;border-radius:999px;white-space:nowrap}
 @media (max-width:700px){#rail-h{top:90px;width:40px}#rail-h .rh-ticks span{font-size:10px}}
+#rail-zone{position:fixed;right:0;top:90px;bottom:40px;width:34px;z-index:41;touch-action:none;background:transparent}
+#rail-zone[hidden]{display:none}
+@media (pointer:fine){#rail-zone{display:none}}
