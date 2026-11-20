@@ -1128,6 +1128,16 @@ def main() -> int:
     import normalisation as _norm
     for f in festivals:
         _norm.SERIES_CONNUES.update({plat(f["nom"]), plat(f.get("court", ""))} - {""})
+    # Répétition suspecte (20 nov. 2026, « After circus » du RIDM) : un même titre de festival, à la même heure, sans
+    # salle, sur 5 jours ou plus = lecture erronée d'une page répétée (bandeau, menu), pas une vraie projection
+    rep = collections.Counter((plat(e["titre"]), e.get("heure")) for e in events
+                              if e.get("festival") and e["lieu"] == "Lieu à confirmer")
+    suspects = {k for k, n in rep.items() if n >= 5}
+    for e in events:
+        if e.get("festival") and e["lieu"] == "Lieu à confirmer" and (plat(e["titre"]), e.get("heure")) in suspects:
+            rejeter("répétition suspecte d'un festival (même titre, même heure, sans salle, 5 jours ou plus)", e)
+    events = [e for e in events if not (e.get("festival") and e["lieu"] == "Lieu à confirmer"
+                                        and (plat(e["titre"]), e.get("heure")) in suspects)]
     events, redites = doublons_du_jour(events)
     notes["redites_retirees"] = redites[:200]
     print(f"Redites du même jour retirées : {len(redites)}")
