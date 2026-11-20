@@ -1,14 +1,10 @@
 {
  "total": 1732,
- "echecs": 29,
+ "echecs": 24,
  "par_site": {
   "imgproxy.ra.co": {
    "affiches": 10,
    "echecs": 10
-  },
-  "centaurtheatre.com": {
-   "affiches": 5,
-   "echecs": 5
   },
   "www.ville.dorval.qc.ca": {
    "affiches": 4,
@@ -294,6 +290,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 0
+  },
   "lelivart.com": {
    "affiches": 2,
    "echecs": 0
@@ -448,11 +448,6 @@
   ],
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg"
-  ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
