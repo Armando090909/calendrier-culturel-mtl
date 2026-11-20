@@ -239,10 +239,16 @@ _PROVINCE_ENTRE_PARENTHESES = re.compile(r"\((?:BC|B\.C\.|C\.?-B\.?|AB|Alb\.?|SK
 def hors_ile(*textes: str) -> bool:
     if any(plat(x) in LIEUX_HORS_ILE for x in textes if x):
         return True
-    # (19 nov. 2026) « Glob – Courtenay (BC) » : une province autre que le Québec entre parenthèses
-    if any(_PROVINCE_ENTRE_PARENTHESES.search(x) for x in textes if x):
+    # (19 nov. 2026) « Glob – Courtenay (BC) » : une ville suivie d'une autre province, en fin de titre après un tiret
+    # (pas « Wired Mother (ON) » : un groupe venu d'ailleurs qui joue à Montréal)
+    if any(re.search(r"[–—-]\s*[\w'’. -]{2,40}\s" + _PROVINCE_ENTRE_PARENTHESES.pattern + r"\s*$", x) for x in textes if x):
         return True
     t = " ".join(plat(x) for x in textes if x)
+    # (20 nov. 2026) « Québec » la province dans une adresse (« Montréal, Québec, Canada », « Québec H2J 2L2 ») n'est pas
+    # la ville de Québec : Barfly et Quai des Brumes étaient écartés « hors de l'île » depuis Ask a Punk
+    t = re.sub(r"\bquebec(?= canada\b| [a-z]\d[a-z]\b| qc\b)", " ", t)
+    if re.search(r"\bmontreal\b", t):
+        t = re.sub(r"\bquebec\b", " ", t)
     return any(f" {m} " in f" {t} " for m in HORS_ILE)
 
 

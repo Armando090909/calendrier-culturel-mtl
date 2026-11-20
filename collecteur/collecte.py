@@ -402,7 +402,8 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
     par_url = collections.Counter(e["url"] for e in events)
     sans = sorted([e for e in events if not e.get("heure") and e["url"].startswith("http") and e["date"] <= limite
                    and not any(b in e["url"] for b in BLOQUEES_FICHE + ("://montreal.ca",))
-                   and (par_url[e["url"]] >= 2 or urlparse(e["url"]).path.strip("/") in ("", "fr", "en", "evenements", "events",
+                   and (par_url[e["url"]] >= 2 or e["date"] <= (aujourd_ + timedelta(days=7)).isoformat()
+                        or urlparse(e["url"]).path.strip("/") in ("", "fr", "en", "evenements", "events",
                         "programmation", "calendrier", "spectacles", "agenda", "billetterie", "en/events", "fr/evenements"))],
                   key=lambda e: e["date"])
     listes: dict = {}
@@ -452,6 +453,8 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
                 h = heure_page(html2, e["date"])
                 if not h and ia.disponible():
                     h = (ia.champs_page(e["titre"], e["date"], texte_page(html2, u)) or {}).get("heure")
+                if h and h < "08:00":
+                    h = None  # (20 nov. 2026) « 01:00 » pour un spectacle de Caf'Conc' : heure de fin ou erreur de lecture
                 if h:
                     e["heure"] = h
                     trouvees += 1
