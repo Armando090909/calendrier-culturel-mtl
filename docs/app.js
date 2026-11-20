@@ -185,7 +185,7 @@ function detailHTML(e){
       </div>`;
   const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
-  return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
+  return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" data-h="${esc((e.heure||"").slice(0,2))}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
@@ -672,7 +672,65 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
   // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
   if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700)}
 }).catch(()=>{$("view").innerHTML=`<div class="empty">${L("Les événements n'ont pas pu être chargés. Rechargez la page.","Events could not be loaded. Please reload the page.")}</div>`});
+/* Mode Jour : réglette des heures (20 nov. 2026). Comme le défilement rapide des photos d'un téléphone.
+   Téléphone : invisible ; elle apparaît seulement quand on pose le doigt sur le bord droit de l'écran et qu'on le
+   fait glisser vers le haut ou le bas (un simple toucher passe aux boutons dessous : Partager, Outlook…).
+   Ordinateur : elle apparaît quand la souris s'approche du bord droit ; on la glisse, ou on utilise ↑ ↓.
+   Une bulle affiche l'heure et la liste saute aux sorties de cette heure. */
+(()=>{
+  const rail=document.createElement("div");rail.id="rail-h";rail.setAttribute("role","slider");rail.tabIndex=-1;
+  rail.setAttribute("aria-label",L("Aller à une heure de la journée","Jump to a time of day"));
+  rail.innerHTML='<div class="rh-ticks"></div><div class="rh-bulle" hidden></div><div class="rh-pouce"></div>';
+  document.body.appendChild(rail);
+  const ticks=rail.querySelector(".rh-ticks"),bulle=rail.querySelector(".rh-bulle"),pouce=rail.querySelector(".rh-pouce");
+  const TACTILE=matchMedia("(pointer:coarse)").matches,BORD=TACTILE?30:72;
+  let evs=[],glisse=false,cache;
+  const lib=h=>h===""?L("Toute la journée","All day"):(EN?((+h%12)||12)+(+h<12?" am":" pm"):(+h)+" h");
+  const dispo=()=>!rail.hidden&&evs.length;
+  function montrer(){clearTimeout(cache);rail.classList.add("montre")}
+  function cacher(delai){clearTimeout(cache);cache=setTimeout(()=>{if(!glisse){rail.classList.remove("montre");bulle.hidden=true}},delai)}
+  function preparer(){
+    evs=st.view==="day"?[...document.querySelectorAll(".dayview .ev.det")]:[];
+    const ok=evs.length>=8&&!document.body.classList.contains("en-recherche");rail.hidden=!ok;if(!ok)return;
+    const hs=[...new Set(evs.map(e=>e.dataset.h))],H=rail.getBoundingClientRect().height||600;let der=-99;
+    ticks.innerHTML=hs.map(h=>{const i=evs.findIndex(e=>e.dataset.h===h),y=H*i/evs.length;if(y-der<17)return"";der=y;
+      return `<span style="top:${(100*i/evs.length).toFixed(2)}%">${h===""?"·":lib(h)}</span>`}).join("")}
+  function aller(y){
+    const r=rail.getBoundingClientRect(),f=Math.min(.999,Math.max(0,(y-r.top)/r.height));
+    const e=evs[Math.floor(f*evs.length)];if(!e)return;
+    bulle.hidden=false;bulle.textContent=lib(e.dataset.h);bulle.style.top=(f*100)+"%";pouce.style.top=(f*100)+"%";
+    window.scrollTo({top:e.getBoundingClientRect().top+scrollY-90,behavior:"instant"})}
+  function suivre(){const i=evs.findIndex(x=>x.getBoundingClientRect().bottom>90);if(i>=0)pouce.style.top=(100*i/evs.length)+"%"}
+  if(TACTILE){
+    // le doigt doit partir du bord droit ET bouger verticalement : un toucher sans glisser reste un clic sur le bouton dessous
+    let x0=null,y0=0;
+    addEventListener("touchstart",e=>{x0=null;if(!dispo()||e.touches.length>1)return;const t=e.touches[0];
+      if(t.clientX>=innerWidth-BORD){x0=t.clientX;y0=t.clientY}},{passive:true});
+    addEventListener("touchmove",e=>{if(x0===null)return;const t=e.touches[0];
+      if(!glisse){if(Math.abs(t.clientY-y0)<8)return;if(Math.abs(t.clientX-x0)>Math.abs(t.clientY-y0)){x0=null;return}
+        glisse=true;suivre();montrer();rail.classList.add("actif")}
+      e.preventDefault();aller(t.clientY)},{passive:false});
+    const fin=()=>{x0=null;if(glisse){glisse=false;rail.classList.remove("actif");cacher(900)}};
+    addEventListener("touchend",fin,{passive:true});addEventListener("touchcancel",fin,{passive:true});
+  }else{
+    addEventListener("mousemove",e=>{if(!dispo()||glisse)return;if(e.clientX>=innerWidth-BORD){suivre();montrer()}else cacher(350)},{passive:true});
+    rail.addEventListener("pointerdown",e=>{if(!dispo())return;glisse=true;rail.classList.add("actif");rail.setPointerCapture(e.pointerId);aller(e.clientY);e.preventDefault()});
+    rail.addEventListener("pointermove",e=>{if(glisse)aller(e.clientY)});
+    const fin=()=>{if(!glisse)return;glisse=false;rail.classList.remove("actif");cacher(1200)};
+    rail.addEventListener("pointerup",fin);rail.addEventListener("pointercancel",fin);
+    addEventListener("scroll",()=>{if(rail.classList.contains("montre")&&!glisse)suivre()},{passive:true});
+    addEventListener("keydown",e=>{if(!dispo()||!["ArrowUp","ArrowDown"].includes(e.key)||!e.altKey)return;
+      const hs=[...new Set(evs.map(x=>x.dataset.h))],cur=evs.find(x=>x.getBoundingClientRect().top>=80)||evs[0];let i=hs.indexOf(cur.dataset.h);
+      i=e.key==="ArrowDown"?Math.min(hs.length-1,i+1):Math.max(0,i-1);e.preventDefault();
+      const t=evs.find(x=>x.dataset.h===hs[i]);window.scrollTo({top:t.getBoundingClientRect().top+scrollY-90});
+      montrer();suivre();bulle.hidden=false;bulle.textContent=lib(hs[i]);bulle.style.top=pouce.style.top;cacher(1200)});
+  }
+  const ancien=render;render=function(){ancien.apply(this,arguments);requestAnimationFrame(preparer)};
+  addEventListener("resize",()=>requestAnimationFrame(preparer));
+  preparer();
+})();
 })();
 
 // Le lien de langue garde l'événement ou le jour affiché (?e=…, ?d=…)
 (()=>{const l=document.getElementById("langue");if(l)l.addEventListener("click",()=>{l.href=l.getAttribute("href").split("?")[0]+location.search;});})();
+
