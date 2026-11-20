@@ -916,10 +916,13 @@ def ponctuelle():
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
     faits = etat.setdefault("ponctuelles", {}).setdefault(nom, {})
     jpgs = {}
-    for langue in ("fr", "en"):
+    stories = any(l.lower() == "stories" for l in lignes[1:])
+    # fil : anglais puis français (le français s'affiche en premier) ; stories : français puis anglais (vues dans l'ordre)
+    for langue in (("fr", "en") if stories else ("en", "fr")):
         if (d / f"{langue}.png").exists():
             jpgs[langue] = d / f"{langue}.jpg"
-            jpgs[langue].write_bytes(jpeg(d / f"{langue}.png"))
+            if not jpgs[langue].exists():
+                jpgs[langue].write_bytes(jpeg(d / f"{langue}.png"))
     if not ESSAI:
         subprocess.run(["git", "add", str(d.relative_to(RACINE))], check=True)
         subprocess.run(["git", "commit", "-m", f"Publication ponctuelle : {nom}"], check=False)
@@ -933,10 +936,11 @@ def ponctuelle():
         url = url_publique(str(jpg.relative_to(RACINE)))
         court = _sans_tags(texte)
         bsky = court if len(court) <= 300 else court[:court.rfind("\n", 0, 290)].rstrip() + "\nccmtl.ca"
-        travaux = (("instagram", instagram_image, (texte, url, alt)),
-                   ("facebook", facebook, (_lien(court, langue), [url], [alt])),
-                   ("threads", threads_image, (_lien(court, langue), url, alt)),
-                   ("bluesky", bluesky, ([(bsky, [(jpg.read_bytes(), alt)])],)))
+        travaux = ((("instagram_story", instagram_story, ([url],)), ("facebook_story", facebook_story, ([url],))) if stories else
+                   (("instagram", instagram_image, (texte, url, alt)),
+                    ("facebook", facebook, (_lien(court, langue), [url], [alt])),
+                    ("threads", threads_image, (_lien(court, langue), url, alt)),
+                    ("bluesky", bluesky, ([(bsky, [(jpg.read_bytes(), alt)])],))))
         for reseau, fn, args in travaux:
             cle = f"{reseau}-{langue}"
             if faits.get(cle) and not FORCER:
@@ -989,7 +993,9 @@ def main():
     semaine = debut.isoformat()
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
     reseaux = ("bluesky", "instagram", "threads", "facebook", "instagram_story", "facebook_story")
-    langues = ("fr", "en")  # une publication en français, une en anglais (titres, salles et noms dans leur langue d'origine)
+    # une publication en anglais, puis une en français (20 nov. 2026, équipe) : les fils montrent le plus récent en premier,
+    # le français apparaît donc en premier ; les stories, vues dans l'ordre où elles sont publiées, partent en français d'abord
+    langues = ("en", "fr")
     if SEULEMENT:
         reseaux = tuple(n for n in reseaux if n in SEULEMENT)
     a_faire = [f"{n}-{l}" for l in langues for n in reseaux if FORCER or ESSAI or SEULEMENT or not faits.get(f"{n}-{l}")]
@@ -1011,7 +1017,25 @@ def main():
         subprocess.run(["git", "push"], check=True)
         time.sleep(20)
     erreurs = []
-    for langue in langues:
+    plus_tard = []  # stories : après les publications, français d'abord
+    for langue in list(langues) + ["_stories"]:
+        if langue == "_stories":
+            for lg in ("fr", "en"):
+                for nom, fn, args in [x[1:] for x in plus_tard if x[0] == lg]:
+                    cle = f"{nom}-{lg}"
+                    try:
+                        fs.LANGUE = lg
+                        res = fn(*args)
+                        print(f"{cle} : {res if res is not None else 'pas de clé, sauté.'}")
+                        if res is not None and not ESSAI and not SEULEMENT:
+                            faits[cle] = str(res)
+                    except Exception as exc:
+                        detail = getattr(getattr(exc, "response", None), "text", "") or ""
+                        erreurs.append(f"- **{cle}** : {str(exc)[:200]} {detail[:300]}")
+                        print(f"{cle} : ÉCHEC {exc} {detail[:300]}")
+                    finally:
+                        fs.LANGUE = "fr"
+            continue
         jpgs, alts, t = lots[langue]
         urls = [url_publique(str(j.relative_to(RACINE))) for j in jpgs]
         complet = [i for i, j in enumerate(jpgs) if j.stem[0].isdigit()]             # carrousel de 10 cartons
@@ -1028,6 +1052,9 @@ def main():
         for nom, fn, args in travaux:
             cle = f"{nom}-{langue}"
             if cle not in a_faire:
+                continue
+            if nom.endswith("_story"):
+                plus_tard.append((langue, nom, fn, args))
                 continue
             try:
                 fs.LANGUE = langue
