@@ -11,7 +11,7 @@ on:
     types: [created]           # réponse dans l'avis d'aperçu : consignes appliquées tout de suite
   push:
     branches: [main]
-    paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt", "outils/reseaux/demande-envoi-apercu.txt"]
+    paths: ["outils/reseaux/demande-essai.txt", "outils/reseaux/demande-test.txt", "outils/reseaux/demande-envoi-apercu.txt", "outils/reseaux/demande-ponctuelle.txt"]
     # demande-essai.txt : essai de connexion (rien n'est publié)
     # demande-test.txt : publie pour vrai les seuls formats écrits dans le fichier (ex. instagram_story,facebook_story),
     # ou « tout » pour la publication normale de la semaine
@@ -85,6 +85,10 @@ jobs:
             # « tout » : la publication normale de la semaine (notée comme faite), lancée à la main
             [ "$SEULEMENT" = tout ] && export SEULEMENT=""
             echo "Test ciblé : $SEULEMENT"
+          fi
+          # demande-ponctuelle.txt (20 nov. 2026) : une publication hors semaine (1re ligne : dossier ; 2e : « publier » ou essai)
+          if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-ponctuelle.txt"; then
+            export ETAPE=ponctuelle
           fi
           # demande-envoi-apercu.txt : envoyer l'aperçu du dimanche tout de suite (rien n'est publié)
           if [ "$GITHUB_EVENT_NAME" = push ] && git diff --name-only HEAD~1 HEAD | grep -q "outils/reseaux/demande-envoi-apercu.txt"; then

@@ -860,7 +860,111 @@ def epingles_threads_bluesky():
         sys.exit(1)
 
 
+# ---------------------------------------------------------------- Publication ponctuelle (20 nov. 2026)
+# Une image (1080 × 1350) et sa légende, en français et en anglais, hors des publications de la semaine :
+# outils/reseaux/ponctuelles/<nom>/{fr,en}.png et {fr,en}.txt (légende Instagram, avec #) ; {fr,en}-alt.txt facultatif.
+# Lancée par outils/reseaux/demande-ponctuelle.txt (1re ligne : <nom> ; 2e ligne : « publier », sinon essai).
+def instagram_image(texte, url, alt):
+    c = _compte_ig()
+    if not c:
+        return None
+    base, jeton, ig, nom = c
+    if ESSAI:
+        return "essai : connexion Instagram réussie (" + nom + ")"
+    m = requests.post(f"{base}/{ig}/media", timeout=60, data={"image_url": url, "caption": texte, "alt_text": alt,
+                                                              "access_token": jeton})
+    m.raise_for_status()
+    mid = m.json()["id"]
+    _attendre(lambda: requests.get(f"{base}/{mid}", params={"fields": "status_code", "access_token": jeton}, timeout=30).json())
+    r = requests.post(f"{base}/{ig}/media_publish", data={"creation_id": mid, "access_token": jeton}, timeout=60)
+    r.raise_for_status()
+    return r.json().get("id")
+
+
+def threads_image(texte, url, alt):
+    jeton = os.environ.get("THREADS_JETON")
+    if not jeton:
+        return None
+    base = "https://graph.threads.net/v1.0"
+    moi = requests.get(f"{base}/me", params={"fields": "id,username", "access_token": jeton}, timeout=30)
+    moi.raise_for_status()
+    if ESSAI:
+        return "essai : connexion Threads réussie (" + moi.json().get("username", "?") + ")"
+    uid = moi.json()["id"]
+    c = requests.post(f"{base}/{uid}/threads", timeout=60, data={"media_type": "IMAGE", "image_url": url, "text": texte[:500],
+                                                                 "alt_text": alt, "access_token": jeton})
+    c.raise_for_status()
+    time.sleep(30)
+    r = requests.post(f"{base}/{uid}/threads_publish", data={"creation_id": c.json()["id"], "access_token": jeton}, timeout=60)
+    r.raise_for_status()
+    return r.json().get("id")
+
+
+def _sans_tags(texte):
+    """Facebook, Threads, Bluesky : sans les #, et les @ Instagram retirés (les comptes n'y sont pas les mêmes)."""
+    corps = re.split(r"\n\s*#", texte)[0].rstrip()
+    return re.sub(r"(^|\s)@[A-Za-z0-9_.]+", "", corps).strip()
+
+
+def ponctuelle():
+    f_dem = DOSSIER / "demande-ponctuelle.txt"
+    lignes = [l.strip() for l in f_dem.read_text(encoding="utf-8").splitlines() if l.strip()]
+    nom = lignes[0]
+    global ESSAI
+    ESSAI = not (len(lignes) > 1 and lignes[1].lower() == "publier")
+    d = DOSSIER / "ponctuelles" / nom
+    etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
+    faits = etat.setdefault("ponctuelles", {}).setdefault(nom, {})
+    jpgs = {}
+    for langue in ("fr", "en"):
+        if (d / f"{langue}.png").exists():
+            jpgs[langue] = d / f"{langue}.jpg"
+            jpgs[langue].write_bytes(jpeg(d / f"{langue}.png"))
+    if not ESSAI:
+        subprocess.run(["git", "add", str(d.relative_to(RACINE))], check=True)
+        subprocess.run(["git", "commit", "-m", f"Publication ponctuelle : {nom}"], check=False)
+        subprocess.run(["git", "pull", "--rebase", "-X", "theirs", "origin", "main"], check=False)
+        subprocess.run(["git", "push"], check=True)
+        time.sleep(20)
+    erreurs = []
+    for langue, jpg in jpgs.items():
+        texte = (d / f"{langue}.txt").read_text(encoding="utf-8").strip()
+        alt = (d / f"{langue}-alt.txt").read_text(encoding="utf-8").strip() if (d / f"{langue}-alt.txt").exists() else _sans_tags(texte)[:1000]
+        url = url_publique(str(jpg.relative_to(RACINE)))
+        court = _sans_tags(texte)
+        bsky = court if len(court) <= 300 else court[:court.rfind("\n", 0, 290)].rstrip() + "\nccmtl.ca"
+        travaux = (("instagram", instagram_image, (texte, url, alt)),
+                   ("facebook", facebook, (_lien(court, langue), [url], [alt])),
+                   ("threads", threads_image, (_lien(court, langue), url, alt)),
+                   ("bluesky", bluesky, ([(bsky, [(jpg.read_bytes(), alt)])],)))
+        for reseau, fn, args in travaux:
+            cle = f"{reseau}-{langue}"
+            if faits.get(cle) and not FORCER:
+                print(f"{cle} : déjà publié ({faits[cle]})")
+                continue
+            try:
+                fs.LANGUE = langue
+                res = fn(*args)
+                print(f"{cle} : {res if res is not None else 'pas de clé, sauté'}")
+                if res is not None and not ESSAI:
+                    faits[cle] = str(res)
+            except Exception as exc:
+                detail = getattr(getattr(exc, "response", None), "text", "") or ""
+                erreurs.append(f"- **{cle}** : {str(exc)[:200]} {detail[:300]}")
+                print(f"{cle} : ÉCHEC {exc} {detail[:300]}")
+            finally:
+                fs.LANGUE = "fr"
+    if not ESSAI:
+        ETAT.write_text(json.dumps(etat, ensure_ascii=False, indent=1), encoding="utf-8")
+    if erreurs:
+        avis(f"Publication ponctuelle « {nom} » incomplète", "Certaines publications ont échoué :\n\n" + "\n".join(erreurs))
+        if not ESSAI:
+            sys.exit(1)
+
+
 def main():
+    if ETAPE == "ponctuelle":
+        return ponctuelle()
     if SEULEMENT == ["epingles"]:
         return epingles()
     if SEULEMENT == ["epingles_threads_bluesky"]:
