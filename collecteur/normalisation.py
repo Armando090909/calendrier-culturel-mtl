@@ -246,7 +246,7 @@ def hors_ile(*textes: str) -> bool:
     t = " ".join(plat(x) for x in textes if x)
     # (20 nov. 2026) « Québec » la province dans une adresse (« Montréal, Québec, Canada », « Québec H2J 2L2 ») n'est pas
     # la ville de Québec : Barfly et Quai des Brumes étaient écartés « hors de l'île » depuis Ask a Punk
-    t = re.sub(r"\bquebec(?= canada\b| [a-z]\d[a-z]\b| qc\b)", " ", t)
+    t = re.sub(r"\bquebec(?= canada\b| [a-z]\d[a-z]\b)", " ", t)
     if re.search(r"\bmontreal\b", t):
         t = re.sub(r"\bquebec\b", " ", t)
     return any(f" {m} " in f" {t} " for m in HORS_ILE)
