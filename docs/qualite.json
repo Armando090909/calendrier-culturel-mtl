@@ -1174,10 +1174,10 @@
  ],
  "contreverif": {
   "date absente de la page": 34,
-  "date confirmée": 213,
+  "date confirmée": 211,
   "lien mort remplacé": 12,
   "page illisible": 28,
-  "non relues (limite)": 81
+  "non relues (limite)": 85
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1230,16 +1230,16 @@
    "taux": 36.0
   },
   {
-   "source": "fbdm-mcaf.ca",
-   "erreurs": 18,
-   "sorties": 70,
-   "taux": 25.7
-  },
-  {
    "source": "legesu.com",
    "erreurs": 28,
    "sorties": 110,
    "taux": 25.5
+  },
+  {
+   "source": "fbdm-mcaf.ca",
+   "erreurs": 18,
+   "sorties": 71,
+   "taux": 25.4
   },
   {
    "source": "foufouneselectriques.com",
@@ -1333,7 +1333,7 @@
   }
  ],
  "recoupees": {
-  "total": 2904,
+  "total": 2923,
   "deux_sources_ou_plus": 230
  }
 }

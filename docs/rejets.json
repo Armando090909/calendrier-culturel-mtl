@@ -1,15 +1,16 @@
 {
  "date": "2026-11-20",
  "regles": {
-  "pas une sortie culturelle": 358,
-  "hors de l'île": 216,
-  "série : hors de l'île": 28,
+  "pas une sortie culturelle": 366,
+  "hors de l'île": 179,
+  "série : hors de l'île": 27,
   "fiche isolée remplacée par la série du spectacle": 11,
   "série remplacée par ses dates précises": 10,
   "titre absent": 6,
   "série de festival (les séances datées suffisent)": 6,
   "annulé selon la source": 5,
   "retirée à la main (corrections.json)": 4,
+  "série : pas culturelle ou sans titre": 2,
   "série : sans salle, saison déjà détaillée ou annonce de saison": 2
  },
  "par_motif": {
@@ -36,6 +37,7 @@
    "mot « soutien technique » dans le titre": 4,
    "catégorie « conseil et comite »": 4,
    "mot « comite » dans le titre": 4,
+   "mot « marche de noel » dans le titre": 3,
    "mot « robotique » dans le titre": 3,
    "mot « tai chi » dans le titre": 3,
    "catégorie « rencontre avec personne elue »": 3,
@@ -44,6 +46,8 @@
    "mot « callisthenie » dans le titre": 2,
    "mot « seance d information » dans le titre": 2,
    "mot « conseil d arrondissement » dans le titre": 2,
+   "mot « marche hivernal » dans le titre": 2,
+   "mot « concours mon entreprise » dans le titre": 2,
    "mot « club de code » dans le titre": 1,
    "mot « cours de » dans le titre": 1,
    "mot « ipad » dans le titre": 1,
@@ -53,17 +57,15 @@
    "mot « word » dans le titre": 1,
    "mot « consultation » dans le titre": 1,
    "catégorie « assemblee publique »": 1,
+   "mot « marche des fetes » dans le titre": 1,
    "mot « webinaire » dans le titre": 1,
    "mot « aines » dans le titre": 1
   },
   "hors de l'île": {
    "Scène Desjardins d'Argenteuil · Lachute": 42,
    "Le Club Square Dix30 · 9200 Boulevard Leduc Brossard · Brossard": 15,
-   "Bibliothèque Micheline-Gagnon · 11370, Notre-Dame (3e étage) Montréal-Est (Québec) H1B Montréal-Est · Montréal-Est": 9,
    "206 Rue Christophe Colomb E · Québec": 7,
    "Théâtre Manuvie · 6000 bd. de Rome Brossard · Brossard": 6,
-   "New City Gas · 950 Rue Ottawa Montreal · Montreal": 5,
-   "Cabaret Fouf · 87 St Catherine St E, Montreal, Quebec H2X 1K5, Canada Montreal · Montreal": 4,
    "Cabaret BMO Sainte-Thérèse · 57-59, rue Turgeon Sainte-Thérèse · Sainte-Thérèse": 4,
    "Théâtre de la Ville · 180, rue de Gentilly Est Longueuil · Longueuil": 4,
    "Impérial Bell · Montréal": 3,
@@ -80,30 +82,20 @@
    "Salle Jean-Pierre Houde, Centre Culturel Vanier · 15 Blvd Maple Châteauguay · Châteauguay": 2,
    "L'urlu · L'urlu 24 Rue St-Charles Sainte-Thérèse · Sainte-Thérèse": 2,
    "Théâtre du Vieux Terrebonne · 866 rue Saint Pierre Terrebonne · Terrebonne": 2,
-   "Salle Bourgie · 1339 Rue Sherbrooke O Montreal · Montreal": 2,
    "Chateau Scene · 480, boulevard D’Youville Châteauguay · Châteauguay": 2,
    "Pôle culturel · None Chambly · Chambly": 2,
    "Théâtre des Deux Rives · 30 Boulevard du Séminaire Nord Saint-Jean-sur-richelieu · Saint-Jean-sur-richelieu": 2,
-   "Place Des Arts Maison Symphonique · 175 Rue Sainte-Therese Montreal · Montreal": 2,
    "Le Zénith Promutuel Assurance · 305, ave Mathers, Saint-Eustache St-Eustache · St-Eustache": 2,
    "Théâtre Hector-Charland · 225 boul de l'Ange-Gardien L'Assomption · L'Assomption": 2,
    "Le Club Dix30 · Montréal · Montréal": 2,
    "Théâtre Granada · Sherbrooke": 2,
    "Surry Arts Centre · Surrey (BC)": 2,
    "The Port Theatre · Nanaimo (BC)": 2,
-   "Sid Williams Theatre · Courtenay (BC)": 2,
-   "Revelstoke Performing Arts Centre · Revelstoke (BC)": 2,
-   "Esplanade Arts & Heritage Centre · Medicine Hat (AB)": 2,
    "The Arden Theatre · St-Albert (AB)": 2,
-   "Jeanne & Peter Lougheed Performing Arts Centre · Camrose (AB)": 2,
-   "EA Rawlinson Centre For The Arts · Prince Albert (SK)": 2,
    "Théâtre C · Saguenay (QC)": 2,
    "Julio Taqueria · Julio Taqueria Québec · Québec": 2,
-   "MAC à Place Ville Marie · MAC à Place Ville Marie, Place Ville Marie - niveau Galérie, Montréal, Québec, H3B 3Y1": 2,
    "La Petite boite noire · Sherbrooke": 2,
    "La Korrigane · Québec": 2,
-   "Barfly · 4062A St Laurent, Montréal, Québec, Canada": 1,
-   "Quai des Brumes · 4481, Rue Saint-Denis, Parc-Lafontaine, Plateau Mont-Royal, Montréal, Agglomération de Montréal, Montréal (06), Québec, H2J 2L2, Canada": 1,
    "Bar-Spectacle Le Montecristo · 10 Rue Blainville Ouest, Sainte-Thérèse, QC, Canada, J7E 1W9": 1,
    "Théâtre Capitole · Montréal": 1,
    "Salle Louis-Fréchette": 1,
@@ -116,7 +108,20 @@
    "Maurice O'Bready · Montréal": 1,
    "Salle André-Mathieu · Île-Bizard": 1,
    "Théâtre de la Bordée · Québec": 1,
-   "The Avalon Theatre At Niagara Fallsview Casino Resort · Niagara Falls": 1
+   "The Avalon Theatre At Niagara Fallsview Casino Resort · Niagara Falls": 1,
+   "Commodore Ballroom · Vancouver": 1,
+   "Rogers Arena · Vancouver": 1,
+   "Salle Octave-Crémazie": 1,
+   "Salle André-Mathieu": 1,
+   "Studio Azrieli · Montréal": 1,
+   "Salle Albert-Dumouchel, VALSPEC · 169, rue Champlain Salaberry-de-Valleyfield · Salaberry-de-Valleyfield": 1,
+   "Les Diffusions Pointe-Valaine · 85 Oxford Otterburn Park · Otterburn Park": 1,
+   "Le Moulinet · 950, Île-des-Moulins Terrebonne · Terrebonne": 1,
+   "Pôle culturel de Chambly · None Chambly · Chambly": 1,
+   "Le Transit Bistro Bar · 115 Saint Louis Terrebonne · Terrebonne": 1,
+   "Salle Albert Rousseau · Québec": 1,
+   "Le Club, Square DIX30 · Brossard": 1,
+   "Salle André-Mathieu · Laval": 1
   },
   "série : hors de l'île": {
    "Regart, centre d'artistes en art actuel · Lévis": 2,
@@ -136,17 +141,28 @@
    "Caravansérail · Rimouski": 1,
    "Galerie R3 · Trois-Rivières": 1,
    "AXENÉO7 · Gatineau": 1,
-   "Galerie d'art du Parc · Trois-Rivières": 1,
    "Musée d'art de Joliette · Joliette": 1,
    "Galerie d'art Foreman · Sherbrooke": 1,
    "L'Espace culturel du Quartier Saint-Nicolas · Lévis": 1,
    "Plein sud, centre d'exposition en art actuel · Longueuil": 1,
    "Maison de la culture Marcel-Robidas · Longueuil": 1,
    "Musée de Rimouski · Rimouski": 1
+  },
+  "série : pas culturelle ou sans titre": {
+   "mot « salon des artisans » dans le titre": 1,
+   "mot « marche des fetes » dans le titre": 1
   }
  },
  "exemples": {
   "pas une sortie culturelle": [
+   {
+    "titre": "Marché de Noël artisanal et écoresponsable",
+    "date": "2026-12-12",
+    "lieu": "@45.503559,-73.729368",
+    "url": "https://montreal.ca/evenements/marche-de-noel-artisanal-et-ecoresponsable-114737",
+    "source": "ville",
+    "detail": "mot « marche de noel » dans le titre"
+   },
    {
     "titre": "L’art d’utiliser son cellulaire",
     "date": "2026-12-09",
@@ -458,33 +474,9 @@
     "url": "https://montreal.ca/evenements/5-7-parlons-francais-119608",
     "source": "ville",
     "detail": "mot « parlons francais » dans le titre"
-   },
-   {
-    "titre": "Atelier d'initiation à l'autodéfense pour femmes",
-    "date": "2026-11-26",
-    "lieu": "@45.512818,-73.6764",
-    "url": "https://montreal.ca/evenements/atelier-dinitiation-lautodefense-pour-femmes-119352",
-    "source": "ville",
-    "detail": "catégorie « bien etre »"
    }
   ],
   "hors de l'île": [
-   {
-    "titre": "The Low Sixes and The Puppeteer's Castle",
-    "date": "2026-11-21",
-    "lieu": "Barfly",
-    "url": "https://montreal.askapunk.net/event/the-low-sixes-and-the-puppeteers-castle",
-    "source": "askapunk",
-    "detail": "Barfly · 4062A St Laurent, Montréal, Québec, Canada"
-   },
-   {
-    "titre": "Papillon, Blue Linen, Wired Mother",
-    "date": "2026-11-23",
-    "lieu": "Quai des Brumes",
-    "url": "https://montreal.askapunk.net/event/papillon-blue-linen-wired-mother",
-    "source": "askapunk",
-    "detail": "Quai des Brumes · 4481, Rue Saint-Denis, Parc-Lafontaine, Plateau Mont-Royal, Montréal, Agglomération de Montréal, Montréal (06), Québec, H2J 2L2, Canada"
-   },
    {
     "titre": "Burnt Arrival + ...Of Battle",
     "date": "2026-11-28",
@@ -766,14 +758,6 @@
     "detail": "Le Club Square Dix30 · 9200 Boulevard Leduc Brossard · Brossard"
    },
    {
-    "titre": "IT'S MURPH @ New City Gas",
-    "date": "2026-11-21",
-    "lieu": "New City Gas",
-    "url": "https://www.songkick.com/concerts/43351307-its-murph-at-new-city-gas?utm_medium=organic&utm_source=microformat",
-    "source": "songkick",
-    "detail": "New City Gas · 950 Rue Ottawa Montreal · Montreal"
-   },
-   {
     "titre": "Mentana @ Théâtre des Muses",
     "date": "2026-11-21",
     "lieu": "Théâtre des Muses",
@@ -788,6 +772,30 @@
     "url": "https://www.songkick.com/concerts/43104971-billie-du-page-at-le-moulinet?utm_medium=organic&utm_source=microformat",
     "source": "songkick",
     "detail": "Le Moulinet · 950, Île-des-Moulins Terrebonne · Terrebonne"
+   },
+   {
+    "titre": "Étienne Coppée @ Le Zénith de St-Eustache",
+    "date": "2026-11-24",
+    "lieu": "Le Zénith de St-Eustache",
+    "url": "https://www.songkick.com/concerts/43455768-etienne-coppee-at-le-zenith-de-steustache?utm_medium=organic&utm_source=microformat",
+    "source": "songkick",
+    "detail": "Le Zénith de St-Eustache · 305, avenue Mathers Saint-Eustache · Saint-Eustache"
+   },
+   {
+    "titre": "Dominique Fils-Aimé @ Pôle culturel de Chambly",
+    "date": "2026-11-27",
+    "lieu": "Pôle culturel de Chambly",
+    "url": "https://www.songkick.com/concerts/42901327-dominique-filsaime-at-pole-culturel-de-chambly?utm_medium=organic&utm_source=microformat",
+    "source": "songkick",
+    "detail": "Pôle culturel de Chambly · None Chambly · Chambly"
+   },
+   {
+    "titre": "Ok Goodnight @ Le Transit Bistro Bar",
+    "date": "2026-11-27",
+    "lieu": "Le Transit Bistro Bar",
+    "url": "https://www.songkick.com/concerts/43309853-ok-goodnight-at-le-transit-bistro-bar?utm_medium=organic&utm_source=microformat",
+    "source": "songkick",
+    "detail": "Le Transit Bistro Bar · 115 Saint Louis Terrebonne · Terrebonne"
    }
   ],
   "annulé selon la source": [
@@ -993,14 +1001,6 @@
     "detail": "AXENÉO7 · Gatineau"
    },
    {
-    "titre": "Marie-Aube Lanie et Lucie Rocher",
-    "date": "2026-10-04 → 2026-12-06",
-    "lieu": "Galerie d'art du Parc",
-    "url": "https://reseauartactuel.org/evenement/marie-aube-lanie-et-lucie-rocher/",
-    "source": "salles",
-    "detail": "Galerie d'art du Parc · Trois-Rivières"
-   },
-   {
     "titre": "Vernissage d'automne 2026",
     "date": "2026-10-03 → 2027-01-10",
     "lieu": "Musée d'art de Joliette",
@@ -1095,6 +1095,24 @@
     "url": "https://chiguerartcontemporain.com/expositions/franchir-les-frontieres/",
     "source": "galeries",
     "detail": "Chiguer art contemporain Québec · Québec"
+   }
+  ],
+  "série : pas culturelle ou sans titre": [
+   {
+    "titre": "Salon des artisans de Dorval",
+    "date": "2026-11-20 → 2026-11-22",
+    "lieu": "Centre communautaire Sarto-Desnoyers",
+    "url": "https://www.ville.dorval.qc.ca/fr/evenements/arts-et-culture/salon-des-artisans-de-dorval",
+    "source": "salles",
+    "detail": "mot « salon des artisans » dans le titre"
+   },
+   {
+    "titre": "Marché des Fêtes de Dorval",
+    "date": "2026-12-04 → 2026-12-13",
+    "lieu": "Au cœur du Village Dorval",
+    "url": "https://www.ville.dorval.qc.ca/fr/evenements/evenements-speciaux/marche-des-fetes-de-dorval",
+    "source": "salles",
+    "detail": "mot « marche des fetes » dans le titre"
    }
   ],
   "série remplacée par ses dates précises": [
@@ -1340,7 +1358,7 @@
   ]
  },
  "disparues": {
-  "total": 207,
+  "total": 209,
   "liste": [
    {
     "titre": "Crocodile",
@@ -1453,6 +1471,13 @@
     "lieu": "Foufounes Électriques",
     "url": "https://sorstu.ca/artiste/calamine/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Marché des fêtes du Cercle de Fermières Saint-Laurent",
+    "date": "2026-11-21",
+    "lieu": "Centre des loisirs de Saint-Laurent",
+    "url": "https://montreal.ca/evenements/marche-des-fetes-du-cercle-de-fermieres-saint-laurent-121037",
+    "raison": "pas une sortie culturelle"
    },
    {
     "titre": "L' estive",
@@ -2351,6 +2376,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Layton Giordani",
+    "date": "2026-11-28",
+    "lieu": "New City Gas",
+    "url": "https://www.songkick.com/concerts/43368300-layton-giordani-at-new-city-gas",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "NONSTOP: Sydney Sarayeva, Kridelka, Hey: Albert, Benji b2b Colmee, FREEEMAN",
     "date": "2026-11-28",
     "lieu": "DATCHA",
@@ -2505,13 +2537,6 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
-    "titre": "Glob – Courtenay (BC)",
-    "date": "2026-11-30",
-    "lieu": "Sid Williams Theatre",
-    "url": "https://lesfoutoukours.com/event/glob-courtenay-bc/",
-    "raison": "hors de l'île"
-   },
-   {
     "titre": "Didi raconte",
     "date": "2026-12-01",
     "lieu": "Bibliothèque Réjean-Ducharme",
@@ -2554,11 +2579,11 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
-    "titre": "Glob – Revelstoke (BC)",
-    "date": "2026-12-03",
-    "lieu": "Revelstoke Performing Arts Centre",
-    "url": "https://lesfoutoukours.com/event/glob-revelstoke-bc/",
-    "raison": "hors de l'île"
+    "titre": "Marché de Noël des Membres 🌲",
+    "date": "2026-12-04",
+    "lieu": "LESPACEMAKER",
+    "url": "",
+    "raison": "pas une sortie culturelle"
    },
    {
     "titre": "Ouverture du Festival Noël dans le Parc",
@@ -2580,6 +2605,13 @@
     "lieu": "Parc La Fontaine",
     "url": "https://noeldansleparc.com/parc-lafontaine/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Marché de Noël des Membres 🌲",
+    "date": "2026-12-05",
+    "lieu": "LESPACEMAKER",
+    "url": "",
+    "raison": "pas une sortie culturelle"
    },
    {
     "titre": "Germaine Trad féministe",
@@ -2617,13 +2649,6 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
-    "titre": "Glob – Medecine Hat (AB)",
-    "date": "2026-12-06",
-    "lieu": "Esplanade Arts & Heritage Centre",
-    "url": "https://lesfoutoukours.com/event/glob-medecine-hat-ab-2/",
-    "raison": "hors de l'île"
-   },
-   {
     "titre": "Glob – St-Albert (AB)",
     "date": "2026-12-08",
     "lieu": "The Arden Theatre",
@@ -2638,11 +2663,11 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
-    "titre": "Glob – Camrose (AB)",
-    "date": "2026-12-10",
-    "lieu": "Jeanne & Peter Lougheed Performing Arts Centre",
-    "url": "https://lesfoutoukours.com/event/glob-camrose-ab/",
-    "raison": "hors de l'île"
+    "titre": "Marché Hivernal MAI",
+    "date": "2026-12-11",
+    "lieu": "Montréal, arts interculturels (MAI)",
+    "url": "https://m-a-i.qc.ca/evenement/marche-hivernal/",
+    "raison": "pas une sortie culturelle"
    },
    {
     "titre": "Jeux de mots",
@@ -2664,13 +2689,6 @@
     "lieu": "Parc La Fontaine",
     "url": "https://noeldansleparc.com/parc-lafontaine/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Glob – Prince Albert (SK)",
-    "date": "2026-12-12",
-    "lieu": "EA Rawlinson Centre For The Arts",
-    "url": "https://lesfoutoukours.com/event/glob-prince-albert-sk/",
-    "raison": "hors de l'île"
    },
    {
     "titre": "1H - John Papadimitriou",
@@ -2769,6 +2787,20 @@
     "lieu": "Bibliothèque Mordecai-Richler",
     "url": "https://montreal.ca/evenements/lavenement-de-lhomme-nouveau-un-mode-demploi-pour-survivre-aux-totalitarismes-122386",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Salon des artisans de Dorval",
+    "date": "2026-11-20 → 2026-11-22",
+    "lieu": "Centre communautaire Sarto-Desnoyers",
+    "url": "https://www.ville.dorval.qc.ca/fr/evenements/arts-et-culture/salon-des-artisans-de-dorval",
+    "raison": "série : pas culturelle ou sans titre"
+   },
+   {
+    "titre": "Marché des Fêtes de Dorval",
+    "date": "2026-12-04 → 2026-12-13",
+    "lieu": "Au cœur du Village Dorval",
+    "url": "https://www.ville.dorval.qc.ca/fr/evenements/evenements-speciaux/marche-des-fetes-de-dorval",
+    "raison": "série : pas culturelle ou sans titre"
    },
    {
     "titre": "Exposition - Réalité alternative, de Vincent Azar",

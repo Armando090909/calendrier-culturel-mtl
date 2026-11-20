@@ -148,6 +148,7 @@
   "lon": -73.58881,
   "quartier": "Le Sud-Ouest"
  },
+ "Barfly": null,
  "Basement of St Denis Church": {
   "lat": 45.54186,
   "lon": -73.6242,
@@ -211,6 +212,12 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Bibliothèque Hélène-Pedneault": null,
+ "Bibliothèque Jacqueline-De Repentigny": {
+  "alias": [],
+  "lat": 45.44856,
+  "lon": -73.57789,
+  "quartier": "Verdun"
+ },
  "Bibliothèque Jean-Corbeil": {
   "lat": 45.60302,
   "lon": -73.55879,
@@ -264,6 +271,7 @@
   "lon": -73.52382,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
+ "Bibliothèque Micheline-Gagnon": null,
  "Bibliothèque Mordecai-Richler": {
   "lat": 45.52162,
   "lon": -73.60174,
@@ -379,6 +387,11 @@
   "lat": 45.448,
   "lon": -73.655,
   "quartier": "Lachine"
+ },
+ "Bibliothèque de Salaberry": {
+  "lat": 45.53461,
+  "lon": -73.70383,
+  "quartier": "Ahuntsic-Cartierville"
  },
  "Bibliothèque des lettres et sciences humaines, Pavillon Samuel-Bronfman": {
   "lat": 45.50454,
@@ -1098,6 +1111,7 @@
   "quartier": "Outremont"
  },
  "Galerie d'art Stewart Hall": null,
+ "Galerie d'art du Parc": null,
  "Galerie de l'UQAM": {
   "lat": 45.5146,
   "lon": -73.5609,
@@ -1460,6 +1474,11 @@
   "lon": -73.55637,
   "quartier": "Ville-Marie"
  },
+ "Librairie Monet": {
+  "lat": 45.53677,
+  "lon": -73.69818,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Librairie Raffin &#8211; Plaza St-Hubert": {
   "lat": 45.53535,
   "lon": -73.60167,
@@ -1501,6 +1520,7 @@
   "quartier": "Le Sud-Ouest"
  },
  "MAC Montréal": null,
+ "MAC à Place Ville Marie": null,
  "MAI – Montréal, arts interculturels": null,
  "MEM - Centre des mémoires montréalaises": {
   "lat": 45.50941,

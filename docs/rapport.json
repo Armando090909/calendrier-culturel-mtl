@@ -1,24 +1,25 @@
 {
  "date": "2026-11-20",
  "statut": "publié",
- "evenements": 2904,
- "expositions": 265,
+ "evenements": 2923,
+ "expositions": 264,
  "nouvelles_salles": [
-  "Centre de l'engagement étudiant, salle vitrée",
-  "Centre des sciences de Montréal"
+  "Barfly",
+  "Bibliothèque Jacqueline-De Repentigny",
+  "Bibliothèque Micheline-Gagnon",
+  "Bibliothèque de Salaberry",
+  "Galerie d'art du Parc",
+  "Librairie Monet",
+  "MAC à Place Ville Marie"
  ],
  "notes": {
   "fiches_ville": {
-   "lues": 15,
-   "erreurs": 15,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/baguette-magique-harry-potter-116432",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/bebe-conte-verdun-115811",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/bricolage-du-temps-des-fetes-122304"
-   ],
-   "completees_par_mac": 972,
-   "heures_trouvees": 961,
-   "salles_trouvees": 934
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
+   "completees_par_mac": 970,
+   "heures_trouvees": 959,
+   "salles_trouvees": 969
   },
   "redites_retirees": [
    "2026-11-20 : « 20 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 20 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
@@ -47,188 +48,14 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [
-   {
-    "nom": "Fred Savard"
-   },
-   {
-    "nom": "Michael Srey Legacy Band"
-   },
-   {
-    "nom": "Blue Mule",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre folk/rock ≠ electro"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre folk ≠ electro"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "The STM"
-   },
-   {
-    "nom": "Killed",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre electro/hiphop/pop ≠ metal"
-     ]
-    }
-   },
-   {
-    "nom": "Obelisk"
-   },
-   {
-    "nom": "ukn_owned"
-   },
-   {
-    "nom": "michael_v23"
-   },
-   {
-    "nom": "EKITWANDA"
-   },
-   {
-    "nom": "LE MAQUIS",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Lucas Melo"
-   },
-   {
-    "nom": "6flamencos"
-   },
-   {
-    "nom": "John of Sound",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "album sorti autour du lancement"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Mary Fagdalene"
-   },
-   {
-    "nom": "pilgrim_age",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Lake of Stew",
-    "deezer": {
-     "ok": false,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (folk)"
-     ],
-     "contre": [
-      "genre folk ≠ classique"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [
-      "Last.fm : artiste d'ici, même genre (folk)"
-     ],
-     "contre": [
-      "genre folk ≠ classique"
-     ]
-    }
-   },
-   {
-    "nom": "WISHMASTER"
-   },
-   {
-    "nom": "WALK WITH TITANS",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal",
-      "Last.fm : artiste d'ici, même genre (metal)"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : metal",
-      "Last.fm : artiste d'ici, même genre (metal)"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album bellerophon)"
-     ],
-     "contre": []
-    }
-   }
-  ],
   "qualite": {
    "regles": 129,
    "contreverif": {
     "date absente de la page": 34,
-    "date confirmée": 213,
+    "date confirmée": 211,
     "lien mort remplacé": 12,
     "page illisible": 28,
-    "non relues (limite)": 81
+    "non relues (limite)": 85
    },
    "controle": null
   }
@@ -914,8 +741,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -982,7 +808,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -991,8 +817,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -1001,8 +826,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -1053,8 +877,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1229,8 +1052,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1239,8 +1061,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1431,8 +1252,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1665,8 +1485,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 0 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -1747,7 +1566,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -2156,7 +1975,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://fr.ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
+    "page illisible (403 Client Error: Forbidden for url: https://ra.co/events/ca/montreal) : https://ra.co/events/ca/montreal"
    ]
   },
   {
@@ -2914,7 +2733,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3177,8 +2996,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3251,8 +3069,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3752 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3315,8 +3132,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
-    "page presque vide (79 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3449,8 +3265,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3563,8 +3379,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 3718 caractères de texte : https://osheaga.com",
+    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3629,8 +3445,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
    ]
   },
   {
@@ -3809,8 +3624,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com",
-    "annonces à venir dans la page : 4 (https://westislandbluesfestival.com)"
+    "page illisible (HTTPSConnectionPool(host='westislandbluesfestival.com', port=443): Max retries e) : https://westislandbluesfestival.com"
    ]
   },
   {
