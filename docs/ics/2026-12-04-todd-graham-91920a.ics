@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-festival-faves-392cce@ccmtl.ca
+UID:2026-12-04-todd-graham-91920a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
-SUMMARY:Festival Faves
+DTSTART;TZID=America/Toronto:20261204T200000
+DTEND;TZID=America/Toronto:20261204T220000
+SUMMARY:Todd Graham
 LOCATION:The Comedy Nest\, Montréal
-URL:https://comedynest.com/blog/festival-faves-november-26-27-28-2026/
-DESCRIPTION:Heure à confirmer. Neuf humoristes issus de grands festivals s
- e succèdent en 90 minutes de stand-up rapide.\nDétails : https://comedyn
- est.com/blog/festival-faves-november-26-27-28-2026/\n(ccmtl.ca)
+URL:https://comedynest.com/blog/todd-graham-december-3-4-5-2026/
+DESCRIPTION:Humoriste vu sur Netflix et CTV\, au style cérébral qui fait 
+ rire avec justesse.\nPrix : 10 à 15 $\nDétails : https://comedynest.com/
+ blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

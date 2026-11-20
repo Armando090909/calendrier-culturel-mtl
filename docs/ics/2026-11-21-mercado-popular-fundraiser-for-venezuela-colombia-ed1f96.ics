@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-todd-graham-6926e0@ccmtl.ca
+UID:2026-11-21-mercado-popular-fundraiser-for-venezuela-colombia-ed1f96@ccm
+ tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:Todd Graham
-LOCATION:The Comedy Nest\, Montréal
-URL:https://comedynest.com/blog/todd-graham-december-3-4-5-2026/
-DESCRIPTION:Heure à confirmer. Humoriste vu sur Netflix et CTV\, au style 
- cérébral qui fait rire avec justesse.\nDétails : https://comedynest.com
- /blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T180000
+DTEND;TZID=America/Toronto:20261121T200000
+SUMMARY:Mercado Popular: Fundraiser for Venezuela & Colombia
+LOCATION:Osmo x Marusan\, Montréal
+URL:https://fr.ra.co/events/2583903
+DESCRIPTION:Soirée de collecte de fonds au profit de causes vénézuélien
+ nes et colombiennes.\nPrix : 11\,35 $\nDétails : https://fr.ra.co/events/
+ ca/montreal\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

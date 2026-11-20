@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-31-reso-nonstop-nye-tali-rose-duza-back5pin-colmee-b2-a34373@cc
- mtl.ca
+UID:2026-11-21-in-too-deep-2nd-anniversary-6d3309@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
-SUMMARY:RESO NONSTOP NYE: Tali Rose\, Duza\, Back5pin\, Colmee b2b DUROCHER
-LOCATION:DATCHA\, Montréal
-URL:https://bardatcha.ca/
-DESCRIPTION:Heure à confirmer. Soirée non-stop du Nouvel An avec plusieur
- s DJ pour célébrer le passage à la nouvelle année.\nDétails : https:/
- /ra.co/events/2590274\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T223000
+DTEND;TZID=America/Toronto:20261122T003000
+SUMMARY:In Too Deep - 2nd Anniversary
+LOCATION:Salon Daomé\, Montréal
+URL:https://fr.ra.co/events/2568608
+DESCRIPTION:Fête d'anniversaire de deux ans d'une soirée musicale au Salo
+ n Daomé.\nPrix : Gratuit\nDétails : https://fr.ra.co/events/ca/montreal\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-16-marie-chouinard-henri-michaux-mouvements-solos-et-43eb48@ccm
+UID:2026-12-18-marie-chouinard-henri-michaux-mouvements-solos-et-ee10a4@ccm
  tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
+DTSTART;TZID=America/Toronto:20261218T200000
+DTEND;TZID=America/Toronto:20261218T220000
 SUMMARY:Marie Chouinard | Henri Michaux : Mouvements + Solos et duos
 LOCATION:Monument-National\, Montréal
 URL:https://www.placedesarts.com/evenement/marie-chouinard-henri-michaux
-DESCRIPTION:Heure à confirmer. Deux programmes de la chorégraphe Marie Ch
- ouinard\, inspirés des écrits et de l'univers du poète Henri Michaux.\n
- Prix : À partir de 75 $\nDétails : https://www.dansedanse.ca/fr/abonneme
- nts-et-tarifs/billets\n(ccmtl.ca)
+DESCRIPTION:Deux programmes de la chorégraphe Marie Chouinard\, inspirés 
+ des écrits et de l'univers du poète Henri Michaux.\nPrix : À partir de 
+ 75 $\nDétails : https://am.ticketmaster.com/pda/fr-ca/ABO2627\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

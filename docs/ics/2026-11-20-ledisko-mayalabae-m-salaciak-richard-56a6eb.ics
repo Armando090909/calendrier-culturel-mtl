@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-rodeo-fx-immersive-studio-tour-38b4e1@ccmtl.ca
+UID:2026-11-20-ledisko-mayalabae-m-salaciak-richard-56a6eb@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Rodeo FX immersive studio tour
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://www.concordia.ca/events.html
-DESCRIPTION:Heure à confirmer. Visite en coulisses du studio d'effets visu
- els Rodeo FX.\nDétails : https://www.concordia.ca/events.html\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261120T220000
+DTEND;TZID=America/Toronto:20261121T000000
+SUMMARY:Ledisko + mayalabae + M Salaciak + Richard
+LOCATION:Système\, Montréal
+URL:https://fr.ra.co/events/2563790
+DESCRIPTION:Soirée de musique électronique avec plusieurs artistes au clu
+ b Système.\nPrix : 12 $\nDétails : https://fr.ra.co/events/ca/montreal\n
+ (ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

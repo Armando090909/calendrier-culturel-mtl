@@ -3,9 +3,9 @@
  "regles": {
   "titre mal encodé": 15,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 36,
+  "date absente de la page officielle": 52,
   "page de la sortie disparue": 18,
-  "heures différentes selon les sources": 70,
+  "heures différentes selon les sources": 71,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -163,6 +163,51 @@
    "url": "https://turbohaus.ca/calendrier/2026/11/20/flood--grandmother--in-the-offing-"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Vivier : Sixtrum – Résonances néerlandaises",
+   "date": "2026-11-20",
+   "lieu": "Atrium des Grands Ballets (Édifice Wilder)",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/le-vivier-sixtrum-resonances-neerlandaises-a-lespace-orange-de-ledifice-wilder/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Vivier : Sixtrum – Résonances néerlandaises",
+   "date": "2026-11-21",
+   "lieu": "Atrium des Grands Ballets (Édifice Wilder)",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/le-vivier-sixtrum-resonances-neerlandaises-a-lespace-orange-de-ledifice-wilder/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mundial Montréal : Siibii",
+   "date": "2026-11-20",
+   "lieu": "Centre Sanaaq",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/mundial-montreal-siibii-au-centre-sanaaq/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mundial Montréal : Bianca Rocha",
+   "date": "2026-11-20",
+   "lieu": "Centre Sanaaq",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/mundial-montreal-bianca-rocha-au-centre-sanaaq/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mundial Montréal : Alysha Brilla",
+   "date": "2026-11-20",
+   "lieu": "Centre Sanaaq",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/mundial-montreal-alysha-brilla-au-centre-sanaaq/"
+  },
+  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "La patrie — séance",
@@ -170,6 +215,15 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/la-patrie-2026-11-20-1545"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mundial Montréal : Nadine Altounji",
+   "date": "2026-11-20",
+   "lieu": "Centre Sanaaq",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/mundial-montreal-nadine-altounji-au-centre-sanaaq/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -318,6 +372,24 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Guy Brière et Les mauvaises herbes : Assis ent'2 chaises – Hommage à Plume Latraverse",
+   "date": "2026-11-20",
+   "lieu": "Amphithéâtre Cogeco",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/guy-briere-et-les-mauvaises-herbes-assis-ent2-chaises-hommage-a-plume-latraverse-a-lamphitheatre-cogeco/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "L. Shankar, violon double et voix",
+   "date": "2026-11-20",
+   "lieu": "Église Saint-Enfant-Jésus-du-Mile-End",
+   "source": "salles",
+   "url": "https://centredesmusiciensdumonde.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Le fantôme dans la machine",
    "date": "2026-11-21",
    "lieu": "Duceppe",
@@ -363,6 +435,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "On s'lâche pas",
+   "date": "2026-11-20",
+   "lieu": "Théâtre l'Aparté",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/on-slache-pas/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Voyage voyage",
    "date": "2026-11-20",
    "lieu": "Théâtre Denise-Pelletier",
@@ -395,6 +476,33 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-20-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "M pour Montréal : Geoffroy, Lou Val et Cherrykim",
+   "date": "2026-11-20",
+   "lieu": "Le Ministère",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/m-pour-montreal-geoffroy-lou-val-et-cherrykim-au-ministere/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Comedy",
+   "date": "2026-11-20",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "M pour Montréal : kinji00",
+   "date": "2026-11-20",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/m-pour-montreal-kinji00-au-club-soda/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -496,6 +604,15 @@
    "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1800"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand Up",
+   "date": "2026-11-21",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/english-comedy-show-montreal-saturday-stand-up-deli-7-pm/"
+  },
+  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "You Can See Everything — séance",
@@ -512,6 +629,33 @@
    "lieu": "Piranha Bar",
    "source": "salles",
    "url": "https://piranhabar.ca/events/malpouli-transmission-003"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Night Comedy",
+   "date": "2026-11-21",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand Up",
+   "date": "2026-11-21",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/saturday-comedy-show-early/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Late-Night Stand-Up Comedy",
+   "date": "2026-11-21",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/1207555193089"
   },
   {
    "regle": "page de la sortie disparue",
@@ -1037,6 +1181,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "23:00 gardée (fr.ra.co), 22:00 écartée (bardatcha.ca)",
+   "titre": "AFRODITE X BATIDA SOLTA: BADJUDA, Leon Suave, Mlle Cee, TRBLV, Netto",
+   "date": "2026-11-20",
+   "lieu": "DATCHA",
+   "source": "salles",
+   "url": "https://fr.ra.co/events/2565063"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "13:30 gardée (beaconsfield.ca), 13:00 écartée (montreal.ca)",
    "titre": "Cinéma pédago : Goat : rêver plus haut",
    "date": "2026-11-20",
@@ -1280,11 +1433,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 36,
-  "date confirmée": 253,
-  "non relues (limite)": 115,
+  "date absente de la page": 52,
+  "date confirmée": 351,
   "lien mort remplacé": 18,
-  "page illisible": 43
+  "page illisible": 52
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1423,7 +1575,7 @@
   {
    "source": "sorstu.ca",
    "erreurs": 62,
-   "sorties": 1111,
+   "sorties": 1112,
    "taux": 5.6
   },
   {
@@ -1434,7 +1586,7 @@
   }
  ],
  "recoupees": {
-  "total": 3264,
-  "deux_sources_ou_plus": 258
+  "total": 3273,
+  "deux_sources_ou_plus": 260
  }
 }

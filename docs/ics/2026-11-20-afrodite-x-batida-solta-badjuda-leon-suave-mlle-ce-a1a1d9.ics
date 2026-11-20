@@ -21,15 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-todd-graham-9742f3@ccmtl.ca
+UID:2026-11-20-afrodite-x-batida-solta-badjuda-leon-suave-mlle-ce-a1a1d9@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
-SUMMARY:Todd Graham
-LOCATION:The Comedy Nest\, Montréal
-URL:https://comedynest.com/blog/todd-graham-december-3-4-5-2026/
-DESCRIPTION:Heure à confirmer. Humoriste vu sur Netflix et CTV\, au style 
- cérébral qui fait rire avec justesse.\nDétails : https://comedynest.com
- /blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261120T230000
+DTEND;TZID=America/Toronto:20261121T010000
+SUMMARY:AFRODITE X BATIDA SOLTA: BADJUDA\, Leon Suave\, Mlle Cee\, TRBLV\, 
+ Netto
+LOCATION:DATCHA\, Montréal
+URL:https://fr.ra.co/events/2565063
+DESCRIPTION:Soirée électro réunissant plusieurs DJ et artistes invités 
+ au Bar Datcha.\nPrix : 12 $\nDétails : https://ra.co/events/2565063\n(ccm
+ tl.ca)
 END:VEVENT
 END:VCALENDAR

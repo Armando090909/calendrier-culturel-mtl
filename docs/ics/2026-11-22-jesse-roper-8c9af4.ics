@@ -21,17 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-22-jesse-roper-l-escogriffe-bar-spectacle-l-esco-7c16b5@ccmtl.c
- a
+UID:2026-11-22-jesse-roper-8c9af4@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261122T203000
 DTEND;TZID=America/Toronto:20261122T223000
-SUMMARY:Jesse Roper @ L'Escogriffe Bar Spectacle (L'Esco)
+SUMMARY:Jesse Roper
 LOCATION:L'Escogriffe\, Montréal
-URL:https://www.songkick.com/concerts/43270046-jesse-roper-at-lescogriffe-b
- ar-spectacle?utm_medium=organic&utm_source=microformat
-DESCRIPTION:Détails : http://www.songkick.com/concerts/43270046-jesse-rope
- r-at-lescogriffe-bar-spectacle?utm_medium=organic&utm_source=microformat\n
- (ccmtl.ca)
+URL:https://sorstu.ca/artiste/jesse-roper/
+DESCRIPTION:Concert rock de l'auteur-compositeur Jesse Roper à L'Esco.\nD
+ étails : http://www.songkick.com/concerts/43270046-jesse-roper-at-lescogr
+ iffe-bar-spectacle?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

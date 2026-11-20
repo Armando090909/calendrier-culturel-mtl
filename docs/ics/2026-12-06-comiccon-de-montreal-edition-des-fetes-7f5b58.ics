@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-06-comiccon-de-montreal-edition-des-fetes-c06694@ccmtl.ca
+UID:2026-12-06-comiccon-de-montreal-edition-des-fetes-7f5b58@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+DTSTART;TZID=America/Toronto:20261206T100000
+DTEND;TZID=America/Toronto:20261206T120000
 SUMMARY:Comiccon de Montréal - Édition des fêtes
 LOCATION:Palais des congrès de Montréal\, Montréal
 URL:https://www.montrealcomiccon.com
-DESCRIPTION:Heure à confirmer. Deuxième journée de la convention de cult
- ure populaire réunissant rencontres avec des acteurs et créateurs\, dans
-  une édition spéciale des fêtes.\nDétails : https://www.tix123.com/tic
- kets/?code=MTLCC26&l=f\n(ccmtl.ca)
+DESCRIPTION:Deuxième journée de la convention de culture populaire réuni
+ ssant rencontres avec des acteurs et créateurs\, dans une édition spéci
+ ale des fêtes.\nPrix : 23\,35 à 84\,35 $\nDétails : https://www.tix123.
+ com/tickets/?code=MTLCC26&l=f\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

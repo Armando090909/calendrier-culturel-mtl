@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-todd-graham-3d6de8@ccmtl.ca
+UID:2026-12-03-todd-graham-efc41a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
+DTSTART;TZID=America/Toronto:20261203T200000
+DTEND;TZID=America/Toronto:20261203T220000
 SUMMARY:Todd Graham
 LOCATION:The Comedy Nest\, Montréal
 URL:https://comedynest.com/blog/todd-graham-december-3-4-5-2026/
-DESCRIPTION:Heure à confirmer. Humoriste vu sur Netflix et CTV\, au style 
- cérébral qui fait rire avec justesse.\nDétails : https://comedynest.com
- /blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
+DESCRIPTION:Humoriste vu sur Netflix et CTV\, au style cérébral qui fait 
+ rire avec justesse.\nPrix : 10 à 15 $\nDétails : https://comedynest.com/
+ blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

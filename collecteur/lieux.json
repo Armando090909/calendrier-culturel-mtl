@@ -25,6 +25,11 @@
  "All venues": null,
  "Altigone": null,
  "Alūr Restaurant & Lounge": null,
+ "Amphithéâtre": {
+  "lat": 45.51052,
+  "lon": -73.53452,
+  "quartier": "Ville-Marie"
+ },
  "Amphithéâtre Cogeco": null,
  "Amphithéâtre du Gesù": {
   "adresse": "1200 rue De Bleury",
@@ -915,6 +920,11 @@
   "quartier": "Quartier des spectacles"
  },
  "ER Building, salle 672": null,
+ "ESC": {
+  "lat": 45.48763,
+  "lon": -73.60925,
+  "quartier": ""
+ },
  "EV 1-715, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Eastern Bloc": {
   "lat": 45.533,
@@ -1778,6 +1788,7 @@
  },
  "N'était-ce pas l'été": null,
  "NINI Salon à Cocktails": null,
+ "NWHR": null,
  "National Building Museum": null,
  "New City Gas": {
   "lat": 45.492,
@@ -1833,6 +1844,7 @@
   "lon": -73.78587,
   "quartier": ""
  },
+ "Osmo x Marusan": null,
  "P'tit Ours": {
   "lat": 45.5195,
   "lon": -73.5975,
@@ -2103,6 +2115,7 @@
   "lon": -73.58248,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Rodeo FX studios": null,
  "Rogers Arena": null,
  "Rogers Place": null,
  "Royal Theatre": {
@@ -2231,6 +2244,7 @@
   "lon": -73.674,
   "quartier": "Saint-Laurent"
  },
+ "Salon Daomé": null,
  "Salon Wabasso": null,
  "Salon urbain": {
   "alias": [],
@@ -2273,6 +2287,11 @@
  },
  "Studio-théâtre des Grands Ballets": null,
  "Surry Arts Centre": null,
+ "Système": {
+  "lat": 45.54052,
+  "lon": -73.6125,
+  "quartier": "Rosemont–La Petite-Patrie"
+ },
  "TIAN Contemporain": {
   "adresse": "819, avenue Atwater, Montréal",
   "alias": [],
@@ -2589,6 +2608,11 @@
  "Vieux couvent de Saint-Prime": null,
  "Ville de L'Île-Perrot": null,
  "Ville de Plessisville": null,
+ "Vino Disco": {
+  "lat": 45.50915,
+  "lon": -73.56287,
+  "quartier": "Ville-Marie"
+ },
  "Visual Arts Building": {
   "lat": 45.49579,
   "lon": -73.57397,

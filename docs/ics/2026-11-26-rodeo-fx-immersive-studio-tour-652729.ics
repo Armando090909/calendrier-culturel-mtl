@@ -21,17 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-20-afrodite-x-batida-solta-badjuda-leon-suave-mlle-ce-397c69@cc
- mtl.ca
+UID:2026-11-26-rodeo-fx-immersive-studio-tour-652729@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261120T220000
-DTEND;TZID=America/Toronto:20261121T000000
-SUMMARY:AFRODITE X BATIDA SOLTA: BADJUDA\, Leon Suave\, Mlle Cee\, TRBLV\, 
- Netto
-LOCATION:DATCHA\, Montréal
-URL:https://bardatcha.ca/
-DESCRIPTION:Soirée électronique réunissant plusieurs DJ et artistes de l
- a scène house et afro-latine.\nDétails : https://ra.co/events/2565063\n(
- ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261126T090000
+DTEND;TZID=America/Toronto:20261126T110000
+SUMMARY:Rodeo FX immersive studio tour
+LOCATION:Rodeo FX studios\, Montréal
+URL:https://www.concordia.ca/events.html
+DESCRIPTION:Visite en coulisses du studio d'effets visuels Rodeo FX.\nDéta
+ ils : https://www.concordia.ca/hospitality/event-planning/space-reservatio
+ n.html\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

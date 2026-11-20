@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-vps-student-fight-night-dd8903@ccmtl.ca
+UID:2026-11-21-arder-mike-larry-and-friends-dirty-40-smash-a-thon-3a9b45@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
-SUMMARY:VPS Student Fight Night
-LOCATION:Théâtre Paradoxe\, Montréal
-URL:https://www.theatreparadoxe.com/fr/calendrier/detail/vps-student-fight-
- night/97097
-DESCRIPTION:Heure à confirmer. Grande soirée de boxe venue de Toronto qui
-  fait son arrêt à Montréal.\nDétails : https://theatre-paradoxe-1.s1.y
- apla.com/fr/disponibilites\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T220000
+DTEND;TZID=America/Toronto:20261122T000000
+SUMMARY:Arder: Mike\, Larry\, and friends. Dirty 40 smash-a-thon
+LOCATION:NWHR\, Montréal
+URL:https://fr.ra.co/events/2544138
+DESCRIPTION:Nuit de musique électronique avec DJ invités\, organisée au 
+ club NWHR.\nPrix : Gratuit\nDétails : https://fr.ra.co/events/ca/montreal
+ \n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

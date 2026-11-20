@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-curiosa-fantasmer-le-passe-7365ef@ccmtl.ca
+UID:2026-11-21-we-are-wolves-b4660f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T090000
-DTEND;TZID=America/Toronto:20261125T110000
-SUMMARY:Curiosa : fantasmer le passé
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://calendrier.umontreal.ca/activite/curiosa-fantasmer-le-passe-77
-DESCRIPTION:Activité intitulée Curiosa\, consacrée à l'imaginaire du pa
- ssé.\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite
- /curiosa-fantasmer-le-passe-77\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T224500
+DTEND;TZID=America/Toronto:20261122T004500
+SUMMARY:We Are Wolves
+LOCATION:L'Escogriffe\, Montréal
+URL:https://sorstu.ca/artiste/we-are-wolves/
+DESCRIPTION:Concert rock du groupe We Are Wolves à L'Esco\, dans le cadre 
+ de M pour Montréal.\nDétails : https://sorstu.ca/artiste/we-are-wolves/\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

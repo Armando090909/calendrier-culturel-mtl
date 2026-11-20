@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-la-chimie-de-noel-467107@ccmtl.ca
+UID:2026-12-05-todd-graham-d4079a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261205T133000
-DTEND;TZID=America/Toronto:20261205T153000
-SUMMARY:La chimie de Noël
-LOCATION:Amphithéâtre du Gesù\, Montréal
-URL:https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/
-DESCRIPTION:Un spectacle de chimie aux couleurs de la période des fêtes.\
- nPrix : 1500 $\nDétails : https://coeurdessciences.uqam.ca/evenements/la-
- chimie-de-noel/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261205T200000
+DTEND;TZID=America/Toronto:20261205T220000
+SUMMARY:Todd Graham
+LOCATION:The Comedy Nest\, Montréal
+URL:https://comedynest.com/blog/todd-graham-december-3-4-5-2026/
+DESCRIPTION:Humoriste vu sur Netflix et CTV\, au style cérébral qui fait 
+ rire avec justesse.\nPrix : 10 à 15 $\nDétails : https://comedynest.com/
+ blog/todd-graham-december-3-4-5-2026/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-21-datcha-nonstop-mercado-popular-invites-entranas-b6c373@ccmtl
+UID:2026-11-21-datcha-nonstop-mercado-popular-invites-entranas-fa2977@ccmtl
  .ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTSTART;TZID=America/Toronto:20261121T230000
+DTEND;TZID=America/Toronto:20261122T010000
 SUMMARY:Datcha NONSTOP: Mercado Popular invites Entrañas
 LOCATION:DATCHA\, Montréal
-URL:https://bardatcha.ca/
-DESCRIPTION:Heure à confirmer. Nuit prolongée de musique électronique av
- ec les invités Mercado Popular et Entrañas.\nDétails : https://ra.co/ev
- ents/2565062\n(ccmtl.ca)
+URL:https://fr.ra.co/events/2565062
+DESCRIPTION:Soirée prolongée au Bar Datcha avec les artistes invités de 
+ Mercado Popular.\nPrix : 15 $\nDétails : https://ra.co/events/2565062\n(c
+ cmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-festival-faves-2ba060@ccmtl.ca
+UID:2026-12-01-forets-anciennes-b99dad@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Festival Faves
-LOCATION:The Comedy Nest\, Montréal
-URL:https://comedynest.com/blog/festival-faves-november-26-27-28-2026/
-DESCRIPTION:Heure à confirmer. Neuf humoristes issus de grands festivals s
- e succèdent en 90 minutes de stand-up rapide.\nDétails : https://comedyn
- est.com/blog/festival-faves-november-26-27-28-2026/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261201T180000
+DTEND;TZID=America/Toronto:20261201T200000
+SUMMARY:Forêts anciennes
+LOCATION:Amphithéâtre\, Montréal
+URL:https://coeurdessciences.uqam.ca/evenements/forets-anciennes/
+DESCRIPTION:Une conférence sur les forêts anciennes\, présentée à l'am
+ phithéâtre du Cœur des sciences.\nPrix : 500 $\nDétails : https://coeu
+ rdessciences.uqam.ca/evenements/forets-anciennes/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

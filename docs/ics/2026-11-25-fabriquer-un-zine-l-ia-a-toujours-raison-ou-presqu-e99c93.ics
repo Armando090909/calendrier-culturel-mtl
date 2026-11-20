@@ -21,13 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-fabriquer-un-zine-l-ia-a-toujours-raison-ou-presqu-1d34f2@cc
+UID:2026-11-25-fabriquer-un-zine-l-ia-a-toujours-raison-ou-presqu-e99c93@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T113000
 DTEND;TZID=America/Toronto:20261125T133000
 SUMMARY:Fabriquer un zine: L'IA a toujours raison... ou presque
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Bibliothèque des lettres et sciences humaines\, Pavillon Samuel-B
+ ronfman\, Montréal
 URL:https://calendrier.umontreal.ca/activite/fabriquer-un-zine-lia-a-toujou
  rs-raison-ou-presque
 DESCRIPTION:Atelier de fabrication de zine autour du thème de l'intelligen

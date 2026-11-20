@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-21-we-are-wolves-0c5348@ccmtl.ca
+UID:2026-11-21-c-world-sound-label-launch-record-release-48fd7c@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:We Are Wolves
-LOCATION:L'Escogriffe\, Montréal
-URL:https://sorstu.ca/artiste/we-are-wolves/
-DESCRIPTION:Heure à confirmer. Concert rock du groupe We Are Wolves à L'E
- sco\, dans le cadre de M pour Montréal.\nDétails : https://sorstu.ca/art
- iste/we-are-wolves/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261121T220000
+DTEND;TZID=America/Toronto:20261122T000000
+SUMMARY:C-world Sound Label Launch + Record Release
+LOCATION:Système\, Montréal
+URL:https://fr.ra.co/events/2563791
+DESCRIPTION:Lancement d'un label musical avec sortie de disque au club Syst
+ ème.\nPrix : 12 $\nDétails : https://fr.ra.co/events/ca/montreal\n(ccmtl
+ .ca)
 END:VEVENT
 END:VCALENDAR

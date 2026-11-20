@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-10-the-lord-of-the-rings-the-return-of-the-king-en-co-a87e95@cc
+UID:2027-01-10-the-lord-of-the-rings-the-return-of-the-king-en-co-9e44ab@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
+DTSTART;TZID=America/Toronto:20270110T193000
+DTEND;TZID=America/Toronto:20270110T213000
 SUMMARY:The Lord of the Rings: The Return of the King\, en concert
 LOCATION:Salle Wilfrid-Pelletier\, Montréal
 URL:https://www.placedesarts.com/evenement/seigneur-des-anneaux-retour-du-r
  oi-cine-concert
-DESCRIPTION:Heure à confirmer. Projection du dernier volet de la trilogie 
- accompagnée en direct par un orchestre.\nPrix : Gratuit\nDétails : https
- ://am.ticketmaster.com/pda/fr-ca/buy/virtual-venue/UDdXMDEwOA==\n(ccmtl.ca
- )
+DESCRIPTION:Projection du dernier volet de la trilogie accompagnée en dire
+ ct par un orchestre.\nPrix : Gratuit\nDétails : https://am.ticketmaster.c
+ om/pda/fr-ca/buy/virtual-venue/UDdXMDEwOA==\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

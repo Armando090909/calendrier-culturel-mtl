@@ -21,13 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-24-concert-de-flute-traversiere-classe-caroline-segui-7933bd@cc
+UID:2026-11-24-concert-de-flute-traversiere-classe-caroline-segui-b04742@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261124T190000
 DTEND;TZID=America/Toronto:20261124T210000
 SUMMARY:Concert de flûte traversière - Classe Caroline Séguin
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Faculté de musique\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-flute-traversiere-c
  lasse-caroline-seguin-5
 DESCRIPTION:Concert présentant les étudiants de la classe de flûte trave
