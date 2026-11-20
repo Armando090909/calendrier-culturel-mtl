@@ -831,9 +831,17 @@ def main() -> int:
 
     # Les « autre » : on lit la page de l'événement (le titre seul ne suffit pas, ex. « Marcia », « Feu Toute! »),
     # on reclasse avec sa description, puis l'IA tranche les cas qui restent, si elle est disponible.
-    autres = [e for e in events if e["discipline"] == "autre"][:int(reglages.get("max_pages_autre", 80))]
+    # (20 nov. 2026) mémoire des classements par l'IA : la publication rapide les applique tout de suite (avant,
+    # une trentaine de sorties restaient « Autre » sur le site jusqu'à l'enrichissement)
+    f_cl = CACHE / "classes_ia.json"
+    memo_cl = json.loads(f_cl.read_text(encoding="utf-8")) if f_cl.exists() else {}
+    cle_cl = lambda e: plat(e["titre"])[:60] + "|" + plat(e["lieu"])  # noqa: E731
+    for e in events:
+        if e["discipline"] == "autre" and memo_cl.get(cle_cl(e)) not in (None, "autre"):
+            e["discipline"] = memo_cl[cle_cl(e)]
+    autres = [e for e in events if e["discipline"] == "autre"]
     lus = 0
-    for e in autres:
+    for e in autres[:int(reglages.get("max_pages_autre", 80))]:
         if not e["url"].startswith("http"):
             continue
         try:
@@ -854,6 +862,8 @@ def main() -> int:
             for i, disc in ia.classer_lot(lot).items():
                 if 0 <= i < len(restants):
                     restants[i]["discipline"] = disc
+                    memo_cl[cle_cl(restants[i])] = disc
+            f_cl.write_text(json.dumps(memo_cl, ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             print(f"Classement IA en échec : {exc}")
     # Encore « autre » mais rattaché à un festival : la discipline principale du festival (Casteliers → théâtre)
@@ -1138,6 +1148,22 @@ def main() -> int:
             rejeter("répétition suspecte d'un festival (même titre, même heure, sans salle, 5 jours ou plus)", e)
     events = [e for e in events if not (e.get("festival") and e["lieu"] == "Lieu à confirmer"
                                         and (plat(e["titre"]), e.get("heure")) in suspects)]
+    # Décalage UTC (20 nov. 2026, Casteliers) : une page donne la même représentation une 2e fois avec l'heure de Greenwich
+    # (« 26 nov. 19 h 30 » ET « 27 nov. 0 h 30 ») ; la copie de nuit, 4 ou 5 h plus tard, est retirée
+    vus_h = {(plat(e["titre"])[:30], plat(e["lieu"]), e["date"], e.get("heure")) for e in events if e.get("heure")}
+    decales = []
+    for e in events:
+        h = e.get("heure") or ""
+        if h and h < "06:00":
+            t0 = datetime.fromisoformat(f"{e['date']}T{h}")
+            for ecart in (4, 5):
+                t1 = t0 - timedelta(hours=ecart)
+                if (plat(e["titre"])[:30], plat(e["lieu"]), t1.date().isoformat(), t1.strftime("%H:%M")) in vus_h:
+                    decales.append(e)
+                    break
+    for e in decales:
+        rejeter("copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)", e)
+    events = [e for e in events if not any(e is x for x in decales)]
     events, redites = doublons_du_jour(events)
     notes["redites_retirees"] = redites[:200]
     print(f"Redites du même jour retirées : {len(redites)}")
@@ -1367,6 +1393,8 @@ def main() -> int:
                     retires.add(id(e))
                 if "heure" in c:  # "" : heure lue par erreur (ex. heure de fin), retirée
                     e["heure"] = c["heure"] or None
+                if c.get("discipline"):  # (20 nov. 2026) discipline vérifiée à la main
+                    e["discipline"] = c["discipline"]
                 if c.get("nouveau_lieu"):  # (20 nov. 2026) salle confirmée à la main (fiche de la salle, billetterie)
                     e["lieu"] = lieu_canon(c["nouveau_lieu"], c.get("adresse", ""), "Montréal") or c["nouveau_lieu"]
                 if c.get("nouvelle_date"):

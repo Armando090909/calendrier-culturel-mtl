@@ -53,6 +53,8 @@ NON_CULTUREL = [
     "salon des artisans", "salon d artisans", "salon des metiers d art", "expo vente", "exposition vente", "vente de garage",
     "vente de livres usages", "bazar", "braderie", "foire commerciale", "black friday", "concours mon entreprise",
     "concours d entrepreneuriat", "concours en entrepreneuriat", "entrepreneuriat", "startup", "pitch",
+    # 20 nov. 2026 : école d'été scientifique (Concordia) et essai gratuit d'un cours (Côte-Saint-Luc)
+    "seressa", "international school on", "essai gratuit",
 ]
 
 REGLES = [
