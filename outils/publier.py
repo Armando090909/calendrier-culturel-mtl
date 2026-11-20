@@ -923,6 +923,16 @@ def ponctuelle():
             jpgs[langue] = d / f"{langue}.jpg"
             if not jpgs[langue].exists():
                 jpgs[langue].write_bytes(jpeg(d / f"{langue}.png"))
+            if stories:  # (20 nov. 2026) une image 4:5 en story est étirée ou rognée : centrée sur un fond 1080 × 1920
+                from PIL import Image
+                im = Image.open(d / f"{langue}.png").convert("RGB")
+                im.thumbnail((1080, 1920))
+                fond = Image.new("RGB", (1080, 1920), im.getpixel((5, 5)))
+                fond.paste(im, ((1080 - im.width) // 2, (1920 - im.height) // 2))
+                jpgs[langue] = d / f"{langue}-story.jpg"
+                tampon = io.BytesIO()
+                fond.save(tampon, "JPEG", quality=90, optimize=True)
+                jpgs[langue].write_bytes(tampon.getvalue())
     if not ESSAI:
         subprocess.run(["git", "add", str(d.relative_to(RACINE))], check=True)
         subprocess.run(["git", "commit", "-m", f"Publication ponctuelle : {nom}"], check=False)
