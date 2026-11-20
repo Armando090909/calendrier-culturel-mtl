@@ -11,6 +11,7 @@
   "série de festival (les séances datées suffisent)": 6,
   "fiche isolée remplacée par la série du spectacle": 5,
   "annulé selon la source": 4,
+  "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": 2,
   "série : pas culturelle ou sans titre": 2,
   "série : sans salle, saison déjà détaillée ou annonce de saison": 2,
   "retirée à la main (corrections.json)": 1
@@ -1039,6 +1040,22 @@
     "source": "festival"
    }
   ],
+  "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": [
+   {
+    "titre": "Le Songe d'une Nuit d'Été",
+    "date": "2026-11-27",
+    "lieu": "Théâtre Outremont",
+    "url": "https://casteliers.ca/spectacle/le-songe/",
+    "source": "festival"
+   },
+   {
+    "titre": "Le Songe d'une Nuit d'Été",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Outremont",
+    "url": "https://casteliers.ca/spectacle/le-songe/",
+    "source": "festival"
+   }
+  ],
   "série : hors de l'île": [
    {
     "titre": "Ma petite boule d'amour",
@@ -1552,7 +1569,7 @@
   ]
  },
  "disparues": {
-  "total": 294,
+  "total": 297,
   "liste": [
    {
     "titre": "Crocodile",
@@ -2325,6 +2342,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Le Songe d'une Nuit d'Été",
+    "date": "2026-11-27",
+    "lieu": "Théâtre Outremont",
+    "url": "https://casteliers.ca/spectacle/le-songe/",
+    "raison": "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)"
+   },
+   {
     "titre": "Grant Lab de novembre",
     "date": "2026-11-27",
     "lieu": "Studio 303",
@@ -2437,6 +2461,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "LE SONGE D’UNE NUIT D’ÉTÉ",
+    "date": "2026-11-27",
+    "lieu": "Maison internationale des arts de la marionnette",
+    "url": "https://casteliers.ca/spectacle/le-songe/",
+    "raison": "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)"
+   },
+   {
     "titre": "Impro Momentum - « Vivre à deux, comme des amoureux » (Rouges-Jaunes) (La Rocambolesque)",
     "date": "2026-11-27",
     "lieu": "Aux Angles Ronds",
@@ -2477,6 +2508,13 @@
     "lieu": "Estrella",
     "url": "https://mtlcomedyclub.com/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Le Songe d'une Nuit d'Été",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Outremont",
+    "url": "https://casteliers.ca/spectacle/le-songe/",
+    "raison": "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)"
    },
    {
     "titre": "You Can See Everything (VOSTF)",
