@@ -579,6 +579,27 @@ def main() -> int:
                     e, sr = c["evenements"], c["series"]
                     connecteurs.DIAG.append(f"page illisible : données du {c['date']} conservées")
                     print(f"  page illisible : données du {c['date']} conservées")
+            # Chute brutale (20 nov. 2026, RIDM : 157 séances lues un jour, 31 le surlendemain, à cause d'une page devenue
+            # trop longue) : quand une lecture donne moins de la moitié des sorties À VENIR de la lecture précédente,
+            # on garde les sorties à venir de la lecture précédente qui manquent, au plus 7 jours, et on le signale.
+            if fichier_cache.exists() and etape != "assemblage":
+                try:
+                    c = json.loads(fichier_cache.read_text(encoding="utf-8"))
+                    auj_s = aujourd.isoformat()
+                    a_venir = lambda L: [x for x in L if str(x.get("date") or x.get("fin") or "") >= auj_s]  # noqa: E731
+                    av_e, av_s = a_venir(c.get("evenements", [])), a_venir(c.get("series", []))
+                    n_av, n_nv = len(av_e) + len(av_s), len(a_venir(e)) + len(a_venir(sr))
+                    garde_du = c.get("garde_du") or c.get("date", "")
+                    if n_av >= 6 and n_nv < 0.5 * n_av and garde_du >= (aujourd - timedelta(days=7)).isoformat():
+                        cles = {(plat(x.get("titre", ""))[:40], x.get("date") or x.get("debut")) for x in e + sr}
+                        e = e + [x for x in av_e if (plat(x.get("titre", ""))[:40], x.get("date")) not in cles]
+                        sr = sr + [x for x in av_s if (plat(x.get("titre", ""))[:40], x.get("debut")) not in cles]
+                        connecteurs.DIAG.append(f"chute brutale ({n_nv} au lieu de {n_av}) : sorties de la lecture du "
+                                                f"{garde_du} conservées")
+                        print(f"  CHUTE BRUTALE : {n_nv} sorties à venir au lieu de {n_av} ; lecture du {garde_du} conservée")
+                        s["_garde_du"] = garde_du
+                except (ValueError, KeyError):
+                    pass
             if s.get("festival"):
                 # seulement ce qui tombe pendant le festival : le site d'un festival est parfois celui de la salle qui
                 # l'organise (ex. les Sommets du cinéma d'animation sur cinematheque.qc.ca), qui annonce aussi le reste
@@ -595,7 +616,9 @@ def main() -> int:
             print(f"  {len(e)} événements, {len(sr)} séries")
             if e or sr:
                 fichier_cache.write_text(json.dumps({"date": aujourd.isoformat(), "evenements": e, "series": sr,
-                                                     "diagnostic": connecteurs.DIAG[:12]}, ensure_ascii=False), encoding="utf-8")
+                                                     "diagnostic": connecteurs.DIAG[:12],
+                                                     **({"garde_du": s["_garde_du"]} if s.get("_garde_du") else {})},
+                                                    ensure_ascii=False), encoding="utf-8")
         except Exception as exc:
             traceback.print_exc(limit=1)
             note = None
