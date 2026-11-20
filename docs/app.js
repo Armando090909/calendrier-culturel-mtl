@@ -185,7 +185,7 @@ function detailHTML(e){
       </div>`;
   const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
-  return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" style="--c:var(--${e.discipline})">
+  return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" data-h="${esc((e.heure||"").slice(0,2))}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
@@ -672,7 +672,46 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
   // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
   if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700)}
 }).catch(()=>{$("view").innerHTML=`<div class="empty">${L("Les événements n'ont pas pu être chargés. Rechargez la page.","Events could not be loaded. Please reload the page.")}</div>`});
+/* Mode Jour : réglette des heures (20 nov. 2026). Comme le défilement rapide des photos d'un téléphone : on glisse le
+   doigt (ou la souris) le long de la réglette à droite, une bulle affiche l'heure, la page saute aux sorties de cette
+   heure. Pendant un défilement normal, la réglette apparaît et montre l'heure en cours de lecture. */
+(()=>{
+  const rail=document.createElement("div");rail.id="rail-h";rail.setAttribute("role","slider");rail.tabIndex=0;
+  rail.setAttribute("aria-label",L("Aller à une heure de la journée","Jump to a time of day"));
+  rail.innerHTML='<div class="rh-ticks"></div><div class="rh-bulle" hidden></div><div class="rh-pouce"></div>';
+  document.body.appendChild(rail);
+  const ticks=rail.querySelector(".rh-ticks"),bulle=rail.querySelector(".rh-bulle"),pouce=rail.querySelector(".rh-pouce");
+  let evs=[],actif=false,cache;
+  const lib=h=>h===""?L("Toute la journée","All day"):(EN?((+h%12)||12)+(+h<12?" am":" pm"):(+h)+" h");
+  function preparer(){
+    evs=st.view==="day"?[...document.querySelectorAll(".dayview .ev.det")]:[];
+    const ok=evs.length>=8&&!document.body.classList.contains("en-recherche");rail.hidden=!ok;if(!ok)return;
+    const hs=[...new Set(evs.map(e=>e.dataset.h))];
+    const H=rail.getBoundingClientRect().height||600;let der=-99; // étiquettes trop proches de la précédente : sautées
+    ticks.innerHTML=hs.map(h=>{const i=evs.findIndex(e=>e.dataset.h===h),y=H*i/evs.length;if(y-der<17)return"";der=y;
+      return `<span style="top:${(100*i/evs.length).toFixed(2)}%">${h===""?"·":lib(h)}</span>`}).join("")}
+  function aller(y){
+    const r=rail.getBoundingClientRect(),f=Math.min(.999,Math.max(0,(y-r.top)/r.height));
+    const e=evs[Math.floor(f*evs.length)];if(!e)return;
+    bulle.hidden=false;bulle.textContent=lib(e.dataset.h);bulle.style.top=(f*100)+"%";pouce.style.top=(f*100)+"%";
+    window.scrollTo({top:e.getBoundingClientRect().top+scrollY-90,behavior:"instant"})}
+  rail.addEventListener("pointerdown",e=>{if(rail.hidden)return;actif=true;rail.classList.add("actif");rail.setPointerCapture(e.pointerId);aller(e.clientY);e.preventDefault()});
+  rail.addEventListener("pointermove",e=>{if(actif)aller(e.clientY)});
+  const fin=()=>{actif=false;rail.classList.remove("actif");setTimeout(()=>{if(!actif)bulle.hidden=true},600)};
+  rail.addEventListener("pointerup",fin);rail.addEventListener("pointercancel",fin);
+  rail.addEventListener("keydown",e=>{if(!evs.length)return;const hs=[...new Set(evs.map(x=>x.dataset.h))];
+    const cur=evs.find(x=>x.getBoundingClientRect().top>=80)||evs[0];let i=hs.indexOf(cur.dataset.h);
+    if(e.key==="ArrowDown")i=Math.min(hs.length-1,i+1);else if(e.key==="ArrowUp")i=Math.max(0,i-1);else return;
+    e.preventDefault();const t=evs.find(x=>x.dataset.h===hs[i]);window.scrollTo({top:t.getBoundingClientRect().top+scrollY-90})});
+  addEventListener("scroll",()=>{if(rail.hidden||actif||!evs.length)return;
+    const i=evs.findIndex(x=>x.getBoundingClientRect().bottom>90);if(i<0)return;
+    pouce.style.top=(100*i/evs.length)+"%";rail.classList.add("vu");clearTimeout(cache);cache=setTimeout(()=>rail.classList.remove("vu"),1200)},{passive:true});
+  const ancien=render;render=function(){ancien.apply(this,arguments);requestAnimationFrame(preparer)};
+  preparer();
+})();
+
 })();
 
 // Le lien de langue garde l'événement ou le jour affiché (?e=…, ?d=…)
 (()=>{const l=document.getElementById("langue");if(l)l.addEventListener("click",()=>{l.href=l.getAttribute("href").split("?")[0]+location.search;});})();
+
