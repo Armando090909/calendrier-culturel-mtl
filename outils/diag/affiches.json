@@ -6,12 +6,12 @@
    "affiches": 10,
    "echecs": 10
   },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
-   "echecs": 4
-  },
   "turbohaus.ca": {
    "affiches": 11,
+   "echecs": 3
+  },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
    "echecs": 3
   },
   "westmount.org": {
@@ -28,6 +28,10 @@
   },
   "images.ctfassets.net": {
    "affiches": 44,
+   "echecs": 1
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 92,
    "echecs": 1
   },
   "www.dansedanse.ca": {
@@ -180,10 +184,6 @@
   },
   "cdn.espacestdenis.com": {
    "affiches": 4,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 92,
    "echecs": 0
   },
   "lebordel.ca": {
@@ -434,11 +434,6 @@
    "https://imgproxy.ra.co/_/rt:fill/h:630/w:1200/quality:50/aHR0cHM6Ly9pbWFnZXMucmEuY28vMmMwMWRiMDVjYmYxODg4NzRiZGY1NmVjMzhlMDRkNTIzZTg2ODM5ZS5qcGc=",
    "https://imgproxy.ra.co/_/rt:fill/h:630/w:1200/quality:50/aHR0cHM6Ly9pbWFnZXMucmEuY28vNzI0NzllZDVjMmMyMzAzM2M0NWE0ODEyN2Q5NjcyYzEyOWZhZWY2Ni5qcGc="
   ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/resize/5dec8bd6c594bc9f2b14574b7b54725f-1",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
-  ],
   "westmount.org": [
    "https://westmount.org/storage/app/resources/resize/1200_0_0_0_auto/img_61e4b8711577332237c687509afd0c27.png",
    "https://westmount.org/resize/c966afdd6cb77a339f8653cc2d9c65e4-1"
@@ -451,6 +446,14 @@
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
+  ],
+  "www.ville.dorval.qc.ca": [
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
+   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg",
+   "https://www.ville.dorval.qc.ca/resize/9e271916e53c1bbf2f2b793368d4418c-1"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
