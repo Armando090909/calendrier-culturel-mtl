@@ -349,14 +349,14 @@ html.v2 #view.glisse-d{animation:glisse-d .22s ease-out}
 .signaler.tel{display:none}
 @media (max-width:700px){.det-info .signaler{display:none}.ev.det .signaler.tel{display:block;margin:12px 0 0;padding:0}}
 
-/* Réglette des heures, mode Jour (20 nov. 2026) */
-#rail-h{position:fixed;right:6px;top:110px;bottom:40px;width:46px;z-index:40;touch-action:none;cursor:ns-resize;opacity:.35;transition:opacity .25s}
+/* Réglette des heures, mode Jour (20 nov. 2026) : invisible tant qu'on ne la sollicite pas (bord droit) */
+#rail-h{position:fixed;right:4px;top:110px;bottom:40px;width:46px;z-index:40;touch-action:none;cursor:ns-resize;
+  opacity:0;pointer-events:none;transition:opacity .2s}
 #rail-h[hidden]{display:none}
-#rail-h.vu,#rail-h.actif,#rail-h:hover,#rail-h:focus-visible{opacity:1}
+#rail-h.montre{opacity:1}
+@media (pointer:fine){#rail-h.montre{pointer-events:auto}}
 #rail-h::before{content:"";position:absolute;right:10px;top:0;bottom:0;width:3px;border-radius:2px;background:#000}
 #rail-h .rh-ticks span{position:absolute;right:18px;transform:translateY(-50%);font:700 11px/1 var(--f-body,Figtree,sans-serif);white-space:nowrap;background:var(--fond,#F5EFE3);padding:1px 3px;border-radius:4px}
 #rail-h .rh-pouce{position:absolute;right:3px;width:17px;height:17px;margin-top:-8px;border-radius:50%;background:#E04F9C;border:3px solid #000}
 #rail-h .rh-bulle{position:absolute;right:56px;transform:translateY(-50%);background:#000;color:#F5EFE3;font:900 26px/1 var(--f-display,Figtree,sans-serif);padding:10px 16px;border-radius:999px;white-space:nowrap}
-#rail-h .rh-ticks{opacity:0;transition:opacity .2s}
-#rail-h.actif .rh-ticks,#rail-h:hover .rh-ticks{opacity:1}
 @media (max-width:700px){#rail-h{top:90px;width:40px}#rail-h .rh-ticks span{font-size:10px}}

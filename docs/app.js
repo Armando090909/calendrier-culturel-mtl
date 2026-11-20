@@ -672,22 +672,27 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
   // (les autres fichiers peuvent redessiner la page : la fiche garde sa surbrillance quelques secondes)
   if(cible){st.cible=cible._i;render();setTimeout(()=>{const a=$("ev-"+cible._i);if(a)a.scrollIntoView({block:"start",behavior:"smooth"})},700)}
 }).catch(()=>{$("view").innerHTML=`<div class="empty">${L("Les événements n'ont pas pu être chargés. Rechargez la page.","Events could not be loaded. Please reload the page.")}</div>`});
-/* Mode Jour : réglette des heures (20 nov. 2026). Comme le défilement rapide des photos d'un téléphone : on glisse le
-   doigt (ou la souris) le long de la réglette à droite, une bulle affiche l'heure, la page saute aux sorties de cette
-   heure. Pendant un défilement normal, la réglette apparaît et montre l'heure en cours de lecture. */
+/* Mode Jour : réglette des heures (20 nov. 2026). Comme le défilement rapide des photos d'un téléphone.
+   Téléphone : invisible ; elle apparaît seulement quand on pose le doigt sur le bord droit de l'écran et qu'on le
+   fait glisser vers le haut ou le bas (un simple toucher passe aux boutons dessous : Partager, Outlook…).
+   Ordinateur : elle apparaît quand la souris s'approche du bord droit ; on la glisse, ou on utilise ↑ ↓.
+   Une bulle affiche l'heure et la liste saute aux sorties de cette heure. */
 (()=>{
-  const rail=document.createElement("div");rail.id="rail-h";rail.setAttribute("role","slider");rail.tabIndex=0;
+  const rail=document.createElement("div");rail.id="rail-h";rail.setAttribute("role","slider");rail.tabIndex=-1;
   rail.setAttribute("aria-label",L("Aller à une heure de la journée","Jump to a time of day"));
   rail.innerHTML='<div class="rh-ticks"></div><div class="rh-bulle" hidden></div><div class="rh-pouce"></div>';
   document.body.appendChild(rail);
   const ticks=rail.querySelector(".rh-ticks"),bulle=rail.querySelector(".rh-bulle"),pouce=rail.querySelector(".rh-pouce");
-  let evs=[],actif=false,cache;
+  const TACTILE=matchMedia("(pointer:coarse)").matches,BORD=TACTILE?30:72;
+  let evs=[],glisse=false,cache;
   const lib=h=>h===""?L("Toute la journée","All day"):(EN?((+h%12)||12)+(+h<12?" am":" pm"):(+h)+" h");
+  const dispo=()=>!rail.hidden&&evs.length;
+  function montrer(){clearTimeout(cache);rail.classList.add("montre")}
+  function cacher(delai){clearTimeout(cache);cache=setTimeout(()=>{if(!glisse){rail.classList.remove("montre");bulle.hidden=true}},delai)}
   function preparer(){
     evs=st.view==="day"?[...document.querySelectorAll(".dayview .ev.det")]:[];
     const ok=evs.length>=8&&!document.body.classList.contains("en-recherche");rail.hidden=!ok;if(!ok)return;
-    const hs=[...new Set(evs.map(e=>e.dataset.h))];
-    const H=rail.getBoundingClientRect().height||600;let der=-99; // étiquettes trop proches de la précédente : sautées
+    const hs=[...new Set(evs.map(e=>e.dataset.h))],H=rail.getBoundingClientRect().height||600;let der=-99;
     ticks.innerHTML=hs.map(h=>{const i=evs.findIndex(e=>e.dataset.h===h),y=H*i/evs.length;if(y-der<17)return"";der=y;
       return `<span style="top:${(100*i/evs.length).toFixed(2)}%">${h===""?"·":lib(h)}</span>`}).join("")}
   function aller(y){
@@ -695,21 +700,35 @@ fetch(BASE+"data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.s
     const e=evs[Math.floor(f*evs.length)];if(!e)return;
     bulle.hidden=false;bulle.textContent=lib(e.dataset.h);bulle.style.top=(f*100)+"%";pouce.style.top=(f*100)+"%";
     window.scrollTo({top:e.getBoundingClientRect().top+scrollY-90,behavior:"instant"})}
-  rail.addEventListener("pointerdown",e=>{if(rail.hidden)return;actif=true;rail.classList.add("actif");rail.setPointerCapture(e.pointerId);aller(e.clientY);e.preventDefault()});
-  rail.addEventListener("pointermove",e=>{if(actif)aller(e.clientY)});
-  const fin=()=>{actif=false;rail.classList.remove("actif");setTimeout(()=>{if(!actif)bulle.hidden=true},600)};
-  rail.addEventListener("pointerup",fin);rail.addEventListener("pointercancel",fin);
-  rail.addEventListener("keydown",e=>{if(!evs.length)return;const hs=[...new Set(evs.map(x=>x.dataset.h))];
-    const cur=evs.find(x=>x.getBoundingClientRect().top>=80)||evs[0];let i=hs.indexOf(cur.dataset.h);
-    if(e.key==="ArrowDown")i=Math.min(hs.length-1,i+1);else if(e.key==="ArrowUp")i=Math.max(0,i-1);else return;
-    e.preventDefault();const t=evs.find(x=>x.dataset.h===hs[i]);window.scrollTo({top:t.getBoundingClientRect().top+scrollY-90})});
-  addEventListener("scroll",()=>{if(rail.hidden||actif||!evs.length)return;
-    const i=evs.findIndex(x=>x.getBoundingClientRect().bottom>90);if(i<0)return;
-    pouce.style.top=(100*i/evs.length)+"%";rail.classList.add("vu");clearTimeout(cache);cache=setTimeout(()=>rail.classList.remove("vu"),1200)},{passive:true});
+  function suivre(){const i=evs.findIndex(x=>x.getBoundingClientRect().bottom>90);if(i>=0)pouce.style.top=(100*i/evs.length)+"%"}
+  if(TACTILE){
+    // le doigt doit partir du bord droit ET bouger verticalement : un toucher sans glisser reste un clic sur le bouton dessous
+    let x0=null,y0=0;
+    addEventListener("touchstart",e=>{x0=null;if(!dispo()||e.touches.length>1)return;const t=e.touches[0];
+      if(t.clientX>=innerWidth-BORD){x0=t.clientX;y0=t.clientY}},{passive:true});
+    addEventListener("touchmove",e=>{if(x0===null)return;const t=e.touches[0];
+      if(!glisse){if(Math.abs(t.clientY-y0)<8)return;if(Math.abs(t.clientX-x0)>Math.abs(t.clientY-y0)){x0=null;return}
+        glisse=true;suivre();montrer();rail.classList.add("actif")}
+      e.preventDefault();aller(t.clientY)},{passive:false});
+    const fin=()=>{x0=null;if(glisse){glisse=false;rail.classList.remove("actif");cacher(900)}};
+    addEventListener("touchend",fin,{passive:true});addEventListener("touchcancel",fin,{passive:true});
+  }else{
+    addEventListener("mousemove",e=>{if(!dispo()||glisse)return;if(e.clientX>=innerWidth-BORD){suivre();montrer()}else cacher(350)},{passive:true});
+    rail.addEventListener("pointerdown",e=>{if(!dispo())return;glisse=true;rail.classList.add("actif");rail.setPointerCapture(e.pointerId);aller(e.clientY);e.preventDefault()});
+    rail.addEventListener("pointermove",e=>{if(glisse)aller(e.clientY)});
+    const fin=()=>{if(!glisse)return;glisse=false;rail.classList.remove("actif");cacher(1200)};
+    rail.addEventListener("pointerup",fin);rail.addEventListener("pointercancel",fin);
+    addEventListener("scroll",()=>{if(rail.classList.contains("montre")&&!glisse)suivre()},{passive:true});
+    addEventListener("keydown",e=>{if(!dispo()||!["ArrowUp","ArrowDown"].includes(e.key)||!e.altKey)return;
+      const hs=[...new Set(evs.map(x=>x.dataset.h))],cur=evs.find(x=>x.getBoundingClientRect().top>=80)||evs[0];let i=hs.indexOf(cur.dataset.h);
+      i=e.key==="ArrowDown"?Math.min(hs.length-1,i+1):Math.max(0,i-1);e.preventDefault();
+      const t=evs.find(x=>x.dataset.h===hs[i]);window.scrollTo({top:t.getBoundingClientRect().top+scrollY-90});
+      montrer();suivre();bulle.hidden=false;bulle.textContent=lib(hs[i]);bulle.style.top=pouce.style.top;cacher(1200)});
+  }
   const ancien=render;render=function(){ancien.apply(this,arguments);requestAnimationFrame(preparer)};
+  addEventListener("resize",()=>requestAnimationFrame(preparer));
   preparer();
 })();
-
 })();
 
 // Le lien de langue garde l'événement ou le jour affiché (?e=…, ?d=…)
