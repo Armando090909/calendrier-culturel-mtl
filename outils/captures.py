@@ -30,3 +30,17 @@ try:
 finally:
     serveur.terminate()
 print(sorted(x.name for x in SORTIE.iterdir()))
+
+# Maquettes de publications (20 nov. 2026) : outils/diag/maquettes/*.html rendues en 1080 × 1350 avec les vraies polices
+try:
+    with sync_playwright() as p:
+        nav = p.chromium.launch()
+        for f in sorted((RACINE / "outils" / "diag" / "maquettes").glob("*.html")):
+            pg = nav.new_page(viewport={"width": 1080, "height": 1350})
+            pg.goto(f.as_uri(), wait_until="networkidle")
+            pg.evaluate("document.fonts.ready")
+            pg.wait_for_timeout(1500)
+            pg.screenshot(path=str(SORTIE / f"maquette-{f.stem}.png"))
+        nav.close()
+except Exception as exc:
+    print(f"Maquettes en échec : {exc}")
