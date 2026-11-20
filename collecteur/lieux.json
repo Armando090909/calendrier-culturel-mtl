@@ -25,6 +25,7 @@
  "All venues": null,
  "Altigone": null,
  "Alūr Restaurant & Lounge": null,
+ "Amphithéâtre Cogeco": null,
  "Amphithéâtre du Gesù": {
   "adresse": "1200 rue De Bleury",
   "alias": [],
@@ -108,6 +109,7 @@
   "lon": -73.56224,
   "quartier": "Ville-Marie"
  },
+ "Bains publics - Cabaret culturel": null,
  "Bande Passante": {
   "lat": 45.52232,
   "lon": -73.59083,
@@ -287,6 +289,7 @@
   "lon": -73.56268,
   "quartier": "Ville-Marie"
  },
+ "Bibliothèque Reginald-J.P. Dawson": null,
  "Bibliothèque Robert-Bourassa": {
   "lat": 45.516,
   "lon": -73.606,
@@ -424,6 +427,11 @@
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "Bibliothèque publique de Pointe-Claire - Centrale": null,
+ "Bibliothèque publique de Pointe-Claire - Succursale Valois": {
+  "lat": 45.45439,
+  "lon": -73.79258,
+  "quartier": ""
+ },
  "Bibliothèque éphémère de l'Est de Rosemont": {
   "lat": 45.57297,
   "lon": -73.57102,
@@ -440,6 +448,7 @@
   "quartier": "Ville-Marie"
  },
  "Bistro de Beta Bloc": null,
+ "Black Healing Centre": null,
  "Blouin Division": {
   "adresse": "2020, rue William, Montréal",
   "alias": [],
@@ -580,6 +589,7 @@
   "lon": -73.59474,
   "quartier": "Le Sud-Ouest"
  },
+ "Centre In The Square": null,
  "Centre Marcel-Dulude": null,
  "Centre Pierre-Peladeau": {
   "alias": [],
@@ -675,6 +685,7 @@
   "lon": -73.71581,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Centre culturel et communautaire de la Pointe-Valaine": null,
  "Centre d'art Jacques-et-Michel-Auger": null,
  "Centre d'entrepreneuriat ESG UQAM": null,
  "Centre d'essai de l'UdeM": {
@@ -836,6 +847,7 @@
  },
  "Comedyville": null,
  "Commodore Ballroom": null,
+ "Complexe EV, salle 1.715, campus SGW": null,
  "Conservatoire de Musique De Montreal": {
   "alias": [],
   "lat": 45.5238,
@@ -1161,6 +1173,7 @@
   "lon": -73.56224,
   "quartier": "Ville-Marie"
  },
+ "Grey Eagle Event Centre": null,
  "Grey Nuns Annex, salle 1.210": null,
  "Grizzly Fuzz": null,
  "Groupe Intervention Vidéo": null,
@@ -1218,6 +1231,8 @@
  },
  "Jeanne & Peter Lougheed Performing Arts Centre": null,
  "Jelleff Recreation Center": null,
+ "John Molson Building (MB), campus SGW": null,
+ "John Molson Building (Sir George Williams Campus), salle 14.250": null,
  "John Molson Building, salle ABCD": null,
  "John Molson Building, salle MB 7.270": null,
  "Judith J-2805": null,
@@ -1225,6 +1240,7 @@
  "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Koujina Café": null,
  "L'Adversaire – Pub et boutique ludiques": null,
+ "L'Anti Bar & Spectacles": null,
  "L'Artère fabricathèque": null,
  "L'Entracte": {
   "lat": 45.49232,
@@ -1328,6 +1344,7 @@
  "La Petite Boîte Noire": null,
  "La Pointe Sec": null,
  "La SAT": null,
+ "La Sag": null,
  "La Sala Rossa": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -1412,6 +1429,7 @@
   "lon": -73.61806,
   "quartier": "Outremont"
  },
+ "Le Moulinet": null,
  "Le National": {
   "lat": 45.519,
   "lon": -73.554,
@@ -1533,6 +1551,7 @@
  "MAC Montréal": null,
  "MAC à Place Ville Marie": null,
  "MAI – Montréal, arts interculturels": null,
+ "MB - John Molson Building": null,
  "MEM - Centre des mémoires montréalaises": {
   "lat": 45.50941,
   "lon": -73.56317,
@@ -1655,6 +1674,7 @@
   "lon": -73.596,
   "quartier": "Rosemont"
  },
+ "Maison de la culture de Waterloo": null,
  "Maison de la culture du Plateau-Mont-Royal": {
   "lat": 45.5235,
   "lon": -73.581,
@@ -1717,6 +1737,7 @@
   "quartier": "Ville-Marie"
  },
  "Molson Canadian Centre at Casino New-Brunswick": null,
+ "Molson Canadian Centre at Casino New-Nouveau Brunswick": null,
  "Montreal Improv": null,
  "Montreal West Train Station": null,
  "Montréal, arts interculturels (MAI)": {
@@ -1742,6 +1763,7 @@
   "quartier": "Centre-ville"
  },
  "Musée d'histoire et du patrimoine de Dorval": null,
+ "Musée de Dorval": null,
  "Musée des beaux-arts de Montréal": {
   "lat": 45.4985,
   "lon": -73.5794,
@@ -1821,6 +1843,7 @@
   "lon": -73.559,
   "quartier": "Vieux-Montréal"
  },
+ "Pacific Coliseum": null,
  "Palais des congrès de Montréal": {
   "lat": 45.504,
   "lon": -73.561,
@@ -1929,6 +1952,7 @@
   "lon": -73.55874,
   "quartier": "Ville-Marie"
  },
+ "Pavillon J.-W.-McConnell (LB), campus SGW": null,
  "Pavillon Judith-Jasmin (J), UQAM": {
   "adresse": "405 rue Sainte-Catherine Est",
   "alias": [],
@@ -2026,6 +2050,7 @@
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
  "Plein sud, centre d'exposition en art actuel": null,
+ "Plus de 50 lieux dans le Grand Montréal": null,
  "Plusieurs lieux": null,
  "Point Zéro": {
   "lat": 45.50017,
@@ -2079,6 +2104,7 @@
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Rogers Arena": null,
+ "Rogers Place": null,
  "Royal Theatre": {
   "lat": 45.51484,
   "lon": -73.57429,
@@ -2127,8 +2153,10 @@
  },
  "Salle Claude-Legault": null,
  "Salle Claudia-Ebacher": null,
+ "Salle DOMTAR": null,
  "Salle Desjardins-Telus": null,
  "Salle Dussault": null,
+ "Salle Désilets - Espace 7000": null,
  "Salle Désilets du Cégep Marie-Victorin": {
   "adresse": "7000 rue Marie-Victorin",
   "alias": [],
@@ -2227,6 +2255,7 @@
   "lon": -73.558,
   "quartier": "Village"
  },
+ "Stewart Hall Cultural Centre": null,
  "Studio 303": {
   "lat": 45.5058,
   "lon": -73.56693,
@@ -2294,6 +2323,7 @@
  "The Great Hall": null,
  "The Opera House": null,
  "The Port Theatre": null,
+ "Theatre du Casino du Lac-Leamy": null,
  "Thunder Bay Community Auditorium": null,
  "Théâtre Alphonse-Desjardins": null,
  "Théâtre Aux Écuries": {
@@ -2446,8 +2476,10 @@
   "lon": -73.574,
   "quartier": "Plateau"
  },
+ "Théâtre de la Bordée": null,
  "Théâtre des Deux Rives": null,
  "Théâtre des Eskers": null,
+ "Théâtre des Grands Bois": null,
  "Théâtre du Marais": null,
  "Théâtre du Nouveau Monde": {
   "lat": 45.5085,
@@ -2462,6 +2494,11 @@
  },
  "Théâtre du cuivre": null,
  "Théâtre l'Aparté": null,
+ "Tonitex inc.": {
+  "lat": 45.54559,
+  "lon": -73.65575,
+  "quartier": "Ahuntsic-Cartierville"
+ },
  "Town Hall": {
   "lat": 45.43326,
   "lon": -73.68109,
@@ -2587,6 +2624,7 @@
   "lon": -73.61848,
   "quartier": "LaSalle"
  },
+ "centrecultureldoris_lussier": null,
  "daphne": {
   "lat": 45.5257,
   "lon": -73.5975,
@@ -2614,6 +2652,7 @@
   "lon": -73.56366,
   "quartier": "Ville-Marie"
  },
+ "Édifice Centennial": null,
  "Église Notre-Dame-des-Sept-Douleurs": {
   "lat": 45.46254,
   "lon": -73.56755,
@@ -2701,6 +2740,7 @@
   "quartier": "Ville-Marie"
  },
  "Église de St-Jean l'Évangéliste": null,
+ "Église de St-Joseph-de-Kamouraska": null,
  "Église du Sacré-Cœur-de-Jésus": null,
  "Événement virtuel": null,
  "Île de la tortue, Abya Yala": null

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-26-the-last-lecypher-415-w-taeway-mdr-to-live-hip-hop-0a15e4@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261126T210000
+DTEND;TZID=America/Toronto:20261126T230000
+SUMMARY:The LAST #LeCypher #415 w/ Taeway + MDR (TO) - Live Hip-Hop Thursda
+ ys
+LOCATION:O Patro Vys\, Montréal
+URL:https://lepointdevente.com/billets/the-last-lecypherx-0415-taeway-mdr-l
+ ive-hip-hop-thursdays-o-patr
+DESCRIPTION:Soirée hip-hop en direct avec des artistes invités\, dans le 
+ cadre d'une série du jeudi.\nDétails : https://lepointdevente.com/billet
+ s/the-last-lecypherx-0415-taeway-mdr-live-hip-hop-thursdays-o-patr\n(ccmtl
+ .ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,12 +1,11 @@
 {
  "date": "2026-11-20",
  "regles": {
-  "titre mal encodé": 14,
-  "heure improbable": 1,
+  "titre mal encodé": 15,
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 36,
   "page de la sortie disparue": 18,
-  "heures différentes selon les sources": 68,
+  "heures différentes selon les sources": 70,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -94,6 +93,15 @@
   {
    "regle": "titre mal encodé",
    "action": "corrigé",
+   "titre": "Liz Miele’s new stand up hour « Live Laugh Leave »",
+   "date": "2026-12-18",
+   "lieu": "Théâtre Sainte-Catherine",
+   "source": "theatre",
+   "url": "https://theatresaintecatherine.com/event/liz-mieles-new-stand-up-hour-live-laugh-leave/"
+  },
+  {
+   "regle": "titre mal encodé",
+   "action": "corrigé",
    "titre": "Match d’impro | LA TUQUE",
    "date": "2027-01-16",
    "lieu": "Salle Vincent-Spain — Complexe culturel Félix-Leclerc",
@@ -135,15 +143,6 @@
    "lieu": "Lieu à confirmer",
    "source": "",
    "url": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231"
-  },
-  {
-   "regle": "heure improbable",
-   "action": "heure 03:00 retirée",
-   "titre": "Jingle Bass",
-   "date": "2026-12-05",
-   "lieu": "Le Red Room",
-   "source": "salles",
-   "url": "https://leredroom.com/evenements/"
   },
   {
    "regle": "activité de plusieurs mois classée hors exposition",
@@ -400,25 +399,7 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "Friday Night Comedy (Early Show in English)",
-   "date": "2026-11-20",
-   "lieu": "Deli Planet",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "MALPOULI / TRANSMISSION 003",
-   "date": "2026-11-20",
-   "lieu": "Piranha Bar",
-   "source": "salles",
-   "url": "https://piranhabar.ca/events/malpouli-transmission-003"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "M POUR MONTRÉAL : CHANGELINE + CALAMINE",
+   "titre": "M POUR MONTRÉAL: CHANGELINE + CALAMINE",
    "date": "2026-11-20",
    "lieu": "Foufounes Électriques",
    "source": "salles",
@@ -436,7 +417,7 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "LSC BASH : THE PROWLERS + BADTERMS + STREET CODE + BIG BOSS",
+   "titre": "LSC BASH: THE PROWLERS + BADTERMS + STREET CODE + BIG BOSS",
    "date": "2026-11-21",
    "lieu": "Cabaret Fouf",
    "source": "salles",
@@ -445,7 +426,7 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "THE BROKES : THE STROKES EXPERIENCE",
+   "titre": "THE BROKES: THE STROKES EXPERIENCE",
    "date": "2026-11-21",
    "lieu": "Foufounes Électriques",
    "source": "salles",
@@ -526,11 +507,11 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "Saturday Night Comedy (regular early show at 9 pm)",
+   "titre": "MALPOULI / TRANSMISSION 003",
    "date": "2026-11-21",
-   "lieu": "Deli Planet",
+   "lieu": "Piranha Bar",
    "source": "salles",
-   "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749?aff=oddtdtcreator"
+   "url": "https://piranhabar.ca/events/malpouli-transmission-003"
   },
   {
    "regle": "page de la sortie disparue",
@@ -567,6 +548,24 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1500"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Festival International Bach Montréal : Une rencontre imaginaire – Bach et Vierne",
+   "date": "2026-11-22",
+   "lieu": "Oratoire Saint-Joseph",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda-360/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Festival International Bach Montréal : Daniel Lanthier & Marco Baronchelli – Aux quatre co",
+   "date": "2026-11-23",
+   "lieu": "Église de St-Jean l'Évangéliste",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda-360/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -688,7 +687,7 @@
   {
    "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (sorstu.ca), 21:00 écartée (sorstu.ca)",
-   "titre": "Kinji00 - M pour Montréal",
+   "titre": "Kinji00 : M pour Montréal",
    "date": "2026-11-20",
    "lieu": "Club Soda",
    "source": "sorstu",
@@ -697,7 +696,7 @@
   {
    "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (sorstu.ca), 19:00 écartée (songkick.com)",
-   "titre": "Tommy Fleece - Avec Reserv",
+   "titre": "Tommy Fleece",
    "date": "2026-11-20",
    "lieu": "Bar Le Ritz PDB",
    "source": "sorstu",
@@ -759,7 +758,16 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (espacestdenis.com), 20:00 écartée (sorstu.ca)",
+   "action": "20:30 gardée (sorstu.ca), 20:00 écartée (songkick.com)",
+   "titre": "Wild Pink",
+   "date": "2026-12-03",
+   "lieu": "La Sotterenea",
+   "source": "sorstu",
+   "url": "https://sorstu.ca/artiste/wild-pink/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "21:00 gardée (espacestdenis.com), 22:15 écartée (sorstu.ca)",
    "titre": "Undertale: The Determination Symphony",
    "date": "2026-11-20",
    "lieu": "Théâtre St-Denis",
@@ -813,17 +821,8 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (espacestdenis.com), 20:30 écartée (spectaculos.ca)",
-   "titre": "Dominic Paquet - J'COMPRENDS LA GAME",
-   "date": "2026-11-20",
-   "lieu": "Centre Pierre-Peladeau",
-   "source": "theatre",
-   "url": "https://espacestdenis.com/fr/programmation/"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "21:00 gardée (centredesmusiciensdumonde.com), 19:00 écartée (songkick.com)",
-   "titre": "Ensemble Murmurosi : Chants polyphoniques d'hiver",
+   "titre": "Ensemble Murmurosi, Chants polyphoniques d'hiver",
    "date": "2026-12-02",
    "lieu": "Église Saint-Enfant-Jésus-du-Mile-End",
    "source": "salles",
@@ -831,17 +830,8 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (eventbrite.com), 21:00 écartée (comedyville.ca)",
-   "titre": "Saturday Sundown Comedy (very Early show in English)",
-   "date": "2026-11-21",
-   "lieu": "Deli Planet",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/comedy-show-montreal-7-pm-early-evening-comedy-at-a-montreal-comedy-club-tickets-2003259056765?aff=oddtdtcreator"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "19:00 gardée (eventbrite.com), 20:00 écartée (comedyville.ca)",
-   "titre": "New Year's Eve Prime Comedy (Prime comedy show at 7 PM)",
+   "titre": "New Year's Eve Prime Comedy",
    "date": "2026-12-31",
    "lieu": "Estrella",
    "source": "salles",
@@ -849,39 +839,21 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:30 gardée (eventbrite.com), 21:30 écartée (comedyville.ca)",
-   "titre": "New Year's Eve Early Comedy (Early comedy show at 7:30 PM)",
-   "date": "2026-12-31",
-   "lieu": "Deli Planet",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/montreal-new-years-eve-comedy-2026-early-show-deli-planet-tickets-2003749487657?aff=oddtdtcreator"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "09:30 gardée (tortueberlue.com), 10:45 écartée (tortueberlue.com)",
+   "action": "09:30 gardée (plessisville.quebec), 10:45 écartée (plessisville.quebec)",
    "titre": "Stella et l'étoile de Noël",
    "date": "2026-11-28",
    "lieu": "Ville de Plessisville",
    "source": "salles",
-   "url": "https://www.tortueberlue.com/calendrier-automne-et-noel-2026/"
+   "url": "https://plessisville.quebec/evenements/vie-de-quartier/spectacle-de-noel"
   },
   {
    "regle": "heures différentes selon les sources",
    "action": "19:00 gardée (eventbrite.com), 21:00 écartée (mtlcomedyclub.com)",
-   "titre": "Saturday Sundown Comedy (very Early show in English)",
+   "titre": "Saturday Sundown Comedy",
    "date": "2026-11-21",
    "lieu": "Deli Planet",
    "source": "salles",
-   "url": "https://www.eventbrite.com/e/comedy-show-montreal-7-pm-early-evening-comedy-at-a-montreal-comedy-club-tickets-2003259056765?aff=oddtdtcreator"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "17:30 gardée (placedesarts.com), 17:00 écartée (evenements.uqam.ca)",
-   "titre": "5 à 7 musicaux avec l'UQAM",
-   "date": "2026-11-20",
-   "lieu": "Salon urbain",
-   "source": "salles",
-   "url": "https://www.placedesarts.com/evenement/5-7-musicaux-uqam"
+   "url": "https://www.eventbrite.com/e/comedy-show-montreal-7-pm-early-evening-comedy-at-a-montreal-comedy-club-tickets-2003259056765"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -912,8 +884,8 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:30 gardée (foufouneselectriques.com), 22:15 écartée (sorstu.ca)",
-   "titre": "M POUR MONTRÉAL : CHANGELINE + CALAMINE",
+   "action": "21:30 gardée (foufouneselectriques.com), 20:30 écartée (sorstu.ca)",
+   "titre": "M POUR MONTRÉAL: CHANGELINE + CALAMINE",
    "date": "2026-11-20",
    "lieu": "Foufounes Électriques",
    "source": "salles",
@@ -930,6 +902,24 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "21:00 gardée (balattou.com), 21:30 écartée (sorstu.ca)",
+   "titre": "Écouter le nouveau monde",
+   "date": "2026-11-20",
+   "lieu": "Club Balattou",
+   "source": "salles",
+   "url": "https://www.balattou.com/event-details/ecouter-le-nouveau-monde"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "23:55 gardée (leministere.ca), 23:59 écartée (sorstu.ca)",
+   "titre": "SKIIFALL, 646YF4T & YAMA//SATO",
+   "date": "2026-11-20",
+   "lieu": "Le Ministère",
+   "source": "salles",
+   "url": "https://leministere.ca/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "23:55 gardée (leministere.ca), 22:00 écartée (songkick.com)",
    "titre": "DUBWISE MEETING #10 - Yarra Sound invite KING SHILOH",
    "date": "2026-12-12",
@@ -939,35 +929,26 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "20:00 gardée (ausgangplaza.com), 19:00 écartée (sorstu.ca)",
-   "titre": "Nikamotan MTL Nikotwaso (6) - Laura Niquay invite",
-   "date": "2026-11-27",
-   "lieu": "Ausgang Plaza",
-   "source": "salles",
-   "url": "https://www.ausgangplaza.com/evenements/nikamotan-mtl-nikotwaso-6-laura-niquay-invite"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (evenko.ca), 19:30 écartée (sorstu.ca)",
+   "action": "19:00 gardée (mtelus.com), 19:30 écartée (sorstu.ca)",
    "titre": "DragonForce",
    "date": "2026-12-01",
    "lieu": "MTELUS",
    "source": "salles",
-   "url": "https://evenko.ca/fr/evenements/mtelus/dragonforce?code=e008482"
+   "url": "https://mtelus.com/fr/evenements?vue=grille"
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "22:00 gardée (evenko.ca), 21:00 écartée (songkick.com)",
+   "action": "22:00 gardée (mtelus.com), 21:00 écartée (songkick.com)",
    "titre": "Virtual Riot & Blanke",
    "date": "2026-12-18",
    "lieu": "MTELUS",
    "source": "salles",
-   "url": "https://evenko.ca/fr/evenements/mtelus/virtual-riot-blanke?code=e008671"
+   "url": "https://mtelus.com/fr/evenements?vue=grille"
   },
   {
    "regle": "heures différentes selon les sources",
    "action": "14:30 gardée (casinos.lotoquebec.com), 14:00 écartée (sorstu.ca)",
-   "titre": "Noël en chanson",
+   "titre": "Noël une tradition en chanson",
    "date": "2026-12-01",
    "lieu": "Cabaret du Casino de Montréal",
    "source": "salles",
@@ -976,7 +957,7 @@
   {
    "regle": "heures différentes selon les sources",
    "action": "14:30 gardée (casinos.lotoquebec.com), 14:00 écartée (sorstu.ca)",
-   "titre": "Noël en chanson",
+   "titre": "Noël une tradition en chanson",
    "date": "2026-12-02",
    "lieu": "Cabaret du Casino de Montréal",
    "source": "salles",
@@ -993,12 +974,39 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "20:30 gardée (casadelpopolo.com), 20:00 écartée (sorstu.ca)",
+   "titre": "Historical Feeling et Le Début du Monde",
+   "date": "2026-11-28",
+   "lieu": "P'tit Ours",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-11-29-onwav-felix-edouard-le-debut-du-monde"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (casadelpopolo.com), 19:30 écartée (montreal.askapunk.net)",
    "titre": "Heavy Trip & Negative Capabilities present Magic Tuber Stringband + Geneviève Heistek + Je",
    "date": "2026-12-05",
    "lieu": "P'tit Ours",
    "source": "salles",
    "url": "https://casadelpopolo.com/fr/events/2026-12-06-heavy-trip-negative-capabilities-present-magic-tuber-stringband-genevieve-heistek-jesse-eckerlin"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "21:00 gardée (casadelpopolo.com), 22:45 écartée (sorstu.ca)",
+   "titre": "VIRGO RISING + BLIND COMMENTARY + HILLSBORO",
+   "date": "2026-11-21",
+   "lieu": "La Sotterenea",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-11-22-virgo-rising-blind-commentary-hillsboro"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "20:00 gardée (casadelpopolo.com), 20:30 écartée (sorstu.ca)",
+   "titre": "Blue Skies Turn Black présente: WILD PINK + HIDING PLACES",
+   "date": "2026-12-03",
+   "lieu": "La Sotterenea",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/fr/events/2026-12-04-blue-skies-turn-black-presente-wild-pink-hiding-places"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1038,12 +1046,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "16:00 gardée (beaconsfield.ca), 15:00 écartée (montreal.ca)",
-   "titre": "L'heure de conversation : espagnol",
-   "date": "2026-11-24",
+   "action": "10:15 gardée (beaconsfield.ca), 10:00 écartée (montreal.ca)",
+   "titre": "Heure du conte en mouvement",
+   "date": "2026-11-25",
    "lieu": "Bibliothèque",
    "source": "salles",
-   "url": "https://www.beaconsfield.ca/fr/evenements/ateliers-et-conferences/lheure-de-conversation-espagnol-2026-11-24"
+   "url": "https://www.beaconsfield.ca/fr/evenements/activites-pour-enfants/heure-du-conte-en-mouvement-2026-11-25"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1065,30 +1073,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (lepointdevente.com), 19:30 écartée (sorstu.ca)",
-   "titre": "Kingdom of Giants",
-   "date": "2026-11-29",
-   "lieu": "Café Campus",
-   "source": "salles",
-   "url": "https://lepointdevente.com/tickets/cafecampusshows"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "21:00 gardée (lepointdevente.com), 20:00 écartée (montreal.askapunk.net)",
    "titre": "Class of 91 + Blurry Eyes + Cleanse + Testa Dura",
    "date": "2026-11-28",
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/co91"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "23:55 gardée (clubsoda.ca), 22:00 écartée (lepointdevente.com)",
-   "titre": "CUPIDON AU CLUB SODA",
-   "date": "2026-12-12",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://clubsoda.ca/fr/evenements"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1173,12 +1163,21 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "22:30 gardée (lepointdevente.com), 23:59 écartée (sorstu.ca)",
+   "titre": "Fréquences Caribéennes - OFF Mundial",
+   "date": "2026-11-20",
+   "lieu": "Le Belmont",
+   "source": "salles",
+   "url": "https://lepointdevente.com/billets/z6q261120003"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "14:40 gardée (panm360.com), 14:00 écartée (montreal.ca)",
-   "titre": "Mundial Montréal : Bianca Rocha au Centre Sanaaq",
+   "titre": "Mundial Montréal : Bianca Rocha",
    "date": "2026-11-20",
    "lieu": "Centre Sanaaq",
    "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
+   "url": "https://panm360.com/en/agenda/mundial-montreal-bianca-rocha-au-centre-sanaaq/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1191,21 +1190,21 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "21:00 gardée (panm360.com), 20:00 écartée (sorstu.ca)",
-   "titre": "M pour Montréal : kinji00 au Club Soda",
+   "action": "16:00 gardée (panm360.com), 18:00 écartée (sorstu.ca)",
+   "titre": "Mundial Montréal : Nadine Altounji",
    "date": "2026-11-20",
-   "lieu": "Club Soda",
+   "lieu": "Centre Sanaaq",
    "source": "salles",
-   "url": "https://panm360.com/en/agenda-360/"
+   "url": "https://panm360.com/en/agenda/mundial-montreal-nadine-altounji-au-centre-sanaaq/"
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:15 gardée (noeldansleparc.com), 20:30 écartée (noeldansleparc.com)",
-   "titre": "Abraxas",
-   "date": "2026-12-05",
-   "lieu": "Parc La Fontaine",
-   "source": "festival",
-   "url": "https://noeldansleparc.com/parc-lafontaine/"
+   "action": "21:00 gardée (panm360.com), 20:00 écartée (sorstu.ca)",
+   "titre": "M pour Montréal : kinji00",
+   "date": "2026-11-20",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/m-pour-montreal-kinji00-au-club-soda/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1219,11 +1218,20 @@
   {
    "regle": "heures différentes selon les sources",
    "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
-   "titre": "LANAS BAND",
-   "date": "2026-12-13",
+   "titre": "LES FRÈRES SISSOKHO",
+   "date": "2026-11-27",
    "lieu": "Club Balattou",
    "source": "salles",
-   "url": "https://lepointdevente.com/billets/pna261213001"
+   "url": "https://lepointdevente.com/billets/pna261127001"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
+   "titre": "MATEUS VIDAL",
+   "date": "2026-12-03",
+   "lieu": "Club Balattou",
+   "source": "salles",
+   "url": "https://lepointdevente.com/billets/pna261203001"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1237,11 +1245,11 @@
   {
    "regle": "heures différentes selon les sources",
    "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
-   "titre": "LES FRÈRES SISSOKHO",
-   "date": "2026-11-27",
+   "titre": "LA GROOVIN MACHINE",
+   "date": "2026-12-11",
    "lieu": "Club Balattou",
    "source": "salles",
-   "url": "https://lepointdevente.com/billets/pna261127001"
+   "url": "https://lepointdevente.com/billets/pna261211001"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1251,6 +1259,15 @@
    "lieu": "Club Balattou",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/pna261210001"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "21:30 gardée (lepointdevente.com), 21:00 écartée (festivalnuitsdafrique.com)",
+   "titre": "LANAS BAND",
+   "date": "2026-12-13",
+   "lieu": "Club Balattou",
+   "source": "salles",
+   "url": "https://lepointdevente.com/billets/pna261213001"
   },
   {
    "regle": "heure par défaut d'un agrégateur",
@@ -1264,9 +1281,10 @@
  ],
  "contreverif": {
   "date absente de la page": 36,
-  "date confirmée": 268,
+  "date confirmée": 253,
+  "non relues (limite)": 115,
   "lien mort remplacé": 18,
-  "page illisible": 44
+  "page illisible": 43
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1278,27 +1296,27 @@
   },
   {
    "source": "balattou.com",
-   "erreurs": 118,
+   "erreurs": 119,
    "sorties": 118,
-   "taux": 100.0
+   "taux": 100.8
   },
   {
    "source": "espacestdenis.com",
-   "erreurs": 74,
+   "erreurs": 73,
    "sorties": 136,
-   "taux": 54.4
+   "taux": 53.7
+  },
+  {
+   "source": "tortueberlue.com",
+   "erreurs": 7,
+   "sorties": 15,
+   "taux": 46.7
   },
   {
    "source": "centredesmusiciensdumonde.com",
    "erreurs": 10,
-   "sorties": 20,
-   "taux": 50.0
-  },
-  {
-   "source": "tortueberlue.com",
-   "erreurs": 8,
-   "sorties": 16,
-   "taux": 50.0
+   "sorties": 22,
+   "taux": 45.5
   },
   {
    "source": "cinemapublic.ca",
@@ -1309,8 +1327,8 @@
   {
    "source": "dansedanse.ca",
    "erreurs": 30,
-   "sorties": 80,
-   "taux": 37.5
+   "sorties": 78,
+   "taux": 38.5
   },
   {
    "source": "quaidesbrumes.ca",
@@ -1319,16 +1337,16 @@
    "taux": 36.0
   },
   {
-   "source": "legesu.com",
-   "erreurs": 28,
-   "sorties": 110,
-   "taux": 25.5
-  },
-  {
    "source": "fbdm-mcaf.ca",
    "erreurs": 18,
    "sorties": 71,
    "taux": 25.4
+  },
+  {
+   "source": "legesu.com",
+   "erreurs": 28,
+   "sorties": 111,
+   "taux": 25.2
   },
   {
    "source": "foufouneselectriques.com",
@@ -1338,33 +1356,27 @@
   },
   {
    "source": "panm360.com",
-   "erreurs": 46,
-   "sorties": 221,
-   "taux": 20.8
+   "erreurs": 47,
+   "sorties": 233,
+   "taux": 20.2
   },
   {
    "source": "piranhabar.ca",
    "erreurs": 15,
-   "sorties": 84,
-   "taux": 17.9
+   "sorties": 83,
+   "taux": 18.1
   },
   {
    "source": "zeffy.com",
    "erreurs": 5,
-   "sorties": 32,
-   "taux": 15.6
+   "sorties": 30,
+   "taux": 16.7
   },
   {
    "source": "theatrefairmount.com",
    "erreurs": 27,
-   "sorties": 180,
-   "taux": 15.0
-  },
-  {
-   "source": "eventbrite.com",
-   "erreurs": 30,
-   "sorties": 239,
-   "taux": 12.6
+   "sorties": 179,
+   "taux": 15.1
   },
   {
    "source": "casinos.lotoquebec.com",
@@ -1373,10 +1385,16 @@
    "taux": 12.0
   },
   {
+   "source": "eventbrite.com",
+   "erreurs": 28,
+   "sorties": 241,
+   "taux": 11.6
+  },
+  {
    "source": "mtelus.com",
-   "erreurs": 12,
-   "sorties": 129,
-   "taux": 9.3
+   "erreurs": 14,
+   "sorties": 143,
+   "taux": 9.8
   },
   {
    "source": "cinematheque.qc.ca",
@@ -1387,42 +1405,36 @@
   {
    "source": "spectaculos.ca",
    "erreurs": 18,
-   "sorties": 202,
+   "sorties": 203,
    "taux": 8.9
   },
   {
    "source": "theatresaintecatherine.com",
-   "erreurs": 19,
-   "sorties": 230,
-   "taux": 8.3
-  },
-  {
-   "source": "sorstu.ca",
-   "erreurs": 61,
-   "sorties": 1030,
-   "taux": 5.9
+   "erreurs": 20,
+   "sorties": 232,
+   "taux": 8.6
   },
   {
    "source": "lepointdevente.com",
-   "erreurs": 99,
-   "sorties": 1726,
-   "taux": 5.7
+   "erreurs": 101,
+   "sorties": 1717,
+   "taux": 5.9
   },
   {
-   "source": "ausgangplaza.com",
-   "erreurs": 8,
-   "sorties": 148,
-   "taux": 5.4
+   "source": "sorstu.ca",
+   "erreurs": 62,
+   "sorties": 1111,
+   "taux": 5.6
   },
   {
    "source": "casadelpopolo.com",
-   "erreurs": 59,
-   "sorties": 1129,
-   "taux": 5.2
+   "erreurs": 62,
+   "sorties": 1130,
+   "taux": 5.5
   }
  ],
  "recoupees": {
-  "total": 2922,
-  "deux_sources_ou_plus": 224
+  "total": 3264,
+  "deux_sources_ou_plus": 258
  }
 }
