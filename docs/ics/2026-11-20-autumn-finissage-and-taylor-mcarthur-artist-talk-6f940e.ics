@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-20-autumn-finissage-and-taylor-mcarthur-artist-talk-6f940e@ccmt
+ l.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261120T170000
+DTEND;TZID=America/Toronto:20261120T190000
+SUMMARY:Autumn Finissage and Taylor McArthur Artist Talk
+LOCATION:Engineering\, Computer Science and Visual Arts Integrated Complex\
+ , Montréal
+URL:https://www.concordia.ca/cuevents/finearts/fofa/2026/11/20/autumn-finis
+ sage-and-taylor-mcarthur-talk.html
+DESCRIPTION:Finissage de la programmation d'automne suivi d'une causerie de
+  l'artiste Taylor McArthur sur sa pratique en art numérique.\nDétails : 
+ https://www.concordia.ca/cuevents/finearts/fofa/2026/11/20/autumn-finissag
+ e-and-taylor-mcarthur-talk.html\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

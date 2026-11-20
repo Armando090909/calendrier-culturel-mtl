@@ -22,6 +22,7 @@
  },
  "Ahkwayaonhkeh": null,
  "Algonquin Commons Theatre": null,
+ "All venues": null,
  "Altigone": null,
  "Alūr Restaurant & Lounge": null,
  "Amphithéâtre du Gesù": {
@@ -410,6 +411,7 @@
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Bibliothèques, cafés, musées et autres lieux partenaires": null,
  "Bibliothèques, cafés, musées et autres lieux participants": null,
  "Biodôme | Espace pour la vie": null,
  "Biosphère": {
@@ -656,6 +658,7 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Centre d'art Jacques-et-Michel-Auger": null,
+ "Centre d'entrepreneuriat ESG UQAM": null,
  "Centre d'essai de l'UdeM": {
   "alias": [],
   "lat": 45.50719,
@@ -2066,6 +2069,7 @@
  },
  "Sainte-Agathe-des-Monts": null,
  "Sainte-Catherine Hall": null,
+ "Sala Resto": null,
  "Salle 1120, Henry F. Hall Building": null,
  "Salle Albert-Dumouchel": null,
  "Salle Albert-Rousseau": null,
@@ -2436,12 +2440,16 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UQAM - Bibliothèque des sciences": null,
+ "UQAM - Coeur des sciences": null,
  "UQAM - En ligne": null,
  "UQAM - Pavillon Athanase-David": null,
  "UQAM - Pavillon Hubert-Aquin": null,
+ "UQAM - Pavillon Hôtel-de-Ville": null,
  "UQAM - Pavillon Judith-Jasmin": null,
  "UQAM - Pavillon Paul-Gérin-Lajoie": null,
  "UQAM - Pavillon de Musique": null,
+ "UQAM - Pavillon du Faubourg": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
  "UQAM, pavillon J-A DeSève, salle DS-M440": null,
  "URBANISTA RESTO BAR": null,
@@ -2456,6 +2464,11 @@
   "lat": 45.49524,
   "lon": -73.57858,
   "quartier": "Ville-Marie"
+ },
+ "Université de Montréal": {
+  "lat": 45.50476,
+  "lon": -73.61454,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "Upstairs Jazz Bar & Grill": {
   "adresse": "1254 rue Mackay",

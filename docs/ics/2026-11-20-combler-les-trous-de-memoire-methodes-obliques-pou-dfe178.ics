@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-20-combler-les-trous-de-memoire-methodes-obliques-pou-dfe178@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261120T091500
+DTEND;TZID=America/Toronto:20261120T111500
+SUMMARY:Combler les trous de mémoire: méthodes obliques pour approcher le
+ s remédiations des passés
+LOCATION:UQAM - Pavillon du Faubourg\, Montréal
+URL:https://evenements.uqam.ca/evenements/combler-les-trous-de-memoire-meth
+ odes-obliques-pour-approcher-les-remediations-des-passes/34798?date=2026-1
+ 1-20_09-15-00
+DESCRIPTION:Présentation sur des méthodes détournées pour aborder les r
+ éparations liées aux injustices du passé.\nDétails : https://evenement
+ s.uqam.ca/evenements/combler-les-trous-de-memoire-methodes-obliques-pour-a
+ pprocher-les-remediations-des-passes/34798?date=2026-11-20_09-15-00\n(ccmt
+ l.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-16-the-grand-frost-ball-2027-2bace4@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:The Grand Frost Ball 2027
+LOCATION:Théâtre Paradoxe\, Montréal
+URL:https://www.theatreparadoxe.com/fr/calendrier/detail/the-grand-frost-ba
+ ll-2027/99072
+DESCRIPTION:Heure à confirmer. Bal costumé inspiré des grands bals europ
+ éens\, où l'on danse jusqu'à la dernière danse.\nDétails : https://ww
+ w.theatreparadoxe.com/fr/calendrier/detail/the-grand-frost-ball-2027/99072
+ \n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
