@@ -4,9 +4,9 @@
   "titre mal encodé": 14,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 34,
-  "page de la sortie disparue": 12,
-  "heures différentes selon les sources": 66,
+  "date absente de la page officielle": 36,
+  "page de la sortie disparue": 18,
+  "heures différentes selon les sources": 68,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -569,6 +569,78 @@
    "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1500"
   },
   {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1700"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-22-1930"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Backstage",
+   "date": "2026-11-23",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/23/the-backstage"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-23-1330"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Ha-Chan, Shake Your Booty! — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/ha-chan-shake-your-booty-2026-11-23-1530"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "La méthode scandinave",
+   "date": "2026-11-23",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-methode-scandinave"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "6 portraits néoréalistes — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/6-portraits-neorealistes-2026-11-23-1800"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Jim Queen — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/jim-queen-2026-11-23-2015"
+  },
+  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -858,6 +930,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "23:55 gardée (leministere.ca), 22:00 écartée (songkick.com)",
+   "titre": "DUBWISE MEETING #10 - Yarra Sound invite KING SHILOH",
+   "date": "2026-12-12",
+   "lieu": "Le Ministère",
+   "source": "salles",
+   "url": "https://leministere.ca/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (ausgangplaza.com), 19:00 écartée (sorstu.ca)",
    "titre": "Nikamotan MTL Nikotwaso (6) - Laura Niquay invite",
    "date": "2026-11-27",
@@ -999,6 +1080,15 @@
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://lepointdevente.com/billets/co91"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "23:55 gardée (clubsoda.ca), 22:00 écartée (lepointdevente.com)",
+   "titre": "CUPIDON AU CLUB SODA",
+   "date": "2026-12-12",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://clubsoda.ca/fr/evenements"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1173,11 +1263,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 34,
-  "date confirmée": 211,
-  "lien mort remplacé": 12,
-  "page illisible": 28,
-  "non relues (limite)": 85
+  "date absente de la page": 36,
+  "date confirmée": 268,
+  "lien mort remplacé": 18,
+  "page illisible": 44
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1213,9 +1302,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 226,
+   "erreurs": 232,
    "sorties": 538,
-   "taux": 42.0
+   "taux": 43.1
   },
   {
    "source": "dansedanse.ca",
@@ -1316,7 +1405,7 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 99,
-   "sorties": 1727,
+   "sorties": 1726,
    "taux": 5.7
   },
   {
@@ -1333,7 +1422,7 @@
   }
  ],
  "recoupees": {
-  "total": 2923,
-  "deux_sources_ou_plus": 230
+  "total": 2922,
+  "deux_sources_ou_plus": 224
  }
 }

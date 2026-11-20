@@ -1367,6 +1367,8 @@ def main() -> int:
                     retires.add(id(e))
                 if "heure" in c:  # "" : heure lue par erreur (ex. heure de fin), retirée
                     e["heure"] = c["heure"] or None
+                if c.get("nouveau_lieu"):  # (20 nov. 2026) salle confirmée à la main (fiche de la salle, billetterie)
+                    e["lieu"] = lieu_canon(c["nouveau_lieu"], c.get("adresse", ""), "Montréal") or c["nouveau_lieu"]
                 if c.get("nouvelle_date"):
                     # (19 nov. 2026) la salle a pu corriger sa page entre-temps : si le spectacle est déjà lu au bon jour,
                     # la copie au mauvais jour est retirée au lieu d'être déplacée (sinon il apparaît deux fois)

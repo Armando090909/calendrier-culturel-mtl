@@ -1,17 +1,9 @@
 {
  "date": "2026-11-20",
  "statut": "publié",
- "evenements": 2923,
+ "evenements": 2922,
  "expositions": 264,
- "nouvelles_salles": [
-  "Barfly",
-  "Bibliothèque Jacqueline-De Repentigny",
-  "Bibliothèque Micheline-Gagnon",
-  "Bibliothèque de Salaberry",
-  "Galerie d'art du Parc",
-  "Librairie Monet",
-  "MAC à Place Ville Marie"
- ],
+ "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
    "lues": 0,
@@ -19,7 +11,7 @@
    "exemples_erreurs": [],
    "completees_par_mac": 970,
    "heures_trouvees": 959,
-   "salles_trouvees": 969
+   "salles_trouvees": 976
   },
   "redites_retirees": [
    "2026-11-20 : « 20 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 20 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
@@ -49,13 +41,12 @@
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
   "qualite": {
-   "regles": 129,
+   "regles": 139,
    "contreverif": {
-    "date absente de la page": 34,
-    "date confirmée": 211,
-    "lien mort remplacé": 12,
-    "page illisible": 28,
-    "non relues (limite)": 85
+    "date absente de la page": 36,
+    "date confirmée": 268,
+    "lien mort remplacé": 18,
+    "page illisible": 44
    },
    "controle": null
   }
@@ -1566,7 +1557,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -3132,7 +3123,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3203,8 +3194,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3445,7 +3436,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {
