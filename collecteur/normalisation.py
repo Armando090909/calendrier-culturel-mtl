@@ -249,6 +249,11 @@ def hors_ile(*textes: str) -> bool:
     t = re.sub(r"\bquebec(?= canada\b| [a-z]\d[a-z]\b)", " ", t)
     if re.search(r"\bmontreal\b", t):
         t = re.sub(r"\bquebec\b", " ", t)
+    # (20 nov. 2026) noms de villes qui sont aussi des rues ou des salles de Montréal : « 6473, rue Sherbrooke Est »,
+    # « Bibliothèque de Salaberry », « Bibliothèque Jacqueline-De Repentigny », « avenue Laval »… ne sont pas hors de l'île
+    t = re.sub(r"\b(?:rue|boulevard|boul|bd|blvd|avenue|av|ave|chemin|ch|place|pl|ruelle|montee|cote|parc|pont|"
+               r"autoroute|station|metro|street|st|road|rd)(?: (?:de|du|des|d|de la|le|la))? \w+", " ", t)
+    t = re.sub(r"\b(?:bibliotheque de salaberry|jacqueline de repentigny|sherbrooke (?:est|ouest|east|west|e|o|w))\b", " ", t)
     return any(f" {m} " in f" {t} " for m in HORS_ILE)
 
 
