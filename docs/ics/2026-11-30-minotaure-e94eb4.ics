@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-19-two-step-hommage-a-dave-matthews-band-258834@ccmtl.ca
+UID:2026-11-30-minotaure-e94eb4@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261219
-DTEND;VALUE=DATE:20261220
-SUMMARY:TWO STEP | HOMMAGE À DAVE MATTHEWS BAND
-LOCATION:Le Ministère\, Montréal
-URL:https://leministere.ca/evenements
-DESCRIPTION:Heure à confirmer. Hommage rock au groupe Dave Matthews Band\,
-  joué par un groupe tribute.\nDétails : https://leministere.ca/evenement
- s\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261130T180000
+DTEND;TZID=America/Toronto:20261130T200000
+SUMMARY:Minotaure
+LOCATION:Cinémathèque québécoise\, Montréal
+URL:https://www.cinematheque.qc.ca/fr/cinema/minotaure/
+DESCRIPTION:Projection d'un film en nouveauté à la Cinémathèque québé
+ coise.\nDétails : https://www.cinematheque.qc.ca/fr/cinema/minotaure/\n(c
+ cmtl.ca)
 END:VEVENT
 END:VCALENDAR

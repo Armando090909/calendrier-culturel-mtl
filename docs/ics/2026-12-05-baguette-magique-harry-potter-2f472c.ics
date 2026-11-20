@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-baguette-magique-harry-potter-0c46ca@ccmtl.ca
+UID:2026-12-05-baguette-magique-harry-potter-2f472c@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261205T140000
 DTEND;TZID=America/Toronto:20261205T160000
 SUMMARY:Baguette magique Harry Potter
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Bibliothèque de Salaberry\, Montréal
 URL:https://montreal.ca/evenements/baguette-magique-harry-potter-116432
 DESCRIPTION:Viens fabriquer ta baguette magique avec des LEDS et des batter
  ies en apprenant des notions de base des circuits électriques avec Décod

@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-15-trop-cool-d3b89b@ccmtl.ca
+UID:2026-12-12-dubwise-meeting-10-yarra-sound-invite-king-shiloh-0e45f7@ccm
+ tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:Trop cool
-LOCATION:Espace le vrai monde?\, Montréal
-URL:https://espacelevraimonde.ca/programmation/
-DESCRIPTION:Heure à confirmer. Spectacle annoncé à l'Espace le vrai mond
- e? le 15 janvier 2027.\nDétails : https://ahuntsic.tuxedobillet.com/\n(cc
- mtl.ca)
+DTSTART;TZID=America/Toronto:20261212T235500
+DTEND;TZID=America/Toronto:20261213T015500
+SUMMARY:DUBWISE MEETING #10 - Yarra Sound invite KING SHILOH
+LOCATION:Le Ministère\, Montréal
+URL:https://leministere.ca/
+DESCRIPTION:Prix : 30 $\nDétails : https://leministere.ca/evenements/dubwi
+ se-meeting-10\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

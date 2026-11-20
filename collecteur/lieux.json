@@ -148,7 +148,12 @@
   "lon": -73.58881,
   "quartier": "Le Sud-Ouest"
  },
- "Barfly": null,
+ "Barfly": {
+  "alias": [],
+  "lat": 45.51705,
+  "lon": -73.57994,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Basement of St Denis Church": {
   "lat": 45.54186,
   "lon": -73.6242,
@@ -981,6 +986,12 @@
   "lat": 45.47265,
   "lon": -73.58911,
   "quartier": "Le Sud-Ouest"
+ },
+ "Faculté de musique": {
+  "alias": [],
+  "lat": 45.50932,
+  "lon": -73.60852,
+  "quartier": "Outremont"
  },
  "Fais-moi l'art": null,
  "Faubourg Building, salle 620": null,

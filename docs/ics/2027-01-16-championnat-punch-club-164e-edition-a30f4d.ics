@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-22-ciseaux-3d0864@ccmtl.ca
+UID:2027-01-16-championnat-punch-club-164e-edition-a30f4d@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-SUMMARY:Ciseaux
-LOCATION:Espace GO\, Montréal
-URL:https://espacego.com/les-spectacles/2026-2027/ciseaux/
-DESCRIPTION:Heure à confirmer. Représentation supplémentaire d'une pièc
- e présentée à l'Espace Go à l'automne 2026.\nDétails : https://espace
- go.tuxedobillet.com/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20270116T235500
+DTEND;TZID=America/Toronto:20270117T015500
+SUMMARY:CHAMPIONNAT PUNCH CLUB - 164e ÉDITION
+LOCATION:Club Soda\, Montréal
+URL:https://clubsoda.ca/fr/evenements
+DESCRIPTION:164e édition du championnat d'improvisation Punch Club\, comp
+ étition humoristique.\nPrix : 30\,93 $\nDétails : https://clubsoda.ca/fr
+ /evenements/championnat-punch-club-164e-edition\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

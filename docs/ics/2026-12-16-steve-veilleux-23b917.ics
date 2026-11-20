@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-12-v-i-iv-le-vent-ii-a4e43b@ccmtl.ca
+UID:2026-12-16-steve-veilleux-23b917@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261212T020000
-DTEND;TZID=America/Toronto:20261212T040000
-SUMMARY:V I IV le vent II
-LOCATION:Le Red Room\, Montréal
-URL:https://leredroom.com/evenements/
-DESCRIPTION:Soirée musicale intitulée V I IV le vent II au Red Room.\nPri
- x : 10 $\nDétails : https://lineup-event.com/fr/event/v-i-iv-le-vent-ii\n
- (ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261216T235500
+DTEND;TZID=America/Toronto:20261217T015500
+SUMMARY:STEVE VEILLEUX
+LOCATION:Le Ministère\, Montréal
+URL:https://leministere.ca/evenements
+DESCRIPTION:Concert de l'artiste francophone Steve Veilleux à la programma
+ tion.\nPrix : 40 $\nDétails : https://leministere.ca/evenements/steve-vei
+ lleux\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

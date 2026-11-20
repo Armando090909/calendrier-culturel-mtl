@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-club-de-lecture-jeunesse-a-verdun-0c0c53@ccmtl.ca
+UID:2026-12-03-club-de-lecture-jeunesse-a-verdun-d934a5@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261203T163000
 DTEND;TZID=America/Toronto:20261203T183000
 SUMMARY:Club de lecture jeunesse à Verdun
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Bibliothèque Jacqueline-De Repentigny\, Montréal
 URL:https://montreal.ca/evenements/club-de-lecture-jeunesse-verdun-115826
 DESCRIPTION:Pour les jeunes qui ont envie de partager leurs lectures\, qu'i
  ls s'agissent de bandes dessinées\, de mangas\, de romans ou de revues\, 

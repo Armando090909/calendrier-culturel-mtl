@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-19-cabaret-caf-conc-1d5c8b@ccmtl.ca
+UID:2026-12-29-josh-baker-new-city-gas-ba003c@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261219
-DTEND;VALUE=DATE:20261220
-SUMMARY:Cabaret Caf'Conc'
-LOCATION:Caf'Conc'\, Montréal
-URL:https://cafeconcert.ca/
-DESCRIPTION:Heure à confirmer. Cabaret de variétés animé par Rita Baga\
- , avec Tom-Éliot\, Constant Bernard\, Lady Boom Boom et Foxy Lexxi Brown.
- \nDétails : https://cafeconcert.ca/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261229T220000
+DTEND;TZID=America/Toronto:20261230T000000
+SUMMARY:Josh Baker @ New City Gas
+LOCATION:New City Gas\, Montréal
+URL:https://www.songkick.com/concerts/43467364-josh-baker-at-new-city-gas?u
+ tm_medium=organic&utm_source=microformat
+DESCRIPTION:Détails : http://www.songkick.com/concerts/43467364-josh-baker
+ -at-new-city-gas?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

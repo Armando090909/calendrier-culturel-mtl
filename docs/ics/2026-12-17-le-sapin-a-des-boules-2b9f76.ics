@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-30-minotaure-ffc287@ccmtl.ca
+UID:2026-12-17-le-sapin-a-des-boules-2b9f76@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
-SUMMARY:Minotaure
-LOCATION:Cinémathèque québécoise\, Montréal
-URL:https://www.cinematheque.qc.ca/fr/cinema/minotaure/
-DESCRIPTION:Heure à confirmer. Projection d'un film en nouveauté à la Ci
- némathèque québécoise.\nDétails : https://www.cinematheque.qc.ca/fr/c
- inema/minotaure/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261217T235500
+DTEND;TZID=America/Toronto:20261218T015500
+SUMMARY:LE SAPIN A DES BOULES
+LOCATION:Club Soda\, Montréal
+URL:https://clubsoda.ca/fr/evenements
+DESCRIPTION:Spectacle festif de temps des Fêtes avec projections vidéo au
+  Club Soda.\nDétails : https://clubsoda.ca/fr/evenements/le-sapin-a-des-b
+ oules-2026-17décembre\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

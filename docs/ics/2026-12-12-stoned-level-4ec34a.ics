@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-26-party-du-temps-des-fetes-du-2pierrots-2026-f08cb3@ccmtl.ca
+UID:2026-12-12-stoned-level-4ec34a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
-SUMMARY:PARTY DU TEMPS DES FÊTES DU 2PIERROTS 2026
-LOCATION:Club Soda\, Montréal
-URL:https://clubsoda.ca/fr/evenements
-DESCRIPTION:Heure à confirmer. Party de temps des Fêtes organisée par 2P
- ierrots au Club Soda.\nDétails : https://clubsoda.ca/fr/billetterie/condi
- tions\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261212T100000
+DTEND;TZID=America/Toronto:20261212T120000
+SUMMARY:Stoned Level
+LOCATION:Le Studio TD\, Montréal
+URL:https://ilesoniq.com
+DESCRIPTION:Spectacle de Stoned Level\, présenté dans la sélection de sp
+ ectacles recommandés par îLESONIQ.\nDétails : https://www.ticketmaster.
+ ca/event/3100655BDBA2D1E9?lang=fr-ca&brand=evenko\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

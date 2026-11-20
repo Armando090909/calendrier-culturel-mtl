@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-23-concert-de-violon-classe-de-guillaume-sutre-ed6896@ccmtl.ca
+UID:2026-11-23-concert-de-violon-classe-de-guillaume-sutre-f1d7fb@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261123T180000
 DTEND;TZID=America/Toronto:20261123T200000
 SUMMARY:Concert de violon - Classe de Guillaume Sutre
-LOCATION:Université de Montréal\, Montréal
+LOCATION:Salle Serge-Garant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-violon-classe-de-gu
  illaume-sutre-7
-DESCRIPTION:Concert d'étudiants en violon de la classe de Guillaume Sutre.
+DESCRIPTION:Concert d'étudiants de la classe de violon de Guillaume Sutre.
  \nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite/conc
  ert-de-violon-classe-de-guillaume-sutre-7\n(ccmtl.ca)
 END:VEVENT

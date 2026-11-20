@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-eveil-musical-1712fb@ccmtl.ca
+UID:2026-12-18-virtual-riot-blanke-bc16f5@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261128T103000
-DTEND;TZID=America/Toronto:20261128T123000
-SUMMARY:Éveil musical
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/eveil-musical-116464
-DESCRIPTION:Atelier d'éveil musical avec des instruments africains traditi
- onnels et modernes pour les tout-petits de 0 à 3 ans accompagnés d’un 
- parent.\nPrix : Gratuit\nDétails : https://forms.cloud.microsoft/r/eFgyEB
- fztp\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261218T100000
+DTEND;TZID=America/Toronto:20261218T120000
+SUMMARY:Virtual Riot & Blanke
+LOCATION:MTELUS\, Montréal
+URL:https://ilesoniq.com
+DESCRIPTION:Spectacle électronique de Virtual Riot et Blanke\, présenté 
+ dans la sélection de spectacles recommandés par îLESONIQ.\nDétails : h
+ ttps://www.ticketmaster.ca/event/310064D278322940?lang=fr-ca&brand=mtelus\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

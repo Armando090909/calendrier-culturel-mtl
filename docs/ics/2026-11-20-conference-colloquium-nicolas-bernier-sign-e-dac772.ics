@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-20-conference-colloquium-nicolas-bernier-sign-e-d8c9e3@ccmtl.ca
+UID:2026-11-20-conference-colloquium-nicolas-bernier-sign-e-dac772@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261120T123000
 DTEND;TZID=America/Toronto:20261120T143000
 SUMMARY:Conférence Colloquium : Nicolas Bernier - SIGN/e
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Faculté de musique\, Montréal
 URL:https://calendrier.umontreal.ca/activite/conference-colloquium-nicolas-
  bernier-sign-e
 DESCRIPTION:Conférence de Nicolas Bernier dans le cadre d'un colloquium\, 

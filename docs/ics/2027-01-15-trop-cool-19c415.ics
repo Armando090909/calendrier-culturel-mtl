@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-12-cupidon-au-club-soda-9a4fdc@ccmtl.ca
+UID:2027-01-15-trop-cool-19c415@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261212T220000
-DTEND;TZID=America/Toronto:20261213T000000
-SUMMARY:CUPIDON AU CLUB SODA
-LOCATION:Club Soda\, Montréal
-URL:https://lepointdevente.com/billets/clb261212002
-DESCRIPTION:Soirée festive au Club Soda sous le thème de Cupidon.\nDétai
- ls : https://lepointdevente.com/billets/clb261212002\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20270115T200000
+DTEND;TZID=America/Toronto:20270115T220000
+SUMMARY:Trop cool
+LOCATION:Espace le vrai monde?\, Montréal
+URL:https://espacelevraimonde.ca/programmation/
+DESCRIPTION:Spectacle annoncé à l'Espace le vrai monde? le 15 janvier 202
+ 7.\nPrix : 31\,60 à 39\,20 $\nDétails : https://espacelevraimonde.ca/eve
+ nement/trop-cool/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
