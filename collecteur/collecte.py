@@ -1173,15 +1173,20 @@ def main() -> int:
                                         and (plat(e["titre"]), e.get("heure")) in suspects)]
     # Décalage UTC (20 nov. 2026, Casteliers) : une page donne la même représentation une 2e fois avec l'heure de Greenwich
     # (« 26 nov. 19 h 30 » ET « 27 nov. 0 h 30 ») ; la copie de nuit, 4 ou 5 h plus tard, est retirée
-    vus_h = {(plat(e["titre"])[:30], plat(e["lieu"]), e["date"], e.get("heure")) for e in events if e.get("heure")}
+    # (titres comparés par leur début : « Le Songe d'une nuit d'été » = « Le Songe d'une nuit d'été d'après Shakespeare »)
+    vus_h = collections.defaultdict(list)
+    for e in events:
+        if e.get("heure"):
+            vus_h[(plat(e["lieu"]), e["date"], e["heure"])].append(plat(e["titre"]))
     decales = []
     for e in events:
         h = e.get("heure") or ""
         if h and h < "06:00":
-            t0 = datetime.fromisoformat(f"{e['date']}T{h}")
+            t0, te = datetime.fromisoformat(f"{e['date']}T{h}"), plat(e["titre"])
             for ecart in (4, 5):
                 t1 = t0 - timedelta(hours=ecart)
-                if (plat(e["titre"])[:30], plat(e["lieu"]), t1.date().isoformat(), t1.strftime("%H:%M")) in vus_h:
+                autres_t = vus_h.get((plat(e["lieu"]), t1.date().isoformat(), t1.strftime("%H:%M")), [])
+                if any(len(min(te, a, key=len)) >= 10 and (a.startswith(te) or te.startswith(a)) for a in autres_t):
                     decales.append(e)
                     break
     for e in decales:
