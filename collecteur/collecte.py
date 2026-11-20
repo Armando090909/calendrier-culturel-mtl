@@ -398,7 +398,7 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
     f_fp = CACHE / "heures_fiches.json"
     memo = json.loads(f_fp.read_text(encoding="utf-8")) if f_fp.exists() else {}
     aujourd_ = date.today()
-    limite = (aujourd_ + timedelta(days=int(reglages.get("jours_fiche_propre", 21)))).isoformat()
+    limite = (aujourd_ + timedelta(days=int(reglages.get("jours_fiche_propre", 60)))).isoformat()
     par_url = collections.Counter(e["url"] for e in events)
     sans = sorted([e for e in events if not e.get("heure") and e["url"].startswith("http") and e["date"] <= limite
                    and not any(b in e["url"] for b in BLOQUEES_FICHE + ("://montreal.ca",))
@@ -418,7 +418,7 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
             continue
         if isinstance(r, dict) and r.get("le", "") >= recent:
             continue
-        if lues >= int(reglages.get("max_pages_fiche_propre", 60)):
+        if lues >= int(reglages.get("max_pages_fiche_propre", 120)):
             continue
         h = None
         try:
@@ -437,7 +437,7 @@ def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int,
             texte, liens = listes[page]
             pt = plat(e["titre"])
             for u in liens_candidats(texte, liens, page, e["titre"]):
-                if lues >= int(reglages.get("max_pages_fiche_propre", 60)):
+                if lues >= int(reglages.get("max_pages_fiche_propre", 120)):
                     break
                 lues += 1
                 try:
@@ -883,8 +883,9 @@ def main() -> int:
             if isinstance(v, str):
                 e["heure"] = v
                 continue
-            if isinstance(v, dict) and v.get("le", "") >= vieux_h:
-                continue  # cherchée récemment, sans succès
+            proche = e["date"] <= (aujourd + timedelta(days=7)).isoformat()
+            if isinstance(v, dict) and v.get("le", "") >= ((aujourd - timedelta(days=2)).isoformat() if proche else vieux_h):
+                continue  # cherchée récemment, sans succès (cette semaine : relue aux 2 jours)
             if lues >= int(reglages.get("max_pages_heure", 300)):
                 continue
             try:
@@ -991,8 +992,9 @@ def main() -> int:
         manque_h, manque_l = not e["heure"], e["lieu"] == "Lieu à confirmer"
         if not (manque_h or manque_l):
             continue
-        liens = [u for u in [e.get("billets") or "", *(e.get("_autres_urls") or [])]
-                 if u.startswith("http") and u != e["url"] and not any(b in u for b in BLOQUEES_BIL)]
+        # (20 nov. 2026) la page de l'événement peut ELLE-MÊME être la billetterie (lepointdevente, Tuxedo…) : lue aussi
+        liens = list(dict.fromkeys(u for u in [e.get("billets") or "", *(e.get("_autres_urls") or []), e["url"]]
+                                   if u.startswith("http") and not any(b in u for b in BLOQUEES_BIL + ("://montreal.ca",))))
         for u in liens:
             m = re.search(r"/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})\d{2}/?(?:\?|$)", u)
             if manque_h and m and f"{m[1]}-{m[2]}-{m[3]}" == e["date"] and 8 <= int(m[4]) <= 23:
