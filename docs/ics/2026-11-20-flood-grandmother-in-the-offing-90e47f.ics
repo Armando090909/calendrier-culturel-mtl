@@ -21,16 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-21-zedem-presente-le-10e-anniversaire-de-thousand-isl-a3b30d@cc
- mtl.ca
+UID:2026-11-20-flood-grandmother-in-the-offing-90e47f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261121T200000
-DTEND;TZID=America/Toronto:20261121T220000
-SUMMARY:Zedem Présente: Le 10e Anniversaire de Thousand Islands Records
+DTSTART;TZID=America/Toronto:20261120T193000
+DTEND;TZID=America/Toronto:20261120T213000
+SUMMARY:Flood + Grandmother + In the Offing
 LOCATION:Turbo Haüs\, Montréal
-URL:https://lepointdevente.com/billets/tirtenyearrager
-DESCRIPTION:Célébration des dix ans du label Thousand Islands Records ave
- c une soirée de concerts.\nDétails : https://lepointdevente.com/billets/
- tirtenyearrager\n(ccmtl.ca)
+URL:https://turbohaus.ca/calendrier/2026/11/20/flood--grandmother--in-the-o
+ ffing-
+DESCRIPTION:Détails : https://thepointofsale.com/tickets/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

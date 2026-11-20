@@ -21,14 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-soiree-open-jam-avec-growve-5be11b@ccmtl.ca
+UID:2026-11-21-thousand-island-records-10-ans-the-corps-handheld-cb103d@ccm
+ tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T010000
-DTEND;TZID=America/Toronto:20261125T030000
-SUMMARY:Soirée open jam avec Growve
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Thousand Island Records 10 ans + The Corps + Handheld + Still Insan
+ e + The Lookout
 LOCATION:Turbo Haüs\, Montréal
-URL:https://turbohaus.ca/calendrier/2026/11/25/soire-open-jam-avec-growve
-DESCRIPTION:Détails : https://thepointofsale.com?locality=11&q=turbo%20hau
- s&radius=100\n(ccmtl.ca)
+URL:https://turbohaus.ca/calendrier/2026/11/21/thousand-island-records-10-a
+ ns--the-corps--handheld--still-insane--the-lookout
+DESCRIPTION:Heure à confirmer. Détails : https://lepointdevente.com/bille
+ ts/tirtenyearrager?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

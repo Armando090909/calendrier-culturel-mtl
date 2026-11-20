@@ -21,10 +21,10 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-20-flood-w-grandmother-in-the-offing-58cbd2@ccmtl.ca
+UID:2026-11-20-flood-w-grandmother-in-the-offing-88c52c@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261120T200000
-DTEND;TZID=America/Toronto:20261120T220000
+DTSTART;TZID=America/Toronto:20261120T193000
+DTEND;TZID=America/Toronto:20261120T213000
 SUMMARY:Flood w/ Grandmother & In the Offing
 LOCATION:Turbo Haüs\, Montréal
 URL:https://lepointdevente.com/billets/flood

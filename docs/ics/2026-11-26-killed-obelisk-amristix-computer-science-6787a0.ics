@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-07-brain-tourniquet-dc-lobotomite-cafard-7c77dc@ccmtl.ca
+UID:2026-11-26-killed-obelisk-amristix-computer-science-6787a0@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261207T010000
-DTEND;TZID=America/Toronto:20261207T030000
-SUMMARY:Brain Tourniquet (DC)\, Lobotomite\, Cafard
-LOCATION:Exhibit A\, Montréal
-URL:https://montreal.askapunk.net/event/brain-tourniquet-dc-lobotomite-cafa
- rd
-DESCRIPTION:Détails : https://montreal.askapunk.net/event/brain-tourniquet
- -dc-lobotomite-cafard\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261126T200000
+DTEND;TZID=America/Toronto:20261126T220000
+SUMMARY:Killed + Obelisk + Amristix + Computer Science
+LOCATION:Turbo Haüs\, Montréal
+URL:https://turbohaus.ca/calendrier/2026/11/26/killed--obelisk--amristix--c
+ omputer-science
+DESCRIPTION:Détails : https://thepointofsale.com?locality=11&q=turbo%20hau
+ s&radius=100\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

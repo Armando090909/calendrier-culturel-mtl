@@ -21,14 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-killed-obelisk-amristix-computer-science-aced43@ccmtl.ca
+UID:2026-11-25-soiree-open-jam-avec-growve-81a4cb@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261126T010000
-DTEND;TZID=America/Toronto:20261126T030000
-SUMMARY:Killed + Obelisk + Amristix + Computer Science
+DTSTART;TZID=America/Toronto:20261125T200000
+DTEND;TZID=America/Toronto:20261125T220000
+SUMMARY:Soirée open jam avec Growve
 LOCATION:Turbo Haüs\, Montréal
-URL:https://turbohaus.ca/calendrier/2026/11/26/killed--obelisk--amristix--c
- omputer-science
+URL:https://turbohaus.ca/calendrier/2026/11/25/soire-open-jam-avec-growve
 DESCRIPTION:Détails : https://thepointofsale.com?locality=11&q=turbo%20hau
  s&radius=100\n(ccmtl.ca)
 END:VEVENT

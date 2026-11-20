@@ -21,10 +21,10 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-cam-kahin-invites-781065@ccmtl.ca
+UID:2026-11-27-cam-kahin-invites-0c2f38@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261127T010000
-DTEND;TZID=America/Toronto:20261127T030000
+DTSTART;TZID=America/Toronto:20261127T200000
+DTEND;TZID=America/Toronto:20261127T220000
 SUMMARY:Cam Kahin + invités
 LOCATION:Turbo Haüs\, Montréal
 URL:https://turbohaus.ca/calendrier/2026/11/27/cam-kahin---invites

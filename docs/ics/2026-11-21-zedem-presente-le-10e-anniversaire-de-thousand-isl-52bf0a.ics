@@ -21,14 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-lancement-de-utopie-de-cordial-2868fa@ccmtl.ca
+UID:2026-11-21-zedem-presente-le-10e-anniversaire-de-thousand-isl-52bf0a@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261128T010000
-DTEND;TZID=America/Toronto:20261128T030000
-SUMMARY:Lancement de Utopie de CORDIAL
-LOCATION:La Cenne\, Montréal
-URL:https://my.weezevent.com/cordial-lancement-1
-DESCRIPTION:Lancement de l'album Utopie de l'artiste CORDIAL.\nDétails : h
- ttps://my.weezevent.com/cordial-lancement-1\n(ccmtl.ca)
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Zedem Présente: Le 10e Anniversaire de Thousand Islands Records
+LOCATION:Turbo Haüs\, Montréal
+URL:https://lepointdevente.com/billets/tirtenyearrager
+DESCRIPTION:Heure à confirmer. Célébration des dix ans du label Thousand
+  Islands Records avec une soirée de concerts.\nDétails : https://lepoint
+ devente.com/billets/tirtenyearrager\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
