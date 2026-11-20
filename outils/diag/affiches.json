@@ -1,6 +1,6 @@
 {
- "total": 1576,
- "echecs": 17,
+ "total": 1600,
+ "echecs": 18,
  "par_site": {
   "centaurtheatre.com": {
    "affiches": 5,
@@ -32,6 +32,10 @@
   },
   "img.casadelpopolo.com": {
    "affiches": 93,
+   "echecs": 1
+  },
+  "clubsoda.ca": {
+   "affiches": 5,
    "echecs": 1
   },
   "cdn.caligram.com": {
@@ -67,7 +71,7 @@
    "echecs": 0
   },
   "www.fbdm-mcaf.ca": {
-   "affiches": 6,
+   "affiches": 7,
    "echecs": 0
   },
   "tpos.s3.amazonaws.com": {
@@ -107,7 +111,7 @@
    "echecs": 0
   },
   "montreal.askapunk.net": {
-   "affiches": 12,
+   "affiches": 14,
    "echecs": 0
   },
   "www.labrassee.cafe": {
@@ -155,7 +159,7 @@
    "echecs": 0
   },
   "images.sk-static.com": {
-   "affiches": 71,
+   "affiches": 76,
    "echecs": 0
   },
   "www.comedyville.ca": {
@@ -174,16 +178,12 @@
    "affiches": 7,
    "echecs": 0
   },
-  "clubsoda.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "leministere.ca": {
-   "affiches": 3,
+   "affiches": 6,
    "echecs": 0
   },
   "montrealcentreville.ca": {
-   "affiches": 1,
+   "affiches": 2,
    "echecs": 0
   },
   "espacelibre.qc.ca": {
@@ -230,16 +230,16 @@
    "affiches": 1,
    "echecs": 0
   },
+  "espacego.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "assets.nuwebgroup.com": {
    "affiches": 2,
    "echecs": 0
   },
   "mato.s3.us-east-1.amazonaws.com": {
    "affiches": 2,
-   "echecs": 0
-  },
-  "espacego.com": {
-   "affiches": 1,
    "echecs": 0
   },
   "image.tmdb.org": {
@@ -260,6 +260,10 @@
   },
   "quaidesbrumes.ca": {
    "affiches": 5,
+   "echecs": 0
+  },
+  "ville.montreal-est.qc.ca": {
+   "affiches": 7,
    "echecs": 0
   },
   "rideauvert.qc.ca": {
@@ -374,6 +378,10 @@
    "affiches": 13,
    "echecs": 0
   },
+  "espacelevraimonde.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "lni.ca": {
    "affiches": 1,
    "echecs": 0
@@ -410,24 +418,26 @@
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
+  ],
+  "clubsoda.ca": [
+   "https://clubsoda.ca/assets/img/events/29e-edition-de-la-veillee-de-lavant-veille/VAV-2026-lepointdevente-visuel.png"
   ]
  },
  "sans_affiche_par_discipline": {
-  "musique": 329,
+  "musique": 318,
   "expo": 7,
-  "lettres": 14,
-  "theatre": 29,
+  "lettres": 13,
+  "theatre": 28,
   "humour": 58,
   "danse": 15,
-  "atelier": 131,
+  "atelier": 123,
   "jeune": 15,
-  "social": 8,
+  "social": 7,
   "conference": 34,
-  "autre": 5,
   "quiz": 87,
   "cinema": 6,
-  "fete": 17,
-  "cirque": 2,
+  "fete": 15,
+  "cirque": 4,
   "poesie": 1
  }
 }
