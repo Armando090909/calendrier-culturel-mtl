@@ -751,6 +751,10 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
                 pass
         try:
             # « mise_en_page » : disposition particulière de la page (ex. date écrite APRÈS le titre), vérifiée à la main
+            if len(texte) > 12000:
+                # 20 nov. 2026 : l'IA ne reçoit que les 12 000 premiers caractères ; au-delà, le reste de la page était
+                # perdu sans erreur (grille du RIDM : 1 projection lue sur ~15 par jour). Lecture en morceaux d'emblée.
+                raise ValueError("JSON : page plus longue que la fenêtre de l'IA")
             data = extraire_avec_memoire(url, texte, debut, fin, cfg.get("mise_en_page", ""))
         except Exception as exc:
             data = None
