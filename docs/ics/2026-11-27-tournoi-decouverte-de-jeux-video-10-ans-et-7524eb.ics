@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-tournoi-decouverte-de-jeux-video-10-ans-et-44bb99@ccmtl.ca
+UID:2026-11-27-tournoi-decouverte-de-jeux-video-10-ans-et-7524eb@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261127T170000
 DTEND;TZID=America/Toronto:20261127T190000
 SUMMARY:Tournoi-découverte de jeux vidéo (10 ans et +)
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Bibliothèque de Saint-Pierre\, Montréal
 URL:https://montreal.ca/evenements/tournoi-decouverte-de-jeux-video-10-ans-
  et-120493
 DESCRIPTION:Viens mesurer tes talents à ceux de tes adversaires dans une c

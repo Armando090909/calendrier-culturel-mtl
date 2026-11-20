@@ -1,20 +1,14 @@
 {
  "date": "2026-11-20",
  "statut": "publié",
- "evenements": 2932,
+ "evenements": 2922,
  "expositions": 264,
- "nouvelles_salles": [
-  "Faculté de musique"
- ],
+ "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
-   "lues": 3,
-   "erreurs": 3,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-carnet-04-le-cyanotype-avec-alexandra-pellet",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/completement-conte-3-6-ans-117302",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/matinees-parent-bebe-eveil-musical-117718"
-   ],
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
    "completees_par_mac": 970,
    "heures_trouvees": 959,
    "salles_trouvees": 976
@@ -46,45 +40,15 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [
-   {
-    "nom": "Les Profs de l'UdeM"
-   },
-   {
-    "nom": "Papillon"
-   },
-   {
-    "nom": "Blue Linen"
-   },
-   {
-    "nom": "HI-FI AETHER"
-   },
-   {
-    "nom": "Emil Paquin"
-   },
-   {
-    "nom": "ukn_owned"
-   },
-   {
-    "nom": "Yarra Sound"
-   },
-   {
-    "nom": "Mary Fagdalene"
-   }
-  ],
   "qualite": {
    "regles": 139,
    "contreverif": {
     "date absente de la page": 36,
-    "date confirmée": 272,
+    "date confirmée": 268,
     "lien mort remplacé": 18,
     "page illisible": 44
    },
    "controle": null
-  },
-  "robots_refus": {
-   "www.linkedin.com/shareArticle": 1,
-   "pinterest.com/pin/create/button/": 1
   }
  },
  "alerte": null,
@@ -768,8 +732,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1499 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -836,7 +799,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -845,8 +808,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 2 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -855,8 +817,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -907,8 +868,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "annonces à venir dans la page : 5 (https://www.quenditraton.com/spectacles/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1083,8 +1043,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1093,8 +1052,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1285,8 +1243,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1519,8 +1476,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 0 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -2768,7 +2724,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3031,8 +2987,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3105,8 +3060,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.montrealenlumiere.com/fr/programmation/artistes, https://www.montrealenlumiere.com/fr/programmation/artists, https://www.montrealenlumiere.com/fr/experience-spectacles",
-    "aucun événement trouvé dans 1491 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3169,7 +3123,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3240,8 +3194,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3302,8 +3256,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3416,8 +3370,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
+    "pages de programmation lues aussi : https://osheaga.com/fr/programmation, https://osheaga.com/fr/programmation/horaire, https://osheaga.com/fr/programmation/horaire?date=2026-07-31",
+    "aucun événement trouvé dans 1758 caractères de texte : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3482,7 +3436,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {
