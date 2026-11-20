@@ -981,45 +981,73 @@ def main() -> int:
     # 2) sinon la page de billetterie lue (navigateur si besoin), puis par Claude. Au plus 80 pages par nuit.
     f_bil = CACHE / "heures_billetterie.json"
     memo_b = json.loads(f_bil.read_text(encoding="utf-8")) if f_bil.exists() else {}
-    trouvees_b, lues_b = 0, 0
+    # (20 nov. 2026, équipe : « la billetterie corrige ces erreurs pratiquement au complet ») : la billetterie sert aussi
+    # à trouver la SALLE ; les 7 prochains jours d'abord ; échec technique réessayé le lendemain, « rien trouvé » relu aux
+    # 2 jours pour cette semaine (la salle ajoute souvent l'heure tard).
+    trouvees_b, lues_b, salles_b = 0, 0, 0
     BLOQUEES_BIL = ("zeffy.com", "ra.co", "facebook.com", "instagram.com", "ticketmaster", "eventbrite")
-    for e in events:
-        if e["heure"]:
+    semaine_b = (aujourd + timedelta(days=7)).isoformat()
+    for e in sorted(events, key=lambda x: x["date"]):
+        manque_h, manque_l = not e["heure"], e["lieu"] == "Lieu à confirmer"
+        if not (manque_h or manque_l):
             continue
         liens = [u for u in [e.get("billets") or "", *(e.get("_autres_urls") or [])]
                  if u.startswith("http") and u != e["url"] and not any(b in u for b in BLOQUEES_BIL)]
         for u in liens:
             m = re.search(r"/(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})\d{2}/?(?:\?|$)", u)
-            if m and f"{m[1]}-{m[2]}-{m[3]}" == e["date"] and 8 <= int(m[4]) <= 23:
+            if manque_h and m and f"{m[1]}-{m[2]}-{m[3]}" == e["date"] and 8 <= int(m[4]) <= 23:
                 e["heure"] = f"{m[4]}:{m[5]}"
                 trouvees_b += 1
-                break
+                manque_h = False
+                if not manque_l:
+                    break
             cle = u + "|" + e["date"]
             r = memo_b.get(cle)
-            if r is None and lues_b < int(reglages.get("max_billetteries", 80)):
+            if r is not None and (
+                    (r.get("_err") and r.get("le", "") < aujourd.isoformat())
+                    or (manque_l and "lieu" not in r)
+                    or (not r.get("heure") and not r.get("_err") and e["date"] <= semaine_b
+                        and r.get("le", "") < (aujourd - timedelta(days=2)).isoformat())):
+                r = None
+            if r is None and lues_b < int(reglages.get("max_billetteries", 150)):
                 lues_b += 1
-                r = {}
                 try:
                     try:
                         html = telecharger(u, "text/html").text
                     except Exception:
                         html = ""
                     h = heure_page(html, e["date"]) if html else None
-                    if not h:
+                    if not h or len(texte_page(html, u)) < 400:
                         html = connecteurs.page_rendue(u)
-                        h = heure_page(html, e["date"])
-                    if not h and ia.disponible():
-                        h = (ia.champs_page(e["titre"], e["date"], texte_page(html, u)) or {}).get("heure")
-                    r = {"heure": h} if h else {"le": aujourd.isoformat()}
+                        h = h or heure_page(html, e["date"])
+                    lj = lieu_jsonld(html)
+                    champs = {}
+                    if (not h or not lj.get("lieu")) and ia.disponible():
+                        champs = ia.champs_page(e["titre"], e["date"], texte_page(html, u)) or {}
+                    h = h or champs.get("heure") or None
+                    if h and h < "08:00":
+                        h = None
+                    r = {"heure": h, "lieu": lj.get("lieu") or champs.get("lieu") or "",
+                         "adresse": lj.get("adresse") or champs.get("adresse") or "", "le": aujourd.isoformat()}
                 except Exception as exc:
-                    r = {"_err": str(exc)[:80]}
+                    r = {"_err": str(exc)[:80], "le": aujourd.isoformat()}
                 memo_b[cle] = r
-            if r and r.get("heure"):
+            if not r or r.get("_err"):
+                continue
+            if manque_h and r.get("heure"):
                 e["heure"] = r["heure"]
                 trouvees_b += 1
+                manque_h = False
+            if manque_l and r.get("lieu"):
+                nouveau = lieu_canon(r["lieu"], r.get("adresse", ""), "Montréal")
+                if nouveau:
+                    e["lieu"] = nouveau
+                    salles_b += 1
+                    manque_l = False
+            if not (manque_h or manque_l):
                 break
     f_bil.write_text(json.dumps(memo_b, ensure_ascii=False), encoding="utf-8")
-    print(f"Heures par la billetterie : {trouvees_b} trouvées ({lues_b} pages lues).")
+    print(f"Billetterie : {trouvees_b} heures et {salles_b} salles trouvées ({lues_b} pages lues).")
     print(f"Heures : {len(sans)} événements sans heure, {lues} pages lues ({rendues} dans le navigateur), "
           f"{sum(1 for e in sans if e['heure'])} heures trouvées.")
 

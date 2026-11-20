@@ -47,6 +47,12 @@ NON_CULTUREL = [
     "conference d affaires", "sommet d affaires", "webinaire", "formation professionnelle", "gala corporatif",
     "congress",  # congrès médicaux ou professionnels (14 nov. 2026 : « Perioperative Care Congress »)
     "ensemble pendant les fetes",  # 18 nov. 2026 (équipe) : période d'inscription de l'UQAM, affichée chaque jour, pas une activité
+    # 20 nov. 2026 (équipe) : événements marchands, hors de notre mission (marchés, salons de vente, concours d'entreprise)
+    "marche de noel", "marche des fetes", "marche hivernal", "marche d hiver", "marche artisanal", "marche d artisans",
+    "marche des createurs", "marche de createurs", "marche aux puces", "marche public", "marche du temps des fetes",
+    "salon des artisans", "salon d artisans", "salon des metiers d art", "expo vente", "exposition vente", "vente de garage",
+    "vente de livres usages", "bazar", "braderie", "foire commerciale", "black friday", "concours mon entreprise",
+    "concours d entrepreneuriat", "concours en entrepreneuriat", "entrepreneuriat", "startup", "pitch",
 ]
 
 REGLES = [
@@ -132,7 +138,13 @@ CATEGORIES_EXCLUES = ["sport", "loisir sportif", "vie democratique", "consultati
                       "conseil et comite", "langues", "jardinage", "assemblee publique"]
 
 
+# « marché » et « marche » s'écrivent pareil sans accents : une marche (défilé, procession) n'est pas un marché
+_MARCHE_A_PIED = re.compile(r"\b(defile|grande marche|marche aux flambeaux|marche nocturne|procession)\b")
+
+
 def est_non_culturel(titre: str, categorie: str = "") -> bool:
+    if _MARCHE_A_PIED.search(plat(titre)) and not _has(titre, [m for m in NON_CULTUREL if not m.startswith("marche ")]):
+        return _has(categorie, CATEGORIES_EXCLUES)
     return _has(titre, NON_CULTUREL) or _has(categorie, CATEGORIES_EXCLUES)
 
 

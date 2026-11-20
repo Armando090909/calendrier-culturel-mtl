@@ -24,6 +24,7 @@ on:
     branches: [main]
     paths: ["docs/**", ".github/workflows/**", "outils/diag/demande-collecte.txt"]
     # demande-collecte.txt + « [collecte] » dans le message : collecte complète tout de suite (sinon le site seulement)
+    # demande-collecte.txt + « [assemblage] » : site rebâti avec les lectures en cache (≈ 10 min), puis enrichissement
 
 concurrency:
   group: collecte
@@ -50,7 +51,8 @@ jobs:
   # 1er temps : lecture des sources (chaque lecture gardée en cache, même si la limite de durée est atteinte)
   lecture:
     needs: verif
-    if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
+    # « [assemblage] » (20 nov. 2026) : rebâtir le site à partir des lectures déjà faites (règles changées), sans relire
+    if: (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && !contains(github.event.head_commit.message, '[assemblage]') && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 150
     permissions:
@@ -120,7 +122,7 @@ jobs:
   # 2e temps : le site bâti à partir des lectures, sans relire ; publié même si la lecture a dépassé sa limite
   assemblage:
     needs: [verif, lecture]
-    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]')) && needs.verif.outputs.fait != 'oui'
+    if: always() && (github.event_name != 'push' || contains(github.event.head_commit.message, '[collecte]') || contains(github.event.head_commit.message, '[assemblage]')) && needs.verif.outputs.fait != 'oui'
     runs-on: ubuntu-24.04  # 11 nov. 2026 : ubuntu-latest est passé à 26.04, dont le serveur de paquets ne répond pas
     timeout-minutes: 45
     permissions:
