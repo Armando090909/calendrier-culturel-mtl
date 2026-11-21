@@ -3,8 +3,8 @@
  "regles": {
   "titre mal encodé": 14,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 25,
-  "page de la sortie disparue": 11,
+  "date absente de la page officielle": 31,
+  "page de la sortie disparue": 18,
   "heures différentes selon les sources": 60,
   "heure par défaut d'un agrégateur": 1
  },
@@ -467,6 +467,123 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-22-1930"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Backstage",
+   "date": "2026-11-23",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/23/the-backstage"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-23-1330"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Ha-Chan, Shake Your Booty! — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/ha-chan-shake-your-booty-2026-11-23-1530"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "La méthode scandinave",
+   "date": "2026-11-23",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-methode-scandinave"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "6 portraits néoréalistes — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/6-portraits-neorealistes-2026-11-23-1800"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Jim Queen — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/jim-queen-2026-11-23-2015"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The Sandbox — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-sandbox-2026-11-24-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La guerre froide — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-guerre-froide-2026-11-24-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Book Crush #20 - Dating (Gay - Tous âges 20+) 📚",
+   "date": "2026-11-24",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/book-crush-20"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Graphic Novel Book Club: Opioids & Organs",
+   "date": "2026-11-24",
+   "lieu": "Librairie Drawn & Quarterly",
+   "source": "salles",
+   "url": "https://mtl.drawnandquarterly.com/events"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-24",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée open HAS",
+   "date": "2026-11-24",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/24/soire-open-has"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-24-2000"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1019,11 +1136,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 25,
-  "date confirmée": 212,
-  "lien mort remplacé": 11,
-  "page illisible": 27,
-  "non relues (limite)": 103
+  "date absente de la page": 31,
+  "date confirmée": 293,
+  "lien mort remplacé": 18,
+  "page illisible": 36
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1046,16 +1162,16 @@
    "taux": 51.4
   },
   {
+   "source": "cinemapublic.ca",
+   "erreurs": 252,
+   "sorties": 575,
+   "taux": 43.8
+  },
+  {
    "source": "tortueberlue.com",
    "erreurs": 7,
    "sorties": 16,
    "taux": 43.8
-  },
-  {
-   "source": "cinemapublic.ca",
-   "erreurs": 245,
-   "sorties": 575,
-   "taux": 42.6
   },
   {
    "source": "centredesmusiciensdumonde.com",
