@@ -375,3 +375,5 @@ html.v2 .ecoute.ecg a img{width:30px;height:30px;object-fit:contain;display:bloc
 html.v2 .ecoute.ecg a:has(img) span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 html.v2 .ecoute.ecg a:has(img){transition:transform .15s}
 html.v2 .ecoute.ecg a:has(img):hover{transform:scale(1.12)}
+html.v2 .ecoute.ecg a img[src*="/spotify.png"],html.v2 .ecoute.ecg a img[src*="/apple.png"]{
+  background:radial-gradient(circle closest-side,var(--bg) 0 86%,transparent 87%)}  /* parties transparentes en crème (20 nov. 2026) */
