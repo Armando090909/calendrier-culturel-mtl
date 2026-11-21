@@ -21,19 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-19-soiree-de-patinage-des-fetes-offerte-gratuitement-5264be@ccm
+UID:2026-12-19-soiree-de-patinage-des-fetes-offerte-gratuitement-8f41fc@ccm
  tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261219
-DTEND;VALUE=DATE:20261220
+DTSTART;TZID=America/Toronto:20261219T160000
+DTEND;TZID=America/Toronto:20261219T180000
 SUMMARY:Soirée de patinage des Fêtes offerte gratuitement à l'aréna Mon
  t-Royal
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/soiree-de-patinage-des-fetes-offerte-gra
  tuitement-larena-mont-royal-122466
-DESCRIPTION:Heure à confirmer. Venez célébrer la magie des fêtes sur la
-  glace de l'Aréna Mont-Royal le samedi 19 décembre de 16 h à 18 h 30!\n
- Prix : Gratuit\nDétails : https://montreal.ca/evenements/soiree-de-patina
- ge-des-fetes-offerte-gratuitement-larena-mont-royal-122466\n(ccmtl.ca)
+DESCRIPTION:Venez célébrer la magie des fêtes sur la glace de l'Aréna M
+ ont-Royal le samedi 19 décembre de 16 h à 18 h 30!\nPrix : Gratuit\nDét
+ ails : https://montreal.ca/evenements/soiree-de-patinage-des-fetes-offerte
+ -gratuitement-larena-mont-royal-122466\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

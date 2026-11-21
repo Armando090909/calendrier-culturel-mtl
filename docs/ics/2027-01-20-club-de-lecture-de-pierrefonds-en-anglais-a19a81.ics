@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-20-club-de-lecture-de-pierrefonds-en-anglais-bbf2ec@ccmtl.ca
+UID:2027-01-20-club-de-lecture-de-pierrefonds-en-anglais-a19a81@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
+DTSTART;TZID=America/Toronto:20270120T150000
+DTEND;TZID=America/Toronto:20270120T170000
 SUMMARY:Club de lecture de Pierrefonds en anglais
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/club-de-lecture-de-pierrefonds-en-anglai
- s-122223
-DESCRIPTION:Heure à confirmer. Partagez vos plaisirs littéraires avec d
- ’autres personnes passionnées dans une atmosphère détendue et amicale
- .\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/club-de-lectu
- re-de-pierrefonds-en-anglais-122223\n(ccmtl.ca)
+ s-122209
+DESCRIPTION:Partagez vos plaisirs littéraires avec d’autres personnes pa
+ ssionnées dans une atmosphère détendue et amicale.\nPrix : Gratuit\nDé
+ tails : https://forms.office.com/r/qD7TF66zvt\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

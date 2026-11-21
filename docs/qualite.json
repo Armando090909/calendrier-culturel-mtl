@@ -3,7 +3,9 @@
  "regles": {
   "titre mal encodé": 14,
   "activité de plusieurs mois classée hors exposition": 1,
-  "heures différentes selon les sources": 59,
+  "date absente de la page officielle": 25,
+  "page de la sortie disparue": 11,
+  "heures différentes selon les sources": 60,
   "heure par défaut d'un agrégateur": 1
  },
  "journal": [
@@ -141,6 +143,330 @@
    "lieu": "Parc du Mont-Royal",
    "source": "",
    "url": "https://150montroyal.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Thousand Island Records 10 ans + The Corps + Handheld + Still Insane + The Lookout",
+   "date": "2026-11-21",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/21/thousand-island-records-10-ans--the-corps--handheld--still-insane--the-lookout"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-21-1000"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1200"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1400"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le fantôme dans la machine",
+   "date": "2026-11-21",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/le-fantome-dans-la-machine/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-21-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Cabaret Caf'Conc'",
+   "date": "2026-11-21",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafeconcert.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-21",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-21",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Open Mic à La Cabine",
+   "date": "2026-11-24",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand Up",
+   "date": "2026-11-21",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/english-comedy-show-montreal-saturday-stand-up-deli-7-pm/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Solane by Starlight Trio Swing (jazz) – 2e étage",
+   "date": "2026-11-21",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "« Influence » par G.L. Chambers & Band (blues, rock) – 1er étage",
+   "date": "2026-11-21",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Charlotte Van Dyke-Talbot & Co (jazz) – 2e étage",
+   "date": "2026-11-22",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Jean Millaire & Andrée Dupré (blues) – 1er étage",
+   "date": "2026-11-22",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Marie-Jeanne Paquet & Co (jazz) – 1er étage",
+   "date": "2026-11-23",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Sam Orsini (jazz contemporain) – 2e étage",
+   "date": "2026-11-23",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Duo Pithy Cats avec Adam Goulet (jazz) – 2e étage",
+   "date": "2026-11-24",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mark & the Shufflers (jazz) – 1er étage",
+   "date": "2026-11-24",
+   "lieu": "Modavie",
+   "source": "recurrents",
+   "url": "https://modavie.com/en/live-music/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Vivier : Sixtrum – Résonances néerlandaises",
+   "date": "2026-11-21",
+   "lieu": "Atrium des Grands Ballets (Édifice Wilder)",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/le-vivier-sixtrum-resonances-neerlandaises-a-lespace-orange-de-ledifice-wilder/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "LSC BASH: THE PROWLERS + BADTERMS + STREET CODE + BIG BOSS",
+   "date": "2026-11-21",
+   "lieu": "Cabaret Fouf",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "THE BROKES: THE STROKES EXPERIENCE",
+   "date": "2026-11-21",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "DABDA + AVEC PLAISIR",
+   "date": "2026-11-22",
+   "lieu": "Cabaret Fouf",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-21",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-21",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-21-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Night Comedy",
+   "date": "2026-11-21",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-9-pm-live-stand-up-at-comedyville-central-station-tickets-122823952749"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand Up",
+   "date": "2026-11-21",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/saturday-comedy-show-early/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Late-Night Stand-Up Comedy",
+   "date": "2026-11-21",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/1207555193089"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Shaun le mouton : la bêêête de la ferme — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/shaun-le-mouton-la-beeete-de-la-ferme-2026-11-22-1030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Conte d'hiver",
+   "date": "2026-11-22",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/conte-dhiver"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1300"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Practica",
+   "date": "2026-11-22",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1500"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-22-1700"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-22",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-22-1930"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -495,6 +821,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "23:00 gardée (fr.ra.co), 22:00 écartée (bardatcha.ca)",
+   "titre": "Datcha NONSTOP: Mercado Popular invites Entrañas",
+   "date": "2026-11-21",
+   "lieu": "DATCHA",
+   "source": "salles",
+   "url": "https://fr.ra.co/events/2565062"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "10:15 gardée (beaconsfield.ca), 10:00 écartée (montreal.ca)",
    "titre": "Heure du conte en mouvement",
    "date": "2026-11-25",
@@ -684,7 +1019,11 @@
   }
  ],
  "contreverif": {
-  "non relues (limite)": 379
+  "date absente de la page": 25,
+  "date confirmée": 213,
+  "lien mort remplacé": 11,
+  "page illisible": 27,
+  "non relues (limite)": 103
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -713,16 +1052,16 @@
    "taux": 43.8
   },
   {
+   "source": "cinemapublic.ca",
+   "erreurs": 245,
+   "sorties": 575,
+   "taux": 42.6
+  },
+  {
    "source": "centredesmusiciensdumonde.com",
    "erreurs": 11,
    "sorties": 26,
    "taux": 42.3
-  },
-  {
-   "source": "cinemapublic.ca",
-   "erreurs": 234,
-   "sorties": 575,
-   "taux": 40.7
   },
   {
    "source": "dansedanse.ca",
@@ -840,7 +1179,7 @@
   }
  ],
  "recoupees": {
-  "total": 3108,
+  "total": 3110,
   "deux_sources_ou_plus": 232
  }
 }

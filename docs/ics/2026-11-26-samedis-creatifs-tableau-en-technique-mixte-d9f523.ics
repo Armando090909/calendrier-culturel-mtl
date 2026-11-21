@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-samedis-creatifs-tableau-en-technique-mixte-a2173a@ccmtl.ca
+UID:2026-11-26-samedis-creatifs-tableau-en-technique-mixte-d9f523@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
+DTSTART;TZID=America/Toronto:20261126T133000
+DTEND;TZID=America/Toronto:20261126T153000
 SUMMARY:Samedis créatifs : Tableau en technique mixte
 LOCATION:Bibliothèque de Cartierville\, Montréal
 URL:https://montreal.ca/evenements/samedis-creatifs-tableau-en-technique-mi
  xte-117130
-DESCRIPTION:Heure à confirmer. La bibliothèque de Cartierville offre un a
- telier d'arts plastiques gratuit pour adultes.\nPrix : Gratuit\nDétails :
-  https://forms.cloud.microsoft/r/XH5NDE3Qxm\n(ccmtl.ca)
+DESCRIPTION:La bibliothèque de Cartierville offre un atelier d'arts plasti
+ ques gratuit pour adultes.\nPrix : Gratuit\nDétails : https://forms.cloud
+ .microsoft/r/XH5NDE3Qxm\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

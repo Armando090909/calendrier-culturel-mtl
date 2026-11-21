@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-11-datcha-nonstop-x3butterfly-fieldnote-karuna-c8d8eb@ccmtl.ca
+UID:2026-11-27-paper-skies-175407@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:Datcha Nonstop: x3butterfly\, Fieldnote\, Karuna
-LOCATION:DATCHA\, Montréal
-URL:https://bardatcha.ca/
-DESCRIPTION:Heure à confirmer. Nuit prolongée de musique électronique av
- ec trois artistes invités.\nDétails : https://ra.co/events/2584289\n(ccm
- tl.ca)
+DTSTART;TZID=America/Toronto:20261127T100000
+DTEND;TZID=America/Toronto:20261127T120000
+SUMMARY:Paper Skies
+LOCATION:Newspeak\, Montréal
+URL:https://ilesoniq.com
+DESCRIPTION:Spectacle musical annoncé dans la sélection des prochains con
+ certs recommandés par îLESONIQ.\nDétails : https://www.universe.com/eve
+ nts/paper-skies-tickets-KZDFGX\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

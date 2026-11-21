@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-ray-gunn-b247b9@ccmtl.ca
+UID:2027-01-20-club-lecto-514f1b@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:Ray Gunn
-LOCATION:Cinémathèque québécoise\, Montréal
-URL:https://www.cinematheque.qc.ca/fr/cinema/ray-gunn/
-DESCRIPTION:Heure à confirmer. Projection d'un film en nouveauté à la Ci
- némathèque québécoise.\nDétails : https://www.cinematheque.qc.ca/fr/c
- inema/ray-gunn/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20270120T130000
+DTEND;TZID=America/Toronto:20270120T150000
+SUMMARY:Club Lecto
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/club-lecto-119190
+DESCRIPTION:Le Club Lecto Henri-Bourassa invite les avides de lecture à se
+  joindre à eux une fois par mois pour échanger et discuter de livres.\nP
+ rix : Gratuit\nDétails : https://lepointdevente.com/billets/8zy260916002\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

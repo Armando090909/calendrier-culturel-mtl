@@ -21,19 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-dansons-avec-3djs-x-donne-ta-veste-soiree-pour-le-d5c93f@ccm
- tl.ca
+UID:2026-11-27-dansons-avec-3-djs-f9c33d@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261127T180000
 DTEND;TZID=America/Toronto:20261127T200000
-SUMMARY:Dansons avec 3DJs x Donne ta veste (soirée pour le Refuge des Jeun
- es)
+SUMMARY:Dansons avec 3 DJs
 LOCATION:Robin des Bois\, Montréal
-URL:https://robindesbois.ca/programmation_events/dansons-avec-3djs-6-novemb
- re/
+URL:https://robindesbois.ca/programmation_events/dansons-avec-3djs-27-novem
+ bre-refuge-des-jeunes/
 DESCRIPTION:Soirée DJ au parc La Fontaine où l'on apporte un vêtement d'
  hiver pour homme ou des dons au profit du Refuge des jeunes.\nPrix : 21 $ 
- adulte\, 5 $ enfant et adolescent…\nDétails : https://robindesbois.ca/p
- rogrammation_events/dansons-avec-3djs-6-novembre/\n(ccmtl.ca)
+ adulte\, 5 $ enfant et adolescent…\nDétails : https://benevole-robin-de
+ s-bois.s1.yapla.com/fr/evenement\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

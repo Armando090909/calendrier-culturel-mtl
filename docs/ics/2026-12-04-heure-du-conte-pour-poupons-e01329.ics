@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-heure-du-conte-pour-poupons-9b9ba0@ccmtl.ca
+UID:2026-12-04-heure-du-conte-pour-poupons-e01329@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
+DTSTART;TZID=America/Toronto:20261204T103000
+DTEND;TZID=America/Toronto:20261204T123000
 SUMMARY:Heure du conte pour poupons
 LOCATION:Bibliothèque de Rosemont\, Montréal
 URL:https://montreal.ca/evenements/heure-du-conte-pour-poupons-118029
-DESCRIPTION:Heure à confirmer. Activité gratuite pour jeunes de 0 à 2 an
- s le vendredi 4 décembre 2026 à la bibliothèque de Rosemont.\nPrix : Gr
- atuit\nDétails : https://montreal.ca/evenements/heure-du-conte-pour-poupo
- ns-118029\n(ccmtl.ca)
+DESCRIPTION:Activité gratuite pour jeunes de 0 à 2 ans le vendredi 4 déc
+ embre 2026 à la bibliothèque de Rosemont.\nPrix : Gratuit\nDétails : ht
+ tps://forms.cloud.microsoft/r/QRX9fUKgLY\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-12-completement-conte-3-6-ans-2a5bb1@ccmtl.ca
+UID:2027-01-20-club-de-lecture-de-pierrefonds-en-anglais-b8ebb8@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261212
-DTEND;VALUE=DATE:20261213
-SUMMARY:Complètement conte! (3-6 ans)
+DTSTART;TZID=America/Toronto:20270120T190000
+DTEND;TZID=America/Toronto:20270120T210000
+SUMMARY:Club de lecture de Pierrefonds en anglais
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/completement-conte-3-6-ans-117304
-DESCRIPTION:Heure à confirmer. Participez à l’éveil de votre enfant à
-  la bibliothèque Hochelaga et venez écouter des histoires drôles\, tend
- res et captivantes.\nPrix : Gratuit\nDétails : https://montreal.ca/evenem
- ents/completement-conte-3-6-ans-117304\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/club-de-lecture-de-pierrefonds-en-anglai
+ s-122223
+DESCRIPTION:Partagez vos plaisirs littéraires avec d’autres personnes pa
+ ssionnées dans une atmosphère détendue et amicale.\nPrix : Gratuit\nDé
+ tails : https://forms.office.com/r/qD7TF66zvt\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

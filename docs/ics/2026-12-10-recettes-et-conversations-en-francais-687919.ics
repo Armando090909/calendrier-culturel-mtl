@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-10-recettes-et-conversations-en-francais-4dc903@ccmtl.ca
+UID:2026-12-10-recettes-et-conversations-en-francais-687919@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
+DTSTART;TZID=America/Toronto:20261210T140000
+DTEND;TZID=America/Toronto:20261210T160000
 SUMMARY:Recettes et conversations en français
 LOCATION:Centre Sanaaq\, Montréal
 URL:https://montreal.ca/evenements/recettes-et-conversations-en-francais-11
  9024
-DESCRIPTION:Heure à confirmer. Un atelier culinaire pour les adultes qui s
- ouhaitent améliorer la pratique de la langue française au centre Sanaaq 
- près du métro Atwater.\nPrix : Gratuit\nDétails : https://lepointdevent
- e.com/billets/ut9261219001\n(ccmtl.ca)
+DESCRIPTION:Un atelier culinaire pour les adultes qui souhaitent améliorer
+  la pratique de la langue française au centre Sanaaq près du métro Atwa
+ ter.\nPrix : Gratuit\nDétails : https://lepointdevente.com/billets/ut9261
+ 219001\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

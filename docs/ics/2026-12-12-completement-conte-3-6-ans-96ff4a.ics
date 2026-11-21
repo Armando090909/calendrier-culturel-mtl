@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-20-club-lecto-29ba6a@ccmtl.ca
+UID:2026-12-12-completement-conte-3-6-ans-96ff4a@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
-SUMMARY:Club Lecto
+DTSTART;TZID=America/Toronto:20261212T103000
+DTEND;TZID=America/Toronto:20261212T123000
+SUMMARY:Complètement conte! (3-6 ans)
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/club-lecto-119190
-DESCRIPTION:Heure à confirmer. Le Club Lecto Henri-Bourassa invite les avi
- des de lecture à se joindre à eux une fois par mois pour échanger et di
- scuter de livres.\nPrix : Gratuit\nDétails : https://montreal.ca/evenemen
- ts/club-lecto-119190\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/completement-conte-3-6-ans-117304
+DESCRIPTION:Participez à l’éveil de votre enfant à la bibliothèque Ho
+ chelaga et venez écouter des histoires drôles\, tendres et captivantes.\
+ nPrix : Gratuit\nDétails : https://montreal.ca/evenements/completement-co
+ nte-3-6-ans-117304\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
