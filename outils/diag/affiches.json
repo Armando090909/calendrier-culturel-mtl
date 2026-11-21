@@ -1,6 +1,6 @@
 {
  "total": 1732,
- "echecs": 23,
+ "echecs": 21,
  "par_site": {
   "imgproxy.ra.co": {
    "affiches": 10,
@@ -9,10 +9,6 @@
   "turbohaus.ca": {
    "affiches": 11,
    "echecs": 3
-  },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 4,
-   "echecs": 2
   },
   "westmount.org": {
    "affiches": 2,
@@ -250,6 +246,10 @@
    "affiches": 1,
    "echecs": 0
   },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 4,
+   "echecs": 0
+  },
   "tangolibre.ca": {
    "affiches": 1,
    "echecs": 0
@@ -449,10 +449,6 @@
   ],
   "img.casadelpopolo.com": [
    "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
-  ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
