@@ -48,7 +48,7 @@ jobs:
           ETAPE_COLLECTE: lecture
           COLLECTE_ESSAI: "1"
           TOUT_RELIRE: "1"
-          ESSAI_SOURCES: "^(LESPACEMAKER – événements|Dièse Onze|Centre Segal|Robin des Bois \(parc La Fontaine\))$"
+          ESSAI_SOURCES: "^(LESPACEMAKER – événements|Dièse Onze|Centre Segal|Robin des Bois .*)$"
         run: timeout 600 python -u collecteur/collecte.py
 
       - name: "2. Assemblage rapide (toutes les lectures en cache)"
