@@ -1,10 +1,14 @@
 {
  "total": 1732,
- "echecs": 21,
+ "echecs": 25,
  "par_site": {
   "imgproxy.ra.co": {
    "affiches": 10,
    "echecs": 10
+  },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 5
   },
   "turbohaus.ca": {
    "affiches": 11,
@@ -24,10 +28,6 @@
   },
   "images.ctfassets.net": {
    "affiches": 44,
-   "echecs": 1
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 92,
    "echecs": 1
   },
   "www.dansedanse.ca": {
@@ -182,6 +182,10 @@
    "affiches": 4,
    "echecs": 0
   },
+  "img.casadelpopolo.com": {
+   "affiches": 92,
+   "echecs": 0
+  },
   "lebordel.ca": {
    "affiches": 3,
    "echecs": 0
@@ -288,10 +292,6 @@
   },
   "rideauvert.qc.ca": {
    "affiches": 1,
-   "echecs": 0
-  },
-  "centaurtheatre.com": {
-   "affiches": 5,
    "echecs": 0
   },
   "lelivart.com": {
@@ -444,11 +444,13 @@
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg"
   ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
-  ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
