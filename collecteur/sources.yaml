@@ -254,6 +254,7 @@ sources:
   - {nom: "Chiguer Art Contemporain", cle: galeries, type: page_ia, url: "https://chiguerartcontemporain.com/", lieu: "Chiguer Art Contemporain", discipline: expo, jours_semaine: [0]}
   - {nom: "Duran Contemporain", cle: galeries, type: page_ia, url: "https://durancontemporain.com/", lieu: "Duran Contemporain", discipline: expo, jours_semaine: [0]}
   - {nom: "Galerie Eli Kerr", cle: galeries, type: page_ia, url: "https://elikerrhq.com/expositions-fr", lieu: "Galerie Eli Kerr", discipline: expo, jours_semaine: [0]}
+  - {nom: "OBORO", cle: galeries, type: page_ia, url: "https://www.oboro.net/programmation/", lieu: "OBORO", adresse: "4001, rue Berri, Espace 301, Montréal", discipline: expo, jours_semaine: [0]}  # 21 nov. 2026, demande de l'équipe : expositions et événements (vernissages, sorties de résidence)
   - {nom: "ELLEPHANT", cle: galeries, type: page_ia, url: "https://ellephant.org", lieu: "ELLEPHANT", discipline: expo, jours_semaine: [0]}
   - {nom: "Galerie C.O.A", cle: galeries, type: page_ia, url: "https://www.galeriecoa.com/fr", lieu: "Galerie C.O.A", discipline: expo, jours_semaine: [0]}
   - {nom: "Galerie Hugues Charbonneau", cle: galeries, type: page_ia, url: "https://huguescharbonneau.com/", lieu: "Galerie Hugues Charbonneau", discipline: expo, jours_semaine: [0]}
