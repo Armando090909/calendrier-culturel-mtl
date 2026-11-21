@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1373,
+  "evenements": 1336,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 25,
+  "evenements": 23,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 414,
+  "evenements": 406,
   "erreur": false
  },
  {
@@ -591,21 +591,21 @@
   "nom": "LESPACEMAKER – événements",
   "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 68,
+  "evenements": 70,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 72,
+  "evenements": 73,
   "erreur": false
  },
  {
   "nom": "Cinéma au Cinoche",
   "url": "https://www.cinemacinoche.com/events/?ical=1",
   "type": "calendrier iCal",
-  "evenements": 14,
+  "evenements": 8,
   "erreur": false
  },
  {
@@ -1054,6 +1054,13 @@
   "url": "https://www.lebalcon.ca",
   "type": "page lue par l'IA",
   "evenements": 27,
+  "erreur": false
+ },
+ {
+  "nom": "Robin des Bois (parc La Fontaine)",
+  "url": "https://robindesbois.ca/wp-json/wp/v2/programmation_events?per_page=20&_fields=title,link,content",
+  "type": "page lue par l'IA",
+  "evenements": 9,
   "erreur": false
  },
  {
@@ -1564,7 +1571,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 105,
+  "evenements": 107,
   "erreur": false
  },
  {

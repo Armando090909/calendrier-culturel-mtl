@@ -1,30 +1,29 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "statut": "publié",
- "evenements": 3271,
- "expositions": 258,
+ "evenements": 3108,
+ "expositions": 256,
  "nouvelles_salles": [
-  "Théâtre C"
+  "Centre culturel de Caraquet",
+  "Century Casino",
+  "Lieu non indiqué",
+  "Magasin Général LeBrun",
+  "Robin des Bois",
+  "Théâtre C",
+  "Théâtre de l'île",
+  "Théâtre du Rift",
+  "Under the Big Top! Langley Riders Society"
  ],
  "notes": {
   "fiches_ville": {
    "lues": 0,
    "erreurs": 0,
    "exemples_erreurs": [],
-   "completees_par_mac": 970,
-   "heures_trouvees": 959,
-   "salles_trouvees": 976
+   "completees_par_mac": 955,
+   "heures_trouvees": 946,
+   "salles_trouvees": 955
   },
   "redites_retirees": [
-   "2026-11-20 : « 20 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 20 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
-   "2026-11-20 : « Big Time Lew » (Centre Culturel Stewart Hall de la Ville de Pointe-Claire) = « Big Time Lew » (Stewart Hall Cultural Centre)",
-   "2026-11-20 : « Mundial Montréal : OFF » (Café Campus) = « Mundial Montréal - OFF : Laura Niquay et invités » (Quai des Brumes)",
-   "2026-11-20 : « Dominic Paquet – Jcomprends la game » (Salle Pierre-Mercure) = « Dominic Paquet - J'COMPRENDS LA GAME » (Centre Pierre-Peladeau)",
-   "2026-11-20 : « Dominic Paquet - J'COMPRENDS LA GAME » (Centre Pierre-Peladeau) = « J'comprends la game » (Salle Pierre-Mercure)",
-   "2026-11-20 : « Friday Night Comedy » (Comedyville) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-20 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
-   "2026-11-20 : « Do Nothing » (Club Soda) = « Do Nothing : M pour Montréal » (Casa del Popolo)",
-   "2026-11-20 : « YAMA//SATO » (Club Soda) = « SKIIFALL, 646YF4T & YAMA//SATO » (Le Ministère)",
    "2026-11-21 : « Brico-contes (3 à 6 ans) » (FabricARThèque du Vieux-Saint-Laurent) = « Brico-contes du samedi » (Bibliothèque)",
    "2026-11-21 : « 21 NOVEMBRE 2026 — Théâtre Fairmount » (Théâtre Fairmount) = « 21 NOVEMBRE 2026 — Bar le Ritz PDB » (Bar Le Ritz PDB)",
    "2026-11-21 : « The Prowlers + Badterms + Street Code + Big Boss » (Foufounes Électriques) = « LSC BASH: THE PROWLERS + BADTERMS + STREET CODE +  » (Cabaret Fouf)",
@@ -35,12 +34,17 @@
    "2026-11-26 : « Thursday Pro-Am Comedy Night » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
    "2026-11-27 : « L'Étrange Noël de Monsieur Jack, en ciné-concert » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack en ciné-co » (Maison symphonique)",
    "2026-11-27 : « Alain Choquette - Entre histoires et illusions » (Salle Pierre-Mercure) = « Alain Choquette - Entre histoires et illusions » (Centre Pierre-Peladeau)",
+   "2026-11-27 : « On s'lâche pas » (Théâtre du Rift) = « On s’lâche pas! - Hubert Proulx » (L'Entrepôt – maison de la culture de Lachine)",
    "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-11-28 : « Luc Beauséjour : Bach dans quatre villes (mini-con » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach en quatre villes » (Off-Bach)",
    "2026-11-28 : « Patrice L'Écuyer - Après seulement 32 ans d'absenc » (Centre Pierre-Peladeau) = « Après seulement 32 ans d'absence sur scène » (Salle Pierre-Mercure)",
+   "2026-11-28 : « Le Capitaine HorrifibiFabullo » (Théâtre des Grands Bois) = « Le Capitaine Horribifabulo » (L'Espace La Risée)",
    "2026-11-28 : « Saturday Night Comedy » (Deli Planet) = « Saturday After Dusk Comedy » (Estrella)",
+   "2026-12-04 : « Élisa Manny : Noël dans le parc » (Parc Lafontaine) = « Elisa Manny » (Parc La Fontaine)",
    "2026-12-04 : « GS DE LA LIQS 4-5-6 Décembre Forfait billet » (All venues) = « GS DE LA LIQS » (La Sala Rossa)",
+   "2026-12-04 : « Représentation (titre non indiqué) » (Théâtre du Nouveau Monde) = « Représentation (titre non indiqué) » (Théâtre de l'île)",
    "2026-12-04 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
+   "2026-12-04 : « Loukeman (DJ Set avec Dyltwosix, Ian Mills et Brat » (Le Saint-Jean Comédie Club) = « Loukeman » (Newspeak)",
    "2026-12-05 : « Rencontre avec l'artiste : Leila Zelli » (Pierre-François Ouellette art contemporain) = « Rencontre avec Maya Cousineau Mollen » (Centre Sanaaq)",
    "2026-12-05 : « Saturday Sundown Comedy » (Deli Planet) = « Saturday Comedy Show » (Comedyville)",
    "2026-12-05 : « SATURDAY Night Comedy in Mile End | The Comedy Spo » (Espace Culturel Kawalees) = « Saturday Comedy Show » (Comedyville)",
@@ -49,14 +53,10 @@
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [],
   "qualite": {
-   "regles": 158,
+   "regles": 75,
    "contreverif": {
-    "date absente de la page": 52,
-    "date confirmée": 351,
-    "lien mort remplacé": 18,
-    "page illisible": 52
+    "non relues (limite)": 379
    },
    "controle": null
   }
@@ -65,29 +65,28 @@
  "sources": [
   {
    "source": "Ville de Montréal – événements publics",
-   "evenements": 1303,
+   "evenements": 1266,
    "series": 70,
    "erreur": null,
-   "note": "repris du 2026-11-20",
+   "note": "repris du 2026-11-21",
    "diagnostic": [
     "colonnes du fichier : titre, url_fiche, description, date_debut, date_fin, type_evenement, public_cible, emplacement, inscription, cout, arrondissement, titre_adresse, adresse_principale, adresse_secondaire, code_postal, lat, long, X, Y"
    ]
   },
   {
    "source": "Ask A Punk (DIY, punk, hardcore)",
-   "evenements": 25,
+   "evenements": 23,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "Sors-tu? (14 prochains jours)",
-   "evenements": 414,
+   "evenements": 406,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20",
+   "note": "repris du 2026-11-21",
    "diagnostic": [
-    "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/20/?contexte=tous",
     "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/21/?contexte=tous",
     "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/22/?contexte=tous",
     "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/23/?contexte=tous",
@@ -96,9 +95,10 @@
     "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/26/?contexte=tous",
     "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/27/?contexte=tous",
     "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/28/?contexte=tous",
-    "IA en échec (source abandonnée après 10 minutes sans fin de lecture) : https://sorstu.ca/calendrier-spectacles/novembre-2026/29/?contexte=tous",
+    "page longue lue en 8 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/29/?contexte=tous",
     "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/novembre-2026/30/?contexte=tous",
-    "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/decembre-2026/1/?contexte=tous"
+    "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/decembre-2026/1/?contexte=tous",
+    "page longue lue en 7 morceaux : https://sorstu.ca/calendrier-spectacles/decembre-2026/2/?contexte=tous"
    ]
   },
   {
@@ -735,8 +735,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1500 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -813,7 +812,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -822,8 +821,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://bainmathieu.ca/programmation/",
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -832,8 +830,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -884,9 +881,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://www.quenditraton.com/spectacles/",
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "récolte mince (0) : recherche élargie à https://www.quenditraton.com/spectacles"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1067,8 +1062,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1077,8 +1071,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1098,28 +1091,26 @@
   },
   {
    "source": "LESPACEMAKER – événements",
-   "evenements": 68,
+   "evenements": 70,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "LESPACEMAKER – formations",
-   "evenements": 72,
+   "evenements": 73,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "Cinéma au Cinoche",
-   "evenements": 14,
+   "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20",
+   "note": "repris du 2026-11-21",
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.cinemacinoche.com/events/, https://www.cinemacinoche.com/events, https://www.cinemacinoche.com/event/20261128-popcorn/",
-    "annonces à venir dans la page : 2 (https://www.cinemacinoche.com)",
-    "récolte mince (13) : recherche élargie à https://www.cinemacinoche.com/event/20261202-popcorn/"
+    "chute brutale (4 au lieu de 14) : sorties de la lecture du 2026-11-20 conservées"
    ]
   },
   {
@@ -1127,7 +1118,7 @@
    "evenements": 12,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "Cinémathèque québécoise – programmation",
@@ -1275,8 +1266,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1508,8 +1498,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 0 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -1601,7 +1590,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (403 Client Error: Ip Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -1846,6 +1835,16 @@
    ]
   },
   {
+   "source": "Robin des Bois (parc La Fontaine)",
+   "evenements": 9,
+   "series": 0,
+   "erreur": null,
+   "note": "repris du 2026-11-21",
+   "diagnostic": [
+    "page longue lue en 4 morceaux : https://robindesbois.ca/wp-json/wp/v2/programmation_events?per_page=20&_fields=title,link,content"
+   ]
+  },
+  {
    "source": "Turbo Haüs",
    "evenements": 16,
    "series": 0,
@@ -1925,8 +1924,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (212 caractères ; site en JavaScript ?) : http://latulipe.ca/?p=4",
-    "annonces à venir dans la page : 1 (http://latulipe.ca/?p=4)"
+    "page presque vide (32 caractères ; site en JavaScript ?) : http://latulipe.ca/?p=4",
+    "annonces à venir dans la page : 0 (http://latulipe.ca/?p=4)"
    ]
   },
   {
@@ -2684,10 +2683,10 @@
   },
   {
    "source": "Soirées quiz (hebdomadaires)",
-   "evenements": 105,
+   "evenements": 107,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "Ligues d'improvisation (hebdomadaires)",
@@ -2701,14 +2700,14 @@
    "evenements": 122,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "Ateliers hebdomadaires",
    "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20"
+   "note": "repris du 2026-11-21"
   },
   {
    "source": "ma.to – communauté (quiz, trivia)",
@@ -2762,14 +2761,12 @@
   },
   {
    "source": "Cinéma au Cinoche",
-   "evenements": 14,
+   "evenements": 8,
    "series": 0,
    "erreur": null,
-   "note": "repris du 2026-11-20",
+   "note": "repris du 2026-11-21",
    "diagnostic": [
-    "pages de programmation lues aussi : https://www.cinemacinoche.com/events/, https://www.cinemacinoche.com/events, https://www.cinemacinoche.com/event/20261128-popcorn/",
-    "annonces à venir dans la page : 2 (https://www.cinemacinoche.com)",
-    "récolte mince (13) : recherche élargie à https://www.cinemacinoche.com/event/20261202-popcorn/"
+    "chute brutale (4 au lieu de 14) : sorties de la lecture du 2026-11-20 conservées"
    ]
   },
   {
@@ -2778,7 +2775,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3141,8 +3138,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3215,8 +3211,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3752 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3413,8 +3408,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (247 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3527,8 +3522,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com",
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
