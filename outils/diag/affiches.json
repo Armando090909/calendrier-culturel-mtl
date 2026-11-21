@@ -1,6 +1,6 @@
 {
- "total": 1631,
- "echecs": 20,
+ "total": 1630,
+ "echecs": 21,
  "par_site": {
   "imgproxy.ra.co": {
    "affiches": 6,
@@ -28,6 +28,10 @@
   },
   "images.ctfassets.net": {
    "affiches": 38,
+   "echecs": 1
+  },
+  "img.casadelpopolo.com": {
+   "affiches": 87,
    "echecs": 1
   },
   "www.dansedanse.ca": {
@@ -75,7 +79,7 @@
    "echecs": 0
   },
   "tpos.s3.amazonaws.com": {
-   "affiches": 126,
+   "affiches": 125,
    "echecs": 0
   },
   "pauline-julien.com": {
@@ -140,10 +144,6 @@
   },
   "xjlpttrziisldlclhsth.supabase.co": {
    "affiches": 2,
-   "echecs": 0
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 87,
    "echecs": 0
   },
   "comedynest.com": {
@@ -442,6 +442,9 @@
   ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
+  ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
