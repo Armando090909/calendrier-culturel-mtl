@@ -156,7 +156,7 @@ function ecouteHTML(e){
     const court={apple:"Apple Music",site:L("Site","Website")};
     // 20 nov. 2026 : grille de pastilles égales (2 par rangée) sous le résumé. Icône du service : fichier fourni par l'équipe
     // dans docs/logos/services/<service>.png (ex. spotify.png) ; s'il n'existe pas, la pastille garde seulement le nom.
-    return `<div class="ecoute v2e ecg"><span class="ecg-t">${film?L("▶ Voir","▶ Watch"):L("♫ Écouter","♫ Listen")}</span><div class="ecg-g">${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc((court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)+(l.nom?" · "+l.nom:""))}"><img src="${BASE}logos/services/${esc(l.type)}.png" alt="" loading="lazy" onerror="this.remove()"><span>${esc(court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)}</span></a>`).join("")}</div></div>`}
+    return `<div class="ecoute v2e ecg"><span class="ecg-t">${film?L("▶ Voir","▶ Watch"):L("♫ Écouter","♫ Listen")}</span><div class="ecg-g">${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc((court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)+(l.nom?" · "+l.nom:""))}"><img src="${BASE}logos/services/${esc(l.type)}.png?v=2" alt="" loading="lazy" onerror="this.remove()"><span>${esc(court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)}</span></a>`).join("")}</div></div>`}
   if(e.liens&&e.liens.length){
     const parNom={};e.liens.forEach(l=>{const k=l.nom||"";(parNom[k]=parNom[k]||[]).push(l)});
     return `<div class="ecoute"><span>${film?L("Voir :","Watch:"):L("Écouter :","Listen:")}</span>${Object.entries(parNom).map(([nom,ls])=>
