@@ -21,16 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-21-zedem-presente-le-10e-anniversaire-de-thousand-isl-52bf0a@cc
- mtl.ca
+UID:2026-11-21-thousand-island-records-10-ans-the-corps-handheld-b0d781@ccm
+ tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Zedem Présente: Le 10e Anniversaire de Thousand Islands Records
+DTSTART;TZID=America/Toronto:20261121T200000
+DTEND;TZID=America/Toronto:20261121T220000
+SUMMARY:Thousand Island Records 10 ans + The Corps + Handheld + Still Insan
+ e + The Lookout
 LOCATION:Turbo Haüs\, Montréal
-URL:https://lepointdevente.com/billets/tirtenyearrager
-DESCRIPTION:Heure à confirmer. Célébration des dix ans du label Thousand
-  Islands Records avec une soirée de concerts.\nDétails : https://lepoint
- devente.com/billets/tirtenyearrager\n(ccmtl.ca)
+URL:https://turbohaus.ca/calendrier/2026/11/21/thousand-island-records-10-a
+ ns--the-corps--handheld--still-insane--the-lookout
+DESCRIPTION:Détails : https://lepointdevente.com/billets/tirtenyearrager?l
+ ang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
