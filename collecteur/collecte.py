@@ -1198,6 +1198,7 @@ def main() -> int:
 
     expos = []
     vus = set()
+    periodes_vues = []  # (salle, début, fin, mots du titre) : une exposition sous deux titres
     for s in series:
         try:
             d1, d2 = date.fromisoformat(s["debut"]), date.fromisoformat(s["fin"])
@@ -1215,6 +1216,12 @@ def main() -> int:
         k = plat(s["titre"])[:40] + "|" + plat(lieu or "")[:20]
         if k in vus:
             continue
+        # 21 nov. 2026 : même salle, mêmes dates et un mot du titre en commun (6 lettres et plus) = même exposition
+        # sous deux titres (« Plateformes de Karl Lemieux » par le RIDM, « Plateformes » par OBORO)
+        mots_s = {m for m in plat(s["titre"]).split() if len(m) >= 6}
+        if any(l2 == lieu and a == s["debut"] and b == s["fin"] and mots_s & m2 for l2, a, b, m2 in periodes_vues):
+            continue
+        periodes_vues.append((lieu, s["debut"], s["fin"], mots_s))
         vus.add(k)
         disc_s = s.get("discipline") or "expo"
         if disc_s == "autre":  # période sans discipline : on la devine ; une longue période inconnue est une exposition
