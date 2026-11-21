@@ -373,6 +373,26 @@ def evenements_gancio(data: list, base: str, cfg: dict) -> list:
 
 
 # ---------------------------------------------------------------- Pages ordinaires (lecture par l'IA)
+def texte_json(brut: str) -> str:
+    """Réponse JSON d'une API publique (ex. WordPress /wp-json/…) mise en texte lisible pour l'IA : une fiche par objet,
+    les champs en clair (HTML retiré, accents décodés) au lieu des « \\u00e9 » et balises échappées (20 nov. 2026)."""
+    try:
+        d = json.loads(brut)
+    except ValueError:
+        return brut
+
+    def clair(v):
+        if isinstance(v, dict):
+            v = v.get("rendered", v)
+        if isinstance(v, (dict, list)):
+            return json.dumps(v, ensure_ascii=False)
+        v = str(v)
+        return re.sub(r"\s+", " ", BeautifulSoup(v, "html.parser").get_text(" ") if "<" in v else v).strip()
+    objets = d if isinstance(d, list) else [d]
+    return "\n\n".join("\n".join(f"{k} : {clair(v)}" for k, v in o.items()) if isinstance(o, dict) else str(o)
+                       for o in objets)
+
+
 def texte_page(html: str, base_url: str) -> str:
     soupe = BeautifulSoup(html, "html.parser")
     for tag in soupe(["script", "style", "noscript", "svg", "iframe", "header", "footer", "form"]):
@@ -740,7 +760,7 @@ def page_ia(cfg: dict, debut: date, fin: date, **_) -> tuple[list, list]:
             evs += e2
             series += s2
             continue
-        texte = texte_page(html, url)
+        texte = texte_json(html) if (html or "").lstrip()[:1] in ("[", "{") else texte_page(html, url)
         if len(texte) < 600 and not avec_nav and "pagemac" not in html[:200]:
             try:  # page presque vide : site en JavaScript ; on la relit automatiquement dans le navigateur
                 html = page_rendue(url)
