@@ -154,7 +154,9 @@ function ecouteHTML(e){
   if(V2&&e.liens&&e.liens.length){ // nouveau design : une seule ligne de pastilles, un lien par service, sans les noms
     const vus=new Set(),ls=e.liens.filter(l=>!vus.has(l.type)&&vus.add(l.type)).slice(0,4);
     const court={apple:"Apple Music",site:L("Site","Website")};
-    return `<div class="ecoute v2e">${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener"${l.nom?` title="${esc(l.nom)}"`:""}>${esc(court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)}</a>`).join("")}</div>`}
+    // 20 nov. 2026 : grille de pastilles égales (2 par rangée) sous le résumé. Icône du service : fichier fourni par l'équipe
+    // dans docs/logos/services/<service>.png (ex. spotify.png) ; s'il n'existe pas, la pastille garde seulement le nom.
+    return `<div class="ecoute v2e ecg"><span class="ecg-t">${film?L("▶ Voir","▶ Watch"):L("♫ Écouter","♫ Listen")}</span><div class="ecg-g">${ls.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener"${l.nom?` title="${esc(l.nom)}"`:""}><img src="${BASE}logos/services/${esc(l.type)}.png" alt="" loading="lazy" onerror="this.remove()"><span>${esc(court[l.type]||l.label||NOMS_LIEN[l.type]||l.type)}</span></a>`).join("")}</div></div>`}
   if(e.liens&&e.liens.length){
     const parNom={};e.liens.forEach(l=>{const k=l.nom||"";(parNom[k]=parNom[k]||[]).push(l)});
     return `<div class="ecoute"><span>${film?L("Voir :","Watch:"):L("Écouter :","Listen:")}</span>${Object.entries(parNom).map(([nom,ls])=>
@@ -190,11 +192,11 @@ function detailHTML(e){
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
       ${lieuHTML(e,true)}
-      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2&&!media?ecoute:""}
+      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2?ecoute:""}
       ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
       ${signalerHTML(e)}
     </div>
-    ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
+    ${media?`<div class="det-vis">${media}</div>`:""}
     <div class="det-side seul">${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
     ${signalerHTML(e,"tel")}
   </article>`;
