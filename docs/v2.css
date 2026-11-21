@@ -364,11 +364,14 @@ html.v2 #view.glisse-d{animation:glisse-d .22s ease-out}
 #rail-zone[hidden]{display:none}
 @media (pointer:fine){#rail-zone{display:none}}
 
-/* Écouter / Voir (20 nov. 2026) : grille de pastilles égales sous le résumé, icône du service si fournie */
-html.v2 .ecoute.ecg{display:block;margin:14px 0 4px;max-width:420px}
-html.v2 .ecoute.ecg .ecg-t{display:block!important;font-weight:900;font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px;color:#000}
-html.v2 .ecoute.ecg .ecg-g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-html.v2 .ecoute.ecg a{display:flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 10px;font-size:14px;font-weight:800;
-  border:2px solid #000;border-radius:999px;background:var(--bg);color:#000;text-decoration:none;white-space:nowrap;overflow:hidden;min-width:0}
-html.v2 .ecoute.ecg a span{overflow:hidden;text-overflow:ellipsis}
-html.v2 .ecoute.ecg a img{width:20px;height:20px;object-fit:contain;flex:none}
+/* Écouter / Voir (20 nov. 2026) : une rangée d'icônes seules (fichiers de l'équipe, docs/logos/services/) ; le nom reste
+   lu par les lecteurs d'écran ; un service sans icône garde son nom en lien souligné */
+html.v2 .ecoute.ecg{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:14px 0 4px}
+html.v2 .ecoute.ecg .ecg-t{display:inline!important;font-weight:900;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#000}
+html.v2 .ecoute.ecg .ecg-g{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px}
+html.v2 .ecoute.ecg a{display:inline-flex;align-items:center;border:0;background:none;padding:0;border-radius:0;
+  font-size:14px;font-weight:800;color:#000;text-decoration:underline;text-underline-offset:3px}
+html.v2 .ecoute.ecg a img{width:30px;height:30px;object-fit:contain;display:block}
+html.v2 .ecoute.ecg a:has(img) span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html.v2 .ecoute.ecg a:has(img){transition:transform .15s}
+html.v2 .ecoute.ecg a:has(img):hover{transform:scale(1.12)}
