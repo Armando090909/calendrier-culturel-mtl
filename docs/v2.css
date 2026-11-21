@@ -377,3 +377,5 @@ html.v2 .ecoute.ecg a:has(img){transition:transform .15s}
 html.v2 .ecoute.ecg a:has(img):hover{transform:scale(1.12)}
 html.v2 .ecoute.ecg a img[src*="/spotify.png"],html.v2 .ecoute.ecg a img[src*="/apple.png"]{
   background:radial-gradient(circle closest-side,var(--bg) 0 86%,transparent 87%)}  /* parties transparentes en crème (20 nov. 2026) */
+html.v2 .ecoute.ecg a img[src*="/deezer.png"],html.v2 .ecoute.ecg a img[src*="/tidal.png"]{
+  filter:sepia(1) brightness(.96)}  /* blanc des logos en crème, noir intact (20 nov. 2026) */
