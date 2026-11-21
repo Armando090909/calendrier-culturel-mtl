@@ -258,7 +258,11 @@ def page_evenement(e: dict, lieux: dict) -> str:
 </article>
 <p class="nav-j"><a href="{P('/jour/' + e['date'] + '.html')}">{T('Toutes les sorties du ', 'Everything on ')}{e_(jour_long(e['date']))} →</a></p>"""
     titre = f"{e['titre']} · {lieu(e)} · {jour_long(e['date'])}"
-    return page(titre, description[:300], chemin, corps, aff, schema_event(e, lieux, url, aff or SITE + "/partage.png"))
+    sch = schema_event(e, lieux, url, aff or SITE + "/partage.png")
+    # 21 nov. 2026 (avis Search Console « description manquant ») : sans résumé de la source, on donne à Google la même
+    # phrase factuelle que la balise meta (date, heure, salle, discipline). Rien d'inventé.
+    sch.setdefault("description", description[:300])
+    return page(titre, description[:300], chemin, corps, aff, sch)
 
 
 def page_jour(j: str, evs: list[dict], lieux: dict, prec: str | None, suiv: str | None) -> str:
