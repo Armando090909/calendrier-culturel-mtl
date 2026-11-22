@@ -3,170 +3,13 @@
  "fin": "2026-11-29",
  "picks": [
   {
-   "k": "expo",
-   "e": {
-    "titre": "Plateformes de Karl Lemieux",
-    "lieu": "OBORO",
-    "debut": "2026-11-20",
-    "fin": "2026-11-28",
-    "discipline": "expo",
-    "url": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/",
-    "resume": "Exposition de Karl Lemieux présentée à OBORO.",
-    "resume_en": "Exhibition by Karl Lemieux presented at OBORO.",
-    "date": "2026-11-23",
-    "heure": "",
-    "_jusqu": "2026-11-28"
-   },
-   "accroche": "Exposition de Karl Lemieux présentée à OBORO.",
-   "accroche_en": "Karl Lemieux exhibition presented at OBORO.",
-   "mode": "connu"
-  },
-  {
-   "k": "humour",
-   "e": {
-    "date": "2026-11-24",
-    "heure": "20:00",
-    "discipline": "humour",
-    "titre": "Tuesday Night Comedy",
-    "lieu": "McKibbin's",
-    "url": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "salles",
-    "resume": "Micro ouvert d'humour debout en anglais au centre-ville, le mardi.",
-    "billets": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS",
-    "confirmations": 2,
-    "affiche": {
-     "url": "https://media.admitone.com/legacy/13195710a36b45acbe9e3ecf62499894",
-     "credit": "admitone.com",
-     "lien": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS"
-    },
-    "prix": "11,75 à 17 $",
-    "resume_en": "English-language stand-up open mic downtown, on Tuesdays.",
-    "ics": "2026-11-24-tuesday-night-comedy-53d3b9"
-   },
-   "accroche": "Micro ouvert d'humour debout en anglais au centre-ville, le mardi.",
-   "accroche_en": "Open mic stand-up comedy in English downtown, on Tuesdays.",
-   "mode": "connu"
-  },
-  {
-   "k": "conference",
-   "e": {
-    "date": "2026-11-25",
-    "heure": "18:00",
-    "discipline": "conference",
-    "titre": "Toutes les musiques ont-elles les mêmes chances d’être entendues ?",
-    "lieu": "Club Balattou",
-    "url": "https://lepointdevente.com/billets/pna261125001",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "salles",
-    "resume": "Rencontre de discussion sur la visibilité des différentes musiques et sur l'accès qu'elles ont au public.",
-    "prix": "Gratuit",
-    "billets": "https://lepointdevente.com/billets/pna261125001",
-    "confirmations": 1,
-    "affiche": {
-     "url": "https://tpos.s3.amazonaws.com/events/PNA/26/11/25/001/pna261125001-1152x648-fr-6af4af46.png",
-     "credit": "lepointdevente.com",
-     "lien": "https://lepointdevente.com/billets/pna261125001"
-    },
-    "resume_en": "Discussion meeting on the visibility of different kinds of music and their access to audiences.",
-    "ics": "2026-11-25-toutes-les-musiques-ont-elles-les-memes-chances-de-f49815"
-   },
-   "accroche": "Rencontre de discussion sur la visibilité des différentes musiques et sur l'accès qu'elles ont au public.",
-   "accroche_en": "Discussion meeting on the visibility of different kinds of music and the access audiences have to them.",
-   "mode": "découverte"
-  },
-  {
-   "k": "musique",
-   "e": {
-    "date": "2026-11-26",
-    "heure": "20:00",
-    "discipline": "musique",
-    "titre": "Barenaked Ladies",
-    "lieu": "L'Olympia",
-    "url": "https://sorstu.ca/artiste/barenaked-ladies/",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "sorstu",
-    "resume": "Concert de rock du groupe canadien Barenaked Ladies.",
-    "billets": "http://www.songkick.com/concerts/43333194-barenaked-ladies-at-lolympia?utm_medium=organic&utm_source=microformat",
-    "confirmations": 2,
-    "style": "rock",
-    "affiche": {
-     "url": "https://images.sk-static.com/images/media/profile_images/artists/199498/huge_avatar",
-     "credit": "sorstu.ca",
-     "lien": "https://sorstu.ca/artiste/barenaked-ladies/"
-    },
-    "liens": [
-     {
-      "type": "spotify",
-      "url": "https://open.spotify.com/artist/0dEvJpkqhrcn64d3oI8v79",
-      "source": "musicbrainz",
-      "nom": "Barenaked Ladies"
-     },
-     {
-      "type": "site",
-      "url": "http://www.bnlmusic.com/",
-      "source": "musicbrainz",
-      "nom": "Barenaked Ladies"
-     },
-     {
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/barenaked-ladies",
-      "source": "musicbrainz",
-      "nom": "Barenaked Ladies"
-     },
-     {
-      "type": "apple",
-      "url": "https://music.apple.com/ca/artist/169260",
-      "source": "musicbrainz",
-      "nom": "Barenaked Ladies"
-     }
-    ],
-    "resume_en": "Rock concert by the Canadian band Barenaked Ladies.",
-    "ics": "2026-11-26-barenaked-ladies-6a355c"
-   },
-   "accroche": "Le groupe rock canadien Barenaked Ladies en concert.",
-   "accroche_en": "Canadian rock band Barenaked Ladies in concert.",
-   "mode": "tête d'affiche"
-  },
-  {
-   "k": "theatre",
-   "e": {
-    "date": "2026-11-27",
-    "heure": "20:00",
-    "discipline": "theatre",
-    "titre": "Le fantôme dans la machine",
-    "lieu": "Duceppe",
-    "url": "https://duceppe.com/le-fantome-dans-la-machine/",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "theatre",
-    "resume": "Nouvelle création de Fanny Britt, pièce de science-fiction d'environ 1h20 sans entracte; offre promotionnelle de 25 %.",
-    "billets": "https://am.ticketmaster.com/duceppe/fr-ca/buy/virtual-venue/RDZEMTEyNw==",
-    "confirmations": 1,
-    "affiche": {
-     "url": "https://duceppe.com/uploads/DU2627_FANTOME_FB-SHARE_1200x630.jpg",
-     "credit": "duceppe.com",
-     "lien": "https://duceppe.com/le-fantome-dans-la-machine/"
-    },
-    "prix": "33 $",
-    "resume_en": "New creation by Fanny Britt, a science-fiction play of about 1h20 with no intermission; 25% promotional offer.",
-    "ics": "2026-11-27-le-fantome-dans-la-machine-64f487"
-   },
-   "accroche": "Une nouvelle création de Fanny Britt : de la science-fiction, sans entracte.",
-   "accroche_en": "A new creation by Fanny Britt: science fiction, with no intermission.",
-   "mode": "découverte"
-  },
-  {
    "k": "cinema",
    "e": {
-    "date": "2026-11-28",
-    "heure": "20:15",
+    "date": "2026-11-23",
+    "heure": "20:30",
     "discipline": "cinema",
     "titre": "Partout et nulle part",
-    "lieu": "Cinéma du Parc",
+    "lieu": "Maison Théâtre",
     "url": "https://ridm.ca/fr/films/partout-et-nulle-part",
     "complet": false,
     "jeunePublic": false,
@@ -181,10 +24,167 @@
      "lien": "https://ridm.ca/fr/films/partout-et-nulle-part"
     },
     "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
-    "ics": "2026-11-28-partout-et-nulle-part-12af0d"
+    "ics": "2026-11-23-partout-et-nulle-part-f2a939"
    },
-   "accroche": "Une créatrice participe à une œuvre entre fiction, enquête et documentaire militant.",
-   "accroche_en": "A filmmaker takes part in a work blending fiction, investigation and activist documentary.",
+   "accroche": "Une créatrice prend part à une œuvre inspirée des paradis fiscaux, entre fiction et enquête.",
+   "accroche_en": "A filmmaker joins a work inspired by tax havens, blending fiction and investigation.",
+   "mode": "connu"
+  },
+  {
+   "k": "conference",
+   "e": {
+    "date": "2026-11-24",
+    "heure": "18:30",
+    "discipline": "conference",
+    "titre": "La Lune, notre voisine",
+    "lieu": "Bibliothèque Serge-Bouchard",
+    "url": "https://montreal.ca/evenements/la-lune-notre-voisine-115603",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "ville",
+    "resume": "Venez écouter l’astronome amateur Yves Martin et découvrez la lune sous de nouveaux aspects.",
+    "prix": "Gratuit",
+    "billets": "https://forms.cloud.microsoft/r/arcAF9ijvn",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/nll7421aktzpqj4kobk9.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/nll7421aktzpqj4kobk9.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/la-lune-notre-voisine-115603"
+    },
+    "confirmations": 1,
+    "resume_en": "Come listen to amateur astronomer Yves Martin and discover the moon in a new light.",
+    "ics": "2026-11-24-la-lune-notre-voisine-5fc02a"
+   },
+   "accroche": "Venez écouter l’astronome amateur Yves Martin et découvrez la lune sous de nouveaux aspects.",
+   "accroche_en": "Come listen to amateur astronomer Yves Martin and discover the moon from new angles.",
+   "mode": "découverte"
+  },
+  {
+   "k": "theatre",
+   "e": {
+    "date": "2026-11-25",
+    "heure": "19:00",
+    "discipline": "theatre",
+    "titre": "Méthadone",
+    "lieu": "Théâtre Desjardins",
+    "url": "https://www.theatredesjardins.com/programmation/methadone-bertrand/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Pièce de théâtre de Bertrand présentée au Théâtre Desjardins.",
+    "confirmations": 1,
+    "affiche": {
+     "url": "https://www.theatredesjardins.com/app/uploads/2026/04/tuxedo-image-methadone-bertrand.jpg",
+     "credit": "theatredesjardins.com",
+     "lien": "https://www.theatredesjardins.com/programmation/methadone-bertrand/"
+    },
+    "billets": "https://theatredesjardins-abonnes.tuxedobillet.com/main/methadone-bertrand/20261125190000",
+    "prix": "42 à 46 $",
+    "resume_en": "Play by Bertrand presented at Théâtre Desjardins.",
+    "ics": "2026-11-25-methadone-81504d"
+   },
+   "accroche": "Une pièce signée Bertrand, pour plonger dans son univers.",
+   "accroche_en": "A play by Bertrand, to dive into its world.",
+   "mode": "découverte"
+  },
+  {
+   "k": "expo",
+   "e": {
+    "titre": "Plateformes de Karl Lemieux",
+    "lieu": "OBORO",
+    "debut": "2026-11-20",
+    "fin": "2026-11-28",
+    "discipline": "expo",
+    "url": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/",
+    "resume": "Exposition de Karl Lemieux présentée à OBORO.",
+    "resume_en": "Exhibition by Karl Lemieux presented at OBORO.",
+    "date": "2026-11-26",
+    "heure": "",
+    "_jusqu": "2026-11-28"
+   },
+   "accroche": "Découvre les Plateformes de Karl Lemieux, une exposition à voir avant sa clôture.",
+   "accroche_en": "Explore Karl Lemieux's Plateformes, an exhibition to see before it closes.",
+   "mode": "connu"
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-11-27",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Bonobo",
+    "lieu": "MTELUS",
+    "url": "https://mtelus.com/fr/evenements?vue=grille",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Bonobo présente son spectacle de la tournée Distance in Static en Amérique du Nord, avec Anish Kumar.",
+    "billets": "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607",
+    "confirmations": 3,
+    "style": "electro",
+    "affiche": {
+     "url": "https://images.ctfassets.net/3yxl57nu0yl4/7bq4z4ViVLkLCLyb6s2kh5/08d3b98763833c147aed0df566907f84/Bonobo.png",
+     "credit": "evenko.ca",
+     "lien": "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607"
+    },
+    "liens": [
+     {
+      "type": "bandcamp",
+      "url": "https://bonobomusic.bandcamp.com/",
+      "source": "musicbrainz",
+      "nom": "Bonobo"
+     },
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb",
+      "source": "musicbrainz",
+      "nom": "Bonobo"
+     },
+     {
+      "type": "site",
+      "url": "https://bonobomusic.com/",
+      "source": "musicbrainz",
+      "nom": "Bonobo"
+     },
+     {
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/bonobo",
+      "source": "musicbrainz",
+      "nom": "Bonobo"
+     }
+    ],
+    "resume_en": "Bonobo presents his show from the Distance in Static tour in North America, with Anish Kumar.",
+    "ics": "2026-11-27-bonobo-c0e5e3"
+   },
+   "accroche": "Laisse-toi porter par Bonobo et sa tournée Distance in Static, avec Anish Kumar.",
+   "accroche_en": "Let Bonobo carry you through the Distance in Static tour, with Anish Kumar.",
+   "mode": "tête d'affiche"
+  },
+  {
+   "k": "humour",
+   "e": {
+    "date": "2026-11-28",
+    "heure": "20:00",
+    "discipline": "humour",
+    "titre": "Elena Gabrielle – Disturb the Vibe – Montreal",
+    "lieu": "Théâtre Sainte-Catherine",
+    "url": "https://theatresaintecatherine.com/event/elena-gabrielle-disturb-the-vibe-montreal/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "theatre",
+    "resume": "Elena Gabrielle - Disturb the Vibe - Montréal Elena Gabrielle — reine internationale de la comédie, marchande de chaos et perturbatrice professionnelle d'ambiance — revient avec son spectacle le plus déjanté à ce jour : Disturb…",
+    "confirmations": 1,
+    "affiche": {
+     "url": "https://theatresaintecatherine.com/wp-content/uploads/2026/08/5f3f31ab328d0ce187841c955fe92dce.png",
+     "credit": "theatresaintecatherine.com",
+     "lien": "https://theatresaintecatherine.com/event/elena-gabrielle-disturb-the-vibe-montreal/"
+    },
+    "billets": "https://thepointofsale.com/tickets/debark2023",
+    "resume_en": "Elena Gabrielle - Disturb the Vibe - Montreal Elena Gabrielle — international comedy queen, chaos merchant and professional vibe disturber — is back with her most chaotic show yet: Disturb…",
+    "ics": "2026-11-28-elena-gabrielle-disturb-the-vibe-montreal-ce6376"
+   },
+   "accroche": "Elena Gabrielle revient avec son spectacle le plus déjanté à ce jour, Disturb the Vibe.",
+   "accroche_en": "Elena Gabrielle returns with her wildest show yet, Disturb the Vibe.",
    "mode": "connu"
   },
   {
@@ -211,8 +211,8 @@
     "resume_en": "Evening devoted to flamenco, blending dance and traditional Spanish music.",
     "ics": "2026-11-29-soiree-flamenca-a-trois-souffles-79ca97"
    },
-   "accroche": "Une soirée consacrée au flamenco, qui mêle danse et musique traditionnelle espagnole.",
-   "accroche_en": "An evening devoted to flamenco, mixing dance and traditional Spanish music.",
+   "accroche": "Danse et musique traditionnelle espagnole s'entrelacent dans cette soirée de flamenco.",
+   "accroche_en": "Dance and traditional Spanish music intertwine in this flamenco evening.",
    "mode": "découverte"
   }
  ],
@@ -360,6 +360,26 @@
  "total": 899,
  "expos": 178,
  "tags": {
+  "cinema": {
+   "salle": {
+    "compte": "maisontheatre",
+    "sur": true,
+    "source": "https://www.maisontheatre.com/"
+   },
+   "artiste": {
+    "compte": "ridm_festival",
+    "sur": false,
+    "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
+   }
+  },
+  "conference": {},
+  "theatre": {
+   "salle": {
+    "compte": "theatredesjardins",
+    "sur": true,
+    "source": "https://www.theatredesjardins.com/programmation/methadone-bertrand/"
+   }
+  },
   "expo": {
    "salle": {
     "compte": "oboro4001",
@@ -372,44 +392,29 @@
     "source": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/"
    }
   },
-  "humour": {
-   "artiste": {
-    "compte": "admitoneticketing",
-    "sur": false,
-    "source": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS"
-   }
-  },
-  "conference": {},
   "musique": {
    "artiste": {
-    "compte": "barenakedladiesmusic",
+    "compte": "si_bonobo",
     "sur": true,
-    "source": "https://linktr.ee/barenakedladies",
-    "qui": "Barenaked Ladies"
+    "source": "https://linktr.ee/si_bonobo",
+    "qui": "Bonobo"
    }
   },
-  "theatre": {
+  "humour": {
    "salle": {
-    "compte": "theatre_duceppe",
+    "compte": "theatre.sainte_catherine",
     "sur": true,
-    "source": "https://duceppe.com/"
+    "source": "https://theatresaintecatherine.com/"
    },
    "artiste": {
-    "compte": "fannybrittenpublic",
+    "compte": "elenagabrielle",
     "sur": true,
-    "source": "https://wordfest.com/2024/imaginairium/artist/fanny-britt/",
-    "qui": "Fanny Britt"
-   }
-  },
-  "cinema": {
-   "artiste": {
-    "compte": "ridm_festival",
-    "sur": false,
-    "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
+    "source": "https://www.elenagabrielle.com/",
+    "qui": "Elena Gabrielle"
    }
   },
   "danse": {}
  },
  "_statut": "ok",
- "_issue": "19"
+ "_issue": null
 }
