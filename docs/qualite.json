@@ -3,8 +3,8 @@
  "regles": {
   "titre mal encodé": 14,
   "activité de plusieurs mois classée hors exposition": 1,
-  "page de la sortie disparue": 13,
-  "date absente de la page officielle": 24,
+  "page de la sortie disparue": 14,
+  "date absente de la page officielle": 25,
   "heures différentes selon les sources": 57
  },
  "journal": [
@@ -475,6 +475,24 @@
    "lieu": "Espace Together",
    "source": "salles",
    "url": "https://luma.com/book-crush-21"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Father Of Peace",
+   "date": "2026-11-25",
+   "lieu": "Le Studio TD",
+   "source": "salles",
+   "url": "https://lestudiotd.com/fr"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Chronovisor — séance",
+   "date": "2026-11-25",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/chronovisor-2026-11-25-2045"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -991,11 +1009,10 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 204,
-  "lien mort remplacé": 13,
-  "date absente de la page": 24,
-  "page illisible": 24,
-  "non relues (limite)": 29
+  "date confirmée": 230,
+  "lien mort remplacé": 14,
+  "date absente de la page": 25,
+  "page illisible": 25
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1019,9 +1036,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 267,
+   "erreurs": 268,
    "sorties": 606,
-   "taux": 44.1
+   "taux": 44.2
   },
   {
    "source": "tortueberlue.com",
