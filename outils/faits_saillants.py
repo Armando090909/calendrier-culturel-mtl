@@ -266,6 +266,8 @@ def choisir(data, debut, etat):
             meilleur, meilleur_score = combo, sc
     picks = []
     for k, (e, r, (acc, acc_en)) in zip(ks, meilleur or []):
+        if (prefs.get("accroches") or {}).get(k):  # (22 nov. 2026) accroche corrigée à la main (fr, en)
+            acc, acc_en = prefs["accroches"][k]
         if not acc:
             acc, acc_en = re.split(r"(?<=[.!?])\s", e.get("resume") or "")[0][:110], ""
         picks.append({"k": k, "e": e, "accroche": acc, "accroche_en": acc_en, "mode": modes[k]})
