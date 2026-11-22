@@ -206,13 +206,19 @@ def choisir(data, debut, etat):
     for k in disciplines:
         if voulus.get(k):  # événement demandé : ses représentations de la semaine seulement
             cs = [e for e in evs if voulus[k] in _plat(e["titre"])]
+            jour_voulu = (prefs.get("dates") or {}).get(k)  # (22 nov. 2026) représentation d'un jour précis
+            if jour_voulu and any(e["date"] == jour_voulu for e in cs):
+                cs = [e for e in cs if e["date"] == jour_voulu]
             if not cs:  # pièce « à l'affiche du … au … » (série) : présentée « jusqu'au … » (14 nov. 2026)
-                cs = [dict(x, date=max(x["debut"], debut.isoformat()), heure="", _jusqu=x["fin"])
+                # (22 nov. 2026) une copie par jour de la semaine : la série prend le jour resté libre, pour qu'un
+                # autre souhait daté (ex. un film le lundi) garde son jour
+                cs = [dict(x, date=(debut + timedelta(days=i)).isoformat(), heure="", _jusqu=x["fin"])
                       for x in data.get("expos", []) if voulus[k] in _plat(x["titre"])
-                      and x["debut"] <= fin.isoformat() and x["fin"] >= debut.isoformat()]
+                      and x["debut"] <= fin.isoformat() and x["fin"] >= debut.isoformat()
+                      for i in range(7) if x["debut"] <= (debut + timedelta(days=i)).isoformat() <= x["fin"]]
             if cs:
                 cs.sort(key=lambda e: (-score(e), e["date"]))
-                cands[k] = cs[:5]
+                cands[k] = cs[:7]
                 continue
             print(f"  souhait « {prefs['choix'][k]} » ({k}) : introuvable cette semaine, choix habituel")
         cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5
