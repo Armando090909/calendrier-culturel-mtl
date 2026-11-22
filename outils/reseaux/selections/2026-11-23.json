@@ -17,17 +17,13 @@
     "resume": "Une créatrice participe à une œuvre inspirée des paradis fiscaux, entre fiction, enquête et documentaire militant, avec humour.",
     "billets": "https://ridm.ca/fr/films/partout-et-nulle-part",
     "festival": "ridm",
+    "image": "https://ccmtl.ca/affiches/partout-et-nulle-part.jpg",
     "confirmations": 1,
-    "affiche": {
-     "url": "https://ridm.ca/img/generated/movie_gallery/18699_PARTOUT_Still_01.jpg",
-     "credit": "ridm.ca",
-     "lien": "https://ridm.ca/fr/films/partout-et-nulle-part"
-    },
     "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
     "ics": "2026-11-23-partout-et-nulle-part-f2a939"
    },
-   "accroche": "Fiction, enquête et documentaire militant sur les paradis fiscaux, avec humour.",
-   "accroche_en": "Fiction, investigation and activist documentary on tax havens, with humour.",
+   "accroche": "Plonge dans une œuvre sur les paradis fiscaux : fiction, enquête, documentaire militant.",
+   "accroche_en": "Dive into a work on tax havens: fiction, investigation, activist documentary.",
    "mode": "connu"
   },
   {
@@ -75,8 +71,8 @@
     "heure": "",
     "_jusqu": "2026-11-28"
    },
-   "accroche": "Une exposition de Karl Lemieux à voir en ce moment.",
-   "accroche_en": "A Karl Lemieux exhibition to see right now.",
+   "accroche": "Explore l'univers de Karl Lemieux à travers ses Plateformes.",
+   "accroche_en": "Explore Karl Lemieux's world through his Plateformes.",
    "mode": "connu"
   },
   {
@@ -97,8 +93,8 @@
     "resume_en": "Round table on the apparent decline of reading in the face of the rise of book clubs and social media influencers.",
     "ics": "2026-11-26-lecture-en-recul-osons-en-parler-0eaece"
    },
-   "accroche": "Clubs de lecture et prescripteurs en ligne : la lecture recule-t-elle vraiment?",
-   "accroche_en": "Reading clubs and online recommenders: is reading really declining?",
+   "accroche": "Tu te demandes si la lecture recule ? Clubs et prescripteurs en ligne en débattent.",
+   "accroche_en": "Wondering if reading is declining? Book clubs and online tastemakers weigh in.",
    "mode": "découverte"
   },
   {
@@ -126,8 +122,8 @@
     "resume_en": "The Maison de la culture du Plateau-Mont-Royal presents, free of charge, the residency showing of the Soeurs Schmutt on November 27, 2026 at 2 p.m.",
     "ics": "2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-d84c50"
    },
-   "accroche": "Une sortie de résidence des Soeurs Schmutt, présentée gratuitement.",
-   "accroche_en": "A residency showing by Les Soeurs Schmutt, offered free of charge.",
+   "accroche": "Assiste gratuitement à la sortie de résidence des Soeurs Schmutt, une création en cours.",
+   "accroche_en": "Catch the Soeurs Schmutt's residency showing, a work in progress, free admission.",
    "mode": "découverte"
   },
   {
@@ -142,7 +138,7 @@
     "complet": true,
     "jeunePublic": false,
     "source": "salles",
-    "resume": "Spectacle d'humour de Lydia Képinski.",
+    "resume": "Lydia Képinski en concert au Club Soda : synth-pop dansante et textes d'inspiration poétique.",
     "billets": "https://lepointdevente.com/billets/clb261128001",
     "aussi": [
      "theatre",
@@ -155,7 +151,7 @@
      "lien": "https://lepointdevente.com/billets/clb261128001"
     },
     "prix": "40 $",
-    "resume_en": "Comedy show by Lydia Képinski.",
+    "resume_en": "Lydia Képinski in concert at Club Soda: danceable synth-pop and poetry-inspired lyrics.",
     "ics": "2026-11-28-lydia-kepinski-9e7b22"
    },
    "accroche": "Lydia Képinski en concert : synth-pop dansante et textes d'inspiration poétique.",
@@ -188,8 +184,8 @@
     "resume_en": "show, activity, free, Christmas, theatre, children aged 2 to 8, library, Vieux-Saint-Laurent",
     "ics": "2026-11-29-spectacle-le-noel-de-guirlande-2-a-8-ans-6033db"
    },
-   "accroche": "Un spectacle de théâtre de Noël pour les 2 à 8 ans, gratuit.",
-   "accroche_en": "A Christmas theatre show for ages 2 to 8, free admission.",
+   "accroche": "Viens voir un spectacle de Noël en théâtre, gratuit, pour les 2 à 8 ans.",
+   "accroche_en": "Come see a free theatre Christmas show for ages 2 to 8.",
    "mode": "connu"
   }
  ],
@@ -387,5 +383,5 @@
   "jeune": {}
  },
  "_statut": "ok",
- "_issue": "23"
+ "_issue": null
 }
