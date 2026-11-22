@@ -294,7 +294,9 @@
    "lieu": "Lieu à confirmer",
    "titre": "Table ronde avec Michael Maul",
    "heure": "15:15",
-   "source": "festivalbachmontreal.com (27 nov. 2026 - 15:15 ; salle non indiquée)"
+   "source": "festivalbachmontreal.com (27 nov. 2026 - 15:15 ; salle non indiquée) ; salle : page de l'activité classée « Off-Bach », et festivalbachmontreal.com/off-bach/ : « Adresse 3487 Boul. Saint-Laurent Montréal, QC H2X 2T6 »",
+   "nouveau_lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "adresse": "3487 boul. Saint-Laurent, Montréal, QC H2X 2T6"
   },
   {
    "date": "2026-11-21",
@@ -427,6 +429,63 @@
    "titre": "Concert SENS UNIQUE",
    "heure": "19:30",
    "source": "cldv.tuxedobillet.com : « samedi 21 nov. 2026 19H30 »"
+  },
+  {
+   "date": "2026-11-22",
+   "lieu": "Théâtre Paradoxe",
+   "titre": "Terre de Tolérance",
+   "heure": "19:00",
+   "source": "lepointdevente.com/billets/zr2261122001 (billet « Souffles Intemporels », Théâtre Paradoxe) : « 22 novembre 2026 19h00 – 21h00 / Entrée: 18h30 »"
+  },
+  {
+   "date": "2026-11-22",
+   "lieu": "N'était-ce pas l'été",
+   "titre": "Cercle de lecture: C. Mavrikakis",
+   "retirer": true,
+   "source": "absente du calendrier de la librairie (netaitcepaslete.com/vnements, lu le 22 nov. 2026 : rien le 22 nov.) ; fiche ma.to illisible, aucune autre source"
+  },
+  {
+   "date": "2026-11-26",
+   "lieu": "Quai des Brumes",
+   "titre": "Sunderloom",
+   "heure": "21:00",
+   "source": "quaidesbrumes.ca/calendrier : « Sunderloom + Hank’s Dream – 26 Nov – 9:00 pm »"
+  },
+  {
+   "date": "2026-11-27",
+   "lieu": "New City Gas",
+   "titre": "Ian Asher",
+   "heure": "21:00",
+   "source": "app.discotech.me/events/38286644 (Produkt) : « Vendredi 27 novembre 2026 | 21h à 3h – Les portes ouvrent à 21h00 »"
+  },
+  {
+   "date": "2026-11-28",
+   "lieu": "Stereo",
+   "titre": "David Morales",
+   "heure": "23:59",
+   "source": "technoairlines.com/event/david-morales-stereo-2026-11-28 : « Sat 28 Nov · Stereo · 23:59 » (« 27 Years of Stereo – David Morales all night long »)"
+  },
+  {
+   "date": "2026-11-28",
+   "lieu": "Fais-moi l'art",
+   "titre": "Hanorah",
+   "retirer": true,
+   "source": "songkick.com/concerts/43362635 : concert annulé (« Canceled », eventStatus EventCancelled)"
+  },
+  {
+   "date": "2026-11-28",
+   "lieu": "DATCHA",
+   "titre": "NONSTOP: Sydney Sarayeva",
+   "heure": "23:00",
+   "source": "bardatcha.ca : « SAMEDI 28 NOVEMBRE – NONSTOP: Sydney Sarayeva… » et « NONSTOP · 23H – 6H »"
+  },
+  {
+   "date": "2026-11-28",
+   "lieu": "Lieu à confirmer",
+   "titre": "Bálint Karosi",
+   "nouveau_lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "adresse": "3487 boul. Saint-Laurent, Montréal, QC H2X 2T6",
+   "source": "festivalbachmontreal.com/concerts/81446-2/ : « 28 novembre 2026 - 11:00 – Off-Bach » ; festivalbachmontreal.com/off-bach/ : « Adresse 3487 Boul. Saint-Laurent Montréal, QC H2X 2T6 »"
   }
  ],
  "series": {
