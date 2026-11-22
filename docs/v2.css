@@ -386,8 +386,9 @@ html.v2 .ev.det .det-top .disc{display:block}
 html.v2 .ev.det .det-info .lieu.grand{border-top:1.5px solid #000;padding-top:12px;margin-top:12px}
 html.v2 .ev.det .det-info .resume{margin-top:12px}
 html.v2 .ev.det .ecoute.ecg{margin:12px 0 0}
-/* Photo entière, jamais recadrée */
-html.v2 .det-vis .det-aff img{aspect-ratio:auto;object-fit:contain;width:auto;max-width:100%;height:auto;max-height:520px;margin:0 auto}
+/* Photo recadrée en 4:3 pour prendre moins de place, mais vers le haut de l'image (visages, titre d'affiche) plutôt
+   qu'au centre (22 nov. 2026) */
+html.v2 .det-vis .det-aff img{aspect-ratio:4/3;object-fit:cover;object-position:50% 20%;width:100%;max-width:100%;height:auto;max-height:none;margin:0 auto}
 html.v2 .det-vis .det-aff{display:flex;justify-content:center}
 html.v2 .det-vis .ecoute{margin-top:12px;padding-top:0}
 html.v2 .ec-tel{display:none}
@@ -411,13 +412,14 @@ html.v2 .cal-menu{display:none}
   html.v2 .cal-menu .cal{display:flex;flex-direction:column;align-items:flex-end;gap:6px;margin:6px 0 0;padding:8px 12px;border:1.5px solid #000;border-radius:14px;background:var(--bg)}
   html.v2 .cal-menu .cal .src{display:none}
   html.v2 .ev.det:has(.tm.nh) .cal-menu{position:static;margin-top:8px;text-align:left}
-  html.v2 .det-vis .ecoute{display:none}
-  html.v2 .ec-tel{display:block}
+  html.v2 .det-vis .ecoute{display:flex}  /* écouter au-dessus des boutons (22 nov. 2026) */
+  html.v2 .ec-tel{display:none}
   html.v2 .det-vis{align-items:center}
   html.v2 .det-side .actions .btn:nth-child(1){order:2}
   html.v2 .det-side .actions .btn:nth-child(2){order:1}
   html.v2 .det-side .actions .btn:nth-child(3){order:3}
   html.v2 .ev.det .det-side > .cal{display:none}
 }
-@media (max-width:900px){html.v2 .det-vis,html.v2 .det-vis .det-media,html.v2 .det-vis .det-aff{width:100%;align-self:stretch}html.v2 .det-vis .det-aff img{max-height:480px}}
+@media (max-width:900px){html.v2 .det-vis,html.v2 .det-vis .det-media,html.v2 .det-vis .det-aff{width:100%;align-self:stretch}}
 @media (max-width:900px){html.v2 .ev.det .det-vis{max-width:none;width:100%}html.v2 .det-aff > a{display:flex;justify-content:center;width:100%}}
+@media (max-width:900px){html.v2 .det-vis .ecoute{align-self:flex-start;margin:12px 0 4px}}
