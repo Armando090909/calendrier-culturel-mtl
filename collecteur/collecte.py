@@ -1255,11 +1255,21 @@ def main() -> int:
     par_salle = collections.defaultdict(list)
     for e in events:
         par_salle[e["lieu"]].append(plat(e["titre"]))
+    # 22 nov. 2026 : titres traduits ou réordonnés d'une source à l'autre (« Ballets Jazz Montréal | Dance Me – Music by
+    # Leonard Cohen » en série, « Dance Me - Musique de Leonard Cohen » en fiches) : même salle, pendant la période, et au
+    # moins 2 mots distinctifs (5 lettres et plus) en commun
+    _COMMUNS = {"musique", "music", "spectacle", "concert", "theatre", "montreal", "presente", "presents", "danse", "dance",
+                "soiree", "festival", "production", "productions", "edition", "tournee", "show", "live", "salle"}
+    def _mots(t):
+        return {m for m in plat(t).split() if len(m) >= 5} - _COMMUNS
     def _dates_connues(x):
         t = plat(x["titre"])[:25]
+        mx = _mots(x["titre"])
+        n_mots = sum(1 for e in events if e["lieu"] == x["lieu"] and x["debut"] <= e["date"] <= x["fin"]
+                     and len(_mots(e["titre"]) & mx) >= 2)
         if len(t) < 12:
-            return titres[t]
-        return max(titres[t], sum(1 for te in par_salle.get(x["lieu"], []) if t in te or (len(te) >= 12 and te[:25].strip() in plat(x["titre"]))))
+            return max(titres[t], n_mots)
+        return max(titres[t], n_mots, sum(1 for te in par_salle.get(x["lieu"], []) if t in te or (len(te) >= 12 and te[:25].strip() in plat(x["titre"]))))
     pages, gardees, absorbees = set(), [], set()
     for x in expos:
         if x["discipline"] != "expo":
