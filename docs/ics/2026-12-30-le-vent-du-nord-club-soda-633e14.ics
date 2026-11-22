@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-podcast-couple-ouvert-au-club-soda-b91b90@ccmtl.ca
+UID:2026-12-30-le-vent-du-nord-club-soda-633e14@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261204T235900
-DTEND;TZID=America/Toronto:20261205T015900
-SUMMARY:Podcast Couple Ouvert au Club Soda
+DTSTART;TZID=America/Toronto:20261230T200000
+DTEND;TZID=America/Toronto:20261230T220000
+SUMMARY:Le Vent du Nord @ Club Soda
 LOCATION:Club Soda\, Montréal
-URL:https://spectaculos.ca/fr/spectacle/couple-ouvert-montreal
-DESCRIPTION:Enregistrement public en direct du balado Couple ouvert.\nDéta
- ils : https://spectaculos.ca/fr/spectacle/couple-ouvert-montreal\n(ccmtl.c
- a)
+URL:https://www.songkick.com/concerts/43320334-le-vent-du-nord-at-club-soda
+ ?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Détails : http://www.songkick.com/concerts/43320334-le-vent-du
+ -nord-at-club-soda?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -1,8 +1,8 @@
 {
  "date": "2026-11-22",
  "statut": "publié",
- "evenements": 2946,
- "expositions": 250,
+ "evenements": 2925,
+ "expositions": 248,
  "nouvelles_salles": [
   "Théâtre C"
  ],
@@ -17,10 +17,7 @@
   },
   "redites_retirees": [
    "2026-11-24 : « Open Mic au Saint-Jean Comédie Club » (Le Saint-Jean Comédie Club) = « Open-Mic » (Le Bordel Comédie Club)",
-   "2026-11-26 : « L'Étrange Noël de Monsieur Jack, en ciné-concert » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack en ciné-co » (Maison symphonique)",
-   "2026-11-26 : « Ghostwoman @ Bar le Ritz PDB » (Bar Le Ritz PDB) = « Ghostwoman » (Bar Le Ritz PDB)",
    "2026-11-26 : « Thursday Pro-Am Comedy Night » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
-   "2026-11-27 : « L'Étrange Noël de Monsieur Jack, en ciné-concert » (Maison symphonique) = « Disney, L'étrange Noël de Monsieur Jack en ciné-co » (Maison symphonique)",
    "2026-11-27 : « Alain Choquette - Entre histoires et illusions » (Salle Pierre-Mercure) = « Alain Choquette - Entre histoires et illusions » (Centre Pierre-Peladeau)",
    "2026-11-27 : « On s'lâche pas » (Théâtre du Rift) = « On s’lâche pas! - Hubert Proulx » (L'Entrepôt – maison de la culture de Lachine)",
    "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
@@ -41,55 +38,21 @@
    "2026-12-05 : « Saturday Sundown Comedy » (Deli Planet) = « Saturday Comedy Show » (Comedyville)",
    "2026-12-05 : « SATURDAY Night Comedy in Mile End | The Comedy Spo » (Espace Culturel Kawalees) = « Saturday Comedy Show » (Comedyville)",
    "2026-12-05 : « Burning BRASs Band » (Parc Lafontaine) = « Burning Brass Band » (Parc La Fontaine)",
-   "2026-12-05 : « Le Noël d'Andy Kim à Montréal » (Le Studio TD) = « Andy Kim » (Le Studio TD)",
    "2026-12-05 : « Diogo Ramos » (Parc Lafontaine) = « Diogo Ramos » (Parc La Fontaine)",
    "2026-12-05 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
    "2026-12-27 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)"
   ],
-  "catalogues": [
-   {
-    "nom": "Killed"
-   },
-   {
-    "nom": "Taeway",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : hiphop"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "ukn_owned"
-   },
-   {
-    "nom": "michael_v23"
-   },
-   {
-    "nom": "Lucas Melo"
-   },
-   {
-    "nom": "Enzo Lord Mariano",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   }
-  ],
   "qualite": {
-   "regles": 111,
+   "regles": 109,
    "contreverif": {
-    "date confirmée": 230,
+    "date confirmée": 227,
     "lien mort remplacé": 14,
     "date absente de la page": 25,
     "page illisible": 25
    },
    "controle": null
-  },
-  "decouverte": []
+  }
  },
  "alerte": null,
  "sources": [
@@ -765,8 +728,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1502 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -843,7 +805,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -852,8 +814,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://bainmathieu.ca/programmation/",
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -862,8 +823,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -914,9 +874,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://www.quenditraton.com/spectacles/",
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "récolte mince (0) : recherche élargie à https://www.quenditraton.com/spectacles"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1097,8 +1055,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1107,8 +1064,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1300,8 +1256,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1533,8 +1488,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -2818,7 +2772,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3181,8 +3135,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3255,8 +3208,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3752 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3320,7 +3272,6 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://metropolisbleu.org",
     "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
@@ -3392,8 +3343,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3454,8 +3405,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (207 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (207 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3568,8 +3519,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 3718 caractères de texte : https://osheaga.com",
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3634,9 +3584,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://quartiersdanses.com",
-    "page presque vide (80 caractères ; site en JavaScript ?) : https://quartiersdanses.com",
-    "annonces à venir dans la page : 0 (https://quartiersdanses.com)"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {

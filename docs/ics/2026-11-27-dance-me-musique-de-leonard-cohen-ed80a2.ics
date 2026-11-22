@@ -21,10 +21,10 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-dance-me-musique-de-leonard-cohen-986e7c@ccmtl.ca
+UID:2026-11-27-dance-me-musique-de-leonard-cohen-ed80a2@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T191500
-DTEND;TZID=America/Toronto:20261125T211500
+DTSTART;TZID=America/Toronto:20261127T200000
+DTEND;TZID=America/Toronto:20261127T220000
 SUMMARY:Dance Me - Musique de Leonard Cohen
 LOCATION:Théâtre Maisonneuve\, Montréal
 URL:https://www.dansedanse.ca/fr/spectacles/ballets-jazz-montreal-dance-me-

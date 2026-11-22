@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-masood-boomgaard-au-club-soda-c5ad3c@ccmtl.ca
+UID:2026-12-05-the-love-cats-project-the-cure-tribute-4ff122@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T235900
-DTEND;TZID=America/Toronto:20261126T015900
-SUMMARY:Masood Boomgaard au Club Soda
-LOCATION:Club Soda\, Montréal
-URL:https://spectaculos.ca/fr/spectacle/masood-boomgaard-montreal
-DESCRIPTION:Détails : https://spectaculos.ca/fr/spectacle/masood-boomgaard
- -montreal\n(ccmtl.ca)
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:THE LOVE CATS PROJECT | THE CURE TRIBUTE
+LOCATION:Le Ministère\, Montréal
+URL:https://leministere.ca/
+DESCRIPTION:Heure à confirmer. Hommage musical au groupe The Cure\, interp
+ rété par un groupe tribute.\nDétails : https://leministere.ca/\n(ccmtl.
+ ca)
 END:VEVENT
 END:VCALENDAR

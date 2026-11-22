@@ -4,8 +4,9 @@
   "pas une sortie culturelle": 332,
   "hors de l'île": 272,
   "série : hors de l'île": 33,
-  "série remplacée par ses dates précises": 11,
+  "série remplacée par ses dates précises": 13,
   "Sors-tu sans salle (peut-être hors de Montréal)": 7,
+  "retirée à la main (corrections.json)": 7,
   "répétition suspecte d'un festival (même titre, même heure, sans salle, 5 jours ou plus)": 6,
   "annulé selon la source": 4,
   "titre absent": 4,
@@ -13,7 +14,6 @@
   "fiche isolée remplacée par la série du spectacle": 3,
   "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": 2,
   "série : pas culturelle ou sans titre": 2,
-  "retirée à la main (corrections.json)": 2,
   "série : sans salle, saison déjà détaillée ou annonce de saison": 2
  },
  "par_motif": {
@@ -1262,6 +1262,13 @@
   ],
   "série remplacée par ses dates précises": [
    {
+    "titre": "Messe des Morts XIV 2026 @ Piranha Bar",
+    "date": "2026-11-26 → 2026-11-28",
+    "lieu": "Piranha Bar",
+    "url": "https://www.songkick.com/festivals/3801724-messe-des-morts-xiv/id/43376846-messe-des-morts-xiv-2026?utm_medium=organic&utm_source=microformat",
+    "source": ""
+   },
+   {
     "titre": "Le fantôme dans la machine",
     "date": "2026-10-28 → 2026-11-28",
     "lieu": "Duceppe",
@@ -1301,6 +1308,13 @@
     "date": "2026-12-04 → 2026-12-16",
     "lieu": "Théâtre de Quat'Sous",
     "url": "https://quatsous.com/programmation/saison-2026-2027/tout-ca",
+    "source": ""
+   },
+   {
+    "titre": "Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen",
+    "date": "2026-11-24 → 2026-11-29",
+    "lieu": "Théâtre Maisonneuve",
+    "url": "https://www.placedesarts.com/en/event/ballets-jazz-montreal",
     "source": ""
    },
    {
@@ -1387,6 +1401,13 @@
   ],
   "retirée à la main (corrections.json)": [
    {
+    "titre": "Modi Rosenfeld au Théâtre Rialto",
+    "date": "2026-11-22",
+    "lieu": "Théâtre Rialto",
+    "url": "https://spectaculos.ca/fr/spectacle/modi-modi-rosenfeld-montreal",
+    "source": "salles"
+   },
+   {
     "titre": "Cercle de lecture: C. Mavrikakis",
     "date": "2026-11-22",
     "lieu": "N'était-ce pas l'été",
@@ -1394,10 +1415,38 @@
     "source": "salles"
    },
    {
+    "titre": "Maude Landry au Gesù : Trop cool",
+    "date": "2026-11-26",
+    "lieu": "Gesù",
+    "url": "https://spectaculos.ca/fr/spectacle/maude-landry-montreal",
+    "source": "salles"
+   },
+   {
+    "titre": "Ramon Chicharron @ Quai des Brumes",
+    "date": "2026-11-28",
+    "lieu": "Quai des Brumes",
+    "url": "https://www.songkick.com/concerts/43494420-ramon-chicharron-at-quai-des-brumes?utm_medium=organic&utm_source=microformat",
+    "source": "songkick"
+   },
+   {
+    "titre": "Saturday Late Night Comedy",
+    "date": "2026-11-28",
+    "lieu": "Estrella",
+    "url": "https://www.eventbrite.com/e/saturday-night-comedy-after-dark-montreal-1015-pm-comedyville-tickets-184944833977",
+    "source": "salles"
+   },
+   {
     "titre": "Hanorah",
     "date": "2026-11-28",
     "lieu": "Fais-moi l'art",
     "url": "https://www.songkick.com/concerts/43362635-hanorah-at-faismoi-lart",
+    "source": "songkick"
+   },
+   {
+    "titre": "Wild Pink @ La Sotterenea",
+    "date": "2026-12-03",
+    "lieu": "La Sotterenea",
+    "url": "https://www.songkick.com/concerts/43469516-wild-pink-at-la-sotterenea?utm_medium=organic&utm_source=microformat",
     "source": "songkick"
    }
   ],
@@ -1419,7 +1468,7 @@
   ]
  },
  "disparues": {
-  "total": 44,
+  "total": 61,
   "liste": [
    {
     "titre": "APRÈS-MIDI – JAZZEBO – 22 NOVEMBRE",
@@ -1427,6 +1476,13 @@
     "lieu": "Robin des Bois",
     "url": "https://robindesbois.ca/programmation_events/apres-midi-jazzebo-22-novembre/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Modi Rosenfeld au Théâtre Rialto",
+    "date": "2026-11-22",
+    "lieu": "Théâtre Rialto",
+    "url": "https://spectaculos.ca/fr/spectacle/modi-modi-rosenfeld-montreal",
+    "raison": "retirée à la main (corrections.json)"
    },
    {
     "titre": "Jesse Roper",
@@ -1457,10 +1513,45 @@
     "raison": "hors de l'île"
    },
    {
+    "titre": "SUICIDE SILENCE",
+    "date": "2026-11-24",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Atelier d'écriture (adultes)",
     "date": "2026-11-25",
     "lieu": "Bibliothèque de Côte-des-Neiges",
     "url": "https://montreal.ca/evenements/atelier-decriture-adultes-117498",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Masood Boomgaard au Club Soda",
+    "date": "2026-11-25",
+    "lieu": "Club Soda",
+    "url": "https://spectaculos.ca/fr/spectacle/masood-boomgaard-montreal",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Maude Landry au Gesù : Trop cool",
+    "date": "2026-11-26",
+    "lieu": "Gesù",
+    "url": "https://spectaculos.ca/fr/spectacle/maude-landry-montreal",
+    "raison": "retirée à la main (corrections.json)"
+   },
+   {
+    "titre": "LAURENCE NERBONNE",
+    "date": "2026-11-26",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Pierre Verville",
+    "date": "2026-11-26",
+    "lieu": "Place des Arts",
+    "url": "https://spectaculos.ca/fr/spectacle/pierre-verville-montreal",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1476,6 +1567,20 @@
     "lieu": "Maison de la culture Notre-Dame-de-Grâce – Botrel",
     "url": "https://montreal.ca/evenements/lhistoire-sinvite-ndg-4-conference-111595",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Ramon Chicharron @ Quai des Brumes",
+    "date": "2026-11-28",
+    "lieu": "Quai des Brumes",
+    "url": "https://www.songkick.com/concerts/43494420-ramon-chicharron-at-quai-des-brumes?utm_medium=organic&utm_source=microformat",
+    "raison": "retirée à la main (corrections.json)"
+   },
+   {
+    "titre": "Saturday Late Night Comedy",
+    "date": "2026-11-28",
+    "lieu": "Estrella",
+    "url": "https://www.eventbrite.com/e/saturday-night-comedy-after-dark-montreal-1015-pm-comedyville-tickets-184944833977",
+    "raison": "retirée à la main (corrections.json)"
    },
    {
     "titre": "Hanorah",
@@ -1632,6 +1737,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Podcast Couple Ouvert au Club Soda",
+    "date": "2026-12-04",
+    "lieu": "Club Soda",
+    "url": "https://spectaculos.ca/fr/spectacle/couple-ouvert-montreal",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Animation : À la rescousse de Noël!",
     "date": "2026-12-05",
     "lieu": "Bibliothèque de Saint-Léonard",
@@ -1681,10 +1793,45 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "DUBWISE MEETING #10 - Yarra Sound invite KING SHILOH",
+    "date": "2026-12-12",
+    "lieu": "Le Ministère",
+    "url": "https://leministere.ca/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "LE SAPIN A DES BOULES",
+    "date": "2026-12-17",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/fr/evenements",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
     "titre": "Le cercle du fil",
     "date": "2026-12-18",
     "lieu": "Bibliothèque de Saint-Léonard",
     "url": "https://montreal.ca/evenements/le-cercle-du-fil-117836",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "LE SAPIN A DES BOULES",
+    "date": "2026-12-18",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/fr/evenements",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "LE SAPIN A DES BOULES",
+    "date": "2026-12-19",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/fr/evenements",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "LE SAPIN A DES BOULES",
+    "date": "2026-12-20",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/fr/evenements",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
@@ -1693,6 +1840,27 @@
     "lieu": "Bibliothèque de Côte-des-Neiges",
     "url": "https://montreal.ca/evenements/atelier-decriture-adultes-117500",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "La Veillée de l'avant-Veille",
+    "date": "2026-12-30",
+    "lieu": "Club Soda",
+    "url": "https://clubsoda.ca/fr/evenements",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Messe des Morts XIV 2026 @ Piranha Bar",
+    "date": "2026-11-26 → 2026-11-28",
+    "lieu": "Piranha Bar",
+    "url": "https://www.songkick.com/festivals/3801724-messe-des-morts-xiv/id/43376846-messe-des-morts-xiv-2026?utm_medium=organic&utm_source=microformat",
+    "raison": "série remplacée par ses dates précises"
+   },
+   {
+    "titre": "Ballets Jazz Montréal | Dance Me – Music by Leonard Cohen",
+    "date": "2026-11-24 → 2026-11-29",
+    "lieu": "Théâtre Maisonneuve",
+    "url": "https://www.placedesarts.com/en/event/ballets-jazz-montreal",
+    "raison": "série remplacée par ses dates précises"
    },
    {
     "titre": "10 ans du Livart (exposition rétrospective)",

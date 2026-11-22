@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-pierre-verville-fb0d8a@ccmtl.ca
+UID:2026-11-28-ok-goodnight-the-anchoret-eve-systeme-feodal-74eb36@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261126T235900
-DTEND;TZID=America/Toronto:20261127T015900
-SUMMARY:Pierre Verville
-LOCATION:Place des Arts\, Montréal
-URL:https://spectaculos.ca/fr/spectacle/pierre-verville-montreal
-DESCRIPTION:Détails : https://spectaculos.ca/fr/spectacle/pierre-verville-
- montreal\n(ccmtl.ca)
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Ok Goodnight + The Anchoret + Eve + Système Féodal
+LOCATION:Le Ministère\, Montréal
+URL:https://leministere.ca/
+DESCRIPTION:Heure à confirmer. Détails : http://www.songkick.com/concerts
+ /43309854-ok-goodnight-at-le-ministere?utm_medium=organic&utm_source=micro
+ format\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
