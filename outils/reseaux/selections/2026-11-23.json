@@ -26,66 +26,28 @@
     "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
     "ics": "2026-11-23-partout-et-nulle-part-f2a939"
    },
-   "accroche": "Une créatrice prend part à une œuvre inspirée des paradis fiscaux, entre fiction et enquête.",
-   "accroche_en": "A filmmaker joins a work inspired by tax havens, blending fiction and investigation.",
+   "accroche": "Une créatrice prend part à une œuvre sur les paradis fiscaux, entre fiction, enquête et documentaire, avec humour.",
+   "accroche_en": "A creator takes part in a work about tax havens, blending fiction, investigation and documentary, with humour.",
    "mode": "connu"
   },
   {
-   "k": "conference",
+   "k": "atelier",
    "e": {
     "date": "2026-11-24",
-    "heure": "18:30",
-    "discipline": "conference",
-    "titre": "La Lune, notre voisine",
-    "lieu": "Bibliothèque Serge-Bouchard",
-    "url": "https://montreal.ca/evenements/la-lune-notre-voisine-115603",
+    "heure": "18:00",
+    "discipline": "atelier",
+    "titre": "INTRO A | Visite des Ateliers de LESPACEMAKER (FRANCAIS)",
+    "lieu": "LESPACEMAKER",
+    "url": "",
     "complet": false,
     "jeunePublic": false,
-    "source": "ville",
-    "resume": "Venez écouter l’astronome amateur Yves Martin et découvrez la lune sous de nouveaux aspects.",
-    "prix": "Gratuit",
-    "billets": "https://forms.cloud.microsoft/r/arcAF9ijvn",
-    "affiche": {
-     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/nll7421aktzpqj4kobk9.png",
-     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/nll7421aktzpqj4kobk9.png",
-     "credit": "Ville de Montréal",
-     "lien": "https://montreal.ca/evenements/la-lune-notre-voisine-115603"
-    },
+    "source": "calendrier",
     "confirmations": 1,
-    "resume_en": "Come listen to amateur astronomer Yves Martin and discover the moon in a new light.",
-    "ics": "2026-11-24-la-lune-notre-voisine-5fc02a"
+    "ics": "2026-11-24-intro-a-visite-des-ateliers-de-lespacemaker-franca-61cf1a"
    },
-   "accroche": "Venez écouter l’astronome amateur Yves Martin et découvrez la lune sous de nouveaux aspects.",
-   "accroche_en": "Come listen to amateur astronomer Yves Martin and discover the moon from new angles.",
-   "mode": "découverte"
-  },
-  {
-   "k": "theatre",
-   "e": {
-    "date": "2026-11-25",
-    "heure": "19:00",
-    "discipline": "theatre",
-    "titre": "Méthadone",
-    "lieu": "Théâtre Desjardins",
-    "url": "https://www.theatredesjardins.com/programmation/methadone-bertrand/",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "salles",
-    "resume": "Pièce de théâtre de Bertrand présentée au Théâtre Desjardins.",
-    "confirmations": 1,
-    "affiche": {
-     "url": "https://www.theatredesjardins.com/app/uploads/2026/04/tuxedo-image-methadone-bertrand.jpg",
-     "credit": "theatredesjardins.com",
-     "lien": "https://www.theatredesjardins.com/programmation/methadone-bertrand/"
-    },
-    "billets": "https://theatredesjardins-abonnes.tuxedobillet.com/main/methadone-bertrand/20261125190000",
-    "prix": "42 à 46 $",
-    "resume_en": "Play by Bertrand presented at Théâtre Desjardins.",
-    "ics": "2026-11-25-methadone-81504d"
-   },
-   "accroche": "Une pièce signée Bertrand, pour plonger dans son univers.",
-   "accroche_en": "A play by Bertrand, to dive into its world.",
-   "mode": "découverte"
+   "accroche": "",
+   "accroche_en": "",
+   "mode": "connu"
   },
   {
    "k": "expo",
@@ -98,122 +60,126 @@
     "url": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/",
     "resume": "Exposition de Karl Lemieux présentée à OBORO.",
     "resume_en": "Exhibition by Karl Lemieux presented at OBORO.",
-    "date": "2026-11-26",
+    "date": "2026-11-25",
     "heure": "",
     "_jusqu": "2026-11-28"
    },
-   "accroche": "Découvre les Plateformes de Karl Lemieux, une exposition à voir avant sa clôture.",
-   "accroche_en": "Explore Karl Lemieux's Plateformes, an exhibition to see before it closes.",
+   "accroche": "Explore l'univers de Karl Lemieux dans une exposition consacrée à ses Plateformes.",
+   "accroche_en": "Explore Karl Lemieux's world in an exhibition devoted to his Plateformes.",
    "mode": "connu"
   },
   {
-   "k": "musique",
+   "k": "conference",
    "e": {
-    "date": "2026-11-27",
-    "heure": "20:00",
-    "discipline": "musique",
-    "titre": "Bonobo",
-    "lieu": "MTELUS",
-    "url": "https://mtelus.com/fr/evenements?vue=grille",
+    "date": "2026-11-26",
+    "heure": "14:45",
+    "discipline": "conference",
+    "titre": "Lecture en recul? OSONS en parler",
+    "lieu": "Espace PRO",
+    "url": "https://programmation.salondulivredemontreal.com/activites/lecture-en-recul-osons-en-parler?f-is_dedicace=false&f-is_dedicace=true&df-dateS=2026/11/11",
     "complet": false,
     "jeunePublic": false,
-    "source": "salles",
-    "resume": "Bonobo présente son spectacle de la tournée Distance in Static en Amérique du Nord, avec Anish Kumar.",
-    "billets": "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607",
-    "confirmations": 3,
-    "style": "electro",
-    "affiche": {
-     "url": "https://images.ctfassets.net/3yxl57nu0yl4/7bq4z4ViVLkLCLyb6s2kh5/08d3b98763833c147aed0df566907f84/Bonobo.png",
-     "credit": "evenko.ca",
-     "lien": "https://evenko.ca/fr/evenements/mtelus/bonobo?code=e008607"
-    },
-    "liens": [
-     {
-      "type": "bandcamp",
-      "url": "https://bonobomusic.bandcamp.com/",
-      "source": "musicbrainz",
-      "nom": "Bonobo"
-     },
-     {
-      "type": "spotify",
-      "url": "https://open.spotify.com/artist/0cmWgDlu9CwTgxPhf403hb",
-      "source": "musicbrainz",
-      "nom": "Bonobo"
-     },
-     {
-      "type": "site",
-      "url": "https://bonobomusic.com/",
-      "source": "musicbrainz",
-      "nom": "Bonobo"
-     },
-     {
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/bonobo",
-      "source": "musicbrainz",
-      "nom": "Bonobo"
-     }
-    ],
-    "resume_en": "Bonobo presents his show from the Distance in Static tour in North America, with Anish Kumar.",
-    "ics": "2026-11-27-bonobo-c0e5e3"
-   },
-   "accroche": "Laisse-toi porter par Bonobo et sa tournée Distance in Static, avec Anish Kumar.",
-   "accroche_en": "Let Bonobo carry you through the Distance in Static tour, with Anish Kumar.",
-   "mode": "tête d'affiche"
-  },
-  {
-   "k": "humour",
-   "e": {
-    "date": "2026-11-28",
-    "heure": "20:00",
-    "discipline": "humour",
-    "titre": "Elena Gabrielle – Disturb the Vibe – Montreal",
-    "lieu": "Théâtre Sainte-Catherine",
-    "url": "https://theatresaintecatherine.com/event/elena-gabrielle-disturb-the-vibe-montreal/",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "theatre",
-    "resume": "Elena Gabrielle - Disturb the Vibe - Montréal Elena Gabrielle — reine internationale de la comédie, marchande de chaos et perturbatrice professionnelle d'ambiance — revient avec son spectacle le plus déjanté à ce jour : Disturb…",
+    "source": "festival",
+    "resume": "Table ronde sur le recul apparent de la lecture, face à l'essor des clubs de lecture et des prescripteurs sur les réseaux sociaux.",
+    "festival": "salonlivre",
     "confirmations": 1,
-    "affiche": {
-     "url": "https://theatresaintecatherine.com/wp-content/uploads/2026/08/5f3f31ab328d0ce187841c955fe92dce.png",
-     "credit": "theatresaintecatherine.com",
-     "lien": "https://theatresaintecatherine.com/event/elena-gabrielle-disturb-the-vibe-montreal/"
-    },
-    "billets": "https://thepointofsale.com/tickets/debark2023",
-    "resume_en": "Elena Gabrielle - Disturb the Vibe - Montreal Elena Gabrielle — international comedy queen, chaos merchant and professional vibe disturber — is back with her most chaotic show yet: Disturb…",
-    "ics": "2026-11-28-elena-gabrielle-disturb-the-vibe-montreal-ce6376"
+    "resume_en": "Round table on the apparent decline of reading in the face of the rise of book clubs and social media influencers.",
+    "ics": "2026-11-26-lecture-en-recul-osons-en-parler-0eaece"
    },
-   "accroche": "Elena Gabrielle revient avec son spectacle le plus déjanté à ce jour, Disturb the Vibe.",
-   "accroche_en": "Elena Gabrielle returns with her wildest show yet, Disturb the Vibe.",
-   "mode": "connu"
+   "accroche": "Débat sur le recul apparent de la lecture, face aux clubs et aux prescripteurs en ligne.",
+   "accroche_en": "Debate on the apparent decline of reading, given the rise of book clubs and online recommenders.",
+   "mode": "découverte"
   },
   {
    "k": "danse",
    "e": {
-    "date": "2026-11-29",
-    "heure": "20:00",
+    "date": "2026-11-27",
+    "heure": "14:00",
     "discipline": "danse",
-    "titre": "Soirée Flamenca À trois souffles",
-    "lieu": "Casa del Popolo",
-    "url": "https://casadelpopolo.com/fr/events/2026-11-30-soiree-flamenca-a-trois-souffles",
+    "titre": "Prima di Scomparire - Les Soeurs Schmutt (Sortie de résidence)",
+    "lieu": "Maison de la culture du Plateau-Mont-Royal",
+    "url": "https://montreal.ca/evenements/prima-di-scomparire-les-soeurs-schmutt-sortie-de-residence-119479",
     "complet": false,
     "jeunePublic": false,
-    "source": "salles",
-    "resume": "Soirée consacrée au flamenco, mêlant danse et musique traditionnelle espagnole.",
-    "prix": "25,00 $",
-    "billets": "https://www.venuepilot.co/fr/events/173480/orders/new",
-    "confirmations": 1,
+    "source": "ville",
+    "resume": "La Maison de la culture du Plateau-Mont-Royal présente gratuitement la sortie de résidence des Soeurs Schmutt, le 27 novembre 2026 à 14h",
+    "prix": "Gratuit",
+    "billets": "https://lepointdevente.com/billets/prima-soeursschmutt?lang=fr",
     "affiche": {
-     "credit": "casadelpopolo.com",
-     "lien": "https://casadelpopolo.com/fr/events/2026-11-30-soiree-flamenca-a-trois-souffles",
-     "url": "https://img.casadelpopolo.com/j9o_fB6DbqfnIG7kCBJM6YyUPQv6lU-QSfbXQ80ByQM/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tLzF4aGxxdDFu/ZDFxaG51OTliYXQ3/MnMyeTIwZm8"
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/mvpacugw8svwnmjdei7c.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/mvpacugw8svwnmjdei7c.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/prima-di-scomparire-les-soeurs-schmutt-sortie-de-residence-119479"
     },
-    "resume_en": "Evening devoted to flamenco, blending dance and traditional Spanish music.",
-    "ics": "2026-11-29-soiree-flamenca-a-trois-souffles-79ca97"
+    "confirmations": 1,
+    "resume_en": "The Maison de la culture du Plateau-Mont-Royal presents, free of charge, the residency showing of the Soeurs Schmutt on November 27, 2026 at 2 p.m.",
+    "ics": "2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-d84c50"
    },
-   "accroche": "Danse et musique traditionnelle espagnole s'entrelacent dans cette soirée de flamenco.",
-   "accroche_en": "Dance and traditional Spanish music intertwine in this flamenco evening.",
+   "accroche": "Découvre la pièce Prima di Scomparire en sortie de résidence, gratuitement.",
+   "accroche_en": "Discover the piece Prima di Scomparire at a residency showing, free of charge.",
    "mode": "découverte"
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-11-28",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "LYDIA KÉPINSKI",
+    "lieu": "Club Soda",
+    "url": "https://lepointdevente.com/billets/clb261128001",
+    "complet": true,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Spectacle d'humour de Lydia Képinski.",
+    "billets": "https://lepointdevente.com/billets/clb261128001",
+    "aussi": [
+     "theatre",
+     "danse"
+    ],
+    "confirmations": 4,
+    "affiche": {
+     "url": "https://tpos.s3.amazonaws.com/events/CLB/26/11/28/001/clb261128001-1152x648-fr-698cae0e.png",
+     "credit": "lepointdevente.com",
+     "lien": "https://lepointdevente.com/billets/clb261128001"
+    },
+    "prix": "40 $",
+    "resume_en": "Comedy show by Lydia Képinski.",
+    "ics": "2026-11-28-lydia-kepinski-9e7b22"
+   },
+   "accroche": "Un spectacle d'humour de Lydia Képinski, pour rire en fin de semaine.",
+   "accroche_en": "A comedy show by Lydia Képinski, for a night of laughs.",
+   "mode": "tête d'affiche"
+  },
+  {
+   "k": "jeune",
+   "e": {
+    "date": "2026-11-29",
+    "heure": "10:30",
+    "discipline": "jeune",
+    "titre": "Spectacle : Le Noël de Guirlande (2 à 8 ans)",
+    "lieu": "FabricARThèque du Vieux-Saint-Laurent",
+    "url": "https://montreal.ca/evenements/spectacle-le-noel-de-guirlande-2-8-ans-117205",
+    "complet": false,
+    "jeunePublic": true,
+    "source": "ville",
+    "resume": "spectacle, activité, gratuit, noël, théâtre, enfants de 2 à 8 ans, bibliothèque, Vieux-Saint-Laurent",
+    "prix": "Gratuit",
+    "billets": "https://forms.cloud.microsoft/r/VCVGsgndm3",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/stvstowj2c85gzllkk2g.jpg",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/stvstowj2c85gzllkk2g.jpg",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/spectacle-le-noel-de-guirlande-2-8-ans-117205"
+    },
+    "sous": "theatre",
+    "confirmations": 1,
+    "resume_en": "show, activity, free, Christmas, theatre, children aged 2 to 8, library, Vieux-Saint-Laurent",
+    "ics": "2026-11-29-spectacle-le-noel-de-guirlande-2-a-8-ans-6033db"
+   },
+   "accroche": "Un spectacle de théâtre gratuit pour les enfants, sur le thème de Noël.",
+   "accroche_en": "A free Christmas theatre show for children.",
+   "mode": "connu"
   }
  ],
  "festivals": [
@@ -357,7 +323,7 @@
   ],
   "quartier": "Ville-Marie"
  },
- "total": 899,
+ "total": 886,
  "expos": 178,
  "tags": {
   "cinema": {
@@ -372,12 +338,12 @@
     "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
    }
   },
-  "conference": {},
-  "theatre": {
-   "salle": {
-    "compte": "theatredesjardins",
+  "atelier": {
+   "artiste": {
+    "compte": "lespacemaker",
     "sur": true,
-    "source": "https://www.theatredesjardins.com/programmation/methadone-bertrand/"
+    "source": "https://www.instagram.com/lespacemaker/",
+    "qui": "LESPACEMAKER"
    }
   },
   "expo": {
@@ -392,29 +358,35 @@
     "source": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/"
    }
   },
-  "musique": {
-   "artiste": {
-    "compte": "si_bonobo",
+  "conference": {
+   "festival": {
+    "compte": "salonlivremtl",
     "sur": true,
-    "source": "https://linktr.ee/si_bonobo",
-    "qui": "Bonobo"
+    "source": "https://salondulivredemontreal.com"
    }
   },
-  "humour": {
-   "salle": {
-    "compte": "theatre.sainte_catherine",
+  "danse": {
+   "artiste": {
+    "compte": "soeursschmutt",
     "sur": true,
-    "source": "https://theatresaintecatherine.com/"
+    "source": "https://lepointdevente.com/billets/prima-soeursschmutt?lang=fr"
+   }
+  },
+  "musique": {
+   "salle": {
+    "compte": "clubsodamtl",
+    "sur": true,
+    "source": "https://clubsoda.ca/"
    },
    "artiste": {
-    "compte": "elenagabrielle",
+    "compte": "lydiakepi",
     "sur": true,
-    "source": "https://www.elenagabrielle.com/",
-    "qui": "Elena Gabrielle"
+    "source": "https://www.instagram.com/lydiakepi/",
+    "qui": "Lydia Képinski"
    }
   },
-  "danse": {}
+  "jeune": {}
  },
  "_statut": "ok",
- "_issue": "20"
+ "_issue": null
 }
