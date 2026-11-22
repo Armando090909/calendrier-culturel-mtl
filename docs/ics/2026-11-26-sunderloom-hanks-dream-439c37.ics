@@ -21,20 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-sunderloom-hanks-dream-a946f9@ccmtl.ca
+UID:2026-11-26-sunderloom-hanks-dream-439c37@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
+DTSTART;TZID=America/Toronto:20261126T210000
+DTEND;TZID=America/Toronto:20261126T230000
 SUMMARY:Sunderloom + Hank’s Dream
 LOCATION:Quai des Brumes\, Montréal
 URL:https://www.zeffy.com/en-CA/ticketing/sunderloom-x-hanks-dream?fbclid=I
  wY2xjawVCaEtleHRuA2FlbQIxMABwZG9mAWJyaWQRMXlTVkwzMUZUaUlFZWNZSnlzcnRjBmFwc
  F9pZBAyMjIwMzkxNzg4MjAwODkyAAEe_K8BLnkJMaZtg2LTgn5zUEMD-KOK2hrZgenphPR2hbQ
  TrkFp9BVKIZ31vyE_aem_CZrHKjPeXA_r8LCQNFRoyw
-DESCRIPTION:Heure à confirmer. Détails : https://www.zeffy.com/en-CA/tick
- eting/sunderloom-x-hanks-dream?fbclid=IwY2xjawVCaEtleHRuA2FlbQIxMABwZG9mAW
- JyaWQRMXlTVkwzMUZUaUlFZWNZSnlzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe_K8B
- LnkJMaZtg2LTgn5zUEMD-KOK2hrZgenphPR2hbQTrkFp9BVKIZ31vyE_aem_CZrHKjPeXA_r8L
- CQNFRoyw\n(ccmtl.ca)
+DESCRIPTION:Détails : https://www.zeffy.com/en-CA/ticketing/sunderloom-x-h
+ anks-dream?fbclid=IwY2xjawVCaEtleHRuA2FlbQIxMABwZG9mAWJyaWQRMXlTVkwzMUZUaU
+ lFZWNZSnlzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe_K8BLnkJMaZtg2LTgn5zUEMD
+ -KOK2hrZgenphPR2hbQTrkFp9BVKIZ31vyE_aem_CZrHKjPeXA_r8LCQNFRoyw\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

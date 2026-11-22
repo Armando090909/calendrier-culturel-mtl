@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-ian-asher-new-city-gas-2107c9@ccmtl.ca
+UID:2026-11-27-ian-asher-new-city-gas-152bc0@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
+DTSTART;TZID=America/Toronto:20261127T210000
+DTEND;TZID=America/Toronto:20261127T230000
 SUMMARY:Ian Asher @ New City Gas
 LOCATION:New City Gas\, Montréal
 URL:https://www.songkick.com/concerts/43497485-ian-asher-at-new-city-gas?ut
  m_medium=organic&utm_source=microformat
-DESCRIPTION:Heure à confirmer. Détails : http://www.songkick.com/concerts
- /43497485-ian-asher-at-new-city-gas?utm_medium=organic&utm_source=microfor
- mat\n(ccmtl.ca)
+DESCRIPTION:Détails : http://www.songkick.com/concerts/43497485-ian-asher-
+ at-new-city-gas?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

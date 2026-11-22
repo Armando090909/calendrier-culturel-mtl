@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-conference-cafe-croissant-balint-karosi-ce292a@ccmtl.ca
+UID:2026-11-28-conference-cafe-croissant-balint-karosi-bd56eb@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261128T110000
 DTEND;TZID=America/Toronto:20261128T130000
 SUMMARY:Conférence & café-croissant : Bálint Karosi
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Espace Off-Bach (3487\, boul. Saint-Laurent)\, Montréal
 URL:https://festivalbachmontreal.com/concerts/81446-2/
 DESCRIPTION:Conférence précédant le récital de Bálint Karosi\, sur les
   Chorals Schübler\, le Concerto d'après Vivaldi et la Clavierübung III 
