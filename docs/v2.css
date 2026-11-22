@@ -379,3 +379,45 @@ html.v2 .ecoute.ecg a img[src*="/spotify.png"],html.v2 .ecoute.ecg a img[src*="/
   background:radial-gradient(circle closest-side,var(--bg) 0 86%,transparent 87%)}  /* parties transparentes en crème (20 nov. 2026) */
 html.v2 .ecoute.ecg a img[src*="/deezer.png"],html.v2 .ecoute.ecg a img[src*="/tidal.png"]{
   filter:sepia(1) brightness(.96)}  /* blanc des logos en crème, noir intact (20 nov. 2026) */
+
+/* ===== Fiche, disposition du 22 nov. 2026 (demandée par l'équipe) ===== */
+html.v2 .ev.det .det-top{display:block;border:0;padding-top:0;margin-top:8px}
+html.v2 .ev.det .det-top .disc{display:block}
+html.v2 .ev.det .det-info .lieu.grand{border-top:1.5px solid #000;padding-top:12px;margin-top:12px}
+html.v2 .ev.det .det-info .resume{margin-top:12px}
+html.v2 .ev.det .ecoute.ecg{margin:12px 0 0}
+/* Photo entière, jamais recadrée */
+html.v2 .det-vis .det-aff img{aspect-ratio:auto;object-fit:contain;width:auto;max-width:100%;height:auto;max-height:520px;margin:0 auto}
+html.v2 .det-vis .det-aff{display:flex;justify-content:center}
+html.v2 .det-vis .ecoute{margin-top:12px;padding-top:0}
+html.v2 .ec-tel{display:none}
+html.v2 .cal-menu{display:none}
+@media (min-width:901px){
+  html.v2 .ev.det .det-top .tm{display:none}
+  html.v2 .ev.det h3.t{padding-right:0}
+  html.v2 .ev.det .det-side{display:flex;flex-direction:column;gap:10px}
+  html.v2 .det-quand{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap}
+  html.v2 .det-quand .cal{margin:0;padding:0;border:0;justify-content:flex-end}
+  html.v2 .det-quand .tm{font-size:20px;padding:6px 16px}
+  html.v2 .det-quand .tm.nh{font-size:14px;font-style:italic}
+  html.v2 .ev.det .det-side .actions{margin-top:auto}
+}
+@media (max-width:900px){
+  html.v2 .det-quand{display:none}
+  html.v2 .ev.det .det-top{border-top:0}
+  html.v2 .cal-menu{display:block;position:absolute;top:56px;right:20px;z-index:2;text-align:right}
+  html.v2 .cal-menu summary{list-style:none;cursor:pointer;font-weight:800;font-size:13px;text-decoration:underline}
+  html.v2 .cal-menu summary::-webkit-details-marker{display:none}
+  html.v2 .cal-menu .cal{display:flex;flex-direction:column;align-items:flex-end;gap:6px;margin:6px 0 0;padding:8px 12px;border:1.5px solid #000;border-radius:14px;background:var(--bg)}
+  html.v2 .cal-menu .cal .src{display:none}
+  html.v2 .ev.det:has(.tm.nh) .cal-menu{position:static;margin-top:8px;text-align:left}
+  html.v2 .det-vis .ecoute{display:none}
+  html.v2 .ec-tel{display:block}
+  html.v2 .det-vis{align-items:center}
+  html.v2 .det-side .actions .btn:nth-child(1){order:2}
+  html.v2 .det-side .actions .btn:nth-child(2){order:1}
+  html.v2 .det-side .actions .btn:nth-child(3){order:3}
+  html.v2 .ev.det .det-side > .cal{display:none}
+}
+@media (max-width:900px){html.v2 .det-vis,html.v2 .det-vis .det-media,html.v2 .det-vis .det-aff{width:100%;align-self:stretch}html.v2 .det-vis .det-aff img{max-height:480px}}
+@media (max-width:900px){html.v2 .ev.det .det-vis{max-width:none;width:100%}html.v2 .det-aff > a{display:flex;justify-content:center;width:100%}}
