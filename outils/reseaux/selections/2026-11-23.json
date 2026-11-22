@@ -26,28 +26,39 @@
     "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
     "ics": "2026-11-23-partout-et-nulle-part-f2a939"
    },
-   "accroche": "Une créatrice prend part à une œuvre sur les paradis fiscaux, entre fiction, enquête et documentaire, avec humour.",
-   "accroche_en": "A creator takes part in a work about tax havens, blending fiction, investigation and documentary, with humour.",
+   "accroche": "Fiction, enquête et documentaire militant sur les paradis fiscaux, avec humour.",
+   "accroche_en": "Fiction, investigation and activist documentary on tax havens, with humour.",
    "mode": "connu"
   },
   {
-   "k": "atelier",
+   "k": "theatre",
    "e": {
+    "titre": "Alterego",
+    "lieu": "La Licorne",
+    "debut": "2026-11-23",
+    "fin": "2026-12-11",
+    "discipline": "theatre",
+    "url": "https://theatrelalicorne.com/pieces/alterego/",
+    "resume": "Pièce présentée à La Petite Licorne, disponible aussi en abonnement, du dernier week-end de novembre à la mi-décembre.",
+    "billets": "https://theatrelalicorne.com/billetterie/",
+    "horaire": {
+     "jours": {
+      "0": "19:00",
+      "1": "19:00",
+      "2": "19:00",
+      "3": "19:00",
+      "4": "20:00"
+     },
+     "dates": {}
+    },
+    "resume_en": "Play presented at La Petite Licorne, also available as a subscription, from the last weekend of November to mid-December.",
     "date": "2026-11-24",
-    "heure": "18:00",
-    "discipline": "atelier",
-    "titre": "INTRO A | Visite des Ateliers de LESPACEMAKER (FRANCAIS)",
-    "lieu": "LESPACEMAKER",
-    "url": "",
-    "complet": false,
-    "jeunePublic": false,
-    "source": "calendrier",
-    "confirmations": 1,
-    "ics": "2026-11-24-intro-a-visite-des-ateliers-de-lespacemaker-franca-61cf1a"
+    "heure": "",
+    "_jusqu": "2026-12-11"
    },
-   "accroche": "",
-   "accroche_en": "",
-   "mode": "connu"
+   "accroche": "Une pièce à découvrir, aussi offerte en abonnement.",
+   "accroche_en": "A play to discover, also available as a subscription package.",
+   "mode": "découverte"
   },
   {
    "k": "expo",
@@ -64,8 +75,8 @@
     "heure": "",
     "_jusqu": "2026-11-28"
    },
-   "accroche": "Explore l'univers de Karl Lemieux dans une exposition consacrée à ses Plateformes.",
-   "accroche_en": "Explore Karl Lemieux's world in an exhibition devoted to his Plateformes.",
+   "accroche": "Une exposition de Karl Lemieux à découvrir.",
+   "accroche_en": "An exhibition by Karl Lemieux to discover.",
    "mode": "connu"
   },
   {
@@ -86,8 +97,8 @@
     "resume_en": "Round table on the apparent decline of reading in the face of the rise of book clubs and social media influencers.",
     "ics": "2026-11-26-lecture-en-recul-osons-en-parler-0eaece"
    },
-   "accroche": "Débat sur le recul apparent de la lecture, face aux clubs et aux prescripteurs en ligne.",
-   "accroche_en": "Debate on the apparent decline of reading, given the rise of book clubs and online recommenders.",
+   "accroche": "Recul apparent de la lecture? Clubs de lecture et prescripteurs en ligne en débat.",
+   "accroche_en": "Is reading declining? Book clubs and online recommenders under debate.",
    "mode": "découverte"
   },
   {
@@ -115,8 +126,8 @@
     "resume_en": "The Maison de la culture du Plateau-Mont-Royal presents, free of charge, the residency showing of the Soeurs Schmutt on November 27, 2026 at 2 p.m.",
     "ics": "2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-d84c50"
    },
-   "accroche": "Découvre la pièce Prima di Scomparire en sortie de résidence, gratuitement.",
-   "accroche_en": "Discover the piece Prima di Scomparire at a residency showing, free of charge.",
+   "accroche": "Un aperçu gratuit de la sortie de résidence des Soeurs Schmutt.",
+   "accroche_en": "A free preview of Les Soeurs Schmutt's residency showing.",
    "mode": "découverte"
   },
   {
@@ -147,8 +158,8 @@
     "resume_en": "Comedy show by Lydia Képinski.",
     "ics": "2026-11-28-lydia-kepinski-9e7b22"
    },
-   "accroche": "Un spectacle d'humour de Lydia Képinski, pour rire en fin de semaine.",
-   "accroche_en": "A comedy show by Lydia Képinski, for a night of laughs.",
+   "accroche": "Lydia Képinski en spectacle d'humour : le nom le plus attendu de la semaine.",
+   "accroche_en": "Lydia Képinski in a comedy show: the most anticipated name of the week.",
    "mode": "tête d'affiche"
   },
   {
@@ -177,8 +188,8 @@
     "resume_en": "show, activity, free, Christmas, theatre, children aged 2 to 8, library, Vieux-Saint-Laurent",
     "ics": "2026-11-29-spectacle-le-noel-de-guirlande-2-a-8-ans-6033db"
    },
-   "accroche": "Un spectacle de théâtre gratuit pour les enfants, sur le thème de Noël.",
-   "accroche_en": "A free Christmas theatre show for children.",
+   "accroche": "Un spectacle de théâtre de Noël pour enfants de 2 à 8 ans, gratuit.",
+   "accroche_en": "A Christmas theatre show for children aged 2 to 8, free admission.",
    "mode": "connu"
   }
  ],
@@ -338,12 +349,11 @@
     "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
    }
   },
-  "atelier": {
-   "artiste": {
-    "compte": "lespacemaker",
+  "theatre": {
+   "salle": {
+    "compte": "theatrelalicorne",
     "sur": true,
-    "source": "https://www.instagram.com/lespacemaker/",
-    "qui": "LESPACEMAKER"
+    "source": "https://theatrelalicorne.com/"
    }
   },
   "expo": {
@@ -388,5 +398,5 @@
   "jeune": {}
  },
  "_statut": "ok",
- "_issue": "21"
+ "_issue": null
 }
