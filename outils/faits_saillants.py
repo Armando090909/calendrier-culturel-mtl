@@ -216,6 +216,8 @@ def choisir(data, debut, etat):
                       for x in data.get("expos", []) if voulus[k] in _plat(x["titre"])
                       and x["debut"] <= fin.isoformat() and x["fin"] >= debut.isoformat()
                       for i in range(7) if x["debut"] <= (debut + timedelta(days=i)).isoformat() <= x["fin"]]
+            if jour_voulu and any(e["date"] == jour_voulu for e in cs):  # aussi pour une série (expo le mercredi)
+                cs = [e for e in cs if e["date"] == jour_voulu]
             if cs:
                 cs.sort(key=lambda e: (-score(e), e["date"]))
                 cands[k] = cs[:7]
