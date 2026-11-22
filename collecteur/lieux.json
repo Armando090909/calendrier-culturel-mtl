@@ -504,6 +504,7 @@
   "quartier": "Le Sud-Ouest"
  },
  "Burton Cummings Theatre": null,
+ "CAA Centre": null,
  "CIRCA art actuel": null,
  "CRÉR": null,
  "Cabaret Fouf": null,
@@ -692,6 +693,7 @@
   "quartier": "Ahuntsic-Cartierville"
  },
  "Centre culturel et communautaire de la Pointe-Valaine": null,
+ "Centre d'Art de Richmond": null,
  "Centre d'art Jacques-et-Michel-Auger": null,
  "Centre d'entrepreneuriat ESG UQAM": null,
  "Centre d'essai de l'UdeM": {
@@ -718,6 +720,7 @@
  "Centre des Arts Shenkman": null,
  "Centre des arts Juliette-Lassonde": null,
  "Centre des arts actuels SKOL": null,
+ "Centre des arts de Shawinigan": null,
  "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
   "lat": 45.63911,
@@ -861,6 +864,7 @@
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Cégep Du Vieux Montréal": null,
  "Cénotaphe, près de l'hôtel de ville de Westmount": null,
  "DARE-DARE": null,
  "DATCHA": {
@@ -1367,6 +1371,7 @@
   "lon": -73.5935,
   "quartier": "Mile End"
  },
+ "La Source de la Martinière": null,
  "La Toscadura": {
   "alias": [],
   "lat": 45.51925,
@@ -2632,6 +2637,11 @@
  },
  "Vogue Theatre": null,
  "Washington, DC": null,
+ "White Wall Studio": {
+  "lat": 45.52272,
+  "lon": -73.58502,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "Wiggle Room": {
   "lat": 45.51608,
   "lon": -73.57779,
@@ -2655,6 +2665,11 @@
   "quartier": "Chabanel"
  },
  "café de la ligne verte": null,
+ "café musette": {
+  "lat": 45.51806,
+  "lon": -73.59171,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "carrefour angrignon": {
   "lat": 45.44722,
   "lon": -73.61848,

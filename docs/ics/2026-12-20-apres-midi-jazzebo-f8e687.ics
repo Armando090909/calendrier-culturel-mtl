@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-20-apres-midi-jazzebo-f8e687@ccmtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261220T130000
+DTEND;TZID=America/Toronto:20261220T150000
+SUMMARY:Après-midi Jazzebo
+LOCATION:Parc La Fontaine\, Montréal
+URL:https://robindesbois.ca/programmation_events/apres-midi-jazzebo-20-dece
+ mbre/
+DESCRIPTION:Quatuor de jazz au saxophone\, guitare\, basse et batterie offr
+ ant une ambiance chaleureuse\; billets gratuits et donation volontaire sur
+  place.\nPrix : Gratuit\nDétails : https://robindesbois.ca/programmation_
+ events/apres-midi-jazzebo-20-decembre/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
