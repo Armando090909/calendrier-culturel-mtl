@@ -1,7 +1,15 @@
 {
- "total": 1529,
- "echecs": 9,
+ "total": 1527,
+ "echecs": 19,
  "par_site": {
+  "theatreplaza.ca": {
+   "affiches": 6,
+   "echecs": 6
+  },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 5
+  },
   "turbohaus.ca": {
    "affiches": 9,
    "echecs": 2
@@ -12,10 +20,6 @@
   },
   "cdn.placedesarts.com": {
    "affiches": 33,
-   "echecs": 1
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 83,
    "echecs": 1
   },
   "images.ctfassets.net": {
@@ -114,6 +118,10 @@
    "affiches": 2,
    "echecs": 0
   },
+  "img.casadelpopolo.com": {
+   "affiches": 83,
+   "echecs": 0
+  },
   "legesu.com": {
    "affiches": 6,
    "echecs": 0
@@ -123,7 +131,7 @@
    "echecs": 0
   },
   "images.sk-static.com": {
-   "affiches": 70,
+   "affiches": 69,
    "echecs": 0
   },
   "media.admitone.com": {
@@ -150,10 +158,6 @@
    "affiches": 7,
    "echecs": 0
   },
-  "mato.s3.us-east-1.amazonaws.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
   "cdn.ca.yapla.com": {
    "affiches": 5,
    "echecs": 0
@@ -175,6 +179,10 @@
    "echecs": 0
   },
   "cdn.ma.to": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "mato.s3.us-east-1.amazonaws.com": {
    "affiches": 1,
    "echecs": 0
   },
@@ -202,20 +210,12 @@
    "affiches": 8,
    "echecs": 0
   },
-  "theatreplaza.ca": {
-   "affiches": 6,
-   "echecs": 0
-  },
   "rideauvert.qc.ca": {
    "affiches": 1,
    "echecs": 0
   },
   "quatsous.com": {
    "affiches": 2,
-   "echecs": 0
-  },
-  "centaurtheatre.com": {
-   "affiches": 5,
    "echecs": 0
   },
   "montrealcentreville.ca": {
@@ -402,15 +402,22 @@
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg"
   ],
+  "theatreplaza.ca": [
+   "https://theatreplaza.ca/wp-content/uploads/2026/09/Affiche-25-novembre-2026_V2.jpg",
+   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-29-novembre-2026_V2.jpg",
+   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-4-decembre-2026.png"
+  ],
   "turbohaus.ca": [
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg",
    "https://turbohaus.ca/api/media/file/cam-kahin.png"
   ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
-  ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
   ],
   "westmount.org": [
    "https://westmount.org/resize/c966afdd6cb77a339f8653cc2d9c65e4-1"
