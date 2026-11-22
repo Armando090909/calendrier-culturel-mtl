@@ -22,8 +22,8 @@
     "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
     "ics": "2026-11-23-partout-et-nulle-part-f2a939"
    },
-   "accroche": "Tu suivras une créatrice dans une œuvre sur les paradis fiscaux, entre enquête et humour.",
-   "accroche_en": "You'll follow a creator through a work about tax havens, blending investigation and humour.",
+   "accroche": "Fiction, enquête et documentaire : tu découvres les paradis fiscaux, avec humour.",
+   "accroche_en": "Fiction, investigation and documentary mix as you explore tax havens, with humour.",
    "mode": "connu"
   },
   {
@@ -71,8 +71,8 @@
     "heure": "",
     "_jusqu": "2026-11-28"
    },
-   "accroche": "Découvre les plateformes de Karl Lemieux, une exposition signée par l'artiste.",
-   "accroche_en": "Discover Plateformes by Karl Lemieux, an exhibition by the artist.",
+   "accroche": "Plonge dans l'univers de l'artiste Karl Lemieux à travers ses Plateformes.",
+   "accroche_en": "Dive into the world of artist Karl Lemieux through his Plateformes.",
    "mode": "connu"
   },
   {
@@ -93,8 +93,8 @@
     "resume_en": "Round table on the apparent decline of reading in the face of the rise of book clubs and social media influencers.",
     "ics": "2026-11-26-lecture-en-recul-osons-en-parler-0eaece"
    },
-   "accroche": "Débats-en : le recul de la lecture face à l'essor des clubs et des prescripteurs en ligne.",
-   "accroche_en": "Debate the apparent decline of reading as book clubs and online tastemakers rise.",
+   "accroche": "Tu te demandes si on lit moins ? Une table ronde examine clubs de lecture et prescripteurs en ligne.",
+   "accroche_en": "Reading in decline? A round table looks at book clubs and online recommenders.",
    "mode": "découverte"
   },
   {
@@ -122,8 +122,8 @@
     "resume_en": "The Maison de la culture du Plateau-Mont-Royal presents, free of charge, the residency showing of the Soeurs Schmutt on November 27, 2026 at 2 p.m.",
     "ics": "2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-d84c50"
    },
-   "accroche": "Assiste à la sortie de résidence des Soeurs Schmutt, présentée gratuitement.",
-   "accroche_en": "Catch the Soeurs Schmutt's residency showing, presented free of charge.",
+   "accroche": "Assiste gratuitement à une sortie de résidence des Soeurs Schmutt, un travail en cours.",
+   "accroche_en": "Catch the Soeurs Schmutt's residency showing, a work in progress, free admission.",
    "mode": "découverte"
   },
   {
@@ -184,8 +184,8 @@
     "resume_en": "show, activity, free, Christmas, theatre, children aged 2 to 8, library, Vieux-Saint-Laurent",
     "ics": "2026-11-29-spectacle-le-noel-de-guirlande-2-a-8-ans-6033db"
    },
-   "accroche": "Un spectacle de Noël pour les 2 à 8 ans, présenté gratuitement.",
-   "accroche_en": "A Christmas show for kids aged 2 to 8, offered free of charge.",
+   "accroche": "Un spectacle de Noël pour les 2 à 8 ans, gratuit, avec théâtre au rendez-vous.",
+   "accroche_en": "A Christmas show for ages 2 to 8, free, with theatre on the bill.",
    "mode": "connu"
   }
  ],
@@ -380,8 +380,13 @@
     "qui": "Lydia Képinski"
    }
   },
-  "jeune": {}
+  "jeune": {},
+  "salle": {
+   "ajouts": [
+    "lalivrerie"
+   ]
+  }
  },
  "_statut": "ok",
- "_issue": "25"
+ "_issue": null
 }
