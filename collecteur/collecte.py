@@ -394,6 +394,36 @@ def liens_candidats(texte: str, liens: list[str], page: str, titre: str) -> list
     return res[:3]
 
 
+def _doublons_meme_salle(events: list[dict]) -> list[dict]:
+    """22 nov. 2026 : 2e dédoublonnage, après les passages qui ajoutent des heures. Une fiche sans heure et la même avec son
+    heure n'étaient pas reconnues (ex. « Class of 91… » au Turbo Haüs, du site de la salle et de la billetterie). Prudent :
+    même jour, même salle exactement (jamais une salle vague comme « Bibliothèque »), et même spectacle selon
+    meme_evenement. On garde la fiche qui a l'heure et on lui ajoute ce que l'autre savait de plus."""
+    from normalisation import meme_evenement
+    par = collections.defaultdict(list)
+    for e in events:
+        par[(e["date"], plat(e["lieu"]))].append(e)
+    retires = set()
+    for (_, lieu), L in par.items():
+        if len(L) < 2 or lieu in ("lieu a confirmer", "en ligne") or len(lieu.split()) < 2:
+            continue
+        for i, a in enumerate(L):
+            for b in L[i + 1:]:
+                if id(a) in retires or id(b) in retires or not meme_evenement(a, b):
+                    continue
+                if a.get("heure") and b.get("heure") and a["heure"] != b["heure"]:
+                    continue  # deux représentations
+                g, r = (a, b) if (bool(a.get("heure")), bool(a.get("billets")), len(a.get("resume") or "")) >= \
+                    (bool(b.get("heure")), bool(b.get("billets")), len(b.get("resume") or "")) else (b, a)
+                for k in ("heure", "prix", "billets", "resume", "resume_en", "affiche", "image", "festival"):
+                    if not g.get(k) and r.get(k):
+                        g[k] = r[k]
+                retires.add(id(r))
+    if retires:
+        print(f"Doublons de même salle retirés au 2e passage : {len(retires)}")
+    return [e for e in events if id(e) not in retires]
+
+
 def completer_par_fiche_propre(events: list[dict], reglages: dict) -> tuple[int, int]:
     f_fp = CACHE / "heures_fiches.json"
     memo = json.loads(f_fp.read_text(encoding="utf-8")) if f_fp.exists() else {}
@@ -1192,6 +1222,9 @@ def main() -> int:
     for e in decales:
         rejeter("copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)", e)
     events = [e for e in events if not any(e is x for x in decales)]
+    # 22 nov. 2026 : 2e dédoublonnage, après les passages qui ajoutent des heures (une fiche sans heure et la même avec
+    # son heure n'étaient pas reconnues ; ex. « Class of 91… » au Turbo Haüs, du site de la salle et de la billetterie)
+    events = _doublons_meme_salle(events)
     events, redites = doublons_du_jour(events)
     notes["redites_retirees"] = redites[:200]
     print(f"Redites du même jour retirées : {len(redites)}")
@@ -1255,11 +1288,21 @@ def main() -> int:
     par_salle = collections.defaultdict(list)
     for e in events:
         par_salle[e["lieu"]].append(plat(e["titre"]))
+    # 22 nov. 2026 : titres traduits ou réordonnés d'une source à l'autre (« Ballets Jazz Montréal | Dance Me – Music by
+    # Leonard Cohen » en série, « Dance Me - Musique de Leonard Cohen » en fiches) : même salle, pendant la période, et au
+    # moins 2 mots distinctifs (5 lettres et plus) en commun
+    _COMMUNS = {"musique", "music", "spectacle", "concert", "theatre", "montreal", "presente", "presents", "danse", "dance",
+                "soiree", "festival", "production", "productions", "edition", "tournee", "show", "live", "salle"}
+    def _mots(t):
+        return {m for m in plat(t).split() if len(m) >= 5} - _COMMUNS
     def _dates_connues(x):
         t = plat(x["titre"])[:25]
+        mx = _mots(x["titre"])
+        n_mots = sum(1 for e in events if e["lieu"] == x["lieu"] and x["debut"] <= e["date"] <= x["fin"]
+                     and len(_mots(e["titre"]) & mx) >= 2)
         if len(t) < 12:
-            return titres[t]
-        return max(titres[t], sum(1 for te in par_salle.get(x["lieu"], []) if t in te or (len(te) >= 12 and te[:25].strip() in plat(x["titre"]))))
+            return max(titres[t], n_mots)
+        return max(titres[t], n_mots, sum(1 for te in par_salle.get(x["lieu"], []) if t in te or (len(te) >= 12 and te[:25].strip() in plat(x["titre"]))))
     pages, gardees, absorbees = set(), [], set()
     for x in expos:
         if x["discipline"] != "expo":

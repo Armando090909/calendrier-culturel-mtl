@@ -599,6 +599,11 @@ def _dom(e: dict) -> str:
 
 
 def dedoublonner(events: list[dict]) -> list[dict]:
+    # 22 nov. 2026 : 23 h 55 / 23 h 59 = « fin de journée » de certains sites (Club Soda, Le Ministère), pas l'heure du
+    # spectacle : retirée, la vraie heure vient d'une autre source (billetterie) ou reste « à confirmer »
+    for e in events:
+        if e.get("heure") in ("23:55", "23:59"):
+            e["heure"] = None
     events = _fusion_meme_page(events)
     for e in events:
         e.setdefault("_sources", {_dom(e) or e.get("source", "")})
