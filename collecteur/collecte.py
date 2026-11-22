@@ -1430,6 +1430,16 @@ def main() -> int:
                     e["heure"] = c["heure"] or None
                 if c.get("discipline"):  # (20 nov. 2026) discipline vérifiée à la main
                     e["discipline"] = c["discipline"]
+                # (22 nov. 2026) détails compilés à la triangulation (plusieurs sources) : résumé écrit par nous, prix et
+                # billetterie tels que publiés. Un nouveau résumé efface l'ancienne traduction (refaite à l'enrichissement).
+                if c.get("resume"):
+                    e["resume"] = c["resume"]
+                    e.pop("resume_en", None)
+                    if c.get("resume_en"):
+                        e["resume_en"] = c["resume_en"]
+                for k in ("prix", "billets"):
+                    if c.get(k):
+                        e[k] = c[k]
                 if c.get("nouveau_lieu"):  # (20 nov. 2026) salle confirmée à la main (fiche de la salle, billetterie)
                     e["lieu"] = lieu_canon(c["nouveau_lieu"], c.get("adresse", ""), "Montréal") or c["nouveau_lieu"]
                 if c.get("nouvelle_date"):
