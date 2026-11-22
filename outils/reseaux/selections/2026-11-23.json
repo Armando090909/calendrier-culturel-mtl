@@ -1,0 +1,415 @@
+{
+ "debut": "2026-11-23",
+ "fin": "2026-11-29",
+ "picks": [
+  {
+   "k": "expo",
+   "e": {
+    "titre": "Plateformes de Karl Lemieux",
+    "lieu": "OBORO",
+    "debut": "2026-11-20",
+    "fin": "2026-11-28",
+    "discipline": "expo",
+    "url": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/",
+    "resume": "Exposition de Karl Lemieux présentée à OBORO.",
+    "resume_en": "Exhibition by Karl Lemieux presented at OBORO.",
+    "date": "2026-11-23",
+    "heure": "",
+    "_jusqu": "2026-11-28"
+   },
+   "accroche": "Exposition de Karl Lemieux présentée à OBORO.",
+   "accroche_en": "Karl Lemieux exhibition presented at OBORO.",
+   "mode": "connu"
+  },
+  {
+   "k": "humour",
+   "e": {
+    "date": "2026-11-24",
+    "heure": "20:00",
+    "discipline": "humour",
+    "titre": "Tuesday Night Comedy",
+    "lieu": "McKibbin's",
+    "url": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Micro ouvert d'humour debout en anglais au centre-ville, le mardi.",
+    "billets": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS",
+    "confirmations": 2,
+    "affiche": {
+     "url": "https://media.admitone.com/legacy/13195710a36b45acbe9e3ecf62499894",
+     "credit": "admitone.com",
+     "lien": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS"
+    },
+    "prix": "11,75 à 17 $",
+    "resume_en": "English-language stand-up open mic downtown, on Tuesdays.",
+    "ics": "2026-11-24-tuesday-night-comedy-53d3b9"
+   },
+   "accroche": "Micro ouvert d'humour debout en anglais au centre-ville, le mardi.",
+   "accroche_en": "Open mic stand-up comedy in English downtown, on Tuesdays.",
+   "mode": "connu"
+  },
+  {
+   "k": "conference",
+   "e": {
+    "date": "2026-11-25",
+    "heure": "18:00",
+    "discipline": "conference",
+    "titre": "Toutes les musiques ont-elles les mêmes chances d’être entendues ?",
+    "lieu": "Club Balattou",
+    "url": "https://lepointdevente.com/billets/pna261125001",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Rencontre de discussion sur la visibilité des différentes musiques et sur l'accès qu'elles ont au public.",
+    "prix": "Gratuit",
+    "billets": "https://lepointdevente.com/billets/pna261125001",
+    "confirmations": 1,
+    "affiche": {
+     "url": "https://tpos.s3.amazonaws.com/events/PNA/26/11/25/001/pna261125001-1152x648-fr-6af4af46.png",
+     "credit": "lepointdevente.com",
+     "lien": "https://lepointdevente.com/billets/pna261125001"
+    },
+    "resume_en": "Discussion meeting on the visibility of different kinds of music and their access to audiences.",
+    "ics": "2026-11-25-toutes-les-musiques-ont-elles-les-memes-chances-de-f49815"
+   },
+   "accroche": "Rencontre de discussion sur la visibilité des différentes musiques et sur l'accès qu'elles ont au public.",
+   "accroche_en": "Discussion meeting on the visibility of different kinds of music and the access audiences have to them.",
+   "mode": "découverte"
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-11-26",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Barenaked Ladies",
+    "lieu": "L'Olympia",
+    "url": "https://sorstu.ca/artiste/barenaked-ladies/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "sorstu",
+    "resume": "Concert de rock du groupe canadien Barenaked Ladies.",
+    "billets": "http://www.songkick.com/concerts/43333194-barenaked-ladies-at-lolympia?utm_medium=organic&utm_source=microformat",
+    "confirmations": 2,
+    "style": "rock",
+    "affiche": {
+     "url": "https://images.sk-static.com/images/media/profile_images/artists/199498/huge_avatar",
+     "credit": "sorstu.ca",
+     "lien": "https://sorstu.ca/artiste/barenaked-ladies/"
+    },
+    "liens": [
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/0dEvJpkqhrcn64d3oI8v79",
+      "source": "musicbrainz",
+      "nom": "Barenaked Ladies"
+     },
+     {
+      "type": "site",
+      "url": "http://www.bnlmusic.com/",
+      "source": "musicbrainz",
+      "nom": "Barenaked Ladies"
+     },
+     {
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/barenaked-ladies",
+      "source": "musicbrainz",
+      "nom": "Barenaked Ladies"
+     },
+     {
+      "type": "apple",
+      "url": "https://music.apple.com/ca/artist/169260",
+      "source": "musicbrainz",
+      "nom": "Barenaked Ladies"
+     }
+    ],
+    "resume_en": "Rock concert by the Canadian band Barenaked Ladies.",
+    "ics": "2026-11-26-barenaked-ladies-6a355c"
+   },
+   "accroche": "Le groupe rock canadien Barenaked Ladies en concert.",
+   "accroche_en": "Canadian rock band Barenaked Ladies in concert.",
+   "mode": "tête d'affiche"
+  },
+  {
+   "k": "theatre",
+   "e": {
+    "date": "2026-11-27",
+    "heure": "20:00",
+    "discipline": "theatre",
+    "titre": "Le fantôme dans la machine",
+    "lieu": "Duceppe",
+    "url": "https://duceppe.com/le-fantome-dans-la-machine/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "theatre",
+    "resume": "Nouvelle création de Fanny Britt, pièce de science-fiction d'environ 1h20 sans entracte; offre promotionnelle de 25 %.",
+    "billets": "https://am.ticketmaster.com/duceppe/fr-ca/buy/virtual-venue/RDZEMTEyNw==",
+    "confirmations": 1,
+    "affiche": {
+     "url": "https://duceppe.com/uploads/DU2627_FANTOME_FB-SHARE_1200x630.jpg",
+     "credit": "duceppe.com",
+     "lien": "https://duceppe.com/le-fantome-dans-la-machine/"
+    },
+    "prix": "33 $",
+    "resume_en": "New creation by Fanny Britt, a science-fiction play of about 1h20 with no intermission; 25% promotional offer.",
+    "ics": "2026-11-27-le-fantome-dans-la-machine-64f487"
+   },
+   "accroche": "Une nouvelle création de Fanny Britt : de la science-fiction, sans entracte.",
+   "accroche_en": "A new creation by Fanny Britt: science fiction, with no intermission.",
+   "mode": "découverte"
+  },
+  {
+   "k": "cinema",
+   "e": {
+    "date": "2026-11-28",
+    "heure": "20:15",
+    "discipline": "cinema",
+    "titre": "Partout et nulle part",
+    "lieu": "Cinéma du Parc",
+    "url": "https://ridm.ca/fr/films/partout-et-nulle-part",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "festival",
+    "resume": "Une créatrice participe à une œuvre inspirée des paradis fiscaux, entre fiction, enquête et documentaire militant, avec humour.",
+    "billets": "https://ridm.ca/fr/films/partout-et-nulle-part",
+    "festival": "ridm",
+    "confirmations": 1,
+    "affiche": {
+     "url": "https://ridm.ca/img/generated/movie_gallery/18699_PARTOUT_Still_01.jpg",
+     "credit": "ridm.ca",
+     "lien": "https://ridm.ca/fr/films/partout-et-nulle-part"
+    },
+    "resume_en": "A creator takes part in a work inspired by tax havens, blending fiction, investigation and activist documentary, with humour.",
+    "ics": "2026-11-28-partout-et-nulle-part-12af0d"
+   },
+   "accroche": "Une créatrice participe à une œuvre entre fiction, enquête et documentaire militant.",
+   "accroche_en": "A filmmaker takes part in a work blending fiction, investigation and activist documentary.",
+   "mode": "connu"
+  },
+  {
+   "k": "danse",
+   "e": {
+    "date": "2026-11-29",
+    "heure": "20:00",
+    "discipline": "danse",
+    "titre": "Soirée Flamenca À trois souffles",
+    "lieu": "Casa del Popolo",
+    "url": "https://casadelpopolo.com/fr/events/2026-11-30-soiree-flamenca-a-trois-souffles",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Soirée consacrée au flamenco, mêlant danse et musique traditionnelle espagnole.",
+    "prix": "25,00 $",
+    "billets": "https://www.venuepilot.co/fr/events/173480/orders/new",
+    "confirmations": 1,
+    "affiche": {
+     "credit": "casadelpopolo.com",
+     "lien": "https://casadelpopolo.com/fr/events/2026-11-30-soiree-flamenca-a-trois-souffles",
+     "url": "https://img.casadelpopolo.com/j9o_fB6DbqfnIG7kCBJM6YyUPQv6lU-QSfbXQ80ByQM/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tLzF4aGxxdDFu/ZDFxaG51OTliYXQ3/MnMyeTIwZm8"
+    },
+    "resume_en": "Evening devoted to flamenco, blending dance and traditional Spanish music.",
+    "ics": "2026-11-29-soiree-flamenca-a-trois-souffles-79ca97"
+   },
+   "accroche": "Une soirée consacrée au flamenco, qui mêle danse et musique traditionnelle espagnole.",
+   "accroche_en": "An evening devoted to flamenco, mixing dance and traditional Spanish music.",
+   "mode": "découverte"
+  }
+ ],
+ "festivals": [
+  {
+   "nom": "Festival Bach",
+   "debut": "2026-11-04",
+   "fin": "2026-12-09",
+   "n": 18,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Cinéma israélien",
+   "debut": "2026-11-15",
+   "fin": "2026-11-29",
+   "n": 0,
+   "coul": "#2DAA55",
+   "en_cours": true
+  },
+  {
+   "nom": "RIDM",
+   "debut": "2026-11-19",
+   "fin": "2026-11-29",
+   "n": 98,
+   "coul": "#2DAA55",
+   "en_cours": true
+  },
+  {
+   "nom": "image+nation",
+   "debut": "2026-11-19",
+   "fin": "2026-11-29",
+   "n": 4,
+   "coul": "#2DAA55",
+   "en_cours": true
+  },
+  {
+   "nom": "Salon du livre de Montréal",
+   "debut": "2026-11-25",
+   "fin": "2026-11-29",
+   "n": 11,
+   "coul": "#E2B2B4",
+   "en_cours": true
+  },
+  {
+   "nom": "Festival du Jamais Lu",
+   "debut": "2026-12-01",
+   "fin": "2026-12-05",
+   "n": 0,
+   "coul": "#E22028",
+   "en_cours": false
+  },
+  {
+   "nom": "Noël dans le parc",
+   "debut": "2026-12-04",
+   "fin": "2026-12-25",
+   "n": 0,
+   "coul": "#3A75F0",
+   "en_cours": false
+  }
+ ],
+ "salle": {
+  "lieu": "La Livrerie",
+  "events": [
+   {
+    "date": "2026-11-23",
+    "heure": "17:00",
+    "discipline": "lettres",
+    "titre": "Remise des prix de l'Académie des lettres du Québec 2026",
+    "lieu": "La Livrerie",
+    "url": "https://www.lalivrerie.com/programmation/remise-des-prix-de-lacadmie-des-lettres-du-qubec-2026",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Cérémonie de remise des cinq prix annuels de l'Académie des lettres du Québec, qui récompensent l'excellence littéraire québécoise.",
+    "confirmations": 1,
+    "resume_en": "Award ceremony for the five annual prizes of the Académie des lettres du Québec, which honour Québec literary excellence.",
+    "ics": "2026-11-23-remise-des-prix-de-l-academie-des-lettres-du-quebe-b5adfb"
+   },
+   {
+    "date": "2026-11-24",
+    "heure": "17:00",
+    "discipline": "lettres",
+    "titre": "Causerie - Quand nous étions des Samis",
+    "lieu": "La Livrerie",
+    "url": "https://www.lalivrerie.com/programmation/causerie-quand-nous-tions-des-samis",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Rencontre avec le bédéiste sami Mats Jonsson et sa traductrice Isabelle Chéreau autour de leur bande dessinée documentaire sur l'héritage sami.",
+    "confirmations": 1,
+    "resume_en": "An encounter with Sámi cartoonist Mats Jonsson and his translator Isabelle Chéreau about their documentary comic on Sámi heritage.",
+    "ics": "2026-11-24-causerie-quand-nous-etions-des-samis-fc85d5"
+   },
+   {
+    "date": "2026-11-25",
+    "heure": "19:00",
+    "discipline": "conference",
+    "titre": "Le budget de la ville de Montréal",
+    "lieu": "La Livrerie",
+    "url": "https://www.upopmontreal.com/automne-2026/la-fiscalite-des-villes-pourquoi-nos-municipalites-sont-elles-cassees/#20261125",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Présentation et décryptage du budget de la Ville de Montréal et de ses enjeux financiers.",
+    "confirmations": 2,
+    "resume_en": "Presentation and breakdown of the City of Montreal's budget and its financial issues.",
+    "ics": "2026-11-25-le-budget-de-la-ville-de-montreal-0ffe15"
+   },
+   {
+    "date": "2026-11-26",
+    "heure": "17:00",
+    "discipline": "lettres",
+    "titre": "Causerie et lancement avec Vincent Francoeur",
+    "lieu": "La Livrerie",
+    "url": "https://www.lalivrerie.com/programmation/causerie-et-lancement-avec-vincent-francoeur",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Rencontre avec l'auteur Vincent Francoeur autour de son roman sur le Village des années 2010 et l'amitié.",
+    "confirmations": 1,
+    "resume_en": "Meeting with author Vincent Francoeur about his novel on the Village in the 2010s and friendship.",
+    "ics": "2026-11-26-causerie-et-lancement-avec-vincent-francoeur-492708"
+   },
+   {
+    "date": "2026-11-27",
+    "heure": "19:00",
+    "discipline": "musique",
+    "titre": "Concert - Tous les temps perdus",
+    "lieu": "La Livrerie",
+    "url": "https://www.lalivrerie.com/programmation/concert-tous-les-temps-perdus",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Soirée piano-bar avec deux artistes mêlant jazz, chanson et musique de film des années 1920 à aujourd'hui.",
+    "prix": "Payez ce que vous pouvez (contribution…",
+    "confirmations": 1,
+    "style": "jazz",
+    "resume_en": "Piano-bar evening with two artists blending jazz, chanson and film music from the 1920s to today.",
+    "ics": "2026-11-27-concert-tous-les-temps-perdus-c63732"
+   }
+  ],
+  "quartier": "Ville-Marie"
+ },
+ "total": 899,
+ "expos": 178,
+ "tags": {
+  "expo": {
+   "salle": {
+    "compte": "oboro4001",
+    "sur": true,
+    "source": "https://www.oboro.net/"
+   },
+   "artiste": {
+    "compte": "rcaaq",
+    "sur": false,
+    "source": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/"
+   }
+  },
+  "humour": {
+   "artiste": {
+    "compte": "admitoneticketing",
+    "sur": false,
+    "source": "https://admitone.com/events/montreal/community/comedy/1-tuesday-night-english-standup-comedy-show-in-downtown-montreal/6NFKLS"
+   }
+  },
+  "conference": {},
+  "musique": {
+   "artiste": {
+    "compte": "barenakedladiesmusic",
+    "sur": true,
+    "source": "https://linktr.ee/barenakedladies",
+    "qui": "Barenaked Ladies"
+   }
+  },
+  "theatre": {
+   "salle": {
+    "compte": "theatre_duceppe",
+    "sur": true,
+    "source": "https://duceppe.com/"
+   },
+   "artiste": {
+    "compte": "fannybrittenpublic",
+    "sur": true,
+    "source": "https://wordfest.com/2024/imaginairium/artist/fanny-britt/",
+    "qui": "Fanny Britt"
+   }
+  },
+  "cinema": {
+   "artiste": {
+    "compte": "ridm_festival",
+    "sur": false,
+    "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
+   }
+  },
+  "danse": {}
+ },
+ "_statut": "ok",
+ "_issue": null
+}
