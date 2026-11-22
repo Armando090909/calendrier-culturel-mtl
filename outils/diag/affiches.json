@@ -1,11 +1,7 @@
 {
  "total": 1529,
- "echecs": 15,
+ "echecs": 9,
  "par_site": {
-  "www.cinemacinoche.com": {
-   "affiches": 6,
-   "echecs": 6
-  },
   "turbohaus.ca": {
    "affiches": 9,
    "echecs": 2
@@ -290,6 +286,10 @@
    "affiches": 3,
    "echecs": 0
   },
+  "www.cinemacinoche.com": {
+   "affiches": 6,
+   "echecs": 0
+  },
   "s3.amazonaws.com": {
    "affiches": 10,
    "echecs": 0
@@ -411,11 +411,6 @@
   ],
   "img.casadelpopolo.com": [
    "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
-  ],
-  "www.cinemacinoche.com": [
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/Popcorn-1991-still-05-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/popcorn-05-head-mould-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/HMD_mtl_2026_FLYER_w.jpg"
   ],
   "westmount.org": [
    "https://westmount.org/resize/c966afdd6cb77a339f8653cc2d9c65e4-1"
