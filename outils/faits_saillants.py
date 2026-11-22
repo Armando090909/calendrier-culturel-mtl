@@ -456,6 +456,8 @@ IMAGE_GENERIQUE = re.compile(r"(?i)default[-_]?(user|image|avatar|profile)|place
 
 
 def _affiche(e):
+    if e.get("image"):  # (22 nov. 2026) affiche fournie à la main (collecteur/affiches.yaml) : elle passe avant tout
+        return e["image"], ""
     aff = e.get("affiche") or {}
     img, credit = aff.get("url") or "", aff.get("credit") or ""
     if any(h in img for h in HOTES_SANS_AFFICHE) or IMAGE_GENERIQUE.search(img):
