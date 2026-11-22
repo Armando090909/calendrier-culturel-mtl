@@ -1,22 +1,10 @@
 {
  "total": 1529,
- "echecs": 78,
+ "echecs": 15,
  "par_site": {
-  "www.cinemamoderne.com": {
-   "affiches": 25,
-   "echecs": 25
-  },
-  "cinemapublic.ca": {
-   "affiches": 20,
-   "echecs": 20
-  },
-  "pauline-julien.com": {
-   "affiches": 19,
-   "echecs": 19
-  },
-  "centaurtheatre.com": {
-   "affiches": 5,
-   "echecs": 5
+  "www.cinemacinoche.com": {
+   "affiches": 6,
+   "echecs": 6
   },
   "turbohaus.ca": {
    "affiches": 9,
@@ -54,12 +42,20 @@
    "affiches": 663,
    "echecs": 0
   },
+  "www.cinemamoderne.com": {
+   "affiches": 25,
+   "echecs": 0
+  },
   "ridm.ca": {
    "affiches": 84,
    "echecs": 0
   },
   "www.fbdm-mcaf.ca": {
    "affiches": 6,
+   "echecs": 0
+  },
+  "cinemapublic.ca": {
+   "affiches": 20,
    "echecs": 0
   },
   "theatreoutremont.ca": {
@@ -104,6 +100,10 @@
   },
   "images.squarespace-cdn.com": {
    "affiches": 30,
+   "echecs": 0
+  },
+  "pauline-julien.com": {
+   "affiches": 19,
    "echecs": 0
   },
   "theatresaintecatherine.com": {
@@ -218,6 +218,10 @@
    "affiches": 2,
    "echecs": 0
   },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 0
+  },
   "montrealcentreville.ca": {
    "affiches": 1,
    "echecs": 0
@@ -284,10 +288,6 @@
   },
   "www.lacomedie.ca": {
    "affiches": 3,
-   "echecs": 0
-  },
-  "www.cinemacinoche.com": {
-   "affiches": 6,
    "echecs": 0
   },
   "s3.amazonaws.com": {
@@ -396,21 +396,6 @@
   }
  },
  "exemples": {
-  "www.cinemamoderne.com": [
-   "https://www.cinemamoderne.com/wp-content/uploads/2026/09/shaun-the-sheep-still-siteweb-scaled-e1790197308975.jpg",
-   "https://www.cinemamoderne.com/wp-content/uploads/2026/10/history-of-concrete-still-siteweb-scaled-e1790896521587.jpg",
-   "https://www.cinemamoderne.com/wp-content/uploads/2026/11/notting-hill-still-siteweb-e1794341692629.jpg"
-  ],
-  "cinemapublic.ca": [
-   "https://cinemapublic.ca/wp-content/uploads/2026/09/Shaun-the-Sheep-The-Beast-of-Mossy-Bottom-01.jpg",
-   "https://cinemapublic.ca/wp-content/uploads/2026/11/imagenation39_cinemapublic_HR_1.jpg",
-   "https://cinemapublic.ca/wp-content/uploads/2026/10/YCSE_Still.jpg"
-  ],
-  "pauline-julien.com": [
-   "https://pauline-julien.com/wp-content/uploads/2026/01/BD_Vivianne-Audet@Marjorie-Guindon.jpg",
-   "https://pauline-julien.com/wp-content/uploads/2026/08/CC_Faux_monnayeur_Le.jpg",
-   "https://pauline-julien.com/wp-content/uploads/2026/01/TH_Merci@Hugo-B-1.jpg"
-  ],
   "calendrier.umontreal.ca": [
    "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/flute-traversiere.png"
   ],
@@ -421,16 +406,16 @@
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg",
    "https://turbohaus.ca/api/media/file/cam-kahin.png"
   ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
-  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
   ],
   "img.casadelpopolo.com": [
    "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI"
+  ],
+  "www.cinemacinoche.com": [
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/Popcorn-1991-still-05-800.jpg",
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/popcorn-05-head-mould-800.jpg",
+   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/HMD_mtl_2026_FLYER_w.jpg"
   ],
   "westmount.org": [
    "https://westmount.org/resize/c966afdd6cb77a339f8653cc2d9c65e4-1"
