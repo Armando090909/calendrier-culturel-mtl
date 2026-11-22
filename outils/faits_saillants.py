@@ -796,6 +796,8 @@ def textes(s):
             hs = [h for h in identification.comptes_retenus(s, p["k"]) if h not in vus_][:max(0, 20 - len(vus_))]
             vus_ += hs
             ment[p["k"]] = "".join(" @" + h for h in hs)
+        # (22 nov. 2026) la salle de la semaine aussi (comptes ajoutés par Alexandre, préférences « tags » : « salle »)
+        ment["_salle"] = "".join(" @" + h for h in identification.comptes_retenus(s, "salle") if h not in vus_)
     except Exception:
         ment = {}
     # « Vernissage : Vernissage : X » → « Vernissage : X » (le titre reprend déjà le nom de la catégorie)
@@ -810,7 +812,7 @@ def textes(s):
     if LANGUE == "en":
         long = (f"What's on in Montréal this week? This week's selection, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals on now: {fest}" if fest else "")
-                + (f"\n📍 Venue of the week: {s['salle']['lieu']}" if s["salle"] else "")
+                + (f"\n📍 Venue of the week: {s['salle']['lieu']}{ment.get('_salle', '')}" if s["salle"] else "")
                 + f"\n\nAnd {s['total']} events in all on ccmtl.ca (link in bio).\n\n" + HASH)
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
         court = ("What's on in Montréal this week? Worth seeing: " + " · ".join(n[:45] for n in noms)
@@ -820,7 +822,7 @@ def textes(s):
     else:
         long = (f"Qu'est-ce qu'on fait cette semaine ? La sélection de la semaine, {_periode(s)} 👇\n\n" + "\n".join(lignes)
                 + (f"\n\n🎪 Festivals en cours : {fest}" if fest else "")
-                + (f"\n📍 La salle de la semaine : {s['salle']['lieu']}" if s["salle"] else "")
+                + (f"\n📍 La salle de la semaine : {s['salle']['lieu']}{ment.get('_salle', '')}" if s["salle"] else "")
                 + f"\n\nEt {s['total']} sorties en tout sur ccmtl.ca (lien dans la bio).\n\n" + HASH)
         noms = [p["e"]["titre"] for p in s["picks"][:3]]
         court = ("Qu'est-ce qu'on fait cette semaine ? À voir : " + " · ".join(n[:45] for n in noms)

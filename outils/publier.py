@@ -748,6 +748,8 @@ def _etiquettes(s, jpg):
     try:
         import identification
         k = jpg.stem.split("-", 1)[1]
+        if k == "salle":  # (22 nov. 2026) carton de la salle de la semaine
+            return identification.comptes_retenus(s, "salle") if s.get("salle") else []
         return identification.comptes_retenus(s, k) if any(p["k"] == k for p in s["picks"]) else []
     except Exception:
         return []
