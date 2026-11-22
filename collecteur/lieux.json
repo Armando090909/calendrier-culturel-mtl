@@ -864,7 +864,12 @@
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
  },
- "Cégep Du Vieux Montréal": null,
+ "Cégep Du Vieux Montréal": {
+  "alias": [],
+  "lat": 45.51454,
+  "lon": -73.56662,
+  "quartier": "Ville-Marie"
+ },
  "Cénotaphe, près de l'hôtel de ville de Westmount": null,
  "DARE-DARE": null,
  "DATCHA": {

@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-21-au-travers-de-la-route-vincent-vallieres-288674@ccmtl.ca
+UID:2027-01-21-au-travers-de-la-route-vincent-vallieres-f03260@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270121
-DTEND;VALUE=DATE:20270122
+DTSTART;TZID=America/Toronto:20270121T193000
+DTEND;TZID=America/Toronto:20270121T213000
 SUMMARY:Au travers de la route - Vincent Vallières
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/au-travers-de-la-route-vincent-vallieres
  -118818
-DESCRIPTION:Heure à confirmer. Vincent Vallières vient nous présenter so
- n dernier spectacle Au travers de la route...Un moment privilégié à par
- tager à L'Entrepôt.\nPrix : Payant\nDétails : https://montreal.ca/evene
- ments/au-travers-de-la-route-vincent-vallieres-118818\n(ccmtl.ca)
+DESCRIPTION:Vincent Vallières vient nous présenter son dernier spectacle 
+ Au travers de la route...Un moment privilégié à partager à L'Entrepôt
+ .\nPrix : Payant\nDétails : https://lachine.tuxedobillet.com/Entrepot2022
+ /vincent-valliere\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
