@@ -1,10 +1,14 @@
 {
- "total": 1527,
- "echecs": 15,
+ "total": 1523,
+ "echecs": 20,
  "par_site": {
   "theatreplaza.ca": {
    "affiches": 6,
    "echecs": 6
+  },
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 5
   },
   "turbohaus.ca": {
    "affiches": 9,
@@ -71,7 +75,7 @@
    "echecs": 0
   },
   "tpos.s3.amazonaws.com": {
-   "affiches": 119,
+   "affiches": 118,
    "echecs": 0
   },
   "tangolibre.ca": {
@@ -127,7 +131,7 @@
    "echecs": 0
   },
   "images.sk-static.com": {
-   "affiches": 69,
+   "affiches": 67,
    "echecs": 0
   },
   "media.admitone.com": {
@@ -214,10 +218,6 @@
    "affiches": 2,
    "echecs": 0
   },
-  "centaurtheatre.com": {
-   "affiches": 5,
-   "echecs": 0
-  },
   "montrealcentreville.ca": {
    "affiches": 1,
    "echecs": 0
@@ -259,7 +259,7 @@
    "echecs": 0
   },
   "www.comedyville.ca": {
-   "affiches": 9,
+   "affiches": 8,
    "echecs": 0
   },
   "plessisville.quebec": {
@@ -411,6 +411,11 @@
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg",
    "https://turbohaus.ca/api/media/file/cam-kahin.png"
   ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
+  ],
   "images.ctfassets.net": [
    "https://images.ctfassets.net/dv1qnlptav0x/xyK48jStLJMDJKwDVQSvv/932acf974ac84c22f30af24634fd8df2/FIJM26-OpenGraph.jpg"
   ],
@@ -428,10 +433,10 @@
   ]
  },
  "sans_affiche_par_discipline": {
-  "musique": 373,
+  "musique": 367,
   "jeune": 26,
   "expo": 8,
-  "humour": 75,
+  "humour": 68,
   "quiz": 90,
   "atelier": 126,
   "lettres": 12,
@@ -440,7 +445,7 @@
   "theatre": 61,
   "cinema": 5,
   "danse": 15,
-  "fete": 22,
+  "fete": 18,
   "cirque": 2,
   "poesie": 2
  }
