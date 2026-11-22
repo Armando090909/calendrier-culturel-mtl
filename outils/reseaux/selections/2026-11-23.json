@@ -338,48 +338,31 @@
  "expos": 178,
  "tags": {
   "cinema": {
-   "salle": {
-    "compte": "maisontheatre",
-    "sur": true,
-    "source": "https://www.maisontheatre.com/"
-   },
-   "artiste": {
-    "compte": "ridm_festival",
-    "sur": false,
-    "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
-   }
+   "ajouts": [
+    "maisontheatre",
+    "francoisjcb",
+    "alix.dufresne",
+    "partout_nullepart"
+   ]
   },
   "theatre": {
-   "salle": {
-    "compte": "theatrelalicorne",
-    "sur": true,
-    "source": "https://theatrelalicorne.com/"
-   },
-   "artiste": {
-    "compte": "ti_senat",
-    "sur": true,
-    "source": "https://tvrm.ca/episode/lez-au24-075-lezarts-lanaudiere-emission-du-19-septembre-2024/",
-    "qui": "Fabrice Yvanoff Sénat"
-   }
+   "ajouts": [
+    "theatrelalicorne",
+    "ti_senat",
+    "max_mprs"
+   ]
   },
   "expo": {
-   "salle": {
-    "compte": "oboro4001",
-    "sur": true,
-    "source": "https://www.oboro.net/"
-   },
-   "artiste": {
-    "compte": "rcaaq",
-    "sur": false,
-    "source": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/"
-   }
+   "ajouts": [
+    "oboro4001",
+    "karl_lemieux_"
+   ]
   },
   "conference": {
-   "festival": {
-    "compte": "salonlivremtl",
-    "sur": true,
-    "source": "https://salondulivredemontreal.com"
-   }
+   "ajouts": [
+    "salonlivremtl",
+    "jacquesbraunstein"
+   ]
   },
   "danse": {
    "artiste": {
