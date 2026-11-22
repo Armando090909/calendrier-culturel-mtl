@@ -185,19 +185,24 @@ function detailHTML(e){
         <a class="btn ghost" href="${gmaps}" target="_blank" rel="noopener">${L("Itinéraire","Directions")}</a>
         <button type="button" class="btn ghost" data-partage="${e._i}">${L("Partager","Share")}</button>
       </div>`;
-  const extra=`${V2?"":ecoute}${calHTML(e)}`; // nouveau design : écouter/voir sous l'affiche (ou sous le résumé sans affiche)
   const media=img||carte?`<div class="det-media${img&&carte?" deux":""}">${img}${carte}</div>`:"";
+  // 22 nov. 2026 (disposition demandée par l'équipe) : ordinateur : heure en haut à droite, agendas à sa gauche, boutons en
+  // bas, écouter sous la photo ; téléphone : menu « + agenda » sous l'heure, écouter sous les boutons
+  const extra=V2?(media?`<div class="ec-tel">${ecoute}</div>`:""):`${ecoute}${calHTML(e)}`;
+  const quand=V2?`<div class="det-quand">${calHTML(e)}<div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div></div>`:"";
+  const calMenu=V2?`<details class="cal-menu"><summary>${L("+ agenda","+ calendar")}</summary>${calHTML(e)}</details>`:"";
   return `<article class="ev det${st.cible===e._i?" flash cible":""}" id="ev-${e._i}" data-d="${e.discipline}" data-h="${esc((e.heure||"").slice(0,2))}" style="--c:var(--${e.discipline})">
     <div class="det-info">
       <h3 class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titre)}</a></h3>
       <div class="det-top"><div class="tm${e.heure?"":" nh"}">${heureTxt(e)}</div><span class="disc">${discs(e).map(k=>esc(DISC_LABEL[k]||"")).join(" · ")}${e.style&&STYLES[e.style]?` · ${esc(STYLES[e.style])}`:""}</span>${sousTag(e)}${e.festival&&FESTID[e.festival]?`<button type="button" class="fx" data-fest="${e.festival}" style="--f:${FESTID[e.festival].coul};--ft:${FESTID[e.festival].coulTxt}">${/^festival/i.test(FESTID[e.festival].court)?"":"Festival · "}${esc(FESTID[e.festival].court)}</button>`:""}${flagsHTML(e)}${V2&&e.prix?`<span class="prix-main prix-tel">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}</div>
+      ${calMenu}
       ${lieuHTML(e,true)}
-      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2?ecoute:""}
+      ${resumeDe(e)?`<p class="resume">${esc(resumeDe(e))}</p>`:""}${V2&&!media?ecoute:""}
       ${e.prix?`<span class="prix-main">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}
       ${signalerHTML(e)}
     </div>
-    ${media?`<div class="det-vis">${media}</div>`:""}
-    <div class="det-side seul">${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
+    ${media?`<div class="det-vis">${media}${V2?ecoute:""}</div>`:""}
+    <div class="det-side seul">${quand}${V2&&e.prix?`<span class="prix-main prix-side">${esc(prixDe(e.prix).length>28?prixDe(e.prix).slice(0,26)+"…":prixDe(e.prix))}</span>`:""}${actions}${extra}</div>
     ${signalerHTML(e,"tel")}
   </article>`;
 }
