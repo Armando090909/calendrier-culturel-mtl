@@ -56,8 +56,8 @@
     "heure": "",
     "_jusqu": "2026-12-11"
    },
-   "accroche": "Une pièce à découvrir, aussi offerte en abonnement.",
-   "accroche_en": "A play to discover, also available as a subscription package.",
+   "accroche": "Seul en scène, Fabrice Yvanoff raconte son histoire avec humour et sans détour.",
+   "accroche_en": "Alone on stage, Fabrice Yvanoff tells his own story with humour and candour.",
    "mode": "découverte"
   },
   {
@@ -75,8 +75,8 @@
     "heure": "",
     "_jusqu": "2026-11-28"
    },
-   "accroche": "Une exposition de Karl Lemieux à découvrir.",
-   "accroche_en": "An exhibition by Karl Lemieux to discover.",
+   "accroche": "Une exposition de Karl Lemieux à voir en ce moment.",
+   "accroche_en": "A Karl Lemieux exhibition to see right now.",
    "mode": "connu"
   },
   {
@@ -97,8 +97,8 @@
     "resume_en": "Round table on the apparent decline of reading in the face of the rise of book clubs and social media influencers.",
     "ics": "2026-11-26-lecture-en-recul-osons-en-parler-0eaece"
    },
-   "accroche": "Recul apparent de la lecture? Clubs de lecture et prescripteurs en ligne en débat.",
-   "accroche_en": "Is reading declining? Book clubs and online recommenders under debate.",
+   "accroche": "Clubs de lecture et prescripteurs en ligne : la lecture recule-t-elle vraiment?",
+   "accroche_en": "Reading clubs and online recommenders: is reading really declining?",
    "mode": "découverte"
   },
   {
@@ -126,8 +126,8 @@
     "resume_en": "The Maison de la culture du Plateau-Mont-Royal presents, free of charge, the residency showing of the Soeurs Schmutt on November 27, 2026 at 2 p.m.",
     "ics": "2026-11-27-prima-di-scomparire-les-soeurs-schmutt-sortie-de-r-d84c50"
    },
-   "accroche": "Un aperçu gratuit de la sortie de résidence des Soeurs Schmutt.",
-   "accroche_en": "A free preview of Les Soeurs Schmutt's residency showing.",
+   "accroche": "Une sortie de résidence des Soeurs Schmutt, présentée gratuitement.",
+   "accroche_en": "A residency showing by Les Soeurs Schmutt, offered free of charge.",
    "mode": "découverte"
   },
   {
@@ -158,8 +158,8 @@
     "resume_en": "Comedy show by Lydia Képinski.",
     "ics": "2026-11-28-lydia-kepinski-9e7b22"
    },
-   "accroche": "Lydia Képinski en spectacle d'humour : le nom le plus attendu de la semaine.",
-   "accroche_en": "Lydia Képinski in a comedy show: the most anticipated name of the week.",
+   "accroche": "Lydia Képinski en concert : synth-pop dansante et textes d'inspiration poétique.",
+   "accroche_en": "Lydia Képinski live: danceable synth-pop and poetry-inspired lyrics.",
    "mode": "tête d'affiche"
   },
   {
@@ -188,8 +188,8 @@
     "resume_en": "show, activity, free, Christmas, theatre, children aged 2 to 8, library, Vieux-Saint-Laurent",
     "ics": "2026-11-29-spectacle-le-noel-de-guirlande-2-a-8-ans-6033db"
    },
-   "accroche": "Un spectacle de théâtre de Noël pour enfants de 2 à 8 ans, gratuit.",
-   "accroche_en": "A Christmas theatre show for children aged 2 to 8, free admission.",
+   "accroche": "Un spectacle de théâtre de Noël pour les 2 à 8 ans, gratuit.",
+   "accroche_en": "A Christmas theatre show for ages 2 to 8, free admission.",
    "mode": "connu"
   }
  ],
@@ -354,6 +354,12 @@
     "compte": "theatrelalicorne",
     "sur": true,
     "source": "https://theatrelalicorne.com/"
+   },
+   "artiste": {
+    "compte": "ti_senat",
+    "sur": true,
+    "source": "https://tvrm.ca/episode/lez-au24-075-lezarts-lanaudiere-emission-du-19-septembre-2024/",
+    "qui": "Fabrice Yvanoff Sénat"
    }
   },
   "expo": {
@@ -398,5 +404,5 @@
   "jeune": {}
  },
  "_statut": "ok",
- "_issue": "22"
+ "_issue": null
 }
