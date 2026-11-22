@@ -1504,6 +1504,7 @@ def main() -> int:
     series_manuelles = corr.get("series", {})
     expos = [x for x in expos if x.get("url") not in corr.get("series_retirees", [])]  # doublons repérés à la main
     print(f"Corrections à la main : {n_corr} sorties corrigées ou retirées.")
+    events = _doublons_meme_salle(events)  # (22 nov. 2026) encore une fois, avec les salles et heures finales
 
     # Pièces, danse, cirque « à l'affiche du X au Y » : l'horaire de la semaine (relâches comprises), lu une fois par
     # Claude sur la page du spectacle. Le site s'en sert pour placer chaque représentation à la bonne heure.
