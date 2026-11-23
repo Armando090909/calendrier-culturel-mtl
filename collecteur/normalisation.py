@@ -612,8 +612,12 @@ def dedoublonner(events: list[dict]) -> list[dict]:
         garde = seaux.setdefault(e["date"], [])
         for i, old in enumerate(garde):
             if meme_evenement(e, old):
-                mieux = (bool(e.get("heure")), -PRIORITE.get(e.get("source", ""), 9)) > \
-                        (bool(old.get("heure")), -PRIORITE.get(old.get("source", ""), 9))
+                # (23 nov. 2026) programme d'un festival (court métrage avant un long, ou plusieurs courts) : la séance
+                # garde le long métrage (« Partout et nulle part » était remplacé par le court qui le précède)
+                _long = lambda x: (bool(re.search(r"(?i)longs?[ -]m[ée]trages?|feature", (x.get("_cat") or "") + " " + (x.get("categorie") or "")))  # noqa: E731
+                                   - bool(re.search(r"(?i)courts?[ -]m[ée]trages?|short film", (x.get("_cat") or "") + " " + (x.get("resume") or "")[:60])))
+                mieux = (bool(e.get("heure")), _long(e), -PRIORITE.get(e.get("source", ""), 9)) > \
+                        (bool(old.get("heure")), _long(old), -PRIORITE.get(old.get("source", ""), 9))
                 if mieux:
                     garde[i], e = e, old
                 garde[i]["_sources"] = garde[i]["_sources"] | e.get("_sources", set())
