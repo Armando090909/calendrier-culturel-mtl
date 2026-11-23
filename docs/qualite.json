@@ -3,8 +3,8 @@
  "regles": {
   "titre mal encodé": 17,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 24,
-  "page de la sortie disparue": 11,
+  "date absente de la page officielle": 28,
+  "page de la sortie disparue": 12,
   "heures différentes selon les sources": 58
  },
  "journal": [
@@ -484,6 +484,51 @@
    "lieu": "Théâtre Outremont",
    "source": "theatre",
    "url": "https://theatreoutremont.tuxedobillet.com/web/le-songe-dune-nuit"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Groupe Entourage Lecture Publique",
+   "date": "2026-11-26",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/groupe-entourage-lecture-publique/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-26",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261126200000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Voyage voyage",
+   "date": "2026-11-26",
+   "lieu": "Théâtre Denise-Pelletier",
+   "source": "theatre",
+   "url": "https://www.denise-pelletier.qc.ca/pieces/voyage-voyage/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-26",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-26-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Thursday Night Comedy",
+   "date": "2026-11-26",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/comedy-montreal-comedy-show-montreal-at-comedy-club-montreal-830-tickets-158294327595?aff=oddtdtcreator"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1009,11 +1054,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 24,
-  "date confirmée": 194,
-  "lien mort remplacé": 11,
-  "page illisible": 29,
-  "non relues (limite)": 46
+  "date absente de la page": 28,
+  "date confirmée": 229,
+  "lien mort remplacé": 12,
+  "page illisible": 35
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1049,9 +1093,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 282,
+   "erreurs": 283,
    "sorties": 647,
-   "taux": 43.6
+   "taux": 43.7
   },
   {
    "source": "centredesmusiciensdumonde.com",
