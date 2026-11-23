@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-les-choses-qui-me-font-penser-a-toi-chez-moi-62a429@ccmtl.ca
+UID:2026-11-23-partout-et-nulle-part-f2a939@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T201500
-DTEND;TZID=America/Toronto:20261125T221500
-SUMMARY:Les choses qui me font penser à toi\, chez moi
+DTSTART;TZID=America/Toronto:20261123T203000
+DTEND;TZID=America/Toronto:20261123T223000
+SUMMARY:Partout et nulle part
 LOCATION:Maison Théâtre\, Montréal
-URL:https://ridm.ca/fr/films/les-choses-qui-me-font-penser-a-toi-chez-moi
-DESCRIPTION:Court métrage innu présenté avec sous-titres anglais\, suivi
-  d'une présence du cinéaste Matthew Rankin.\nDétails : https://ridm.ca/
- fr/films/les-choses-qui-me-font-penser-a-toi-chez-moi\n(ccmtl.ca)
+URL:https://ridm.ca/fr/films/partout-et-nulle-part
+DESCRIPTION:Une créatrice participe à l'élaboration d'une œuvre sur les
+  paradis fiscaux\, entre enquête\, fiction et comédie\, dans un film hyb
+ ride signé François Jacob.\nDétails : https://ridm.ca/fr/films/partout-
+ et-nulle-part\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

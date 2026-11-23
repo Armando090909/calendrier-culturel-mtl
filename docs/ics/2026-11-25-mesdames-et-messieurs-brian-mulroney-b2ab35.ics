@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-23-on-postindian-survivance-d4febc@ccmtl.ca
+UID:2026-11-25-mesdames-et-messieurs-brian-mulroney-b2ab35@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261123T203000
-DTEND;TZID=America/Toronto:20261123T223000
-SUMMARY:On Postindian Survivance
+DTSTART;TZID=America/Toronto:20261125T201500
+DTEND;TZID=America/Toronto:20261125T221500
+SUMMARY:Mesdames et Messieurs\, Brian Mulroney
 LOCATION:Maison Théâtre\, Montréal
-URL:https://ridm.ca/fr/films/on-postindian-survivance
-DESCRIPTION:Court métrage autochtone du Wapikoni\, présenté en salle ave
- c sous-titres français\, en présence du cinéaste François Jacob.\nDét
- ails : https://ridm.ca/fr/films/on-postindian-survivance\n(ccmtl.ca)
+URL:https://ridm.ca/fr/films/mesdames-et-messieurs-brian-mulroney
+DESCRIPTION:Un film de found footage où Matthew Rankin dresse un portrait 
+ satirique et psychédélique de Brian Mulroney\, de ses ambitions politiqu
+ es à la propagande.\nDétails : https://ridm.ca/fr/films/mesdames-et-mess
+ ieurs-brian-mulroney\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

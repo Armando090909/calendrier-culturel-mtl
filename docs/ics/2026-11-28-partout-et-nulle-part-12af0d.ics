@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-yonnonhwe-140923@ccmtl.ca
+UID:2026-11-28-partout-et-nulle-part-12af0d@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261125T180000
-DTEND;TZID=America/Toronto:20261125T200000
-SUMMARY:Yonnonhwe'
+DTSTART;TZID=America/Toronto:20261128T201500
+DTEND;TZID=America/Toronto:20261128T221500
+SUMMARY:Partout et nulle part
 LOCATION:Cinéma du Parc\, Montréal
-URL:https://ridm.ca/fr/films/yonnonhwe
-DESCRIPTION:Court métrage wendat de Wapikoni\, présenté en première mon
- diale\, suivi d'une séance avec les cinéastes Ryan Ermacora et Jessica J
- ohnson.\nDétails : https://ridm.ca/fr/films/yonnonhwe\n(ccmtl.ca)
+URL:https://ridm.ca/fr/films/partout-et-nulle-part
+DESCRIPTION:Une créatrice participe à l'élaboration d'une œuvre sur les
+  paradis fiscaux\, entre enquête\, fiction et comédie\, dans un film hyb
+ ride signé François Jacob.\nDétails : https://ridm.ca/fr/films/partout-
+ et-nulle-part\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

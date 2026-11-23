@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-24-invisible-landscape-d87918@ccmtl.ca
+UID:2026-11-24-the-flower-and-the-flood-2cb4dd@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261124T203000
 DTEND;TZID=America/Toronto:20261124T223000
-SUMMARY:Invisible Landscape
+SUMMARY:The Flower and the Flood
 LOCATION:Cinéma du Parc\, Montréal
-URL:https://ridm.ca/fr/films/invisible-landscape
-DESCRIPTION:Un court métrage Super 8 sur les souvenirs d'une femme ayant q
- uitté Taïwan adolescente\, entre montagnes brumeuses et mémoire fragmen
- tée.\nDétails : https://ridm.ca/fr/films/invisible-landscape\n(ccmtl.ca)
+URL:https://ridm.ca/fr/films/the-flower-and-the-flood
+DESCRIPTION:Après une inondation qui ruine une récolte de safran\, une co
+ mmunauté autochtone voit resurgir un lac asséché \; trois récits se ti
+ ssent sur pellicule analogique.\nDétails : https://ridm.ca/fr/films/the-f
+ lower-and-the-flood\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
