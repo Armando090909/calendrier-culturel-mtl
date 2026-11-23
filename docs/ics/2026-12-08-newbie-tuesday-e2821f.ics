@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-11-black-xmas-ab95c4@ccmtl.ca
+UID:2026-12-08-newbie-tuesday-e2821f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:Black Xmas
-LOCATION:Le Red Room\, Montréal
-URL:https://www.stagelinetickets.com/s/eventfly-2-show
-DESCRIPTION:Heure à confirmer. Soirée festive de Noël au Red Room\, avec
-  musique électronique.\nDétails : https://www.stagelinetickets.com/s/eve
- ntfly-2-show\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261208T160000
+DTEND;TZID=America/Toronto:20261208T180000
+SUMMARY:Newbie Tuesday
+LOCATION:The Comedy Nest\, Montréal
+URL:https://comedynest.com/blog/newbie-tuesday-december-8-2026/
+DESCRIPTION:Soirée d'humour où des débutants ayant un emploi régulier t
+ estent le stand-up\, avec la participation de comédiens professionnels.\n
+ Prix : 6 $\nDétails : https://comedynest.com/blog/newbie-tuesday-december
+ -8-2026/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

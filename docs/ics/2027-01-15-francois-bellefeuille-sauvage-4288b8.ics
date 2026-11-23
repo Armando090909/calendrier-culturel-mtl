@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-21-glam-rock-show-56ac90@ccmtl.ca
+UID:2027-01-15-francois-bellefeuille-sauvage-4288b8@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270121
-DTEND;VALUE=DATE:20270122
-SUMMARY:Glam Rock Show
+DTSTART;TZID=America/Toronto:20270115T150000
+DTEND;TZID=America/Toronto:20270115T170000
+SUMMARY:François Bellefeuille - Sauvage
 LOCATION:Cabaret du Casino de Montréal\, Montréal
 URL:https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-c
- asino/glam-rock-show
-DESCRIPTION:Heure à confirmer. Un spectacle rendant hommage à l'univers d
- u glam rock sur scène.\nPrix : À partir de 55 $\nDétails : https://casi
- nos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/glam-rock
- -show\n(ccmtl.ca)
+ asino/francois-bellefeuille-sauvage
+DESCRIPTION:Spectacle de François Bellefeuille\, à partir de cette date d
+ e début.\nPrix : À partir de 56 $\nDétails : https://www.ticketmaster.c
+ a/artist/1603898?venueId=402204&brand=gestev&lang=fr-ca\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

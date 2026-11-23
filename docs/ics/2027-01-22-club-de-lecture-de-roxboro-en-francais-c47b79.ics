@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-22-club-de-lecture-de-roxboro-en-francais-2d93e2@ccmtl.ca
+UID:2027-01-22-club-de-lecture-de-roxboro-en-francais-c47b79@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
+DTSTART;TZID=America/Toronto:20270122T100000
+DTEND;TZID=America/Toronto:20270122T120000
 SUMMARY:Club de lecture de Roxboro en français
 LOCATION:Bibliothèque William-G.-Boll\, Montréal
 URL:https://montreal.ca/evenements/club-de-lecture-de-roxboro-en-francais-1
  22242
-DESCRIPTION:Heure à confirmer. Partagez vos plaisirs littéraires avec d
- ’autres personnes passionnées dans une atmosphère détendue et amicale
- .\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/club-de-lectu
- re-de-roxboro-en-francais-122242\n(ccmtl.ca)
+DESCRIPTION:Partagez vos plaisirs littéraires avec d’autres personnes pa
+ ssionnées dans une atmosphère détendue et amicale.\nPrix : Gratuit\nDé
+ tails : https://forms.office.com/r/qD7TF66zvt\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

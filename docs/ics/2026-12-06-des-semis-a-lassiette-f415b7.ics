@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-06-magic-tuber-stringband-error-403-c563e3@ccmtl.ca
+UID:2026-12-06-des-semis-a-lassiette-f415b7@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261206T140000
-DTEND;TZID=America/Toronto:20261206T160000
-SUMMARY:Magic Tuber Stringband @ Error 403
+DTSTART;TZID=America/Toronto:20261206T130000
+DTEND;TZID=America/Toronto:20261206T150000
+SUMMARY:Des semis à l’assiette
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-er
- ror-403?utm_medium=organic&utm_source=microformat
-DESCRIPTION:Détails : http://www.songkick.com/concerts/43403223-magic-tube
- r-stringband-at-error-403?utm_medium=organic&utm_source=microformat\n(ccmt
- l.ca)
+URL:https://montreal.ca/evenements/des-semis-lassiette-120677
+DESCRIPTION:Venez cuisinez les végétaux qui poussent dans la serre du cen
+ tre Sanaaq.\nPrix : Gratuit\nDétails : https://calendly.com/hydroponie-sa
+ naaq/brico-ponie-bricolage-avec-hydroponies\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

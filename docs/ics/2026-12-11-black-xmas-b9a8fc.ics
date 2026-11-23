@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-17-v-i-iv-le-vent-ii-1cc30b@ccmtl.ca
+UID:2026-12-11-black-xmas-b9a8fc@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
-SUMMARY:V I IV le vent II
+DTSTART;TZID=America/Toronto:20261211T030000
+DTEND;TZID=America/Toronto:20261211T050000
+SUMMARY:Black Xmas
 LOCATION:Le Red Room\, Montréal
-URL:https://lineup-event.com/fr/event/v-i-iv-le-vent-ii
-DESCRIPTION:Heure à confirmer. Soirée électronique intitulée V I IV le 
- vent II au Red Room.\nPrix : 10 $\nDétails : https://lineup-event.com/fr/
- event/v-i-iv-le-vent-ii\n(ccmtl.ca)
+URL:https://www.stagelinetickets.com/s/eventfly-2-show
+DESCRIPTION:Soirée festive de Noël au Red Room\, avec musique électroniq
+ ue.\nPrix : 15 $\nDétails : https://www.stagelinetickets.com/s/eventfly-2
+ -show\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -3,6 +3,8 @@
  "regles": {
   "titre mal encodé": 17,
   "activité de plusieurs mois classée hors exposition": 1,
+  "date absente de la page officielle": 24,
+  "page de la sortie disparue": 11,
   "heures différentes selon les sources": 58
  },
  "journal": [
@@ -167,6 +169,321 @@
    "lieu": "Parc du Mont-Royal",
    "source": "",
    "url": "https://150montroyal.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Backstage",
+   "date": "2026-11-23",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/23/the-backstage"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-23-1330"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Ha-Chan, Shake Your Booty! — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/ha-chan-shake-your-booty-2026-11-23-1530"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ciné-Outremont : La méthode scandinave",
+   "date": "2026-11-23",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-methode-scandinave"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "6 portraits néoréalistes — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/6-portraits-neorealistes-2026-11-23-1800"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Jim Queen — séance",
+   "date": "2026-11-23",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/jim-queen-2026-11-23-2015"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The Sandbox — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-sandbox-2026-11-24-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La guerre froide — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-guerre-froide-2026-11-24-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Book Crush #20 - Dating (Gay - Tous âges 20+) 📚",
+   "date": "2026-11-24",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/book-crush-20"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Graphic Novel Book Club: Opioids & Organs",
+   "date": "2026-11-24",
+   "lieu": "Librairie Drawn & Quarterly",
+   "source": "salles",
+   "url": "https://mtl.drawnandquarterly.com/events"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-24",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-25",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Open Mic à La Cabine",
+   "date": "2026-11-24",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Open Mic à La Cabine",
+   "date": "2026-11-25",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Open Mic Tête d'affiche à La Cabine",
+   "date": "2026-11-26",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée open HAS",
+   "date": "2026-11-24",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/24/soire-open-has"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Vivier : Mathilde Côté: Suzanne Guité – Théâtre Musical Contemporain",
+   "date": "2026-11-24",
+   "lieu": "Atrium des Grands Ballets (Édifice Wilder)",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/le-vivier-mathilde-cote-suzanne-guite-theatre-musical-contemporain-a-lespace-orange-de-ledifice-wilder/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Vivier : Mathilde Côté: Suzanne Guité – Théâtre Musical Contemporain",
+   "date": "2026-11-25",
+   "lieu": "Atrium des Grands Ballets (Édifice Wilder)",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/le-vivier-mathilde-cote-suzanne-guite-theatre-musical-contemporain-a-lespace-orange-de-ledifice-wilder/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-24",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-24-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée open jam avec Growve",
+   "date": "2026-11-25",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/25/soire-open-jam-avec-growve"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "L'écriture inclusive: entre usage et accessibilité",
+   "date": "2026-11-25",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/lecriture-inclusive-entre-usage-et-accessibilite?f-is_dedicace=false&f-is_dedicace=true&df-dateS=2026/11/03"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Après la fin des budgets réservés, quel avenir pour le livre à l'école?",
+   "date": "2026-11-25",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/apres-la-fin-des-budgets-reserves-quel-avenir-pour-le-livre-a-lecole"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Pina — séance",
+   "date": "2026-11-25",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/pina-2026-11-25-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Book Crush #21 - Amical 📚",
+   "date": "2026-11-25",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/book-crush-21"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Chronovisor — séance",
+   "date": "2026-11-25",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/chronovisor-2026-11-25-2045"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Killed + Obelisk + Amristix + Computer Science",
+   "date": "2026-11-26",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/26/killed--obelisk--amristix--computer-science"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les 40 ans du droit de prêt public: chemin parcouru et perspectives d'avenir",
+   "date": "2026-11-26",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/les-40-ans-du-droit-de-pret-public-chemin-parcouru-et-perspectives-davenir"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Optimiser la découvrabilité des livres",
+   "date": "2026-11-26",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/optimiser-la-decouvrabilite-des-livres"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "L'humain au coeur de la création: le livre comme expérience lente et collective",
+   "date": "2026-11-26",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/lhumain-au-coeur-de-la-creation-le-livre-comme-experience-lente-et-collective"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-26",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-26-1400"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Lecture en recul? OSONS en parler",
+   "date": "2026-11-26",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/lecture-en-recul-osons-en-parler?f-is_dedicace=false&f-is_dedicace=true&df-dateS=2026/11/11"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "OSER l'adaptation et les arts littéraires",
+   "date": "2026-11-26",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/donner-voix-au-oeuvres-oser-ladaptation-et-les-arts-litteraires"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "The History of Concrete — séance",
+   "date": "2026-11-26",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/the-history-of-concrete-2026-11-26-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Atelier de modèle vivant",
+   "date": "2026-11-26",
+   "lieu": "Livart",
+   "source": "recurrents",
+   "url": "https://lelivart.com/produit/atelier-de-modele-vivant-les-jeudis-18h30-a-20h30/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le songe d'une nuit d'été d'après William Shakespeare",
+   "date": "2026-11-26",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/le-songe-dune-nuit"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -692,7 +1009,11 @@
   }
  ],
  "contreverif": {
-  "non relues (limite)": 304
+  "date absente de la page": 24,
+  "date confirmée": 199,
+  "lien mort remplacé": 11,
+  "page illisible": 29,
+  "non relues (limite)": 41
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -728,9 +1049,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 271,
+   "erreurs": 282,
    "sorties": 647,
-   "taux": 41.9
+   "taux": 43.6
   },
   {
    "source": "centredesmusiciensdumonde.com",
@@ -848,7 +1169,7 @@
   }
  ],
  "recoupees": {
-  "total": 2868,
+  "total": 2872,
   "deux_sources_ou_plus": 254
  }
 }

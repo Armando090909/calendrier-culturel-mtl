@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-22-harmonie-des-opposes-duo-fortin-poirier-88790b@ccmtl.ca
+UID:2027-01-21-electrochoc-no-3-claude-periard-d96a44@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
-SUMMARY:Harmonie des opposés – Duo Fortin-Poirier
+DTSTART;TZID=America/Toronto:20270121T200000
+DTEND;TZID=America/Toronto:20270121T220000
+SUMMARY:Électrochoc no 3 : Claude Périard
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/harmonie-des-opposes-duo-fortin-poirier-
- 121916
-DESCRIPTION:Heure à confirmer. Le Quai 5160 propose une programmation cult
- urelle\, gratuite ou à petits prix\, en arts visuels\, cinéma et arts de
-  la scène.\nPrix : Payant\nDétails : https://montreal.ca/evenements/harm
- onie-des-opposes-duo-fortin-poirier-121916\n(ccmtl.ca)
+URL:https://akousma.ca
+DESCRIPTION:Concert-dialogue de la série Électrochoc\, qui met en lumièr
+ e les facettes de la musique électroacoustique et la créativité des él
+ èves.\nDétails : https://conservatoire-montreal.tuxedobillet.com/Conserv
+ atoire%20Montr%C3%A9al/electrochoc-1\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

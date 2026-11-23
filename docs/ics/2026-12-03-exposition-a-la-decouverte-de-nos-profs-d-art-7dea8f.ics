@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-exposition-a-la-decouverte-de-nos-profs-d-art-75c0ed@ccmtl.c
+UID:2026-12-03-exposition-a-la-decouverte-de-nos-profs-d-art-7dea8f@ccmtl.c
  a
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTART;TZID=America/Toronto:20261203T130000
+DTEND;TZID=America/Toronto:20261203T150000
 SUMMARY:Exposition : À la découverte de nos profs d'art
 LOCATION:Bibliothèque\, Montréal
 URL:https://www.beaconsfield.ca/fr/evenements/expositions/exposition-a-la-d
  ecouverte-de-nos-profs-dart
-DESCRIPTION:Heure à confirmer. Exposition mettant en valeur les œuvres de
- s professeurs d'art de la Ville de Beaconsfield.\nDétails : https://www.b
- eaconsfield.ca/fr/evenements/expositions/exposition-a-la-decouverte-de-nos
- -profs-dart\n(ccmtl.ca)
+DESCRIPTION:Exposition mettant en valeur les œuvres des professeurs d'art 
+ de la Ville de Beaconsfield.\nDétails : https://www.beaconsfield.ca/fr/cu
+ lture-et-loisirs/installations-et-parcs/reservation-de-salles-et-dinstalla
+ tions\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

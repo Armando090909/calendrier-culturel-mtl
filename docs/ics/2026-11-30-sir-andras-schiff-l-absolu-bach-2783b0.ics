@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-30-l-absolu-bach-sir-andras-schiff-piano-eded14@ccmtl.ca
+UID:2026-11-30-sir-andras-schiff-l-absolu-bach-2783b0@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261130T193000
 DTEND;TZID=America/Toronto:20261130T213000
-SUMMARY:L'absolu Bach — Sir András Schiff\, piano
+SUMMARY:Sir András Schiff | L'absolu Bach
 LOCATION:Maison symphonique\, Montréal
 URL:https://www.placedesarts.com/en/event/sir-andras-schiff-labsolu-bach
-DESCRIPTION:Le pianiste Sir András Schiff revisite l'univers du clavier de
-  Bach dans un récital de deux heures avec entracte\, présenté par le Fe
- stival international Bach Montréal.\nPrix : 110 à 175 $\nDétails : http
- s://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTEzMA==\n(ccmtl.ca)
+DESCRIPTION:Récital du pianiste András Schiff consacré à l'œuvre de Ba
+ ch\, dans le cadre du Festival Bach Montréal.\nPrix : 110 à 175 $\nDéta
+ ils : https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTEzMA==\n(
+ ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

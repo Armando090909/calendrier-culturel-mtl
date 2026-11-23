@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-15-francois-bellefeuille-sauvage-844192@ccmtl.ca
+UID:2027-01-22-orkisstra-mettant-en-vedette-kissed-0fbb21@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:François Bellefeuille - Sauvage
+DTSTART;TZID=America/Toronto:20270122T193000
+DTEND;TZID=America/Toronto:20270122T213000
+SUMMARY:Orkisstra mettant en vedette KISSED
 LOCATION:Cabaret du Casino de Montréal\, Montréal
 URL:https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-c
- asino/francois-bellefeuille-sauvage
-DESCRIPTION:Heure à confirmer. Spectacle de François Bellefeuille\, à pa
- rtir de cette date de début.\nPrix : À partir de 56 $\nDétails : https:
- //casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/fra
- ncois-bellefeuille-sauvage\n(ccmtl.ca)
+ asino/orkisstra-mettant-en-vedette-kissed
+DESCRIPTION:Un orchestre rend hommage au répertoire du groupe KISS\, avec 
+ la chanteuse invitée KISSED.\nPrix : À partir de 50 $\nDétails : https:
+ //www.ticketmaster.ca/event/3100647FE482A4E7?brand=gestev&lang=fr-ca\n(ccm
+ tl.ca)
 END:VEVENT
 END:VCALENDAR

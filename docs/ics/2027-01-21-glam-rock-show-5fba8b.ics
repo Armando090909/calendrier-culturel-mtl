@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-09-sam-breton-ga-le-aller-ffd7d8@ccmtl.ca
+UID:2027-01-21-glam-rock-show-5fba8b@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
-SUMMARY:Sam Breton - Ga-lé aller
+DTSTART;TZID=America/Toronto:20270121T193000
+DTEND;TZID=America/Toronto:20270121T213000
+SUMMARY:Glam Rock Show
 LOCATION:Cabaret du Casino de Montréal\, Montréal
 URL:https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-c
- asino/sam-breton-ga-le-aller
-DESCRIPTION:Heure à confirmer. Spectacle d'humour de Sam Breton\, à parti
- r de cette date de début.\nPrix : À partir de 50 $\nDétails : https://c
- asinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/sam-br
- eton-ga-le-aller\n(ccmtl.ca)
+ asino/glam-rock-show
+DESCRIPTION:Un spectacle rendant hommage à l'univers du glam rock sur scè
+ ne.\nPrix : À partir de 55 $\nDétails : https://www.ticketmaster.ca/even
+ t/3100648DD35288C0?venueId=402204&brand=gestev&lang=fr-ca \n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

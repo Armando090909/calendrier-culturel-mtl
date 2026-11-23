@@ -21,17 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-heure-du-conte-a-la-bibliotheque-3-a-6-ans-87090c@ccmtl.ca
+UID:2026-12-05-heure-du-conte-a-la-bibliotheque-3-a-6-ans-4bc672@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
+DTSTART;TZID=America/Toronto:20261205T103000
+DTEND;TZID=America/Toronto:20261205T123000
 SUMMARY:Heure du conte à la bibliothèque (3 à 6 ans)
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/heure-du-conte-la-bibliotheque-3-6-ans-1
  16823
-DESCRIPTION:Heure à confirmer. Pour bien commencer son samedi\, un petit m
- oment de fantaisie\, d’humour et de plaisir pour la joie des petit(e)s e
- t grand(e)s.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/he
- ure-du-conte-la-bibliotheque-3-6-ans-116823\n(ccmtl.ca)
+DESCRIPTION:Pour bien commencer son samedi\, un petit moment de fantaisie\,
+  d’humour et de plaisir pour la joie des petit(e)s et grand(e)s.\nPrix :
+  Gratuit\nDétails : https://forms.office.com/Pages/ResponsePage.aspx?id=3
+ NIVn1OHg0-qwqWCiNOkvBcNVoNAbQhGuLUYVRnyd5dUQ0s3OE5ZRE1YVFIySDg5TU9CSVFET04
+ 5NiQlQCN0PWcu\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

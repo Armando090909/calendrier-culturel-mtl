@@ -21,17 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-23-le-faux-monnayeur-l-affaire-bojarski-ff8b96@ccmtl.ca
+UID:2026-11-30-francois-e-a37b29@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
-SUMMARY:Le faux-monnayeur : l'affaire Bojarski
+DTSTART;TZID=America/Toronto:20261130T160000
+DTEND;TZID=America/Toronto:20261130T180000
+SUMMARY:François.e
 LOCATION:Salle Pauline-Julien\, Montréal
-URL:https://pauline-julien.com/artistes/le-faux-monnayeur-laffaire-bojarski
- /?date=1795392000
-DESCRIPTION:Heure à confirmer. Projection de cinéma proposée dans le cad
- re du ciné-club du quartier de la salle.\nDétails : https://pauline-juli
- en.com/artistes/le-faux-monnayeur-laffaire-bojarski/?date=1795392000\n(ccm
- tl.ca)
+URL:https://pauline-julien.com/artistes/francois-e/?date=1795996800
+DESCRIPTION:Projection de cinéma proposée dans le cadre du ciné-club du 
+ quartier de la salle.\nPrix : 7 à 10 $\nDétails : https://pauline-julien
+ .com/artistes/francois-e/?date=1795996800\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

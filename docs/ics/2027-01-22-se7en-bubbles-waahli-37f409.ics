@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-22-se7en-bubbles-waahli-229cf7@ccmtl.ca
+UID:2027-01-22-se7en-bubbles-waahli-37f409@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
+DTSTART;TZID=America/Toronto:20270122T193000
+DTEND;TZID=America/Toronto:20270122T213000
 SUMMARY:Se7en Bubbles - Waahli
 LOCATION:Bibliothèque Mercier\, Montréal
 URL:https://montreal.ca/evenements/se7en-bubbles-waahli-109529
-DESCRIPTION:Heure à confirmer. Assistez au spectacle de Waahli\, qui vous 
- présente une musique composée d’un mélange de reggae\, de hip-hop et 
- de funk haïtien.\nPrix : Gratuit\nDétails : https://montreal.ca/evenemen
- ts/se7en-bubbles-waahli-109529\n(ccmtl.ca)
+DESCRIPTION:Assistez au spectacle de Waahli\, qui vous présente une musiqu
+ e composée d’un mélange de reggae\, de hip-hop et de funk haïtien.\nP
+ rix : Gratuit\nDétails : https://lepointdevente.com/billets/8ud270122001\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

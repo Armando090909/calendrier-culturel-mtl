@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-10-jingle-bass-460a44@ccmtl.ca
+UID:2026-12-17-v-i-iv-le-vent-ii-0a0f46@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
-SUMMARY:Jingle Bass
+DTSTART;TZID=America/Toronto:20261217T020000
+DTEND;TZID=America/Toronto:20261217T040000
+SUMMARY:V I IV le vent II
 LOCATION:Le Red Room\, Montréal
-URL:https://www.simpletix.com/e/jingle-bass-tickets-299522
-DESCRIPTION:Heure à confirmer. Soirée bass music à thème de Noël au Re
- d Room.\nPrix : 8\,68 $\nDétails : https://www.simpletix.com/e/jingle-bas
- s-tickets-299522\n(ccmtl.ca)
+URL:https://lineup-event.com/fr/event/v-i-iv-le-vent-ii
+DESCRIPTION:Soirée électronique intitulée V I IV le vent II au Red Room.
+ \nPrix : 10 $\nDétails : https://lineup-event.com/fr/event/v-i-iv-le-vent
+ -ii\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

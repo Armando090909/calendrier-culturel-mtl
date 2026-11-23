@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-22-simon-gouache-pour-l-instant-adc965@ccmtl.ca
+UID:2026-12-06-magic-tuber-stringband-error-403-6eebf4@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
-SUMMARY:Simon Gouache – Pour l'instant
-LOCATION:Théâtre Outremont\, Montréal
-URL:https://theatreoutremont.tuxedobillet.com/web/simon-gouache
-DESCRIPTION:Heure à confirmer. Spectacle d'humour de Simon Gouache intitul
- é Pour l'instant.\nPrix : Rabais membre 3 $\nDétails : https://theatreou
- tremont.tuxedobillet.com/web/simon-gouache\n(ccmtl.ca)
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Magic Tuber Stringband @ Error 403
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-er
+ ror-403?utm_medium=organic&utm_source=microformat
+DESCRIPTION:Heure à confirmer. Détails : http://www.songkick.com/concerts
+ /43403223-magic-tuber-stringband-at-error-403?utm_medium=organic&utm_sourc
+ e=microformat\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
