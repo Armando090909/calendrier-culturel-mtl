@@ -423,3 +423,10 @@ html.v2 .cal-menu{display:none}
 @media (max-width:900px){html.v2 .det-vis,html.v2 .det-vis .det-media,html.v2 .det-vis .det-aff{width:100%;align-self:stretch}}
 @media (max-width:900px){html.v2 .ev.det .det-vis{max-width:none;width:100%}html.v2 .det-aff > a{display:flex;justify-content:center;width:100%}}
 @media (max-width:900px){html.v2 .det-vis .ecoute{align-self:flex-start;margin:12px 0 4px}}
+/* 23 nov. 2026 : agendas et heure toujours sur une seule ligne (les agendas à gauche de l'heure) */
+@media (min-width:901px){
+  html.v2 .det-quand{flex-wrap:nowrap;gap:10px}
+  html.v2 .det-quand .cal{flex-wrap:nowrap;gap:0 9px;white-space:nowrap;flex:0 1 auto;min-width:0}
+  html.v2 .det-quand .cal a,html.v2 .det-quand .cal button{font-size:12px}
+  html.v2 .det-quand .tm{flex:none;white-space:nowrap}
+}
