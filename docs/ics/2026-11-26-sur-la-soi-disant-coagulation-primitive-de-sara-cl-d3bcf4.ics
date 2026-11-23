@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-26-sur-la-soi-disant-coagulation-primitive-de-sara-cl-d3bcf4@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261126T183000
+DTEND;TZID=America/Toronto:20261126T203000
+SUMMARY:Sur la soi-disant coagulation « primitive » de Sara Clugage
+LOCATION:Galerie Leonard & Bina Ellen\, Montréal
+URL:https://reseauartactuel.org/evenement/sue-la-soi-disant-coagulation-pri
+ miive-de-sara-clugage/
+DESCRIPTION:Performance de l'artiste Sara Clugage à la Galerie Leonard & B
+ ina Ellen.\nDétails : https://reseauartactuel.org/evenement/sue-la-soi-di
+ sant-coagulation-primiive-de-sara-clugage/\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

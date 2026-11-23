@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-22-fever-up-presente-candlelight-hommage-a-fairuz-fb82e8@ccmtl.
+ ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20270122T183000
+DTEND;TZID=America/Toronto:20270122T203000
+SUMMARY:Fever Up Présente Candlelight: Hommage à Fairuz
+LOCATION:Théâtre Rialto\, Montréal
+URL:https://www.theatrerialto.ca/calendrier/2026/11/7/fever-up-prsente-cand
+ lelight-hommage-fairuz-44dj3
+DESCRIPTION:Concert à la chandelle en hommage à la chanteuse libanaise Fa
+ iruz.\nDétails : https://feverup.com/m/650925\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

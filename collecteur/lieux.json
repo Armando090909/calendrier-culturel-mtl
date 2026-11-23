@@ -646,6 +646,11 @@
   "lon": -73.6761,
   "quartier": "Saint-Laurent"
  },
+ "Centre communautaire Roussin": {
+  "lat": 45.64067,
+  "lon": -73.49051,
+  "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
+ },
  "Centre communautaire Sarto-Desnoyers": {
   "lat": 45.43992,
   "lon": -73.75449,
@@ -1298,6 +1303,7 @@
   "lon": -73.556,
   "quartier": "Village"
  },
+ "L'Opale": null,
  "L'imprimerie, centre d'artistes": null,
  "L'Écart": null,
  "LB-145 et en ligne via Zoom, Concordia": null,
@@ -2234,6 +2240,8 @@
   "lon": -73.86912,
   "quartier": "L'Île-Bizard–Sainte-Geneviève"
  },
+ "Salle Philippe-Filion": null,
+ "Salle Piccolo": null,
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
   "lon": -73.559,
@@ -2272,6 +2280,11 @@
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Sample Listening Bar": null,
+ "Savoir Faire": {
+  "lat": 45.53427,
+  "lon": -73.6205,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
  "Sid Williams Theatre": null,

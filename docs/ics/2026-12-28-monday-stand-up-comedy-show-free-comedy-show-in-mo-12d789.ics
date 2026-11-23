@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-12-28-monday-stand-up-comedy-show-free-comedy-show-in-mo-12d789@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261228T200000
+DTEND;TZID=America/Toronto:20261228T220000
+SUMMARY:MONDAY Stand-Up Comedy Show | FREE Comedy Show in Montreal on Decem
+ ber 28
+LOCATION:Honey Martin\, Montréal
+URL:https://www.laughitoffmtl.ca/fr/spectacles/lundi/free-comedy-show-in-mo
+ ntreal-on-december-28
+DESCRIPTION:Soirée d'humour stand-up en anglais à entrée libre\, animée
+  par Honey Martin.\nDétails : https://www.laughitoffmtl.ca/fr/spectacles/
+ lundi/free-comedy-show-in-montreal-on-december-28\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

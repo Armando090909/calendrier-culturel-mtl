@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-11-cine-outremont-un-ete-en-hiver-two-seasons-two-str-f733c1@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20270111T160000
+DTEND;TZID=America/Toronto:20270111T180000
+SUMMARY:Ciné-Outremont : Un été en hiver (Two Seasons\, Two Strangers)
+LOCATION:Théâtre Outremont\, Montréal
+URL:https://theatreoutremont.tuxedobillet.com/web/cine-outremont-un-ete-en-
+ hiver
+DESCRIPTION:Projection du film Un été en hiver dans le cadre du ciné-clu
+ b Outremont.\nPrix : Rabais membre 3 $\nDétails : https://theatreoutremon
+ t.tuxedobillet.com/web/cine-outremont-un-ete-en-hiver\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-22-fever-up-presente-the-jazz-room-un-hommage-a-frank-1344e4@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20270122T180000
+DTEND;TZID=America/Toronto:20270122T200000
+SUMMARY:Fever Up Présente The Jazz Room: un hommage à Frank Sinatra et Lo
+ uis Armstrong
+LOCATION:Salle Piccolo\, Montréal
+URL:https://www.theatrerialto.ca/calendrier/2026/9/29/fever-up-prsente-the-
+ jazz-room-un-hommage-frank-sinatra-et-louis-armstrong-l7cp9
+DESCRIPTION:Soirée de jazz rendant hommage aux grands noms Frank Sinatra e
+ t Louis Armstrong.\nDétails : https://feverup.com/m/472335\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR
