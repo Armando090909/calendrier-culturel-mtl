@@ -75,9 +75,49 @@ def mise_a_jour():
         os.execv(sys.executable, [sys.executable, moi] + sys.argv[1:])
 
 
+def signal_lundi():
+    """(23 nov. 2026) Chaque lundi dès 8 h (heure de Montréal) : signal de départ de la publication de la semaine sur
+    les réseaux (le cron de GitHub part en retard ou pas du tout). Écrit « tout » et la date du lundi dans
+    outils/reseaux/demande-test.txt. Une seule fois : si le fichier contient déjà la date, rien n'est envoyé.
+    Garde-fous côté GitHub : rien n'est publié deux fois, et un « stop » dans l'avis d'aperçu est respecté."""
+    try:
+        from zoneinfo import ZoneInfo  # Python 3.9+ (Pi) ; sur le Mac (3.8), heure de l'ordinateur
+        from datetime import datetime
+        maintenant = datetime.now(ZoneInfo("America/Toronto"))
+    except Exception:
+        from datetime import datetime
+        maintenant = datetime.now()
+    if maintenant.weekday() != 0 or maintenant.hour < 8 or ESSAI:
+        return
+    try:
+        jeton = open(os.path.join(DOSSIER, "jeton"), encoding="utf-8").read().strip()
+    except OSError:
+        return
+    api = f"https://api.github.com/repos/{DEPOT}/contents/outils/reseaux/demande-test.txt"
+    ent = ["-H", f"Authorization: Bearer {jeton}", "-H", "Accept: application/vnd.github+json"]
+    code, txt = curl(api, *ent)
+    if code != 200:
+        journal(f"Signal du lundi : lecture refusée par GitHub ({code}).")
+        return
+    d = json.loads(txt)
+    lundi = maintenant.date().isoformat()
+    contenu = f"tout\n{lundi}\n"
+    if lundi in base64.b64decode(d.get("content", "")).decode("utf-8", "replace"):
+        return  # déjà envoyé (par cet ordinateur, l'autre, ou à la main)
+    corps = {"message": f"Publication de la semaine du {lundi} : signal du lundi matin (ordinateur à Montréal)",
+             "content": base64.b64encode(contenu.encode()).decode(), "sha": d["sha"]}
+    code, txt = curl(api, "-X", "PUT", *ent, "-H", "Content-Type: application/json", "--data-binary", "@-",
+                     entree=json.dumps(corps))
+    journal("Signal du lundi envoyé : publication lancée." if code in (200, 201) else f"Signal du lundi refusé ({code}) : {txt[:200]}")
+
+
 def main():
     os.makedirs(DOSSIER, exist_ok=True)
     mise_a_jour()
+    try:
+        signal_lundi()
+    except Exception as exc:  # ne doit jamais empêcher la lecture des fiches
+        journal(f"Signal du lundi : erreur ({exc}).")
     fait = os.path.join(DOSSIER, "dernier_jour.txt")
     aujourd = date.today().isoformat()
     if not ESSAI and os.path.exists(fait) and open(fait).read().strip() == aujourd:
