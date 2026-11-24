@@ -455,7 +455,10 @@
  "Bibliothèque, pavillon J.W. McConnell, salle LB-2, 1400 boulevard De Maisonneuve Ouest": null,
  "Bibliothèques, cafés, musées et autres lieux partenaires": null,
  "Bibliothèques, cafés, musées et autres lieux participants": null,
- "Biodôme | Espace pour la vie": null,
+ "Biodôme | Espace pour la vie": {
+  "adresse": "4777, avenue Pierre-De Coubertin",
+  "alias": []
+ },
  "Biosphère": {
   "adresse": "160 chemin du Tour-de-l'Isle",
   "alias": [],
@@ -842,7 +845,10 @@
   "lon": -73.5946,
   "quartier": "Mile End"
  },
- "Cinéma Public": null,
+ "Cinéma Public": {
+  "adresse": "505, rue Jean-Talon Est",
+  "alias": []
+ },
  "Cinéma au Cinoche": {
   "lat": 45.53664,
   "lon": -73.57086,
@@ -970,7 +976,10 @@
  },
  "El Lounge Resto-Bar": null,
  "Elgin and Winter Garden Theatre Centre": null,
- "Engineering, Computer Science and Visual Arts Integrated Complex": null,
+ "Engineering, Computer Science and Visual Arts Integrated Complex": {
+  "adresse": "1515, rue Sainte-Catherine Ouest",
+  "alias": []
+ },
  "Espace Culturel Kawalees": null,
  "Espace Félix-Leclerc": null,
  "Espace GO": {
@@ -990,7 +999,10 @@
   "lon": -73.5735,
   "quartier": "Plateau"
  },
- "Espace PRO": null,
+ "Espace PRO": {
+  "adresse": "800, rue De La Gauchetière Ouest",
+  "alias": []
+ },
  "Espace Panache": null,
  "Espace Republic Corner": null,
  "Espace Séquence": null,
@@ -1069,7 +1081,10 @@
   "quartier": "Quartier latin"
  },
  "Foyer Yves-Gagnon": null,
- "GM - Guy-De Maisonneuve Building": null,
+ "GM - Guy-De Maisonneuve Building": {
+  "adresse": "1550, boulevard De Maisonneuve Ouest",
+  "alias": []
+ },
  "Galerie B-312": {
   "lat": 45.5015,
   "lon": -73.56939,
@@ -1226,7 +1241,10 @@
   "lon": -73.57574,
   "quartier": "Ville-Marie"
  },
- "Guy-De Maisonneuve Building, salle GM 340.10": null,
+ "Guy-De Maisonneuve Building, salle GM 340.10": {
+  "adresse": "1550, boulevard De Maisonneuve Ouest",
+  "alias": []
+ },
  "H-110, Henry F. Hall Building": null,
  "Hall Est du Stade olympique": {
   "lat": 45.558,
@@ -1276,7 +1294,10 @@
  },
  "Jeanne & Peter Lougheed Performing Arts Centre": null,
  "Jelleff Recreation Center": null,
- "John Molson Building": null,
+ "John Molson Building": {
+  "adresse": "1450, rue Guy",
+  "alias": []
+ },
  "John Molson Building (MB), campus SGW": null,
  "John Molson Building (Sir George Williams Campus), salle 14.250": null,
  "John Molson Building, salle ABCD": null,
@@ -1583,7 +1604,10 @@
   "lon": -73.5785,
   "quartier": "Plateau"
  },
- "Local D-R200 du Pavillon Athanas-David": null,
+ "Local D-R200 du Pavillon Athanas-David": {
+  "adresse": "1430, rue Saint-Denis",
+  "alias": []
+ },
  "Local PK-1140, Pavillon Président-Kennedy": null,
  "Local du LIMeSPP/CRC ReParE": null,
  "Locoshop Angus": null,
@@ -1601,7 +1625,10 @@
  },
  "MAC Montréal": null,
  "MAC à Place Ville Marie": null,
- "MAI – Montréal, arts interculturels": null,
+ "MAI – Montréal, arts interculturels": {
+  "adresse": "3680, rue Jeanne-Mance",
+  "alias": []
+ },
  "MB - John Molson Building": null,
  "MEM - Centre des mémoires montréalaises": {
   "lat": 45.50941,
@@ -1791,7 +1818,10 @@
  },
  "Molson Canadian Centre at Casino New-Brunswick": null,
  "Molson Canadian Centre at Casino New-Nouveau Brunswick": null,
- "Montreal Improv": null,
+ "Montreal Improv": {
+  "adresse": "3697, boulevard Saint-Laurent",
+  "alias": []
+ },
  "Montreal West Train Station": null,
  "Montréal, arts interculturels (MAI)": {
   "lat": 45.512,
@@ -1867,7 +1897,10 @@
  },
  "OPTICA, centre d'art contemporain": null,
  "Occurrence": null,
- "Off-Bach": null,
+ "Off-Bach": {
+  "adresse": "3487, boulevard Saint-Laurent",
+  "alias": []
+ },
  "Office national du film (ONF)": {
   "alias": [
    "Office national du film - Salle Alanis-Obomsawin",
@@ -2133,8 +2166,14 @@
   "lon": -73.577,
   "quartier": "Verdun"
  },
- "Quai Jacques-Cartier, Scène Sapporo": null,
- "Quai Jacques-Cartier, Scène Vidéotron": null,
+ "Quai Jacques-Cartier, Scène Sapporo": {
+  "adresse": "Quai Jacques-Cartier",
+  "alias": []
+ },
+ "Quai Jacques-Cartier, Scène Vidéotron": {
+  "adresse": "Quai Jacques-Cartier",
+  "alias": []
+ },
  "Quai des Brumes": {
   "lat": 45.524,
   "lon": -73.582,
@@ -2224,7 +2263,10 @@
   "quartier": "Rivière-des-Prairies–Pointe-aux-Trembles"
  },
  "Salle Edwin-Bélanger": null,
- "Salle Fernand-Seguin": null,
+ "Salle Fernand-Seguin": {
+  "adresse": "335, boulevard De Maisonneuve Est",
+  "alias": []
+ },
  "Salle Jean-Claude-Germain": null,
  "Salle Jean-Cossette": null,
  "Salle Jean-Eudes": {
@@ -2234,7 +2276,10 @@
  },
  "Salle Jean-Louis-Millette": null,
  "Salle Jean-Papineau-Couture": null,
- "Salle Joseph-Rouleau": null,
+ "Salle Joseph-Rouleau": {
+  "adresse": "305, avenue du Mont-Royal Est",
+  "alias": []
+ },
  "Salle Louis-Fréchette": null,
  "Salle Madeleine-Lahaye": {
   "alias": [],
@@ -2272,7 +2317,10 @@
  "Salle Richard-Sauvageau": {
   "adresse": "12004 boulevard Rolland"
  },
- "Salle Serge-Garant": null,
+ "Salle Serge-Garant": {
+  "adresse": "200, avenue Vincent-d'Indy",
+  "alias": []
+ },
  "Salle Théatre La Scène": null,
  "Salle Vincent-Spain — Complexe culturel Félix-Leclerc": null,
  "Salle Wilfrid-Pelletier": {
@@ -2605,12 +2653,18 @@
  "UQAM - Pavillon Athanase-David": null,
  "UQAM - Pavillon Hubert-Aquin": null,
  "UQAM - Pavillon Hôtel-de-Ville": null,
- "UQAM - Pavillon Judith-Jasmin": null,
+ "UQAM - Pavillon Judith-Jasmin": {
+  "adresse": "405, rue Sainte-Catherine Est",
+  "alias": []
+ },
  "UQAM - Pavillon Paul-Gérin-Lajoie": null,
  "UQAM - Pavillon de Musique": null,
  "UQAM - Pavillon du Faubourg": null,
  "UQAM, Pavillon J-A DeSève, salle DM-R310": null,
- "UQAM, pavillon J-A DeSève, salle DS-M440": null,
+ "UQAM, pavillon J-A DeSève, salle DS-M440": {
+  "adresse": "320, rue Sainte-Catherine Est",
+  "alias": []
+ },
  "URBANISTA RESTO BAR": null,
  "Under the Big Top! Langley Riders Society": null,
  "Union des familles d'Ahuntsic": {
