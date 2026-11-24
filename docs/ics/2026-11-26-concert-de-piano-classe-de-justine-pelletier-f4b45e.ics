@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-concert-de-piano-classe-de-justine-pelletier-c23a40@ccmtl.ca
+UID:2026-11-26-concert-de-piano-classe-de-justine-pelletier-f4b45e@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261126T170000
 DTEND;TZID=America/Toronto:20261126T190000
 SUMMARY:Concert de piano - Classe de Justine Pelletier
-LOCATION:Faculté de musique\, Montréal
+LOCATION:Salle Serge-Garant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-piano-classe-de-jus
  tine-pelletier-4
 DESCRIPTION:Concert d'étudiants de la classe de piano de Justine Pelletier
