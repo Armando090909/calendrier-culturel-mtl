@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-10-ans-de-musique-10-ans-de-generosite-1b118e@ccmtl.ca
+UID:2026-12-04-10-ans-de-musique-10-ans-de-generosite-997503@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
+DTSTART;TZID=America/Toronto:20261204T193000
+DTEND;TZID=America/Toronto:20261204T213000
 SUMMARY:10 ans de musique\, 10 ans de générosité
 LOCATION:Théâtre Mirella et Lino Saputo\, Montréal
 URL:https://cldv.tuxedobillet.com/main/10-ans-de-musique-10-ans-de-generosi
  te
-DESCRIPTION:Heure à confirmer. Soirée musicale célébrant une décennie 
- d'activités musicales et de dons à la communauté.\nDétails : https://c
- ldv.tuxedobillet.com/main/10-ans-de-musique-10-ans-de-generosite\n(ccmtl.c
- a)
+DESCRIPTION:Soirée musicale célébrant une décennie d'activités musical
+ es et de dons à la communauté.\nDétails : https://cldv.tuxedobillet.com
+ /main/10-ans-de-musique-10-ans-de-generosite\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

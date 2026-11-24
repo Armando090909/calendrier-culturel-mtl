@@ -21,18 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-09-cabarets-scientifiques-itinerance-au-feminin-1c0079@ccmtl.ca
+UID:2026-12-09-cabarets-scientifiques-itinerance-au-feminin-6388cd@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261209
-DTEND;VALUE=DATE:20261210
+DTSTART;TZID=America/Toronto:20261209T193000
+DTEND;TZID=America/Toronto:20261209T213000
 SUMMARY:Cabarets scientifiques - Itinérance au féminin
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/cabarets-scientifiques-itinerance-au-fem
  inin-122330
-DESCRIPTION:Heure à confirmer. Cabarets scientifiques\, conférence sur l'
- itinérance chez les femmes\, Maison de la culture Maisonneuve\, 9 déc 19
-  h 30. Par Science pour tous avec Jacinthe Rivard\nPrix : Gratuit\nDétail
- s : https://montreal.ca/evenements/cabarets-scientifiques-itinerance-au-fe
- minin-122330\n(ccmtl.ca)
+DESCRIPTION:Cabarets scientifiques\, conférence sur l'itinérance chez les
+  femmes\, Maison de la culture Maisonneuve\, 9 déc 19 h 30. Par Science p
+ our tous avec Jacinthe Rivard\nPrix : Gratuit\nDétails : https://montreal
+ .ca/evenements/cabarets-scientifiques-itinerance-au-feminin-122330\n(ccmtl
+ .ca)
 END:VEVENT
 END:VCALENDAR

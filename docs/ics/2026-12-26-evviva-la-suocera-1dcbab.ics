@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-20-tadam-et-les-lutins-magnifiques-1f8bce@ccmtl.ca
+UID:2026-12-26-evviva-la-suocera-1dcbab@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261220T110000
-DTEND;TZID=America/Toronto:20261220T130000
-SUMMARY:Tadam et les lutins magnifiques
-LOCATION:Place des Arts\, Montréal
-URL:https://www.placedesarts.com/evenement/tadam-les-lutins-magnifiques
-DESCRIPTION:Spectacle pour jeunes publics présenté pendant la période de
- s Fêtes.\nPrix : 26\,62 $\nDétails : https://am.ticketmaster.com/pda/fr-
- ca/buy/virtual-venue/UDZDMTIxOQ==\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261226T200000
+DTEND;TZID=America/Toronto:20261226T220000
+SUMMARY:Evviva la Suocera
+LOCATION:Théâtre Mirella et Lino Saputo\, Montréal
+URL:https://cldv.tuxedobillet.com/main/evviva-la-suocera
+DESCRIPTION:Spectacle de théâtre comique en italien autour des relations 
+ tumultueuses avec une belle-mère.\nDétails : https://cldv.tuxedobillet.c
+ om/main/evviva-la-suocera\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

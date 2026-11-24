@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-26-evviva-la-suocera-2ba55f@ccmtl.ca
+UID:2026-12-03-noel-ensemble-avec-martine-st-clair-392a80@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
-SUMMARY:Evviva la Suocera
+DTSTART;TZID=America/Toronto:20261203T193000
+DTEND;TZID=America/Toronto:20261203T213000
+SUMMARY:Noël ensemble avec Martine St-Clair
 LOCATION:Théâtre Mirella et Lino Saputo\, Montréal
-URL:https://cldv.tuxedobillet.com/main/evviva-la-suocera
-DESCRIPTION:Heure à confirmer. Spectacle de théâtre comique en italien a
- utour des relations tumultueuses avec une belle-mère.\nDétails : https:/
- /cldv.tuxedobillet.com/main/evviva-la-suocera\n(ccmtl.ca)
+URL:https://cldv.tuxedobillet.com/main/noel-ensemble-avec-martine-st-clair
+DESCRIPTION:Spectacle de fêtes avec la chanteuse Martine St-Clair\, dans l
+ a salle Teatro Mirella & Lino Saputo.\nDétails : https://cldv.tuxedobille
+ t.com/main/noel-ensemble-avec-martine-st-clair\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

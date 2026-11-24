@@ -21,10 +21,10 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-19-tadam-et-les-lutins-magnifiques-eab116@ccmtl.ca
+UID:2026-12-19-tadam-et-les-lutins-magnifiques-038c0f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261219T150000
-DTEND;TZID=America/Toronto:20261219T170000
+DTSTART;TZID=America/Toronto:20261219T110000
+DTEND;TZID=America/Toronto:20261219T130000
 SUMMARY:Tadam et les lutins magnifiques
 LOCATION:Place des Arts\, Montréal
 URL:https://www.placedesarts.com/evenement/tadam-les-lutins-magnifiques

@@ -4,7 +4,7 @@
   "titre mal encodé": 16,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "heures différentes selon les sources": 57
+  "heures différentes selon les sources": 58
  },
  "journal": [
   {
@@ -339,6 +339,15 @@
    "lieu": "Ville de Plessisville",
    "source": "salles",
    "url": "https://plessisville.quebec/evenements/vie-de-quartier/spectacle-de-noel"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "18:00 gardée (cabaretdecuriosites.com), 17:30 écartée (lepointdevente.com)",
+   "titre": "Les Femmelettes 2.0 Édition Marchette de Noël",
+   "date": "2026-12-05",
+   "lieu": "Cabaret de Curiosités",
+   "source": "salles",
+   "url": "https://cabaretdecuriosites.com/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -829,7 +838,7 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 143,
-   "sorties": 2261,
+   "sorties": 2260,
    "taux": 6.3
   },
   {

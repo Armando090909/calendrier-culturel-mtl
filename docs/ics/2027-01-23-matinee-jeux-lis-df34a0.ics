@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-23-matinee-jeux-lis-4c0d36@ccmtl.ca
+UID:2027-01-23-matinee-jeux-lis-df34a0@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTART;TZID=America/Toronto:20270123T103000
+DTEND;TZID=America/Toronto:20270123T123000
 SUMMARY:Matinée jeux-lis
 LOCATION:Bibliothèque Jacqueline-De Repentigny\, Montréal
 URL:https://montreal.ca/evenements/matinee-jeux-lis-120951
-DESCRIPTION:Heure à confirmer. Jeux et livres pour les tout-petits de 2 à
-  6 ans seront disponibles dans la salle André-Fortier au sous-sol de la b
- ibliothèque. C’est l’occasion ...\nPrix : Gratuit\nDétails : https:/
- /montreal.ca/evenements/matinee-jeux-lis-120951\n(ccmtl.ca)
+DESCRIPTION:Jeux et livres pour les tout-petits de 2 à 6 ans seront dispon
+ ibles dans la salle André-Fortier au sous-sol de la bibliothèque. C’es
+ t l’occasion ...\nPrix : Gratuit\nDétails : https://montreal.ca/eveneme
+ nts/matinee-jeux-lis-120951\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

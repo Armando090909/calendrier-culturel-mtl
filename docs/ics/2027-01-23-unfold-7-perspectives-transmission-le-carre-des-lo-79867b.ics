@@ -21,19 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-23-unfold-7-perspectives-transmission-le-carre-des-lo-534c36@cc
+UID:2027-01-23-unfold-7-perspectives-transmission-le-carre-des-lo-79867b@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTART;TZID=America/Toronto:20270123T200000
+DTEND;TZID=America/Toronto:20270123T220000
 SUMMARY:UNFOLD | 7 perspectives - transmission - Le Carré des Lombes
 LOCATION:Benny Fab\, Montréal
 URL:https://montreal.ca/evenements/unfold-7-perspectives-transmission-le-ca
  rre-des-lombes-111528
-DESCRIPTION:Heure à confirmer. Magnétique et puissante\, cette œuvre cap
- tive par sa finesse et sa furieuse énergie.Traversée par la musique de B
- en Shemie (Suuns)\, une danse vibr...\nPrix : Gratuit\nDétails : https://
- montreal.ca/evenements/unfold-7-perspectives-transmission-le-carre-des-lom
- bes-111528\n(ccmtl.ca)
+DESCRIPTION:Magnétique et puissante\, cette œuvre captive par sa finesse 
+ et sa furieuse énergie.Traversée par la musique de Ben Shemie (Suuns)\, 
+ une danse vibr...\nPrix : Gratuit\nDétails : https://montreal.ca/evenemen
+ ts/unfold-7-perspectives-transmission-le-carre-des-lombes-111528\n(ccmtl.c
+ a)
 END:VEVENT
 END:VCALENDAR

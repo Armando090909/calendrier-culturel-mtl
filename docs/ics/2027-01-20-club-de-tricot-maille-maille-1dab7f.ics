@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-20-club-de-tricot-maille-maille-90490d@ccmtl.ca
+UID:2027-01-20-club-de-tricot-maille-maille-1dab7f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
+DTSTART;TZID=America/Toronto:20270120T133000
+DTEND;TZID=America/Toronto:20270120T153000
 SUMMARY:Club de tricot Maille Maille
 LOCATION:Bibliothèque Réjean-Ducharme\, Montréal
 URL:https://montreal.ca/evenements/club-de-tricot-maille-maille-122693
-DESCRIPTION:Heure à confirmer. Club de tricot pour adultes et retraités 
- à la bibliothèque Réjean-Ducharme de Montréal Qc . Gratuit.\nPrix : Gr
- atuit\nDétails : https://montreal.ca/evenements/club-de-tricot-maille-mai
- lle-122693\n(ccmtl.ca)
+DESCRIPTION:Club de tricot pour adultes et retraités à la bibliothèque R
+ éjean-Ducharme de Montréal Qc . Gratuit.\nPrix : Gratuit\nDétails : htt
+ ps://montreal.ca/evenements/club-de-tricot-maille-maille-122693\n(ccmtl.ca
+ )
 END:VEVENT
 END:VCALENDAR

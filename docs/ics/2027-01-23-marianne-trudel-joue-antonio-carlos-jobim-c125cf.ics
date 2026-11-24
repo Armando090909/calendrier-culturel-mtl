@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-23-marianne-trudel-joue-antonio-carlos-jobim-ce7f55@ccmtl.ca
+UID:2027-01-23-marianne-trudel-joue-antonio-carlos-jobim-c125cf@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTART;TZID=America/Toronto:20270123T140000
+DTEND;TZID=America/Toronto:20270123T160000
 SUMMARY:Marianne Trudel joue Antonio Carlos Jobim
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/marianne-trudel-joue-antonio-carlos-jobi
  m-122202
-DESCRIPTION:Heure à confirmer. Marianne Trudel revisite Antonio Carlos Job
- im dans un hommage aux couleurs du Brésil. Gratuit\, samedi 23 janvier à
-  14h à la maison de la culture Marie-Uguay.\nPrix : Gratuit\nDétails : h
- ttps://montreal.ca/evenements/marianne-trudel-joue-antonio-carlos-jobim-12
- 2202\n(ccmtl.ca)
+DESCRIPTION:Marianne Trudel revisite Antonio Carlos Jobim dans un hommage a
+ ux couleurs du Brésil. Gratuit\, samedi 23 janvier à 14h à la maison de
+  la culture Marie-Uguay.\nPrix : Gratuit\nDétails : https://montreal.ca/e
+ venements/marianne-trudel-joue-antonio-carlos-jobim-122202\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

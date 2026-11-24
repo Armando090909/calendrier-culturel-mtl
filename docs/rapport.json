@@ -4,15 +4,6 @@
  "evenements": 2866,
  "expositions": 236,
  "nouvelles_salles": [
-  "Bibliothèque, pavillon J.W. McConnell, salle LB-2, 1400 boulevard De Maisonneuve Ouest",
-  "Café OUI MAIS NON",
-  "Espace formes · ondes",
-  "GM - Guy-De Maisonneuve Building",
-  "Guy-De Maisonneuve Building, salle GM 340.10",
-  "John Molson Building",
-  "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest",
-  "Milieux Resource Centre",
-  "St John's Lutheran Church",
   "Théâtre C"
  ],
  "notes": {
@@ -52,7 +43,7 @@
    "2027-01-08 : « Christine Morency » (Théâtre Desjardins) = « Christine Morency » (Maison Théâtre)"
   ],
   "qualite": {
-   "regles": 75,
+   "regles": 76,
    "contreverif": {
     "non relues (limite)": 403
    },
@@ -1222,7 +1213,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.mcgill.ca/channels/category/aud) : https://www.mcgill.ca/channels/category/audience/external"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://www.mcgill.ca/channels/category/audience/external",
+    "annonces à venir dans la page : 0 (https://www.mcgill.ca/channels/category/audience/external)",
+    "récolte mince (0) : recherche élargie à https://www.mcgill.ca/admissions/mailinglists, https://www.mcgill.ca/channels/events"
    ]
   },
   {
@@ -1631,7 +1624,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -3317,7 +3310,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3388,8 +3381,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 7 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3565,8 +3558,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://osheaga.com/fr/evenements-a-l-annee",
-    "page presque vide (501 caractères ; site en JavaScript ?) : https://osheaga.com",
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
     "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
@@ -3631,7 +3623,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
+    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
    ]
   },
   {
@@ -3641,7 +3633,7 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://festival-fil.qc.ca/calendrier-2026/, https://festival-fil.qc.ca/spectacles-concerts-et-cabarets/, https://festival-fil.qc.ca/2026-cinema/",
-    "aucun événement trouvé dans 5094 caractères de texte : https://festival-fil.qc.ca",
+    "aucun événement trouvé dans 5052 caractères de texte : https://festival-fil.qc.ca",
     "annonces à venir dans la page : 0 (https://festival-fil.qc.ca)"
    ]
   },
