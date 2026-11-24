@@ -1,10 +1,10 @@
 {
  "total": 1528,
- "echecs": 25,
+ "echecs": 24,
  "par_site": {
-  "www.cinemacinoche.com": {
-   "affiches": 6,
-   "echecs": 6
+  "centaurtheatre.com": {
+   "affiches": 5,
+   "echecs": 5
   },
   "calendrier.umontreal.ca": {
    "affiches": 16,
@@ -16,10 +16,6 @@
   },
   "www.dansedanse.ca": {
    "affiches": 2,
-   "echecs": 2
-  },
-  "img.casadelpopolo.com": {
-   "affiches": 77,
    "echecs": 2
   },
   "cdn.placedesarts.com": {
@@ -42,12 +38,20 @@
    "affiches": 41,
    "echecs": 1
   },
+  "img.casadelpopolo.com": {
+   "affiches": 77,
+   "echecs": 1
+  },
   "www.mcgill.ca": {
    "affiches": 2,
    "echecs": 1
   },
   "tuxedov1.blob.core.windows.net": {
    "affiches": 13,
+   "echecs": 1
+  },
+  "ville.montreal-est.qc.ca": {
+   "affiches": 6,
    "echecs": 1
   },
   "freight.cargo.site": {
@@ -182,10 +186,6 @@
    "affiches": 1,
    "echecs": 0
   },
-  "centaurtheatre.com": {
-   "affiches": 5,
-   "echecs": 0
-  },
   "montrealcentreville.ca": {
    "affiches": 1,
    "echecs": 0
@@ -246,10 +246,6 @@
    "affiches": 6,
    "echecs": 0
   },
-  "ville.montreal-est.qc.ca": {
-   "affiches": 6,
-   "echecs": 0
-  },
   "bdd094f266673f373aef-c9dca8f0ef9a9493e8d9c35c4e77c889.ssl.cf2.rackcdn.com": {
    "affiches": 1,
    "echecs": 0
@@ -268,6 +264,10 @@
   },
   "www.lacomedie.ca": {
    "affiches": 3,
+   "echecs": 0
+  },
+  "www.cinemacinoche.com": {
+   "affiches": 6,
    "echecs": 0
   },
   "ccmtl.ca": {
@@ -407,18 +407,17 @@
   "turbohaus.ca": [
    "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg"
   ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
+  ],
   "cdn.placedesarts.com": [
    "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Werther.jpg",
    "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Ballets-Jazz-Montreal-Dance-Me-1.jpg"
   ],
-  "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI",
-   "https://img.casadelpopolo.com/tWI1Ic6Zz3x3cXDBPTHrHwl6TL_4WM5LyhIHLpQdKwo/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3BpdTRvemo2/NmVxYndkcjNhdWVh/eHM3emc0Y2Y"
-  ],
-  "www.cinemacinoche.com": [
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/Popcorn-1991-still-05-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/popcorn-05-head-mould-800.jpg",
-   "https://www.cinemacinoche.com/wp-content/uploads/2026/11/HMD_mtl_2026_FLYER_w.jpg"
+  "ville.montreal-est.qc.ca": [
+   "https://ville.montreal-est.qc.ca/wp-content/uploads/2026/09/AVIS-ACTUALITES-1.jpg"
   ],
   "www.ville.dorval.qc.ca": [
    "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_fff459dc1f708685f0075f49ec2c1cf2.png",
@@ -430,6 +429,9 @@
   ],
   "www.mcgill.ca": [
    "https://www.mcgill.ca/channels/files/channels/styles/wysiwyg_large/public/channels/image/liu_poster.png?itok=FKB-6wK7"
+  ],
+  "img.casadelpopolo.com": [
+   "https://img.casadelpopolo.com/atLH7VVsJjgJK2kOxg_x4OxNE546YfG4QuLXmcWHdB4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3h0Y3ZkaDk4/c2p3ZnJhdXN2czR3/dTA5cmM3YnE"
   ],
   "www.studio303.ca": [
    "https://www.studio303.ca/programmation/linda-rabin-continuum-et-soin-de-soi-la-guerison-de-linterieur-26-27-fr/\\/\\/www.studio303.ca\\/wp-content\\/uploads\\/2026\\/11\\/workshop-linda-rabin-tony-chong.png"
