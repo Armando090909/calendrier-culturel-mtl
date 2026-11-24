@@ -1,766 +1,390 @@
 {
- "https://www.simpletix.com/e/jingle-bass-tickets-299522": {
+ "https://cinemapublic.ca/en/contact-us/": {
   "statut": 200,
   "simple_images": {
-   "og": "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/shows/FaceBook_JungleBassFlyer.png",
+   "og": "https://cinemapublic.ca/wp-content/uploads/2021/12/CinemaPublic-share.png",
    "img": [
-    "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/venue/76150-639176838818268833.png | Le Red Room",
-    "https://cdn.simpletix.com/emailtemplates/alert-templates/images/75-logo.png | Powered by SimpleTix"
+    "https://cinemapublic.ca/wp-content/uploads/2021/11/cinemapublic_official_logo_black.svg | Home",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/220422_hayaud_L1003487-copie.jpg | Bienvenue au Cinéma Public",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/casa-italia-montreal-1-1024x577.jpg | Façade de la Casa d'Italia à Montréal",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/livart-facade-1024x436.jpg | Le Livart, centre d'art à Montréal",
+    "https://cinemapublic.ca/wp-content/uploads/2021/12/Cinema-Public-bleu.png | "
    ],
-   "iframes": [],
-   "calendriers": [
-    "Zone = \"America/New_York\";\n                \n                let url = '';\n                if (type === 'google') {\n                    url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&ctz=${encodeURIComponent(ianaTimeZone)}`;\n                } else if (type === 'outlookcom') {\n                    url = `https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}&location=${encodeURIComponen",
-    "k = document.createElement('a');\n                    link.href = window.URL.createObjectURL(blob);\n                    link.setAttribute('download', 'event.ics');\n                    document.body.appendChild(link);\n                    link.click();\n                    document.body.removeChild(link);\n                    return;\n                }\n                if (url) window.open(url, '_blank');\n       "
-   ]
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-W7TPN4F"
+   ],
+   "calendriers": []
   },
   "simple": {
-   "taille": 1106,
-   "texte": "Jingle Bass Tickets | Pixel Production\n< <javascript:void(0)>\nJingle Bass\n December 10 - 11, 2026 \nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nQuebec \nH2X 3K8\nTicket Price (CAD)\n $8.68\nBuy Tickets <javascript:void(0);>\nDescription <https://www.simpletix.com/e/jingle-bass-tickets-299522#description>\nLocation <https://www.simpletix.com/e/jingle-bass-tickets-299522#location>\nAbout The Host <https://www.simpletix.com/e/jingle-bass-tickets-299522#host>\nAdd To Calendar <javascript:void(0)>\nApple Calendar\nGoogle \n(online)\nOffice 365 \n(online)\nOutlook\nOutlook.com \n(online)\nYahoo \n(online)\nShare <https://www.simpletix.com/e/jingle-bass-tickets-299522>\nDescription\nPixel Production come back with a new Event.\nFor this holiday season (Dec 10, Redroom) get ready to hit a wall of bass with this fire lineup :\nDropdeadgorgeous\nKio B2B Frank Sorrow\nDRE\nSloan Porter\nPixelLightz B2B Molo\nUnseen\nDont forget your ticket and come headbang for this holiday season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 3:00 a.m.\nVenue Details\nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nQuebec \nH2X 3K8\nPixel Production",
-   "courriels": [],
+   "taille": 1961,
+   "texte": "Cinema Public – Contact us Cinema Public\nContact us\nCinéma Public brings you a programme of films on the big screen at the \nCasa d’Italia <https://goo.gl/maps/V99JeMCB3WujbouU7>\n. During the summer, we also present open-air screenings in the \nLivart <https://maps.app.goo.gl/3UXfKqZ6X9P7xF5P8>\n courtyard. Doors open 30 minutes before the start of the first screening.\nWrite to us <mailto:info@cinemapublic.ca>\nIn theatre\nCasa d’Italia\n505 Jean-Talon St. Est\nMontréal (QC) H2R 1T6\nEntrance on Berri\nJean-Talon Metro\nExit: Jean-Talon North, Berri Street\ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n(514) 272-1040\nFind on Google Maps <https://www.google.com/maps/place/Cin%C3%A9ma+Public/@45.5393173,-73.6141366,15z/data=!4m5!3m4!1s0x0:0xe9e98e457e472de3!8m2!3d45.5393173!4d-73.6141366?shorturl=1>\nTo get to Cinéma Public, choose sustainable transportation!\nBy metro.\n The north exit of Jean-Talon Station (orange and blue lines) is literally across the street!\nBy bike.\n We are just a few pedal strokes away from the Saint-Denis axis of the express bicycle network (REV) as well as other bicycle paths (De Châteaubriand, Bélanger, Boyer).\nBy bus.\n North-South: 30, 31, 361. East-West: 92, 93, 95, 99, 372.\nOutdoor\nLivart\n3980 Saint-Denis St.\nMontréal (QC), H2W 2M2\nAccess to the courtyard via the alley\nSherbrooke Metro\ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n(514) 272-1040\nFind on Google Maps <https://maps.app.goo.gl/eFmPMttxzuiweUy49>\nFor information on \nprivate rentals\n or \nvolunteering opportunities\n, please contact us at \ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n. For \nspontaneous application\n, please send your CV and covering letter to \nrh@cinemapublic.ca <mailto:rh@cinemapublic.ca>\n. Our offices are located at 911 Jean-Talon St. East, local 206, Montréal (QC), H2R 1V5. To contact a \nmember of our team\n, visit our \nAbout us <https://cinemapublic.ca/en/about/>\n page.\nCinéma Public, \na cinema on the move\nStay informed!",
+   "courriels": [
+    "info@cinemapublic.ca",
+    "rh@cinemapublic.ca"
+   ],
    "contact": [
-    "javascript:void(0);"
+    "https://cinemapublic.ca/en/contact-us/",
+    "https://cinemapublic.ca/nous-joindre/"
    ],
    "jsonld": [
-    "\n            {\"startDate\":\"2026-12-11T03:00:00+00:00\",\"endDate\":\"2026-12-11T08:00:00+00:00\",\"name\":\"Jingle Bass\",\"url\":\"https://www.simpletix.com/e/jingle-bass-tickets-299522\",\"image\":\"https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/shows/888/JungleBassFlyer.png\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"offers\":[{\"priceCurrency\":\"CAD\",\"url\":\"https://www.simpletix.com/e/jingle-bass-tickets-299522\",\"lowPrice\":8.68,\"highPrice\":8.68,\"@type\":\"AggregateOffer\",\"validFrom\":\"2026-10-27T19:28:51+00:00\",\"availability\":\"https://schema.org/InStock\"}],\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2037 Rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2X 3K8\",\"addressRegion\":\"Quebec\",\"addressCountry\":\"CA\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":45.51634979248047,\"longitude\":-73.56584930419922}},\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"@context\":\"http://schema.org\",\"organizer\":{\"url\":\"https://PixelProduction.simpletix.ca\",\"description\":\"\",\"@type\":\"Organization\",\"name\":\"Pixel Production\"},\"@type\":\"Event\",\"description\":\"Pixel Production come back with a new Event.For this holiday season (Dec 10, Redroom) get ready to hit a wall of bass with this fire lineup :DropdeadgorgeousKio B2B Frank SorrowDRESloan PorterPixelLightz B2B MoloUnseenDont forget your ticket and come headbang for this holiday season\",\"performer\":{\"@type\":\"PerformingGroup\",\"name\":\"Pixel Production\"}}\n        "
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\",\"name\":\"Cinema Public &#8211; Contact us\",\"isPartOf\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#website\"},\"datePublished\":\"2021-12-19T21:31:29+00:00\",\"dateModified\":\"2026-06-17T15:53:02+00:00\",\"description\":\"How to contact Cinéma Public: in person at the Casa d’Italia and various locations across Montreal — and online!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/cinemapublic.ca\\/en\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact us\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#website\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/\",\"name\":\"Cinema Public\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/cinemapublic.ca\\/en\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#organization\",\"name\":\"Cinéma Public\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/cinemapublic.ca\\/wp-content\\/uploads\\/2021\\/03\\/CinemaPublic_Logo_1x1-e1616897542414.png\",\"contentUrl\":\"https:\\/\\/cinemapublic.ca\\/wp-content\\/uploads\\/2021\\/03\\/CinemaPublic_Logo_1x1-e1616897542414.png\",\"width\":500,\"height\":500,\"caption\":\"Cinéma Public\"},\"image\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/CinemaPublicMtl\",\"https:\\/\\/www.instagram.com\\/CinemaPublicMtl\",\"https:\\/\\/letterboxd.com\\/cinemapublic\\/\"]}]}"
    ],
-   "heures": [
-    "e headbang for this holiday season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 ",
-    "y season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 3:00 a.m.\nVenue Details\nL"
-   ],
-   "liens": [
-    "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/Themes/Magnificent/ThemesFiles/ticketwindow-overrides.css",
-    "https://www.simpletix.com/e/jingle-bass-tickets-299522"
-   ],
-   "menu": [
-    "Buy Tickets → javascript:void(0);",
-    "Add To Calendar → javascript:void(0)",
-    "List your event today for free → https://www.simpletix.com/?utm_source=platform&utm_medium=web&utm_campaign=magnificent&utm_content=footer_nav&a=text&brandname=Pixel+Production&utm_id=65310",
-    "Contact Event Organizer → javascript:void(0);",
-    "Find Your Tickets → https://find.simpletix.com/?utm_source=Superb&source=PixelProduction.simpletix.ca"
-   ]
+   "heures": [],
+   "liens": [],
+   "menu": []
   },
   "navigateur_images": {
-   "og": "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/shows/FaceBook_JungleBassFlyer.png",
+   "og": "https://cinemapublic.ca/wp-content/uploads/2021/12/CinemaPublic-share.png",
    "img": [
-    "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/venue/76150-639176838818268833.png | Le Red Room",
-    "https://cdn.simpletix.com/emailtemplates/alert-templates/images/75-logo.png | Powered by SimpleTix"
+    "https://cinemapublic.ca/wp-content/uploads/2021/11/cinemapublic_official_logo_black.svg | Home",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/220422_hayaud_L1003487-copie.jpg | Bienvenue au Cinéma Public",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/casa-italia-montreal-1-1024x577.jpg | Façade de la Casa d'Italia à Montréal",
+    "https://cinemapublic.ca/wp-content/uploads/2022/06/livart-facade-1024x436.jpg | Le Livart, centre d'art à Montréal",
+    "https://cinemapublic.ca/wp-content/uploads/2021/12/Cinema-Public-bleu.png | "
    ],
-   "iframes": [],
-   "calendriers": [
-    "Zone = \"America/New_York\";\n                \n                let url = '';\n                if (type === 'google') {\n                    url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&ctz=${encodeURIComponent(ianaTimeZone)}`;\n                } else if (type === 'outlookcom') {\n                    url = `https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}&location=${encodeURIComponen",
-    "k = document.createElement('a');\n                    link.href = window.URL.createObjectURL(blob);\n                    link.setAttribute('download', 'event.ics');\n                    document.body.appendChild(link);\n                    link.click();\n                    document.body.removeChild(link);\n                    return;\n                }\n                if (url) window.open(url, '_blank');\n       "
-   ]
+   "iframes": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-W7TPN4F"
+   ],
+   "calendriers": []
   },
   "navigateur": {
-   "taille": 1629,
-   "texte": "Jingle Bass Tickets | Pixel Production\nWe use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. For these reasons, we may share your site usage data with our social media and analytics partners. By clicking “Accept,” you agree to our website's cookie use as described in our \nCookie Policy\n and \nPrivacy Policy <https://www.simpletix.com/Privacy.php>\n. You can change your cookie settings at any time by clicking “\nPreferences\n.” \nPreferences\nDecline\nAccept\n< <javascript:void(0)>\nJingle Bass\n December 10 - 11, 2026 \nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nQuebec \nH2X 3K8\nTicket Price (CAD)\n $8.68\nBuy Tickets <javascript:void(0);>\nDescription <https://www.simpletix.com/e/jingle-bass-tickets-299522#description>\nLocation <https://www.simpletix.com/e/jingle-bass-tickets-299522#location>\nAbout The Host <https://www.simpletix.com/e/jingle-bass-tickets-299522#host>\nAdd To Calendar <javascript:void(0)>\nApple Calendar\nGoogle \n(online)\nOffice 365 \n(online)\nOutlook\nOutlook.com \n(online)\nYahoo \n(online)\nShare <https://www.simpletix.com/e/jingle-bass-tickets-299522>\nDescription\nPixel Production come back with a new Event.\nFor this holiday season (Dec 10, Redroom) get ready to hit a wall of bass with this fire lineup :\nDropdeadgorgeous\nKio B2B Frank Sorrow\nDRE\nSloan Porter\nPixelLightz B2B Molo\nUnseen\nDont forget your ticket and come headbang for this holiday season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 3:00 a.m.\nVenue Details\nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nQuebec \nH2X 3K8\nPixel Production",
-   "courriels": [],
+   "taille": 1961,
+   "texte": "Cinema Public – Contact us Cinema Public\nContact us\nCinéma Public brings you a programme of films on the big screen at the \nCasa d’Italia <https://goo.gl/maps/V99JeMCB3WujbouU7>\n. During the summer, we also present open-air screenings in the \nLivart <https://maps.app.goo.gl/3UXfKqZ6X9P7xF5P8>\n courtyard. Doors open 30 minutes before the start of the first screening.\nWrite to us <mailto:info@cinemapublic.ca>\nIn theatre\nCasa d’Italia\n505 Jean-Talon St. Est\nMontréal (QC) H2R 1T6\nEntrance on Berri\nJean-Talon Metro\nExit: Jean-Talon North, Berri Street\ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n(514) 272-1040\nFind on Google Maps <https://www.google.com/maps/place/Cin%C3%A9ma+Public/@45.5393173,-73.6141366,15z/data=!4m5!3m4!1s0x0:0xe9e98e457e472de3!8m2!3d45.5393173!4d-73.6141366?shorturl=1>\nTo get to Cinéma Public, choose sustainable transportation!\nBy metro.\n The north exit of Jean-Talon Station (orange and blue lines) is literally across the street!\nBy bike.\n We are just a few pedal strokes away from the Saint-Denis axis of the express bicycle network (REV) as well as other bicycle paths (De Châteaubriand, Bélanger, Boyer).\nBy bus.\n North-South: 30, 31, 361. East-West: 92, 93, 95, 99, 372.\nOutdoor\nLivart\n3980 Saint-Denis St.\nMontréal (QC), H2W 2M2\nAccess to the courtyard via the alley\nSherbrooke Metro\ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n(514) 272-1040\nFind on Google Maps <https://maps.app.goo.gl/eFmPMttxzuiweUy49>\nFor information on \nprivate rentals\n or \nvolunteering opportunities\n, please contact us at \ninfo@cinemapublic.ca <mailto:info@cinemapublic.ca>\n. For \nspontaneous application\n, please send your CV and covering letter to \nrh@cinemapublic.ca <mailto:rh@cinemapublic.ca>\n. Our offices are located at 911 Jean-Talon St. East, local 206, Montréal (QC), H2R 1V5. To contact a \nmember of our team\n, visit our \nAbout us <https://cinemapublic.ca/en/about/>\n page.\nCinéma Public, \na cinema on the move\nStay informed!",
+   "courriels": [
+    "info@cinemapublic.ca",
+    "rh@cinemapublic.ca"
+   ],
    "contact": [
-    "javascript:void(0);"
+    "https://cinemapublic.ca/en/contact-us/",
+    "https://cinemapublic.ca/nous-joindre/"
    ],
    "jsonld": [
-    "\n            {\"startDate\":\"2026-12-11T03:00:00+00:00\",\"endDate\":\"2026-12-11T08:00:00+00:00\",\"name\":\"Jingle Bass\",\"url\":\"https://www.simpletix.com/e/jingle-bass-tickets-299522\",\"image\":\"https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/shows/888/JungleBassFlyer.png\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"offers\":[{\"priceCurrency\":\"CAD\",\"url\":\"https://www.simpletix.com/e/jingle-bass-tickets-299522\",\"lowPrice\":8.68,\"highPrice\":8.68,\"@type\":\"AggregateOffer\",\"validFrom\":\"2026-10-27T19:28:51+00:00\",\"availability\":\"https://schema.org/InStock\"}],\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2037 Rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2X 3K8\",\"addressRegion\":\"Quebec\",\"addressCountry\":\"CA\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":45.51634979248047,\"longitude\":-73.56584930419922}},\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"@context\":\"http://schema.org\",\"organizer\":{\"url\":\"https://PixelProduction.simpletix.ca\",\"description\":\"\",\"@type\":\"Organization\",\"name\":\"Pixel Production\"},\"@type\":\"Event\",\"description\":\"Pixel Production come back with a new Event.For this holiday season (Dec 10, Redroom) get ready to hit a wall of bass with this fire lineup :DropdeadgorgeousKio B2B Frank SorrowDRESloan PorterPixelLightz B2B MoloUnseenDont forget your ticket and come headbang for this holiday season\",\"performer\":{\"@type\":\"PerformingGroup\",\"name\":\"Pixel Production\"}}\n        "
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\",\"name\":\"Cinema Public &#8211; Contact us\",\"isPartOf\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#website\"},\"datePublished\":\"2021-12-19T21:31:29+00:00\",\"dateModified\":\"2026-06-17T15:53:02+00:00\",\"description\":\"How to contact Cinéma Public: in person at the Casa d’Italia and various locations across Montreal — and online!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/contact-us\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/cinemapublic.ca\\/en\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact us\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#website\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/\",\"name\":\"Cinema Public\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/cinemapublic.ca\\/en\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#organization\",\"name\":\"Cinéma Public\",\"url\":\"https:\\/\\/cinemapublic.ca\\/en\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/cinemapublic.ca\\/wp-content\\/uploads\\/2021\\/03\\/CinemaPublic_Logo_1x1-e1616897542414.png\",\"contentUrl\":\"https:\\/\\/cinemapublic.ca\\/wp-content\\/uploads\\/2021\\/03\\/CinemaPublic_Logo_1x1-e1616897542414.png\",\"width\":500,\"height\":500,\"caption\":\"Cinéma Public\"},\"image\":{\"@id\":\"https:\\/\\/cinemapublic.ca\\/en\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/CinemaPublicMtl\",\"https:\\/\\/www.instagram.com\\/CinemaPublicMtl\",\"https:\\/\\/letterboxd.com\\/cinemapublic\\/\"]}]}"
    ],
-   "heures": [
-    "e headbang for this holiday season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 ",
-    "y season\nDate & Time\nDec 10, 2026 10:00 p.m. - Dec 11, 2026 3:00 a.m.\nVenue Details\nL"
-   ],
-   "liens": [
-    "https://cdn.simpletix.com/71ddc07c-915c-490d-a19f-1f3d19fdef5b/Themes/Magnificent/ThemesFiles/ticketwindow-overrides.css",
-    "https://www.simpletix.com/e/jingle-bass-tickets-299522"
-   ],
-   "menu": [
-    "Buy Tickets → javascript:void(0);",
-    "Add To Calendar → javascript:void(0)",
-    "List your event today for free → https://www.simpletix.com/?utm_source=platform&utm_medium=web&utm_campaign=magnificent&utm_content=footer_nav&a=text&brandname=Pixel+Production&utm_id=65310",
-    "Contact Event Organizer → javascript:void(0);",
-    "Find Your Tickets → https://find.simpletix.com/?utm_source=Superb&source=PixelProduction.simpletix.ca"
-   ]
+   "heures": [],
+   "liens": [],
+   "menu": []
   }
  },
- "https://www.stagelinetickets.com/s/eventfly-2-show": {
+ "https://www.restomontreal.ca/resto/madame-smith-montreal/6068/fr/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://www.restomontreal.ca/resto/madame-smith-montreal/6068/fr/"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 403  (navigateur)"
+  }
+ },
+ "https://www.restomontreal.ca/resto/ladversaire-pub-et-boutique-ludiques-montreal/12901/fr/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://www.restomontreal.ca/resto/ladversaire-pub-et-boutique-ludiques-montreal/12901/fr/"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 403  (navigateur)"
+  }
+ },
+ "https://www.restomontreal.ca/resto/la-cabine-comedie-club-montreal/22073/fr/": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://www.restomontreal.ca/resto/la-cabine-comedie-club-montreal/22073/fr/"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 403  (navigateur)"
+  }
+ },
+ "https://spottedbylocals.com/montreal/le-tango-libre": {
+  "simple": {
+   "erreur": "403 Client Error: Forbidden for url: https://spottedbylocals.com/montreal/le-tango-libre"
+  },
+  "navigateur": {
+   "erreur": "RuntimeError: 403  (navigateur)"
+  }
+ },
+ "https://lepointdevente.com/billets/improv18": {
   "statut": 200,
   "simple_images": {
-   "og": "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&token=8da941bd-48f2-4f90-aed8-e8f3d63e9168",
+   "og": "https://tpos.s3.amazonaws.com/events/1NH/26/08/04/002/1nh260804002-1152x648-fr-6a6a8758.png",
    "img": [
-    "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW | BLACK XMAS"
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/08/04/002/1nh260804002-1152x648-fr-6a6a8758.png | Improv The Rambunctious - Yellow vs Green (August 4 @Aux Ang",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/10/20/002/1nh261020002-1152x648-fr-6ad7c0ba.png | Improv The Rambunctious ! (November 24 - 6:30pm &#64;Aux Ang",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/24/001/1nh261124001-1152x648-fr-6ae52d62.png | Impro LIGE - Rouges vs Jaunes (24 novembre @Aux Angles Ronds",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/25/001/1nh261125001-1152x648-fr-6ae53ca1.png | Impro Le Bloc - Rouges + Jaunes (25 novembre @Aux Angles Ron",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/12/001/1nh261112001-1152x648-fr-6ae53e89.png | Le Fabuleux Club d'Impro - Rouges/Jaunes (26 novembre @Aux A",
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "//cdn.lepointdevente.com/themes/cartescadeaux/giftcard-img-fr-6a2714da.png | Le Saint-Jean Comédie Club",
+    "//cdn.lepointdevente.com/themes/rocklacauze2021/giftcard-img-fr-61dca5a5.png | Rock la cauze",
+    "//cdn.lepointdevente.com/themes/cartecadeau-7/giftcard-img-fr-5fe0e7fc.png | NSPW Pro Wrestling Academy",
+    "//cdn.lepointdevente.com/themes/cartecadeaulesgr/giftcard-img-fr-654bb2a3.png | Les Grands Bois - Arts et Spectacles",
+    "//cdn.lepointdevente.com/themes/cartecadeau/giftcard-img-fr-61c4e5c7.png | District 7 Production",
+    "//cdn.lepointdevente.com/themes/sallejuliepothie/giftcard-img-fr-66be0822.png | Salle Julie-Pothier",
+    "//cdn.lepointdevente.com/themes/cartecadeau-11/giftcard-img-fr-686ffc7d.png | La Slague",
+    "//cdn.lepointdevente.com/themes/cartecadeau-9/giftcard-img-fr-61ed6b35.png | Moulin Marcoux",
+    "//cdn.lepointdevente.com/themes/cartecadeau-8/giftcard-img-fr-6aeb8fb0.png | CELEB'Événements INC.",
+    "//cdn.lepointdevente.com/themes/cartecadeaugft/giftcard-img-fr-63810db0.png | Les Grandes Fêtes TELUS",
+    "//cdn.lepointdevente.com/themes/cartecadeau-12/giftcard-img-fr-673f78f3.png | Les Productions Les 2 vallées",
+    "//cdn.lepointdevente.com/themes/cartecadeaulebar/giftcard-img-fr-6aa45515.png | Le Baratineur",
+    "//cdn.lepointdevente.com/themes/cartecadeaumusiq/giftcard-img-fr-66be07a8.png | Festival de musique de chambre de Montréal",
+    "//cdn.lepointdevente.com/themes/cartecadeau-3/giftcard-img-fr-5fe0dbf4.png | Sur la scène Davignon On Stage",
+    "//cdn.lepointdevente.com/themes/cartescadeauxesp/giftcard-img-fr-655671f9.png | Espace Sophia"
    ],
    "iframes": [],
    "calendriers": []
   },
   "simple": {
-   "taille": 645,
-   "texte": "BLACK XMAS - Montreal - Tickets\nStageline Tickets <https://www.stagelinetickets.com/>\nShows <https://www.stagelinetickets.com/shows>\nEN\nFR\nOn sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED ROOM, Montreal\nLineup\nCTRL-Q <https://www.stagelinetickets.com/artist/ctrl-q>\nSelect Your Ticket\nVague 1\n$15\n−\n0\n+\nVague 2\n$20\n−\n0\n+\nVague 3\n$25\n−\n0\n+\nPersonal Information\nTickets\nNo tickets selected\nComplete Purchase\nSecured by 256-bit TLS\nPayments by\nStripe\nEmailed instantly\nStageline <https://www.stagelinetickets.com/>\n · \nShows <https://www.stagelinetickets.com/shows>\n · \nIndependent ticketing, Montréal\n© 2026 Stageline",
-   "courriels": [],
-   "contact": [],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@type\":\"Event\",\"name\":\"BLACK XMAS\",\"startDate\":\"2026-12-12T03:00:00.000Z\",\"endDate\":\"2026-12-12T07:45:00.000Z\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"location\":{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressRegion\":\"QC\",\"addressCountry\":\"CA\",\"addressLocality\":\"Montreal\"},\"name\":\"RED ROOM\"},\"organizer\":{\"@type\":\"Organization\",\"name\":\"PHVRAOH Presents\",\"url\":\"https://phvraohpresents.com\"},\"image\":[\"https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&token=8da941bd-48f2-4f90-aed8-e8f3d63e9168\"],\"performer\":[{\"@type\":\"PerformingGroup\",\"name\":\"CTRL-Q\"}],\"offers\":[{\"@type\":\"Offer\",\"name\":\"Vague 1\",\"price\":\"15.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"},{\"@type\":\"Offer\",\"name\":\"Vague 2\",\"price\":\"20.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"},{\"@type\":\"Offer\",\"name\":\"Vague 3\",\"price\":\"25.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"}],\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\"}"
+   "taille": 10756,
+   "texte": "La Rocambolesque présente Improv The Rambunctious - Yellow vs Green (August 4 @Aux Angles Ronds) - 4 août 2026 - Aux Angles Ronds, Montréal, QC - Lepointdevente.com\nPasser au contenu <https://lepointdevente.com/billets/improv18#skip-content-anchor>\nMenu principal\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nAide\nCentre d'aide <http://aide.lepointdevente.com/>\nTutoriels vidéos <https://www.youtube.com/@Lepointdeventecom-vu9lt/videos>\nF.A.Q. <https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com>\nÉtudes de cas <https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas>\nBonnes pratiques <https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques>\nFormations <https://lepointdevente.com/organisateurs/landing-page/formations>\nEnglish <https://lepointdevente.com/?lang=en>\nConnexion <https://lepointdevente.com/connexion/>\nMon compte <https://lepointdevente.com/mon-compte/>\nGestion des événements <https://lepointdevente.com/gestion/>\nPanier d'achat <https://lepointdevente.com/panier>\nDéconnexion <https://lepointdevente.com/deconnexion/>\nCréer un événement <https://lepointdevente.com/organisateurs>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un événement <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Trois-Rivières <https://lepointdevente.com/?type=physical&locality=2272&radius=0>\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nConditions d'utilisation <https://lepointdevente.com/conditions/>\nPolitique de confidentialité <https://lepointdevente.com/conditions/#confidentialite>\nPréférences de confidentialité\nÀ \nDans un rayon de \n km\n de \nRechercher partout\n(\nPlus d'options\n)\nLa Rocambolesque présente\nImprov The Rambunctious - Yellow vs Green (August 4 @Aux Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux Angles Ronds <https://lepointdevente.com/lieux/auxanglesronds>\n5333 Boul. Saint-Laurent\n, \nMontréal\n, \nQC\n, \nCanada\nPartagez cet événement\nFacebook <https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\nTwitter <https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\nLinkedin <https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29>\nPinterest <https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804002-1152x648-fr-6a6a8758.png&description=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29>\nEnvoyer par courriel <mailto:?subject=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29&body=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\n Lepointdevente.com agit à titre de mandataire pour \nLa Rocambolesque <https://lepointdevente.com/larocambolesque>\n dans le cadre de l’affichage en ligne et la vente de billets pour ses événements.\nPour plus d’information à propos de cet événement, veuillez contacter l’organisateur de l’événement, \nLa Rocambolesque <https://lepointdevente.com/larocambolesque>\n, à \narmand@rocambolesque.ca <mailto:armand@rocambolesque.ca>\n. \nAchat de billets\nVous avez un code promotionnel?\nCliquez ici pour obtenir plus d'informations sur cet événement\nThe Rambunctious\n is Rocambolesque’s brand-new English-language improv platform!\nAn improv match in \nthree periods\n, with the second one dedicated to \nexperimental improv games\n.\nA true improv laboratory, packed with laughter, surprises, and genuine emotion.\nAll the iconic elements of the Québec-style improv match, now \nperformed in English\n!\nYou can find each team’s lineup here:\nhttps://rocambolesque.ca/evenement/r <https://rocambolesque.ca/evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n5333 Boulevard Saint-Laurent\nAll ages welcome\n---------\nLa Rocambolesque is a socio-cultural organization dedicated to the growth of improvisational theatre. Our mission is to create high-quality performance platforms for a wide range of performers.\nLa Rocambolesque is always welcoming new improvisers. Feel free to get in touch and come play with us!\nDiscover all our news and activities at\nwww.rocambolesque.ca <http://www.rocambolesque.ca>\nDétails de l'événement \nThe Rambunctious\n is Rocambolesque’s brand-new English-language improv platform!\nAn improv match in \nthree periods\n, with the second one dedicated to \nexperimental improv games\n.\nA true improv laboratory, packed with laughter, surprises, and genuine emotion.\nAll the iconic elements of the Québec-style improv match, now \nperformed in English\n!\nYou can find each team’s lineup here:\nhttps://rocambolesque.ca/evenement/r <https://rocambolesque.ca/evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n5333 Boulevard Saint-Laurent\nAll ages welcome\n---------\nLa Rocambolesque is a socio-cultural organization dedicated to the growth of improvisational theatre. Our mission is to create high-quality performance platforms for a wide range of performers.\nLa Rocambolesque is always welcoming new improvisers. Feel free to get in touch and come play with us!\nDiscover all our news and activities at\nwww.rocambolesque.ca <http://www.rocambolesque.ca>\nLieu de l'événement \nContacter l'organisateur \nFacebook <https://www.facebook.com/LaRocambolesque/>\nInstagram <https://www.instagram.com/rocambolesque_impro/>\nLinkedin <https://www.linkedin.com/company/rocambolesque/>\narmand@rocambolesque.ca <mailto:armand@rocambolesque.ca>\nrocambolesque.ca/ <https://rocambolesque.ca/>\nÉvénements à venir\nImprov The Rambunctious ! (November 24 - 6:30pm @Aux Angles Ronds) 24 novembre 2026, 18h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/1nh261124002>\nImpro LIGE - Rouges vs Jaunes (24 novembre @Aux Angles Ronds) 24 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/ligue-improvisation-lige7>\nImpro Le Bloc - Rouges + Jaunes (25 novembre @Aux Angles Ronds) 25 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/match-improvisation-bloc7>\nLe Fabuleux Club d'Impro - Rouges/Jaunes (26 novembre @Aux Angles Ronds) 26 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/match-improvisation-fci7>\n© 2010–2026 Tous droits réservés\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.c",
+   "courriels": [
+    "armand@rocambolesque.ca"
    ],
+   "contact": [
+    "https://lepointdevente.com/contact/"
+   ],
+   "jsonld": [],
    "heures": [
-    "\nEN\nFR\nOn sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED",
-    "n sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED ROOM, Mon"
+    "st 4 @Aux Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 1",
+    "x Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux",
+    " Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux Angles Ronds <ht",
+    "evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n",
+    "evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n",
+    "Événements à venir\nImprov The Rambunctious ! (November 24 - 6:30pm @Aux Angles Ronds) ",
+    " (November 24 - 6:30pm @Aux Angles Ronds) 24 novembre 2026, 18h30 Aux Angles Ronds, Mo",
+    "vs Jaunes (24 novembre @Aux Angles Ronds) 24 novembre 2026, 20h30 Aux Angles Ronds, Mo",
+    " + Jaunes (25 novembre @Aux Angles Ronds) 25 novembre 2026, 20h30 Aux Angles Ronds, Mo",
+    "es/Jaunes (26 novembre @Aux Angles Ronds) 26 novembre 2026, 20h30 Aux Angles Ronds, Mo"
    ],
    "liens": [
-    "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&amp;token=8da941bd-48f2-4f90-aed8-e8f3d63e9168",
-    "https://www.stagelinetickets.com/s/eventfly-2-show"
+    "http://aide.lepointdevente.com/",
+    "http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "http://blog.lepointdevente.com/",
+    "https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "https://facebook.com/lepointdevente",
+    "https://instagram.com/lepointdevente",
+    "https://lepointdevente.com",
+    "https://lepointdevente.com/billets/improv18",
+    "https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "https://lepointdevente.com/organisateurs/landing-page/formations",
+    "https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&amp;media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804002-1152x648-fr-6a6a8758.png&amp;description=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "https://rocambolesque.ca/evenement/originale/",
+    "https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://twitter.com/lepointdevente",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://www.linkedin.com/company/lepointdevente-com",
+    "https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&amp;title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "https://www.tiktok.com/@lepointdevente.com",
+    "https://www.youtube.com/@Lepointdeventecom-vu9lt/videos"
    ],
    "menu": [
-    "Stageline Tickets → https://www.stagelinetickets.com/",
-    "Shows → https://www.stagelinetickets.com/shows",
-    "Shows → https://www.stagelinetickets.com/shows"
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Centre d'aide → http://aide.lepointdevente.com/",
+    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
+    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
+    "Gestion des événements → https://lepointdevente.com/gestion/",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Centre d'aide → http://aide.lepointdevente.com/",
+    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
+    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
+    "Gestion des événements → https://lepointdevente.com/gestion/",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Acheter des billets → https://lepointdevente.com/",
+    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Événements → https://lepointdevente.com/",
+    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
+    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
+    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
+    "Événements à Trois-Rivières → https://lepointdevente.com/?type=physical&locality=2272&radius=0",
+    "Facebook → https://facebook.com/lepointdevente",
+    "Twitter → https://twitter.com/lepointdevente",
+    "Instagram → https://instagram.com/lepointdevente",
+    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
+    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Facebook → https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "Twitter → https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "Linkedin → https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "Pinterest → https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804",
+    "Envoyer par courriel → mailto:?subject=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29&body=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://rocambolesque.ca/evenement/r → https://rocambolesque.ca/evenement/originale/",
+    "https://rocambolesque.ca/evenement/r → https://rocambolesque.ca/evenement/originale/",
+    "Improv The Rambunctious ! (November 24 - 6:30pm @A → https://lepointdevente.com/billets/1nh261124002",
+    "Impro LIGE - Rouges vs Jaunes (24 novembre @Aux An → https://lepointdevente.com/billets/ligue-improvisation-lige7",
+    "Impro Le Bloc - Rouges + Jaunes (25 novembre @Aux  → https://lepointdevente.com/billets/match-improvisation-bloc7",
+    "Le Fabuleux Club d'Impro - Rouges/Jaunes (26 novem → https://lepointdevente.com/billets/match-improvisation-fci7",
+    "Facebook → https://facebook.com/lepointdevente",
+    "Twitter → https://twitter.com/lepointdevente",
+    "Instagram → https://instagram.com/lepointdevente",
+    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
+    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
+    "Acheter des billets → https://lepointdevente.com/",
+    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "Événements → https://lepointdevente.com/",
+    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
+    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
+    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
+    "Événements à Trois-Rivières → https://lepointdevente.com/?type=physical&locality=2272&radius=0",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/"
    ]
   },
   "navigateur_images": {
-   "og": "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&token=8da941bd-48f2-4f90-aed8-e8f3d63e9168",
+   "og": "https://tpos.s3.amazonaws.com/events/1NH/26/08/04/002/1nh260804002-1152x648-fr-6a6a8758.png",
    "img": [
-    "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW | BLACK XMAS"
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/08/04/002/1nh260804002-1152x648-fr-6a6a8758.png | Improv The Rambunctious - Yellow vs Green (August 4 @Aux Ang",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/10/20/002/1nh261020002-1152x648-fr-6ad7c0ba.png | Improv The Rambunctious ! (November 24 - 6:30pm &#64;Aux Ang",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/24/001/1nh261124001-1152x648-fr-6ae52d62.png | Impro LIGE - Rouges vs Jaunes (24 novembre @Aux Angles Ronds",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/25/001/1nh261125001-1152x648-fr-6ae53ca1.png | Impro Le Bloc - Rouges + Jaunes (25 novembre @Aux Angles Ron",
+    "https://tpos.s3.amazonaws.com/events/1NH/26/11/12/001/1nh261112001-1152x648-fr-6ae53e89.png | Le Fabuleux Club d'Impro - Rouges/Jaunes (26 novembre @Aux A",
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "https://tpos-cdn.s3.ca-central-1.amazonaws.com/b2b/about/logo-pci-white.png | PCI Logo",
+    "https://cdn.lepointdevente.com/themes/tpos/logo-on-dark-fr-5f32b556.svg | Lepointdevente.com",
+    "//cdn.lepointdevente.com/themes/cartescadeaux/giftcard-img-fr-6a2714da.png | Le Saint-Jean Comédie Club",
+    "//cdn.lepointdevente.com/themes/rocklacauze2021/giftcard-img-fr-61dca5a5.png | Rock la cauze",
+    "//cdn.lepointdevente.com/themes/cartecadeau-7/giftcard-img-fr-5fe0e7fc.png | NSPW Pro Wrestling Academy",
+    "//cdn.lepointdevente.com/themes/cartecadeaulesgr/giftcard-img-fr-654bb2a3.png | Les Grands Bois - Arts et Spectacles",
+    "//cdn.lepointdevente.com/themes/cartecadeau/giftcard-img-fr-61c4e5c7.png | District 7 Production",
+    "//cdn.lepointdevente.com/themes/sallejuliepothie/giftcard-img-fr-66be0822.png | Salle Julie-Pothier",
+    "//cdn.lepointdevente.com/themes/cartecadeau-11/giftcard-img-fr-686ffc7d.png | La Slague",
+    "//cdn.lepointdevente.com/themes/cartecadeau-9/giftcard-img-fr-61ed6b35.png | Moulin Marcoux",
+    "//cdn.lepointdevente.com/themes/cartecadeau-8/giftcard-img-fr-6aeb8fb0.png | CELEB'Événements INC.",
+    "//cdn.lepointdevente.com/themes/cartecadeaugft/giftcard-img-fr-63810db0.png | Les Grandes Fêtes TELUS",
+    "//cdn.lepointdevente.com/themes/cartecadeau-12/giftcard-img-fr-673f78f3.png | Les Productions Les 2 vallées",
+    "//cdn.lepointdevente.com/themes/cartecadeaulebar/giftcard-img-fr-6aa45515.png | Le Baratineur",
+    "//cdn.lepointdevente.com/themes/cartecadeaumusiq/giftcard-img-fr-66be07a8.png | Festival de musique de chambre de Montréal",
+    "//cdn.lepointdevente.com/themes/cartecadeau-3/giftcard-img-fr-5fe0dbf4.png | Sur la scène Davignon On Stage",
+    "//cdn.lepointdevente.com/themes/cartescadeauxesp/giftcard-img-fr-655671f9.png | Espace Sophia"
    ],
    "iframes": [
-    "https://js.stripe.com/v3/m-outer-0edadf75b42c6ef7240c043f3272f3f9.html#url=https%3A%2F%2Fwww.stagelinetickets.com%2Fs%2Feventfly-2-show&title=BLACK%20",
-    "https://m.stripe.network/inner.html#url=https%3A%2F%2Fwww.stagelinetickets.com%2Fs%2Feventfly-2-show&title=BLACK%20XMAS%20-%20Montreal%20-%20Tickets&r"
-   ],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 659,
-   "texte": "BLACK XMAS - Montreal - Tickets\nStageline Tickets <https://www.stagelinetickets.com/>\nShows <https://www.stagelinetickets.com/shows>\nEN\nFR\nOn sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED ROOM, Montreal\nLineup\nCTRL-Q <https://www.stagelinetickets.com/artist/ctrl-q>\nSelect Your Ticket\nVague 1\n$15\n−\n0\n+\nVague 2\n$20\n−\n0\n+\nVague 3\n$25\n−\n0\n+\nPersonal Information\nTickets\nNo tickets selected\nComplete Purchase\nSecured by 256-bit TLS\nPayments by\nStripe\nEmailed instantly\nStageline <https://www.stagelinetickets.com/>\n · \nShows <https://www.stagelinetickets.com/shows>\n · \nIndependent ticketing, Montréal\n© 2026 Stageline\nStripeM-Inner",
-   "courriels": [],
-   "contact": [],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@type\":\"Event\",\"name\":\"BLACK XMAS\",\"startDate\":\"2026-12-12T03:00:00.000Z\",\"endDate\":\"2026-12-12T07:45:00.000Z\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"location\":{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressRegion\":\"QC\",\"addressCountry\":\"CA\",\"addressLocality\":\"Montreal\"},\"name\":\"RED ROOM\"},\"organizer\":{\"@type\":\"Organization\",\"name\":\"PHVRAOH Presents\",\"url\":\"https://phvraohpresents.com\"},\"image\":[\"https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&token=8da941bd-48f2-4f90-aed8-e8f3d63e9168\"],\"performer\":[{\"@type\":\"PerformingGroup\",\"name\":\"CTRL-Q\"}],\"offers\":[{\"@type\":\"Offer\",\"name\":\"Vague 1\",\"price\":\"15.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"},{\"@type\":\"Offer\",\"name\":\"Vague 2\",\"price\":\"20.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"},{\"@type\":\"Offer\",\"name\":\"Vague 3\",\"price\":\"25.00\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\",\"validFrom\":\"2026-11-01T17:00:00.000Z\",\"validThrough\":\"2026-12-13T07:45:00.000Z\",\"priceValidUntil\":\"2026-12-13T07:45:00.000Z\"}],\"url\":\"https://www.stagelinetickets.com/s/eventfly-2-show\"}"
-   ],
-   "heures": [
-    "\nEN\nFR\nOn sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED",
-    "n sale now\nBLACK XMAS\nDate\nFriday, December 11\nTime\n10 PM – 2:45 AM\nVenue\nRED ROOM, Mon"
-   ],
-   "liens": [
-    "https://firebasestorage.googleapis.com/v0/b/ticket-platform-app.firebasestorage.app/o/shows%2F6ae227fdfde9ff0ed1391ed0%2F1793543475757-att.MrCDUY2h9GW5TPDVNCdJqaSzpmegSzph9IHm5IyT_k4.jpg?alt=media&amp;token=8da941bd-48f2-4f90-aed8-e8f3d63e9168",
-    "https://www.stagelinetickets.com/s/eventfly-2-show"
-   ],
-   "menu": [
-    "Stageline Tickets → https://www.stagelinetickets.com/",
-    "Shows → https://www.stagelinetickets.com/shows",
-    "Shows → https://www.stagelinetickets.com/shows"
-   ]
-  }
- },
- "https://www.simpletix.com/e/midnight-mass-tickets-301753": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/shows/FaceBook_2841.png",
-   "img": [
-    "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/venue/73266-639105543228343176.png | Le Red Room",
-    "https://cdn.simpletix.com/emailtemplates/alert-templates/images/75-logo.png | Powered by SimpleTix"
-   ],
-   "iframes": [],
-   "calendriers": [
-    "e = \"America/Los_Angeles\";\n                \n                let url = '';\n                if (type === 'google') {\n                    url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&ctz=${encodeURIComponent(ianaTimeZone)}`;\n                } else if (type === 'outlookcom') {\n                    url = `https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}&location=${encodeURIComponen",
-    "k = document.createElement('a');\n                    link.href = window.URL.createObjectURL(blob);\n                    link.setAttribute('download', 'event.ics');\n                    document.body.appendChild(link);\n                    link.click();\n                    document.body.removeChild(link);\n                    return;\n                }\n                if (url) window.open(url, '_blank');\n       "
-   ]
-  },
-  "simple": {
-   "taille": 1855,
-   "texte": "Midnight Mass Tickets | Hardest Frequencies\n< <javascript:void(0)>\nMidnight Mass\n December 12 - 13, 2026 \nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nAlberta \nH2X 3K8\nTicket Price (CAD)\n $11.83-$17.09\nBuy Tickets <javascript:void(0);>\nDescription <https://www.simpletix.com/e/midnight-mass-tickets-301753#description>\nLocation <https://www.simpletix.com/e/midnight-mass-tickets-301753#location>\nAbout The Host <https://www.simpletix.com/e/midnight-mass-tickets-301753#host>\nAdd To Calendar <javascript:void(0)>\nApple Calendar\nGoogle \n(online)\nOffice 365 \n(online)\nOutlook\nOutlook.com \n(online)\nYahoo \n(online)\nShare <https://www.simpletix.com/e/midnight-mass-tickets-301753>\nDescription\nMidnight Mass : Confession générale avant la fin du monde\n​Un dernier péché avant que l'année ne trépasse ?\n​Pour clore cette saison en beauté, la Midnight Mass se transforme en sanctuaire des noctambules. Oubliez la messe de minuit de mamie : ici, on vient chercher la sueur, le son lourd et l'absolution sur le dancefloor.\n​Viens déposer tes regrets, tes erreurs de parcours et tes pires décisions de 2026. On s'occupe de faire résonner les basses pour chasser les démons.\n​Prépare ta pénitence, ça va prêcher fort.\n​Midnight Mass: General Confession Before the End of the World\nOne last sin before the year kicks the bucket?\nTo close out the season in style, Midnight Mass transforms into a sanctuary for night owls. Forget grandma's midnight mass: here, we come for the sweat, the heavy sound, and absolution on the dancefloor.\nCome drop off your regrets, your missteps, and your worst decisions of 2026. We'll handle the booming bass to chase away the demons.\nPrepare your penance—it's going to preach loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 3:00 a.m.\nVenue Details\nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nAlberta \nH2X 3K8\nHardest Frequencies",
-   "courriels": [],
-   "contact": [
-    "javascript:void(0);"
-   ],
-   "jsonld": [
-    "\n            {\"startDate\":\"2026-12-13T06:00:00+00:00\",\"endDate\":\"2026-12-13T11:00:00+00:00\",\"name\":\"Midnight Mass\",\"url\":\"https://www.simpletix.com/e/midnight-mass-tickets-301753\",\"image\":\"https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/shows/888/SimpleTixcleaned.png\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"offers\":[{\"priceCurrency\":\"CAD\",\"url\":\"https://www.simpletix.com/e/midnight-mass-tickets-301753\",\"lowPrice\":11.83,\"highPrice\":17.09,\"@type\":\"AggregateOffer\",\"validFrom\":\"2026-11-15T22:06:54+00:00\",\"availability\":\"https://schema.org/InStock\"}],\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2037 Rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2X 3K8\",\"addressRegion\":\"Alberta\",\"addressCountry\":\"CA\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":45.51634979248047,\"longitude\":-73.56584930419922}},\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"@context\":\"http://schema.org\",\"organizer\":{\"url\":\"https://HardestFrequencies.simpletix.ca\",\"description\":\"\",\"@type\":\"Organization\",\"name\":\"Hardest Frequencies\"},\"@type\":\"Event\",\"description\":\"Midnight Mass : Confession générale avant la fin du monde​Un dernier péché avant que l'année ne trépasse ?​Pour clore cette saison en beauté, la Midnight Mass se transforme en sanctuaire des noctambules. Oubliez la messe de minuit de mamie : ici, on vient chercher la sueur, le son lourd et l'absolution sur le dancefloor.​Viens déposer tes regrets, tes erreurs de parcours et tes pires décisions de 2026. On s'occupe de faire résonner les basses pour chasser les démons.​Prépare ta pénitence, ça va prêcher fort.​Midnight Mass: General Confession Before the End of the WorldOne last sin before the year kicks the bucket?To close out the season in style, Midnight Mass transforms into a sanctuary for night owls. Forget grandma's midnight mass: here, we come for the sweat, the heavy sound, and absolution on the dancefloor.Come drop off your regrets, your missteps, and your worst decisions of 2026. We'll handle the booming bass to chase away the demons.Prepare your penance—it's going to preach loud.\",\"performer\":{\"@type\":\"PerformingGroup\",\"name\":\"Hardest Frequencies\"}}\n        "
-   ],
-   "heures": [
-    "penance—it's going to preach loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 ",
-    "ch loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 3:00 a.m.\nVenue Details\nL"
-   ],
-   "liens": [
-    "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/Themes/Magnificent/ThemesFiles/ticketwindow-overrides.css",
-    "https://www.simpletix.com/e/midnight-mass-tickets-301753"
-   ],
-   "menu": [
-    "Buy Tickets → javascript:void(0);",
-    "Add To Calendar → javascript:void(0)",
-    "List your event today for free → https://www.simpletix.com/?utm_source=platform&utm_medium=web&utm_campaign=magnificent&utm_content=footer_nav&a=text&brandname=Hardest+Frequencies&utm_id=63112",
-    "Contact Event Organizer → javascript:void(0);",
-    "Find Your Tickets → https://find.simpletix.com/?utm_source=Superb&source=HardestFrequencies.simpletix.ca"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/shows/FaceBook_2841.png",
-   "img": [
-    "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/venue/73266-639105543228343176.png | Le Red Room",
-    "https://cdn.simpletix.com/emailtemplates/alert-templates/images/75-logo.png | Powered by SimpleTix"
-   ],
-   "iframes": [],
-   "calendriers": [
-    "e = \"America/Los_Angeles\";\n                \n                let url = '';\n                if (type === 'google') {\n                    url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&ctz=${encodeURIComponent(ianaTimeZone)}`;\n                } else if (type === 'outlookcom') {\n                    url = `https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}&location=${encodeURIComponen",
-    "k = document.createElement('a');\n                    link.href = window.URL.createObjectURL(blob);\n                    link.setAttribute('download', 'event.ics');\n                    document.body.appendChild(link);\n                    link.click();\n                    document.body.removeChild(link);\n                    return;\n                }\n                if (url) window.open(url, '_blank');\n       "
-   ]
-  },
-  "navigateur": {
-   "taille": 2378,
-   "texte": "Midnight Mass Tickets | Hardest Frequencies\nWe use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. For these reasons, we may share your site usage data with our social media and analytics partners. By clicking “Accept,” you agree to our website's cookie use as described in our \nCookie Policy\n and \nPrivacy Policy <https://www.simpletix.com/Privacy.php>\n. You can change your cookie settings at any time by clicking “\nPreferences\n.” \nPreferences\nDecline\nAccept\n< <javascript:void(0)>\nMidnight Mass\n December 12 - 13, 2026 \nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nAlberta \nH2X 3K8\nTicket Price (CAD)\n $11.83-$17.09\nBuy Tickets <javascript:void(0);>\nDescription <https://www.simpletix.com/e/midnight-mass-tickets-301753#description>\nLocation <https://www.simpletix.com/e/midnight-mass-tickets-301753#location>\nAbout The Host <https://www.simpletix.com/e/midnight-mass-tickets-301753#host>\nAdd To Calendar <javascript:void(0)>\nApple Calendar\nGoogle \n(online)\nOffice 365 \n(online)\nOutlook\nOutlook.com \n(online)\nYahoo \n(online)\nShare <https://www.simpletix.com/e/midnight-mass-tickets-301753>\nDescription\nMidnight Mass : Confession générale avant la fin du monde\n​Un dernier péché avant que l'année ne trépasse ?\n​Pour clore cette saison en beauté, la Midnight Mass se transforme en sanctuaire des noctambules. Oubliez la messe de minuit de mamie : ici, on vient chercher la sueur, le son lourd et l'absolution sur le dancefloor.\n​Viens déposer tes regrets, tes erreurs de parcours et tes pires décisions de 2026. On s'occupe de faire résonner les basses pour chasser les démons.\n​Prépare ta pénitence, ça va prêcher fort.\n​Midnight Mass: General Confession Before the End of the World\nOne last sin before the year kicks the bucket?\nTo close out the season in style, Midnight Mass transforms into a sanctuary for night owls. Forget grandma's midnight mass: here, we come for the sweat, the heavy sound, and absolution on the dancefloor.\nCome drop off your regrets, your missteps, and your worst decisions of 2026. We'll handle the booming bass to chase away the demons.\nPrepare your penance—it's going to preach loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 3:00 a.m.\nVenue Details\nLe Red Room\n2037 Rue Saint-Denis\nMontréal, \nAlberta \nH2X 3K8\nHardest Frequencies",
-   "courriels": [],
-   "contact": [
-    "javascript:void(0);"
-   ],
-   "jsonld": [
-    "\n            {\"startDate\":\"2026-12-13T06:00:00+00:00\",\"endDate\":\"2026-12-13T11:00:00+00:00\",\"name\":\"Midnight Mass\",\"url\":\"https://www.simpletix.com/e/midnight-mass-tickets-301753\",\"image\":\"https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/shows/888/SimpleTixcleaned.png\",\"eventStatus\":\"https://schema.org/EventScheduled\",\"offers\":[{\"priceCurrency\":\"CAD\",\"url\":\"https://www.simpletix.com/e/midnight-mass-tickets-301753\",\"lowPrice\":11.83,\"highPrice\":17.09,\"@type\":\"AggregateOffer\",\"validFrom\":\"2026-11-15T22:06:54+00:00\",\"availability\":\"https://schema.org/InStock\"}],\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"2037 Rue Saint-Denis\",\"addressLocality\":\"Montréal\",\"postalCode\":\"H2X 3K8\",\"addressRegion\":\"Alberta\",\"addressCountry\":\"CA\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":45.51634979248047,\"longitude\":-73.56584930419922}},\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"@context\":\"http://schema.org\",\"organizer\":{\"url\":\"https://HardestFrequencies.simpletix.ca\",\"description\":\"\",\"@type\":\"Organization\",\"name\":\"Hardest Frequencies\"},\"@type\":\"Event\",\"description\":\"Midnight Mass : Confession générale avant la fin du monde​Un dernier péché avant que l'année ne trépasse ?​Pour clore cette saison en beauté, la Midnight Mass se transforme en sanctuaire des noctambules. Oubliez la messe de minuit de mamie : ici, on vient chercher la sueur, le son lourd et l'absolution sur le dancefloor.​Viens déposer tes regrets, tes erreurs de parcours et tes pires décisions de 2026. On s'occupe de faire résonner les basses pour chasser les démons.​Prépare ta pénitence, ça va prêcher fort.​Midnight Mass: General Confession Before the End of the WorldOne last sin before the year kicks the bucket?To close out the season in style, Midnight Mass transforms into a sanctuary for night owls. Forget grandma's midnight mass: here, we come for the sweat, the heavy sound, and absolution on the dancefloor.Come drop off your regrets, your missteps, and your worst decisions of 2026. We'll handle the booming bass to chase away the demons.Prepare your penance—it's going to preach loud.\",\"performer\":{\"@type\":\"PerformingGroup\",\"name\":\"Hardest Frequencies\"}}\n        "
-   ],
-   "heures": [
-    "penance—it's going to preach loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 ",
-    "ch loud.\nDate & Time\nDec 12, 2026 10:00 p.m. - Dec 13, 2026 3:00 a.m.\nVenue Details\nL"
-   ],
-   "liens": [
-    "https://cdn.simpletix.com/6679f237-2746-464c-8285-cfd4c847519e/Themes/Magnificent/ThemesFiles/ticketwindow-overrides.css",
-    "https://www.simpletix.com/e/midnight-mass-tickets-301753"
-   ],
-   "menu": [
-    "Buy Tickets → javascript:void(0);",
-    "Add To Calendar → javascript:void(0)",
-    "List your event today for free → https://www.simpletix.com/?utm_source=platform&utm_medium=web&utm_campaign=magnificent&utm_content=footer_nav&a=text&brandname=Hardest+Frequencies&utm_id=63112",
-    "Contact Event Organizer → javascript:void(0);",
-    "Find Your Tickets → https://find.simpletix.com/?utm_source=Superb&source=HardestFrequencies.simpletix.ca"
-   ]
-  }
- },
- "https://lineup-event.com/fr/event/v-i-iv-le-vent-ii": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://res.cloudinary.com/dyvxhpzxd/image/upload/v1794964702/lineup/events/johxqmbj8rvytedqvelq.jpg",
-   "img": [
-    "/logo_nav.svg | LineUp",
-    "/icon_orga.svg | LineUp Logo",
-    "https://res.cloudinary.com/dyvxhpzxd/image/upload/f_webp,c_limit,w_3840,q_auto/lineup/events/johxqmbj8rvytedqvelq.jpg | ",
-    "https://res.cloudinary.com/dyvxhpzxd/image/upload/f_webp,c_limit,w_3840,q_auto/lineup/events/johxqmbj8rvytedqvelq.jpg | V I IV le Vent II"
-   ],
-   "iframes": [
-    "https://maps.google.com/maps?q=2037+R.+Saint-Denis,+Montréal,+QC+H2X+3K8,+Canada&z=15&output=embed"
-   ],
-   "calendriers": []
-  },
-  "simple": {
-   "taille": 989,
-   "texte": "Explorer <https://lineup-event.com/fr/events>\nConnexion <https://lineup-event.com/fr/auth/signin>\nInscription <https://lineup-event.com/fr/auth/signup>\nV I IV le Vent II - LineUp\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room, 2037 R. Saint-Denis, Montréal\n4\nBillets\nFLOCONS\nÉpuisé\n0.00 $\nBRISE\nDisponible\n10.00 $\nPOUDRERIE\nBientôt disponible\n15.00 $\nTEMPÊTE\nBientôt disponible\n17.50 $\n4\nBillets\nFLOCONS\nÉpuisé\n0.00 $\nBRISE\nDisponible\n10.00 $\nPOUDRERIE\nBientôt disponible\n15.00 $\nTEMPÊTE\nBientôt disponible\n17.50 $\nS'abonner\nDescription\nV I IV Collective présente V I IV le Vent II \nV I IV Collective présente sa deuxième édition de V I IV le Vent, un évènement qui frappe Montréal à chaque mois de Décembre. Venez danser aux sons de vos artistes locaux préférés et préparez-vous à affronter la tempête qui s'apprête à s'abattre sur Le Red Room de plein fouet. \nEmplacement\nV I IV Collective Membre depuis novembre 2026 <https://lineup-event.com/fr/organizer/v-i-iv-collective>",
-   "courriels": [],
-   "contact": [
-    "https://lineup-event.com/fr/contact"
-   ],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@type\":\"Event\",\"name\":\"V I IV le Vent II\",\"description\":\"V I IV Collective présente V I IV le Vent II \\n\\nV I IV Collective présente sa deuxième édition de V I IV le Vent, un évènement qui frappe Montréal à chaque mois de Décembre. Venez danser aux sons de vos artistes locaux préférés et préparez-vous à affronter la tempête qui s'apprête à s'abattre sur Le Red Room de plein fouet. \\n\\n\",\"startDate\":\"2026-12-18T02:00:00.000Z\",\"endDate\":\"2026-12-18T08:00:00.000Z\",\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":\"2037 R. Saint-Denis, Montréal, QC H2X 3K8, Canada\"},\"image\":\"https://res.cloudinary.com/dyvxhpzxd/image/upload/v1794964702/lineup/events/johxqmbj8rvytedqvelq.jpg\",\"url\":\"https://lineup-event.com/event/v-i-iv-le-vent-ii\",\"organizer\":{\"@type\":\"Organization\",\"name\":\"V I IV Collective\",\"url\":\"https://lineup-event.com/organizer/v-i-iv-collective\"},\"eventStatus\":\"https://schema.org/EventScheduled\",\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"offers\":{\"@type\":\"AggregateOffer\",\"lowPrice\":\"10.00\",\"highPrice\":\"17.50\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://lineup-event.com/event/v-i-iv-le-vent-ii\",\"validFrom\":\"2026-11-18T22:00:00.000Z\"}}"
-   ],
-   "heures": [
-    "V I IV le Vent II - LineUp\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room,",
-    "e Vent II - LineUp\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room, 2037 R."
-   ],
-   "liens": [
-    "https://www.instagram.com/lineupevents_/",
-    "https://www.tiktok.com/@lineup.events"
-   ],
-   "menu": [
-    "Explorer → https://lineup-event.com/fr/events",
-    "Événements à venir → https://lineup-event.com/fr/events",
-    "Créer un événement → https://lineup-event.com/fr/auth/signin",
-    "Instagram → https://www.instagram.com/lineupevents_/",
-    "TikTok → https://www.tiktok.com/@lineup.events"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://res.cloudinary.com/dyvxhpzxd/image/upload/v1794964702/lineup/events/johxqmbj8rvytedqvelq.jpg",
-   "img": [
-    "/logo_nav.svg | LineUp",
-    "https://res.cloudinary.com/dyvxhpzxd/image/upload/f_webp,c_limit,w_3840,q_auto/lineup/events/johxqmbj8rvytedqvelq.jpg | ",
-    "https://res.cloudinary.com/dyvxhpzxd/image/upload/f_webp,c_limit,w_3840,q_auto/lineup/events/johxqmbj8rvytedqvelq.jpg | V I IV le Vent II",
-    "/icon_orga.svg | LineUp Logo",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | ",
-    "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23 | "
-   ],
-   "iframes": [
-    "https://maps.google.com/maps?q=2037+R.+Saint-Denis,+Montréal,+QC+H2X+3K8,+Canada&z=15&output=embed",
+    "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcdTGEUAAAAAEZcVpuPVjUIBkC4qkye95zkb3Bw&co=aHR0cHM6Ly9sZXBvaW50ZGV2ZW50ZS5jb206NDQz&hl=fr-CA&v=Dq",
     "",
+    "",
+    "https://www.google.com/recaptcha/api2/bframe?hl=fr-CA&v=DqDoLJqJmjhqr0vRwNZ2MCHA&k=6LcdTGEUAAAAAEZcVpuPVjUIBkC4qkye95zkb3Bw&bft=0dAFcWeA6o4bD6fa6rCM0T",
     ""
    ],
    "calendriers": []
   },
   "navigateur": {
-   "taille": 2413,
-   "texte": "Explorer <https://lineup-event.com/fr/events>\nConnexion <https://lineup-event.com/fr/auth/signin>\nInscription <https://lineup-event.com/fr/auth/signup>\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room, 2037 R. Saint-Denis, Montréal\n4\nBillets\nFLOCONS\nÉpuisé\n0.00 $\nBRISE\nDisponible\n10.00 $\nPOUDRERIE\nBientôt disponible\n15.00 $\nTEMPÊTE\nBientôt disponible\n17.50 $\n4\nBillets\nFLOCONS\nÉpuisé\n0.00 $\nBRISE\nDisponible\n10.00 $\nPOUDRERIE\nBientôt disponible\n15.00 $\nTEMPÊTE\nBientôt disponible\n17.50 $\nV I IV Collective Membre depuis novembre 2026 <https://lineup-event.com/fr/organizer/v-i-iv-collective>\nS'abonner\nDescription\nV I IV Collective présente V I IV le Vent II \nV I IV Collective présente sa deuxième édition de V I IV le Vent, un évènement qui frappe Montréal à chaque mois de Décembre. Venez danser aux sons de vos artistes locaux préférés et préparez-vous à affronter la tempête qui s'apprête à s'abattre sur Le Red Room de plein fouet. \nEmplacement\nNous respectons votre vie privée\nNous utilisons des cookies pour améliorer votre expérience sur LineUp, analyser notre trafic et personnaliser nos contenus. Vous pouvez choisir les cookies que vous acceptez. \nEn savoir plus <https://res.cloudinary.com/dyvxhpzxd/image/upload/v1771366917/COOKIES_FR_V1_mxbcgi.pdf>\nPersonnaliser\nTout refuser\nTout accepter\nV I IV le Vent II - LineUp\nCombinaison de frappes\nAction\n←\nDéplacer vers la gauche\n→\nDéplacer vers la droite\n↑\nDéplacer vers le haut\n↓\nDéplacer vers le bas\n+\nEffectuer un zoom avant\n-\nEffectuer un zoom arrière\nDébut\nSauter vers la gauche par incréments de 75 %\nFin\nSauter vers la droite par incréments de 75 %\nPage précédente\nSauter vers le haut par incréments de 75 %\nPage suivante\nSauter vers le bas par incréments de 75 %\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nAucune image disponible.\nRaccourcis-clavier\nDonnées de la carte\nDonnées cartographiques ©2026 Google\nDonnées cartographiques ©2026 Google\n200 m \nCliquer pour basculer entre les unités métriques et impériales\nConditions d'utilisation <https://www.google.com/intl/fr-CA_US/help/terms_maps.html>\nSignaler une erreur cartographique <https://www.google.com/maps/@45.516341,-73.5658678,15z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3>\nBESbswy\nBESbswy",
-   "courriels": [],
+   "taille": 10859,
+   "texte": "La Rocambolesque présente Improv The Rambunctious - Yellow vs Green (August 4 @Aux Angles Ronds) - 4 août 2026 - Aux Angles Ronds, Montréal, QC - Lepointdevente.com\nPasser au contenu <https://lepointdevente.com/billets/improv18#skip-content-anchor>\nMenu principal\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nAide\nCentre d'aide <http://aide.lepointdevente.com/>\nTutoriels vidéos <https://www.youtube.com/@Lepointdeventecom-vu9lt/videos>\nF.A.Q. <https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com>\nÉtudes de cas <https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas>\nBonnes pratiques <https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques>\nFormations <https://lepointdevente.com/organisateurs/landing-page/formations>\nEnglish <https://lepointdevente.com/?lang=en>\nConnexion <https://lepointdevente.com/connexion/>\nConnexion\nMon compte <https://lepointdevente.com/mon-compte/>\nGestion des événements <https://lepointdevente.com/gestion/>\nPanier d'achat <https://lepointdevente.com/panier>\nDéconnexion <https://lepointdevente.com/deconnexion/>\nCréer un événement <https://lepointdevente.com/organisateurs>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCréer un événement <https://lepointdevente.com/organisateurs>\nÉvénements <https://lepointdevente.com/>\nÉvénements virtuels <https://lepointdevente.com/?type=virtual&locality=>\nÉvénements à Montréal <https://lepointdevente.com/?type=physical&locality=11&radius=0>\nÉvénements à Québec <https://lepointdevente.com/?type=physical&locality=1&radius=0>\nÉvénements à Trois-Rivières <https://lepointdevente.com/?type=physical&locality=2272&radius=0>\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nBlogue <http://blog.lepointdevente.com/>\nContact <https://lepointdevente.com/contact/>\nEmplois <https://lepointdevente.com/organisateurs/a-propos/emplois/>\nConditions d'utilisation <https://lepointdevente.com/conditions/>\nPolitique de confidentialité <https://lepointdevente.com/conditions/#confidentialite>\nPréférences de confidentialité\nRechercher partout\n(\nPlus d'options\n)\nLa Rocambolesque présente\nImprov The Rambunctious - Yellow vs Green (August 4 @Aux Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux Angles Ronds <https://lepointdevente.com/lieux/auxanglesronds>\n5333 Boul. Saint-Laurent\n, \nMontréal\n, \nQC\n, \nCanada\nPartagez cet événement\nFacebook <https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\nTwitter <https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\nLinkedin <https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29>\nPinterest <https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804002-1152x648-fr-6a6a8758.png&description=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29>\nEnvoyer par courriel <mailto:?subject=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29&body=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18>\n Lepointdevente.com agit à titre de mandataire pour \nLa Rocambolesque <https://lepointdevente.com/larocambolesque>\n dans le cadre de l’affichage en ligne et la vente de billets pour ses événements.\nPour plus d’information à propos de cet événement, veuillez contacter l’organisateur de l’événement, \nLa Rocambolesque <https://lepointdevente.com/larocambolesque>\n, à \narmand@rocambolesque.ca <mailto:armand@rocambolesque.ca>\n. \nAchat de billets\nVous avez un code promotionnel?\nCliquez ici pour obtenir plus d'informations sur cet événement\nThe Rambunctious\n is Rocambolesque’s brand-new English-language improv platform!\nAn improv match in \nthree periods\n, with the second one dedicated to \nexperimental improv games\n.\nA true improv laboratory, packed with laughter, surprises, and genuine emotion.\nAll the iconic elements of the Québec-style improv match, now \nperformed in English\n!\nYou can find each team’s lineup here:\nhttps://rocambolesque.ca/evenement/r <https://rocambolesque.ca/evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n5333 Boulevard Saint-Laurent\nAll ages welcome\n---------\nLa Rocambolesque is a socio-cultural organization dedicated to the growth of improvisational theatre. Our mission is to create high-quality performance platforms for a wide range of performers.\nLa Rocambolesque is always welcoming new improvisers. Feel free to get in touch and come play with us!\nDiscover all our news and activities at\nwww.rocambolesque.ca <http://www.rocambolesque.ca>\nDétails de l'événement \nThe Rambunctious\n is Rocambolesque’s brand-new English-language improv platform!\nAn improv match in \nthree periods\n, with the second one dedicated to \nexperimental improv games\n.\nA true improv laboratory, packed with laughter, surprises, and genuine emotion.\nAll the iconic elements of the Québec-style improv match, now \nperformed in English\n!\nYou can find each team’s lineup here:\nhttps://rocambolesque.ca/evenement/r <https://rocambolesque.ca/evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n5333 Boulevard Saint-Laurent\nAll ages welcome\n---------\nLa Rocambolesque is a socio-cultural organization dedicated to the growth of improvisational theatre. Our mission is to create high-quality performance platforms for a wide range of performers.\nLa Rocambolesque is always welcoming new improvisers. Feel free to get in touch and come play with us!\nDiscover all our news and activities at\nwww.rocambolesque.ca <http://www.rocambolesque.ca>\nLieu de l'événement \nContacter l'organisateur \nFacebook <https://www.facebook.com/LaRocambolesque/>\nInstagram <https://www.instagram.com/rocambolesque_impro/>\nLinkedin <https://www.linkedin.com/company/rocambolesque/>\narmand@rocambolesque.ca <mailto:armand@rocambolesque.ca>\nrocambolesque.ca/ <https://rocambolesque.ca/>\nÉvénements à venir\nImprov The Rambunctious ! (November 24 - 6:30pm @Aux Angles Ronds) 24 novembre 2026, 18h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/1nh261124002>\nImpro LIGE - Rouges vs Jaunes (24 novembre @Aux Angles Ronds) 24 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/ligue-improvisation-lige7>\nImpro Le Bloc - Rouges + Jaunes (25 novembre @Aux Angles Ronds) 25 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/match-improvisation-bloc7>\nLe Fabuleux Club d'Impro - Rouges/Jaunes (26 novembre @Aux Angles Ronds) 26 novembre 2026, 20h30 Aux Angles Ronds, Montréal, QC <https://lepointdevente.com/billets/match-improvisation-fci7>\n© 2010–2026 Tous droits réservés\nFacebook <https://facebook.com/lepointdevente>\nTwitter <https://twitter.com/lepointdevente>\nInstagram <https://instagram.com/lepointdevente>\nLinkedIn <https://www.linkedin.com/company/lepointdevente-com>\nTiktok <https://www.tiktok.com/@lepointdevente.com>\nAcheter des billets <https://lepointdevente.com/>\nOffrir une carte-cadeau\nPolitique d’achat <https://lepointdevente.com/conditions/#achat>\nAide <http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne>\nOrganisateurs <https://lepointdevente.com/organisateurs>\nCr",
+   "courriels": [
+    "armand@rocambolesque.ca"
+   ],
    "contact": [
-    "https://lineup-event.com/fr/contact"
+    "https://lepointdevente.com/contact/"
    ],
-   "jsonld": [
-    "{\"@context\":\"https://schema.org\",\"@type\":\"Event\",\"name\":\"V I IV le Vent II\",\"description\":\"V I IV Collective présente V I IV le Vent II \\n\\nV I IV Collective présente sa deuxième édition de V I IV le Vent, un évènement qui frappe Montréal à chaque mois de Décembre. Venez danser aux sons de vos artistes locaux préférés et préparez-vous à affronter la tempête qui s'apprête à s'abattre sur Le Red Room de plein fouet. \\n\\n\",\"startDate\":\"2026-12-18T02:00:00.000Z\",\"endDate\":\"2026-12-18T08:00:00.000Z\",\"location\":{\"@type\":\"Place\",\"name\":\"Le Red Room\",\"address\":\"2037 R. Saint-Denis, Montréal, QC H2X 3K8, Canada\"},\"image\":\"https://res.cloudinary.com/dyvxhpzxd/image/upload/v1794964702/lineup/events/johxqmbj8rvytedqvelq.jpg\",\"url\":\"https://lineup-event.com/event/v-i-iv-le-vent-ii\",\"organizer\":{\"@type\":\"Organization\",\"name\":\"V I IV Collective\",\"url\":\"https://lineup-event.com/organizer/v-i-iv-collective\"},\"eventStatus\":\"https://schema.org/EventScheduled\",\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"offers\":{\"@type\":\"AggregateOffer\",\"lowPrice\":\"10.00\",\"highPrice\":\"17.50\",\"priceCurrency\":\"CAD\",\"availability\":\"https://schema.org/InStock\",\"url\":\"https://lineup-event.com/event/v-i-iv-le-vent-ii\",\"validFrom\":\"2026-11-18T22:00:00.000Z\"}}"
-   ],
-   "heures": [
-    "-event.com/fr/auth/signup>\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room,",
-    "om/fr/auth/signup>\nV I IV le Vent II\n17 décembre de 21:00 à 03:00\nLe Red Room, 2037 R."
-   ],
-   "liens": [
-    "https://www.instagram.com/lineupevents_/",
-    "https://www.tiktok.com/@lineup.events"
-   ],
-   "menu": [
-    "Explorer → https://lineup-event.com/fr/events",
-    "Événements à venir → https://lineup-event.com/fr/events",
-    "Créer un événement → https://lineup-event.com/fr/auth/signin",
-    "Instagram → https://www.instagram.com/lineupevents_/",
-    "TikTok → https://www.tiktok.com/@lineup.events"
-   ]
-  }
- },
- "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-tradition/": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg",
-   "img": [
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/img-conference-enrregistre.jpg | ",
-    "/wp-content/themes/sav-theme-cds/assets/icones/logo-cds.svg | Logo Coeur des sciences",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/CDS20ans.png | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg | "
-   ],
-   "iframes": [
-    "https://gabarit-adaptatif.uqam.ca/statique/scripts/noscript.html"
-   ],
-   "calendriers": []
-  },
-  "simple": {
-   "taille": 2946,
-   "texte": "Petrouchka de Stravinsky | Coeur des sciences | UQAM\nVisite et concert <https://coeurdessciences.uqam.ca/evenement-type/visite-concert/>\n–\nMaison symphonique <https://coeurdessciences.uqam.ca/evenement-lieu/maison/>\nPetrouchka de Stravinsky\nConsulter les autres dates\nAutres dates\n Visite et concert – Maison symphonique \nPetrouchka de Stravinsky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 décembre \n 17h00 \nEntre danse et traditions\nJeudi\n3 décembre 2026\n17h00\nTarif\n65.00 \n$\n – \n95.00 \n$\nPlage de prix : 65.00 $ à 95.00 $\nCet événement est complet\nInaugurée en 2011, la Maison symphonique est reconnue internationalement pour l’excellence de son acoustique. Quels critères ont permis d’atteindre cette excellence?\nEn quelques mots\nSituée en plein centre-ville à proximité du métro et des nombreux chantiers, comment s’est-on assuré qu’aucun bruit n’interfère avec la musique jouée à l’intérieur? Comment la salle a-t-elle été conçue pour que chacun des 2100 spectateurs bénéficie de la même qualité sonore? De la forme de la salle au choix des matériaux, en passant par le design des sièges ou encore le choix du système de ventilation, venez découvrir pourquoi la Maison symphonique est un véritable écrin musical.\nLa visite de la salle sera ponctuée de démonstrations acoustiques. Elle sera suivie du concert \nPetrouchka de Stravinsky : entre danse et traditions <https://osm.ca/fr/concert/petrouchka-de-stravinsky-entre-danse-et-traditions/>\n de l’Orchestre symphonique de Montréal où vous pourrez savourer toutes vos nouvelles connaissances!\n*\nLes billets pour le concert vous seront remis sur place, le soir de l’événement.\nNotez que vous n’aurez pas le choix des sièges. \nCette visite sera guidée par :\nRomain Dumoulin\n, acousticien, directeur de projets à WSP\nInformations importantes\nTarif\ns\nLes tarifs comprennent la visite et le concert. Exceptionnellement, nous ne pouvons pas offrir de tarif réduit. \nAucun remboursement\nDéroulement\n16h45 : rendez-vous à la billetterie de la Maison symphonique, 1600 St-Urbain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite guidée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : fin du concert\nAussi à l’horaire\nVoir tous les événements <https://coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphithéâtre Forêts anciennes Détails <https://coeurdessciences.uqam.ca/evenements/forets-anciennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En ligne Traverser la tempête Périménopause Détails <https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/>\nSamedi 5 décembre 2026 13h30 Spectacle – Amphithéâtre La chimie de Noël Détails <https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/>",
-   "courriels": [],
-   "contact": [
-    "https://coeurdessciences.uqam.ca/nous-joindre/"
-   ],
-   "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\",\"name\":\"Petrouchka de Stravinsky | Coeur des sciences | UQAM\",\"isPartOf\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"datePublished\":\"2026-10-02T12:47:06+00:00\",\"dateModified\":\"2026-11-03T19:50:19+00:00\",\"description\":\"Inaugurée en 2011, la Maison symphonique est reconnue internationalement pour l’excellence de son acoustique. Quels critères ont permis d’atteindre cette excellence?\",\"breadcrumb\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"contentUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"width\":600,\"height\":450,\"caption\":\"OSM\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Événements\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Petrouchka de Stravinsky\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\",\"name\":\"Coeur des sciences\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/coeurdessciences.uqam.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
-   ],
-   "heures": [
-    "symphonique \nPetrouchka de Stravinsky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 déce",
-    "insky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 décembre \n 17h00 \nEntre danse et tra",
-    "re \n 17h00 \nEntre danse et traditions\nJeudi\n3 décembre 2026\n17h00\nTarif\n65.00 \n$\n – \n9",
-    "as offrir de tarif réduit. \nAucun remboursement\nDéroulement\n16h45 : rendez-vous à la ",
-    "00 St-Urbain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite gui",
-    "bain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite guidée sur",
-    "0 : visite guidée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : con",
-    "dée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : f",
-    "ique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : fin du concert\nAu",
-    "coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphith",
-    "iennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – ",
-    "ciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En lign",
-    "ca/evenements/traverser-la-tempete/>\nSamedi 5 décembre 2026 13h30 Spectacle – Amphithé"
-   ],
-   "liens": [
-    "https://coeurdessciences.uqam.ca/evenement-lieu/maison/",
-    "https://coeurdessciences.uqam.ca/evenement-type/visite-concert/",
-    "https://coeurdessciences.uqam.ca/evenements-passes/",
-    "https://coeurdessciences.uqam.ca/evenements/",
-    "https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fpetrouchka-de-stravinsky-entre-danse-et-traditions-copie%2F",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fpetrouchka-de-stravinsky-entre-danse-et-traditions-copie%2F&#038;format=xml"
-   ],
-   "menu": [
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Visite et concert → https://coeurdessciences.uqam.ca/evenement-type/visite-concert/",
-    "Maison symphonique → https://coeurdessciences.uqam.ca/evenement-lieu/maison/",
-    " → https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    " → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Petrouchka de Stravinsky : entre danse et traditio → https://osm.ca/fr/concert/petrouchka-de-stravinsky-entre-danse-et-traditions/",
-    " → https://ddec1-0-en-ctp.trendmicro.com/wis/clicktime/v1/query?url=https%3a%2f%2fwww.osm.ca%2ffr%2fconcerts%2fbruce%2dliu%2dinterprete%2dle%2dsecond%2dconcerto%2dde%2dchopin%2f&umid=c1fabc8f-2f99-4d3",
-    "Voir tous les événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Mardi 1 décembre 2026 18h00 Conférence – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "Cet événement est complet Mercredi 2 décembre 2026 → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Jeudi 3 décembre 2026 12h00 Conférence – En ligne  → https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "Samedi 5 décembre 2026 13h30 Spectacle – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg",
-   "img": [
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/img-conference-enrregistre.jpg | ",
-    "/wp-content/themes/sav-theme-cds/assets/icones/logo-cds.svg | Logo Coeur des sciences",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/CDS20ans.png | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg | "
-   ],
-   "iframes": [
-    "https://gabarit-adaptatif.uqam.ca/statique/scripts/noscript.html"
-   ],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 2960,
-   "texte": "Petrouchka de Stravinsky | Coeur des sciences | UQAM\nVisite et concert <https://coeurdessciences.uqam.ca/evenement-type/visite-concert/>\n–\nMaison symphonique <https://coeurdessciences.uqam.ca/evenement-lieu/maison/>\nPetrouchka de Stravinsky\nConsulter les autres dates\nAutres dates\n Visite et concert – Maison symphonique \nPetrouchka de Stravinsky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 décembre \n 17h00 \nEntre danse et traditions\nJeudi\n3 décembre 2026\n17h00\nTarif\n65.00 \n$\n – \n95.00 \n$\nPlage de prix : 65.00 $ à 95.00 $\nCet événement est complet\nInaugurée en 2011, la Maison symphonique est reconnue internationalement pour l’excellence de son acoustique. Quels critères ont permis d’atteindre cette excellence?\nEn quelques mots\nSituée en plein centre-ville à proximité du métro et des nombreux chantiers, comment s’est-on assuré qu’aucun bruit n’interfère avec la musique jouée à l’intérieur? Comment la salle a-t-elle été conçue pour que chacun des 2100 spectateurs bénéficie de la même qualité sonore? De la forme de la salle au choix des matériaux, en passant par le design des sièges ou encore le choix du système de ventilation, venez découvrir pourquoi la Maison symphonique est un véritable écrin musical.\nLa visite de la salle sera ponctuée de démonstrations acoustiques. Elle sera suivie du concert \nPetrouchka de Stravinsky : entre danse et traditions <https://osm.ca/fr/concert/petrouchka-de-stravinsky-entre-danse-et-traditions/>\n de l’Orchestre symphonique de Montréal où vous pourrez savourer toutes vos nouvelles connaissances!\n*\nLes billets pour le concert vous seront remis sur place, le soir de l’événement.\nNotez que vous n’aurez pas le choix des sièges. \nCette visite sera guidée par :\nRomain Dumoulin\n, acousticien, directeur de projets à WSP\nInformations importantes\nTarif\ns\nLes tarifs comprennent la visite et le concert. Exceptionnellement, nous ne pouvons pas offrir de tarif réduit. \nAucun remboursement\nDéroulement\n16h45 : rendez-vous à la billetterie de la Maison symphonique, 1600 St-Urbain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite guidée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : fin du concert\nAussi à l’horaire\nVoir tous les événements <https://coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphithéâtre Forêts anciennes Détails <https://coeurdessciences.uqam.ca/evenements/forets-anciennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En ligne Traverser la tempête Périménopause Détails <https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/>\nSamedi 5 décembre 2026 13h30 Spectacle – Amphithéâtre La chimie de Noël Détails <https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/>\nNotifications",
-   "courriels": [],
-   "contact": [
-    "https://coeurdessciences.uqam.ca/nous-joindre/"
-   ],
-   "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\",\"name\":\"Petrouchka de Stravinsky | Coeur des sciences | UQAM\",\"isPartOf\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"datePublished\":\"2026-10-02T12:47:06+00:00\",\"dateModified\":\"2026-11-03T19:50:19+00:00\",\"description\":\"Inaugurée en 2011, la Maison symphonique est reconnue internationalement pour l’excellence de son acoustique. Quels critères ont permis d’atteindre cette excellence?\",\"breadcrumb\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#primaryimage\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"contentUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/OSM600.jpg\",\"width\":600,\"height\":450,\"caption\":\"OSM\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/petrouchka-de-stravinsky-entre-danse-et-traditions-copie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Événements\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Petrouchka de Stravinsky\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\",\"name\":\"Coeur des sciences\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/coeurdessciences.uqam.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
-   ],
-   "heures": [
-    "symphonique \nPetrouchka de Stravinsky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 déce",
-    "insky\n jeudi \n 3 décembre \n 17h00 \n mercredi \n 2 décembre \n 17h00 \nEntre danse et tra",
-    "re \n 17h00 \nEntre danse et traditions\nJeudi\n3 décembre 2026\n17h00\nTarif\n65.00 \n$\n – \n9",
-    "as offrir de tarif réduit. \nAucun remboursement\nDéroulement\n16h45 : rendez-vous à la ",
-    "00 St-Urbain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite gui",
-    "bain (accueil + remise des billets pour le concert)\n17h00 à 18h30 : visite guidée sur",
-    "0 : visite guidée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : con",
-    "dée sur l’acoustique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : f",
-    "ique de la Maison symphonique\n18h45 : pause\n19h30 : concert\n21h30 : fin du concert\nAu",
-    "coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphith",
-    "iennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – ",
-    "ciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En lign",
-    "ca/evenements/traverser-la-tempete/>\nSamedi 5 décembre 2026 13h30 Spectacle – Amphithé"
-   ],
-   "liens": [
-    "https://coeurdessciences.uqam.ca/evenement-lieu/maison/",
-    "https://coeurdessciences.uqam.ca/evenement-type/visite-concert/",
-    "https://coeurdessciences.uqam.ca/evenements-passes/",
-    "https://coeurdessciences.uqam.ca/evenements/",
-    "https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "https://coeurdessciences.uqam.ca/wp-content/themes/sav-theme-cds/blocks/evenement/evenement.css?ver=1792090917",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fpetrouchka-de-stravinsky-entre-danse-et-traditions-copie%2F",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fpetrouchka-de-stravinsky-entre-danse-et-traditions-copie%2F&amp;format=xml"
-   ],
-   "menu": [
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Visite et concert → https://coeurdessciences.uqam.ca/evenement-type/visite-concert/",
-    "Maison symphonique → https://coeurdessciences.uqam.ca/evenement-lieu/maison/",
-    " → https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    " → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Petrouchka de Stravinsky : entre danse et traditio → https://osm.ca/fr/concert/petrouchka-de-stravinsky-entre-danse-et-traditions/",
-    " → https://ddec1-0-en-ctp.trendmicro.com/wis/clicktime/v1/query?url=https%3a%2f%2fwww.osm.ca%2ffr%2fconcerts%2fbruce%2dliu%2dinterprete%2dle%2dsecond%2dconcerto%2dde%2dchopin%2f&umid=c1fabc8f-2f99-4d3",
-    "Voir tous les événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Mardi 1 décembre 2026 18h00 Conférence – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "Cet événement est complet Mercredi 2 décembre 2026 → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Jeudi 3 décembre 2026 12h00 Conférence – En ligne  → https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "Samedi 5 décembre 2026 13h30 Spectacle – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/"
-   ]
-  }
- },
- "https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg",
-   "img": [
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/img-conference-enrregistre.jpg | ",
-    "/wp-content/themes/sav-theme-cds/assets/icones/logo-cds.svg | Logo Coeur des sciences",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/CDS20ans.png | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026-600x400.jpg | La chimie de Noël",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/logo_quebec.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM"
-   ],
-   "iframes": [
-    "https://gabarit-adaptatif.uqam.ca/statique/scripts/noscript.html"
-   ],
-   "calendriers": []
-  },
-  "simple": {
-   "taille": 2777,
-   "texte": "La chimie de Noël | Coeur des sciences | UQAM\nSpectacle <https://coeurdessciences.uqam.ca/evenement-type/spectacle/>\n–\nAmphithéâtre <https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/>\nLa chimie de Noël\nSamedi\n5 décembre 2026\n13h30\nTarif\n15.00 \n$\n – \n20.00 \n$\nPlage de prix : 15.00 $ à 20.00 $\nSpectacle recommandé pour les 5-15 ans et leurs parents (et tous les adultes qui ont gardé un cœur d’enfant!).\nEn quelques mots\nAvec lui ça fait boom, ça fait splash, ça décoiffe! Laissez-vous emporter par la folie de Yannick Bergeron, un chimiste pas comme les autres. Au programme : nuages gigantesques, glace sèche, luminol et bien d’autres découvertes hallucinantes et spectaculaires!\nUn spectacle de Yannick Bergeron\nYannick Bergeron a enseigné la chimie au collège St-Jean-Vianney pendant 20 ans. Il est également concepteur des expériences du magazine \nLes Débrouillards\n. Son spectacle \nLa magie de la chimie\n a remporté un succès phénoménal auprès de plus de 150 000 jeunes.\n*Attention : vous ne recevrez pas de billets électroniques. Les présences seront prises sur place.\nInformations importantes\nLieu\nAmphithéâtre, pavillon Sherbrooke de l’UQAM \n200, rue Sherbrooke Ouest\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nNul besoin d’imprimer votre courriel de confirmation. Nous vous accueillerons avec votre nom de famille.\nCette soirée est organisée avec le soutien du \nministère du Développement économique, de l’Innovation et de l’Énergie du Québec <https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.economie.gouv.qc.ca%2F&data=05%7C02%7Cpoisson.perrine%40uqam.ca%7Cc67d9172ed1f4c11c2da08dd58300a4d%7C12cb4e1a42da491c90e17a7a9753506f%7C0%7C0%7C638763685534532399%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=HFzhVCnBcrYx%2BLu00IaSdkj%2BrAJ7OkKDeqpZ4PEtZdA%3D&reserved=0>\n.\nAussi à l’horaire\nVoir tous les événements <https://coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphithéâtre Forêts anciennes Détails <https://coeurdessciences.uqam.ca/evenements/forets-anciennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En ligne Traverser la tempête Périménopause Détails <https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/>\nCet événement est complet Jeudi 3 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/>",
-   "courriels": [],
-   "contact": [
-    "https://coeurdessciences.uqam.ca/nous-joindre/"
-   ],
-   "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\",\"name\":\"La chimie de Noël | Coeur des sciences | UQAM\",\"isPartOf\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"datePublished\":\"2026-10-22T12:44:37+00:00\",\"dateModified\":\"2026-11-21T22:31:45+00:00\",\"description\":\"Avec lui ça fait boom, ça fait splash, ça décoiffe! Laissez-vous emporter par la folie de Yannick Bergeron, un chimiste pas comme les autres. Au programme : nuages gigantesques, glace sèche, luminol et bien d'autres découvertes hallucinantes et spectaculaires!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"contentUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"width\":1920,\"height\":1280},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Événements\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"La chimie de Noël\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\",\"name\":\"Coeur des sciences\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/coeurdessciences.uqam.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
-   ],
-   "heures": [
-    "ieu/amphitheatre/>\nLa chimie de Noël\nSamedi\n5 décembre 2026\n13h30\nTarif\n15.00 \n$\n – \n2",
-    "00, rue Sherbrooke Ouest\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nN",
-    "st\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nNul besoin d’imprime",
-    "coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphith",
-    "iennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – ",
-    "ciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En lign",
-    "a-tempete/>\nCet événement est complet Jeudi 3 décembre 2026 17h00 Visite et concert – "
-   ],
-   "liens": [
-    "https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/",
-    "https://coeurdessciences.uqam.ca/evenement-type/spectacle/",
-    "https://coeurdessciences.uqam.ca/evenements-passes/",
-    "https://coeurdessciences.uqam.ca/evenements/",
-    "https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fla-chimie-de-noel%2F",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fla-chimie-de-noel%2F&#038;format=xml"
-   ],
-   "menu": [
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Spectacle → https://coeurdessciences.uqam.ca/evenement-type/spectacle/",
-    "Amphithéâtre → https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/",
-    "Voir tous les événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Mardi 1 décembre 2026 18h00 Conférence – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "Cet événement est complet Mercredi 2 décembre 2026 → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Jeudi 3 décembre 2026 12h00 Conférence – En ligne  → https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "Cet événement est complet Jeudi 3 décembre 2026 17 → https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg",
-   "img": [
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/img-conference-enrregistre.jpg | ",
-    "/wp-content/themes/sav-theme-cds/assets/icones/logo-cds.svg | Logo Coeur des sciences",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/CDS20ans.png | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026-600x400.jpg | La chimie de Noël",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/logo_quebec.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg | ",
-    "https://coeurdessciences.uqam.ca/wp-content/uploads/OSM600.jpg | OSM"
-   ],
-   "iframes": [
-    "https://gabarit-adaptatif.uqam.ca/statique/scripts/noscript.html"
-   ],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 2791,
-   "texte": "La chimie de Noël | Coeur des sciences | UQAM\nSpectacle <https://coeurdessciences.uqam.ca/evenement-type/spectacle/>\n–\nAmphithéâtre <https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/>\nLa chimie de Noël\nSamedi\n5 décembre 2026\n13h30\nTarif\n15.00 \n$\n – \n20.00 \n$\nPlage de prix : 15.00 $ à 20.00 $\nSpectacle recommandé pour les 5-15 ans et leurs parents (et tous les adultes qui ont gardé un cœur d’enfant!).\nEn quelques mots\nAvec lui ça fait boom, ça fait splash, ça décoiffe! Laissez-vous emporter par la folie de Yannick Bergeron, un chimiste pas comme les autres. Au programme : nuages gigantesques, glace sèche, luminol et bien d’autres découvertes hallucinantes et spectaculaires!\nUn spectacle de Yannick Bergeron\nYannick Bergeron a enseigné la chimie au collège St-Jean-Vianney pendant 20 ans. Il est également concepteur des expériences du magazine \nLes Débrouillards\n. Son spectacle \nLa magie de la chimie\n a remporté un succès phénoménal auprès de plus de 150 000 jeunes.\n*Attention : vous ne recevrez pas de billets électroniques. Les présences seront prises sur place.\nInformations importantes\nLieu\nAmphithéâtre, pavillon Sherbrooke de l’UQAM \n200, rue Sherbrooke Ouest\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nNul besoin d’imprimer votre courriel de confirmation. Nous vous accueillerons avec votre nom de famille.\nCette soirée est organisée avec le soutien du \nministère du Développement économique, de l’Innovation et de l’Énergie du Québec <https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.economie.gouv.qc.ca%2F&data=05%7C02%7Cpoisson.perrine%40uqam.ca%7Cc67d9172ed1f4c11c2da08dd58300a4d%7C12cb4e1a42da491c90e17a7a9753506f%7C0%7C0%7C638763685534532399%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=HFzhVCnBcrYx%2BLu00IaSdkj%2BrAJ7OkKDeqpZ4PEtZdA%3D&reserved=0>\n.\nAussi à l’horaire\nVoir tous les événements <https://coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphithéâtre Forêts anciennes Détails <https://coeurdessciences.uqam.ca/evenements/forets-anciennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En ligne Traverser la tempête Périménopause Détails <https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/>\nCet événement est complet Jeudi 3 décembre 2026 17h00 Visite et concert – Maison symphonique Petrouchka de Stravinsky Entre danse et traditions Détails <https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/>\nNotifications",
-   "courriels": [],
-   "contact": [
-    "https://coeurdessciences.uqam.ca/nous-joindre/"
-   ],
-   "jsonld": [
-    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\",\"name\":\"La chimie de Noël | Coeur des sciences | UQAM\",\"isPartOf\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"datePublished\":\"2026-10-22T12:44:37+00:00\",\"dateModified\":\"2026-11-21T22:31:45+00:00\",\"description\":\"Avec lui ça fait boom, ça fait splash, ça décoiffe! Laissez-vous emporter par la folie de Yannick Bergeron, un chimiste pas comme les autres. Au programme : nuages gigantesques, glace sèche, luminol et bien d'autres découvertes hallucinantes et spectaculaires!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#primaryimage\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"contentUrl\":\"https:\\/\\/coeurdessciences.uqam.ca\\/wp-content\\/uploads\\/Bergeron2026.jpg\",\"width\":1920,\"height\":1280},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/la-chimie-de-noel\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Événements\",\"item\":\"https:\\/\\/coeurdessciences.uqam.ca\\/evenements\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"La chimie de Noël\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/coeurdessciences.uqam.ca\\/#website\",\"url\":\"https:\\/\\/coeurdessciences.uqam.ca\\/\",\"name\":\"Coeur des sciences\",\"description\":\"\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/coeurdessciences.uqam.ca\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"}]}"
-   ],
-   "heures": [
-    "ieu/amphitheatre/>\nLa chimie de Noël\nSamedi\n5 décembre 2026\n13h30\nTarif\n15.00 \n$\n – \n2",
-    "00, rue Sherbrooke Ouest\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nN",
-    "st\nDéroulement\nOuverture des portes à 13h00\nDurée : environ 1h\nNul besoin d’imprime",
-    "coeurdessciences.uqam.ca/evenements/>\nMardi 1 décembre 2026 18h00 Conférence – Amphith",
-    "iennes/>\nCet événement est complet Mercredi 2 décembre 2026 17h00 Visite et concert – ",
-    "ciences.uqam.ca/evenements/osm-2026/>\nJeudi 3 décembre 2026 12h00 Conférence – En lign",
-    "a-tempete/>\nCet événement est complet Jeudi 3 décembre 2026 17h00 Visite et concert – "
-   ],
-   "liens": [
-    "https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/",
-    "https://coeurdessciences.uqam.ca/evenement-type/spectacle/",
-    "https://coeurdessciences.uqam.ca/evenements-passes/",
-    "https://coeurdessciences.uqam.ca/evenements/",
-    "https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/",
-    "https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "https://coeurdessciences.uqam.ca/wp-content/themes/sav-theme-cds/blocks/evenement/evenement.css?ver=1792090917",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fla-chimie-de-noel%2F",
-    "https://coeurdessciences.uqam.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcoeurdessciences.uqam.ca%2Fevenements%2Fla-chimie-de-noel%2F&amp;format=xml"
-   ],
-   "menu": [
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Spectacle → https://coeurdessciences.uqam.ca/evenement-type/spectacle/",
-    "Amphithéâtre → https://coeurdessciences.uqam.ca/evenement-lieu/amphitheatre/",
-    "Voir tous les événements → https://coeurdessciences.uqam.ca/evenements/",
-    "Mardi 1 décembre 2026 18h00 Conférence – Amphithéâ → https://coeurdessciences.uqam.ca/evenements/forets-anciennes/",
-    "Cet événement est complet Mercredi 2 décembre 2026 → https://coeurdessciences.uqam.ca/evenements/osm-2026/",
-    "Jeudi 3 décembre 2026 12h00 Conférence – En ligne  → https://coeurdessciences.uqam.ca/evenements/traverser-la-tempete/",
-    "Cet événement est complet Jeudi 3 décembre 2026 17 → https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
-    "Événements passés → https://coeurdessciences.uqam.ca/evenements-passes/"
-   ]
-  }
- },
- "https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403": {
-  "simple": {
-   "erreur": "406 Client Error: Not Acceptable for url: https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403"
-  },
-  "navigateur_images": {
-   "og": "http://images.sk-static.com/images/media/img/col6/20240624-161511-428237.jpg",
-   "img": [
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | NTO Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Noga Erez Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Vieux Farka Toure Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Roar Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Bruce Dickinson Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Currents Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Marsh Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | The Chats Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Infected Mushroom Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Land of Talk Concert Tickets - 2026 Tour Dates",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Jess Glynne Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Naughty Boy Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | We The Kings Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | The Band Perry Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | E-40 Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Sienna Spiro Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Madra Salach Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Amira Elfeky Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | swim school Concert Tickets - 2026 Tour Dates.",
-    "//assets.sk-static.com/images/default_images/thumb/default-artist.png | Westside Cowboy Concert Tickets - 2026 Tour Dates.",
-    "/images/react/search-icon-nav.svg | search icon",
-    "//assets.sk-static.com/images/nw/components/navigation/header-logo.svg | Songkick",
-    "//assets.sk-static.com/images/nw/components/navigation/local-navigation/navigation-icon.png | Show navigation",
-    "//assets.sk-static.com/images/nw/components/navigation/user.svg | Log in",
-    "//assets.sk-static.com/images/nw/components/navigation/carousel/search_icon_24.svg | search"
-   ],
-   "iframes": [
-    "",
-    "about:blank",
-    "",
-    "",
-    "about:blank"
-   ],
-   "calendriers": []
-  },
-  "navigateur": {
-   "taille": 8428,
-   "texte": "Magic Tuber Stringband Montreal Tickets, Error 403, 06 Dec 2026 – Songkick\nMontreal concerts <https://www.songkick.com/metro-areas/27377-canada-montreal>\nMontreal concerts <https://www.songkick.com/metro-areas/27377-canada-montreal>\nMontreal concerts <https://www.songkick.com/metro-areas/27377-canada-montreal>\nNTO MTELUS <https://www.songkick.com/concerts/43522487-nto-at-mtelus>\nNoga Erez MTELUS <https://www.songkick.com/concerts/43514626-noga-erez-at-mtelus>\nVieux Farka Toure Théâtre Maisonneuve, Place des Arts <https://www.songkick.com/concerts/43510059-vieux-farka-toure-at-theatre-maisonneuve-place-des-arts>\nRoar Théâtre Fairmount Theatre <https://www.songkick.com/concerts/43530659-roar-at-theatre-fairmount-theatre>\nBruce Dickinson L'Olympia <https://www.songkick.com/concerts/43531697-bruce-dickinson-at-lolympia>\nCurrents MTELUS <https://www.songkick.com/concerts/43498189-currents-at-mtelus>\nMarsh Stereo <https://www.songkick.com/concerts/43522012-marsh-at-stereo>\nThe Chats L'Olympia <https://www.songkick.com/concerts/43500527-chats-at-lolympia>\nInfected Mushroom MTELUS <https://www.songkick.com/concerts/43498166-infected-mushroom-at-mtelus>\nLand of Talk La Sala Rossa <https://www.songkick.com/concerts/43514566-land-of-talk-at-la-sala-rossa>\nSee all Montreal concerts \n(\nChange location <https://www.songkick.com/session/filter_metro_area>\n)\nToday · <https://www.songkick.com/en/metro-areas/27377-canada-montreal?filters%5BmaxDate%5D=11%2F24%2F2026&filters%5BminDate%5D=11%2F24%2F2026#date-filter-form>\nNext 7 days · <https://www.songkick.com/en/metro-areas/27377-canada-montreal?filters%5BmaxDate%5D=12%2F01%2F2026&filters%5BminDate%5D=11%2F24%2F2026#date-filter-form>\nNext 30 days <https://www.songkick.com/en/metro-areas/27377-canada-montreal?filters%5BmaxDate%5D=12%2F24%2F2026&filters%5BminDate%5D=11%2F24%2F2026#date-filter-form>\nArtists <https://www.songkick.com/artists>\nPopular artists in Montreal <https://www.songkick.com/metro-areas/27377-canada-montreal#popular-artists-in-metro-area>\nTrending artists worldwide <https://www.songkick.com/leaderboards/trending_artists>\nJess Glynne <https://www.songkick.com/artists/4130211-jess-glynne>\nNaughty Boy <https://www.songkick.com/artists/732760-naughty-boy>\nWe The Kings <https://www.songkick.com/artists/569961-we-the-kings>\nThe Band Perry <https://www.songkick.com/artists/825630-band-perry>\nE-40 <https://www.songkick.com/artists/416142-e40>\nSienna Spiro <https://www.songkick.com/artists/10370270-sienna-spiro>\nMadra Salach <https://www.songkick.com/artists/10390468-madra-salach>\nAmira Elfeky <https://www.songkick.com/artists/10322139-amira-elfeky>\nswim school <https://www.songkick.com/artists/9883754-swim-school>\nWestside Cowboy <https://www.songkick.com/artists/10355080-westside-cowboy>\n Get your tour dates seen by one billion fans: \nSign up as an artist <https://tourbox.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=visitor>\nFestivals <https://www.songkick.com/festivals>\nTourbox for artists <https://tourbox.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=nav-tourbox-upsell-visitor>\nSearch for events or artists\nSign up <https://accounts.songkick.com/signup/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en>\nLog in <https://accounts.songkick.com/session/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en>\nGet the app\nHome <https://www.songkick.com/>\nMontreal concerts <https://www.songkick.com/metro-areas/27377-canada-montreal>\nChange location <https://www.songkick.com/session/filter_metro_area>\nPopular Artists <https://www.songkick.com/artists>\nFestivals <https://www.songkick.com/festivals>\nTourbox for artists <https://tourbox.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=nav-tourbox-upsell-visitor>\nLive streams <https://www.songkick.com/live-stream-concerts>\nLanguage\nEnglish <https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403>\nFrançais <https://www.songkick.com/fr/concerts/43403223-magic-tuber-stringband-at-error-403>\nEspañol <https://www.songkick.com/es/concerts/43403223-magic-tuber-stringband-at-error-403>\nDeutsch <https://www.songkick.com/de/concerts/43403223-magic-tuber-stringband-at-error-403>\nPortuguês <https://www.songkick.com/pt/concerts/43403223-magic-tuber-stringband-at-error-403>\nLog in to your account <https://accounts.songkick.com/session/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en>\nSign up <https://accounts.songkick.com/signup/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en>\n Find concerts\nConcerts near you <https://www.songkick.com/metro-areas/nearby>\nYour artists <https://www.songkick.com/metro-areas/nearby?sign_up=true>\nPopular artists <https://www.songkick.com/artists>\nTourbox for artists <https://tourbox.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=nav-tourbox-upsell-visitor>\nFlag a problem <https://support.songkick.com/hc/en-us/requests/new>\nMagic Tuber Stringband <https://www.songkick.com/artists/10062841-magic-tuber-stringband>\nSunday 06 December 2026\nError 403 <https://www.songkick.com/venues/4558109-error-403>\n,\nMontreal, QC, Canada <https://www.songkick.com/metro-areas/27377-canada-montreal>\nLine-up\nVenue\nMore events\nOn sale for 2 months\nEvent is in 1 week\nLine-up\nHeadliner Magic Tuber Stringband Last time in Montreal: First time! <https://www.songkick.com/artists/10062841-magic-tuber-stringband>\nVenue\nError 403 <https://www.songkick.com/venues/4558109-error-403>\nMontreal, QC, Canada\nView upcoming concerts <https://www.songkick.com/venues/4558109-error-403>\nUpcoming concerts for Magic Tuber Stringband\nMagic Tuber Stringband Saturday December 05, 2026 P'tit Ours, Montreal <https://www.songkick.com/concerts/43403212-magic-tuber-stringband-at-ptit-ours>\nMagic Tuber Stringband Tuesday December 08, 2026 Radio Bean, Burlington <https://www.songkick.com/concerts/43403205-magic-tuber-stringband-at-radio-bean>\nPhotos (1)\nSee all photos (1) <https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403#images>\nTickets on sale now\nError 403\n Buy tickets\n×\n Buy tickets\n Magic Tuber Stringband\n 06 December 2026\n Error 403\nThe Point of Sale\nOn sale now\nFlag a problem <https://support.songkick.com/hc/en-us/requests/new>\nHome <https://www.songkick.com/>\nAbout us <https://www.songkick.com/info/about>\nGet the app <https://www.songkick.com/app>\nBlog <https://www.songkick.com/blog>\nJobs <https://www.songkick.com/jobs>\nSupport <http://support.songkick.com/>\nMost popular charts <https://www.songkick.com/leaderboards/popular_artists>\nFestivals <https://www.songkick.com/festivals>\nNews <https://www.songkick.com/news>\nTourbox for artists <https://tourbox.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=tourboxforartists>\nCampaigns for promoters <https://campaigns.songkick.com/?utm_medium=referral&utm_source=songkick.com&utm_campaign=nav_campaign_footer>\nAPI information <https://www.songkick.com/developer>\nBrand guidelines <https://www.songkick.com/design>\nCommunity guidelines <https://www.songkick.com/info/guidelines>\nTerms of use <https://www.songkick.com/info/terms>\nPrivacy policy <https://www.songkick.com/info/privacy>\nCookies policy <https://www.songkick.com/info/cookies>\nYour Privacy Choices\nSecurity <https://www.songkick.com/info/security>\nLive streams <https://www.songkick.com/live-stream-concerts>\nLanguage\nEnglish <https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403>\nFrançais <https://www.songkick.com/fr/concerts/43403223-magic-tuber-stringband-at-error-403>\nEspañol <https://www.songkick.com/es/concerts/43403223-magic-tuber-stringband-at-error-4",
-   "courriels": [],
-   "contact": [],
-   "jsonld": [
-    "[{\"@context\":\"http://schema.org\",\"@type\":\"MusicEvent\",\"name\":\"Magic Tuber Stringband @ Error 403\",\"url\":\"https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403?utm_medium=organic\\u0026utm_source=microformat\",\"image\":\"https://images.sk-static.com/images/media/profile_images/artists/10062841/huge_avatar\",\"eventAttendanceMode\":\"https://schema.org/OfflineEventAttendanceMode\",\"location\":{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Montreal\",\"addressCountry\":\"Canada\",\"addressRegion\":\"QC\",\"streetAddress\":null,\"postalCode\":null},\"name\":\"Error 403\",\"sameAs\":null},\"eventStatus\":\"https://schema.org/EventScheduled\",\"startDate\":\"2026-12-06\",\"endDate\":\"2026-12-06\",\"performer\":[{\"@type\":\"MusicGroup\",\"name\":\"Magic Tuber Stringband\",\"genre\":[],\"sameAs\":\"https://www.songkick.com/artists/10062841-magic-tuber-stringband?utm_medium=organic\\u0026utm_source=microformat\"}],\"description\":\"Magic Tuber Stringband at Error 403 at 2026-12-06\",\"organizer\":{\"@type\":\"Organization\",\"name\":\"Magic Tuber Stringband\",\"url\":\"https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403?utm_medium=organic\\u0026utm_source=microformat\"},\"offers\":[{\"@type\":\"Offer\",\"url\":\"https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403?utm_medium=organic\\u0026utm_source=microformat\",\"availability\":\"https://schema.org/InStock\",\"validFrom\":\"2026-12-06\"}]}]"
-   ],
-   "heures": [],
-   "liens": [],
-   "menu": [
-    "Montreal concerts → https://www.songkick.com/metro-areas/27377-canada-montreal",
-    "Montreal concerts → https://www.songkick.com/metro-areas/27377-canada-montreal",
-    "Montreal concerts → https://www.songkick.com/metro-areas/27377-canada-montreal",
-    "NTO MTELUS → https://www.songkick.com/concerts/43522487-nto-at-mtelus",
-    "Noga Erez MTELUS → https://www.songkick.com/concerts/43514626-noga-erez-at-mtelus",
-    "Vieux Farka Toure Théâtre Maisonneuve, Place des A → https://www.songkick.com/concerts/43510059-vieux-farka-toure-at-theatre-maisonneuve-place-des-arts",
-    "Roar Théâtre Fairmount Theatre → https://www.songkick.com/concerts/43530659-roar-at-theatre-fairmount-theatre",
-    "Bruce Dickinson L'Olympia → https://www.songkick.com/concerts/43531697-bruce-dickinson-at-lolympia",
-    "Currents MTELUS → https://www.songkick.com/concerts/43498189-currents-at-mtelus",
-    "Marsh Stereo → https://www.songkick.com/concerts/43522012-marsh-at-stereo",
-    "The Chats L'Olympia → https://www.songkick.com/concerts/43500527-chats-at-lolympia",
-    "Infected Mushroom MTELUS → https://www.songkick.com/concerts/43498166-infected-mushroom-at-mtelus",
-    "Land of Talk La Sala Rossa → https://www.songkick.com/concerts/43514566-land-of-talk-at-la-sala-rossa",
-    "Sign up → https://accounts.songkick.com/signup/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en",
-    "Log in → https://accounts.songkick.com/session/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en",
-    "Montreal concerts → https://www.songkick.com/metro-areas/27377-canada-montreal",
-    "Live streams → https://www.songkick.com/live-stream-concerts",
-    "English → https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Français → https://www.songkick.com/fr/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Español → https://www.songkick.com/es/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Deutsch → https://www.songkick.com/de/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Português → https://www.songkick.com/pt/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Log in to your account → https://accounts.songkick.com/session/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&local",
-    "Sign up → https://accounts.songkick.com/signup/new?source_product=skweb&login_success_url=https%3A%2F%2Fwww.songkick.com%2Fconcerts%2F43403223-magic-tuber-stringband-at-error-403&locale=en",
-    "Concerts near you → https://www.songkick.com/metro-areas/nearby",
-    "View upcoming concerts → https://www.songkick.com/venues/4558109-error-403",
-    "Magic Tuber Stringband Saturday December 05, 2026  → https://www.songkick.com/concerts/43403212-magic-tuber-stringband-at-ptit-ours",
-    "Magic Tuber Stringband Tuesday December 08, 2026 R → https://www.songkick.com/concerts/43403205-magic-tuber-stringband-at-radio-bean",
-    "Live streams → https://www.songkick.com/live-stream-concerts",
-    "English → https://www.songkick.com/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Français → https://www.songkick.com/fr/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Español → https://www.songkick.com/es/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Deutsch → https://www.songkick.com/de/concerts/43403223-magic-tuber-stringband-at-error-403",
-    "Português → https://www.songkick.com/pt/concerts/43403223-magic-tuber-stringband-at-error-403"
-   ]
-  }
- },
- "https://montreal.askapunk.net/event/first-snow-freak-show-cafe-musette": {
-  "statut": 200,
-  "simple_images": {
-   "og": "https://montreal.askapunk.net/media/df64610df501d6fa3840591baa639076.jpg",
-   "img": [
-    "/logo.png | ",
-    "/media/thumb/df64610df501d6fa3840591baa639076.jpg | \"First snow freak show\" @ cafe musette "
-   ],
-   "iframes": [],
-   "calendriers": [
-    "ath></svg></span></div><div class=\"v-list-item__content\"><div class=\"v-list-item__title\">Copier le lien</div></div></div><!----><a tabindex=\"0\" href=\"/api/event/detail/first-snow-freak-show-cafe-musette.ics\" role=\"listitem\" class=\"v-list-item v-list-item--link theme--dark\"><div class=\"v-list-item__icon\"><span aria-hidden=\"true\" class=\"v-icon notranslate theme--dark\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" role=\"img\" aria-hidden=\"tru"
-   ]
-  },
-  "simple": {
-   "taille": 621,
-   "texte": "MONTREAL Ask A Punk - \"First snow freak show\" @ cafe musette\nfr\nMONTREAL Ask A Punk <https://montreal.askapunk.net/>\nMontreal DIY, punk, hardcore\n\"First snow freak show\" @ cafe musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11:45\ndans 3 jours\ncafé musette <https://montreal.askapunk.net/place/238/caf%C3%A9%20musette>\n4663 avenue du parc\nCopier le lien\nAjouter au calendrier <https://montreal.askapunk.net/api/event/detail/first-snow-freak-show-cafe-musette.ics>\nSignaler un évènement\nTélécharger le flyer <https://montreal.askapunk.net/download/df64610df501d6fa3840591baa639076.jpg>\nIntégrer",
-   "courriels": [],
-   "contact": [],
    "jsonld": [],
    "heures": [
-    "@ cafe musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11",
-    " musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11:45\ndan"
+    "st 4 @Aux Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 1",
+    "x Angles Ronds)\n Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux",
+    " Événement en personne\n 4 août 2026\n18h30 – 19h30 / Entrée: 18h00\nAux Angles Ronds <ht",
+    "evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n",
+    "evenement/originale/>\nambunctious\n---------\nEvery Tuesday | 6:30PM\n@ Aux Angles Ronds\n",
+    "Événements à venir\nImprov The Rambunctious ! (November 24 - 6:30pm @Aux Angles Ronds) ",
+    " (November 24 - 6:30pm @Aux Angles Ronds) 24 novembre 2026, 18h30 Aux Angles Ronds, Mo",
+    "vs Jaunes (24 novembre @Aux Angles Ronds) 24 novembre 2026, 20h30 Aux Angles Ronds, Mo",
+    " + Jaunes (25 novembre @Aux Angles Ronds) 25 novembre 2026, 20h30 Aux Angles Ronds, Mo",
+    "es/Jaunes (26 novembre @Aux Angles Ronds) 26 novembre 2026, 20h30 Aux Angles Ronds, Mo"
    ],
-   "liens": [],
+   "liens": [
+    "http://aide.lepointdevente.com/",
+    "http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "http://blog.lepointdevente.com/",
+    "https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "https://cdn.lepointdevente.com/releases/6afca9eb/plugins/embed/embed.css",
+    "https://facebook.com/lepointdevente",
+    "https://instagram.com/lepointdevente",
+    "https://lepointdevente.com",
+    "https://lepointdevente.com/billets/improv18",
+    "https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "https://lepointdevente.com/organisateurs/landing-page/formations",
+    "https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&amp;media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804002-1152x648-fr-6a6a8758.png&amp;description=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "https://rocambolesque.ca/evenement/originale/",
+    "https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://twitter.com/lepointdevente",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://www.linkedin.com/company/lepointdevente-com",
+    "https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&amp;title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "https://www.tiktok.com/@lepointdevente.com",
+    "https://www.youtube.com/@Lepointdeventecom-vu9lt/videos"
+   ],
    "menu": [
-    "Ajouter au calendrier → https://montreal.askapunk.net/api/event/detail/first-snow-freak-show-cafe-musette.ics",
-    " → https://montreal.askapunk.net/event/cam-kahin-the-wesleys-debbie-christ",
-    " → https://montreal.askapunk.net/event/last-retch-hamilton-zero-state-patent-ghidorah"
-   ]
-  },
-  "navigateur_images": {
-   "og": "https://montreal.askapunk.net/media/df64610df501d6fa3840591baa639076.jpg",
-   "img": [
-    "/logo.png | ",
-    "/media/thumb/df64610df501d6fa3840591baa639076.jpg | \"First snow freak show\" @ cafe musette "
-   ],
-   "iframes": [],
-   "calendriers": [
-    "ath></svg></span></div><div class=\"v-list-item__content\"><div class=\"v-list-item__title\">Copier le lien</div></div></div><!----><a tabindex=\"0\" href=\"/api/event/detail/first-snow-freak-show-cafe-musette.ics\" role=\"listitem\" class=\"v-list-item v-list-item--link theme--dark\"><div class=\"v-list-item__icon\"><span aria-hidden=\"true\" class=\"v-icon notranslate theme--dark\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" role=\"img\" aria-hidden=\"tru"
-   ]
-  },
-  "navigateur": {
-   "taille": 621,
-   "texte": "MONTREAL Ask A Punk - \"First snow freak show\" @ cafe musette\nfr\nMONTREAL Ask A Punk <https://montreal.askapunk.net/>\nMontreal DIY, punk, hardcore\n\"First snow freak show\" @ cafe musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11:45\ndans 3 jours\ncafé musette <https://montreal.askapunk.net/place/238/caf%C3%A9%20musette>\n4663 avenue du parc\nCopier le lien\nAjouter au calendrier <https://montreal.askapunk.net/api/event/detail/first-snow-freak-show-cafe-musette.ics>\nSignaler un évènement\nTélécharger le flyer <https://montreal.askapunk.net/download/df64610df501d6fa3840591baa639076.jpg>\nIntégrer",
-   "courriels": [],
-   "contact": [],
-   "jsonld": [],
-   "heures": [
-    "@ cafe musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11",
-    " musette\nPWYC \nfreak folk\n ipad punk \nsamedi 28 nov., 07:00-11:45\n2026-11-28T11:45\ndan"
-   ],
-   "liens": [],
-   "menu": [
-    "Ajouter au calendrier → https://montreal.askapunk.net/api/event/detail/first-snow-freak-show-cafe-musette.ics",
-    " → https://montreal.askapunk.net/event/cam-kahin-the-wesleys-debbie-christ",
-    " → https://montreal.askapunk.net/event/last-retch-hamilton-zero-state-patent-ghidorah"
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Centre d'aide → http://aide.lepointdevente.com/",
+    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
+    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
+    "Gestion des événements → https://lepointdevente.com/gestion/",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Centre d'aide → http://aide.lepointdevente.com/",
+    "Tutoriels vidéos → https://www.youtube.com/@Lepointdeventecom-vu9lt/videos",
+    "F.A.Q. → https://aide.lepointdevente.com/fr/collections/572670-f-a-q-lepointdevente-com",
+    "Études de cas → https://lepointdevente.com/organisateurs/landing-page/etudes-de-cas",
+    "Bonnes pratiques → https://lepointdevente.com/organisateurs/landing-page/bonnes-pratiques",
+    "Formations → https://lepointdevente.com/organisateurs/landing-page/formations",
+    "Gestion des événements → https://lepointdevente.com/gestion/",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Acheter des billets → https://lepointdevente.com/",
+    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "Créer un événement → https://lepointdevente.com/organisateurs",
+    "Événements → https://lepointdevente.com/",
+    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
+    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
+    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
+    "Événements à Trois-Rivières → https://lepointdevente.com/?type=physical&locality=2272&radius=0",
+    "Facebook → https://facebook.com/lepointdevente",
+    "Twitter → https://twitter.com/lepointdevente",
+    "Instagram → https://instagram.com/lepointdevente",
+    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
+    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/",
+    "Facebook → https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "Twitter → https://twitter.com/home?status=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "Linkedin → https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&title=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29",
+    "Pinterest → https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18&media=https%3A%2F%2Ftpos.s3.amazonaws.com%2Fevents%2F1NH%2F26%2F08%2F04%2F002%2F1nh260804",
+    "Envoyer par courriel → mailto:?subject=Improv+The+Rambunctious+-+Yellow+vs+Green+%28August+4+%40Aux+Angles+Ronds%29&body=https%3A%2F%2Flepointdevente.com%2Fbillets%2Fimprov18",
+    "https://rocambolesque.ca/evenement/r → https://rocambolesque.ca/evenement/originale/",
+    "https://rocambolesque.ca/evenement/r → https://rocambolesque.ca/evenement/originale/",
+    "Improv The Rambunctious ! (November 24 - 6:30pm @A → https://lepointdevente.com/billets/1nh261124002",
+    "Impro LIGE - Rouges vs Jaunes (24 novembre @Aux An → https://lepointdevente.com/billets/ligue-improvisation-lige7",
+    "Impro Le Bloc - Rouges + Jaunes (25 novembre @Aux  → https://lepointdevente.com/billets/match-improvisation-bloc7",
+    "Le Fabuleux Club d'Impro - Rouges/Jaunes (26 novem → https://lepointdevente.com/billets/match-improvisation-fci7",
+    "Facebook → https://facebook.com/lepointdevente",
+    "Twitter → https://twitter.com/lepointdevente",
+    "Instagram → https://instagram.com/lepointdevente",
+    "LinkedIn → https://www.linkedin.com/company/lepointdevente-com",
+    "Tiktok → https://www.tiktok.com/@lepointdevente.com",
+    "Acheter des billets → https://lepointdevente.com/",
+    "Aide → http://aide.lepointdevente.com/fr/collections/572670-f-a-q-achat-de-billets-en-ligne",
+    "Événements → https://lepointdevente.com/",
+    "Événements virtuels → https://lepointdevente.com/?type=virtual&locality=",
+    "Événements à Montréal → https://lepointdevente.com/?type=physical&locality=11&radius=0",
+    "Événements à Québec → https://lepointdevente.com/?type=physical&locality=1&radius=0",
+    "Événements à Trois-Rivières → https://lepointdevente.com/?type=physical&locality=2272&radius=0",
+    "Blogue → http://blog.lepointdevente.com/",
+    "Emplois → https://lepointdevente.com/organisateurs/a-propos/emplois/"
    ]
   }
  }
