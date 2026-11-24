@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-concert-de-clarinette-classe-de-martin-carpentier-04035e@ccm
+UID:2026-11-25-concert-de-clarinette-classe-de-martin-carpentier-17f4c2@ccm
  tl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T190000
 DTEND;TZID=America/Toronto:20261125T210000
 SUMMARY:Concert de clarinette - Classe de Martin Carpentier
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Salle Serge-Garant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-clarinette-classe-d
  e-martin-carpentier-5
 DESCRIPTION:Concert d'étudiants de la classe de clarinette de Martin Carpe
- ntier.\nDétails : https://calendrier.umontreal.ca/activite/concert-de-cla
- rinette-classe-de-martin-carpentier-5\n(ccmtl.ca)
+ ntier.\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activit
+ e/concert-de-clarinette-classe-de-martin-carpentier-5\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

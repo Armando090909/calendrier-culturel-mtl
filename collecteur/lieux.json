@@ -1,4 +1,9 @@
 {
+ "1001 rue Sherbrooke Ouest": {
+  "lat": 45.50264,
+  "lon": -73.57619,
+  "quartier": "Ville-Marie"
+ },
  "3200, rue Jean-Brillant": {
   "lat": 45.49835,
   "lon": -73.61797,
@@ -8,6 +13,11 @@
   "lat": 45.5238,
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
+ },
+ "805 rue Sherbrooke Ouest": {
+  "lat": 45.50472,
+  "lon": -73.57494,
+  "quartier": "Ville-Marie"
  },
  "Abbotsford Centre": null,
  "AdMare": null,
@@ -1575,6 +1585,7 @@
  },
  "Local D-R200 du Pavillon Athanas-David": null,
  "Local PK-1140, Pavillon Président-Kennedy": null,
+ "Local du LIMeSPP/CRC ReParE": null,
  "Locoshop Angus": null,
  "London Music Hall": null,
  "Long Bar Restaurant": null,

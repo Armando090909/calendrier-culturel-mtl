@@ -21,17 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-rejean-ducharme-ecrire-contre-le-monde-episode-2-00c7d8@ccmt
+UID:2026-11-25-rejean-ducharme-ecrire-contre-le-monde-episode-2-c8840d@ccmt
  l.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T133000
 DTEND;TZID=America/Toronto:20261125T153000
 SUMMARY:Réjean Ducharme : écrire contre le monde ? - Épisode 2
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Auditorium des Archives nationales — BAnQ\, Montréal
 URL:https://calendrier.umontreal.ca/activite/rejean-ducharme-ecrire-contre-
  le-monde-episode-2
 DESCRIPTION:Deuxième épisode consacré à l'œuvre de Réjean Ducharme et
-  à son rapport à l'écriture.\nDétails : https://calendrier.umontreal.c
- a/activite/rejean-ducharme-ecrire-contre-le-monde-episode-2\n(ccmtl.ca)
+  à son rapport à l'écriture.\nDétails : https://bellesheures.umontreal
+ .ca/series/rejean-ducharme-ecrire-contre-le-monde/?episode=rejean-ducharme
+ -ecrire-contre-le-monde-partie-1\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

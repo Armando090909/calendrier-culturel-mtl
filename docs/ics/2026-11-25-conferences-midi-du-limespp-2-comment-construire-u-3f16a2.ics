@@ -21,14 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-conferences-midi-du-limespp-2-comment-construire-u-7b9094@cc
+UID:2026-11-25-conferences-midi-du-limespp-2-comment-construire-u-3f16a2@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T120000
 DTEND;TZID=America/Toronto:20261125T140000
 SUMMARY:Conférences-midi du LIMeSPP#2 : « Comment construire une problém
  atique de recherche ? »
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Local du LIMeSPP/CRC ReParE\, Montréal
 URL:https://calendrier.umontreal.ca/activite/conferences-midi-du-limespp2-c
  omment-construire-une-problematique-de-recherche
 DESCRIPTION:Conférence du midi\, en format hybride\, sur la façon de form

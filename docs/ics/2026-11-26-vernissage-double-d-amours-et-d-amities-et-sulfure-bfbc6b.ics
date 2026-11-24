@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-vernissage-de-d-amours-et-d-amities-et-sulfure-vif-5eaabd@cc
+UID:2026-11-26-vernissage-double-d-amours-et-d-amities-et-sulfure-bfbc6b@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261126T170000
 DTEND;TZID=America/Toronto:20261126T190000
-SUMMARY:Vernissage de D'amours et d'amitiés et Sulfure vif : documents de 
- recherche
+SUMMARY:Vernissage double : D'amours et d'amitiés et Sulfure vif
 LOCATION:Galerie de l'Université de Montréal\, Montréal
-URL:https://reseauartactuel.org/evenement/damours-et-damities-et-sulfure-vi
- f-documents-de-recherche/
-DESCRIPTION:Ouverture officielle d'une exposition présentant des documents
-  de recherche.\nDétails : https://reseauartactuel.org/evenement/damours-e
- t-damities-et-sulfure-vif-documents-de-recherche/\n(ccmtl.ca)
+URL:https://calendrier.umontreal.ca/activite/vernissage-double-damours-et-d
+ amities-et-sulfure-vif
+DESCRIPTION:Vernissage de deux expositions réunies sous un même événeme
+ nt.\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite/v
+ ernissage-double-damours-et-damities-et-sulfure-vif\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

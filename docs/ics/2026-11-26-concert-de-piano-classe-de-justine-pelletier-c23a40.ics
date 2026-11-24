@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-concert-de-piano-classe-de-justine-pelletier-7c3745@ccmtl.ca
+UID:2026-11-26-concert-de-piano-classe-de-justine-pelletier-c23a40@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261126T170000
 DTEND;TZID=America/Toronto:20261126T190000
 SUMMARY:Concert de piano - Classe de Justine Pelletier
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Faculté de musique\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-piano-classe-de-jus
  tine-pelletier-4
 DESCRIPTION:Concert d'étudiants de la classe de piano de Justine Pelletier
- .\nDétails : https://calendrier.umontreal.ca/activite/concert-de-piano-cl
- asse-de-justine-pelletier-4\n(ccmtl.ca)
+ .\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite/con
+ cert-de-piano-classe-de-justine-pelletier-4\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

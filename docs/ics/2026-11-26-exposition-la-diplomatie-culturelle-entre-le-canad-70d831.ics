@@ -21,19 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-26-exposition-la-diplomatie-culturelle-entre-le-canad-e41776@cc
+UID:2026-11-26-exposition-la-diplomatie-culturelle-entre-le-canad-70d831@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261126T083000
 DTEND;TZID=America/Toronto:20261126T103000
 SUMMARY:Exposition : La diplomatie culturelle entre le Canada et l'Asie de 
  l'Est
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Théâtre Lionel-Groulx\, Montréal
 URL:https://calendrier.umontreal.ca/activite/exposition-la-diplomatie-cultu
  relle-entre-le-canada-et-lasie-de-lest-37
 DESCRIPTION:Exposition sur les relations culturelles entre le Canada et les
-  pays de l'Asie de l'Est.\nDétails : https://calendrier.umontreal.ca/acti
- vite/exposition-la-diplomatie-culturelle-entre-le-canada-et-lasie-de-lest-
- 37\n(ccmtl.ca)
+  pays de l'Asie de l'Est.\nPrix : Gratuit\nDétails : https://calendrier.u
+ montreal.ca/activite/exposition-la-diplomatie-culturelle-entre-le-canada-e
+ t-lasie-de-lest-37\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-25-rencontre-avec-nathalie-doummar-autrice-de-georges-dd7549@cc
+UID:2026-11-25-rencontre-avec-nathalie-doummar-autrice-de-georges-039418@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261125T140000
 DTEND;TZID=America/Toronto:20261125T160000
 SUMMARY:Rencontre avec Nathalie Doummar\, autrice de « Georges »
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Théâtre Lionel-Groulx\, Montréal
 URL:https://calendrier.umontreal.ca/activite/rencontre-avec-nathalie-doumma
  r-autrice-de-georges
 DESCRIPTION:Rencontre avec l'autrice Nathalie Doummar autour de son livre 
- « Georges ».\nDétails : https://calendrier.umontreal.ca/activite/rencon
- tre-avec-nathalie-doummar-autrice-de-georges\n(ccmtl.ca)
+ « Georges ».\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca
+ /activite/rencontre-avec-nathalie-doummar-autrice-de-georges\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
