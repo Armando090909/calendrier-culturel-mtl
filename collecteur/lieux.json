@@ -1939,13 +1939,13 @@
   "quartier": "LaSalle"
  },
  "Parc La Fontaine": {
-  "lat": 45.52626,
-  "lon": -73.56897,
-  "quartier": "Le Plateau-Mont-Royal",
   "alias": [
    "Parc Lafontaine",
    "Parc La Fontaine (Montréal)"
-  ]
+  ],
+  "lat": 45.52626,
+  "lon": -73.56897,
+  "quartier": "Le Plateau-Mont-Royal"
  },
  "Parc Leroux": {
   "lat": 45.43435,

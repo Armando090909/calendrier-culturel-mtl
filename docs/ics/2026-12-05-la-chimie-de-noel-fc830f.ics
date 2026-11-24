@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-jean-michel-anctil-0b1b01@ccmtl.ca
+UID:2026-12-05-la-chimie-de-noel-fc830f@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261128T150000
-DTEND;TZID=America/Toronto:20261128T170000
-SUMMARY:Jean-Michel Anctil
-LOCATION:Théâtre Manuvie\, Montréal
-URL:https://sorstu.ca/artiste/jean-michel-anctil/
-DESCRIPTION:Spectacle d'humour de Jean-Michel Anctil en matinée au Théât
- re Manuvie.\nDétails : https://sorstu.ca/artiste/jean-michel-anctil/\n(cc
- mtl.ca)
+DTSTART;TZID=America/Toronto:20261205T133000
+DTEND;TZID=America/Toronto:20261205T153000
+SUMMARY:La chimie de Noël
+LOCATION:Amphithéâtre du pavillon Sherbrooke (UQAM)\, Montréal
+URL:https://coeurdessciences.uqam.ca/evenements/la-chimie-de-noel/
+DESCRIPTION:Un spectacle de chimie aux couleurs de la période des fêtes.\
+ nPrix : 15 à 20 $\nDétails : https://coeurdessciences.uqam.ca/evenements
+ /la-chimie-de-noel/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

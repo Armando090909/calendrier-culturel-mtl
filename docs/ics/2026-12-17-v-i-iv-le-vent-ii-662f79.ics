@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-alex-paquette-noel-dans-le-parc-bef0f4@ccmtl.ca
+UID:2026-12-17-v-i-iv-le-vent-ii-662f79@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261204T184500
-DTEND;TZID=America/Toronto:20261204T204500
-SUMMARY:Alex Paquette : Noël dans le parc
-LOCATION:Parc Lafontaine\, Montréal
-URL:https://sorstu.ca/artiste/alex-paquette/
-DESCRIPTION:Prestation de Noël en plein air au parc Lafontaine.\nDétails 
- : https://sorstu.ca/artiste/alex-paquette/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261217T210000
+DTEND;TZID=America/Toronto:20261217T230000
+SUMMARY:V I IV le vent II
+LOCATION:Le Red Room\, Montréal
+URL:https://lineup-event.com/fr/event/v-i-iv-le-vent-ii
+DESCRIPTION:Soirée électronique intitulée V I IV le vent II au Red Room.
+ \nPrix : 10 $\nDétails : https://lineup-event.com/fr/event/v-i-iv-le-vent
+ -ii\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

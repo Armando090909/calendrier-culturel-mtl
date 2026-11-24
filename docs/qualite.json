@@ -5,7 +5,7 @@
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 34,
-  "heures différentes selon les sources": 58
+  "heures différentes selon les sources": 59
  },
  "journal": [
   {
@@ -883,6 +883,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "20:15 gardée (noeldansleparc.com), 20:30 écartée (sorstu.ca)",
+   "titre": "Vendredi 20h15 / Mike Clay",
+   "date": "2026-12-04",
+   "lieu": "Parc La Fontaine",
+   "source": "festival",
+   "url": "https://noeldansleparc.com/parc-lafontaine/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "19:15 gardée (noeldansleparc.com), 20:30 écartée (noeldansleparc.com)",
    "titre": "Abraxas Cirque",
    "date": "2026-12-05",
@@ -1000,10 +1009,10 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 207,
+  "date confirmée": 206,
   "date absente de la page": 34,
   "page illisible": 36,
-  "non relues (limite)": 128
+  "non relues (limite)": 127
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1136,8 +1145,8 @@
   {
    "source": "spectaculos.ca",
    "erreurs": 20,
-   "sorties": 262,
-   "taux": 7.6
+   "sorties": 257,
+   "taux": 7.8
   },
   {
    "source": "cinematheque.qc.ca",
@@ -1160,12 +1169,12 @@
   {
    "source": "sorstu.ca",
    "erreurs": 91,
-   "sorties": 1657,
+   "sorties": 1649,
    "taux": 5.5
   }
  ],
  "recoupees": {
-  "total": 2870,
-  "deux_sources_ou_plus": 256
+  "total": 2857,
+  "deux_sources_ou_plus": 261
  }
 }

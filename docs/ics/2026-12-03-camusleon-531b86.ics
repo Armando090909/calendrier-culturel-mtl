@@ -21,14 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-jf-pauze-2f5473@ccmtl.ca
+UID:2026-12-03-camusleon-531b86@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261203T200000
-DTEND;TZID=America/Toronto:20261203T220000
-SUMMARY:JF Pauzé
-LOCATION:Théâtre Manuvie\, Montréal
-URL:https://sorstu.ca/artiste/jf-pauze/
-DESCRIPTION:Concert de chanson de JF Pauzé.\nDétails : https://sorstu.ca/
- artiste/jf-pauze/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261203T190000
+DTEND;TZID=America/Toronto:20261203T210000
+SUMMARY:CamusLéon
+LOCATION:Parc La Fontaine\, Montréal
+URL:https://sorstu.ca/artiste/camusleon/
+DESCRIPTION:Représentation théâtrale de CamusLéon en plein air au parc 
+ Lafontaine.\nDétails : https://sorstu.ca/artiste/camusleon/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

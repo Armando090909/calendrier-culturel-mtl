@@ -21,14 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-05-mario-tessier-b306ad@ccmtl.ca
+UID:2026-12-04-camusleon-792cfa@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20270105T200000
-DTEND;TZID=America/Toronto:20270105T220000
-SUMMARY:Mario Tessier
-LOCATION:Théâtre Manuvie\, Montréal
-URL:https://spectaculos.ca/fr/spectacle/mario-tessier-montreal
-DESCRIPTION:Détails : https://spectaculos.ca/fr/spectacle/mario-tessier-mo
- ntreal\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261204T190000
+DTEND;TZID=America/Toronto:20261204T210000
+SUMMARY:CamusLéon
+LOCATION:Parc La Fontaine\, Montréal
+URL:https://sorstu.ca/artiste/camusleon/
+DESCRIPTION:Détails : https://sorstu.ca/artiste/camusleon/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

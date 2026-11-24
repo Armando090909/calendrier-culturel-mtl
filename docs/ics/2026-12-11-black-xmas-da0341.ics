@@ -21,14 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-camusleon-887839@ccmtl.ca
+UID:2026-12-11-black-xmas-da0341@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261203T190000
-DTEND;TZID=America/Toronto:20261203T210000
-SUMMARY:CamusLéon
-LOCATION:Parc Lafontaine\, Montréal
-URL:https://sorstu.ca/artiste/camusleon/
-DESCRIPTION:Représentation théâtrale de CamusLéon en plein air au parc 
- Lafontaine.\nDétails : https://sorstu.ca/artiste/camusleon/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261211T220000
+DTEND;TZID=America/Toronto:20261212T000000
+SUMMARY:Black Xmas
+LOCATION:Le Red Room\, Montréal
+URL:https://www.stagelinetickets.com/s/eventfly-2-show
+DESCRIPTION:Soirée festive de Noël au Red Room\, avec musique électroniq
+ ue.\nPrix : 15 $\nDétails : https://www.stagelinetickets.com/s/eventfly-2
+ -show\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

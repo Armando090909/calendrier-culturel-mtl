@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-10-jingle-bass-92229f@ccmtl.ca
+UID:2026-12-12-midnight-mass-6c56cc@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261210T030000
-DTEND;TZID=America/Toronto:20261210T050000
-SUMMARY:Jingle Bass
+DTSTART;TZID=America/Toronto:20261212T220000
+DTEND;TZID=America/Toronto:20261213T000000
+SUMMARY:Midnight Mass
 LOCATION:Le Red Room\, Montréal
-URL:https://www.simpletix.com/e/jingle-bass-tickets-299522
-DESCRIPTION:Soirée bass music à thème de Noël au Red Room.\nPrix : 8\,6
- 8 $\nDétails : https://www.simpletix.com/e/jingle-bass-tickets-299522\n(c
- cmtl.ca)
+URL:https://www.simpletix.com/e/midnight-mass-tickets-301753
+DESCRIPTION:Soirée électronique sur le thème de la messe de minuit de No
+ ël au Red Room.\nPrix : 11\,83 à 17\,09 $\nDétails : https://www.simple
+ tix.com/e/midnight-mass-tickets-301753\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

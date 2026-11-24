@@ -2,7 +2,7 @@
  "date": "2026-11-24",
  "regles": {
   "pas une sortie culturelle": 321,
-  "hors de l'île": 230,
+  "hors de l'île": 241,
   "série : hors de l'île": 32,
   "série remplacée par ses dates précises": 15,
   "retirée à la main (corrections.json)": 9,
@@ -12,7 +12,8 @@
   "série : pas culturelle ou sans titre": 3,
   "annulé selon la source": 2,
   "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": 2,
-  "série : sans salle, saison déjà détaillée ou annonce de saison": 2
+  "série : sans salle, saison déjà détaillée ou annonce de saison": 2,
+  "titre absent": 1
  },
  "par_motif": {
   "pas une sortie culturelle": {
@@ -66,7 +67,9 @@
    "Scène Desjardins d'Argenteuil · Lachute": 46,
    "Le Club Square Dix30 · 9200 Boulevard Leduc Brossard · Brossard": 14,
    "206 Rue Christophe Colomb E · Québec": 7,
+   "Théâtre Manuvie · Montréal": 6,
    "Théâtre Manuvie · 6000 bd. de Rome Brossard · Brossard": 6,
+   "Theatre Manuvie · Montréal · Montréal": 5,
    "The Avalon Theatre At Niagara Fallsview Casino Resort · Niagara Falls": 4,
    "Théâtre Capitole · Montréal": 4,
    "Cabaret BMO Sainte-Thérèse · 57-59, rue Turgeon Sainte-Thérèse · Sainte-Thérèse": 4,
@@ -120,9 +123,7 @@
    "Cabaret BMO Sainte-Thérèse": 1,
    "Le Vieux Clocher de Magog": 1,
    "Pôle culturel de Chambly": 1,
-   "Maurice O'Bready": 1,
-   "Salle Octave-Crémazie": 1,
-   "Théâtre du Vieux-Terrebonne": 1
+   "Maurice O'Bready": 1
   },
   "série : hors de l'île": {
    "Regart, centre d'artistes en art actuel · Lévis": 2,
@@ -501,6 +502,14 @@
     "detail": "Salle Odyssée"
    },
    {
+    "titre": "Louis-José Houde",
+    "date": "2026-11-26",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/louis-jose-houde/",
+    "source": "sorstu",
+    "detail": "Théâtre Manuvie · Montréal"
+   },
+   {
     "titre": "Bonobo",
     "date": "2026-11-26",
     "lieu": "History",
@@ -693,6 +702,22 @@
     "detail": "Impérial Bell · Montréal"
    },
    {
+    "titre": "Jean-Michel Anctil",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/jean-michel-anctil/",
+    "source": "sorstu",
+    "detail": "Théâtre Manuvie · Montréal"
+   },
+   {
+    "titre": "Jean-Michel Anctil - SURPRISE... C'est ma fête!",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/jean-michel-anctil/",
+    "source": "sorstu",
+    "detail": "Théâtre Manuvie · Montréal"
+   },
+   {
     "titre": "Il était une fois Noël",
     "date": "2026-11-28",
     "lieu": "Théâtre Capitole",
@@ -779,30 +804,6 @@
     "url": "https://sorstu.ca/artiste/stephane-rousseau/",
     "source": "sorstu",
     "detail": "Théâtre du Cégep de Trois-Rivières · Trois-Rivières"
-   },
-   {
-    "titre": "Sylvain Cossette",
-    "date": "2026-11-28",
-    "lieu": "Théâtre du Vieux-Terrebonne",
-    "url": "https://sorstu.ca/artiste/sylvain-cossette/",
-    "source": "sorstu",
-    "detail": "Théâtre du Vieux-Terrebonne · Terrebonne"
-   },
-   {
-    "titre": "The Spongebob Musical",
-    "date": "2026-11-28",
-    "lieu": "Meadowvale Theatre",
-    "url": "https://sorstu.ca/artiste/the-spongebob-musical/",
-    "source": "sorstu",
-    "detail": "Meadowvale Theatre · Mississauga"
-   },
-   {
-    "titre": "The Tenors",
-    "date": "2026-11-28",
-    "lieu": "Grey Eagle Event Centre",
-    "url": "https://sorstu.ca/artiste/the-tenors/",
-    "source": "sorstu",
-    "detail": "Grey Eagle Event Centre · Calgary"
    }
   ],
   "annulé selon la source": [
@@ -818,6 +819,15 @@
     "date": "2026-11-28",
     "lieu": "L'Olympia",
     "url": "https://sorstu.ca/artiste/patrick-bruel/",
+    "source": "sorstu"
+   }
+  ],
+  "titre absent": [
+   {
+    "titre": "(titre non indiqué)",
+    "date": "2026-11-27",
+    "lieu": "Théâtre du Nouveau Monde",
+    "url": "https://sorstu.ca/calendrier-spectacles/novembre-2026/27/?contexte=tous",
     "source": "sorstu"
    }
   ],
@@ -1297,7 +1307,7 @@
    {
     "titre": "Noël dans le parc 2026",
     "date": "2026-12-04 → 2026-12-25",
-    "lieu": "Parc Lafontaine",
+    "lieu": "Parc La Fontaine",
     "url": "https://noeldansleparc.com/parc-lafontaine/",
     "source": ""
    }
@@ -1415,7 +1425,7 @@
   ]
  },
  "disparues": {
-  "total": 57,
+  "total": 69,
   "liste": [
    {
     "titre": "222 / Discussion autour du livre Projet N / Yves Bernard et Vincent Frigon / Septentrion",
@@ -1509,6 +1519,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Louis-José Houde",
+    "date": "2026-11-26",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/louis-jose-houde/",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Pierre Hébert",
     "date": "2026-11-26",
     "lieu": "Théâtre C",
@@ -1530,6 +1547,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "(titre non indiqué)",
+    "date": "2026-11-27",
+    "lieu": "Théâtre du Nouveau Monde",
+    "url": "https://sorstu.ca/calendrier-spectacles/novembre-2026/27/?contexte=tous",
+    "raison": "titre absent"
+   },
+   {
     "titre": "Louis-José Houde",
     "date": "2026-11-27",
     "lieu": "Théâtre Manuvie",
@@ -1549,6 +1573,13 @@
     "lieu": "Bibliothèque de Côte-des-Neiges",
     "url": "https://montreal.ca/evenements/heure-du-conte-0-36-mois-120620",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Jean-Michel Anctil",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/jean-michel-anctil/",
+    "raison": "hors de l'île"
    },
    {
     "titre": "The Toronto Rocks",
@@ -1591,6 +1622,13 @@
     "lieu": "Bains publics - Cabaret culturel",
     "url": "https://sorstu.ca/artiste/fudge/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Jean-Michel Anctil : SURPRISE... C'est ma fête!",
+    "date": "2026-11-28",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/jean-michel-anctil/",
+    "raison": "hors de l'île"
    },
    {
     "titre": "Marie-Pierre Arthur",
@@ -1649,6 +1687,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Chris Klafford",
+    "date": "2026-12-02",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/chris-klafford/",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Etienne Coppée",
     "date": "2026-12-02",
     "lieu": "Chez Bozo",
@@ -1675,6 +1720,20 @@
     "lieu": "Bibliothèque interculturelle",
     "url": "https://montreal.ca/evenements/jeux-video-7-12-ans-119391",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Alex Paquette : Noël dans le parc",
+    "date": "2026-12-04",
+    "lieu": "Parc Lafontaine",
+    "url": "https://sorstu.ca/artiste/alex-paquette/",
+    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Adib Alkhalidey",
+    "date": "2026-12-04",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://sorstu.ca/artiste/adib-alkhalidey/",
+    "raison": "hors de l'île"
    },
    {
     "titre": "Représentation (titre non indiqué)",
@@ -1740,6 +1799,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Sam Breton",
+    "date": "2026-12-10",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://spectaculos.ca/fr/spectacle/sam-breton-montreal",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Atelier d’écriture optimiste",
     "date": "2026-12-11",
     "lieu": "Bibliothèque de Saint-Léonard",
@@ -1794,6 +1860,34 @@
     "lieu": "Bibliothèque de Côte-des-Neiges",
     "url": "https://montreal.ca/evenements/club-de-lecture-jeunesse-9-12-ans-120615",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Mario Tessier",
+    "date": "2027-01-05",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://spectaculos.ca/fr/spectacle/mario-tessier-montreal",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Guy Nantel au Théâtre Manuvie",
+    "date": "2027-01-06",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://spectaculos.ca/fr/spectacle/guy-nantel-montreal",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Mégan Brouillard au Théâtre Manuvie",
+    "date": "2027-01-14",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://spectaculos.ca/fr/spectacle/megan-brouillard-montreal",
+    "raison": "hors de l'île"
+   },
+   {
+    "titre": "Pascal Cameron au Théâtre Manuvie",
+    "date": "2027-01-15",
+    "lieu": "Théâtre Manuvie",
+    "url": "https://spectaculos.ca/fr/spectacle/pascal-cameron-montreal",
+    "raison": "hors de l'île"
    },
    {
     "titre": "269 / Discussion autour de La justice et le droit dans la littérature / Paul-André Mathieu / Wilson & Lafleur",
