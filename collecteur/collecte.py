@@ -394,6 +394,10 @@ def liens_candidats(texte: str, liens: list[str], page: str, titre: str) -> list
     return res[:3]
 
 
+def _page_trop_longue(*_):
+    raise SourceTropLongue("page abandonnée après 150 s")
+
+
 def _doublons_meme_salle(events: list[dict]) -> list[dict]:
     """22 nov. 2026 : 2e dédoublonnage, après les passages qui ajoutent des heures. Une fiche sans heure et la même avec son
     heure n'étaient pas reconnues (ex. « Class of 91… » au Turbo Haüs, du site de la salle et de la billetterie). Prudent :
@@ -508,9 +512,17 @@ def main() -> int:
         # Deux garde-fous (13 nov. 2026, enrichissement figé 1 h 50) : 1) toutes les 20 min, la pile d'appels est
         # écrite dans le journal (on voit où le programme travaille ou attend) ; 2) après 90 min, plus aucune nouvelle
         # page n'est lue (budgets mis à 0) : le site s'écrit avec ce qui est trouvé, avant la limite de 2 h de GitHub.
-        import faulthandler
         import threading
-        faulthandler.dump_traceback_later(20 * 60, repeat=True)
+        # (24 nov. 2026) l'écriture de la pile par faulthandler a fait planter l'enrichissement (« Segmentation
+        # fault » au moment même de l'écriture, 20 min après le début) : remplacée par une version en Python, sans risque
+        def _pile():
+            import traceback
+            while True:
+                time.sleep(20 * 60)
+                pile = sys._current_frames().get(threading.main_thread().ident)
+                if pile is not None:
+                    print("Pile (programme principal, toutes les 20 min) :\n" + "".join(traceback.format_stack(pile)[-6:]), flush=True)
+        threading.Thread(target=_pile, daemon=True).start()
 
         def _assez():
             reglages.update({k: 0 for k in BUDGETS_RESEAU})
@@ -998,7 +1010,10 @@ def main() -> int:
                 r = None  # (19 nov. 2026) cette semaine : l'heure est souvent ajoutée tard par la salle, on relit aux 2 jours
             if r is None and lus_ia < int(reglages.get("max_pages_ia_champs", 80)):
                 lus_ia += 1
+                print(f"  IA fiche {lus_ia} : {e['url'][:110]}", flush=True)  # (24 nov. 2026) pour repérer une page qui bloque
                 try:
+                    _ancien = signal.signal(signal.SIGALRM, _page_trop_longue)  # (24 nov. 2026) une page ne bloque plus la nuit
+                    signal.alarm(150)
                     try:
                         html = telecharger(e["url"], "text/html").text
                     except Exception:
@@ -1018,7 +1033,10 @@ def main() -> int:
                         r.update({k: v for k, v in lieu_jsonld(html).items() if v})
                     memo_ia[cle] = r
                 except Exception as exc:
-                    r = memo_ia[cle] = {"_err": str(exc)[:80]}
+                    r = memo_ia[cle] = {"_err": str(exc)[:80], "le": aujourd.isoformat()}
+                finally:
+                    signal.alarm(0)
+                    signal.signal(signal.SIGALRM, _ancien)
             if not r or r.get("_err"):
                 continue
             if not e["heure"] and r.get("heure"):
