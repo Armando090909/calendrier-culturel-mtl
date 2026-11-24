@@ -227,6 +227,8 @@ HORS_ILE = [
 
 # Salles hors de l'île souvent listées sans ville par les agendas pancanadiens (Sors-tu?, Songkick) : nom exact
 LIEUX_HORS_ILE = {
+    # Brossard, Quartier DIX30 (24 nov. 2026 : annoncé par Sors-tu? sans adresse, 11 soirs affichés à Montréal)
+    "theatre manuvie", "le club square dix30", "club square dix30",
     # Gatineau (vu le 2 nov. 2026 : « Le Minotaure », 3 rue Kent, annoncé par Sors-tu?)
     "le minotaure", "minotaure",
     # Toronto, Vancouver, Ottawa, Prairies
