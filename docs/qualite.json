@@ -1,7 +1,7 @@
 {
  "date": "2026-11-24",
  "regles": {
-  "titre mal encodé": 15,
+  "titre mal encodé": 13,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 47,
@@ -125,24 +125,6 @@
    "lieu": "Maison de la culture Notre-Dame-de-Grâce – Botrel",
    "source": "",
    "url": "https://montreal.ca/evenements/scene-trippers-dream-clippers-what-do-you-feel-what-do-you-make-real-nicole-crozier-114873"
-  },
-  {
-   "regle": "titre mal encodé",
-   "action": "corrigé",
-   "titre": "Le Sanctum - T. Ayoka, C. Camille, T. Dulcinée, O. Igbokwe, K. Lindsay, D. Mombrun",
-   "date": "2026-09-12",
-   "lieu": "Lieu à confirmer",
-   "source": "",
-   "url": "https://montreal.ca/evenements/le-sanctum-t-ayoka-c-camille-t-dulcinee-o-igbokwe-k-lindsay-d-mombrun-120125"
-  },
-  {
-   "regle": "titre mal encodé",
-   "action": "corrigé",
-   "titre": "Paysage et abstraction se rencontrent - Louise Grenier",
-   "date": "2027-01-08",
-   "lieu": "Lieu à confirmer",
-   "source": "",
-   "url": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231"
   },
   {
    "regle": "heure improbable",

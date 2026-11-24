@@ -3,6 +3,7 @@
  "regles": {
   "pas une sortie culturelle": 321,
   "hors de l'île": 305,
+  "série mise de côté : trop peu d'information (salle inconnue)": 105,
   "série : hors de l'île": 32,
   "série remplacée par ses dates précises": 15,
   "retirée à la main (corrections.json)": 9,
@@ -12,7 +13,6 @@
   "série : pas culturelle ou sans titre": 3,
   "annulé selon la source": 2,
   "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": 2,
-  "série : sans salle, saison déjà détaillée ou annonce de saison": 2,
   "titre absent": 1
  },
  "par_motif": {
@@ -124,6 +124,68 @@
    "Géogène Micro-torréfacteur · Géogène Micro-torréfacteur Sherbrooke · Sherbrooke": 2,
    "Théâtre Capitole · Québec": 2,
    "Amphithéâtre Cogeco · Trois-Rivières": 2
+  },
+  "série mise de côté : trop peu d'information (salle inconnue)": {
+   "https://www.placedesarts.com/evenement/devenir-mousse": 17,
+   "https://www.placedesarts.com/evenement/adib-alkhalidey": 14,
+   "https://www.placedesarts.com/evenement/louis-jose-houde-jusqua-fin-labeaute": 13,
+   "https://montreal.ca/evenements/dans-loeil-du-lievre-christine-sioui-wawanoloath-87905": 1,
+   "https://montreal.ca/evenements/ko-te-tounen-istwa-la-ou-la-terre-se-fait-recit-richarson-dorvil-99463": 1,
+   "https://montreal.ca/evenements/les-deux-cotes-de-la-medaille-50-ans-des-jeux-olympiques-hochelaga-maisonneuve-108970": 1,
+   "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-110635": 1,
+   "https://montreal.ca/evenements/cartographie-des-couleurs-maria-teresa-hincapie-118811": 1,
+   "https://montreal.ca/evenements/devenir-chez-nous-une-communaute-doiseaux-bigarres-iphigenie-marcoux-fortier-114517": 1,
+   "https://montreal.ca/evenements/cara-carmina-et-moi-cara-carmina-118805": 1,
+   "https://montreal.ca/evenements/la-grace-des-floraisons-joannie-lafreniere-116068": 1,
+   "https://montreal.ca/evenements/revoir-et-relire-avec-mimi-et-jeanne-eve-k-tremblay-119302": 1,
+   "https://montreal.ca/evenements/other-side-masako-miyazaki-116673": 1,
+   "https://montreal.ca/evenements/les-filles-de-lair-marie-blanche-rossi-109178": 1,
+   "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231": 1,
+   "https://montreal.ca/evenements/quartier-fleuri-association-des-artistes-de-saint-laurent-121234": 1,
+   "https://montreal.ca/evenements/exposition-ce-que-je-garde-110269": 1,
+   "https://montreal.ca/evenements/exposition-connexions-118031": 1,
+   "https://montreal.ca/evenements/jusquou-peut-se-voir-vers-linterieur-laurence-anyuan-tongzhou-tong-zhou-lafrance-corinne-beaumier-90115": 1,
+   "https://montreal.ca/evenements/le-temps-qui-sarrete-marianne-chevalier-114589": 1,
+   "https://montreal.ca/evenements/surcharge-benz-debrosse-116261": 1,
+   "https://montreal.ca/evenements/exposition-jeunesse-dans-lunivers-de-genevieve-godbout-119287": 1,
+   "https://montreal.ca/evenements/ou-va-la-vie-quand-elle-meurt-karine-gaulin-116838": 1,
+   "https://montreal.ca/evenements/la-ou-se-retrouve-table-de-quartier-peter-mcgill-116843": 1,
+   "https://montreal.ca/evenements/500-ans-de-resistance-autochtone-116844": 1,
+   "https://montreal.ca/evenements/linquietude-des-paysages-entre-chaos-et-persistance-herve-mbelo-102309": 1,
+   "https://montreal.ca/evenements/arkhe-de-maxime-boisvert-114693": 1,
+   "https://montreal.ca/evenements/murmure-encore-muriel-ahmarani-jaouich-119735": 1,
+   "https://montreal.ca/evenements/exposition-25-ans-dart-autogere-les-productions-carmagnole-celebrent-leurs-25-ans-117418": 1,
+   "https://montreal.ca/evenements/ligne-de-flottaison-120995": 1,
+   "https://montreal.ca/evenements/entre-trames-julie-picard-116378": 1,
+   "https://montreal.ca/evenements/exposition-presence-suspendue-de-jasmine-dessureault-111043": 1,
+   "https://montreal.ca/evenements/exposition-eclats-du-maroc-de-younes-azeggarh-111048": 1,
+   "https://montreal.ca/evenements/exposition-sculptures-des-pics-bois-de-lachine-111045": 1,
+   "https://montreal.ca/evenements/exposition-nostalgie-florale-deliane-berdat-111046": 1,
+   "https://montreal.ca/evenements/exposition-dalbe-viau-dhier-aujourdhui-des-eleves-du-cours-arts-et-multimedia-de-5e-secondaire-111047": 1,
+   "https://montreal.ca/evenements/exposition-plus-fort-que-nous-par-kaciane-monchamp-111049": 1,
+   "https://montreal.ca/evenements/exposition-mots-quon-dit-du-collectif-encreplumes-111746": 1,
+   "https://montreal.ca/evenements/faire-tenir-parmi-recolter-marjolaine-bourdua-102310": 1,
+   "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-111329": 1,
+   "https://montreal.ca/evenements/un-regard-collectif-118879": 1,
+   "https://montreal.ca/evenements/doux-au-toucher-alexey-lazarev-118883": 1,
+   "https://montreal.ca/evenements/le-plateau-litteraire-societe-dhistoire-du-plateau-mont-royal-122005": 1,
+   "https://montreal.ca/evenements/exposition-petites-oeuvres-de-reyan-josef-armstrong-122105": 1,
+   "https://montreal.ca/evenements/exposition-realite-alternative-de-vincent-azar-122106": 1,
+   "https://montreal.ca/evenements/exposition-incursion-dans-le-monde-des-strigides-du-canada-de-frederic-izquierdo-122111": 1,
+   "https://montreal.ca/evenements/exposition-multidisciplinaire-des-ateliers-culturels-120945": 1,
+   "https://montreal.ca/evenements/exposition-citoyenne-de-zoe-plouffe-121186": 1,
+   "https://montreal.ca/evenements/saint-michel-colorier-101690": 1,
+   "https://montreal.ca/evenements/attente-lourde-x-weighting-alexandra-pelletier-122495": 1,
+   "https://montreal.ca/evenements/exposition-emergence-119297": 1,
+   "https://montreal.ca/evenements/de-formes-et-dondes-un-espace-imprime-latelier-circulaire-110638": 1,
+   "https://montreal.ca/evenements/le-sanctum-t-ayoka-c-camille-t-dulcinee-o-igbokwe-k-lindsay-d-mombrun-120125": 1,
+   "https://montreal.ca/evenements/projet-chemises-ombres-reconquises-mere-phantoms-116407": 1,
+   "https://montreal.ca/evenements/tout-moun-la-tout-le-monde-est-la-everyone-here-oski-awoyo-120276": 1,
+   "https://montreal.ca/evenements/parasco-loeuvre-bureau-des-activites-etudiantes-du-csspi-121689": 1,
+   "https://www.songkick.com/festivals/3701261-triste/id/43497871-festival-triste-2026?utm_medium=organic&utm_source=microformat": 1,
+   "https://www.placedesarts.com/en/event/adib-alkhalidey": 1,
+   "https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute": 1,
+   "https://www.placedesarts.com/en/event/mossbed": 1
   },
   "série : hors de l'île": {
    "Regart, centre d'artistes en art actuel · Lévis": 2,
@@ -891,6 +953,328 @@
     "source": "festival"
    }
   ],
+  "série mise de côté : trop peu d'information (salle inconnue)": [
+   {
+    "titre": "Dans l’œil du lièvre -  Christine Sioui Wawanoloath",
+    "date": "2025-06-25 → 2027-06-25",
+    "lieu": "@45.553583493785,-73.539622314344",
+    "url": "https://montreal.ca/evenements/dans-loeil-du-lievre-christine-sioui-wawanoloath-87905",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/dans-loeil-du-lievre-christine-sioui-wawanoloath-87905"
+   },
+   {
+    "titre": "Ko tè a tounen istwa (Là où la terre se fait récit) | Richarson Dorvil",
+    "date": "2025-09-30 → 2030-04-30",
+    "lieu": "@45.595516499269,-73.634014924878",
+    "url": "https://montreal.ca/evenements/ko-te-tounen-istwa-la-ou-la-terre-se-fait-recit-richarson-dorvil-99463",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/ko-te-tounen-istwa-la-ou-la-terre-se-fait-recit-richarson-dorvil-99463"
+   },
+   {
+    "titre": "Les deux côtés de la médaille : 50 ans des jeux olympiques à Hochelaga-Maisonneuve",
+    "date": "2026-07-17 → 2028-06-01",
+    "lieu": "@45.541268196970634,-73.54692218055175",
+    "url": "https://montreal.ca/evenements/les-deux-cotes-de-la-medaille-50-ans-des-jeux-olympiques-hochelaga-maisonneuve-108970",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/les-deux-cotes-de-la-medaille-50-ans-des-jeux-olympiques-hochelaga-maisonneuve-108970"
+   },
+   {
+    "titre": "Guérir de ce qu'on peut - Guillaume Brisson-Darveau",
+    "date": "2026-10-31 → 2027-01-10",
+    "lieu": "@45.676568,-73.491241",
+    "url": "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-110635",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-110635"
+   },
+   {
+    "titre": "Cartographie des couleurs - María Teresa Hincapié",
+    "date": "2026-09-19 → 2027-01-10",
+    "lieu": "@45.650106,-73.578922",
+    "url": "https://montreal.ca/evenements/cartographie-des-couleurs-maria-teresa-hincapie-118811",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/cartographie-des-couleurs-maria-teresa-hincapie-118811"
+   },
+   {
+    "titre": "Devenir chez nous, une communauté d'oiseaux bigarrés - Iphigénie Marcoux-Fortier",
+    "date": "2026-06-20 → 2027-04-30",
+    "lieu": "@45.479177355827,-73.575632745267",
+    "url": "https://montreal.ca/evenements/devenir-chez-nous-une-communaute-doiseaux-bigarres-iphigenie-marcoux-fortier-114517",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/devenir-chez-nous-une-communaute-doiseaux-bigarres-iphigenie-marcoux-fortier-114517"
+   },
+   {
+    "titre": "Cara Carmina et moi - Cara Carmina",
+    "date": "2026-09-12 → 2027-01-10",
+    "lieu": "@45.650106,-73.578922",
+    "url": "https://montreal.ca/evenements/cara-carmina-et-moi-cara-carmina-118805",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/cara-carmina-et-moi-cara-carmina-118805"
+   },
+   {
+    "titre": "La grâce des floraisons - Joannie Lafrenière",
+    "date": "2026-09-17 → 2027-09-16",
+    "lieu": "@45.568498642788,-73.635534412243",
+    "url": "https://montreal.ca/evenements/la-grace-des-floraisons-joannie-lafreniere-116068",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/la-grace-des-floraisons-joannie-lafreniere-116068"
+   },
+   {
+    "titre": "Revoir et relire avec Mimi et Jeanne - Ève K Tremblay",
+    "date": "2026-11-18 → 2027-01-31",
+    "lieu": "@45.541562,-73.613258",
+    "url": "https://montreal.ca/evenements/revoir-et-relire-avec-mimi-et-jeanne-eve-k-tremblay-119302",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/revoir-et-relire-avec-mimi-et-jeanne-eve-k-tremblay-119302"
+   },
+   {
+    "titre": "The Other Side - Masako Miyazaki",
+    "date": "2026-10-21 → 2027-01-10",
+    "lieu": "@45.504489,-73.704747",
+    "url": "https://montreal.ca/evenements/other-side-masako-miyazaki-116673",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/other-side-masako-miyazaki-116673"
+   },
+   {
+    "titre": "Les filles de l’air - Marie-Blanche Rossi",
+    "date": "2026-11-06 → 2026-12-13",
+    "lieu": "@45.433338,-73.68961",
+    "url": "https://montreal.ca/evenements/les-filles-de-lair-marie-blanche-rossi-109178",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/les-filles-de-lair-marie-blanche-rossi-109178"
+   },
+   {
+    "titre": "Paysage et abstraction se rencontrent  - Louise Grenier",
+    "date": "2027-01-08 → 2027-02-28",
+    "lieu": "@45.433338,-73.68961",
+    "url": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231"
+   },
+   {
+    "titre": "Quartier fleuri - Association des artistes de Saint-Laurent",
+    "date": "2026-10-01 → 2027-03-31",
+    "lieu": "@45.513244167509,-73.682194162107",
+    "url": "https://montreal.ca/evenements/quartier-fleuri-association-des-artistes-de-saint-laurent-121234",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/quartier-fleuri-association-des-artistes-de-saint-laurent-121234"
+   },
+   {
+    "titre": "Exposition : « Ce que je garde »",
+    "date": "2026-05-01 → 2031-05-01",
+    "lieu": "@45.550621,-73.540722",
+    "url": "https://montreal.ca/evenements/exposition-ce-que-je-garde-110269",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-ce-que-je-garde-110269"
+   },
+   {
+    "titre": "Exposition - Connexions",
+    "date": "2026-10-19 → 2026-12-23",
+    "lieu": "@45.550621,-73.540722",
+    "url": "https://montreal.ca/evenements/exposition-connexions-118031",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-connexions-118031"
+   },
+   {
+    "titre": "Jusqu'où peut-on se voir vers l'intérieur? - An Laurence 安媛, 童宙 Tong Zhou Lafrance, Corinne Beaumier",
+    "date": "2026-10-24 → 2026-12-20",
+    "lieu": "@45.453875751695,-73.563987662722",
+    "url": "https://montreal.ca/evenements/jusquou-peut-se-voir-vers-linterieur-laurence-anyuan-tongzhou-tong-zhou-lafrance-corinne-beaumier-90115",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/jusquou-peut-se-voir-vers-linterieur-laurence-anyuan-tongzhou-tong-zhou-lafrance-corinne-beaumier-90115"
+   },
+   {
+    "titre": "Le temps qui s’arrête - Marianne Chevalier",
+    "date": "2026-07-18 → 2027-05-23",
+    "lieu": "@45.453875751695,-73.563987662722",
+    "url": "https://montreal.ca/evenements/le-temps-qui-sarrete-marianne-chevalier-114589",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/le-temps-qui-sarrete-marianne-chevalier-114589"
+   },
+   {
+    "titre": "Surcharge - Benz Debrosse",
+    "date": "2026-09-16 → 2026-12-13",
+    "lieu": "@45.5512,-73.540236",
+    "url": "https://montreal.ca/evenements/surcharge-benz-debrosse-116261",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/surcharge-benz-debrosse-116261"
+   },
+   {
+    "titre": "Exposition jeunesse - Dans l’univers de Geneviève Godbout",
+    "date": "2026-11-04 → 2027-01-31",
+    "lieu": "@45.602902,-73.558411",
+    "url": "https://montreal.ca/evenements/exposition-jeunesse-dans-lunivers-de-genevieve-godbout-119287",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-jeunesse-dans-lunivers-de-genevieve-godbout-119287"
+   },
+   {
+    "titre": "Où va la vie quand elle meurt - Karine Gaulin",
+    "date": "2026-11-12 → 2027-01-10",
+    "lieu": "@45.48933211659042,-73.58156306313106",
+    "url": "https://montreal.ca/evenements/ou-va-la-vie-quand-elle-meurt-karine-gaulin-116838",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/ou-va-la-vie-quand-elle-meurt-karine-gaulin-116838"
+   },
+   {
+    "titre": "Là où on se retrouve - Table de quartier Peter-McGill",
+    "date": "2026-11-16 → 2026-11-29",
+    "lieu": "@45.48933211659042,-73.58156306313106",
+    "url": "https://montreal.ca/evenements/la-ou-se-retrouve-table-de-quartier-peter-mcgill-116843",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/la-ou-se-retrouve-table-de-quartier-peter-mcgill-116843"
+   },
+   {
+    "titre": "500 ans de résistance Autochtone",
+    "date": "2026-12-01 → 2027-01-06",
+    "lieu": "@45.48933211659042,-73.58156306313106",
+    "url": "https://montreal.ca/evenements/500-ans-de-resistance-autochtone-116844",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/500-ans-de-resistance-autochtone-116844"
+   },
+   {
+    "titre": "L’inquiétude des paysages : entre chaos et persistance - Hervé Mbelo",
+    "date": "2026-11-11 → 2026-12-20",
+    "lieu": "@45.517934,-73.608452",
+    "url": "https://montreal.ca/evenements/linquietude-des-paysages-entre-chaos-et-persistance-herve-mbelo-102309",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/linquietude-des-paysages-entre-chaos-et-persistance-herve-mbelo-102309"
+   },
+   {
+    "titre": "Arkhè de Maxime Boisvert",
+    "date": "2026-07-04 → 2027-07-04",
+    "lieu": "@45.424294,-73.62374",
+    "url": "https://montreal.ca/evenements/arkhe-de-maxime-boisvert-114693",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/arkhe-de-maxime-boisvert-114693"
+   },
+   {
+    "titre": "Murmure encore - Muriel Ahmarani Jaouich",
+    "date": "2026-11-19 → 2027-01-17",
+    "lieu": "@45.524952,-73.582684",
+    "url": "https://montreal.ca/evenements/murmure-encore-muriel-ahmarani-jaouich-119735",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/murmure-encore-muriel-ahmarani-jaouich-119735"
+   },
+   {
+    "titre": "Exposition : 25 ans d’art autogéré ! - Les Productions Carmagnole célèbrent leurs 25 ans !",
+    "date": "2026-11-05 → 2026-12-13",
+    "lieu": "@45.5512,-73.540236",
+    "url": "https://montreal.ca/evenements/exposition-25-ans-dart-autogere-les-productions-carmagnole-celebrent-leurs-25-ans-117418",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-25-ans-dart-autogere-les-productions-carmagnole-celebrent-leurs-25-ans-117418"
+   },
+   {
+    "titre": "Ligne de flottaison",
+    "date": "2026-11-20 → 2027-01-17",
+    "lieu": "@45.553373,-73.662956",
+    "url": "https://montreal.ca/evenements/ligne-de-flottaison-120995",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/ligne-de-flottaison-120995"
+   },
+   {
+    "titre": "Entre Trames – Julie Picard",
+    "date": "2026-11-28 → 2027-01-23",
+    "lieu": "@45.430636,-73.594038",
+    "url": "https://montreal.ca/evenements/entre-trames-julie-picard-116378",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/entre-trames-julie-picard-116378"
+   },
+   {
+    "titre": "Exposition – Présence suspendue de Jasmine Dessureault",
+    "date": "2026-10-01 → 2026-11-29",
+    "lieu": "@45.445958,-73.651947",
+    "url": "https://montreal.ca/evenements/exposition-presence-suspendue-de-jasmine-dessureault-111043",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-presence-suspendue-de-jasmine-dessureault-111043"
+   },
+   {
+    "titre": "Exposition – Éclats du Maroc de Younes Azeggarh",
+    "date": "2026-12-01 → 2027-01-03",
+    "lieu": "@45.445958,-73.651947",
+    "url": "https://montreal.ca/evenements/exposition-eclats-du-maroc-de-younes-azeggarh-111048",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-eclats-du-maroc-de-younes-azeggarh-111048"
+   },
+   {
+    "titre": "Exposition – Sculptures des Pics-Bois de Lachine",
+    "date": "2026-11-04 → 2026-12-03",
+    "lieu": "@45.440449,-73.691033",
+    "url": "https://montreal.ca/evenements/exposition-sculptures-des-pics-bois-de-lachine-111045",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-sculptures-des-pics-bois-de-lachine-111045"
+   },
+   {
+    "titre": "Exposition – Nostalgie florale d’Eliane Berdat",
+    "date": "2026-10-31 → 2026-11-29",
+    "lieu": "@45.440449,-73.691033",
+    "url": "https://montreal.ca/evenements/exposition-nostalgie-florale-deliane-berdat-111046",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-nostalgie-florale-deliane-berdat-111046"
+   },
+   {
+    "titre": "Exposition – Dalbé-Viau d’hier à aujourd’hui des élèves du cours Arts et multimédia de 5e secondaire",
+    "date": "2026-11-27 → 2027-01-04",
+    "lieu": "@45.440449,-73.691033",
+    "url": "https://montreal.ca/evenements/exposition-dalbe-viau-dhier-aujourdhui-des-eleves-du-cours-arts-et-multimedia-de-5e-secondaire-111047",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-dalbe-viau-dhier-aujourdhui-des-eleves-du-cours-arts-et-multimedia-de-5e-secondaire-111047"
+   },
+   {
+    "titre": "Exposition – Plus fort que nous par Kaciane Monchamp",
+    "date": "2026-12-01 → 2027-01-04",
+    "lieu": "@45.440449,-73.691033",
+    "url": "https://montreal.ca/evenements/exposition-plus-fort-que-nous-par-kaciane-monchamp-111049",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-plus-fort-que-nous-par-kaciane-monchamp-111049"
+   },
+   {
+    "titre": "Exposition – Mots qu’on dit du collectif Encréplumes",
+    "date": "2026-11-04 → 2026-11-25",
+    "lieu": "@45.440449,-73.691033",
+    "url": "https://montreal.ca/evenements/exposition-mots-quon-dit-du-collectif-encreplumes-111746",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/exposition-mots-quon-dit-du-collectif-encreplumes-111746"
+   },
+   {
+    "titre": "Faire tenir, parmi, récolter - Marjolaine Bourdua",
+    "date": "2026-11-11 → 2027-01-10",
+    "lieu": "@45.517934,-73.608452",
+    "url": "https://montreal.ca/evenements/faire-tenir-parmi-recolter-marjolaine-bourdua-102310",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/faire-tenir-parmi-recolter-marjolaine-bourdua-102310"
+   },
+   {
+    "titre": "Guérir de ce qu'on peut - Guillaume Brisson-Darveau",
+    "date": "2027-01-16 → 2027-03-20",
+    "lieu": "@45.457710041642,-73.595584157413",
+    "url": "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-111329",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/guerir-de-ce-quon-peut-guillaume-brisson-darveau-111329"
+   },
+   {
+    "titre": "Un regard collectif",
+    "date": "2026-10-31 → 2026-12-12",
+    "lieu": "@45.457710041642,-73.595584157413",
+    "url": "https://montreal.ca/evenements/un-regard-collectif-118879",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/un-regard-collectif-118879"
+   },
+   {
+    "titre": "Doux au toucher - Alexey Lazarev",
+    "date": "2026-10-31 → 2026-12-12",
+    "lieu": "@45.457710041642,-73.595584157413",
+    "url": "https://montreal.ca/evenements/doux-au-toucher-alexey-lazarev-118883",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/doux-au-toucher-alexey-lazarev-118883"
+   },
+   {
+    "titre": "Le Plateau littéraire | Société d'histoire du Plateau-Mont-Royal",
+    "date": "2026-11-19 → 2027-01-17",
+    "lieu": "@45.524952,-73.582684",
+    "url": "https://montreal.ca/evenements/le-plateau-litteraire-societe-dhistoire-du-plateau-mont-royal-122005",
+    "source": "ville",
+    "detail": "https://montreal.ca/evenements/le-plateau-litteraire-societe-dhistoire-du-plateau-mont-royal-122005"
+   }
+  ],
   "série : hors de l'île": [
    {
     "titre": "Ma petite boule d'amour",
@@ -1406,26 +1790,10 @@
     "url": "https://www.songkick.com/concerts/43469516-wild-pink-at-la-sotterenea?utm_medium=organic&utm_source=microformat",
     "source": "songkick"
    }
-  ],
-  "série : sans salle, saison déjà détaillée ou annonce de saison": [
-   {
-    "titre": "Festival Slam Rap Poésie & Cie",
-    "date": "2026-11-06 → 2026-11-29",
-    "lieu": "Lieu à confirmer",
-    "url": "https://www.facebook.com/festivalslamrappoesieetcie",
-    "source": ""
-   },
-   {
-    "titre": "Grand Slam international de Montréal",
-    "date": "2026-09-07 → 2026-12-06",
-    "lieu": "Lieu à confirmer",
-    "url": "https://www.gsimtl.com/",
-    "source": ""
-   }
   ]
  },
  "disparues": {
-  "total": 117,
+  "total": 159,
   "liste": [
    {
     "titre": "222 / Discussion autour du livre Projet N / Yves Bernard et Vincent Frigon / Septentrion",
@@ -2240,11 +2608,305 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Exposition – Mots qu’on dit du collectif Encréplumes",
+    "date": "2026-11-04 → 2026-11-25",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-mots-quon-dit-du-collectif-encreplumes-111746",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Là où on se retrouve - Table de quartier Peter-McGill",
+    "date": "2026-11-16 → 2026-11-29",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/la-ou-se-retrouve-table-de-quartier-peter-mcgill-116843",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Présence suspendue de Jasmine Dessureault",
+    "date": "2026-10-01 → 2026-11-29",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-presence-suspendue-de-jasmine-dessureault-111043",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Nostalgie florale d’Eliane Berdat",
+    "date": "2026-10-31 → 2026-11-29",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-nostalgie-florale-deliane-berdat-111046",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition multidisciplinaire des Ateliers culturels",
+    "date": "2026-11-07 → 2026-11-29",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-multidisciplinaire-des-ateliers-culturels-120945",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "festival triste 2026 @ festival triste 2026",
+    "date": "2026-11-24 → 2026-11-29",
+    "lieu": "Lieu à confirmer",
+    "url": "https://www.songkick.com/festivals/3701261-triste/id/43497871-festival-triste-2026?utm_medium=organic&utm_source=microformat",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Saint-Michel à colorier",
+    "date": "2025-12-01 → 2026-12-01",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/saint-michel-colorier-101690",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Sculptures des Pics-Bois de Lachine",
+    "date": "2026-11-04 → 2026-12-03",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-sculptures-des-pics-bois-de-lachine-111045",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Un regard collectif",
+    "date": "2026-10-31 → 2026-12-12",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/un-regard-collectif-118879",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Doux au toucher - Alexey Lazarev",
+    "date": "2026-10-31 → 2026-12-12",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/doux-au-toucher-alexey-lazarev-118883",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Tout guérit, même ça",
+    "date": "2026-09-11 → 2026-12-12",
+    "lieu": "Lieu à confirmer",
+    "url": "https://reseauartactuel.org/evenement/tout-gueri/",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Les filles de l’air - Marie-Blanche Rossi",
+    "date": "2026-11-06 → 2026-12-13",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/les-filles-de-lair-marie-blanche-rossi-109178",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition : 25 ans d’art autogéré ! - Les Productions Carmagnole célèbrent leurs 25 ans !",
+    "date": "2026-11-05 → 2026-12-13",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-25-ans-dart-autogere-les-productions-carmagnole-celebrent-leurs-25-ans-117418",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Parasco à l'œuvre - Bureau des activités étudiantes du CSSPI",
+    "date": "2026-12-10 → 2026-12-14",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/parasco-loeuvre-bureau-des-activites-etudiantes-du-csspi-121689",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Le Nouveau Louvre 2026",
+    "date": "2026-11-21 → 2026-12-19",
+    "lieu": "Lieu à confirmer",
+    "url": "https://reseauartactuel.org/evenement/le-nouveau-louvre/",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "L’inquiétude des paysages : entre chaos et persistance - Hervé Mbelo",
+    "date": "2026-11-11 → 2026-12-20",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/linquietude-des-paysages-entre-chaos-et-persistance-herve-mbelo-102309",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition - Connexions",
+    "date": "2026-10-19 → 2026-12-23",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-connexions-118031",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Éclats du Maroc de Younes Azeggarh",
+    "date": "2026-12-01 → 2027-01-03",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-eclats-du-maroc-de-younes-azeggarh-111048",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Dalbé-Viau d’hier à aujourd’hui des élèves du cours Arts et multimédia de 5e secondaire",
+    "date": "2026-11-27 → 2027-01-04",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-dalbe-viau-dhier-aujourdhui-des-eleves-du-cours-arts-et-multimedia-de-5e-secondaire-111047",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Plus fort que nous par Kaciane Monchamp",
+    "date": "2026-12-01 → 2027-01-04",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-plus-fort-que-nous-par-kaciane-monchamp-111049",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "500 ans de résistance Autochtone",
+    "date": "2026-12-01 → 2027-01-06",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/500-ans-de-resistance-autochtone-116844",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Cara Carmina et moi - Cara Carmina",
+    "date": "2026-09-12 → 2027-01-10",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/cara-carmina-et-moi-cara-carmina-118805",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Où va la vie quand elle meurt - Karine Gaulin",
+    "date": "2026-11-12 → 2027-01-10",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/ou-va-la-vie-quand-elle-meurt-karine-gaulin-116838",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Faire tenir, parmi, récolter - Marjolaine Bourdua",
+    "date": "2026-11-11 → 2027-01-10",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/faire-tenir-parmi-recolter-marjolaine-bourdua-102310",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition citoyenne de Zoé Plouffe",
+    "date": "2026-12-05 → 2027-01-10",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-citoyenne-de-zoe-plouffe-121186",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Murmure encore - Muriel Ahmarani Jaouich",
+    "date": "2026-11-19 → 2027-01-17",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/murmure-encore-muriel-ahmarani-jaouich-119735",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Ligne de flottaison",
+    "date": "2026-11-20 → 2027-01-17",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/ligne-de-flottaison-120995",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Le Plateau littéraire | Société d'histoire du Plateau-Mont-Royal",
+    "date": "2026-11-19 → 2027-01-17",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/le-plateau-litteraire-societe-dhistoire-du-plateau-mont-royal-122005",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
     "titre": "Liminal : Étirer les marges - Maria Ezcurra",
     "date": "2026-11-07 → 2027-01-17",
     "lieu": "Lieu à confirmer",
     "url": "https://montreal.ca/evenements/liminal-etirer-les-marges-maria-ezcurra-91955",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Le Sanctum - T. Ayoka, C. Camille, T. Dulcinée, O. Igbokwe, K. Lindsay, D. Mombrun",
+    "date": "2026-09-12 → 2027-01-24",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/le-sanctum-t-ayoka-c-camille-t-dulcinee-o-igbokwe-k-lindsay-d-mombrun-120125",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Revoir et relire avec Mimi et Jeanne - Ève K Tremblay",
+    "date": "2026-11-18 → 2027-01-31",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/revoir-et-relire-avec-mimi-et-jeanne-eve-k-tremblay-119302",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition jeunesse - Dans l’univers de Geneviève Godbout",
+    "date": "2026-11-04 → 2027-01-31",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-jeunesse-dans-lunivers-de-genevieve-godbout-119287",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition - Incursion dans le monde des strigidés du Canada, de Frédéric Izquierdo",
+    "date": "2027-01-08 → 2027-02-03",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-incursion-dans-le-monde-des-strigides-du-canada-de-frederic-izquierdo-122111",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Attente lourde x Weighting - Alexandra Pelletier",
+    "date": "2027-01-16 → 2027-02-13",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/attente-lourde-x-weighting-alexandra-pelletier-122495",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Mossbed",
+    "date": "2026-10-16 → 2027-02-21",
+    "lieu": "Lieu à confirmer",
+    "url": "https://www.placedesarts.com/en/event/mossbed",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Devenir mousse",
+    "date": "2026-10-16 → 2027-02-21",
+    "lieu": "Lieu à confirmer",
+    "url": "https://www.placedesarts.com/evenement/devenir-mousse",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition - Réalité alternative, de Vincent Azar",
+    "date": "2027-01-09 → 2027-02-24",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-realite-alternative-de-vincent-azar-122106",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Paysage et abstraction se rencontrent - Louise Grenier",
+    "date": "2027-01-08 → 2027-02-28",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/paysage-et-abstraction-se-rencontrent-louise-grenier-121231",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Exposition – Petites œuvres, de Reyan Josef Armstrong",
+    "date": "2027-01-09 → 2027-03-25",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/exposition-petites-oeuvres-de-reyan-josef-armstrong-122105",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Adib Alkhalidey | Comme les Mongols à Baghdad",
+    "date": "2026-12-16 → 2027-03-27",
+    "lieu": "Lieu à confirmer",
+    "url": "https://www.placedesarts.com/en/event/adib-alkhalidey",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Louis-José Houde | Et jusqu'à la fin la beauté.",
+    "date": "2027-01-06 → 2027-04-09",
+    "lieu": "Lieu à confirmer",
+    "url": "https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Devenir chez nous, une communauté d'oiseaux bigarrés - Iphigénie Marcoux-Fortier",
+    "date": "2026-06-20 → 2027-04-30",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/devenir-chez-nous-une-communaute-doiseaux-bigarres-iphigenie-marcoux-fortier-114517",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
+   },
+   {
+    "titre": "Ko tè a tounen istwa (Là où la terre se fait récit) | Richarson Dorvil",
+    "date": "2025-09-30 → 2030-04-30",
+    "lieu": "Lieu à confirmer",
+    "url": "https://montreal.ca/evenements/ko-te-tounen-istwa-la-ou-la-terre-se-fait-recit-richarson-dorvil-99463",
+    "raison": "série mise de côté : trop peu d'information (salle inconnue)"
    }
   ]
  }
