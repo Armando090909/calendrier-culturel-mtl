@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-26-the-school-of-performance-presents-uncommon-weathe-b24396@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261126T190000
+DTEND;TZID=America/Toronto:20261126T210000
+SUMMARY:The School of Performance Presents: UNcommon WEather
+LOCATION:John Molson Building\, Montréal
+URL:https://www.concordia.ca/cuevents/finearts/performance/dance/2026/11/26
+ /the-school-of-performance-presents--improvisation-as-choreograph.html
+DESCRIPTION:Spectacle de danse improvisée présenté par l'École de perfo
+ rmance de Concordia\, dans le cadre d'une soirée de création.\nDétails 
+ : https://www.concordia.ca/cuevents/finearts/performance/dance/2026/11/26/
+ the-school-of-performance-presents--improvisation-as-choreograph.html\n(cc
+ mtl.ca)
+END:VEVENT
+END:VCALENDAR

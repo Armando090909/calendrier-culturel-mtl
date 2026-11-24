@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1217,
+  "evenements": 1198,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 26,
+  "evenements": 25,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 322,
+  "evenements": 295,
   "erreur": false
  },
  {
@@ -353,14 +353,14 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 25,
   "erreur": false
  },
  {
   "nom": "Théâtre de la LNI",
   "url": "https://www.lni.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -416,7 +416,7 @@
   "nom": "La Cenne",
   "url": "https://www.lacenne.com/programmation",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -451,7 +451,7 @@
   "nom": "Espace Le Vrai Monde?",
   "url": "https://espacelevraimonde.ca/programmation",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 3,
   "erreur": false
  },
  {
@@ -486,14 +486,14 @@
   "nom": "Librairie Le Port de tête",
   "url": "https://www.leportdetete.com/evenements",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 7,
   "erreur": false
  },
  {
   "nom": "N'était-ce pas l'été (ma.to)",
   "url": "https://ma.to/venue/netaitcepaslete",
   "type": "page lue par l'IA",
-  "evenements": 1,
+  "evenements": 2,
   "erreur": false
  },
  {
@@ -514,7 +514,7 @@
   "nom": "Cabaret de Curiosités",
   "url": "https://cabaretdecuriosites.com",
   "type": "page lue par l'IA",
-  "evenements": 14,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -591,14 +591,14 @@
   "nom": "LESPACEMAKER – événements",
   "url": "https://calendar.google.com/calendar/ical/drsjurh83cbqpbdiapam7rou6c%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 74,
+  "evenements": 71,
   "erreur": false
  },
  {
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 72,
+  "evenements": 73,
   "erreur": false
  },
  {
@@ -647,21 +647,21 @@
   "nom": "UQAM – événements",
   "url": "https://evenements.uqam.ca",
   "type": "page lue par l'IA",
-  "evenements": 46,
+  "evenements": 36,
   "erreur": false
  },
  {
   "nom": "Université de Montréal – calendrier",
   "url": "https://calendrier.umontreal.ca",
   "type": "page lue par l'IA",
-  "evenements": 41,
+  "evenements": 29,
   "erreur": false
  },
  {
   "nom": "Concordia – événements",
   "url": "https://www.concordia.ca/events.html",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 24,
   "erreur": false
  },
  {
@@ -675,7 +675,7 @@
   "nom": "Centre Canadien d'Architecture – événements (Eventbrite)",
   "url": "https://www.eventbrite.ca/o/15745877961",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -1277,7 +1277,7 @@
   "nom": "Studio 303",
   "url": "https://www.studio303.ca/en/montreal",
   "type": "page lue par l'IA",
-  "evenements": 2,
+  "evenements": 25,
   "erreur": false
  },
  {
@@ -1578,7 +1578,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 105,
+  "evenements": 100,
   "erreur": false
  },
  {

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-11-25-conferences-midi-du-limespp-2-comment-construire-u-7b9094@cc
+ mtl.ca
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20261125T120000
+DTEND;TZID=America/Toronto:20261125T140000
+SUMMARY:Conférences-midi du LIMeSPP#2 : « Comment construire une problém
+ atique de recherche ? »
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://calendrier.umontreal.ca/activite/conferences-midi-du-limespp2-c
+ omment-construire-une-problematique-de-recherche
+DESCRIPTION:Conférence du midi\, en format hybride\, sur la façon de form
+ uler une problématique de recherche.\nPrix : Gratuit\nDétails : https://
+ docs.google.com/forms/d/e/1FAIpQLScMsFbmmJXRxR-TlKPBU9FrOe3ZAlhHujgQss8OJS
+ DiD62Xvw/viewform\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

@@ -442,6 +442,7 @@
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Bibliothèque, pavillon J.W. McConnell, salle LB-2, 1400 boulevard De Maisonneuve Ouest": null,
  "Bibliothèques, cafés, musées et autres lieux partenaires": null,
  "Bibliothèques, cafés, musées et autres lieux participants": null,
  "Biodôme | Espace pour la vie": null,
@@ -544,6 +545,11 @@
   "lat": 45.5085,
   "lon": -73.5605,
   "quartier": "Quartier chinois"
+ },
+ "Café OUI MAIS NON": {
+  "lat": 45.53969,
+  "lon": -73.63067,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
  "Café Social B Hive": null,
  "Campus MIL, Complexe des sciences": null,
@@ -999,6 +1005,7 @@
   "lon": -73.59924,
   "quartier": "Rosemont–La Petite-Patrie"
  },
+ "Espace formes · ondes": null,
  "Espace le vrai monde?": {
   "lat": 45.55209,
   "lon": -73.64398,
@@ -1052,6 +1059,7 @@
   "quartier": "Quartier latin"
  },
  "Foyer Yves-Gagnon": null,
+ "GM - Guy-De Maisonneuve Building": null,
  "Galerie B-312": {
   "lat": 45.5015,
   "lon": -73.56939,
@@ -1208,6 +1216,7 @@
   "lon": -73.57574,
   "quartier": "Ville-Marie"
  },
+ "Guy-De Maisonneuve Building, salle GM 340.10": null,
  "H-110, Henry F. Hall Building": null,
  "Hall Est du Stade olympique": {
   "lat": 45.558,
@@ -1257,6 +1266,7 @@
  },
  "Jeanne & Peter Lougheed Performing Arts Centre": null,
  "Jelleff Recreation Center": null,
+ "John Molson Building": null,
  "John Molson Building (MB), campus SGW": null,
  "John Molson Building (Sir George Williams Campus), salle 14.250": null,
  "John Molson Building, salle ABCD": null,
@@ -1505,6 +1515,7 @@
  },
  "Le Zaricot": null,
  "Le Zénith Promutuel Assurances": null,
+ "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest": null,
  "Les Diffusions Pointe-Valaine": null,
  "Les Sœurs Grises Vieux-Rosemont": {
   "lat": 45.55016,
@@ -1761,6 +1772,7 @@
  },
  "Milieux Institute for Arts, Culture and Technology, Concordia University": null,
  "Milieux Institute, Sir George Williams Campus": null,
+ "Milieux Resource Centre": null,
  "Modavie": {
   "lat": 45.50547,
   "lon": -73.55396,
@@ -2294,6 +2306,11 @@
  "Square Saint-Louis": {
   "lat": 45.51712,
   "lon": -73.56983,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
+ "St John's Lutheran Church": {
+  "lat": 45.51088,
+  "lon": -73.57499,
   "quartier": "Le Plateau-Mont-Royal"
  },
  "Stereo": {
