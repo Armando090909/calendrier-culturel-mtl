@@ -229,6 +229,19 @@ HORS_ILE = [
 LIEUX_HORS_ILE = {
     # Brossard, Quartier DIX30 (24 nov. 2026 : annoncé par Sors-tu? sans adresse, 11 soirs affichés à Montréal)
     "theatre manuvie", "le club square dix30", "club square dix30",
+    # (24 nov. 2026, grand tour : salles sans coordonnées, toutes hors de l'île de Montréal)
+    "le saint jean comedie club", "saint jean comedie club", "centre des arts juliette lassonde", "theatre du palais municipal",
+    "salle albert rousseau", "salle mechatigan", "salle michel cote", "london music hall", "theatre de la bordee",
+    "theatre belcourt", "pacific coliseum", "southern alberta jubilee auditorium", "meridian hall", "la petite boite noire",
+    "centre marcel dulude", "theatre du casino du lac leamy", "casino du lac leamy",
+    "molson canadian centre at casino new nouveau brunswick", "pavillon de l ile", "ras l bock", "grey eagle event centre",
+    "maison de la culture de waterloo", "theatre des deux rives", "theatre du rift", "century casino", "ville de plessisville",
+    "theatre des grands bois", "theatre du cuivre", "l anti bar spectacles", "caa centre", "thunder bay community auditorium",
+    "sid williams theatre", "revelstoke performing arts centre", "under the big top langley riders society",
+    "firstontario centre", "theatre alphonse desjardins", "esplanade arts heritage centre", "salle philippe filion",
+    "jeanne peter lougheed performing arts centre", "ea rawlinson centre for the arts",
+    "salle vincent spain complexe culturel felix leclerc", "complexe culturel felix leclerc", "magasin general lebrun",
+    "ville de l ile perrot",
     # Gatineau (vu le 2 nov. 2026 : « Le Minotaure », 3 rue Kent, annoncé par Sors-tu?)
     "le minotaure", "minotaure",
     # Toronto, Vancouver, Ottawa, Prairies
