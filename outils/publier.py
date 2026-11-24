@@ -1001,7 +1001,19 @@ def main():
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
     data = json.loads((RACINE / "docs" / "data.json").read_text(encoding="utf-8"))
     sem = os.environ.get("SEMAINE_PUBLIER", "")  # republier une semaine déjà choisie (demande-test.txt, 2e ligne)
-    debut = date.fromisoformat(sem) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", sem) else visuels.lundi_a_venir()
+    # (24 nov. 2026) GRAVE : la tâche de GitHub du lundi est partie à 19 h 58 (00 h 58 le mardi en heure UTC) ; la semaine
+    # calculée en UTC était donc la SUIVANTE, publiée sans aperçu ni accord. Désormais : date de Montréal, publication
+    # seulement un lundi (à Montréal), pour la semaine de ce lundi, et seulement une sélection approuvée (aperçu).
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    auj_mtl = datetime.now(ZoneInfo("America/Toronto")).date()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", sem):
+        debut = date.fromisoformat(sem)
+    else:
+        if auj_mtl.weekday() != 0 and not ESSAI:
+            print(f"Pas lundi à Montréal ({auj_mtl}) : aucune publication.")
+            return
+        debut = auj_mtl - timedelta(days=auj_mtl.weekday())
     semaine = debut.isoformat()
     faits = etat.setdefault("publie", {}).setdefault(semaine, {})
     reseaux = ("bluesky", "instagram", "threads", "facebook", "instagram_story", "facebook_story")
@@ -1018,6 +1030,9 @@ def main():
     s = _lire_selection(semaine)
     if s and s.get("_statut") == "stop" and not (FORCER or ESSAI or SEULEMENT):
         print(f"Semaine du {semaine} : publication suspendue par une consigne (écrire « ok » dans l'avis pour la relancer).")
+        return
+    if not s and not ESSAI:
+        print(f"Semaine du {semaine} : aucun aperçu envoyé ni approuvé, rien n'est publié.")
         return
     s = s or fs.choisir(data, debut, etat)
     lots = _rendre(s, semaine)
