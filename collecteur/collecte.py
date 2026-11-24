@@ -871,9 +871,14 @@ def main() -> int:
     (SORTIE.parent / "pages_a_lire.json").write_text(json.dumps(sorted(connecteurs.BLOQUEES), ensure_ascii=False),
                                                      encoding="utf-8")
     # Liste des fiches encore incomplètes, pour l'ordinateur à Montréal (dates les plus proches d'abord)
-    (SORTIE.parent / "ville_a_lire.json").write_text(json.dumps(list(dict.fromkeys(
-        e["url"] for e in a_lire if (e["lieu"] == "Lieu à confirmer" or not e["heure"])
-        and e["url"] not in mac and "montreal.ca/evenements/" in e["url"])), ensure_ascii=False), encoding="utf-8")
+    # (24 nov. 2026) aussi les expositions de la Ville sans salle : le Pi lit leur fiche, la salle revient seule
+    _a_lire_v = [e["url"] for e in a_lire if (e["lieu"] == "Lieu à confirmer" or not e["heure"])
+                 and e["url"] not in mac and "montreal.ca/evenements/" in e["url"]]
+    _a_lire_v += [x["url"] for x in series
+                  if (not (x.get("lieu") or "").strip() or plat(x.get("lieu") or "") == "lieu a confirmer")
+                  and "montreal.ca/evenements/" in (x.get("url") or "") and x["url"] not in mac]
+    (SORTIE.parent / "ville_a_lire.json").write_text(json.dumps(list(dict.fromkeys(_a_lire_v)), ensure_ascii=False),
+                                                     encoding="utf-8")
     notes = {"fiches_ville": {"lues": lues_v, "erreurs": len(erreurs_v), "exemples_erreurs": sorted(set(erreurs_v))[:3],
                               "completees_par_mac": par_mac,
                               "heures_trouvees": sum(1 for e in a_lire if e["heure"]),
@@ -1263,6 +1268,22 @@ def main() -> int:
         lieu = lieu_canon(s["lieu"], s.get("adresse", ""), s.get("ville", ""))
         if lieu is None:
             rejeter("série : hors de l'île", s, " · ".join(x for x in (s["lieu"], s.get("adresse", ""), s.get("ville", "")) if x))
+            continue
+        if not lieu or lieu == "Lieu à confirmer":
+            # (24 nov. 2026) salle donnée par la fiche de la Ville que le Pi a lue
+            m_v = mac.get(s.get("url") or "")
+            if m_v:
+                faux = "".join(f'<script type="application/ld+json">{j}</script>' for j in m_v.get("jsonld", []))
+                d_v = connecteurs.details_ville(faux, s["debut"]) or {}
+                if d_v.get("lieu"):
+                    lieu = lieu_canon(d_v["lieu"], d_v.get("adresse", ""), "Montréal") or lieu
+            if lieu is None:
+                rejeter("série : hors de l'île", s, s.get("url", ""))
+                continue
+        # (24 nov. 2026, demande de l'équipe) trop peu d'information pour être publié : pas de salle, ou titre vide
+        # (« festival triste 2026 @ festival triste 2026 ») : mis de côté jusqu'à ce qu'une source le complète
+        if not lieu or lieu == "Lieu à confirmer" or re.fullmatch(r"(?i)\s*(.+?)\s*@\s*\1\s*", s["titre"]):
+            rejeter("série mise de côté : trop peu d'information (salle inconnue)", s, s.get("url", ""))
             continue
         k = plat(s["titre"])[:40] + "|" + plat(lieu or "")[:20]
         if k in vus:
