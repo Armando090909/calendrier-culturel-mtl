@@ -430,3 +430,9 @@ html.v2 .cal-menu{display:none}
   html.v2 .det-quand .cal a,html.v2 .det-quand .cal button{font-size:12px}
   html.v2 .det-quand .tm{flex:none;white-space:nowrap}
 }
+/* 24 nov. 2026 : liens d'écoute toujours sur une seule ligne (icônes un peu plus petites si la colonne est étroite) */
+html.v2 .ecoute.ecg{flex-wrap:nowrap;gap:8px 12px}
+html.v2 .ecoute.ecg .ecg-t{white-space:nowrap;flex:none}
+html.v2 .ecoute.ecg .ecg-g{flex-wrap:nowrap;gap:8px;min-width:0}
+html.v2 .ecoute.ecg a img{width:clamp(22px,2.2vw,28px);height:clamp(22px,2.2vw,28px)}
+html.v2 .ecoute.ecg a:not(:has(img)) span{white-space:nowrap}
