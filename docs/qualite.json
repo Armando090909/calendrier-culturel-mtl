@@ -1,12 +1,12 @@
 {
  "date": "2026-11-24",
  "regles": {
-  "titre mal encodé": 16,
+  "titre mal encodé": 15,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
   "date absente de la page officielle": 47,
   "page de la sortie disparue": 4,
-  "heures différentes selon les sources": 59
+  "heures différentes selon les sources": 58
  },
  "journal": [
   {
@@ -116,15 +116,6 @@
    "lieu": "Théâtre Sainte-Catherine",
    "source": "theatre",
    "url": "https://theatresaintecatherine.com/event/liz-mieles-new-stand-up-hour-live-laugh-leave/"
-  },
-  {
-   "regle": "titre mal encodé",
-   "action": "corrigé",
-   "titre": "Match d’impro | LA TUQUE",
-   "date": "2027-01-16",
-   "lieu": "Salle Vincent-Spain — Complexe culturel Félix-Leclerc",
-   "source": "salles",
-   "url": "https://lni.ca/evenement/match-dimpro-la-tuque/"
   },
   {
    "regle": "titre mal encodé",
@@ -794,15 +785,6 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "09:30 gardée (plessisville.quebec), 10:45 écartée (plessisville.quebec)",
-   "titre": "Stella et l'étoile de Noël",
-   "date": "2026-11-28",
-   "lieu": "Ville de Plessisville",
-   "source": "salles",
-   "url": "https://plessisville.quebec/evenements/vie-de-quartier/spectacle-de-noel"
-  },
-  {
-   "regle": "heures différentes selon les sources",
    "action": "18:00 gardée (cabaretdecuriosites.com), 17:30 écartée (lepointdevente.com)",
    "titre": "Les Femmelettes 2.0 Édition Marchette de Noël",
    "date": "2026-12-05",
@@ -1163,7 +1145,7 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 302,
+  "date confirmée": 279,
   "date absente de la page": 47,
   "page illisible": 50,
   "lien mort remplacé": 4
@@ -1172,15 +1154,9 @@
  "sources_a_surveiller": [
   {
    "source": "lni.ca",
-   "erreurs": 46,
-   "sorties": 8,
-   "taux": 575.0
-  },
-  {
-   "source": "plessisville.quebec",
-   "erreurs": 5,
-   "sorties": 5,
-   "taux": 100.0
+   "erreurs": 45,
+   "sorties": 7,
+   "taux": 642.9
   },
   {
    "source": "balattou.com",
@@ -1323,12 +1299,12 @@
   {
    "source": "sorstu.ca",
    "erreurs": 91,
-   "sorties": 1649,
-   "taux": 5.5
+   "sorties": 1602,
+   "taux": 5.7
   }
  ],
  "recoupees": {
-  "total": 2857,
-  "deux_sources_ou_plus": 261
+  "total": 2798,
+  "deux_sources_ou_plus": 260
  }
 }
