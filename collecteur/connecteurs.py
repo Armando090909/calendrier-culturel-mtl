@@ -955,16 +955,29 @@ def _heure_du_jour(texte: str, jour: str) -> str | None:
     return None
 
 
+def _date_heure_mtl(sd: str):
+    """(24 nov. 2026) « 2026-12-11T03:00:00+00:00 » (heure universelle, Simpletix, Stageline, Lineup…) = 10 déc. 22 h à
+    Montréal : la date et l'heure sont converties à l'heure de Montréal (Le Red Room affichait 3 h du matin). Une heure
+    sans fuseau est prise telle quelle. Renvoie (date, « HH:MM ») ou None (pas d'heure, ou minuit pile)."""
+    m = re.search(r"T(\d{2}):(\d{2})", sd)
+    if not m or (m.group(1), m.group(2)) == ("00", "00"):
+        return None
+    if re.search(r"(Z|[+-]\d{2}:?\d{2})$", sd.strip()):
+        dt = _iso(sd)
+        if isinstance(dt, datetime):
+            return dt.date().isoformat(), dt.strftime("%H:%M")
+    return sd[:10], f"{m.group(1)}:{m.group(2)}"
+
+
 def heure_page(html: str, jour: str | None = None) -> str | None:
     """Heure du spectacle lue sur la page d'un événement : données schema.org d'abord (la représentation du bon jour
     s'il y en a plusieurs), puis l'heure écrite après la date, puis le texte (« spectacle à 20 h 30 », « show 8pm » ;
     à défaut, l'ouverture des portes)."""
     heures = []
     for o in _objets_jsonld(html):
-        sd = str(o.get("startDate") or "")
-        m = re.search(r"T(\d{2}):(\d{2})", sd)
-        if m and (m.group(1), m.group(2)) != ("00", "00"):
-            heures.append((sd[:10], f"{m.group(1)}:{m.group(2)}"))
+        dh = _date_heure_mtl(str(o.get("startDate") or ""))
+        if dh:
+            heures.append(dh)
     if jour and any(d == jour for d, _ in heures):
         return next(h for d, h in heures if d == jour)
     if heures and (not jour or len({d for d, _ in heures}) == 1):
@@ -1226,11 +1239,9 @@ def details_ville(html: str, jour: str) -> dict:
             avant, apres = str(o.get("previousStartDate") or "")[:16], str(o.get("startDate") or "")[:16]
             if avant and apres and avant != apres:
                 out["statut"] = "nouvelle_date"
-        sd = str(o.get("startDate") or "")
-        if sd[:10] == jour:
-            m = re.search(r"T(\d{2}):(\d{2})", sd)
-            if m and (m.group(1), m.group(2)) != ("00", "00"):
-                out["heure"] = f"{m.group(1)}:{m.group(2)}"
+        dh = _date_heure_mtl(str(o.get("startDate") or ""))
+        if dh and dh[0] == jour:
+            out["heure"] = dh[1]
         off = o.get("offers") or {}
         if isinstance(off, list):
             off = off[0] if off else {}

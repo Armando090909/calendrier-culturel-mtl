@@ -553,7 +553,9 @@ def _resume_selection(s, sha, semaine):
 def apercu():
     """Dimanche : choisit la sélection du lundi, l'enregistre et l'envoie pour approbation (avis GitHub)."""
     etat = json.loads(ETAT.read_text(encoding="utf-8")) if ETAT.exists() else {}
-    semaine = visuels.lundi_a_venir(date.today() + timedelta(days=1)).isoformat()
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    semaine = visuels.lundi_a_venir(datetime.now(ZoneInfo("America/Toronto")).date() + timedelta(days=1)).isoformat()  # (24 nov. 2026) date de Montréal
     if _lire_selection(semaine) and not FORCER:
         print(f"Aperçu de la semaine du {semaine} déjà envoyé.")
         return

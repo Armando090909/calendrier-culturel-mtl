@@ -344,7 +344,7 @@ _PAS_EN_LIGNE = re.compile(r"(?i)\b(inscri\w*|billet\w*|r[ée]serv\w*|achat|ache
 
 # Titres de remplacement écrits par l'IA quand la page ne donne pas le nom du spectacle (14 nov. 2026 : « Titre non
 # indiqué sur la page » au Balcon, « Spectacle sans titre indiqué » au TNM) : une fiche sans titre n'informe pas.
-TITRE_ABSENT = re.compile(r"(?i)^\s*((spectacle|[ée]v[ée]nement|concert|soir[ée]e|activit[ée]|film|pi[èe]ce)\s+)?"
+TITRE_ABSENT = re.compile(r"(?i)^\s*[(«\[]?\s*((spectacle|[ée]v[ée]nement|concert|soir[ée]e|activit[ée]|film|pi[èe]ce)\s+)?"
                           r"(sans titre (indiqu[ée]|pr[ée]cis[ée]|connu)|titre (non |pas )?(indiqu[ée]|pr[ée]cis[ée]|connu|disponible|communiqu[ée])"
                           r"|titre inconnu|titre [àa] (venir|confirmer|d[ée]terminer)|title (not given|unknown|tba|tbd)"
                           r"|(sans titre|untitled)\s*$)")  # « Sans titre » seul (une œuvre peut s'appeler « Sans titre (…) »)
@@ -1522,6 +1522,10 @@ def main() -> int:
     series_manuelles = corr.get("series", {})
     expos = [x for x in expos if x.get("url") not in corr.get("series_retirees", [])]  # doublons repérés à la main
     print(f"Corrections à la main : {n_corr} sorties corrigées ou retirées.")
+    # (24 nov. 2026) prix invraisemblable (« 6500 $ » lu pour « 65.00 $ ») : retiré plutôt qu'affiché faux
+    for e in events:
+        if e.get("prix") and any(int(n) >= 1000 for n in re.findall(r"\d+", e["prix"].replace(" ", "")) if len(n) <= 7):
+            e.pop("prix", None)
     events = _doublons_meme_salle(events)  # (22 nov. 2026) encore une fois, avec les salles et heures finales
 
     # Pièces, danse, cirque « à l'affiche du X au Y » : l'horaire de la semaine (relâches comprises), lu une fois par

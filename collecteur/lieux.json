@@ -1941,13 +1941,11 @@
  "Parc La Fontaine": {
   "lat": 45.52626,
   "lon": -73.56897,
-  "quartier": "Le Plateau-Mont-Royal"
- },
- "Parc Lafontaine": {
-  "alias": [],
-  "lat": 45.52626,
-  "lon": -73.56897,
-  "quartier": "Le Plateau-Mont-Royal"
+  "quartier": "Le Plateau-Mont-Royal",
+  "alias": [
+   "Parc Lafontaine",
+   "Parc La Fontaine (Montréal)"
+  ]
  },
  "Parc Leroux": {
   "lat": 45.43435,
@@ -2588,7 +2586,8 @@
  "Turbo Haüs": {
   "alias": [
    "Turbo Haus",
-   "Turbo Haüs III"
+   "Turbo Haüs III",
+   "Turbohaus"
   ],
   "lat": 45.516,
   "lon": -73.565,

@@ -120,7 +120,12 @@ def compter(data, debut):
 
 def lundi_a_venir(jour=None):
     """Le lundi de la semaine à annoncer : aujourd'hui si c'est lundi, sinon le lundi suivant."""
-    d = jour or date.today()
+    # (24 nov. 2026) la date de Montréal, pas celle du serveur (UTC) : après 19 h (hiver), le serveur est déjà au lendemain
+    if jour is None:
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        jour = datetime.now(ZoneInfo("America/Toronto")).date()
+    d = jour
     return d + timedelta(days=(7 - d.weekday()) % 7)
 
 
