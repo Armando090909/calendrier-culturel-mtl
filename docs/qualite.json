@@ -4,7 +4,8 @@
   "titre mal encodé": 16,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 34,
+  "date absente de la page officielle": 47,
+  "page de la sortie disparue": 4,
   "heures différentes selon les sources": 59
  },
  "journal": [
@@ -475,6 +476,159 @@
    "lieu": "Théâtre Denise-Pelletier",
    "source": "theatre",
    "url": "https://www.denise-pelletier.qc.ca/pieces/voyage-voyage/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Thursday Night Comedy",
+   "date": "2026-11-26",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/comedy-montreal-comedy-show-montreal-at-comedy-club-montreal-830-tickets-158294327595?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "OSER sortir des sentiers battus",
+   "date": "2026-11-27",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/oser-sortir-des-sentiers-battus"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "IA et édition: constats et usages",
+   "date": "2026-11-27",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/ia-et-edition-constats-et-usages"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Paper Skies",
+   "date": "2026-11-27",
+   "lieu": "Newspeak",
+   "source": "festival",
+   "url": "https://ilesoniq.com"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Filipiñana — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/filipinana-2026-11-27-1315"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La meilleure façon, c’est par accident — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-meilleure-facon-cest-par-accident-2026-11-27-1530"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Murmures — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/murmures-2026-11-27-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Slow Dating Montréal #239 (Entre femmes - Tous âges)",
+   "date": "2026-11-27",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/slow-dating-239"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "GRUNGE NIGHT: ALICE UNCHAINED + PLASMA DAMAGE + SKULLGORG",
+   "date": "2026-11-27",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "DRUM & BASS COLLIDER: RMS",
+   "date": "2026-11-27",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261127200000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "RaqStar par le studio Sharqui",
+   "date": "2026-11-27",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/raqstar/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée de danse",
+   "date": "2026-11-27",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Downtown Stomp - soirée danse sociale swing",
+   "date": "2026-11-27",
+   "lieu": "Cat's Corner",
+   "source": "salles",
+   "url": "https://www.catscorner.ca/what-we-do-1"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-27-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Comedy",
+   "date": "2026-11-27",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Stand Up (Deli @ 9 PM)",
+   "date": "2026-11-27",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/boom-friday-night-comedy/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1009,10 +1163,10 @@
   }
  ],
  "contreverif": {
-  "date confirmée": 206,
-  "date absente de la page": 34,
-  "page illisible": 36,
-  "non relues (limite)": 127
+  "date confirmée": 302,
+  "date absente de la page": 47,
+  "page illisible": 50,
+  "lien mort remplacé": 4
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1054,9 +1208,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 286,
+   "erreurs": 290,
    "sorties": 684,
-   "taux": 41.8
+   "taux": 42.4
   },
   {
    "source": "centredesmusiciensdumonde.com",
