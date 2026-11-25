@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-24-activite-libre-anjou-au-chaud-577d4e@ccmtl.ca
+UID:2027-01-24-activite-libre-anjou-au-chaud-921397@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
+DTSTART;TZID=America/Toronto:20270124T130000
+DTEND;TZID=America/Toronto:20270124T150000
 SUMMARY:Activité libre Anjou au chaud
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/activite-libre-anjou-au-chaud-121828
-DESCRIPTION:Heure à confirmer. Chaque dimanche après-midi\, des activité
- s libres et supervisées sont offertes au boulodrome d'Anjou\nPrix : Gratu
- it\nDétails : https://montreal.ca/evenements/activite-libre-anjou-au-chau
- d-121828\n(ccmtl.ca)
+DESCRIPTION:Chaque dimanche après-midi\, des activités libres et supervis
+ ées sont offertes au boulodrome d'Anjou\nPrix : Gratuit\nDétails : https
+ ://montreal.ca/evenements/activite-libre-anjou-au-chaud-121828\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

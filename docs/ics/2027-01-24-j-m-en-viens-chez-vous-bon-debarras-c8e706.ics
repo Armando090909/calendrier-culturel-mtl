@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-24-j-m-en-viens-chez-vous-bon-debarras-3b7279@ccmtl.ca
+UID:2027-01-24-j-m-en-viens-chez-vous-bon-debarras-c8e706@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
+DTSTART;TZID=America/Toronto:20270124T150000
+DTEND;TZID=America/Toronto:20270124T170000
 SUMMARY:J'm'en viens chez vous! - Bon Débarras
 LOCATION:Bibliothèque Mercier\, Montréal
 URL:https://montreal.ca/evenements/jmen-viens-chez-vous-bon-debarras-121612
-DESCRIPTION:Heure à confirmer. Venez découvrir la musique traditionnelle 
- québécoise dans un amusant voyage mêlant chansons\, musique\, danse\, a
- necdotes et histoires. Chacun est i...\nPrix : Gratuit\nDétails : https:/
- /montreal.ca/evenements/jmen-viens-chez-vous-bon-debarras-121612\n(ccmtl.c
- a)
+DESCRIPTION:Venez découvrir la musique traditionnelle québécoise dans un
+  amusant voyage mêlant chansons\, musique\, danse\, anecdotes et histoire
+ s. Chacun est i...\nPrix : Gratuit\nDétails : https://lepointdevente.com/
+ billets/8ud270124001?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

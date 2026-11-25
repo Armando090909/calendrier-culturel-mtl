@@ -1582,7 +1582,12 @@
  "Le Zénith Promutuel Assurances": null,
  "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest": null,
  "Les Diffusions Pointe-Valaine": null,
- "Les Sans Taverne": null,
+ "Les Sans Taverne": {
+  "alias": [],
+  "lat": 45.48093,
+  "lon": -73.55249,
+  "quartier": "Le Sud-Ouest"
+ },
  "Les Sœurs Grises Vieux-Rosemont": {
   "lat": 45.55016,
   "lon": -73.57346,

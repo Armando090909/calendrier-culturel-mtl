@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-18-chaude-chaleur-clara-dahlie-e1e379@ccmtl.ca
+UID:2026-12-18-chaude-chaleur-clara-dahlie-314496@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
+DTSTART;TZID=America/Toronto:20261218T210000
+DTEND;TZID=America/Toronto:20261218T230000
 SUMMARY:CHAUDE CHALEUR + CLARA DAHLIE
 LOCATION:Le Ministère\, Montréal
 URL:https://leministere.ca/
-DESCRIPTION:Heure à confirmer. Concert réunissant Chaude Chaleur et Clara
-  Dahlie\, en français\, pop et rock.\nDétails : https://leministere.ca/\
- n(ccmtl.ca)
+DESCRIPTION:Concert réunissant Chaude Chaleur et Clara Dahlie\, en frança
+ is\, pop et rock.\nPrix : 26 $\nDétails : https://leministere.ca/evenemen
+ ts/chaude-chaleur-clara-dahlie\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

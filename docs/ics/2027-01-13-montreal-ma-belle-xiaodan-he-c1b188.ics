@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-29-hommage-aux-colocs-18-entree-garantie-avec-un-bill-060c4c@cc
- mtl.ca
+UID:2027-01-13-montreal-ma-belle-xiaodan-he-c1b188@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261229
-DTEND;VALUE=DATE:20261230
-SUMMARY:HOMMAGE AUX COLOCS | 18+ (ENTRÉE GARANTIE AVEC UN BILLET PAYANT)
-LOCATION:Club Soda\, Montréal
-URL:https://clubsoda.ca/fr/evenements
-DESCRIPTION:Heure à confirmer. Concert hommage aux Colocs réservé aux 18
-  ans et plus.\nDétails : https://clubsoda.ca/fr/billetterie/conditions\n(
- ccmtl.ca)
+DTSTART;TZID=America/Toronto:20270113T190000
+DTEND;TZID=America/Toronto:20270113T210000
+SUMMARY:Montréal\, ma belle - Xiaodan He
+LOCATION:Lieu à confirmer\, Montréal
+URL:https://montreal.ca/evenements/montreal-ma-belle-xiaodan-he-122700
+DESCRIPTION:Visionnez le film Montréal\, ma belle de Xiaodan He avec Joan 
+ Chen\, Charlotte Aubin et John Xu.\nPrix : Gratuit\nDétails : https://lep
+ ointdevente.com/billets/8zy270113002?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

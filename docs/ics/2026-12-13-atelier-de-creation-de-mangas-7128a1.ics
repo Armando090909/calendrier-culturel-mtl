@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-les-freres-sissokho-6dbbfa@ccmtl.ca
+UID:2026-12-13-atelier-de-creation-de-mangas-7128a1@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261127T210000
-DTEND;TZID=America/Toronto:20261127T230000
-SUMMARY:LES FRÈRES SISSOKHO
-LOCATION:Club Balattou\, Montréal
-URL:https://www.balattou.com/concerts-a-l-annee
-DESCRIPTION:Concert acoustique des Frères Sissokho\, dans la programmation
-  du cabaret Nuits d'Afrique.\nPrix : 15 $\nDétails : https://lepointdeven
- te.com/billets/pna261127001?lang=fr\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261213T143000
+DTEND;TZID=America/Toronto:20261213T163000
+SUMMARY:Atelier de création de mangas
+LOCATION:Bibliothèque interculturelle\, Montréal
+URL:https://montreal.ca/evenements/atelier-de-creation-de-mangas-119426
+DESCRIPTION:création mangas enfants dessincréativitéinventivitéanimé\n
+ Prix : Gratuit\nDétails : https://montreal.ca/evenements/atelier-de-creat
+ ion-de-mangas-119426\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

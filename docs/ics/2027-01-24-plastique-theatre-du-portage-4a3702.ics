@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-24-plastique-theatre-du-portage-1515a5@ccmtl.ca
+UID:2027-01-24-plastique-theatre-du-portage-4a3702@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
+DTSTART;TZID=America/Toronto:20270124T150000
+DTEND;TZID=America/Toronto:20270124T170000
 SUMMARY:Plastique - Théâtre du Portage
 LOCATION:Théâtre Mirella et Lino Saputo\, Montréal
 URL:https://montreal.ca/evenements/plastique-theatre-du-portage-110767
-DESCRIPTION:Heure à confirmer. Ce spectacle de jeu masqué\, drôle\, sati
- rique et bédéesque\, propulse 4 personnages archétypaux sur un continen
- t de plastique fabuleux en l’an 2122...\nPrix : Gratuit\nDétails : http
- s://montreal.ca/evenements/plastique-theatre-du-portage-110767\n(ccmtl.ca)
+DESCRIPTION:Ce spectacle de jeu masqué\, drôle\, satirique et bédéesque
+ \, propulse 4 personnages archétypaux sur un continent de plastique fabul
+ eux en l’an 2122...\nPrix : Gratuit\nDétails : https://stleonard.tuxedo
+ billet.com/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

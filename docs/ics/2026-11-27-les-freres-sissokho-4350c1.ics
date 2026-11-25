@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-13-montreal-ma-belle-xiaodan-he-2c84a6@ccmtl.ca
+UID:2026-11-27-les-freres-sissokho-4350c1@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270113
-DTEND;VALUE=DATE:20270114
-SUMMARY:Montréal\, ma belle - Xiaodan He
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/montreal-ma-belle-xiaodan-he-122699
-DESCRIPTION:Heure à confirmer. Visionnez le film Montréal\, ma belle de X
- iaodan He avec Joan Chen\, Charlotte Aubin et John Xu.\nPrix : Gratuit\nD
- étails : https://montreal.ca/evenements/montreal-ma-belle-xiaodan-he-1226
- 99\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261127T213000
+DTEND;TZID=America/Toronto:20261127T233000
+SUMMARY:LES FRÈRES SISSOKHO
+LOCATION:Club Balattou\, Montréal
+URL:https://lepointdevente.com/billets/pna261127001?lang=fr
+DESCRIPTION:Concert de musique africaine au Club Balattou\, avec billetteri
+ e en ligne.\nPrix : 15 $\nDétails : https://lepointdevente.com/billets/pn
+ a261127001?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

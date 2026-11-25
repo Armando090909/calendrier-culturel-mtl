@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-24-parler-en-public-apprivoiser-son-trac-et-gagner-en-f6ac0c@cc
+UID:2027-01-24-parler-en-public-apprivoiser-son-trac-et-gagner-en-169032@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
+DTSTART;TZID=America/Toronto:20270124T140000
+DTEND;TZID=America/Toronto:20270124T160000
 SUMMARY:Parler en public : Apprivoiser son trac et gagner en aisance
 LOCATION:Bibliothèque Mordecai-Richler\, Montréal
 URL:https://montreal.ca/evenements/parler-en-public-apprivoiser-son-trac-et
  -gagner-en-aisance-122388
-DESCRIPTION:Heure à confirmer. Parler en public\nPrix : Gratuit\nDétails 
- : https://montreal.ca/evenements/parler-en-public-apprivoiser-son-trac-et-
- gagner-en-aisance-122388\n(ccmtl.ca)
+DESCRIPTION:Parler en public\nPrix : Gratuit\nDétails : https://forms.clou
+ d.microsoft/r/KJ4rk09Wah\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
