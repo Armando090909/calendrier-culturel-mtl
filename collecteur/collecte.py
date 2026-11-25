@@ -1210,6 +1210,16 @@ def main() -> int:
         print(f"Heures du même soir (seul spectacle annoncé par la salle) : {n_soir}.")
     except Exception as exc:
         print(f"Heures du même soir en échec : {exc}")
+    # Trop peu d'information (25 nov. 2026, « Jordan Bell at Bar de Courcelle », « VdVVS Burlesque »…) : un événement
+    # sans heure dont le seul lien est la page-liste d'un agrégateur (ma.to/events/…, pas sa propre fiche) n'est pas
+    # publié ; il revient dès qu'une autre source donne son heure ou sa fiche.
+    a_cote = [e for e in events if not e.get("heure") and "ma.to/events/" in e.get("url", "")]
+    for e in a_cote:
+        rejeter("mis de côté : trop peu d'information (agrégateur sans heure ni fiche)", e, e.get("url", ""))
+    if a_cote:
+        ids_cote = {id(e) for e in a_cote}
+        events = [e for e in events if id(e) not in ids_cote]
+    print(f"Mis de côté (agrégateur sans heure ni fiche) : {len(a_cote)}.")
     # Dernier contrôle : un même spectacle vivant (pas un film ni une expo) ne doit pas apparaître deux fois le même jour
     import normalisation as _norm
     for f in festivals:
