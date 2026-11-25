@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-saturday-stand-up-deli-9-pm-63d335@ccmtl.ca
+UID:2026-11-28-saturday-stand-up-deli-9-pm-76e048@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261128T210000
 DTEND;TZID=America/Toronto:20261128T230000
 SUMMARY:Saturday Stand-Up (Deli @ 9 PM)
-LOCATION:Comedyville\, Montréal
+LOCATION:ComedyVille\, Montréal
 URL:https://www.comedyville.ca/sktevents/saturday-night-comedy-show/
 DESCRIPTION:Spectacle de stand-up en anglais le samedi soir au Deli de la g
  are Centrale.\nPrix : 17 $\nDétails : https://www.eventbrite.ca/e/live-st

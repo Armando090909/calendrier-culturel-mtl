@@ -1,10 +1,10 @@
 {
  "date": "2026-11-25",
  "regles": {
-  "hors de l'île": 417,
+  "hors de l'île": 427,
   "pas une sortie culturelle": 305,
   "série mise de côté : trop peu d'information (salle inconnue)": 106,
-  "série : hors de l'île": 31,
+  "série : hors de l'île": 43,
   "série remplacée par ses dates précises": 16,
   "Sors-tu sans salle (peut-être hors de Montréal)": 12,
   "titre absent": 7,
@@ -82,6 +82,7 @@
    "The Danforth Music Hall · Toronto": 4,
    "Le Zénith Promutuel Assurances · Québec": 4,
    "Meadowvale Theatre · Mississauga": 4,
+   "L'Espace Mandeville": 4,
    "Théâtre Capitole · Montréal": 4,
    "FirstOntario Centre · Hamilton": 4,
    "Under the Big Top! Langley Riders Society · Langley": 4,
@@ -120,8 +121,7 @@
    "Le Club Square Dix30 · Montréal": 2,
    "Salle Albert-Rousseau": 2,
    "Cabaret BMO Sainte-Thérèse · Sainte-Thérèse": 2,
-   "Salle Michel Côté": 2,
-   "History · Toronto": 2
+   "Salle Michel Côté": 2
   },
   "série mise de côté : trop peu d'information (salle inconnue)": {
    "https://www.placedesarts.com/evenement/devenir-mousse": 17,
@@ -187,22 +187,31 @@
   },
   "série : hors de l'île": {
    "Regart, centre d'artistes en art actuel · Lévis": 2,
+   "Centre Bang · Chicoutimi": 2,
+   "VOART Centre d'exposition de Val-d'Or · Val-d'Or": 2,
    "Espace muséal Alfred-Pellan · Laval": 2,
    "Chiguer Art Contemporain Québec · Québec": 2,
    "Chiguer art contemporain (Saint-Vallier) · Québec": 2,
    "Beloeil · Beloeil": 1,
    "DRAC - Art actuel Drummondville · Drummondville": 1,
    "Le Lieu - Inter - RiAP · Québec": 1,
+   "Vaste et Vague · Carleton-sur-Mer": 1,
    "Musée du Bas-Saint-Laurent · Rivière-du-Loup": 1,
    "Agrégat · Longueuil": 1,
    "L'Oeil de poisson · Québec": 1,
    "Manif d'art · Québec": 1,
    "Engramme · Québec": 1,
+   "L'Écart · Rouyn-Noranda": 1,
+   "Centre d'art Jacques-et-Michel-Auger · Victoriaville": 1,
    "Galerie UQO · Gatineau": 1,
    "Centre Materia · Québec": 1,
+   "Langage Plus · Alma": 1,
    "Caravansérail · Rimouski": 1,
+   "Centre SAGAMIE · Alma": 1,
+   "Panache art actuel · Sept-Îles": 1,
    "Galerie R3 · Trois-Rivières": 1,
    "AXENÉO7 · Gatineau": 1,
+   "Galerie d'art du Parc · Trois-Rivières": 1,
    "Musée d'art de Joliette · Joliette": 1,
    "Galerie d'art Foreman · Sherbrooke": 1,
    "L'Espace culturel du Quartier Saint-Nicolas · Lévis": 1,
@@ -210,6 +219,7 @@
    "Maison de la culture Marcel-Robidas · Longueuil": 1,
    "Espace culturel de l'Université de Sherbrooke · Longueuil": 1,
    "Musée de Rimouski · Rimouski": 1,
+   "Centre Bang · Jonquière": 1,
    "Blouin Division · Toronto": 1,
    "Blouin Division (Project Space) · Toronto": 1,
    "Chiguer art contemporain · Québec": 1
@@ -1381,6 +1391,14 @@
     "detail": "Regart, centre d'artistes en art actuel · Lévis"
    },
    {
+    "titre": "Démantèlement de Maude Vien",
+    "date": "2026-11-18 → 2026-12-19",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/demantelement-de-maude-vien/",
+    "source": "salles",
+    "detail": "Centre Bang · Chicoutimi"
+   },
+   {
     "titre": "Morfofonium de Beth Frey en collaboration avec Phth",
     "date": "2026-11-07 → 2026-12-20",
     "lieu": "DRAC - Art actuel Drummondville",
@@ -1395,6 +1413,14 @@
     "url": "https://reseauartactuel.org/evenement/le-fantome-de-robert-filliou-dantoine-larocque/",
     "source": "salles",
     "detail": "Le Lieu - Inter - RiAP · Québec"
+   },
+   {
+    "titre": "Ces derniers souffles de Mathilde Forest",
+    "date": "2026-11-06 → 2026-12-12",
+    "lieu": "Vaste et Vague",
+    "url": "https://reseauartactuel.org/evenement/ces-derniers-souffles-par-mathilde-forest/",
+    "source": "salles",
+    "detail": "Vaste et Vague · Carleton-sur-Mer"
    },
    {
     "titre": "Je dirai comment tu fus aimé·e d'arkadi lavoie lachapelle",
@@ -1437,12 +1463,36 @@
     "detail": "Engramme · Québec"
    },
    {
+    "titre": "Camille Jodoin-Eng et Sabrina Forget-Matte + Le croche-pied",
+    "date": "2026-11-05 → 2026-12-13",
+    "lieu": "L'Écart",
+    "url": "https://reseauartactuel.org/evenement/camille-jodoin-eng-et-sabrina-forget-matte/",
+    "source": "salles",
+    "detail": "L'Écart · Rouyn-Noranda"
+   },
+   {
+    "titre": "La catastrophe ultraviolette de Julie Tremble",
+    "date": "2026-11-05 → 2026-12-12",
+    "lieu": "Centre d'art Jacques-et-Michel-Auger",
+    "url": "https://reseauartactuel.org/evenement/la-catastrophe-ultraviolette-de-julie-tremble/",
+    "source": "salles",
+    "detail": "Centre d'art Jacques-et-Michel-Auger · Victoriaville"
+   },
+   {
     "titre": "La performance et le poids des objets : décaisser et exposer de Raphaëlle de Groot",
     "date": "2026-11-04 → 2026-12-12",
     "lieu": "Galerie UQO",
     "url": "https://reseauartactuel.org/evenement/13824/",
     "source": "salles",
     "detail": "Galerie UQO · Gatineau"
+   },
+   {
+    "titre": "FMR : Il faut dire (ou pas) de Marc-Olivier Hamelin",
+    "date": "2026-11-01 → 2027-05-30",
+    "lieu": "VOART Centre d'exposition de Val-d'Or",
+    "url": "https://reseauartactuel.org/evenement/fmr-il-faut-dire-ou-pas/",
+    "source": "salles",
+    "detail": "VOART Centre d'exposition de Val-d'Or · Val-d'Or"
    },
    {
     "titre": "Affinités Malléables",
@@ -1453,12 +1503,44 @@
     "detail": "Centre Materia · Québec"
    },
    {
+    "titre": "Simon Beaudry, Amélie Courtois + Charles Sagalane",
+    "date": "2026-10-30 → 2026-12-20",
+    "lieu": "Langage Plus",
+    "url": "https://reseauartactuel.org/evenement/simon-beaudry-amelie-courtois-et-charles-sagalane/",
+    "source": "salles",
+    "detail": "Langage Plus · Alma"
+   },
+   {
     "titre": "la grange conserve nos gestes de Mélissa C Pettigrew",
     "date": "2026-10-22 → 2026-12-20",
     "lieu": "Caravansérail",
     "url": "https://reseauartactuel.org/evenement/la-grange-conserve-nos-gestes-de-melissa-c-pettigrew/",
     "source": "salles",
     "detail": "Caravansérail · Rimouski"
+   },
+   {
+    "titre": "Pendant que la lune s'éloigne",
+    "date": "2026-10-15 → 2026-12-11",
+    "lieu": "Centre SAGAMIE",
+    "url": "https://reseauartactuel.org/evenement/13310/",
+    "source": "salles",
+    "detail": "Centre SAGAMIE · Alma"
+   },
+   {
+    "titre": "Certaines collisions sont silencieuses de Jeffrey Poirier",
+    "date": "2026-10-15 → 2026-12-22",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/jeffrey-poirier/",
+    "source": "salles",
+    "detail": "Centre Bang · Chicoutimi"
+   },
+   {
+    "titre": "Tanner le blanc des mornes d'Emilie Pedneault",
+    "date": "2026-10-15 → 2027-02-07",
+    "lieu": "Panache art actuel",
+    "url": "https://reseauartactuel.org/evenement/tanner-le-blanc-des-mornes-demilie-pedneault/",
+    "source": "salles",
+    "detail": "Panache art actuel · Sept-Îles"
    },
    {
     "titre": "M⊗NDES !?! ⊗VNIS | ESPACE LIMINAL de Caroline Fillion",
@@ -1469,12 +1551,28 @@
     "detail": "Galerie R3 · Trois-Rivières"
    },
    {
+    "titre": "La tournée d'André Lemire",
+    "date": "2026-10-09 → 2026-11-29",
+    "lieu": "VOART Centre d'exposition de Val-d'Or",
+    "url": "https://reseauartactuel.org/evenement/la-tournee-dandre-lemire/",
+    "source": "salles",
+    "detail": "VOART Centre d'exposition de Val-d'Or · Val-d'Or"
+   },
+   {
     "titre": "Dominic Lafontaine et Martín Rodríguez",
     "date": "2026-10-09 → 2026-11-28",
     "lieu": "AXENÉO7",
     "url": "https://reseauartactuel.org/evenement/13158/",
     "source": "salles",
     "detail": "AXENÉO7 · Gatineau"
+   },
+   {
+    "titre": "Marie-Aube Lanie et Lucie Rocher",
+    "date": "2026-10-04 → 2026-12-06",
+    "lieu": "Galerie d'art du Parc",
+    "url": "https://reseauartactuel.org/evenement/marie-aube-lanie-et-lucie-rocher/",
+    "source": "salles",
+    "detail": "Galerie d'art du Parc · Trois-Rivières"
    },
    {
     "titre": "Vernissage d'automne 2026",
@@ -1557,6 +1655,14 @@
     "detail": "Musée de Rimouski · Rimouski"
    },
    {
+    "titre": "Notcimik (la forêt), se connaître pour savoir d'où l'on vient d'Amélie Courtois",
+    "date": "2026-09-14 → 2027-01-25",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/amelie-courtois/",
+    "source": "salles",
+    "detail": "Centre Bang · Jonquière"
+   },
+   {
     "titre": "Sean Weisgerber : Long Live the New",
     "date": "2026-10-30 → 2026-12-19",
     "lieu": "Blouin Division",
@@ -1587,30 +1693,6 @@
     "url": "https://chiguerartcontemporain.com/expositions/franchir-les-frontieres/",
     "source": "galeries",
     "detail": "Chiguer Art Contemporain Québec · Québec"
-   },
-   {
-    "titre": "Assaut-Mi-Mandat (Thierry Arcand-Bossé)",
-    "date": "2026-11-06 → 2026-12-20",
-    "lieu": "Chiguer art contemporain (Saint-Vallier)",
-    "url": "https://chiguerartcontemporain.com/expositions/assaut-mi-mandat/",
-    "source": "galeries",
-    "detail": "Chiguer art contemporain (Saint-Vallier) · Québec"
-   },
-   {
-    "titre": "Franchir les frontières (Serge Lemoyne)",
-    "date": "2026-11-06 → 2026-12-20",
-    "lieu": "Chiguer art contemporain (Saint-Vallier)",
-    "url": "https://chiguerartcontemporain.com/expositions/franchir-les-frontieres/",
-    "source": "galeries",
-    "detail": "Chiguer art contemporain (Saint-Vallier) · Québec"
-   },
-   {
-    "titre": "Assaut-Mi-Mandat",
-    "date": "2026-11-06 → 2026-12-06",
-    "lieu": "Chiguer art contemporain",
-    "url": "https://chiguerartcontemporain.com/expositions/assaut-mi-mandat/",
-    "source": "galeries",
-    "detail": "Chiguer art contemporain · Québec"
    }
   ],
   "série : pas culturelle ou sans titre": [
@@ -1852,7 +1934,7 @@
   ]
  },
  "disparues": {
-  "total": 92,
+  "total": 110,
   "liste": [
    {
     "titre": "With Love and Rage / Drift",
@@ -2121,11 +2203,25 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Ariane Roy",
+    "date": "2026-12-04",
+    "lieu": "Grizzly Fuzz",
+    "url": "https://sorstu.ca/artiste/ariane-roy/",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Les Louanges : Alouette!",
     "date": "2026-12-04",
     "lieu": "L'Olympia",
     "url": "https://sorstu.ca/artiste/les-louanges/",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Thierry Larose",
+    "date": "2026-12-04",
+    "lieu": "L'Espace Mandeville",
+    "url": "https://sorstu.ca/artiste/thierry-larose/",
+    "raison": "hors de l'île"
    },
    {
     "titre": "Vendredi 20h15 / Mike Clay",
@@ -2210,6 +2306,13 @@
     "lieu": "Salle Bourgie",
     "url": "https://www.songkick.com/concerts/43317490-constantinople-at-salle-bourgie?utm_medium=organic&utm_source=microformat",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "Daniel Lemire et Denis Bouchard",
+    "date": "2026-12-05",
+    "lieu": "centrecultureldoris_lussier",
+    "url": "https://evenko.ca/fr/evenements/centrecultureldoris-lussier/daniel-lemire-et-denis-bouchard?code=e009044",
+    "raison": "hors de l'île"
    },
    {
     "titre": "Les Louanges @ L'Olympia",
@@ -2387,6 +2490,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Endless Floyd Québec @ Salle Théatre La Scène",
+    "date": "2026-12-19",
+    "lieu": "Salle Théatre La Scène",
+    "url": "https://www.songkick.com/concerts/43470284-endless-floyd-quebec-at-salle-theatre-la-scene?utm_medium=organic&utm_source=microformat",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Dimanches racontés",
     "date": "2026-12-20",
     "lieu": "Bibliothèque L'Octogone",
@@ -2457,6 +2567,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Lendemain de veille @ Au Vieux - Brasserie Festive",
+    "date": "2026-12-31",
+    "lieu": "Au Vieux - Brasserie Festive",
+    "url": "https://www.songkick.com/concerts/43491064-lendemain-de-veille-at-au-vieux-brasserie-festive?utm_medium=organic&utm_source=microformat",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "Hommage à Etta James - La légende de la reine du Blues et de la Soul",
     "date": "2027-01-14",
     "lieu": "Le Balcon",
@@ -2471,11 +2588,81 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Cathy Gauthier",
+    "date": "2027-01-16",
+    "lieu": "L'Opale",
+    "url": "https://evenko.ca/fr/evenements/l-opale/cathy-gauthier?code=e009131",
+    "raison": "hors de l'île"
+   },
+   {
     "titre": "L'avènement de l'homme nouveau : Un mode d'emploi pour survivre aux totalitarismes",
     "date": "2027-01-17",
     "lieu": "Bibliothèque Mordecai-Richler",
     "url": "https://montreal.ca/evenements/lavenement-de-lhomme-nouveau-un-mode-demploi-pour-survivre-aux-totalitarismes-122386",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "La tournée d'André Lemire",
+    "date": "2026-10-09 → 2026-11-29",
+    "lieu": "VOART Centre d'exposition de Val-d'Or",
+    "url": "https://reseauartactuel.org/evenement/la-tournee-dandre-lemire/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Marie-Aube Lanie et Lucie Rocher",
+    "date": "2026-10-04 → 2026-12-06",
+    "lieu": "Galerie d'art du Parc",
+    "url": "https://reseauartactuel.org/evenement/marie-aube-lanie-et-lucie-rocher/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Pendant que la lune s'éloigne",
+    "date": "2026-10-15 → 2026-12-11",
+    "lieu": "Centre SAGAMIE",
+    "url": "https://reseauartactuel.org/evenement/13310/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Ces derniers souffles de Mathilde Forest",
+    "date": "2026-11-06 → 2026-12-12",
+    "lieu": "Vaste et Vague",
+    "url": "https://reseauartactuel.org/evenement/ces-derniers-souffles-par-mathilde-forest/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "La catastrophe ultraviolette de Julie Tremble",
+    "date": "2026-11-05 → 2026-12-12",
+    "lieu": "Centre d'art Jacques-et-Michel-Auger",
+    "url": "https://reseauartactuel.org/evenement/la-catastrophe-ultraviolette-de-julie-tremble/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Camille Jodoin-Eng et Sabrina Forget-Matte + Le croche-pied",
+    "date": "2026-11-05 → 2026-12-13",
+    "lieu": "L'Écart",
+    "url": "https://reseauartactuel.org/evenement/camille-jodoin-eng-et-sabrina-forget-matte/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Démantèlement de Maude Vien",
+    "date": "2026-11-18 → 2026-12-19",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/demantelement-de-maude-vien/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Simon Beaudry, Amélie Courtois + Charles Sagalane",
+    "date": "2026-10-30 → 2026-12-20",
+    "lieu": "Langage Plus",
+    "url": "https://reseauartactuel.org/evenement/simon-beaudry-amelie-courtois-et-charles-sagalane/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Certaines collisions sont silencieuses de Jeffrey Poirier",
+    "date": "2026-10-15 → 2026-12-22",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/jeffrey-poirier/",
+    "raison": "série : hors de l'île"
    },
    {
     "titre": "Baobab",
@@ -2485,11 +2672,32 @@
     "raison": "série remplacée par ses dates précises"
    },
    {
+    "titre": "Notcimik (la forêt), se connaître pour savoir d'où l'on vient d'Amélie Courtois",
+    "date": "2026-09-14 → 2027-01-25",
+    "lieu": "Centre Bang",
+    "url": "https://reseauartactuel.org/evenement/amelie-courtois/",
+    "raison": "série : hors de l'île"
+   },
+   {
+    "titre": "Tanner le blanc des mornes d'Emilie Pedneault",
+    "date": "2026-10-15 → 2027-02-07",
+    "lieu": "Panache art actuel",
+    "url": "https://reseauartactuel.org/evenement/tanner-le-blanc-des-mornes-demilie-pedneault/",
+    "raison": "série : hors de l'île"
+   },
+   {
     "titre": "Lumino : Lumière sur l'hiver",
     "date": "2027-01-01 → 2027-03-31",
     "lieu": "Quartier des Spectacles",
     "url": "https://www.luminomtl.com/fr/les-installations",
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
+   },
+   {
+    "titre": "FMR : Il faut dire (ou pas) de Marc-Olivier Hamelin",
+    "date": "2026-11-01 → 2027-05-30",
+    "lieu": "VOART Centre d'exposition de Val-d'Or",
+    "url": "https://reseauartactuel.org/evenement/fmr-il-faut-dire-ou-pas/",
+    "raison": "série : hors de l'île"
    },
    {
     "titre": "Café Campus et Petit Campus - spectacles",

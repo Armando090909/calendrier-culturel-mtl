@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-saturday-comedy-show-deli-7-pm-7b792d@ccmtl.ca
+UID:2026-12-05-saturday-comedy-show-deli-7-pm-07a517@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261205T190000
 DTEND;TZID=America/Toronto:20261205T210000
 SUMMARY:Saturday Comedy Show (Deli @ 7 PM)
-LOCATION:Comedyville\, Montréal
+LOCATION:ComedyVille\, Montréal
 URL:https://www.comedyville.ca/sktevents/saturday-comedy-show-deli-7-pm/
 DESCRIPTION:Spectacle de stand-up en anglais le samedi en début de soirée
   au Deli de la gare Centrale.\nPrix : 15 $\nDétails : https://www.eventbr

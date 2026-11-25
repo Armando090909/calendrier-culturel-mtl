@@ -1,18 +1,14 @@
 {
  "date": "2026-11-25",
  "statut": "publié",
- "evenements": 2791,
- "expositions": 193,
+ "evenements": 2783,
+ "expositions": 181,
  "nouvelles_salles": [],
  "notes": {
   "fiches_ville": {
-   "lues": 15,
-   "erreurs": 15,
-   "exemples_erreurs": [
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/activite-cuisine-zero-dechet-cuisine-communautaire-1",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-carnet-04-122481",
-    "403 Client Error: Forbidden for url: https://montreal.ca/evenements/atelier-de-science-atomes-et-electricite-statique-6-"
-   ],
+   "lues": 0,
+   "erreurs": 0,
+   "exemples_erreurs": [],
    "completees_par_mac": 807,
    "heures_trouvees": 799,
    "salles_trouvees": 815
@@ -21,11 +17,10 @@
    "2026-11-25 : « Book Crush #21: Friendship Edition » (Espace Together) = « Book Crush #21 - Amical 📚 » (Espace Together)",
    "2026-11-25 : « Father of Peace » (Bar Le Ritz PDB) = « Father Of Peace » (Le Studio TD)",
    "2026-11-26 : « The School of Performance Presents: Revolt. She Sa » (Henry F. Hall Building) = « The School of Performance Presents: UNcommon WEath » (John Molson Building)",
-   "2026-11-26 : « Thursday Pro-Am Comedy Night » (Comedyville) = « Thursday Night Comedy » (Deli Planet)",
+   "2026-11-26 : « Thursday Pro-Am Comedy Night » (ComedyVille) = « Thursday Night Comedy » (Deli Planet)",
    "2026-11-27 : « The School of Performance Presents: Revolt. She Sa » (Henry F. Hall Building) = « The School of Performance Presents: UNcommon WEath » (John Molson Building)",
    "2026-11-27 : « Alain Choquette - Entre histoires et illusions » (Salle Pierre-Mercure) = « Alain Choquette - Entre histoires et illusions » (Centre Pierre-Peladeau)",
    "2026-11-27 : « Downtown Stomp, soirée de danse sociale swing » (Cat's Corner) = « Soirée de danse » (Tango Libre)",
-   "2026-11-27 : « CELEBRATION - Le meilleur party du temps des fêtes » (L'Espace Mandeville) = « Celebration » (Le Balcon)",
    "2026-11-27 : « Kiwi Jr. @ La Toscadura » (La Toscadura) = « Kiwi Jr » (Le Balcon)",
    "2026-11-27 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-11-28 : « Luc Beauséjour : Bach dans quatre villes (mini-con » (Espace Off-Bach (3487, boul. Saint-Laurent)) = « Bach en quatre villes » (Off-Bach)",
@@ -36,7 +31,7 @@
    "2026-12-04 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-12-05 : « Brico-contes (3 à 6 ans) » (FabricARThèque du Vieux-Saint-Laurent) = « Brico-contes du samedi » (Bibliothèque)",
    "2026-12-05 : « Rencontre avec l'artiste : Leila Zelli » (Pierre-François Ouellette art contemporain) = « Rencontre avec Maya Cousineau Mollen » (Centre Sanaaq)",
-   "2026-12-05 : « Saturday Sundown Comedy » (Deli Planet) = « Saturday Comedy Show (Deli @ 7 PM) » (Comedyville)",
+   "2026-12-05 : « Saturday Sundown Comedy » (Deli Planet) = « Saturday Comedy Show (Deli @ 7 PM) » (ComedyVille)",
    "2026-12-05 : « Saturday Late Night Comedy » (Estrella) = « Saturday Night Comedy » (Deli Planet)",
    "2026-12-11 : « Friday Late Night Comedy » (Estrella) = « Friday Night Comedy » (Deli Planet)",
    "2026-12-12 : « Le Casse-Noisette Irlandais / The Irish Nutcracker » (Théâtre Desjardins) = « Casse-Noisette » (Salle Wilfrid-Pelletier)",
@@ -44,174 +39,6 @@
    "2026-12-28 : « Nicolas Noël | Entre deux mondes » (Place des Arts) = « Nicolas Noël | Entre deux mondes » (Duceppe)",
    "2027-01-08 : « Christine Morency » (Théâtre Desjardins) = « Christine Morency » (Maison Théâtre)",
    "2027-01-24 : « En attendant la cloche - Théâtre Bouches Décousues » (Lieu à confirmer) = « En attendant la cloche » (Ville de Montréal - Lachine)"
-  ],
-  "catalogues": [
-   {
-    "nom": "Jordan Bell",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Titouaine",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Killed"
-   },
-   {
-    "nom": "Terapia Latina"
-   },
-   {
-    "nom": "Raíz Viva",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : monde"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album alma de mexico vol 1)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Yves Turgeon"
-   },
-   {
-    "nom": "Big Band YT"
-   },
-   {
-    "nom": "TERRELL"
-   },
-   {
-    "nom": "DJ HIDI"
-   },
-   {
-    "nom": "Bisou Bizou"
-   },
-   {
-    "nom": "HEY: ALBERT",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album i am emotional)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Lucas Melo"
-   },
-   {
-    "nom": "Enzo Lord Mariano",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Jordan Gardner",
-    "deezer": {
-     "ok": true,
-     "pour": [
-      "genre concordant : electro"
-     ],
-     "contre": []
-    },
-    "tidal": {
-     "ok": true,
-     "pour": [
-      "même artiste que sur deezer (album babylon)"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "999ADJ"
-   },
-   {
-    "nom": "Alex Bellegarde",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : jazz"
-     ],
-     "contre": []
-    }
-   },
-   {
-    "nom": "siliCON VALLEY",
-    "deezer": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre rock ≠ electro"
-     ]
-    },
-    "apple": {
-     "ok": false,
-     "pour": [],
-     "contre": [
-      "genre rock ≠ electro"
-     ]
-    },
-    "tidal": {
-     "ok": false,
-     "pour": [],
-     "contre": []
-    }
-   },
-   {
-    "nom": "Alex Bellegarde",
-    "apple": {
-     "ok": true,
-     "pour": [
-      "genre concordant : jazz"
-     ],
-     "contre": []
-    }
-   }
   ],
   "qualite": {
    "regles": 126,
@@ -223,13 +50,7 @@
     "non relues (limite)": 136
    },
    "controle": null
-  },
-  "reparations": [
-   "non réparée : Galerie Robert Poulin (8 pages essayées)",
-   "non réparée : Galerie Patrick Mikhail (8 pages essayées)",
-   "non réparée : Yves Laroche Galerie d'art (8 pages essayées)",
-   "non réparée : Hurley's Irish Pub (trad, folk) (8 pages essayées)"
-  ]
+  }
  },
  "alerte": null,
  "sources": [
@@ -914,8 +735,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1500 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -990,7 +810,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -999,8 +819,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://bainmathieu.ca/programmation/",
-    "aucun événement trouvé dans 12858 caractères de texte : https://bainmathieu.ca/programmation/"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -1009,8 +828,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -1066,9 +884,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://www.quenditraton.com/spectacles/",
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "récolte mince (0) : recherche élargie à https://www.quenditraton.com/spectacles"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1252,8 +1068,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1262,8 +1077,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1463,8 +1277,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1695,8 +1508,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -2993,7 +2805,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3347,8 +3159,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3420,9 +3231,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3599 caractères de texte : https://www.montrealenlumiere.com",
-    "annonces à venir dans la page : 5 (https://www.montrealenlumiere.com)"
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
+    "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
   {
@@ -3619,8 +3429,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (207 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (207 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
