@@ -3,21 +3,21 @@
   "nom": "Ville de Montréal – événements publics",
   "url": "https://donnees.montreal.ca/dataset/6a4cbf2c-c9b7-413a-86b1-e8f7081e2578/resource/6decf611-6f11-4f34-bb36-324d804c9bad/download/evenements.csv",
   "type": "données ouvertes",
-  "evenements": 1198,
+  "evenements": 1157,
   "erreur": false
  },
  {
   "nom": "Ask A Punk (DIY, punk, hardcore)",
   "url": "https://montreal.askapunk.net",
   "type": "agenda Gancio",
-  "evenements": 25,
+  "evenements": 26,
   "erreur": false
  },
  {
   "nom": "Sors-tu? (14 prochains jours)",
   "url": "https://sorstu.ca/calendrier-spectacles/-//?contexte=tous",
   "type": "page lue par l'IA",
-  "evenements": 295,
+  "evenements": 464,
   "erreur": false
  },
  {
@@ -318,7 +318,7 @@
   "nom": "Théâtre Plaza",
   "url": "https://theatreplaza.ca/evenements",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -339,7 +339,7 @@
   "nom": "Cinéma Public",
   "url": "https://cinemapublic.ca",
   "type": "page lue par l'IA",
-  "evenements": 41,
+  "evenements": 40,
   "erreur": false
  },
  {
@@ -444,7 +444,7 @@
   "nom": "Théâtre Bouches Décousues",
   "url": "https://theatrebouchesdecousues.com/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 4,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -472,7 +472,7 @@
   "nom": "Studio PACA (Les Foutoukours)",
   "url": "https://lesfoutoukours.com/fr/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 7,
   "erreur": false
  },
  {
@@ -584,7 +584,7 @@
   "nom": "Cat's Corner (danse swing)",
   "url": "https://www.catscorner.ca/events",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -598,7 +598,7 @@
   "nom": "LESPACEMAKER – formations",
   "url": "https://calendar.google.com/calendar/ical/lmcb381tv4apq9pcfqtphb2n3o%40group.calendar.google.com/public/basic.ics",
   "type": "calendrier iCal",
-  "evenements": 73,
+  "evenements": 70,
   "erreur": false
  },
  {
@@ -612,7 +612,7 @@
   "nom": "Montréal centre-ville – événements",
   "url": "https://montrealcentreville.ca/evenements/?ical=1",
   "type": "calendrier iCal",
-  "evenements": 11,
+  "evenements": 10,
   "erreur": false
  },
  {
@@ -794,35 +794,35 @@
   "nom": "ma.to (musique live)",
   "url": "https://ma.to/events/montreal/anytime/live-music",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 13,
   "erreur": false
  },
  {
   "nom": "evenko (concerts)",
   "url": "https://evenko.ca/fr/evenements",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 18,
   "erreur": false
  },
  {
   "nom": "Théâtre Fairmount",
   "url": "https://theatrefairmount.com",
   "type": "page lue par l'IA",
-  "evenements": 17,
+  "evenements": 15,
   "erreur": false
  },
  {
   "nom": "Club Soda",
   "url": "https://clubsoda.ca",
   "type": "page lue par l'IA",
-  "evenements": 29,
+  "evenements": 30,
   "erreur": false
  },
  {
   "nom": "Bar Le Ritz PDB",
   "url": "http://www.barleritzpdb.com",
   "type": "page lue par l'IA",
-  "evenements": 11,
+  "evenements": 12,
   "erreur": false
  },
  {
@@ -843,7 +843,7 @@
   "nom": "Piranha Bar",
   "url": "https://piranhabar.ca",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1032,21 +1032,21 @@
   "nom": "Dièse Onze",
   "url": "http://www.dieseonze.com/calendrier.php?l=fr",
   "type": "page lue par l'IA",
-  "evenements": 20,
+  "evenements": 35,
   "erreur": false
  },
  {
   "nom": "Club Balattou (musiques du monde)",
   "url": "https://www.balattou.com",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 16,
   "erreur": false
  },
  {
   "nom": "Cabaret Jazz L'Entracte",
   "url": "https://www.entractejazz.org",
   "type": "page lue par l'IA",
-  "evenements": 3,
+  "evenements": 4,
   "erreur": false
  },
  {
@@ -1060,7 +1060,7 @@
   "nom": "Le Balcon",
   "url": "https://www.lebalcon.ca",
   "type": "page lue par l'IA",
-  "evenements": 24,
+  "evenements": 29,
   "erreur": false
  },
  {
@@ -1081,21 +1081,21 @@
   "nom": "Quai des Brumes",
   "url": "https://quaidesbrumes.ca/calendrier",
   "type": "page lue par l'IA",
-  "evenements": 5,
+  "evenements": 4,
   "erreur": false
  },
  {
   "nom": "Le Ministère",
   "url": "https://leministere.ca",
   "type": "page lue par l'IA",
-  "evenements": 18,
+  "evenements": 20,
   "erreur": false
  },
  {
   "nom": "Le Belmont",
   "url": "https://www.lebelmont.ca",
   "type": "page lue par l'IA",
-  "evenements": 10,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -1158,14 +1158,14 @@
   "nom": "Casa del Popolo – La Toscadura",
   "url": "https://casadelpopolo.com/fr/events/la-toscadura",
   "type": "page lue par l'IA",
-  "evenements": 8,
+  "evenements": 9,
   "erreur": false
  },
  {
   "nom": "Casa del Popolo – P'tit Ours",
   "url": "https://casadelpopolo.com/fr/events/ptit-ours",
   "type": "page lue par l'IA",
-  "evenements": 21,
+  "evenements": 22,
   "erreur": false
  },
  {
@@ -1186,7 +1186,7 @@
   "nom": "Bar Datcha",
   "url": "https://bardatcha.ca",
   "type": "page lue par l'IA",
-  "evenements": 9,
+  "evenements": 11,
   "erreur": false
  },
  {
@@ -1445,7 +1445,7 @@
   "nom": "Casa del Popolo / Sala Rossa",
   "url": "https://casadelpopolo.com",
   "type": "page lue par l'IA",
-  "evenements": 224,
+  "evenements": 131,
   "erreur": false
  },
  {
@@ -1487,7 +1487,7 @@
   "nom": "Café Campus et Petit Campus – shows (billetterie)",
   "url": "https://lepointdevente.com/tickets/cafecampusshows",
   "type": "page lue par l'IA",
-  "evenements": 27,
+  "evenements": 26,
   "erreur": false
  },
  {
@@ -1501,7 +1501,7 @@
   "nom": "Théâtre Rialto (billetterie)",
   "url": "https://lepointdevente.com/lieux/theatre-rialto",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -1529,7 +1529,7 @@
   "nom": "Ausgang Plaza (billetterie)",
   "url": "https://lepointdevente.com/lieux/ausgang-plaza",
   "type": "page lue par l'IA",
-  "evenements": 6,
+  "evenements": 5,
   "erreur": false
  },
  {
@@ -1564,7 +1564,7 @@
   "nom": "Le Belmont (billetterie)",
   "url": "https://lepointdevente.com/lieux/lebelmont",
   "type": "page lue par l'IA",
-  "evenements": 7,
+  "evenements": 6,
   "erreur": false
  },
  {
@@ -1578,7 +1578,7 @@
   "nom": "Soirées quiz (hebdomadaires)",
   "url": "",
   "type": "recurrents",
-  "evenements": 100,
+  "evenements": 102,
   "erreur": false
  },
  {

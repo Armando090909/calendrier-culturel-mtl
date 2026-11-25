@@ -747,6 +747,7 @@
  "Centre des Arts Shenkman": null,
  "Centre des arts Juliette-Lassonde": null,
  "Centre des arts actuels SKOL": null,
+ "Centre des arts de Baie-Comeau": null,
  "Centre des arts de Shawinigan": null,
  "Centre des arts visuels / Galerie McClure": null,
  "Centre des femmes de Rivière-des-Prairies": {
@@ -896,6 +897,12 @@
   "lat": 45.5238,
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Coté scène": null,
+ "Cuba Paisa": {
+  "lat": 45.53395,
+  "lon": -73.61706,
+  "quartier": "Rosemont–La Petite-Patrie"
  },
  "Cégep Du Vieux Montréal": {
   "alias": [],
@@ -1047,7 +1054,12 @@
  },
  "Espace transmission": null,
  "Esplanade Arts & Heritage Centre": null,
- "Esplanade Tranquille": null,
+ "Esplanade Tranquille": {
+  "alias": [],
+  "lat": 45.5096,
+  "lon": -73.56493,
+  "quartier": "Ville-Marie"
+ },
  "Estrella": null,
  "Exhibit A": {
   "lat": 45.472,
@@ -1291,6 +1303,7 @@
  },
  "Hurleys Irish Pub": null,
  "Hybride": null,
+ "Hôtel Humaniti Montréal, Autograph Collection": null,
  "Igloofest": null,
  "Impérial Bell": null,
  "Infinithéâtre + Casa d'Italia": null,
@@ -1569,6 +1582,7 @@
  "Le Zénith Promutuel Assurances": null,
  "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest": null,
  "Les Diffusions Pointe-Valaine": null,
+ "Les Sans Taverne": null,
  "Les Sœurs Grises Vieux-Rosemont": {
   "lat": 45.55016,
   "lon": -73.57346,
@@ -2496,6 +2510,7 @@
  "The Great Hall": null,
  "The Opera House": null,
  "The Port Theatre": null,
+ "The Sleeman Centre": null,
  "Theatre du Casino du Lac-Leamy": null,
  "Thunder Bay Community Auditorium": null,
  "Théâtre Alphonse-Desjardins": null,
@@ -2695,6 +2710,7 @@
   "lon": -73.62427,
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
+ "UBC - Doug Mitchell Thunderbird Sports Centre": null,
  "UQAM - Bibliothèque des sciences": null,
  "UQAM - Coeur des sciences": null,
  "UQAM - En ligne": null,
@@ -2777,6 +2793,11 @@
  "Vieux bureau de poste": null,
  "Vieux couvent de Saint-Prime": null,
  "Ville de L'Île-Perrot": null,
+ "Ville de Montréal - Lachine": {
+  "lat": 45.42846,
+  "lon": -73.68032,
+  "quartier": "Lachine"
+ },
  "Ville de Plessisville": null,
  "Vino Disco": {
   "lat": 45.50915,
@@ -2800,6 +2821,7 @@
   "lon": -73.57779,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "WiggleRoomMtl": null,
  "WinSport Event Centre": null,
  "Wishbone Galerie d'art": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 406 (édifice Belgo), Montréal",
