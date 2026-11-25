@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-13-montreal-ma-belle-xiaodan-he-c1b188@ccmtl.ca
+UID:2027-01-13-montreal-ma-belle-xiaodan-he-676b53@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20270113T190000
-DTEND;TZID=America/Toronto:20270113T210000
+DTSTART;TZID=America/Toronto:20270113T133000
+DTEND;TZID=America/Toronto:20270113T153000
 SUMMARY:Montréal\, ma belle - Xiaodan He
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/montreal-ma-belle-xiaodan-he-122700
+LOCATION:Maison culturelle et communautaire de Montréal-Nord\, Montréal
+URL:https://montreal.ca/evenements/montreal-ma-belle-xiaodan-he-122699
 DESCRIPTION:Visionnez le film Montréal\, ma belle de Xiaodan He avec Joan 
  Chen\, Charlotte Aubin et John Xu.\nPrix : Gratuit\nDétails : https://lep
- ointdevente.com/billets/8zy270113002?lang=fr\n(ccmtl.ca)
+ ointdevente.com/billets/montrealmabelle?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

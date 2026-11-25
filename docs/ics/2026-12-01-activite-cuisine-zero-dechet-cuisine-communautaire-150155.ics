@@ -21,13 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-01-activite-cuisine-zero-dechet-cuisine-communautaire-ce0b94@cc
+UID:2026-12-01-activite-cuisine-zero-dechet-cuisine-communautaire-150155@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261201T173000
 DTEND;TZID=America/Toronto:20261201T193000
 SUMMARY:Activité cuisine zéro déchet (cuisine communautaire).
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Centre des loisirs de Saint-Laurent\, Montréal
 URL:https://montreal.ca/evenements/activite-cuisine-zero-dechet-cuisine-com
  munautaire-122632
 DESCRIPTION:Activité cuisine zéro déchet espace citoyen saint-laurent tr

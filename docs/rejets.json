@@ -8,6 +8,7 @@
   "série remplacée par ses dates précises": 16,
   "Sors-tu sans salle (peut-être hors de Montréal)": 12,
   "titre absent": 7,
+  "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": 7,
   "retirée à la main (corrections.json)": 7,
   "série de festival (les séances datées suffisent)": 4,
   "annulé selon la source": 3,
@@ -122,6 +123,9 @@
    "Salle Albert-Rousseau": 2,
    "Cabaret BMO Sainte-Thérèse · Sainte-Thérèse": 2,
    "Salle Michel Côté": 2
+  },
+  "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": {
+   "https://ma.to/events/montreal/anytime/live-music": 7
   },
   "série mise de côté : trop peu d'information (salle inconnue)": {
    "https://www.placedesarts.com/evenement/devenir-mousse": 17,
@@ -1033,6 +1037,64 @@
     "lieu": "",
     "url": "https://sorstu.ca/artiste/jey-fournier/",
     "source": "sorstu"
+   }
+  ],
+  "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": [
+   {
+    "titre": "Father of Peace",
+    "date": "2026-11-25",
+    "lieu": "Bar Le Ritz PDB",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "Jordan Bell at Bar de Courcelle",
+    "date": "2026-11-25",
+    "lieu": "Bar de Courcelle",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "Musique live chez Cuba Paisa",
+    "date": "2026-11-25",
+    "lieu": "Cuba Paisa",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "Titouaine Live Session",
+    "date": "2026-11-25",
+    "lieu": "Bar Le Record",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "VdVVS Burlesque",
+    "date": "2026-11-25",
+    "lieu": "WiggleRoomMtl",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "Wednesday Jazz at Bootlegger",
+    "date": "2026-11-25",
+    "lieu": "Bootlegger Cocktail Bar & Cuisine Montréal",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
+   },
+   {
+    "titre": "20 Years of Musiques Métissées",
+    "date": "2026-11-26",
+    "lieu": "Esplanade Tranquille",
+    "url": "https://ma.to/events/montreal/anytime/live-music",
+    "source": "salles",
+    "detail": "https://ma.to/events/montreal/anytime/live-music"
    }
   ],
   "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": [

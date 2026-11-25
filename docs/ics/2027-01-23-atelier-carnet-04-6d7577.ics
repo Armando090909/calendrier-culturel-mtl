@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-23-atelier-carnet-04-43a666@ccmtl.ca
+UID:2027-01-23-atelier-carnet-04-6d7577@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20270123T130000
 DTEND;TZID=America/Toronto:20270123T150000
 SUMMARY:Atelier Carnet 04
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Maison de la culture Marie-Uguay\, Montréal
 URL:https://montreal.ca/evenements/atelier-carnet-04-122481
 DESCRIPTION:Les ateliers Carnet permettent de rencontrer des artistes et d
  écouvrir de nouvelles techniques de création. Gratuit à la maison de la

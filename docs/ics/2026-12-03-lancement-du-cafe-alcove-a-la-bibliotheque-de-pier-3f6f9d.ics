@@ -21,13 +21,13 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-lancement-du-cafe-alcove-a-la-bibliotheque-de-pier-81d28a@cc
+UID:2026-12-03-lancement-du-cafe-alcove-a-la-bibliotheque-de-pier-3f6f9d@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261203T150000
 DTEND;TZID=America/Toronto:20261203T170000
 SUMMARY:Lancement du Café Alcôve à la Bibliothèque de Pierrefonds
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Bibliothèque de Pierrefonds\, Montréal
 URL:https://montreal.ca/evenements/lancement-du-cafe-alcove-la-bibliotheque
  -de-pierrefonds-122724
 DESCRIPTION:Événement de lancement du café Alcôve à la bibliothèque d
