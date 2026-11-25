@@ -4,8 +4,8 @@
   "titre mal encodé": 15,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 38,
-  "page de la sortie disparue": 9,
+  "date absente de la page officielle": 48,
+  "page de la sortie disparue": 15,
   "heures différentes selon les sources": 62
  },
  "journal": [
@@ -586,6 +586,150 @@
    "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261127200000"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "RaqStar par le studio Sharqui",
+   "date": "2026-11-27",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/raqstar/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée de danse",
+   "date": "2026-11-27",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-27-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Comedy",
+   "date": "2026-11-27",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Stand Up (Deli @ 9 PM)",
+   "date": "2026-11-27",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/boom-friday-night-comedy/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-28-1030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tap jam",
+   "date": "2026-11-28",
+   "lieu": "Cat's Corner",
+   "source": "salles",
+   "url": "https://www.catscorner.ca/what-we-do-1"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-28-1230"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-28",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261128160000"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Vieille corneille — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/vieille-corneille-2026-11-28-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La patrie — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-patrie-2026-11-28-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Chantal Lamarre : Steppettes et cornemuse",
+   "date": "2026-11-28",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafconc.ca/spectacle-details/chantal-lamarre-44297/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-28",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Minotaure — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/minotaure-2026-11-28-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday After Dusk Comedy",
+   "date": "2026-11-28",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Montreal Comedy Club Presents: Late-Night Stand-Up Comedy at Deli Planet",
+   "date": "2026-11-28",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/1207555193089"
+  },
+  {
    "regle": "heures différentes selon les sources",
    "action": "10:00 gardée (montreal.ca), 11:00 écartée (montreal.ca)",
    "titre": "Tire-toi une bûche! - Théâtre des Petites Âmes",
@@ -1145,11 +1289,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 38,
-  "date confirmée": 229,
-  "lien mort remplacé": 9,
-  "page illisible": 32,
-  "non relues (limite)": 136
+  "date absente de la page": 48,
+  "date confirmée": 329,
+  "lien mort remplacé": 15,
+  "page illisible": 52
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1185,9 +1328,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 303,
+   "erreurs": 309,
    "sorties": 724,
-   "taux": 41.9
+   "taux": 42.7
   },
   {
    "source": "centredesmusiciensdumonde.com",

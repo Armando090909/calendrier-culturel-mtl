@@ -21,12 +21,12 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-montreal-off-the-cuff-comedy-a2b24b@ccmtl.ca
+UID:2026-12-03-montreal-off-the-cuff-comedy-a58f49@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261203T203000
 DTEND;TZID=America/Toronto:20261203T223000
 SUMMARY:Montreal Off The Cuff Comedy
-LOCATION:ComedyVille\, Montréal
+LOCATION:Comedyville\, Montréal
 URL:https://www.comedyville.ca/sktevents/off-the-cuff-comedy-montreal/
 DESCRIPTION:Soirée d'humour improvisée en anglais\, à Montréal.\nPrix :
   15 $\nDétails : https://www.eventbrite.com/e/montreal-off-the-cuff-comed
