@@ -58,7 +58,10 @@
   "lon": -73.58004,
   "quartier": "Ville-Marie"
  },
- "Arprim": null,
+ "Arprim": {
+  "adresse": "372, rue Sainte-Catherine Ouest",
+  "alias": []
+ },
  "Arsenal art contemporain": {
   "lat": 45.4918,
   "lon": -73.5628,
@@ -100,7 +103,10 @@
   "quartier": "Ville-Marie"
  },
  "Auditorium Fernand-Bilodeau": null,
- "Auditorium Serge Nolet": null,
+ "Auditorium Serge Nolet": {
+  "adresse": "1301, avenue Dawson, Dorval",
+  "alias": []
+ },
  "Auditorium de Verdun": {
   "lat": 45.46252,
   "lon": -73.56174,
@@ -118,7 +124,10 @@
   "lon": -73.607,
   "quartier": "Petite-Patrie"
  },
- "Aux Angles Ronds": null,
+ "Aux Angles Ronds": {
+  "adresse": "5333, boulevard Saint-Laurent",
+  "alias": []
+ },
  "BaNQ": {
   "lat": 45.51539,
   "lon": -73.56224,
@@ -293,7 +302,10 @@
   "lon": -73.52382,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
- "Bibliothèque Micheline-Gagnon": null,
+ "Bibliothèque Micheline-Gagnon": {
+  "adresse": "11370, rue Notre-Dame Est, Montréal-Est",
+  "alias": []
+ },
  "Bibliothèque Mordecai-Richler": {
   "lat": 45.52162,
   "lon": -73.60174,
@@ -304,7 +316,10 @@
   "lon": -73.56268,
   "quartier": "Ville-Marie"
  },
- "Bibliothèque Reginald-J.P. Dawson": null,
+ "Bibliothèque Reginald-J.P. Dawson": {
+  "adresse": "1967, boulevard Graham, Mont-Royal",
+  "alias": []
+ },
  "Bibliothèque Robert-Bourassa": {
   "lat": 45.516,
   "lon": -73.606,
@@ -452,7 +467,10 @@
   "lon": -73.57102,
   "quartier": "Rosemont–La Petite-Patrie"
  },
- "Bibliothèque, pavillon J.W. McConnell, salle LB-2, 1400 boulevard De Maisonneuve Ouest": null,
+ "Bibliothèque, pavillon J.W. McConnell, salle LB-2, 1400 boulevard De Maisonneuve Ouest": {
+  "adresse": "1400, boulevard De Maisonneuve Ouest",
+  "alias": []
+ },
  "Bibliothèques, cafés, musées et autres lieux partenaires": null,
  "Bibliothèques, cafés, musées et autres lieux participants": null,
  "Biodôme | Espace pour la vie": {
@@ -470,7 +488,10 @@
   "quartier": "Ville-Marie"
  },
  "Bistro de Beta Bloc": null,
- "Black Healing Centre": null,
+ "Black Healing Centre": {
+  "adresse": "2100, avenue Marlowe",
+  "alias": []
+ },
  "Blouin Division": {
   "adresse": "2020, rue William, Montréal",
   "alias": [],
@@ -484,7 +505,10 @@
   "lon": -73.538,
   "quartier": "Mercier"
  },
- "Bootlegger Cocktail Bar & Cuisine Montréal": null,
+ "Bootlegger Cocktail Bar & Cuisine Montréal": {
+  "adresse": "3481, boulevard Saint-Laurent",
+  "alias": []
+ },
  "Boulevard René-Lévesque": {
   "lat": 45.46634,
   "lon": -73.54139,
@@ -502,7 +526,10 @@
   "lon": -73.5823,
   "quartier": "Saint-Henri"
  },
- "Brass Door": null,
+ "Brass Door": {
+  "adresse": "2171, rue Crescent",
+  "alias": []
+ },
  "Brasserie Beaubien": {
   "alias": [],
   "lat": 45.53121,
@@ -522,9 +549,15 @@
  },
  "Burton Cummings Theatre": null,
  "CAA Centre": null,
- "CIRCA art actuel": null,
+ "CIRCA art actuel": {
+  "adresse": "372, rue Sainte-Catherine Ouest",
+  "alias": []
+ },
  "CRÉR": null,
- "Cabaret Fouf": null,
+ "Cabaret Fouf": {
+  "adresse": "87, rue Sainte-Catherine Est",
+  "alias": []
+ },
  "Cabaret Foufs": null,
  "Cabaret Guy-Aubert": null,
  "Cabaret Lion d'Or": {
@@ -539,7 +572,10 @@
   "lon": -73.55712,
   "quartier": "Ville-Marie"
  },
- "Cabaret de Curiosités": null,
+ "Cabaret de Curiosités": {
+  "adresse": "4264, rue Sainte-Catherine Est",
+  "alias": []
+ },
  "Cabaret des Amants": null,
  "Cabaret du Casino de Montréal": {
   "alias": [
@@ -550,7 +586,10 @@
   "quartier": "Parc Jean-Drapeau"
  },
  "Cabaret-Théâtre du Vieux Saint-Jean": null,
- "Caf'Conc'": null,
+ "Caf'Conc'": {
+  "adresse": "1050, rue De La Gauchetière Ouest",
+  "alias": []
+ },
  "Cafe Gotsoul": null,
  "Café Campus": {
   "lat": 45.5146,
@@ -567,7 +606,10 @@
   "lon": -73.63067,
   "quartier": "Villeray–Saint-Michel–Parc-Extension"
  },
- "Café Social B Hive": null,
+ "Café Social B Hive": {
+  "adresse": "309, rue de la Montagne",
+  "alias": []
+ },
  "Campus MIL, Complexe des sciences": null,
  "Canadian Centre for Architecture": {
   "lat": 45.49097,
@@ -580,7 +622,10 @@
   "lon": -73.52474,
   "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
- "Carré Notre-Dame-des-Victoires": null,
+ "Carré Notre-Dame-des-Victoires": {
+  "adresse": "avenue Pierre-De Coubertin et rue Dickson",
+  "alias": []
+ },
  "Casa del Popolo": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -683,7 +728,10 @@
   "lon": -73.565,
   "quartier": "Anjou"
  },
- "Centre communautaire et aquatique": null,
+ "Centre communautaire et aquatique": {
+  "adresse": "5794, avenue Parkhaven, Côte-Saint-Luc",
+  "alias": []
+ },
  "Centre communautaire intergénérationnel": {
   "alias": [
    "Centre communautaire intergénérationnel (CCI)"
@@ -746,10 +794,16 @@
  },
  "Centre des Arts Shenkman": null,
  "Centre des arts Juliette-Lassonde": null,
- "Centre des arts actuels SKOL": null,
+ "Centre des arts actuels SKOL": {
+  "adresse": "372, rue Sainte-Catherine Ouest",
+  "alias": []
+ },
  "Centre des arts de Baie-Comeau": null,
  "Centre des arts de Shawinigan": null,
- "Centre des arts visuels / Galerie McClure": null,
+ "Centre des arts visuels / Galerie McClure": {
+  "adresse": "350, avenue Victoria, Westmount",
+  "alias": []
+ },
  "Centre des femmes de Rivière-des-Prairies": {
   "lat": 45.63911,
   "lon": -73.58014,
@@ -802,7 +856,10 @@
   "lon": -73.55006,
   "quartier": "Ville-Marie"
  },
- "Chez Bozo": null,
+ "Chez Bozo": {
+  "adresse": "1208, rue Crescent",
+  "alias": []
+ },
  "Chez l'Éditeur": {
   "lat": 45.54123,
   "lon": -73.61471,
@@ -838,7 +895,10 @@
   "lon": -73.5665,
   "quartier": "Quartier des spectacles"
  },
- "Ciné-Campus": null,
+ "Ciné-Campus": {
+  "adresse": "2332, boulevard Édouard-Montpetit",
+  "alias": []
+ },
  "Cinéma Beaubien": {
   "lat": 45.5408,
   "lon": -73.6031,
@@ -889,7 +949,10 @@
   "lon": -73.563,
   "quartier": "Quartier des spectacles"
  },
- "Comedyville": null,
+ "Comedyville": {
+  "adresse": "895, rue De La Gauchetière Ouest",
+  "alias": []
+ },
  "Commodore Ballroom": null,
  "Complexe EV, salle 1.715, campus SGW": null,
  "Conservatoire de Musique De Montreal": {
@@ -911,7 +974,10 @@
   "quartier": "Ville-Marie"
  },
  "Cénotaphe, près de l'hôtel de ville de Westmount": null,
- "DARE-DARE": null,
+ "DARE-DARE": {
+  "adresse": "2515, rue Delisle",
+  "alias": []
+ },
  "DATCHA": {
   "adresse": "98 avenue Laurier Ouest",
   "alias": [],
@@ -932,8 +998,14 @@
   "lon": -73.56728,
   "quartier": "Ville-Marie"
  },
- "Devant l'hôtel de ville": null,
- "Diagonale": null,
+ "Devant l'hôtel de ville": {
+  "adresse": "4333, rue Sherbrooke Ouest, Westmount",
+  "alias": []
+ },
+ "Diagonale": {
+  "adresse": "5455, avenue de Gaspé",
+  "alias": []
+ },
  "Diese Onze": {
   "lat": 45.52141,
   "lon": -73.57692,
@@ -962,7 +1034,10 @@
   "quartier": "Mile End"
  },
  "EA Rawlinson Centre For The Arts": null,
- "EISODE": null,
+ "EISODE": {
+  "adresse": "9632A, rue Lajeunesse",
+  "alias": []
+ },
  "ELLEPHANT": {
   "adresse": "1201, rue Saint-Dominique, Montréal",
   "alias": [],
@@ -996,7 +1071,10 @@
   "lon": -73.5775,
   "quartier": "Ville-Marie"
  },
- "Espace Culturel Kawalees": null,
+ "Espace Culturel Kawalees": {
+  "adresse": "5175A, avenue du Parc",
+  "alias": []
+ },
  "Espace Félix-Leclerc": null,
  "Espace GO": {
   "lat": 45.5215,
@@ -1030,7 +1108,10 @@
   "lon": -73.56,
   "quartier": "Pointe-Saint-Charles"
  },
- "Espace Together": null,
+ "Espace Together": {
+  "adresse": "6793, rue Saint-Hubert",
+  "alias": []
+ },
  "Espace culturel Georges-Émile-Lapalme": {
   "lat": 45.50838,
   "lon": -73.56625,
@@ -1060,7 +1141,10 @@
   "lon": -73.56493,
   "quartier": "Ville-Marie"
  },
- "Estrella": null,
+ "Estrella": {
+  "adresse": "1165, boulevard Saint-Laurent",
+  "alias": []
+ },
  "Exhibit A": {
   "lat": 45.472,
   "lon": -73.588,
@@ -1219,14 +1303,20 @@
   "lon": -73.606,
   "quartier": "Outremont"
  },
- "Galerie d'art Stewart Hall": null,
+ "Galerie d'art Stewart Hall": {
+  "adresse": "176, chemin du Bord-du-Lac–Lakeshore, Pointe-Claire",
+  "alias": []
+ },
  "Galerie d'art du Parc": null,
  "Galerie de l'UQAM": {
   "lat": 45.5146,
   "lon": -73.5609,
   "quartier": "Quartier latin"
  },
- "Galerie de l'Université de Montréal": null,
+ "Galerie de l'Université de Montréal": {
+  "adresse": "2940, chemin de la Côte-Sainte-Catherine",
+  "alias": []
+ },
  "Galeries Bellemare Lambert": {
   "adresse": "372, rue Sainte-Catherine Ouest, suite 502 (édifice Belgo), Montréal",
   "alias": [],
@@ -1294,7 +1384,10 @@
  "Hill Center": null,
  "History": null,
  "Hollywood Theatre": null,
- "Honey Martin": null,
+ "Honey Martin": {
+  "adresse": "5916, rue Sherbrooke Ouest",
+  "alias": []
+ },
  "Houston Avenue Bar & Grill": null,
  "Hurley's Irish Pub": {
   "lat": 45.49672,
@@ -1340,7 +1433,10 @@
  "Key City Theatre": null,
  "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Koujina Café": null,
- "L'Adversaire – Pub et boutique ludiques": null,
+ "L'Adversaire – Pub et boutique ludiques": {
+  "adresse": "4303, rue Sainte-Catherine Est",
+  "alias": []
+ },
  "L'Anti Bar & Spectacles": null,
  "L'Artère fabricathèque": null,
  "L'Entracte": {
@@ -1365,7 +1461,10 @@
   "lon": -73.5822,
   "quartier": "Plateau"
  },
- "L'Espace La Risée": null,
+ "L'Espace La Risée": {
+  "adresse": "1258, rue Bélanger",
+  "alias": []
+ },
  "L'Espace Mandeville": null,
  "L'Espace culturel du Quartier Saint-Nicolas": null,
  "L'Illusion, Théâtre de marionnettes": {
@@ -1400,10 +1499,16 @@
   "lon": -73.59117,
   "quartier": "Rosemont–La Petite-Patrie"
  },
- "La Cabine Comédie Club": null,
+ "La Cabine Comédie Club": {
+  "adresse": "5043, rue Saint-Denis",
+  "alias": []
+ },
  "La Cale - Pub Zéro Déchets": null,
  "La Cale - pub zéro déchet": null,
- "La Cenne": null,
+ "La Cenne": {
+  "adresse": "7755, boulevard Saint-Laurent",
+  "alias": []
+ },
  "La Chapelle Saint-Louis": {
   "lat": 45.52128,
   "lon": -73.57992,
@@ -1508,7 +1613,10 @@
   "quartier": "Ville-Marie"
  },
  "Le Calypso": null,
- "Le Carlton Signature": null,
+ "Le Carlton Signature": {
+  "adresse": "8860, boulevard Langelier, Saint-Léonard",
+  "alias": []
+ },
  "Le Carré 150": {
   "alias": [],
   "lat": 45.50359,
@@ -1580,7 +1688,10 @@
  },
  "Le Zaricot": null,
  "Le Zénith Promutuel Assurances": null,
- "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest": null,
+ "Leonard & Bina Ellen Art Gallery, pavillon J.W. McConnell, 1400 boulevard De Maisonneuve Ouest": {
+  "adresse": "1400, boulevard De Maisonneuve Ouest",
+  "alias": []
+ },
  "Les Diffusions Pointe-Valaine": null,
  "Les Sans Taverne": {
   "alias": [],
@@ -1692,7 +1803,10 @@
   "lon": -73.5635,
   "quartier": "Quartier des spectacles"
  },
- "Madame Smith": null,
+ "Madame Smith": {
+  "adresse": "4061, rue Ontario Est",
+  "alias": []
+ },
  "Magasin Général LeBrun": null,
  "Magpie Magique": null,
  "Mairie d'arrondissement de Montréal-Nord": {
@@ -1778,7 +1892,10 @@
   "lon": -73.617,
   "quartier": "NDG"
  },
- "Maison de la culture Notre-Dame-de-Grâce - Monkland": null,
+ "Maison de la culture Notre-Dame-de-Grâce - Monkland": {
+  "adresse": "6400, avenue de Monkland",
+  "alias": []
+ },
  "Maison de la culture Notre-Dame-de-Grâce – Botrel": {
   "lat": 45.47557,
   "lon": -73.61438,
@@ -1847,7 +1964,10 @@
   "quartier": ""
  },
  "Meadowvale Theatre": null,
- "Memento! - Brasserie Artisanale": null,
+ "Memento! - Brasserie Artisanale": {
+  "adresse": "2471, rue Saint-Patrick",
+  "alias": []
+ },
  "Meridian Hall": null,
  "Microbrasserie 4 Origines": {
   "lat": 45.47803,
@@ -1856,7 +1976,10 @@
  },
  "Milieux Institute for Arts, Culture and Technology, Concordia University": null,
  "Milieux Institute, Sir George Williams Campus": null,
- "Milieux Resource Centre": null,
+ "Milieux Resource Centre": {
+  "adresse": "1515, rue Sainte-Catherine Ouest",
+  "alias": []
+ },
  "Modavie": {
   "lat": 45.50547,
   "lon": -73.55396,
@@ -1894,7 +2017,10 @@
   "lon": -73.5737,
   "quartier": "Centre-ville"
  },
- "Musée d'histoire et du patrimoine de Dorval": null,
+ "Musée d'histoire et du patrimoine de Dorval": {
+  "adresse": "1850, chemin du Bord-du-Lac–Lakeshore, Dorval",
+  "alias": []
+ },
  "Musée de Dorval": null,
  "Musée des beaux-arts de Montréal": {
   "lat": 45.4985,
@@ -1944,8 +2070,14 @@
   "lon": -73.56816,
   "quartier": "Ville-Marie"
  },
- "OPTICA, centre d'art contemporain": null,
- "Occurrence": null,
+ "OPTICA, centre d'art contemporain": {
+  "adresse": "5445, avenue de Gaspé",
+  "alias": []
+ },
+ "Occurrence": {
+  "adresse": "5455, avenue de Gaspé",
+  "alias": []
+ },
  "Off-Bach": {
   "adresse": "3487, boulevard Saint-Laurent",
   "alias": [],
@@ -2037,7 +2169,10 @@
   "lon": -73.59513,
   "quartier": "LaSalle"
  },
- "Parc Louis-Querbes": null,
+ "Parc Louis-Querbes": {
+  "adresse": "rue de Charleroi, Montréal-Nord",
+  "alias": []
+ },
  "Parc Montcalm": {
   "lat": 45.54491,
   "lon": -73.60041,
@@ -2141,7 +2276,10 @@
  },
  "Piratex": null,
  "Place Chaumont": null,
- "Place Gennevilliers-Laliberté": null,
+ "Place Gennevilliers-Laliberté": {
+  "adresse": "Place Gennevilliers-Laliberté",
+  "alias": []
+ },
  "Place Rodolphe-Rousseau": {
   "lat": 45.514,
   "lon": -73.681,
@@ -2291,8 +2429,14 @@
   "quartier": "Quartier des spectacles"
  },
  "Sainte-Agathe-des-Monts": null,
- "Sainte-Catherine Hall": null,
- "Sala Resto": null,
+ "Sainte-Catherine Hall": {
+  "adresse": "917, rue Sainte-Catherine Est",
+  "alias": []
+ },
+ "Sala Resto": {
+  "adresse": "4848, boulevard Saint-Laurent",
+  "alias": []
+ },
  "Salle 1120, Henry F. Hall Building": null,
  "Salle Albert-Dumouchel": null,
  "Salle Albert-Rousseau": null,
@@ -2309,7 +2453,10 @@
  },
  "Salle Claude-Legault": null,
  "Salle Claudia-Ebacher": null,
- "Salle DOMTAR": null,
+ "Salle DOMTAR": {
+  "adresse": "800, rue De La Gauchetière Ouest",
+  "alias": []
+ },
  "Salle Desjardins-Telus": null,
  "Salle Dussault": null,
  "Salle Désilets - Espace 7000": null,
@@ -2328,7 +2475,10 @@
   "lon": -73.56271,
   "quartier": "Ville-Marie"
  },
- "Salle Jean-Claude-Germain": null,
+ "Salle Jean-Claude-Germain": {
+  "adresse": "3900, rue Saint-Denis",
+  "alias": []
+ },
  "Salle Jean-Cossette": null,
  "Salle Jean-Eudes": {
   "lat": 45.53858,
@@ -2352,7 +2502,10 @@
   "quartier": "L'Île-Bizard–Sainte-Geneviève"
  },
  "Salle Michel Côté": null,
- "Salle Michelle-Rossignol": null,
+ "Salle Michelle-Rossignol": {
+  "adresse": "3900, rue Saint-Denis",
+  "alias": []
+ },
  "Salle Méchatigan": null,
  "Salle Norman-McLaren": null,
  "Salle Octave-Crémazie": null,
@@ -2371,7 +2524,10 @@
   "quartier": "L'Île-Bizard–Sainte-Geneviève"
  },
  "Salle Philippe-Filion": null,
- "Salle Piccolo": null,
+ "Salle Piccolo": {
+  "adresse": "5723, avenue du Parc",
+  "alias": []
+ },
  "Salle Pierre-Mercure": {
   "lat": 45.5145,
   "lon": -73.559,
@@ -2426,7 +2582,10 @@
  "Sid Williams Theatre": null,
  "Société d'art vocal": null,
  "Southern Alberta Jubilee Auditorium": null,
- "Sports and Recreation Centre": null,
+ "Sports and Recreation Centre": {
+  "adresse": "8, avenue Westminster Sud, Montréal-Ouest",
+  "alias": []
+ },
  "Square Saint-Louis": {
   "lat": 45.51712,
   "lon": -73.56983,
@@ -2484,7 +2643,10 @@
   "lon": -73.615,
   "quartier": "Saint-Michel"
  },
- "TOPO": null,
+ "TOPO": {
+  "adresse": "5445, avenue de Gaspé",
+  "alias": []
+ },
  "Tabac Villeray": {
   "lat": 45.54877,
   "lon": -73.61674,
@@ -2498,7 +2660,10 @@
   "lon": -73.569,
   "quartier": "Quartier des spectacles"
  },
- "Tango Libre": null,
+ "Tango Libre": {
+  "adresse": "1650, rue Marie-Anne Est",
+  "alias": []
+ },
  "Teatro Amelia e Lino Saputo": null,
  "The Arden Theatre": null,
  "The Arena at Pickering Casino Resort": null,
@@ -2844,7 +3009,10 @@
   "lon": -73.6475,
   "quartier": "Chabanel"
  },
- "café de la ligne verte": null,
+ "café de la ligne verte": {
+  "adresse": "2531, rue Ontario Est",
+  "alias": []
+ },
  "café musette": {
   "lat": 45.51806,
   "lon": -73.59171,
@@ -2883,7 +3051,10 @@
   "lon": -73.56366,
   "quartier": "Ville-Marie"
  },
- "Édifice Centennial": null,
+ "Édifice Centennial": {
+  "adresse": "288, boulevard Beaconsfield, Beaconsfield",
+  "alias": []
+ },
  "Église Notre-Dame-des-Sept-Douleurs": {
   "lat": 45.46254,
   "lon": -73.56755,
@@ -2935,7 +3106,10 @@
   "lon": -73.60502,
   "quartier": "Rosemont–La Petite-Patrie"
  },
- "Église Sainte-Hilda": null,
+ "Église Sainte-Hilda": {
+  "adresse": "6341, avenue De Lorimier",
+  "alias": []
+ },
  "Église St-Andrew et St-Paul": {
   "lat": 45.4995,
   "lon": -73.581,
@@ -2970,9 +3144,20 @@
   "lon": -73.56797,
   "quartier": "Ville-Marie"
  },
- "Église de St-Jean l'Évangéliste": null,
+ "Église de St-Jean l'Évangéliste": {
+  "adresse": "137, avenue du Président-Kennedy",
+  "alias": []
+ },
  "Église de St-Joseph-de-Kamouraska": null,
  "Église du Sacré-Cœur-de-Jésus": null,
  "Événement virtuel": null,
- "Île de la tortue, Abya Yala": null
+ "Île de la tortue, Abya Yala": null,
+ "ComedyVille": {
+  "adresse": "895, rue De La Gauchetière Ouest",
+  "alias": []
+ },
+ "Musée des Hospitalières de l'Hôtel-Dieu de Montréal": {
+  "adresse": "201, avenue des Pins Ouest",
+  "alias": []
+ }
 }

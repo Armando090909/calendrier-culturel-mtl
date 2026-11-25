@@ -242,6 +242,11 @@ LIEUX_HORS_ILE = {
     "jeanne peter lougheed performing arts centre", "ea rawlinson centre for the arts",
     "salle vincent spain complexe culturel felix leclerc", "complexe culturel felix leclerc", "magasin general lebrun",
     "ville de l ile perrot",
+    # (25 nov. 2026, adresses confirmées par l'équipe) hors de l'île
+    "salle theatre la scene", "au vieux brasserie festive", "l opale", "l espace mandeville", "espace mandeville",
+    "centre bang", "centre sagamie", "langage plus", "l ecart", "vaste et vague", "voart centre d exposition de val d or",
+    "panache art actuel", "centre d art jacques et michel auger", "galerie d art du parc", "hanifl performing arts center",
+    "theatre c", "le moulinet", "grizzly fuzz", "centre culturel doris lussier", "centrecultureldoris lussier",
     # Gatineau (vu le 2 nov. 2026 : « Le Minotaure », 3 rue Kent, annoncé par Sors-tu?)
     "le minotaure", "minotaure",
     # Toronto, Vancouver, Ottawa, Prairies
