@@ -21,10 +21,10 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-09-architectures-de-la-joie-aff19b@ccmtl.ca
+UID:2027-01-09-architectures-de-la-joie-bd5f74@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20270109T190000
-DTEND;TZID=America/Toronto:20270109T210000
+DTSTART;TZID=America/Toronto:20270109T150000
+DTEND;TZID=America/Toronto:20270109T170000
 SUMMARY:Architectures de la joie
 LOCATION:Place des Arts\, Montréal
 URL:https://www.placedesarts.com/en/event/architectures-de-la-joie

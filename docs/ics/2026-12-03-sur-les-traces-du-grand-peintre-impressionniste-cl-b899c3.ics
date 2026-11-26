@@ -21,17 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-10-samedis-creatifs-journal-creatif-bilan-de-l-annee-cbe296@ccm
- tl.ca
+UID:2026-12-03-sur-les-traces-du-grand-peintre-impressionniste-cl-b899c3@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
-SUMMARY:Samedis créatifs : Journal créatif - bilan de l'année
+DTSTART;TZID=America/Toronto:20261203T140000
+DTEND;TZID=America/Toronto:20261203T160000
+SUMMARY:Sur les traces du grand peintre impressionniste\, Claude Monet
 LOCATION:Bibliothèque de Cartierville\, Montréal
-URL:https://montreal.ca/evenements/samedis-creatifs-journal-creatif-bilan-d
- e-lannee-117132
-DESCRIPTION:Heure à confirmer. La bibliothèque de Cartierville offre un a
- telier d'arts plastiques gratuit pour adultes.\nPrix : Gratuit\nDétails :
-  https://forms.cloud.microsoft/r/ykYNrPMgRJ\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/sur-les-traces-du-grand-peintre-impressi
+ onniste-claude-monet-117169
+DESCRIPTION:Conférence artistique pour les adultes à la bibliothèque de 
+ Cartierville.\nPrix : Gratuit\nDétails : https://forms.cloud.microsoft/r/
+ 8m60FRUmjb\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
