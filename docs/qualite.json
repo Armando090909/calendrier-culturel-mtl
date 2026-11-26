@@ -4,8 +4,8 @@
   "titre mal encodé": 15,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 34,
-  "page de la sortie disparue": 11,
+  "date absente de la page officielle": 44,
+  "page de la sortie disparue": 17,
   "heures différentes selon les sources": 67
  },
  "journal": [
@@ -327,6 +327,42 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-26",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-28",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Voyage voyage",
    "date": "2026-11-26",
    "lieu": "Théâtre Denise-Pelletier",
@@ -566,6 +602,114 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/la-patrie-2026-11-28-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Chantal Lamarre : Steppettes et cornemuse",
+   "date": "2026-11-28",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafconc.ca/spectacle-details/chantal-lamarre-44297/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-28",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Minotaure — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/minotaure-2026-11-28-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday After Dusk Comedy",
+   "date": "2026-11-28",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand-Up (Deli @ 9 PM)",
+   "date": "2026-11-28",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/saturday-night-comedy-show/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Le secret des mésanges — séance",
+   "date": "2026-11-29",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/le-secret-des-mesanges-2026-11-29-1030"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-29",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-29-1300"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-29",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-29-1500"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Chicane de famille",
+   "date": "2026-11-29",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/chicanedefamillelamere/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-29",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-29-1645"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Bloodshots + Screaming Demons + The Count Ferrara",
+   "date": "2026-11-29",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/calendrier/2026/11/29/the-bloodshots--screaming-demons--the-count-ferrara-"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-29",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-29-2000"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1172,11 +1316,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 34,
-  "date confirmée": 228,
-  "lien mort remplacé": 11,
-  "non relues (limite)": 134,
-  "page illisible": 32
+  "date absente de la page": 44,
+  "date confirmée": 332,
+  "lien mort remplacé": 17,
+  "page illisible": 46
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1212,9 +1355,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 325,
+   "erreurs": 331,
    "sorties": 762,
-   "taux": 42.7
+   "taux": 43.4
   },
   {
    "source": "centredesmusiciensdumonde.com",
@@ -1259,15 +1402,15 @@
    "taux": 17.2
   },
   {
+   "source": "panm360.com",
+   "erreurs": 47,
+   "sorties": 325,
+   "taux": 14.5
+  },
+  {
    "source": "theatrefairmount.com",
    "erreurs": 36,
    "sorties": 250,
-   "taux": 14.4
-  },
-  {
-   "source": "panm360.com",
-   "erreurs": 47,
-   "sorties": 326,
    "taux": 14.4
   },
   {
@@ -1333,6 +1476,6 @@
  ],
  "recoupees": {
   "total": 2738,
-  "deux_sources_ou_plus": 275
+  "deux_sources_ou_plus": 274
  }
 }
