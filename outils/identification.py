@@ -114,8 +114,14 @@ def trouver(picks: list[dict]) -> dict:
         site = sites.get(e["lieu"])
         if site:
             cs = comptes(_lire(site))
+            # (26 nov. 2026, Studio PACA) le nom seul ne suffit pas : la Ville avait inscrit « Studio PACA » pour un
+            # spectacle donné au Centre Sanaaq, et Les Foutoukours ont été identifiés à tort. Si l'événement ne vient pas
+            # du site de la salle, sa page doit nommer la salle ; sinon le compte est seulement proposé (« à confirmer »).
+            meme_site = urlparse(e.get("url") or "").netloc.removeprefix("www.") == urlparse(site).netloc.removeprefix("www.")
+            from normalisation import plat as _plat
+            nomme = meme_site or _plat(e["lieu"]) in _plat(re.sub(r"<[^>]+>", " ", _lire(e.get("url") or "") or ""))
             if cs:
-                r["salle"] = {"compte": cs[0], "sur": True, "source": site}
+                r["salle"] = {"compte": cs[0], "sur": bool(nomme), "source": site}
         # l'artiste : page de l'événement, billetterie, page d'où vient l'affiche
         pages = [u for u in dict.fromkeys([e.get("url"), e.get("billets"), (e.get("affiche") or {}).get("lien")])
                  if str(u or "").startswith("http") and "montreal.ca" not in str(u)]
