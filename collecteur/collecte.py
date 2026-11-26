@@ -515,10 +515,12 @@ def main() -> int:
         import threading
         # (24 nov. 2026) l'écriture de la pile par faulthandler a fait planter l'enrichissement (« Segmentation
         # fault » au moment même de l'écriture, 20 min après le début) : remplacée par une version en Python, sans risque
+        # (26 nov. 2026) attente par Event().wait et non time.sleep : les tests remplacent time.sleep par « rien »,
+        # ce qui faisait tourner ce fil en boucle et planter la fin des tests (« Fatal Python error », code 134)
         def _pile():
             import traceback
-            while True:
-                time.sleep(20 * 60)
+            attente = threading.Event()
+            while not attente.wait(20 * 60):
                 pile = sys._current_frames().get(threading.main_thread().ident)
                 if pile is not None:
                     print("Pile (programme principal, toutes les 20 min) :\n" + "".join(traceback.format_stack(pile)[-6:]), flush=True)
