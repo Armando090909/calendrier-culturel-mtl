@@ -106,6 +106,7 @@
   "quartier": "Ville-Marie"
  },
  "Auditorium Fernand-Bilodeau": null,
+ "Auditorium Maxwell-Cummings du MBAM": null,
  "Auditorium Serge Nolet": {
   "adresse": "1301, avenue Dawson, Dorval",
   "alias": [],
@@ -205,6 +206,7 @@
   "lon": -73.55223,
   "quartier": "Le Sud-Ouest"
  },
+ "Beaubien Brewery": null,
  "Ben's Next Door": null,
  "Benelux": {
   "lat": 45.46344,
@@ -1268,6 +1270,11 @@
   "lon": -73.544,
   "quartier": "Hochelaga"
  },
+ "Fonderie Darling": {
+  "lat": 45.49773,
+  "lon": -73.55676,
+  "quartier": "Ville-Marie"
+ },
  "Foufounes Électriques": {
   "alias": [
    "Les Foufounes Electriques",
@@ -1467,6 +1474,7 @@
   "lon": -73.551,
   "quartier": "Hochelaga"
  },
+ "Halles de Schaerbeek": null,
  "Hanifl Performing Arts Center": null,
  "Hanifl Performing Arts Centre": null,
  "Henry F. Hall Building": {
@@ -1529,6 +1537,7 @@
  "John Molson Building, salle ABCD": null,
  "John Molson Building, salle MB 7.270": null,
  "Judith J-2805": null,
+ "Kampnagel": null,
  "Key City Theatre": null,
  "Kiosk, Engineering, Computer Science and Visual Arts Integrated Complex": null,
  "Koujina Café": null,
@@ -1896,6 +1905,11 @@
  },
  "MAC Montréal": null,
  "MAC à Place Ville Marie": null,
+ "MAI": {
+  "lat": 45.51162,
+  "lon": -73.5762,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "MAI – Montréal, arts interculturels": {
   "adresse": "3680, rue Jeanne-Mance",
   "alias": [],
@@ -2029,6 +2043,11 @@
   "lon": -73.625,
   "quartier": "Côte-des-Neiges"
  },
+ "Maison de la culture de Parc-Extension": {
+  "lat": 45.54166,
+  "lon": -73.61342,
+  "quartier": "Villeray–Saint-Michel–Parc-Extension"
+ },
  "Maison de la culture de Pointe-aux-Trembles": {
   "lat": 45.665,
   "lon": -73.495,
@@ -2139,6 +2158,7 @@
   "quartier": "Quartier des spectacles"
  },
  "Moonshine": null,
+ "Multiples lieux": null,
  "Multiples salles": null,
  "Museum of the Bible": null,
  "Musée McCord Stewart": {
@@ -2235,6 +2255,11 @@
   "lat": 45.5087,
   "lon": -73.5672,
   "quartier": "Quartier des spectacles"
+ },
+ "Olympic Stadium": {
+  "lat": 45.5578,
+  "lon": -73.55165,
+  "quartier": "Mercier–Hochelaga-Maisonneuve"
  },
  "Oratoire Saint-Joseph": {
   "lat": 45.4925,
@@ -2692,7 +2717,11 @@
  },
  "Salle Pratt & Whitney Canada": null,
  "Salle Richard-Sauvageau": {
-  "adresse": "12004 boulevard Rolland"
+  "adresse": "12004 boulevard Rolland",
+  "alias": [],
+  "lat": 45.61625,
+  "lon": -73.62134,
+  "quartier": "Montréal-Nord"
  },
  "Salle Serge-Garant": {
   "adresse": "200, avenue Vincent-d'Indy",

@@ -1,12 +1,12 @@
 {
  "date": "2026-11-26",
  "regles": {
-  "titre mal encodé": 14,
+  "titre mal encodé": 15,
   "heure improbable": 1,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 37,
+  "date absente de la page officielle": 34,
   "page de la sortie disparue": 11,
-  "heures différentes selon les sources": 58
+  "heures différentes selon les sources": 67
  },
  "journal": [
   {
@@ -80,6 +80,15 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/violence-du-corps-de-lautre-2026-12-01-1530"
+  },
+  {
+   "regle": "titre mal encodé",
+   "action": "corrigé",
+   "titre": "In a Faraway Land…Comedy and Improv Show",
+   "date": "2026-12-02",
+   "lieu": "Théâtre Sainte-Catherine",
+   "source": "theatre",
+   "url": "https://theatresaintecatherine.com/event/in-a-faraway-land-comedy-and-improv-show/"
   },
   {
    "regle": "titre mal encodé",
@@ -246,7 +255,7 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "Open Mic Tête d'affiche à La Cabine",
+   "titre": "Open Mic Tête d'affiche",
    "date": "2026-11-26",
    "lieu": "La Cabine Comédie Club",
    "source": "salles",
@@ -314,15 +323,6 @@
    "lieu": "Théâtre La Comédie de Montréal",
    "source": "salles",
    "url": "https://www.lacomedie.ca/spectacle/groupe-entourage-lecture-publique/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-11-26",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261126200000"
   },
   {
    "regle": "date absente de la page officielle",
@@ -471,15 +471,6 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-11-27",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261127200000"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
    "titre": "RaqStar par le studio Sharqui",
    "date": "2026-11-27",
    "lieu": "Théâtre La Comédie de Montréal",
@@ -559,15 +550,6 @@
    "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-28-1230"
   },
   {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-11-28",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261128160000"
-  },
-  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "Vieille corneille — séance",
@@ -593,15 +575,6 @@
    "lieu": "Parc Montcalm",
    "source": "ville",
    "url": "https://montreal.ca/evenements/tire-toi-une-buche-theatre-des-petites-ames-121027"
-  },
-  {
-   "regle": "heures différentes selon les sources",
-   "action": "10:30 gardée (montreal.ca), 11:30 écartée (montreal.ca)",
-   "titre": "Lis avec Poilu (Groupe 1)",
-   "date": "2026-11-29",
-   "lieu": "Bibliothèque de Pierrefonds",
-   "source": "ville",
-   "url": "https://montreal.ca/evenements/lis-avec-poilu-groupe-1-116608"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -632,12 +605,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (sorstu.ca), 20:00 écartée (sorstu.ca)",
-   "titre": "Suzanne va sortir",
-   "date": "2026-11-28",
-   "lieu": "La Licorne",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/suzanne-va-sortir/"
+   "action": "10:30 gardée (montreal.ca), 11:30 écartée (montreal.ca)",
+   "titre": "Lis avec Poilu (Groupe 1)",
+   "date": "2026-11-29",
+   "lieu": "Bibliothèque de Pierrefonds",
+   "source": "ville",
+   "url": "https://montreal.ca/evenements/lis-avec-poilu-groupe-1-116608"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -650,12 +623,12 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:30 gardée (sorstu.ca), 20:30 écartée (sorstu.ca)",
-   "titre": "Carnaval Abraxas (Noël dans le parc)",
-   "date": "2026-12-05",
-   "lieu": "Parc La Fontaine",
-   "source": "sorstu",
-   "url": "https://sorstu.ca/artiste/carnaval-abraxas/"
+   "action": "20:00 gardée (montreal.askapunk.net), 19:00 écartée (songkick.com)",
+   "titre": "Some Became Hollow Tubes + Nümonia + Burn It Down",
+   "date": "2026-12-13",
+   "lieu": "Casa del Popolo",
+   "source": "askapunk",
+   "url": "https://montreal.askapunk.net/event/some-became-hollow-tubes-numonia-burn-it-down"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -704,12 +677,30 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "15:00 gardée (duceppe.com), 15:15 écartée (sorstu.ca)",
-   "titre": "Janette",
+   "action": "14:30 gardée (duceppe.com), 15:15 écartée (sorstu.ca)",
+   "titre": "Janette repas-spectacle sur la scène",
    "date": "2026-12-05",
    "lieu": "Duceppe",
    "source": "theatre",
-   "url": "https://duceppe.com/50ans/"
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:30 gardée (duceppe.com), 20:00 écartée (sorstu.ca)",
+   "titre": "Janette repas-spectacle sur la scène",
+   "date": "2026-12-05",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "14:30 gardée (duceppe.com), 15:00 écartée (sorstu.ca)",
+   "titre": "Janette repas-spectacle sur la scène",
+   "date": "2026-12-06",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -749,6 +740,24 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "22:15 gardée (eventbrite.com), 22:00 écartée (mtlcomedyclub.com)",
+   "titre": "Friday Late Night Comedy",
+   "date": "2026-12-04",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/madmix-late-night-stand-up-comedy-fridays-on-st-laurent-downtown-mtl-tickets-1329084931809?aff=oddtdtcreator"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:00 gardée (eventbrite.com), 21:00 écartée (mtlcomedyclub.com)",
+   "titre": "Saturday Sundown Comedy",
+   "date": "2026-12-05",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/comedy-show-montreal-7-pm-early-evening-comedy-at-a-montreal-comedy-club-tickets-2003896853432?aff=oddtdtcreator"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "18:00 gardée (cabaretdecuriosites.com), 17:30 écartée (lepointdevente.com)",
    "titre": "Les Femmelettes 2.0 Édition Marchette de Noël",
    "date": "2026-12-05",
@@ -785,21 +794,30 @@
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "19:00 gardée (mtelus.com), 19:30 écartée (sorstu.ca)",
+   "action": "19:00 gardée (evenko.ca), 19:30 écartée (sorstu.ca)",
    "titre": "DragonForce",
    "date": "2026-12-01",
    "lieu": "MTELUS",
    "source": "salles",
-   "url": "https://mtelus.com/fr/evenements?vue=grille"
+   "url": "https://evenko.ca/fr/evenements/mtelus/dragonforce?code=e008482"
   },
   {
    "regle": "heures différentes selon les sources",
-   "action": "22:00 gardée (mtelus.com), 21:00 écartée (songkick.com)",
+   "action": "22:00 gardée (evenko.ca), 21:00 écartée (songkick.com)",
    "titre": "Virtual Riot & Blanke",
    "date": "2026-12-18",
    "lieu": "MTELUS",
    "source": "salles",
-   "url": "https://mtelus.com/fr/evenements?vue=grille"
+   "url": "https://evenko.ca/fr/evenements/mtelus/virtual-riot-blanke?code=e008671"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "14:30 gardée (casinos.lotoquebec.com), 14:00 écartée (sorstu.ca)",
+   "titre": "Noël une tradition en chanson",
+   "date": "2026-12-02",
+   "lieu": "Cabaret du Casino de Montréal",
+   "source": "salles",
+   "url": "https://casinos.lotoquebec.com/fr/montreal/bars-spectacles/cabaret-du-casino/noel-une-tradition-en-chanson"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -854,6 +872,24 @@
    "lieu": "Théâtre La Comédie de Montréal",
    "source": "salles",
    "url": "https://www.lacomedie.ca/spectacle/chicanedefamillelamere/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "18:30 gardée (beaconsfield.ca), 18:00 écartée (montreal.ca)",
+   "titre": "Club de tricot tissés, serrés",
+   "date": "2026-12-01",
+   "lieu": "Bibliothèque",
+   "source": "salles",
+   "url": "https://www.beaconsfield.ca/fr/evenements/ateliers-et-conferences/club-de-tricot-tisses-serres-2026-12-01"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "10:15 gardée (beaconsfield.ca), 11:00 écartée (montreal.ca)",
+   "titre": "Heure du conte en mouvement",
+   "date": "2026-12-02",
+   "lieu": "Bibliothèque",
+   "source": "salles",
+   "url": "https://www.beaconsfield.ca/fr/evenements/activites-pour-enfants/heure-du-conte-en-mouvement-2026-12-02"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1106,14 +1142,41 @@
    "lieu": "Duceppe",
    "source": "theatre",
    "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "14:30 gardée (duceppe.com), 15:00 écartée (placedesarts.com)",
+   "titre": "Janette repas-spectacle sur la scène",
+   "date": "2026-12-05",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "19:30 gardée (duceppe.com), 20:00 écartée (placedesarts.com)",
+   "titre": "Janette repas-spectacle sur la scène",
+   "date": "2026-12-05",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
+   "action": "14:30 gardée (duceppe.com), 15:00 écartée (placedesarts.com)",
+   "titre": "Janette repas-spectacle sur la scène",
+   "date": "2026-12-06",
+   "lieu": "Duceppe",
+   "source": "theatre",
+   "url": "https://duceppe.com/janette-repas-spectacle-sur-la-scene/"
   }
  ],
  "contreverif": {
-  "date absente de la page": 37,
-  "date confirmée": 227,
+  "date absente de la page": 34,
+  "date confirmée": 228,
   "lien mort remplacé": 11,
-  "page illisible": 33,
-  "non relues (limite)": 123
+  "non relues (limite)": 134,
+  "page illisible": 32
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1196,63 +1259,63 @@
    "taux": 17.2
   },
   {
-   "source": "panm360.com",
-   "erreurs": 47,
-   "sorties": 325,
-   "taux": 14.5
-  },
-  {
    "source": "theatrefairmount.com",
    "erreurs": 36,
    "sorties": 250,
    "taux": 14.4
   },
   {
+   "source": "panm360.com",
+   "erreurs": 47,
+   "sorties": 326,
+   "taux": 14.4
+  },
+  {
    "source": "beaconsfield.ca",
-   "erreurs": 11,
-   "sorties": 87,
-   "taux": 12.6
+   "erreurs": 13,
+   "sorties": 94,
+   "taux": 13.8
   },
   {
    "source": "mtelus.com",
-   "erreurs": 26,
-   "sorties": 221,
-   "taux": 11.8
-  },
-  {
-   "source": "theatresaintecatherine.com",
-   "erreurs": 38,
-   "sorties": 363,
-   "taux": 10.5
+   "erreurs": 24,
+   "sorties": 209,
+   "taux": 11.5
   },
   {
    "source": "eventbrite.com",
-   "erreurs": 35,
-   "sorties": 333,
-   "taux": 10.5
+   "erreurs": 37,
+   "sorties": 332,
+   "taux": 11.1
   },
   {
    "source": "casinos.lotoquebec.com",
-   "erreurs": 17,
-   "sorties": 168,
-   "taux": 10.1
+   "erreurs": 18,
+   "sorties": 169,
+   "taux": 10.7
+  },
+  {
+   "source": "theatresaintecatherine.com",
+   "erreurs": 39,
+   "sorties": 367,
+   "taux": 10.6
   },
   {
    "source": "spectaculos.ca",
    "erreurs": 20,
-   "sorties": 270,
-   "taux": 7.4
+   "sorties": 274,
+   "taux": 7.3
   },
   {
    "source": "cinematheque.qc.ca",
    "erreurs": 26,
-   "sorties": 379,
-   "taux": 6.9
+   "sorties": 394,
+   "taux": 6.6
   },
   {
    "source": "lepointdevente.com",
    "erreurs": 155,
-   "sorties": 2511,
+   "sorties": 2515,
    "taux": 6.2
   },
   {
@@ -1263,13 +1326,13 @@
   },
   {
    "source": "sorstu.ca",
-   "erreurs": 105,
-   "sorties": 1790,
-   "taux": 5.9
+   "erreurs": 103,
+   "sorties": 1795,
+   "taux": 5.7
   }
  ],
  "recoupees": {
-  "total": 2652,
-  "deux_sources_ou_plus": 259
+  "total": 2738,
+  "deux_sources_ou_plus": 275
  }
 }
