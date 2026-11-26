@@ -1,52 +1,52 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "regles": {
-  "hors de l'île": 427,
-  "pas une sortie culturelle": 305,
-  "série mise de côté : trop peu d'information (salle inconnue)": 106,
+  "hors de l'île": 403,
+  "pas une sortie culturelle": 285,
+  "série mise de côté : trop peu d'information (salle inconnue)": 105,
   "série : hors de l'île": 43,
   "série remplacée par ses dates précises": 16,
   "Sors-tu sans salle (peut-être hors de Montréal)": 12,
   "titre absent": 7,
-  "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": 7,
-  "retirée à la main (corrections.json)": 7,
+  "retirée à la main (corrections.json)": 6,
   "série de festival (les séances datées suffisent)": 4,
   "annulé selon la source": 3,
   "série : pas culturelle ou sans titre": 3,
   "copie décalée à l'heure de Greenwich (même spectacle, 4 ou 5 h plus tôt)": 2,
-  "fiche isolée remplacée par la série du spectacle": 2
+  "fiche isolée remplacée par la série du spectacle": 2,
+  "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": 1
  },
  "par_motif": {
   "pas une sortie culturelle": {
-   "catégorie « soutien et echange »": 39,
-   "catégorie « bien etre »": 24,
-   "mot « yoga » dans le titre": 21,
-   "catégorie « langues »": 20,
-   "catégorie « sport »": 20,
+   "catégorie « soutien et echange »": 37,
+   "catégorie « bien etre »": 23,
+   "mot « yoga » dans le titre": 20,
+   "catégorie « langues »": 19,
    "mot « lego » dans le titre": 19,
-   "mot « seance du » dans le titre": 19,
-   "catégorie « informatique »": 17,
-   "mot « ludotheque » dans le titre": 16,
-   "mot « ensemble pendant les fetes » dans le titre": 14,
+   "catégorie « sport »": 19,
+   "mot « seance du » dans le titre": 18,
+   "catégorie « informatique »": 16,
+   "mot « ludotheque » dans le titre": 15,
+   "mot « ensemble pendant les fetes » dans le titre": 11,
    "mot « bingo » dans le titre": 8,
-   "mot « informatique » dans le titre": 7,
-   "mot « impression 3d » dans le titre": 7,
-   "mot « ping » dans le titre": 7,
+   "mot « informatique » dans le titre": 6,
+   "mot « impression 3d » dans le titre": 6,
+   "mot « ping » dans le titre": 6,
    "mot « cerveaux actifs » dans le titre": 5,
    "mot « atelier de francais » dans le titre": 5,
-   "mot « parlons francais » dans le titre": 4,
    "mot « comite » dans le titre": 4,
-   "mot « marche hivernal » dans le titre": 4,
    "mot « marche de noel » dans le titre": 3,
    "catégorie « consultation »": 3,
    "mot « robotique » dans le titre": 3,
    "mot « soutien technique » dans le titre": 3,
    "mot « tai chi » dans le titre": 3,
    "mot « zumba » dans le titre": 3,
-   "mot « cardio » dans le titre": 3,
+   "mot « parlons francais » dans le titre": 3,
+   "mot « marche hivernal » dans le titre": 3,
    "mot « ipad » dans le titre": 2,
    "mot « seance d information » dans le titre": 2,
    "mot « hydroponie » dans le titre": 2,
+   "mot « cardio » dans le titre": 2,
    "catégorie « conseil et comite »": 2,
    "mot « aide aux devoirs » dans le titre": 2,
    "mot « marche d hiver » dans le titre": 2,
@@ -56,76 +56,74 @@
    "mot « depannage » dans le titre": 1,
    "catégorie « rencontre avec personne elue »": 1,
    "mot « word » dans le titre": 1,
-   "mot « consultation » dans le titre": 1,
    "mot « conseil d arrondissement » dans le titre": 1,
    "mot « entrepreneuriat » dans le titre": 1,
-   "mot « webinaire » dans le titre": 1,
    "mot « marche des fetes » dans le titre": 1
   },
   "hors de l'île": {
    "Scène Desjardins d'Argenteuil · Lachute": 46,
    "Le Club Square Dix30 · 9200 Boulevard Leduc Brossard · Brossard": 14,
-   "Salle Albert-Rousseau · Québec": 8,
    "Le Saint-Jean Comédie Club": 7,
+   "Salle Albert-Rousseau · Québec": 7,
    "206 Rue Christophe Colomb E · Québec": 7,
-   "Salle Octave-Crémazie · Québec": 6,
    "Théâtre Manuvie · Montréal": 6,
    "The Avalon Theatre At Niagara Fallsview Casino Resort · Niagara Falls": 6,
    "Théâtre Manuvie · 6000 bd. de Rome Brossard · Brossard": 6,
-   "Théâtre Capitole · Québec": 5,
-   "Grand Chapiteau Vancouver · Vancouver": 5,
-   "Pacific Coliseum · Vancouver": 5,
-   "Théâtre de la Bordée · Québec": 5,
    "Théâtre Gilles-Vigneault": 5,
    "Maurice O'Bready": 5,
+   "Salle Octave-Crémazie · Québec": 5,
    "Theatre Manuvie · Montréal · Montréal": 5,
-   "Le Saint-Jean Comédie Club · Saint-Jean-sur-Richelieu": 4,
-   "The Danforth Music Hall · Toronto": 4,
    "Le Zénith Promutuel Assurances · Québec": 4,
    "Meadowvale Theatre · Mississauga": 4,
    "L'Espace Mandeville": 4,
    "Théâtre Capitole · Montréal": 4,
+   "Pacific Coliseum · Vancouver": 4,
+   "Grand Chapiteau Vancouver · Vancouver": 4,
+   "Théâtre de la Bordée · Québec": 4,
    "FirstOntario Centre · Hamilton": 4,
    "Under the Big Top! Langley Riders Society · Langley": 4,
    "Cabaret BMO Sainte-Thérèse · 57-59, rue Turgeon Sainte-Thérèse · Sainte-Thérèse": 4,
    "Théâtre Belcourt · 23, rue de l'Église Baie-du-Febvre · Baie-du-Febvre": 4,
    "Théâtre de la Ville · 180, rue de Gentilly Est Longueuil · Longueuil": 4,
-   "Southern Alberta Jubilee Auditorium · Edmonton": 3,
-   "Le Club Square Dix30 · Brossard": 3,
-   "Salle Odyssée": 3,
-   "Scotiabank Arena · Toronto": 3,
-   "Théâtre C (CEGEP de Chicoutimi) · Saguenay": 3,
    "History · Montréal": 3,
    "Centre des arts Juliette-Lassonde": 3,
    "Théâtre du Rift": 3,
    "Théâtre du Cégep de Trois-Rivières · Trois-Rivières": 3,
    "Queen Elizabeth Theatre Vancouver · Vancouver": 3,
    "Théâtre Hector-Charland · L'Assomption": 3,
+   "The Danforth Music Hall · Toronto": 3,
    "Studio Azrieli · Montréal": 3,
    "Salle Pratt & Whitney Canada (Théâtre de la Ville) · Longueuil": 3,
    "Le Vieux Clocher de Magog · Magog": 3,
+   "Théâtre Capitole · Québec": 3,
    "Salle André-Mathieu · Laval": 3,
    "Cabaret André-H.-Gagnon · Saint-Hyacinthe": 3,
    "Café 440 · Café 440 Sherbrooke · Sherbrooke": 3,
-   "Commodore Ballroom · Vancouver": 2,
    "La Petite Boîte Noire · Montréal": 2,
    "Impérial Bell · Montréal": 2,
    "History": 2,
    "Théâtre Télébec": 2,
    "Salle Octave-Crémazie": 2,
    "Théâtre des Deux Rives": 2,
+   "Salle Odyssée": 2,
+   "Théâtre C (CEGEP de Chicoutimi) · Saguenay": 2,
    "Salle Méchatigan": 2,
    "Meridian Hall · Toronto": 2,
+   "Southern Alberta Jubilee Auditorium · Edmonton": 2,
    "Hard Rock Casino Ottawa · Ottawa": 2,
    "The Axis Club": 2,
    "The Opera House · Toronto": 2,
+   "Scotiabank Arena · Toronto": 2,
    "Le Club Square Dix30 · Montréal": 2,
    "Salle Albert-Rousseau": 2,
    "Cabaret BMO Sainte-Thérèse · Sainte-Thérèse": 2,
-   "Salle Michel Côté": 2
+   "Salle Michel Côté": 2,
+   "Le Club Square Dix30 · Brossard": 2,
+   "History · Toronto": 2,
+   "Le Minotaure · Montréal": 2
   },
   "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": {
-   "https://ma.to/events/montreal/anytime/live-music": 7
+   "https://ma.to/events/montreal/anytime/live-music": 1
   },
   "série mise de côté : trop peu d'information (salle inconnue)": {
    "https://www.placedesarts.com/evenement/devenir-mousse": 17,
@@ -182,12 +180,12 @@
    "https://montreal.ca/evenements/exposition-nostalgie-florale-deliane-berdat-111046": 1,
    "https://montreal.ca/evenements/exposition-dalbe-viau-dhier-aujourdhui-des-eleves-du-cours-arts-et-multimedia-de-5e-secondaire-111047": 1,
    "https://montreal.ca/evenements/exposition-plus-fort-que-nous-par-kaciane-monchamp-111049": 1,
-   "https://montreal.ca/evenements/exposition-mots-quon-dit-du-collectif-encreplumes-111746": 1,
    "https://montreal.ca/evenements/exposition-petites-oeuvres-de-reyan-josef-armstrong-122105": 1,
    "https://montreal.ca/evenements/exposition-incursion-dans-le-monde-des-strigides-du-canada-de-frederic-izquierdo-122111": 1,
    "https://www.songkick.com/festivals/3701261-triste/id/43497871-festival-triste-2026?utm_medium=organic&utm_source=microformat": 1,
    "https://www.placedesarts.com/en/event/adib-alkhalidey": 1,
-   "https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute": 1
+   "https://www.placedesarts.com/en/event/louis-jose-houde-jusqua-fin-labeaute": 1,
+   "https://www.placedesarts.com/en/event/mossbed": 1
   },
   "série : hors de l'île": {
    "Regart, centre d'artistes en art actuel · Lévis": 2,
@@ -454,14 +452,6 @@
    },
    {
     "titre": "Yoga sur chaise pour les personnes aînées",
-    "date": "2026-11-25",
-    "lieu": "@45.536062028121,-73.571931123734",
-    "url": "https://montreal.ca/evenements/yoga-sur-chaise-pour-les-personnes-ainees-120118",
-    "source": "ville",
-    "detail": "mot « yoga » dans le titre"
-   },
-   {
-    "titre": "Yoga sur chaise pour les personnes aînées",
     "date": "2026-12-02",
     "lieu": "@45.536062028121,-73.571931123734",
     "url": "https://montreal.ca/evenements/yoga-sur-chaise-pour-les-personnes-ainees-120120",
@@ -555,6 +545,14 @@
     "url": "https://montreal.ca/evenements/ludotheque-club-lego-118156",
     "source": "ville",
     "detail": "mot « ludotheque » dans le titre"
+   },
+   {
+    "titre": "Ludothèque : club LEGO",
+    "date": "2026-12-11",
+    "lieu": "@45.532827,-73.551399",
+    "url": "https://montreal.ca/evenements/ludotheque-club-lego-118157",
+    "source": "ville",
+    "detail": "mot « ludotheque » dans le titre"
    }
   ],
   "hors de l'île": [
@@ -565,166 +563,6 @@
     "url": "https://montreal.askapunk.net/event/burnt-arrival-of-battle",
     "source": "askapunk",
     "detail": "Bar-Spectacle Le Montecristo · 10 Rue Blainville Ouest, Sainte-Thérèse, QC, Canada, J7E 1W9"
-   },
-   {
-    "titre": "Elvis Experience Symphonique",
-    "date": "2026-11-25",
-    "lieu": "Théâtre Capitole",
-    "url": "https://sorstu.ca/artiste/elvis-experience/",
-    "source": "sorstu",
-    "detail": "Théâtre Capitole · Québec"
-   },
-   {
-    "titre": "Il était une fois Noël",
-    "date": "2026-11-25",
-    "lieu": "Théâtre Capitole",
-    "url": "https://sorstu.ca/artiste/il-etait-une-fois-noel/",
-    "source": "sorstu",
-    "detail": "Théâtre Capitole · Québec"
-   },
-   {
-    "titre": "Cirque du Soleil - Luzia",
-    "date": "2026-11-25",
-    "lieu": "Grand Chapiteau Vancouver",
-    "url": "https://sorstu.ca/artiste/cirque-du-soleil-luzia/",
-    "source": "sorstu",
-    "detail": "Grand Chapiteau Vancouver · Vancouver"
-   },
-   {
-    "titre": "Disney On Ice",
-    "date": "2026-11-25",
-    "lieu": "Pacific Coliseum",
-    "url": "https://sorstu.ca/artiste/disney-on-ice/",
-    "source": "sorstu",
-    "detail": "Pacific Coliseum · Vancouver"
-   },
-   {
-    "titre": "Le prof haïssable - Sortie de classe",
-    "date": "2026-11-25",
-    "lieu": "Le Saint-Jean Comédie Club",
-    "url": "https://sorstu.ca/artiste/le-prof-haissable/",
-    "source": "sorstu",
-    "detail": "Le Saint-Jean Comédie Club · Saint-Jean-sur-Richelieu"
-   },
-   {
-    "titre": "Prateek Kuhad",
-    "date": "2026-11-25",
-    "lieu": "Commodore Ballroom",
-    "url": "https://sorstu.ca/artiste/prateek-kuhad/",
-    "source": "sorstu",
-    "detail": "Commodore Ballroom · Vancouver"
-   },
-   {
-    "titre": "Talk - Feel the B.O.O.M. Tour",
-    "date": "2026-11-25",
-    "lieu": "The Axis Club",
-    "url": "https://sorstu.ca/artiste/talk/",
-    "source": "sorstu",
-    "detail": "The Axis Club · Toronto"
-   },
-   {
-    "titre": "The Pineapple Thief - Far and Wide",
-    "date": "2026-11-25",
-    "lieu": "The Danforth Music Hall",
-    "url": "https://sorstu.ca/artiste/the-pineapple-thief/",
-    "source": "sorstu",
-    "detail": "The Danforth Music Hall · Toronto"
-   },
-   {
-    "titre": "Dirty 30",
-    "date": "2026-11-25",
-    "lieu": "Southern Alberta Jubilee Auditorium",
-    "url": "https://sorstu.ca/artiste/amanda-marshall/",
-    "source": "sorstu",
-    "detail": "Southern Alberta Jubilee Auditorium · Edmonton"
-   },
-   {
-    "titre": "Beauty and the Beast",
-    "date": "2026-11-25",
-    "lieu": "Queen Elizabeth Theatre",
-    "url": "https://sorstu.ca/artiste/beauty-and-the-beast/",
-    "source": "sorstu",
-    "detail": "Queen Elizabeth Theatre · Vancouver"
-   },
-   {
-    "titre": "La Soirée Lumineuse",
-    "date": "2026-11-25",
-    "lieu": "Théâtre de la Bordée",
-    "url": "https://sorstu.ca/artiste/la-soiree-lumineuse/",
-    "source": "sorstu",
-    "detail": "Théâtre de la Bordée · Québec"
-   },
-   {
-    "titre": "La version qui n'interesse personne",
-    "date": "2026-11-25",
-    "lieu": "Salle Octave-Crémazie",
-    "url": "https://sorstu.ca/artiste/la-version-qui-ninteresse-personne/",
-    "source": "sorstu",
-    "detail": "Salle Octave-Crémazie · Québec"
-   },
-   {
-    "titre": "Olivier Martineau",
-    "date": "2026-11-25",
-    "lieu": "Théâtre Télébec",
-    "url": "https://sorstu.ca/artiste/olivier-martineau/",
-    "source": "sorstu",
-    "detail": "Théâtre Télébec · Québec"
-   },
-   {
-    "titre": "Broue",
-    "date": "2026-11-25",
-    "lieu": "Salle Albert-Rousseau",
-    "url": "https://sorstu.ca/artiste/broue/",
-    "source": "sorstu",
-    "detail": "Salle Albert-Rousseau · Québec"
-   },
-   {
-    "titre": "Cathy Gauthier",
-    "date": "2026-11-25",
-    "lieu": "Le Club Square Dix30",
-    "url": "https://sorstu.ca/artiste/cathy-gauthier/",
-    "source": "sorstu",
-    "detail": "Le Club Square Dix30 · Brossard"
-   },
-   {
-    "titre": "CHRISTIAN MARC GENDRON",
-    "date": "2026-11-25",
-    "lieu": "Salle Odyssée",
-    "url": "https://sorstu.ca/artiste/christian-marc-gendron/",
-    "source": "sorstu",
-    "detail": "Salle Odyssée"
-   },
-   {
-    "titre": "Tour Ma Vie World Tour",
-    "date": "2026-11-25",
-    "lieu": "Scotiabank Arena",
-    "url": "https://sorstu.ca/artiste/doja-cat/",
-    "source": "sorstu",
-    "detail": "Scotiabank Arena · Toronto"
-   },
-   {
-    "titre": "La VIE (Impro)",
-    "date": "2026-11-25",
-    "lieu": "Le Saint-Jean Comédie Club",
-    "url": "https://sorstu.ca/artiste/la-vie-impro/",
-    "source": "sorstu",
-    "detail": "Le Saint-Jean Comédie Club · Saint-Jean-sur-Richelieu"
-   },
-   {
-    "titre": "Simon Gouache",
-    "date": "2026-11-25",
-    "lieu": "Théâtre C (CEGEP de Chicoutimi)",
-    "url": "https://sorstu.ca/artiste/simon-gouache/",
-    "source": "sorstu",
-    "detail": "Théâtre C (CEGEP de Chicoutimi) · Saguenay"
-   },
-   {
-    "titre": "Stand-up instantané",
-    "date": "2026-11-25",
-    "lieu": "Le Saint-Jean Comédie Club",
-    "url": "https://sorstu.ca/artiste/stand-up-instantane/",
-    "source": "sorstu",
-    "detail": "Le Saint-Jean Comédie Club · Saint-Jean-sur-Richelieu"
    },
    {
     "titre": "Louis-José Houde",
@@ -877,6 +715,166 @@
     "url": "https://sorstu.ca/artiste/boogie-wonder-band/",
     "source": "sorstu",
     "detail": "Le Club Square Dix30"
+   },
+   {
+    "titre": "CCR Reborn",
+    "date": "2026-11-27",
+    "lieu": "Theatre du Casino du Lac-Leamy",
+    "url": "https://sorstu.ca/artiste/ccr-reborn/",
+    "source": "sorstu",
+    "detail": "Theatre du Casino du Lac-Leamy"
+   },
+   {
+    "titre": "Chris Klafford",
+    "date": "2026-11-27",
+    "lieu": "Cabaret BMO Sainte-Thérèse",
+    "url": "https://sorstu.ca/artiste/chris-klafford/",
+    "source": "sorstu",
+    "detail": "Cabaret BMO Sainte-Thérèse"
+   },
+   {
+    "titre": "Classe Moyenne - En spectacle",
+    "date": "2026-11-27",
+    "lieu": "Le Vieux Clocher de Magog",
+    "url": "https://sorstu.ca/artiste/classe-moyenne/",
+    "source": "sorstu",
+    "detail": "Le Vieux Clocher de Magog"
+   },
+   {
+    "titre": "Coco Belliveau",
+    "date": "2026-11-27",
+    "lieu": "Centre des arts Juliette-Lassonde",
+    "url": "https://sorstu.ca/artiste/coco-beliveau/",
+    "source": "sorstu",
+    "detail": "Centre des arts Juliette-Lassonde"
+   },
+   {
+    "titre": "Dean Brody avec The Reklaws - Hometown Heroes",
+    "date": "2026-11-27",
+    "lieu": "Molson Canadian Centre at Casino New-Nouveau Brunswick",
+    "url": "https://sorstu.ca/artiste/dean-brody/",
+    "source": "sorstu",
+    "detail": "Molson Canadian Centre at Casino New-Nouveau Brunswick"
+   },
+   {
+    "titre": "Dominique Fils-Aimé - The Sunshine Tour",
+    "date": "2026-11-27",
+    "lieu": "Pôle culturel de Chambly",
+    "url": "https://sorstu.ca/artiste/dominique-fils-aime/",
+    "source": "sorstu",
+    "detail": "Pôle culturel de Chambly"
+   },
+   {
+    "titre": "Dumas - Piano Voix Diapos",
+    "date": "2026-11-27",
+    "lieu": "Pavillon de l'île",
+    "url": "https://sorstu.ca/artiste/dumas/",
+    "source": "sorstu",
+    "detail": "Pavillon de l'île"
+   },
+   {
+    "titre": "Fleurs d'acier",
+    "date": "2026-11-27",
+    "lieu": "Théâtre Télébec",
+    "url": "https://sorstu.ca/artiste/fleurs-dacier/",
+    "source": "sorstu",
+    "detail": "Théâtre Télébec"
+   },
+   {
+    "titre": "Fuudge - Le mentor",
+    "date": "2026-11-27",
+    "lieu": "Ras L?Bock",
+    "url": "https://sorstu.ca/artiste/fudge/",
+    "source": "sorstu",
+    "detail": "Ras L?Bock"
+   },
+   {
+    "titre": "Jean-Michel Anctil",
+    "date": "2026-11-27",
+    "lieu": "Centre des arts Juliette-Lassonde",
+    "url": "https://sorstu.ca/artiste/jean-michel-anctil/",
+    "source": "sorstu",
+    "detail": "Centre des arts Juliette-Lassonde"
+   },
+   {
+    "titre": "JF Pauzé - Les amours de seconde main",
+    "date": "2026-11-27",
+    "lieu": "Théâtre Gilles-Vigneault",
+    "url": "https://sorstu.ca/artiste/jf-pauze/",
+    "source": "sorstu",
+    "detail": "Théâtre Gilles-Vigneault"
+   },
+   {
+    "titre": "José Gaudet - Y'était temps",
+    "date": "2026-11-27",
+    "lieu": "Salle André-Mathieu",
+    "url": "https://sorstu.ca/artiste/jose-gaudet/",
+    "source": "sorstu",
+    "detail": "Salle André-Mathieu"
+   },
+   {
+    "titre": "Killers of Kill Tony",
+    "date": "2026-11-27",
+    "lieu": "Grey Eagle Event Centre",
+    "url": "https://sorstu.ca/artiste/killers-of-kill-tony/",
+    "source": "sorstu",
+    "detail": "Grey Eagle Event Centre"
+   },
+   {
+    "titre": "La cage aux folles",
+    "date": "2026-11-27",
+    "lieu": "Maurice O'Bready",
+    "url": "https://sorstu.ca/artiste/la-cage-aux-folles/",
+    "source": "sorstu",
+    "detail": "Maurice O'Bready"
+   },
+   {
+    "titre": "La version qui n'interesse personne",
+    "date": "2026-11-27",
+    "lieu": "Salle Octave-Crémazie",
+    "url": "https://sorstu.ca/artiste/la-version-qui-ninteresse-personne/",
+    "source": "sorstu",
+    "detail": "Salle Octave-Crémazie"
+   },
+   {
+    "titre": "Les Trois Accords - Toujours les vacances",
+    "date": "2026-11-27",
+    "lieu": "Théâtre du Vieux-Terrebonne",
+    "url": "https://sorstu.ca/artiste/les-trois-accords/",
+    "source": "sorstu",
+    "detail": "Théâtre du Vieux-Terrebonne"
+   },
+   {
+    "titre": "Marco Ema",
+    "date": "2026-11-27",
+    "lieu": "Maison de la culture de Waterloo",
+    "url": "https://sorstu.ca/artiste/marco-ema/",
+    "source": "sorstu",
+    "detail": "Maison de la culture de Waterloo"
+   },
+   {
+    "titre": "Olivier Martineau",
+    "date": "2026-11-27",
+    "lieu": "Théâtre des Deux Rives",
+    "url": "https://sorstu.ca/artiste/olivier-martineau/",
+    "source": "sorstu",
+    "detail": "Théâtre des Deux Rives"
+   },
+   {
+    "titre": "On s'lâche pas",
+    "date": "2026-11-27",
+    "lieu": "Théâtre du Rift",
+    "url": "https://sorstu.ca/artiste/on-slache-pas/",
+    "source": "sorstu",
+    "detail": "Théâtre du Rift"
+   },
+   {
+    "titre": "P-A Méthot : Pardon!?",
+    "date": "2026-11-27",
+    "lieu": "Théâtre du Rift",
+    "url": "https://sorstu.ca/artiste/p-a-methot/",
+    "source": "sorstu",
+    "detail": "Théâtre du Rift"
    }
   ],
   "annulé selon la source": [
@@ -1040,54 +1038,6 @@
    }
   ],
   "mis de côté : trop peu d'information (agrégateur sans heure ni fiche)": [
-   {
-    "titre": "Father of Peace",
-    "date": "2026-11-25",
-    "lieu": "Bar Le Ritz PDB",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
-   {
-    "titre": "Jordan Bell at Bar de Courcelle",
-    "date": "2026-11-25",
-    "lieu": "Bar de Courcelle",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
-   {
-    "titre": "Musique live chez Cuba Paisa",
-    "date": "2026-11-25",
-    "lieu": "Cuba Paisa",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
-   {
-    "titre": "Titouaine Live Session",
-    "date": "2026-11-25",
-    "lieu": "Bar Le Record",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
-   {
-    "titre": "VdVVS Burlesque",
-    "date": "2026-11-25",
-    "lieu": "WiggleRoomMtl",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
-   {
-    "titre": "Wednesday Jazz at Bootlegger",
-    "date": "2026-11-25",
-    "lieu": "Bootlegger Cocktail Bar & Cuisine Montréal",
-    "url": "https://ma.to/events/montreal/anytime/live-music",
-    "source": "salles",
-    "detail": "https://ma.to/events/montreal/anytime/live-music"
-   },
    {
     "titre": "20 Years of Musiques Métissées",
     "date": "2026-11-26",
@@ -1945,13 +1895,6 @@
   ],
   "retirée à la main (corrections.json)": [
    {
-    "titre": "After circus",
-    "date": "2026-11-25",
-    "lieu": "Lieu à confirmer",
-    "url": "https://ridm.ca/fr/grille-horaire?date=2026-11-25",
-    "source": "festival"
-   },
-   {
     "titre": "Maude Landry au Gesù : Trop cool",
     "date": "2026-11-26",
     "lieu": "Gesù",
@@ -1996,778 +1939,7 @@
   ]
  },
  "disparues": {
-  "total": 110,
-  "liste": [
-   {
-    "titre": "With Love and Rage / Drift",
-    "date": "2026-11-25",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/with-love-and-rage",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Les Rendez-vous du jeu vidéo",
-    "date": "2026-11-25",
-    "lieu": "Benny Fab",
-    "url": "https://montreal.ca/evenements/les-rendez-vous-du-jeu-video-117483",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "From Dawn to Dawn (Xisi Sofia Ye Chen)",
-    "date": "2026-11-26",
-    "lieu": "Cinéma du Parc",
-    "url": "https://ridm.ca/fr/films/from-dawn-to-dawn",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "iA Groupe Financier au bénéfice de Centraide",
-    "date": "2026-11-26",
-    "lieu": "Théâtre Beanfield",
-    "url": "https://evenko.ca/fr/evenements/theatre-beanfield/ia-groupe-financier-au-benefice-de-centraide?code=e009324",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Jean-Michel Martel",
-    "date": "2026-11-26",
-    "lieu": "La Chapelle Scènes contemporaines",
-    "url": "https://sorstu.ca/artiste/jean-michel-martel/",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "With Love and Rage / Drift",
-    "date": "2026-11-26",
-    "lieu": "Cinéma du Parc",
-    "url": "https://ridm.ca/fr/films/with-love-and-rage",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "See Through the Hollowed Blue Hellebore",
-    "date": "2026-11-27",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/see-through-the-hollowed-blue-hellebore",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Pierre Hébert",
-    "date": "2026-11-27",
-    "lieu": "Théâtre C",
-    "url": "https://sorstu.ca/artiste/pierre-hebert/",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Zac Bulle",
-    "date": "2026-11-27",
-    "lieu": "L'Espace Mandeville",
-    "url": "https://sorstu.ca/artiste/zac-bulle/",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Downtown Stomp - soirée danse sociale swing",
-    "date": "2026-11-27",
-    "lieu": "Cat's Corner",
-    "url": "https://www.catscorner.ca/what-we-do-1",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "KISSIMA DIABATÉ",
-    "date": "2026-11-27",
-    "lieu": "Club Balattou",
-    "url": "https://www.balattou.com/event-details/kissima-diabate-2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Kiwi Jr., Heaven For Real",
-    "date": "2026-11-27",
-    "lieu": "La Toscadura",
-    "url": "https://www.songkick.com/concerts/43354741-kiwi-jr-at-la-toscadura",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Matinée des tout-petits (0 à 3 ans)",
-    "date": "2026-11-28",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/matinee-des-tout-petits-0-3-ans-119956",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Club techno Saul-Bellow",
-    "date": "2026-11-28",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/club-techno-saul-bellow-120099",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "LOUF (projection en salle)",
-    "date": "2026-11-28",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/louf",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Atelier de création de mangas",
-    "date": "2026-11-28",
-    "lieu": "Bibliothèque interculturelle",
-    "url": "https://montreal.ca/evenements/atelier-de-creation-de-mangas-119426",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "From Dawn to Dawn (Xisi Sofia Ye Chen)",
-    "date": "2026-11-28",
-    "lieu": "Cinéma du Parc",
-    "url": "https://ridm.ca/fr/films/from-dawn-to-dawn",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Living Containers",
-    "date": "2026-11-28",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/living-containers",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Marie-Pierre Arthur (avec Ensemble Doux)",
-    "date": "2026-11-28",
-    "lieu": "La Sag",
-    "url": "https://sorstu.ca/artiste/marie-pierre-arthur/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Statzz",
-    "date": "2026-11-28",
-    "lieu": "Le Moulinet",
-    "url": "https://sorstu.ca/artiste/statzz/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "The Rock Show",
-    "date": "2026-11-28",
-    "lieu": "L'Espace Mandeville",
-    "url": "https://sorstu.ca/artiste/the-rock-show/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Gabin",
-    "date": "2026-11-29",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/gabin",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "El León",
-    "date": "2026-11-29",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/el-leon",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Arts créatifs avec Kelly",
-    "date": "2026-11-29",
-    "lieu": "Bibliothèque de Saint-Léonard",
-    "url": "https://montreal.ca/evenements/arts-creatifs-avec-kelly-118177",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Sculptures à la manière d'Alberto Giacometti",
-    "date": "2026-11-29",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/sculptures-la-maniere-dalberto-giacometti-120502",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "See Through the Hollowed Blue Hellebore",
-    "date": "2026-11-29",
-    "lieu": "Cinémathèque québécoise",
-    "url": "https://ridm.ca/fr/films/see-through-the-hollowed-blue-hellebore",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Noël, une tradition en chanson",
-    "date": "2026-12-01",
-    "lieu": "Cabaret du Casino de Montréal",
-    "url": "https://sorstu.ca/artiste/noel-une-tradition-en-chanson/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Contes et bricos avant le dodo (3 à 6 ans)",
-    "date": "2026-12-01",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/contes-et-bricos-avant-le-dodo-3-6-ans-119977",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Ben et Jarrod",
-    "date": "2026-12-02",
-    "lieu": "La Chapelle Scènes contemporaines",
-    "url": "https://sorstu.ca/artiste/ben-et-jarrod/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Un petit spectacle de Noël (rodage)",
-    "date": "2026-12-02",
-    "lieu": "Chez Bozo",
-    "url": "https://sorstu.ca/artiste/etienne-coppee/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Anthony Prégent",
-    "date": "2026-12-03",
-    "lieu": "La Toscadura",
-    "url": "https://casadelpopolo.com/fr/events/2026-12-03-anthony-pregent",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Jeux vidéo du vendredi (6 ans et plus)",
-    "date": "2026-12-04",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/jeux-video-du-vendredi-6-ans-et-plus-120138",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Le cercle du fil",
-    "date": "2026-12-04",
-    "lieu": "Bibliothèque de Saint-Léonard",
-    "url": "https://montreal.ca/evenements/le-cercle-du-fil-117835",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Vendredi 17h / Ouverture du Festival",
-    "date": "2026-12-04",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Vendredi 17h15 / Elisa Manny",
-    "date": "2026-12-04",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Vendredi 18h45 / Alex Paquette et les insulaires",
-    "date": "2026-12-04",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "DOGMA : People Watching",
-    "date": "2026-12-04",
-    "lieu": "Usine C",
-    "url": "https://sorstu.ca/artiste/dogma/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "JIMBO The Drag Clown : Jimbo Ruins XXXMas",
-    "date": "2026-12-04",
-    "lieu": "Théâtre Beanfield",
-    "url": "https://sorstu.ca/artiste/jimbo-the-drag-clown/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Ariane Roy",
-    "date": "2026-12-04",
-    "lieu": "Grizzly Fuzz",
-    "url": "https://sorstu.ca/artiste/ariane-roy/",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Les Louanges : Alouette!",
-    "date": "2026-12-04",
-    "lieu": "L'Olympia",
-    "url": "https://sorstu.ca/artiste/les-louanges/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Thierry Larose",
-    "date": "2026-12-04",
-    "lieu": "L'Espace Mandeville",
-    "url": "https://sorstu.ca/artiste/thierry-larose/",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Vendredi 20h15 / Mike Clay",
-    "date": "2026-12-04",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Matinée des tout-petits (0 à 3 ans)",
-    "date": "2026-12-05",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/matinee-des-tout-petits-0-3-ans-119957",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Samedi 11h / Croc Jazz & Chœur Muzi",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Lettres timbrées au Père Noël",
-    "date": "2026-12-05",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/lettres-timbrees-au-pere-noel-120523",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Samedi 13h – 14h30 – 16h / Marie-Pierre Daigle Trad (prestation de 13h)",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Atelier de calligraphie",
-    "date": "2026-12-05",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/atelier-de-calligraphie-120082",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Samedi 13h – 14h30 – 16h / Marie-Pierre Daigle Trad (prestation de 14h30)",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Samedi 13h – 14h30 – 16h / Marie-Pierre Daigle Trad (prestation de 16h)",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Défilé nocturne aux flambeaux",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "THE CHOSEN BATTLE",
-    "date": "2026-12-05",
-    "lieu": "Théâtre Fairmount",
-    "url": "https://theatrefairmount.com/vnements/the-chosen-battle-theatre-fairmount/20261205-g3bn5-a4zkr-hwk6t-44pc7-td99j-d2hwd-55k3-ya9ht-tt7z3-nmc8h",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Abraxas Cirque",
-    "date": "2026-12-05",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Constantinople @ Salle Bourgie",
-    "date": "2026-12-05",
-    "lieu": "Salle Bourgie",
-    "url": "https://www.songkick.com/concerts/43317490-constantinople-at-salle-bourgie?utm_medium=organic&utm_source=microformat",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Daniel Lemire et Denis Bouchard",
-    "date": "2026-12-05",
-    "lieu": "centrecultureldoris_lussier",
-    "url": "https://evenko.ca/fr/evenements/centrecultureldoris-lussier/daniel-lemire-et-denis-bouchard?code=e009044",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Les Louanges @ L'Olympia",
-    "date": "2026-12-05",
-    "lieu": "L'Olympia",
-    "url": "https://www.songkick.com/concerts/42989854-les-louanges-at-lolympia?utm_medium=organic&utm_source=microformat",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "CLASS OF 095 - DJ Cinéma Quartier Latin, HEY: ALBERT, HALO, .ape",
-    "date": "2026-12-05",
-    "lieu": "DATCHA",
-    "url": "https://bardatcha.ca/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "L'arrivée du père Noël à Outremont",
-    "date": "2026-12-06",
-    "lieu": "Centre communautaire intergénérationnel",
-    "url": "https://montreal.ca/evenements/larrivee-du-pere-noel-outremont-80633",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "The Spongebob Musical",
-    "date": "2026-12-06",
-    "lieu": "L'Espace La Risée",
-    "url": "https://sorstu.ca/artiste/the-spongebob-musical/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "ILUKA @ L'Escogriffe Bar Spectacle (L'Esco)",
-    "date": "2026-12-06",
-    "lieu": "L'Escogriffe",
-    "url": "https://www.songkick.com/concerts/43430349-iluka-at-lescogriffe-bar-spectacle?utm_medium=organic&utm_source=microformat",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Matthieu Pepper",
-    "date": "2026-12-07",
-    "lieu": "Cabaret Lion d'Or",
-    "url": "https://sorstu.ca/artiste/mathieu-pepper/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Contes et bricos avant le dodo (3 à 6 ans)",
-    "date": "2026-12-08",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/contes-et-bricos-avant-le-dodo-3-6-ans-119978",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "The Bouncing Souls @ Théâtre Beanfield",
-    "date": "2026-12-08",
-    "lieu": "Théâtre Beanfield",
-    "url": "https://www.songkick.com/concerts/43333185-bouncing-souls-at-theatre-beanfield?utm_medium=organic&utm_source=microformat",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "102 | WOOD : CNC - Introduction to digital cutting",
-    "date": "2026-12-09",
-    "lieu": "LESPACEMAKER",
-    "url": "",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Jeunes souffles - Classe de flûtes du Conservatoire de musique de Montréal",
-    "date": "2026-12-10",
-    "lieu": "Centre Sanaaq",
-    "url": "https://montreal.ca/evenements/jeunes-souffles-classe-de-flutes-du-conservatoire-de-musique-de-montreal-114810",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "TETRATERIUM et FLOWW",
-    "date": "2026-12-10",
-    "lieu": "Club Balattou",
-    "url": "https://lepointdevente.com/billets/pna261210001",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Jeux de mots",
-    "date": "2026-12-11",
-    "lieu": "Benny Fab",
-    "url": "https://montreal.ca/evenements/jeux-de-mots-119366",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "NONSTOP: Jordan Gardner, Adj, Groceries",
-    "date": "2026-12-12",
-    "lieu": "DATCHA",
-    "url": "https://bardatcha.ca/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Complètement conte! (3-6 ans)",
-    "date": "2026-12-13",
-    "lieu": "Bibliothèque Hochelaga",
-    "url": "https://montreal.ca/evenements/completement-conte-3-6-ans-117302",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Murmurosi",
-    "date": "2026-12-13",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Irish Tree",
-    "date": "2026-12-13",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Grosse Isle",
-    "date": "2026-12-13",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Banitsa",
-    "date": "2026-12-13",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Éveil à la lecture",
-    "date": "2026-12-15",
-    "lieu": "Bibliothèque de Saint-Léonard",
-    "url": "https://montreal.ca/evenements/eveil-la-lecture-117913",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Contes et bricos avant le dodo (3 à 6 ans)",
-    "date": "2026-12-15",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/contes-et-bricos-avant-le-dodo-3-6-ans-119979",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Les jeux-di vidéo",
-    "date": "2026-12-17",
-    "lieu": "Bibliothèque interculturelle",
-    "url": "https://montreal.ca/evenements/les-jeux-di-video-118756",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Club de lecture du samedi",
-    "date": "2026-12-19",
-    "lieu": "Bibliothèque de Rivière-des-Prairies",
-    "url": "https://montreal.ca/evenements/club-de-lecture-du-samedi-115927",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Venez danser – Studio 88 Swing",
-    "date": "2026-12-19",
-    "lieu": "Parc La Fontaine",
-    "url": "https://noeldansleparc.com/parc-lafontaine/",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Club techno Saul-Bellow",
-    "date": "2026-12-19",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/club-techno-saul-bellow-120100",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Club d'échecs intergénérationnel",
-    "date": "2026-12-19",
-    "lieu": "Bibliothèque de Saint-Léonard",
-    "url": "https://montreal.ca/evenements/club-dechecs-intergenerationnel-118942",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Endless Floyd Québec @ Salle Théatre La Scène",
-    "date": "2026-12-19",
-    "lieu": "Salle Théatre La Scène",
-    "url": "https://www.songkick.com/concerts/43470284-endless-floyd-quebec-at-salle-theatre-la-scene?utm_medium=organic&utm_source=microformat",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Dimanches racontés",
-    "date": "2026-12-20",
-    "lieu": "Bibliothèque L'Octogone",
-    "url": "https://montreal.ca/evenements/dimanches-racontes-117692",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Conte d'hiver - BOP",
-    "date": "2026-12-20",
-    "lieu": "Théâtre Mirella et Lino Saputo",
-    "url": "https://montreal.ca/evenements/conte-dhiver-bop-109401",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "LAST DANCE AMONG WOLVES, DROWNING IN BLOODS, WODOS, GRIMHOLS (Noël au Piranha)",
-    "date": "2026-12-20",
-    "lieu": "Piranha Bar",
-    "url": "https://piranhabar.ca/events/last-dance-among-wolves-drowning-in-bloods-wodos-grimhols",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Fermé - Joyeuses Fêtes!",
-    "date": "2026-12-21",
-    "lieu": "Upstairs Jazz Bar & Grill",
-    "url": "https://www.upstairsjazz.com/fr/events/ferme-joyeuses-fetes/var/ri-0.l-L2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Fermé - Joyeuses Fêtes!",
-    "date": "2026-12-22",
-    "lieu": "Upstairs Jazz Bar & Grill",
-    "url": "https://www.upstairsjazz.com/fr/events/ferme-joyeuses-fetes/var/ri-1.l-L2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Fermé - Joyeuses Fêtes!",
-    "date": "2026-12-23",
-    "lieu": "Upstairs Jazz Bar & Grill",
-    "url": "https://www.upstairsjazz.com/fr/events/ferme-joyeuses-fetes/var/ri-2.l-L2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Fermé - Joyeuses Fêtes!",
-    "date": "2026-12-24",
-    "lieu": "Upstairs Jazz Bar & Grill",
-    "url": "https://www.upstairsjazz.com/fr/events/ferme-joyeuses-fetes/var/ri-3.l-L2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Fermé - Joyeuses Fêtes!",
-    "date": "2026-12-25",
-    "lieu": "Upstairs Jazz Bar & Grill",
-    "url": "https://www.upstairsjazz.com/fr/events/ferme-joyeuses-fetes/var/ri-4.l-L2",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Brunch Gospel - Michelle Sweeney & The Gospel Tribe",
-    "date": "2026-12-27",
-    "lieu": "Le Balcon",
-    "url": "https://www.lebalcon.ca/brunch-gospel",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Le Party du Nouvel An - Airport 77",
-    "date": "2026-12-31",
-    "lieu": "Le Balcon",
-    "url": "https://www.lebalcon.ca/menu-party-nouvel-an",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Lendemain de veille @ Au Vieux - Brasserie Festive",
-    "date": "2026-12-31",
-    "lieu": "Au Vieux - Brasserie Festive",
-    "url": "https://www.songkick.com/concerts/43491064-lendemain-de-veille-at-au-vieux-brasserie-festive?utm_medium=organic&utm_source=microformat",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "Hommage à Etta James - La légende de la reine du Blues et de la Soul",
-    "date": "2027-01-14",
-    "lieu": "Le Balcon",
-    "url": "https://www.lebalcon.ca/hommage-etta-james",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Rencontre avec l’autrice Maude Jarry",
-    "date": "2027-01-16",
-    "lieu": "Bibliothèque Saul-Bellow",
-    "url": "https://montreal.ca/evenements/rencontre-avec-lautrice-maude-jarry-122419",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "Cathy Gauthier",
-    "date": "2027-01-16",
-    "lieu": "L'Opale",
-    "url": "https://evenko.ca/fr/evenements/l-opale/cathy-gauthier?code=e009131",
-    "raison": "hors de l'île"
-   },
-   {
-    "titre": "L'avènement de l'homme nouveau : Un mode d'emploi pour survivre aux totalitarismes",
-    "date": "2027-01-17",
-    "lieu": "Bibliothèque Mordecai-Richler",
-    "url": "https://montreal.ca/evenements/lavenement-de-lhomme-nouveau-un-mode-demploi-pour-survivre-aux-totalitarismes-122386",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "La tournée d'André Lemire",
-    "date": "2026-10-09 → 2026-11-29",
-    "lieu": "VOART Centre d'exposition de Val-d'Or",
-    "url": "https://reseauartactuel.org/evenement/la-tournee-dandre-lemire/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Marie-Aube Lanie et Lucie Rocher",
-    "date": "2026-10-04 → 2026-12-06",
-    "lieu": "Galerie d'art du Parc",
-    "url": "https://reseauartactuel.org/evenement/marie-aube-lanie-et-lucie-rocher/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Pendant que la lune s'éloigne",
-    "date": "2026-10-15 → 2026-12-11",
-    "lieu": "Centre SAGAMIE",
-    "url": "https://reseauartactuel.org/evenement/13310/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Ces derniers souffles de Mathilde Forest",
-    "date": "2026-11-06 → 2026-12-12",
-    "lieu": "Vaste et Vague",
-    "url": "https://reseauartactuel.org/evenement/ces-derniers-souffles-par-mathilde-forest/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "La catastrophe ultraviolette de Julie Tremble",
-    "date": "2026-11-05 → 2026-12-12",
-    "lieu": "Centre d'art Jacques-et-Michel-Auger",
-    "url": "https://reseauartactuel.org/evenement/la-catastrophe-ultraviolette-de-julie-tremble/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Camille Jodoin-Eng et Sabrina Forget-Matte + Le croche-pied",
-    "date": "2026-11-05 → 2026-12-13",
-    "lieu": "L'Écart",
-    "url": "https://reseauartactuel.org/evenement/camille-jodoin-eng-et-sabrina-forget-matte/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Démantèlement de Maude Vien",
-    "date": "2026-11-18 → 2026-12-19",
-    "lieu": "Centre Bang",
-    "url": "https://reseauartactuel.org/evenement/demantelement-de-maude-vien/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Simon Beaudry, Amélie Courtois + Charles Sagalane",
-    "date": "2026-10-30 → 2026-12-20",
-    "lieu": "Langage Plus",
-    "url": "https://reseauartactuel.org/evenement/simon-beaudry-amelie-courtois-et-charles-sagalane/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Certaines collisions sont silencieuses de Jeffrey Poirier",
-    "date": "2026-10-15 → 2026-12-22",
-    "lieu": "Centre Bang",
-    "url": "https://reseauartactuel.org/evenement/jeffrey-poirier/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Baobab",
-    "date": "2026-12-02 → 2027-01-03",
-    "lieu": "Maison Théâtre",
-    "url": "https://www.maisontheatre.com/spectacle/baobab/",
-    "raison": "série remplacée par ses dates précises"
-   },
-   {
-    "titre": "Notcimik (la forêt), se connaître pour savoir d'où l'on vient d'Amélie Courtois",
-    "date": "2026-09-14 → 2027-01-25",
-    "lieu": "Centre Bang",
-    "url": "https://reseauartactuel.org/evenement/amelie-courtois/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Tanner le blanc des mornes d'Emilie Pedneault",
-    "date": "2026-10-15 → 2027-02-07",
-    "lieu": "Panache art actuel",
-    "url": "https://reseauartactuel.org/evenement/tanner-le-blanc-des-mornes-demilie-pedneault/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Lumino : Lumière sur l'hiver",
-    "date": "2027-01-01 → 2027-03-31",
-    "lieu": "Quartier des Spectacles",
-    "url": "https://www.luminomtl.com/fr/les-installations",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   },
-   {
-    "titre": "FMR : Il faut dire (ou pas) de Marc-Olivier Hamelin",
-    "date": "2026-11-01 → 2027-05-30",
-    "lieu": "VOART Centre d'exposition de Val-d'Or",
-    "url": "https://reseauartactuel.org/evenement/fmr-il-faut-dire-ou-pas/",
-    "raison": "série : hors de l'île"
-   },
-   {
-    "titre": "Café Campus et Petit Campus - spectacles",
-    "date": "2026-11-23 → 2027-06-02",
-    "lieu": "Café Campus",
-    "url": "https://lepointdevente.com/billets/cafecampusshows",
-    "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
-   }
-  ]
+  "total": 0,
+  "liste": []
  }
 }

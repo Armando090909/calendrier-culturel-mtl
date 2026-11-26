@@ -2,7 +2,7 @@
  "ouverts": {
   "champ:ra.co:heure": {
    "depuis": "2026-11-25",
-   "jours": 1,
+   "jours": 2,
    "issue": null
   }
  },
@@ -250,7 +250,6 @@
   "Théâtre Maisonneuve (découverte)": 190
  },
  "totaux": {
-  "2026-11-12": 2806,
   "2026-11-13": 2860,
   "2026-11-14": 2830,
   "2026-11-15": 2731,
@@ -263,9 +262,10 @@
   "2026-11-22": 2947,
   "2026-11-23": 2868,
   "2026-11-24": 2866,
-  "2026-11-25": 2791
+  "2026-11-25": 2791,
+  "2026-11-26": 2653
  },
- "dernier_jour": "2026-11-25",
+ "dernier_jour": "2026-11-26",
  "minces_depuis": {
   "Librairie L'Euguélionne": "2026-11-13",
   "Le Système (RA)": "2026-11-13",
@@ -281,7 +281,6 @@
   "Système MTL": "2026-11-13",
   "Espace La Risée": "2026-11-13",
   "Tango Libre": "2026-11-13",
-  "Eastern Bloc": "2026-11-13",
   "Qu'en dit Raton?": "2026-11-14",
   "Le National": "2026-11-18",
   "Le Livart – activités": "2026-11-18",
@@ -292,6 +291,7 @@
   "Montreal Comedy Club": "2026-11-21",
   "Cat's Corner (danse swing)": "2026-11-21",
   "Newspeak": "2026-11-21",
-  "Piranha Bar": "2026-11-21"
+  "Piranha Bar": "2026-11-21",
+  "Bistro à Jojo": "2026-11-26"
  }
 }
