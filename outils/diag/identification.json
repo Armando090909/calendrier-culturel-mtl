@@ -1,21 +1,15 @@
 {
- "cinema": {
-  "salle": {
-   "compte": "maisontheatre",
-   "sur": true,
-   "source": "https://www.maisontheatre.com/"
-  },
-  "artiste": {
-   "compte": "ridm_festival",
-   "sur": false,
-   "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
-  }
- },
  "theatre": {
   "salle": {
    "compte": "theatrelalicorne",
    "sur": true,
    "source": "https://theatrelalicorne.com/"
+  },
+  "artiste": {
+   "compte": "ti_senat",
+   "sur": true,
+   "source": "https://tvrm.ca/episode/lez-au24-075-lezarts-lanaudiere-emission-du-19-septembre-2024/",
+   "qui": "Fabrice Yvanoff Sénat"
   }
  },
  "expo": {
@@ -31,10 +25,11 @@
   }
  },
  "conference": {
-  "festival": {
+  "artiste": {
    "compte": "salonlivremtl",
    "sur": true,
-   "source": "https://salondulivredemontreal.com"
+   "source": "https://m.youtube.com/watch?v=ogWOs2BR2OE",
+   "qui": "Salon du livre de Montréal"
   }
  },
  "danse": {
@@ -55,6 +50,13 @@
    "sur": true,
    "source": "https://www.instagram.com/lydiakepi/",
    "qui": "Lydia Képinski"
+  }
+ },
+ "cinema": {
+  "artiste": {
+   "compte": "ridm_festival",
+   "sur": false,
+   "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
   }
  },
  "jeune": {}
