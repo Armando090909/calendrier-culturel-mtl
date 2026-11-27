@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-26-lespace-entre-nous-production-pendar-9905ea@ccmtl.ca
+UID:2027-01-25-cercle-de-scrabble-744dc6@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270126
-DTEND;VALUE=DATE:20270127
-SUMMARY:L’espace entre nous - Production Pendar
+DTSTART;TZID=America/Toronto:20270125T133000
+DTEND;TZID=America/Toronto:20270125T153000
+SUMMARY:Cercle de scrabble
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/lespace-entre-nous-production-pendar-110
- 642
-DESCRIPTION:Heure à confirmer. Plongez dans un univers où musique persane
-  et danse soufie façonnent un cercle rituel vibrant.\nPrix : Gratuit\nDé
- tails : https://montreal.ca/evenements/lespace-entre-nous-production-penda
- r-110642\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/cercle-de-scrabble-121870
+DESCRIPTION:Venez enrichir votre vocabulaire dans une ambiance détendue et
+  sans esprit de compétition à la Bibliothèque Saul-Bellow\, Lachine.\nP
+ rix : Gratuit\nDétails : https://lepointdevente.com/billets/ev3260928001\
+ n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

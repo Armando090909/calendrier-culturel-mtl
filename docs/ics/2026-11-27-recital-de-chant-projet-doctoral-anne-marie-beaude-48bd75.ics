@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-recital-de-chant-projet-doctoral-anne-marie-beaude-5bfd72@cc
+UID:2026-11-27-recital-de-chant-projet-doctoral-anne-marie-beaude-48bd75@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261127T190000
 DTEND;TZID=America/Toronto:20261127T210000
 SUMMARY:Récital de chant (Projet Doctoral) - Anne-Marie Beaudette
-LOCATION:Université de Montréal\, Montréal
+LOCATION:Salle Serge-Garant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/recital-de-chant-projet-doctor
  al-anne-marie-beaudette
-DESCRIPTION:Récital de chant de la soprano Anne-Marie Beaudette\, présent
- é dans le cadre de son projet doctoral.\nDétails : https://calendrier.um
- ontreal.ca/activite/recital-de-chant-projet-doctoral-anne-marie-beaudette\
- n(ccmtl.ca)
+DESCRIPTION:Récital de chant présenté dans le cadre d'un projet doctoral
+ .\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/activite/rec
+ ital-de-chant-projet-doctoral-anne-marie-beaudette\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

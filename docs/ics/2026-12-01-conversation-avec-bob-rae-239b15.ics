@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-29-les-chambristes-stupefiants-176385@ccmtl.ca
+UID:2026-12-01-conversation-avec-bob-rae-239b15@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261129T193000
-DTEND;TZID=America/Toronto:20261129T213000
-SUMMARY:Les Chambristes stupéfiants
-LOCATION:Université de Montréal\, Montréal
-URL:https://calendrier.umontreal.ca/activite/les-chambristes-stupefiants-1
-DESCRIPTION:Concert de musique de chambre en personne proposé par les Cham
- bristes.\nDétails : https://calendrier.umontreal.ca/activite/les-chambris
- tes-stupefiants-1\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261201T113000
+DTEND;TZID=America/Toronto:20261201T133000
+SUMMARY:Conversation avec Bob Rae
+LOCATION:Salle 104\, Montréal
+URL:https://calendrier.umontreal.ca/activite/conversation-avec-bob-rae
+DESCRIPTION:Échange public avec Bob Rae sur un sujet d'actualité\, animé
+  dans le cadre des activités de l'UdeM.\nPrix : Gratuit\nDétails : https
+ ://lepointdevente.com/billets/84s261201001?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

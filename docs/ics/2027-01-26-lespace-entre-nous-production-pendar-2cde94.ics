@@ -21,16 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-conference-du-vendredi-be368b@ccmtl.ca
+UID:2027-01-26-lespace-entre-nous-production-pendar-2cde94@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261127T113000
-DTEND;TZID=America/Toronto:20261127T133000
-SUMMARY:Conférence du vendredi
+DTSTART;TZID=America/Toronto:20270126T193000
+DTEND;TZID=America/Toronto:20270126T213000
+SUMMARY:L’espace entre nous - Production Pendar
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://calendrier.umontreal.ca/activite/conference-du-vendredi-27-nove
- mbre-2026
-DESCRIPTION:Conférence publique du vendredi\, sans thème précisé sur la
-  page.\nDétails : https://calendrier.umontreal.ca/activite/conference-du-
- vendredi-27-novembre-2026\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/lespace-entre-nous-production-pendar-110
+ 642
+DESCRIPTION:Plongez dans un univers où musique persane et danse soufie fa
+ çonnent un cercle rituel vibrant.\nPrix : Gratuit\nDétails : https://mon
+ treal.ca/evenements/lespace-entre-nous-production-pendar-110642\n(ccmtl.ca
+ )
 END:VEVENT
 END:VCALENDAR

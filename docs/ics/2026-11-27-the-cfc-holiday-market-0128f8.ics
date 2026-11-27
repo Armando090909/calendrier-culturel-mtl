@@ -21,16 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-25-cercle-de-scrabble-d5341c@ccmtl.ca
+UID:2026-11-27-the-cfc-holiday-market-0128f8@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270125
-DTEND;VALUE=DATE:20270126
-SUMMARY:Cercle de scrabble
-LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/cercle-de-scrabble-121870
-DESCRIPTION:Heure à confirmer. Venez enrichir votre vocabulaire dans une a
- mbiance détendue et sans esprit de compétition à la Bibliothèque Saul-
- Bellow\, Lachine.\nPrix : Gratuit\nDétails : https://montreal.ca/evenemen
- ts/cercle-de-scrabble-121870\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261127T190000
+DTEND;TZID=America/Toronto:20261127T210000
+SUMMARY:The CFC Holiday Market!
+LOCATION:EV Atrium\, Montréal
+URL:https://www.concordia.ca/events.html
+DESCRIPTION:Détails : https://www.concordia.ca/hospitality/event-planning/
+ space-reservation.html\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

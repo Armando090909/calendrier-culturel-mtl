@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-exposition-d-amours-et-d-amities-ca3560@ccmtl.ca
+UID:2026-12-01-exposition-d-amours-et-d-amities-2255a9@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261128T100000
-DTEND;TZID=America/Toronto:20261128T120000
+DTSTART;TZID=America/Toronto:20261201T100000
+DTEND;TZID=America/Toronto:20261201T120000
 SUMMARY:Exposition : D'amours et d'amitiés
-LOCATION:Université de Montréal\, Montréal
+LOCATION:Pavillon de la Faculté de l'aménagement\, Montréal
 URL:https://calendrier.umontreal.ca/activite/exposition-damours-et-damities
- -1
-DESCRIPTION:Exposition en personne sur le thème des liens affectifs\, de l
- 'amour et de l'amitié.\nDétails : https://calendrier.umontreal.ca/activi
- te/exposition-damours-et-damities-1\n(ccmtl.ca)
+ -2
+DESCRIPTION:Exposition consacrée aux thèmes de l'amour et de l'amitié\, 
+ présentée sur le campus.\nPrix : Gratuit\nDétails : https://calendrier.
+ umontreal.ca/activite/exposition-damours-et-damities-2\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

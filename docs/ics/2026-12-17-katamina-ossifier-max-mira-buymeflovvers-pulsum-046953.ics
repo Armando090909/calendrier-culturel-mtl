@@ -21,15 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-17-katamina-ossifier-max-mira-buymeflovvers-pulsum-b38dec@ccmtl
+UID:2026-12-17-katamina-ossifier-max-mira-buymeflovvers-pulsum-046953@ccmtl
  .ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
+DTSTART;TZID=America/Toronto:20261217T220000
+DTEND;TZID=America/Toronto:20261218T000000
 SUMMARY:KATAMINA\, Ossifier/Max Mira\, Buymeflovvers\, Pulsum
 LOCATION:DATCHA\, Montréal
 URL:https://bardatcha.ca/
-DESCRIPTION:Heure à confirmer. Soirée électro réunissant KATAMINA et pl
- usieurs DJ invités.\nDétails : https://ra.co/events/2595124\n(ccmtl.ca)
+DESCRIPTION:Soirée électro réunissant KATAMINA et plusieurs DJ invités.
+ \nDétails : https://ra.co/events/2595124\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

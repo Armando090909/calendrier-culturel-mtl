@@ -1148,6 +1148,11 @@
   "quartier": ""
  },
  "EV 1-715, Engineering, Computer Science and Visual Arts Integrated Complex": null,
+ "EV Atrium": {
+  "lat": 45.48894,
+  "lon": -73.58451,
+  "quartier": "Ville-Marie"
+ },
  "Eastern Bloc": {
   "lat": 45.533,
   "lon": -73.618,
@@ -2428,6 +2433,11 @@
   "lon": -73.56071,
   "quartier": "Ville-Marie"
  },
+ "Pavillon Maximilien-Caron": {
+  "lat": 45.49864,
+  "lon": -73.61698,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Pavillon Paul-Gérin-Lajoie": {
   "alias": [],
   "lat": 45.51321,
@@ -2646,6 +2656,14 @@
   "lat": 45.52177,
   "lon": -73.59049,
   "quartier": "Le Plateau-Mont-Royal"
+ },
+ "Salle 104": {
+  "alias": [
+   "Salle 104 (rez-de-chaussée)"
+  ],
+  "lat": 45.49498,
+  "lon": -73.62205,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "Salle 1120, Henry F. Hall Building": null,
  "Salle Albert-Dumouchel": null,

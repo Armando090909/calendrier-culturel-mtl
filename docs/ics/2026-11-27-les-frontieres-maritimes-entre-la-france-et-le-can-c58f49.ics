@@ -21,17 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-les-frontieres-maritimes-entre-la-france-et-le-can-536ffc@cc
+UID:2026-11-27-les-frontieres-maritimes-entre-la-france-et-le-can-c58f49@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261127T111900
 DTEND;TZID=America/Toronto:20261127T131900
 SUMMARY:Les frontières maritimes entre la France et le Canada
-LOCATION:Lieu à confirmer\, Montréal
+LOCATION:Pavillon Maximilien-Caron\, Montréal
 URL:https://calendrier.umontreal.ca/activite/les-frontieres-maritimes-entre
  -la-france-et-le-canada
 DESCRIPTION:Discussion sur le tracé des frontières maritimes entre la Fra
- nce et le Canada.\nDétails : https://calendrier.umontreal.ca/activite/les
- -frontieres-maritimes-entre-la-france-et-le-canada\n(ccmtl.ca)
+ nce et le Canada.\nPrix : Gratuit\nDétails : http://fcdroit.umontreal.ca/
+ Web/MyCatalog/ViewP?id=so0eTYCS1N5JIexwqn4yZw%3d%3d&pid=OPWhgFdTt9fynJhm%2
+ fIXQ4A%3d%3d\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-27-curiosa-fantasmer-le-passe-177aec@ccmtl.ca
+UID:2026-12-01-curiosa-fantasmer-le-passe-4d4432@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261127T090000
-DTEND;TZID=America/Toronto:20261127T110000
+DTSTART;TZID=America/Toronto:20261201T090000
+DTEND;TZID=America/Toronto:20261201T110000
 SUMMARY:Curiosa : fantasmer le passé
-LOCATION:Université de Montréal\, Montréal
-URL:https://calendrier.umontreal.ca/activite/curiosa-fantasmer-le-passe-79
-DESCRIPTION:Activité en personne invitant à explorer l'imaginaire et les 
- fantasmes liés au passé.\nDétails : https://calendrier.umontreal.ca/act
- ivite/curiosa-fantasmer-le-passe-79\n(ccmtl.ca)
+LOCATION:Bibliothèque des lettres et sciences humaines\, Pavillon Samuel-B
+ ronfman\, Montréal
+URL:https://calendrier.umontreal.ca/activite/curiosa-fantasmer-le-passe-83
+DESCRIPTION:Activité de découverte autour des fantasmes et représentatio
+ ns du passé.\nPrix : Gratuit\nDétails : https://calendrier.umontreal.ca/
+ activite/curiosa-fantasmer-le-passe-83\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

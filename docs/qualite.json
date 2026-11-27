@@ -4,7 +4,9 @@
   "titre mal encodé": 13,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "heures différentes selon les sources": 64
+  "date absente de la page officielle": 50,
+  "page de la sortie disparue": 9,
+  "heures différentes selon les sources": 65
  },
  "journal": [
   {
@@ -150,6 +152,537 @@
    "lieu": "Parc du Mont-Royal",
    "source": "",
    "url": "https://150montroyal.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "OSER sortir des sentiers battus",
+   "date": "2026-11-27",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/oser-sortir-des-sentiers-battus"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "IA et édition: constats et usages",
+   "date": "2026-11-27",
+   "lieu": "Espace PRO",
+   "source": "festival",
+   "url": "https://programmation.salondulivredemontreal.com/activites/ia-et-edition-constats-et-usages"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Paper Skies",
+   "date": "2026-11-27",
+   "lieu": "Newspeak",
+   "source": "festival",
+   "url": "https://ilesoniq.com"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-28",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Filipiñana — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/filipinana-2026-11-27-1315"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Off - Table ronde avec Michael Maul",
+   "date": "2026-11-27",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-table-ronde-avec-michael-maul/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La meilleure façon, c’est par accident — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-meilleure-facon-cest-par-accident-2026-11-27-1530"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Christophe Gauthier, clavecin · Off-Bach (gratuit)",
+   "date": "2026-11-27",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-concert-christophe-gauthier-clavecin-2/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "DANSONS AVEC 3DJS - 27 novembre",
+   "date": "2026-11-27",
+   "lieu": "Robin des Bois",
+   "source": "salles",
+   "url": "https://robindesbois.ca/programmation_events/dansons-avec-3djs-27-novembre-refuge-des-jeunes/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Murmures — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/murmures-2026-11-27-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Slow Dating Montréal #239 (Entre femmes - Tous âges)",
+   "date": "2026-11-27",
+   "lieu": "Espace Together",
+   "source": "salles",
+   "url": "https://luma.com/slow-dating-239"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-27",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "LA CABINE EN ESPAGNOL",
+   "date": "2026-11-27",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-28",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Comedie Club à La Cabine",
+   "date": "2026-11-28",
+   "lieu": "La Cabine Comédie Club",
+   "source": "salles",
+   "url": "https://lacabinecomedie.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Maracujá (1re partie)",
+   "date": "2026-11-27",
+   "lieu": "Upstairs Jazz Bar & Grill",
+   "source": "salles",
+   "url": "https://www.upstairsjazz.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Maracujá (2e partie)",
+   "date": "2026-11-27",
+   "lieu": "Upstairs Jazz Bar & Grill",
+   "source": "salles",
+   "url": "https://www.upstairsjazz.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "GRUNGE NIGHT: ALICE UNCHAINED + PLASMA DAMAGE + SKULLGORG",
+   "date": "2026-11-27",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "DRUM & BASS COLLIDER: RMS",
+   "date": "2026-11-27",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "WEIRD FISHES + REMNANTS + MUSE STATION + YOU WANT IT DARKER + LA TRAGÉDIE",
+   "date": "2026-11-28",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "BEAUFUSIL + MY ANXIOUS WRECK + ASHTRAY HEART",
+   "date": "2026-11-28",
+   "lieu": "Foufounes Électriques",
+   "source": "salles",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le songe d'une nuit d'été d'après William Shakespeare",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://theatreoutremont.tuxedobillet.com/web/le-songe-dune-nuit"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "RaqStar par le studio Sharqui",
+   "date": "2026-11-27",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/raqstar/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Voyage voyage",
+   "date": "2026-11-27",
+   "lieu": "Théâtre Denise-Pelletier",
+   "source": "theatre",
+   "url": "https://www.denise-pelletier.qc.ca/pieces/voyage-voyage/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Soirée de danse",
+   "date": "2026-11-27",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Practica",
+   "date": "2026-11-29",
+   "lieu": "Tango Libre",
+   "source": "salles",
+   "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "IMAGE+NATION — séance",
+   "date": "2026-11-27",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/imagenation39-2026-11-27-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Comedy",
+   "date": "2026-11-27",
+   "lieu": "Deli Planet",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/friday-night-comedy-montreal-stand-up-at-comedyville-9-pm-tickets-122822231601?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Friday Night Stand Up (Deli @ 9 PM)",
+   "date": "2026-11-27",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/boom-friday-night-comedy/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mado reçoit",
+   "date": "2026-11-27",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Jimmy Moore personnifie Ariana Grande: The Eternal Sunshine Tour",
+   "date": "2026-11-28",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Mado reçoit",
+   "date": "2026-11-28",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "La ligue d'impro Gailaxie",
+   "date": "2026-11-29",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Le Tracy Trash Show",
+   "date": "2026-11-29",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "35 ans de RÉZO: cocktail et spectacle-bénéfice",
+   "date": "2026-11-30",
+   "lieu": "Cabaret Mado",
+   "source": "salles",
+   "url": "http://www.mado.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "WAAHLI",
+   "date": "2026-11-27",
+   "lieu": "Le Ministère",
+   "source": "salles",
+   "url": "https://leministere.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ok Goodnight + The Anchoret + Eve + Système Féodal",
+   "date": "2026-11-28",
+   "lieu": "Le Ministère",
+   "source": "salles",
+   "url": "https://leministere.ca/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-11-28-1030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tap jam",
+   "date": "2026-11-28",
+   "lieu": "Cat's Corner",
+   "source": "salles",
+   "url": "https://www.catscorner.ca/what-we-do-1"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Conférence & café-croissant : Bálint Karosi",
+   "date": "2026-11-28",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/81446-2/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "You Can See Everything — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-28-1230"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Création du Journal des jeunes Montréalestois",
+   "date": "2026-11-28",
+   "lieu": "Bibliothèque Micheline-Gagnon",
+   "source": "salles",
+   "url": "https://ville.montreal-est.qc.ca/evenement/ecrivains-2026-12-16/2026-11-28/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Finalisation du projet Cinéastes en herbe",
+   "date": "2026-11-28",
+   "lieu": "Bibliothèque Micheline-Gagnon",
+   "source": "salles",
+   "url": "https://ville.montreal-est.qc.ca/evenement/fais-ton-cinema/2026-11-28/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Gilles Commeau : musique, santé et cerveau (causerie) · Off-Bach (gratuit)",
+   "date": "2026-11-28",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-talk-conference-cafe-croissant-avec-le-dr-gilles-commeau/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Bach talk : Vincent Boucher, organiste",
+   "date": "2026-11-28",
+   "lieu": "Oratoire Saint-Joseph",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-mini-conference-vincent-boucher-organiste/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Off - Récital : Dane Ko, piano",
+   "date": "2026-11-28",
+   "lieu": "Off-Bach",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-concert-dane-ko-2-piano/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Vieille corneille — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/vieille-corneille-2026-11-28-1600"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La patrie — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-patrie-2026-11-28-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Bach en quatre villes",
+   "date": "2026-11-28",
+   "lieu": "Off-Bach",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-mini-conference-luc-beausejour-26-5/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Variations Goldberg",
+   "date": "2026-11-29",
+   "lieu": "Off-Bach",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-mini-conference-luc-beausejour-26-5/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Noémie Raymond, violoncelle, et Chloé Dumoulin, piano · Off-Bach (gratuit)",
+   "date": "2026-11-28",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-recital-noemie-raymond-chloe-dumoulin/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Chantal Lamarre : Steppettes et cornemuse",
+   "date": "2026-11-28",
+   "lieu": "Caf'Conc'",
+   "source": "salles",
+   "url": "https://cafconc.ca/spectacle-details/chantal-lamarre-44297/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Colocs",
+   "date": "2026-11-28",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/les-colocs/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Minotaure — séance",
+   "date": "2026-11-28",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/minotaure-2026-11-28-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday After Dusk Comedy",
+   "date": "2026-11-28",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ciné-concert – Noon to Neon : CASINO ROYAL – Monsieur Cailloux & Ras Epsylow",
+   "date": "2026-11-28",
+   "lieu": "La Lumière Collective",
+   "source": "salles",
+   "url": "https://lalumierecollective.org/2026/cine-concert-noon-to-neon-casino-royal-monsieur-cailloux-ras-epsylow/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Saturday Stand-Up (Deli @ 9 PM)",
+   "date": "2026-11-28",
+   "lieu": "Comedyville",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/saturday-night-comedy-show/"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -477,6 +1010,15 @@
   },
   {
    "regle": "heures différentes selon les sources",
+   "action": "19:30 gardée (casadelpopolo.com), 20:30 écartée (songkick.com)",
+   "titre": "SAM QUEALY + SUUNCAAT",
+   "date": "2026-12-03",
+   "lieu": "La Sala Rossa",
+   "source": "salles",
+   "url": "https://casadelpopolo.com/"
+  },
+  {
+   "regle": "heures différentes selon les sources",
    "action": "20:00 gardée (casadelpopolo.com), 19:30 écartée (sorstu.ca)",
    "titre": "Adiós, CASA! Luan Larobina x Zalam Kao",
    "date": "2026-12-07",
@@ -729,7 +1271,11 @@
   }
  ],
  "contreverif": {
-  "non relues (limite)": 404
+  "date confirmée": 200,
+  "date absente de la page": 50,
+  "lien mort remplacé": 9,
+  "page illisible": 28,
+  "non relues (limite)": 118
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -765,9 +1311,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 336,
+   "erreurs": 345,
    "sorties": 801,
-   "taux": 41.9
+   "taux": 43.1
   },
   {
    "source": "centredesmusiciensdumonde.com",
@@ -866,15 +1412,15 @@
    "taux": 6.1
   },
   {
+   "source": "casadelpopolo.com",
+   "erreurs": 108,
+   "sorties": 1783,
+   "taux": 6.1
+  },
+  {
    "source": "lepointdevente.com",
    "erreurs": 160,
    "sorties": 2645,
-   "taux": 6.0
-  },
-  {
-   "source": "casadelpopolo.com",
-   "erreurs": 107,
-   "sorties": 1782,
    "taux": 6.0
   },
   {
@@ -885,7 +1431,7 @@
   }
  ],
  "recoupees": {
-  "total": 2738,
+  "total": 2739,
   "deux_sources_ou_plus": 254
  }
 }

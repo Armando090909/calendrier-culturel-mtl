@@ -21,20 +21,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-02-completement-pedago-escape-game-ou-jeu-d-evasion-l-8f9f08@cc
+UID:2026-12-02-completement-pedago-escape-game-ou-jeu-d-evasion-l-3b4b2c@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
+DTSTART;TZID=America/Toronto:20261202T140000
+DTEND;TZID=America/Toronto:20261202T160000
 SUMMARY:Complètement pédago! Escape Game (ou jeu d'évasion) : Les secret
  s du coffret (8-12 ans)
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/completement-pedago-escape-game-ou-jeu-d
  evasion-les-secrets-du-coffret-8-12-ans-117394
-DESCRIPTION:Heure à confirmer. La bibliothèque Hochelaga invite les jeune
- s à profiter des après-midis de journée pédagogique pour participer à
-  des activités ludiques.\nPrix : Gratuit\nDétails : https://montreal.ca/
- evenements/completement-pedago-escape-game-ou-jeu-devasion-les-secrets-du-
- coffret-8-12-ans-117394\n(ccmtl.ca)
+DESCRIPTION:La bibliothèque Hochelaga invite les jeunes à profiter des ap
+ rès-midis de journée pédagogique pour participer à des activités ludi
+ ques.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/completem
+ ent-pedago-escape-game-ou-jeu-devasion-les-secrets-du-coffret-8-12-ans-117
+ 394\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

@@ -21,15 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-04-marie-madeleine-416bcc@ccmtl.ca
+UID:2027-01-23-zorza-internet-niche-fame-tour-73011b@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261204T180000
-DTEND;TZID=America/Toronto:20261204T200000
-SUMMARY:Marie Madeleine
-LOCATION:Cinémathèque québécoise\, Montréal
-URL:https://www.cinematheque.qc.ca/fr/cinema/marie-madeleine/
-DESCRIPTION:Une nouveauté présentée à la Cinémathèque dans le cadre d
- e la programmation du CAECQ.\nDétails : https://www.cinematheque.qc.ca/fr
- /cinema/marie-madeleine/\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20270123T220000
+DTEND;TZID=America/Toronto:20270124T000000
+SUMMARY:ZORZA – internet niche fame Tour
+LOCATION:Newspeak\, Montréal
+URL:https://newspeakmtl.com/evenements/2027-01-23-zorzas-internet-niche-fam
+ e-tour
+DESCRIPTION:Tournée de la musicienne ZORZA\, avec invités\, présentée a
+ u Newspeak.\nPrix : 38\,96 $\nDétails : https://www.universe.com/events/z
+ orza-tickets-42C0FX\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

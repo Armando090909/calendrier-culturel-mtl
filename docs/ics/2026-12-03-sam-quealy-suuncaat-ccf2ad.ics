@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-17-spectacle-de-chant-de-noel-a-capella-caf6c0@ccmtl.ca
+UID:2026-12-03-sam-quealy-suuncaat-ccf2ad@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
-SUMMARY:Spectacle de chant de Noël a capella
-LOCATION:Théâtre Outremont\, Montréal
-URL:https://montreal.ca/evenements/spectacle-de-chant-de-noel-capella-12313
- 3
-DESCRIPTION:Heure à confirmer. Spectacle du temps des fêtes a cappella à
-  Outremont\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/spec
- tacle-de-chant-de-noel-capella-123133\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261203T193000
+DTEND;TZID=America/Toronto:20261203T213000
+SUMMARY:SAM QUEALY + SUUNCAAT
+LOCATION:La Sala Rossa\, Montréal
+URL:https://casadelpopolo.com/
+DESCRIPTION:Concert de Sam Quealy accompagné du groupe Suuncaat.\nPrix : 3
+ 5 $\nDétails : https://www.venuepilot.co/fr/events/180061/orders/new\n(cc
+ mtl.ca)
 END:VEVENT
 END:VCALENDAR

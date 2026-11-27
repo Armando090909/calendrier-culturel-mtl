@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-30-concert-de-classe-des-cuivres-bb12ae@ccmtl.ca
+UID:2026-11-30-concert-de-classe-des-cuivres-dd9ac2@ccmtl.ca
 DTSTAMP:20260101T000000Z
 DTSTART;TZID=America/Toronto:20261130T193000
 DTEND;TZID=America/Toronto:20261130T213000
 SUMMARY:Concert de classe des cuivres
-LOCATION:Université de Montréal\, Montréal
+LOCATION:Salle Serge-Garant\, Montréal
 URL:https://calendrier.umontreal.ca/activite/concert-de-classe-des-cuivres-
  2
-DESCRIPTION:Concert présenté par la classe des cuivres\, avec les étudia
- nts en interprétation.\nDétails : https://calendrier.umontreal.ca/activi
- te/concert-de-classe-des-cuivres-2\n(ccmtl.ca)
+DESCRIPTION:Concert présenté par la classe de cuivres.\nPrix : Gratuit\nD
+ étails : https://calendrier.umontreal.ca/activite/concert-de-classe-des-c
+ uivres-2\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
