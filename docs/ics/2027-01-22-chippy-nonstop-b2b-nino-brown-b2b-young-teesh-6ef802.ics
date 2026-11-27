@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ccmtl.ca//Calendrier culturel//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-01-22-chippy-nonstop-b2b-nino-brown-b2b-young-teesh-6ef802@ccmtl.c
+ a
+DTSTAMP:20260101T000000Z
+DTSTART;TZID=America/Toronto:20270122T193000
+DTEND;TZID=America/Toronto:20270122T213000
+SUMMARY:Chippy Nonstop b2b Nino Brown b2b Young Teesh
+LOCATION:Quai Jacques-Cartier\, Scène Vidéotron\, Montréal
+URL:https://igloofest.ca/fr/artistes/chippy-nonstop-b2b-nino-brown-b2b-youn
+ g-teesh
+DESCRIPTION:Trois DJ se relaient en duo sur la Scène Vidéotron Pep Rally 
+ lors de la soirée du vendredi.\nDétails : https://contact.igloofest.ca/w
+ aitlist_kettama2027\n(ccmtl.ca)
+END:VEVENT
+END:VCALENDAR

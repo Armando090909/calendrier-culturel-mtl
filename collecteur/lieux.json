@@ -14,6 +14,16 @@
   "lon": -73.58637,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "4848 St-Laurent": {
+  "lat": 45.50888,
+  "lon": -73.68752,
+  "quartier": "Saint-Laurent"
+ },
+ "555 rue Sherbrooke Ouest": {
+  "lat": 45.50573,
+  "lon": -73.5733,
+  "quartier": "Le Plateau-Mont-Royal"
+ },
  "805 rue Sherbrooke Ouest": {
   "lat": 45.50472,
   "lon": -73.57494,
@@ -97,6 +107,7 @@
   "lon": -73.5687,
   "quartier": "Quartier des spectacles"
  },
+ "Atrium du pavillon EV": null,
  "Au Vieux - Brasserie Festive": null,
  "Au cœur du Village Dorval": null,
  "Auberge St Gabriel - Montreal": {
@@ -667,6 +678,7 @@
   "adresse": "avenue Pierre-De Coubertin et rue Dickson",
   "alias": []
  },
+ "Casa + Sala + Sott": null,
  "Casa del Popolo": {
   "lat": 45.521,
   "lon": -73.5935,
@@ -677,6 +689,7 @@
   "lon": -73.5728,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Casino Rama Resort": null,
  "Cat's Corner": {
   "lat": 45.53264,
   "lon": -73.55207,
@@ -1504,6 +1517,11 @@
  "Hurleys Irish Pub": null,
  "Hybride": null,
  "Hôtel Humaniti Montréal, Autograph Collection": null,
+ "Hôtel de ville": {
+  "lat": 45.50884,
+  "lon": -73.55414,
+  "quartier": "Ville-Marie"
+ },
  "Igloofest": null,
  "Impérial Bell": null,
  "Infinithéâtre + Casa d'Italia": null,
@@ -1612,6 +1630,11 @@
   "lat": 45.5492,
   "lon": -73.59117,
   "quartier": "Rosemont–La Petite-Patrie"
+ },
+ "La Brunante": {
+  "lat": 45.51015,
+  "lon": -73.70736,
+  "quartier": "Saint-Laurent"
  },
  "La Cabine Comédie Club": {
   "adresse": "5043, rue Saint-Denis",
@@ -2271,6 +2294,11 @@
   "lon": -73.78587,
   "quartier": ""
  },
+ "Oscar Peterson Concert Hall": {
+  "lat": 45.45933,
+  "lon": -73.63897,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Osmo x Marusan": null,
  "P'tit Ours": {
   "lat": 45.5195,
@@ -2413,6 +2441,11 @@
   "quartier": "Ville-Marie"
  },
  "Pavillon de l'île": null,
+ "Pavillon de la Faculté de l'aménagement": {
+  "lat": 45.50455,
+  "lon": -73.62116,
+  "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
+ },
  "Pavillon des Arts Collège Saint-Paul": null,
  "Pavillon des sciences de la gestion": {
   "alias": [
@@ -2494,6 +2527,7 @@
  },
  "Plein sud, centre d'exposition en art actuel": null,
  "Plus de 50 lieux dans le Grand Montréal": null,
+ "Plus de 50 lieux du Grand Montréal": null,
  "Plusieurs lieux": null,
  "Point Zéro": {
   "lat": 45.50017,
@@ -2523,6 +2557,11 @@
   "lon": -73.577,
   "quartier": "Verdun"
  },
+ "Quai Jacques-Cartier": {
+  "lat": 45.50731,
+  "lon": -73.54877,
+  "quartier": "Ville-Marie"
+ },
  "Quai Jacques-Cartier, Scène Sapporo": {
   "adresse": "Quai Jacques-Cartier",
   "alias": [],
@@ -2550,6 +2589,7 @@
  "Ras L'Bock": null,
  "Regart, centre d'artistes en art actuel": null,
  "Relume": null,
+ "Rennaï, ROYALMOUNT": null,
  "Revelstoke Performing Arts Centre": null,
  "Rio Theatre": null,
  "Robin des Bois": {
@@ -2670,6 +2710,7 @@
   "lon": -73.58393,
   "quartier": "Le Plateau-Mont-Royal"
  },
+ "Salle Lionel-Villeneuve": null,
  "Salle Louis-Fréchette": null,
  "Salle Madeleine-Lahaye": {
   "alias": [],
@@ -2765,8 +2806,11 @@
  },
  "Scotiabank Arena": null,
  "Scotiabank Saddledome": null,
+ "Scène Vidéotron": null,
+ "Scène Vidéotron | Ferias": null,
  "Sid Williams Theatre": null,
  "Société d'art vocal": null,
+ "Southam Hall": null,
  "Southern Alberta Jubilee Auditorium": null,
  "Sports and Recreation Centre": {
   "adresse": "8, avenue Westminster Sud, Montréal-Ouest",
@@ -3054,6 +3098,7 @@
   "lon": -73.65575,
   "quartier": "Ahuntsic-Cartierville"
  },
+ "Toutes les salles": null,
  "Town Hall": {
   "lat": 45.43326,
   "lon": -73.68109,
@@ -3076,6 +3121,7 @@
   "quartier": "Côte-des-Neiges–Notre-Dame-de-Grâce"
  },
  "UBC - Doug Mitchell Thunderbird Sports Centre": null,
+ "UNFQ": null,
  "UQAM - Bibliothèque des sciences": null,
  "UQAM - Coeur des sciences": null,
  "UQAM - En ligne": null,
