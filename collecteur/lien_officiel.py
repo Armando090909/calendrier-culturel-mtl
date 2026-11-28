@@ -182,7 +182,7 @@ def officialiser(events: list[dict], sources: list[dict], telecharger, aujourd: 
     if reste and ia_ok:
         try:
             import ia
-            for lieu, u in ia.sites_officiels(reste[:30]).items():
+            for lieu, u in ia.sites_officiels(reste[:80]).items():
                 if lieu in reste and not _exclu(u) and _nomme_la_salle(re.sub(r"<[^>]+>", " ", lire(_accueil(u))), lieu):
                     sites[lieu] = _accueil(u)
         except Exception as exc:
