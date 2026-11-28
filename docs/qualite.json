@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 19,
+  "date absente de la page officielle": 18,
   "page de la sortie disparue": 13,
   "heures différentes selon les sources": 55
  },
@@ -278,15 +278,6 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/minotaure-2026-11-28-2000"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Saturday After Dusk Comedy",
-   "date": "2026-11-28",
-   "lieu": "Estrella",
-   "source": "salles",
-   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
   },
   {
    "regle": "date absente de la page officielle",
@@ -911,11 +902,11 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 19,
-  "date confirmée": 200,
+  "date absente de la page": 18,
+  "date confirmée": 195,
   "lien mort remplacé": 13,
-  "page illisible": 43,
-  "non relues (limite)": 51
+  "non relues (limite)": 58,
+  "page illisible": 42
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -976,8 +967,8 @@
   {
    "source": "zeffy.com",
    "erreurs": 11,
-   "sorties": 45,
-   "taux": 24.4
+   "sorties": 44,
+   "taux": 25.0
   },
   {
    "source": "legesu.com",
@@ -1012,14 +1003,14 @@
   {
    "source": "panm360.com",
    "erreurs": 47,
-   "sorties": 348,
-   "taux": 13.5
+   "sorties": 344,
+   "taux": 13.7
   },
   {
    "source": "eventbrite.com",
    "erreurs": 43,
-   "sorties": 357,
-   "taux": 12.0
+   "sorties": 354,
+   "taux": 12.1
   },
   {
    "source": "mtelus.com",
@@ -1042,7 +1033,7 @@
   {
    "source": "spectaculos.ca",
    "erreurs": 20,
-   "sorties": 293,
+   "sorties": 292,
    "taux": 6.8
   },
   {
@@ -1054,7 +1045,7 @@
   {
    "source": "lepointdevente.com",
    "erreurs": 163,
-   "sorties": 2766,
+   "sorties": 2747,
    "taux": 5.9
   },
   {
