@@ -1495,6 +1495,14 @@ def main() -> int:
                 if plat(regle["titre"]) in plat(e["titre"]):
                     ajout = [dict(l, source="manuel") for l in regle["liens"]]
                     e["liens"] = (ajout + [l for l in e.get("liens", []) if l["url"] not in {a["url"] for a in ajout}])[:8]
+    # Lien officiel (28 nov. 2026) : un clic mène à la page de l'événement chez la salle, pas chez l'agrégateur
+    try:
+        import lien_officiel
+        st = lien_officiel.officialiser(events, sources, telecharger, aujourd, lectures=0 if RAPIDE else 120,
+                                        recherches=0 if RAPIDE else 12, ia_ok=ia.disponible())
+        print(f"Liens officiels : {st}")
+    except Exception as exc:
+        print(f"Liens officiels en échec : {exc}")
     for e in events:
         e.pop("_artistes", None)
         e.pop("_autres_urls", None)
