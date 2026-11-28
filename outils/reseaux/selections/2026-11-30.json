@@ -1,0 +1,433 @@
+{
+ "debut": "2026-11-30",
+ "fin": "2026-12-06",
+ "picks": [
+  {
+   "k": "danse",
+   "e": {
+    "date": "2026-11-30",
+    "heure": "19:00",
+    "discipline": "musique",
+    "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
+    "lieu": "Tangente",
+    "url": "https://tangentedanse.ca/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "sorstu",
+    "resume": "Soirée de danse contemporaine réunissant Piece of Mind Collective et deux chorégraphes invitées.",
+    "image": "https://ccmtl.ca/affiches/piece-of-mind.jpg",
+    "confirmations": 1,
+    "liens": [
+     {
+      "type": "soundcloud",
+      "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A455850024&color=%23944255&auto_playx=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+      "source": "page"
+     }
+    ],
+    "resume_en": "Contemporary dance evening featuring Piece of Mind Collective and two guest choreographers.",
+    "ics": "2026-11-30-piece-of-mind-collective-maude-lecours-gabrielle-m-0299a0"
+   },
+   "accroche": "Une soirée de danse contemporaine avec deux chorégraphes invitées et le collectif Piece of Mind.",
+   "accroche_en": "A contemporary dance evening with two guest choreographers and the Piece of Mind Collective.",
+   "mode": "connu"
+  },
+  {
+   "k": "theatre",
+   "e": {
+    "date": "2026-12-01",
+    "heure": "19:00",
+    "discipline": "theatre",
+    "titre": "Les veuves parallèles",
+    "lieu": "Théâtre Aux Écuries",
+    "url": "https://auxecuries.com/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "theatre",
+    "resume": "Une pièce sans paroles où marionnettes et violon explorent la mémoire familiale entre trois générations de femmes.",
+    "billets": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261201190000",
+    "confirmations": 2,
+    "affiche": {
+     "url": "https://tuxedov1.blob.core.windows.net/tuxedo-auxecuries/show/LES%20VEUVES%20PARALL%C3%88LES_-OsY9sHEDwRyZYuhdTDk_.jpg",
+     "credit": "auxecuries.tuxedobillet.com",
+     "lien": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles/20261201190000"
+    },
+    "prix": "22 à 50 $",
+    "resume_en": "A play without words in which puppets and violin explore family memory across three generations of women.",
+    "ics": "2026-12-01-les-veuves-paralleles-460362"
+   },
+   "accroche": "Sans un mot, marionnettes et violon explorent la mémoire de trois générations de femmes.",
+   "accroche_en": "Without a word, puppets and violin explore the memory of three generations of women.",
+   "mode": "tête d'affiche"
+  },
+  {
+   "k": "cinema",
+   "e": {
+    "date": "2026-12-02",
+    "heure": "19:00",
+    "discipline": "cinema",
+    "titre": "23 décembre – Miryam Bouchard",
+    "lieu": "Maison culturelle et communautaire de Montréal-Nord",
+    "url": "https://montreal.ca/evenements/23-decembre-miryam-bouchard-116180",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "ville",
+    "resume": "Voyez le film québécois 23 décembre, où les vies des personnages s'entremêlent à Montréal et à Québec, sur fond de tempête de neige à l’avant-veille de Noël.",
+    "prix": "Gratuit",
+    "billets": "https://lepointdevente.com/billets/8zy261203001?lang=fr",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ongswzfvw9dukg2ayciv.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/ongswzfvw9dukg2ayciv.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/23-decembre-miryam-bouchard-116180"
+    },
+    "confirmations": 1,
+    "resume_en": "Watch the Québec film 23 décembre, where characters' lives intertwine in Montréal and Québec City, against a snowstorm two days before Christmas.",
+    "ics": "2026-12-02-23-decembre-miryam-bouchard-9002de"
+   },
+   "accroche": "Des vies qui s'entremêlent entre Montréal et Québec, sur fond de tempête de neige.",
+   "accroche_en": "Lives intertwine between Montreal and Quebec City amid a snowstorm two days before Christmas.",
+   "mode": "découverte"
+  },
+  {
+   "k": "cirque",
+   "e": {
+    "date": "2026-12-03",
+    "heure": "19:00",
+    "discipline": "cirque",
+    "titre": "DOGMA — People Watching",
+    "lieu": "Usine C",
+    "url": "https://usine-c.com/",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "sorstu",
+    "resume": "Spectacle de cirque contemporain du collectif DOGMA, intitulé People Watching.",
+    "image": "https://ccmtl.ca/affiches/dogma-people-watching.jpg",
+    "confirmations": 1,
+    "resume_en": "Contemporary circus show by the DOGMA collective, titled People Watching.",
+    "ics": "2026-12-03-dogma-people-watching-d6d4e6"
+   },
+   "accroche": "Un spectacle de cirque contemporain signé du collectif DOGMA.",
+   "accroche_en": "A contemporary circus show by the DOGMA collective.",
+   "mode": "connu"
+  },
+  {
+   "k": "conference",
+   "e": {
+    "date": "2026-12-04",
+    "heure": "17:00",
+    "discipline": "conference",
+    "titre": "DE LA HOUSE & CKUT présentent : CONFÉRENCE DE DANSE - Construction de la communauté de la house danse à Montréal",
+    "lieu": "Ausgang Plaza",
+    "url": "https://www.ausgangplaza.com/evenements/de-la-house-ckut-prsentent-confrence-de-danse-construction-de-la-communaut-de-la-house-danse-montral",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Table ronde sur l'histoire de la scène house danse montréalaise, ses lieux emblématiques et ses générations de danseurs.",
+    "billets": "https://dice.fm/event/dkyr3g-de-la-house-ckut-prsentent-confrence-de-danse-construction-de-la-communaut-de-la-house-danse-montral-4th-dec-ausgang-plaza-montreal-tickets",
+    "confirmations": 1,
+    "affiche": {
+     "credit": "ausgangplaza.com",
+     "lien": "https://www.ausgangplaza.com/evenements/de-la-house-ckut-prsentent-confrence-de-danse-construction-de-la-communaut-de-la-house-danse-montral",
+     "url": "https://images.squarespace-cdn.com/content/v1/60900951649ed36adf418bf4/1793133593551-LH5G36W98140VTXKI02H/BANNER+VENDREDI+-+AUSGANG+PLAZA+FB+EVENT.jpg"
+    },
+    "prix": "Gratuit",
+    "resume_en": "Panel discussion on the history of the Montréal house dance scene, its iconic venues and its generations of dancers.",
+    "ics": "2026-12-04-de-la-house-ckut-presentent-conference-de-danse-co-a73044"
+   },
+   "accroche": "Une table ronde sur l'histoire de la house montréalaise et ses générations de danseurs.",
+   "accroche_en": "A round table on the history of Montreal house dance and its generations of dancers.",
+   "mode": "connu"
+  },
+  {
+   "k": "musique",
+   "e": {
+    "date": "2026-12-05",
+    "heure": "20:00",
+    "discipline": "musique",
+    "titre": "Les Louanges @ L'Olympia",
+    "lieu": "L'Olympia",
+    "url": "https://www.songkick.com/concerts/42989854-les-louanges-at-lolympia?utm_medium=organic&utm_source=microformat",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "songkick",
+    "billets": "http://www.songkick.com/concerts/42989854-les-louanges-at-lolympia?utm_medium=organic&utm_source=microformat",
+    "confirmations": 1,
+    "style": "pop",
+    "affiche": {
+     "credit": "songkick.com",
+     "lien": "https://www.songkick.com/concerts/42989854-les-louanges-at-lolympia?utm_medium=organic&utm_source=microformat",
+     "url": "https://images.sk-static.com/images/media/profile_images/artists/9105669/medium_avatar"
+    },
+    "liens": [
+     {
+      "type": "bandcamp",
+      "url": "https://leslouanges.bandcamp.com/",
+      "source": "musicbrainz",
+      "nom": "Les Louanges"
+     },
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/57GQLJX1O8guO5PVj46e6l",
+      "source": "musicbrainz",
+      "nom": "Les Louanges"
+     },
+     {
+      "type": "site",
+      "url": "https://www.leslouanges.com/",
+      "source": "musicbrainz",
+      "nom": "Les Louanges"
+     },
+     {
+      "type": "apple",
+      "url": "https://music.apple.com/ca/artist/1232747397",
+      "source": "musicbrainz",
+      "nom": "Les Louanges"
+     }
+    ],
+    "ics": "2026-12-05-les-louanges-l-olympia-f05866"
+   },
+   "accroche": "Une soirée musicale à découvrir avec Les Louanges sur la scène de L'Olympia.",
+   "accroche_en": "An evening of music to discover with Les Louanges on the L'Olympia stage.",
+   "mode": "découverte"
+  },
+  {
+   "k": "expo",
+   "e": {
+    "date": "2026-12-06",
+    "heure": "14:00",
+    "discipline": "expo",
+    "titre": "Visite guidée de l'exposition Revoir et relire avec Mimi et Jeanne d'Ève K Tremblay",
+    "lieu": "Maison de la culture de Parc-Extension",
+    "url": "https://montreal.ca/evenements/visite-guidee-de-lexposition-revoir-et-relire-avec-mimi-et-jeanne-deve-k-tremblay-119303",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "ville",
+    "resume": "Ne manquez pas la visite de l'expo Revoir et relire avec Mimi et Jeanne, le 6 décembre à 14h, grand public, 911 rue Jean-Talon Est, gratuit, sur réservation",
+    "prix": "Gratuit",
+    "billets": "https://lepointdevente.com/billets/4ne261206002?lang=fr",
+    "affiche": {
+     "url": "https://res.cloudinary.com/villemontreal/image/upload/w_1000,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/kptocutfecg2ldl4w7wo.png",
+     "petit": "https://res.cloudinary.com/villemontreal/image/upload/w_240,ar_16:9,c_lfill/f_auto,dpr_auto,q_auto/v1/portail/kptocutfecg2ldl4w7wo.png",
+     "credit": "Ville de Montréal",
+     "lien": "https://montreal.ca/evenements/visite-guidee-de-lexposition-revoir-et-relire-avec-mimi-et-jeanne-deve-k-tremblay-119303"
+    },
+    "confirmations": 1,
+    "resume_en": "Don't miss the visit to the exhibition Revoir et relire with Mimi et Jeanne, on December 6 at 2 p.m., for the general public, 911 Jean-Talon Street East, free, reservation required.",
+    "ics": "2026-12-06-visite-guidee-de-l-exposition-revoir-et-relire-ave-fbfc19"
+   },
+   "accroche": "Explore l'expo Revoir et relire en compagnie de Mimi et Jeanne, sur réservation et gratuitement.",
+   "accroche_en": "Explore the Revoir et relire exhibition with Mimi and Jeanne, by reservation and free of charge.",
+   "mode": "connu"
+  }
+ ],
+ "festivals": [
+  {
+   "nom": "Festival Bach",
+   "debut": "2026-11-04",
+   "fin": "2026-12-09",
+   "n": 18,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Festival du Jamais Lu",
+   "debut": "2026-12-01",
+   "fin": "2026-12-05",
+   "n": 0,
+   "coul": "#E22028",
+   "en_cours": true
+  },
+  {
+   "nom": "Noël dans le parc",
+   "debut": "2026-12-04",
+   "fin": "2026-12-25",
+   "n": 18,
+   "coul": "#3A75F0",
+   "en_cours": true
+  },
+  {
+   "nom": "Comiccon des Fêtes",
+   "debut": "2026-12-05",
+   "fin": "2026-12-06",
+   "n": 2,
+   "coul": "#CFC8BA",
+   "en_cours": true
+  }
+ ],
+ "salle": {
+  "lieu": "Maison symphonique",
+  "events": [
+   {
+    "date": "2026-11-30",
+    "heure": "19:30",
+    "discipline": "musique",
+    "titre": "Sir András Schiff | L'absolu Bach",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/en/event/sir-andras-schiff-labsolu-bach",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Récital du pianiste Sir András Schiff consacré à l'œuvre de Bach, dans le cadre du Festival Bach Montréal.",
+    "festival": "bach",
+    "prix": "110 à 175 $",
+    "billets": "https://am.ticketmaster.com/pda/en/buy/virtual-venue/UDZTMTEzMA==",
+    "confirmations": 3,
+    "style": "classique",
+    "affiche": {
+     "url": "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/2400x1035-Andras-Schiff.png?mtime=1774022796",
+     "credit": "placedesarts.com",
+     "lien": "https://www.placedesarts.com/en/event/sir-andras-schiff-labsolu-bach"
+    },
+    "liens": [
+     {
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/24K6LTZFqBAvKsorwK0iXd",
+      "source": "musicbrainz",
+      "nom": "Sir András Schiff"
+     },
+     {
+      "type": "site",
+      "url": "http://www.andrasschiff.com/",
+      "source": "musicbrainz",
+      "nom": "Sir András Schiff"
+     },
+     {
+      "type": "apple",
+      "url": "https://music.apple.com/gb/artist/3520027",
+      "source": "musicbrainz",
+      "nom": "Sir András Schiff"
+     },
+     {
+      "type": "tidal",
+      "url": "https://tidal.com/artist/12833",
+      "source": "musicbrainz",
+      "nom": "Sir András Schiff"
+     }
+    ],
+    "resume_en": "Recital by pianist Sir András Schiff devoted to Bach's works, as part of the Festival Bach Montréal.",
+    "ics": "2026-11-30-sir-andras-schiff-l-absolu-bach-2783b0"
+   },
+   {
+    "date": "2026-12-02",
+    "heure": "19:30",
+    "discipline": "musique",
+    "titre": "Petrouchka de Stravinsky : entre danse et traditions",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/evenement/petrouchka-de-stravinsky-entre-danse-et-traditions",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Le ballet de Stravinsky, où une marionnette prend vie, interprété par l'Orchestre symphonique de Montréal.",
+    "confirmations": 1,
+    "style": "classique",
+    "affiche": {
+     "url": "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Petrouchka_osm2026_2400x1035.png?mtime=1774562548",
+     "credit": "placedesarts.com",
+     "lien": "https://www.placedesarts.com/evenement/petrouchka-de-stravinsky-entre-danse-et-traditions"
+    },
+    "billets": "https://am.ticketmaster.com/pda/fr-ca/buy/virtual-venue/UDZTMTIwMg==",
+    "prix": "65 à 95 $",
+    "resume_en": "Stravinsky's ballet, in which a puppet comes to life, performed by the Orchestre symphonique de Montréal.",
+    "ics": "2026-12-02-petrouchka-de-stravinsky-entre-danse-et-traditions-21c70d"
+   },
+   {
+    "date": "2026-12-03",
+    "heure": "19:30",
+    "discipline": "musique",
+    "titre": "Petrouchka de Stravinsky : entre danse et traditions",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/evenement/petrouchka-de-stravinsky-entre-danse-et-traditions",
+    "complet": false,
+    "jeunePublic": false,
+    "source": "salles",
+    "resume": "Le ballet de Stravinsky, où une marionnette prend vie, interprété par l'Orchestre symphonique de Montréal.",
+    "confirmations": 1,
+    "style": "classique",
+    "affiche": {
+     "url": "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Petrouchka_osm2026_2400x1035.png?mtime=1774562548",
+     "credit": "placedesarts.com",
+     "lien": "https://www.placedesarts.com/evenement/petrouchka-de-stravinsky-entre-danse-et-traditions"
+    },
+    "billets": "https://am.ticketmaster.com/pda/fr-ca/buy/virtual-venue/UDZTMTIwMg==",
+    "prix": "65 à 95 $",
+    "resume_en": "Stravinsky's ballet, in which a puppet comes to life, performed by the Orchestre symphonique de Montréal.",
+    "ics": "2026-12-03-petrouchka-de-stravinsky-entre-danse-et-traditions-198b29"
+   }
+  ],
+  "quartier": "Quartier des spectacles"
+ },
+ "total": 771,
+ "expos": 130,
+ "tags": {
+  "danse": {
+   "salle": {
+    "compte": "tangentedanse",
+    "sur": true,
+    "source": "https://tangentedanse.ca/"
+   },
+   "artiste": {
+    "compte": "pieceofmindcollective",
+    "sur": true,
+    "source": "https://www.instagram.com/pieceofmindcollective/",
+    "qui": "Piece of Mind Collective"
+   }
+  },
+  "theatre": {
+   "salle": {
+    "compte": "theatreauxecuries",
+    "sur": true,
+    "source": "https://auxecuries.com/"
+   },
+   "artiste": {
+    "compte": "claudine_rivest_marionnettiste",
+    "sur": true,
+    "source": "https://claudinerivest.ca/llms.txt",
+    "qui": "Claudine Rivest"
+   }
+  },
+  "cinema": {},
+  "cirque": {
+   "salle": {
+    "compte": "usine.c",
+    "sur": true,
+    "source": "https://usine-c.com/"
+   },
+   "artiste": {
+    "compte": "peoplewatching___",
+    "sur": true,
+    "source": "https://vimeo.com/user169860096",
+    "qui": "People Watching"
+   }
+  },
+  "conference": {
+   "salle": {
+    "compte": "ausgangplaza",
+    "sur": true,
+    "source": "https://www.ausgangplaza.com/"
+   }
+  },
+  "musique": {
+   "artiste": {
+    "compte": "lil_louanges",
+    "sur": true,
+    "source": "https://www.instagram.com/lil_louanges/",
+    "qui": "Les Louanges"
+   }
+  },
+  "expo": {
+   "salle": {
+    "compte": "maisoncultureclaudeleveillee",
+    "sur": true,
+    "source": "https://lepointdevente.com/billets/4ne261206002?lang=fr"
+   },
+   "artiste": {
+    "compte": "evektremblay",
+    "sur": true,
+    "source": "https://www.instagram.com/evektremblay/",
+    "qui": "Ève K. Tremblay"
+   }
+  }
+ },
+ "_statut": "ok",
+ "_issue": null
+}
