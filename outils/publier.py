@@ -529,8 +529,12 @@ def _resume_selection(s, sha, semaine):
         retenus = identification.comptes_retenus(s, k)
         doutes = [f"@{v['compte']}" for q, v in t_.items() if isinstance(v, dict) and v.get("compte")
                   and v["compte"] not in retenus and not (v.get("sur") or v.get("confirme"))]
+        c_ = (s.get("createurs") or {}).get(k) or {}
+        gens = ", ".join(g["nom"] + (f" ({g['role']})" if g.get("role") else "") for g in c_.get("liste") or [])
         return ("\n  🏷️ " + (", ".join(f"@{h}" for h in retenus) if retenus else "aucun compte identifié")
-                + (f" · à confirmer : {', '.join(doutes)}" if doutes else ""))
+                + (f" · à confirmer : {', '.join(doutes)}" if doutes else "")
+                # (28 nov. 2026) les créateurs, pour chercher leur compte personnel
+                + (f"\n  👤 Créateurs : {gens}" + (f" ([source]({c_['source']}))" if c_.get("source") else "") if gens else ""))
     lignes = [f"- **{fs.nom_disc(p['k'], p['e'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
               + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") + tags(p["k"]) for p in s["picks"]]
     fests = ", ".join(f["nom"] for f in s["festivals"]) or "aucun"
@@ -564,6 +568,7 @@ def apercu():
     try:  # comptes Instagram de la salle et de l'artiste, trouvés sur les pages officielles
         import identification
         s["tags"] = identification.trouver(s["picks"])
+        s["createurs"] = {p["k"]: identification.createurs(p["e"]) for p in s["picks"]}
         # comptes confirmés d'avance par Alexandre (outils/reseaux/preferences/<lundi>.json, « tags »)
         f_pref = DOSSIER / "preferences" / f"{semaine}.json"
         for k, hs in (json.loads(f_pref.read_text(encoding="utf-8")).get("tags") or {}).items() if f_pref.exists() else []:
@@ -721,6 +726,7 @@ def consignes():
             try:
                 import identification
                 s.setdefault("tags", {})[k] = identification.trouver([nouveau])[k]
+                s.setdefault("createurs", {})[k] = identification.createurs(e)
             except Exception as exc:
                 print(f"Identification : échec ({exc})")
             s["picks"].sort(key=lambda p: (p["e"]["date"], p["e"].get("heure") or "99"))
