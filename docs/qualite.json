@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 48,
+  "date absente de la page officielle": 51,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -422,6 +422,33 @@
    "lieu": "Comedyville",
    "source": "salles",
    "url": "https://www.comedyville.ca/sktevents/saturday-night-comedy-show/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Samedis X-Larges du Café Campus",
+   "date": "2026-11-28",
+   "lieu": "Café Campus",
+   "source": "salles",
+   "url": "https://www.cafecampus.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Kingdom of Giants",
+   "date": "2026-11-29",
+   "lieu": "Café Campus",
+   "source": "salles",
+   "url": "https://www.cafecampus.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Mardis Rétro du Café Campus",
+   "date": "2026-12-01",
+   "lieu": "Café Campus",
+   "source": "salles",
+   "url": "https://www.cafecampus.com/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -1208,8 +1235,8 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 48,
-  "date confirmée": 220,
+  "date absente de la page": 51,
+  "date confirmée": 217,
   "lien mort remplacé": 17,
   "page illisible": 41
  },
@@ -1308,7 +1335,7 @@
   {
    "source": "panm360.com",
    "erreurs": 47,
-   "sorties": 346,
+   "sorties": 345,
    "taux": 13.6
   },
   {
@@ -1348,16 +1375,16 @@
    "taux": 6.1
   },
   {
-   "source": "lepointdevente.com",
-   "erreurs": 163,
-   "sorties": 2710,
+   "source": "sorstu.ca",
+   "erreurs": 116,
+   "sorties": 1947,
    "taux": 6.0
   },
   {
-   "source": "sorstu.ca",
-   "erreurs": 116,
-   "sorties": 1951,
-   "taux": 5.9
+   "source": "lepointdevente.com",
+   "erreurs": 163,
+   "sorties": 2701,
+   "taux": 6.0
   },
   {
    "source": "cinematheque.qc.ca",

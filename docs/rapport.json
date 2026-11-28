@@ -32,11 +32,16 @@
    "2027-01-14 : « Make A Dance » (Scène Vidéotron | Ferias) = « Make A Dance » (Quai Jacques-Cartier, Scène Vidéotron)",
    "2027-01-24 : « En attendant la cloche - Théâtre Bouches Décousues » (L'Entrepôt – maison de la culture de Lachine) = « En attendant la cloche » (Ville de Montréal - Lachine)"
   ],
+  "catalogues": [
+   {
+    "nom": "Réveillons!"
+   }
+  ],
   "qualite": {
-   "regles": 133,
+   "regles": 136,
    "contreverif": {
-    "date absente de la page": 48,
-    "date confirmée": 220,
+    "date absente de la page": 51,
+    "date confirmée": 217,
     "lien mort remplacé": 17,
     "page illisible": 41
    },
@@ -704,7 +709,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
+    "aucun événement trouvé dans 1501 caractères de texte : https://www.librairieleuguelionne.com/",
+    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
    ]
   },
   {
@@ -786,7 +792,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -795,7 +801,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
+    "page presque vide (93 caractères ; site en JavaScript ?) : https://bainmathieu.ca/programmation/",
+    "annonces à venir dans la page : 0 (https://bainmathieu.ca/programmation/)"
    ]
   },
   {
@@ -804,7 +811,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
+    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
+    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
    ]
   },
   {
@@ -851,7 +859,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
+    "page longue lue en 2 morceaux : https://www.quenditraton.com/spectacles/",
+    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
+    "récolte mince (0) : recherche élargie à https://www.quenditraton.com/spectacles"
    ]
   },
   {
@@ -1027,7 +1037,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
+    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
+    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
    ]
   },
   {
@@ -1036,7 +1047,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
+    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
+    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
    ]
   },
   {
@@ -1233,7 +1245,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
+    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
+    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
    ]
   },
   {
@@ -1314,8 +1327,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://museedeshospitalieres.qc.ca/activites/",
-    "annonces à venir dans la page : 0 (https://museedeshospitalieres.qc.ca/activites/)"
+    "aucun événement trouvé dans 3731 caractères de texte : https://museedeshospitalieres.qc.ca/activites/",
+    "annonces à venir dans la page : 0 (https://museedeshospitalieres.qc.ca/activites/)",
+    "récolte mince (0) : recherche élargie à https://museedeshospitalieres.qc.ca/expositions/, https://museedeshospitalieres.qc.ca/activites-familles/, https://museedeshospitalieres.qc.ca/en/activites/, https://museedeshospitalieres.qc.ca/activites/jeanne-mance-1606-1673/"
    ]
   },
   {
@@ -1464,7 +1478,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
+    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
+    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
    ]
   },
   {
@@ -1597,7 +1612,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://www.galerielacerte.com",
+    "pages de programmation lues aussi : https://galerielacerte.com/acceuil",
+    "aucun événement trouvé dans 2151 caractères de texte : https://www.galerielacerte.com",
     "annonces à venir dans la page : 0 (https://www.galerielacerte.com)"
    ]
   },
@@ -1743,7 +1759,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://www.yveslaroche.com",
+    "pages de programmation lues aussi : https://yveslaroche.com/exhibition/",
+    "aucun événement trouvé dans 2037 caractères de texte : https://www.yveslaroche.com",
     "annonces à venir dans la page : 0 (https://www.yveslaroche.com)"
    ]
   },
@@ -2135,8 +2152,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
-    "annonces à venir dans la page : 0 (https://theatredelesquisse.qc.ca/accueil/a-laffiche/)"
+    "aucun événement trouvé dans 4299 caractères de texte : https://theatredelesquisse.qc.ca/accueil/a-laffiche/",
+    "annonces à venir dans la page : 4 (https://theatredelesquisse.qc.ca/accueil/a-laffiche/)"
    ]
   },
   {
@@ -2184,7 +2201,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://laserre.ca/",
+    "aucun événement trouvé dans 4167 caractères de texte : https://laserre.ca/",
     "annonces à venir dans la page : 0 (https://laserre.ca/)"
    ]
   },
@@ -2204,7 +2221,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://offta.com/",
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 4001 caractères de texte : https://offta.com/",
     "annonces à venir dans la page : 0 (https://offta.com/)"
    ]
   },
@@ -2768,7 +2786,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3123,7 +3141,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
+    "lue dans le navigateur (automatique) : https://image-nation.org",
+    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3198,7 +3217,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
+    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
+    "aucun événement trouvé dans 3599 caractères de texte : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3263,7 +3283,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://metropolisbleu.org"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://metropolisbleu.org"
    ]
   },
   {
@@ -3294,6 +3314,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
+    "lue dans le navigateur (automatique) : https://accesasie.com",
     "page presque vide (93 caractères ; site en JavaScript ?) : https://accesasie.com",
     "annonces à venir dans la page : 0 (https://accesasie.com)"
    ]
@@ -3367,7 +3388,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://offta.com",
+    "pages de programmation lues aussi : https://offta.com/programme/, https://offta.com/calendrier/",
+    "aucun événement trouvé dans 3993 caractères de texte : https://offta.com",
     "annonces à venir dans la page : 0 (https://offta.com)"
    ]
   },
@@ -3387,7 +3409,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivalmontreal.org",
+    "pages de programmation lues aussi : https://festivalmontreal.org/programmation-2027/",
+    "aucun événement trouvé dans 1241 caractères de texte : https://festivalmontreal.org",
     "annonces à venir dans la page : 0 (https://festivalmontreal.org)"
    ]
   },
@@ -3398,8 +3421,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "page presque vide (242 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
-    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
+    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
+    "page presque vide (242 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
    ]
   },
   {
@@ -3513,8 +3536,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
-    "annonces à venir dans la page : 1 (https://osheaga.com)"
+    "pages de programmation lues aussi : https://osheaga.com/fr/evenements-a-l-annee",
+    "lue dans le navigateur (automatique) : https://osheaga.com",
+    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com"
    ]
   },
   {
@@ -3567,8 +3591,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivaltradmontreal.ca",
-    "annonces à venir dans la page : 0 (https://festivaltradmontreal.ca)"
+    "pages de programmation lues aussi : https://festivaltradmontreal.ca/l-agenda-du-ftm/",
+    "aucun événement trouvé dans 785 caractères de texte : https://festivaltradmontreal.ca",
+    "annonces à venir dans la page : 1 (https://festivaltradmontreal.ca)"
    ]
   },
   {
@@ -3577,7 +3602,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (0 caractères ; site en JavaScript ?) : https://quartiersdanses.com"
+    "page illisible (('Connection aborted.', RemoteDisconnected('Remote end closed connection without) : https://quartiersdanses.com"
    ]
   },
   {
@@ -3614,6 +3639,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
+    "lue dans le navigateur (automatique) : https://festivalphenomena.com",
     "page presque vide (93 caractères ; site en JavaScript ?) : https://festivalphenomena.com",
     "annonces à venir dans la page : 0 (https://festivalphenomena.com)"
    ]
@@ -3689,8 +3715,9 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://underpressure.ca",
-    "annonces à venir dans la page : 0 (https://underpressure.ca)"
+    "pages de programmation lues aussi : https://underpressure.ca/events2020/",
+    "page longue lue en 2 morceaux : https://underpressure.ca",
+    "aucun événement trouvé dans 13069 caractères de texte : https://underpressure.ca"
    ]
   },
   {
@@ -3755,6 +3782,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
+    "lue dans le navigateur (automatique) : https://westislandbluesfestival.com",
     "page presque vide (93 caractères ; site en JavaScript ?) : https://westislandbluesfestival.com",
     "annonces à venir dans la page : 0 (https://westislandbluesfestival.com)"
    ]
