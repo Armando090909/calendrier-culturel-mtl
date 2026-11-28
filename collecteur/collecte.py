@@ -1524,7 +1524,9 @@ def main() -> int:
     n_corr, retires = 0, set()
     for c in corr.get("evenements", []):
         for e in events:
-            if e["date"] == c["date"] and e["lieu"] == c["lieu"] and c["titre"].lower() in e["titre"].lower():
+            # (28 nov. 2026) « heure_exacte » : seulement la séance à cette heure (ex. un doublon à 17 h, pas celle de 19 h 30)
+            if e["date"] == c["date"] and e["lieu"] == c["lieu"] and c["titre"].lower() in e["titre"].lower() \
+                    and (not c.get("heure_exacte") or e.get("heure") == c["heure_exacte"]):
                 n_corr += 1
                 if c.get("retirer"):
                     retires.add(id(e))
