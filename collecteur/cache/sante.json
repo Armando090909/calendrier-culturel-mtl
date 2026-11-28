@@ -1,15 +1,9 @@
 {
- "ouverts": {
-  "champ:bardatcha.ca:heure": {
-   "depuis": "2026-11-27",
-   "jours": 1,
-   "issue": null
-  }
- },
+ "ouverts": {},
  "sources_ok": {
-  "Ville de Montréal – événements publics": 1088,
+  "Ville de Montréal – événements publics": 1082,
   "Ask A Punk (DIY, punk, hardcore)": 28,
-  "Sors-tu? (14 prochains jours)": 452,
+  "Sors-tu? (14 prochains jours)": 378,
   "Songkick (concerts, 2 mois)": 224,
   "Espace GO": 2,
   "TNM": 3,
@@ -81,8 +75,8 @@
   "Théâtre Paradoxe": 6,
   "Salle Joseph-Rouleau (Jeunesses Musicales)": 3,
   "Cat's Corner (danse swing)": 4,
-  "LESPACEMAKER – événements": 67,
-  "LESPACEMAKER – formations": 66,
+  "LESPACEMAKER – événements": 69,
+  "LESPACEMAKER – formations": 70,
   "Cinéma au Cinoche": 6,
   "Montréal centre-ville – événements": 10,
   "Cinémathèque québécoise – programmation": 43,
@@ -136,7 +130,7 @@
   "Club Balattou (musiques du monde)": 16,
   "Cabaret Jazz L'Entracte": 5,
   "Le Balcon": 29,
-  "Robin des Bois (parc La Fontaine)": 9,
+  "Robin des Bois (parc La Fontaine)": 8,
   "Turbo Haüs": 16,
   "Quai des Brumes": 2,
   "Le Ministère": 17,
@@ -200,7 +194,7 @@
   "Le Balattou (billetterie, 2e page)": 5,
   "Le Belmont (billetterie)": 6,
   "Maison culturelle et communautaire de Montréal-Nord (billetterie)": 8,
-  "Soirées quiz (hebdomadaires)": 105,
+  "Soirées quiz (hebdomadaires)": 107,
   "Ligues d'improvisation (hebdomadaires)": 9,
   "Musique live hebdomadaire (Modavie)": 122,
   "Ateliers hebdomadaires": 8,
@@ -250,7 +244,6 @@
   "Théâtre Maisonneuve (découverte)": 194
  },
  "totaux": {
-  "2026-11-14": 2830,
   "2026-11-15": 2731,
   "2026-11-16": 2640,
   "2026-11-17": 2609,
@@ -263,9 +256,10 @@
   "2026-11-24": 2866,
   "2026-11-25": 2791,
   "2026-11-26": 2653,
-  "2026-11-27": 2738
+  "2026-11-27": 2738,
+  "2026-11-28": 2599
  },
- "dernier_jour": "2026-11-27",
+ "dernier_jour": "2026-11-28",
  "minces_depuis": {
   "Librairie L'Euguélionne": "2026-11-13",
   "Le Système (RA)": "2026-11-13",
@@ -299,7 +293,6 @@
   "Bar Le Ritz PDB": "2026-11-27",
   "Robin des Bois (parc La Fontaine)": "2026-11-27",
   "Le Ministère": "2026-11-27",
-  "Théâtre de l'Esquisse": "2026-11-27",
   "Ursa": "2026-11-27",
   "La Lumière Collective": "2026-11-27",
   "Le Balcon (ma.to)": "2026-11-27"
