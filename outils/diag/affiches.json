@@ -1,18 +1,46 @@
 {
- "total": 1421,
- "echecs": 22,
+ "total": 1383,
+ "echecs": 65,
  "par_site": {
-  "centaurtheatre.com": {
+  "www.comedyville.ca": {
+   "affiches": 7,
+   "echecs": 7
+  },
+  "ville.montreal-est.qc.ca": {
+   "affiches": 6,
+   "echecs": 6
+  },
+  "lalumierecollective.org": {
+   "affiches": 6,
+   "echecs": 6
+  },
+  "www.mado.qc.ca": {
    "affiches": 5,
    "echecs": 5
   },
+  "theatreplaza.ca": {
+   "affiches": 5,
+   "echecs": 5
+  },
+  "coeurdessciences.uqam.ca": {
+   "affiches": 4,
+   "echecs": 4
+  },
+  "robindesbois.ca": {
+   "affiches": 4,
+   "echecs": 4
+  },
   "img.casadelpopolo.com": {
-   "affiches": 78,
+   "affiches": 75,
    "echecs": 3
   },
-  "calendrier.umontreal.ca": {
-   "affiches": 8,
-   "echecs": 2
+  "www.lacomedie.ca": {
+   "affiches": 3,
+   "echecs": 3
+  },
+  "centredesmusiciensdumonde.com": {
+   "affiches": 3,
+   "echecs": 3
   },
   "cdn.placedesarts.com": {
    "affiches": 41,
@@ -22,212 +50,96 @@
    "affiches": 2,
    "echecs": 2
   },
-  "turbohaus.ca": {
-   "affiches": 3,
-   "echecs": 1
-  },
-  "www.studio303.ca": {
-   "affiches": 6,
-   "echecs": 1
-  },
-  "www.mcgill.ca": {
+  "agoradanse.com": {
    "affiches": 2,
-   "echecs": 1
+   "echecs": 2
   },
-  "ma.to": {
-   "affiches": 1,
+  "calendrier.umontreal.ca": {
+   "affiches": 8,
    "echecs": 1
   },
   "tuxedov1.blob.core.windows.net": {
-   "affiches": 12,
+   "affiches": 13,
    "echecs": 1
   },
   "images.ctfassets.net": {
-   "affiches": 37,
+   "affiches": 33,
    "echecs": 1
   },
-  "www.ville.dorval.qc.ca": {
-   "affiches": 3,
+  "www.foufouneselectriques.com": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "tangolibre.ca": {
+   "affiches": 1,
+   "echecs": 1
+  },
+  "www.studio303.ca": {
+   "affiches": 5,
+   "echecs": 1
+  },
+  "static-assets.artlogic.net": {
+   "affiches": 1,
    "echecs": 1
   },
   "freight.cargo.site": {
    "affiches": 1,
    "echecs": 1
   },
-  "res.cloudinary.com": {
-   "affiches": 600,
-   "echecs": 0
-  },
-  "ridm.ca": {
-   "affiches": 49,
-   "echecs": 0
-  },
-  "cinemapublic.ca": {
-   "affiches": 24,
-   "echecs": 0
-  },
-  "www.fbdm-mcaf.ca": {
-   "affiches": 5,
-   "echecs": 0
-  },
-  "montrealcentreville.ca": {
+  "montreal-west.ca": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
   },
-  "www.cinemamoderne.com": {
-   "affiches": 19,
-   "echecs": 0
-  },
-  "lelivart.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "reseauartactuel.org": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "panm360.com": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "assets.cdn.filesafe.space": {
+  "laserre.ca": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
+  },
+  "theatreoutremont.ca": {
+   "affiches": 1,
+   "echecs": 1
   },
   "www.upstairsjazz.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "www.concordia.ca": {
-   "affiches": 7,
-   "echecs": 0
-  },
-  "rideauvert.qc.ca": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
   },
-  "images.sk-static.com": {
-   "affiches": 59,
-   "echecs": 0
-  },
-  "static.wixstatic.com": {
-   "affiches": 27,
-   "echecs": 0
-  },
-  "comedynest.com": {
-   "affiches": 4,
-   "echecs": 0
-  },
-  "theatresaintecatherine.com": {
-   "affiches": 13,
-   "echecs": 0
-  },
-  "quatsous.com": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "tpos.s3.amazonaws.com": {
-   "affiches": 116,
-   "echecs": 0
-  },
-  "duceppe.com": {
-   "affiches": 3,
-   "echecs": 0
-  },
-  "www.theatredesjardins.com": {
-   "affiches": 15,
-   "echecs": 0
-  },
-  "legesu.com": {
-   "affiches": 5,
-   "echecs": 0
-  },
-  "www.denise-pelletier.qc.ca": {
+  "ent-nts.ca": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
   },
-  "leministere.ca": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "s3.amazonaws.com": {
-   "affiches": 11,
-   "echecs": 0
-  },
-  "doavub8d2uzrx.cloudfront.net": {
+  "casteliers.ca": {
    "affiches": 1,
-   "echecs": 0
-  },
-  "img1.wsimg.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "images.squarespace-cdn.com": {
-   "affiches": 29,
-   "echecs": 0
-  },
-  "quaidesbrumes.ca": {
-   "affiches": 2,
-   "echecs": 0
-  },
-  "slmwebsite-2023.s3.ca-central-1.amazonaws.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "0dbe3419b03f7d74f778-23e04ce6ef63ba8e4d8bc85a5e1a1360.ssl.cf2.rackcdn.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "images.lumacdn.com": {
-   "affiches": 6,
-   "echecs": 0
-  },
-  "www.beaconsfield.ca": {
-   "affiches": 2,
    "echecs": 0
   },
   "montreal.askapunk.net": {
-   "affiches": 14,
+   "affiches": 17,
    "echecs": 0
   },
-  "s1.ticketm.net": {
-   "affiches": 12,
-   "echecs": 0
-  },
-  "www.labrassee.cafe": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "pauline-julien.com": {
-   "affiches": 18,
-   "echecs": 0
-  },
-  "www.eventbrite.com": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "www.comedyville.ca": {
-   "affiches": 8,
-   "echecs": 0
-  },
-  "urba.now": {
+  "cdn.caligram.com": {
    "affiches": 3,
    "echecs": 0
   },
-  "www.mado.qc.ca": {
-   "affiches": 5,
+  "res.cloudinary.com": {
+   "affiches": 583,
    "echecs": 0
   },
-  "www.foufouneselectriques.com": {
+  "www.cinemamoderne.com": {
+   "affiches": 20,
+   "echecs": 0
+  },
+  "cinemapublic.ca": {
+   "affiches": 26,
+   "echecs": 0
+  },
+  "m-a-i.qc.ca": {
    "affiches": 1,
    "echecs": 0
   },
-  "cdn.ca.yapla.com": {
-   "affiches": 6,
+  "ridm.ca": {
+   "affiches": 32,
    "echecs": 0
   },
-  "ville.montreal-est.qc.ca": {
-   "affiches": 6,
+  "tpos.s3.amazonaws.com": {
+   "affiches": 111,
    "echecs": 0
   },
   "bdd094f266673f373aef-c9dca8f0ef9a9493e8d9c35c4e77c889.ssl.cf2.rackcdn.com": {
@@ -238,7 +150,23 @@
    "affiches": 1,
    "echecs": 0
   },
-  "www.epasslive.com": {
+  "rideauvert.qc.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "www.denise-pelletier.qc.ca": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "assets.cdn.filesafe.space": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "images.sk-static.com": {
+   "affiches": 56,
+   "echecs": 0
+  },
+  "www.labrassee.cafe": {
    "affiches": 1,
    "echecs": 0
   },
@@ -246,7 +174,19 @@
    "affiches": 5,
    "echecs": 0
   },
-  "www.lacomedie.ca": {
+  "theatresaintecatherine.com": {
+   "affiches": 11,
+   "echecs": 0
+  },
+  "comedynest.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
+  "static.wixstatic.com": {
+   "affiches": 25,
+   "echecs": 0
+  },
+  "legesu.com": {
    "affiches": 3,
    "echecs": 0
   },
@@ -254,12 +194,20 @@
    "affiches": 6,
    "echecs": 0
   },
-  "ccmtl.ca": {
-   "affiches": 1,
+  "images.squarespace-cdn.com": {
+   "affiches": 28,
    "echecs": 0
   },
-  "lalumierecollective.org": {
-   "affiches": 6,
+  "centaurtheatre.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
+  "ccmtl.ca": {
+   "affiches": 3,
+   "echecs": 0
+  },
+  "s3.amazonaws.com": {
+   "affiches": 11,
    "echecs": 0
   },
   "cdn.espacestdenis.com": {
@@ -274,32 +222,48 @@
    "affiches": 1,
    "echecs": 0
   },
-  "tangolibre.ca": {
-   "affiches": 1,
+  "panm360.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "turbohaus.ca": {
+   "affiches": 2,
    "echecs": 0
   },
   "media.admitone.com": {
+   "affiches": 4,
+   "echecs": 0
+  },
+  "cdn.ca.yapla.com": {
    "affiches": 5,
    "echecs": 0
   },
-  "theatreplaza.ca": {
+  "www.concordia.ca": {
    "affiches": 5,
-   "echecs": 0
-  },
-  "westmount.org": {
-   "affiches": 1,
    "echecs": 0
   },
   "image.tmdb.org": {
    "affiches": 4,
    "echecs": 0
   },
-  "omniwebticketing.com": {
-   "affiches": 8,
+  "pauline-julien.com": {
+   "affiches": 16,
+   "echecs": 0
+  },
+  "westmount.org": {
+   "affiches": 2,
    "echecs": 0
   },
   "www.cinematheque.qc.ca": {
-   "affiches": 3,
+   "affiches": 11,
+   "echecs": 0
+  },
+  "omniwebticketing.com": {
+   "affiches": 5,
+   "echecs": 0
+  },
+  "reseauartactuel.org": {
+   "affiches": 2,
    "echecs": 0
   },
   "cdn.ma.to": {
@@ -310,19 +274,39 @@
    "affiches": 1,
    "echecs": 0
   },
+  "img.evbuc.com": {
+   "affiches": 14,
+   "echecs": 0
+  },
+  "s1.ticketm.net": {
+   "affiches": 12,
+   "echecs": 0
+  },
   "lebordel.ca": {
-   "affiches": 5,
+   "affiches": 4,
    "echecs": 0
   },
-  "coeurdessciences.uqam.ca": {
-   "affiches": 5,
+  "casinos.lotoquebec.com": {
+   "affiches": 9,
    "echecs": 0
   },
-  "centredesmusiciensdumonde.com": {
-   "affiches": 3,
+  "www.beaconsfield.ca": {
+   "affiches": 6,
    "echecs": 0
   },
-  "agoradanse.com": {
+  "images.lumacdn.com": {
+   "affiches": 7,
+   "echecs": 0
+  },
+  "www.theatredesjardins.com": {
+   "affiches": 13,
+   "echecs": 0
+  },
+  "montrealcentreville.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "lelivart.com": {
    "affiches": 2,
    "echecs": 0
   },
@@ -330,8 +314,36 @@
    "affiches": 1,
    "echecs": 0
   },
+  "www.mcgill.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "www.ville.dorval.qc.ca": {
+   "affiches": 3,
+   "echecs": 0
+  },
+  "duceppe.com": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "quatsous.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "urba.now": {
+   "affiches": 2,
+   "echecs": 0
+  },
+  "www.eventbrite.com": {
+   "affiches": 1,
+   "echecs": 0
+  },
   "www.montrealcomiccon.com": {
    "affiches": 1,
+   "echecs": 0
+  },
+  "www.fbdm-mcaf.ca": {
+   "affiches": 2,
    "echecs": 0
   },
   "xjlpttrziisldlclhsth.supabase.co": {
@@ -342,12 +354,12 @@
    "affiches": 3,
    "echecs": 0
   },
-  "img.evbuc.com": {
-   "affiches": 8,
-   "echecs": 0
-  },
   "orchestremetropolitain.com": {
    "affiches": 2,
+   "echecs": 0
+  },
+  "api.theatreprospero.com": {
+   "affiches": 1,
    "echecs": 0
   },
   "cdn.simpletix.com": {
@@ -362,19 +374,7 @@
    "affiches": 1,
    "echecs": 0
   },
-  "montreal-west.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "laserre.ca": {
-   "affiches": 1,
-   "echecs": 0
-  },
   "cotesaintluc.org": {
-   "affiches": 1,
-   "echecs": 0
-  },
-  "theatreoutremont.ca": {
    "affiches": 1,
    "echecs": 0
   },
@@ -382,23 +382,19 @@
    "affiches": 1,
    "echecs": 0
   },
-  "robindesbois.ca": {
-   "affiches": 4,
+  "assets.getcuebox.com": {
+   "affiches": 5,
    "echecs": 0
   },
   "catalog.ville.mont-royal.qc.ca": {
    "affiches": 1,
    "echecs": 0
   },
-  "casinos.lotoquebec.com": {
-   "affiches": 9,
-   "echecs": 0
-  },
-  "ent-nts.ca": {
+  "gxxdnght.com": {
    "affiches": 1,
    "echecs": 0
   },
-  "gxxdnght.com": {
+  "quaidesbrumes.ca": {
    "affiches": 1,
    "echecs": 0
   },
@@ -407,47 +403,106 @@
    "echecs": 0
   },
   "cms-mtl.igloofest.ca": {
-   "affiches": 13,
+   "affiches": 27,
+   "echecs": 0
+  },
+  "espacego.com": {
+   "affiches": 1,
    "echecs": 0
   }
  },
  "exemples": {
-  "turbohaus.ca": [
-   "https://turbohaus.ca/api/media/file/killed-obelisk-amristix-computer-science.jpg"
-  ],
-  "centaurtheatre.com": [
-   "https://centaurtheatre.com/wp-content/uploads/2026/11/In-Conversation-with-Shaw-Festival-Artistic-Director-Tim-Caroll.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
-   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg"
-  ],
-  "calendrier.umontreal.ca": [
-   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Piano.png",
-   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/LFO-26nov.png"
-  ],
-  "ma.to": [
-   "https://ma.to/og-image-default.png"
+  "ville.montreal-est.qc.ca": [
+   "https://ville.montreal-est.qc.ca/wp-content/uploads/2024/12/Journaliste-enfant.jpg",
+   "https://ville.montreal-est.qc.ca/wp-content/uploads/2026/09/Actu-tournage.jpg",
+   "https://ville.montreal-est.qc.ca/wp-content/uploads/2026/09/AVIS-ACTUALITES-1.jpg"
   ],
   "www.dansedanse.ca": [
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
    "https://www.dansedanse.ca/uploads/SPECTACLE-2026-27/Site-web-pleine-largeur-2160-x-1125-px/_1200x630_crop_center-center_82_none/Compagnie-Marie-Chouinard-Henri-Michaux-Mouvements-et-Solos-et-duos-choisis-1.jpg"
   ],
+  "www.mado.qc.ca": [
+   "https://www.mado.qc.ca/wp-content/uploads/1788537205JimmyMoore-Celine-261107-horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1792021092MadoRecoit-261106-Horizontal.jpg",
+   "https://www.mado.qc.ca/wp-content/uploads/1792351291TracyTrashShow-261101-horizontal.jpg"
+  ],
+  "www.foufouneselectriques.com": [
+   "https://www.foufouneselectriques.com/wp-content/uploads/2024/10/foufs_stock001-2.jpg"
+  ],
   "cdn.placedesarts.com": [
-   "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Werther.jpg",
-   "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Ballets-Jazz-Montreal-Dance-Me-1.jpg"
+   "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Ballets-Jazz-Montreal-Dance-Me-1.jpg",
+   "https://cdn.placedesarts.com/tranforms/_1200x630_crop_center-center_82_none_ns/Werther.jpg"
+  ],
+  "www.lacomedie.ca": [
+   "https://www.lacomedie.ca/wp-content/uploads/2016/11/Le-clan-des-divorcees-photo-theatre-montreal3.jpg",
+   "https://www.lacomedie.ca/wp-content/uploads/2025/10/Affiche-Chicane-de-Famille-la-mere-copie.jpg",
+   "https://www.lacomedie.ca/wp-content/uploads/2024/07/Affiche-LE-GRAND-SOIR-HIVER-2026-2027-copie.jpg"
+  ],
+  "www.comedyville.ca": [
+   "https://www.comedyville.ca/wp-content/uploads/2024/10/Montreal-Comedy-Show-Montreal-Comedy-Club.png",
+   "https://www.comedyville.ca/wp-content/uploads/2023/07/Saturday-Night-Comedy-Comedy-Club-in-Montreal.jpg",
+   "https://www.comedyville.ca/wp-content/uploads/2025/08/montreal-off-the-cuff-live-improv-comedy-montreal-ali-mohammadi.jpg"
+  ],
+  "lalumierecollective.org": [
+   "https://lalumierecollective.org/wp-content/uploads/2026/11/unnamed.jpg",
+   "https://lalumierecollective.org/wp-content/uploads/2026/11/L1007507.jpg",
+   "https://lalumierecollective.org/wp-content/uploads/2026/10/Dragica-Danica-Duska-_-or-_-when-Zora-the-goddess-of-Dawn-opens-the-gates-of-Heaven-for-Sun-to-emerge_2.webp"
+  ],
+  "tangolibre.ca": [
+   "https://tangolibre.ca/wp-content/uploads/2025/01/Tangolibre-2025-W01.jpg"
+  ],
+  "theatreplaza.ca": [
+   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-29-novembre-2026_V2.jpg",
+   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-4-decembre-2026.png",
+   "https://theatreplaza.ca/wp-content/uploads/2026/11/Affiche-11-decembre-2026.png"
+  ],
+  "calendrier.umontreal.ca": [
+   "https://calendrier.umontreal.ca/public/calendrier/images_activites_MUSIQUE/Cuivres.png"
+  ],
+  "coeurdessciences.uqam.ca": [
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/261201_froret600.jpg",
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/261203_Menopause600.jpg",
+   "https://coeurdessciences.uqam.ca/wp-content/uploads/Bergeron2026.jpg"
+  ],
+  "centredesmusiciensdumonde.com": [
+   "https://centredesmusiciensdumonde.com/wp-content/uploads/2026/01/DJI_20250101132833_0066_D.jpg",
+   "https://centredesmusiciensdumonde.com/wp-content/uploads/2026/09/Couverture-Facebook-Concerts-intimes-2026-2027-4.png",
+   "https://centredesmusiciensdumonde.com/wp-content/uploads/2024/08/hamin_honari_horizonspetergram.jpg"
+  ],
+  "agoradanse.com": [
+   "https://agoradanse.com/wp-content/uploads/2026/10/acorps-vins_6.jpg",
+   "https://agoradanse.com/wp-content/uploads/2026/06/Laffront-des-chimeres-by-Sarah-Seene.jpg"
+  ],
+  "static-assets.artlogic.net": [
+   "https://static-assets.artlogic.net/w_650,c_limit,f_auto,fl_lossy,q_auto/ws-pfoac/usr/images/exhibitions/main_image_override/283/les-rues-portent-leurs-pas-2026-leila-zelli.jpg"
   ],
   "img.casadelpopolo.com": [
-   "https://img.casadelpopolo.com/qp0szherEPczig-lXgrGdR2nEytJJX-8mR-n86SDBd4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3g5b3J1OWRi/YTJiOGVxMzdncGht/azRyeDFpazI",
    "https://img.casadelpopolo.com/tWI1Ic6Zz3x3cXDBPTHrHwl6TL_4WM5LyhIHLpQdKwo/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3BpdTRvemo2/NmVxYndkcjNhdWVh/eHM3emc0Y2Y",
-   "https://img.casadelpopolo.com/atLH7VVsJjgJK2kOxg_x4OxNE546YfG4QuLXmcWHdB4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3h0Y3ZkaDk4/c2p3ZnJhdXN2czR3/dTA5cmM3YnE"
+   "https://img.casadelpopolo.com/atLH7VVsJjgJK2kOxg_x4OxNE546YfG4QuLXmcWHdB4/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3h0Y3ZkaDk4/c2p3ZnJhdXN2czR3/dTA5cmM3YnE",
+   "https://img.casadelpopolo.com/2jZ8myTB-AA1qExIvxjrZkhVMlFu1eU5m0GhVkfj6XI/el:1/aHR0cHM6Ly90ZXNz/ZWxsYXRpb24uczMu/dXMtd2VzdC0wMDEu/YmFja2JsYXplYjIu/Y29tL3BqYzE0b2wx/dTVra2NnOTYzZGF5/MWgzbGd3enM"
   ],
   "freight.cargo.site": [
    "https://freight.cargo.site/t/original/i/75055903903be3c4b9cdce06d25a9129631152385703545f2eafa393fa2a408f/2025-10-Akousma-XXI-CCampeau-4675.jpg"
   ],
-  "www.ville.dorval.qc.ca": [
-   "https://www.ville.dorval.qc.ca/storage/app/resources/resize/1200_0_0_0_auto/img_2810b6d3567a0384ba740ecf30c1608e.jpg"
+  "montreal-west.ca": [
+   "https://montreal-west.ca/wp-content/uploads/2023/05/Copie-de-sceau_cam_en_tournee_coul_Plan-de-travail-1.png"
   ],
-  "www.mcgill.ca": [
-   "https://www.mcgill.ca/channels/files/channels/styles/wysiwyg_large/public/channels/image/liu_poster.png?itok=FKB-6wK7"
+  "laserre.ca": [
+   "https://laserre.ca/wp-content/uploads/2026/08/DD-rectangle-final.jpg"
+  ],
+  "theatreoutremont.ca": [
+   "https://theatreoutremont.ca/wp-content/uploads/2025/09/Visuel-site-intenet.png"
+  ],
+  "robindesbois.ca": [
+   "https://robindesbois.ca/wp-content/uploads/IMG_7338-2.jpg",
+   "https://robindesbois.ca/wp-content/uploads/1.-Promo-Choix-scaled.jpg",
+   "https://robindesbois.ca/wp-content/uploads/image.jpeg"
+  ],
+  "www.upstairsjazz.com": [
+   "https://www.upstairsjazz.com/wp-content/uploads/2022/12/christmas_closed.jpg"
+  ],
+  "ent-nts.ca": [
+   "https://ent-nts.ca/app/uploads/2024/11/share-default.jpg"
   ],
   "www.studio303.ca": [
    "https://www.studio303.ca/programmation/linda-rabin-continuum-et-soin-de-soi-la-guerison-de-linterieur-26-27-fr/\\/\\/www.studio303.ca\\/wp-content\\/uploads\\/2026\\/11\\/workshop-linda-rabin-tony-chong.png"
@@ -460,20 +515,20 @@
   ]
  },
  "sans_affiche_par_discipline": {
-  "conference": 27,
-  "atelier": 119,
-  "musique": 336,
+  "atelier": 122,
+  "danse": 15,
+  "conference": 16,
   "expo": 3,
-  "lettres": 9,
-  "theatre": 65,
-  "quiz": 85,
-  "jeune": 20,
-  "cinema": 8,
-  "humour": 34,
-  "danse": 18,
-  "social": 7,
-  "cirque": 7,
-  "fete": 11,
-  "poesie": 1
+  "musique": 326,
+  "theatre": 56,
+  "humour": 31,
+  "lettres": 8,
+  "jeune": 15,
+  "quiz": 90,
+  "cinema": 7,
+  "social": 4,
+  "fete": 30,
+  "cirque": 3,
+  "poesie": 2
  }
 }

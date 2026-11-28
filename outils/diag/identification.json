@@ -1,63 +1,70 @@
 {
- "theatre": {
+ "danse": {
   "salle": {
-   "compte": "theatrelalicorne",
+   "compte": "tangentedanse",
    "sur": true,
-   "source": "https://theatrelalicorne.com/"
+   "source": "https://tangentedanse.ca/"
   },
   "artiste": {
-   "compte": "ti_senat",
+   "compte": "pieceofmindcollective",
    "sur": true,
-   "source": "https://tvrm.ca/episode/lez-au24-075-lezarts-lanaudiere-emission-du-19-septembre-2024/",
-   "qui": "Fabrice Yvanoff Sénat"
+   "source": "https://www.instagram.com/pieceofmindcollective/",
+   "qui": "Piece of Mind Collective"
+  }
+ },
+ "theatre": {
+  "salle": {
+   "compte": "theatreauxecuries",
+   "sur": true,
+   "source": "https://auxecuries.com/"
+  },
+  "artiste": {
+   "compte": "claudine_rivest_marionnettiste",
+   "sur": true,
+   "source": "https://www.instagram.com/claudine_rivest_marionnettiste/",
+   "qui": "Claudine Rivest"
+  }
+ },
+ "cinema": {},
+ "cirque": {
+  "salle": {
+   "compte": "usine.c",
+   "sur": true,
+   "source": "https://usine-c.com/"
+  },
+  "artiste": {
+   "compte": "peoplewatching___",
+   "sur": true,
+   "source": "https://vimeo.com/user169860096",
+   "qui": "People Watching"
+  }
+ },
+ "conference": {
+  "salle": {
+   "compte": "ausgangplaza",
+   "sur": true,
+   "source": "https://www.ausgangplaza.com/"
+  }
+ },
+ "musique": {
+  "artiste": {
+   "compte": "lil_louanges",
+   "sur": true,
+   "source": "https://www.instagram.com/lil_louanges/",
+   "qui": "Les Louanges"
   }
  },
  "expo": {
   "salle": {
-   "compte": "oboro4001",
+   "compte": "maisoncultureclaudeleveillee",
    "sur": true,
-   "source": "https://www.oboro.net/"
+   "source": "https://lepointdevente.com/billets/4ne261206002?lang=fr"
   },
   "artiste": {
-   "compte": "rcaaq",
-   "sur": false,
-   "source": "https://reseauartactuel.org/evenement/karl-lemieux-plateformes/"
-  }
- },
- "conference": {
-  "artiste": {
-   "compte": "salonlivremtl",
+   "compte": "evektremblay",
    "sur": true,
-   "source": "https://m.youtube.com/watch?v=ogWOs2BR2OE",
-   "qui": "Salon du livre de Montréal"
+   "source": "https://www.evektremblay.com/pagecv",
+   "qui": "Ève K. Tremblay"
   }
- },
- "danse": {
-  "artiste": {
-   "compte": "soeursschmutt",
-   "sur": true,
-   "source": "https://lepointdevente.com/billets/prima-soeursschmutt?lang=fr"
-  }
- },
- "musique": {
-  "salle": {
-   "compte": "clubsodamtl",
-   "sur": true,
-   "source": "https://clubsoda.ca/"
-  },
-  "artiste": {
-   "compte": "lydiakepi",
-   "sur": true,
-   "source": "https://www.instagram.com/lydiakepi/",
-   "qui": "Lydia Képinski"
-  }
- },
- "cinema": {
-  "artiste": {
-   "compte": "ridm_festival",
-   "sur": false,
-   "source": "https://ridm.ca/fr/films/partout-et-nulle-part"
-  }
- },
- "jeune": {}
+ }
 }
