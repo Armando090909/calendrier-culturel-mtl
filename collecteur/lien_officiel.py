@@ -183,6 +183,9 @@ def _index_du_site(site: str, lire, depart: list[str]) -> list[str]:
         lus += 1
         locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", txt or "")
         enfants = [l for l in locs if l.endswith(".xml") or "sitemap" in l]
+        # (28 nov. 2026) pages d'images jointes (« /evenement/la-parisienne/triangle-dor/ »), auteurs, catégories : écartées
+        locs = [l for l in locs if l in enfants or not re.search(r"(?i)attachment|/author/|/category/|/tag/", l)]
+        enfants = [l for l in enfants if not re.search(r"(?i)attachment|image|media|author|category|tag", l)]
         # plans d'événements d'abord (les articles de blogue ou les produits viennent après)
         enfants.sort(key=lambda l: not re.search(r"(?i)event|evenement|spectacle|show|programm|activit|concert|tribe", l))
         plans = enfants + plans
@@ -276,7 +279,10 @@ def officialiser(events: list[dict], sources: list[dict], telecharger, aujourd: 
             if site not in index:
                 index[site] = _index_du_site(site, lire, [site] + [u for u in [programmation.get(e["lieu"], "")]
                                                                    if u.startswith("http") and _sur(u, site)])
-            cands = sorted(((_correspond(u, e), u) for u in index[site]), reverse=True)
+            # à égalité, l'adresse la plus courte (la page du spectacle plutôt qu'une sous-page)
+            cands = sorted(((_correspond(u, e), -len(urlparse(u).path.strip("/").split("/")), u) for u in index[site]),
+                           reverse=True)
+            cands = [(c[0], c[2]) for c in cands]
             if cands and cands[0][0]:
                 page = cands[0][1]
             elif ia_ok and recherches > 0:
