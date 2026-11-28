@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 45,
+  "date absente de la page officielle": 46,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -494,6 +494,15 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-29-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tarikuna au Quai des Brumes",
+   "date": "2026-11-29",
+   "lieu": "Quai des Brumes",
+   "source": "salles",
+   "url": "https://quaidesbrumes.ca/evenements/tarikuna/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -1181,8 +1190,8 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 45,
-  "date confirmée": 223,
+  "date absente de la page": 46,
+  "date confirmée": 222,
   "lien mort remplacé": 17,
   "page illisible": 41
  },
