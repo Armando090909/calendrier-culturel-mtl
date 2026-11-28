@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 29,
+  "date absente de la page officielle": 46,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -172,6 +172,24 @@
    "url": "https://app.amilia.com/store/fr/centredesmusiciens/shop/activities/7441350"
   },
   {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-11-28",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les veuves parallèles",
+   "date": "2026-12-01",
+   "lieu": "Théâtre Aux Écuries",
+   "source": "theatre",
+   "url": "https://auxecuries.com/"
+  },
+  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "Vieille corneille — séance",
@@ -219,6 +237,60 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
+   "date": "2026-11-29",
+   "lieu": "Tangente",
+   "source": "sorstu",
+   "url": "https://tangentedanse.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
+   "date": "2026-11-30",
+   "lieu": "Tangente",
+   "source": "sorstu",
+   "url": "https://tangentedanse.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
+   "date": "2026-12-01",
+   "lieu": "Tangente",
+   "source": "sorstu",
+   "url": "https://tangentedanse.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Suzanne va sortir",
+   "date": "2026-11-28",
+   "lieu": "La Licorne",
+   "source": "sorstu",
+   "url": "https://theatrelalicorne.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Suzanne va sortir",
+   "date": "2026-11-29",
+   "lieu": "La Licorne",
+   "source": "sorstu",
+   "url": "https://theatrelalicorne.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Suzanne va sortir",
+   "date": "2026-12-01",
+   "lieu": "La Licorne",
+   "source": "sorstu",
+   "url": "https://theatrelalicorne.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "WEIRD FISHES + REMNANTS + MUSE STATION + YOU WANT IT DARKER + LA TRAGÉDIE",
    "date": "2026-11-28",
    "lieu": "Foufounes Électriques",
@@ -255,6 +327,24 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "LYDIA KÉPINSKI",
+   "date": "2026-11-28",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://clubsoda.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "SOIRÉE DE COMÉDIE ET MENTALISME | MACKBOUBA, EMILE KHOURY ET UN LINE-UP DE COMÉDIENS - MEN",
+   "date": "2026-11-29",
+   "lieu": "Club Soda",
+   "source": "salles",
+   "url": "https://clubsoda.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Les Colocs",
    "date": "2026-11-28",
    "lieu": "Théâtre La Comédie de Montréal",
@@ -282,11 +372,56 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Class of 91 + Blurry Eyes + Cleanse + Testa Dura",
+   "date": "2026-11-28",
+   "lieu": "Turbo Haüs",
+   "source": "salles",
+   "url": "https://turbohaus.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Michael Jackson - Legacy",
+   "date": "2026-11-28",
+   "lieu": "Cabaret du Casino de Montréal",
+   "source": "sorstu",
+   "url": "https://casinos.lotoquebec.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Saturday Stand-Up (Deli @ 9 PM)",
    "date": "2026-11-28",
    "lieu": "Comedyville",
    "source": "salles",
    "url": "https://www.comedyville.ca/sktevents/saturday-night-comedy-show/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Noche de cumbias II",
+   "date": "2026-11-28",
+   "lieu": "Quai des Brumes",
+   "source": "salles",
+   "url": "https://quaidesbrumes.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Messe des Morts XIV (festival black metal)",
+   "date": "2026-11-28",
+   "lieu": "Piranha Bar",
+   "source": "songkick",
+   "url": "https://piranhabar.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Napoleon",
+   "date": "2026-12-01",
+   "lieu": "Piranha Bar",
+   "source": "sorstu",
+   "url": "https://piranhabar.ca/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -314,6 +449,15 @@
    "lieu": "Tango Libre",
    "source": "salles",
    "url": "https://tangolibre.ca/activites/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Atchoum",
+   "date": "2026-11-29",
+   "lieu": "La Chapelle Scènes contemporaines",
+   "source": "sorstu",
+   "url": "https://www.lachapelle.org/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -377,6 +521,15 @@
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://turbohaus.ca/calendrier/2026/11/30/the-backstage"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Ciné-Outremont : La place",
+   "date": "2026-11-30",
+   "lieu": "Théâtre Outremont",
+   "source": "theatre",
+   "url": "https://casteliers.ca/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -1037,10 +1190,9 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 29,
-  "date confirmée": 212,
+  "date absente de la page": 46,
+  "date confirmée": 222,
   "lien mort remplacé": 17,
-  "non relues (limite)": 27,
   "page illisible": 41
  },
  "controle": null,
@@ -1203,7 +1355,7 @@
   }
  ],
  "recoupees": {
-  "total": 2599,
-  "deux_sources_ou_plus": 213
+  "total": 2597,
+  "deux_sources_ou_plus": 211
  }
 }

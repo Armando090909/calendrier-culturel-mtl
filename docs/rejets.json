@@ -8,7 +8,7 @@
   "Sors-tu sans salle (peut-être hors de Montréal)": 13,
   "série remplacée par ses dates précises": 13,
   "fiche isolée remplacée par la série du spectacle": 6,
-  "retirée à la main (corrections.json)": 4,
+  "retirée à la main (corrections.json)": 6,
   "titre absent": 3,
   "annulé selon la source": 2,
   "série : pas culturelle ou sans titre": 2,
@@ -1846,11 +1846,25 @@
     "lieu": "Lieu à confirmer",
     "url": "https://ridm.ca/fr/grille-horaire?date=2026-11-29",
     "source": "festival"
+   },
+   {
+    "titre": "Stravinsky's Petrushka: Between Dance and Tradition",
+    "date": "2026-12-02",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/en/event/stravinsky-petrushka-between-dance-and-tradition",
+    "source": "salles"
+   },
+   {
+    "titre": "Stravinsky's Petrushka: Between Dance and Tradition",
+    "date": "2026-12-03",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/en/event/stravinsky-petrushka-between-dance-and-tradition",
+    "source": "salles"
    }
   ]
  },
  "disparues": {
-  "total": 53,
+  "total": 55,
   "liste": [
    {
     "titre": "Introduction à Cricut et Cricut Design Space",
@@ -1902,6 +1916,13 @@
     "raison": "plus annoncée par sa source (ou titre, date ou salle changés)"
    },
    {
+    "titre": "Stravinsky's Petrushka: Between Dance and Tradition",
+    "date": "2026-12-02",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/en/event/stravinsky-petrushka-between-dance-and-tradition",
+    "raison": "retirée à la main (corrections.json)"
+   },
+   {
     "titre": "Ivan Boivin Flamand",
     "date": "2026-12-03",
     "lieu": "Southam Hall",
@@ -1914,6 +1935,13 @@
     "lieu": "Salle Pratt & Whitney Canada",
     "url": "https://sorstu.ca/artiste/salebarbes/",
     "raison": "hors de l'île"
+   },
+   {
+    "titre": "Stravinsky's Petrushka: Between Dance and Tradition",
+    "date": "2026-12-03",
+    "lieu": "Maison symphonique",
+    "url": "https://www.placedesarts.com/en/event/stravinsky-petrushka-between-dance-and-tradition",
+    "raison": "retirée à la main (corrections.json)"
    },
    {
     "titre": "Ben Lefebvre",
