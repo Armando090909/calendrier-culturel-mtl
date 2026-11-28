@@ -62,6 +62,15 @@ class TestLienVersLaSalle(unittest.TestCase):
         lo.officialiser([e], [], telecharger, date(2026, 11, 28))
         self.assertEqual(e["url"], "https://www.songkick.com/concerts/1-bach")
 
+    def test_site_d_un_festival_pas_pris_pour_la_salle(self):
+        evs = [{"titre": "Marionnettes", "lieu": "Théâtre Outremont", "date": "2026-12-01",
+                "url": "https://casteliers.ca/programmation/marionnettes"},
+               {"titre": "Concert", "lieu": "Théâtre Outremont", "date": "2026-12-02", "url": "https://www.songkick.com/concerts/9"}]
+        lo.officialiser(evs, [], telecharger, date(2026, 11, 28), lectures=0)
+        self.assertEqual(evs[1]["url"], "https://www.songkick.com/concerts/9")
+        self.assertTrue(lo._ressemble("https://cabaretliondor.com/", "Cabaret Lion d'Or"))
+        self.assertTrue(lo._ressemble("https://sat.qc.ca/", "SAT"))
+
     def test_pages_de_la_ville_intouchees(self):
         e = {"titre": "Conte", "lieu": "Maison de la culture", "date": "2026-12-01",
              "url": "https://montreal.ca/evenements/conte-1"}

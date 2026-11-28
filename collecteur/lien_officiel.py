@@ -85,16 +85,18 @@ def _nomme_la_salle(texte: str, lieu: str) -> bool:
     return bool(mots) and all(m in t for m in mots)
 
 
+def _ressemble(site: str, lieu: str) -> bool:
+    """Le nom de domaine reprend le nom de la salle (cabaretliondor.com ↔ Cabaret Lion d'Or, sat.qc.ca ↔ SAT)."""
+    h = _hote(site)
+    etiquettes = set(h.split("."))
+    colle = re.sub(r"[^a-z0-9]", "", h)
+    mots = [m for m in plat(lieu).split() if m not in SALLE_VIDES]
+    return any((len(m) >= 4 and m in colle) or (len(m) >= 3 and m in etiquettes) for m in mots)
+
+
 def sites_connus(events: list[dict], sources: list[dict]) -> dict[str, str]:
     """Salle → page d'accueil de son site."""
-    par: dict[str, Counter] = {}
-    for e in events:
-        u = e.get("url", "")
-        if u.startswith("http") and not _exclu(u) and e.get("lieu"):
-            par.setdefault(e["lieu"], Counter())[_accueil(u)] += 1
-    site = {l: c.most_common(1)[0][0] for l, c in par.items()}
-    n = Counter(site.values())
-    site = {l: s for l, s in site.items() if n[s] <= 3}  # un site partagé par 4 salles ou plus : un diffuseur
+    site: dict[str, str] = {}  # sources et contacts d'abord (vérifiés), puis les événements de la salle
     for s in sources:
         u, lieu = str(s.get("url") or ""), s.get("lieu")
         if lieu and u.startswith("http") and not _exclu(u):
@@ -103,6 +105,18 @@ def sites_connus(events: list[dict], sources: list[dict]) -> dict[str, str]:
         for r in json.loads(CONTACTS.read_text(encoding="utf-8")):
             if r.get("salle") and str(r.get("site") or "").startswith("http") and not _exclu(r["site"]):
                 site.setdefault(r["salle"], _accueil(r["site"]))
+    par: dict[str, Counter] = {}
+    for e in events:
+        u = e.get("url", "")
+        # (28 nov. 2026) un domaine qui ne reprend pas le nom de la salle est celui d'un festival ou d'un producteur qui
+        # y présente (casteliers.ca au Théâtre Outremont, ridm.ca à la Maison Théâtre) : pas le site de la salle
+        if u.startswith("http") and not _exclu(u) and e.get("lieu") and _ressemble(u, e["lieu"]):
+            par.setdefault(e["lieu"], Counter())[_accueil(u)] += 1
+    par_ev = {l: c.most_common(1)[0][0] for l, c in par.items()}
+    n = Counter(par_ev.values())
+    for l, s_ in par_ev.items():
+        if n[s_] <= 3:  # un site partagé par 4 salles ou plus : un diffuseur
+            site.setdefault(l, s_)
     return site
 
 
@@ -132,6 +146,7 @@ def officialiser(events: list[dict], sources: list[dict], telecharger, aujourd: 
     memo = json.loads(MEMOIRE.read_text(encoding="utf-8")) if MEMOIRE.exists() else {}
     vieux = (aujourd - timedelta(days=30)).isoformat()
     sites = sites_connus(events, sources)
+    memo = {k: v for k, v in memo.items() if "site" in v}  # (anciennes entrées par événement : abandonnées)
     for lieu, m in memo.items():
         if m.get("site"):
             sites.setdefault(lieu, m["site"])
@@ -172,8 +187,9 @@ def officialiser(events: list[dict], sources: list[dict], telecharger, aujourd: 
                     sites[lieu] = _accueil(u)
         except Exception as exc:
             print(f"  sites des salles (IA) : {exc}")
-    for lieu in inconnues:
-        memo[lieu] = {"site": sites.get(lieu, ""), "le": aujourd.isoformat()}
+    if lectures:  # (28 nov. 2026) mode rapide sans lecture : pas un essai, rien n'est noté
+        for lieu in inconnues:
+            memo[lieu] = {"site": sites.get(lieu, ""), "le": aujourd.isoformat()}
 
     for e in a_faire:
         site = sites.get(e["lieu"])
