@@ -51,7 +51,11 @@ def marque():
     return T('<div class="marque">calendrier culturel <b>mtl</b></div>', '<div class="marque">montreal\'s cultural <b>calendar</b></div>')
 
 
-def nom_disc(k):
+def nom_disc(k, e=None):
+    # (28 nov. 2026) « Vernissage » seulement pour un vrai vernissage ; une visite ou une expo en cours : « Exposition »
+    if k == "expo" and e is not None and not re.search(r"(?i)vernissage|opening|lancement",
+                                                        f"{e.get('titre', '')} {e.get('resume', '')}"):
+        return "Exhibition" if LANGUE == "en" else "Exposition"
     return (NOMS_EN if LANGUE == "en" else NOMS).get(k, k)
 
 
@@ -506,7 +510,7 @@ h2{{margin:0;font-size:{min(tt, 92)}px;line-height:.95;font-weight:900;letter-sp
     vis = (f'<div class="vis"><div class="cad"><img src="{escape(img)}" alt="" onload="{ajuste}" onerror="document.body.classList.add(&#39;sansimg&#39;)">{decouv}'
            + (f'<span class="cr">{escape(credit)}</span>' if credit else "") + "</div></div>")
     return page2(1080, 1350, f"""{vis}<div class="in">
-<div class="l1"><span class="dis">{escape(nom_disc(k))}</span><span class="hr">{_heure(e)}</span></div>
+<div class="l1"><span class="dis">{escape(nom_disc(k, e))}</span><span class="hr">{_heure(e)}</span></div>
 <h2>{escape(e['titre'])}</h2>{f'<p class="acc">{escape(accroche)}</p>' if accroche else ''}
 <div class="bas"><span class="j">{_jour_long(e)}</span><span class="lieu">{escape(e['lieu'])}</span></div></div>
 {pied(f"{n} / {tot}")}""", css)
@@ -589,7 +593,7 @@ def _rang(e, k, vus, sous):
         f = date.fromisoformat(e["_jusqu"])
         a, b = T("jusq.", "until"), f.day
     return (f'<div class="lg"><span class="jb{vide}"><span class="a">{a}</span><span class="b">{b}</span></span>'
-            f'<span class="ev" style="--c:{coul(k)}"><span class="h"><span class="k">{escape(nom_disc(k))}</span><span class="t2">{_heure(e)}</span></span>'
+            f'<span class="ev" style="--c:{coul(k)}"><span class="h"><span class="k">{escape(nom_disc(k, e))}</span><span class="t2">{_heure(e)}</span></span>'
             f'<span class="t">{escape(e["titre"])}</span><span class="s">{escape(sous)}</span></span></div>')
 
 
@@ -803,10 +807,10 @@ def textes(s):
     # « Vernissage : Vernissage : X » → « Vernissage : X » (le titre reprend déjà le nom de la catégorie)
     def _titre(p_):
         t = p_["e"]["titre"]
-        n = nom_disc(p_["k"])
+        n = nom_disc(p_["k"], p_["e"])
         return t[len(n):].lstrip(" :–-") if t.lower().startswith(n.lower()) and len(t) > len(n) + 3 else t
-    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])} : {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
-              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'])}: {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
+    lignes = [f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'], p['e'])} : {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
+              if LANGUE == "fr" else f"{EMOJI.get(p['k'], '•')} {nom_disc(p['k'], p['e'])}: {_titre(p)} ({p['e']['lieu']}, {quand(p['e'])}){ment.get(p['k'], '')}"
               for p in s["picks"]]
     fest = ", ".join(f["nom"] for f in s["festivals"] if f["en_cours"])
     if LANGUE == "en":
