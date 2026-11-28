@@ -195,7 +195,7 @@ def comptes_retenus(s: dict, k: str) -> list[str]:
     if t.get("aucun"):
         return []
     out = [v["compte"] for q, v in t.items() if isinstance(v, dict) and v.get("compte") and (v.get("sur") or v.get("confirme"))]
-    return list(dict.fromkeys(out + list(t.get("ajouts") or [])))[:6]  # 22 nov. 2026 : 6 (3 coupait les ajouts d'Alexandre)
+    return list(dict.fromkeys(out + list(t.get("ajouts") or [])))[:10]  # 22 nov. 2026 : 6 (3 coupait les ajouts d'Alexandre) ; 28 nov. : 10 (6 interprètes de DOGMA + la salle)
 
 
 if __name__ == "__main__":  # essai : la semaine des derniers souhaits enregistrés (sinon la dernière sélection)
