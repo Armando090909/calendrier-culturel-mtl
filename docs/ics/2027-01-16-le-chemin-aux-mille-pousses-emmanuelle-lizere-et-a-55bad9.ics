@@ -21,19 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-16-le-chemin-aux-mille-pousses-emmanuelle-lizere-et-a-ad7a74@cc
+UID:2027-01-16-le-chemin-aux-mille-pousses-emmanuelle-lizere-et-a-55bad9@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270116
-DTEND;VALUE=DATE:20270117
+DTSTART;TZID=America/Toronto:20270116T110000
+DTEND;TZID=America/Toronto:20270116T130000
 SUMMARY:Le chemin aux mille pousses - Emmanuelle Lizère et Alexandra Caron
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/le-chemin-aux-mille-pousses-emmanuelle-l
- izere-et-alexandra-caron-122215
-DESCRIPTION:Heure à confirmer. Une performance interactive de danse et de 
- musique qui s’adresse aux enfants d’âge préscolaire. Les éléments 
- introduits présentent différentes c...\nPrix : Gratuit\nDétails : https
- ://montreal.ca/evenements/le-chemin-aux-mille-pousses-emmanuelle-lizere-et
- -alexandra-caron-122215\n(ccmtl.ca)
+ izere-et-alexandra-caron-122226
+DESCRIPTION:Une performance interactive de danse et de musique qui s’adre
+ sse aux enfants d’âge préscolaire. Les éléments introduits présente
+ nt différentes c...\nPrix : Gratuit\nDétails : https://lepointdevente.co
+ m/billets/ut9270116002?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

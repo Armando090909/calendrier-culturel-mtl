@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-20-atelier-musique-mere-bebe-5abae5@ccmtl.ca
+UID:2027-01-09-en-rodage-charles-pellerin-a46934@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
-SUMMARY:Atelier musique mère-bébé
+DTSTART;TZID=America/Toronto:20270109T193000
+DTEND;TZID=America/Toronto:20270109T213000
+SUMMARY:En rodage – Charles Pellerin
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/atelier-musique-mere-bebe-122803
-DESCRIPTION:Heure à confirmer. Partager un moment musical avec son enfant\
- , en se laissant porter par les sons\, les ritournelles et les jeux de doi
- gts.\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/atelier-mu
- sique-mere-bebe-122803\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/en-rodage-charles-pellerin-122194
+DESCRIPTION:Assistez au spectacle de l'humoriste Charles Pellerin\, explora
+ nt les questions de l’identité et de l’estime de soi à travers le pa
+ ssage vers la vie adulte.\nPrix : Gratuit\nDétails : https://lepointdeven
+ te.com/billets/ut9270109001?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

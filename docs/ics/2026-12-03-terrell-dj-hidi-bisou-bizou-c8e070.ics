@@ -21,15 +21,14 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-03-sam-quealy-suuncaat-ccf2ad@ccmtl.ca
+UID:2026-12-03-terrell-dj-hidi-bisou-bizou-c8e070@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;TZID=America/Toronto:20261203T193000
-DTEND;TZID=America/Toronto:20261203T213000
-SUMMARY:SAM QUEALY + SUUNCAAT
-LOCATION:La Sala Rossa\, Montréal
-URL:https://casadelpopolo.com/
-DESCRIPTION:Concert de Sam Quealy accompagné du groupe Suuncaat.\nPrix : 3
- 5 $\nDétails : http://www.songkick.com/concerts/43322851-sam-quealy-at-la
- -sala-rossa?utm_medium=organic&utm_source=microformat\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261203T220000
+DTEND;TZID=America/Toronto:20261204T000000
+SUMMARY:TERRELL\, DJ HIDI & Bisou Bizou
+LOCATION:DATCHA\, Montréal
+URL:https://bardatcha.ca/
+DESCRIPTION:Soirée DJ avec Terrell\, DJ Hidi et Bisou Bizou.\nDétails : h
+ ttps://ra.co/events/2591883\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

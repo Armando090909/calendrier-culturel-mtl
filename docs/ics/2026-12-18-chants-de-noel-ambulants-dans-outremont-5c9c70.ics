@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-19-chants-de-noel-ambulants-dans-outremont-19e404@ccmtl.ca
+UID:2026-12-18-chants-de-noel-ambulants-dans-outremont-5c9c70@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261219
-DTEND;VALUE=DATE:20261220
+DTSTART;TZID=America/Toronto:20261218T153000
+DTEND;TZID=America/Toronto:20261218T173000
 SUMMARY:Chants de Noël ambulants dans Outremont
-LOCATION:Église Saint-Viateur\, Montréal
+LOCATION:Théâtre Outremont\, Montréal
 URL:https://montreal.ca/evenements/chants-de-noel-ambulants-dans-outremont-
- 123137
-DESCRIPTION:Heure à confirmer. Spectacle du temps des fêtes a cappella à
-  Outremont\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/chan
- ts-de-noel-ambulants-dans-outremont-123137\n(ccmtl.ca)
+ 123135
+DESCRIPTION:Spectacle du temps des fêtes a cappella à Outremont\nPrix : G
+ ratuit\nDétails : https://montreal.ca/evenements/chants-de-noel-ambulants
+ -dans-outremont-123135\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

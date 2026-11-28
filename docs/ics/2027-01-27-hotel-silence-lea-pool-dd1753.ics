@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-27-hotel-silence-lea-pool-47d7f3@ccmtl.ca
+UID:2027-01-27-hotel-silence-lea-pool-dd1753@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270128
+DTSTART;TZID=America/Toronto:20270127T190000
+DTEND;TZID=America/Toronto:20270127T210000
 SUMMARY:Hôtel Silence - Léa Pool
 LOCATION:Bibliothèque Mercier\, Montréal
 URL:https://montreal.ca/evenements/hotel-silence-lea-pool-121613
-DESCRIPTION:Heure à confirmer. Joignez vous à nous le 27 janvier pour dé
- couvrir cette émouvante adaptation du roman d’Audur Ava Ólafsdóttir.\
- nPrix : Gratuit\nDétails : https://montreal.ca/evenements/hotel-silence-l
- ea-pool-121613\n(ccmtl.ca)
+DESCRIPTION:Joignez vous à nous le 27 janvier pour découvrir cette émouv
+ ante adaptation du roman d’Audur Ava Ólafsdóttir.\nPrix : Gratuit\nDé
+ tails : https://lepointdevente.com/billets/8ud270127001?lang=fr\n(ccmtl.ca
+ )
 END:VEVENT
 END:VCALENDAR

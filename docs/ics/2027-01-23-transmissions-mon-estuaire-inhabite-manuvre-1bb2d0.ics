@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-23-transmissions-mon-estuaire-inhabite-manuvre-dd71bb@ccmtl.ca
+UID:2027-01-23-transmissions-mon-estuaire-inhabite-manuvre-1bb2d0@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTART;TZID=America/Toronto:20270123T193000
+DTEND;TZID=America/Toronto:20270123T213000
 SUMMARY:Transmissions : Mon estuaire inhabité + manœuvre
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/transmissions-mon-estuaire-inhabite-mano
  euvre-122341
-DESCRIPTION:Heure à confirmer. Venez découvrir gratuitement Transmissions
-  à SANAAQ. Sur scène\, un duo oscille entre bravoure et tendresse\, dans
-  une œuvre chorégraphique bouleversante .\nPrix : Gratuit\nDétails : ht
- tps://montreal.ca/evenements/transmissions-mon-estuaire-inhabite-manoeuvre
- -122341\n(ccmtl.ca)
+DESCRIPTION:Venez découvrir gratuitement Transmissions à SANAAQ. Sur scè
+ ne\, un duo oscille entre bravoure et tendresse\, dans une œuvre chorégr
+ aphique bouleversante .\nPrix : Gratuit\nDétails : https://lepointdevente
+ .com/billets/ut9270123003?lang=fr\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

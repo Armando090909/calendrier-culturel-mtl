@@ -21,19 +21,18 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-22-spectacle-de-lutte-promotion-de-la-lutte-professio-5f60d9@cc
+UID:2027-01-22-spectacle-de-lutte-promotion-de-la-lutte-professio-ff080c@cc
  mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270122
-DTEND;VALUE=DATE:20270123
+DTSTART;TZID=America/Toronto:20270122T200000
+DTEND;TZID=America/Toronto:20270122T220000
 SUMMARY:Spectacle de lutte - Promotion de la lutte professionnelle (PLP)
 LOCATION:Lieu à confirmer\, Montréal
 URL:https://montreal.ca/evenements/spectacle-de-lutte-promotion-de-la-lutte
  -professionnelle-plp-122418
-DESCRIPTION:Heure à confirmer. Avez-vous déjà assisté à un gala de lut
- te? Depuis plus de 30 ans\, cette organisation offre des spectacles de lut
- te professionnelle qui combinent ...\nPrix : Gratuit\nDétails : https://m
- ontreal.ca/evenements/spectacle-de-lutte-promotion-de-la-lutte-professionn
- elle-plp-122418\n(ccmtl.ca)
+DESCRIPTION:Avez-vous déjà assisté à un gala de lutte? Depuis plus de 3
+ 0 ans\, cette organisation offre des spectacles de lutte professionnelle q
+ ui combinent ...\nPrix : Gratuit\nDétails : https://lepointdevente.com/bi
+ llets/a1n270122001\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

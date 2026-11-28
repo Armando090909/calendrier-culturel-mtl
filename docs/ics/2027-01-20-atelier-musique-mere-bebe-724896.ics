@@ -21,16 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-13-cercle-de-tricot-11de61@ccmtl.ca
+UID:2027-01-20-atelier-musique-mere-bebe-724896@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270113
-DTEND;VALUE=DATE:20270114
-SUMMARY:Cercle de tricot
+DTSTART;TZID=America/Toronto:20270120T103000
+DTEND;TZID=America/Toronto:20270120T123000
+SUMMARY:Atelier musique mère-bébé
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/cercle-de-tricot-123084
-DESCRIPTION:Heure à confirmer. Rendez-vous toutes les 2 semaines pour éch
- anger\, vous inspirer et avancer vos projets de tricot dans une ambiance c
- alme à la bibliothèque Saul-Bellow\, à Lachine\nPrix : Gratuit\nDétail
- s : https://montreal.ca/evenements/cercle-de-tricot-123084\n(ccmtl.ca)
+URL:https://montreal.ca/evenements/atelier-musique-mere-bebe-122803
+DESCRIPTION:Partager un moment musical avec son enfant\, en se laissant por
+ ter par les sons\, les ritournelles et les jeux de doigts.\nPrix : Gratuit
+ \nDétails : https://lepointdevente.com/billets/ut9270120003?lang=fr\n(ccm
+ tl.ca)
 END:VEVENT
 END:VCALENDAR

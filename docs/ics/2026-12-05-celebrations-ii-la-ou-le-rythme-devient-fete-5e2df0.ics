@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-05-celebrations-ii-la-ou-le-rythme-devient-fete-988e6a@ccmtl.ca
+UID:2026-12-05-celebrations-ii-la-ou-le-rythme-devient-fete-5e2df0@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
+DTSTART;TZID=America/Toronto:20261205T193000
+DTEND;TZID=America/Toronto:20261205T213000
 SUMMARY:Célébrations II - Là où le rythme devient fête
 LOCATION:Théâtre Mirella et Lino Saputo\, Montréal
 URL:https://montreal.ca/evenements/celebrations-ii-la-ou-le-rythme-devient-
  fete-123297
-DESCRIPTION:Heure à confirmer. Préparez-vous à vibrer! Plus de 40 musici
- ens\, des invités spéciaux et une fusion électrisante de jazz\, funk\, 
- latin et rock dans un concert haut en couleur.\nPrix : Payant\nDétails : 
- https://montreal.ca/evenements/celebrations-ii-la-ou-le-rythme-devient-fet
- e-123297\n(ccmtl.ca)
+DESCRIPTION:Préparez-vous à vibrer! Plus de 40 musiciens\, des invités s
+ péciaux et une fusion électrisante de jazz\, funk\, latin et rock dans u
+ n concert haut en couleur.\nPrix : Payant\nDétails : https://ohldv.com/bo
+ utique/\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

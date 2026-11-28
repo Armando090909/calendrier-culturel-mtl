@@ -21,16 +21,15 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-12-18-chants-de-noel-ambulants-dans-outremont-cfbb77@ccmtl.ca
+UID:2026-12-18-cheap-thrill-security-wing-claireyy-casakobrae-sve-405a6a@cc
+ mtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
-SUMMARY:Chants de Noël ambulants dans Outremont
-LOCATION:Théâtre Outremont\, Montréal
-URL:https://montreal.ca/evenements/chants-de-noel-ambulants-dans-outremont-
- 123135
-DESCRIPTION:Heure à confirmer. Spectacle du temps des fêtes a cappella à
-  Outremont\nPrix : Gratuit\nDétails : https://montreal.ca/evenements/chan
- ts-de-noel-ambulants-dans-outremont-123135\n(ccmtl.ca)
+DTSTART;TZID=America/Toronto:20261218T220000
+DTEND;TZID=America/Toronto:20261219T000000
+SUMMARY:Cheap Thrill: Security Wing\, Claireyy\, Casakobrae\, Svet\, esile
+LOCATION:DATCHA\, Montréal
+URL:https://bardatcha.ca/
+DESCRIPTION:Soirée Cheap Thrill avec cinq artistes électro.\nDétails : h
+ ttps://ra.co/events/2594988\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

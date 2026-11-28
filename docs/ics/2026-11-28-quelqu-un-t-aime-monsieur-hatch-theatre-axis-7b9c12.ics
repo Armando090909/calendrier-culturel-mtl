@@ -21,18 +21,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-28-quelqu-un-t-aime-monsieur-hatch-theatre-axis-c29898@ccmtl.ca
+UID:2026-11-28-quelqu-un-t-aime-monsieur-hatch-theatre-axis-7b9c12@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
+DTSTART;TZID=America/Toronto:20261128T140000
+DTEND;TZID=America/Toronto:20261128T160000
 SUMMARY:Quelqu'un t'aime monsieur Hatch - Théâtre Axis
 LOCATION:Centre communautaire Gerry-Robertson\, Montréal
 URL:https://montreal.ca/evenements/quelquun-taime-monsieur-hatch-theatre-ax
  is-123184
-DESCRIPTION:Heure à confirmer. Monsieur Hatch mène une vie terne\, ordonn
- ée et solitaire\, jusqu’au jour de la Saint-Valentin où il reçoit une
-  boîte de chocolats en forme de cœur.\nPrix : Payant\nDétails : https:/
- /montreal.ca/evenements/quelquun-taime-monsieur-hatch-theatre-axis-123184\
- n(ccmtl.ca)
+DESCRIPTION:Monsieur Hatch mène une vie terne\, ordonnée et solitaire\, j
+ usqu’au jour de la Saint-Valentin où il reçoit une boîte de chocolats
+  en forme de cœur.\nPrix : Payant\nDétails : https://pier-rox.tuxedobill
+ et.com/main/theatre-axis--quelquun-taime-monsieur-hatch\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

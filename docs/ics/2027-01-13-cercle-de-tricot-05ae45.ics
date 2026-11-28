@@ -21,17 +21,16 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-09-en-rodage-charles-pellerin-c25db1@ccmtl.ca
+UID:2027-01-13-cercle-de-tricot-05ae45@ccmtl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
-SUMMARY:En rodage – Charles Pellerin
+DTSTART;TZID=America/Toronto:20270113T133000
+DTEND;TZID=America/Toronto:20270113T153000
+SUMMARY:Cercle de tricot
 LOCATION:Lieu à confirmer\, Montréal
-URL:https://montreal.ca/evenements/en-rodage-charles-pellerin-122194
-DESCRIPTION:Heure à confirmer. Assistez au spectacle de l'humoriste Charle
- s Pellerin\, explorant les questions de l’identité et de l’estime de 
- soi à travers le passage vers la vie adulte.\nPrix : Gratuit\nDétails : 
- https://montreal.ca/evenements/en-rodage-charles-pellerin-122194\n(ccmtl.c
- a)
+URL:https://montreal.ca/evenements/cercle-de-tricot-123084
+DESCRIPTION:Rendez-vous toutes les 2 semaines pour échanger\, vous inspire
+ r et avancer vos projets de tricot dans une ambiance calme à la biblioth
+ èque Saul-Bellow\, à Lachine\nPrix : Gratuit\nDétails : https://lepoint
+ devente.com/billets/ev3270113001\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR

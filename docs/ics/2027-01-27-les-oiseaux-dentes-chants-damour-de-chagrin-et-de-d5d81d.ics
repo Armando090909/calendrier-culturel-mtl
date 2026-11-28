@@ -21,19 +21,19 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2027-01-27-les-oiseaux-dentes-chants-damour-de-chagrin-et-de-6eeabf@ccm
+UID:2027-01-27-les-oiseaux-dentes-chants-damour-de-chagrin-et-de-d5d81d@ccm
  tl.ca
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270128
+DTSTART;TZID=America/Toronto:20270127T193000
+DTEND;TZID=America/Toronto:20270127T213000
 SUMMARY:Les oiseaux dentés : Chants d’amour\, de chagrin et de folie - C
  omtessa
 LOCATION:Salle Paul-Desmarais\, Montréal
 URL:https://montreal.ca/evenements/les-oiseaux-dentes-chants-damour-de-chag
  rin-et-de-folie-comtessa-121943
-DESCRIPTION:Heure à confirmer. Ne manquez ce concert de Comtessa présent
- é par la Chapelle musicale du Bon-Pasteur.\nPrix : Gratuit\nDétails : ht
- tps://montreal.ca/evenements/les-oiseaux-dentes-chants-damour-de-chagrin-e
- t-de-folie-comtessa-121943\n(ccmtl.ca)
+DESCRIPTION:Ne manquez ce concert de Comtessa présenté par la Chapelle mu
+ sicale du Bon-Pasteur.\nPrix : Gratuit\nDétails : https://montreal.ca/eve
+ nements/les-oiseaux-dentes-chants-damour-de-chagrin-et-de-folie-comtessa-1
+ 21943\n(ccmtl.ca)
 END:VEVENT
 END:VCALENDAR
