@@ -4,8 +4,8 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 18,
-  "page de la sortie disparue": 13,
+  "date absente de la page officielle": 32,
+  "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
  "journal": [
@@ -282,6 +282,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Saturday After Dusk Comedy",
+   "date": "2026-11-28",
+   "lieu": "Estrella",
+   "source": "salles",
+   "url": "https://www.comedyville.ca/sktevents/estrella-bar-after-dusk-comedy-show-near-me-saturday-8-pm/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Saturday Stand-Up (Deli @ 9 PM)",
    "date": "2026-11-28",
    "lieu": "Comedyville",
@@ -404,6 +413,159 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/mariages-2026-11-30-1800"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "La bola negra — séance",
+   "date": "2026-11-30",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/la-bola-negra-2026-11-30-2030"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Exposition : La diplomatie culturelle entre le Canada et l'Asie de l'Est",
+   "date": "2026-12-01",
+   "lieu": "Théâtre Lionel-Groulx",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/exposition-la-diplomatie-culturelle-entre-le-canada-et-lasie-de-lest-40"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Curiosa : fantasmer le passé",
+   "date": "2026-12-01",
+   "lieu": "Bibliothèque des lettres et sciences humaines, Pavillon Samuel-Bronfman",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/curiosa-fantasmer-le-passe-83"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Exposition : D'amours et d'amitiés",
+   "date": "2026-12-01",
+   "lieu": "Pavillon de la Faculté de l'aménagement",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/exposition-damours-et-damities-2"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Conversation avec Bob Rae",
+   "date": "2026-12-01",
+   "lieu": "Salle 104",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/conversation-avec-bob-rae"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Étudiants de l'UdeM : l'heure de la découverte · Off-Bach (gratuit)",
+   "date": "2026-12-01",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-lheure-de-la-decouverte-udm/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Violence du corps de l’autre — séance",
+   "date": "2026-12-01",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/violence-du-corps-de-lautre-2026-12-01-1530"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tristan Longval-Gagné, piano · Off-Bach (gratuit)",
+   "date": "2026-12-01",
+   "lieu": "Espace Off-Bach (3487, boul. Saint-Laurent)",
+   "source": "festival",
+   "url": "https://festivalbachmontreal.com/concerts/off-concert-tristan-longval-gagne-piano/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Concert atelier d'improvisation - Classe de Jean-Marc Bouchard",
+   "date": "2026-12-01",
+   "lieu": "Université de Montréal",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/concert-atelier-dimprovisation-classe-de-jean-marc-bouchard-1"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Cuisinez au Suivant x Mardi je donne",
+   "date": "2026-12-01",
+   "lieu": "Robin des Bois",
+   "source": "salles",
+   "url": "https://robindesbois.ca/wp-json/wp/v2/programmation_events?per_page=20&_fields=title,link,content"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "Minotaure — séance",
+   "date": "2026-12-01",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/minotaure-2026-12-01-1800"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Concert de violon - Classe de Marie Bégin",
+   "date": "2026-12-01",
+   "lieu": "Université de Montréal",
+   "source": "salles",
+   "url": "https://calendrier.umontreal.ca/activite/concert-de-violon-classe-de-marie-begin-2"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Faculté de Musique de l'UdeM : Une soirée jazz et musiques du monde à la salle Claude-Cham",
+   "date": "2026-12-01",
+   "lieu": "Salle Claude-Champagne",
+   "source": "salles",
+   "url": "https://panm360.com/en/agenda/faculte-de-musique-de-ludem-une-soiree-jazz-et-musiques-du-monde-a-la-salle-claude-champagne/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Festival International Bach Montréal : Trois pupitres pour les variations Goldberg – Andre",
+   "date": "2026-12-01",
+   "lieu": "Chapelle Notre-Dame-de-Bon-Secours",
+   "source": "salles",
+   "url": "https://festivalbachmontreal.com/concerts/trio-a-cordes/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Groupe Entourage Lecture Publique",
+   "date": "2026-12-01",
+   "lieu": "Théâtre La Comédie de Montréal",
+   "source": "salles",
+   "url": "https://www.lacomedie.ca/spectacle/groupe-entourage-lecture-publique/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Violence du corps de l'autre (VOSTA)",
+   "date": "2026-12-01",
+   "lieu": "Cinéma Moderne",
+   "source": "salles",
+   "url": "https://www.cinemamoderne.com/films/details/violence-du-corps-de-lautre/"
+  },
+  {
+   "regle": "page de la sortie disparue",
+   "action": "lien remplacé par l'accueil du site",
+   "titre": "NAZA — séance",
+   "date": "2026-12-01",
+   "lieu": "Cinéma Public",
+   "source": "salles",
+   "url": "https://cinemapublic.ca/seances/naza-2026-12-01-2045"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -902,11 +1064,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 18,
-  "date confirmée": 195,
-  "lien mort remplacé": 13,
-  "non relues (limite)": 58,
-  "page illisible": 42
+  "date absente de la page": 32,
+  "date confirmée": 232,
+  "lien mort remplacé": 17,
+  "page illisible": 45
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -936,9 +1097,9 @@
   },
   {
    "source": "cinemapublic.ca",
-   "erreurs": 361,
+   "erreurs": 365,
    "sorties": 836,
-   "taux": 43.2
+   "taux": 43.7
   },
   {
    "source": "espacestdenis.com",
