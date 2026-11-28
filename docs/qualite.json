@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 51,
+  "date absente de la page officielle": 45,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -165,24 +165,6 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "The Distance Between Us and the Ground : To Take the Measure",
-   "date": "2026-11-28",
-   "lieu": "Canadian Centre for Architecture",
-   "source": "salles",
-   "url": "https://www.cca.qc.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "The Distance Between Us and the Ground : To Hold the Distance",
-   "date": "2026-11-29",
-   "lieu": "Canadian Centre for Architecture",
-   "source": "salles",
-   "url": "https://www.cca.qc.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
    "titre": "Atelier de chants créoles haïtiens avec Martine Brisson",
    "date": "2026-11-28",
    "lieu": "Centre des musiciens du monde",
@@ -196,16 +178,7 @@
    "date": "2026-11-28",
    "lieu": "Théâtre Aux Écuries",
    "source": "theatre",
-   "url": "https://auxecuries.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-12-01",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.com/"
+   "url": "https://auxecuries.com/evenements/les-veuves-paralleles/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -256,46 +229,10 @@
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
    "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
-   "date": "2026-11-29",
-   "lieu": "Tangente",
-   "source": "sorstu",
-   "url": "https://tangentedanse.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
-   "date": "2026-11-30",
-   "lieu": "Tangente",
-   "source": "sorstu",
-   "url": "https://tangentedanse.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis",
    "date": "2026-12-01",
    "lieu": "Tangente",
    "source": "sorstu",
-   "url": "https://tangentedanse.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Suzanne va sortir",
-   "date": "2026-11-28",
-   "lieu": "La Licorne",
-   "source": "sorstu",
-   "url": "https://theatrelalicorne.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Suzanne va sortir",
-   "date": "2026-11-29",
-   "lieu": "La Licorne",
-   "source": "sorstu",
-   "url": "https://theatrelalicorne.com/"
+   "url": "https://tangentedanse.ca/event/piece-of-mind-collective-maude-lecours-gabrielle-marquis/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -304,7 +241,7 @@
    "date": "2026-12-01",
    "lieu": "La Licorne",
    "source": "sorstu",
-   "url": "https://theatrelalicorne.com/"
+   "url": "https://theatrelalicorne.com/pieces/suzanne/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -354,24 +291,6 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "LYDIA KÉPINSKI",
-   "date": "2026-11-28",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://clubsoda.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "SOIRÉE DE COMÉDIE ET MENTALISME | MACKBOUBA, EMILE KHOURY ET UN LINE-UP DE COMÉDIENS - MEN",
-   "date": "2026-11-29",
-   "lieu": "Club Soda",
-   "source": "salles",
-   "url": "https://clubsoda.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
    "titre": "Les Colocs",
    "date": "2026-11-28",
    "lieu": "Théâtre La Comédie de Montréal",
@@ -403,16 +322,7 @@
    "date": "2026-11-28",
    "lieu": "Turbo Haüs",
    "source": "salles",
-   "url": "https://turbohaus.ca/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Michael Jackson - Legacy",
-   "date": "2026-11-28",
-   "lieu": "Cabaret du Casino de Montréal",
-   "source": "sorstu",
-   "url": "https://casinos.lotoquebec.com/"
+   "url": "https://turbohaus.ca/calendrier/2026/11/28/-class-of-91--blurry-eyes--cleanse--testa-dura"
   },
   {
    "regle": "date absente de la page officielle",
@@ -444,15 +354,6 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
-   "titre": "Les Mardis Rétro du Café Campus",
-   "date": "2026-12-01",
-   "lieu": "Café Campus",
-   "source": "salles",
-   "url": "https://www.cafecampus.com/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
    "titre": "Noche de cumbias II",
    "date": "2026-11-28",
    "lieu": "Quai des Brumes",
@@ -476,6 +377,15 @@
    "lieu": "Piranha Bar",
    "source": "sorstu",
    "url": "https://piranhabar.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Sarah Segal-Lazar",
+   "date": "2026-11-28",
+   "lieu": "Théâtre Centaur",
+   "source": "songkick",
+   "url": "https://centaurtheatre.com/shows/bard-pop-with-sarah-segal-lazar/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -525,6 +435,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Festival International Bach Montréal : Bálint Karosi – L'intégrale de l'œuvre pour orgue d",
+   "date": "2026-11-29",
+   "lieu": "Oratoire Saint-Joseph",
+   "source": "salles",
+   "url": "https://saint-joseph.org/fr/activite/festival-international-bach-montreal-oeuvres-pour-orgue-et-choeur/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Chicane de famille",
    "date": "2026-11-29",
    "lieu": "Théâtre La Comédie de Montréal",
@@ -543,6 +462,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Myriam Gendron déplogue!",
+   "date": "2026-11-29",
+   "lieu": "Quai des Brumes",
+   "source": "salles",
+   "url": "https://quaidesbrumes.ca/evenements/deplogue-myriam-gendron/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "The Bloodshots + Screaming Demons + The Count Ferrara",
    "date": "2026-11-29",
    "lieu": "Turbo Haüs",
@@ -557,6 +485,15 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/you-can-see-everything-2026-11-29-2000"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Tarikuna au Quai des Brumes",
+   "date": "2026-11-29",
+   "lieu": "Quai des Brumes",
+   "source": "salles",
+   "url": "https://quaidesbrumes.ca/evenements/hibou-hibou-dogo-suicide-valery-vaughn-quai-des-brumes/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -737,6 +674,15 @@
    "lieu": "Cinéma Public",
    "source": "salles",
    "url": "https://cinemapublic.ca/seances/naza-2026-12-01-2045"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "Les Mardis Rétro du Café Campus",
+   "date": "2026-12-01",
+   "lieu": "Café Campus",
+   "source": "salles",
+   "url": "https://www.cafecampus.com/soiree/mardis-retro"
   },
   {
    "regle": "heures différentes selon les sources",
@@ -1235,8 +1181,8 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 51,
-  "date confirmée": 217,
+  "date absente de la page": 45,
+  "date confirmée": 223,
   "lien mort remplacé": 17,
   "page illisible": 41
  },
