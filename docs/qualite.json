@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 46,
+  "date absente de la page officielle": 45,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -367,7 +367,7 @@
    "date": "2026-11-28",
    "lieu": "Estrella",
    "source": "salles",
-   "url": "https://mtlcomedyclub.com/"
+   "url": "https://www.eventbrite.com/e/montreal-comedy-show-8-pm-comedy-after-dusk-at-comedyville-st-laurent-tickets-1105535920699?aff=oddtdtcreator"
   },
   {
    "regle": "date absente de la page officielle",
@@ -521,15 +521,6 @@
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://turbohaus.ca/calendrier/2026/11/30/the-backstage"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Ciné-Outremont : La place",
-   "date": "2026-11-30",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://casteliers.ca/"
   },
   {
    "regle": "page de la sortie disparue",
@@ -1190,10 +1181,11 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 46,
+  "date absente de la page": 45,
   "date confirmée": 222,
   "lien mort remplacé": 17,
-  "page illisible": 41
+  "page illisible": 41,
+  "non relues (limite)": 1
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1296,8 +1288,8 @@
   {
    "source": "eventbrite.com",
    "erreurs": 43,
-   "sorties": 353,
-   "taux": 12.2
+   "sorties": 357,
+   "taux": 12.0
   },
   {
    "source": "mtelus.com",
@@ -1326,7 +1318,7 @@
   {
    "source": "casadelpopolo.com",
    "erreurs": 114,
-   "sorties": 1877,
+   "sorties": 1878,
    "taux": 6.1
   },
   {
@@ -1338,7 +1330,7 @@
   {
    "source": "sorstu.ca",
    "erreurs": 116,
-   "sorties": 1950,
+   "sorties": 1951,
    "taux": 5.9
   },
   {
