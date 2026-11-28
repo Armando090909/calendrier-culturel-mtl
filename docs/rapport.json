@@ -32,11 +32,6 @@
    "2027-01-14 : « Make A Dance » (Scène Vidéotron | Ferias) = « Make A Dance » (Quai Jacques-Cartier, Scène Vidéotron)",
    "2027-01-24 : « En attendant la cloche - Théâtre Bouches Décousues » (L'Entrepôt – maison de la culture de Lachine) = « En attendant la cloche » (Ville de Montréal - Lachine)"
   ],
-  "catalogues": [
-   {
-    "nom": "Réveillons!"
-   }
-  ],
   "qualite": {
    "regles": 136,
    "contreverif": {
@@ -709,8 +704,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1501 caractères de texte : https://www.librairieleuguelionne.com/",
-    "annonces à venir dans la page : 0 (https://www.librairieleuguelionne.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.librairieleuguelionne.com/"
    ]
   },
   {
@@ -792,7 +786,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://ra.co/clubs/201918"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://ra.co/clubs/201918"
    ]
   },
   {
@@ -801,8 +795,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://bainmathieu.ca/programmation/",
-    "annonces à venir dans la page : 0 (https://bainmathieu.ca/programmation/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://bainmathieu.ca/programmation/"
    ]
   },
   {
@@ -811,8 +804,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "aucun événement trouvé dans 1389 caractères de texte : https://lechateaumontreal.com/evenements",
-    "annonces à venir dans la page : 0 (https://lechateaumontreal.com/evenements)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lechateaumontreal.com/evenements"
    ]
   },
   {
@@ -859,9 +851,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page longue lue en 2 morceaux : https://www.quenditraton.com/spectacles/",
-    "aucun événement trouvé dans 15768 caractères de texte : https://www.quenditraton.com/spectacles/",
-    "récolte mince (0) : recherche élargie à https://www.quenditraton.com/spectacles"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.quenditraton.com/spectacles/"
    ]
   },
   {
@@ -1037,8 +1027,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (184 caractères ; site en JavaScript ?) : https://www.stjamestheatre.ca/",
-    "annonces à venir dans la page : 0 (https://www.stjamestheatre.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.stjamestheatre.ca/"
    ]
   },
   {
@@ -1047,8 +1036,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (188 caractères ; site en JavaScript ?) : https://theatrecartier.ca/",
-    "annonces à venir dans la page : 0 (https://theatrecartier.ca/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://theatrecartier.ca/"
    ]
   },
   {
@@ -1245,8 +1233,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (221 caractères ; site en JavaScript ?) : https://lamechecourte.tuxedobillet.com/",
-    "annonces à venir dans la page : 0 (https://lamechecourte.tuxedobillet.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://lamechecourte.tuxedobillet.com/"
    ]
   },
   {
@@ -1478,8 +1465,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page presque vide (349 caractères ; site en JavaScript ?) : https://cafecampus.com/",
-    "annonces à venir dans la page : 4 (https://cafecampus.com/)"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://cafecampus.com/"
    ]
   },
   {
@@ -1586,7 +1572,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (403 Client Error: Forbidden for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
+    "page illisible (404 Client Error: Not Found for url: https://www.galeriecoa.com/fr) : https://www.galeriecoa.com/fr"
    ]
   },
   {
@@ -2786,7 +2772,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "page illisible (RuntimeError: 403  (navigateur)) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
+    "page illisible (Error: It looks like you are using Playwright Sync API inside the asyncio loop.\n) : https://www.zeffy.com/fr-CA/organizations/elektra-montreal"
    ]
   },
   {
@@ -3141,8 +3127,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://image-nation.org",
-    "aucun événement trouvé dans 4127 caractères de texte : https://image-nation.org",
+    "page presque vide (28 caractères ; site en JavaScript ?) : https://image-nation.org",
     "annonces à venir dans la page : 0 (https://image-nation.org)"
    ]
   },
@@ -3217,8 +3202,7 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://www.montrealenlumiere.com",
-    "aucun événement trouvé dans 3599 caractères de texte : https://www.montrealenlumiere.com",
+    "page presque vide (43 caractères ; site en JavaScript ?) : https://www.montrealenlumiere.com",
     "annonces à venir dans la page : 0 (https://www.montrealenlumiere.com)"
    ]
   },
@@ -3314,8 +3298,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://accesasie.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://accesasie.com",
+    "pages de programmation lues aussi : https://accesasie.com/programmation/?_annee=2026",
+    "aucun événement trouvé dans 2968 caractères de texte : https://accesasie.com",
     "annonces à venir dans la page : 0 (https://accesasie.com)"
    ]
   },
@@ -3358,8 +3342,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://piknicelectronik.com/fr/billets-programmation, https://piknicelectronik.com/fr/programmation, https://piknicelectronik.com/fr/programmation-off-piknic",
-    "aucun événement trouvé dans 2427 caractères de texte : https://piknicelectronik.com",
-    "annonces à venir dans la page : 10 (https://piknicelectronik.com)"
+    "aucun événement trouvé dans 2403 caractères de texte : https://piknicelectronik.com",
+    "annonces à venir dans la page : 8 (https://piknicelectronik.com)"
    ]
   },
   {
@@ -3421,8 +3405,8 @@
    "erreur": null,
    "diagnostic": [
     "pages de programmation lues aussi : https://montrealfringe.ca/programmation-2027-2027-programming, https://montrealfringe.ca/programmation-programming",
-    "lue dans le navigateur (automatique) : https://montrealfringe.ca",
-    "page presque vide (242 caractères ; site en JavaScript ?) : https://montrealfringe.ca"
+    "page presque vide (242 caractères ; site en JavaScript ?) : https://montrealfringe.ca",
+    "annonces à venir dans la page : 0 (https://montrealfringe.ca)"
    ]
   },
   {
@@ -3536,9 +3520,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "pages de programmation lues aussi : https://osheaga.com/fr/evenements-a-l-annee",
-    "lue dans le navigateur (automatique) : https://osheaga.com",
-    "aucun événement trouvé dans 4123 caractères de texte : https://osheaga.com"
+    "page presque vide (40 caractères ; site en JavaScript ?) : https://osheaga.com",
+    "annonces à venir dans la page : 1 (https://osheaga.com)"
    ]
   },
   {
@@ -3639,8 +3622,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://festivalphenomena.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://festivalphenomena.com",
+    "pages de programmation lues aussi : https://festivalphenomena.com/phenomena/fr/festival/2026/horaire",
+    "aucun événement trouvé dans 1094 caractères de texte : https://festivalphenomena.com",
     "annonces à venir dans la page : 0 (https://festivalphenomena.com)"
    ]
   },
@@ -3782,9 +3765,8 @@
    "series": 0,
    "erreur": null,
    "diagnostic": [
-    "lue dans le navigateur (automatique) : https://westislandbluesfestival.com",
-    "page presque vide (93 caractères ; site en JavaScript ?) : https://westislandbluesfestival.com",
-    "annonces à venir dans la page : 0 (https://westislandbluesfestival.com)"
+    "aucun événement trouvé dans 4695 caractères de texte : https://westislandbluesfestival.com",
+    "annonces à venir dans la page : 4 (https://westislandbluesfestival.com)"
    ]
   },
   {
