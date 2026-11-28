@@ -531,7 +531,7 @@ def _resume_selection(s, sha, semaine):
                   and v["compte"] not in retenus and not (v.get("sur") or v.get("confirme"))]
         return ("\n  🏷️ " + (", ".join(f"@{h}" for h in retenus) if retenus else "aucun compte identifié")
                 + (f" · à confirmer : {', '.join(doutes)}" if doutes else ""))
-    lignes = [f"- **{fs.nom_disc(p['k'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
+    lignes = [f"- **{fs.nom_disc(p['k'], p['e'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
               + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") + tags(p["k"]) for p in s["picks"]]
     fests = ", ".join(f["nom"] for f in s["festivals"]) or "aucun"
     noms = sorted(j.name for j in (DOSSIER / semaine / "fr").glob("*.jpg"))
