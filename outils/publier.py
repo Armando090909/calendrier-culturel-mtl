@@ -535,9 +535,8 @@ def _resume_selection(s, sha, semaine):
                 + (f" · à confirmer : {', '.join(doutes)}" if doutes else "")
                 # (28 nov. 2026) les créateurs, pour chercher leur compte personnel
                 + (f"\n  👤 Créateurs : {gens}" + (f" ([source]({c_['source']}))" if c_.get("source") else "") if gens else ""))
-    from normalisation import plat as _p
     vus = fs.deja_proposes(date.fromisoformat(semaine))
-    redite = lambda e: (f"\n  ⚠️ déjà proposée la semaine du {vus[_p(e['titre'])[:40]]}" if _p(e["titre"])[:40] in vus else "")  # noqa: E731
+    redite = lambda e: (f"\n  ⚠️ déjà proposé la semaine du {fs.deja_vu(e['titre'], vus)}" if fs.deja_vu(e["titre"], vus) else "")  # noqa: E731
     lignes = [f"- **{fs.nom_disc(p['k'], p['e'])}** ({p.get('mode', '')}) : {p['e']['titre']} — {p['e']['lieu']}, {fs.quand(p['e'])}"
               + redite(p["e"]) + (f"\n  _{p['accroche']}_" if p.get("accroche") else "") + tags(p["k"]) for p in s["picks"]]
     fests = ", ".join(f["nom"] for f in s["festivals"]) or "aucun"

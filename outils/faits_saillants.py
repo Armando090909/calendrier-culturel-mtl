@@ -51,16 +51,42 @@ def marque():
     return T('<div class="marque">calendrier culturel <b>mtl</b></div>', '<div class="marque">montreal\'s cultural <b>calendar</b></div>')
 
 
-def deja_proposes(debut) -> dict:
-    """Titres (simplifiés) des sorties des 4 semaines précédentes → semaine où elles ont été proposées."""
+GENERIQUES = {"vernissage", "exposition", "spectacle", "concert", "conference", "atelier", "soiree", "lancement",
+              "projection", "film", "visite guidee", "visite", "lecture", "table ronde", "spectacle de danse", "theatre",
+              "musique", "humour", "cirque", "danse", "cinema", "festival", "open mic", "conte", "contes"}
+
+
+def nom_de_base(titre: str) -> str:
+    """Nom de l'artiste ou du spectacle : la première partie du titre qui n'est pas un mot générique
+    (« Les Louanges @ L'Olympia » → « les louanges » ; « Vernissage : Leila Zelli » → « leila zelli »)."""
     from normalisation import plat as _p
+    for morceau in re.split(r"\s+[@|+–—-]\s+|\s*[:@|,]\s*|\s+(?:presente|présente|presents|avec|with|en concert)\s+", titre):
+        b = _p(morceau).strip()
+        if len(b) >= 5 and b not in GENERIQUES:
+            return b
+    return _p(titre)[:40]
+
+
+def deja_proposes(debut) -> dict:
+    """Noms de base (artiste ou spectacle) des sorties des 4 semaines précédentes → semaine où elles ont été proposées."""
     vus = {}
     for i in range(1, 5):
         f = RACINE / "outils" / "reseaux" / "selections" / f"{(debut - timedelta(days=7 * i)).isoformat()}.json"
         if f.exists():
             for p_ in json.loads(f.read_text(encoding="utf-8")).get("picks", []):
-                vus.setdefault(_p(p_["e"]["titre"])[:40], (debut - timedelta(days=7 * i)).isoformat())
+                vus.setdefault(nom_de_base(p_["e"]["titre"]), (debut - timedelta(days=7 * i)).isoformat())
     return vus
+
+
+def deja_vu(titre: str, vus: dict) -> str | None:
+    """Semaine où ce spectacle ou cet artiste a déjà été proposé (même nom de base, ou nom repris dans le titre)."""
+    from normalisation import plat as _p
+    b, t = nom_de_base(titre), _p(titre)
+    for nom, sem in vus.items():
+        if nom == b or (len(nom) >= 6 and re.search(r"\b" + re.escape(nom) + r"\b", t)) \
+                or (len(b) >= 6 and re.search(r"\b" + re.escape(b) + r"\b", nom)):
+            return sem
+    return None
 
 
 def nom_disc(k, e=None):
@@ -244,7 +270,7 @@ def choisir(data, debut, etat):
             print(f"  souhait « {prefs['choix'][k]} » ({k}) : introuvable cette semaine, choix habituel")
         cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5
               and not PAS_VEDETTE.search(e["titre"] + " " + (e.get("resume") or ""))
-              and _plat(e["titre"])[:40] not in deja_vus]
+              and not deja_vu(e["titre"], deja_vus)]
         cs.sort(key=lambda e: (-score(e) - bonus_fest * bool(e.get("festival")), sel(e)))
         # les 12 meilleures fiches, plus la meilleure de chaque jour (pour pouvoir couvrir toute la semaine)
         garde = cs[:12] + [next(e for e in cs if e["date"] == j) for j in sorted({e["date"] for e in cs})]
@@ -305,8 +331,9 @@ def choisir(data, debut, etat):
                           "coul": coul((f.get("disciplines") or ["autre"])[0]),
                           "en_cours": f["debut"] <= fin.isoformat()})
     fests.sort(key=lambda f: (not f["en_cours"], f["debut"]))
-    # La salle de la semaine : un bar ou une petite salle (surtout musique, humour, fêtes), 3 à 12 soirées,
-    # pas mise en vedette depuis 10 semaines
+    # La salle de la semaine : un bar ou une petite salle (surtout musique, humour, fêtes), 3 à 12 soirées.
+    # (28 nov. 2026, Alexandre : « on peut répéter la salle ») une salle déjà en vedette peut revenir ; à égalité,
+    # celle qui ne l'a pas été depuis 10 semaines passe d'abord
     deja = set(etat.get("salles_vedette", [])[-10:])
     par_lieu = defaultdict(list)
     for e in evs:
@@ -322,9 +349,9 @@ def choisir(data, debut, etat):
                 break
         if not salle:
             print(f"  salle demandée « {prefs['salle']} » : aucune sortie cette semaine, choix habituel")
-    for lieu, es in ([] if salle else sorted(par_lieu.items(), key=lambda x: (-sum(score(e) for e in x[1]) / len(x[1]), x[0]))):
+    for lieu, es in ([] if salle else sorted(par_lieu.items(), key=lambda x: (x[0] in deja, -sum(score(e) for e in x[1]) / len(x[1]), x[0]))):
         dis = Counter(e["discipline"] for e in es)
-        if lieu in deja or lieu == "Lieu à confirmer" or not 3 <= len(es) <= 12:
+        if lieu == "Lieu à confirmer" or not 3 <= len(es) <= 12:
             continue
         if sum(n for d, n in dis.items() if d in SALLES_BARS) < 0.7 * len(es) or len({e["date"] for e in es}) < 3:
             continue
