@@ -1,6 +1,6 @@
 {
  "total": 1383,
- "echecs": 65,
+ "echecs": 68,
  "par_site": {
   "www.comedyville.ca": {
    "affiches": 7,
@@ -21,6 +21,10 @@
   "theatreplaza.ca": {
    "affiches": 5,
    "echecs": 5
+  },
+  "centaurtheatre.com": {
+   "affiches": 4,
+   "echecs": 4
   },
   "coeurdessciences.uqam.ca": {
    "affiches": 4,
@@ -102,13 +106,9 @@
    "affiches": 1,
    "echecs": 1
   },
-  "ent-nts.ca": {
-   "affiches": 1,
-   "echecs": 1
-  },
   "casteliers.ca": {
    "affiches": 1,
-   "echecs": 0
+   "echecs": 1
   },
   "montreal.askapunk.net": {
    "affiches": 17,
@@ -196,10 +196,6 @@
   },
   "images.squarespace-cdn.com": {
    "affiches": 28,
-   "echecs": 0
-  },
-  "centaurtheatre.com": {
-   "affiches": 4,
    "echecs": 0
   },
   "ccmtl.ca": {
@@ -390,7 +386,11 @@
    "affiches": 1,
    "echecs": 0
   },
-  "gxxdnght.com": {
+  "ent-nts.ca": {
+   "affiches": 1,
+   "echecs": 0
+  },
+  "quaidesbrumes.ca": {
    "affiches": 1,
    "echecs": 0
   },
@@ -437,6 +437,11 @@
    "https://www.lacomedie.ca/wp-content/uploads/2016/11/Le-clan-des-divorcees-photo-theatre-montreal3.jpg",
    "https://www.lacomedie.ca/wp-content/uploads/2025/10/Affiche-Chicane-de-Famille-la-mere-copie.jpg",
    "https://www.lacomedie.ca/wp-content/uploads/2024/07/Affiche-LE-GRAND-SOIR-HIVER-2026-2027-copie.jpg"
+  ],
+  "centaurtheatre.com": [
+   "https://centaurtheatre.com/wp-content/uploads/2026/07/rj-square.png",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Hooligan-Theory-Square.jpg",
+   "https://centaurtheatre.com/wp-content/uploads/2026/10/Nohkoms-Knick-Knacks-Square.jpg"
   ],
   "www.comedyville.ca": [
    "https://www.comedyville.ca/wp-content/uploads/2024/10/Montreal-Comedy-Show-Montreal-Comedy-Club.png",
@@ -500,9 +505,6 @@
   ],
   "www.upstairsjazz.com": [
    "https://www.upstairsjazz.com/wp-content/uploads/2022/12/christmas_closed.jpg"
-  ],
-  "ent-nts.ca": [
-   "https://ent-nts.ca/app/uploads/2024/11/share-default.jpg"
   ],
   "www.studio303.ca": [
    "https://www.studio303.ca/programmation/linda-rabin-continuum-et-soin-de-soi-la-guerison-de-linterieur-26-27-fr/\\/\\/www.studio303.ca\\/wp-content\\/uploads\\/2026\\/11\\/workshop-linda-rabin-tony-chong.png"
