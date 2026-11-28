@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 45,
+  "date absente de la page officielle": 48,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -165,6 +165,24 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "The Distance Between Us and the Ground : To Take the Measure",
+   "date": "2026-11-28",
+   "lieu": "Canadian Centre for Architecture",
+   "source": "salles",
+   "url": "https://www.cca.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Distance Between Us and the Ground : To Hold the Distance",
+   "date": "2026-11-29",
+   "lieu": "Canadian Centre for Architecture",
+   "source": "salles",
+   "url": "https://www.cca.qc.ca/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Atelier de chants créoles haïtiens avec Martine Brisson",
    "date": "2026-11-28",
    "lieu": "Centre des musiciens du monde",
@@ -287,6 +305,15 @@
    "lieu": "La Licorne",
    "source": "sorstu",
    "url": "https://theatrelalicorne.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
+   "titre": "The Snatchers + Alma Matter + Hat Man Vision+ Ursule Cassé",
+   "date": "2026-11-28",
+   "lieu": "Cégep Du Vieux Montréal",
+   "source": "askapunk",
+   "url": "https://www.cvm.qc.ca/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -1181,11 +1208,10 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 45,
-  "date confirmée": 222,
+  "date absente de la page": 48,
+  "date confirmée": 220,
   "lien mort remplacé": 17,
-  "page illisible": 41,
-  "non relues (limite)": 1
+  "page illisible": 41
  },
  "controle": null,
  "sources_a_surveiller": [
