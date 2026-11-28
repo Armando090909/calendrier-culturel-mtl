@@ -51,6 +51,18 @@ def marque():
     return T('<div class="marque">calendrier culturel <b>mtl</b></div>', '<div class="marque">montreal\'s cultural <b>calendar</b></div>')
 
 
+def deja_proposes(debut) -> dict:
+    """Titres (simplifiés) des sorties des 4 semaines précédentes → semaine où elles ont été proposées."""
+    from normalisation import plat as _p
+    vus = {}
+    for i in range(1, 5):
+        f = RACINE / "outils" / "reseaux" / "selections" / f"{(debut - timedelta(days=7 * i)).isoformat()}.json"
+        if f.exists():
+            for p_ in json.loads(f.read_text(encoding="utf-8")).get("picks", []):
+                vus.setdefault(_p(p_["e"]["titre"])[:40], (debut - timedelta(days=7 * i)).isoformat())
+    return vus
+
+
 def nom_disc(k, e=None):
     # (28 nov. 2026) « Vernissage » seulement pour un vrai vernissage ; une visite ou une expo en cours : « Exposition »
     if k == "expo" and e is not None and not re.search(r"(?i)vernissage|opening|lancement",
@@ -204,6 +216,9 @@ def choisir(data, debut, etat):
             autres_d = [d for d in disciplines if d not in voulus]
             disciplines = autres_d[:7 - len(garder) - 1] + garder + [k]
             modes.setdefault(k, "connu")
+    # (28 nov. 2026, Alexandre) jamais le même spectacle d'une semaine à l'autre : les sorties des 4 dernières semaines
+    # sont écartées du choix automatique (un souhait d'Alexandre passe quand même, signalé dans l'avis)
+    deja_vus = deja_proposes(debut)
     bonus_fest = 4 if prefs.get("festivals") else 0
     sel = lambda e: int(hashlib.md5((e["titre"] + debut.isoformat()).encode()).hexdigest()[:6], 16)  # noqa: E731
     cands = {}
@@ -228,7 +243,8 @@ def choisir(data, debut, etat):
                 continue
             print(f"  souhait « {prefs['choix'][k]} » ({k}) : introuvable cette semaine, choix habituel")
         cs = [e for e in evs if (e["discipline"] == k or k in (e.get("aussi") or [])) and score(e) >= 5
-              and not PAS_VEDETTE.search(e["titre"] + " " + (e.get("resume") or ""))]
+              and not PAS_VEDETTE.search(e["titre"] + " " + (e.get("resume") or ""))
+              and _plat(e["titre"])[:40] not in deja_vus]
         cs.sort(key=lambda e: (-score(e) - bonus_fest * bool(e.get("festival")), sel(e)))
         # les 12 meilleures fiches, plus la meilleure de chaque jour (pour pouvoir couvrir toute la semaine)
         garde = cs[:12] + [next(e for e in cs if e["date"] == j) for j in sorted({e["date"] for e in cs})]
