@@ -4,7 +4,7 @@
   "titre mal encodé": 10,
   "heure improbable": 2,
   "activité de plusieurs mois classée hors exposition": 1,
-  "date absente de la page officielle": 32,
+  "date absente de la page officielle": 29,
   "page de la sortie disparue": 17,
   "heures différentes selon les sources": 55
  },
@@ -172,24 +172,6 @@
    "url": "https://app.amilia.com/store/fr/centredesmusiciens/shop/activities/7441350"
   },
   {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-11-28",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Les veuves parallèles",
-   "date": "2026-12-01",
-   "lieu": "Théâtre Aux Écuries",
-   "source": "theatre",
-   "url": "https://auxecuries.tuxedobillet.com/main/les-veuves-paralleles"
-  },
-  {
    "regle": "page de la sortie disparue",
    "action": "lien remplacé par l'accueil du site",
    "titre": "Vieille corneille — séance",
@@ -255,6 +237,15 @@
   {
    "regle": "date absente de la page officielle",
    "action": "observée (rien changé)",
+   "titre": "Gala GAMIQ",
+   "date": "2026-11-29",
+   "lieu": "Foufounes Électriques",
+   "source": "sorstu",
+   "url": "https://foufouneselectriques.com/"
+  },
+  {
+   "regle": "date absente de la page officielle",
+   "action": "observée (rien changé)",
    "titre": "Chantal Lamarre : Steppettes et cornemuse",
    "date": "2026-11-28",
    "lieu": "Caf'Conc'",
@@ -286,7 +277,7 @@
    "date": "2026-11-28",
    "lieu": "Estrella",
    "source": "salles",
-   "url": "https://www.comedyville.ca/sktevents/estrella-bar-after-dusk-comedy-show-near-me-saturday-8-pm/"
+   "url": "https://mtlcomedyclub.com/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -386,15 +377,6 @@
    "lieu": "Turbo Haüs",
    "source": "salles",
    "url": "https://turbohaus.ca/calendrier/2026/11/30/the-backstage"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Ciné-Outremont : La place",
-   "date": "2026-11-30",
-   "lieu": "Théâtre Outremont",
-   "source": "theatre",
-   "url": "https://theatreoutremont.tuxedobillet.com/web/cine-outremont-la-place"
   },
   {
    "regle": "page de la sortie disparue",
@@ -530,15 +512,6 @@
    "lieu": "Salle Claude-Champagne",
    "source": "salles",
    "url": "https://panm360.com/en/agenda/faculte-de-musique-de-ludem-une-soiree-jazz-et-musiques-du-monde-a-la-salle-claude-champagne/"
-  },
-  {
-   "regle": "date absente de la page officielle",
-   "action": "observée (rien changé)",
-   "titre": "Festival International Bach Montréal : Trois pupitres pour les variations Goldberg – Andre",
-   "date": "2026-12-01",
-   "lieu": "Chapelle Notre-Dame-de-Bon-Secours",
-   "source": "salles",
-   "url": "https://festivalbachmontreal.com/concerts/trio-a-cordes/"
   },
   {
    "regle": "date absente de la page officielle",
@@ -1064,10 +1037,11 @@
   }
  ],
  "contreverif": {
-  "date absente de la page": 32,
-  "date confirmée": 232,
+  "date absente de la page": 29,
+  "date confirmée": 212,
   "lien mort remplacé": 17,
-  "page illisible": 45
+  "non relues (limite)": 27,
+  "page illisible": 41
  },
  "controle": null,
  "sources_a_surveiller": [
@@ -1080,8 +1054,8 @@
   {
    "source": "balattou.com",
    "erreurs": 198,
-   "sorties": 201,
-   "taux": 98.5
+   "sorties": 202,
+   "taux": 98.0
   },
   {
    "source": "dansedanse.ca",
@@ -1114,16 +1088,16 @@
    "taux": 33.3
   },
   {
-   "source": "quaidesbrumes.ca",
-   "erreurs": 14,
-   "sorties": 47,
-   "taux": 29.8
-  },
-  {
    "source": "fbdm-mcaf.ca",
    "erreurs": 29,
    "sorties": 104,
    "taux": 27.9
+  },
+  {
+   "source": "quaidesbrumes.ca",
+   "erreurs": 14,
+   "sorties": 56,
+   "taux": 25.0
   },
   {
    "source": "zeffy.com",
@@ -1134,20 +1108,14 @@
   {
    "source": "legesu.com",
    "erreurs": 43,
-   "sorties": 203,
-   "taux": 21.2
+   "sorties": 204,
+   "taux": 21.1
   },
   {
    "source": "piranhabar.ca",
    "erreurs": 23,
-   "sorties": 132,
-   "taux": 17.4
-  },
-  {
-   "source": "foufouneselectriques.com",
-   "erreurs": 12,
-   "sorties": 75,
-   "taux": 16.0
+   "sorties": 134,
+   "taux": 17.2
   },
   {
    "source": "beaconsfield.ca",
@@ -1156,22 +1124,28 @@
    "taux": 15.0
   },
   {
+   "source": "foufouneselectriques.com",
+   "erreurs": 12,
+   "sorties": 81,
+   "taux": 14.8
+  },
+  {
    "source": "theatrefairmount.com",
    "erreurs": 38,
-   "sorties": 272,
-   "taux": 14.0
+   "sorties": 275,
+   "taux": 13.8
   },
   {
    "source": "panm360.com",
    "erreurs": 47,
-   "sorties": 344,
-   "taux": 13.7
+   "sorties": 346,
+   "taux": 13.6
   },
   {
    "source": "eventbrite.com",
    "erreurs": 43,
-   "sorties": 354,
-   "taux": 12.1
+   "sorties": 353,
+   "taux": 12.2
   },
   {
    "source": "mtelus.com",
@@ -1188,32 +1162,32 @@
   {
    "source": "casinos.lotoquebec.com",
    "erreurs": 20,
-   "sorties": 191,
-   "taux": 10.5
+   "sorties": 197,
+   "taux": 10.2
   },
   {
    "source": "spectaculos.ca",
    "erreurs": 20,
-   "sorties": 292,
-   "taux": 6.8
+   "sorties": 291,
+   "taux": 6.9
   },
   {
    "source": "casadelpopolo.com",
    "erreurs": 114,
-   "sorties": 1875,
+   "sorties": 1877,
    "taux": 6.1
   },
   {
    "source": "lepointdevente.com",
    "erreurs": 163,
-   "sorties": 2747,
-   "taux": 5.9
+   "sorties": 2710,
+   "taux": 6.0
   },
   {
    "source": "sorstu.ca",
    "erreurs": 116,
-   "sorties": 1997,
-   "taux": 5.8
+   "sorties": 1950,
+   "taux": 5.9
   },
   {
    "source": "cinematheque.qc.ca",
