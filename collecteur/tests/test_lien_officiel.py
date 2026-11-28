@@ -20,6 +20,13 @@ PAGES = {
         '<a href="https://lepointdevente.com/billets/suzanne">Billets</a>',
     "https://sorstu.ca/artiste/autre/": '<a href="https://petitesalle.ca/">Petite Salle</a>',
     "https://www.songkick.com/concerts/1-bach": '<a href="https://bach.example.com/">Bach</a>',
+    "https://sorstu.ca/artiste/piece/": '<a href="https://tangentedanse.ca/">Tangente</a>',
+    "https://tangentedanse.ca/robots.txt": "Sitemap: https://tangentedanse.ca/sitemap_index.xml",
+    "https://tangentedanse.ca/sitemap_index.xml": "<loc>https://tangentedanse.ca/post-sitemap.xml</loc>"
+                                                   "<loc>https://tangentedanse.ca/evenement-sitemap.xml</loc>",
+    "https://tangentedanse.ca/evenement-sitemap.xml":
+        "<loc>https://tangentedanse.ca/evenement/autre-soiree/</loc>"
+        "<loc>https://tangentedanse.ca/evenement/piece-of-mind-collective-maude-lecours-gabrielle-marquis/</loc>",
 }
 
 
@@ -70,6 +77,13 @@ class TestLienVersLaSalle(unittest.TestCase):
         self.assertEqual(evs[1]["url"], "https://www.songkick.com/concerts/9")
         self.assertTrue(lo._ressemble("https://cabaretliondor.com/", "Cabaret Lion d'Or"))
         self.assertTrue(lo._ressemble("https://sat.qc.ca/", "SAT"))
+
+    def test_page_du_spectacle_par_le_plan_du_site(self):
+        e = {"titre": "Piece of Mind Collective + Maude Lecours & Gabrielle Marquis", "lieu": "Tangente",
+             "date": "2026-12-01", "url": "https://sorstu.ca/artiste/piece/"}
+        lo.officialiser([e], [{"lieu": "Tangente", "url": "https://tangentedanse.ca/evenement/"}], telecharger,
+                        date(2026, 11, 28))
+        self.assertEqual(e["url"], "https://tangentedanse.ca/evenement/piece-of-mind-collective-maude-lecours-gabrielle-marquis/")
 
     def test_pages_de_la_ville_intouchees(self):
         e = {"titre": "Conte", "lieu": "Maison de la culture", "date": "2026-12-01",

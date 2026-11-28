@@ -1498,7 +1498,7 @@ def main() -> int:
     # Lien vers la salle (28 nov. 2026) : un clic mène au site de la salle ; l'agrégateur seulement si la salle est introuvable
     try:
         import lien_officiel
-        st = lien_officiel.officialiser(events, sources, telecharger, aujourd, lectures=0 if RAPIDE else 150,
+        st = lien_officiel.officialiser(events, sources, telecharger, aujourd, lectures=0 if RAPIDE else 600,
                                         ia_ok=ia.disponible() and not RAPIDE)
         print(f"Liens vers la salle : {st}")
     except Exception as exc:
