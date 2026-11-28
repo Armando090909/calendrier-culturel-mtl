@@ -7,8 +7,8 @@
   "série : hors de l'île": 45,
   "Sors-tu sans salle (peut-être hors de Montréal)": 13,
   "série remplacée par ses dates précises": 13,
+  "retirée à la main (corrections.json)": 8,
   "fiche isolée remplacée par la série du spectacle": 6,
-  "retirée à la main (corrections.json)": 6,
   "titre absent": 3,
   "annulé selon la source": 2,
   "série : pas culturelle ou sans titre": 2,
@@ -1848,10 +1848,24 @@
     "source": "festival"
    },
    {
+    "titre": "Petrouchka de Stravinsky : Entre danse et traditions",
+    "date": "2026-12-02",
+    "lieu": "Maison symphonique",
+    "url": "https://coeurdessciences.uqam.ca/evenements/osm-2026/",
+    "source": "salles"
+   },
+   {
     "titre": "Stravinsky's Petrushka: Between Dance and Tradition",
     "date": "2026-12-02",
     "lieu": "Maison symphonique",
     "url": "https://www.placedesarts.com/en/event/stravinsky-petrushka-between-dance-and-tradition",
+    "source": "salles"
+   },
+   {
+    "titre": "Petrouchka de Stravinsky : Entre danse et traditions",
+    "date": "2026-12-03",
+    "lieu": "Maison symphonique",
+    "url": "https://coeurdessciences.uqam.ca/evenements/petrouchka-de-stravinsky-entre-danse-et-traditions-copie/",
     "source": "salles"
    },
    {
